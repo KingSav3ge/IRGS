@@ -42,10 +42,8 @@ export const NarrativeEntry = ({ entry, index, narrator, voiceOpts, onPaint }) =
         </div>
       )}
       {entry.kind === "opening_scene" && <h3 className="font-heading text-xl text-gold">{entry.title}</h3>}
-      <div className={`grid gap-5 ${entry.image_url || entry.image_status === "painting" ? "xl:grid-cols-[1fr_280px]" : ""}`}>
-        <p className={`font-prose text-lg sm:text-xl leading-relaxed text-parchment/95 whitespace-pre-line ${index === 0 ? "drop-cap" : ""}`}>{text}</p>
-        {(entry.image_url || entry.image_status === "painting") && <SceneImage entry={entry} onPaint={onPaint} compact />}
-      </div>
+      {(entry.image_url || entry.image_status === "painting") && <SceneImage entry={entry} onPaint={onPaint} />}
+      <p className={`font-prose text-lg sm:text-xl leading-relaxed text-parchment/95 whitespace-pre-line ${index === 0 ? "drop-cap" : ""}`}>{text}</p>
       <div className="flex items-center gap-5 text-xs text-dust font-mono">
         <span>{entry.campaign_date || ""} {entry.campaign_time || ""}</span>
         <button onClick={() => narrator.speak(entry.id, text, voiceOpts)} data-testid={`gameplay-read-aloud-button-${entry.id}`}

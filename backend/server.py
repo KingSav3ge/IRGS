@@ -221,6 +221,19 @@ async def _paint_event(pid: str, user_id: str, event: dict, scenario: dict):
         await _set_event_image(pid, event["id"], {"image_status": "failed"})
 
 
+def _merge_images(snapshot: dict, current: dict) -> dict:
+    """Carry finished scene paintings into a restored snapshot; clear stale 'painting' flags."""
+    snap = copy.deepcopy(snapshot)
+    cur = {e["id"]: e for e in current.get("journal", [])}
+    for e in snap.get("journal", []):
+        live = cur.get(e["id"])
+        if live and live.get("image_path"):
+            e["image_path"], e["image_status"] = live["image_path"], "ready"
+        elif e.get("image_status") == "painting" and not (live and live.get("image_status") == "painting"):
+            e["image_status"] = "failed"
+    return snap
+
+
 async def _autosave(doc: dict):
     state = doc["state"]
     await db.saves.update_one(
@@ -547,9 +560,11 @@ async def _get_save(sid: str, user: dict) -> dict:
 async def load_save(sid: str, user: dict = Depends(auth.get_current_user)):
     s = await _get_save(sid, user)
     doc = await _get_playthrough(s["playthrough_id"], user)
+    state = _merge_images(s["state"], doc["state"])
     await db.playthroughs.update_one({"playthrough_id": doc["playthrough_id"]},
-                                     {"$set": {"state": s["state"], "updated_at": now_iso()}})
-    doc["state"] = s["state"]
+                                     {"$set": {"state": state, "updated_at": now_iso()}})
+    doc["state"] = state
+    await _autosave(doc)
     return _playthrough_out(doc)
 
 
@@ -559,7 +574,7 @@ async def branch_save(sid: str, body: BranchIn, user: dict = Depends(auth.get_cu
     parent = await _get_playthrough(s["playthrough_id"], user)
     doc = {k: v for k, v in parent.items() if k != "_id"}
     doc.update({
-        "playthrough_id": new_id("play"), "state": copy.deepcopy(s["state"]), "status": "active",
+        "playthrough_id": new_id("play"), "state": _merge_images(s["state"], parent["state"]), "status": "active",
         "title": (body.title or f"{parent.get('title')} — branch @ turn {s['clock']}")[:120],
         "branched_from": {"playthrough_id": parent["playthrough_id"], "save_id": sid, "clock": s["clock"]},
         "created_at": now_iso(), "updated_at": now_iso(),
