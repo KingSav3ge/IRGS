@@ -129,7 +129,7 @@ async def _has_premium_voice(user: dict) -> bool:
 def _scenario_card(s: dict, locked: bool) -> dict:
     keys = ["id", "campaign_id", "title", "campaign_title", "genre", "era", "difficulty", "premium",
             "price", "tags", "cover_image", "summary", "briefing", "opening", "character_backgrounds",
-            "default_inventory", "actors"]
+            "default_inventory", "actors", "theme"]
     card = {k: s.get(k) for k in keys}
     card["locked"] = locked
     card["store_item_id"] = next((i["id"] for i in STORE_ITEMS if i.get("scenario_id") == s["id"]), None)
@@ -153,6 +153,7 @@ def _playthrough_out(doc: dict) -> dict:
         "playthrough_id": doc["playthrough_id"], "title": doc.get("title"),
         "scenario_id": doc["scenario_id"], "character_id": doc.get("character_id"),
         "status": doc.get("status", "active"), "provider": doc.get("provider"), "model": doc.get("model"),
+        "theme": SCENARIO_MAP[doc["scenario_id"]]["theme"],
         "narrator_voice": doc.get("narrator_voice", "fable"), "voice_engine": doc.get("voice_engine", "openai"),
         "portrait_url": _file_url(doc.get("portrait_path")),
         "branched_from": doc.get("branched_from"),
@@ -207,8 +208,7 @@ async def _set_event_image(pid: str, event_id: str, fields: dict):
 async def _paint_event(pid: str, user_id: str, event: dict, scenario: dict):
     await _set_event_image(pid, event["id"], {"image_status": "painting"})
     prompt = (
-        "A painterly illuminated-manuscript style illustration, rich candlelit oil-painting textures, "
-        f"cinematic composition, no text or letters. Era: {scenario['era']}. "
+        f"{scenario['art_style']}, cinematic composition, no text or letters. Era: {scenario['era']}. "
         f"Setting: {scenario['opening'].get('setting', '')}. Scene: "
         f"{(event.get('narration') or event.get('text') or event.get('declaration') or '')[:700]}"
     )
@@ -375,8 +375,8 @@ async def generate_portrait(cid: str, body: PortraitGenIn, user: dict = Depends(
     ch = await _get_character(cid, user)
     s = SCENARIO_MAP[ch["scenario_id"]]
     prompt = (
-        "A dramatic painted character portrait, chest-up, illuminated-manuscript meets oil painting, "
-        f"dark moody background, no text. Era: {s['era']}. Character: {ch['name']}, a {ch['background_label']}. "
+        f"A dramatic chest-up character portrait in the style of {s['art_style']}, "
+        f"moody background, no text. Era: {s['era']}. Character: {ch['name']}, a {ch['background_label']}. "
         f"{body.prompt or ch.get('description') or ''}"
     )
     try:
@@ -430,7 +430,7 @@ async def list_playthroughs(status: Optional[str] = None, user: dict = Depends(a
         st = d["state"]
         out.append({
             "playthrough_id": d["playthrough_id"], "title": d.get("title"), "scenario_id": d["scenario_id"],
-            "status": d.get("status", "active"), "clock": st["clock"], "campaign_time": st["campaign_time"],
+            "status": d.get("status", "active"), "theme": SCENARIO_MAP[d["scenario_id"]]["theme"], "clock": st["clock"], "campaign_time": st["campaign_time"],
             "character_name": st["actors"][st["player_actor_id"]]["name"],
             "portrait_url": _file_url(d.get("portrait_path")), "branched_from": d.get("branched_from"),
             "updated_at": d.get("updated_at"),

@@ -30,7 +30,8 @@ export default function Chronicle() {
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-8 py-12 space-y-10">
+    <div data-theme={pt.theme} className="themed" data-testid="chronicle-theme-scope">
+    <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-8 py-12 space-y-10">
       <div className="flex flex-wrap items-end gap-4">
         <div>
           <p className="tactical-label mb-3">The Chronicle</p>
@@ -65,6 +66,7 @@ export default function Chronicle() {
         {entries.length === 0 && <li className="pl-8 text-dust text-sm" data-testid="chronicle-empty">No entries match.</li>}
       </ol>
       <Link to={`/play/${pid}`} className="text-sm text-gold" data-testid="chronicle-back-to-play">← Return to play</Link>
+    </div>
     </div>
   );
 }

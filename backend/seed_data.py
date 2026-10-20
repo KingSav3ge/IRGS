@@ -184,7 +184,76 @@ SCENARIOS = [
             {"item": "Sealed letter", "qty": 1},
         ],
     },
+    {
+        "id": "meridian-drift",
+        "campaign_id": "meridian",
+        "title": "Drift at Meridian Station",
+        "campaign_title": "Outer Reach: The Meridian Accord",
+        "genre": "scifi",
+        "era": "2189 · Outer System",
+        "difficulty": "Measured",
+        "premium": False,
+        "price": 0,
+        "tags": ["sci-fi", "station", "mystery", "politics"],
+        "cover_image": "https://images.unsplash.com/photo-1774382137454-60281271e0a5?crop=entropy&cs=srgb&fm=jpg&q=85&w=940",
+        "summary": "A mining relay at the edge of the system has lost contact with its corporate charter. Air, water and loyalty are all rationed. Nothing is resolved until you act.",
+        "briefing": (
+            "14 March 2189, station time 06:00. Meridian Station turns slowly above the ice moon Kessa. "
+            "Three days ago the relay to the Halvorsen Charter went dark; no supply tender has been confirmed. "
+            "Station Director Okafor insists the outage is technical. The miners' union is not convinced. "
+            "You have just come off a shift rotation with clearance to the lower decks, a personal terminal and "
+            "a debt to the station commissary. No mutiny, rescue or discovery has occurred in this playthrough."
+        ),
+        "opening": {
+            "date": "2189-03-14", "calendar": "gregorian", "precision": "day", "time": "dawn",
+            "label": "14 March 2189 · station time 06:00",
+            "location": "Ring C Concourse",
+            "setting": "The curved concourse of Ring C, ration kiosks shuttered, ice-light glowing through the viewport.",
+        },
+        "actors": [
+            {"id": "MER-OKAFOR", "name": "Director Adaeze Okafor", "role": "Station Director, Halvorsen Charter"},
+            {"id": "MER-VOSS", "name": "Teo Voss", "role": "Miners' union steward"},
+            {"id": "MER-ANSEL", "name": "ANSEL", "role": "Station operations intelligence"},
+        ],
+        "locations": [
+            {"id": "Ring C Concourse", "name": "Ring C Concourse", "kind": "habitat"},
+            {"id": "Relay Spire", "name": "Relay Spire", "kind": "comms"},
+        ],
+        "world_facts": [
+            {"id": "MER-OPS-01", "domain": "logistics",
+             "statement": "Contact with the Halvorsen Charter was lost three days ago. The cause is unconfirmed.",
+             "source_ids": ["MER-SRC-01"]},
+            {"id": "MER-POL-01", "domain": "political",
+             "statement": "The Director holds legal authority aboard; the union controls most of the working crews. Authority is not the same as obedience.",
+             "source_ids": ["MER-SRC-02"]},
+        ],
+        "character_backgrounds": [
+            {"id": "salvage-engineer", "label": "Salvage Engineer",
+             "description": "You keep old machines breathing and know every crawlspace on the lower decks.",
+             "attributes": {"strength": 6, "agility": 5, "wits": 7, "presence": 3}},
+            {"id": "station-security", "label": "Station Security",
+             "description": "A contracted officer whose loyalty is being tested by both sides.",
+             "attributes": {"strength": 7, "agility": 6, "wits": 4, "presence": 5}},
+            {"id": "xenolinguist", "label": "Signals Analyst",
+             "description": "You read the relay traffic, and lately you have noticed patterns that should not be there.",
+             "attributes": {"strength": 3, "agility": 4, "wits": 8, "presence": 6}},
+        ],
+        "default_inventory": [
+            {"item": "Personal terminal", "qty": 1},
+            {"item": "Lower-deck access card", "qty": 1},
+            {"item": "Ration chits", "qty": 3},
+        ],
+    },
 ]
+
+THEMES = {
+    "hyw-1415": ("manuscript", "a medieval illuminated-manuscript painting with rich vellum textures and rubricated borders"),
+    "rome-mercator": ("tablet", "a Roman fresco painted on weathered plaster, earthy pigments, carved stone framing"),
+    "eldoria-shadows": ("grimoire", "a dark-fantasy oil painting, ember light and drifting fog, painterly brushwork"),
+    "meridian-drift": ("pda", "cinematic science-fiction concept art, cold volumetric light, hard-surface detail"),
+}
+for _s in SCENARIOS:
+    _s["theme"], _s["art_style"] = THEMES[_s["id"]]
 
 STORE_ITEMS = [
     {

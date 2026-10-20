@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
 import { PlaythroughList } from "@/components/PlaythroughList";
 
-const GENRES = ["all", "historical", "fantasy"];
+const GENRES = ["all", "historical", "fantasy", "scifi"];
 
 const CampaignCard = ({ c, i }) => {
   const navigate = useNavigate();
   return (
-    <motion.article initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
-      className="group bg-tome gold-frame rounded-sm overflow-hidden flex flex-col hover:border-gold/60 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-[border-color,box-shadow] duration-300"
+    <motion.article data-theme={c.theme} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
+      className="group bg-tome gold-frame rounded-sm overflow-hidden flex flex-col hover-glow"
       data-testid={`library-campaign-card-${c.id}`}>
       <div className="relative h-52 overflow-hidden">
         <img src={c.cover_image} alt={c.title} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />

@@ -48,7 +48,7 @@ async def narrate(scene_context: str, declaration: str, intent: str, provider: s
 
     provider, model = _model_for(provider, model)
     system = (
-        "You are the Narrator of a persistent historical/fantasy roleplaying simulation. "
+        "You are the Narrator of a persistent roleplaying simulation (historical, fantasy or science-fiction settings). "
         "The game engine is the sole authority over world state; you ONLY describe what the "
         "player perceives as a result of their declared action. Rules you must obey: "
         "do NOT change the player's inventory, inflict unrecorded injuries, award ranks, titles, "
@@ -90,7 +90,7 @@ async def jev_decide(declaration: str) -> dict:
         '"allowed": true|false, "reason": short string}. '
         "Set allowed=false only for content that is sexual content involving minors, real-world "
         "hate/harassment targeting protected groups, or instructions for real-world violence/weapons. "
-        "In-fiction medieval combat and conflict is allowed."
+        "In-fiction combat and conflict (any era or setting) is allowed."
     )
     chat = LlmChat(api_key=EMERGENT_LLM_KEY, session_id="jev", system_message=system).with_model("openai", "gpt-5.4-mini")
     try:

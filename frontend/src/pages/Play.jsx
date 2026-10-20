@@ -65,7 +65,8 @@ export default function Play() {
   const voiceOpts = { engine: pt.voice_engine, voice: pt.narrator_voice };
 
   return (
-    <div className="mx-auto max-w-[1600px] px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:h-[calc(100vh-4rem)]">
+    <div data-theme={pt.theme} className="themed" data-testid="gameplay-theme-scope">
+    <div className="relative z-10 mx-auto max-w-[1600px] px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:h-[calc(100vh-4rem)]">
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden"><StatusPanel pt={pt} /></div>
       <section className="lg:col-span-6 flex flex-col bg-tome gold-frame lg:h-full min-h-[70vh] overflow-hidden">
         <div className="px-6 sm:px-10 pt-6 pb-3 border-b border-line flex items-center justify-between">
@@ -81,6 +82,7 @@ export default function Play() {
         <ActionComposer onSubmit={act} busy={busy} disabled={pt.status === "archived"} />
       </section>
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden"><ControlPanel pt={pt} onSettings={onSettings} /></div>
+    </div>
     </div>
   );
 }

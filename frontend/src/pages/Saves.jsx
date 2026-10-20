@@ -36,7 +36,8 @@ export default function Saves() {
   const archive = () => run(async () => { await api.post(`/playthroughs/${pid}/${pt.status === "archived" ? "restore" : "archive"}`); refresh(); }, pt?.status === "archived" ? "Restored" : "Archived");
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-8 py-12 space-y-10">
+    <div data-theme={pt?.theme || "ledger"} className="themed">
+    <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-8 py-12 space-y-10">
       <div>
         <p className="tactical-label mb-3">Saves, checkpoints & branches</p>
         <h1 className="font-heading text-4xl sm:text-5xl text-parchment">{pt?.title || "…"}</h1>
@@ -67,6 +68,7 @@ export default function Saves() {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 }

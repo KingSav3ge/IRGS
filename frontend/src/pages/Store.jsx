@@ -7,7 +7,7 @@ import { api, errMsg } from "@/lib/api";
 import { CheckoutDialog } from "@/components/CheckoutDialog";
 
 const ItemCard = ({ item, onBuy }) => (
-  <article className="bg-tome gold-frame flex flex-col overflow-hidden hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-shadow duration-300" data-testid={`store-item-card-${item.id}`}>
+  <article className="bg-tome gold-frame flex flex-col overflow-hidden hover-glow" data-testid={`store-item-card-${item.id}`}>
     <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
     <div className="p-6 flex flex-col gap-3 flex-1">
       <p className="tactical-label">{item.kind === "subscription" ? "Monthly add-on" : item.kind}</p>
