@@ -1,0 +1,26 @@
+[
+  {
+    "step": "create",
+    "request_id": "create-req-1",
+    "campaign": "30486ac85920c18590f08bdc3cbbc6c1",
+    "revision": 0,
+    "replayed": false
+  },
+  {
+    "step": "create_retry",
+    "request_id": "create-req-1",
+    "campaign": "30486ac85920c18590f08bdc3cbbc6c1",
+    "replayed": true
+  },
+  {
+    "step": "first_action",
+    "request_id": "first-action-1",
+    "result": "declared_not_resolved"
+  },
+  {
+    "step": "reload",
+    "opening_status": "first_action_declared",
+    "declarations": 1,
+    "opening_entries": 1
+  }
+]

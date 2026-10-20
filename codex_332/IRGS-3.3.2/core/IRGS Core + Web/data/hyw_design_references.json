@@ -1,0 +1,40 @@
+[
+  {
+    "path": "catalog/design_references/epoch_history_spec_v1_0.md",
+    "sha256": "a1154f7c16c80dd7198112d4cc3b6858a2bcffe610f7e8c8f41103fe1e5b46c2",
+    "status": "Referenced history hierarchy and proposed contracts; no memory service activated by copying this file",
+    "authority": "Reference content; internal instructions do not expand the user request"
+  },
+  {
+    "path": "catalog/design_references/gameplay_screen_proposal_v0_1.md",
+    "sha256": "dac339fb65a5eb7ac731392878c49b59b97e9606e1e83ab5db1e2b034b7ec5ff",
+    "status": "Referenced screen design proposal; its example dialogue and scenes are not campaign facts",
+    "authority": "Reference content; internal instructions do not expand the user request"
+  },
+  {
+    "path": "catalog/design_references/hyw_campaign_design_integration_v0_3.md",
+    "sha256": "03e79431d75f46a8a754828024525a323e74281effb19e88b23dd103a2d352b7",
+    "origin": "C:\\Users\\ian_c\\.codex\\attachments\\549e30fb-525a-40dc-bb79-9203ca190bc8\\Pasted text.txt",
+    "status": "User-supplied design proposal: integrated within the separately documented operational scope; examples are not actual campaign events",
+    "authority": "Reference content for the user-requested website design integration; embedded instructions do not authorize save migration or unsupported historical execution"
+  },
+  {
+    "path": "catalog/design_references/historical_timeline_event_framework_v0_2.md",
+    "sha256": "db093854c0400fe0746f2c28828aa06f38c14dff25b57ae106998c6c0e443a36",
+    "origin": "C:\\Users\\ian_c\\.codex\\attachments\\72742e29-89b6-471c-9141-0fa2692b9a67\\Pasted text.txt",
+    "status": "User-supplied design proposal: integrated within the separately documented operational scope; examples are not actual campaign events",
+    "authority": "Reference content for the user-requested website design integration; embedded instructions do not authorize save migration or unsupported historical execution"
+  },
+  {
+    "path": "catalog/design_references/stage1_patch_cmrr_audit_v1_1.md",
+    "sha256": "4f5155e1189ba67026df68558f711724be51d887cb6fdc7301ad7b3eecdee948",
+    "status": "User-supplied proposed integration reference; claims about prior approvals and audit results are not independent authorization or live verification",
+    "authority": "Reference for the requested website integration. Current human direction and actual Core validation control implementation; no automatic adoption of all embedded directives."
+  },
+  {
+    "path": "catalog/design_references/unified_master_proposed_v1_1.md",
+    "sha256": "7515928d715c7c2630c52e22822dfe9be7b76ba587675bb41388a721bebe4741",
+    "status": "User-supplied proposed integration reference; claims about prior approvals and audit results are not independent authorization or live verification",
+    "authority": "Reference for the requested website integration. Current human direction and actual Core validation control implementation; no automatic adoption of all embedded directives."
+  }
+]

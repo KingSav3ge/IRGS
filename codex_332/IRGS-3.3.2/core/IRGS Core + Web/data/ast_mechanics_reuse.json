@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "source": "catalog/libraries/ast/AST_Engine_v0_5.md",
+  "source_sha256": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
+  "decision": "User permits reuse of AST-developed mechanics/features in Core and other engines; AST is a named 1415 starting scenario, not a separately maintained engine.",
+  "standalone_ast_engine": false,
+  "standalone_campaign_maintenance": false,
+  "named_start_reference": {
+    "campaign_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "scenario_id": "ast",
+    "readiness": "needs_date_reconciliation"
+  },
+  "entries": [
+    {
+      "id": "player_agency",
+      "source_sections": "E3 AST-R02; E4",
+      "status": "shared_live",
+      "receiving_owner": "Core record_player_action; voluntary selection and exact-intent host",
+      "limit": "No unrequested speech, spending, allegiance, movement or successor."
+    },
+    {
+      "id": "knowledge_and_receipts",
+      "source_sections": "E2; E4; E7",
+      "status": "shared_live",
+      "receiving_owner": "Core evidence/receive_evidence; actor-filtered playthrough",
+      "limit": "A historical reference is not automatically known."
+    },
+    {
+      "id": "condition_continuity",
+      "source_sections": "E3 AST-R03; E6",
+      "status": "bounded_live",
+      "receiving_owner": "Core confirm_character_field and evidence",
+      "limit": "No healing, HP model, diagnosis or physiological rate is inferred."
+    },
+    {
+      "id": "actual_stock_and_commitments",
+      "source_sections": "E2; E6; E7",
+      "status": "bounded_live",
+      "receiving_owner": "Core stock, obligations, orders, capacities and activity ledger",
+      "limit": "Custody, ownership and available quantity retain separate meanings; full asset/law procedures remain scoped."
+    },
+    {
+      "id": "simultaneous_events",
+      "source_sections": "E2; E4",
+      "status": "shared_live",
+      "receiving_owner": "Core observation frontier and shared capacities",
+      "limit": "Use actual observed dependencies, not campaign-specific manual footprints."
+    },
+    {
+      "id": "institutions_and_service",
+      "source_sections": "E5",
+      "status": "bounded_live",
+      "receiving_owner": "Core obligations, received orders and delegation",
+      "limit": "No employment, wage or permanent allegiance from background text."
+    },
+    {
+      "id": "design_build_test_separation",
+      "source_sections": "E6A",
+      "status": "bounded_live",
+      "receiving_owner": "Core record_design; supported tracked-work research receivers",
+      "limit": "A drawing is not an item, completed work or demonstrated performance."
+    },
+    {
+      "id": "death_and_successor_choice",
+      "source_sections": "E3 AST-R03; E5",
+      "status": "bounded_live",
+      "receiving_owner": "Temporal registry and explicit control assignment",
+      "limit": "No automatic successor, inherited skills, memory, office or cloned stock."
+    },
+    {
+      "id": "uncertainty_profile",
+      "source_sections": "E3 AST-R01; Numerical reference",
+      "status": "reusable_reference_only",
+      "receiving_owner": "Recovered d100 thresholds retained in source as a named profile reference",
+      "limit": "Not adopted as a universal genre rule; missing effect, skill and modifier models remain unresolved."
+    },
+    {
+      "id": "learning_and_practice",
+      "source_sections": "E2; E5",
+      "status": "reusable_reference_only",
+      "receiving_owner": "Core evidence/work ownership; genre learning procedures",
+      "limit": "No XP, learning rate or time-unit conversion selected."
+    },
+    {
+      "id": "animal_and_tack",
+      "source_sections": "E6 Horse activity",
+      "status": "reusable_reference_only",
+      "receiving_owner": "Generic actor identity, asset and knowledge owners",
+      "limit": "Animal behavior and riding capability need appropriate procedures and actual conditions."
+    },
+    {
+      "id": "continuity_and_retrieval",
+      "source_sections": "E12",
+      "status": "bounded_live",
+      "receiving_owner": "Generic journal, exact declarations and scoped Chronicle",
+      "limit": "No invented dialogue reconstruction or automatic durable epoch summary."
+    }
+  ],
+  "automatic_numeric_adoption": false,
+  "existing_campaign_migration": false
+}

@@ -1,0 +1,30 @@
+{
+  "document_id": "IRGS-CORE-3.3",
+  "status": "SELECTED_LOCAL_SUITE",
+  "document": "Core/IRGS_Core_Engine_v3_3.md",
+  "sha256": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
+  "ancestor": "IRGS-CORE-3.2",
+  "source_owner_ids": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "runtime": "core_world.CoreWorld",
+  "genre_bindings": [
+    "catalog/genres/military/receiving_core_3_3.json",
+    "catalog/genres/roman/receiving_core_3_3.json",
+    "catalog/genres/fantasy/receiving_core_3_3.json",
+    "catalog/genres/paf/receiving_core_3_3.json",
+    "catalog/genres/shinobi/receiving_core_3_3.json",
+    "catalog/genres/space/receiving_core_3_3.json"
+  ],
+  "ast_classification": "campaign_library",
+  "automatic_numeric_adoption": false,
+  "existing_save_migration": false
+}

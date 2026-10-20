@@ -1,0 +1,6 @@
+PASS: late campaign A responses cannot replace selected campaign B
+PASS: campaign and binding commit together; stale binding A is discarded
+PASS: campaign selector is locked during writes and attempted selection changes are rejected
+PASS: a forced later selection B also rejects the in-flight write result for A
+PASS: delete requires the visible selected campaign; stale delete dialogs submit no deletion
+RESULT: 5 deterministic UI selection tests passed; synthetic records only; no network or campaign files used.

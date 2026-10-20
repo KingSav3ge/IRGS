@@ -1,0 +1,839 @@
+{
+  "schema_version": 1,
+  "id": "hyw-1415",
+  "scenario_id": "hundred-years-war",
+  "revision": 2,
+  "status": "developed_historical_setup",
+  "title": "The Lancastrian Invasion",
+  "opening": {
+    "date": "1415-08-11",
+    "calendar": "julian",
+    "precision": "day",
+    "time": null,
+    "boundary": "Before the recorded departure; authored opening cutoff",
+    "label": "11 August 1415 · before departure"
+  },
+  "briefing": "Henry V is preparing to take his expedition across the Channel. His French claims, England's existing continental holdings and the authority of Charles VI remain distinct. The Winchester negotiations have failed, while retinue contracts, shipping and supplies bind military preparations to households, commerce and royal finance. This authored opening freezes the background before departure; subsequent events are determined through play.",
+  "actors": [
+    {
+      "id": "HYW-HENRY-V",
+      "name": "Henry V",
+      "species": "human",
+      "role": "King of England; claimant to the French crown",
+      "source_ids": [
+        "HYW-SRC-ROYAL-HENRY",
+        "HYW-SRC-JULY-DIPLOMACY"
+      ]
+    },
+    {
+      "id": "HYW-CHARLES-VI",
+      "name": "Charles VI",
+      "species": "human",
+      "role": "King of France",
+      "source_ids": [
+        "HYW-SRC-CASTOR",
+        "HYW-SRC-APRIL-COUNCIL"
+      ]
+    },
+    {
+      "id": "HYW-JOHN-FEARLESS",
+      "name": "John the Fearless",
+      "species": "human",
+      "role": "Duke of Burgundy; leading Burgundian political figure",
+      "source_ids": [
+        "HYW-SRC-CASTOR"
+      ]
+    },
+    {
+      "id": "HYW-LOUIS-DAUPHIN",
+      "name": "Louis of France",
+      "species": "human",
+      "role": "Dauphin of France; duke of Guyenne",
+      "source_ids": [
+        "HYW-SRC-UVIC-DAUPHIN",
+        "HYW-SRC-FRANCEARCHIVES-LOUIS"
+      ]
+    },
+    {
+      "id": "HYW-JOHN-BEDFORD",
+      "name": "John of Lancaster",
+      "species": "human",
+      "role": "Duke of Bedford; designated keeper of the realm during Henry's absence",
+      "source_ids": [
+        "HYW-SRC-APRIL-COUNCIL"
+      ]
+    }
+  ],
+  "domains": {
+    "political": [
+      {
+        "id": "HYW-1415-POL-01",
+        "statement": "Henry V rules England and asserts a claim to the French crown. His assertion is a claim, not evidence that the French kingdom accepts his sovereignty.",
+        "source_ids": [
+          "HYW-SRC-ROYAL-HENRY",
+          "HYW-SRC-JULY-DIPLOMACY"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-POL-02",
+        "statement": "Charles VI remains king of France. His recurring episodes of incapacity have contributed to competition over royal government between Armagnac and Burgundian interests, including John the Fearless. These are political factions within the French realm, not separate sovereign kingdoms.",
+        "source_ids": [
+          "HYW-SRC-CASTOR"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-POL-03",
+        "statement": "Louis of France, duke of Guyenne, is the dauphin.",
+        "source_ids": [
+          "HYW-SRC-UVIC-DAUPHIN",
+          "HYW-SRC-FRANCEARCHIVES-LOUIS"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-POL-04",
+        "statement": "The April council designated John, duke of Bedford, to keep the realm during Henry's intended absence.",
+        "source_ids": [
+          "HYW-SRC-APRIL-COUNCIL"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      }
+    ],
+    "military": [
+      {
+        "id": "HYW-1415-MIL-01",
+        "statement": "The expedition is organized through captains' contracted retinues. Most indentures were sealed at Westminster on 29 April; they record promised service and composition. A contract is not a muster proving current presence or readiness.",
+        "source_ids": [
+          "HYW-SRC-ENGLISH-ARMY"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-MIL-02",
+        "statement": "Troops and shipping have been gathering in southern Hampshire, with embarkation arrangements around Southampton, the Solent and Portchester. The opening is set before the recorded departure and does not initialize a complete count of loaded or ready vessels, soldiers or horses.",
+        "source_ids": [
+          "HYW-SRC-JULY-MUSTERS",
+          "HYW-SRC-AUGUST-CROSSING"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-MIL-03",
+        "statement": "French preparations against an anticipated English invasion are already documented: Charles VI ordered the bailiff of Rouen to ready the city on 19 April. This does not establish the current strength or readiness of any particular garrison.",
+        "source_ids": [
+          "HYW-SRC-APRIL-COUNCIL"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      }
+    ],
+    "territorial": [
+      {
+        "id": "HYW-1415-TER-01",
+        "statement": "England already holds Calais and possessions in Gascony. These existing holdings must be distinguished from the wider territories Henry claims; this regional description does not define every local boundary or jurisdiction.",
+        "source_ids": [
+          "HYW-SRC-LAMBERT-CROSSING"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-TER-02",
+        "statement": "Harfleur is a French port and Normandy is not an established conquest of Henry's expedition at the opening. English claims and invasion intentions do not transfer physical control of a town, its inhabitants or its resources.",
+        "source_ids": [
+          "HYW-SRC-CASTOR",
+          "HYW-SRC-AUGUST-CROSSING"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      }
+    ],
+    "diplomatic": [
+      {
+        "id": "HYW-1415-DIP-01",
+        "statement": "Henry and the French embassy met at Wolvesey Palace in Winchester at the end of June. The talks failed to produce an acceptable compromise, and the ambassadors left Winchester in early July.",
+        "source_ids": [
+          "HYW-SRC-JULY-DIPLOMACY",
+          "HYW-SRC-JULY-NEGOTIATIONS"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      },
+      {
+        "id": "HYW-1415-DIP-02",
+        "statement": "Territorial and dynastic demands are contested. Henry presents his preparations as recovery of claimed rights; the French delegates have not accepted the settlement demanded at Winchester. This dispute is not an adopted treaty or an automatic recognition of either side's full legal position.",
+        "source_ids": [
+          "HYW-SRC-JULY-DIPLOMACY"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1415-08-11"
+      }
+    ]
+  },
+  "unknowns": [
+    "The exact hour of the authored opening and the readiness or loading state of each vessel are unspecified.",
+    "Actual current retinue attendance, health, equipment condition, service obligations and command receipt require individual evidence; contracted numbers are not instantiated troops.",
+    "No complete inventories of food, water, ammunition, horses, transport, equipment or other materials are supplied by this snapshot.",
+    "Royal, institutional, household and personal cash balances, outstanding payments and usable credit are not inferred from published expenditure records.",
+    "Fine territorial boundaries, local jurisdictions, possession of particular sites and enforceable revenue rights require dated local evidence.",
+    "Charles VI's condition at a particular moment and the precise delegation of each governmental decision are not specified.",
+    "A faction label does not establish an individual's current loyalty, a permanent alliance, an institution's obedience or an available military resource.",
+    "Which actors have received each report, order, diplomatic proposal or destination disclosure is uninitialized.",
+    "No player character, player-controlled office, personal permissions or choice of side has been selected.",
+    "The departure, destination disclosure, operations and diplomatic decisions after the authored cutoff remain unresolved in the simulation."
+  ],
+  "sources": [
+    {
+      "id": "HYW-SRC-ROYAL-HENRY",
+      "title": "Henry V (r. 1413–1422), The Royal Family",
+      "url": "https://www.royal.uk/henry-v",
+      "source_type": "official_royal_history",
+      "scope_note": "Used for Henry's kingship and assertion of the French crown. The page's later campaign and dynastic narrative is not imported as opening facts or scheduled outcomes."
+    },
+    {
+      "id": "HYW-SRC-CASTOR",
+      "title": "Helen Castor, Agincourt or Azincourt? Victory, Defeat, and the War of 1415, Gresham College",
+      "url": "https://www.gresham.ac.uk/watch-now/agincourt-or-azincourt-victory-defeat-and-war-1415",
+      "source_type": "scholarly_lecture_and_transcript",
+      "scope_note": "Used for Charles VI, John the Fearless, the Armagnac–Burgundian political context and the distinction between English claims and conquest. It is a modern scholarly interpretation; later events and rounded force estimates are excluded."
+    },
+    {
+      "id": "HYW-SRC-UVIC-DAUPHIN",
+      "title": "The Queen's Men Editions: Famous Victories of Henry V, University of Victoria",
+      "url": "https://lemdo.uvic.ca/qme/emdFV_M.html",
+      "source_type": "academic_critical_edition_historical_annotation",
+      "scope_note": "Used only for the historical identification of Louis as the dauphin in 1415. Dramatic incidents, dialogue, characterization and later succession are not adopted as historical state."
+    },
+    {
+      "id": "HYW-SRC-APRIL-COUNCIL",
+      "title": "Dan Spencer, 13–19 April 1415: A Great Council Meeting and French Preparations, Agincourt 600",
+      "url": "https://www.agincourt600.com/2015/03/18/13-19-april-1415-a-great-council-meeting-and-french-preparations/",
+      "source_type": "archival_research_summary",
+      "scope_note": "Cites TNA E 403/621 m.1, Anne Curry and James Hamilton Wylie's Cambridge history. Used for the April designation of Bedford and the order to prepare Rouen, not to grant new operational permissions or initialize resources."
+    },
+    {
+      "id": "HYW-SRC-ENGLISH-ARMY",
+      "title": "Anne Curry, Dan Spencer and Adam Chapman, The English Army in 1415, The Soldier in Later Medieval England",
+      "url": "https://medievalsoldier.org/about/agincourt/the-english-army-in-1415/",
+      "source_type": "academic_archival_research_project",
+      "scope_note": "Identifies original indentures in TNA E101/69 and related warrants, issue rolls and musters. Used for recruitment and documentary distinctions; no database roll or promised strength is imported as a complete present army."
+    },
+    {
+      "id": "HYW-SRC-JULY-MUSTERS",
+      "title": "Dan Spencer, 20–26 July 1415: Troops Continue to Arrive. The King Makes His Will, Agincourt 600",
+      "url": "https://www.agincourt600.com/2015/07/22/20-26-july-1415-troops-continue-to-arrive-the-king-makes-his-will/",
+      "source_type": "archival_research_summary",
+      "scope_note": "Cites muster, financial and diplomatic records, including TNA E101/45/4 and E101/45/5. Used for the pre-opening gathering of retinues and shipping in southern Hampshire; quantities and later careers are excluded."
+    },
+    {
+      "id": "HYW-SRC-AUGUST-CROSSING",
+      "title": "Dan Spencer, 10–16 August 1415: The Expedition Sets Sail to France, Agincourt 600",
+      "url": "https://www.agincourt600.com/2015/08/12/10-16-august-1415-the-expedition-sets-sail-to-france/",
+      "source_type": "primary_source_based_scholarly_chronology",
+      "scope_note": "Cites Gesta Henrici Quinti, edited by Taylor and Roskell, Rymer's Foedera and Anne Curry. Used to locate the authored cutoff before the recorded 11 August departure and identify the embarkation region. No departure, crossing, landing or later event is automatically executed; exact opening hour is unknown."
+    },
+    {
+      "id": "HYW-SRC-LAMBERT-CROSSING",
+      "title": "Craig Lambert, Henry V and the Crossing to France: Reconstructing Naval Operations for the Agincourt Campaign, 1415, Journal of Medieval History 43 (2017)",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/03044181.2016.1236503",
+      "source_type": "peer_reviewed_archival_research",
+      "scope_note": "Used for England's existing Gascon and Calais holdings and the documentary basis of transport preparations. Fleet-size reconstruction and later operational narrative do not initialize exact capacities or future outcomes.",
+      "repository_url": "https://eprints.soton.ac.uk/400231/"
+    },
+    {
+      "id": "HYW-SRC-JULY-DIPLOMACY",
+      "title": "Dan Spencer, 29 June–5 July 1415: Diplomacy with France, Agincourt 600",
+      "url": "https://www.agincourt600.com/2015/07/14/29-june-5-july-1415-diplomacy-with-france/",
+      "source_type": "scholarly_diplomatic_history_summary",
+      "scope_note": "Cites Anne Curry and Graham Keevill. Used for the Winchester embassy, disputed demands and failure to reach a settlement before the opening. Claims are represented as claims; no legal recognition or universal actor knowledge is inferred."
+    },
+    {
+      "id": "HYW-SRC-JULY-NEGOTIATIONS",
+      "title": "Dan Spencer, 6–12 July 1415: Negotiations Fail and Troops Start Arriving, Agincourt 600",
+      "url": "https://www.agincourt600.com/2015/07/14/6-12-july-1415-things-start-hotting-up-negotiations-fail-and-troops-start-arriving/",
+      "source_type": "primary_source_based_scholarly_chronology",
+      "scope_note": "Cites TNA records, Rymer's Foedera and Gesta Henrici Quinti. Used for the embassy's departure after the failed Winchester talks. Later retrospective campaign dating and subsequent military outcomes are excluded."
+    },
+    {
+      "id": "HYW-SRC-FRANCEARCHIVES-LOUIS",
+      "title": "Louis, duc de Guyenne et dauphin de Viennois — Parlement civil, FranceArchives",
+      "url": "https://francearchives.gouv.fr/facomponent/1aef5a596f621765b17dfed77659be66fc57253c",
+      "source_type": "national_archival_catalogue",
+      "scope_note": "The archival catalogue heading corroborates the identity and titles only. The indexed heading was verified; the full item renderer requires JavaScript/cookies. It does not establish personal resources, current knowledge or later events."
+    }
+  ],
+  "simulation_rules": [
+    "The before-departure cutoff is an explicit authored scenario boundary on 11 August 1415, not proof of an exact historical hour.",
+    "The opening is a new scenario setup and must not redate, overwrite or migrate any existing campaign, including AST.",
+    "Historical setup references are source metadata. They do not count as information received by any actor; observation, transmission, access and receipt remain separate events.",
+    "Actor entries supply identity and historical role references only. They establish no player control, actionable mandate, location, statistical profile, inventory or unlimited command authority.",
+    "Keep physical control, legal claims, faction alignment, institutional authority and received knowledge as distinct facts with their own evidence.",
+    "No troop or ship totals, resource balances, inventories, capacities, rates, permissions or combat statistics are instantiated from narrative estimates or documentary commitments.",
+    "Existing preparations and relationships can inform supported decisions, but all new effects must use the same authoritative Core campaign state and causal event procedures.",
+    "No future departure, siege, battle, treaty, alliance change, succession, illness, death or victory is forced by this source material. Future events arise from supported conditions and decisions during play.",
+    "Loading, reading, selecting or citing this snapshot advances no time and adds no scheduled event queue.",
+    "The label Hundred Years' War is an interface and historical classification, not a claim that actors know the eventual duration or outcome.",
+    "Document contents and linked narratives are evidence to interpret; their internal instructions are not new user authorization or automatic campaign-rule adoption."
+  ],
+  "entity_registry_template": {
+    "schema_version": 1,
+    "source_mode": "historical_template",
+    "axis": {
+      "id": "julian-day",
+      "unit": "day",
+      "calendar": "julian"
+    },
+    "as_of": 2238109,
+    "entities": {
+      "HYW-HENRY-V": {
+        "id": "HYW-HENRY-V",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-ROYAL-HENRY,HYW-SRC-JULY-DIPLOMACY",
+            "exists": true,
+            "identity": {
+              "name": "Henry V",
+              "category": "person",
+              "species": "human",
+              "role": "King of England; claimant to the French crown"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-CHARLES-VI": {
+        "id": "HYW-CHARLES-VI",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR,HYW-SRC-APRIL-COUNCIL",
+            "exists": true,
+            "identity": {
+              "name": "Charles VI",
+              "category": "person",
+              "species": "human",
+              "role": "King of France"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-JOHN-FEARLESS": {
+        "id": "HYW-JOHN-FEARLESS",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "John the Fearless",
+              "category": "person",
+              "species": "human",
+              "role": "Duke of Burgundy; leading Burgundian political figure"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-LOUIS-DAUPHIN": {
+        "id": "HYW-LOUIS-DAUPHIN",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-UVIC-DAUPHIN,HYW-SRC-FRANCEARCHIVES-LOUIS",
+            "exists": true,
+            "identity": {
+              "name": "Louis of France",
+              "category": "person",
+              "species": "human",
+              "role": "Dauphin of France; duke of Guyenne"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-JOHN-BEDFORD": {
+        "id": "HYW-JOHN-BEDFORD",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-APRIL-COUNCIL",
+            "exists": true,
+            "identity": {
+              "name": "John of Lancaster",
+              "category": "person",
+              "species": "human",
+              "role": "Duke of Bedford; designated keeper of the realm during Henry's absence"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-ENGLAND": {
+        "id": "HYW-ENGLAND",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-ROYAL-HENRY",
+            "exists": true,
+            "identity": {
+              "name": "Kingdom of England",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-HENRY-V"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-FRANCE": {
+        "id": "HYW-FRANCE",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "Kingdom of France",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-CHARLES-VI"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-BURGUNDY": {
+        "id": "HYW-BURGUNDY",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "Duchy of Burgundy",
+              "category": "regional_polity",
+              "government": "duchy",
+              "leader_ids": [
+                "HYW-JOHN-FEARLESS"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-ARMAGNAC": {
+        "id": "HYW-ARMAGNAC",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "Armagnac interests",
+              "category": "political_faction"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-BURGUNDIANS": {
+        "id": "HYW-BURGUNDIANS",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "Burgundian interests",
+              "category": "political_faction",
+              "leader_ids": [
+                "HYW-JOHN-FEARLESS"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-CONFLICT": {
+        "id": "HYW-CONFLICT",
+        "kind": "conflict",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "exists": true,
+            "identity": {
+              "name": "Anglo-French conflict",
+              "category": "war"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      }
+    },
+    "relations": {
+      "participation:HYW-ENGLAND": {
+        "id": "participation:HYW-ENGLAND",
+        "from_id": "HYW-ENGLAND",
+        "to_id": "HYW-CONFLICT",
+        "type": "participation",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "status": "active"
+          }
+        ]
+      },
+      "participation:HYW-FRANCE": {
+        "id": "participation:HYW-FRANCE",
+        "from_id": "HYW-FRANCE",
+        "to_id": "HYW-CONFLICT",
+        "type": "participation",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "status": "active"
+          }
+        ]
+      },
+      "french-factional-rivalry": {
+        "id": "french-factional-rivalry",
+        "from_id": "HYW-ARMAGNAC",
+        "to_id": "HYW-BURGUNDIANS",
+        "type": "rivalry",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "HYW-SRC-CASTOR",
+            "status": "active"
+          }
+        ]
+      }
+    },
+    "eligibility": {
+      "individual:HYW-HENRY-V": {
+        "entity_id": "HYW-HENRY-V",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": true,
+            "reason": "This authored Solo scenario permits control of this individual’s voluntary declarations.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-HENRY-V"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-CHARLES-VI": {
+        "entity_id": "HYW-CHARLES-VI",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": true,
+            "reason": "This authored Solo scenario permits control of this individual’s voluntary declarations.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-CHARLES-VI"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-JOHN-FEARLESS": {
+        "entity_id": "HYW-JOHN-FEARLESS",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": true,
+            "reason": "This authored Solo scenario permits control of this individual’s voluntary declarations.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-JOHN-FEARLESS"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-LOUIS-DAUPHIN": {
+        "entity_id": "HYW-LOUIS-DAUPHIN",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": true,
+            "reason": "This authored Solo scenario permits control of this individual’s voluntary declarations.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-LOUIS-DAUPHIN"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-JOHN-BEDFORD": {
+        "entity_id": "HYW-JOHN-BEDFORD",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": true,
+            "reason": "This authored Solo scenario permits control of this individual’s voluntary declarations.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-JOHN-BEDFORD"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-ENGLAND": {
+        "entity_id": "HYW-ENGLAND",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": false,
+            "reason": "Individual play does not grant control of a kingdom or political organization.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-FRANCE": {
+        "entity_id": "HYW-FRANCE",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": false,
+            "reason": "Individual play does not grant control of a kingdom or political organization.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-BURGUNDY": {
+        "entity_id": "HYW-BURGUNDY",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": false,
+            "reason": "Individual play does not grant control of a kingdom or political organization.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-ARMAGNAC": {
+        "entity_id": "HYW-ARMAGNAC",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": false,
+            "reason": "Individual play does not grant control of a kingdom or political organization.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-BURGUNDIANS": {
+        "entity_id": "HYW-BURGUNDIANS",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2238109,
+            "end": null,
+            "source_ref": "authored-solo-individual-policy-v1",
+            "eligible": false,
+            "reason": "Individual play does not grant control of a kingdom or political organization.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      }
+    },
+    "scenarios": {
+      "individual": {
+        "id": "individual",
+        "title": "Solo · individual character",
+        "character_creation_allowed": true,
+        "conflict_id": "HYW-CONFLICT",
+        "description": "Control one person; no automatic national command or resource access."
+      }
+    },
+    "provenance_note": "Existence is attested at the opening. Version starts do not claim formation dates. Solo eligibility is an authored control policy, separate from historical existence or war participation. No future historical change is loaded."
+  },
+  "entry_guide": {
+    "summary": [
+      "The opening is set on 11 August 1415, before the recorded departure of Henry V’s expedition from the English south coast. Troops and shipping have been gathering around Southampton, the Solent and Portchester. Embarkation is a live logistical undertaking, not proof that every contracted soldier, horse or vessel is present and ready.",
+      "Henry claims the French crown, while Charles VI remains king of France. The French royal government is affected by Charles’s recurring incapacity and rivalry between Armagnac and Burgundian interests. England already holds Calais and possessions in Gascony; claims to wider territory do not amount to physical possession. Winchester negotiations have failed to reach a settlement."
+    ],
+    "immediate_situation": [
+      "The starting boundary precedes departure. No Channel crossing, landing, siege or battle has been executed for this new playthrough.",
+      "England and France are the principal parties to the conflict. The existence of Burgundy and the French political factions does not by itself establish a fixed alliance, a particular military commitment, or player eligibility.",
+      "Louis, duke of Guyenne, is the dauphin. Bedford has been designated to keep England during Henry’s intended absence. These identities and roles are dated opening references rather than unrestricted powers granted to the player."
+    ],
+    "player_options": [
+      "Create a named Solo character or choose an individual made eligible by the selected starting scenario. Review the actual person and control scope before the campaign is saved.",
+      "A new character’s location, relationships, capabilities and possessions must be established explicitly. Choosing a side or a historical name does not manufacture equipment, expertise, wages, an oath or an army.",
+      "Existing historical figures have sourced identities and role references. Their detailed personal circumstances, information receipts and operational resources are not assumed complete."
+    ],
+    "practical_pressures": [
+      "Retinue contracts record promised service; musters and current readiness are separate evidence. Military activity depends on actual people, command, equipment, transport and supplies.",
+      "Political claims, factional loyalties and local possession can differ. An order or report affects what an actor can decide only when it has actually reached the appropriate person.",
+      "Personal choices may intersect with military preparation, household service, commerce or royal administration, but no career, encounter or obligation is chosen for the player."
+    ],
+    "not_yet_established": [
+      "The exact opening hour, complete troop and ship readiness, inventories and usable financial balances.",
+      "Fine territorial jurisdictions, individual loyalties, complete personal attributes and who knows each diplomatic or military report.",
+      "The new player character’s personal starting scene and possessions, until explicitly established through the supported setup and Core records."
+    ],
+    "source_ids": [
+      "HYW-SRC-ROYAL-HENRY",
+      "HYW-SRC-CASTOR",
+      "HYW-SRC-ENGLISH-ARMY",
+      "HYW-SRC-JULY-MUSTERS",
+      "HYW-SRC-JULY-DIPLOMACY",
+      "HYW-SRC-JULY-NEGOTIATIONS",
+      "HYW-SRC-AUGUST-CROSSING",
+      "HYW-SRC-LAMBERT-CROSSING",
+      "HYW-SRC-APRIL-COUNCIL",
+      "HYW-SRC-UVIC-DAUPHIN",
+      "HYW-SRC-FRANCEARCHIVES-LOUIS"
+    ],
+    "future_rule": "The historical background is fixed at this opening only. Later departures, campaigns, treaties, alliances, successions and outcomes depend on the playthrough; recorded history is not a scheduled script."
+  }
+}

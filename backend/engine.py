@@ -72,6 +72,7 @@ def build_initial_state(scenario: dict, character: dict) -> dict:
         "world_facts": copy.deepcopy(scenario.get("world_facts", [])),
         "attributes": copy.deepcopy(character.get("attributes", {})),
         "background": character.get("background_label", ""),
+        "testimony": copy.deepcopy(character.get("testimony") or {}),
         "opening": opening_block,
         "journal": [
             {
@@ -91,7 +92,7 @@ def build_initial_state(scenario: dict, character: dict) -> dict:
     return state
 
 
-def advance_time(campaign_time: dict, minutes: int) -> dict:
+def advance_time(campaign_time: dict, minutes: int, steps: int = 1) -> dict:
     """Deterministic, in-world clock advance. Save/navigation never calls this."""
     ct = copy.deepcopy(campaign_time)
     order = ["dawn", "morning", "midday", "afternoon", "evening", "night"]
@@ -100,13 +101,11 @@ def advance_time(campaign_time: dict, minutes: int) -> dict:
         idx = order.index(cur)
     except ValueError:
         idx = 0
-    # each action nudges the time band forward; wrap advances the date
-    steps = 1
+    # each step nudges the time band forward; every wrap advances the date
     new_idx = idx + steps
-    if new_idx >= len(order):
-        new_idx = new_idx % len(order)
+    for _ in range(new_idx // len(order)):
         ct["date"] = _increment_date(ct.get("date"))
-    ct["time"] = order[new_idx]
+    ct["time"] = order[new_idx % len(order)]
     return ct
 
 
@@ -304,4 +303,40 @@ def apply_npc_actions(state: dict, actions: list, scope: str = "local") -> dict:
             "campaign_date": state["campaign_time"]["date"], "campaign_time": state["campaign_time"]["time"],
             "wall_clock": _now(),
         })
+    return state
+
+
+TIME_SPANS = {
+    "hours": {"steps": 1, "label": "A few hours pass", "stamina": 10, "morale": 0},
+    "day": {"steps": 6, "label": "A day passes", "stamina": 40, "morale": 3},
+    "week": {"steps": 42, "label": "A week passes", "stamina": 100, "morale": 5},
+}
+
+
+def pass_time(state: dict, span: str) -> dict:
+    """Let time pass without a player action: bounded recovery, clock advance, journaled."""
+    if state.get("pending_action"):
+        raise ValueError("An unresolved declaration is still pending.")
+    cfg = TIME_SPANS[span]
+    state = copy.deepcopy(state)
+    player = state["actors"][state["player_actor_id"]]
+    cond = player["current"]["condition"]
+    if cond["health"] <= 0:
+        raise ValueError("Your character is incapacitated.")
+    cond["stamina"] = min(100, cond["stamina"] + cfg["stamina"])
+    cond["morale"] = min(100, cond["morale"] + cfg["morale"])
+    before = copy.deepcopy(state["campaign_time"])
+    state["clock"] += 1
+    state["campaign_time"] = advance_time(state["campaign_time"], 0, cfg["steps"])
+    player["current"]["activity"] = "Waiting while time passes."
+    loc = player["current"].get("location", "")
+    state["journal"].append({
+        "id": f"evt_{state['clock']:05d}", "op": "pass_time", "kind": "time_passes", "intent": "time",
+        "span": span, "title": cfg["label"],
+        "text": f"{cfg['label']} at {loc}. From {before['date']} {before['time']} to "
+                f"{state['campaign_time']['date']} {state['campaign_time']['time']}, the world goes on without you.",
+        "actor_ids": [state["player_actor_id"]], "at": state["clock"], "status": "resolved",
+        "campaign_date": state["campaign_time"]["date"], "campaign_time": state["campaign_time"]["time"],
+        "wall_clock": _now(), "condition_after": copy.deepcopy(cond),
+    })
     return state

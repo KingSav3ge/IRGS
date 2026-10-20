@@ -292,3 +292,28 @@ PAYMENT_PROVIDERS = [
     {"id": "paystack", "label": "Paystack", "currency": "NGN", "symbol": "₦", "rate": 1600},
     {"id": "razorpay", "label": "Razorpay", "currency": "INR", "symbol": "₹", "rate": 83},
 ]
+
+
+# ---- Codex 3.3.2 import: researched HYW 1415 opening, entry catalogue and historical reference ----
+import json as _json
+from pathlib import Path as _Path
+
+_HYW_DIR = _Path(__file__).parent / "data" / "hyw"
+HYW_OPENING = _json.loads((_HYW_DIR / "hyw_1415_opening.json").read_text())
+HYW_CATALOGUE = _json.loads((_HYW_DIR / "hyw_entry_catalogue.json").read_text())
+HYW_BASELINE = _json.loads((_HYW_DIR / "hyw_historical_baseline.json").read_text())
+
+
+def _apply_hyw_332():
+    s = next(x for x in SCENARIOS if x["id"] == "hyw-1415")
+    s["briefing"] = HYW_OPENING["briefing"]
+    s["actors"] = [{"id": a["id"], "name": a["name"], "role": a["role"]} for a in HYW_OPENING["actors"]]
+    s["world_facts"] = [{"id": f["id"], "domain": dom, "statement": f["statement"], "source_ids": f.get("source_ids", [])}
+                        for dom, facts in HYW_OPENING["domains"].items() for f in facts]
+    s["unknowns"] = HYW_OPENING["unknowns"]
+    s["sources"] = [{k: src.get(k) for k in ("id", "title", "url", "source_type")} for src in HYW_OPENING["sources"]]
+    s["simulation_rules"] = HYW_OPENING["simulation_rules"]
+    s["entry_catalogue"] = "hyw"
+
+
+_apply_hyw_332()

@@ -18,7 +18,7 @@ import auth
 import engine
 import ai_services as ai
 from storybook import build_storybook
-from seed_data import SCENARIOS, STORE_ITEMS, PAYMENT_PROVIDERS
+from seed_data import SCENARIOS, STORE_ITEMS, PAYMENT_PROVIDERS, HYW_CATALOGUE, HYW_BASELINE
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("irgs.server")
@@ -68,6 +68,7 @@ class CharacterIn(BaseModel):
     attributes: Dict[str, int]
     inventory: List[dict] = []
     description: str = ""
+    testimony: Dict[str, str] = {}
 
 
 class PortraitGenIn(BaseModel):
@@ -101,6 +102,10 @@ class SaveIn(BaseModel):
 
 class BranchIn(BaseModel):
     title: Optional[str] = None
+
+
+class PassTimeIn(BaseModel):
+    span: str = "hours"
 
 
 class ShareIn(BaseModel):
@@ -152,7 +157,7 @@ async def _has_premium_voice(user: dict) -> bool:
 def _scenario_card(s: dict, locked: bool) -> dict:
     keys = ["id", "campaign_id", "title", "campaign_title", "genre", "era", "difficulty", "premium",
             "price", "tags", "cover_image", "summary", "briefing", "opening", "character_backgrounds",
-            "default_inventory", "actors", "theme"]
+            "default_inventory", "actors", "theme", "sources", "unknowns", "entry_catalogue"]
     card = {k: s.get(k) for k in keys}
     card["locked"] = locked
     card["store_item_id"] = next((i["id"] for i in STORE_ITEMS if i.get("scenario_id") == s["id"]), None)
@@ -231,6 +236,12 @@ def _scene_context(state: dict, scenario: dict) -> str:
         "World facts: " + " ".join(f["statement"] for f in v["world_facts"]),
         f"Opening briefing: {scenario['briefing']}",
     ]
+    testimony = state.get("testimony") or {}
+    if testimony:
+        lines.append("Player testimony about their own past (the player's account; not verified world fact, grants no "
+                     "skills, ranks or resources): " + "; ".join(f"{k}: {v}" for k, v in testimony.items()))
+    if scenario.get("unknowns"):
+        lines.append("Deliberately unknown at the opening (do not invent as settled fact): " + " ".join(scenario["unknowns"][:6]))
     if recent:
         lines.append("Recent events:\n" + "\n".join(f"- Player: {e['declaration']}\n  Outcome: {e['narration'][:600]}" for e in recent))
     return "\n".join(lines)
@@ -365,6 +376,33 @@ async def get_campaign(scenario_id: str, user: dict = Depends(auth.get_current_u
     return _scenario_card(s, not await _owns_scenario(user, s))
 
 
+@api.get("/campaigns/{scenario_id}/entries")
+async def campaign_entries(scenario_id: str, user: dict = Depends(auth.get_current_user)):
+    s = SCENARIO_MAP.get(scenario_id)
+    if not s or s.get("entry_catalogue") != "hyw":
+        raise HTTPException(status_code=404, detail="This campaign has a single opening")
+    c = HYW_CATALOGUE
+    entries = [{**e, "playable": e["year"] == 1415, "scenario_id": "hyw-1415" if e["year"] == 1415 else None}
+               for e in c["entries"]]
+    return {"title": c["title"], "period": c["period"], "status": c["status"], "count_note": c.get("count_note"),
+            "featured_years": c.get("featured_years", []), "periods": c["periods"], "entries": entries}
+
+
+@api.get("/playthroughs/{pid}/history-reference")
+async def history_reference(pid: str, user: dict = Depends(auth.get_current_user)):
+    """Read-only comparison with the recorded history; never executes or schedules anything."""
+    doc = await _get_playthrough(pid, user)
+    if doc["scenario_id"] != "hyw-1415":
+        return {"available": False}
+    b = HYW_BASELINE
+    return {"available": True, "note": b["note"], "calendar_note": b.get("calendar_note"), "status": b["status"],
+            "current_date": doc["state"]["campaign_time"]["date"],
+            "events": [{"id": e["id"], "title": e["title"], "date": e["date"].get("start"), "description": e["description"],
+                        "classification": e["classification"],
+                        "recorded_outcome": (e.get("historical_outcome_reference") or {}).get("statement")} for e in b["events"]],
+            "sources": [{k: x.get(k) for k in ("id", "title", "url")} for x in b["sources"]]}
+
+
 @api.get("/ai/providers")
 async def providers():
     return {"providers": ai.PROVIDERS, "default_provider": ai.DEFAULT_PROVIDER, "default_model": ai.DEFAULT_MODEL}
@@ -391,6 +429,7 @@ async def create_character(body: CharacterIn, user: dict = Depends(auth.get_curr
         "name": body.name.strip()[:60], "background_id": bg["id"], "background_label": bg["label"],
         "attributes": attrs, "inventory": body.inventory or copy.deepcopy(s["default_inventory"]),
         "description": body.description[:600], "portrait_path": None, "created_at": now_iso(),
+        "testimony": {k: str(v).strip()[:800] for k, v in body.testimony.items() if k in ("origin", "family", "career") and str(v).strip()},
     }
     await db.characters.insert_one(doc)
     doc.pop("_id", None)
@@ -587,13 +626,14 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     return {"decision": decision, "event_id": event["id"], "playthrough": _playthrough_out(doc)}
 
 
-async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict):
+async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict, elapsed: str = ""):
     """Living Characters: NPCs react between turns; the engine bounds and commits their actions."""
     view = engine.player_view(state)
     try:
-        latest = f"Player declared: {event.get('declaration')}\nOutcome: {event.get('narration')}"
+        latest = (event.get("text") if elapsed else
+                  f"Player declared: {event.get('declaration')}\nOutcome: {event.get('narration')}")
         plan = await ai.npc_turn(_scene_context(state, scenario), latest, view["known_actors"],
-                                 [loc.get("name", k) for k, loc in state.get("locations", {}).items()])
+                                 [loc.get("name", k) for k, loc in state.get("locations", {}).items()], elapsed)
     except Exception as e:
         logger.error(f"npc turn crashed: {e}")
         plan = {"scope": "local", "actions": []}
@@ -612,6 +652,34 @@ async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict):
         await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": new_state}})
         doc["state"] = new_state
         await _autosave(doc)
+
+
+@api.post("/playthroughs/{pid}/pass-time")
+async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_current_user)):
+    if body.span not in engine.TIME_SPANS:
+        raise HTTPException(status_code=400, detail="span must be hours, day or week")
+    await _get_playthrough(pid, user)
+    if pid in _acting:
+        raise HTTPException(status_code=409, detail="Your previous action is still being resolved")
+    _acting.add(pid)
+    try:
+        async with _lock(pid):
+            doc = await _get_playthrough(pid, user)
+            if doc.get("status") == "archived":
+                raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
+            try:
+                new_state = engine.pass_time(doc["state"], body.span)
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=str(e))
+            new_state["npc_pending"], new_state["npc_pending_at"] = True, now_iso()
+            await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": new_state, "updated_at": now_iso()}})
+            doc["state"] = new_state
+            await _autosave(doc)
+    finally:
+        _acting.discard(pid)
+    event = new_state["journal"][-1]
+    _spawn(_npc_turn(pid, SCENARIO_MAP[doc["scenario_id"]], new_state, event, engine.TIME_SPANS[body.span]["label"]))
+    return {"event_id": event["id"], "playthrough": _playthrough_out(doc)}
 
 
 @api.post("/playthroughs/{pid}/events/{event_id}/paint")
@@ -748,6 +816,40 @@ async def revoke_share(share_id: str, user: dict = Depends(auth.get_current_user
     if not res.matched_count:
         raise HTTPException(status_code=404, detail="Share link not found")
     return {"ok": True}
+
+
+@api.get("/s/{share_id}")
+async def share_card(share_id: str, request: Request):
+    """Link-preview page: Open Graph/Twitter meta for chat apps, then forwards people to the storybook."""
+    from html import escape
+    share = await db.shares.find_one({"share_id": share_id, "active": True}, {"_id": 0})
+    host = request.headers.get("x-forwarded-host") or request.headers.get("host", "")
+    proto = request.headers.get("x-forwarded-proto", "https")
+    origin = f"{proto}://{host}"
+    target = f"{origin}/story/{share_id}"
+    if share:
+        book = share.get("snapshot")
+        if not book:
+            doc = await db.playthroughs.find_one({"playthrough_id": share["playthrough_id"]}, {"_id": 0})
+            book = build_storybook(doc, SCENARIO_MAP[doc["scenario_id"]], _file_url) if doc else None
+    else:
+        book = None
+    if book:
+        title = f"{book['scenario_title']} · the story of {book['character']['name']}"
+        desc = (f"{book['campaign_title']} ({book['era']}). An illustrated IRGS storybook, "
+                f"{book['turns']} turns and counting.")
+        scene = next((e["image_url"] for c in reversed(book["chapters"]) for e in reversed(c["entries"]) if e.get("image_url")), None)
+        image = f"{origin}{scene}" if scene else book["cover_image"]
+    else:
+        title, desc, image = "IRGS storybook", "This storybook is no longer shared.", ""
+    t, d, i, u = (escape(x, quote=True) for x in (title, desc, image, target))
+    html = f"""<!doctype html><html><head><meta charset="utf-8"><title>{t}</title>
+<meta name="description" content="{d}"><meta property="og:type" content="article"><meta property="og:site_name" content="IRGS">
+<meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:url" content="{u}">
+<meta property="og:image" content="{i}"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{i}">
+<meta http-equiv="refresh" content="0;url={u}"></head><body><a href="{u}">{t}</a></body></html>"""
+    return RawResponse(content=html, media_type="text/html")
 
 
 @api.get("/public/stories/{share_id}")

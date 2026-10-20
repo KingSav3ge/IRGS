@@ -41,6 +41,15 @@ export const NpcEntry = ({ entry }) => (
 
 export const NarrativeEntry = ({ entry, index, narrator, voiceOpts, onPaint }) => {
   if (entry.kind === "npc_action") return <NpcEntry entry={entry} />;
+  if (entry.kind === "time_passes") {
+    return (
+      <div className="flex items-center gap-4 py-2" data-testid={`gameplay-time-passes-${entry.id}`}>
+        <span className="h-px flex-1 bg-line" />
+        <span className="tactical-label text-center">{entry.title} · {fmtDate(entry.campaign_date, voiceOpts.calendar)} {entry.campaign_time}</span>
+        <span className="h-px flex-1 bg-line" />
+      </div>
+    );
+  }
   const text = entry.text;
   const playing = narrator.playingId === entry.id;
   return (

@@ -1,0 +1,12 @@
+test_closed_listener_is_stopped (test_launcher.LauncherTests.test_closed_listener_is_stopped) ... ok
+test_complete_irgs_health_is_ready_and_uses_only_read_routes (test_launcher.LauncherTests.test_complete_irgs_health_is_ready_and_uses_only_read_routes) ... ok
+test_irgs_looking_catalogue_without_session_health_is_occupied (test_launcher.LauncherTests.test_irgs_looking_catalogue_without_session_health_is_occupied) ... ok
+test_occupied_main_entrypoint_fails_readably_without_launching (test_launcher.LauncherTests.test_occupied_main_entrypoint_fails_readably_without_launching) ... ok
+test_powershell_entrypoints_parse_without_execution (test_launcher.LauncherTests.test_powershell_entrypoints_parse_without_execution) ... ok
+test_repeated_ready_launches_reuse_without_starting_process_or_browser (test_launcher.LauncherTests.test_repeated_ready_launches_reuse_without_starting_process_or_browser) ... ok
+test_unrelated_http_listener_is_occupied_not_reused (test_launcher.LauncherTests.test_unrelated_http_listener_is_occupied_not_reused) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 7.282s
+
+OK

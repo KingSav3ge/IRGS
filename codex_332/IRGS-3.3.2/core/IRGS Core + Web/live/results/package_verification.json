@@ -1,0 +1,20 @@
+{
+  "status": "VERIFIED",
+  "release_id": "IRGS-CORE-3.3-SUITE",
+  "archive": "IRGS_Core_3_3_Live.zip",
+  "sha256": "de90007303bdb5c4b74873d23e480afdede825c866e3a4a9dbab5805a3510dbc",
+  "bytes": 26498165,
+  "payload_files": 256,
+  "archive_members": 257,
+  "payload_bytes": 64161411,
+  "internal_manifest": "PACKAGE_MANIFEST.json",
+  "external_checksum": "IRGS_Core_3_3_Live.zip.sha256",
+  "verification": {
+    "testzip": "PASS",
+    "payload_hashes": "PASS",
+    "exact_member_inventory": "PASS"
+  },
+  "campaign_saves_included": false,
+  "previous_package_evidence_included": false,
+  "self_reference": false
+}

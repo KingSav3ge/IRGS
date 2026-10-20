@@ -130,7 +130,7 @@ async def cast_segments(text: str, speakers: list, player: str = "") -> list:
         return [{"speaker": "narrator", "text": text}]
 
 
-async def npc_turn(scene_context: str, latest: str, npcs: list, locations: list) -> dict:
+async def npc_turn(scene_context: str, latest: str, npcs: list, locations: list, elapsed: str = "") -> dict:
     """Living Characters: propose bounded autonomous NPC reactions. The engine validates them."""
     from emergentintegrations.llm.chat import LlmChat, UserMessage
 
@@ -149,7 +149,9 @@ async def npc_turn(scene_context: str, latest: str, npcs: list, locations: list)
     roster = "\n".join(f"- {n['id']}: {n['name']} ({n['role']}), at {n.get('location') or 'unknown'}, "
                        f"disposition toward player {n.get('disposition', 0)}" for n in npcs)
     prompt = (f"SCENE:\n{scene_context}\n\nLATEST EVENT:\n{latest[:2500]}\n\nCHARACTERS:\n{roster}\n\n"
-              f"KNOWN LOCATIONS: {', '.join(locations)}")
+              f"KNOWN LOCATIONS: {', '.join(locations)}"
+              + (f"\n\nTIME HAS PASSED: {elapsed}. Over this span more characters may act (use scope 'broad' when "
+                 "news would plausibly spread to several of them), and rumours travel." if elapsed else ""))
     try:
         reply = await chat.send_message(UserMessage(text=prompt))
         raw = (reply if isinstance(reply, str) else str(reply)).strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()

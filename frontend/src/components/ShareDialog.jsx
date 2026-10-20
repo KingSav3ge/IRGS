@@ -4,9 +4,9 @@ import { toast } from "sonner";
 import { Copy, Link2, Share2, X } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { api, errMsg } from "@/lib/api";
+import { api, errMsg, BACKEND_URL } from "@/lib/api";
 
-const shareUrl = (id) => `${window.location.origin}/story/${id}`;
+const shareUrl = (id) => `${BACKEND_URL}/api/s/${id}`;
 
 const copy = async (id) => {
   try {

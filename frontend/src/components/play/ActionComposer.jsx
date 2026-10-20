@@ -1,10 +1,28 @@
 import { useState } from "react";
-import { Loader2, Mic, Send, Square } from "lucide-react";
+import { Hourglass, Loader2, Mic, Send, Square } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useRecorder } from "@/hooks/useRecorder";
 
-export const ActionComposer = ({ onSubmit, busy, disabled }) => {
+const SPANS = [["hours", "A few hours"], ["day", "A day"], ["week", "A week"]];
+
+const PassTime = ({ onPass, disabled }) => (
+  <DropdownMenu>
+    <DropdownMenuTrigger asChild>
+      <Button type="button" variant="outline" disabled={disabled} className="border-line" data-testid="gameplay-pass-time-button">
+        <Hourglass size={15} /><span className="ml-2 text-xs">Let time pass</span>
+      </Button>
+    </DropdownMenuTrigger>
+    <DropdownMenuContent className="bg-tome/95 backdrop-blur-md border-line">
+      {SPANS.map(([k, label]) => (
+        <DropdownMenuItem key={k} onClick={() => onPass(k)} data-testid={`gameplay-pass-time-${k}`}>{label}</DropdownMenuItem>
+      ))}
+    </DropdownMenuContent>
+  </DropdownMenu>
+);
+
+export const ActionComposer = ({ onSubmit, onPass, busy, disabled }) => {
   const [text, setText] = useState("");
   const rec = useRecorder((t) => setText((prev) => (prev ? `${prev} ${t}` : t)));
 
@@ -26,7 +44,8 @@ export const ActionComposer = ({ onSubmit, busy, disabled }) => {
           {rec.state === "transcribing" ? <Loader2 size={15} className="animate-spin" /> : rec.state === "recording" ? <Square size={15} /> : <Mic size={15} />}
           <span className="ml-2 text-xs">{rec.state === "recording" ? "Stop" : rec.state === "transcribing" ? "Transcribing" : "Speak"}</span>
         </Button>
-        <span className="text-xs text-dust hidden sm:block">The engine validates and commits; the narrator only describes.</span>
+        <PassTime onPass={onPass} disabled={disabled || busy} />
+        <span className="text-xs text-dust hidden xl:block">The engine validates and commits; the narrator only describes.</span>
         <Button onClick={submit} disabled={busy || disabled || !text.trim()} className="ml-auto font-heading tracking-widest active:scale-[0.98] transition-transform" data-testid="gameplay-submit-action-button">
           {busy ? <><Loader2 size={15} className="animate-spin mr-2" /> Resolving</> : <><Send size={14} className="mr-2" /> Commit</>}
         </Button>

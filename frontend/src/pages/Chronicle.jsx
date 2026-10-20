@@ -7,6 +7,7 @@ import { usePaint, usePlaythrough } from "@/pages/Play";
 import { SceneImage } from "@/components/play/NarrativeEntry";
 import { fmtDate } from "@/lib/api";
 import { ShareDialog } from "@/components/ShareDialog";
+import { HistoryReference } from "@/components/HistoryReference";
 
 const TAGS = ["all", "big", "npc", "move", "speak", "observe", "interact", "combat", "rest", "other"];
 
@@ -68,6 +69,7 @@ export default function Chronicle() {
         ))}
         {entries.length === 0 && <li className="pl-8 text-dust text-sm" data-testid="chronicle-empty">No entries match.</li>}
       </ol>
+      <HistoryReference pid={pid} />
       <Link to={`/play/${pid}`} className="text-sm text-gold" data-testid="chronicle-back-to-play">← Return to play</Link>
     </div>
     </div>

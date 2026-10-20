@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "release_id": "IRGS-CORE-3.3-SUITE",
+  "content_edition": "SOLO-GAMEPLAY-2026-10-19",
+  "url": "http://127.0.0.1:8765/",
+  "archive_sha256": "de90007303bdb5c4b74873d23e480afdede825c866e3a4a9dbab5805a3510dbc",
+  "archive_bytes": 26498165,
+  "exact_archive_inventory_and_hashes": "PASS",
+  "final_extracted_startup_verification": "PASS",
+  "final_extraction_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\.release_verification\\solo-final-b884f23b370a44adb6e3addb267f7ebe",
+  "validation": {
+    "runtime_tests": 362,
+    "instrumented_tests": 361,
+    "separate_sustained_test": 1,
+    "http_tests": 81,
+    "observed_operations": 81,
+    "common_operations": 19,
+    "campaign_native_receivers": 3,
+    "strategy_days": 14,
+    "campaign_deletion": "Recoverable Trash with exact-byte restore, revision and collision checks",
+    "historical_opening_tests": 18,
+    "historical_catalogue_entries": 37,
+    "developed_historical_openings": 1,
+    "solo_interface_checks": 20,
+    "player_mode": "Server-filtered Solo projection",
+    "character_before_first_save": true,
+    "temporal_entity_operations": 5,
+    "easy_launch": "On-demand background host and browser; running IRGS reused",
+    "certification_scope": "Current code, executed cases and named profile backends; not all native effects or every branch"
+  },
+  "on_demand_cold_start_and_reuse": "PASS",
+  "desktop_and_start_menu_shortcuts": [
+    {
+      "path": "C:\\Users\\ian_c\\Desktop\\IRGS.lnk",
+      "verified": true,
+      "target": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3\\Start-IRGS-3.3.cmd",
+      "working_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3"
+    },
+    {
+      "path": "C:\\Users\\ian_c\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\IRGS.lnk",
+      "verified": true,
+      "target": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3\\Start-IRGS-3.3.cmd",
+      "working_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3"
+    }
+  ],
+  "default_browser_open_request": "ACCEPTED_BY_WINDOWS_LAUNCHER",
+  "visual_browser_review": "UNAVAILABLE",
+  "all_seven_current_save_files_unchanged": true,
+  "campaign_saves_in_archive": false,
+  "verified_at": "2026-10-19T17:04:25.408451+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "passed": 30,
+  "failed": 0,
+  "syntax": "PASS",
+  "harness": "IRGS_Web/tests/test_gameplay_ui.js",
+  "synthetic_campaign_records_only": true,
+  "actual_registry_routes_verified": {
+    "player": 81,
+    "creator": 131
+  },
+  "real_saves_accessed": false,
+  "live_server_changed": false,
+  "visual_verification": {
+    "status": "PARTIAL",
+    "reason": "An isolated desktop shell screenshot was inspected; no complete visual playtest or mobile review is claimed. Browser session later reset; submission scope frozen by user."
+  },
+  "source_sha256": {
+    "IRGS_Web/static/app.js": "3bf75c729ea536cd08fa324a6f5ca49c82996904d0e03b5756c45227d8f77c03",
+    "IRGS_Web/static/index.html": "9464358e665487e7e4fdf5d0bc4ca2f35566bced9c4b7803d9a97c3d5fdc4082",
+    "IRGS_Web/static/style.css": "44ca1c4e75caa74a1bf990b7cc68cee167e26342c4e72a5ad911d4570a9f93eb",
+    "IRGS_Web/README.md": "6c24e959a6819d2bf5d150e02c14aabfadc1ee1e0fead5844ef5162d512a7fcb",
+    "IRGS_Web/tests/test_gameplay_ui.js": "4a9845927d5e828cff35fdf2b35c194eaf13e169cf6dfe42d65db2a993731918",
+    "IRGS_Web/features.py": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae"
+  },
+  "verified_at": "2026-10-20T13:10:36.445050+00:00",
+  "submission_scope": "User requested submission as is; current files passed syntax and the existing 30-check interaction harness."
+}

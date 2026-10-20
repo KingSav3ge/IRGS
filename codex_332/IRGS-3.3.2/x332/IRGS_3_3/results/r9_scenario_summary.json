@@ -1,0 +1,16 @@
+{
+  "days": 14,
+  "meals_produced": 42,
+  "meals_consumed": 42,
+  "save_resume_identical": true,
+  "checksum": "e567c0898929d8c418e85ddaeb234c85bc3a365364b60aad2725c653dc59ea90",
+  "cash_total": 1000,
+  "population": 1200,
+  "committed_operations": 77,
+  "unresolved": 0,
+  "durable_decisions": {
+    "one": "approved_executed",
+    "two": "denied"
+  },
+  "scope": "Synthetic profile only; no AST Day 3 advancement"
+}

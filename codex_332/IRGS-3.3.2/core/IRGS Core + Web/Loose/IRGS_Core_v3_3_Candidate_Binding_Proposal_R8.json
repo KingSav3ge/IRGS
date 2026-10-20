@@ -1,0 +1,23 @@
+{
+  "document_id": "IRGS-BIND-PROPOSAL-CORE-3.3-CMRR-R8",
+  "status": "PROPOSED_UNSELECTED",
+  "existing_core_ref": "IRGS-CORE-3.2",
+  "candidate_core_ref": "IRGS-CORE-3.3-CANDIDATE-R8",
+  "candidate_file": "IRGS_Core_Engine_v3_3_Unification_Candidate_R8.md",
+  "candidate_sha256": "c2724f75b7973d3918c4684f17738ef60efe8243168f621d1f8603adaeb73312",
+  "selected_source_sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c",
+  "preserved_owner_ids": [
+    "K-ACTOR",
+    "K-ASSET",
+    "K-INFO",
+    "K-NET",
+    "K-ORG",
+    "K-POP",
+    "K-STOCK",
+    "K-TIME",
+    "K-WORK"
+  ],
+  "campaign_migration": false,
+  "native_multi_engine_certification": "OPEN",
+  "runtime_mode": "explicit opt-in research adapter"
+}

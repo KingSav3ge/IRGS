@@ -1,0 +1,178 @@
+{
+  "binding_id": "AST-RECEIVING-0.5-CHAT-CONTINUITY",
+  "status": "Complete receiving specification for requested ChatGPT continuity behavior; inherited proposals retain status; no world-state migration",
+  "core_ref": "IRGS-CORE-3.2",
+  "core_maintenance": "R3",
+  "scl_ref": "IRGS-SCL-1.0",
+  "military_ref": "IRGS-MLS-SLIM-1.2",
+  "military_status": "Proposed, not campaign adopted",
+  "required_files": [
+    {
+      "path": "dependencies/Core/IRGS_Core_Engine_v3_2.md",
+      "sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Engine_Bindings_v3_2.json",
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Shared_Content_Library_v1_0.md",
+      "sha256": "4f0a90687958bd6d54b0ab21dc0cfac4e02e0ed40992a3b86eb1cf1725164376"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Shared_Content_Registry_v1_0.json",
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Selected_Contracts.md",
+      "sha256": "7da2484a24f94b574a3c47fc4fa80189c091d5f44958783168071e6c3b099967"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Reference_Map.csv",
+      "sha256": "81872f9f124c5d753feb1982cb22fecb4dc2696403b4b847385b9061df3487f8"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+      "sha256": "d5f0bd227c2557d7ced70aaf86eab316fe86843938c143a5f5d3e1a2010dc022"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_Consolidated_Qualification_R2.json",
+      "sha256": "a97ed8c2de014507159a7a3cc6e6d69861957a557d062bf8e488bdb31d82cfd8"
+    },
+    {
+      "path": "dependencies/Military/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "sha256": "c93ba6fb3974b81852f1ca2dc9e03cb5db2aa050e1b65782df404c7b4940dec2"
+    },
+    {
+      "path": "dependencies/Military/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "sha256": "05261ad3a7ee1fcbf87f108e9e30d12978eb6ad6cb34ebfcfc404bce42784199"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/IRGS_Military_Content_Library_v1_0_Candidate.md",
+      "sha256": "4b6560ac44abbfe1b01c913ab065183a91afbc4e898e090631341b42f33657d8"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/IRGS_Military_Content_Catalogue_v1_0.json",
+      "sha256": "7f0ef7b23d321ee3d2e1e62595b0feedc8929a8b618b2513334195042e039fa6"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_SCL_Reference_Crosswalk_v1_0.csv",
+      "sha256": "41311dbe447e05277c9888a18a31571299d37bdfd9f63e7190cc907e2fd85c88"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_Era_Category_Crosswalk_v1_0.csv",
+      "sha256": "6702a1a8127495fb7552c9d693ba7b35b77235ebc1592e2943a383ca61d3232d"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_Acceptance_Cases_v1_0.csv",
+      "sha256": "77ceb7afb9977a038b2522f5aa4a8965224612f71d247078bf4abd98a4c676f3"
+    },
+    {
+      "path": "IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+      "sha256": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935"
+    }
+  ],
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "domains": {
+    "GOV": 113,
+    "ECO": 114,
+    "INV": 115,
+    "MAR": 116,
+    "CIV": 117,
+    "MED": 118,
+    "WILD": 119,
+    "INTEL": 120,
+    "URBAN": 121,
+    "LIFE": 122,
+    "COMP": 123
+  },
+  "runtime_providers": [
+    5,
+    11,
+    90,
+    91
+  ],
+  "selected_campaign_resolution": "AST-R01 recovered d100 bands; no new adoption of competence/opposed/advantage defaults",
+  "selected_physiology_profile": null,
+  "selected_combat_effect_profile": null,
+  "selected_learning_rate": null,
+  "scl_examples": [
+    {
+      "ref": "SCL:PBC-EQP-PL-RES-KNW-002@0.2",
+      "name": "Maps and Civic/Property Records",
+      "semantic_type": "information_content",
+      "reference_gate": "source_backed_hold",
+      "selectors": [],
+      "activation": "unselected reference example"
+    },
+    {
+      "ref": "SCL:PBC-RES-PL-RES-FOOD-001@0.2",
+      "name": "Shelf-Stable Food",
+      "semantic_type": "stock",
+      "reference_gate": "source_backed_hold",
+      "selectors": [],
+      "activation": "unselected reference example"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-ARM-009@0.2",
+      "name": "Plate component",
+      "semantic_type": "armor",
+      "reference_gate": "source_backed_hold",
+      "selectors": [],
+      "activation": "unselected reference example"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "name": "Sword",
+      "semantic_type": "weapon",
+      "reference_gate": "selected_qualitative",
+      "selectors": [
+        "modes.cut",
+        "modes.thrust"
+      ],
+      "activation": "unselected reference example"
+    }
+  ],
+  "automatic_campaign_migration": false,
+  "promoted_holds": 0,
+  "current_campaign_state_included": false,
+  "historical_snapshot_only": true,
+  "visual_sources": {
+    "map": "references/Visual_Reference_Map.json",
+    "character_originals": "separate source archive; 29 verified member pins",
+    "shield": "references/Coopian_Shield_Current_Inaccurate_Draft.png"
+  },
+  "copy_policy": "No previous AST/Core/genre editions or source ZIP snapshots bundled. Current Military historical reconciliation sections remain part of its unchanged R3 source.",
+  "presentation_adapter": {
+    "id": "IRGS-CHAT-CONTINUITY@1.0",
+    "path": "IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+    "sha256": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935",
+    "core_parent_providers": [
+      13,
+      63,
+      81,
+      82,
+      86,
+      90,
+      91,
+      98,
+      99
+    ],
+    "activation": "prospective when this edition is selected; request authorizes recording behavior, not simulation changes",
+    "editorial_reply_interval": 5,
+    "reply_interval_is_game_time": false,
+    "visible_turn_notes": true,
+    "coverage_required_for_complete_recap": true,
+    "file_saves_require_confirmed_tool_result": true
+  }
+}

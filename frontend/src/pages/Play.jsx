@@ -9,6 +9,22 @@ import { StatusPanel } from "@/components/play/StatusPanel";
 import { ControlPanel } from "@/components/play/ControlPanel";
 import { ActionComposer } from "@/components/play/ActionComposer";
 import { useNarrator } from "@/hooks/useNarrator";
+import { Type } from "lucide-react";
+
+const SIZES = { s: "0.9", m: "1", l: "1.18" };
+const PAPER = { "--c-parchment": "#2B382F", "--c-ash": "#536451", "--c-dust": "#6E7A68", "--c-line": "#D6CDB8", backgroundColor: "#F3EEDF" };
+
+const ReadingSettings = ({ reading, setReading }) => (
+  <div className="flex items-center gap-1" data-testid="gameplay-reading-settings">
+    <Type size={13} className="text-dust mr-1" />
+    {Object.keys(SIZES).map((k) => (
+      <button key={k} onClick={() => setReading({ ...reading, size: k })} data-testid={`gameplay-reading-size-${k}`}
+        className={`px-1.5 text-xs font-mono uppercase ${reading.size === k ? "text-gold" : "text-dust hover:text-ash"}`}>{k}</button>
+    ))}
+    <button onClick={() => setReading({ ...reading, paper: !reading.paper })} data-testid="gameplay-reading-paper-toggle"
+      className={`ml-2 px-2 py-0.5 text-[10px] font-mono uppercase border ${reading.paper ? "border-gold text-gold" : "border-line text-dust hover:text-ash"}`}>paper</button>
+  </div>
+);
 
 export const usePlaythrough = (pid) => useQuery({
   queryKey: ["playthrough", pid],
@@ -32,6 +48,8 @@ export default function Play() {
   const qc = useQueryClient();
   const { data: pt, isError } = usePlaythrough(pid);
   const [busy, setBusy] = useState(false);
+  const [reading, setReadingState] = useState(() => JSON.parse(localStorage.getItem("irgs_reading") || '{"size":"m","paper":false}'));
+  const setReading = (r) => { setReadingState(r); localStorage.setItem("irgs_reading", JSON.stringify(r)); };
   const narrator = useNarrator();
   const paint = usePaint(pid);
   const feedRef = useRef(null);
@@ -56,6 +74,16 @@ export default function Play() {
     } finally { setBusy(false); }
   };
 
+  const passTime = async (span) => {
+    setBusy(true);
+    try {
+      const { data } = await api.post(`/playthroughs/${pid}/pass-time`, { span });
+      qc.setQueryData(["playthrough", pid], data.playthrough);
+    } catch (e) {
+      toast.error(errMsg(e, "Time could not pass"));
+    } finally { setBusy(false); }
+  };
+
   const onSettings = async (body) => {
     try {
       const { data } = await api.patch(`/playthroughs/${pid}/settings`, body);
@@ -74,15 +102,17 @@ export default function Play() {
         <div className="px-6 sm:px-10 pt-6 pb-3 border-b border-line flex items-center justify-between">
           <h1 className="font-heading text-lg text-parchment truncate" data-testid="gameplay-title">{pt.title}</h1>
           {pt.status === "archived" && <span className="tactical-label !text-crimson">Archived</span>}
+          <ReadingSettings reading={reading} setReading={setReading} />
         </div>
-        <div ref={feedRef} className="flex-1 overflow-y-auto scroll-thin px-6 sm:px-10 py-8 space-y-8" data-testid="gameplay-narrative-feed-container">
+        <div ref={feedRef} className="flex-1 overflow-y-auto scroll-thin px-6 sm:px-10 py-8 space-y-8" data-testid="gameplay-narrative-feed-container"
+          style={{ zoom: SIZES[reading.size], ...(reading.paper ? PAPER : {}) }}>
           {pt.chronicle.map((e, i) => (
             <NarrativeEntry key={e.id} entry={e} index={i} narrator={narrator} voiceOpts={voiceOpts} onPaint={paint} />
           ))}
           {busy && <p className="tactical-label !text-mana animate-pulse" data-testid="gameplay-resolving-indicator">The engine resolves · the narrator composes…</p>}
           {!busy && pt.view.npc_pending && <p className="tactical-label !text-ash animate-pulse" data-testid="gameplay-npc-pending-indicator">The world stirs · others weigh their next move…</p>}
         </div>
-        <ActionComposer onSubmit={act} busy={busy} disabled={pt.status === "archived"} />
+        <ActionComposer onSubmit={act} onPass={passTime} busy={busy} disabled={pt.status === "archived"} />
       </section>
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden order-3 lg:order-none"><ControlPanel pt={pt} onSettings={onSettings} /></div>
     </div>

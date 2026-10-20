@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "release_id": "IRGS-CORE-3.3-SUITE",
+  "content_edition": "DESIGN-PATCH-2026-10-20",
+  "release_manifest_sha256": "eaa7971774d6d10005393c9238554b7a1ce0523500c62a04254473d4d158ca3a",
+  "extracted_startup_hash_verification": "PASS",
+  "all_extracted_payload_hashes": "PASS",
+  "solo_character_create_and_reload": "PASS",
+  "creation_retry_no_duplicate": "PASS",
+  "filtered_projection": "PASS",
+  "exact_declaration_no_automatic_resolution": "PASS",
+  "read_only_chronicle_and_availability": "PASS",
+  "proposed_entry_not_ready": "PASS",
+  "historical_opening_create_and_reload": "PASS",
+  "no_automatic_history": "PASS",
+  "existing_campaign_data_in_archive": false,
+  "real_user_saves_accessed": false,
+  "extraction_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\.release_verification\\solo-4148537aa91e43d79c795609d86067d1",
+  "distribution_structure": "IRGS_3_3 beside IRGS_Web",
+  "verified_at": "2026-10-20T18:18:13.046113+00:00",
+  "scope": "Extracted payloads and disposable HTTP store; no visual browser assertion"
+}

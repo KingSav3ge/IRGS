@@ -26,6 +26,7 @@ export default function CharacterCreator() {
   const [bgId, setBgId] = useState(null);
   const [attrs, setAttrs] = useState({});
   const [desc, setDesc] = useState("");
+  const [testimony, setTestimony] = useState({ origin: "", family: "", career: "" });
   const [inv, setInv] = useState([]);
   const [newItem, setNewItem] = useState("");
   const [character, setCharacter] = useState(null);
@@ -43,7 +44,7 @@ export default function CharacterCreator() {
   const forge = async () => {
     setBusy(true);
     try {
-      const { data } = await api.post("/characters", { scenario_id: s.id, name, background_id: bgId, attributes: attrs, inventory: inv, description: desc });
+      const { data } = await api.post("/characters", { scenario_id: s.id, name, background_id: bgId, attributes: attrs, inventory: inv, description: desc, testimony });
       setCharacter(data);
       toast.success(`${data.name} has been inscribed`);
     } catch (e) { toast.error(errMsg(e)); } finally { setBusy(false); }
@@ -97,9 +98,20 @@ export default function CharacterCreator() {
           <Section n="IV" title="Appearance & history">
             <Textarea disabled={locked} value={desc} onChange={(e) => setDesc(e.target.value)} rows={3} placeholder="Weathered face, a scar across the brow…" className="bg-tome border-line font-prose text-lg" data-testid="character-description-input" />
           </Section>
+          <Section n="V" title="Your own account (optional)">
+            <p className="text-xs text-dust -mt-2">This is your character's own story of where they come from. The world treats it as their account, not proven fact, and it grants no skills or rank.</p>
+            {[["origin", "Identity & origin", "Born in Kent, son of a fletcher…"], ["family", "Family", "Two sisters; a father lost at sea…"], ["career", "Career intent", "Hopes to earn a place in a lord's household…"]].map(([k, label, ph]) => (
+              <div key={k} className="space-y-1">
+                <span className="text-xs text-ash">{label}</span>
+                <Textarea disabled={locked} rows={2} value={testimony[k]} placeholder={ph}
+                  onChange={(e) => setTestimony({ ...testimony, [k]: e.target.value })}
+                  className="bg-tome border-line font-prose text-base" data-testid={`character-testimony-${k}`} />
+              </div>
+            ))}
+          </Section>
         </div>
         <aside className="lg:col-span-3 space-y-8">
-          <Section n="V" title="Inventory">
+          <Section n="VI" title="Inventory">
             <ul className="space-y-2" data-testid="character-inventory-list">
               {inv.map((it, i) => (
                 <li key={`${it.item}-${i}`} className="flex items-center justify-between border-b border-line pb-2 text-sm">

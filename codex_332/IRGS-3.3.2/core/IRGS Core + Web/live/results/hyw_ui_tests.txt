@@ -1,0 +1,7 @@
+PASS: seven generic profiles plus distinct HYW option; ten featured and all 37 entries; browsing/search perform GET only
+PASS: proposed entry previews remain inspectable and cannot create an unseeded campaign
+PASS: delayed ready 1415 preview cannot override a later proposed selection or submit an earlier hash
+PASS: changing back to AST invalidates pending historical previews and preserves the original AST creation payload
+PASS: explicit creation submits military/scenario/entry plus exact reviewed hash; stale-hash rejection refreshes by GET without retrying POST
+PASS: opening reference renders four domains, unknown hour and setup scope; only http(s) sources become links
+RESULT: 6 deterministic HYW UI tests passed; synthetic records and mocked APIs; no campaign saves, live servers or external requests used.

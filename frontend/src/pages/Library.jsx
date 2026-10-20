@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
 import { PlaythroughList } from "@/components/PlaythroughList";
+import { EntryCatalogueDialog } from "@/components/EntryCatalogueDialog";
 
 const GENRES = ["all", "historical", "fantasy", "scifi"];
 
@@ -31,6 +32,7 @@ const CampaignCard = ({ c, i }) => {
         <div className="flex flex-wrap gap-2">
           {c.tags.map((t) => <span key={t} className="text-[10px] font-mono uppercase tracking-wider text-dust border border-line px-2 py-0.5">{t}</span>)}
         </div>
+        {c.entry_catalogue && <EntryCatalogueDialog scenarioId={c.id} />}
         {c.locked ? (
           <Button variant="outline" className="mt-2 border-gold/40 text-gold hover:bg-gold/10" onClick={() => navigate("/store")} data-testid={`library-buy-btn-${c.id}`}>
             <Lock size={14} className="mr-2" /> Unlock · ${c.price}

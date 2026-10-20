@@ -1,0 +1,13 @@
+{
+  "core_ref": "IRGS-CORE-3.3-AST-R9",
+  "engine_ref": "AST-ENGINE-0.6",
+  "status": "LIVE_LOCAL_SELECTED",
+  "core_document": "IRGS_Core_Engine_v3_3_Live_AST.md",
+  "core_sha256": "f0a946fb73ce697ab3d143a9a2557884244af08debf3b58f943b2f2e72aceb63",
+  "engine_document": "AST_Engine_v0_6_Core3_3.md",
+  "engine_sha256": "01064a6085ac2a1545240965ce7b6da554dff9dd210ec21c6ad15e1844edb9bb",
+  "registry_file": "data/ast_registry.json",
+  "registry_sha256": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
+  "state_file": "live/ast_state.json",
+  "state_scope": "AST only; other installed engines remain unchanged"
+}
