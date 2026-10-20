@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import { usePaint, usePlaythrough } from "@/pages/Play";
 import { SceneImage } from "@/components/play/NarrativeEntry";
 import { fmtDate } from "@/lib/api";
+import { ShareDialog } from "@/components/ShareDialog";
 
-const TAGS = ["all", "big", "move", "speak", "observe", "interact", "combat", "rest", "other"];
+const TAGS = ["all", "big", "npc", "move", "speak", "observe", "interact", "combat", "rest", "other"];
 
 export default function Chronicle() {
   const { pid } = useParams();
@@ -38,7 +39,8 @@ export default function Chronicle() {
           <p className="tactical-label mb-3">The Chronicle</p>
           <h1 className="font-heading text-4xl sm:text-5xl text-parchment">{pt.title}</h1>
         </div>
-        <Button variant="outline" className="ml-auto border-line" onClick={exportJson} data-testid="chronicle-export-button"><Download size={14} className="mr-2" /> Export</Button>
+        <ShareDialog pid={pid} triggerClassName="ml-auto" />
+        <Button variant="outline" className="border-line" onClick={exportJson} data-testid="chronicle-export-button"><Download size={14} className="mr-2" /> Export</Button>
       </div>
       <div className="flex flex-wrap gap-3 items-center">
         <div className="relative w-full sm:w-72">
@@ -48,7 +50,7 @@ export default function Chronicle() {
         {TAGS.map((t) => (
           <button key={t} onClick={() => setTag(t)} data-testid={`chronicle-filter-tag-${t}`}
             className={`text-[11px] font-mono uppercase tracking-widest px-3 py-1 border transition-colors ${tag === t ? "border-gold text-gold" : "border-line text-dust hover:text-ash"}`}>
-            {t === "big" ? "big moments" : t}
+            {t === "big" ? "big moments" : t === "npc" ? "others act" : t}
           </button>
         ))}
       </div>

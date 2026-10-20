@@ -192,7 +192,9 @@ def player_view(state: dict) -> dict:
     """Player-safe projection of the authoritative state for the Play screen."""
     player = state["actors"][state["player_actor_id"]]
     known = [
-        {"id": a["id"], "name": a["name"], "role": a.get("role", "")}
+        {"id": a["id"], "name": a["name"], "role": a.get("role", ""),
+         "disposition": a.get("current", {}).get("disposition", 0),
+         "location": a.get("current", {}).get("location")}
         for aid, a in state["actors"].items()
         if aid != state["player_actor_id"]
     ]
@@ -216,6 +218,8 @@ def player_view(state: dict) -> dict:
         "world_facts": state.get("world_facts", []),
         "opening": state.get("opening"),
         "pending_action": state.get("pending_action"),
+        "rumours": state.get("rumours", [])[-5:],
+        "npc_pending": state.get("npc_pending", False),
     }
 
 
@@ -239,5 +243,60 @@ def chronicle_view(state: dict) -> list:
             "big_moment": e.get("big_moment", False),
             "image_status": e.get("image_status"),
             "image_path": e.get("image_path"),
+            "npc_kind": e.get("npc_kind"),
+            "effect": e.get("effect"),
         })
     return out
+
+
+NPC_ACTION_KINDS = ("disposition", "move", "rumour")
+NPC_MAX_LOCAL, NPC_MAX_BROAD = 2, 6
+
+
+def apply_npc_actions(state: dict, actions: list, scope: str = "local") -> dict:
+    """Core gate for autonomous NPC actions: bounded, never touches the player's inventory or condition."""
+    state = copy.deepcopy(state)
+    pid = state["player_actor_id"]
+    locs = {k.lower(): k for k in state.get("locations", {})}
+    locs.update({v.get("name", "").lower(): k for k, v in state.get("locations", {}).items()})
+    cap = NPC_MAX_BROAD if scope == "broad" else NPC_MAX_LOCAL
+    seen, n = set(), 0
+    for a in actions:
+        if n >= cap:
+            break
+        aid, kind = a.get("actor_id"), a.get("kind")
+        actor = state["actors"].get(aid)
+        if not actor or aid == pid or kind not in NPC_ACTION_KINDS or (aid, kind) in seen:
+            continue
+        cur = actor.setdefault("current", {})
+        summary = str(a.get("summary", "")).strip()[:400]
+        if not summary:
+            continue
+        effect = {}
+        if kind == "disposition":
+            delta = max(-15, min(15, int(a.get("delta", 0) or 0)))
+            if delta == 0:
+                continue
+            cur["disposition"] = max(-100, min(100, cur.get("disposition", 0) + delta))
+            effect = {"disposition_delta": delta, "disposition": cur["disposition"]}
+        elif kind == "move":
+            loc = locs.get(str(a.get("location", "")).lower())
+            if not loc or loc == cur.get("location"):
+                continue
+            cur["location"] = loc
+            effect = {"location": loc}
+        else:
+            rumour = str(a.get("rumour") or summary)[:240]
+            state.setdefault("rumours", []).append({"by": aid, "text": rumour, "at": state["clock"]})
+            effect = {"rumour": rumour}
+        seen.add((aid, kind))
+        n += 1
+        state["journal"].append({
+            "id": f"evt_{state['clock']:05d}_npc{n}",
+            "op": "npc_act", "kind": "npc_action", "intent": "npc", "npc_kind": kind,
+            "title": f"{actor['name']} acts", "text": summary, "actor_ids": [aid],
+            "at": state["clock"], "status": "resolved", "effect": effect,
+            "campaign_date": state["campaign_time"]["date"], "campaign_time": state["campaign_time"]["time"],
+            "wall_clock": _now(),
+        })
+    return state

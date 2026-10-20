@@ -130,6 +130,36 @@ async def cast_segments(text: str, speakers: list, player: str = "") -> list:
         return [{"speaker": "narrator", "text": text}]
 
 
+async def npc_turn(scene_context: str, latest: str, npcs: list, locations: list) -> dict:
+    """Living Characters: propose bounded autonomous NPC reactions. The engine validates them."""
+    from emergentintegrations.llm.chat import LlmChat, UserMessage
+
+    system = (
+        "You simulate the off-screen agency of non-player characters in a roleplaying world. Given the scene and "
+        "the latest event, decide which characters plausibly react on their own right now. Usually 0-2 characters act; "
+        "if the event is broad news reaching many people (a proclamation, a mass letter, a riot), set scope to 'broad' "
+        "and up to 6 may act. Allowed kinds ONLY: 'disposition' (their attitude toward the player shifts; integer delta "
+        "-15..15), 'move' (they go to one of the KNOWN LOCATIONS, exact name), 'rumour' (they start or spread a rumour). "
+        "Never touch the player's body, inventory, rank or wealth, never kill or injure anyone, never decide the player's "
+        "actions. Respond with STRICT JSON only: {\"scope\": \"local\"|\"broad\", \"actions\": [{\"actor_id\": id, "
+        "\"kind\": kind, \"delta\": int, \"location\": name, \"rumour\": text, \"summary\": one or two sentences of "
+        "past-tense prose describing what they did}]}. An empty actions list is fine when nobody would react."
+    )
+    chat = LlmChat(api_key=EMERGENT_LLM_KEY, session_id="npc", system_message=system).with_model("openai", "gpt-5.4-mini")
+    roster = "\n".join(f"- {n['id']}: {n['name']} ({n['role']}), at {n.get('location') or 'unknown'}, "
+                       f"disposition toward player {n.get('disposition', 0)}" for n in npcs)
+    prompt = (f"SCENE:\n{scene_context}\n\nLATEST EVENT:\n{latest[:2500]}\n\nCHARACTERS:\n{roster}\n\n"
+              f"KNOWN LOCATIONS: {', '.join(locations)}")
+    try:
+        reply = await chat.send_message(UserMessage(text=prompt))
+        raw = (reply if isinstance(reply, str) else str(reply)).strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+        data = json.loads(raw)
+        return {"scope": "broad" if data.get("scope") == "broad" else "local", "actions": list(data.get("actions") or [])}
+    except Exception as e:
+        logger.error(f"npc turn failed: {e}")
+        return {"scope": "local", "actions": []}
+
+
 async def generate_image(prompt: str) -> bytes:
     """Generate a scene / portrait image (gpt-image-1). Returns PNG bytes."""
     from emergentintegrations.llm.openai.image_generation import OpenAIImageGeneration

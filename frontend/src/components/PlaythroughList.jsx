@@ -28,7 +28,7 @@ export const PlaythroughList = () => {
   return (
     <section className="space-y-5" data-testid="library-playthroughs">
       <div className="flex items-center gap-4">
-        <h2 className="font-heading text-base md:text-lg text-parchment tracking-wide">Your chronicles</h2>
+        <h2 className="font-heading text-base md:text-lg text-parchment tracking-wide">Your stories</h2>
         {["active", "archived"].map((s) => (
           <button key={s} onClick={() => setStatus(s)} data-testid={`library-playthrough-tab-${s}`}
             className={`text-xs font-mono uppercase tracking-widest ${status === s ? "text-gold" : "text-dust hover:text-ash"}`}>{s}</button>
@@ -36,7 +36,7 @@ export const PlaythroughList = () => {
       </div>
       {data.length === 0 ? (
         <p className="text-sm text-dust" data-testid="library-playthroughs-empty">
-          {status === "active" ? "No chronicles yet. Begin a campaign below." : "Nothing archived."}
+          {status === "active" ? "No stories yet. Begin a campaign below." : "Nothing archived."}
         </p>
       ) : (
         <div className="flex gap-4 overflow-x-auto pb-2 scroll-thin">

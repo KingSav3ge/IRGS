@@ -1,5 +1,6 @@
 import io
 import os
+import secrets
 import base64
 import copy
 import asyncio
@@ -16,6 +17,7 @@ from db import db, client, now_iso, new_id, init_storage, put_object, get_object
 import auth
 import engine
 import ai_services as ai
+from storybook import build_storybook
 from seed_data import SCENARIOS, STORE_ITEMS, PAYMENT_PROVIDERS
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
@@ -99,6 +101,10 @@ class SaveIn(BaseModel):
 
 class BranchIn(BaseModel):
     title: Optional[str] = None
+
+
+class ShareIn(BaseModel):
+    mode: str = "snapshot"
 
 
 class TTSIn(BaseModel):
@@ -559,6 +565,7 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     if big:
         event["painting_started_at"] = now_iso()
     event["provider"], event["model"] = provider, model
+    new_state["npc_pending"] = True
     await db.playthroughs.update_one(
         {"playthrough_id": pid},
         {"$set": {"state": new_state, "provider": provider, "model": model, "updated_at": now_iso()}},
@@ -567,7 +574,29 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     await _autosave(doc)
     if big:
         _spawn(_paint_event(pid, user["user_id"], event, scenario))
+    _spawn(_npc_turn(pid, scenario, new_state, event))
     return {"decision": decision, "event_id": event["id"], "playthrough": _playthrough_out(doc)}
+
+
+async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict):
+    """Living Characters: NPCs react between turns; the engine bounds and commits their actions."""
+    view = engine.player_view(state)
+    try:
+        latest = f"Player declared: {event.get('declaration')}\nOutcome: {event.get('narration')}"
+        plan = await ai.npc_turn(_scene_context(state, scenario), latest, view["known_actors"],
+                                 [loc.get("name", k) for k, loc in state.get("locations", {}).items()])
+    except Exception as e:
+        logger.error(f"npc turn crashed: {e}")
+        plan = {"scope": "local", "actions": []}
+    async with _lock(pid):
+        doc = await db.playthroughs.find_one({"playthrough_id": pid}, {"_id": 0})
+        if not doc:
+            return
+        new_state = engine.apply_npc_actions(doc["state"], plan["actions"], plan["scope"])
+        new_state["npc_pending"] = False
+        await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": new_state}})
+        doc["state"] = new_state
+        await _autosave(doc)
 
 
 @api.post("/playthroughs/{pid}/events/{event_id}/paint")
@@ -670,6 +699,55 @@ async def delete_save(sid: str, user: dict = Depends(auth.get_current_user)):
         raise HTTPException(status_code=400, detail="The auto-save cannot be deleted")
     await db.saves.delete_one({"save_id": sid})
     return {"ok": True}
+
+
+# ---------------------------------------------------------------- shareable storybook
+def _share_out(d: dict) -> dict:
+    return {k: d.get(k) for k in ("share_id", "playthrough_id", "mode", "active", "created_at")}
+
+
+@api.post("/playthroughs/{pid}/shares")
+async def create_share(pid: str, body: ShareIn, user: dict = Depends(auth.get_current_user)):
+    if body.mode not in ("snapshot", "live"):
+        raise HTTPException(status_code=400, detail="mode must be snapshot or live")
+    doc = await _get_playthrough(pid, user)
+    share = {"share_id": secrets.token_urlsafe(9), "playthrough_id": pid, "user_id": user["user_id"],
+             "mode": body.mode, "active": True, "created_at": now_iso()}
+    if body.mode == "snapshot":
+        share["snapshot"] = build_storybook(doc, SCENARIO_MAP[doc["scenario_id"]], _file_url)
+    await db.shares.insert_one(share)
+    return _share_out(share)
+
+
+@api.get("/playthroughs/{pid}/shares")
+async def list_shares(pid: str, user: dict = Depends(auth.get_current_user)):
+    await _get_playthrough(pid, user)
+    docs = await db.shares.find({"playthrough_id": pid, "user_id": user["user_id"], "active": True},
+                                {"_id": 0, "snapshot": 0}).sort("created_at", -1).to_list(100)
+    return [_share_out(d) for d in docs]
+
+
+@api.delete("/shares/{share_id}")
+async def revoke_share(share_id: str, user: dict = Depends(auth.get_current_user)):
+    res = await db.shares.update_one({"share_id": share_id, "user_id": user["user_id"]}, {"$set": {"active": False}})
+    if not res.matched_count:
+        raise HTTPException(status_code=404, detail="Share link not found")
+    return {"ok": True}
+
+
+@api.get("/public/stories/{share_id}")
+async def public_story(share_id: str):
+    share = await db.shares.find_one({"share_id": share_id, "active": True}, {"_id": 0})
+    if not share:
+        raise HTTPException(status_code=404, detail="This storybook is no longer shared")
+    if share["mode"] == "snapshot":
+        book = share["snapshot"]
+    else:
+        doc = await db.playthroughs.find_one({"playthrough_id": share["playthrough_id"]}, {"_id": 0})
+        if not doc:
+            raise HTTPException(status_code=404, detail="This storybook is no longer available")
+        book = build_storybook(doc, SCENARIO_MAP[doc["scenario_id"]], _file_url)
+    return {**book, "mode": share["mode"], "shared_at": share["created_at"]}
 
 
 # ---------------------------------------------------------------- voice
@@ -830,6 +908,7 @@ async def startup():
     await db.users.create_index("email", unique=True)
     await db.playthroughs.create_index("playthrough_id", unique=True)
     await db.saves.create_index("playthrough_id")
+    await db.shares.create_index("share_id", unique=True)
     try:
         await asyncio.to_thread(init_storage)
     except Exception as e:

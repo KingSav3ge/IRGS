@@ -8,7 +8,12 @@ import { Button } from "@/components/ui/button";
 import { api, errMsg } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 
-const HERO = "https://images.unsplash.com/photo-1680003935289-0c8d65e1ae30?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400";
+const COVERS = [
+  "https://images.pexels.com/photos/2873895/pexels-photo-2873895.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+  "https://images.unsplash.com/photo-1774382137454-60281271e0a5?crop=entropy&cs=srgb&fm=jpg&q=85&w=940",
+  "https://images.unsplash.com/photo-1724925742136-f620924e50b1?crop=entropy&cs=srgb&fm=jpg&q=85&w=940",
+  "https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=srgb&fm=jpg&q=85&w=940",
+];
 
 const googleLogin = () => {
   // REMINDER: DO NOT HARDCODE THE URL, OR ADD ANY FALLBACKS OR REDIRECT URLS, THIS BREAKS THE AUTH
@@ -44,12 +49,17 @@ export default function AuthPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-12 bg-void grain">
       <div className="relative hidden lg:block lg:col-span-7 overflow-hidden">
-        <img src={HERO} alt="Castle beneath a storm" className="absolute inset-0 h-full w-full object-cover opacity-70" />
+        <div className="absolute inset-0 grid grid-cols-2 grid-rows-2" data-testid="auth-hero-mosaic">
+          {COVERS.map((src, i) => (
+            <motion.img key={src} src={src} alt="" initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 0.6, scale: 1 }}
+              transition={{ delay: i * 0.15, duration: 0.8 }} className="h-full w-full object-cover" />
+          ))}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-void/20 via-void/40 to-void" />
         <div className="absolute bottom-16 left-14 max-w-lg">
-          <p className="tactical-label mb-4">Immersive Roleplaying Simulation</p>
+          <p className="tactical-label mb-4">Immersive Roleplaying Simulation · history, fantasy, science fiction</p>
           <blockquote className="font-prose italic text-3xl leading-snug text-parchment">
-            “Nothing beyond this hour has been decided. The world unfolds only through what you choose.”
+            “Nothing beyond this moment has been decided. The world unfolds only through what you choose.”
           </blockquote>
         </div>
       </div>
@@ -64,10 +74,10 @@ export default function AuthPage() {
         >
           <div className="flex items-center gap-3">
             <Feather className="text-gold" size={22} />
-            <span className="font-heading tracking-[0.3em] text-gold text-sm">IRGS CHRONICLE</span>
+            <span className="font-heading tracking-[0.3em] text-gold text-sm">IRGS</span>
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl text-parchment">
-            {mode === "login" ? "Return to the tome" : "Begin a chronicle"}
+            {mode === "login" ? "Welcome back" : "Create your account"}
           </h1>
           <Button type="button" variant="outline" onClick={googleLogin}
             className="w-full h-11 border-line bg-surface hover:border-gold/60 hover:bg-surface"
@@ -75,7 +85,7 @@ export default function AuthPage() {
             Continue with Google
           </Button>
           <div className="flex items-center gap-3 text-dust text-xs tactical-label !text-dust">
-            <span className="h-px flex-1 bg-line" /> or by quill <span className="h-px flex-1 bg-line" />
+            <span className="h-px flex-1 bg-line" /> or with email <span className="h-px flex-1 bg-line" />
           </div>
           {mode === "register" && (
             <Input placeholder="Name" value={form.name} onChange={set("name")} className="h-11 bg-void border-line" data-testid="auth-name-input" />
@@ -83,7 +93,7 @@ export default function AuthPage() {
           <Input type="email" required placeholder="Email" value={form.email} onChange={set("email")} className="h-11 bg-void border-line" data-testid="auth-email-input" />
           <Input type="password" required minLength={6} placeholder="Password" value={form.password} onChange={set("password")} className="h-11 bg-void border-line" data-testid="auth-password-input" />
           <Button type="submit" disabled={busy} className="w-full h-11 font-heading tracking-widest active:scale-[0.98] transition-transform" data-testid="auth-submit-button">
-            {busy ? "Sealing…" : mode === "login" ? "Sign in" : "Create account"}
+            {busy ? "Please wait…" : mode === "login" ? "Sign in" : "Create account"}
           </Button>
           <button type="button" onClick={() => setMode(mode === "login" ? "register" : "login")}
             className="text-sm text-ash hover:text-gold transition-colors" data-testid="auth-switch-mode-button">

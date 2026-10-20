@@ -13,7 +13,7 @@ import { useNarrator } from "@/hooks/useNarrator";
 export const usePlaythrough = (pid) => useQuery({
   queryKey: ["playthrough", pid],
   queryFn: () => api.get(`/playthroughs/${pid}`).then((r) => r.data),
-  refetchInterval: (q) => (q.state.data?.chronicle.some((e) => e.image_status === "painting") ? 5000 : false),
+  refetchInterval: (q) => (q.state.data?.view.npc_pending ? 3000 : q.state.data?.chronicle.some((e) => e.image_status === "painting") ? 5000 : false),
 });
 
 export const usePaint = (pid) => {
@@ -80,6 +80,7 @@ export default function Play() {
             <NarrativeEntry key={e.id} entry={e} index={i} narrator={narrator} voiceOpts={voiceOpts} onPaint={paint} />
           ))}
           {busy && <p className="tactical-label !text-mana animate-pulse" data-testid="gameplay-resolving-indicator">The engine resolves · the narrator composes…</p>}
+          {!busy && pt.view.npc_pending && <p className="tactical-label !text-ash animate-pulse" data-testid="gameplay-npc-pending-indicator">The world stirs · others weigh their next move…</p>}
         </div>
         <ActionComposer onSubmit={act} busy={busy} disabled={pt.status === "archived"} />
       </section>

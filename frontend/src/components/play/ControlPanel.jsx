@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { api, errMsg } from "@/lib/api";
+import { ShareDialog } from "@/components/ShareDialog";
 
 const Sel = ({ value, onChange, items, testid }) => (
   <Select value={value} onValueChange={onChange}>
@@ -80,6 +81,7 @@ export const ControlPanel = ({ pt, onSettings }) => {
           <Button variant="outline" className="border-gold/40 text-gold" onClick={() => save("checkpoint")} data-testid="gameplay-checkpoint-button">Checkpoint</Button>
         </div>
         <Link to={`/saves/${pt.playthrough_id}`} className="flex items-center gap-2 text-sm text-ash hover:text-arcane" data-testid="gameplay-branch-checkpoint-button"><GitBranch size={13} /> Load or branch a timeline</Link>
+        <ShareDialog pid={pt.playthrough_id} triggerClassName="w-full" />
         <Link to={`/chronicle/${pt.playthrough_id}`} className="flex items-center gap-2 text-sm text-ash hover:text-gold" data-testid="gameplay-open-chronicle-link"><BookOpen size={13} /> Open the full Chronicle</Link>
       </div>
       <div className="space-y-2">

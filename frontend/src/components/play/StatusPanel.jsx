@@ -51,9 +51,25 @@ export const StatusPanel = ({ pt }) => {
       <div className="space-y-2">
         <p className="tactical-label">Known figures</p>
         <ul className="text-sm space-y-2">
-          {v.known_actors.map((a) => <li key={a.id}><span className="text-parchment">{a.name}</span><span className="block text-xs text-dust">{a.role}</span></li>)}
+          {v.known_actors.map((a) => (
+            <li key={a.id} data-testid={`gameplay-actor-${a.id}`}>
+              <div className="flex justify-between gap-2">
+                <span className="text-parchment">{a.name}</span>
+                <span className={`font-mono text-xs ${a.disposition > 0 ? "text-emerald" : a.disposition < 0 ? "text-crimson" : "text-dust"}`} data-testid={`gameplay-actor-disposition-${a.id}`}>
+                  {a.disposition > 0 ? "+" : ""}{a.disposition}
+                </span>
+              </div>
+              <span className="block text-xs text-dust">{a.role}{a.location ? ` · ${a.location}` : ""}</span>
+            </li>
+          ))}
         </ul>
       </div>
+      {v.rumours?.length > 0 && (
+        <div className="space-y-2" data-testid="gameplay-rumours">
+          <p className="tactical-label">Rumours abroad</p>
+          <ul className="space-y-2">{v.rumours.map((r, i) => <li key={i} className="text-xs italic text-ash">“{r.text}”</li>)}</ul>
+        </div>
+      )}
     </aside>
   );
 };

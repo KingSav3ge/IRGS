@@ -54,7 +54,7 @@ export const ProtectedRoute = ({ children }) => {
   if (loading) {
     return (
       <div className="min-h-screen grid place-items-center tactical-label" data-testid="auth-loading">
-        Unsealing the tome…
+        Loading…
       </div>
     );
   }

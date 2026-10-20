@@ -11,6 +11,7 @@ import Play from "@/pages/Play";
 import Chronicle from "@/pages/Chronicle";
 import Saves from "@/pages/Saves";
 import Store from "@/pages/Store";
+import Storybook from "@/pages/Storybook";
 
 function AppRouter() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="/login" element={<AuthPage />} />
+      <Route path="/story/:shareId" element={<Storybook />} />
       <Route element={<ProtectedRoute><AppShell /></ProtectedRoute>}>
         <Route path="/library" element={<Library />} />
         <Route path="/create/:scenarioId" element={<CharacterCreator />} />
