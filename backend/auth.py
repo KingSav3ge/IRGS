@@ -168,9 +168,12 @@ async def get_current_user(request: Request) -> dict:
 
 
 async def seed_admin():
-    admin_email = os.environ.get("ADMIN_EMAIL", "admin@irgs.app").lower()
-    admin_password = os.environ.get("ADMIN_PASSWORD", "admin123")
-    admin_username = os.environ.get("ADMIN_USERNAME", "admin").lower()
+    admin_email = (os.environ.get("ADMIN_EMAIL") or "").lower()
+    admin_password = os.environ.get("ADMIN_PASSWORD") or ""
+    admin_username = (os.environ.get("ADMIN_USERNAME") or "").lower()
+    if not (admin_email and admin_username and len(admin_password) >= 8):
+        logger.warning("Admin seeding skipped: ADMIN_EMAIL / ADMIN_USERNAME / ADMIN_PASSWORD (8+ chars) not configured")
+        return
     existing = await db.users.find_one({"email": admin_email})
     if existing is None:
         await db.users.insert_one({

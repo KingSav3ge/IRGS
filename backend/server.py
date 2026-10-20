@@ -149,7 +149,7 @@ class CheckoutIn(BaseModel):
 
 # ---------------------------------------------------------------- helpers
 def _set_cookie(response: Response, name: str, value: str):
-    response.set_cookie(name, value, httponly=True, secure=True, samesite="none",
+    response.set_cookie(name, value, httponly=True, secure=True, samesite="lax",
                         max_age=7 * 24 * 3600, path="/")
 
 
@@ -384,8 +384,8 @@ async def logout(request: Request, response: Response):
     token = request.cookies.get("session_token")
     if token:
         await db.user_sessions.delete_one({"session_token": token})
-    response.delete_cookie("access_token", path="/", secure=True, samesite="none")
-    response.delete_cookie("session_token", path="/", secure=True, samesite="none")
+    response.delete_cookie("access_token", path="/", secure=True, samesite="lax")
+    response.delete_cookie("session_token", path="/", secure=True, samesite="lax")
     return {"ok": True}
 
 
@@ -488,7 +488,7 @@ async def upload_portrait(cid: str, file: UploadFile = File(...), user: dict = D
     ext = (file.filename or "x.png").rsplit(".", 1)[-1].lower()
     if ext not in MIME_TYPES:
         raise HTTPException(status_code=400, detail="Unsupported image type")
-    data = await file.read()
+    data = await file.read(8 * 1024 * 1024 + 1)
     if len(data) > 8 * 1024 * 1024:
         raise HTTPException(status_code=400, detail="Image too large (max 8MB)")
     try:
@@ -1191,9 +1191,11 @@ async def cast_voice(pid: str, event_id: str, user: dict = Depends(auth.get_curr
 
 @api.post("/voice/stt")
 async def stt(file: UploadFile = File(...), user: dict = Depends(auth.get_current_user)):
-    data = await file.read()
+    data = await file.read(25 * 1024 * 1024 + 1)
     if not data:
         raise HTTPException(status_code=400, detail="Empty recording")
+    if len(data) > 25 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Recording too large (max 25MB)")
     try:
         text = await ai.stt_transcribe(data, file.filename or "audio.webm")
     except Exception as e:
@@ -1259,10 +1261,12 @@ async def cancel_subscription(item_id: str, user: dict = Depends(auth.get_curren
 
 # ---------------------------------------------------------------- app wiring
 app.include_router(api)
+_cors_origins = [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_credentials=True,
-    allow_origins=os.environ.get("CORS_ORIGINS", "*").split(","),
+    # credentials are only ever allowed for an explicit allowlist, never alongside "*"
+    allow_credentials="*" not in _cors_origins,
+    allow_origins=_cors_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
