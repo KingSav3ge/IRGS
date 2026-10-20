@@ -34,7 +34,7 @@ const EFFECT = (e) => e?.disposition_delta ? `${e.disposition_delta > 0 ? "+" : 
 export const NpcEntry = ({ entry }) => (
   <motion.aside initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4 }}
     className="ml-4 border-l-2 border-gold/40 pl-4 py-1 space-y-1" data-testid={`gameplay-npc-action-${entry.id}`}>
-    <p className="text-[10px] font-mono uppercase tracking-widest text-gold/80">{entry.title} · {EFFECT(entry.effect)}</p>
+    <p className="text-[10px] font-mono uppercase tracking-widest text-gold/80">{[entry.title, EFFECT(entry.effect)].filter(Boolean).join(" · ")}</p>
     <p className="font-prose italic text-base text-ash">{entry.text}</p>
   </motion.aside>
 );

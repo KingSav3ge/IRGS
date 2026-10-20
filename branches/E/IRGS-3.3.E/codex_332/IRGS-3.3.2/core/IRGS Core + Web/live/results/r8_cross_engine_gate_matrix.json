@@ -1,0 +1,79 @@
+[
+  {
+    "engine": "Military",
+    "source_file": "sources\\engine_references\\IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+    "source_sha256": "c93ba6fb3974b81852f1ca2dc9e03cb5db2aa050e1b65782df404c7b4940dec2",
+    "review_scope": "membership, equipment, orders, commitments",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "Roman",
+    "source_file": "sources\\engine_references\\IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+    "source_sha256": "5f6e0742f0bc69dd9bd76c027000bda0d2b1c8c61120498b394483a0ce0e8318",
+    "review_scope": "household work, obligations, authority, custody",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "AST",
+    "source_file": "sources\\engine_references\\AST_Engine_v0_5.md",
+    "source_sha256": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
+    "review_scope": "continuity, household work, military inheritance, player agency",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "Fantasy",
+    "source_file": "sources\\engine_references\\IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+    "source_sha256": "b53e6d01fa8c01af6247cf2409f064b2149dd10fd3f22374eb71c78d27940977",
+    "review_scope": "genre effects, actor state, common time and resources",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "PAF",
+    "source_file": "sources\\engine_references\\IRGS_PAF_Engine_v2_1_Core3_2.md",
+    "source_sha256": "293f08601de8504418531c15e6a4a3d5a3d3a5f1601de7956636ab40bb28f24a",
+    "review_scope": "scarcity, work, shared stock and infrastructure",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "SNWE",
+    "source_file": "sources\\engine_references\\IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+    "source_sha256": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+    "review_scope": "setting techniques and shared state",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  },
+  {
+    "engine": "Space",
+    "source_file": "sources\\engine_references\\IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md",
+    "source_sha256": "a3c290917fe04c76384204605b042d6214648d8b24988ebcb67358b29e8a4901",
+    "review_scope": "life support, logistics, infrastructure",
+    "shared_handler_evidence": "r8_operation_inventory.json; no automatic native equivalence",
+    "native_operation_inventory": "OPEN: extraction and executable binding required",
+    "native_dependency_certification": "NOT CERTIFIED",
+    "selected_core": "3.2",
+    "migration": false
+  }
+]

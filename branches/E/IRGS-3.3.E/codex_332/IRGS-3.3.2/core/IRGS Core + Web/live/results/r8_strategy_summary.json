@@ -1,0 +1,26 @@
+{
+  "status": "PROPOSED synthetic policy execution; no native engine certification",
+  "days": 90,
+  "review_ticks": 540,
+  "save_resume_equal": true,
+  "checksum": "e6010e6b6f65b8f79e03b570a6856d9aeda54d24c05baad69d306a0b59e515e1",
+  "meals_produced": 270,
+  "meals_delivered": 270,
+  "grain_remaining": 60,
+  "fuel_remaining": 30,
+  "tax_paid": 26,
+  "wages_due_not_paid": 90,
+  "population": 1200,
+  "cash_total": 1000,
+  "army_members": [
+    "farmer-a"
+  ],
+  "issued_kits": 1,
+  "committed_operations": 479,
+  "deferred_proposals": 0,
+  "scarce_10_day_run": {
+    "completed_jobs": 2,
+    "meals_produced": 6,
+    "unmet_selected_meal_target": 24
+  }
+}

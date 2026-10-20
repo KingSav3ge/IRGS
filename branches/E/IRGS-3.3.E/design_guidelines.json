@@ -1,0 +1,234 @@
+{
+  "project_title": "IRGS — Immersive Roleplaying Simulation Engine",
+  "design_philosophy": "The Living Chronicle Tome. Fusion of medieval illuminated manuscript aesthetics with modern audio DAW & tactical RPG HUD controls. Intimate, atmospheric, literary, and deeply responsive.",
+  "theme": "dark",
+  "color_system": {
+    "archetype": "Organic & Tactical Dark Fantasy (Illuminated Parchment & Ink Void)",
+    "palette": {
+      "background_void": "#0B0C10",
+      "background_tome": "#12141A",
+      "surface_card": "#181B24",
+      "surface_border": "#2D3245",
+      "surface_border_gold": "rgba(212, 175, 55, 0.25)",
+      "text_primary": "#F0E6D2",
+      "text_secondary": "#B0A898",
+      "text_muted": "#706B60",
+      "accent_gold": "#D4AF37",
+      "accent_gold_glow": "#FFD700",
+      "accent_crimson": "#DC2626",
+      "accent_emerald": "#059669",
+      "accent_cyan_mana": "#0EA5E9",
+      "accent_purple_arcane": "#8B5CF6"
+    },
+    "gradients": {
+      "tome_glow": "linear-gradient(180deg, rgba(212, 175, 55, 0.08) 0%, rgba(11, 12, 16, 0.95) 100%)",
+      "crimson_flame": "linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(11, 12, 16, 0) 100%)",
+      "glass_border": "linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(212, 175, 55, 0.1) 100%)"
+    },
+    "rules": [
+      "No pure black #000000 — always use tinted obsidian #0B0C10",
+      "Contrast ratios minimum 4.5:1 for prose text (#F0E6D2 on #12141A)",
+      "Gold accents (#D4AF37) used exclusively for active states, key CTAs, and rare items",
+      "Crimson (#DC2626) reserved for critical health, combat actions, and warnings",
+      "Mana/Arcane highlights (#0EA5E9 / #8B5CF6) reserved for AI narration state, audio voice waves, and intelligence stats"
+    ]
+  },
+  "typography": {
+    "pairing_strategy": "Editorial Manuscript Serif Headings + Modern Clean Readable Sans Body + Precision Monospace Tactical Stats",
+    "font_family_imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');"
+    ],
+    "hierarchy": {
+      "font_heading": "'Cinzel', serif",
+      "font_prose": "'EB Garamond', Georgia, serif",
+      "font_sans": "'Plus Jakarta Sans', sans-serif",
+      "font_mono": "'Fira Code', monospace"
+    },
+    "type_scale": {
+      "h1_title": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-heading text-amber-100",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight font-heading text-amber-200/90",
+      "h3_card": "text-xl sm:text-2xl font-semibold font-heading text-amber-50",
+      "h4_sub": "text-lg sm:text-xl font-medium font-sans text-stone-200",
+      "body_prose": "text-lg sm:text-xl leading-relaxed font-prose text-stone-200 tracking-wide",
+      "body_ui": "text-sm sm:text-base leading-normal font-sans text-stone-300",
+      "label_tactical": "text-xs font-mono uppercase tracking-[0.2em] text-amber-400/80",
+      "stat_value": "text-sm sm:text-base font-mono font-bold text-amber-300"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous spacing, multi-column asymmetric bento cards, cardless dark panels with subtle metallic inner borders and optical padding.",
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "grid_modes": {
+      "gameplay_screen": "grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-4rem)] overflow-hidden",
+      "content_library": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8",
+      "character_creator": "grid grid-cols-1 lg:grid-cols-12 gap-8",
+      "store_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    }
+  },
+  "visual_enhancers": {
+    "textures": [
+      "Subtle SVG parchment noise grain overlay on background",
+      "Gold leaf metallic borders using linear-gradient standard borders",
+      "Audio visualizer spectrum bar animations during AI voice narration"
+    ],
+    "glassmorphism": {
+      "header_nav": "backdrop-blur-xl bg-[#0B0C10]/80 border-b border-[#2D3245]",
+      "hud_floats": "backdrop-blur-md bg-[#12141A]/90 border border-[#D4AF37]/30 shadow-2xl shadow-black/80"
+    },
+    "micro_interactions": {
+      "hover_glow": "hover:border-[#D4AF37]/60 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] transition-all duration-300",
+      "active_press": "active:scale-[0.98] transition-transform",
+      "pulse_narration": "animate-pulse shadow-[0_0_15px_rgba(14,165,233,0.3)]"
+    }
+  },
+  "component_blueprints": {
+    "navigation_header": {
+      "description": "Top persistent navigation bar with Brand Logo 'IRGS Chronicle', Mode status, Player Profile, Quick Campaign Switcher, AI Provider Selector badge, and Store link.",
+      "sticky": true,
+      "test_ids": {
+        "nav_container": "nav-header",
+        "logo_btn": "nav-logo-link",
+        "library_link": "nav-library-link",
+        "play_link": "nav-play-link",
+        "chronicle_link": "nav-chronicle-link",
+        "saves_link": "nav-saves-link",
+        "store_link": "nav-store-link",
+        "ai_selector_btn": "nav-ai-provider-selector",
+        "user_profile_btn": "nav-user-profile-menu"
+      }
+    },
+    "auth_screen": {
+      "description": "Split screen layout with left cinematic medieval artwork & quote, right illuminated parchment sign-in card with Google OAuth + Email/Password toggle.",
+      "test_ids": {
+        "google_login_btn": "auth-google-login-button",
+        "email_input": "auth-email-input",
+        "password_input": "auth-password-input",
+        "submit_btn": "auth-submit-button",
+        "switch_mode_btn": "auth-switch-mode-button"
+      }
+    },
+    "content_library_screen": {
+      "description": "Grid of medieval-fantasy and historical campaign cards. Filterable by Genre, Difficulty, and Unlocked/Locked status. Displays play counts, tags, and 'Resume' or 'Begin Campaign' buttons.",
+      "test_ids": {
+        "genre_filter": "library-genre-filter",
+        "search_input": "library-search-input",
+        "campaign_card": "library-campaign-card-{id}",
+        "play_campaign_btn": "library-play-btn-{id}",
+        "buy_campaign_btn": "library-buy-btn-{id}"
+      }
+    },
+    "character_creator_screen": {
+      "description": "5-step interactive parchment sheet. Left column: Portrait preview with AI prompt generator or upload. Center: Attributes sliders (Strength, Agility, Arcana, Charisma), Background choice, Special Traits. Right: Inventory setup & Live summary.",
+      "test_ids": {
+        "name_input": "character-name-input",
+        "class_select": "character-class-select",
+        "attribute_slider": "character-attr-slider-{attribute}",
+        "generate_portrait_btn": "character-generate-portrait-button",
+        "background_option": "character-background-option-{id}",
+        "save_character_btn": "character-save-button"
+      }
+    },
+    "gameplay_screen": {
+      "description": "The centerpiece experience! 3-Column Layout: Left (World State & Character Quick Panel: HP/Mana bars, Inventory, World Clock, Quest Tracker); Center (Narrative Feed: Scrolling prose, scene image, audio player bar, action input box with Voice Mic + Text submit); Right (AI Model & Voice Controls, Checkpoints & Auto-save status, Chronicle quick log).",
+      "test_ids": {
+        "action_input": "gameplay-action-input",
+        "mic_input_btn": "gameplay-voice-mic-button",
+        "submit_action_btn": "gameplay-submit-action-button",
+        "narrative_feed": "gameplay-narrative-feed-container",
+        "narrative_node": "gameplay-narrative-item-{index}",
+        "read_aloud_btn": "gameplay-read-aloud-button-{id}",
+        "voice_provider_select": "gameplay-voice-provider-select",
+        "scene_image": "gameplay-scene-image-{id}",
+        "hp_bar": "gameplay-hp-bar",
+        "world_clock": "gameplay-world-clock-display",
+        "save_checkpoint_btn": "gameplay-quick-save-button",
+        "branch_campaign_btn": "gameplay-branch-checkpoint-button"
+      }
+    },
+    "saves_checkpoints_screen": {
+      "description": "Timeline view of auto-saves, manual checkpoints, and branched timelines. Allows restoring, creating named checkpoints, branching new timelines, and exporting save state JSON.",
+      "test_ids": {
+        "checkpoint_list": "saves-checkpoint-list",
+        "checkpoint_item": "saves-item-{id}",
+        "create_checkpoint_btn": "saves-create-new-button",
+        "restore_checkpoint_btn": "saves-restore-button-{id}",
+        "branch_checkpoint_btn": "saves-branch-button-{id}"
+      }
+    },
+    "chronicle_screen": {
+      "description": "Filterable timeline journal of all committed story beats, decisions made, key NPCs met, and locations visited. Searchable by chapter or tag.",
+      "test_ids": {
+        "chronicle_search": "chronicle-search-input",
+        "chronicle_filter_tag": "chronicle-filter-tag-{tag}",
+        "chronicle_entry": "chronicle-entry-{id}",
+        "export_chronicle_btn": "chronicle-export-button"
+      }
+    },
+    "store_account_screen": {
+      "description": "Merchant's bazaar for premium campaign packs, voice narrator packs, and AI token passes. Integrates payment modals (PayPal, Paystack, Razorpay) and account entitlement list.",
+      "test_ids": {
+        "store_item_card": "store-item-card-{id}",
+        "checkout_paypal_btn": "store-checkout-paypal-btn",
+        "checkout_paystack_btn": "store-checkout-paystack-btn",
+        "checkout_razorpay_btn": "store-checkout-razorpay-btn",
+        "user_entitlements_list": "store-entitlements-list"
+      }
+    }
+  },
+  "image_urls": {
+    "castles_and_landscapes": [
+      {
+        "url": "https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA8Mzl8MHwxfHNlYXJjaHwxfHxtZWRpZXZhbCUyMGZhbnRhc3klMjBjYXN0bGUlMjBsYW5kc2NhcGUlMjBkYXJrJTIwbW9vZHxlbnwwfHx8fDE3OTI1MTMwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Foggy Burg Eltz Castle — used for Shadows over Eldoria campaign banner",
+        "category": "campaign_hero"
+      },
+      {
+        "url": "https://images.pexels.com/photos/2873895/pexels-photo-2873895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Abandoned Gothic Castle — used for Siege of Ironhold scenario",
+        "category": "campaign_hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1680003935289-0c8d65e1ae30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA8Mzl8MHwxfHNlYXJjaHwzfHxtZWRpZXZhbCUyMGZhbnRhc3klMjBjYXN0bGUlMjBsYW5kc2NhcGUlMjBkYXJrJTIwbW9vZHxlbnwwfHx8fDE3OTI1MTMwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Castle at night under dramatic skies — used for Auth screen cinematic background",
+        "category": "auth_background"
+      }
+    ],
+    "character_portraits": [
+      {
+        "url": "https://images.unsplash.com/photo-1615376206384-99dc417d64f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwd2FycmlvciUyMHBvcnRyYWl0JTIwZGFyayUyMGtuaWdodCUyMGNoYXJhY3RlcnxlbnwwfHx8fDE3OTI1MTMwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Mystic warrior with glowing blue eyes — Rogue Spellblade portrait option",
+        "category": "character_portrait"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1688859275601-73624dfeaa30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxmYW50YXN5JTIwd2FycmlvciUyMHBvcnRyYWl0JTIwZGFyayUyMGtuaWdodCUyMGNoYXJhY3RlcnxlbnwwfHx8fDE3OTI1MTMwNjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Female warrior holding sword — Paladin / Mercenary portrait",
+        "category": "character_portrait"
+      },
+      {
+        "url": "https://images.pexels.com/photos/9337516/pexels-photo-9337516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Knight in heavy historical armor — Crusader / Veteran Commander portrait",
+        "category": "character_portrait"
+      }
+    ],
+    "maps_and_manuscripts": [
+      {
+        "url": "https://images.unsplash.com/photo-1724925742136-f620924e50b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA6MTJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBtYXAlMjBzY3JvbGwlMjB2aW50YWdlJTIwbWFudXNjcmlwdCUyMHRhdmVybiUyMG1lZGlldmFsfGVufDB8fHx8MTc5MjUxMzA2MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Close up vintage parchment map — used for World Map panel & Store banners",
+        "category": "world_map"
+      },
+      {
+        "url": "https://images.pexels.com/photos/11882036/pexels-photo-11882036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Leather-bound antique manuscript volume — used for Chronicle header",
+        "category": "chronicle_banner"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure all interactive components have the specified data-testid attributes for E2E verification.",
+    "Use Framer Motion for smooth tab switches, feed item entrance animations, audio waveform pulsation, and modal slide-ins.",
+    "The core gameplay screen feed must auto-scroll smoothly to the latest narrative entry upon submission.",
+    "Provide interactive mock features for AI Voice playback (Web Speech API or realistic simulated audio waves), AI Model selection, Save/Restore state management in local storage or state, and Store payment flow modals.",
+    "Keep typography clean with Cinzel for titles, EB Garamond for narrative prose, and Plus Jakarta Sans / Fira Code for HUD UI & metrics.",
+    "DO NOT use raw transparent backgrounds on dropdowns or float panels; always use backdrop-blur with semi-opaque dark obsidian surface."
+  ]
+}

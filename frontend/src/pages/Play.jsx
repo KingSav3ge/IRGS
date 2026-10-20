@@ -64,8 +64,12 @@ export default function Play() {
 
   const act = async (declaration) => {
     setBusy(true);
+    const request_id = crypto.randomUUID();
+    const send = () => api.post(`/playthroughs/${pid}/act`, { declaration, request_id }, { timeout: 120000 });
     try {
-      const { data } = await api.post(`/playthroughs/${pid}/act`, { declaration }, { timeout: 120000 });
+      // retry once on a dropped connection; the request id makes the retry safe (never double-commits)
+      const { data } = await send().catch((e) => (e.response ? Promise.reject(e) : send()));
+      if (data.replayed) toast("Your action was already recorded, so it was not repeated.");
       qc.setQueryData(["playthrough", pid], data.playthrough);
       return true;
     } catch (e) {
@@ -77,7 +81,7 @@ export default function Play() {
   const passTime = async (span) => {
     setBusy(true);
     try {
-      const { data } = await api.post(`/playthroughs/${pid}/pass-time`, { span });
+      const { data } = await api.post(`/playthroughs/${pid}/pass-time`, { span, request_id: crypto.randomUUID() });
       qc.setQueryData(["playthrough", pid], data.playthrough);
     } catch (e) {
       toast.error(errMsg(e, "Time could not pass"));

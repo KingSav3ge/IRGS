@@ -34,6 +34,7 @@ export const AppShell = () => {
             {last && <Link to={`/chronicle/${last}`} testid="nav-chronicle-link">Chronicle</Link>}
             {last && <Link to={`/saves/${last}`} testid="nav-saves-link">Saves</Link>}
             <Link to="/store" testid="nav-store-link">Store</Link>
+            <Link to="/marketplace" testid="nav-marketplace-link">Marketplace</Link>
           </nav>
           <div className="ml-auto shrink-0">
             <DropdownMenu>
@@ -48,7 +49,7 @@ export const AppShell = () => {
                 <span className="text-sm text-ash hidden sm:inline" data-testid="nav-user-name">{user?.name}</span>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-tome/95 backdrop-blur-md border-line">
-                <DropdownMenuLabel className="text-xs text-dust">{user?.email}</DropdownMenuLabel>
+                <DropdownMenuLabel className="text-xs text-dust">{user?.email}<span className="block font-mono text-[10px] mt-1" data-testid="nav-version-label">IRGS 3.3.E</span></DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={() => navigate("/store")} data-testid="nav-account-entitlements">Purchases & subscriptions</DropdownMenuItem>
                 <DropdownMenuItem onClick={async () => { await signOut(); navigate("/login"); }} data-testid="nav-logout-button">

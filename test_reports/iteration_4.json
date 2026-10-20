@@ -1,0 +1,39 @@
+{
+  "summary": "IRGS 3.3.E full-stack test. Backend: the full suite has 78 tests (71 existing, including the main agent's test_irgs_iter4.py, plus 7 new in test_irgs_iter5.py) and all pass. Frontend: every requested flow works except the version label 'IRGS 3.3.E'. Front page: the world title rotates (Lancastrian Invasion to Grain Fleet of Ostia in about 7s), dots 0-3 switch worlds, the choice card question is correct, and Sign in / Sign up / Back work. The sign-in form shows 'Welcome back' and the 'Email or username' placeholder. The sign-up form has a name field. Google is present on both forms, there are 4 feature cards, and admin/chronicle123 login works. Let time pass: hours went morning to midday, day went 11 to 12 Aug, week went 12 to 19 Aug. A divider appears, the pending indicator shows and NPC actions arrive (2, then 4, then 7 total). Catalogue dialog: 3 periods, 37 rows, only entry-point-play-hyw-1415, which goes to /create/hyw-1415. Testimony entered in the UI is saved (GET /api/characters). Chronicle history panel: 3 events marked 'not yet reached' at 19 Aug 1415; no panel for Rome. Reading size and paper settings persist through a reload (localStorage irgs_reading). Share dialog copies {BACKEND_URL}/api/s/{id}, and a logged-out browser lands on /story/{id}. The /api/s HTML has an absolute og:image that returns 200 image/png. Regression passed: act, saves, store, storybook.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "HEAD /api/s/{shareId}", "issue": "Returns 405. Some link unfurlers send HEAD before GET. Add a HEAD route, e.g. @api.api_route(methods=['GET','HEAD'])."},
+      {"endpoint": "GET /api/s/{shareId}", "issue": "For snapshot shares the og:description still says '{n} turns and counting', which is wrong for a frozen snapshot."},
+      {"endpoint": "POST /api/playthroughs/{pid}/pass-time", "issue": "A missing span silently defaults to 'hours' (PassTimeIn.span default). The UI is fine, but the API contract says an invalid span gives 400. Consider making span required."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Version label", "issue": "NOT IMPLEMENTED. No app-version-label on /login and no nav-version-label in the nav-user-profile-menu dropdown. A grep for '3.3.E', 'version', 'app-version-label' and 'nav-version-label' in frontend/src finds nothing.", "selector": "[data-testid=app-version-label], [data-testid=nav-version-label]", "priority": "HIGH"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Play feed NPC entries", "issues": ["NpcEntry renders '{title} · {EFFECT}' even when the effect is empty, leaving a trailing ' · '. A 'move' NPC whose location equals the current location shows '→ Southampton Water', which reads oddly."]},
+      {"screen": "Front page", "issues": ["The 'Scroll · what IRGS does' hint (text-dust) has very low contrast on the dark hero."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_irgs_iter4.py", "/app/backend/tests/test_irgs_iter5.py", "/app/test_reports/pytest/pytest_iter4.xml", "/app/test_reports/pytest/pytest_iter5.xml"],
+  "action_items": [
+    "Add version label 'IRGS 3.3.E' as data-testid=app-version-label on AuthPage (e.g. in auth-features-strip) and data-testid=nav-version-label inside the AppShell profile DropdownMenuContent",
+    "Optional: support HEAD on /api/s/{id}; adjust the og:description wording for snapshot shares; make PassTimeIn.span required",
+    "Optional: hide the ' · ' separator in NpcEntry when the effect is empty"
+  ],
+  "critical_code_review_comments": [
+    "Play.jsx reading state: JSON.parse(localStorage.getItem('irgs_reading')) has no try/catch, so a corrupt value crashes the Play page",
+    "Reading size uses CSS zoom on the feed container. It works in Chromium, but zoom also scales layout and scroll position; font-size variables would be more robust",
+    "server.py is 1039 lines; consider splitting the routers (shares/og, campaigns, playthroughs)",
+    "share_card builds the origin from x-forwarded-host/host headers. That is fine behind the ingress, but it can be spoofed (only affects the user's own preview HTML)"
+  ],
+  "updated_files": ["/app/backend/tests/test_irgs_iter5.py"],
+  "success_rate": {"backend": "100% (78/78)", "frontend": "~95% (all flows except the missing version label)"},
+  "seed_data_creation": "Admin playthrough play_7426809002f2 (TEST_UI Wat Tyler, HYW) was created with testimony; time was passed hours, day and week, plus 1 act. Live share aEVRRu4qSdEo. There are also several TEST_Iter4/TEST_Iter5 test-user playthroughs.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: cd /app/backend && REACT_APP_BACKEND_URL=<url> pytest tests (pytest.ini uses xdist; pass -n0 for a single file). The version label is the only missing feature. Admin play_7426809002f2 has time-pass dividers and NPC actions, useful for Chronicle and history panel checks."
+}

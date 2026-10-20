@@ -83,6 +83,7 @@ class PlaythroughIn(BaseModel):
 
 class ActIn(BaseModel):
     declaration: str
+    request_id: Optional[str] = None
     provider: Optional[str] = None
     model: Optional[str] = None
 
@@ -105,7 +106,30 @@ class BranchIn(BaseModel):
 
 
 class PassTimeIn(BaseModel):
-    span: str = "hours"
+    span: str
+    request_id: Optional[str] = None
+
+
+class NoteIn(BaseModel):
+    kind: str = "note"
+    title: str
+    body: str = ""
+    entity_ids: List[str] = []
+    event_id: Optional[str] = None
+
+
+class NotePatch(BaseModel):
+    title: Optional[str] = None
+    body: Optional[str] = None
+    entity_ids: Optional[List[str]] = None
+
+
+class GoalIn(BaseModel):
+    title: str
+
+
+class GoalPatch(BaseModel):
+    status: str
 
 
 class ShareIn(BaseModel):
@@ -240,6 +264,9 @@ def _scene_context(state: dict, scenario: dict) -> str:
     if testimony:
         lines.append("Player testimony about their own past (the player's account; not verified world fact, grants no "
                      "skills, ranks or resources): " + "; ".join(f"{k}: {v}" for k, v in testimony.items()))
+    goals = [g["title"] for g in state.get("goals", []) if g["status"] == "active"]
+    if goals:
+        lines.append("The player's personal goals (aspirations only; never auto-achieve them): " + "; ".join(goals))
     if scenario.get("unknowns"):
         lines.append("Deliberately unknown at the opening (do not invent as settled fact): " + " ".join(scenario["unknowns"][:6]))
     if recent:
@@ -323,7 +350,7 @@ def _save_out(d: dict) -> dict:
 # ---------------------------------------------------------------- auth
 @api.get("/")
 async def root():
-    return {"app": "IRGS", "status": "ok"}
+    return {"app": "IRGS", "version": "3.3.E", "line": "Emergent continuation of Core 3.3 (website & app)", "engine_reference": "3.3.C (Codex engine line)", "status": "ok"}
 
 
 @api.post("/auth/register")
@@ -590,8 +617,28 @@ async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)
         _acting.discard(pid)
 
 
+def _replay(doc: dict, request_id: Optional[str]):
+    """Idempotent retries: a request id already committed returns the original result."""
+    if not request_id:
+        return None
+    eid = (doc["state"].get("request_log") or {}).get(request_id)
+    if not eid:
+        return None
+    return {"decision": None, "event_id": eid, "replayed": True, "playthrough": _playthrough_out(doc)}
+
+
+def _log_request(state: dict, request_id: Optional[str], event_id: str):
+    if request_id:
+        log = dict(state.get("request_log") or {})
+        log[request_id[:64]] = event_id
+        state["request_log"] = dict(list(log.items())[-100:])
+
+
 async def _act_locked(pid: str, body: ActIn, user: dict):
     doc = await _get_playthrough(pid, user)
+    replay = _replay(doc, body.request_id)
+    if replay:
+        return replay
     if doc.get("status") == "archived":
         raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
     state = doc["state"]
@@ -614,6 +661,7 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     event["provider"], event["model"] = provider, model
     new_state["npc_pending"] = True
     new_state["npc_pending_at"] = now_iso()
+    _log_request(new_state, body.request_id, event["id"])
     await db.playthroughs.update_one(
         {"playthrough_id": pid},
         {"$set": {"state": new_state, "provider": provider, "model": model, "updated_at": now_iso()}},
@@ -665,6 +713,9 @@ async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_cu
     try:
         async with _lock(pid):
             doc = await _get_playthrough(pid, user)
+            replay = _replay(doc, body.request_id)
+            if replay:
+                return replay
             if doc.get("status") == "archived":
                 raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
             try:
@@ -672,6 +723,7 @@ async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_cu
             except ValueError as e:
                 raise HTTPException(status_code=400, detail=str(e))
             new_state["npc_pending"], new_state["npc_pending_at"] = True, now_iso()
+            _log_request(new_state, body.request_id, new_state["journal"][-1]["id"])
             await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": new_state, "updated_at": now_iso()}})
             doc["state"] = new_state
             await _autosave(doc)
@@ -751,6 +803,12 @@ async def _get_save(sid: str, user: dict) -> dict:
 async def load_save(sid: str, user: dict = Depends(auth.get_current_user)):
     s = await _get_save(sid, user)
     doc = await _get_playthrough(s["playthrough_id"], user)
+    cur = doc["state"]
+    await db.saves.insert_one({
+        "save_id": new_id("save"), "playthrough_id": doc["playthrough_id"], "user_id": user["user_id"], "kind": "safety",
+        "label": f"Before restoring “{s['label']}”", "clock": cur["clock"], "campaign_time": cur["campaign_time"],
+        "state": cur, "created_at": now_iso(),
+    })
     state = _merge_images(s["state"], doc["state"])
     await db.playthroughs.update_one({"playthrough_id": doc["playthrough_id"]},
                                      {"$set": {"state": state, "updated_at": now_iso()}})
@@ -775,6 +833,25 @@ async def branch_save(sid: str, body: BranchIn, user: dict = Depends(auth.get_cu
     return _playthrough_out(doc)
 
 
+@api.get("/saves/{sid}/preview")
+async def preview_save(sid: str, user: dict = Depends(auth.get_current_user)):
+    """Inspect a save before restoring it: what it contains and what would be replaced."""
+    s = await _get_save(sid, user)
+    doc = await _get_playthrough(s["playthrough_id"], user)
+    sv, cur = s["state"], doc["state"]
+    saved_ids = {e["id"] for e in sv["journal"]}
+    later = [e for e in cur["journal"] if e["id"] not in saved_ids]
+    view = engine.player_view(sv)
+    return {
+        **_save_out(s), "character": view["character"], "inventory": view["inventory"],
+        "goals": sv.get("goals", []), "event_count": len(sv["journal"]),
+        "last_events": [{"id": e["id"], "title": e.get("title"), "text": (e.get("narration") or e.get("text") or "")[:240],
+                         "declaration": e.get("declaration")} for e in sv["journal"][-3:]],
+        "current_clock": cur["clock"], "events_replaced": len(later),
+        "replaced_preview": [e.get("declaration") or e.get("title") for e in later[-5:]],
+    }
+
+
 @api.delete("/saves/{sid}")
 async def delete_save(sid: str, user: dict = Depends(auth.get_current_user)):
     s = await _get_save(sid, user)
@@ -782,6 +859,159 @@ async def delete_save(sid: str, user: dict = Depends(auth.get_current_user)):
         raise HTTPException(status_code=400, detail="The auto-save cannot be deleted")
     await db.saves.delete_one({"save_id": sid})
     return {"ok": True}
+
+
+# ---------------------------------------------------------------- chronicle workspace: notes, entities, development, goals
+NOTE_KINDS = ("note", "document")
+
+
+def _note_out(d: dict) -> dict:
+    return {k: d.get(k) for k in ("note_id", "kind", "title", "body", "entity_ids", "event_id", "at_clock",
+                                  "campaign_date", "created_at", "updated_at")}
+
+
+@api.get("/playthroughs/{pid}/notes")
+async def list_notes(pid: str, user: dict = Depends(auth.get_current_user)):
+    await _get_playthrough(pid, user)
+    docs = await db.notes.find({"playthrough_id": pid, "user_id": user["user_id"]}, {"_id": 0}).sort("created_at", -1).to_list(500)
+    return [_note_out(d) for d in docs]
+
+
+@api.post("/playthroughs/{pid}/notes")
+async def create_note(pid: str, body: NoteIn, user: dict = Depends(auth.get_current_user)):
+    doc = await _get_playthrough(pid, user)
+    if body.kind not in NOTE_KINDS or not body.title.strip():
+        raise HTTPException(status_code=400, detail="A note needs a title and a kind of note or document")
+    st = doc["state"]
+    known = set(st["actors"]) | set(st.get("locations", {}))
+    note = {"note_id": new_id("note"), "playthrough_id": pid, "user_id": user["user_id"], "kind": body.kind,
+            "title": body.title.strip()[:120], "body": body.body[:8000],
+            "entity_ids": [e for e in body.entity_ids if e in known], "event_id": body.event_id,
+            "at_clock": st["clock"], "campaign_date": st["campaign_time"]["date"],
+            "created_at": now_iso(), "updated_at": now_iso()}
+    await db.notes.insert_one(note)
+    return _note_out(note)
+
+
+@api.patch("/notes/{nid}")
+async def update_note(nid: str, body: NotePatch, user: dict = Depends(auth.get_current_user)):
+    upd = {k: v for k, v in body.model_dump().items() if v is not None}
+    if "title" in upd and not upd["title"].strip():
+        raise HTTPException(status_code=400, detail="Title cannot be empty")
+    upd["updated_at"] = now_iso()
+    res = await db.notes.find_one_and_update({"note_id": nid, "user_id": user["user_id"]}, {"$set": upd},
+                                             projection={"_id": 0}, return_document=True)
+    if not res:
+        raise HTTPException(status_code=404, detail="Note not found")
+    return _note_out(res)
+
+
+@api.delete("/notes/{nid}")
+async def delete_note(nid: str, user: dict = Depends(auth.get_current_user)):
+    res = await db.notes.delete_one({"note_id": nid, "user_id": user["user_id"]})
+    if not res.deleted_count:
+        raise HTTPException(status_code=404, detail="Note not found")
+    return {"ok": True}
+
+
+def _entity_events(state: dict, eid: str) -> list:
+    actor = state["actors"].get(eid)
+    loc = state.get("locations", {}).get(eid)
+    name = (actor or loc or {}).get("name", eid)
+    out = []
+    for e in state["journal"]:
+        text = f"{e.get('declaration') or ''} {e.get('narration') or e.get('text') or ''}"
+        hit = eid in (e.get("actor_ids") or []) if actor else False
+        hit = hit or (name and name.lower() in text.lower()) or (e.get("effect") or {}).get("location") == eid
+        if hit:
+            out.append({"id": e["id"], "at": e.get("at"), "kind": e.get("kind"), "title": e.get("title"),
+                        "text": (e.get("narration") or e.get("text") or "")[:300], "declaration": e.get("declaration"),
+                        "effect": e.get("effect"), "campaign_date": e.get("campaign_date"), "campaign_time": e.get("campaign_time")})
+    return out
+
+
+@api.get("/playthroughs/{pid}/entities")
+async def list_entities(pid: str, user: dict = Depends(auth.get_current_user)):
+    st = (await _get_playthrough(pid, user))["state"]
+    people = [{"id": a["id"], "type": "person", "name": a["name"], "role": a.get("role", ""),
+               "disposition": a.get("current", {}).get("disposition", 0), "location": a.get("current", {}).get("location"),
+               "mentions": len(_entity_events(st, a["id"]))} for a in st["actors"].values() if a["id"] != st["player_actor_id"]]
+    places = [{"id": k, "type": "place", "name": v.get("name", k), "role": v.get("kind", ""),
+               "mentions": len(_entity_events(st, k))} for k, v in st.get("locations", {}).items()]
+    return people + places
+
+
+@api.get("/playthroughs/{pid}/entities/{eid}")
+async def entity_history(pid: str, eid: str, user: dict = Depends(auth.get_current_user)):
+    st = (await _get_playthrough(pid, user))["state"]
+    if eid not in st["actors"] and eid not in st.get("locations", {}):
+        raise HTTPException(status_code=404, detail="Unknown person or place")
+    events = _entity_events(st, eid)
+    notes = await db.notes.find({"playthrough_id": pid, "user_id": user["user_id"], "entity_ids": eid}, {"_id": 0}).to_list(100)
+    trend = [{"at": e["at"], "disposition": e["effect"]["disposition"]} for e in events
+             if (e.get("effect") or {}).get("disposition") is not None]
+    rumours = [r for r in st.get("rumours", []) if r.get("by") == eid]
+    return {"id": eid, "events": events, "notes": [_note_out(n) for n in notes], "disposition_trend": trend, "rumours": rumours}
+
+
+@api.get("/playthroughs/{pid}/development")
+async def development(pid: str, user: dict = Depends(auth.get_current_user)):
+    st = (await _get_playthrough(pid, user))["state"]
+    points = [{"at": e["at"], "date": e.get("campaign_date"), **e["condition_after"]}
+              for e in st["journal"] if e.get("condition_after")]
+    milestones = [{"id": e["id"], "at": e["at"], "title": e.get("title"), "text": e.get("text"), "date": e.get("campaign_date")}
+                  for e in st["journal"] if e.get("kind") in ("goal", "time_passes") or e.get("big_moment")]
+    intents = {}
+    for e in st["journal"]:
+        if e.get("kind") == "player_action":
+            intents[e.get("intent", "other")] = intents.get(e.get("intent", "other"), 0) + 1
+    return {"points": points, "milestones": milestones, "intents": intents, "goals": st.get("goals", []),
+            "testimony": st.get("testimony", {}), "attributes": st.get("attributes", {}), "background": st.get("background")}
+
+
+async def _goal_commit(pid: str, user: dict, mutate):
+    async with _lock(pid):
+        doc = await _get_playthrough(pid, user)
+        st = copy.deepcopy(doc["state"])
+        title, text = mutate(st)
+        st["journal"].append({"id": f"evt_{st['clock']:05d}_goal{len(st['journal'])}", "op": "goal", "kind": "goal",
+                              "intent": "goal", "title": title, "text": text, "actor_ids": [st["player_actor_id"]],
+                              "at": st["clock"], "status": "recorded", "campaign_date": st["campaign_time"]["date"],
+                              "campaign_time": st["campaign_time"]["time"], "wall_clock": now_iso()})
+        await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": st, "updated_at": now_iso()}})
+        doc["state"] = st
+        return _playthrough_out(doc)
+
+
+@api.post("/playthroughs/{pid}/goals")
+async def add_goal(pid: str, body: GoalIn, user: dict = Depends(auth.get_current_user)):
+    title = body.title.strip()[:160]
+    if not title:
+        raise HTTPException(status_code=400, detail="A goal needs a description")
+
+    def mutate(st):
+        if len([g for g in st.get("goals", []) if g["status"] == "active"]) >= 8:
+            raise HTTPException(status_code=400, detail="You can hold at most 8 active goals")
+        st.setdefault("goals", []).append({"id": new_id("goal"), "title": title, "status": "active",
+                                           "set_at": st["clock"], "set_date": st["campaign_time"]["date"]})
+        return "A personal goal is set", title
+    return await _goal_commit(pid, user, mutate)
+
+
+@api.patch("/playthroughs/{pid}/goals/{gid}")
+async def update_goal(pid: str, gid: str, body: GoalPatch, user: dict = Depends(auth.get_current_user)):
+    if body.status not in ("achieved", "abandoned", "active"):
+        raise HTTPException(status_code=400, detail="status must be achieved, abandoned or active")
+
+    def mutate(st):
+        g = next((x for x in st.get("goals", []) if x["id"] == gid), None)
+        if not g:
+            raise HTTPException(status_code=404, detail="Goal not found")
+        g["status"], g["resolved_at"] = body.status, st["clock"]
+        label = {"achieved": "A personal goal is achieved", "abandoned": "A personal goal is set aside",
+                 "active": "A personal goal is taken up again"}[body.status]
+        return label, g["title"]
+    return await _goal_commit(pid, user, mutate)
 
 
 # ---------------------------------------------------------------- shareable storybook
@@ -818,7 +1048,7 @@ async def revoke_share(share_id: str, user: dict = Depends(auth.get_current_user
     return {"ok": True}
 
 
-@api.get("/s/{share_id}")
+@api.api_route("/s/{share_id}", methods=["GET", "HEAD"])
 async def share_card(share_id: str, request: Request):
     """Link-preview page: Open Graph/Twitter meta for chat apps, then forwards people to the storybook."""
     from html import escape
@@ -836,8 +1066,9 @@ async def share_card(share_id: str, request: Request):
         book = None
     if book:
         title = f"{book['scenario_title']} · the story of {book['character']['name']}"
+        tail = "and counting" if share["mode"] == "live" else "(snapshot)"
         desc = (f"{book['campaign_title']} ({book['era']}). An illustrated IRGS storybook, "
-                f"{book['turns']} turns and counting.")
+                f"{book['turns']} turns {tail}.")
         scene = next((e["image_url"] for c in reversed(book["chapters"]) for e in reversed(c["entries"]) if e.get("image_url")), None)
         image = f"{origin}{scene}" if scene else book["cover_image"]
     else:

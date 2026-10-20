@@ -167,7 +167,7 @@ export default function AuthPage() {
           <div className="lg:col-span-7"><WorldTitle index={index} onPick={setIndex} /></div>
           <div className="lg:col-span-5 flex lg:justify-end"><AuthCard /></div>
         </div>
-        <p className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 tactical-label !text-dust animate-pulse">Scroll · what IRGS does</p>
+        <p className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 tactical-label !text-ash animate-pulse">Scroll · what IRGS does</p>
       </section>
       <section className="relative z-10 border-t border-line" data-testid="auth-features-strip">
         <div className="mx-auto max-w-[1500px] px-6 sm:px-12 py-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -180,7 +180,8 @@ export default function AuthPage() {
             </motion.div>
           ))}
         </div>
-        <p className="text-center pb-12 font-prose italic text-ash text-lg">“Nothing beyond this moment has been decided. The world unfolds only through what you choose.”</p>
+        <p className="text-center pb-6 font-prose italic text-ash text-lg">“Nothing beyond this moment has been decided. The world unfolds only through what you choose.”</p>
+        <p className="text-center pb-10 font-mono text-[11px] text-dust tracking-widest" data-testid="app-version-label">IRGS 3.3.E · website & app line of Core 3.3</p>
       </section>
     </div>
   );

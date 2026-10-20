@@ -12,6 +12,7 @@ import Chronicle from "@/pages/Chronicle";
 import Saves from "@/pages/Saves";
 import Store from "@/pages/Store";
 import Storybook from "@/pages/Storybook";
+import Marketplace from "@/pages/Marketplace";
 
 function AppRouter() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function AppRouter() {
         <Route path="/chronicle/:pid" element={<Chronicle />} />
         <Route path="/saves/:pid" element={<Saves />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/marketplace" element={<Marketplace />} />
       </Route>
       <Route path="*" element={<Navigate to="/library" replace />} />
     </Routes>

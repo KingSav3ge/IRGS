@@ -8,6 +8,12 @@ import { SceneImage } from "@/components/play/NarrativeEntry";
 import { fmtDate } from "@/lib/api";
 import { ShareDialog } from "@/components/ShareDialog";
 import { HistoryReference } from "@/components/HistoryReference";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useQuery } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import { EntityHistory } from "@/components/chronicle/EntityHistory";
+import { NotesPanel } from "@/components/chronicle/NotesPanel";
+import { DevelopmentPanel } from "@/components/chronicle/DevelopmentPanel";
 
 const TAGS = ["all", "big", "npc", "move", "speak", "observe", "interact", "combat", "rest", "other"];
 
@@ -15,6 +21,7 @@ export default function Chronicle() {
   const { pid } = useParams();
   const { data: pt } = usePlaythrough(pid);
   const paint = usePaint(pid);
+  const { data: entities = [] } = useQuery({ queryKey: ["entities", pid], queryFn: () => api.get(`/playthroughs/${pid}/entities`).then((r) => r.data) });
   const [q, setQ] = useState("");
   const [tag, setTag] = useState("all");
 
@@ -43,6 +50,14 @@ export default function Chronicle() {
         <ShareDialog pid={pid} triggerClassName="ml-auto" />
         <Button variant="outline" className="border-line" onClick={exportJson} data-testid="chronicle-export-button"><Download size={14} className="mr-2" /> Export</Button>
       </div>
+      <Tabs defaultValue="timeline" className="space-y-8">
+        <TabsList className="bg-tome border border-line flex-wrap h-auto" data-testid="chronicle-tabs">
+          <TabsTrigger value="timeline" data-testid="chronicle-tab-timeline">Timeline</TabsTrigger>
+          <TabsTrigger value="entities" data-testid="chronicle-tab-entities">People & places</TabsTrigger>
+          <TabsTrigger value="notes" data-testid="chronicle-tab-notes">Notes & documents</TabsTrigger>
+          <TabsTrigger value="development" data-testid="chronicle-tab-development">Development & goals</TabsTrigger>
+        </TabsList>
+        <TabsContent value="timeline" className="space-y-10">
       <div className="flex flex-wrap gap-3 items-center">
         <div className="relative w-full sm:w-72">
           <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-dust" />
@@ -70,6 +85,11 @@ export default function Chronicle() {
         {entries.length === 0 && <li className="pl-8 text-dust text-sm" data-testid="chronicle-empty">No entries match.</li>}
       </ol>
       <HistoryReference pid={pid} />
+        </TabsContent>
+        <TabsContent value="entities"><EntityHistory pid={pid} entities={entities} /></TabsContent>
+        <TabsContent value="notes"><NotesPanel pid={pid} entities={entities} /></TabsContent>
+        <TabsContent value="development"><DevelopmentPanel pid={pid} /></TabsContent>
+      </Tabs>
       <Link to={`/play/${pid}`} className="text-sm text-gold" data-testid="chronicle-back-to-play">← Return to play</Link>
     </div>
     </div>

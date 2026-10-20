@@ -64,6 +64,12 @@ export const StatusPanel = ({ pt }) => {
           ))}
         </ul>
       </div>
+      {v.goals?.some((g) => g.status === "active") && (
+        <div className="space-y-2" data-testid="gameplay-goals">
+          <p className="tactical-label">Your goals</p>
+          <ul className="space-y-1">{v.goals.filter((g) => g.status === "active").map((g) => <li key={g.id} className="text-xs text-parchment">◇ {g.title}</li>)}</ul>
+        </div>
+      )}
       {v.rumours?.length > 0 && (
         <div className="space-y-2" data-testid="gameplay-rumours">
           <p className="tactical-label">Rumours abroad</p>

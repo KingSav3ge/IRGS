@@ -1,0 +1,14 @@
+[
+  {
+    "file": "IRGS_Core_Unification_CMRR_Round_7.zip",
+    "bytes": 910919,
+    "sha256": "6ee9dad5093d93438b7542f98217d524fa4aba579b001cfd1cabeefb33a81ab9",
+    "role": "predecessor candidate source"
+  },
+  {
+    "file": "AST Character Concept Sheets.7z",
+    "bytes": 103235543,
+    "sha256": "fc1bf7b0630f935562d91e23dce7e9eb2e7c5c2eb60370923428f93ecf580200",
+    "role": "visual reference only; archive listing inspected, images not inspected"
+  }
+]

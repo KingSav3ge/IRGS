@@ -1,0 +1,52 @@
+{
+  "summary": "First full E2E run of IRGS (backend + frontend). Backend: 19 existing regression tests (1 stale assertion fixed: expects 4 campaigns, not 3) plus a new edge/security suite of 14 tests. Results: 31/33 pass. 2 real failures: (1) CRITICAL race, where a scene painting that finishes while another /act is in flight is overwritten, so the event stays stuck at image_status='painting' forever; (2) PATCH settings accepts any voice_engine. Also found and FIXED a critical blocking bug: ai.generate_image ran synchronous litellm on the event loop and froze the whole backend for about 14s per image (the health endpoint took 14.19s during a paint; after the fix it stays around 0.1s). Frontend: all requested flows pass. Covered: register, login and logout (user and admin); Library (4 campaigns, Eldoria locked for new users, genre filters, search); Character creator (budget cap, inventory add/remove, portrait upload, AI portrait in 16s, begin); Play (narration ~6-13s, intent badge, clock advance, move painting, paint-moment, read aloud, ElevenLabs upsell, Gemini and Claude narration both real with no fallback, provider persists after reload, save and checkpoint); Saves (list auto/manual/checkpoint, auto has no delete, delete, load, branch navigates, archive/restore, archived input disabled); Chronicle (tag filters, search, empty state, JSON export); Store (all 3 providers, test-mode banner, owned state, orders, Eldoria unlocks, ElevenLabs selectable after subscribing with mocked TTS 200, cancel). Themes manuscript/tablet/grimoire/pda are applied and readable.",
+  "backend_issues": {
+    "critical": [
+      {"endpoint": "POST /api/playthroughs/{pid}/act (+ background _paint_event)", "issue": "Lost update race. act() reads doc.state, awaits the LLM, then $set's the WHOLE state. If the painting task wrote image_status='ready'/image_path in the meantime, it is overwritten with the stale 'painting'. Reproduced in test_paint_then_act_race_keeps_image (2/2 runs). The DB showed a scene file stored for the user while evt_00001 stayed 'painting' forever. Effects: the image is lost, the frontend polls every 5s forever, and POST /events/{id}/paint returns early on 'painting', so the user can never retry. Concurrent /act calls on the same playthrough have the same lost-update problem (duplicate clock/event ids).", "priority": "CRITICAL"}
+    ],
+    "minor": [
+      {"endpoint": "PATCH /api/playthroughs/{pid}/settings", "issue": "voice_engine and narrator_voice are not validated. 'bogus-engine' is accepted and persisted (200)."},
+      {"endpoint": "POST /api/store/subscriptions/{id}/cancel + /api/voice/tts", "issue": "After cancelling ElevenLabs, the playthrough keeps voice_engine='elevenlabs'/el-bard, so every Read aloud fails with a 402 toast until the user manually switches to Standard. Fix: fall back to openai in tts or in _playthrough_out when premium is inactive. Cancel also expires the paid 30-day period immediately."},
+      {"endpoint": "engine.advance_time/_increment_date", "issue": "Fantasy date '0000-00-03' (Eldoria) never increments because the parse fails silently. Rome shows '0058-08-20' with no BCE marker."},
+      {"endpoint": "POST /api/auth/register", "issue": "No email format or password length validation."},
+      {"endpoint": "GET /api/files/{path}", "issue": "Unauthenticated, so any portrait or scene is readable by path. Acceptable for <img>, but note it. Scene PNGs are about 3.4MB each, so they load slowly (blank frames seen in Chronicle and Play). Recommend converting to JPEG/WebP."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "AppShell nav (mobile 390px)", "issue": "Nav links overflow and are clipped ('Chronicle' cut off; Saves and Store not reachable). No hamburger or scroll.", "selector": "[data-testid=nav-header]", "priority": "MEDIUM"},
+      {"component": "AppShell nav on /saves/{pid} and /chronicle/{pid}", "issue": "Play/Chronicle/Saves links are missing when the page is opened directly (they depend on localStorage LAST_PLAY_KEY, which is only set on /play). They should use the route pid.", "selector": "[data-testid=nav-header]", "priority": "LOW"}
+    ],
+    "integration_issues": [
+      {"flow": "Paint this moment", "issue": "Before the backend fix, the placeholder appeared about 15s late because the backend event loop was blocked. Fixed. It now depends on the race fix above, otherwise images can stay stuck at 'Painting this moment…'.", "affected_selectors": ["[data-testid^=paint-moment-btn-]", "[data-testid^=scene-painting-]"]}
+    ],
+    "design_issues": [
+      {"screen": "Play (mobile)", "issues": ["The status panel stacks first, so the narrative feed and action input start about 1440px down. Consider putting the feed and composer first on mobile."]},
+      {"screen": "Chronicle", "issues": ["The opening entry meta shows '#0 · · opening_scene' (empty date leaves double separators)."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_irgs_api.py", "/app/backend/tests/test_irgs_security_edges.py", "/app/test_reports/pytest/pytest_irgs_api.xml", "/app/test_reports/pytest/pytest_edges.xml"],
+  "action_items": [
+    "CRITICAL: Fix the act/paint race. In /act, do not $set the whole state. Use targeted $set/$push (state.clock, state.campaign_time, state.actors.PLAYER-01, $push state.journal), or re-read and merge image fields just before writing. Add an optimistic lock (state.clock match in the update filter) so concurrent acts return 409.",
+    "Add a stale-'painting' recovery. Let the paint endpoint restart if painting has been running for more than ~3 minutes (store painting_started_at), so stuck events can be retried.",
+    "Validate voice_engine (openai|elevenlabs) and narrator_voice against TTS_VOICES/ELEVEN_VOICES in PATCH settings.",
+    "Auto-fallback voice_engine to openai when the ElevenLabs subscription is inactive (tts endpoint or playthrough output).",
+    "Make the mobile nav responsive (hamburger or horizontal scroll), and derive the Play/Chronicle/Saves nav links from the route pid.",
+    "Optional: compress scene and portrait images, fix fantasy/BCE date display, add register validation."
+  ],
+  "critical_code_review_comments": [
+    "FIXED: emergentintegrations OpenAIImageGeneration.generate_images is declared async but calls sync litellm.image_generation + requests.get, which blocked the FastAPI loop for about 14s per image for ALL users. ai_services.generate_image now runs it via asyncio.to_thread(asyncio.run(...)).",
+    "server.py is 719 lines, at the 700-line limit. Split it into routers (auth, content, playthroughs, saves, voice, store).",
+    "asyncio.create_task(_paint_event) has no stored reference, so tasks may be garbage-collected and are lost on restart (the event then stays 'painting'). Keep the references and/or add the stale recovery.",
+    "_has_premium_voice treats ANY active subscription as premium voice. That's fine today, but key it by item_id.",
+    "CORS_ORIGINS='*' with allow_credentials=True: Starlette echoes the origin, so this works but is permissive. Use explicit origins in production."
+  ],
+  "updated_files": ["/app/backend/ai_services.py (generate_image moved off the event loop)", "/app/backend/tests/test_irgs_api.py (campaign count 3->4)", "/app/backend/tests/test_irgs_security_edges.py (new)"],
+  "success_rate": {"backend": "94% (31/33; 2 genuine bugs)", "frontend": "~95% (all requested flows work; mobile nav overflow)"},
+  "test_credentials": "admin@irgs.app / chronicle123 (works). UI users: ui_b9f4eb@example.com / Passw0rd! (hyw playthrough play_207f19a86a9f + branch), ui_store_6458df@example.com / Passw0rd! (bought all 3 items, ElevenLabs cancelled; pda playthrough play_572286dd14a5).",
+  "seed_data_creation": "Test users test_*, test_edge_*, ui_* @example.com with TEST_ characters and playthroughs. Admin playthroughs play_91acb073c678 (rome/tablet) and play_9faeeec2a28a (eldoria/grimoire).",
+  "retest_needed": true,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Run: pytest /app/backend/tests/ (pytest.ini forces -n 2 loadscope; use -n 0 for serial, not -p no:xdist). test_paint_then_act_race_keeps_image is the regression test for the critical race and takes about 3 minutes. test_settings_invalid_voice_engine is expected to fail until validation is added. In TestPlay, test_manual_paint depends on test_act_narration, so don't filter it alone. Narration takes ~5-13s (Gemini and Claude work), images ~15-20s, TTS ~1-8s. STT was covered by an existing test (it passed).",
+  "rca of the issue": "Race: act() loads doc at T0 (journal event X image_status='painting'). The background _paint_event later sets state.journal.$[e].image_status='ready' via array_filters. act() then writes {'$set': {'state': new_state}}, where new_state was deep-copied from the T0 state, so the image fields are clobbered back to 'painting'. Repro: perform a move action, then keep sending speak actions until the painting finishes, then GET chronicle: the event is still 'painting' while db.files holds the generated scene. Mitigation: use field-level updates or $push for the journal plus an optimistic concurrency check."
+}

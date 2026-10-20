@@ -1,0 +1,629 @@
+{
+  "actors": {
+    "caregiver-1": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": false,
+      "id": "caregiver-1",
+      "location": "house-1",
+      "training_evidence": null
+    },
+    "child-1": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": false,
+      "id": "child-1",
+      "location": "house-1",
+      "training_evidence": null
+    },
+    "farmer-a": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": true,
+      "id": "farmer-a",
+      "location": "farm",
+      "training_evidence": null
+    },
+    "farmer-b": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": false,
+      "id": "farmer-b",
+      "location": "farm",
+      "training_evidence": null
+    },
+    "person-B": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": false,
+      "id": "person-B",
+      "location": "house-1",
+      "training_evidence": null
+    },
+    "standby-1": {
+      "ammo": 0,
+      "custody": null,
+      "disabled": false,
+      "enlisted": false,
+      "id": "standby-1",
+      "location": "house-1",
+      "training_evidence": null
+    }
+  },
+  "allocation_audit": [],
+  "budgets": {},
+  "campaign_id": "TEST-MOB-ONLY",
+  "cash": {
+    "army": 80,
+    "caregiver-1": 100,
+    "child-1": 0,
+    "farmer-a": 20,
+    "farmer-b": 100,
+    "person-B": 100,
+    "standby-1": 0,
+    "treasury": 600
+  },
+  "cash_baseline": 1000,
+  "clock": 10,
+  "commitments": {
+    "caregiver-1": [
+      [
+        8,
+        12,
+        "household_care"
+      ]
+    ],
+    "farmer-a": [
+      [
+        8,
+        12,
+        "work:grow"
+      ]
+    ],
+    "farmer-b": [
+      [
+        8,
+        12,
+        "work:grow"
+      ]
+    ],
+    "person-B": [
+      [
+        8,
+        12,
+        "work:cook"
+      ]
+    ]
+  },
+  "econ3": {
+    "active_jobs": {},
+    "care_delivered": [],
+    "completed_jobs": {},
+    "consumed": {
+      "fuel": 0,
+      "grain": 0,
+      "iron": 0,
+      "meal": 0,
+      "scrap": 0,
+      "seed": 0,
+      "shield": 0,
+      "unfinished-shield": 0
+    },
+    "meals_delivered": {},
+    "needs": {
+      "house-1": {
+        "care_end": 12,
+        "care_required_hours": 4,
+        "care_start": 8,
+        "meal_deadline": 16,
+        "meal_required": 6
+      }
+    },
+    "needs_audit": [],
+    "opening": {
+      "fuel": 4,
+      "grain": 8,
+      "iron": 10,
+      "meal": 0,
+      "scrap": 0,
+      "seed": 16,
+      "shield": 0,
+      "unfinished-shield": 0
+    },
+    "produced": {
+      "fuel": 0,
+      "grain": 0,
+      "iron": 0,
+      "meal": 0,
+      "scrap": 0,
+      "seed": 0,
+      "shield": 0,
+      "unfinished-shield": 0
+    },
+    "provision_audit": [],
+    "qualifications": {
+      "caregiver-1": [
+        "care"
+      ],
+      "child-1": [],
+      "farmer-a": [
+        "grow"
+      ],
+      "farmer-b": [
+        "grow"
+      ],
+      "person-B": [
+        "care",
+        "cook"
+      ],
+      "standby-1": []
+    },
+    "recipes": {
+      "cook": {
+        "inputs": {
+          "fuel": 1,
+          "grain": 2
+        },
+        "outputs": {
+          "meal": 3
+        },
+        "qual": "cook",
+        "site": "house-1"
+      },
+      "grow": {
+        "inputs": {
+          "seed": 1
+        },
+        "outputs": {
+          "grain": 3
+        },
+        "qual": "grow",
+        "site": "farm"
+      }
+    },
+    "released_shifts": [],
+    "shipments": {},
+    "sites": {
+      "farm": {
+        "workers_capacity": 2
+      },
+      "house-1": {
+        "workers_capacity": 1
+      }
+    },
+    "stocks": {
+      "farm": {
+        "grain": 0,
+        "iron": 10,
+        "seed": 12
+      },
+      "house-1": {
+        "fuel": 4,
+        "grain": 8,
+        "meal": 0
+      },
+      "warehouse": {
+        "seed": 4
+      }
+    },
+    "tax_claims": {}
+  },
+  "engagement_summaries": {},
+  "engagements": [],
+  "equipment": {
+    "depot": {
+      "kit": 300
+    }
+  },
+  "formations": {
+    "army": {
+      "members": [
+        "farmer-a"
+      ]
+    }
+  },
+  "gov": {
+    "legal_status": {},
+    "mobilization": {
+      "at": 0,
+      "enrolled": 1,
+      "mandate": "fixture",
+      "target": 2
+    }
+  },
+  "households": {
+    "house-1": {
+      "care_commitment": "care-shift-1",
+      "members": [
+        "caregiver-1",
+        "person-B",
+        "child-1"
+      ]
+    }
+  },
+  "journal": [
+    {
+      "at": 0,
+      "id": "mandate",
+      "op": "authorize_mobilization",
+      "params": {
+        "mandate": "fixture",
+        "target": 2
+      }
+    },
+    {
+      "at": 1,
+      "id": "enroll",
+      "op": "enroll",
+      "params": {
+        "person": "farmer-a"
+      }
+    },
+    {
+      "at": 2,
+      "id": "order",
+      "op": "issue_order",
+      "params": {
+        "deadline": 20,
+        "order_id": "order",
+        "recipient": "captain"
+      }
+    },
+    {
+      "at": 3,
+      "id": "received",
+      "op": "receive_order",
+      "params": {
+        "order_id": "order"
+      }
+    },
+    {
+      "id": "r9:decision:approve-one",
+      "at": 9,
+      "op": "transfer_cash",
+      "params": {
+        "amount": 80,
+        "from": "farmer-a",
+        "to": "army"
+      }
+    }
+  ],
+  "kit_baseline": 300,
+  "orders": {
+    "order": {
+      "deadline": 20,
+      "executed": false,
+      "issued_at": 2,
+      "received_at": 3,
+      "recipient": "captain"
+    }
+  },
+  "pending": [],
+  "person_claims": [],
+  "population": {
+    "baseline": 1200,
+    "cohort_id": "region-residents-01",
+    "residual": 1194
+  },
+  "processed": {
+    "enroll": "165b1fa10151fa4d9fe237ef96ff6d6587a77113cc35077cfbf66ab8cddacf7c",
+    "mandate": "fb0480f3dfa1f20693b1358318d23d1195ba84dc84f2257d12ed73690ca3b63b",
+    "order": "4fc180c329785d58be6d3373befcf81a03d8f7855107bd98efbb3eeb6aeff9a2",
+    "received": "f47082e9323da7b04af1c8b7abf207876f87d079ed05272afa051abad7d23318",
+    "r9:decision:approve-one": "c968f71b1f3b8f80d22e4e8473e5a1ba4e50aa1b699085cc3d0cb60814b42937"
+  },
+  "r4_decisions": [],
+  "r4_deferred": {},
+  "r4_request_ids": [],
+  "r6_model_bindings": {
+    "cook": "synthetic-cook-1h",
+    "grow": "synthetic-grow-1h"
+  },
+  "r6_progress": {},
+  "r6_settlements": {},
+  "r7_intermediates": {},
+  "r7_profiles": {
+    "shield-fixture": {
+      "finished": "shield",
+      "finished_qty": 1,
+      "input": "iron",
+      "input_qty": 3,
+      "intermediate": "unfinished-shield",
+      "intermediate_qty": 2,
+      "salvage": "scrap",
+      "salvage_per_unit": 1
+    }
+  },
+  "r9": {
+    "decisions": {
+      "approve-one": {
+        "payload": {
+          "id": "approve-one",
+          "request": "one",
+          "at": 9,
+          "mandate": "cash",
+          "actor": "treasurer",
+          "approve": true
+        },
+        "actual_event": {
+          "id": "r9:decision:approve-one",
+          "at": 9,
+          "op": "transfer_cash",
+          "params": {
+            "amount": 80,
+            "from": "farmer-a",
+            "to": "army"
+          }
+        },
+        "original_request": "one"
+      },
+      "deny-two": {
+        "payload": {
+          "id": "deny-two",
+          "request": "two",
+          "at": 10,
+          "mandate": "cash",
+          "actor": "treasurer",
+          "approve": false
+        },
+        "actual_event": null,
+        "original_request": "two"
+      }
+    },
+    "frontiers": [
+      {
+        "at": 8,
+        "edges": [
+          [
+            "two",
+            "one"
+          ]
+        ],
+        "requests": [
+          "one",
+          "two"
+        ]
+      }
+    ],
+    "mandates": {
+      "cash": {
+        "active": true,
+        "actor": "treasurer",
+        "effective_at": 3,
+        "operations": [
+          "transfer_cash"
+        ],
+        "source_ref": "fixture-law"
+      }
+    },
+    "requests": {
+      "one": {
+        "certificate": {
+          "backend": "ReceiverWorld",
+          "code": "99364a90c7d10511c4a2dd340e6bb74833ee6427b23de231ca5432597096f337",
+          "event": {
+            "at": 8,
+            "id": "one",
+            "op": "transfer_cash",
+            "params": {
+              "amount": 80,
+              "from": "farmer-a",
+              "to": "army"
+            }
+          },
+          "post_state": "47e251dc1a2f186514c411c5d8b5348b698502946db8eb347680620f55bfdd52",
+          "profile": "legacy_research_fixture",
+          "reads": [
+            [
+              "cash",
+              "@exists"
+            ],
+            [
+              "cash",
+              "army"
+            ],
+            [
+              "cash",
+              "army",
+              "@exists"
+            ],
+            [
+              "cash",
+              "farmer-a"
+            ],
+            [
+              "cash",
+              "farmer-a",
+              "@exists"
+            ],
+            [
+              "r4_decisions"
+            ],
+            [
+              "r4_decisions",
+              "@exists"
+            ],
+            [
+              "r4_deferred",
+              "@exists"
+            ],
+            [
+              "r4_request_ids"
+            ],
+            [
+              "r4_request_ids",
+              "@exists"
+            ],
+            [
+              "r6_model_bindings",
+              "@exists"
+            ],
+            [
+              "r6_progress",
+              "@exists"
+            ],
+            [
+              "r6_settlements",
+              "@exists"
+            ]
+          ],
+          "snapshot": "968dbc12485f51e8b8b05868de7813b23c035d9a311240e7d4111082e85192f8",
+          "writes": [
+            [
+              "cash",
+              "army"
+            ],
+            [
+              "cash",
+              "farmer-a"
+            ]
+          ]
+        },
+        "original": {
+          "at": 8,
+          "id": "one",
+          "op": "transfer_cash",
+          "params": {
+            "amount": 80,
+            "from": "farmer-a",
+            "to": "army"
+          }
+        },
+        "original_digest": "0ab1a626c1485f9075b70eaa180a7cc7305e664187ed3eaaf8ea08aff8edbc6d",
+        "reason": "dependency conflict or unqualified peer",
+        "status": "approved_executed"
+      },
+      "two": {
+        "certificate": {
+          "backend": "ReceiverWorld",
+          "code": "99364a90c7d10511c4a2dd340e6bb74833ee6427b23de231ca5432597096f337",
+          "event": {
+            "at": 8,
+            "id": "two",
+            "op": "transfer_cash",
+            "params": {
+              "amount": 80,
+              "from": "farmer-a",
+              "to": "army"
+            }
+          },
+          "post_state": "d52b18216c5877c4a574059f84bd11a6171ea321516a25fc25165df84993fcd6",
+          "profile": "legacy_research_fixture",
+          "reads": [
+            [
+              "cash",
+              "@exists"
+            ],
+            [
+              "cash",
+              "army"
+            ],
+            [
+              "cash",
+              "army",
+              "@exists"
+            ],
+            [
+              "cash",
+              "farmer-a"
+            ],
+            [
+              "cash",
+              "farmer-a",
+              "@exists"
+            ],
+            [
+              "r4_decisions"
+            ],
+            [
+              "r4_decisions",
+              "@exists"
+            ],
+            [
+              "r4_deferred",
+              "@exists"
+            ],
+            [
+              "r4_request_ids"
+            ],
+            [
+              "r4_request_ids",
+              "@exists"
+            ],
+            [
+              "r6_model_bindings",
+              "@exists"
+            ],
+            [
+              "r6_progress",
+              "@exists"
+            ],
+            [
+              "r6_settlements",
+              "@exists"
+            ]
+          ],
+          "snapshot": "968dbc12485f51e8b8b05868de7813b23c035d9a311240e7d4111082e85192f8",
+          "writes": [
+            [
+              "cash",
+              "army"
+            ],
+            [
+              "cash",
+              "farmer-a"
+            ]
+          ]
+        },
+        "original": {
+          "at": 8,
+          "id": "two",
+          "op": "transfer_cash",
+          "params": {
+            "amount": 80,
+            "from": "farmer-a",
+            "to": "army"
+          }
+        },
+        "original_digest": "59fdb5d021622a2109a1e5253cdf08f46724552b8112f4cb56f32bc7f3653c79",
+        "reason": "dependency conflict or unqualified peer",
+        "status": "denied"
+      }
+    }
+  },
+  "r9_delegations": {
+    "farm": {
+      "active": true,
+      "delegate": "steward",
+      "end": 20,
+      "grantor": "owner",
+      "recipe_id": "grow",
+      "site": "farm",
+      "start": 0,
+      "workers": [
+        "farmer-a"
+      ]
+    }
+  },
+  "r9_engine_bindings": {
+    "military": "R9-proposed-receiver-v1",
+    "roman": "R9-proposed-receiver-v1"
+  },
+  "r9_issue_directives": {
+    "order": {
+      "authorized": true,
+      "persons": [
+        "farmer-a"
+      ]
+    }
+  },
+  "recognitions": [],
+  "reports": [],
+  "undertakings": [],
+  "wage_due": {}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="10" time="13.479" timestamp="2026-10-20T18:44:02.378598+00:00" hostname="agent-env-7a82a9e7-68db-407b-9030-197917cc8be3"><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_clamps_delta" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_rejects_unknown_and_player_actor" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_rejects_unknown_kind_and_location" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_move_by_name" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_caps_local_2_broad_6" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_player_untouched" time="0.000" /><testcase classname="tests.test_irgs_iter3.TestApplyNpcActions" name="test_robust_to_malformed_llm_output" time="0.000"><failure message="Failed: apply_npc_actions raised on malformed LLM output: AttributeError: 'str' object has no attribute 'get'">tests/test_irgs_iter3.py:107: in test_robust_to_malformed_llm_output
+    st = engine.apply_npc_actions(_state(), acts)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+engine.py:267: in apply_npc_actions
+    aid, kind = a.get("actor_id"), a.get("kind")
+                ^^^^^
+E   AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+tests/test_irgs_iter3.py:109: in test_robust_to_malformed_llm_output
+    pytest.fail(f"apply_npc_actions raised on malformed LLM output: {type(e).__name__}: {e}")
+E   Failed: apply_npc_actions raised on malformed LLM output: AttributeError: 'str' object has no attribute 'get'</failure></testcase><testcase classname="tests.test_irgs_iter3.TestLivingCharactersAndShares" name="test_flow" time="13.089" /><testcase classname="tests.test_irgs_iter3.TestLivingCharactersAndShares" name="test_invalid_mode" time="0.053" /><testcase classname="tests.test_irgs_iter3.TestLivingCharactersAndShares" name="test_unauth" time="0.227" /></testsuite></testsuites>

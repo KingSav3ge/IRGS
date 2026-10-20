@@ -1,0 +1,54 @@
+{
+  "url": "http://127.0.0.1:8765/",
+  "status": "LIVE_VERIFIED",
+  "core": "3.3",
+  "genre_engines": 6,
+  "content_libraries": 8,
+  "campaign_profiles": 7,
+  "ast_classification": "campaign_library",
+  "canonical_horse": "Abel",
+  "content_edition": "SOLO-GAMEPLAY-2026-10-19",
+  "startup_hash_verification": true,
+  "release_manifest_sha256": "001430b6d6291f7b2005d936bf955d1c3966a2187b8ba3d7e4f38ed66ed0d479",
+  "existing_campaigns_read_without_changes": 0,
+  "trash_count": 7,
+  "historical_entries": 37,
+  "featured_historical_entries": 10,
+  "developed_historical_opening": "hyw-1415",
+  "historical_opening_date": "1415-08-11",
+  "historical_opening_sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+  "all_proposed_entries_remain_unready": true,
+  "solo_character_review": true,
+  "filtered_player_views": true,
+  "temporal_registry": true,
+  "detailed_entry_briefing": true,
+  "real_campaigns_created_for_verification": 0,
+  "no_live_campaign_writes": true,
+  "visual_browser_review": "UNAVAILABLE; synthetic interface and actual HTTP checks passed",
+  "verified_at": "2026-10-19T17:02:38.693245+00:00",
+  "on_demand_launcher_verified": true,
+  "launcher": {
+    "browser_open_suppressed_for_verification": true,
+    "status": "PASS",
+    "cold_start": true,
+    "verified_at": "2026-10-19T17:02:03.5379372Z",
+    "process_id": 15696,
+    "port": 8765,
+    "repeated_launch_reused_same_process": true,
+    "real_campaigns_created": 0
+  },
+  "shortcuts": [
+    {
+      "path": "C:\\Users\\ian_c\\Desktop\\IRGS.lnk",
+      "verified": true,
+      "target": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3\\Start-IRGS-3.3.cmd",
+      "working_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3"
+    },
+    {
+      "path": "C:\\Users\\ian_c\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\IRGS.lnk",
+      "verified": true,
+      "target": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3\\Start-IRGS-3.3.cmd",
+      "working_directory": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS_3_3"
+    }
+  ]
+}

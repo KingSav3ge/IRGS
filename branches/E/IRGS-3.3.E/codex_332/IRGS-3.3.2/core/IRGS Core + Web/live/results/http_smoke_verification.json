@@ -1,0 +1,9 @@
+{
+  "health": "PASS",
+  "registry": "PASS",
+  "csrf_rejection": "PASS",
+  "atomic_write": "PASS",
+  "stale_state_rejection": "PASS",
+  "knowledge_not_omniscient": "PASS",
+  "scope": "isolated test state only"
+}

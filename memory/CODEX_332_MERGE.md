@@ -1,3 +1,7 @@
+# Version lines
+- **3.3.E**: the Emergent continuation of Core 3.3, focused on the website and app (THIS codebase).
+- **3.3.C**: the Codex continuation of Core 3.3, focused on the engine. Future Codex uploads (3.3.C.x) should be compared and their engine, rules and content merged here, keeping 3.3.E's version wherever it is superior.
+
 # Codex 3.3.2 merge notes (20 Oct 2026 upload)
 
 ## What Codex 3.3.2 contained

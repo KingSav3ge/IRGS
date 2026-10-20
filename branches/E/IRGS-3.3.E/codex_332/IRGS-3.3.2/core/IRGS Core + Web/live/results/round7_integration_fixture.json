@@ -1,0 +1,194 @@
+{
+  "status": "PROPOSED R7 bounded deterministic fixture; not authority/evidence authentication or a playtest",
+  "scheduler": {
+    "committed": [
+      "farm-hour-one",
+      "fire",
+      "tax",
+      "farm-assessment",
+      "fabrication",
+      "kitchen-complete",
+      "replacement-dispatch",
+      "replacement-arrive",
+      "shift-new",
+      "workpiece-loss",
+      "farm-continue",
+      "inspect-workpiece",
+      "farm-continued-0",
+      "farm-continued-1",
+      "farm-continued-2",
+      "farm-finish",
+      "salvage"
+    ],
+    "deferred": [],
+    "physical_losses": [
+      "fire",
+      "workpiece-loss"
+    ],
+    "through": 20
+  },
+  "population": 1200,
+  "cash_total": 1000,
+  "physical": {
+    "seed": {
+      "opening": 16,
+      "consumed": 4,
+      "lost": 9,
+      "remaining": 3
+    },
+    "grain_accepted": 12,
+    "meals_accepted": 12,
+    "iron": {
+      "opening": 10,
+      "consumed": 3,
+      "remaining": 7
+    },
+    "intermediate": {
+      "made": 2,
+      "physically_lost": 1,
+      "used_for_salvage": 1,
+      "remaining": 0
+    },
+    "finished_shields": 0,
+    "salvage_scrap": 1
+  },
+  "work": {
+    "original": {
+      "status": "interrupted_settled",
+      "at": 11,
+      "hours_verified": 1,
+      "hours_remaining": 3,
+      "unassessed_elapsed_interval": [
+        9,
+        10
+      ],
+      "unassessed_work_is_not_assumed_performed": true,
+      "wages_accrued_for_verified_hours": [
+        {
+          "person": "farmer-a",
+          "amount": 2,
+          "actual_verified_hours": 1,
+          "agreement_ref": "fictional-contract"
+        }
+      ],
+      "wage_claim_for_unassessed_time": "unresolved",
+      "assessment_ref": "synthetic-disruption-assessment",
+      "source_shortfall_event": "scenario-fire"
+    },
+    "continuation": {
+      "status": "completed_settled",
+      "at": 18,
+      "hours_verified": 3,
+      "hours_remaining": 0,
+      "wages_accrued_for_verified_hours": [
+        {
+          "person": "farmer-a",
+          "amount": 6,
+          "actual_verified_hours": 3,
+          "agreement_ref": "fictional-contract"
+        }
+      ],
+      "acceptance_ref": "synthetic-farm-completion"
+    },
+    "claim": "fulfilled_by_continuation",
+    "wage_liability": 8
+  },
+  "workpiece": {
+    "profile": "shield-fixture",
+    "site": "farm",
+    "intermediate": "unfinished-shield",
+    "physical_qty": 0,
+    "initial_qty": 2,
+    "source_event_id": "fabrication",
+    "profile_snapshot": {
+      "input": "iron",
+      "input_qty": 3,
+      "intermediate": "unfinished-shield",
+      "intermediate_qty": 2,
+      "finished": "shield",
+      "finished_qty": 1,
+      "salvage": "scrap",
+      "salvage_per_unit": 1
+    },
+    "profile_digest": "c5c55a443d84639f50c843fa91e2d93f0d9e50b661e11e6bc923ae69d69d1bc6",
+    "status": "salvaged",
+    "inspection_ref": "synthetic-inspection",
+    "inspection_outcome": "reject",
+    "losses": [
+      {
+        "event_id": "workpiece-loss",
+        "quantity": 1,
+        "cause_ref": "synthetic-accident"
+      }
+    ],
+    "disposition_ref": "synthetic-recovery-measurement",
+    "recovered_quantity": 1
+  },
+  "tax": {
+    "payer": "farmer-b",
+    "assessed": 6,
+    "paid": 0,
+    "assessed_at": 10,
+    "authority_ref": "fictional-statute",
+    "basis_ref": "fictional-assessment"
+  },
+  "audit": {
+    "physical_totals": {
+      "seed": 3,
+      "grain": 12,
+      "iron": 7,
+      "scrap": 1,
+      "fuel": 0,
+      "meal": 12,
+      "unfinished-shield": 0,
+      "shield": 0
+    },
+    "loss_sources": {
+      "seed": 9,
+      "unfinished-shield": 1
+    },
+    "r6_verified_worker_hours": 4,
+    "r6_milestone_input": {
+      "seed": 4
+    },
+    "r6_milestone_output": {
+      "grain": 12
+    },
+    "r6_job_settlements": 2,
+    "journal_events": 20,
+    "r7_workpieces": 1,
+    "r7_input_consumed": {
+      "iron": 3
+    },
+    "r7_intermediate_created": {
+      "unfinished-shield": 2
+    },
+    "r7_finished_accepted": {},
+    "r7_salvage_recovered": {
+      "scrap": 1
+    },
+    "r7_intermediate_physically_lost": {
+      "unfinished-shield": 1
+    },
+    "r7_material_conservation": {
+      "seed": true,
+      "grain": true,
+      "fuel": true,
+      "meal": true,
+      "iron": true,
+      "unfinished-shield": true,
+      "shield": true,
+      "scrap": true
+    }
+  },
+  "save_load_identical": true,
+  "checksum": "993173741bd716dc66a8c4f22d9d2f91a84b48410a2d5b8fb65ece0a6c914228",
+  "caveats": [
+    "selected rates and quantity conversions are synthetic",
+    "WIP conversion does not yet simulate worker hours or time/energy demand",
+    "evidence and legal authority are supplied assertions",
+    "event footprints are bounded hand-declared contracts",
+    "no independently qualified generic engine runtime",
+    "no actuarial casualty or calibrated civil economy model"
+  ]
+}

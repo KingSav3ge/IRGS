@@ -8,8 +8,9 @@ import { Input } from "@/components/ui/input";
 import { api, errMsg } from "@/lib/api";
 import { usePlaythrough } from "@/pages/Play";
 import { LAST_PLAY_KEY } from "@/components/AppShell";
+import { SavePreviewDialog } from "@/components/SavePreviewDialog";
 
-const KIND_STYLE = { auto: "text-mana border-mana/40", checkpoint: "text-gold border-gold/40", manual: "text-ash border-line" };
+const KIND_STYLE = { auto: "text-mana border-mana/40", checkpoint: "text-gold border-gold/40", manual: "text-ash border-line", safety: "text-emerald border-emerald/40" };
 
 export default function Saves() {
   const { pid } = useParams();
@@ -60,6 +61,7 @@ export default function Saves() {
               <p className="text-parchment">{s.label}</p>
               <p className="text-xs font-mono text-dust">Turn {s.clock} · {s.campaign_time?.date} {s.campaign_time?.time} · {new Date(s.created_at).toLocaleString()}</p>
             </div>
+            <SavePreviewDialog save={s} onLoad={() => load(s)} onBranch={() => branch(s)} />
             <Button size="sm" variant="outline" className="border-line" onClick={() => load(s)} data-testid={`saves-restore-button-${s.save_id}`}><RotateCcw size={13} className="mr-1" /> Load</Button>
             <Button size="sm" variant="outline" className="border-arcane/40 text-arcane" onClick={() => branch(s)} data-testid={`saves-branch-button-${s.save_id}`}><GitBranch size={13} className="mr-1" /> Branch</Button>
             {s.kind !== "auto" && (

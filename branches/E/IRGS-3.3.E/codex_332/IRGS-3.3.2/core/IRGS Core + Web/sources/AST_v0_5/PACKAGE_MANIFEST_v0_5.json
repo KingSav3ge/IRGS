@@ -1,0 +1,171 @@
+{
+  "package_id": "IRGS-AST-0.5-CHAT-CONTINUITY-1.0",
+  "date": "2026-10-17",
+  "core": "IRGS-CORE-3.2",
+  "core_maintenance": "R3",
+  "scl": "IRGS-SCL-1.0",
+  "scope": "All delivered files except this manifest and verification/RESULTS_v0_5.json; excludes the receipt to avoid a hash cycle.",
+  "current_campaign_state_loaded": false,
+  "files": [
+    {
+      "path": "AST_Art_Direction_v0_5.md",
+      "size_bytes": 33003,
+      "sha256": "887d5b35121fe4399d6f4a207a08362bc533caabedd3040852ba09bc4c933f7f"
+    },
+    {
+      "path": "AST_Content_Library_v0_5.md",
+      "size_bytes": 50723,
+      "sha256": "941432e39ebd4bbaead08811ed3e6bbe3e6a655da6628e96d89dab52bada219d"
+    },
+    {
+      "path": "AST_Engine_v0_5.md",
+      "size_bytes": 52578,
+      "sha256": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38"
+    },
+    {
+      "path": "AST_Receiving_Binding_v0_5.json",
+      "size_bytes": 6253,
+      "sha256": "dd003e222f78808ffd4ba5ffcf63b8e3fc8d6d60ecc61e1690db6d1fe3682df4"
+    },
+    {
+      "path": "CMRR_Chat_Continuity_v0_5.md",
+      "size_bytes": 9094,
+      "sha256": "22aa9df5bf6e0141a8a9edefe448282f57ee3ef1d3c62b17a7310a2abe38ed8e"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Core_Engine_v3_2.md",
+      "size_bytes": 363467,
+      "sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Engine_Bindings_v3_2.json",
+      "size_bytes": 42828,
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_Consolidated_Qualification_R2.json",
+      "size_bytes": 1220109,
+      "sha256": "a97ed8c2de014507159a7a3cc6e6d69861957a557d062bf8e488bdb31d82cfd8"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+      "size_bytes": 773021,
+      "sha256": "d5f0bd227c2557d7ced70aaf86eab316fe86843938c143a5f5d3e1a2010dc022"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Reference_Map.csv",
+      "size_bytes": 82611,
+      "sha256": "81872f9f124c5d753feb1982cb22fecb4dc2696403b4b847385b9061df3487f8"
+    },
+    {
+      "path": "dependencies/Core/IRGS_SCL_v1_0_Selected_Contracts.md",
+      "size_bytes": 67004,
+      "sha256": "7da2484a24f94b574a3c47fc4fa80189c091d5f44958783168071e6c3b099967"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Shared_Content_Library_v1_0.md",
+      "size_bytes": 100379,
+      "sha256": "4f0a90687958bd6d54b0ab21dc0cfac4e02e0ed40992a3b86eb1cf1725164376"
+    },
+    {
+      "path": "dependencies/Core/IRGS_Shared_Content_Registry_v1_0.json",
+      "size_bytes": 2081427,
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9"
+    },
+    {
+      "path": "dependencies/Core/PACKAGE_MANIFEST.json",
+      "size_bytes": 1494,
+      "sha256": "9a39f2db60b1973f6ed1ec4b69819975267dd3632db4ea639e430b20d2723858"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/IRGS_Military_Content_Catalogue_v1_0.json",
+      "size_bytes": 68563,
+      "sha256": "7f0ef7b23d321ee3d2e1e62595b0feedc8929a8b618b2513334195042e039fa6"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/IRGS_Military_Content_Library_v1_0_Candidate.md",
+      "size_bytes": 63355,
+      "sha256": "4b6560ac44abbfe1b01c913ab065183a91afbc4e898e090631341b42f33657d8"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_Acceptance_Cases_v1_0.csv",
+      "size_bytes": 8394,
+      "sha256": "77ceb7afb9977a038b2522f5aa4a8965224612f71d247078bf4abd98a4c676f3"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_Era_Category_Crosswalk_v1_0.csv",
+      "size_bytes": 18901,
+      "sha256": "6702a1a8127495fb7552c9d693ba7b35b77235ebc1592e2943a383ca61d3232d"
+    },
+    {
+      "path": "dependencies/Military/MilitaryLibrary/Military_SCL_Reference_Crosswalk_v1_0.csv",
+      "size_bytes": 1592,
+      "sha256": "41311dbe447e05277c9888a18a31571299d37bdfd9f63e7190cc907e2fd85c88"
+    },
+    {
+      "path": "dependencies/Military/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "size_bytes": 4090,
+      "sha256": "05261ad3a7ee1fcbf87f108e9e30d12978eb6ad6cb34ebfcfc404bce42784199"
+    },
+    {
+      "path": "dependencies/Military/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "size_bytes": 63987,
+      "sha256": "c93ba6fb3974b81852f1ca2dc9e03cb5db2aa050e1b65782df404c7b4940dec2"
+    },
+    {
+      "path": "IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+      "size_bytes": 30000,
+      "sha256": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3537,
+      "sha256": "e4d9342393c385464e99336020739f8c015e57519cb1956a333dc0364d0b8dd5"
+    },
+    {
+      "path": "references/Coopian_Shield_Current_Inaccurate_Draft.png",
+      "size_bytes": 2689510,
+      "sha256": "fb27f4f253177b7d3d82680b21c5657e0ed1a61454b7fade9530cc2304a56492"
+    },
+    {
+      "path": "references/Visual_Reference_Map.json",
+      "size_bytes": 14096,
+      "sha256": "797d9d3ae106a3fd761decf251435fe48b0e2cf1570ceec453c4ec41ad1ba23a"
+    },
+    {
+      "path": "references/Visual_References.md",
+      "size_bytes": 10134,
+      "sha256": "44f013ec7e59534709146b4445866e6fa4b4662543c70811916d79fb2d4c0e10"
+    },
+    {
+      "path": "verification/check_chat_continuity.py",
+      "size_bytes": 13455,
+      "sha256": "e0cbfb82ef3fcef7667f63d1984e9574f076d2a54ecde46f8c7ee6c2d8616e67"
+    },
+    {
+      "path": "verification/Continuity_Paragraph_Reconciliation.json",
+      "size_bytes": 22098,
+      "sha256": "997eaac4a5a96f3094b497cd647563a0f9de57f6a39e554cba18f66730001c19"
+    },
+    {
+      "path": "verification/Continuity_Source_Pins.json",
+      "size_bytes": 1288,
+      "sha256": "b7f003111392ce5c64af20fc11f3c3415482d706b9b03e36374b2c7390dcb0f4"
+    },
+    {
+      "path": "verification/Preservation_Baseline_R1.json",
+      "size_bytes": 15338,
+      "sha256": "65fb924890aabf9409c1754f33773d0b2207cbecacf45a9f822faa62ed614674"
+    },
+    {
+      "path": "verification/Source_Provenance_R1.json",
+      "size_bytes": 6245,
+      "sha256": "c5a9aa790064e074d7235b6391ea64c3265ae622bc116dd92d0f5dfefc8cbee1"
+    },
+    {
+      "path": "verification/verify_ast_v0_5.py",
+      "size_bytes": 16861,
+      "sha256": "ae99015d55cd7e61734874d70218277a4b5e501bb2f47bf0d832129401fabf9e"
+    }
+  ]
+}

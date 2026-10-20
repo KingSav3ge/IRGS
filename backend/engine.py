@@ -218,6 +218,7 @@ def player_view(state: dict) -> dict:
         "opening": state.get("opening"),
         "pending_action": state.get("pending_action"),
         "rumours": state.get("rumours", [])[-5:],
+        "goals": state.get("goals", []),
         "npc_pending": state.get("npc_pending", False),
     }
 

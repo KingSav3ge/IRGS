@@ -1,0 +1,199 @@
+{
+  "document_id": "IRGS-BIND-PROPOSAL-CORE-3.3-CMRR-R7",
+  "status": "R7 design proposal only: UNSELECTED; NOT adopted, calibrated, playtested or migrated",
+  "base_binding": "IRGS_Engine_Bindings_v3_2.json",
+  "base_document_id": "IRGS-RELEASE-3.2",
+  "base_sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c",
+  "candidate_core_ref": "IRGS-CORE-3.3-CANDIDATE-R7",
+  "existing_core_ref": "IRGS-CORE-3.2",
+  "catalogue_ref": "IRGS-SCL-1.0",
+  "preserved_owner_ids": [
+    "K-ACTOR",
+    "K-ASSET",
+    "K-INFO",
+    "K-NET",
+    "K-ORG",
+    "K-POP",
+    "K-STOCK",
+    "K-TIME",
+    "K-WORK"
+  ],
+  "proposed_domains": {
+    "GOV": [
+      113
+    ],
+    "ECO": [
+      114
+    ],
+    "INV": [
+      115
+    ],
+    "MAR": [
+      116
+    ],
+    "CIV": [
+      117
+    ],
+    "MED": [
+      118
+    ],
+    "WILD": [
+      119
+    ],
+    "INTEL": [
+      120
+    ],
+    "URBAN": [
+      121
+    ],
+    "LIFE": [
+      122
+    ],
+    "COMP": [
+      123
+    ],
+    "MIL": [
+      124
+    ]
+  },
+  "proposed_optional_provider_groups": {
+    "military": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      52,
+      60,
+      61,
+      62,
+      63,
+      64,
+      68,
+      69,
+      76,
+      83,
+      84,
+      85,
+      91,
+      101,
+      102,
+      106,
+      107,
+      110,
+      113,
+      114,
+      117,
+      122,
+      124
+    ],
+    "social_legal_life": [
+      4,
+      10,
+      12,
+      14,
+      15,
+      16,
+      26,
+      28,
+      38,
+      45,
+      46,
+      64,
+      66,
+      68,
+      69,
+      70,
+      76,
+      96,
+      106,
+      113,
+      114,
+      115,
+      122
+    ]
+  },
+  "source_sidecars_not_migrated": [
+    "IRGS-BIND-MILITARY-SLIM-1.2",
+    "IRGS-MLS-SLIM-1.2",
+    "Roman Slim v1.2/received Roman binding",
+    "AST v0.5 receiving binding"
+  ],
+  "proposed_receiving_policy": "NO MIGRATION: Receiving systems remain on adopted pins until independent acceptance, verified manifest, prospective cutover and replay validation.",
+  "unresolved": [
+    "Complete downstream genre receiving mappings and hashes",
+    "Historical/setting legal classifications and dated applicability",
+    "Exact operational/physical models and calibration",
+    "Executed replay and independent-run tests",
+    "Selected legal rule evaluation not implemented in fixture harness",
+    "Training external attestations not authenticated",
+    "Long-period economic and social simulation not exercised",
+    "Household material/health welfare and production/market calibration",
+    "Qualify bounded R4 declared footprints against all domain subscribers and capacity owners",
+    "Implement and independently test residual-cohort partition and true dual-scale effects",
+    "Authenticate legal/organizational decision authority rather than trusting reference strings",
+    "Physical-hazard adapter must validate evidence and occurrence-vs-observation chronology",
+    "Reconcile in-transit losses with shipment and receiving owner records",
+    "Qualify true cohort partition and an independently implemented tactical-to-monthly continuation",
+    "Authenticate legal and organizational allocations; unresolved causal-order decisions",
+    "Use calibrated medical, combat, production, logistics and household effect models",
+    "Authenticate actual work evidence and legal wage/acceptance authority; fixture uses literal reference strings",
+    "Qualify R6 milestone and lifecycle operations for simultaneous scheduled event components and comprehensive read/write footprints",
+    "Support batch, nonlinear, variable quality, work-in-progress, rework, spoilage and non-hourly wages",
+    "Confirm residual outstanding legal/economic claims after partial settlement, substitution and indemnity",
+    "Independently implement runtime and confirm cross-engine outputs, not just own save/load checks"
+  ],
+  "adoption": {
+    "campaign_adoption_applied": false,
+    "migration_applied": false,
+    "source_deprecation_applied": false
+  },
+  "candidate_core_sha256": "2cb1764aac15fc1f540c5932b88931848c330c89fa98c6cbfddbab2daae2472c",
+  "receiving_policy_detail": "All downstream bindings must be reissued with exact hashes before adoption; do not reuse v3.2 or R1 candidate identifiers as if they were applied.",
+  "new_schema_proposals": [
+    "GOV.LegalPosition owned by GOV; LIFE social position is a derived view",
+    "Simultaneous epoch allocation and atomic commit: no ID-order authority",
+    "K-POP extraction and training evidence validation required for substantive ready-state",
+    "K-WORK/K-STOCK actual production pipeline and reservation vs consumption separation; household provision as delivered work or stock",
+    "Same actor-time interval for CIV/MIL/LIFE/ECO labor and workstation capacity",
+    "Cross-domain payroll, tax, cash, input stock pre-event scarcity and causally staged simultaneous transactions",
+    "K-TIME owner-qualified selective transaction components, unexecuted proposal ledger, explicit prospective allocation decisions",
+    "Source-exclusive contributor/stream/interval coverage and read-only daily/monthly summary provenance",
+    "K-STOCK physical loss separate from consumption, claims, reservations and transit; hazard-source provenance",
+    "K-WORK loss-suspended job claims and explicit requalification before completion",
+    "K-TIME causal-order-undetermined unresolved same-time hazard vs shipment claims",
+    "MIL tactical effect IDs to strategic read-only projection, distinct from reports, incapacitation not death",
+    "K-WORK certified milestone consumption and accepted output, explicit uncovered work intervals and partial settlement",
+    "Authorized prospective continuation lineage and outstanding-claim fulfillment without deleting historical loss",
+    "ECO wage accrual for selected verified intervals separate from unresolved entitlement and paid cash"
+  ],
+  "reference_runtime_evidence": "203 bounded Python unit tests (165 inherited + 38 R7); one 17-event staged synthetic fixture; read-only cross-check audit; NOT an independent simulator or engine qualification",
+  "r7_proposal": {
+    "current_selection": "IRGS Core 3.2 unchanged",
+    "source_migration": "none",
+    "owners_preserved": 9,
+    "numbered_sections": 124,
+    "read_write_footprints": "bounded hand-declared only",
+    "r6_work_scheduler": "candidate R7 dispatch through tracked-work adapter",
+    "work_in_progress": "physical lot under existing K-STOCK, quality/disposition K-WORK",
+    "source_profile": "snapshotted selected recipe per workpiece, not mutable lookup"
+  }
+}

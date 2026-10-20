@@ -12,6 +12,9 @@ IRGS is a playable simulation engine with accounts, AI voice and media, and a co
 - Persistence: auto-save, manual saves, checkpoints, branching, archive/restore
 - Chronicle
 
+## Version lines
+- This app is **IRGS 3.3.E** (the Emergent continuation of Core 3.3: website/app). **3.3.C** is the Codex engine line. See memory/CODEX_332_MERGE.md
+
 ## User choices
 - Payments: MOCKED (simulated checkout) until the user provides PayPal, Paystack and Razorpay keys
 - Voice: OpenAI TTS is free. ElevenLabs Narration ($5.99/month subscription) is SIMULATED with OpenAI fallback voices until a key is provided. The subscription includes full-cast character voices
@@ -34,6 +37,8 @@ IRGS is a playable simulation engine with accounts, AI voice and media, and a co
 - 2026-06: Shareable storybook. Snapshot or live public links at /story/:id, with a genre-skinned cover and chapters, and a revoke option
 - 2026-06: Genre-neutral login. A joint choice screen ("Do you have a journey to return to? Or are you setting about your first?") leads to the Sign in or Sign up form. Sign in accepts an email OR a username (admin / chronicle123, ADMIN_USERNAME in .env)
 - iteration_3: 52/53 passed, then the NPC hardening fixes. Backend suite 53/53
+
+- 2026-06: Let time pass (a few hours / a day / a week; NPCs act and rumours spread, with broad scope allowed). Rich link previews (/api/s/{id} serves OG/Twitter meta, then forwards to /story/{id}). Cinematic front page (rotating genre-skinned showcase, glass sign-in panel, features strip). Codex 3.3.2 merge: researched HYW 1415 opening, 37-entry catalogue, read-only historical record panel, player testimony, reading settings
 
 ## Backlog
 - P1: real PayPal, Paystack and Razorpay checkout (keys needed); real ElevenLabs API (key needed)
