@@ -186,8 +186,15 @@ def _voice_cast(doc: dict) -> Dict[str, str]:
     return cast
 
 
+NPC_STALE_SECONDS = 90
+
+
 def _playthrough_out(doc: dict) -> dict:
     state = doc["state"]
+    if state.get("npc_pending"):
+        at = state.get("npc_pending_at")
+        if not at or (datetime.now(timezone.utc) - datetime.fromisoformat(at)).total_seconds() > NPC_STALE_SECONDS:
+            state = {**state, "npc_pending": False}
     return {
         "playthrough_id": doc["playthrough_id"], "title": doc.get("title"),
         "scenario_id": doc["scenario_id"], "character_id": doc.get("character_id"),
@@ -276,6 +283,7 @@ async def _paint_event(pid: str, user_id: str, event: dict, scenario: dict):
 def _merge_images(snapshot: dict, current: dict) -> dict:
     """Carry finished scene paintings into a restored snapshot; clear stale 'painting' flags."""
     snap = copy.deepcopy(snapshot)
+    snap["npc_pending"] = False
     cur = {e["id"]: e for e in current.get("journal", [])}
     for e in snap.get("journal", []):
         live = cur.get(e["id"])
@@ -566,6 +574,7 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
         event["painting_started_at"] = now_iso()
     event["provider"], event["model"] = provider, model
     new_state["npc_pending"] = True
+    new_state["npc_pending_at"] = now_iso()
     await db.playthroughs.update_one(
         {"playthrough_id": pid},
         {"$set": {"state": new_state, "provider": provider, "model": model, "updated_at": now_iso()}},
@@ -592,7 +601,13 @@ async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict):
         doc = await db.playthroughs.find_one({"playthrough_id": pid}, {"_id": 0})
         if not doc:
             return
-        new_state = engine.apply_npc_actions(doc["state"], plan["actions"], plan["scope"])
+        new_state = doc["state"]
+        same_turn = new_state.get("clock") == state["clock"] and any(e["id"] == event["id"] for e in new_state["journal"])
+        if same_turn:
+            try:
+                new_state = engine.apply_npc_actions(new_state, plan["actions"], plan["scope"])
+            except Exception as e:
+                logger.error(f"npc apply failed: {e}")
         new_state["npc_pending"] = False
         await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": new_state}})
         doc["state"] = new_state
@@ -906,6 +921,8 @@ app.add_middleware(
 async def startup():
     await auth.seed_admin()
     await db.users.create_index("email", unique=True)
+    await db.users.create_index("username", unique=True, sparse=True)
+    await db.login_attempts.create_index("identifier")
     await db.playthroughs.create_index("playthrough_id", unique=True)
     await db.saves.create_index("playthrough_id")
     await db.shares.create_index("share_id", unique=True)

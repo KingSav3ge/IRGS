@@ -17,7 +17,10 @@ export const fmtDate = (date, calendar) => {
   if (!date) return "";
   if (calendar === "roman") return `${date.replace(/^0+/, "")} BCE`;
   if (calendar === "eldoria") return `Day ${parseInt(date.split("-").pop(), 10)} of the vigil`;
-  return date;
+  const m = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return date;
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return `${parseInt(m[3], 10)} ${months[parseInt(m[2], 10) - 1] || ""} ${parseInt(m[1], 10)}`;
 };
 
 export const errMsg = (e, fallback = "Something went wrong") => {

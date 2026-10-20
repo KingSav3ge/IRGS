@@ -62,7 +62,7 @@ export default function Chronicle() {
             {e.declaration && <p className="text-sm text-ash italic mb-3">“{e.declaration}”</p>}
             <div className="grid gap-6 md:grid-cols-[1fr_260px]">
               <p className="font-prose text-lg leading-relaxed text-parchment/95 whitespace-pre-line">{e.text}</p>
-              <SceneImage entry={e} onPaint={paint} compact />
+              {e.kind !== "npc_action" && <SceneImage entry={e} onPaint={paint} compact />}
             </div>
           </li>
         ))}

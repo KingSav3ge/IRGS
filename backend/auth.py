@@ -45,8 +45,13 @@ def _public_user(doc: dict) -> dict:
     }
 
 
-async def _find_user(user_id=None, email=None):
-    q = {"user_id": user_id} if user_id else {"email": (email or "").lower()}
+async def _find_user(user_id=None, email=None, username=None):
+    if user_id:
+        q = {"user_id": user_id}
+    elif username:
+        q = {"username": username.lower()}
+    else:
+        q = {"email": (email or "").lower()}
     return await db.users.find_one(q, {"_id": 0})
 
 
@@ -73,12 +78,14 @@ async def register_user(email: str, password: str, name: str):
 async def login_user(email: str, password: str):
     email = (email or "").lower().strip()
     identifier = email
+    if not email or not password:
+        raise HTTPException(status_code=400, detail="Enter your email or username and password")
     attempts = await db.login_attempts.find_one({"identifier": identifier}) or {}
     if attempts.get("count", 0) >= 5:
         locked_until = attempts.get("locked_until")
         if locked_until and datetime.fromisoformat(locked_until) > datetime.now(timezone.utc):
             raise HTTPException(status_code=429, detail="Too many attempts. Try again in a few minutes.")
-    user = await _find_user(email=email)
+    user = await _find_user(email=email) if "@" in email else await _find_user(username=email)
     if not user or not verify_password(password, user.get("password_hash", "")):
         new_count = attempts.get("count", 0) + 1
         await db.login_attempts.update_one(
@@ -89,7 +96,7 @@ async def login_user(email: str, password: str):
         )
         raise HTTPException(status_code=401, detail="Invalid email or password")
     await db.login_attempts.delete_one({"identifier": identifier})
-    return _public_user(user), create_access_token(user["user_id"], email)
+    return _public_user(user), create_access_token(user["user_id"], user.get("email") or email)
 
 
 async def process_google_session(session_id: str):
@@ -163,13 +170,16 @@ async def get_current_user(request: Request) -> dict:
 async def seed_admin():
     admin_email = os.environ.get("ADMIN_EMAIL", "admin@irgs.app").lower()
     admin_password = os.environ.get("ADMIN_PASSWORD", "admin123")
+    admin_username = os.environ.get("ADMIN_USERNAME", "admin").lower()
     existing = await db.users.find_one({"email": admin_email})
     if existing is None:
         await db.users.insert_one({
-            "user_id": new_id("user"), "email": admin_email,
+            "user_id": new_id("user"), "email": admin_email, "username": admin_username,
             "password_hash": hash_password(admin_password), "name": "Game Master",
             "role": "admin", "auth": "password", "picture": None, "created_at": now_iso(),
         })
-    elif not verify_password(admin_password, existing.get("password_hash", "")):
-        await db.users.update_one({"email": admin_email},
-                                  {"$set": {"password_hash": hash_password(admin_password)}})
+    else:
+        upd = {"username": admin_username, "role": "admin"}
+        if not verify_password(admin_password, existing.get("password_hash", "")):
+            upd["password_hash"] = hash_password(admin_password)
+        await db.users.update_one({"email": admin_email}, {"$set": upd})

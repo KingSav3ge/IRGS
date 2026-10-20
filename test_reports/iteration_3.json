@@ -1,0 +1,43 @@
+{
+  "summary": "Iteration 3 tested Living Characters (NPC actions), the shareable storybook (snapshot and live links), the genre-neutral login page, and ran regression. Backend: new suite test_irgs_iter3.py has 10 tests and 9 pass. The one failure is a robustness bug in engine.apply_npc_actions when the LLM returns malformed output. The old regression suite passed 43/43 (core play, saves/branch, store, voice, security edges). With the real LLM, act returns npc_pending=true and the flag clears in about 2-12s. NPC events have a valid npc_kind and an effect. Player condition and inventory are not changed. Snapshot stays frozen after a new act, and the live link shows the new turn. Revoke makes the API return 404. Invalid mode returns 400. Another user gets 404 when listing, revoking or creating shares. The public endpoint needs no login. Frontend: the pending indicator, NPC entries, the disposition change (+2) and the rumours panel all work. The Chronicle 'others act' filter shows only NPC entries. From the Chronicle header, the share dialog created a snapshot and a live link, and both are listed. In a logged-out context the storybook rendered with data-theme=manuscript, the cover, title, chapters, entries, NPC asides and a scene image (admin). After revoke the page shows story-unavailable. The login page copy is correct ('Welcome back' / 'Create your account', IRGS, no Chronicle/tome, 4-image mosaic). Found 1 backend robustness bug, 1 state bug (npc_pending stuck) and 1 UI overflow in the share dialog.",
+  "backend_issues": {
+    "critical": [
+      {"endpoint": "_npc_turn / engine.apply_npc_actions", "issue": "LLM output is not validated. apply_npc_actions raises when an action is not a dict (AttributeError: 'str' has no .get) or when delta is not numeric (int('five') raises ValueError). The call in server._npc_turn sits outside the try/except, so the background task crashes and npc_pending stays true for good (the Play page shows the 'world stirs' indicator forever and polls every 3s until the next act). Fix: skip entries that are not dicts, wrap int(delta) in try/except, and wrap apply_npc_actions in try/finally so npc_pending is always reset to False.", "priority": "HIGH"},
+      {"endpoint": "POST /api/saves/{sid}/load, /branch", "issue": "Reproduced. A manual save made while NPCs are still pending (right after an act) stores npc_pending=true. Loading that save, or branching from it, restores npc_pending=true and nothing ever clears it (still true 10s later, and the Play indicator and 3s polling run forever). Fix: set state['npc_pending']=False on load/branch, or strip it in create_save. A related case: a load during a pending NPC turn has the NPC actions applied to the loaded state. Consider checking state['clock'] or the event id before applying.", "priority": "MEDIUM"}
+    ],
+    "minor": [
+      {"endpoint": "ai.npc_turn", "issue": "In 3 real runs of a quay-wide proclamation, the LLM always returned 2 or fewer actions (scope local). The broad scope never fired in practice. hyw-1415 has only 4 NPCs, so the cap of 6 can't be reached there anyway. The cap logic is correct according to the unit test."},
+      {"endpoint": "server restart", "issue": "If the backend restarts mid-NPC-turn, npc_pending stays true, because spawned tasks are lost and there is no stale timeout like the one painting has."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "ShareDialog link rows", "issue": "Long share URLs push each row past the right edge of the dialog: the copy/revoke icons sit outside the dialog border on desktop. The <a className='truncate flex-1'> needs min-w-0 (and the <li> needs min-w-0/overflow-hidden) so the truncation actually happens.", "selector": "[data-testid^='share-link-']", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Storybook cover", "issues": ["'1 turns' is not pluralised correctly", "The chapter date shows a raw ISO date (1415-08-11) rather than a formatted calendar date"]},
+      {"screen": "Chronicle npc entries", "issues": ["NPC entries show 'Paint this moment'. Check whether that is intended for NPC actions"]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_irgs_iter3.py", "/app/test_reports/pytest/iter3.xml", "/app/test_reports/pytest/regression_it3.xml"],
+  "action_items": [
+    "Harden apply_npc_actions against malformed LLM output (entries that are not dicts, non-numeric delta). Always reset npc_pending in _npc_turn using try/finally",
+    "Clear npc_pending on save load/branch, or don't persist it into manual saves",
+    "Add a stale timeout for npc_pending, like PAINT_STALE_SECONDS",
+    "Fix the ShareDialog row overflow (add min-w-0 to the truncating anchor)",
+    "Optional: fix the pluralisation of 'turns' and format chapter dates with fmtDate"
+  ],
+  "critical_code_review_comments": [
+    "The _npc_turn call to engine.apply_npc_actions is outside any exception handling. An engine exception leaves the flag stuck and the autosave stale",
+    "The NPC event id evt_{clock}_npc{n} is unique only if exactly one NPC turn runs per clock value. That holds today, but it is fragile if a pending NPC turn finishes after a save load that rewound the clock",
+    "server.py is 920 lines. Consider splitting the share/store/voice routers"
+  ],
+  "updated_files": ["/app/backend/tests/test_irgs_iter3.py"],
+  "success_rate": {"backend": "98% (52/53 incl. regression)", "frontend": "95%"},
+  "test_credentials": "admin@irgs.app / chronicle123; ui_it3_a53266@example.com / Passw0rd! (has play_59d277b243e5 with npc events and 1 live share)",
+  "seed_data_creation": "Test users test_it3_* / t3s_* / ui_it3_a53266 with playthroughs and shares",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: cd /app/backend && REACT_APP_BACKEND_URL=... pytest tests. test_irgs_iter3.py::test_robust_to_malformed_llm_output is the regression for the bug above. To reproduce the stuck flag: act, make a manual save immediately, wait for NPCs, load the save, and npc_pending stays true (/tmp/stuck.py logic). The admin play_14a3c8f19549 live share w-d9KpXtlA_X has rumours and 1 scene image."
+}

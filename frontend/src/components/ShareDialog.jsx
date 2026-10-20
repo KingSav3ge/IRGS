@@ -65,10 +65,10 @@ export const ShareDialog = ({ pid, triggerClassName = "" }) => {
         <ul className="space-y-2" data-testid="share-links-list">
           {shares.length === 0 && <li className="text-xs text-dust">No active links.</li>}
           {shares.map((s) => (
-            <li key={s.share_id} className="flex items-center gap-2 border border-line px-3 py-2 text-xs" data-testid={`share-link-${s.share_id}`}>
+            <li key={s.share_id} className="flex items-center gap-2 border border-line px-3 py-2 text-xs min-w-0 overflow-hidden" data-testid={`share-link-${s.share_id}`}>
               <Link2 size={12} className="text-gold" />
               <span className="uppercase font-mono text-gold">{s.mode}</span>
-              <a href={shareUrl(s.share_id)} target="_blank" rel="noreferrer" className="truncate flex-1 text-ash hover:text-parchment">{shareUrl(s.share_id)}</a>
+              <a href={shareUrl(s.share_id)} target="_blank" rel="noreferrer" className="truncate flex-1 min-w-0 text-ash hover:text-parchment">{shareUrl(s.share_id)}</a>
               <button onClick={() => copy(s.share_id)} data-testid={`share-copy-${s.share_id}`}><Copy size={13} className="text-ash hover:text-parchment" /></button>
               <button onClick={() => revoke(s.share_id)} data-testid={`share-revoke-${s.share_id}`}><X size={13} className="text-crimson" /></button>
             </li>

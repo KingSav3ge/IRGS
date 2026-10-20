@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
-import { Feather, LogOut } from "lucide-react";
+import { Hexagon, LogOut } from "lucide-react";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -25,7 +25,7 @@ export const AppShell = () => {
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-void/80 border-b border-line" data-testid="nav-header">
         <div className="mx-auto max-w-[1600px] h-16 px-4 sm:px-8 flex items-center gap-3 sm:gap-6">
           <NavLink to="/library" className="flex items-center gap-2" data-testid="nav-logo-link">
-            <Feather size={18} className="text-gold" />
+            <Hexagon size={18} className="text-gold" />
             <span className="font-heading tracking-[0.25em] text-gold text-sm hidden sm:inline">IRGS</span>
           </NavLink>
           <nav className="flex items-center overflow-x-auto min-w-0 flex-1 whitespace-nowrap scroll-thin" data-testid="nav-links">

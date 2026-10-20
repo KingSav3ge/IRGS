@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
-import { Feather } from "lucide-react";
+import { ArrowLeft, Hexagon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { api, errMsg } from "@/lib/api";
@@ -21,10 +21,17 @@ const googleLogin = () => {
   window.location.href = `https://auth.emergentagent.com/?redirect=${encodeURIComponent(redirectUrl)}`;
 };
 
+const Brand = () => (
+  <div className="flex items-center gap-3">
+    <Hexagon className="text-gold" size={22} />
+    <span className="font-heading tracking-[0.3em] text-gold text-sm">IRGS</span>
+  </div>
+);
+
 export default function AuthPage() {
   const { user, signIn } = useAuth();
   const navigate = useNavigate();
-  const [mode, setMode] = useState("login");
+  const [mode, setMode] = useState("choose");
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [busy, setBusy] = useState(false);
 
@@ -56,6 +63,7 @@ export default function AuthPage() {
           ))}
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-void/20 via-void/40 to-void" />
+        <div className="absolute inset-0 bg-gradient-to-t from-void via-void/70 to-transparent" />
         <div className="absolute bottom-16 left-14 max-w-lg">
           <p className="tactical-label mb-4">Immersive Roleplaying Simulation · history, fantasy, science fiction</p>
           <blockquote className="font-prose italic text-3xl leading-snug text-parchment">
@@ -64,19 +72,33 @@ export default function AuthPage() {
         </div>
       </div>
       <div className="lg:col-span-5 flex items-center justify-center p-6 sm:p-12 relative z-10">
+        {mode === "choose" ? (
+          <motion.div key="choose" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+            className="w-full max-w-md bg-tome gold-frame rounded-sm p-8 sm:p-10 space-y-8" data-testid="auth-choice-card">
+            <Brand />
+            <h1 className="font-heading text-3xl sm:text-4xl text-parchment leading-tight" data-testid="auth-choice-question">
+              Do you have a journey to return to? Or are you setting about your first?
+            </h1>
+            <div className="grid grid-cols-2 gap-4">
+              <Button onClick={() => setMode("login")} className="h-12 font-heading tracking-widest active:scale-[0.98] transition-transform" data-testid="auth-choose-signin-button">Sign in</Button>
+              <Button variant="outline" onClick={() => setMode("register")} className="h-12 font-heading tracking-widest border-line hover:border-gold/60 active:scale-[0.98] transition-transform" data-testid="auth-choose-signup-button">Sign up</Button>
+            </div>
+          </motion.div>
+        ) : (
         <motion.form
+          key={mode}
           onSubmit={submit}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4 }}
           className="w-full max-w-md bg-tome gold-frame rounded-sm p-8 sm:p-10 space-y-6"
           data-testid="auth-form"
         >
-          <div className="flex items-center gap-3">
-            <Feather className="text-gold" size={22} />
-            <span className="font-heading tracking-[0.3em] text-gold text-sm">IRGS</span>
-          </div>
-          <h1 className="font-heading text-4xl sm:text-5xl text-parchment">
+          <button type="button" onClick={() => setMode("choose")} className="flex items-center gap-1 text-xs text-ash hover:text-gold transition-colors" data-testid="auth-back-button">
+            <ArrowLeft size={13} /> Back
+          </button>
+          <Brand />
+          <h1 className="font-heading text-4xl sm:text-5xl text-parchment" data-testid="auth-form-title">
             {mode === "login" ? "Welcome back" : "Create your account"}
           </h1>
           <Button type="button" variant="outline" onClick={googleLogin}
@@ -85,13 +107,15 @@ export default function AuthPage() {
             Continue with Google
           </Button>
           <div className="flex items-center gap-3 text-dust text-xs tactical-label !text-dust">
-            <span className="h-px flex-1 bg-line" /> or with email <span className="h-px flex-1 bg-line" />
+            <span className="h-px flex-1 bg-line" /> or {mode === "login" ? "with your account" : "with email"} <span className="h-px flex-1 bg-line" />
           </div>
           {mode === "register" && (
             <Input placeholder="Name" value={form.name} onChange={set("name")} className="h-11 bg-void border-line" data-testid="auth-name-input" />
           )}
-          <Input type="email" required placeholder="Email" value={form.email} onChange={set("email")} className="h-11 bg-void border-line" data-testid="auth-email-input" />
-          <Input type="password" required minLength={6} placeholder="Password" value={form.password} onChange={set("password")} className="h-11 bg-void border-line" data-testid="auth-password-input" />
+          <Input type={mode === "login" ? "text" : "email"} required autoComplete="username"
+            placeholder={mode === "login" ? "Email or username" : "Email"} value={form.email} onChange={set("email")}
+            className="h-11 bg-void border-line" data-testid="auth-email-input" />
+          <Input type="password" required minLength={mode === "register" ? 6 : undefined} placeholder="Password" value={form.password} onChange={set("password")} className="h-11 bg-void border-line" data-testid="auth-password-input" />
           <Button type="submit" disabled={busy} className="w-full h-11 font-heading tracking-widest active:scale-[0.98] transition-transform" data-testid="auth-submit-button">
             {busy ? "Please wait…" : mode === "login" ? "Sign in" : "Create account"}
           </Button>
@@ -100,6 +124,7 @@ export default function AuthPage() {
             {mode === "login" ? "New here? Create an account" : "Already have an account? Sign in"}
           </button>
         </motion.form>
+        )}
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ export default function Storybook() {
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-parchment" data-testid="story-title">{b.scenario_title}</h1>
             <p className="font-prose text-xl text-ash italic">The chronicle of {b.character.name}, {b.character.background}</p>
             <p className="text-xs font-mono text-dust">
-              {b.turns} turns · {b.mode === "live" ? "live, updated as they play" : `snapshot from ${new Date(b.shared_at).toLocaleDateString()}`}
+              {b.turns} {b.turns === 1 ? "turn" : "turns"} · {b.mode === "live" ? "live, updated as they play" : `snapshot from ${new Date(b.shared_at).toLocaleDateString()}`}
             </p>
           </div>
         </header>

@@ -30,6 +30,11 @@ IRGS is a playable simulation engine with accounts, AI voice and media, and a co
 - 2026-06: full backend and frontend, all Phase 1 flows (iteration_1: 94-95% pass, then fixes)
 - 2026-06: genre themes, sci-fi campaign, JPEG image compression, race fix, settings/register validation, subscription cancel-at-period-end, fallback when TTS is downgraded, mobile nav, full-cast premium voices with cached mp3 (iteration_2: 43/43 backend, frontend pass)
 
+- 2026-06: Living Characters (free). NPCs react between turns (disposition/move/rumour, engine-bounded, 0-2 local and up to 6 for broad news) and show in the feed, Chronicle (an 'others act' filter) and the status panel (disposition, rumours)
+- 2026-06: Shareable storybook. Snapshot or live public links at /story/:id, with a genre-skinned cover and chapters, and a revoke option
+- 2026-06: Genre-neutral login. A joint choice screen ("Do you have a journey to return to? Or are you setting about your first?") leads to the Sign in or Sign up form. Sign in accepts an email OR a username (admin / chronicle123, ADMIN_USERNAME in .env)
+- iteration_3: 52/53 passed, then the NPC hardening fixes. Backend suite 53/53
+
 ## Backlog
 - P1: real PayPal, Paystack and Razorpay checkout (keys needed); real ElevenLabs API (key needed)
 - P2: NPC autonomy, Campaign Workshop, admin AI console; split server.py into routers

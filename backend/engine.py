@@ -264,6 +264,8 @@ def apply_npc_actions(state: dict, actions: list, scope: str = "local") -> dict:
     for a in actions:
         if n >= cap:
             break
+        if not isinstance(a, dict):
+            continue
         aid, kind = a.get("actor_id"), a.get("kind")
         actor = state["actors"].get(aid)
         if not actor or aid == pid or kind not in NPC_ACTION_KINDS or (aid, kind) in seen:
@@ -274,7 +276,10 @@ def apply_npc_actions(state: dict, actions: list, scope: str = "local") -> dict:
             continue
         effect = {}
         if kind == "disposition":
-            delta = max(-15, min(15, int(a.get("delta", 0) or 0)))
+            try:
+                delta = max(-15, min(15, int(float(a.get("delta", 0) or 0))))
+            except (TypeError, ValueError):
+                continue
             if delta == 0:
                 continue
             cur["disposition"] = max(-100, min(100, cur.get("disposition", 0) + delta))
