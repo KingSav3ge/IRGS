@@ -16,7 +16,7 @@ export const fileUrl = (path) => (path ? `${BACKEND_URL}${path}` : null);
 export const fmtDate = (date, calendar) => {
   if (!date) return "";
   if (calendar === "roman") return `${date.replace(/^0+/, "")} BCE`;
-  if (calendar === "eldoria") return `Night ${parseInt(date.split("-").pop(), 10)}`;
+  if (calendar === "eldoria") return `Day ${parseInt(date.split("-").pop(), 10)} of the vigil`;
   return date;
 };
 

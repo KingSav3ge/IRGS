@@ -1,0 +1,55 @@
+{
+  "summary": "Retested all iteration_1 fixes, tested the new premium full-cast voices, checked genre theming on desktop and mobile, and ran a core-flow regression. Backend: 43/43 pytest pass after updating 3 old tests whose expectations changed by design. Found and fixed one CRITICAL frontend bug: /play crashed on cold load because a useQuery hook was called after an early return (Rules of Hooks). Every requested fix (a-i) is verified. Full cast works end to end in the UI (cast selects, PATCH persists across reload, read aloud plays from /voice, second call cached at 0.1s). Seen once: a transient object-storage 500 on the cast voice endpoint.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/playthroughs/{pid}/events/{eid}/voice", "issue": "Seen once: the object storage PUT (put_object) returned 500 (integrations objstore HTTPError), and the endpoint returned a raw 500 Internal Server Error. A retry succeeded. put_object and db.files insert are not wrapped in try/except. Return 502 with a friendly message, and consider a retry."},
+      {"endpoint": "POST /api/playthroughs/{pid}/act", "issue": "The 409 check uses lock.locked(), and _set_event_image takes the same lock briefly. An act that lands while a paint result is being written gets a spurious 409. Low impact."},
+      {"endpoint": "POST /api/voice/tts", "issue": "The engine value is not validated. Unknown engines are treated as openai silently."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Play.jsx", "issue": "FIXED by testing agent. useQuery(['voices']) was declared after the `if (isError)`/`if (!pt)` early returns, which changed the hook order. React threw 'change in the order of Hooks', and /play/:pid never rendered (gameplay-control-panel missing). Moved the hook above the early returns.", "selector": "[data-testid=gameplay-control-panel]", "priority": "CRITICAL"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Play (mobile 390px)", "issues": ["The feed has no fixed height on mobile, so the composer (y≈2128px) sits below the whole narrative. Consider a sticky composer or a capped feed height. The order is right (feed and composer come first)."]},
+      {"screen": "Eldoria calendar display", "issues": ["fmtDate shows 'Night 4 · dawn' and 'Night 3 night', which reads oddly. Consider 'Day 4 · dawn' or 'The 4th night'."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_irgs_iter2.py", "/app/backend/tests/test_irgs_api.py", "/app/backend/tests/test_irgs_security_edges.py", "/app/test_reports/pytest/pytest_results_iter2.xml"],
+  "action_items": [
+    "Wrap put_object/db.files.insert in cast_voice (and _store_png callers) in try/except, and return 502 instead of a raw 500 when object storage fails",
+    "Optional: avoid the spurious 409 by using a separate lock for image writes (or an act-in-progress flag instead of lock.locked())",
+    "Optional: make the mobile composer sticky. Rename the Eldoria date label 'Night N'"
+  ],
+  "critical_code_review_comments": [
+    "Play.jsx hooks after early return (fixed). Watch for the same pattern in other pages.",
+    "server.py is 828 lines. Split it into routers (auth, play, saves, voice, store).",
+    "act still $sets the whole state. It is now safe only because _set_event_image shares the in-process asyncio lock. This breaks with more than one uvicorn worker. Use targeted $set/$push or an optimistic clock check for multi-worker safety.",
+    "_to_jpeg also re-encodes user-uploaded PNG portraits, which drops transparency. Acceptable, but note it."
+  ],
+  "updated_files": ["/app/frontend/src/pages/Play.jsx", "/app/backend/tests/test_irgs_iter2.py", "/app/backend/tests/test_irgs_api.py"],
+  "success_rate": {"backend": "100% (43/43)", "frontend": "95% (all flows pass after the Play.jsx hook fix)"},
+  "verified": {
+    "a_act_paint_race": "PASS. A move act paints, a follow-up act does not overwrite it, the image ends ready, and a concurrent act returns [200, 409]",
+    "b_stale_paint": "PASS. A painting_started_at 600s old restarts; a fresh one does not",
+    "c_settings_validation": "PASS. Bad engine, bad voice and an el-* voice on openai each return 400",
+    "d_cancel_and_downgrade": "PASS. After cancel: active=true, cancelled=true, Store shows 'ends 11/19/2026' with no cancel button. Non-premium TTS engine=elevenlabs returns 200 with downgraded=true",
+    "e_register_validation": "PASS (API 400 and UI stays on /login)",
+    "f_calendar": "PASS. Eldoria 0000-00-03 becomes 0000-00-04 at dawn after 2 turns; Rome shows '58-08-20 BCE'",
+    "g_jpeg": "PASS. Scene image is served as image/jpeg (FFD8)",
+    "h_mobile_nav": "PASS. nav-links overflow-x:auto (333>270), all 5 links reachable, Play/Chronicle/Saves hrefs use the route pid, feed comes before status and control",
+    "i_chronicle_meta": "PASS. No double separators",
+    "full_cast": "PASS. Cast selects per character, PATCH voice_cast persists, invalid name or voice returns 400, non-premium gets 402 (voice and voice_cast), /voice returns an mp3 audio_url with speakers and mocked=true, the second call is cached (<3s), changing the cast regenerates",
+    "themes": "manuscript, tablet (light), grimoire and pda all readable on /library and /play",
+    "regression": "register, library, character create to play, act, save, branch and store checkout plus cancel pass in the UI"
+  },
+  "test_credentials": "admin@irgs.app / chronicle123 (from /app/memory/test_credentials.md). Fresh users ui_it2_*@example.com / Passw0rd!",
+  "seed_data_creation": "Test users test_it2_*, ui_it2_* and their playthroughs. Admin got extra Eldoria playthroughs (e.g. play_85e5cf811e9e at 0000-00-04). On admin play_3d7209afbf11 the cast voice for Lucia Varo was changed to 'sage'.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "pytest.ini enables xdist. Run all tests with: pytest /app/backend/tests -n 4. test_irgs_iter2.py uses pymongo directly (backend/.env) for the stale-paint test. The old test_irgs_api.py expectations were updated for the iteration-2 behaviour (downgrade, cancel-keeps-active, JPEG).",
+  "rca of the issue": "Play crash: Play.jsx declared `const { data: voices } = useQuery(...)` after `if (!pt) return ...`. On the first render pt is undefined, so the hook is skipped; on the next render it runs, which changes the hook count and crashes React. Mitigation: all hooks before conditional returns (applied)."
+}

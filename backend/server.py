@@ -29,6 +29,7 @@ STORE_MAP = {i["id"]: i for i in STORE_ITEMS}
 BIG_MOMENT_INTENTS = {"combat", "move"}
 PAINT_STALE_SECONDS = 180
 _locks: Dict[str, asyncio.Lock] = {}
+_acting: set = set()
 _bg_tasks: set = set()
 
 
@@ -410,7 +411,11 @@ async def upload_portrait(cid: str, file: UploadFile = File(...), user: dict = D
     data = await file.read()
     if len(data) > 8 * 1024 * 1024:
         raise HTTPException(status_code=400, detail="Image too large (max 8MB)")
-    path = await _store_png(user["user_id"], "portraits", data, ext)
+    try:
+        path = await _store_png(user["user_id"], "portraits", data, ext)
+    except Exception as e:
+        logger.error(f"portrait upload storage failed: {e}")
+        raise HTTPException(status_code=502, detail="Could not store the portrait, please try again")
     await db.characters.update_one({"character_id": cid}, {"$set": {"portrait_path": path}})
     return {"portrait_url": _file_url(path)}
 
@@ -426,10 +431,10 @@ async def generate_portrait(cid: str, body: PortraitGenIn, user: dict = Depends(
     )
     try:
         data = await ai.generate_image(prompt[:1500])
+        path = await _store_png(user["user_id"], "portraits", data)
     except Exception as e:
         logger.error(f"portrait generation failed: {e}")
         raise HTTPException(status_code=502, detail="Portrait generation failed, please try again")
-    path = await _store_png(user["user_id"], "portraits", data)
     await db.characters.update_one({"character_id": cid}, {"$set": {"portrait_path": path}})
     return {"portrait_url": _file_url(path)}
 
@@ -522,11 +527,14 @@ async def update_settings(pid: str, body: SettingsIn, user: dict = Depends(auth.
 @api.post("/playthroughs/{pid}/act")
 async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)):
     await _get_playthrough(pid, user)
-    lock = _lock(pid)
-    if lock.locked():
+    if pid in _acting:
         raise HTTPException(status_code=409, detail="Your previous action is still being resolved")
-    async with lock:
-        return await _act_locked(pid, body, user)
+    _acting.add(pid)
+    try:
+        async with _lock(pid):
+            return await _act_locked(pid, body, user)
+    finally:
+        _acting.discard(pid)
 
 
 async def _act_locked(pid: str, body: ActIn, user: dict):
@@ -679,6 +687,8 @@ async def voice_options(user: dict = Depends(auth.get_current_user)):
 async def tts(body: TTSIn, user: dict = Depends(auth.get_current_user)):
     if not body.text.strip():
         raise HTTPException(status_code=400, detail="Nothing to read aloud")
+    if body.engine not in ("openai", "elevenlabs"):
+        raise HTTPException(status_code=400, detail="Unknown voice engine")
     mocked = False
     voice = body.voice or "fable"
     downgraded = False
@@ -721,7 +731,11 @@ async def cast_voice(pid: str, event_id: str, user: dict = Depends(auth.get_curr
             raise HTTPException(status_code=502, detail="Narration voice is unavailable right now")
         audio = b"".join(base64.b64decode(c) for c in clips)
         path = f"{APP_NAME}/voice/{user['user_id']}/{new_id('cast')}.mp3"
-        await asyncio.to_thread(put_object, path, audio, "audio/mpeg")
+        try:
+            await asyncio.to_thread(put_object, path, audio, "audio/mpeg")
+        except Exception as e:
+            logger.error(f"cast audio storage failed: {e}")
+            raise HTTPException(status_code=502, detail="Could not store the narration audio, please try again")
         await db.files.insert_one({"path": path, "user_id": user["user_id"], "kind": "voice",
                                    "content_type": "audio/mpeg", "created_at": now_iso()})
         await _set_event_image(pid, event_id, {"cast_audio_path": path, "cast_audio_key": cache_key,

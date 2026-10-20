@@ -126,7 +126,8 @@ class TestCharacters:
         assert r.status_code == 200, r.text
         url = r.json()["portrait_url"]
         img = requests.get(f"{BASE_URL}{url}")
-        assert img.status_code == 200 and img.content[:4] == b"\x89PNG"
+        # uploaded PNGs are re-encoded to JPEG since iteration 2
+        assert img.status_code == 200 and img.content[:2] == b"\xff\xd8"
 
 
 # ---- playthrough / act / painting
@@ -215,8 +216,8 @@ class TestVoice:
         assert len(r.json()["audio_base64"]) > 100 and r.json()["mocked"] is False
 
     def test_elevenlabs_gated(self, player, play):
-        r = player["s"].post(f"{API}/voice/tts", json={"text": "Hi", "engine": "elevenlabs"})
-        assert r.status_code == 402
+        r = player["s"].post(f"{API}/voice/tts", json={"text": "Hi", "engine": "elevenlabs"}, timeout=LLM_TIMEOUT)
+        assert r.status_code == 200 and r.json()["downgraded"] is True  # falls back to openai since iteration 2
         r = player["s"].patch(f"{API}/playthroughs/{play['pt']['playthrough_id']}/settings", json={"voice_engine": "elevenlabs"})
         assert r.status_code == 402
 
@@ -250,5 +251,6 @@ class TestStore:
         assert r.status_code == 200 and r.json()["mocked"] is True
         assert s.post(f"{API}/store/subscriptions/sub-elevenlabs-narration/cancel").status_code == 200
         ent = next(e for e in s.get(f"{API}/store/entitlements").json() if e["item_id"] == "sub-elevenlabs-narration")
-        assert ent["active"] is False
-        assert s.get(f"{API}/voice/options").json()["premium_active"] is False
+        # cancel keeps the subscription active until expires_at (iteration 2)
+        assert ent["active"] is True and ent["cancelled"] is True
+        assert s.get(f"{API}/voice/options").json()["premium_active"] is True

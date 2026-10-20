@@ -15,7 +15,7 @@ export const ActionComposer = ({ onSubmit, busy, disabled }) => {
   };
 
   return (
-    <div className="border-t border-line bg-tome/90 backdrop-blur-md p-4 space-y-3" data-testid="gameplay-action-composer">
+    <div className="sticky bottom-0 z-20 border-t border-line bg-tome/90 backdrop-blur-md p-4 space-y-3" data-testid="gameplay-action-composer">
       <Textarea value={text} onChange={(e) => setText(e.target.value)} rows={2} disabled={disabled}
         onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submit(); } }}
         placeholder={disabled ? "This playthrough is archived." : "Declare your action… (Enter to commit, Shift+Enter for a new line)"}

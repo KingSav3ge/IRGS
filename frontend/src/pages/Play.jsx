@@ -36,6 +36,7 @@ export default function Play() {
   const paint = usePaint(pid);
   const feedRef = useRef(null);
   const count = pt?.chronicle.length;
+  const { data: voices } = useQuery({ queryKey: ["voices"], queryFn: () => api.get("/voice/options").then((r) => r.data) });
 
   useEffect(() => { localStorage.setItem(LAST_PLAY_KEY, pid); }, [pid]);
   useEffect(() => { feedRef.current?.scrollTo({ top: feedRef.current.scrollHeight, behavior: "smooth" }); }, [count, busy]);
@@ -62,7 +63,6 @@ export default function Play() {
     } catch (e) { toast.error(errMsg(e)); }
   };
 
-  const { data: voices } = useQuery({ queryKey: ["voices"], queryFn: () => api.get("/voice/options").then((r) => r.data) });
   const voiceOpts = { engine: pt.voice_engine, voice: pt.narrator_voice, calendar: pt.view.campaign_time.calendar,
     castPid: voices?.premium_active && pt.voice_engine === "elevenlabs" ? pid : null };
 
@@ -70,7 +70,7 @@ export default function Play() {
     <div data-theme={pt.theme} className="themed" data-testid="gameplay-theme-scope">
     <div className="relative z-10 mx-auto max-w-[1600px] px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:h-[calc(100vh-4rem)]">
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden order-2 lg:order-none"><StatusPanel pt={pt} /></div>
-      <section className="order-1 lg:order-none lg:col-span-6 flex flex-col bg-tome gold-frame lg:h-full min-h-[70vh] overflow-hidden">
+      <section className="order-1 lg:order-none lg:col-span-6 flex flex-col bg-tome gold-frame lg:h-full min-h-[70vh] lg:overflow-hidden">
         <div className="px-6 sm:px-10 pt-6 pb-3 border-b border-line flex items-center justify-between">
           <h1 className="font-heading text-lg text-parchment truncate" data-testid="gameplay-title">{pt.title}</h1>
           {pt.status === "archived" && <span className="tactical-label !text-crimson">Archived</span>}
