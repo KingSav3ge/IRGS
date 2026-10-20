@@ -55,8 +55,8 @@ export default function Store() {
             {ents.map((e) => (
               <li key={e.item_id} className="flex items-center gap-3 border-b border-line pb-2 text-sm" data-testid={`store-entitlement-${e.item_id}`}>
                 <span className="text-parchment flex-1">{e.title}</span>
-                <span className={e.active ? "text-emerald" : "text-dust"}>{e.active ? (e.expires_at ? `renews ${new Date(e.expires_at).toLocaleDateString()}` : "owned") : "expired"}</span>
-                {e.kind === "subscription" && e.active && (
+                <span className={e.active ? "text-emerald" : "text-dust"}>{e.active ? (e.expires_at ? `${e.cancelled ? "ends" : "renews"} ${new Date(e.expires_at).toLocaleDateString()}` : "owned") : "expired"}</span>
+                {e.kind === "subscription" && e.active && !e.cancelled && (
                   <button onClick={() => cancel(e.item_id)} className="text-xs text-crimson/80 hover:text-crimson" data-testid={`store-cancel-sub-${e.item_id}`}>Cancel</button>
                 )}
               </li>

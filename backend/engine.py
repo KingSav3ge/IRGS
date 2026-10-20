@@ -117,7 +117,12 @@ def _increment_date(date_str):
         nd = date(y, m, d) + timedelta(days=1)
         return nd.isoformat()
     except Exception:
-        return date_str
+        parts = str(date_str).split("-")
+        try:
+            parts[-1] = f"{int(parts[-1]) + 1:02d}"
+            return "-".join(parts)
+        except ValueError:
+            return date_str
 
 
 def validate_action(state: dict, declaration: str) -> dict:

@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { usePaint, usePlaythrough } from "@/pages/Play";
 import { SceneImage } from "@/components/play/NarrativeEntry";
+import { fmtDate } from "@/lib/api";
 
 const TAGS = ["all", "big", "move", "speak", "observe", "interact", "combat", "rest", "other"];
 
@@ -55,7 +56,7 @@ export default function Chronicle() {
         {entries.map((e) => (
           <li key={e.id} className="pl-8 relative" data-testid={`chronicle-entry-${e.id}`}>
             <span className={`absolute -left-[7px] top-1 h-3 w-3 rotate-45 ${e.big_moment ? "bg-gold" : "bg-line"}`} />
-            <p className="font-mono text-xs text-dust mb-2">#{e.at} · {e.campaign_date || ""} {e.campaign_time || ""} · {e.intent || e.kind}</p>
+            <p className="font-mono text-xs text-dust mb-2">{[`#${e.at}`, [fmtDate(e.campaign_date, pt.view.campaign_time.calendar), e.campaign_time].filter(Boolean).join(" "), e.intent || e.kind.replace("_", " ")].filter(Boolean).join(" · ")}</p>
             {e.declaration && <p className="text-sm text-ash italic mb-3">“{e.declaration}”</p>}
             <div className="grid gap-6 md:grid-cols-[1fr_260px]">
               <p className="font-prose text-lg leading-relaxed text-parchment/95 whitespace-pre-line">{e.text}</p>

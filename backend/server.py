@@ -1,4 +1,6 @@
+import io
 import os
+import base64
 import copy
 import asyncio
 import logging
@@ -25,6 +27,19 @@ api = APIRouter(prefix="/api")
 SCENARIO_MAP = {s["id"]: s for s in SCENARIOS}
 STORE_MAP = {i["id"]: i for i in STORE_ITEMS}
 BIG_MOMENT_INTENTS = {"combat", "move"}
+PAINT_STALE_SECONDS = 180
+_locks: Dict[str, asyncio.Lock] = {}
+_bg_tasks: set = set()
+
+
+def _lock(pid: str) -> asyncio.Lock:
+    return _locks.setdefault(pid, asyncio.Lock())
+
+
+def _spawn(coro):
+    task = asyncio.create_task(coro)
+    _bg_tasks.add(task)
+    task.add_done_callback(_bg_tasks.discard)
 
 
 # ---------------------------------------------------------------- models
@@ -73,6 +88,7 @@ class SettingsIn(BaseModel):
     model: Optional[str] = None
     narrator_voice: Optional[str] = None
     voice_engine: Optional[str] = None
+    voice_cast: Optional[Dict[str, str]] = None
 
 
 class SaveIn(BaseModel):
@@ -123,7 +139,7 @@ async def _has_premium_voice(user: dict) -> bool:
     if user.get("role") == "admin":
         return True
     ents = await _entitlements(user["user_id"])
-    return any(e["active"] and e.get("kind") == "subscription" for e in ents)
+    return any(e["active"] and e["item_id"] == "sub-elevenlabs-narration" for e in ents)
 
 
 def _scenario_card(s: dict, locked: bool) -> dict:
@@ -147,6 +163,22 @@ def _file_url(path: Optional[str]) -> Optional[str]:
     return f"/api/files/{path}" if path else None
 
 
+def _narrator_fallback(doc: dict) -> str:
+    v = doc.get("narrator_voice", "fable")
+    el = next((e for e in ai.ELEVEN_VOICES if e["id"] == v), None)
+    return el["fallback"] if el else (v if v in ai.TTS_VOICES else "fable")
+
+
+def _voice_cast(doc: dict) -> Dict[str, str]:
+    narrator = _narrator_fallback(doc)
+    pool = [v for v in ai.TTS_VOICES if v != narrator]
+    view = engine.player_view(doc["state"])
+    names = [view["character"]["name"]] + [a["name"] for a in view["known_actors"]]
+    cast = {n: pool[i % len(pool)] for i, n in enumerate(names)}
+    cast.update({k: v for k, v in (doc.get("voice_cast") or {}).items() if k in cast})
+    return cast
+
+
 def _playthrough_out(doc: dict) -> dict:
     state = doc["state"]
     return {
@@ -156,6 +188,7 @@ def _playthrough_out(doc: dict) -> dict:
         "theme": SCENARIO_MAP[doc["scenario_id"]]["theme"],
         "narrator_voice": doc.get("narrator_voice", "fable"), "voice_engine": doc.get("voice_engine", "openai"),
         "portrait_url": _file_url(doc.get("portrait_path")),
+        "voice_cast": _voice_cast(doc),
         "branched_from": doc.get("branched_from"),
         "created_at": doc.get("created_at"), "updated_at": doc.get("updated_at"),
         "view": engine.player_view(state),
@@ -189,7 +222,18 @@ def _scene_context(state: dict, scenario: dict) -> str:
     return "\n".join(lines)
 
 
+def _to_jpeg(data: bytes) -> bytes:
+    from PIL import Image
+    img = Image.open(io.BytesIO(data)).convert("RGB")
+    img.thumbnail((1280, 1280))
+    buf = io.BytesIO()
+    img.save(buf, "JPEG", quality=84, optimize=True)
+    return buf.getvalue()
+
+
 async def _store_png(user_id: str, kind: str, data: bytes, ext: str = "png") -> str:
+    if ext == "png":
+        data, ext = await asyncio.to_thread(_to_jpeg, data), "jpg"
     path = f"{APP_NAME}/{kind}/{user_id}/{new_id('img')}.{ext}"
     await asyncio.to_thread(put_object, path, data, MIME_TYPES.get(ext, "image/png"))
     await db.files.insert_one({"path": path, "user_id": user_id, "kind": kind,
@@ -198,15 +242,16 @@ async def _store_png(user_id: str, kind: str, data: bytes, ext: str = "png") -> 
 
 
 async def _set_event_image(pid: str, event_id: str, fields: dict):
-    await db.playthroughs.update_one(
+    async with _lock(pid):
+        await db.playthroughs.update_one(
         {"playthrough_id": pid},
-        {"$set": {f"state.journal.$[e].{k}": v for k, v in fields.items()}},
-        array_filters=[{"e.id": event_id}],
-    )
+            {"$set": {f"state.journal.$[e].{k}": v for k, v in fields.items()}},
+            array_filters=[{"e.id": event_id}],
+        )
 
 
 async def _paint_event(pid: str, user_id: str, event: dict, scenario: dict):
-    await _set_event_image(pid, event["id"], {"image_status": "painting"})
+    await _set_event_image(pid, event["id"], {"image_status": "painting", "painting_started_at": now_iso()})
     prompt = (
         f"{scenario['art_style']}, cinematic composition, no text or letters. Era: {scenario['era']}. "
         f"Setting: {scenario['opening'].get('setting', '')}. Scene: "
@@ -449,12 +494,25 @@ async def update_settings(pid: str, body: SettingsIn, user: dict = Depends(auth.
     upd = {}
     if body.provider:
         upd["provider"], upd["model"] = ai._model_for(body.provider, body.model)
+    if body.voice_engine and body.voice_engine not in ("openai", "elevenlabs"):
+        raise HTTPException(status_code=400, detail="Unknown voice engine")
+    engine_after = body.voice_engine or doc.get("voice_engine", "openai")
+    allowed = ai.TTS_VOICES if engine_after == "openai" else [v["id"] for v in ai.ELEVEN_VOICES]
+    if body.narrator_voice and body.narrator_voice not in allowed:
+        raise HTTPException(status_code=400, detail="Unknown narrator voice")
     if body.voice_engine:
         if body.voice_engine == "elevenlabs" and not await _has_premium_voice(user):
             raise HTTPException(status_code=402, detail="ElevenLabs Narration requires the premium subscription")
         upd["voice_engine"] = body.voice_engine
     if body.narrator_voice:
         upd["narrator_voice"] = body.narrator_voice
+    if body.voice_cast is not None:
+        if not await _has_premium_voice(user):
+            raise HTTPException(status_code=402, detail="Character voices are part of ElevenLabs Narration")
+        names = set(_voice_cast(doc))
+        if any(k not in names or v not in ai.TTS_VOICES for k, v in body.voice_cast.items()):
+            raise HTTPException(status_code=400, detail="Unknown character or voice in cast")
+        upd["voice_cast"] = {**(doc.get("voice_cast") or {}), **body.voice_cast}
     if upd:
         await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": upd})
         doc.update(upd)
@@ -463,6 +521,15 @@ async def update_settings(pid: str, body: SettingsIn, user: dict = Depends(auth.
 
 @api.post("/playthroughs/{pid}/act")
 async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)):
+    await _get_playthrough(pid, user)
+    lock = _lock(pid)
+    if lock.locked():
+        raise HTTPException(status_code=409, detail="Your previous action is still being resolved")
+    async with lock:
+        return await _act_locked(pid, body, user)
+
+
+async def _act_locked(pid: str, body: ActIn, user: dict):
     doc = await _get_playthrough(pid, user)
     if doc.get("status") == "archived":
         raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
@@ -481,6 +548,8 @@ async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)
     big = decision["intent"] in BIG_MOMENT_INTENTS
     event["big_moment"] = big
     event["image_status"] = "painting" if big else None
+    if big:
+        event["painting_started_at"] = now_iso()
     event["provider"], event["model"] = provider, model
     await db.playthroughs.update_one(
         {"playthrough_id": pid},
@@ -489,7 +558,7 @@ async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)
     doc.update({"state": new_state, "provider": provider, "model": model})
     await _autosave(doc)
     if big:
-        asyncio.create_task(_paint_event(pid, user["user_id"], event, scenario))
+        _spawn(_paint_event(pid, user["user_id"], event, scenario))
     return {"decision": decision, "event_id": event["id"], "playthrough": _playthrough_out(doc)}
 
 
@@ -499,10 +568,12 @@ async def paint_event(pid: str, event_id: str, user: dict = Depends(auth.get_cur
     event = next((e for e in doc["state"]["journal"] if e["id"] == event_id), None)
     if not event:
         raise HTTPException(status_code=404, detail="Event not found")
-    if event.get("image_status") == "painting":
+    started = event.get("painting_started_at")
+    fresh = started and (datetime.now(timezone.utc) - datetime.fromisoformat(started)).total_seconds() < PAINT_STALE_SECONDS
+    if event.get("image_status") == "painting" and fresh:
         return {"status": "painting"}
-    await _set_event_image(pid, event_id, {"image_status": "painting"})
-    asyncio.create_task(_paint_event(pid, user["user_id"], event, SCENARIO_MAP[doc["scenario_id"]]))
+    await _set_event_image(pid, event_id, {"image_status": "painting", "painting_started_at": now_iso()})
+    _spawn(_paint_event(pid, user["user_id"], event, SCENARIO_MAP[doc["scenario_id"]]))
     return {"status": "painting"}
 
 
@@ -610,9 +681,10 @@ async def tts(body: TTSIn, user: dict = Depends(auth.get_current_user)):
         raise HTTPException(status_code=400, detail="Nothing to read aloud")
     mocked = False
     voice = body.voice or "fable"
+    downgraded = False
+    if body.engine == "elevenlabs" and not await _has_premium_voice(user):
+        body.engine, voice, downgraded = "openai", "fable", True
     if body.engine == "elevenlabs":
-        if not await _has_premium_voice(user):
-            raise HTTPException(status_code=402, detail="ElevenLabs Narration requires the premium subscription")
         el = next((v for v in ai.ELEVEN_VOICES if v["id"] == voice), ai.ELEVEN_VOICES[0])
         voice = el["fallback"]
         mocked = True
@@ -621,7 +693,42 @@ async def tts(body: TTSIn, user: dict = Depends(auth.get_current_user)):
     except Exception as e:
         logger.error(f"tts failed: {e}")
         raise HTTPException(status_code=502, detail="Narration voice is unavailable right now")
-    return {"audio_base64": audio, "format": "mp3", "engine": body.engine, "mocked": mocked}
+    return {"audio_base64": audio, "format": "mp3", "engine": body.engine, "mocked": mocked, "downgraded": downgraded}
+
+
+@api.post("/playthroughs/{pid}/events/{event_id}/voice")
+async def cast_voice(pid: str, event_id: str, user: dict = Depends(auth.get_current_user)):
+    """Full-cast reading: narrator plus a distinct voice per character (premium)."""
+    if not await _has_premium_voice(user):
+        raise HTTPException(status_code=402, detail="Character voices are part of ElevenLabs Narration")
+    doc = await _get_playthrough(pid, user)
+    event = next((e for e in doc["state"]["journal"] if e["id"] == event_id), None)
+    if not event:
+        raise HTTPException(status_code=404, detail="Event not found")
+    text = event.get("narration") or event.get("text") or ""
+    cast = _voice_cast(doc)
+    narrator = _narrator_fallback(doc)
+    cache_key = f"{narrator}|" + "|".join(f"{k}={v}" for k, v in sorted(cast.items()))
+    if event.get("cast_audio_path") and event.get("cast_audio_key") == cache_key:
+        segments = event.get("cast_segments", [])
+        path = event["cast_audio_path"]
+    else:
+        segments = await ai.cast_segments(text, list(cast.keys()), engine.player_view(doc["state"])["character"]["name"])
+        try:
+            clips = await asyncio.gather(*[ai.tts_speak(sg["text"], cast.get(sg["speaker"], narrator)) for sg in segments])
+        except Exception as e:
+            logger.error(f"cast tts failed: {e}")
+            raise HTTPException(status_code=502, detail="Narration voice is unavailable right now")
+        audio = b"".join(base64.b64decode(c) for c in clips)
+        path = f"{APP_NAME}/voice/{user['user_id']}/{new_id('cast')}.mp3"
+        await asyncio.to_thread(put_object, path, audio, "audio/mpeg")
+        await db.files.insert_one({"path": path, "user_id": user["user_id"], "kind": "voice",
+                                   "content_type": "audio/mpeg", "created_at": now_iso()})
+        await _set_event_image(pid, event_id, {"cast_audio_path": path, "cast_audio_key": cache_key,
+                                               "cast_segments": segments})
+    speakers = sorted({sg["speaker"] for sg in segments})
+    return {"audio_url": _file_url(path), "speakers": [{"name": n, "voice": cast.get(n, narrator)} for n in speakers],
+            "mocked": not bool(os.environ.get("ELEVENLABS_API_KEY"))}
 
 
 @api.post("/voice/stt")
@@ -665,7 +772,8 @@ async def checkout(body: CheckoutIn, user: dict = Depends(auth.get_current_user)
     await db.entitlements.update_one(
         {"user_id": user["user_id"], "item_id": item["id"]},
         {"$set": {"kind": item["kind"], "scenario_id": item.get("scenario_id"), "title": item["title"],
-                  "order_id": order["order_id"], "granted_at": now_iso(), "expires_at": expires}},
+                  "order_id": order["order_id"], "granted_at": now_iso(), "expires_at": expires,
+                  "cancelled": False}},
         upsert=True,
     )
     order.pop("_id", None)
@@ -685,7 +793,7 @@ async def entitlements(user: dict = Depends(auth.get_current_user)):
 @api.post("/store/subscriptions/{item_id}/cancel")
 async def cancel_subscription(item_id: str, user: dict = Depends(auth.get_current_user)):
     res = await db.entitlements.update_one({"user_id": user["user_id"], "item_id": item_id, "kind": "subscription"},
-                                           {"$set": {"expires_at": now_iso()}})
+                                           {"$set": {"cancelled": True}})
     if not res.matched_count:
         raise HTTPException(status_code=404, detail="Subscription not found")
     return {"ok": True}

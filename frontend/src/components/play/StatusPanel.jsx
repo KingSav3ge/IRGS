@@ -1,5 +1,5 @@
 import { Clock, MapPin } from "lucide-react";
-import { fileUrl } from "@/lib/api";
+import { fileUrl, fmtDate } from "@/lib/api";
 
 const Bar = ({ label, value, color, testid }) => (
   <div className="space-y-1" data-testid={testid}>
@@ -25,7 +25,7 @@ export const StatusPanel = ({ pt }) => {
       <div className="bg-surface border border-line p-4 space-y-2">
         <p className="tactical-label">World clock</p>
         <p className="font-mono text-parchment flex items-center gap-2" data-testid="gameplay-world-clock-display">
-          <Clock size={14} className="text-gold" /> {v.campaign_time.date} · {v.campaign_time.time}
+          <Clock size={14} className="text-gold" /> {fmtDate(v.campaign_time.date, v.campaign_time.calendar)} · {v.campaign_time.time}
         </p>
         <p className="text-xs text-dust font-mono">Turn {v.clock} · {v.campaign_time.calendar} calendar</p>
         <p className="text-sm text-ash flex items-center gap-2"><MapPin size={13} className="text-gold" /> {v.character.location}</p>

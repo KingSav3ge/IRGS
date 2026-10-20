@@ -1,8 +1,8 @@
 """Authentication: JWT email/password + Emergent-managed Google session login."""
 import os
+import re
 import jwt
 import bcrypt
-import secrets
 import logging
 from datetime import datetime, timezone, timedelta
 
@@ -54,6 +54,10 @@ async def register_user(email: str, password: str, name: str):
     email = (email or "").lower().strip()
     if not email or not password:
         raise HTTPException(status_code=400, detail="Email and password are required")
+    if not re.match(r"^[^@\s]+@[^@\s]+\.[^@\s]+$", email):
+        raise HTTPException(status_code=400, detail="Please enter a valid email address")
+    if len(password) < 6:
+        raise HTTPException(status_code=400, detail="Password must be at least 6 characters")
     if await _find_user(email=email):
         raise HTTPException(status_code=400, detail="An account with this email already exists")
     user_id = new_id("user")

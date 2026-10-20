@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Brush, Loader2, Pause, Volume2 } from "lucide-react";
-import { fileUrl } from "@/lib/api";
+import { fileUrl, fmtDate } from "@/lib/api";
 
 const INTENT_COLOR = { combat: "text-crimson border-crimson/40", move: "text-emerald border-emerald/40", rest: "text-mana border-mana/40" };
 
@@ -45,7 +45,7 @@ export const NarrativeEntry = ({ entry, index, narrator, voiceOpts, onPaint }) =
       {(entry.image_url || entry.image_status === "painting") && <SceneImage entry={entry} onPaint={onPaint} />}
       <p className={`font-prose text-lg sm:text-xl leading-relaxed text-parchment/95 whitespace-pre-line ${index === 0 ? "drop-cap" : ""}`}>{text}</p>
       <div className="flex items-center gap-5 text-xs text-dust font-mono">
-        <span>{entry.campaign_date || ""} {entry.campaign_time || ""}</span>
+        <span>{[fmtDate(entry.campaign_date, voiceOpts.calendar), entry.campaign_time].filter(Boolean).join(" ")}</span>
         <button onClick={() => narrator.speak(entry.id, text, voiceOpts)} data-testid={`gameplay-read-aloud-button-${entry.id}`}
           className={`flex items-center gap-2 transition-colors ${playing ? "text-mana" : "hover:text-mana"}`}>
           {narrator.loadingId === entry.id ? <Loader2 size={12} className="animate-spin" /> : playing ? <Pause size={12} /> : <Volume2 size={12} />}

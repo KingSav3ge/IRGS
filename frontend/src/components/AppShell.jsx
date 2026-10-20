@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Feather, LogOut } from "lucide-react";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
@@ -17,24 +17,25 @@ const Link = ({ to, children, testid }) => (
 export const AppShell = () => {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
-  const last = localStorage.getItem(LAST_PLAY_KEY);
+  const { pathname } = useLocation();
+  const last = pathname.match(/^\/(?:play|chronicle|saves)\/([^/]+)/)?.[1] || localStorage.getItem(LAST_PLAY_KEY);
 
   return (
     <div className="min-h-screen bg-void grain">
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-void/80 border-b border-line" data-testid="nav-header">
-        <div className="mx-auto max-w-[1600px] h-16 px-4 sm:px-8 flex items-center gap-6">
+        <div className="mx-auto max-w-[1600px] h-16 px-4 sm:px-8 flex items-center gap-3 sm:gap-6">
           <NavLink to="/library" className="flex items-center gap-2" data-testid="nav-logo-link">
             <Feather size={18} className="text-gold" />
-            <span className="font-heading tracking-[0.25em] text-gold text-sm">IRGS</span>
+            <span className="font-heading tracking-[0.25em] text-gold text-sm hidden sm:inline">IRGS</span>
           </NavLink>
-          <nav className="flex items-center overflow-x-auto">
+          <nav className="flex items-center overflow-x-auto min-w-0 flex-1 whitespace-nowrap scroll-thin" data-testid="nav-links">
             <Link to="/library" testid="nav-library-link">Library</Link>
             {last && <Link to={`/play/${last}`} testid="nav-play-link">Play</Link>}
             {last && <Link to={`/chronicle/${last}`} testid="nav-chronicle-link">Chronicle</Link>}
             {last && <Link to={`/saves/${last}`} testid="nav-saves-link">Saves</Link>}
             <Link to="/store" testid="nav-store-link">Store</Link>
           </nav>
-          <div className="ml-auto">
+          <div className="ml-auto shrink-0">
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-2 rounded-full border border-line px-1 py-1 pr-3 hover:border-gold/50 transition-colors" data-testid="nav-user-profile-menu">
                 {user?.picture ? (

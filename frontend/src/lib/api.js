@@ -13,6 +13,13 @@ api.interceptors.request.use((config) => {
 
 export const fileUrl = (path) => (path ? `${BACKEND_URL}${path}` : null);
 
+export const fmtDate = (date, calendar) => {
+  if (!date) return "";
+  if (calendar === "roman") return `${date.replace(/^0+/, "")} BCE`;
+  if (calendar === "eldoria") return `Night ${parseInt(date.split("-").pop(), 10)}`;
+  return date;
+};
+
 export const errMsg = (e, fallback = "Something went wrong") => {
   const d = e?.response?.data?.detail;
   if (typeof d === "string") return d;

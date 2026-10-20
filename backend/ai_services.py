@@ -8,6 +8,7 @@ import os
 import io
 import json
 import base64
+import asyncio
 import logging
 
 from dotenv import load_dotenv
@@ -55,7 +56,8 @@ async def narrate(scene_context: str, declaration: str, intent: str, provider: s
         "wealth or qualifications, advance the calendar, create binding obligations, reveal hidden "
         "information, or rewrite history. Narrate in immersive second-person prose, 2-4 short "
         "paragraphs, grounded strictly in the provided scene context. End on an open beat that "
-        "invites the player's next decision. Never resolve the outcome as guaranteed success."
+        "invites the player's next decision. Never resolve the outcome as guaranteed success. "
+        "Write plain prose with no markdown formatting."
     )
     chat = LlmChat(api_key=EMERGENT_LLM_KEY, session_id="narrate", system_message=system).with_model(provider, model)
     prompt = (
@@ -107,12 +109,36 @@ async def jev_decide(declaration: str) -> dict:
         return {"intent": "other", "allowed": True, "reason": "classifier-unavailable"}
 
 
+async def cast_segments(text: str, speakers: list, player: str = "") -> list:
+    """Split narration into narrator / character-dialogue segments for full-cast voicing."""
+    from emergentintegrations.llm.chat import LlmChat, UserMessage
+
+    system = (
+        "Split the given story passage into consecutive segments for an audio drama. Respond with STRICT JSON only: "
+        '[{"speaker": "narrator" or one of the KNOWN SPEAKERS exactly, "text": "..."}]. '
+        "Quoted dialogue goes to the character speaking it if identifiable from the KNOWN SPEAKERS (the FIRST known speaker is the player character, addressed as 'you' — lines the player says belong to them), otherwise narrator. "
+        "Everything else is narrator. Keep every word of the passage, in order, without rewriting."
+    )
+    chat = LlmChat(api_key=EMERGENT_LLM_KEY, session_id="cast", system_message=system).with_model("openai", "gpt-5.4-mini")
+    try:
+        reply = await chat.send_message(UserMessage(text=f"KNOWN SPEAKERS: {', '.join(speakers)}\nPLAYER CHARACTER (the 'you' of the passage; words the player says aloud are theirs, even when addressing others): {player}\n\nPASSAGE:\n{text[:4000]}"))
+        raw = (reply if isinstance(reply, str) else str(reply)).strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+        segs = [s for s in json.loads(raw) if s.get("text", "").strip()]
+        return [{"speaker": s["speaker"] if s.get("speaker") in speakers else "narrator", "text": s["text"]} for s in segs] or [{"speaker": "narrator", "text": text}]
+    except Exception as e:
+        logger.error(f"cast segmentation failed: {e}")
+        return [{"speaker": "narrator", "text": text}]
+
+
 async def generate_image(prompt: str) -> bytes:
     """Generate a scene / portrait image (gpt-image-1). Returns PNG bytes."""
     from emergentintegrations.llm.openai.image_generation import OpenAIImageGeneration
 
     gen = OpenAIImageGeneration(api_key=EMERGENT_LLM_KEY)
-    images = await gen.generate_images(prompt=prompt, model="gpt-image-1", number_of_images=1)
+    # generate_images is declared async but calls sync litellm internally; run it off the event loop
+    images = await asyncio.to_thread(
+        lambda: asyncio.run(gen.generate_images(prompt=prompt, model="gpt-image-1", number_of_images=1))
+    )
     if not images:
         raise RuntimeError("No image generated")
     return images[0]

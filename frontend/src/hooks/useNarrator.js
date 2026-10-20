@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { toast } from "sonner";
-import { api, errMsg } from "@/lib/api";
+import { api, errMsg, fileUrl } from "@/lib/api";
 
 export const useNarrator = () => {
   const audioRef = useRef(null);
@@ -13,13 +13,21 @@ export const useNarrator = () => {
     setPlayingId(null);
   };
 
-  const speak = async (id, text, { engine, voice }) => {
+  const speak = async (id, text, { engine, voice, castPid }) => {
     if (playingId === id) return stop();
     stop();
     setLoadingId(id);
     try {
-      const { data } = await api.post("/voice/tts", { text, engine, voice });
-      const audio = new Audio(`data:audio/mp3;base64,${data.audio_base64}`);
+      let src;
+      if (castPid) {
+        const { data } = await api.post(`/playthroughs/${castPid}/events/${id}/voice`, {}, { timeout: 120000 });
+        src = fileUrl(data.audio_url);
+      } else {
+        const { data } = await api.post("/voice/tts", { text, engine, voice });
+        if (data.downgraded) toast("Your ElevenLabs subscription has ended, so the standard voice is narrating.");
+        src = `data:audio/mp3;base64,${data.audio_base64}`;
+      }
+      const audio = new Audio(src);
       audioRef.current = audio;
       audio.onended = () => setPlayingId(null);
       await audio.play();

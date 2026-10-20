@@ -98,7 +98,7 @@ class TestAuth:
 class TestLibrary:
     def test_player_library_locked(self, player):
         camps = player["s"].get(f"{API}/campaigns").json()
-        assert len(camps) == 3
+        assert len(camps) == 4
         eld = next(c for c in camps if c["id"] == "eldoria-shadows")
         assert eld["locked"] is True and eld["store_item_id"] == "pack-eldoria"
 

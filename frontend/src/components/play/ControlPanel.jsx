@@ -22,7 +22,7 @@ export const ControlPanel = ({ pt, onSettings }) => {
   const { data: prov } = useQuery({ queryKey: ["providers"], queryFn: () => api.get("/ai/providers").then((r) => r.data) });
   const { data: voices } = useQuery({ queryKey: ["voices"], queryFn: () => api.get("/voice/options").then((r) => r.data) });
   const premium = voices?.premium_active;
-  const eleven = pt.voice_engine === "elevenlabs";
+  const eleven = pt.voice_engine === "elevenlabs" && premium !== false;
   const voiceItems = eleven
     ? (voices?.elevenlabs || []).map((v) => ({ value: v.id, label: `${v.label} — ${v.style}` }))
     : (voices?.openai || []).map((v) => ({ value: v, label: v[0].toUpperCase() + v.slice(1) }));
@@ -55,10 +55,23 @@ export const ControlPanel = ({ pt, onSettings }) => {
             <Crown size={11} /> ElevenLabs
           </button>
         </div>
-        {voiceItems.length > 0 && <Sel testid="gameplay-voice-select" value={pt.narrator_voice} onChange={(v) => onSettings({ narrator_voice: v })} items={voiceItems} />}
+        {voiceItems.length > 0 && <Sel testid="gameplay-voice-select" value={eleven || !(pt.narrator_voice || "").startsWith("el-") ? pt.narrator_voice : "fable"} onChange={(v) => onSettings({ narrator_voice: v })} items={voiceItems} />}
         {!premium && <Link to="/store" className="text-xs text-gold/80 hover:text-gold" data-testid="gameplay-upgrade-voice-link">Unlock ElevenLabs Narration →</Link>}
         {eleven && !voices?.elevenlabs_configured && <p className="text-[11px] text-dust">Preview mode: premium voices are simulated until ElevenLabs is connected.</p>}
       </div>
+      {eleven && (
+        <div className="space-y-2" data-testid="gameplay-voice-cast">
+          <p className="tactical-label !text-mana">Character voices · full cast</p>
+          {Object.entries(pt.voice_cast || {}).map(([name, v]) => (
+            <div key={name} className="grid grid-cols-[1fr_120px] items-center gap-2">
+              <span className="text-xs text-ash truncate">{name}</span>
+              <Sel testid={`gameplay-cast-voice-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} value={v}
+                onChange={(nv) => onSettings({ voice_cast: { [name]: nv } })}
+                items={(voices?.openai || []).map((o) => ({ value: o, label: o[0].toUpperCase() + o.slice(1) }))} />
+            </div>
+          ))}
+        </div>
+      )}
       <div className="space-y-2">
         <p className="tactical-label">Saves · auto-save on every turn</p>
         <Input value={label} onChange={(e) => setLabel(e.target.value)} placeholder="Label (optional)" className="bg-void border-line h-9" data-testid="gameplay-save-label-input" />
