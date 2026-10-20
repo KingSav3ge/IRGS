@@ -12,7 +12,7 @@ const Body = ({ sid, onLoad, onBranch }) => {
   return (
     <div className="space-y-5" data-testid="save-preview-body">
       <div className="grid grid-cols-2 gap-3 text-sm">
-        <p className="text-ash">Turn <span className="text-parchment font-mono">{p.clock}</span> · {fmtDate(p.campaign_time?.date)} {p.campaign_time?.time}</p>
+        <p className="text-ash">Turn <span className="text-parchment font-mono">{p.clock}</span> · {fmtDate(p.campaign_time?.date, p.campaign_time?.calendar)} {p.campaign_time?.time}</p>
         <p className="text-ash">At <span className="text-parchment">{p.character.location}</span></p>
         <p className="text-ash col-span-2 font-mono text-xs">Health {c.health} · Stamina {c.stamina} · Morale {c.morale} · {p.event_count} events · {p.inventory.length} items</p>
       </div>

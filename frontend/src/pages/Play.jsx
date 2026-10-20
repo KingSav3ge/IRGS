@@ -81,7 +81,9 @@ export default function Play() {
   const passTime = async (span) => {
     setBusy(true);
     try {
-      const { data } = await api.post(`/playthroughs/${pid}/pass-time`, { span, request_id: crypto.randomUUID() });
+      const request_id = crypto.randomUUID();
+      const send = () => api.post(`/playthroughs/${pid}/pass-time`, { span, request_id });
+      const { data } = await send().catch((e) => (e.response ? Promise.reject(e) : send()));
       qc.setQueryData(["playthrough", pid], data.playthrough);
     } catch (e) {
       toast.error(errMsg(e, "Time could not pass"));

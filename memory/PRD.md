@@ -40,6 +40,13 @@ IRGS is a playable simulation engine with accounts, AI voice and media, and a co
 
 - 2026-06: Let time pass (a few hours / a day / a week; NPCs act and rumours spread, with broad scope allowed). Rich link previews (/api/s/{id} serves OG/Twitter meta, then forwards to /story/{id}). Cinematic front page (rotating genre-skinned showcase, glass sign-in panel, features strip). Codex 3.3.2 merge: researched HYW 1415 opening, 37-entry catalogue, read-only historical record panel, player testimony, reading settings
 
+- 2026-06: Master Instructions v1.4 work.
+  - Milestone G, Chronicle workspace tabs: Timeline; People & places with entity history (disposition changes, rumours, linked notes); Notes & in-world documents; Development & goals (condition chart, intent mix, turning points, personal goals recorded as journal events)
+  - Milestones C/H: idempotent act/pass-time via request_id (replay, one safe client retry); save preview (contents and the number of events that would be replaced); a safety save before any load that would replace events
+  - Marketplace placeholder page (Stage Three)
+  - Branches compared: 3.3.C is identical to the 3.3.2 merge; 3.3.E is this codebase. iteration_5: 91/93, then fixes; pytest 93/93
+
 ## Backlog
 - P1: real PayPal, Paystack and Razorpay checkout (keys needed); real ElevenLabs API (key needed)
-- P2: NPC autonomy, Campaign Workshop, admin AI console; split server.py into routers
+- P1 (instructions v1.4): My Campaigns hub + Account/Admin nav (Milestone B); Quick/Guided/Detailed creation (E); World workspace: Atlas, Economy, Politics, Military (I)
+- P2: Campaign Workshop (Stage 2), Marketplace for real (Stage 3), AI Network console (backend-only, deferred); split server.py into routers

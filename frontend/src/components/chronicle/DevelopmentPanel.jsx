@@ -10,8 +10,8 @@ const COLORS = { health: "var(--c-crimson)", stamina: "var(--c-emerald)", morale
 
 const Chart = ({ points }) => {
   if (points.length < 2) return <p className="text-sm text-dust">Play a few turns to see how your character holds up.</p>;
-  const w = 600, h = 140, max = Math.max(...points.map((p) => p.at)) || 1;
-  const line = (k) => points.map((p) => `${(p.at / max) * w},${h - (p[k] / 100) * h}`).join(" ");
+  const w = 600, h = 140, min = Math.min(...points.map((p) => p.at)), span = Math.max(...points.map((p) => p.at)) - min || 1;
+  const line = (k) => points.map((p) => `${((p.at - min) / span) * w},${h - (p[k] / 100) * h}`).join(" ");
   return (
     <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-40 border border-line bg-void/40" data-testid="development-chart">
       {Object.entries(COLORS).map(([k, c]) => <polyline key={k} points={line(k)} fill="none" stroke={c} strokeWidth="2" />)}
@@ -38,7 +38,7 @@ export const DevelopmentPanel = ({ pid }) => {
       <section className="space-y-4">
         <p className="tactical-label">Condition over time</p>
         <Chart points={data.points} />
-        <div className="flex gap-4 text-xs">{Object.entries(COLORS).map(([k, c]) => <span key={k} className="capitalize" style={{ color: c }}>— {k}</span>)}</div>
+        <div className="flex gap-4 text-xs">{Object.entries(COLORS).map(([k, c]) => <span key={k} className="capitalize font-semibold" style={{ color: c, filter: "brightness(1.25)" }}>— {k}</span>)}</div>
         <p className="tactical-label pt-4">How you've acted</p>
         <div className="flex flex-wrap gap-2" data-testid="development-intents">
           {Object.entries(data.intents).map(([k, n]) => <span key={k} className="text-xs font-mono border border-line px-2 py-1 text-ash">{k} × {n}</span>)}
@@ -49,7 +49,7 @@ export const DevelopmentPanel = ({ pid }) => {
         )}
         <p className="tactical-label pt-4">Turning points</p>
         <ul className="space-y-2 text-sm" data-testid="development-milestones">
-          {data.milestones.map((m) => <li key={m.id} className="text-ash"><span className="font-mono text-dust text-xs">#{m.at} {fmtDate(m.date)}</span> · {m.title}{m.kind !== "goal" && m.text ? "" : ""}</li>)}
+          {data.milestones.map((m) => <li key={m.id} className="text-ash"><span className="font-mono text-dust text-xs">#{m.at} {fmtDate(m.date)}</span>{" · "}{m.title}</li>)}
         </ul>
       </section>
       <section className="space-y-4">

@@ -17,11 +17,12 @@ export const NotesPanel = ({ pid, entities = [] }) => {
       await api.post(`/playthroughs/${pid}/notes`, form);
       setForm({ kind: form.kind, title: "", body: "", entity_ids: [] });
       qc.invalidateQueries({ queryKey: ["notes", pid] });
+      qc.invalidateQueries({ queryKey: ["entity", pid] });
       toast.success(form.kind === "note" ? "Note saved" : "Document written");
     } catch (e) { toast.error(errMsg(e)); }
   };
   const remove = async (id) => {
-    try { await api.delete(`/notes/${id}`); qc.invalidateQueries({ queryKey: ["notes", pid] }); } catch (e) { toast.error(errMsg(e)); }
+    try { await api.delete(`/notes/${id}`); qc.invalidateQueries({ queryKey: ["notes", pid] }); qc.invalidateQueries({ queryKey: ["entity", pid] }); } catch (e) { toast.error(errMsg(e)); }
   };
   const toggleEntity = (id) => setForm({ ...form, entity_ids: form.entity_ids.includes(id) ? form.entity_ids.filter((x) => x !== id) : [...form.entity_ids, id] });
 

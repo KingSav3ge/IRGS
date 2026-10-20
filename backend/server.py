@@ -606,7 +606,9 @@ async def update_settings(pid: str, body: SettingsIn, user: dict = Depends(auth.
 
 @api.post("/playthroughs/{pid}/act")
 async def act(pid: str, body: ActIn, user: dict = Depends(auth.get_current_user)):
-    await _get_playthrough(pid, user)
+    replay = _replay(await _get_playthrough(pid, user), body.request_id)
+    if replay:
+        return replay
     if pid in _acting:
         raise HTTPException(status_code=409, detail="Your previous action is still being resolved")
     _acting.add(pid)
@@ -706,7 +708,9 @@ async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict, elapsed:
 async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_current_user)):
     if body.span not in engine.TIME_SPANS:
         raise HTTPException(status_code=400, detail="span must be hours, day or week")
-    await _get_playthrough(pid, user)
+    replay = _replay(await _get_playthrough(pid, user), body.request_id)
+    if replay:
+        return replay
     if pid in _acting:
         raise HTTPException(status_code=409, detail="Your previous action is still being resolved")
     _acting.add(pid)
@@ -804,11 +808,13 @@ async def load_save(sid: str, user: dict = Depends(auth.get_current_user)):
     s = await _get_save(sid, user)
     doc = await _get_playthrough(s["playthrough_id"], user)
     cur = doc["state"]
-    await db.saves.insert_one({
-        "save_id": new_id("save"), "playthrough_id": doc["playthrough_id"], "user_id": user["user_id"], "kind": "safety",
-        "label": f"Before restoring “{s['label']}”", "clock": cur["clock"], "campaign_time": cur["campaign_time"],
-        "state": cur, "created_at": now_iso(),
-    })
+    saved_ids = {e["id"] for e in s["state"]["journal"]}
+    if any(e["id"] not in saved_ids for e in cur["journal"]):
+        await db.saves.insert_one({
+            "save_id": new_id("save"), "playthrough_id": doc["playthrough_id"], "user_id": user["user_id"], "kind": "safety",
+            "label": f"Before restoring “{s['label']}”", "clock": cur["clock"], "campaign_time": cur["campaign_time"],
+            "state": cur, "created_at": now_iso(),
+        })
     state = _merge_images(s["state"], doc["state"])
     await db.playthroughs.update_one({"playthrough_id": doc["playthrough_id"]},
                                      {"$set": {"state": state, "updated_at": now_iso()}})
@@ -896,6 +902,13 @@ async def create_note(pid: str, body: NoteIn, user: dict = Depends(auth.get_curr
 @api.patch("/notes/{nid}")
 async def update_note(nid: str, body: NotePatch, user: dict = Depends(auth.get_current_user)):
     upd = {k: v for k, v in body.model_dump().items() if v is not None}
+    if "entity_ids" in upd:
+        note = await db.notes.find_one({"note_id": nid, "user_id": user["user_id"]}, {"_id": 0, "playthrough_id": 1})
+        if not note:
+            raise HTTPException(status_code=404, detail="Note not found")
+        st = (await _get_playthrough(note["playthrough_id"], user))["state"]
+        known = set(st["actors"]) | set(st.get("locations", {}))
+        upd["entity_ids"] = [e for e in upd["entity_ids"] if e in known]
     if "title" in upd and not upd["title"].strip():
         raise HTTPException(status_code=400, detail="Title cannot be empty")
     upd["updated_at"] = now_iso()
@@ -959,7 +972,8 @@ async def development(pid: str, user: dict = Depends(auth.get_current_user)):
     st = (await _get_playthrough(pid, user))["state"]
     points = [{"at": e["at"], "date": e.get("campaign_date"), **e["condition_after"]}
               for e in st["journal"] if e.get("condition_after")]
-    milestones = [{"id": e["id"], "at": e["at"], "title": e.get("title"), "text": e.get("text"), "date": e.get("campaign_date")}
+    milestones = [{"id": e["id"], "at": e["at"], "date": e.get("campaign_date"), "text": e.get("text"),
+                   "title": f"Big moment: {e['declaration'][:90]}" if e.get("big_moment") and e.get("declaration") else e.get("title")}
                   for e in st["journal"] if e.get("kind") in ("goal", "time_passes") or e.get("big_moment")]
     intents = {}
     for e in st["journal"]:
@@ -980,6 +994,7 @@ async def _goal_commit(pid: str, user: dict, mutate):
                               "campaign_time": st["campaign_time"]["time"], "wall_clock": now_iso()})
         await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"state": st, "updated_at": now_iso()}})
         doc["state"] = st
+        await _autosave(doc)
         return _playthrough_out(doc)
 
 
@@ -1007,6 +1022,9 @@ async def update_goal(pid: str, gid: str, body: GoalPatch, user: dict = Depends(
         g = next((x for x in st.get("goals", []) if x["id"] == gid), None)
         if not g:
             raise HTTPException(status_code=404, detail="Goal not found")
+        if body.status == "active" and g["status"] != "active" and \
+                len([x for x in st.get("goals", []) if x["status"] == "active"]) >= 8:
+            raise HTTPException(status_code=400, detail="You can hold at most 8 active goals")
         g["status"], g["resolved_at"] = body.status, st["clock"]
         label = {"achieved": "A personal goal is achieved", "abandoned": "A personal goal is set aside",
                  "active": "A personal goal is taken up again"}[body.status]

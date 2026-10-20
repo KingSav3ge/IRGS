@@ -53,11 +53,11 @@ def test_concurrent_pass_time(user):
     assert v["clock"] == p["view"]["clock"] + out.count(200)
 
 
-# pass-time: missing span defaults to "hours" (PassTimeIn default)
+# pass-time: missing span is now required -> 422 (changed in iteration 6)
 def test_missing_span(user):
     _, p = _new_play(user)
     r = user.post(f"{API}/playthroughs/{p['playthrough_id']}/pass-time", json={})
-    assert r.status_code == 200
+    assert r.status_code == 422
 
 
 # pass-time: chronicle divider + journal text
