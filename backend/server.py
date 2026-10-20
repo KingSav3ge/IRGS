@@ -9,7 +9,7 @@ from datetime import datetime, timezone, timedelta
 from typing import Optional, Dict, List
 
 from fastapi import FastAPI, APIRouter, HTTPException, Request, Response, UploadFile, File, Depends
-from fastapi.responses import Response as RawResponse
+from fastapi.responses import Response as RawResponse, JSONResponse
 from starlette.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -1200,7 +1200,7 @@ async def stt(file: UploadFile = File(...), user: dict = Depends(auth.get_curren
         text = await ai.stt_transcribe(data, file.filename or "audio.webm")
     except Exception as e:
         logger.error(f"stt failed: {e}")
-        raise HTTPException(status_code=502, detail="Could not transcribe your voice, please try again")
+        raise HTTPException(status_code=422, detail="Could not transcribe that recording, please try again")
     return {"text": text}
 
 
@@ -1261,15 +1261,24 @@ async def cancel_subscription(item_id: str, user: dict = Depends(auth.get_curren
 
 # ---------------------------------------------------------------- app wiring
 app.include_router(api)
-_cors_origins = [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
-app.add_middleware(
-    CORSMiddleware,
-    # credentials are only ever allowed for an explicit allowlist, never alongside "*"
-    allow_credentials="*" not in _cors_origins,
-    allow_origins=_cors_origins,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+_cors_origins = [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip() and o.strip() != "*"]
+if _cors_origins:
+    # the app is served same-origin; cross-origin access exists only for an explicit allowlist
+    app.add_middleware(CORSMiddleware, allow_credentials=True, allow_origins=_cors_origins,
+                       allow_methods=["*"], allow_headers=["*"])
+
+
+@app.middleware("http")
+async def csrf_origin_guard(request: Request, call_next):
+    """Block cross-site state-changing requests that ride on the auth cookie (CSRF)."""
+    if request.method not in ("GET", "HEAD", "OPTIONS") and request.cookies and \
+            not request.headers.get("authorization"):
+        origin = request.headers.get("origin")
+        if origin:
+            host = request.headers.get("x-forwarded-host") or request.headers.get("host", "")
+            if origin.split("://", 1)[-1] != host and origin not in _cors_origins:
+                return JSONResponse(status_code=403, content={"detail": "Cross-site request blocked"})
+    return await call_next(request)
 
 
 @app.on_event("startup")

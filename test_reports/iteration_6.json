@@ -1,0 +1,32 @@
+{
+  "summary": "Checked the SEC-001 CORS fix and re-tested auth, upload limits and the main game flows. SEC-001 is fixed. Cross-origin requests from https://evil.example (GET and OPTIONS preflight on /api/auth/me, /api/playthroughs, /api/characters, sent with a Bearer token) get 'Access-Control-Allow-Origin: *' and never 'Access-Control-Allow-Credentials: true'. Full pytest suite: 112/112 passed, 19 of them new in test_irgs_iter7_security.py. After a backend restart, admin login still works and the password hash is bcrypt ($2b$). Wrong password returns 401. Five failed logins lock the account (429). The httpOnly access_token cookie is set; the edge proxy rewrites it to SameSite=None; Partitioned, while the app sets lax. STT over 25MB returns 400 'Recording too large (max 25MB)'. An empty recording returns 400. A valid small WAV returns 200 with text. A portrait over 8MB returns 400. UI checks all passed: login (admin) lands on /library, a refresh keeps the session (irgs_token in localStorage), sign-up, sign-out (token cleared, /library redirects to /login), committing an action in play_a9395430ff67, all 4 Chronicle tabs, the public storybook /story/w-d9KpXtlA_X without login (7 entries), and the store (3 items).",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "CORS (Starlette CORSMiddleware with allow_origins=['*'])", "issue": "If the request carries a Cookie header, Starlette echoes the request Origin back (Access-Control-Allow-Origin: https://evil.example) instead of '*'. Requests with only a Bearer token or no auth get '*'. This cannot be exploited: Access-Control-Allow-Credentials is never sent, so browsers block credentialed reads. It is still a literal deviation from the requirement 'must not echo evil.example'. Setting CORS_ORIGINS to the explicit app origin removes it."},
+      {"endpoint": "POST /api/voice/stt, POST /api/characters/{cid}/portrait", "issue": "Bad audio (e.g. not valid webm) makes the backend return 502 with detail 'Could not transcribe...'. The Cloudflare/edge proxy replaces 502 responses with its own HTML error page, so the frontend gets HTML instead of the JSON detail. Use 422 or 400 for user-input decode failures, and keep 502 only for real upstream outages."},
+      {"endpoint": "Cookie auth / CSRF (edge proxy)", "issue": "The edge proxy rewrites the cookie to SameSite=None, so cross-site 'simple' requests (multipart form POSTs such as stt or portrait upload, and logout) carry the auth cookie. The response cannot be read cross-origin, but such requests can still change state. JSON endpoints are protected because a cross-site JSON body needs a preflight. This is outside the app code. Optional fix: check Origin on cookie-authenticated state-changing requests."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/backend/tests/test_irgs_iter7_security.py", "/app/test_reports/pytest/pytest_results.xml", "/app/test_reports/pytest/pytest_iter7.xml"],
+  "action_items": [
+    "Optional: set CORS_ORIGINS to the explicit app origin so Starlette stops echoing Origin when a Cookie header is present (credentials stay correctly disabled with '*')",
+    "Return 422/400 instead of 502 for invalid audio in /api/voice/stt, so the user-facing JSON error is not replaced by the edge proxy's HTML 502 page"
+  ],
+  "critical_code_review_comments": [
+    "seed_admin fails closed correctly: it logs a warning and skips seeding if the env vars are missing or the password is under 8 characters, and it re-hashes if the password changed",
+    "If CORS_ORIGINS is empty, the result is allow_credentials=True with an empty allowlist. That is safe (no origin is allowed), but the intent is easy to miss; consider logging it",
+    "The upload caps read up to cap+1 bytes. The full upload is still spooled by Starlette before the check, so a reverse-proxy body limit would be needed to save bandwidth"
+  ],
+  "updated_files": ["/app/backend/tests/test_irgs_iter7_security.py"],
+  "success_rate": {"backend": "100% (112/112)", "frontend": "100%"},
+  "seed_data_creation": "Created test_lock_*, test_reg_* and test_ui_* users (example.com). Committed one action ('I look around carefully for any clues.') in play_a9395430ff67, which is now at turn 3.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run the full suite with REACT_APP_BACKEND_URL exported: pytest /app/backend/tests/ (112 tests, about 2 minutes with xdist). Live share id: w-d9KpXtlA_X. A valid WAV for STT can be generated with Python's wave module (see test_stt_small_valid_wav). Starlette echoes Origin when a Cookie header is present; that is expected and harmless because ACAC is absent."
+}
