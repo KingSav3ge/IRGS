@@ -231,5 +231,8 @@ def chronicle_view(state: dict) -> list:
             "campaign_date": e.get("campaign_date"),
             "campaign_time": e.get("campaign_time"),
             "wall_clock": e.get("wall_clock"),
+            "big_moment": e.get("big_moment", False),
+            "image_status": e.get("image_status"),
+            "image_path": e.get("image_path"),
         })
     return out

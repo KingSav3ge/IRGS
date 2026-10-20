@@ -27,7 +27,12 @@ DEFAULT_PROVIDER = "openai"
 DEFAULT_MODEL = "gpt-5.6-terra"
 
 TTS_VOICES = ["fable", "onyx", "nova", "sage", "shimmer", "echo"]
-ELEVEN_VOICE_NOTE = "ElevenLabs premium voices require an ELEVENLABS_API_KEY; falls back to OpenAI TTS."
+ELEVEN_VOICES = [
+    {"id": "el-chronicler", "label": "The Chronicler", "style": "Deep, measured elder", "fallback": "onyx"},
+    {"id": "el-bard", "label": "The Bard", "style": "Warm, theatrical storyteller", "fallback": "fable"},
+    {"id": "el-seer", "label": "The Seer", "style": "Hushed, mystical", "fallback": "shimmer"},
+    {"id": "el-herald", "label": "The Herald", "style": "Bright, commanding", "fallback": "nova"},
+]
 
 
 def _model_for(provider: str, model: str):

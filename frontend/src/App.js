@@ -1,56 +1,44 @@
-import { useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Toaster } from "sonner";
+import { AuthProvider, ProtectedRoute } from "@/context/AuthContext";
+import { AppShell } from "@/components/AppShell";
+import AuthPage from "@/pages/AuthPage";
+import AuthCallback from "@/pages/AuthCallback";
+import Library from "@/pages/Library";
+import CharacterCreator from "@/pages/CharacterCreator";
+import Play from "@/pages/Play";
+import Chronicle from "@/pages/Chronicle";
+import Saves from "@/pages/Saves";
+import Store from "@/pages/Store";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
+function AppRouter() {
+  const location = useLocation();
+  if (location.hash?.includes("session_id=")) return <AuthCallback />;
   return (
-    // The marker attribute below lets the platform probe detect the stock splash — remove it with this page
-    <div data-emergent-splash>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/login" element={<AuthPage />} />
+      <Route element={<ProtectedRoute><AppShell /></ProtectedRoute>}>
+        <Route path="/library" element={<Library />} />
+        <Route path="/create/:scenarioId" element={<CharacterCreator />} />
+        <Route path="/play/:pid" element={<Play />} />
+        <Route path="/chronicle/:pid" element={<Chronicle />} />
+        <Route path="/saves/:pid" element={<Saves />} />
+        <Route path="/store" element={<Store />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/library" replace />} />
+    </Routes>
   );
-};
+}
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <AppRouter />
+        <Toaster theme="dark" position="bottom-right" toastOptions={{ style: { background: "#12141A", border: "1px solid #2D3245", color: "#F0E6D2" } }} />
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

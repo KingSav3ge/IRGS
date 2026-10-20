@@ -197,12 +197,13 @@ STORE_ITEMS = [
         "image": "https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=srgb&fm=jpg&q=85&w=940",
     },
     {
-        "id": "pack-voice-bard",
-        "title": "The Bard's Voice Pack",
-        "kind": "voice",
+        "id": "sub-elevenlabs-narration",
+        "title": "ElevenLabs Narration",
+        "kind": "subscription",
+        "interval": "month",
         "scenario_id": None,
-        "price": 4.99,
-        "description": "Expressive ElevenLabs narrator voices tuned for dramatic story readings.",
+        "price": 5.99,
+        "description": "Monthly add-on: premium ElevenLabs narrator voices for cinematic story readings. Standard voice narration stays free.",
         "image": "https://images.pexels.com/photos/11882036/pexels-photo-11882036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     },
     {
