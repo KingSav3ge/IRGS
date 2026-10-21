@@ -19,7 +19,8 @@ META = {'clock','journal','processed','_r6_eid','_r7_event_id'}
 def plain(value):
     if isinstance(value, dict):
         return {k:plain(v) for k,v in dict.items(value)}
-    if isinstance(value,list): return [plain(v) for v in value]
+    # Flattening/cloning instrumentation is bookkeeping, not a domain read.
+    if isinstance(value,list): return [plain(v) for v in list.__iter__(value)]
     return value
 
 class Trace:
@@ -40,30 +41,96 @@ class Trace:
             self.validation_reads.add(path)
         else: (self.writes if write else self.reads).add(path)
 
+
+def _repath(value,path):
+    """Retain held child references when list positions change."""
+    if isinstance(value,TracedDict):
+        value.path=path
+        for key,child in dict.items(value):_repath(child,path+(str(key),))
+    elif isinstance(value,TracedList):
+        value.path=path
+        for index,child in enumerate(list.__iter__(value)):_repath(child,path+(str(index),))
+
+
+class TracedList(list):
+    """Whole-list read dependencies, with writes only for actual mutator calls.
+
+    Membership, indexing, order and length all retain the complete list as their
+    read granularity. Standard mutations reserve the complete list as a write.
+    Successful unoverridden C-level changes still have the actual-diff backstop.
+    This is reviewed JSON-handler observation, not an arbitrary Python sandbox.
+    """
+    def __init__(self,data,trace,path):
+        self.trace,self.path=trace,path
+        list.__init__(self,(self.wrap(value,path+(str(index),))
+                            for index,value in enumerate(list.__iter__(data))))
+    def wrap(self,value,path):
+        if isinstance(value,dict):return TracedDict(plain(value),self.trace,path)
+        if isinstance(value,list):return TracedList(plain(value),self.trace,path)
+        return value
+    def read(self):self.trace.add(self.path)
+    def write(self):self.read();self.trace.add(self.path,True)
+    def reindex(self):
+        for index,value in enumerate(list.__iter__(self)):_repath(value,self.path+(str(index),))
+    def __iter__(self):self.read();return list.__iter__(self)
+    def __reversed__(self):self.read();return list.__reversed__(self)
+    def __len__(self):self.read();return list.__len__(self)
+    def __getitem__(self,index):self.read();return list.__getitem__(self,index)
+    def __contains__(self,value):self.read();return list.__contains__(self,value)
+    def __eq__(self,other):self.read();return list.__eq__(self,other)
+    def __ne__(self,other):self.read();return list.__ne__(self,other)
+    def __lt__(self,other):self.read();return list.__lt__(self,other)
+    def __le__(self,other):self.read();return list.__le__(self,other)
+    def __gt__(self,other):self.read();return list.__gt__(self,other)
+    def __ge__(self,other):self.read();return list.__ge__(self,other)
+    def __repr__(self):self.read();return list.__repr__(self)
+    def count(self,value):self.read();return list.count(self,value)
+    def index(self,*args):self.read();return list.index(self,*args)
+    def copy(self):self.read();return list.copy(self)
+    def __add__(self,other):self.read();return list.__add__(self,other)
+    def __radd__(self,other):self.read();return list.__add__(other,self)
+    def __mul__(self,count):self.read();return list.__mul__(self,count)
+    def __rmul__(self,count):self.read();return list.__mul__(self,count)
+    def __setitem__(self,index,value):
+        self.write()
+        if isinstance(index,slice):value=[self.wrap(v,self.path) for v in value]
+        else:value=self.wrap(value,self.path)
+        list.__setitem__(self,index,value);self.reindex()
+    def __delitem__(self,index):self.write();list.__delitem__(self,index);self.reindex()
+    def append(self,value):
+        self.write();list.append(self,self.wrap(value,self.path+(str(list.__len__(self)),)))
+    def extend(self,values):
+        self.write()
+        if values is self:values=list.copy(self)
+        list.extend(self,(self.wrap(value,self.path) for value in values));self.reindex()
+    def insert(self,index,value):
+        self.write();list.insert(self,index,self.wrap(value,self.path));self.reindex()
+    def pop(self,index=-1):
+        self.write();value=list.pop(self,index);self.reindex();return value
+    def remove(self,value):self.write();list.remove(self,value);self.reindex()
+    def clear(self):self.write();list.clear(self)
+    def reverse(self):self.write();list.reverse(self);self.reindex()
+    def sort(self,*args,**kwargs):self.write();list.sort(self,*args,**kwargs);self.reindex()
+    def __iadd__(self,values):self.extend(values);return self
+    def __imul__(self,count):self.write();list.__imul__(self,count);self.reindex();return self
+    def __deepcopy__(self,memo):
+        self.read()
+        return copy.deepcopy(plain(self),memo)
+
+
 class TracedDict(dict):
     def __init__(self,data,trace,path=()):
         self.trace,self.path=trace,path
         for k,v in dict.items(data): dict.__setitem__(self,k,self.wrap(v,path+(str(k),)))
     def wrap(self,v,path):
         if isinstance(v,dict): return TracedDict(plain(v),self.trace,path)
-        if isinstance(v,list): return [self.wrap(x,path+(str(i),)) for i,x in enumerate(v)]
+        if isinstance(v,list): return TracedList(plain(v),self.trace,path)
         return v
     def __getitem__(self,key):
         path=self.path+(str(key),)
         self.trace.add(path+('@exists',))
         value=dict.__getitem__(self,key)
         if not isinstance(value,dict): self.trace.add(path)
-        if isinstance(value,list):
-            # Lists are opaque mutable containers. Reserve the whole subtree;
-            # validators only read them, so do not invent validation writes.
-            self.trace.add(path)
-            frame=sys._getframe(1); validation=False; constructing=False
-            while frame:
-                if frame.f_code.co_name=='__init__':constructing=True
-                if frame.f_code.co_name=='_validate' or frame.f_code.co_name.startswith('validate_'):
-                    validation=True; break
-                frame=frame.f_back
-            if not validation and not constructing: self.trace.add(path,True)
         return value
     def __contains__(self,key):
         self.trace.add(self.path+(str(key),'@exists'))

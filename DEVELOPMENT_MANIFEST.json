@@ -913,8 +913,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 33175,
-      "sha256": "ad3c11a7568461e9f47391d9315c6bb447ae239116a88da368fe6a27837f69ac"
+      "bytes": 33974,
+      "sha256": "304cfe3d16a6c762873651900c2da2f078a4112d6a3ee0bb7a9993e7ff6e6873"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1058,8 +1058,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 14987,
-      "sha256": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77"
+      "bytes": 15405,
+      "sha256": "1615f2bed204950a89ed1fcacdfafc8d974018e962a530e77727a49b2d5a5bef"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1095,6 +1095,11 @@
       "path": "IRGS_3_3/runtime/irgs_reference.py",
       "bytes": 22145,
       "sha256": "d362701f1464176c42fb42e559c045de5036025954023e08b8d251e448470a87"
+    },
+    {
+      "path": "IRGS_3_3/runtime/player_actions.py",
+      "bytes": 10760,
+      "sha256": "a1454bec3175e530589890acc08f3f947ee74fbe2b179d7d4df91d9f8b3e6b3f"
     },
     {
       "path": "IRGS_3_3/runtime/r5_audit.py",
@@ -1148,8 +1153,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/r9_runtime.py",
-      "bytes": 13236,
-      "sha256": "e6041fc47b90b1aa541e7b1309fd17e979a17121db12104dd796f45c2ff120b8"
+      "bytes": 16885,
+      "sha256": "05d2053b0c6f14d6e28169125747b59ba8b14edb1bd87e3f72d6f1e3349f012a"
     },
     {
       "path": "IRGS_3_3/runtime/r9_strategy.py",
@@ -1160,6 +1165,11 @@
       "path": "IRGS_3_3/runtime/release_integrity.py",
       "bytes": 1074,
       "sha256": "edce7f7e5c7e54dc03a98b26885e9ebe9af2de629db3936ec1320d2e14d42153"
+    },
+    {
+      "path": "IRGS_3_3/runtime/response_options.py",
+      "bytes": 5996,
+      "sha256": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8"
     },
     {
       "path": "IRGS_3_3/runtime/run_economic_fixture.py",
@@ -1262,6 +1272,11 @@
       "sha256": "878dd5ee338d20cd905927adfc3b89df6c454f8afec68f6014a00dc4f1005e63"
     },
     {
+      "path": "IRGS_3_3/runtime/test_player_actions.py",
+      "bytes": 17637,
+      "sha256": "80da4dad18b138d17d468f1819b2b52b9fe224112f2d1317c3208f1e8e487583"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_r7_integration.py",
       "bytes": 17486,
       "sha256": "64bc1cf631e7acf304bb859c0a585687e031aa5afee777b08515154793906e25"
@@ -1272,6 +1287,11 @@
       "sha256": "ad5791c3e12c913104c774e392046520a50dda34febff4676039aabee62215a5"
     },
     {
+      "path": "IRGS_3_3/runtime/test_r9_collections.py",
+      "bytes": 5557,
+      "sha256": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_r9_runtime.py",
       "bytes": 9708,
       "sha256": "427cd0eadefa95c204d28edc2f75262fb3034fd37555349c013fa24545dadb8d"
@@ -1280,6 +1300,11 @@
       "path": "IRGS_3_3/runtime/test_release_integrity.py",
       "bytes": 5086,
       "sha256": "9e53f0004eda751d90d1be2904bb6645495a0dd61df555996a249078f75da847"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_response_options.py",
+      "bytes": 9740,
+      "sha256": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457"
     },
     {
       "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
@@ -1462,6 +1487,11 @@
       "sha256": "55a88c7c19749e532e4ed645c0c3de26eb99b24b7a43301f231a76dd991c16bf"
     },
     {
+      "path": "engine/ACCEPTANCE_EXECUTION.md",
+      "bytes": 3132,
+      "sha256": "24e3d7004fae2af4a93410cce148b195f57dfefb0dd28f837ed1955bbcf932e0"
+    },
+    {
       "path": "engine/APPLICATION_RECORD.json",
       "bytes": 4320,
       "sha256": "1ca7a13bb374eb9380eb8cd13601754f6b6109884d7eda9c50fbfd89d7deb8ea"
@@ -1490,6 +1520,11 @@
       "path": "engine/Core/IRGS_Core_3_3_3_E_C2_Binding.json",
       "bytes": 3730,
       "sha256": "dbca027031700261abbdd645b1883b6dfc27a10b221215cbcb7d3fcf54faea92"
+    },
+    {
+      "path": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
+      "bytes": 9450,
+      "sha256": "839a6d8432eaa25758174f45a323315cb461642a0e8add56ba80c09fb0035f65"
     },
     {
       "path": "engine/PACKAGE_MANIFEST.json",

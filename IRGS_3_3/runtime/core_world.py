@@ -12,6 +12,7 @@ ALIASES={"ast_"+op:op for op in (
 "record_design","receive_order")}
 CORE_OPS=set(ALIASES.values())
 CORE_OPS.update({'register_actor','record_capacity','commit_activity','record_delegation'})
+CORE_OPS.update({'execute_player_equipment_issue','receive_response_prompt'})
 CORE_OPS.update(ENTITY_OPS)
 SUPPORTED_OPS=CORE_OPS|set(ALIASES)|GENRE_OPS
 
@@ -82,6 +83,12 @@ class CoreWorld:
         self.s=s;return True
     def _operate(self,s,at,op,p):
         assert isinstance(p.get('source_ref'),str) and p['source_ref'].strip(),'source reference required'
+        if op=='execute_player_equipment_issue':
+            from player_actions import operate_equipment_action
+            return operate_equipment_action(self,s,at,p)
+        if op=='receive_response_prompt':
+            from response_options import operate_response_prompt
+            return operate_response_prompt(self,s,at,p)
         if op in ENTITY_OPS:
             return operate_entity(self,s,at,op,p)
         if op in GENRE_OPS:

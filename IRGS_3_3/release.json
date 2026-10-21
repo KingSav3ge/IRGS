@@ -25,7 +25,7 @@
   ],
   "selection_authority": "User requested live Core 3.3 plus genre engines/libraries, with AST as campaign content",
   "validation": {
-    "runtime_tests": 393,
+    "runtime_tests": 438,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
     "http_tests": 93,
@@ -58,7 +58,7 @@
     "runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",
     "runtime/character_background.py": "dc5242c4429638c0582e0bdb238340a21639333405e035f27480e806f58e7aa5",
     "runtime/content_library.py": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae",
-    "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+    "runtime/core_world.py": "1615f2bed204950a89ed1fcacdfafc8d974018e962a530e77727a49b2d5a5bef",
     "runtime/economic_extension.py": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c",
     "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98",
     "runtime/historical_campaigns.py": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc",
@@ -76,7 +76,7 @@
     "runtime/r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
     "runtime/r8_strategy.py": "3d5ab61240635b1f6ee1eabd1fc8b05964cd49aafa4a08da95583082a7d88e27",
     "runtime/r9_adapters.py": "39067583d8282194a0e911354dc4ca6a5fd79b3860d69a3a3240d292c38f8f3a",
-    "runtime/r9_runtime.py": "e6041fc47b90b1aa541e7b1309fd17e979a17121db12104dd796f45c2ff120b8",
+    "runtime/r9_runtime.py": "05d2053b0c6f14d6e28169125747b59ba8b14edb1bd87e3f72d6f1e3349f012a",
     "runtime/r9_strategy.py": "698e364e6a5e41306b92405cb4685388d3e0b4ac35490d3f64d44c49889e25c6",
     "runtime/release_integrity.py": "edce7f7e5c7e54dc03a98b26885e9ebe9af2de629db3936ec1320d2e14d42153",
     "runtime/run_economic_fixture.py": "43318795048fda75170f024fd9adf9a2d78c71c39e61d0e7fd565513b14e18ca",
@@ -283,7 +283,12 @@
     "Start-IRGS-3.3.cmd": "f1dbf33819c888d9175e3a24f3bf1617ed632b92da3a6c41f61b003c56617602",
     "build_suite_catalog.py": "eaccfa38f6ce92fc264ee1db8b29f21414776a20c32feead7eeff3efe0fae389",
     "build_release_3_3.py": "b76095c87eb98dc6343662feee7f8116b2164144275fb058bdc70d02058c56f5",
-    "package_release.py": "817ff0f017e55c09e26829a6f7499a003c42f9250897fd32f36d805ed8de8b16"
+    "package_release.py": "817ff0f017e55c09e26829a6f7499a003c42f9250897fd32f36d805ed8de8b16",
+    "runtime/player_actions.py": "a1454bec3175e530589890acc08f3f947ee74fbe2b179d7d4df91d9f8b3e6b3f",
+    "runtime/response_options.py": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8",
+    "runtime/test_player_actions.py": "80da4dad18b138d17d468f1819b2b52b9fe224112f2d1317c3208f1e8e487583",
+    "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7",
+    "runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457"
   },
   "host_sha256": {
     "IRGS_Web/server.py": "1c43c036f9da3dd3462757f5ab30f2f30978f398120cbc7a5bc58824ec508b54",
@@ -315,5 +320,15 @@
     "sha256": "90a8608585a404851e84a155703c3802a0a8df1357883f9b197e246252082e52",
     "integration": "visual_port_to_canonical_solo_host",
     "alternate_backend_activated": false
+  },
+  "continuation": {
+    "id": "action1-engine",
+    "host_integration_branch": "3.3.3.A",
+    "supported_player_actions": [
+      "issue_equipment"
+    ],
+    "contextual_response_drafts": true,
+    "general_freeform_resolution": false,
+    "combat_adjudication": false
   }
 }
