@@ -33,23 +33,28 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 4010,
-      "sha256": "3f17964d2b76403fbd6789c8a5374271d15e0c335e734fc43e9f3bcd65766dbd"
+      "bytes": 4626,
+      "sha256": "ab73eb16a03283ad56ad46679a341a0c719bbcbb56ea79b4cd58114b26815daf"
+    },
+    {
+      "path": "COVERAGE1_VALIDATION.json",
+      "bytes": 4099,
+      "sha256": "7e9c0add4ede3d66844a7f579d3ca2bd7696e5497ab0a2ae86e261b6434232c0"
     },
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 4238,
-      "sha256": "283b8900b78022c12517d4da3e89c81f4ca0a975566085e25154b79cdbc319b6"
+      "bytes": 5615,
+      "sha256": "f20bd9d5ff1b22a0d059652c1c7ea9aafff84db811eddcd8847ab3d5e0384eaa"
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 12943,
-      "sha256": "3ebe0d18921fbdf84a9a4f50a5fbe05e747c96790644e06ebd40044eb8e49a69"
+      "bytes": 13181,
+      "sha256": "52312e2d72a80b5e0419400b7004fc85e5d895cb9f32ee9ff99f70fcd51fd597"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 2060,
-      "sha256": "c032e3d1cedef007522731769552fd0593e532a8b634242fd924abbafd7ace4c"
+      "bytes": 2319,
+      "sha256": "a6acb1530e974678304a921c40a1b8fec61e1858751ba0de8fb75c901b29c019"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -1483,13 +1488,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3208,
-      "sha256": "2e448b509c1eda40870f9acc4a1ee4c861e580cb7034aa6349916204ab2f75c0"
+      "bytes": 3417,
+      "sha256": "dd6aa5d5a0f0c9504518805d15ade95224aa2a7767ca0665a8df9223aa7ca674"
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4715,
-      "sha256": "ddc49bdac40696edf9ee63d9e508c17e314510c666001336ce1d24eaec935d43"
+      "bytes": 4787,
+      "sha256": "6036dc16c3cb1feda26ec021f0793a2a1b6c18673195adf8c7a4a92b6c41135f"
     },
     {
       "path": "SHA256SUMS.txt",
@@ -1545,6 +1550,11 @@
       "path": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
       "bytes": 9450,
       "sha256": "839a6d8432eaa25758174f45a323315cb461642a0e8add56ba80c09fb0035f65"
+    },
+    {
+      "path": "engine/OPERATION_COVERAGE.md",
+      "bytes": 12020,
+      "sha256": "bf10890749928efbb551ca4623627f0a7e811323a7d9d33f861894cc5f2dcd24"
     },
     {
       "path": "engine/PACKAGE_MANIFEST.json",
@@ -1677,6 +1687,11 @@
       "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978"
     },
     {
+      "path": "engine/qualification/operation_register.json",
+      "bytes": 8253971,
+      "sha256": "65b1ea9e8ca94cc6fcc742fc1c4b4eae29eab5eff345b328997e28e79d580957"
+    },
+    {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
       "bytes": 16951,
       "sha256": "590bd2d17e864695c2c22f884316a59264080b9697d67f521df360f9073d7c58"
@@ -1767,6 +1782,31 @@
       "sha256": "48d97b6e3530416179e1a244f1390fc89be931467807496c02f66ef5e3bc3ce8"
     },
     {
+      "path": "provenance/coverage1_validation/runtime_capture.txt",
+      "bytes": 552,
+      "sha256": "bf3a1854bd8b4ebc22376133e4124bd0d697bd675ad514470ca325155fa0b6e6"
+    },
+    {
+      "path": "provenance/coverage1_validation/tool_tests.txt",
+      "bytes": 3397,
+      "sha256": "5abccd29f14881c9b0aff68cdf27474c7b7efe8a9b72113090a23a1cb4f5b495"
+    },
+    {
+      "path": "tools/build_operation_register.py",
+      "bytes": 15322,
+      "sha256": "06933f88747a93921154aa869717d019ec8cdde8fb1f9bc96514134dba5114b4"
+    },
+    {
+      "path": "tools/coverage_capture.py",
+      "bytes": 16771,
+      "sha256": "524ec0e271ae404773e893026728b165a8fdc7dee1bb4e624d1cabaad731499c"
+    },
+    {
+      "path": "tools/operation_inventory.py",
+      "bytes": 19024,
+      "sha256": "0354f9de8fc806234b1b4400ce9fedf6b98538bba80de8a567bcb2a2a625d0be"
+    },
+    {
       "path": "tools/package_development.py",
       "bytes": 2348,
       "sha256": "4c78fcea7e59736fead447db69c43802e7c5ee808818211e487cb04213a57ac8"
@@ -1775,6 +1815,16 @@
       "path": "tools/smoke_development.py",
       "bytes": 8696,
       "sha256": "5b5466f8ccfcbdf67ec13129294d55995d53344c714f8580795fe14d3319dc61"
+    },
+    {
+      "path": "tools/tests/test_coverage_capture.py",
+      "bytes": 5498,
+      "sha256": "b401c6e2e0138bfd92fefa2135ceb6f9ca6d0c7ad7d9445870cb5df5aa4a4850"
+    },
+    {
+      "path": "tools/tests/test_operation_coverage.py",
+      "bytes": 8188,
+      "sha256": "49c2d28dce28a335ab835350482ba8a484e0cdba5defbfecf9fdedd166ab7a73"
     },
     {
       "path": "tools/verify_development.py",

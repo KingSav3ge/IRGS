@@ -4,7 +4,7 @@ Prepared 2026-10-21 against **3.3.3 Unified Development D1**. Selected executabl
 
 The immediate target is a complete Solo action cycle: a player makes a supported decision, the engine commits its legitimate consequences, the player sees the outcome, and play can continue after reload. Complete that cycle before widening the historical catalogue or adding interface sections.
 
-DEV-01–DEV-04 are completed for the qualified bounded equipment action; all other items remain open. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope, evidence and limitations. Existing setup, filtered inspection, request recovery, campaign Trash, observed handlers and bounded institutional fixtures are foundations to extend. Applied C2 text contains 121 required cases whose execution remains unclaimed.
+DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05 is completed as an operation inventory with scoped execution evidence and explicit gaps; all other items remain open. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope, evidence and limitations. Existing setup, filtered inspection, request recovery, campaign Trash, observed handlers and bounded institutional fixtures are foundations to extend. Applied C2 text contains 121 required cases whose execution remains unclaimed.
 
 ## 1. Deliver the first consequential action
 
@@ -21,7 +21,7 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action; all ot
 
 **Depends on:** first-action evidence from stage 1. Basic dependency checks are required in stage 1, not deferred until this stage.
 
-- [ ] **DEV-05 — Build an operation coverage register.** For every claimed supported handler, record its implementation, affected owners, actual reads and writes, authorization/decision paths, tests and known limits. Mark unqualified paths explicitly.
+- [x] **DEV-05 — Build an operation coverage register.** For every claimed supported handler, record its implementation, affected owners, actual reads and writes, authorization/decision paths, tests and known limits. Mark unqualified paths explicitly.
 - [ ] **DEV-06 — Improve collection observation.** Distinguish list inspection from mutation while retaining coverage for absent records, scans, membership changes and order-sensitive decisions. Keep conservative reservations where finer observation is not yet justified.
 - [ ] **DEV-07 — Qualify conflicts and failed paths.** Exercise revocation, dissolution, changed prerequisites, exhausted resources, shared capacity and competing claims. Confirm that failed or deferred decisions retain the dependencies that influenced them.
 - [ ] **DEV-08 — Verify cross-engine execution.** Compare valid event orders and simultaneous frontiers across multiple adapters using the same people, stock and capacity. Demonstrate agreement for genuinely independent operations and safe handling of conflicts without arrival-order allocation.
@@ -91,6 +91,6 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action; all ot
 
 ## Start here
 
-Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. Next implement **DEV-05**, while extending the named collection and failed-path coverage under DEV-06–DEV-08. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
+Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 83 operation spellings across 168 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
 
 Use [ROADMAP.md](ROADMAP.md) for the broader sequence, [DEVELOPMENT.md](DEVELOPMENT.md) for working and verification commands, and [VALIDATION.json](VALIDATION.json) for the recorded D1 evidence. This list records continuation progress; supporting execution evidence is linked separately.

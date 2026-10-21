@@ -12,7 +12,9 @@ Start the local site with [Start-IRGS.cmd](Start-IRGS.cmd). It verifies the inst
 | Development workflow | [DEVELOPMENT.md](DEVELOPMENT.md) |
 | Remaining implementation and gates | [ROADMAP.md](ROADMAP.md) |
 | Prioritised continuation checklist | [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) |
-| Current verification evidence | [VALIDATION.json](VALIDATION.json) |
+| Current operation inventory and gaps | [engine/OPERATION_COVERAGE.md](engine/OPERATION_COVERAGE.md) |
+| Qualification of the operation register | [COVERAGE1_VALIDATION.json](COVERAGE1_VALIDATION.json) |
+| Original D1 verification evidence | [VALIDATION.json](VALIDATION.json) |
 | Published source records | `provenance/` and [DEVELOPMENT_STATE.json](DEVELOPMENT_STATE.json) |
 
 Setup requires a selected character; dated availability, filtered inspection, exact-intent recovery, withdrawal and recoverable campaign Trash are implemented. The first continuation increment adds a bounded authorized equipment action with an atomic outcome and recoverable receipt, plus contextual response drafts and an editable own-response field. Suggested approaches may fail; they are not a list of guaranteed solutions. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope and evidence.

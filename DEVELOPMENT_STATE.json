@@ -36,17 +36,18 @@
   "existing_save_migration": false,
   "C2_acceptance_cases": 121,
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
-  "next_milestone": "DEV-05 operation coverage register; broaden collection, failed-path and cross-engine dependency qualification.",
+  "next_milestone": "DEV-06\u2013DEV-08: broaden collection, failed-path and cross-engine dependency qualification using named operation gaps.",
   "verified_on": "2026-10-21",
-  "validation_record": "ACTION1_VALIDATION.json",
+  "validation_record": "COVERAGE1_VALIDATION.json",
   "continuation": {
-    "id": "action1",
+    "id": "coverage1",
     "integration_base": "32d0debaf46865c8cff55625e292105867a281dc",
     "completed_items": [
       "DEV-01",
       "DEV-02",
       "DEV-03",
-      "DEV-04"
+      "DEV-04",
+      "DEV-05"
     ],
     "supported_action": "received authorized equipment issue",
     "general_freeform_resolution": false,
@@ -54,6 +55,11 @@
     "contextual_response_drafts": true,
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
-    "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md"
+    "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
+    "previous_increment": "action1",
+    "operation_coverage_register": "engine/qualification/operation_register.json",
+    "operation_spellings": 83,
+    "backend_operation_contracts": 168,
+    "all_branches_certified": false
   }
 }

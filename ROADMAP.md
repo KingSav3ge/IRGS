@@ -4,7 +4,7 @@ D1 assembles the complete development sources. The selected executable foundatio
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for the ordered continuation checklist, stable task IDs, dependencies and completion evidence. Start with DEV-01–DEV-04; qualify their dependencies and recovery as part of that first playable action.
 
-Continuation status: DEV-01–DEV-04 now have a bounded equipment-action implementation and connected Solo flow. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for qualification and limits. Continue with the cross-engine coverage register and broader dependency cases below; the general C2 resolver remains unfinished.
+Continuation status: DEV-01–DEV-04 now have a bounded equipment-action implementation and connected Solo flow. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for qualification and limits. DEV-05 now supplies [the operation coverage register](engine/OPERATION_COVERAGE.md); continue with the broader dependency cases under DEV-06–DEV-08 below; the general C2 resolver remains unfinished.
 
 ## 1. Resolve one consequential action
 

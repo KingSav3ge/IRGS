@@ -63,4 +63,23 @@ Use the unified helpers for new development distributions. Inherited `IRGS_3_3/b
 
 The literal GitHub branch `main` is the unified 3.3.3 development baseline. Engine/Core work uses `3.3.3.E`; Website/App work uses `3.3.3.A`. Bring the current unified main into the relevant working branch through a normal merge or fast-forward before continuing, preserving any newer work. Integrations back to main retain both sides.
 
-The immediate engine milestone is one consequential action with actual authorization, observed dependencies, atomic effects and durable receipts. Connect that result to the app only when it is implemented. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
+The first bounded equipment action is implemented and connected to the Solo app. Continue with operation-level dependency qualification; elapsed phases and broader gameplay still require implementation. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
+
+## Operation coverage and evidence freshness
+
+The bounded equipment action is implemented. The continuation now records supported operations by backend, with actual successful and rejected-path observations, source references and remaining gaps. Inspect [engine/OPERATION_COVERAGE.md](engine/OPERATION_COVERAGE.md) and its linked machine-readable register.
+
+Check whether the stored evidence still matches its code, tests, fixture content and selected release inputs:
+
+```powershell
+python -B tools/build_operation_register.py --check engine/qualification/operation_register.json
+python -B -m unittest discover -s tools/tests -p "test_*.py" -v
+```
+
+The freshness check does not replay tests or certify new branches. To generate new evidence, run:
+
+```powershell
+python -B tools/build_operation_register.py --output engine/qualification/operation_register.json --markdown engine/OPERATION_COVERAGE.md --test-log development_results/operation_capture.txt
+```
+
+This can take several minutes because it observes synthetic runtime test executions. The external historical-save fixture is skipped by policy, even if present. Existing campaigns and inherited certification files are not inputs. Actual apply calls and detached probes are recorded separately. A listed handler, a named test or a successful observation does not establish complete branch coverage or player availability.

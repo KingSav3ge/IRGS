@@ -1,0 +1,106 @@
+{
+  "increment": "coverage1",
+  "date": "2026-10-21",
+  "milestone": "DEV-05",
+  "status": "QUALIFIED_OPERATION_INVENTORY_WITH_EXPLICIT_GAPS",
+  "selected_runtime_core": "3.3",
+  "runtime_code_changed": false,
+  "website_code_changed": false,
+  "runtime_capture": {
+    "tests_run": 438,
+    "passed": 437,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "tests_successful": true,
+    "capture_records": 1056,
+    "captured_executions": 1936,
+    "capture_origin_counts": {
+      "actual_apply": 1670,
+      "direct_observe": 266
+    },
+    "actual_committed_apply_count": 1588,
+    "excluded_unknown_operations": 6,
+    "external_fixture_policy_skips": [
+      "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    ],
+    "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+    "limits": [
+      "Repeated probes are observations, not unique committed world events.",
+      "Failed-attempt writes are scratch attempts, never committed effects.",
+      "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+      "Rejected probes mirror the current R9 backend selection policy."
+    ]
+  },
+  "capture_log": "provenance/coverage1_validation/runtime_capture.txt",
+  "capture_log_sha256": "bf3a1854bd8b4ebc22376133e4124bd0d697bd675ad514470ca325155fa0b6e6",
+  "tool_tests": {
+    "run": 19,
+    "passed": 19,
+    "failures": 0,
+    "errors": 0,
+    "log": "provenance/coverage1_validation/tool_tests.txt",
+    "log_sha256": "5abccd29f14881c9b0aff68cdf27474c7b7efe8a9b72113090a23a1cb4f5b495"
+  },
+  "operation_register": "engine/qualification/operation_register.json",
+  "register_sha256": "65b1ea9e8ca94cc6fcc742fc1c4b4eae29eab5eff345b328997e28e79d580957",
+  "coverage_summary": {
+    "operation_spellings": 83,
+    "backend_operation_pairs": 168,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 85,
+    "pairs_with_failed_path_evidence": 31,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false
+  },
+  "source_inputs_checked_before_and_after_capture": true,
+  "fixture_and_content_hashes_included": true,
+  "inherited_logs_used_as_capture_input": false,
+  "existing_campaigns_opened": false,
+  "website_and_frontend": "Unchanged from Action1; its 113 Web/40 frontend results remain inherited evidence, not a new run.",
+  "distribution_smoke": {
+    "status": "PASSED",
+    "archive": "IRGS_3_3_3_Coverage1_Development.zip",
+    "extracted_files": 366,
+    "selected_source_verified": true,
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "scope": "Clean extracted source verification and read-only local host routes; no new gameplay capability claimed."
+  },
+  "qualification_limits": [
+    "Declared backend support is not current campaign feasibility.",
+    "Observed cases do not certify every branch or arbitrary plugins.",
+    "Actual apply calls and detached probes are distinguished; counts are not unique host commits.",
+    "Mixed/unmapped owner namespaces remain explicit.",
+    "No new freeform resolution, combat adjudication, timing rules or institutional autonomy is claimed."
+  ],
+  "refused_observation_counts": {
+    "post_state_mismatch": 381,
+    "probe_atomicity_violation": 23
+  },
+  "selected_Core_refused_observations": 0,
+  "refusal_disposition": "Excluded from qualification. Investigate legacy caller/observer backend post-state differences and failed-probe rollback anomalies before broad certification. Counts include repeated probes, not distinct player incidents."
+}
