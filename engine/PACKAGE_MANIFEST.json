@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "engine_line": "3.3.3.E",
+  "applied_design": "C2",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "engine/APPLICATION_RECORD.json",
+      "bytes": 4320,
+      "sha256": "1ca7a13bb374eb9380eb8cd13601754f6b6109884d7eda9c50fbfd89d7deb8ea",
+      "git_blob_sha": "395680ce51f3086efc2454ca0e383b461b61391d"
+    },
+    {
+      "path": "engine/BASELINE_3_3_3.json",
+      "bytes": 407,
+      "sha256": "4e4b5f2ca8808a0c30e5f3061f4e3fa2aab7982f7f953626e5e8aeb3ee9447ec",
+      "git_blob_sha": "6c22ca6c9e7c3999ac6d3b0a9c00eefc08ab3394"
+    },
+    {
+      "path": "engine/C1_C2_INCORPORATION.md",
+      "bytes": 5711,
+      "sha256": "dc997344599c65985b2cb9db0bd373321c1ff6eb4e16f6f2342d74a418cee60a",
+      "git_blob_sha": "51275f5e6ea44698aa76e522062b0501d1c52eea"
+    },
+    {
+      "path": "engine/C2_APPLICATION.md",
+      "bytes": 6952,
+      "sha256": "dab849be04a89ccad4754a42df78a01a5e7095f47b94338fe0134888d5d6fa51",
+      "git_blob_sha": "07c3238bd62b46869c3cc2d14f260b278bd9d276"
+    },
+    {
+      "path": "engine/Core/IRGS_Core_3_3_3_E_C2.md",
+      "bytes": 634950,
+      "sha256": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea",
+      "git_blob_sha": "04b9455df2cdd834f04b1474bde835874fdecf26"
+    },
+    {
+      "path": "engine/Core/IRGS_Core_3_3_3_E_C2_Binding.json",
+      "bytes": 3730,
+      "sha256": "dbca027031700261abbdd645b1883b6dfc27a10b221215cbcb7d3fcf54faea92",
+      "git_blob_sha": "15e02b8581b30bdac34e602621da8752edad8c68"
+    },
+    {
+      "path": "engine/design/C2/ACCEPTANCE_CASES.json",
+      "bytes": 40733,
+      "sha256": "4334c0d634f9022cffbba549fa5fc805479f9883dcb4bb83059a32147352ec51",
+      "git_blob_sha": "66e0d55af340fdaa23bfda0556af38f70f049329"
+    },
+    {
+      "path": "engine/design/C2/ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "bytes": 13257,
+      "sha256": "938ced78f84de4c74fbb219782cb2d2303d1e1ec8ca2fb1dce58d6c2084b6a75",
+      "git_blob_sha": "fd1400778e4ad9130647477092bf151c07dd261b"
+    },
+    {
+      "path": "engine/design/C2/AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "bytes": 13879,
+      "sha256": "c600e5c814fbd66f22f1c53bc017ee72b4e3fcb2cf1c85378c41f017fee39e33",
+      "git_blob_sha": "eac3dccfff2e85de954b6fa66c60d196ca4bd18a"
+    },
+    {
+      "path": "engine/design/C2/CHANGES_C2.md",
+      "bytes": 3716,
+      "sha256": "d82f38d87fb28cf94d7f8ccd8ff920793ca47a38002d05d3883e4fc78ef8fcf0",
+      "git_blob_sha": "0435ffbf1327bcbc1937db5183a6e057397da61e"
+    },
+    {
+      "path": "engine/design/C2/CLAUDE_HANDOFF.md",
+      "bytes": 11644,
+      "sha256": "d08f536ef80138fe476e5ff3c189b7a1daf944192909cd07f445fafaab42508d",
+      "git_blob_sha": "97bf96385cc3db971c0ffbc617215dbef1eb5e6c"
+    },
+    {
+      "path": "engine/design/C2/CMRR_AND_ACCEPTANCE.md",
+      "bytes": 8679,
+      "sha256": "cbd0d2ea9bd0516269c1f2743c1bed6facaf66c38d31da11399b98fd2588e057",
+      "git_blob_sha": "0584e78de24f077509e974fcb6ae2d018aec8695"
+    },
+    {
+      "path": "engine/design/C2/DESIGN_VALIDATION.json",
+      "bytes": 930,
+      "sha256": "6572d88a545cb18122a3290de5672f826048efd7283463f7656b64859929c730",
+      "git_blob_sha": "09f5d32d7afbde2c9c691d26443dc8e75f087343"
+    },
+    {
+      "path": "engine/design/C2/DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "bytes": 13889,
+      "sha256": "2ab81367dd8c91837b772b4b7be8988cd1ec077e2220ef582db2f00074389ab6",
+      "git_blob_sha": "cdd4e85143c6684be2467e4260321e10f3751355"
+    },
+    {
+      "path": "engine/design/C2/fixtures/PLAYABLE_CYCLE.json",
+      "bytes": 7052,
+      "sha256": "1721fb376ff84e4502133ed67c686abc4d7e19878a1600a8b3ceaee4f180f3a2",
+      "git_blob_sha": "562fbca7c011d58f21a7cff6ee8deac99de32cc3"
+    },
+    {
+      "path": "engine/design/C2/HANDOFF_STATE.json",
+      "bytes": 6729,
+      "sha256": "801737445d2a96315b0263b6107c9e917f42d6ecdd2059d82ee2fd7def57779f",
+      "git_blob_sha": "f82b1b5e3986f44b363e14e745fc297e550ce5e3"
+    },
+    {
+      "path": "engine/design/C2/IMPLEMENTATION_PACKETS.md",
+      "bytes": 8480,
+      "sha256": "ef2a16c3038d9ecdff43b9416758ad3173e79087139ca649df9d375fe586e3cd",
+      "git_blob_sha": "d7f62eafb8a1ccb398081d7b3b5a79765711605c"
+    },
+    {
+      "path": "engine/design/C2/INSTITUTIONAL_EXECUTION_MODEL.md",
+      "bytes": 10117,
+      "sha256": "4fb95af1fd78e0bda2e2fb4387b0af56ce27f71f19844c46f96213e95cbe6da6",
+      "git_blob_sha": "3730a8009ffdae5a35b9cc83f1b94fa3058be6b5"
+    },
+    {
+      "path": "engine/design/C2/IRGS_Core_3_3_C_Engine_Supplement.md",
+      "bytes": 19877,
+      "sha256": "55b62d25e3bfcad4657f9309119734682ca4f4fc6b5c8899385645f39112d90a",
+      "git_blob_sha": "21f71831dfffecb43b8e3595b7d5b20d67e53ec5"
+    },
+    {
+      "path": "engine/design/C2/MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "bytes": 14294,
+      "sha256": "7a1e5b90b3d02057af5a0bd8b0169803ec255e8ddf2b78c0b293f9e4a4b2398d",
+      "git_blob_sha": "8ff826a782951fc2e5f2ff3022162f464d13cd63"
+    },
+    {
+      "path": "engine/design/C2/PACKAGE_MANIFEST.json",
+      "bytes": 4029,
+      "sha256": "d446cdd6df14b71339dc46f311718ed924d124e6da64f8f891d8bb57e9d330e4",
+      "git_blob_sha": "3fe2c0d5a5deaf6664c798dde42b815e788c3cee"
+    },
+    {
+      "path": "engine/design/C2/PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "bytes": 16044,
+      "sha256": "cc732445a9513e35c410adabd1b51198c2cb4913fcfc75764c4ae6607bc364b3",
+      "git_blob_sha": "5de536bbd1605382f568d2851f3fc23f9bc8c2ad"
+    },
+    {
+      "path": "engine/design/C2/PLAYABLE_ACTION_CYCLE.md",
+      "bytes": 13790,
+      "sha256": "d09c977a5a8dea8342e2749d1ab474c7d0b1e633174c2e5f9828e888ccbb574c",
+      "git_blob_sha": "bbac1f027fe750f5ef83b75a620dd091dd1a4173"
+    },
+    {
+      "path": "engine/design/C2/README.md",
+      "bytes": 4208,
+      "sha256": "bec52ebb9129069b2748336567a11dce3f2e9ce4fbe12ab4ce52163cd0e61409",
+      "git_blob_sha": "179b821c7e6786ab0a7dc68b2f863347d644d7c7"
+    },
+    {
+      "path": "engine/design/C2/reference/IRGS_3_3/Core/IRGS_Core_3_3_Binding.json",
+      "bytes": 914,
+      "sha256": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301",
+      "git_blob_sha": "a61457a656a54eb8385ba61b1ea4dc561fb78882"
+    },
+    {
+      "path": "engine/design/C2/reference/IRGS_3_3/Core/IRGS_Core_Engine_v3_3.md",
+      "bytes": 497019,
+      "sha256": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
+      "git_blob_sha": "7c756f4f773464d3db3a8d415198abfd370d2904"
+    },
+    {
+      "path": "engine/design/C2/reference/IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
+      "bytes": 111539,
+      "sha256": "e0101206dcd24ede9ef391e405556c503154f10971e831775e7f662d8dafdf74",
+      "git_blob_sha": "24281018d6f18d56a005e7266479af398aad2b73"
+    },
+    {
+      "path": "engine/design/C2/reference/README.md",
+      "bytes": 933,
+      "sha256": "80a335c9b8e8b7a72e638347b70817c2ecfc84e49e6def4be828be0b49719529",
+      "git_blob_sha": "8e9cd921b9412bd7db9ad856c10e95240c3bf299"
+    },
+    {
+      "path": "engine/design/C2/reference/SOURCE_BASELINE.json",
+      "bytes": 10300,
+      "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978",
+      "git_blob_sha": "e39334c0965e3d7c666b22b5d0c45d9882a9f907"
+    },
+    {
+      "path": "engine/design/C2/TIMELINE_AND_PROCESS_CONTRACT.md",
+      "bytes": 14509,
+      "sha256": "867d3ba3ca02787717eeb24f4ff69f8a6cfe113ce630ceddf3a51000e4e6b271",
+      "git_blob_sha": "2717bf450b9e5b98fed8dde09f48fd0a11a33f78"
+    },
+    {
+      "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
+      "bytes": 16951,
+      "sha256": "590bd2d17e864695c2c22f884316a59264080b9697d67f521df360f9073d7c58",
+      "git_blob_sha": "1ebb0c051e05db3dd9aa0091883efe4fd45e4752"
+    },
+    {
+      "path": "engine/reference/DESIGN_INTEGRATION_2026_10_20.md",
+      "bytes": 16875,
+      "sha256": "a1a555120026519351a77ae25193cc46f745e6a2a43bda776f597f98914ccc52",
+      "git_blob_sha": "82c456521b9daf97ef3f6cdcceefff9e111b9d36"
+    },
+    {
+      "path": "engine/reference/IRGS_Core_v3_3_Candidate_Binding_Proposal_R7.json",
+      "bytes": 6752,
+      "sha256": "9c0237a532fb8b0682590c9970bcbb19712da7a6b0209db2a42de232f8f5265a",
+      "git_blob_sha": "e5f516cb6da0931c7aeb19e8316a94511f2d8f8d"
+    },
+    {
+      "path": "engine/TEXT_VALIDATION.json",
+      "bytes": 380,
+      "sha256": "aff35b574c967453f8da6f10e901e48b6cceb25a28538eda2f16982cca168371",
+      "git_blob_sha": "7ffd9dce5fb09765cf5be5e9960fe6b328edea57"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1748,
+      "sha256": "1d6440dfd35391b01e066934d521eecdcb7949d9417fe018f0f4a5648d211137",
+      "git_blob_sha": "58975289fa4e4893b1ee604b70ae7208682ead37"
+    }
+  ]
+}

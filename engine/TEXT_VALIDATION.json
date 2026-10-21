@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "result": "PASS_TEXT_APPLICATION_CHECKS",
+  "inherited_core_retained": true,
+  "original_C2_manifest_entries_verified": 23,
+  "acceptance_cases": 121,
+  "acceptance_execution": "NOT_EXECUTED",
+  "explicit_anchors_unique": 134,
+  "application_anchors": 10,
+  "local_navigation_links_checked": 11,
+  "runtime_changed": false,
+  "save_migration": false
+}

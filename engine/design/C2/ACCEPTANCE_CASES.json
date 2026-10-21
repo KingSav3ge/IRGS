@@ -1,0 +1,1083 @@
+{
+  "schema_version": 1,
+  "design_edition": "3.3.C-C2",
+  "case_count": 121,
+  "retained_C1_case_count": 55,
+  "C1_case_meanings_unchanged": true,
+  "runtime_validation_claimed": false,
+  "cases": [
+    {
+      "case_id": "A01",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Ten kits; matching received order; issue one",
+        "Depot nine, recipient one; total ten; one linked completed outcome."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A02",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Retry A01 with identical request/attempt",
+        "Same receipt; no extra transfer, event or time change."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A03",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Reuse A01 ID with changed quantity/text",
+        "Reject altered payload; world unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A04",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "A01 under another campaign ID",
+        "Reject before lookup or disclosure."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A05",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Valid declaration; unsupported selected operation",
+        "Await selected rule; no inferred physical success."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A06",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Existing actor lacks current player control",
+        "Await authorization; no stock change."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A07",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Previously controlled actor; eligibility revoked",
+        "Old player list grants no continuing authority."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A08",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Selected faction authorizes its actual control actor",
+        "Validate faction policy; do not require unrelated individual eligibility."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A09",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Order absent, unreceived, expired or mismatched",
+        "Specific pending reason; no partial transfer or executed flag."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A10",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Correct order; stock now insufficient",
+        "No negative stock or partial issue; preserve request."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A11",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Recipient ceased to exist before execution",
+        "No receipt of equipment; current existence read appears in evidence."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A12",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Two requests claim the same finite pool",
+        "Conflict retained for both; ID ordering selects neither."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A13",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Separate orders/stocks; execute in either order",
+        "Equal physical results; certify independence or disclose conservative barrier."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A14",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Simultaneous eligibility revocation and issue",
+        "Actual authorization read conflicts with revocation write."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A15",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Simultaneous recipient dissolution and issue",
+        "Conflict detected before either inferred order of occurrence."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A16",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Valid Roman delegation and free capacity",
+        "One scheduled booking; no work/output/pay or elapsed-time claim."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A17",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Roman booking overlaps full site/actor capacity",
+        "Await allocation/prerequisite; no second booking."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A18",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Delegation revoked alongside Roman booking",
+        "Conflict detected from actual delegation access."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A19",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Cancel pending request, save and reload",
+        "Cancellation persists and retries idempotently; no later execution."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A20",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Crash/retry or restore during in-flight attempt",
+        "Recover committed receipt or definite uncommitted status; no stale overwrite."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A21",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "Hidden fact/NPC location changes",
+        "Player projection unchanged without legitimate receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "A22",
+      "source_document": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "specification": [
+        "List read, append, deletion and negative lookup cases",
+        "Read/write traces match actual accesses; parity and rollback hold."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-01",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Submit one supported transfer; state, journal, receipt and head expose the same committed transaction and conserved quantity."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-02",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Retry after a lost response with the original request and obsolete head; recover its frozen submission coordinate and original receipt, with no new debit or revision. A new attempt/phase remains possible under a new qualified identity."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-03",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Reuse that identity with a different amount; reject it without changes."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-04",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Request another campaign's receipt without permission; reject before revealing whether that request exists."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-05",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Submit a fresh request against a stale revision; reject before applying any candidate effect."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-06",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Exit after calculation but before commit; restart shows the prior confirmed state and no successful receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-07",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Exit immediately after commit; restart returns the one accepted outcome and durable pending-work references."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-08",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Fail narration repeatedly; world checksum, event count and quantities remain unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-09",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Deliver one NPC task twice to independent workers; at most one owner-valid effect commits. An old claim's late result fails the fencing/revision check."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-10",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Restart with a claimed NPC task; recover its receipt or revalidate a new attempt without creating a duplicate event."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-11",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Capture and inspect a checkpoint; clock, conditions, resources and NPC activity remain unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-12",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Race restoration with an action; one valid revision transition wins and the stale writer receives a conflict."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-13",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Restore an earlier checkpoint, then retry an old accepted action ID; retrieve its historical receipt without resurrecting the effect. Restored pending work completed on the discarded future is held or assigned a new authorized continuation; it neither replays the old attempt nor remains falsely completed."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-14",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Fork a checkpoint; inherited events are not replayed, provenance is explicit, and later branch writes leave the parent unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-15",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Alter a saved checksum or incompatible schema; refuse activation without reseeding or read-time repair."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "PR-16",
+      "source_document": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "specification": [
+        "Accept an unresolved rule-dependent request; persist its reason and pending state while leaving actual world time and resources unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-01",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Missing household report",
+        "Planner returns unknown information; it does not infer an empty pantry."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-02",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Observed empty pantry",
+        "A qualified scoped observation permits planning from absence; no food appears automatically."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-03",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Unreceived military order",
+        "NPC cannot plan its execution from global world truth."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-04",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Received equipment directive",
+        "Exact qualified issue transfers conserved stock once and produces a linked receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-05",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Lost response and retry",
+        "Same identity returns the original outcome; stock and clock are unchanged by the retry."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-06",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Altered accepted payload",
+        "Engine rejects it without changing the original request or world."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-07",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Competing depot requests",
+        "Shared dependency is detected; no identifier-order winner is chosen."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-08",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Independent institutions",
+        "Both qualified effects commit with equivalent domain results under either evaluation order."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-09",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Revoked authority",
+        "A pending proposal cannot use the obsolete mandate; no partial effect commits."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-10",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Roman booking",
+        "Outcome is scheduled; output stock, wages and completed-work history remain unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-11",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Interrupted work",
+        "Actual committed partial consequences survive; unperformed stages do not become complete."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-12",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Unbound calendar",
+        "Causal commits produce no inferred minutes, hour, date or day transition."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-13",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Julian leap boundary",
+        "Under a selected Julian binding, 28 February 1500 is followed by 29 February."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-14",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Restart during NPC planning",
+        "Retained pending work is recovered or explicitly deferred without duplicate execution."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-15",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Concurrent restore",
+        "Stale action commit fails its revision check instead of overwriting the restored world."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-16",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Historical participant absent",
+        "Exact historical proposal is blocked or reassessed; no actor or kingdom is resurrected."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "AG-17",
+      "source_document": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "specification": [
+        "Narration failure",
+        "Mechanical receipt remains valid; retrying presentation produces no additional effect."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-01",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Accept an unresolved intention at storage revision 4",
+        "Receipt/head may advance; physical duration and civil date do not."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-02",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Day-only opening; request an hour-dependent deadline comparison",
+        "No invented dawn; retain bounds or the specific unresolved timing requirement."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-03",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Healthy actor, feasible ordinary path, no agility number",
+        "No artificial capability failure or mandatory roll; retain supported movement/time precision."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-04",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Selected Julian profile; advance from 28 February 1500 by one civil day",
+        "Result is 29 February under that binding, not host-Gregorian substitution."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-05",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "A process has no applicable duration model; independent known ledger occurrence is due",
+        "Hold its dependent timed effects; do not freeze or falsely complete the independent occurrence."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-06",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Authorize one hour; a new player concession is needed after twenty minutes",
+        "Settle only actual first-span effects and return the concession; do not reach the hour silently."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-07",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Same work/model advanced once over `[0,10)` or over `[0,4)` then `[4,10)`",
+        "Equal supported progress, inputs and claims within declared tolerance; no endpoint duplication."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-08",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Retry a committed span after response loss",
+        "Same receipt; no extra work, consumption, claim or elapsed duration."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-09",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Productive rate changes at coordinate 4 during `[0,10)`",
+        "Integrate separate valid spans; do not apply the later rate to all ten units of time."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-10",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Future activity is booked, then inspected",
+        "One commitment exists; no completed work, output or wages appear."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-11",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Work consumes one input before interruption, leaving useful unfinished progress",
+        "Consumed input and progress persist; only unperformed portions are cancelled or held."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-12",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Two simultaneous processes request the same exclusive worker",
+        "Conflict survives; no duplicate labour or identifier-order winner."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-13",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Independently established loss destroys reserved backing",
+        "Actual loss persists; reconcile reservation/obligation shortfall without replacement stock."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-14",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Report arrives after the occurrence and a decision deadline",
+        "Receipt changes qualified knowledge then; no replay or retroactive informed decision."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-15",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Overlapping uncertain event windows have order-sensitive effects",
+        "No guessed order; retain the material ordering requirement and any safe independent progress."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-16",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Zero-duration prerequisite cycle has no enabling state",
+        "Persist a non-progress diagnostic and hold dependent work; no arbitrary tick or fabricated input."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-17",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Restore a checkpoint with a task completed only on its discarded future head",
+        "Restore saved progress; old receipt stays historical; hold or issue a new authorized continuation without replay."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "TP-18",
+      "source_document": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "specification": [
+        "Load a save whose timeline has no qualified conversion to the proposed new axis",
+        "Preserve original coordinates and fractions; require explicit migration or hold, with no read-time conversion."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-01",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Healthy controlled actor; nearby accessible doorway; no agility field; walk there",
+        "Ordinary movement succeeds without invented score/roll; K-ACTOR records supported local position."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-02",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Both endpoints share a coarse room ID; move beside the west doorway",
+        "Coarse ID may remain; actual positional relation changes once and outcome identifies it."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-03",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Two distant places have the same label; target is materially ambiguous",
+        "Await clarification; no chosen destination, departure or invented expense."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-04",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Actual accessible route and selected duration; travel between settlements",
+        "Departure, single transit presence and later arrival persist; no early destination presence."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-05",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "A material closure falls inside the journey's duration range",
+        "Refine timing or hold the affected stage; no convenient endpoint or inferred zero duration."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-06",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Journey departs, then supported obstruction interrupts it",
+        "Preserve actual progress/position, elapsed span and settled costs; arrival remains uncompleted."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-07",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Cancel an interrupted journey away from origin",
+        "Release permitted future commitments; actor stays at actual position until a real continuation moves them."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-08",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Actor lacks physical access to a required conveyance",
+        "Await prerequisite or valid alternative choice; title alone creates no accessible vehicle."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-09",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Movement and closure/confinement change share a frontier",
+        "Actual dependencies conflict; no request-ID passage winner or unexplained escape."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-10",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Two independent routes and actors; valid movement stages",
+        "Equivalent domain effects under either execution order, or an explicitly disclosed conservative barrier."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-11",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Visible local object; sufficient qualitative scene evidence; no exact coordinates",
+        "Observation records accessible content and observer receipt without demanding fictitious geometry."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-12",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Unmet remote NPC and private inventory exist in the same campaign",
+        "Local observation exposes neither private state nor remote location through a global registry view."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-13",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Observer hears an official-sounding announcement",
+        "K-INFO records speaker/content and actual receipt; assertion does not itself establish legal authority or truth."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-14",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Qualified search examines one cabinet and finds no key",
+        "Retain scoped negative result; unopened rooms and unknown compartments remain unresolved."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-15",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Retry the accepted MO-14 phase, then deliberately request a new physical search under unchanged relevant circumstances",
+        "Retry causes no new effects; the new action can use supported time/attention but cannot regenerate stock or automatically resample retained uncertainty."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-16",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "A key is actually placed in that cabinet after MO-14",
+        "New qualified attempt can find it; preserve earlier correct scoped absence and later receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-17",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Hidden existing stock and authorized bounded generation both apply",
+        "Use established hidden stock; generation neither duplicates it nor replaces it because the player is unaware."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "MO-18",
+      "source_document": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "specification": [
+        "Crash/retry after a movement or observation phase commits",
+        "Recover the same phase receipt and effects once; later phase has a new identity; no extra travel, discovery or receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-01",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Capable co-present speaker/listener; ask a plain question",
+        "Record production, receipt and supported comprehension; no automatic answer."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-02",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Intended listener is elsewhere; ordinary quiet speech",
+        "No remote receipt or invented reply; actual spoken occurrence can remain recorded."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-03",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Shared spoken language, no established literacy; deliver writing",
+        "Delivery does not establish reading or comprehension."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-04",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Listener hears a confident unsupported claim",
+        "Receipt records the claim and speaker; world truth is unchanged."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-05",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "NPC lacks the requested information",
+        "Supported uncertainty, refusal or inquiry remains possible; no authoritative invented fact."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-06",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "NPC genuinely believes a false report",
+        "Response can express that belief; receipt does not overwrite actual state."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-07",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Supported NPC decision deliberately deceives",
+        "Preserve private intention and public words separately; player view does not reveal deception automatically."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-08",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Bystander can hear only the final fragment",
+        "Record only that fragment and its justified meaning; no complete private transcript."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-09",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Player requests a work inquiry without specifying wording",
+        "Express only the bounded inquiry; no invented biography, payment or acceptance."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-10",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "NPC offers work under actual terms and hiring authority",
+        "Record and deliver the offer; no employment, wages or stock yet."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-11",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Player accepts exact valid offered terms; required assent exists",
+        "Form the qualified agreement once; future work stays scheduled or pending."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-12",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Response requires a new fee or narrower service",
+        "Present changed terms for player decision; no automatic debit or assent."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-13",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "NPC agrees genuinely to seek an appointment",
+        "Record that undertaking; official approval and meeting remain unresolved."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-14",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "NPC successfully appeals for the player's cooperation",
+        "Preserve the appeal and supported effects; voluntary player choice remains open."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-15",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Departure or interruption occurs during a qualified exchange",
+        "Preserve produced/heard fragments and actual commitments; no unsent-content receipt."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-16",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Letter arrives after a decision deadline",
+        "No earlier knowledge or retroactive action; delivery does not execute its request."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-17",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Offer authority is revoked at the same unresolved frontier",
+        "Observe the dependency; do not select convenient ordering or conceal it with an automatic agreement."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "DS-18",
+      "source_document": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "specification": [
+        "Reload/retry a committed exchange; narration fails",
+        "Return the existing phase receipt; no new utterance, agreement, debit or elapsed-time effect."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-01",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Initialize the fixture before play",
+        "One controlled P; no invented past work, agreement, earnings or private knowledge."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-02",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Read the notice",
+        "Exactly one qualified observation/receipt; no automatic job or global fact disclosure."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-03",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Save/reload at T=3 during movement",
+        "P remains one actor in transit; resume retains the original journey's progress and arrival condition."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-04",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Ask F about work at Stores",
+        "Real question receipt precedes the response; successful asking does not imply useful employment."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-05",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "F offers the valid terms",
+        "Offer is recorded and received; no acceptance, cash change or work begins."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-06",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "P accepts the exact terms",
+        "One qualified agreement and scoped task permission; no output, earned claim or wider authority."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-07",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "P and W contend for the bay",
+        "Conflict is observed before a recorded authorized allocation using due times; changing IDs changes no outcome."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-08",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Safety stop at T=10",
+        "A=2, B=2, progress=2 of 4; no third parcel, payment, erased work or automatic continuation."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-09",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Clearance arrives, then P chooses continuation",
+        "Receipt does not resume by itself; the new attempt revalidates and settles only the remaining two parcels."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-10",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Completion, inspection and payment",
+        "Work complete before acceptance; due claim before payment; final cash totals conserved at three and parcel total at four."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-11",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Retry any committed phase or lose its presentation",
+        "Same historical phase receipt; no duplicate speech, work, claim, payment or elapsed span."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    },
+    {
+      "case_id": "IC-12",
+      "source_document": "PLAYABLE_ACTION_CYCLE.md",
+      "specification": [
+        "Request coarse advance instead of short reviews",
+        "Preserve T=8 contention, T=10 stop, later player choices and the same actual effects; no coarse-step bypass."
+      ],
+      "status": "REQUIRED_NOT_EXECUTED"
+    }
+  ]
+}
