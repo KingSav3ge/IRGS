@@ -476,7 +476,7 @@ def make_server(port=8765, folder=None):
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]

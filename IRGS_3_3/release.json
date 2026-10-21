@@ -28,7 +28,7 @@
     "runtime_tests": 458,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
-    "http_tests": 126,
+    "http_tests": 127,
     "observed_operations": 81,
     "common_operations": 19,
     "campaign_native_receivers": 3,
@@ -37,7 +37,7 @@
     "historical_opening_tests": 50,
     "historical_catalogue_entries": 37,
     "developed_historical_openings": 1,
-    "solo_interface_checks": 45,
+    "solo_interface_checks": 48,
     "player_mode": "Server-filtered Solo projection",
     "character_before_first_save": true,
     "temporal_entity_operations": 5,
@@ -301,7 +301,7 @@
     "data/solo_quay_opening.json": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5"
   },
   "host_sha256": {
-    "IRGS_Web/server.py": "91392fce77ca907b9cb11d119112ff6e0bad9bec296af2c9a12e2a44a8a4c6b3",
+    "IRGS_Web/server.py": "bc6e42725486cb64b918dfe825d20aced142656b6420758117936ff42ea33abc",
     "IRGS_Web/features.py": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae",
     "IRGS_Web/opening_scene.py": "53bc6a63ab593850a1b6566a3cba0f18c0f1ab98b960f315a9229d9412fda4e5",
     "IRGS_Web/gameplay_views.py": "e32ce6dfc5534307ff9e3b0eae5eb9d41668bd21103cddd1b2c062db1479dfb7",
@@ -309,18 +309,19 @@
     "IRGS_Web/README.md": "07c4d4eab6e63a103722d68430d553698f911fe153154cf371cb7e3de4072e33",
     "IRGS_Web/Start-IRGS.ps1": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
     "IRGS_Web/Start-IRGS.cmd": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
-    "IRGS_Web/static/app.js": "db30be25799acd3df3dd91ff0cd98957f27a042872e782f02d5e1232f91ffce5",
-    "IRGS_Web/static/index.html": "89fc0479b1394e371a9990fd13bc00065f5167c2c41890a232a3dc8168879904",
-    "IRGS_Web/static/style.css": "93fc7087d2f9cd3d16af79e6b4049ffa69856faceb082d2c1bd3579cf667c448",
+    "IRGS_Web/static/app.js": "5dd30a050079c704664350e82e051a921b07bdf5de827fcd486a87c51ec873b1",
+    "IRGS_Web/static/index.html": "4aa8e260853af072cffab41fa98e82467c1db6bf73fad863c7fb5275c7ddc0ac",
+    "IRGS_Web/static/style.css": "cffbdd8844b11225138ca6b074e75f48fd33b88b2eefa01bbca4d42d2247d103",
     "IRGS_Web/tests/test_gameplay.py": "1ea6f689eba1ca4157aaa8dbfaa1ad598c7fd1f592ba4316cd6115b2f6f23e2f",
-    "IRGS_Web/tests/test_gameplay_ui.js": "093f7c681883d6115a15ff721471577c73b2ab84fb066a0141a4cc43f7d85e21",
+    "IRGS_Web/tests/test_gameplay_ui.js": "713c15c0a0394a99d04fb22fa0c7e54c7783854e745792db91593d8b087a6f0a",
     "IRGS_Web/tests/test_history_views.py": "aec7784dd632f278f36528f8533cc10ee1d2fea131d303e4d2fe960deb4c9407",
-    "IRGS_Web/tests/test_host.py": "96e4649f39525290481ae7170398d2f4d6fe5daac48f260f1eb4e9f7b2c46d2d",
+    "IRGS_Web/tests/test_host.py": "805792a0342e92d80e2ad5f800a35f5a74373012f642dbce18e9dfe958b433be",
     "IRGS_Web/tests/test_launcher.py": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6",
     "IRGS_Web/tests/test_stage1.py": "a317a031a86ef781c6c80597fbe809b64d10e5c963e0949426947e22b2f0c24a",
     "IRGS_Web/tests/test_starting_flow.py": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b",
     "IRGS_Web/tests/test_equipment_action.py": "6c6706edf73942a0157b63d04143779434576f25a1a53011123f3e2c7887874c",
-    "IRGS_Web/tests/test_scene_play.py": "4c074c5a67eb1a90548af6ef94e66204f5c68d433a206e27ad23f0343e7ce5d8"
+    "IRGS_Web/tests/test_scene_play.py": "4c074c5a67eb1a90548af6ef94e66204f5c68d433a206e27ad23f0343e7ce5d8",
+    "IRGS_Web/static/voyage.svg": "064ebe9c533c55d892d541d13c994e51b33853b7e32374e4f318ded4623bf760"
   },
   "existing_save_migration": false,
   "development_designations": {
@@ -334,8 +335,8 @@
     "alternate_backend_activated": false
   },
   "continuation": {
-    "id": "opening1-startfix",
-    "validation_record": "STARTFIX_VALIDATION.json",
+    "id": "adventure-ui1",
+    "validation_record": "ADVENTURE_UI_VALIDATION.json",
     "engine_record": "engine/PLAYABLE_OPENING_IMPLEMENTATION.md",
     "general_freeform_resolution": false,
     "combat_adjudication": false,

@@ -1,0 +1,139 @@
+{
+  "increment": "adventure-ui1",
+  "date": "2026-10-21",
+  "selected_runtime_core": "3.3",
+  "base_commit": "0bb5c68a26766a350936304b6e43b7902823ec99",
+  "scope": "Solo presentation; no engine operation or historical starting-state changes.",
+  "changes": [
+    "Illustrative voyage artwork on campaign entry and character setup.",
+    "Scene-led reading surface with numbered exact supported actions and the latest actor-scoped outcome.",
+    "Expandable campaign management, received history, setting references and own-response editor.",
+    "Existing pending-request recovery, testimony status and custom draft semantics retained."
+  ],
+  "validation_status": "passed",
+  "existing_saves_migrated": false,
+  "general_freeform_resolution": false,
+  "combat_adjudication": false,
+  "test_logs": "provenance/adventure_ui_validation/",
+  "publication_branches": [
+    "3.3.3.A",
+    "main"
+  ],
+  "engine_branch_unchanged": "a9cbfd2fd70aa075bad951fbb3c41c889376224f",
+  "focused_checks": {
+    "adventure_web.txt": {
+      "run": 127,
+      "seconds": 64.441,
+      "successful": true
+    },
+    "adventure_tools.txt": {
+      "run": 19,
+      "seconds": 1.926,
+      "successful": true
+    }
+  },
+  "interface_checks_passed": 48,
+  "dependency_capture": {
+    "status": "captured",
+    "operation_spellings": 84,
+    "backend_operation_pairs": 169,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 86,
+    "pairs_with_failed_path_evidence": 32,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false,
+    "tests": {
+      "tests_run": 458,
+      "passed": 457,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1181,
+      "captured_executions": 2327,
+      "capture_origin_counts": {
+        "actual_apply": 2019,
+        "direct_observe": 308
+      },
+      "actual_committed_apply_count": 1921,
+      "excluded_unknown_operations": 6,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    }
+  },
+  "browser_check": {
+    "save_scope": "isolated synthetic campaign only",
+    "desktop_viewport": [
+      1280,
+      720
+    ],
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "checked": [
+      "illustrated home",
+      "dated entry selection",
+      "required character step",
+      "unsuccessful attempt remains unsuccessful",
+      "exact supported move reaches the covered passage",
+      "elapsed local time changes from 30 to 75 seconds after that move"
+    ],
+    "review_form_cancelled_without_save": true,
+    "temporary_viewport_reset": true
+  },
+  "distribution_check": {
+    "status": "passed",
+    "extracted_files": 392,
+    "packaged_verification": {
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "development_files": 391,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "note": "Source package verified; final metadata-complete archive checked again with its result recorded outside itself."
+  },
+  "local_host_restarted": true
+}

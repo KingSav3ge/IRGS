@@ -39,3 +39,7 @@ The 1415 new-character setup now offers an optional reviewed fictional opening, 
 ## Campaign-start correction
 
 The authored human-only opening now compares the registered species without case sensitivity, preserving the selected identity spelling. `Human` and `human` can both start; genuinely different species remain unavailable. A rejected creation request returns to character details with the campaign, entry and exact text retained, instead of restarting date selection. Lost-acknowledgement recovery retains its prior request identity. See STARTFIX_VALIDATION.json for executed scope.
+
+## Adventure UI — Solo presentation
+
+Campaign entry and character setup now use illustrative voyage artwork. The Solo story foregrounds the received scene, exact supported action choices and latest character-scoped outcome. Campaign controls, older records, historical references and the own-response editor remain available through expandable sections. Custom drafts still submit unresolved declarations; this presentation update adds no engine resolution. See [ADVENTURE_UI_VALIDATION.json](ADVENTURE_UI_VALIDATION.json) for the executed checks. This increment belongs to `3.3.3.A` and unified `main`; `3.3.3.E` retains its existing engine commit.

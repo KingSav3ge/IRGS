@@ -27,14 +27,19 @@
       "sha256": "64d0304dbb297df2ef336ae01ec98e751377c5f76f7287cc19d96cb3639d771e"
     },
     {
+      "path": "ADVENTURE_UI_VALIDATION.json",
+      "bytes": 4353,
+      "sha256": "603634f5e916042724d443038eae32743cbe384081fc36c3c706f6879d8e4ce1"
+    },
+    {
       "path": "AGENTS.md",
       "bytes": 5291,
       "sha256": "3e25e7676a724f788d8cb0058318f1e8e74734a2993e16ca36d21fd1353000fe"
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 5812,
-      "sha256": "b9226c9049a2272a86973f9fac129fc3ccfabb3a6d2cd658a84fbfa477e2617f"
+      "bytes": 6465,
+      "sha256": "ceb0b85c94fd975699d7d6d8255845f487cff0fbce2238dcf297b63a8aefbfec"
     },
     {
       "path": "COVERAGE1_VALIDATION.json",
@@ -53,8 +58,8 @@
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 2473,
-      "sha256": "56b9f3fe3b0680d391359a68339ac271354c3bc58adf2ab098bf5d7bcdd34bb9"
+      "bytes": 2551,
+      "sha256": "3e7c06544ab26194e8b969dec94b8b00dce07940c8a31d91ef79bd5458b1dce9"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -938,8 +943,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 34925,
-      "sha256": "988b6efaa97f17bba689da15770b2f1f15bc0159d920268dcf7208c99dd47ea0"
+      "bytes": 35372,
+      "sha256": "37dbf613928f0ba19a4f4e2f17bd149c0e0ebd735ed09f0171da0cf90c2c29f8"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1453,23 +1458,28 @@
     },
     {
       "path": "IRGS_Web/server.py",
-      "bytes": 36035,
-      "sha256": "91392fce77ca907b9cb11d119112ff6e0bad9bec296af2c9a12e2a44a8a4c6b3"
+      "bytes": 36083,
+      "sha256": "bc6e42725486cb64b918dfe825d20aced142656b6420758117936ff42ea33abc"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 116102,
-      "sha256": "db30be25799acd3df3dd91ff0cd98957f27a042872e782f02d5e1232f91ffce5"
+      "bytes": 118643,
+      "sha256": "5dd30a050079c704664350e82e051a921b07bdf5de827fcd486a87c51ec873b1"
     },
     {
       "path": "IRGS_Web/static/index.html",
-      "bytes": 15252,
-      "sha256": "89fc0479b1394e371a9990fd13bc00065f5167c2c41890a232a3dc8168879904"
+      "bytes": 15951,
+      "sha256": "4aa8e260853af072cffab41fa98e82467c1db6bf73fad863c7fb5275c7ddc0ac"
     },
     {
       "path": "IRGS_Web/static/style.css",
-      "bytes": 39306,
-      "sha256": "93fc7087d2f9cd3d16af79e6b4049ffa69856faceb082d2c1bd3579cf667c448"
+      "bytes": 59319,
+      "sha256": "cffbdd8844b11225138ca6b074e75f48fd33b88b2eefa01bbca4d42d2247d103"
+    },
+    {
+      "path": "IRGS_Web/static/voyage.svg",
+      "bytes": 3266,
+      "sha256": "064ebe9c533c55d892d541d13c994e51b33853b7e32374e4f318ded4623bf760"
     },
     {
       "path": "IRGS_Web/tests/test_equipment_action.py",
@@ -1483,8 +1493,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 59551,
-      "sha256": "093f7c681883d6115a15ff721471577c73b2ab84fb066a0141a4cc43f7d85e21"
+      "bytes": 61772,
+      "sha256": "713c15c0a0394a99d04fb22fa0c7e54c7783854e745792db91593d8b087a6f0a"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1493,8 +1503,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_host.py",
-      "bytes": 23817,
-      "sha256": "96e4649f39525290481ae7170398d2f4d6fe5daac48f260f1eb4e9f7b2c46d2d"
+      "bytes": 24428,
+      "sha256": "805792a0342e92d80e2ad5f800a35f5a74373012f642dbce18e9dfe958b433be"
     },
     {
       "path": "IRGS_Web/tests/test_launcher.py",
@@ -1733,8 +1743,8 @@
     },
     {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 8960745,
-      "sha256": "82aeeab492d307c1e096338202973fcc274682d21ca1d2c4796753f184bb57c3"
+      "bytes": 8960847,
+      "sha256": "71e742cef0583460648669b3a2ea8ac40a8f037911de325a93b275d7982f0e5f"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
@@ -1825,6 +1835,31 @@
       "path": "provenance/action1_validation/web.txt",
       "bytes": 42766,
       "sha256": "48d97b6e3530416179e1a244f1390fc89be931467807496c02f66ef5e3bc3ce8"
+    },
+    {
+      "path": "provenance/adventure_ui_validation/adventure_capture_runtime.txt",
+      "bytes": 572,
+      "sha256": "5e5517afff0e597d798784413a80aad832a46c68b038f92f94eb26d7c4957418"
+    },
+    {
+      "path": "provenance/adventure_ui_validation/adventure_capture_summary.txt",
+      "bytes": 1165,
+      "sha256": "ef273ac24fb434574138dc7285110cb25cd00f9a163f0c0ae0aaaa8580db8acd"
+    },
+    {
+      "path": "provenance/adventure_ui_validation/adventure_tools.txt",
+      "bytes": 3397,
+      "sha256": "e9ede1830774296957880e30c567955ca85dd815dd0a3ed179330a4084b0d9f5"
+    },
+    {
+      "path": "provenance/adventure_ui_validation/adventure_ui.txt",
+      "bytes": 4485,
+      "sha256": "83f750896c92e10871eaf2df47126c1d4ec4ce3ba582298205b46cd81dff1221"
+    },
+    {
+      "path": "provenance/adventure_ui_validation/adventure_web.txt",
+      "bytes": 76983,
+      "sha256": "d841426b98873ec79c4eeb2734acc8ea7db3184f48a854edf8b2ebaa72dfb050"
     },
     {
       "path": "provenance/coverage1_validation/runtime_capture.txt",

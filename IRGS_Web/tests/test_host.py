@@ -40,6 +40,17 @@ class HostTests(unittest.TestCase):
     def create(self):
         return self.call('/api/create', {'name': 'Test campaign'})
 
+    def test_campaign_artwork_is_static_and_creates_no_campaign(self):
+        with urlopen(self.url + '/voyage.svg') as response:
+            self.assertEqual(response.headers.get_content_type(), 'image/svg+xml')
+            artwork = response.read().decode('utf-8')
+        self.assertIn('Illustrative voyage artwork', artwork)
+        self.assertNotIn('<script', artwork)
+        self.assertEqual(self.call('/api/campaigns')['campaigns'], [])
+        with self.assertRaises(HTTPError) as missing:
+            urlopen(self.url + '/unlisted-artwork.svg')
+        self.assertEqual(missing.exception.code, 404)
+
     def create_player(self,payload):
         fields={k:payload[k] for k in ('profile_id','scenario_id','entry_id','snapshot_sha256') if payload.get(k) is not None}
         options=self.call('/api/starting-options?'+urlencode(fields))
