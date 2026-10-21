@@ -36,7 +36,9 @@ def initialize_opening(world, character, actor_id, reference):
     opening_id = character.get('opening_id')
     if opening_id in (None, ''):
         return world
-    if (character.get('kind') != 'new' or character.get('species') != 'human'
+    species = world.s.get('actors', {}).get(actor_id, {}).get('species')
+    if (character.get('kind') != 'new' or not isinstance(species, str)
+            or species.strip().casefold() != 'human'
             or world.s.get('starting_control', {}).get('scenario_id') != 'individual'
             or opening_id not in {row['id'] for row in opening_options(world.s)}):
         raise ValueError('This authored opening requires a new human character in the 1415 individual Solo start')

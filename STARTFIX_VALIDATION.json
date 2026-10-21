@@ -1,0 +1,21 @@
+{
+  "increment": "opening1-startfix-engine",
+  "date": "2026-10-21",
+  "selected_runtime_core": "3.3",
+  "scope": "Engine capitalization correction only; creation-error UI correction and fresh coverage on 3.3.3.A and main",
+  "runtime_tests_run": 458,
+  "runtime_passed": 457,
+  "external_fixture_skips": 1,
+  "new_scene_tests_passed": 20,
+  "runtime_sources_sha256": {
+    "IRGS_3_3/runtime/core_world.py": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58",
+    "IRGS_3_3/runtime/scene_setup.py": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b",
+    "IRGS_3_3/runtime/test_scene_setup.py": "a6724f7a51c29a43c5ed51799dd0b6e98ef813dbb224543c85ef6da8319ccb0b"
+  },
+  "creation_error_ui_corrected_on_this_branch": false,
+  "coverage1_report_current": false,
+  "all_branches_certified": false,
+  "general_freeform_resolution": false,
+  "combat_adjudication": false,
+  "elapsed_scope": "Whole bounded local action committed atomically; no interruptible phases/calendar scheduler"
+}

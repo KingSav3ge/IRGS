@@ -110,7 +110,7 @@ class CoreWorld:
                 point=s['entity_registry']['as_of']
                 operate_entity(self,s,at,'register_entity',{
                     'entity_id':cid,'kind':'character','effective_at':point,'source_ref':p['source_ref'],
-                    'identity':{'name':p['name'],'category':'person' if p['species']=='human' else 'creature','species':p['species']}})
+                    'identity':{'name':p['name'],'category':'person' if p['species'].strip().casefold()=='human' else 'creature','species':p['species']}})
                 if p.get('player_controlled') and 'individual' in s['entity_registry']['scenarios']:
                     operate_entity(self,s,at,'record_entity_eligibility',{
                         'entity_id':cid,'scenario_id':'individual','effective_at':point,'source_ref':p['source_ref'],

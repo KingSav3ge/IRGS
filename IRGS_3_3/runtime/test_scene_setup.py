@@ -16,10 +16,10 @@ class SceneSetupTests(unittest.TestCase):
         return initial_campaign('military', 'synthetic-pack', scenario_id='hundred-years-war',
                                 entry_id='hyw-1415', snapshot_sha256=preview['snapshot_sha256'])
 
-    def create(self, *, opening='quay-delivery-v1', world=None):
+    def create(self, *, opening='quay-delivery-v1', world=None, species='human'):
         world = world or self.base()
         options = options_for_world(world)
-        character = {'kind': 'new', 'name': 'Synthetic courier', 'species': 'human'}
+        character = {'kind': 'new', 'name': 'Synthetic courier', 'species': species}
         if opening is not None:
             character['opening_id'] = opening
         return initialize_player(world, character, selection_digest=options['selection_digest'],
@@ -36,6 +36,16 @@ class SceneSetupTests(unittest.TestCase):
         self.assertEqual(world.s['stocks'], {})
         self.assertNotIn('scene_rules', world.s)
         self.assertNotIn('elapsed_time', world.s)
+
+    def test_human_capitalization_is_accepted_without_rewriting_identity(self):
+        for species in ('human', 'Human', 'HUMAN', 'hUmAn', ' Human '):
+            with self.subTest(species=species):
+                world = self.create(species=species)
+                actor = world.s['player_actor_ids'][0]
+                self.assertEqual(world.s['actors'][actor]['species'], species.strip())
+                self.assertEqual(world.s['entity_registry']['entities'][actor]['versions'][-1]['identity']['category'], 'person')
+                self.assertEqual(world.s['scene_rules']['actor_id'], actor)
+                self.assertEqual(world.s['stocks'][actor]['sealed_dispatch'], 1)
 
     def test_actual_pack_arc_commits_movement_observation_failure_and_delivery(self):
         world = self.create()

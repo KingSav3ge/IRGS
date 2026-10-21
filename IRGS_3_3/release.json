@@ -25,7 +25,7 @@
   ],
   "selection_authority": "User requested live Core 3.3 plus genre engines/libraries, with AST as campaign content",
   "validation": {
-    "runtime_tests": 457,
+    "runtime_tests": 458,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
     "http_tests": 125,
@@ -63,7 +63,7 @@
     "runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",
     "runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
     "runtime/content_library.py": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae",
-    "runtime/core_world.py": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5",
+    "runtime/core_world.py": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58",
     "runtime/economic_extension.py": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c",
     "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98",
     "runtime/historical_campaigns.py": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc",
@@ -295,9 +295,9 @@
     "runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457",
     "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7",
     "runtime/scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
-    "runtime/scene_setup.py": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699",
+    "runtime/scene_setup.py": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b",
     "runtime/test_scene_actions.py": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10",
-    "runtime/test_scene_setup.py": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f",
+    "runtime/test_scene_setup.py": "a6724f7a51c29a43c5ed51799dd0b6e98ef813dbb224543c85ef6da8319ccb0b",
     "data/solo_quay_opening.json": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5"
   },
   "host_sha256": {
@@ -334,11 +334,12 @@
     "alternate_backend_activated": false
   },
   "continuation": {
-    "id": "opening1",
-    "validation_record": "OPENING1_VALIDATION.json",
-    "engine_record": "engine/PLAYABLE_OPENING_IMPLEMENTATION.md",
+    "id": "opening1-startfix-engine",
+    "host_integration_branch": "3.3.3.A",
+    "scene_handler_implemented": true,
+    "creation_error_ui_corrected_on_this_branch": false,
     "general_freeform_resolution": false,
     "combat_adjudication": false,
-    "elapsed_time_advance": "explicit authored local scene only"
+    "validation_record": "STARTFIX_VALIDATION.json"
   }
 }

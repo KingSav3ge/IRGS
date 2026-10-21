@@ -938,8 +938,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 35260,
-      "sha256": "c0658e811fad065f25623185ca3b1e7ced4d7aceb4288b8dcee733c0ea7ac5eb"
+      "bytes": 34938,
+      "sha256": "fff6901c3fce3a0ddea6a5bc46258f959e438651c08ee176dbdccae225915a3d"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1083,8 +1083,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 15611,
-      "sha256": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5"
+      "bytes": 15630,
+      "sha256": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1253,8 +1253,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/scene_setup.py",
-      "bytes": 5396,
-      "sha256": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699"
+      "bytes": 5515,
+      "sha256": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b"
     },
     {
       "path": "IRGS_3_3/runtime/selective_coordinator.py",
@@ -1348,8 +1348,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_scene_setup.py",
-      "bytes": 4717,
-      "sha256": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f"
+      "bytes": 5417,
+      "sha256": "a6724f7a51c29a43c5ed51799dd0b6e98ef813dbb224543c85ef6da8319ccb0b"
     },
     {
       "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
@@ -1523,8 +1523,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3730,
-      "sha256": "7d17c2951c9665b00c9d4e5b6bfd566f86bb588017b8925f3f31eac171acccff"
+      "bytes": 4143,
+      "sha256": "ef4aff4cec75a6b4631083ce3c58bc9f75d232f6068c7bfd80cbed3262c3d7e8"
     },
     {
       "path": "ROADMAP.md",
@@ -1535,6 +1535,11 @@
       "path": "SHA256SUMS.txt",
       "bytes": 546,
       "sha256": "2dc216320bb7a0e803b28284572c4dfe104a2285783f40e8f178c8f6de0674f8"
+    },
+    {
+      "path": "STARTFIX_VALIDATION.json",
+      "bytes": 1013,
+      "sha256": "def69614c8d0fe620b85ca87f0373f9284c2b09c5aa72540688c69500918edfb"
     },
     {
       "path": "Start-IRGS.cmd",
