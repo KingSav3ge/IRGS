@@ -1,0 +1,30 @@
+gate_id,topic,responsible_source,required_data,related_groups,status
+RRCL-CAL-01,Dated legal authority,ROM-LEGAL-01,"Jurisdiction/office, eligibility, authorized acts, evidence and rights","LAW,CIVIC",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-02,Slavery claims and disputed transfer,Roman Slim §3,"Effective local law, claims, custody, transfer and refusal consequences",LAW,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-03,Manumission routes,Roman Slim §3,"Dated applicability, prerequisites, completion, recognition and restrictions",LAW,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-04,Peculium arrangements,Roman Slim §4,"Legal title, authorization, revocation and asset control","LAW,ECO",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-05,"Market prices, wages and commissions",Roman Slim §4,"Dated local quote, currency unit, delivery and recorded counterparty",ECO,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-06,Cash tender and exchange,ROM-MONEY-01,Accepted physical coin/denomination rules and money-holder access,"ECO,MAT",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-07,Work productivity and crop yield,Core §109; Roman Slim §4,"Inputs, qualified labor, land/season, output rate and useful acceptance","ECO,MAT",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-08,Roman arms chronology,Roman Slim §11,"Period/region, construction provenance, bearer role and historical confidence","ARMS,MIL",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-09,Weapon physical envelopes,RRP-EFFECT-1.0,"Length/reach, usable mode, hands, action readiness and injury channel",ARMS,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-10,Protection coverage/condition,RRP-EFFECT-1.0,"Body zones, construction, wear, fit, angle and handedness",ARMS,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-11,Shield geometry and history,RRP-WEAR-1.1,"Size, form, arc, Structure source, handling, failure and repair",ARMS,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-12,Unarmed injury mechanism,RRP-EFFECT-1.0,"Target anatomy, force, method, feasibility and injury thresholds","ARMS,CARE",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-13,Simultaneous contact grouping,RRP-WEAR-1.1,"Prestate, memberships, event ordering and correction boundary",ARMS,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-14,Roman unit service rules,Roman Slim §11,"Date, institution, roles, pay, muster, authority and doctrine",MIL,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-15,Staffed care and recovery,RRP-CARE-1.0,"Personnel, supplies, wound type, prognosis, disability and triggers","CARE,ARENA",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-16,Fatigue and physiological load,RRP-HUMAN-1.0,"Selected context, actual qualifying intervals and extrema","CARE,ECO",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-17,Contamination and infection,Roman Slim §9,"Specific cause/exposure, delay, progression and intervention",CARE,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-18,Gladiatorial contest and official powers,Roman Slim §10,"Jurisdiction, venue, organizer, fight limits, stop/submission/decision",ARENA,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-19,"Gladiator wages, award and release",Roman Slim §10,"Contract, real payer/payee, official result, legal release and liability","ARENA,LAW,ECO",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-20,Ludus staffing and expenses,Roman Slim §10,"Real people, housing, teaching, tools, care and financial obligations","ARENA,PLACE",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-21,Roman regional site eligibility,Roman Slim §11,"Exact time/place, archaeology/text sources and uncertainty","PLACE,CIVIC",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-22,Road and carrier operating rate,Roman Slim §11,"Route distance, terrain, animal/vehicle capability and handling",TRAVEL,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-23,Water travel operating profiles,Core §116; Roman Slim §11,"Actual vessel, crew, capacity, navigation and seasonal weather",TRAVEL,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-24,Language and literacy,"Roman Slim §§2,11","Particular register, comprehensibility, scripts and communication method",RECORD,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-25,Civic and provincial power,Roman Slim §3,"Particular locality/office/date, decision authority and appeals if any",CIVIC,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-26,Historical dated backdrop and divergence,Roman Slim §11,"Source provenance, event prerequisites, dates and actor knowledge","CIVIC,PLACE",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-27,Asset/material quality and deterioration,Core §109,"Actual use, environment, repair means, provenance and triggers","MAT,ARMS",Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-28,Finite role population,Roman Slim §11,"Existing actor pool, specialization, recruitment/replacement policy",ALL,Uncalibrated or locality-dependent; no numeric default
+RRCL-CAL-29,Randomness/hidden-state persistence,"Core §§79,90–91","Runner capability, event IDs, secrecy, deterministic replay and scope",ALL,Uncalibrated or locality-dependent; no numeric default

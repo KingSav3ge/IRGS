@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "check_count": 2069,
+  "catalogue_templates": 118,
+  "native_source_bindings": 14,
+  "source_sections": 32,
+  "specified_acceptance_cases": 64,
+  "calibration_gates": 29,
+  "complete_game_runtime_tests_executed": 0,
+  "historical_or_physiological_calibration": false
+}

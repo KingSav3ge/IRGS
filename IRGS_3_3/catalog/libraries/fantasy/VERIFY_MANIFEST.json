@@ -1,0 +1,93 @@
+{
+  "document_id": "IRGS-FANTASY-LIB-2.0",
+  "source_status": "Proposed, internally reconciled; numerical calibration/campaign adoption separate",
+  "deployment": "Current linked Fantasy 1.2 / Core 3.2 / SCL 1.0 package",
+  "core": "IRGS-CORE-3.2",
+  "source_registry": "IRGS-SCL-1.0",
+  "engine": "IRGS-FANTASY-SLIM-1.2",
+  "source_archive_sha256": "e5ed44eaff64f5481f442e6195f47692709a960e49eaf2d8bf2af523a8de11fb",
+  "preserved_source_components": {
+    "IRGS_Fantasy_Content_Library_v2_0_Candidate.md": "562a0c15a0de6bfe5f77916682a8ee23df65abd79bda908e3d0bbaeb4f372bcd",
+    "Fantasy_SCL_Crosswalk_v2_0.csv": "ea1354f9487b3ce181d578f20b735399f4a1b07829a2101cc4d33bc20deebc35",
+    "Fantasy_Native_Source_Projection_v2_0.json": "4123a39f4d9b53800ab0e91a4bdebc539d3fad20b06775060d8a1b904c474fdb",
+    "Fantasy_CMRR_93_Sections.csv": "1ae7eb9fee7ecca606c1f10de8d7f66f017b0bf749e782e57e1391d6ed1468e9",
+    "Fantasy_Acceptance_Cases_v2_0.csv": "4ecbc2872802d5e6698853d1526e5d124a0bcbb787bf72d95c4a88b14b9ae28f"
+  },
+  "source_file_dispositions": [
+    {
+      "source_file": "FANTASY_RELEASE_VALIDATION.md",
+      "source_sha256": "94c35c40de4a02dbb87aa66e98f8554db6c29ca6d53e59318bd4b38879ce19e9",
+      "disposition": "Rebuilt for clean current Core/engine/library deployment"
+    },
+    {
+      "source_file": "Fantasy_Acceptance_Cases_v2_0.csv",
+      "source_sha256": "4ecbc2872802d5e6698853d1526e5d124a0bcbb787bf72d95c4a88b14b9ae28f",
+      "disposition": "Retained byte-for-byte"
+    },
+    {
+      "source_file": "Fantasy_CMRR_93_Sections.csv",
+      "source_sha256": "1ae7eb9fee7ecca606c1f10de8d7f66f017b0bf749e782e57e1391d6ed1468e9",
+      "disposition": "Retained byte-for-byte"
+    },
+    {
+      "source_file": "Fantasy_Native_Source_Projection_v2_0.json",
+      "source_sha256": "4123a39f4d9b53800ab0e91a4bdebc539d3fad20b06775060d8a1b904c474fdb",
+      "disposition": "Retained byte-for-byte"
+    },
+    {
+      "source_file": "Fantasy_SCL_Crosswalk_v2_0.csv",
+      "source_sha256": "ea1354f9487b3ce181d578f20b735399f4a1b07829a2101cc4d33bc20deebc35",
+      "disposition": "Retained byte-for-byte"
+    },
+    {
+      "source_file": "IRGS_Fantasy_Content_Library_v2_0_Candidate.md",
+      "source_sha256": "562a0c15a0de6bfe5f77916682a8ee23df65abd79bda908e3d0bbaeb4f372bcd",
+      "disposition": "Retained byte-for-byte"
+    },
+    {
+      "source_file": "README.md",
+      "source_sha256": "8a63039f19643be42fef79f6dad24d6706746770a79d0bc571111baddc57c522",
+      "disposition": "Rebuilt for clean current Core/engine/library deployment"
+    },
+    {
+      "source_file": "provenance/F-1.0_Original_Fantasy_World_Engine.md",
+      "source_sha256": "f44a572299c30085243944ad3e53f13a387ea0956b03370d4cfd5c5b3a14b820",
+      "disposition": "Omitted full prior edition from active distribution; original file preserved externally and scoped payloads remain"
+    },
+    {
+      "source_file": "provenance/FL-1.0_Original_Fantasy_Content_Libraries.md",
+      "source_sha256": "53c14ff4e2edadf407a9a00498bf21d6dc43bde5173f4187293059db67e6bf12",
+      "disposition": "Omitted full prior edition from active distribution; original file preserved externally and scoped payloads remain"
+    },
+    {
+      "source_file": "verify_fantasy_release.py",
+      "source_sha256": "7cb2e00c18b9ef7ee2c64eaa86d1bdc740d9aaef35b96f51af9610c8bdf01043",
+      "disposition": "Rebuilt for clean current Core/engine/library deployment"
+    },
+    {
+      "source_file": "VERIFY_MANIFEST.json",
+      "source_sha256": "19b553da82bf816cbf004122345afd2cffb29ce5c363e18ff117451ee5ed9020",
+      "disposition": "Rebuilt current component hashes, exact receiving pins and complete source dispositions"
+    }
+  ],
+  "original_archive_checks": {
+    "passed": 71,
+    "total": 71,
+    "scope": "Original full-source structural checker and six simple synthetic probes; no live testing"
+  },
+  "files": {
+    "Fantasy_Acceptance_Cases_v2_0.csv": "4ecbc2872802d5e6698853d1526e5d124a0bcbb787bf72d95c4a88b14b9ae28f",
+    "Fantasy_CMRR_93_Sections.csv": "1ae7eb9fee7ecca606c1f10de8d7f66f017b0bf749e782e57e1391d6ed1468e9",
+    "Fantasy_Native_Source_Projection_v2_0.json": "4123a39f4d9b53800ab0e91a4bdebc539d3fad20b06775060d8a1b904c474fdb",
+    "FANTASY_RELEASE_VALIDATION.md": "f6c3a33ff2c494d5dcec4b21eba568f5508e2928d0d65935eb02858183b06401",
+    "Fantasy_SCL_Crosswalk_v2_0.csv": "ea1354f9487b3ce181d578f20b735399f4a1b07829a2101cc4d33bc20deebc35",
+    "IRGS_Fantasy_Content_Library_v2_0_Candidate.md": "562a0c15a0de6bfe5f77916682a8ee23df65abd79bda908e3d0bbaeb4f372bcd",
+    "README.md": "8e6f1c345122d138220718cfb39502fe1014b221dedea12d24634b923f0a60ad",
+    "verify_fantasy_release.py": "20e609bcf0d6678fe60a7e9c2138239ba62f2b1f1613d2490667b74c59c0869d"
+  },
+  "receiving_verification": {
+    "named_checks": 20,
+    "deliberate_fault_controls": 2,
+    "scope": "Fresh current dependency/content/profile checks; no live runtime implementation or calibration"
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "document_id": "SNCL-0.1-VERIFICATION",
+  "edition": "2026-10-14",
+  "status": "bounded synthetic and source checks (not gameplay/playtesting)",
+  "cases": [
+    {
+      "id": "V01",
+      "name": "library identity",
+      "status": "PASS",
+      "observed": "IRGS-SNCL-0.1",
+      "expected": "IRGS-SNCL-0.1",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V02",
+      "name": "Core parent",
+      "status": "PASS",
+      "observed": "IRGS-CORE-3.2",
+      "expected": "IRGS-CORE-3.2",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V03",
+      "name": "genre parent",
+      "status": "PASS",
+      "observed": "IRGS-SNWE-0.3",
+      "expected": "IRGS-SNWE-0.3",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V04",
+      "name": "SCL parent",
+      "status": "PASS",
+      "observed": "IRGS-SCL-1.0",
+      "expected": "IRGS-SCL-1.0",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V05",
+      "name": "entry count",
+      "status": "PASS",
+      "observed": 122,
+      "expected": 122,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V06",
+      "name": "unique ids",
+      "status": "PASS",
+      "observed": 122,
+      "expected": 122,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V07",
+      "name": "source starter count",
+      "status": "PASS",
+      "observed": 18,
+      "expected": 18,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V08",
+      "name": "proposed technique count",
+      "status": "PASS",
+      "observed": 31,
+      "expected": 31,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V09",
+      "name": "native unit count",
+      "status": "PASS",
+      "observed": 4,
+      "expected": 4,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V10",
+      "name": "mission coverage",
+      "status": "PASS",
+      "observed": 11,
+      "expected": 11,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V11",
+      "name": "institution coverage",
+      "status": "PASS",
+      "observed": 12,
+      "expected": 12,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V12",
+      "name": "service coverage",
+      "status": "PASS",
+      "observed": 12,
+      "expected": 12,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V13",
+      "name": "equipment coverage",
+      "status": "PASS",
+      "observed": 18,
+      "expected": 18,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V14",
+      "name": "held count",
+      "status": "PASS",
+      "observed": 20,
+      "expected": 20,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V15",
+      "name": "declared statuses valid",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V16",
+      "name": "all entry ids valid",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V17",
+      "name": "native tech contract fields",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V18",
+      "name": "new tech contract fields",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V19",
+      "name": "new tech affinities",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V20",
+      "name": "native group one entry",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V21",
+      "name": "held candidates not playable",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V22",
+      "name": "no library-origin core owners created",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V23",
+      "name": "source starter lines",
+      "status": "PASS",
+      "observed": 18,
+      "expected": 18,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V24",
+      "name": "18 effects copied exactly",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V25",
+      "name": "four unit values match source text",
+      "status": "PASS",
+      "observed": [
+        [
+          "Recon cell",
+          2,
+          2,
+          4,
+          3,
+          3,
+          4
+        ],
+        [
+          "Assault detachment",
+          4,
+          3,
+          3,
+          4,
+          4,
+          6
+        ],
+        [
+          "Sealing corps",
+          2,
+          4,
+          4,
+          3,
+          3,
+          4
+        ],
+        [
+          "Medical support",
+          1,
+          2,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "expected": [
+        [
+          "Recon cell",
+          2,
+          2,
+          4,
+          3,
+          3,
+          4
+        ],
+        [
+          "Assault detachment",
+          4,
+          3,
+          3,
+          4,
+          4,
+          6
+        ],
+        [
+          "Sealing corps",
+          2,
+          4,
+          4,
+          3,
+          3,
+          4
+        ],
+        [
+          "Medical support",
+          1,
+          2,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V26",
+      "name": "source SHA",
+      "status": "PASS",
+      "observed": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+      "expected": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V27",
+      "name": "C-rank scene cost sequence",
+      "status": "PASS",
+      "observed": [
+        5,
+        6,
+        7
+      ],
+      "expected": [
+        5,
+        6,
+        7
+      ],
+      "scope": "bounded_arithmetic"
+    },
+    {
+      "id": "V28",
+      "name": "chakra reduction even when one Mold fails",
+      "status": "PASS",
+      "observed": 22,
+      "expected": 22,
+      "scope": "bounded_arithmetic"
+    },
+    {
+      "id": "V29",
+      "name": "one overclock threshold crossing",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1,
+      "scope": "bounded_arithmetic"
+    },
+    {
+      "id": "V30",
+      "name": "finite kit charges",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0,
+      "scope": "bounded_accounting"
+    },
+    {
+      "id": "V31",
+      "name": "one shipment conserved before receipt",
+      "status": "PASS",
+      "observed": [
+        2,
+        4,
+        0
+      ],
+      "expected": [
+        2,
+        4,
+        0
+      ],
+      "scope": "bounded_accounting"
+    },
+    {
+      "id": "V32",
+      "name": "one shipment conserved after receipt",
+      "status": "PASS",
+      "observed": [
+        2,
+        0,
+        4
+      ],
+      "expected": [
+        2,
+        0,
+        4
+      ],
+      "scope": "bounded_accounting"
+    },
+    {
+      "id": "V33",
+      "name": "native illusion has no physical actor",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V34",
+      "name": "held summons do not grant autonomous actions",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V35",
+      "name": "native Field Mending not cure injury",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V36",
+      "name": "native barrier no resistance",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V37",
+      "name": "native unit actual headcount unspecified",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V38",
+      "name": "SCL references identity",
+      "status": "PASS",
+      "observed": "IRGS-SCL-1.0",
+      "expected": "IRGS-SCL-1.0",
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V39",
+      "name": "SCL refs canonical 0.2",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V40",
+      "name": "no ref promoted by catalogue",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V41",
+      "name": "records no duplicated identifiers",
+      "status": "PASS",
+      "observed": 122,
+      "expected": 122,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V42",
+      "name": "Markdown includes 18 native definitions",
+      "status": "PASS",
+      "observed": 18,
+      "expected": 18,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V43",
+      "name": "Markdown includes 31 new tech definitions",
+      "status": "PASS",
+      "observed": 31,
+      "expected": 31,
+      "scope": "source_or_contract"
+    },
+    {
+      "id": "V44",
+      "name": "Markdown includes adoption and migration boundary",
+      "status": "PASS",
+      "observed": true,
+      "expected": true,
+      "scope": "source_or_contract"
+    }
+  ],
+  "passed": 44,
+  "failed": 0
+}

@@ -1,0 +1,33 @@
+source,section,title,receiving_scope,disposition,mechanical_replacement
+Roman full v1.0,1,"Purpose, architecture and authority",governance,Roman v1.2 is active genre owner; library only qualifies content,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,2,Shared resolution and agency,Core inherited,Core owns resolution; no library dice engine,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,3,"People, creation and assessment","LAW,CARE,RECORD",Person dossier fields are templates; world state retained at K-ACTOR,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,4,"Capabilities, learning and progression","ARENA,MIL,ECO",Competence and training gates remain Roman engine/Core,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,5,"Needs, compulsory work and fatigue","CARE,ECO",Needs and fatigue profiles remain Roman engine; content supplies facilities/inputs,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,6,"Legal position, captivity and release","LAW,CIVIC",Status/claims/route content; legal decisions under GOV,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,7,"Property, money, contracts and markets","ECO,MAT,RECORD","Contracts, tender and administration in Roman setting; Core transfers",No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,8,"Livelihood, production and households","ECO,PLACE,LAW","Work, household and business templates; Core labor and service providers",No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,9,"Relationships, NPCs and institutions","LAW,CIVIC,ARENA",Institutional roles and social facts; autonomy remains Core,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,10,"Information, search and pursuit","TRAVEL,RECORD,CIVIC","Observation, courier and pursuit templates; report timing Core",No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,11,"Travel, burden, exposure and animals","TRAVEL,CARE","Local route, animal and hazard profile candidates; no default speeds",No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,12,"Encounters, commitments and priority","ARMS,MIL",Combat availability and configurations; engine controls action,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,13,"Tactics, equipment and physical effects","ARMS,MAT,MIL",14 exact native bindings; material candidates and physical profiles,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,14,"Anatomical injury, care and recovery","CARE,MAT",Care supplies and contexts; injuries/recovery belong to MED/K-ACTOR,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,15,Gladiatorial institutions and continuing careers,"ARENA,PLACE,LAW",Ludus and COMP event content; Roman contest procedure remains engine,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,16,"Runtime, historical change and scale","CIVIC,TRAVEL,RECORD",Historical baseline content only; no alternate clock or scale,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,17,"Records, persistence and presentation",RECORD,Templates reference Core owners; no new mutable accounts,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,18,"Content, profiles and deployment",all groups,Content qualification and eligibility gate; no free instantiation,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,19,"Worked acceptance cases, validation and version policy",tests,"Existing worked fixtures are source evidence, not claimed performed here",No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman full v1.0,20,Source ownership and provenance,provenance,Source history and rejected duplicated ownership kept,No; engine v1.2 and Core v3.2 retain their adopted/selected behavior
+Roman Slim v1.2,1,"Inheritance, selections and authority",manifest and scope,No alternative Core/SCL parent,No; source engine retained unchanged
+Roman Slim v1.2,2,Roman premise and creation,"LAW,RECORD",Creation of person and world state remains engine,No; source engine retained unchanged
+Roman Slim v1.2,3,"Standing, custody and manumission","LAW,CIVIC","Status content, local recognition and manumission options",No; source engine retained unchanged
+Roman Slim v1.2,4,"Roman funds, work and households","ECO,MAT,LAW","Funds, agreements, enterprise and labor templates",No; source engine retained unchanged
+Roman Slim v1.2,5,Selected human development and exertion profile,"CARE,MIL",Profile dependencies; no duplicate native fatigue or training,No; source engine retained unchanged
+Roman Slim v1.2,6,Tactical selections and the priority override,"ARMS,MIL,TRAVEL",Equipment eligibility; runtime initiative stays in Roman engine,No; source engine retained unchanged
+Roman Slim v1.2,7,"Selected contact, protection and injury adapter","ARMS,MAT",Exact 14 source content bindings retained unchanged,No; source engine retained unchanged
+Roman Slim v1.2,8,Local wear and the simultaneous-contact clarification,ARMS,Wear stays engine; content identifies components and conditions,No; source engine retained unchanged
+Roman Slim v1.2,9,"Period care, survival and the death selection",CARE,Medicinal inputs and location; MED remains injury/care owner,No; source engine retained unchanged
+Roman Slim v1.2,10,Gladiatorial institutions and continuing careers,"ARENA,PLACE","Competitions are Core-owned, Roman terms content-owned",No; source engine retained unchanged
+Roman Slim v1.2,11,"Historical setting, content and deployment",all groups,Roman locality eligibility and campaign manifest,No; source engine retained unchanged
+Roman Slim v1.2,12,"CMRR, validation and prospective adoption",CMRR/tests/migration,"Accepted engine unchanged, new library only proposed",No; source engine retained unchanged

@@ -1,0 +1,6 @@
+test_default_fourteen_day_resources_and_decisions (test_strategy_rights.SustainedExecutionTests.test_default_fourteen_day_resources_and_decisions) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 46.176s
+
+OK

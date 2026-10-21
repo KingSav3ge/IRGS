@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "edition": "3.3.C-C2",
+  "type": "text-engine-design",
+  "files": [
+    {
+      "path": "ACCEPTANCE_CASES.json",
+      "bytes": 40733,
+      "sha256": "4334c0d634f9022cffbba549fa5fc805479f9883dcb4bb83059a32147352ec51"
+    },
+    {
+      "path": "ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "bytes": 13257,
+      "sha256": "938ced78f84de4c74fbb219782cb2d2303d1e1ec8ca2fb1dce58d6c2084b6a75"
+    },
+    {
+      "path": "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "bytes": 13879,
+      "sha256": "c600e5c814fbd66f22f1c53bc017ee72b4e3fcb2cf1c85378c41f017fee39e33"
+    },
+    {
+      "path": "CHANGES_C2.md",
+      "bytes": 3716,
+      "sha256": "d82f38d87fb28cf94d7f8ccd8ff920793ca47a38002d05d3883e4fc78ef8fcf0"
+    },
+    {
+      "path": "CLAUDE_HANDOFF.md",
+      "bytes": 11644,
+      "sha256": "d08f536ef80138fe476e5ff3c189b7a1daf944192909cd07f445fafaab42508d"
+    },
+    {
+      "path": "CMRR_AND_ACCEPTANCE.md",
+      "bytes": 8679,
+      "sha256": "cbd0d2ea9bd0516269c1f2743c1bed6facaf66c38d31da11399b98fd2588e057"
+    },
+    {
+      "path": "DESIGN_VALIDATION.json",
+      "bytes": 930,
+      "sha256": "6572d88a545cb18122a3290de5672f826048efd7283463f7656b64859929c730"
+    },
+    {
+      "path": "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "bytes": 13889,
+      "sha256": "2ab81367dd8c91837b772b4b7be8988cd1ec077e2220ef582db2f00074389ab6"
+    },
+    {
+      "path": "fixtures/PLAYABLE_CYCLE.json",
+      "bytes": 7052,
+      "sha256": "1721fb376ff84e4502133ed67c686abc4d7e19878a1600a8b3ceaee4f180f3a2"
+    },
+    {
+      "path": "HANDOFF_STATE.json",
+      "bytes": 6729,
+      "sha256": "801737445d2a96315b0263b6107c9e917f42d6ecdd2059d82ee2fd7def57779f"
+    },
+    {
+      "path": "IMPLEMENTATION_PACKETS.md",
+      "bytes": 8480,
+      "sha256": "ef2a16c3038d9ecdff43b9416758ad3173e79087139ca649df9d375fe586e3cd"
+    },
+    {
+      "path": "INSTITUTIONAL_EXECUTION_MODEL.md",
+      "bytes": 10117,
+      "sha256": "4fb95af1fd78e0bda2e2fb4387b0af56ce27f71f19844c46f96213e95cbe6da6"
+    },
+    {
+      "path": "IRGS_Core_3_3_C_Engine_Supplement.md",
+      "bytes": 19877,
+      "sha256": "55b62d25e3bfcad4657f9309119734682ca4f4fc6b5c8899385645f39112d90a"
+    },
+    {
+      "path": "MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "bytes": 14294,
+      "sha256": "7a1e5b90b3d02057af5a0bd8b0169803ec255e8ddf2b78c0b293f9e4a4b2398d"
+    },
+    {
+      "path": "PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "bytes": 16044,
+      "sha256": "cc732445a9513e35c410adabd1b51198c2cb4913fcfc75764c4ae6607bc364b3"
+    },
+    {
+      "path": "PLAYABLE_ACTION_CYCLE.md",
+      "bytes": 13790,
+      "sha256": "d09c977a5a8dea8342e2749d1ab474c7d0b1e633174c2e5f9828e888ccbb574c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4208,
+      "sha256": "bec52ebb9129069b2748336567a11dce3f2e9ce4fbe12ab4ce52163cd0e61409"
+    },
+    {
+      "path": "reference/IRGS_3_3/Core/IRGS_Core_3_3_Binding.json",
+      "bytes": 914,
+      "sha256": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301"
+    },
+    {
+      "path": "reference/IRGS_3_3/Core/IRGS_Core_Engine_v3_3.md",
+      "bytes": 497019,
+      "sha256": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494"
+    },
+    {
+      "path": "reference/IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
+      "bytes": 111539,
+      "sha256": "e0101206dcd24ede9ef391e405556c503154f10971e831775e7f662d8dafdf74"
+    },
+    {
+      "path": "reference/README.md",
+      "bytes": 933,
+      "sha256": "80a335c9b8e8b7a72e638347b70817c2ecfc84e49e6def4be828be0b49719529"
+    },
+    {
+      "path": "reference/SOURCE_BASELINE.json",
+      "bytes": 10300,
+      "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978"
+    },
+    {
+      "path": "TIMELINE_AND_PROCESS_CONTRACT.md",
+      "bytes": 14509,
+      "sha256": "867d3ba3ca02787717eeb24f4ff69f8a6cfe113ce630ceddf3a51000e4e6b271"
+    }
+  ]
+}

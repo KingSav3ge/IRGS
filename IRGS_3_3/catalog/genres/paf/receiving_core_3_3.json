@@ -1,0 +1,109 @@
+{
+  "id": "IRGS-BIND-PAF-CORE-3.3",
+  "genre_id": "paf",
+  "core_ref": "IRGS-CORE-3.3",
+  "core_version": "3.3",
+  "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+  "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct",
+  "source_core_ref": "IRGS-CORE-3.2",
+  "source_files": [
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Engine_v2_1_Core3_2.md",
+      "sha256": "293f08601de8504418531c15e6a4a3d5a3d3a5f1601de7956636ab40bb28f24a",
+      "bytes": 107401
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Binding_v2_1_Core3_2.json",
+      "sha256": "fce68b04cd46d0461a5c7fceab7cc2447274ce2a2bc3980f3cc42f0207a60cd3",
+      "bytes": 170685
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Content_References_v2_1.csv",
+      "sha256": "5f85d4e9cdde90155ba70051ad74897d666c47fb1787261776bfab086ac5c88f",
+      "bytes": 82811
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Acceptance_Inventory_v2_1.json",
+      "sha256": "a35dc92b0af9e8fe046e1239ebeff11f88957fa89e8920d439da7415fd03269a",
+      "bytes": 107047
+    }
+  ],
+  "shared_library": "shared",
+  "library_ids": [
+    "shared",
+    "paf"
+  ],
+  "runtime_class": "core_world.CoreWorld",
+  "runtime_operations": [
+    "commit_activity",
+    "confirm_character_field",
+    "establish_stock",
+    "receive_evidence",
+    "receive_order",
+    "record_capacity",
+    "record_delegation",
+    "record_design",
+    "record_entity_eligibility",
+    "record_entity_relation",
+    "record_evidence",
+    "record_obligation",
+    "record_player_action",
+    "register_actor",
+    "register_entity",
+    "revoke_delegation",
+    "select_entity_control",
+    "set_scene",
+    "transfer_stock",
+    "transition_entity"
+  ],
+  "runtime_operation_inventory": "runtime/core_world.py:CORE_OPS",
+  "bounded_receiver_operations": [
+    "revoke_delegation"
+  ],
+  "bounded_receiver_source": "runtime/genre_receivers.py:GENRE_OPS",
+  "runtime_sources_sha256": {
+    "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+    "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+  },
+  "lookup_operations": [
+    "classify_record"
+  ],
+  "specialty_runtime_operations": [
+    "revoke_delegation"
+  ],
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "profile_requirements": [
+    "Assessments reference actual Core facts and actor-visible evidence",
+    "Actual cause-specific needs, recovery, service and logistics profiles",
+    "No universal ration, collapse, hazard or deterioration rate",
+    "Extraordinary modules require explicit finite compatible models"
+  ],
+  "compatibility_research_receivers": {
+    "operations": [],
+    "runtime": "runtime/r9_adapters.py",
+    "scope": "Synthetic R9 research state only; not this campaign route",
+    "certifies_native_engine": false
+  },
+  "single_state": "All effects use the selected campaign's authoritative Core owners and clock",
+  "selection_authority": "User requested live Core 3.3 plus genre engines and content libraries",
+  "activation_effect": "Selects routing and available source references; does not adopt proposed numbers or create instances",
+  "automatic_source_adoption": false,
+  "automatic_campaign_migration": false,
+  "numeric_profile_adoption": false,
+  "source_deprecation": false,
+  "certification": "This catalogue and binding make no execution or branch certification claim",
+  "limitations": [
+    "PA assessment overlays must not create a second physical ledger",
+    "43 compositions remain proposed; no extraordinary module enabled by default"
+  ]
+}

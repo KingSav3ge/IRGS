@@ -1,0 +1,41 @@
+﻿case_id,trigger,required_behavior,status
+FAN-01,A held SCL weapon family is selected,Resolve pinned FL-1.0 native adapter; do not invent shared numeric ratings,Specified; not executed in live runtime
+FAN-02,A sword's cut and thrust are queried,"One physical item; two selectors, not two inventory objects or attacks",Specified; not executed in live runtime
+FAN-03,Unarmed strike is equipped as item,Reject inventory interpretation; method only,Specified; not executed in live runtime
+FAN-04,Knife hits verified plate,Respect native Threat/Defeat and protection; no skill-created penetration,Specified; not executed in live runtime
+FAN-05,Warhammer blunt hit on plate,Use impact channel; no reactivation of stopped cut/pierce,Specified; not executed in live runtime
+FAN-06,Sunder used against person,Material-stress effect only; no free flesh injury boost,Specified; not executed in live runtime
+FAN-07,Multiple padded layers,No summed whole armor rating without compatible harness profile,Specified; not executed in live runtime
+FAN-08,Breastplate locally damaged,Only specified component/channel deteriorates,Specified; not executed in live runtime
+FAN-09,Creature mouth contact succeeds,No automatic grapple unless declared or anatomy ability explicitly couples control,Specified; not executed in live runtime
+FAN-10,Venomous bite succeeds,Resolve injury and exposure as separate causal channels and paid effects,Specified; not executed in live runtime
+FAN-11,Flying creature wing disabled,Flight function affected; no automatic unrelated organ failure,Specified; not executed in live runtime
+FAN-12,Spirit summoned,Summon does not imply obedience or new free action,Specified; not executed in live runtime
+FAN-13,Petition made to autonomous god,Deity acts under its own goals/obligations; no automatic mana-spell obedience,Specified; not executed in live runtime
+FAN-14,Telepathy used on uninformed target,"Reveal supported target knowledge only, not objective hidden facts",Specified; not executed in live runtime
+FAN-15,Blood cost paid then tissue healed,Supernatural sacrificial cost not automatically regenerated,Specified; not executed in live runtime
+FAN-16,Rune item destroyed,Item loses supported function; enchantment persists only by explicit mechanism,Specified; not executed in live runtime
+FAN-17,Conjured meal created,Debit supernatural inputs; credit actual accepted food quantity once,Specified; not executed in live runtime
+FAN-18,Teleport actor carrying items,Move identified occupants/assets; no copies or undefined luggage,Specified; not executed in live runtime
+FAN-19,Remote divination scheduled,"Occurrence, observation, transmission and receipt times distinct",Specified; not executed in live runtime
+FAN-20,Resurrection invoked,Explicit soul/identity/state return; no world rewind or clone by default,Specified; not executed in live runtime
+FAN-21,Creation of mundane material through magic,"Supply gets actual stock after effect, with mass/specification and provenance",Specified; not executed in live runtime
+FAN-22,Rare ingredient substituted by die roll,Reject nonexistent ingredient; require recipe-defined substitute,Specified; not executed in live runtime
+FAN-23,Enchanting workshop missing power source,"Block dependent commissioning, not independent workshop activity",Specified; not executed in live runtime
+FAN-24,Two spells from incompatible paradigms meet,Require declared cross-paradigm detection/resistance; no assumed dispel,Specified; not executed in live runtime
+FAN-25,Campaign declares teleportation prevalence 5,"Review economic, legal, military, logistical and social consequences",Specified; not executed in live runtime
+FAN-26,Long timeline with healing and recovery,Resource rates and injury intervals continue; no scene reset,Specified; not executed in live runtime
+FAN-27,Natural armor and worn armor interact,One coherent layering/effect model; no double protection,Specified; not executed in live runtime
+FAN-28,Creature size already embedded in native threat,Do not add same scale force twice,Specified; not executed in live runtime
+FAN-29,An object has a magical name,"Do not infer attack mode, access, cost or immunity from title",Specified; not executed in live runtime
+FAN-30,Switch between Core v3.2 and Fantasy v1.0 algorithm,Bind one runtime owner per causal effect; require reconciliation of native profile,Specified; not executed in live runtime
+FAN-31,Setting archetype referenced,"Reference lookup does not spawn actor, object, stock or quest",Specified; not executed in live runtime
+FAN-32,Campaign begins with older accepted rule,Preserve campaign state/old rules until authorized prospective migration,Specified; not executed in live runtime
+FAN-33,Material label implies price or rarity,Reject automatic numeric value; setting/market provides it,Specified; not executed in live runtime
+FAN-34,NPC temple receives petition without PC direction,"NPC/deity autonomy proceeds by commitments, knowledge and resources",Specified; not executed in live runtime
+FAN-35,Reanimated corpse and owner identity,Asset/corpse state remains separate from consciousness/actor identity,Specified; not executed in live runtime
+FAN-36,Wing hit table differs from creature anatomy,Anatomy gates table; no universal humanoid or winged hit-location imposition,Specified; not executed in live runtime
+FAN-37,Local magical transport consumes charge,Debit one charge and record movement once; don't debit another equivalent fuel pool,Specified; not executed in live runtime
+FAN-38,Extraordinary material constructed,Material properties/quality/construction are not additive full protection profiles,Specified; not executed in live runtime
+FAN-39,Caster has no capability despite magical paradigm enabled,Paradigm prevalence not individual access; reject attempt,Specified; not executed in live runtime
+FAN-40,New invented paradigm template lacks counterplay,"Hold activation until explicit limits, persistence and causal channel",Specified; not executed in live runtime

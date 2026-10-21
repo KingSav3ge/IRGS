@@ -1,0 +1,210 @@
+{
+  "engine": "SPACE",
+  "required_providers": {
+    "resolution_agency": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      90
+    ],
+    "time_events": [
+      10,
+      11,
+      12,
+      47,
+      62,
+      85,
+      90,
+      91,
+      96
+    ],
+    "actors_conditions": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      64,
+      68,
+      69,
+      70,
+      71,
+      106,
+      118,
+      122
+    ],
+    "stock_economy": [
+      12,
+      20,
+      22,
+      24,
+      35,
+      36,
+      37,
+      38,
+      105,
+      109,
+      114
+    ],
+    "assets_components": [
+      21,
+      23,
+      48,
+      49,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      101
+    ],
+    "work_services": [
+      23,
+      41,
+      43,
+      71,
+      72,
+      73,
+      101,
+      102,
+      103,
+      104,
+      107,
+      108,
+      110,
+      119,
+      121
+    ],
+    "information": [
+      2,
+      30,
+      60,
+      61,
+      79,
+      85,
+      86,
+      115,
+      120
+    ],
+    "institutions_life": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      38,
+      39,
+      40,
+      44,
+      45,
+      46,
+      65,
+      66,
+      67,
+      68,
+      69,
+      76,
+      107,
+      113,
+      117,
+      122
+    ],
+    "content_modules": [
+      88,
+      97,
+      98,
+      99,
+      111,
+      112
+    ],
+    "competitions": [
+      6,
+      47,
+      61,
+      91,
+      99,
+      112,
+      123
+    ],
+    "maritime": [
+      116
+    ]
+  },
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "domains": [
+    "GOV",
+    "ECO",
+    "INV",
+    "MAR",
+    "CIV",
+    "MED",
+    "WILD",
+    "INTEL",
+    "URBAN",
+    "LIFE"
+  ],
+  "local_models": [
+    "frames, epoch and ephemerides",
+    "flight/propulsion/arrival envelopes",
+    "pressure, chemistry, thermal/EVA models",
+    "moving-endpoint signal/link models",
+    "ISRU and interstellar/relativistic setting selections"
+  ],
+  "local_records": [
+    "SPACE.FlightState",
+    "SPACE.ContactPlan",
+    "SPACE.RemoteCommand",
+    "SPACE.PressureZone",
+    "SPACE.ThermalState",
+    "SPACE.SiteAssessment",
+    "SPACE.SettlementTransition"
+  ],
+  "content": [
+    "SPACE-LIB@0.1",
+    "IRGS-SCL-1.0"
+  ],
+  "shared_legacy_runtime_dependencies": [],
+  "retained_local_model_dependencies": [
+    "frames, epoch and ephemerides",
+    "flight/propulsion/arrival envelopes",
+    "pressure, chemistry, thermal/EVA models",
+    "moving-endpoint signal/link models",
+    "ISRU and interstellar/relativistic setting selections"
+  ],
+  "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+  "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+  "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+  "finalization_gate": {
+    "shared_provider_specification": "complete_with_this_manifest",
+    "native_model_selection": "required_before_dependent_use",
+    "live_playtest": "outstanding",
+    "numerical_calibration": "not_claimed",
+    "source_deprecation": false
+  },
+  "binding_id": "IRGS-BIND-SPACE-3.2",
+  "core_ref": "IRGS-CORE-3.2",
+  "catalogue_ref": "IRGS-SCL-1.0",
+  "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+  "source_deprecation": false,
+  "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+  "maintenance_revision": "R3"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "app_line": "3.3.3.A",
+  "engine_line": "3.3.3.E",
+  "ui_edition": "UI1",
+  "repository": "KingSav3ge/IRGS",
+  "target_branch": "3.3.3.A",
+  "base_commit": "f7db87a2cf7e6b259d81f816b063282721ccc68f",
+  "base_tree": "db5af29e2250ce930f9cf2b7e496522e75cc01ba",
+  "source_archive": "C:\\Users\\ian_c\\Downloads\\IRGS-3.3.2.Emergent.zip",
+  "source_archive_sha256": "90a8608585a404851e84a155703c3802a0a8df1357883f9b197e246252082e52",
+  "integration": "preferred_visual_language_ported_to_existing_canonical_solo_app",
+  "source_framework_migration": false,
+  "alternate_backend_activated": false,
+  "canonical_runtime_python_changed": false,
+  "campaign_data_rewritten": false,
+  "existing_save_contents_match_baseline_ignoring_active_trash_path": true,
+  "frontend_checks_passed": 30,
+  "source_files_verified": 117,
+  "browser_checked": [
+    "home",
+    "content_library",
+    "creation_dialog_without_creation",
+    "play"
+  ],
+  "general_action_resolution": false,
+  "automatic_time_advance": false,
+  "publication_status": "PREPARED_FOR_PUBLICATION",
+  "publication_authorization": "User explicitly requested publication of the engine and Website/UI updates on 3.3.3.E and 3.3.3.A in this conversation"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS for listed structural/synthetic checks; not playtested or calibrated",
+  "tests": [
+    {
+      "test": "verify_full_release.py",
+      "exit_code": 0,
+      "last_output": [
+        "PASS: 86 package/reconciliation checks; 279 families; 228 held drafts; 420 acceptance specs; normative files preserved"
+      ],
+      "stderr_excerpt": ""
+    },
+    {
+      "test": "verify_maturation_r1.py",
+      "exit_code": 0,
+      "last_output": [
+        "IRGS SCL Maturation R1: 116/116 structural/synthetic checks passed."
+      ],
+      "stderr_excerpt": ""
+    },
+    {
+      "test": "verify_maturation_r2.py",
+      "exit_code": 0,
+      "last_output": [
+        "PASS: manifest; 192 detailed dossiers; 228/228 coverage; alias/provenance invariants; bounded synthetic causal fixtures"
+      ],
+      "stderr_excerpt": ""
+    }
+  ],
+  "limitations": [
+    "R1/R2 authored acceptance cases are not executed in a full IRGS runtime",
+    "No implicit adoption or release of 228 holds",
+    "No universal numerical performance defaults inferred"
+  ]
+}

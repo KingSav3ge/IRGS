@@ -1,0 +1,99 @@
+{
+  "id": "IRGS-BIND-SHINOBI-CORE-3.3",
+  "genre_id": "shinobi",
+  "core_ref": "IRGS-CORE-3.3",
+  "core_version": "3.3",
+  "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+  "source_status": "Proposed complete Core 3.2 receiving edition; source mechanics retained",
+  "source_core_ref": "IRGS-CORE-3.2",
+  "source_files": [
+    {
+      "path": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+      "sha256": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+      "bytes": 186714
+    },
+    {
+      "path": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json",
+      "sha256": "16d1c16c9ff9dc94aadc8a4f57a59f591e45bd734025bad7804f1cdce9694a95",
+      "bytes": 6102
+    }
+  ],
+  "shared_library": "shared",
+  "library_ids": [
+    "shared",
+    "shinobi"
+  ],
+  "runtime_class": "core_world.CoreWorld",
+  "runtime_operations": [
+    "commit_activity",
+    "confirm_character_field",
+    "establish_stock",
+    "receive_evidence",
+    "receive_order",
+    "record_capacity",
+    "record_delegation",
+    "record_design",
+    "record_entity_eligibility",
+    "record_entity_relation",
+    "record_evidence",
+    "record_obligation",
+    "record_player_action",
+    "register_actor",
+    "register_entity",
+    "revoke_delegation",
+    "select_entity_control",
+    "set_scene",
+    "transfer_stock",
+    "transition_entity"
+  ],
+  "runtime_operation_inventory": "runtime/core_world.py:CORE_OPS",
+  "bounded_receiver_operations": [
+    "revoke_delegation"
+  ],
+  "bounded_receiver_source": "runtime/genre_receivers.py:GENRE_OPS",
+  "runtime_sources_sha256": {
+    "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+    "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+  },
+  "lookup_operations": [
+    "classify_record"
+  ],
+  "specialty_runtime_operations": [
+    "revoke_delegation"
+  ],
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "profile_requirements": [
+    "SSN native 2d6 task and d20 Precision; no parallel Core d100",
+    "SSN HP/SP/CU and action economy; no parallel Fantasy Threat",
+    "Explicit abstract-to-physical bridge in persistent mode",
+    "Exact permitted technique, finite cost, affected existing owners and actor knowledge"
+  ],
+  "compatibility_research_receivers": {
+    "operations": [],
+    "runtime": "runtime/r9_adapters.py",
+    "scope": "Synthetic R9 research state only; not this campaign route",
+    "certifies_native_engine": false
+  },
+  "single_state": "All effects use the selected campaign's authoritative Core owners and clock",
+  "selection_authority": "User requested live Core 3.3 plus genre engines and content libraries",
+  "activation_effect": "Selects routing and available source references; does not adopt proposed numbers or create instances",
+  "automatic_source_adoption": false,
+  "automatic_campaign_migration": false,
+  "numeric_profile_adoption": false,
+  "source_deprecation": false,
+  "certification": "This catalogue and binding make no execution or branch certification claim",
+  "limitations": [
+    "Native resolution/chakra/technique execution is a source reference, not an implemented Core 3.3 specialty receiver",
+    "415 legacy techniques are unconverted and blocked; AP, CSLS and million-unit CU cannot be imported directly"
+  ]
+}

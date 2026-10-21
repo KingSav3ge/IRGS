@@ -1,0 +1,21 @@
+{
+  "purpose": "Immutable source records from the two published updates. Their original path bases describe those commits, not this relocated checkout.",
+  "engine": {
+    "commit": "96af47961b33df83031f98d0524415bba299ce03",
+    "original_root_README": "3.3.3.E/README.md",
+    "original_manifest": "3.3.3.E/PACKAGE_MANIFEST.json"
+  },
+  "app": {
+    "commit": "2022c922fb10bbcb1bb08c1ef160e38d6f449f8d",
+    "original_prefix": "app/",
+    "metadata": "3.3.3.A/"
+  },
+  "active_manifest": "../DEVELOPMENT_MANIFEST.json",
+  "relocations": {
+    "app/IRGS_Web/": "IRGS_Web/",
+    "app/IRGS_3_3/release.json": "IRGS_3_3/release.json",
+    "app/non-source_metadata": "provenance/3.3.3.A/",
+    "engine/": "engine/"
+  },
+  "original_source_rules_changed": false
+}

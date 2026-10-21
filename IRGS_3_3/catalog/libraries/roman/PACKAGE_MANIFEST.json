@@ -1,0 +1,80 @@
+{
+  "document_id": "IRGS-RRCL-1.0",
+  "release_date": "2026-10-14",
+  "status": "Proposed; no campaign migration",
+  "files": {
+    "IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md": {
+      "bytes": 64410,
+      "sha256": "3018fd00c489fe50dd3b1c448956fccb950d3273206300543197268fceece370"
+    },
+    "README.md": {
+      "bytes": 1355,
+      "sha256": "113a142ca922abcc6b7ad3c4059989cb252ad1726c3baeaa8680fb1348a2d5b6"
+    },
+    "Roman_Acceptance_Specifications_v1_0.csv": {
+      "bytes": 16763,
+      "sha256": "7bdf0271153c67788faec131d6741ed6f3435ddef8effe8f70f6d54ae9af2309"
+    },
+    "Roman_CMRR_Qualification_Report.md": {
+      "bytes": 2813,
+      "sha256": "fdb1faa92884cf806126874343c026b8f01fd9bfbd8151a9bbd95f96ae13ab03"
+    },
+    "Roman_CMRR_Section_Dispositions_v1_0.csv": {
+      "bytes": 6215,
+      "sha256": "e02a47fc119ec9619273f237f61537b6965d46d5f75e11feebbbafc6092dcf52"
+    },
+    "Roman_Calibration_Gates_v1_0.csv": {
+      "bytes": 5607,
+      "sha256": "a887953dfa79246a869f41dda30ded5f120bf23d7ce560d695ed352bcd3dab49"
+    },
+    "Roman_Content_Catalogue_v1_0.csv": {
+      "bytes": 67502,
+      "sha256": "3f137e2976c65b3852735c370d96e72da5de50e92b21ac0d75e1c31c463ba5ec"
+    },
+    "Roman_Content_Catalogue_v1_0.json": {
+      "bytes": 114994,
+      "sha256": "7ad766d40830f22e7e32b9e3bc68ae95e516f38c605f9373aaf1e0f2cc1e617c"
+    },
+    "Roman_Native_SCL_Crosswalk_v1_0.csv": {
+      "bytes": 4868,
+      "sha256": "34549f8ba4c619d4fcbdfdbbf349ca06b90f6ee0bc12d241c8d9574e4e443f04"
+    },
+    "SOURCE_PINS.json": {
+      "bytes": 808,
+      "sha256": "a1de5f6b8fac053bc4409b8abf6959f4a88cd7849be05d8e489f697fe965ac3b"
+    },
+    "VALIDATION_REPORT.md": {
+      "bytes": 1865,
+      "sha256": "bfd1c762d7ae6d63fb74e7119cdd609fcb4ddda5f299f75fca855a822c188de9"
+    },
+    "sources/Core_v3_2_Receiving_Bindings_ReadOnly.json": {
+      "bytes": 39652,
+      "sha256": "e7d6a4250921787b673e4c2974711b3dc53a3b5d3a344a09da8ec9995242b0b7"
+    },
+    "sources/IRGS_Roman_Republic_Full_v1_0_Historical_Source.md": {
+      "bytes": 111970,
+      "sha256": "0a77a92d7ee6140566baa85f199dc3b4eec9a57544aa0785258d2dfa44bf82a4"
+    },
+    "sources/IRGS_Roman_Republic_Slim_v1_2_Accepted.md": {
+      "bytes": 36726,
+      "sha256": "402c80e30727b086bd4b5289154f29679aac08494ae303734a3f3c26961a1710"
+    },
+    "sources/Roman_v1_2_Native_Content_Bindings_Unchanged.json": {
+      "bytes": 18621,
+      "sha256": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a"
+    },
+    "sources/SCL_v1_0_Registry_ReadOnly.json": {
+      "bytes": 2081427,
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9"
+    },
+    "tests/verify_roman_content_release.py": {
+      "bytes": 11640,
+      "sha256": "50776519f77d896f6ebce8d24650755b72836c392183f853d06a17e9063928e1"
+    },
+    "sources/Core_v3_2_Receiving_Bindings_R3.json": {
+      "bytes": 42828,
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c"
+    }
+  },
+  "maintenance_revision": "R3"
+}

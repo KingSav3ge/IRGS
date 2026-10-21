@@ -1,0 +1,125 @@
+{
+  "id": "AST-CAMPAIGN-PROFILE-CORE-3.3",
+  "profile_id": "ast",
+  "type": "campaign_profile",
+  "genre_id": "military",
+  "library_ids": [
+    "shared",
+    "military",
+    "ast"
+  ],
+  "core_ref": "IRGS-CORE-3.3",
+  "status": "LIVE_LOCAL_CAMPAIGN_LIBRARY_ROUTING",
+  "campaign_procedure_source": "catalog/libraries/ast/AST_Engine_v0_5.md",
+  "ast_is_standalone_engine": false,
+  "registry_file": "catalog/libraries/ast/ast_registry.json",
+  "registry_use": "User-confirmed post-Day-2 guide for existing characters entering Day 3",
+  "canonical_horse_name": "Abel",
+  "selected_resolution": "Recovered AST-R01 d100 bands; other numerical defaults remain unresolved",
+  "unselected_profiles": [
+    "physiology",
+    "combat effect",
+    "learning rate"
+  ],
+  "runtime_operations": [
+    "commit_activity",
+    "confirm_character_field",
+    "establish_stock",
+    "military_issue_equipment",
+    "receive_evidence",
+    "receive_order",
+    "record_capacity",
+    "record_delegation",
+    "record_design",
+    "record_entity_eligibility",
+    "record_entity_relation",
+    "record_evidence",
+    "record_obligation",
+    "record_player_action",
+    "register_actor",
+    "register_entity",
+    "revoke_delegation",
+    "select_entity_control",
+    "set_scene",
+    "transfer_stock",
+    "transition_entity"
+  ],
+  "lookup_operations": [
+    "classify_record"
+  ],
+  "no_automatic_day_advance": true,
+  "registry_provisional_ratings_adopted": false,
+  "existing_save_policy": "Existing saved facts, clock, IDs and journal prevail; no overwrite or retroactive migration",
+  "source_files": [
+    {
+      "path": "catalog/libraries/ast/AST_Art_Direction_v0_5.md",
+      "sha256": "887d5b35121fe4399d6f4a207a08362bc533caabedd3040852ba09bc4c933f7f",
+      "bytes": 33003
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Content_Library_v0_5.md",
+      "sha256": "941432e39ebd4bbaead08811ed3e6bbe3e6a655da6628e96d89dab52bada219d",
+      "bytes": 50723
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Engine_v0_5.md",
+      "sha256": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
+      "bytes": 52578
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Receiving_Binding_v0_5.json",
+      "sha256": "dd003e222f78808ffd4ba5ffcf63b8e3fc8d6d60ecc61e1690db6d1fe3682df4",
+      "bytes": 6253
+    },
+    {
+      "path": "catalog/libraries/ast/CMRR_Chat_Continuity_v0_5.md",
+      "sha256": "22aa9df5bf6e0141a8a9edefe448282f57ee3ef1d3c62b17a7310a2abe38ed8e",
+      "bytes": 9094
+    },
+    {
+      "path": "catalog/libraries/ast/IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+      "sha256": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935",
+      "bytes": 30000
+    },
+    {
+      "path": "catalog/libraries/ast/PACKAGE_MANIFEST_v0_5.json",
+      "sha256": "6166321533b1c72629e12bd38afc83d59eb12a8e1c14ed78c46d1fa0a8f12e82",
+      "bytes": 6629
+    },
+    {
+      "path": "catalog/libraries/ast/README.md",
+      "sha256": "e4d9342393c385464e99336020739f8c015e57519cb1956a333dc0364d0b8dd5",
+      "bytes": 3537
+    },
+    {
+      "path": "catalog/libraries/ast/references/Visual_Reference_Map.json",
+      "sha256": "797d9d3ae106a3fd761decf251435fe48b0e2cf1570ceec453c4ec41ad1ba23a",
+      "bytes": 14096
+    },
+    {
+      "path": "catalog/libraries/ast/references/Visual_References.md",
+      "sha256": "44f013ec7e59534709146b4445866e6fa4b4662543c70811916d79fb2d4c0e10",
+      "bytes": 10134
+    },
+    {
+      "path": "catalog/libraries/ast/ast_registry.json",
+      "sha256": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
+      "bytes": 52305
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Master_Character_Registry_Archive_Audited_v2.docx",
+      "sha256": "a16e52e3f7f45fd712af58436dcc111ad5e724f77fa52630ba5d4fcb7b2ac477",
+      "bytes": 47569
+    },
+    {
+      "path": "catalog/libraries/ast/asset_references.json",
+      "sha256": "1d86adc8565d200f0b225237fb7303ca5c195c78a26a9f50f7979a1a87523089",
+      "bytes": 20187
+    }
+  ],
+  "bounded_receiver_operations": [
+    "military_issue_equipment",
+    "revoke_delegation"
+  ],
+  "automatic_numeric_adoption": false
+}

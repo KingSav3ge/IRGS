@@ -1,0 +1,16 @@
+{
+  "run_date": "2026-10-14",
+  "scope": "Deterministic document/source registry verification; not gameplay",
+  "passed": 440,
+  "total": 440,
+  "failed": 0,
+  "source_rows": 415,
+  "retained_original_records": 122,
+  "combined_records": 537,
+  "significant_unresolved": [
+    "Legacy CU/AP/CSLS incompatible with R0.3, 415 rows blocked",
+    "Fan-reference screenshot PDF results remain discovery-only",
+    "Actual balance/playtest and consent to adopt new content are not established"
+  ],
+  "statement": "Checks compare source rows, original records, hashes, IDs, counts and archival readiness. They do not certify usability of legacy techniques."
+}

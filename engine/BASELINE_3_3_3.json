@@ -1,0 +1,13 @@
+{
+  "source": "IRGS-3.3.3.zip",
+  "sha256": "f1efda6c1747f5cba3c00f0983aac56ed4fc1deab31a208c7a59cea1f7e01c6c",
+  "payload_files_verified": 274,
+  "runtime_python_files_unchanged": 57,
+  "selected_core": "3.3",
+  "development_designations": {
+    "engine_core": "3.3.3.E",
+    "app_web": "3.3.3.A"
+  },
+  "source_instructions_treated_as_reference": true,
+  "provided_scripts_executed": false
+}

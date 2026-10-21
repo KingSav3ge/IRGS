@@ -1,0 +1,112 @@
+[
+  {
+    "filename": "A Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank A, Ninjutsu filtered",
+    "visible_result_count": 52,
+    "pages": 4,
+    "sha256": "6dfcc4994707185b55983deb2ac2899c2c4fe047084d6bc352b229ddadae2890",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "B Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank B, Ninjutsu filtered",
+    "visible_result_count": 85,
+    "pages": 5,
+    "sha256": "16be52d17c24065e21680ee747fcedd80f82f7ce40242953ef674aaf080d1bf0",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "C Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank C, Ninjutsu filtered",
+    "visible_result_count": 42,
+    "pages": 4,
+    "sha256": "fd33696a0d3c4b1be496bf4ceac90fb8947d8c0a1bbff508b8740801a85f3d56",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "D Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank D, Ninjutsu filtered",
+    "visible_result_count": 14,
+    "pages": 3,
+    "sha256": "7988ee33479dfbd493b6b6d65e38ce0dce9de32d10cf812b91270eea76b087f2",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "E Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank E, Ninjutsu filtered",
+    "visible_result_count": 6,
+    "pages": 3,
+    "sha256": "93416c0e56cabd0954e58198f2c0d95018be188a12881fbd17f6100417ad5635",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "S Rank.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Rank S, broader Jutsu query",
+    "visible_result_count": 24,
+    "pages": 4,
+    "sha256": "4b18adb32c4db18084f6d9e097b8f276243617621279d201b6a4c877ba2d68e3",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "Justu Pt 1.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Ninjutsu browse rows 1–500",
+    "visible_result_count": 500,
+    "pages": 10,
+    "sha256": "fbfc587acf0848042e9eed7446becf5dc9ad98fc571ff6e7f974734b8fc94224",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "Jutsu Pt 2.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Ninjutsu browse rows 501–1,000",
+    "visible_result_count": 500,
+    "pages": 11,
+    "sha256": "96161b81b9c6e651ec0310cff16a003161763b4d8fb87c582c0602e4e56e1bb5",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "Jutsu Pt 3.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Ninjutsu browse rows 1,001–1,500",
+    "visible_result_count": 500,
+    "pages": 11,
+    "sha256": "6d7b9b9c12b8388db6e8603bebc83b228e5cd38ee83f0728aeb768e46be4769d",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "Jutsu Pt 4.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Ninjutsu browse rows 1,501–2,000",
+    "visible_result_count": 500,
+    "pages": 11,
+    "sha256": "2c2b0cc928addc67682b9955896447a66c042133a6a6c9e1a2f9b8249e4d5956",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  },
+  {
+    "filename": "Jutsu Pt 5.pdf",
+    "source_kind": "user_uploaded_browse_screenshot_pdf",
+    "scope": "Ninjutsu browse rows 2,001–2,280",
+    "visible_result_count": 280,
+    "pages": 8,
+    "sha256": "bb7a708d3286f2bd40e738ebfa00146709e8b403b0c3d601f068e0c444b0a6c6",
+    "readiness": "reference_only_not_mechanically_converted",
+    "note": "Browse-result count is snapshot metadata, not a number of complete source definitions. Overlap across rank filters and browse pages must not be added as unique SNCL content."
+  }
+]

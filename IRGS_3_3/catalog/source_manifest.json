@@ -1,0 +1,1306 @@
+{
+  "schema_version": 1,
+  "core_ref": "IRGS-CORE-3.3",
+  "scope": "Bundled source bytes and generated prospective receiving metadata",
+  "files": [
+    {
+      "path": "catalog/design_references/epoch_history_spec_v1_0.md",
+      "sha256": "a1154f7c16c80dd7198112d4cc3b6858a2bcffe610f7e8c8f41103fe1e5b46c2",
+      "bytes": 31602,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "Referenced history hierarchy and proposed contracts; no memory service activated by copying this file"
+    },
+    {
+      "path": "catalog/design_references/gameplay_screen_proposal_v0_1.md",
+      "sha256": "dac339fb65a5eb7ac731392878c49b59b97e9606e1e83ab5db1e2b034b7ec5ff",
+      "bytes": 40057,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "Referenced screen design proposal; its example dialogue and scenes are not campaign facts"
+    },
+    {
+      "path": "catalog/design_references/historical_timeline_event_framework_v0_2.md",
+      "sha256": "db093854c0400fe0746f2c28828aa06f38c14dff25b57ae106998c6c0e443a36",
+      "bytes": 45439,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "User-supplied design proposal: integrated within the separately documented operational scope; examples are not actual campaign events"
+    },
+    {
+      "path": "catalog/design_references/hyw_campaign_design_integration_v0_3.md",
+      "sha256": "03e79431d75f46a8a754828024525a323e74281effb19e88b23dd103a2d352b7",
+      "bytes": 37144,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "User-supplied design proposal: integrated within the separately documented operational scope; examples are not actual campaign events"
+    },
+    {
+      "path": "catalog/design_references/stage1_patch_cmrr_audit_v1_1.md",
+      "sha256": "4f5155e1189ba67026df68558f711724be51d887cb6fdc7301ad7b3eecdee948",
+      "bytes": 30334,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "User-supplied proposed integration reference; claims about prior approvals and audit results are not independent authorization or live verification"
+    },
+    {
+      "path": "catalog/design_references/unified_master_proposed_v1_1.md",
+      "sha256": "7515928d715c7c2630c52e22822dfe9be7b76ba587675bb41388a721bebe4741",
+      "bytes": 454221,
+      "origin": "User-supplied design reference",
+      "role": "design_reference",
+      "source_status": "User-supplied proposed integration reference; claims about prior approvals and audit results are not independent authorization or live verification"
+    },
+    {
+      "path": "catalog/genres/fantasy/receiving_core_3_3.json",
+      "sha256": "e3da38d990c4998b453e00f6bee9a1d87b4c781d6203adecaaa7208884b42d6e",
+      "bytes": 3946,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Binding_v1_2_Core3_2.json",
+      "sha256": "cc145d2f7b60ee62789700f31668bc7ff6b4deed88e45d42d04537fea8c3ab1d",
+      "bytes": 130656,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/IRGS_Fantasy_Binding_v1_2_Core3_2.json",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained"
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Content_Map_v1_2_Core3_2.csv",
+      "sha256": "f4a5db41e8f7a7108a21562c95a8b42811006c482de4130eff33b10890c08fb8",
+      "bytes": 45814,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/IRGS_Fantasy_Content_Map_v1_2_Core3_2.csv",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained"
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+      "sha256": "b53e6d01fa8c01af6247cf2409f064b2149dd10fd3f22374eb71c78d27940977",
+      "bytes": 106680,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained"
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Reconciliation_v1_2.csv",
+      "sha256": "0f7a4bb8def4213171ad4a2fc92fb760a69e61caa9db5ef17e1ad995f030f7a5",
+      "bytes": 66885,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/IRGS_Fantasy_Reconciliation_v1_2.csv",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained"
+    },
+    {
+      "path": "catalog/genres/military/receiving_core_3_3.json",
+      "sha256": "af9a609eee6b0c08276372bff6999ff623154db8a29fe8fe46cb62700bca266a",
+      "bytes": 4047,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "sha256": "05261ad3a7ee1fcbf87f108e9e30d12978eb6ad6cb34ebfcfc404bce42784199",
+      "bytes": 4090,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "role": "preserved_source",
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted"
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "sha256": "c93ba6fb3974b81852f1ca2dc9e03cb5db2aa050e1b65782df404c7b4940dec2",
+      "bytes": 63987,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "role": "preserved_source",
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted"
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/Military_1_0_to_1_2_CMRR.csv",
+      "sha256": "3b137e5a24ef1431c7d8b6a3dd0627c5a1a25b86048aa6171cd21c3951c0e477",
+      "bytes": 2719,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitarySlim/Military_1_0_to_1_2_CMRR.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted"
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/Military_Current_SCL_Reference_Recheck.json",
+      "sha256": "28ac844ce082e38e3ed0a70880a6f2cd74304988d8a90f924c5b652d73ac5e5f",
+      "bytes": 2316,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitarySlim/Military_Current_SCL_Reference_Recheck.json",
+      "role": "preserved_source",
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted"
+    },
+    {
+      "path": "catalog/genres/paf/receiving_core_3_3.json",
+      "sha256": "99d41362d0a7346701498052feebc90d4034da70542cbb81c81c6fbe289b21cb",
+      "bytes": 3855,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Acceptance_Inventory_v2_1.json",
+      "sha256": "a35dc92b0af9e8fe046e1239ebeff11f88957fa89e8920d439da7415fd03269a",
+      "bytes": 107047,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/IRGS_PAF_Acceptance_Inventory_v2_1.json",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct"
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Binding_v2_1_Core3_2.json",
+      "sha256": "fce68b04cd46d0461a5c7fceab7cc2447274ce2a2bc3980f3cc42f0207a60cd3",
+      "bytes": 170685,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/IRGS_PAF_Binding_v2_1_Core3_2.json",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct"
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Content_References_v2_1.csv",
+      "sha256": "5f85d4e9cdde90155ba70051ad74897d666c47fb1787261776bfab086ac5c88f",
+      "bytes": 82811,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/IRGS_PAF_Content_References_v2_1.csv",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct"
+    },
+    {
+      "path": "catalog/genres/paf/source/IRGS_PAF_Engine_v2_1_Core3_2.md",
+      "sha256": "293f08601de8504418531c15e6a4a3d5a3d3a5f1601de7956636ab40bb28f24a",
+      "bytes": 107401,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/IRGS_PAF_Engine_v2_1_Core3_2.md",
+      "role": "preserved_source",
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct"
+    },
+    {
+      "path": "catalog/genres/roman/receiving_core_3_3.json",
+      "sha256": "198345cc7e469974229a1aa637256bf923e4914023eb64b3f3a04a4a543c71b9",
+      "bytes": 3919,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/roman/source/IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+      "sha256": "5f6e0742f0bc69dd9bd76c027000bda0d2b1c8c61120498b394483a0ce0e8318",
+      "bytes": 36727,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+      "role": "preserved_source",
+      "source_status": "Accepted finalized workshop reference; numerical and historical calibration provisional"
+    },
+    {
+      "path": "catalog/genres/roman/source/ROMAN_SUITE_DEPLOYMENT_BINDING.json",
+      "sha256": "1659b2927aee015f78cae27b2bd5a2c304bdcd174fbf2632692e76b17d5c68d3",
+      "bytes": 2609,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/ROMAN_SUITE_DEPLOYMENT_BINDING.json",
+      "role": "preserved_source",
+      "source_status": "Accepted finalized workshop reference; numerical and historical calibration provisional"
+    },
+    {
+      "path": "catalog/genres/roman/source/roman_republic_slim_v1_2/content_bindings.json",
+      "sha256": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
+      "bytes": 18621,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/roman_republic_slim_v1_2/content_bindings.json",
+      "role": "preserved_source",
+      "source_status": "Accepted finalized workshop reference; numerical and historical calibration provisional"
+    },
+    {
+      "path": "catalog/genres/shinobi/receiving_core_3_3.json",
+      "sha256": "15f6235087e5408aec8111502eb70e28f7876def99bdf5d4a1bb6c428d2c7e97",
+      "bytes": 3600,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json",
+      "sha256": "16d1c16c9ff9dc94aadc8a4f57a59f591e45bd734025bad7804f1cdce9694a95",
+      "bytes": 6102,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json",
+      "role": "preserved_source",
+      "source_status": "Proposed complete Core 3.2 receiving edition; source mechanics retained"
+    },
+    {
+      "path": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+      "sha256": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+      "bytes": 186714,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+      "role": "preserved_source",
+      "source_status": "Proposed complete Core 3.2 receiving edition; source mechanics retained"
+    },
+    {
+      "path": "catalog/genres/space/receiving_core_3_3.json",
+      "sha256": "be7787e8ebbea58b4cc02c0b67e7f6902e9c53b96f3a2ddf682d8d4d00a33fb0",
+      "bytes": 3662,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_receiving_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md",
+      "sha256": "a3c290917fe04c76384204605b042d6214648d8b24988ebcb67358b29e8a4901",
+      "bytes": 99686,
+      "origin": "IRGS/IRGS_Space_Exploration_and_Colonization_Slim_v0_2_Core3_2_R2/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md",
+      "role": "preserved_source",
+      "source_status": "Complete proposed CMRR specification; no calibration or automatic campaign adoption"
+    },
+    {
+      "path": "catalog/genres/space/source/content_bindings.json",
+      "sha256": "acc68d89e2c500945e9da25bab01e2a68a236ac6b3e8cfa9417097eb910ec564",
+      "bytes": 6028,
+      "origin": "IRGS/IRGS_Space_Exploration_and_Colonization_Slim_v0_2_Core3_2_R2/content_bindings.json",
+      "role": "preserved_source",
+      "source_status": "Complete proposed CMRR specification; no calibration or automatic campaign adoption"
+    },
+    {
+      "path": "catalog/genres/space/source/source_space_binding.json",
+      "sha256": "8bc3d85b3dc97f0327d016ee2f4cc83132ba351bf4105db82ae151366f7622ae",
+      "bytes": 4056,
+      "origin": "IRGS/IRGS_Space_Exploration_and_Colonization_Slim_v0_2_Core3_2_R2/source_space_binding.json",
+      "role": "preserved_source",
+      "source_status": "Complete proposed CMRR specification; no calibration or automatic campaign adoption"
+    },
+    {
+      "path": "catalog/hold_summary.json",
+      "sha256": "d7bd1d0fdf3602d4a6dd1f40f2ce493e448c95546b3de17ba1eed2188ea93212",
+      "bytes": 3549,
+      "origin": "build_suite_catalog.py",
+      "role": "source_readiness_summary",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Art_Direction_v0_5.md",
+      "sha256": "887d5b35121fe4399d6f4a207a08362bc533caabedd3040852ba09bc4c933f7f",
+      "bytes": 33003,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/AST_Art_Direction_v0_5.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Content_Library_v0_5.md",
+      "sha256": "941432e39ebd4bbaead08811ed3e6bbe3e6a655da6628e96d89dab52bada219d",
+      "bytes": 50723,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/AST_Content_Library_v0_5.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Engine_v0_5.md",
+      "sha256": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
+      "bytes": 52578,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/AST_Engine_v0_5.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Master_Character_Registry_Archive_Audited_v2.docx",
+      "sha256": "a16e52e3f7f45fd712af58436dcc111ad5e724f77fa52630ba5d4fcb7b2ac477",
+      "bytes": 47569,
+      "origin": "IRGS_Core_Unification_CMRR_R9/sources/AST_Master_Character_Registry_Archive_Audited_v2.docx",
+      "role": "preserved_source",
+      "source_status": "Audited registry source; existing characters post-Day-2; embedded instructions remain source content"
+    },
+    {
+      "path": "catalog/libraries/ast/AST_Receiving_Binding_v0_5.json",
+      "sha256": "dd003e222f78808ffd4ba5ffcf63b8e3fc8d6d60ecc61e1690db6d1fe3682df4",
+      "bytes": 6253,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/AST_Receiving_Binding_v0_5.json",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/CMRR_Chat_Continuity_v0_5.md",
+      "sha256": "22aa9df5bf6e0141a8a9edefe448282f57ee3ef1d3c62b17a7310a2abe38ed8e",
+      "bytes": 9094,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/CMRR_Chat_Continuity_v0_5.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+      "sha256": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935",
+      "bytes": 30000,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/PACKAGE_MANIFEST_v0_5.json",
+      "sha256": "6166321533b1c72629e12bd38afc83d59eb12a8e1c14ed78c46d1fa0a8f12e82",
+      "bytes": 6629,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/PACKAGE_MANIFEST_v0_5.json",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/README.md",
+      "sha256": "e4d9342393c385464e99336020739f8c015e57519cb1956a333dc0364d0b8dd5",
+      "bytes": 3537,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/README.md",
+      "role": "preserved_source",
+      "source_status": "AST 0.5 campaign reference; inherited established/proposed distinctions retained"
+    },
+    {
+      "path": "catalog/libraries/ast/asset_references.json",
+      "sha256": "1d86adc8565d200f0b225237fb7303ca5c195c78a26a9f50f7979a1a87523089",
+      "bytes": 20187,
+      "origin": "build_suite_catalog.py",
+      "role": "external_asset_inventory",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "catalog/libraries/ast/ast_registry.json",
+      "sha256": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
+      "bytes": 52305,
+      "origin": "IRGS_3_3/data/ast_registry.json",
+      "role": "preserved_source",
+      "source_status": "User-confirmed post-Day-2 existing-character guide into Day 3; provisional ratings not adopted"
+    },
+    {
+      "path": "catalog/libraries/ast/references/Visual_Reference_Map.json",
+      "sha256": "797d9d3ae106a3fd761decf251435fe48b0e2cf1570ceec453c4ec41ad1ba23a",
+      "bytes": 14096,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/references/Visual_Reference_Map.json",
+      "role": "preserved_source",
+      "source_status": "Visual reference metadata; art is not mechanical authority"
+    },
+    {
+      "path": "catalog/libraries/ast/references/Visual_References.md",
+      "sha256": "44f013ec7e59534709146b4445866e6fa4b4662543c70811916d79fb2d4c0e10",
+      "bytes": 10134,
+      "origin": "IRGS/AST_v05/AST_v05/IRGS_AST/references/Visual_References.md",
+      "role": "preserved_source",
+      "source_status": "Visual reference metadata; art is not mechanical authority"
+    },
+    {
+      "path": "catalog/libraries/fantasy/FANTASY_RELEASE_VALIDATION.md",
+      "sha256": "f6c3a33ff2c494d5dcec4b21eba568f5508e2928d0d65935eb02858183b06401",
+      "bytes": 1981,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/FANTASY_RELEASE_VALIDATION.md",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/Fantasy_Acceptance_Cases_v2_0.csv",
+      "sha256": "4ecbc2872802d5e6698853d1526e5d124a0bcbb787bf72d95c4a88b14b9ae28f",
+      "bytes": 6060,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/Fantasy_Acceptance_Cases_v2_0.csv",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/Fantasy_CMRR_93_Sections.csv",
+      "sha256": "1ae7eb9fee7ecca606c1f10de8d7f66f017b0bf749e782e57e1391d6ed1468e9",
+      "bytes": 19444,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/Fantasy_CMRR_93_Sections.csv",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/Fantasy_Native_Source_Projection_v2_0.json",
+      "sha256": "4123a39f4d9b53800ab0e91a4bdebc539d3fad20b06775060d8a1b904c474fdb",
+      "bytes": 267627,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/Fantasy_Native_Source_Projection_v2_0.json",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/Fantasy_SCL_Crosswalk_v2_0.csv",
+      "sha256": "ea1354f9487b3ce181d578f20b735399f4a1b07829a2101cc4d33bc20deebc35",
+      "bytes": 34635,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/Fantasy_SCL_Crosswalk_v2_0.csv",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/IRGS_Fantasy_Content_Library_v2_0_Candidate.md",
+      "sha256": "562a0c15a0de6bfe5f77916682a8ee23df65abd79bda908e3d0bbaeb4f372bcd",
+      "bytes": 52981,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/IRGS_Fantasy_Content_Library_v2_0_Candidate.md",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/README.md",
+      "sha256": "8e6f1c345122d138220718cfb39502fe1014b221dedea12d24634b923f0a60ad",
+      "bytes": 1672,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/README.md",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/VERIFY_MANIFEST.json",
+      "sha256": "05ce8afdaffa7aa6f3acc9aa2448fdac7407916d496a36fcf6de865ad273eb4e",
+      "bytes": 5035,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/VERIFY_MANIFEST.json",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/fantasy/verify_fantasy_release.py",
+      "sha256": "20e609bcf0d6678fe60a7e9c2138239ba62f2b1f1613d2490667b74c59c0869d",
+      "bytes": 9356,
+      "origin": "IRGS/IRGS_Fantasy_Core32_Library20/FantasyLibrary/verify_fantasy_release.py",
+      "role": "preserved_source",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained"
+    },
+    {
+      "path": "catalog/libraries/military/IRGS_Military_Content_Catalogue_v1_0.json",
+      "sha256": "7f0ef7b23d321ee3d2e1e62595b0feedc8929a8b618b2513334195042e039fa6",
+      "bytes": 68563,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/IRGS_Military_Content_Catalogue_v1_0.json",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/IRGS_Military_Content_Library_v1_0_Candidate.md",
+      "sha256": "4b6560ac44abbfe1b01c913ab065183a91afbc4e898e090631341b42f33657d8",
+      "bytes": 63355,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/IRGS_Military_Content_Library_v1_0_Candidate.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/IRGS_Military_Library_v1_0_CMRR.md",
+      "sha256": "8ac99a2c29ed64f8339d08295c807d5cef659e347898f10213a718b765ad36f1",
+      "bytes": 3200,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/IRGS_Military_Library_v1_0_CMRR.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/Military_Acceptance_Cases_v1_0.csv",
+      "sha256": "77ceb7afb9977a038b2522f5aa4a8965224612f71d247078bf4abd98a4c676f3",
+      "bytes": 8394,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/Military_Acceptance_Cases_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/Military_Era_Category_Crosswalk_v1_0.csv",
+      "sha256": "6702a1a8127495fb7552c9d693ba7b35b77235ebc1592e2943a383ca61d3232d",
+      "bytes": 18901,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/Military_Era_Category_Crosswalk_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/Military_SCL_Reference_Crosswalk_v1_0.csv",
+      "sha256": "41311dbe447e05277c9888a18a31571299d37bdfd9f63e7190cc907e2fd85c88",
+      "bytes": 1592,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/Military_SCL_Reference_Crosswalk_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/Military_SCL_Reference_Verification_Snapshot.json",
+      "sha256": "65b60e54e88d142cf9765d33b8f662f5970e5f6d4beb74cf43e33c10b80acdf7",
+      "bytes": 3792,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/Military_SCL_Reference_Verification_Snapshot.json",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/Military_Slim_Core_3_2_Compatibility_Gate.md",
+      "sha256": "db91fae5945561381d0aa393518a2d9a9cedc4b70b64d857412dbf67875a411e",
+      "bytes": 3130,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/Military_Slim_Core_3_2_Compatibility_Gate.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/PACKAGE_MANIFEST.json",
+      "sha256": "fdb0578de0e46f66c56ff9f3c2456c601f83e5e4eab66824b8789d16f8a375e0",
+      "bytes": 2960,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/PACKAGE_MANIFEST.json",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/README.md",
+      "sha256": "8f6c5ff5a4ae4d58c12ecaf58c094291db83e483dcde5022bc2263ee06d92b1b",
+      "bytes": 1059,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/README.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/VALIDATION_REPORT.md",
+      "sha256": "0204cd26cfe4dde35febd5f2b2901374ae87f78ebd8a9e703c08b27d562e1b95",
+      "bytes": 1318,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/VALIDATION_REPORT.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/provenance/IRGS_Military_Equipment_and_Technology_Library_v0_1.md",
+      "sha256": "2b0d36498a11cf09e6acfa87febb817bacf96d4603a7ae663c300cbb85947fbf",
+      "bytes": 12990,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/provenance/IRGS_Military_Equipment_and_Technology_Library_v0_1.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/provenance/IRGS_Soldier_Military_Life_Slim_v1_0.md",
+      "sha256": "f7a5d073369637a3c2e7a082b5c4528bfb122fd725f4ed31ce335c137aca34f0",
+      "bytes": 51136,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/provenance/IRGS_Soldier_Military_Life_Slim_v1_0.md",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/military/tests/verify_military_library.py",
+      "sha256": "656f3c8436ab70c73d87b28804f1fb8a8ba93e34b91c6fd53ede5656f338150d",
+      "bytes": 6495,
+      "origin": "IRGS/IRGS_Military_Slim_v1_2_Core3_2_and_Military_Library_v1_0_Combined_Release/MilitaryLibrary/tests/verify_military_library.py",
+      "role": "preserved_source",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in"
+    },
+    {
+      "path": "catalog/libraries/paf/IRGS_Post_Apocalyptic_Content_Library_v2_0_Candidate.md",
+      "sha256": "f6939447375b7d86c59db2feff59fb87df815d0af52e8481ff97a905cc4b0968",
+      "bytes": 59275,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/IRGS_Post_Apocalyptic_Content_Library_v2_0_Candidate.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PAF_Library_Receiving_v2_1.json",
+      "sha256": "0eb663558cd43778fb7d81b1ce1bc4760b3993651283601b3f9ece96dc6b79df",
+      "bytes": 126628,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PAF_Library_Receiving_v2_1.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Acceptance_Cases_v2_0.csv",
+      "sha256": "25a54cab104f98d70bce356a02d444ef4626b479c52553dab30276289061a5d7",
+      "bytes": 13694,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Acceptance_Cases_v2_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Legacy_to_SCL_Crosswalk_v2_0.csv",
+      "sha256": "5b0417f1fa4ce9f6983f45b817b780f8efb554ef796bc7cf2b9e2e599da21410",
+      "bytes": 72354,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Legacy_to_SCL_Crosswalk_v2_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Native_Compositions_v2_0.json",
+      "sha256": "5bdff57f2545c2c70c887617a60ff9d651559097fba1e09c48139709139a22f0",
+      "bytes": 37198,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Native_Compositions_v2_0.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Package_Reconciliation_v2_1.md",
+      "sha256": "5bb4821d993fecdc101b2020debb1bf5149c6a11b61d4cc0e6765f2f145690c7",
+      "bytes": 4783,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Package_Reconciliation_v2_1.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Source_Reference_Snapshot_v2_0.json",
+      "sha256": "0931ee84e6d23f31b817118a4e17f27af21753301135faf1c76993e3058b169f",
+      "bytes": 143000,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Source_Reference_Snapshot_v2_0.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/PA_Source_Section_CMRR_v2_0.csv",
+      "sha256": "18d8162efbb4e934e748e180540477048fca90923ceecbc81d498ff000209442",
+      "bytes": 14475,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/PA_Source_Section_CMRR_v2_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/paf/README.md",
+      "sha256": "8a8d60d771160749130a0842d80fc7397ae55458efadfb784bf99e8023cf2303",
+      "bytes": 1355,
+      "origin": "IRGS/IRGS_PAF_Core32_Library20/PALibrary/README.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation"
+    },
+    {
+      "path": "catalog/libraries/roman/IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md",
+      "sha256": "3018fd00c489fe50dd3b1c448956fccb950d3273206300543197268fceece370",
+      "bytes": 64410,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/PACKAGE_MANIFEST.json",
+      "sha256": "7cc44d55cec934cb879417cf12afb825d5d670cd1d001ada57ce820fef911676",
+      "bytes": 3115,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/PACKAGE_MANIFEST.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/README.md",
+      "sha256": "113a142ca922abcc6b7ad3c4059989cb252ad1726c3baeaa8680fb1348a2d5b6",
+      "bytes": 1355,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/README.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_Acceptance_Specifications_v1_0.csv",
+      "sha256": "7bdf0271153c67788faec131d6741ed6f3435ddef8effe8f70f6d54ae9af2309",
+      "bytes": 16763,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_Acceptance_Specifications_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_CMRR_Qualification_Report.md",
+      "sha256": "fdb1faa92884cf806126874343c026b8f01fd9bfbd8151a9bbd95f96ae13ab03",
+      "bytes": 2813,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_CMRR_Qualification_Report.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_CMRR_Section_Dispositions_v1_0.csv",
+      "sha256": "e02a47fc119ec9619273f237f61537b6965d46d5f75e11feebbbafc6092dcf52",
+      "bytes": 6215,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_CMRR_Section_Dispositions_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_Calibration_Gates_v1_0.csv",
+      "sha256": "a887953dfa79246a869f41dda30ded5f120bf23d7ce560d695ed352bcd3dab49",
+      "bytes": 5607,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_Calibration_Gates_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_Content_Catalogue_v1_0.csv",
+      "sha256": "3f137e2976c65b3852735c370d96e72da5de50e92b21ac0d75e1c31c463ba5ec",
+      "bytes": 67502,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_Content_Catalogue_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_Content_Catalogue_v1_0.json",
+      "sha256": "7ad766d40830f22e7e32b9e3bc68ae95e516f38c605f9373aaf1e0f2cc1e617c",
+      "bytes": 114994,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_Content_Catalogue_v1_0.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/Roman_Native_SCL_Crosswalk_v1_0.csv",
+      "sha256": "34549f8ba4c619d4fcbdfdbbf349ca06b90f6ee0bc12d241c8d9574e4e443f04",
+      "bytes": 4868,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/Roman_Native_SCL_Crosswalk_v1_0.csv",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/SOURCE_PINS.json",
+      "sha256": "a1de5f6b8fac053bc4409b8abf6959f4a88cd7849be05d8e489f697fe965ac3b",
+      "bytes": 808,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/SOURCE_PINS.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/VALIDATION_REPORT.md",
+      "sha256": "bfd1c762d7ae6d63fb74e7119cdd609fcb4ddda5f299f75fca855a822c188de9",
+      "bytes": 1865,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/VALIDATION_REPORT.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/VERIFICATION_RESULTS.json",
+      "sha256": "8dcba1ee091bd6ed209aa492c545d1af5a1ba73488d7ff4a69c0f35569fa479d",
+      "bytes": 291,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/VERIFICATION_RESULTS.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_R3.json",
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c",
+      "bytes": 42828,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/Core_v3_2_Receiving_Bindings_R3.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_ReadOnly.json",
+      "sha256": "e7d6a4250921787b673e4c2974711b3dc53a3b5d3a344a09da8ec9995242b0b7",
+      "bytes": 39652,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/Core_v3_2_Receiving_Bindings_ReadOnly.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/IRGS_Roman_Republic_Full_v1_0_Historical_Source.md",
+      "sha256": "0a77a92d7ee6140566baa85f199dc3b4eec9a57544aa0785258d2dfa44bf82a4",
+      "bytes": 111970,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/IRGS_Roman_Republic_Full_v1_0_Historical_Source.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/IRGS_Roman_Republic_Slim_v1_2_Accepted.md",
+      "sha256": "402c80e30727b086bd4b5289154f29679aac08494ae303734a3f3c26961a1710",
+      "bytes": 36726,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/IRGS_Roman_Republic_Slim_v1_2_Accepted.md",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/Roman_v1_2_Native_Content_Bindings_Unchanged.json",
+      "sha256": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
+      "bytes": 18621,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/Roman_v1_2_Native_Content_Bindings_Unchanged.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/sources/SCL_v1_0_Registry_ReadOnly.json",
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+      "bytes": 2081427,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/sources/SCL_v1_0_Registry_ReadOnly.json",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/roman/tests/verify_roman_content_release.py",
+      "sha256": "50776519f77d896f6ebce8d24650755b72836c392183f853d06a17e9063928e1",
+      "bytes": 11640,
+      "origin": "IRGS/IRGS_Roman_Republic_v1_2_Engine_Content_v1_0_Complete/Roman_Content_Library/tests/verify_roman_content_release.py",
+      "role": "preserved_source",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_Core_Engine_v3_2.md",
+      "sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c",
+      "bytes": 363467,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_Core_Engine_v3_2.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_Engine_Bindings_v3_2.json",
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c",
+      "bytes": 42828,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_Engine_Bindings_v3_2.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_Full_Release_CMRR_Validation.md",
+      "sha256": "5573951d3377eedab376ec526248624bf116e0264d9b50b39cee5e79f28eaec3",
+      "bytes": 4264,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_Full_Release_CMRR_Validation.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Consolidated_Qualification_R2.json",
+      "sha256": "a97ed8c2de014507159a7a3cc6e6d69861957a557d062bf8e488bdb31d82cfd8",
+      "bytes": 1220109,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Consolidated_Qualification_R2.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Full_Reconciliation_Matrix.csv",
+      "sha256": "559a4349fd05a4f47cbec88a18e54ba479694a2805f7ff3033eb3c4af5aeb120",
+      "bytes": 62726,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Full_Reconciliation_Matrix.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R1_CMRR_Report.md",
+      "sha256": "e88eca115b1e6d7ba88f3b948b421547b6c389b773cb2984958220d6031f1fbf",
+      "bytes": 6924,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R1_CMRR_Report.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Contract_Data.json",
+      "sha256": "0db20174c6cc0606ae69704eecc1a11ca1795010cba2969e700d834403d2f60e",
+      "bytes": 418281,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R1_Contract_Data.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Hold_Register.csv",
+      "sha256": "1fb3698559e74686149ededd377263082af307c0acf79c2f82248ea810b26ec1",
+      "bytes": 137252,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R1_Hold_Register.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Qualitative_Contracts.md",
+      "sha256": "0e1c4328d110cb51238974ef912e9130ce5f69ebb8fbe668ad687cde5da3b759",
+      "bytes": 65404,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R1_Qualitative_Contracts.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R2_192_Qualitative_Contracts.md",
+      "sha256": "36df9d46a141695d9f76363097d484744b66a48340a3331829cfdd6ea062f9fd",
+      "bytes": 552767,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R2_192_Qualitative_Contracts.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R2_CMRR_Report.md",
+      "sha256": "36b9a6869b9555e33c762dc9be96f49a72fa3d12bdb3f4b6636c0f6824b6b61f",
+      "bytes": 6511,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R2_CMRR_Report.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Calibration_Gates.csv",
+      "sha256": "c9c6ee11cb491ae291dc6f13801d16b88d1ba97d50e2ced28131c3614575295e",
+      "bytes": 3348,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R2_Calibration_Gates.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Complete_Hold_Register.csv",
+      "sha256": "c690103eb93b5753ef344009d31753d680886a7be04785199a9120352b0ee698",
+      "bytes": 86412,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R2_Complete_Hold_Register.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Contract_Data.json",
+      "sha256": "b502833a17e26814261fa1ce586dff3fc5ef6ec68531105404507e85c49fbfb4",
+      "bytes": 955210,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Maturation_R2_Contract_Data.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_Qualification_Acceptance_Matrix.csv",
+      "sha256": "6446375c0be7da6100a9e9b959816179930a4736657f946a868eadb04d7d1140",
+      "bytes": 143984,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_Qualification_Acceptance_Matrix.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+      "sha256": "d5f0bd227c2557d7ced70aaf86eab316fe86843938c143a5f5d3e1a2010dc022",
+      "bytes": 773021,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_v1_0_Full_Release_Migration_Impact.md",
+      "sha256": "5871168817d09046029bf6d980120106443c85174414e26a962272455b9caf03",
+      "bytes": 2202,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_v1_0_Full_Release_Migration_Impact.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_v1_0_Reference_Map.csv",
+      "sha256": "81872f9f124c5d753feb1982cb22fecb4dc2696403b4b847385b9061df3487f8",
+      "bytes": 82611,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_v1_0_Reference_Map.csv",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_SCL_v1_0_Selected_Contracts.md",
+      "sha256": "7da2484a24f94b574a3c47fc4fa80189c091d5f44958783168071e6c3b099967",
+      "bytes": 67004,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_SCL_v1_0_Selected_Contracts.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_Shared_Content_Library_v1_0.md",
+      "sha256": "4f0a90687958bd6d54b0ab21dc0cfac4e02e0ed40992a3b86eb1cf1725164376",
+      "bytes": 100379,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_Shared_Content_Library_v1_0.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/IRGS_Shared_Content_Registry_v1_0.json",
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+      "bytes": 2081427,
+      "origin": "IRGS/IRGS_Full_Release_R2/IRGS_Shared_Content_Registry_v1_0.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/MAINTENANCE_R3.md",
+      "sha256": "e7438fa81d04f3e981f84ecf3dca594ad3cf2ee0ade4d022d5ffe29e1d6e1958",
+      "bytes": 727,
+      "origin": "IRGS/IRGS_Full_Release_R2/MAINTENANCE_R3.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/PACKAGE_MANIFEST.json",
+      "sha256": "0d8cf7c8b9a8ade78ba025fcd3a20a3cf62c580eecd73113d0914e46fde2cfe7",
+      "bytes": 7121,
+      "origin": "IRGS/IRGS_Full_Release_R2/PACKAGE_MANIFEST.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/README.md",
+      "sha256": "2f4639c20ba42d3125ca040d7bb826cf1227efac1e560397660876d67b59bd5e",
+      "bytes": 2831,
+      "origin": "IRGS/IRGS_Full_Release_R2/README.md",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shared/RELEASE_VERIFICATION_RESULTS.json",
+      "sha256": "4e23ef0ac966b843c1012d0a75d31b98ae2dff675a1ac42a13c9fd7e7a161aec",
+      "bytes": 1064,
+      "origin": "IRGS/IRGS_Full_Release_R2/RELEASE_VERIFICATION_RESULTS.json",
+      "role": "preserved_source",
+      "source_status": "SCL 1.0 source status unchanged; Core 3.2 references are preserved provenance"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v0_1_CMRR_and_Verification_Report.md",
+      "sha256": "50992a23d2be577d457bd53d6fa3bf3ba60c7f7e8abf476ce05b9a7c6bfd1941",
+      "bytes": 3981,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v0_1_CMRR_and_Verification_Report.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v0_1_Verification_Results.json",
+      "sha256": "94cbdc2dfc32a4f4be2661e1eeee4d49b886fec43011e04c70cf4c585736721e",
+      "bytes": 9653,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v0_1_Verification_Results.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_All_Records.csv",
+      "sha256": "0b8b09675796efafbd8f6587d9c12135e2cb67aed1a9cad17b0505485aecd867",
+      "bytes": 83198,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_All_Records.csv",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_CMRR_and_Finalization_Report.md",
+      "sha256": "0832f85c0c5f2381f722542af3134ef30075991abc1e79f1ff7c1ff041b819d0",
+      "bytes": 3751,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_CMRR_and_Finalization_Report.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Legacy_Source_Crosswalk.csv",
+      "sha256": "fea00eac92b0b58e3a55cbd4dcd2554f13cb98d640fafcec59a054c551f28f61",
+      "bytes": 88110,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_Legacy_Source_Crosswalk.csv",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_PDF_Reference_Manifest.json",
+      "sha256": "710d77b87a62d81efbd9de52bf52be7faf395b354ea7792f966467d4e8419b39",
+      "bytes": 5779,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_PDF_Reference_Manifest.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Registry.json",
+      "sha256": "b4fd3e16090cbb79dc128ab8304eb6ec6087e4c4b89c7fb02b3cdf70a3d2c29b",
+      "bytes": 476136,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_Registry.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Source_Manifest.json",
+      "sha256": "3b77211629d7bacb42ae4b2d6eb40fb1d429a06f0fbde5bdcdddcf047147434d",
+      "bytes": 3468,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_Source_Manifest.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Verification_Results.json",
+      "sha256": "e70d74574d624b73e18c68f70ff318772d6d07f435c62bf3880e4c361824f2a1",
+      "bytes": 654,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_SNCL_v1_0_Verification_Results.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/IRGS_Shinobi_Nexus_Content_Library_SNCL_v1_0_Final.md",
+      "sha256": "d305d8857d1b6ee7167c189d2e32f581c58296f0ee7b4a209f573e1d0493c4f7",
+      "bytes": 177293,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/IRGS_Shinobi_Nexus_Content_Library_SNCL_v1_0_Final.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/README.md",
+      "sha256": "f72e61e4697834ef16549bcd332f1003930cf8d2cd08f2c18be205cd9d2a32a7",
+      "bytes": 948,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/README.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/SNWE_R0_3_Receiving_Binding_Reference.json",
+      "sha256": "e135f37604f0c9c4111682a97da26b201d2cae954d9d03633251bcae5a34de27",
+      "bytes": 5701,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/SNWE_R0_3_Receiving_Binding_Reference.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/SNWE_R0_3_Source_Reference.md",
+      "sha256": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+      "bytes": 186714,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/SNWE_R0_3_Source_Reference.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/prior_verify_sncl_v0_1.py",
+      "sha256": "60771e36b776579ac01e43bf51604eb7fb9fa95df0f7ab1544f32329e1f87125",
+      "bytes": 8191,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/prior_verify_sncl_v0_1.py",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/A Rank.pdf",
+      "sha256": "6dfcc4994707185b55983deb2ac2899c2c4fe047084d6bc352b229ddadae2890",
+      "bytes": 1001638,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/A Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/B Rank.pdf",
+      "sha256": "16be52d17c24065e21680ee747fcedd80f82f7ce40242953ef674aaf080d1bf0",
+      "bytes": 1322185,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/B Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/C Rank.pdf",
+      "sha256": "fd33696a0d3c4b1be496bf4ceac90fb8947d8c0a1bbff508b8740801a85f3d56",
+      "bytes": 937906,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/C Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/D Rank.pdf",
+      "sha256": "7988ee33479dfbd493b6b6d65e38ce0dce9de32d10cf812b91270eea76b087f2",
+      "bytes": 693613,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/D Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/E Rank.pdf",
+      "sha256": "93416c0e56cabd0954e58198f2c0d95018be188a12881fbd17f6100417ad5635",
+      "bytes": 601730,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/E Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/IRGS_SNCL_v0_1_Registry.json",
+      "sha256": "8b6ca5588390c94f9a0577105d609c754234752c4d1eb42d867f1eb2a1aa072b",
+      "bytes": 111599,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/IRGS_SNCL_v0_1_Registry.json",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/IRGS_Shinobi_Nexus_Content_Library_SNCL_v0_1_Proposed.md",
+      "sha256": "56ecc015c3d52d4a91851245631145d4b18ba11009b3b043ceb65f530a25389f",
+      "bytes": 89619,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/IRGS_Shinobi_Nexus_Content_Library_SNCL_v0_1_Proposed.md",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/Justu Pt 1.pdf",
+      "sha256": "fbfc587acf0848042e9eed7446becf5dc9ad98fc571ff6e7f974734b8fc94224",
+      "bytes": 3666287,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/Justu Pt 1.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/Jutsu Pt 2.pdf",
+      "sha256": "96161b81b9c6e651ec0310cff16a003161763b4d8fb87c582c0602e4e56e1bb5",
+      "bytes": 3860420,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/Jutsu Pt 2.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/Jutsu Pt 3.pdf",
+      "sha256": "6d7b9b9c12b8388db6e8603bebc83b228e5cd38ee83f0728aeb768e46be4769d",
+      "bytes": 3917184,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/Jutsu Pt 3.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/Jutsu Pt 4.pdf",
+      "sha256": "2c2b0cc928addc67682b9955896447a66c042133a6a6c9e1a2f9b8249e4d5956",
+      "bytes": 4043849,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/Jutsu Pt 4.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/Jutsu Pt 5.pdf",
+      "sha256": "bb7a708d3286f2bd40e738ebfa00146709e8b403b0c3d601f068e0c444b0a6c6",
+      "bytes": 2746754,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/Jutsu Pt 5.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/S Rank.pdf",
+      "sha256": "4b18adb32c4db18084f6d9e097b8f276243617621279d201b6a4c877ba2d68e3",
+      "bytes": 826935,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/S Rank.pdf",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/source_documents/SSN_ Jutsu Compendium V1.docx",
+      "sha256": "d0f59d7f0e02052e8781feddc8c0933949ebdd6bf1425444ce2cee4f19239dcd",
+      "bytes": 101429,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/source_documents/SSN_ Jutsu Compendium V1.docx",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/shinobi/verify_sncl_v1_0.py",
+      "sha256": "b690774e820ce3bd8eda6ec9068bc77457c75c2e8d6ae5890f2b9e3078664e02",
+      "bytes": 2498,
+      "origin": "IRGS/IRGS_SNWE_R0_3_and_SNCL_v1_0_Combined_Release/SNCL_v1.0/verify_sncl_v1_0.py",
+      "role": "preserved_source",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked"
+    },
+    {
+      "path": "catalog/libraries/space/content_bindings.json",
+      "sha256": "acc68d89e2c500945e9da25bab01e2a68a236ac6b3e8cfa9417097eb910ec564",
+      "bytes": 6028,
+      "origin": "IRGS/IRGS_Space_Exploration_and_Colonization_Slim_v0_2_Core3_2_R2/content_bindings.json",
+      "role": "preserved_source",
+      "source_status": "Eight source SPACE-LIB definitions; selected models required"
+    },
+    {
+      "path": "catalog/profiles/ast_core_3_3.json",
+      "sha256": "9857136d3ed9656b29fbb47da3a5d7c508930ebe3fd7963763fcb5991d015c75",
+      "bytes": 4274,
+      "origin": "build_suite_catalog.py",
+      "role": "prospective_campaign_binding",
+      "source_status": "Core 3.3 prospective receiving metadata; source status unchanged"
+    },
+    {
+      "path": "data/ast_mechanics_reuse.json",
+      "sha256": "f11e711806bdf47b105b6b405ebba5d1e0fd4bbbd4920eac33b791d4924bb679",
+      "bytes": 4410,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    },
+    {
+      "path": "data/campaign_listings.json",
+      "sha256": "fe2e526ceb1e097d7e5c1043ce70e56710ad199c0273d1e31947b629dbac610f",
+      "bytes": 972,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    },
+    {
+      "path": "data/hyw_1415_opening.json",
+      "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+      "bytes": 36667,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    },
+    {
+      "path": "data/hyw_design_references.json",
+      "sha256": "a04d6ec360c0b1ee1c518878ee5a151965a576cf180061fb49960a591300784a",
+      "bytes": 3045,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    },
+    {
+      "path": "data/hyw_entry_catalogue.json",
+      "sha256": "cd47576c71fe5351e08b0755ce65f7778bb28c7887d1c76acca4aa90a6df7b7b",
+      "bytes": 10789,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    },
+    {
+      "path": "data/hyw_historical_baseline.json",
+      "sha256": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0",
+      "bytes": 7460,
+      "origin": "User-requested design and patch integration, 20 October 2026",
+      "role": "historical_setting_content",
+      "source_status": "Historical setup reference; proposal and unknown statuses retained"
+    }
+  ],
+  "total_files": 160,
+  "total_bytes": 38243767,
+  "missing_historical_evidence": [
+    {
+      "artifact": "RELEASE_BINDING_R3.json",
+      "status": "NOT_PRESENT_IN_INSPECTED_WORKSPACE",
+      "source_claim": "Legacy package README/MAINTENANCE_R3.md cite this top-level record",
+      "consequence": "Its historical deployment claim is unverified; actual bundled files have fresh SHA-256 evidence",
+      "reconstructed_or_invented": false
+    }
+  ],
+  "exclusions": [
+    "Whole historical ZIP/7z distributions",
+    "Caches",
+    "Unrelated old engine editions",
+    "Referenced AST raster assets"
+  ],
+  "source_adoption_changed": false,
+  "existing_campaign_saves_modified": false
+}

@@ -1,0 +1,108 @@
+{
+  "engine": "IRGS-SPACE-SLIM-0.2",
+  "core": "IRGS-CORE-3.2",
+  "binding": "IRGS-BIND-SPACE-3.2",
+  "catalogue": "IRGS-SCL-1.0",
+  "specialized_namespace": "SPACE-LIB@0.1",
+  "space_entries": [
+    {
+      "id": "SPACE-LIB.CRAFT.IMPULSIVE-TRANSFER",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.CRAFT.IMPULSIVE-TRANSFER` | Two-body coast segments and declared short burns; supports orbit-to-orbit delivery | Body/frame/state, mass references, engine/feed and burn-duration validity, phase, receiving envelope, support/return plan |",
+      "source_row_sha256": "256fde9423796da82fa021d049d62977726d9ea1ad32e99eea1d944200a0e08d",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.CRAFT.LOW-THRUST",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.CRAFT.LOW-THRUST` | Continuous thrust with changing mass/power/orientation; never substitutes instantaneous Hohmann timing | Force/mass-flow model, controls, integrator/event/error criteria, generation/thermal limits, approach model |",
+      "source_row_sha256": "8d6009170ede07ec6e88d71358b47af0be240a5ffbfdbcf814111bbadd808913",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.HAB.PRESSURE-ZONE",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.HAB.PRESSURE-ZONE` | Compartment with real gas, connections, atmosphere-control tasks and alarms | Volume, species, temperature, equation of state, leaks, control capability, engineering limits and organism effects separately |",
+      "source_row_sha256": "3129877db21b6f0cbb23ab115162959ffcfab0a0bd5328dc2689e94fdd2a5f8f",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.SVC.AIRLOCK",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.SVC.AIRLOCK` | Staged transfer/recovery/venting with occupancy and interlocks | Zone refs, gas routing/recovery/storage capacity, duration, power, hatch state, policy and failure envelope |",
+      "source_row_sha256": "dcb80c3d2c6d0ce748913c62e3c69d8922314b82d7d64b4d2c28d7189baee0b3",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.LINK.STORE-FORWARD",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.LINK.STORE-FORWARD` | Buffered packets through actual relay contact windows | Nodes/ephemerides, propagation and serialization, power, capacity, packet identity/expiry/order, receipt/ack policy |",
+      "source_row_sha256": "a3ef5e3c1a9e11d58e37cb422d44a31de07f1ca8332e73fe72380928e698edd2",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.SITE.EXTRACTION-OUTPOST",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.SITE.EXTRACTION-OUTPOST` | Survey→sample→test→mine→process→accept→store→transport chain | Proven source, access/rights, machinery, staff, consumables, yields/waste, power/heat, output specs and recurrent support |",
+      "source_row_sha256": "9bc8a438793af483086bababf75b470b1f66525131789932aa511578f351217d",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.OP.SURFACE-DELIVERY",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.OP.SURFACE-DELIVERY` | Orbit/approach→descent→landing→handling→accepted delivery | Actual initial state, craft/site/weather envelope, stage inputs/time, receiving means, abort and ascent/return if required |",
+      "source_row_sha256": "cbb77db9ed319636ffc02d9f667339abaaea267b70e2fdc7bf1d71ca5570a520",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    },
+    {
+      "id": "SPACE-LIB.SET.INTERSTELLAR-ROUTE",
+      "library_version": "0.1",
+      "selector": null,
+      "source_row": "| `SPACE-LIB.SET.INTERSTELLAR-ROUTE` | Authored distant route with explicit technology/time/authority constraints | Drive and brake model, mass/endurance, world/crew time, information delay, destination verification and continuity |",
+      "source_row_sha256": "c102e424e4c2d74b8efd1e4d1552e8cc038d94ffd9d5a5b5842ead22f70f30d2",
+      "status": "retained specialized source template; activation needs profile and actual means"
+    }
+  ],
+  "optional_shared_content": [
+    {
+      "alias": "PL:RES-WAT-001@1.0",
+      "origin": "PL",
+      "source_entry": "RES-WAT-001",
+      "target": "SCL:PBC-RES-PL-RES-WAT-001@0.2",
+      "selector": null,
+      "reference_gate": "selected_qualitative",
+      "semantic_type": "stock",
+      "target_content_sha256": "5611d2cd10c80018f8b8aa20c1980d808a8788b1ac48b90aff572b3ce76d34e8"
+    },
+    {
+      "alias": "PL:RES-IND-001@1.0",
+      "origin": "PL",
+      "source_entry": "RES-IND-001",
+      "target": "SCL:PBC-RES-PL-RES-IND-001@0.2",
+      "selector": null,
+      "reference_gate": "selected_qualitative",
+      "semantic_type": "stock",
+      "target_content_sha256": "874a52a542073d34f17265cd6709989b85076977399f24161c54753f9855eb92"
+    },
+    {
+      "alias": "PL:STO-003@1.0",
+      "origin": "PL",
+      "source_entry": "STO-003",
+      "target": "SCL:PBC-EQP-PL-STO-003@0.2",
+      "selector": null,
+      "reference_gate": "selected_qualitative",
+      "semantic_type": "storage_system",
+      "target_content_sha256": "9c623e6a10fb0752fd81e2616820897aed11d8b4935676439d1e0989c5ed20fa"
+    }
+  ],
+  "qualification_overlay_selected": false,
+  "campaign_adoption_applied": false,
+  "world_state_changes": null
+}

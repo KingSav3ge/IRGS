@@ -1,0 +1,333 @@
+{
+  "document_id": "IRGS-RRLS-CONTENT-1.2",
+  "core": "IRGS-CORE-3.2",
+  "catalogue": "IRGS-SCL-1.0",
+  "registry_path": "roman_republic_slim_v1_2/dependencies/IRGS_Shared_Content_Registry_v1_0.json",
+  "registry_sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+  "status": "Accepted for finalized Roman v1.2 reference under explicit user Finalize; native numerical profiles provisional; no objects initialized",
+  "entries": [
+    {
+      "native_id": "RR-DAGGER-THRUST-1.0",
+      "source_alias": "FL:WPN-M-004A@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-004@0.2",
+      "selector": "modes.thrust",
+      "target_content_sha256": "720f17b489b017ae337e2e73dc69065e4d10cf7939b8c628a4b1cc2efb9d1b6d",
+      "semantic_type": "weapon",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": 1,
+        "threat": 1
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-BLADE-CUT-1.0",
+      "source_alias": "FL:WPN-M-006A@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "selector": "modes.cut",
+      "target_content_sha256": "6156b5db21a094ebea3d719456f61f3e679dbde6b51a7a239b2f034debd87cc3",
+      "semantic_type": "weapon",
+      "reference_gate": "selected_qualitative",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": 1,
+        "threat": 2
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-BLADE-THRUST-1.0",
+      "source_alias": "FL:WPN-M-006B@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "selector": "modes.thrust",
+      "target_content_sha256": "6156b5db21a094ebea3d719456f61f3e679dbde6b51a7a239b2f034debd87cc3",
+      "semantic_type": "weapon",
+      "reference_gate": "selected_qualitative",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": 2,
+        "threat": 2
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-SPEAR-THRUST-1.0",
+      "source_alias": "FL:WPN-M-013@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-013@0.2",
+      "selector": null,
+      "target_content_sha256": "09af1aee8e967fecd0bfdc2225188385437e922b3048faee8c9d7fc7da22a8a3",
+      "semantic_type": "weapon",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": 2,
+        "threat": 2
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-LIGHT-CLUB-1.0",
+      "source_alias": "FL:WPN-M-002@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-002@0.2",
+      "selector": null,
+      "target_content_sha256": "7024f9ced71ef56ba5f666382ceee3a425d884c2eecbdb71235dfd95c513dc9f",
+      "semantic_type": "weapon",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": null,
+        "threat": 1
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-JAVELIN-1.0",
+      "source_alias": "FL:WPN-R-002@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-R-002@0.2",
+      "selector": null,
+      "target_content_sha256": "c43991a9983b7e20a69960cb7e2cde1274446ca646ffbf5efd9ef31b9df444e2",
+      "semantic_type": "weapon",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "defeat": 1,
+        "threat": 2
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-CLOTHING-1.0",
+      "source_alias": "FL:ARM-001@1.0",
+      "target": "SCL:PBC-WPN-FL-ARM-001@0.2",
+      "selector": null,
+      "target_content_sha256": "462558b7d28cb5cdcd1e60b653cdd7a35800b7035e3e97b7ccb34a08518ef130",
+      "semantic_type": "armor",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "cut": 0,
+        "impact": 0,
+        "pierce": 0
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-PADDED-1.0",
+      "source_alias": "FL:ARM-002@1.0",
+      "target": "SCL:PBC-WPN-FL-ARM-002@0.2",
+      "selector": null,
+      "target_content_sha256": "888fb1c1fdaf94565a927830b1ddb452e0de0b40d8ccdf095fd311eda55d58ec",
+      "semantic_type": "armor",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "cut": 1,
+        "impact": 1,
+        "pierce": 0
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-MAIL-1.0",
+      "source_alias": "FL:ARM-005@1.0",
+      "target": "SCL:PBC-WPN-FL-ARM-005@0.2",
+      "selector": null,
+      "target_content_sha256": "affbb6ad62670b144e17b6d647890542365fc67f5cc08aa641a12786fba930f4",
+      "semantic_type": "armor",
+      "reference_gate": "selected_qualitative",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "cut": 3,
+        "impact": 1,
+        "pierce": 2
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-SMALL-SHIELD-1.0",
+      "source_alias": "FL:SHD-002@1.0",
+      "target": "SCL:PBC-WPN-FL-SHD-002@0.2",
+      "selector": null,
+      "target_content_sha256": "7ebd4e6aff49bae55d05d193dac267da715d8a45e39b7bdde2e261eb6ebba699",
+      "semantic_type": "shield",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "source_structure": 2,
+        "defensive_circumstance": -10
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-BROAD-SHIELD-1.0",
+      "source_alias": "FL:SHD-003@1.0",
+      "target": "SCL:PBC-WPN-FL-SHD-003@0.2",
+      "selector": null,
+      "target_content_sha256": "cb964f1d7b56590686634ca47c82f8dc0fd0731018a1974ef2b456a367653950",
+      "semantic_type": "shield",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "source_structure": 3,
+        "defensive_circumstance": -10
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-LARGE-SHIELD-1.0",
+      "source_alias": "FL:SHD-004@1.0",
+      "target": "SCL:PBC-WPN-FL-SHD-004@0.2",
+      "selector": null,
+      "target_content_sha256": "1f7a2a2312e421a1bc50a721d3daeea3ea03a2e1e1b0744ce02a7b5adc0b5209",
+      "semantic_type": "shield",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "source_structure": 3,
+        "defensive_circumstance": -15
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-NATIVE-UNARMED-1.0",
+      "source_alias": "FL:WPN-M-001@1.0",
+      "target": "SCL:PBC-WPN-FL-WPN-M-001@0.2",
+      "selector": null,
+      "target_content_sha256": "a5831cead852bf5d5603b8ffee05d09376f84b5c692f1188ab18e410fe4e6d9f",
+      "semantic_type": "method",
+      "reference_gate": "source_backed_hold",
+      "source_revision": "1.0",
+      "receiving_revision": "0.2",
+      "profile_values": {
+        "inventory_object": false,
+        "mechanism_required": true,
+        "native_threat": 0
+      },
+      "composition": {
+        "inherited": "Only the explicitly listed native profile_values and selected mechanism fields; the complete original payload remains available for provenance",
+        "set": "Roman native variant/name and explicit local effect selection",
+        "excluded": "Unselected traits/bonuses, undefined reach conversions, source availability/lore and later physical forms. No field omission deprecates its source definition.",
+        "unknown": "Actual dimensions/reach, construction/fit, condition, ownership/access and dated locality eligibility until instantiated"
+      },
+      "activation": "Requires actual compatible period-eligible instance/configuration and embedded Roman effect adapter; lookup is read-only",
+      "source_deprecation": false
+    },
+    {
+      "native_id": "RR-HEAVY-HANDHELD-IMPACT-1.0",
+      "source_alias": null,
+      "target": null,
+      "selector": null,
+      "semantic_type": "native_weapon_method",
+      "reference_gate": "retained_native_profile",
+      "profile_values": {
+        "defeat": null,
+        "threat": 2
+      },
+      "source": "Roman full1.0 section13 heavy hand weapon impact",
+      "activation": "Requires an actual compatible heavy handheld implement, physical capacity, construction and geometry; not a fist/unarmed profile",
+      "source_deprecation": false
+    }
+  ],
+  "policy": "Exact aliases/selectors/checksums are required. Held content uses complete preserved native payloads, never incomplete replacement activation. Sword cut/thrust are modes on one physical family. Unarmed is not inventory. Roman eligible variants do not import heater/kite forms or source setting lore.",
+  "record_revision": "0.2",
+  "qualification_overlay_selected": false,
+  "provider_status": "Current normative SCL1.0; all existing gates/holds unchanged",
+  "finalization_authority": "Explicit user direction: Finalize, 14 October 2026"
+}

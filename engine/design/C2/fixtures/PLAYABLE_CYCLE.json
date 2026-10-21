@@ -1,0 +1,96 @@
+{
+  "schema_version": "irgs.design.fixture.v1",
+  "fixture_id": "C2-PLAYABLE-CYCLE",
+  "design_edition": "3.3.C-C2",
+  "status": "PROPOSED_NOT_EXECUTED",
+  "parameter_status": "SYNTHETIC_FIXTURE_ONLY",
+  "purpose": "Logical implementation fixture; not an importable CoreWorld save or a scripted campaign opening.",
+  "source_document": "../PLAYABLE_ACTION_CYCLE.md",
+  "timeline": {
+    "axis_id": "fixture-elapsed-minutes",
+    "unit": "minute",
+    "origin": 0,
+    "civil_calendar_binding": null,
+    "decision_policy": "pause_at_material_player_decision",
+    "host_delay_advances_simulation": false,
+    "span_convention": "[start,end)",
+    "trace_end": "T=15 after payment and before the next allocation review"
+  },
+  "selected_fixture_models": {
+    "notice_observation_duration": 1,
+    "path_duration": 4,
+    "path_progress": "linear_fraction_of_this_selected_segment_duration",
+    "question_duration": 1,
+    "offer_duration": 1,
+    "acceptance_duration": 1,
+    "parcel_milestone_duration": 1,
+    "parcel_transfer_stage": "at_each_completed_qualifying_milestone",
+    "inspection_duration": 1,
+    "payment_handover_duration": 1,
+    "adopted_for_real_campaigns": false
+  },
+  "initial_world": {
+    "campaign_id": "fixture-C2-playable-cycle",
+    "actors": [
+      {"id": "P", "player_controlled": true, "position": "yard:notice", "exists": true, "capabilities": ["ordinary_walking", "hearing", "speech", "reading_posted_language"]},
+      {"id": "F", "player_controlled": false, "position": "stores:work-counter", "exists": true, "capabilities": ["hearing", "speech", "parcel_task_inspection", "authorized_cash_handling"]},
+      {"id": "W", "player_controlled": false, "position": "stores:waiting-area", "exists": true, "capabilities": ["qualified_for_W_task"]}
+    ],
+    "conditions": "Fixture actors, path and means remain suitable over the stated trace except for the explicit safety closure.",
+    "places": ["yard", "stores"],
+    "route": {"id": "yard-stores", "origin": "yard", "destination": "stores", "accessible": true},
+    "stocks": {"shelf-A": {"parcel": 4}, "shelf-B": {"parcel": 0}, "workshop": {"fixture-cash": 3}, "P": {"fixture-cash": 0}},
+    "opening_totals": {"parcel": 4, "fixture-cash": 3},
+    "stock_title": {"parcels": "workshop", "workshop_funds": "workshop"},
+    "fund_access": {"actor": "F", "source": "workshop", "accessible": true, "maximum_task_payment": 3},
+    "bay": {"id": "sorting-bay", "site": "stores", "capacity": 1, "unit": "concurrent_worker", "initial_bookings": [], "closed_interval": [10, 11]},
+    "initial_player_information": ["Permitted yard scene; notice is accessible for deliberate reading."],
+    "notice": {"id": "notice-work", "content": "Work inquiries can be made at Stores.", "epistemic_status": "posted_assertion_not_guaranteed_employment"},
+    "foreman_authority": {
+      "principal": "workshop",
+      "actor": "F",
+      "actual_received_scopes": ["offer_and_accept_these_task_terms", "issue_and_clear_this_safety_stop", "allocate_this_bay_under_selected_policy", "inspect_and_accept_this_parcel_task", "pay_this_due_claim_from_accessible_funds_up_to_3"],
+      "basis": "Explicit fixture mandate records and actual receipts, not authority strings alone."
+    },
+    "task_P": {"id": "parcel-job", "work_units": 4, "method": "relocate_parcels_A_to_B", "due_at": 14, "earliest_start": 8, "cash_due_after_complete_acceptance": 3, "partial_wage_due": 0, "flexible_phase_booking": true, "stop_on_safety_signal": true, "automatic_resumption": false, "initial_agreement": null},
+    "task_W": {"id": "W-job", "due_at": 20, "contiguous_bay_duration": 4, "actual_work_started": false, "booking": null, "after_deferral": "await_next_foreman_allocation_review"},
+    "allocation_policy": {"id": "fixture-earliest-due", "reviews_at": [8, 11, 15], "decision_actor": "F", "selection": "earlier_actual_due_time_among_qualified_jobs", "equal_priority": "await_qualified_decision", "identifier_tiebreak": false},
+    "foreman_schedule": "Actual exchanges and safety communication are supported without overlap; inspection [13,14), payment [14,15)."
+  },
+  "player_choices": [
+    {"at": 0, "choice": "read_notice"},
+    {"at": 1, "choice": "walk_to_stores"},
+    {"at": 5, "choice": "ask_about_work"},
+    {"at": 7, "choice": "accept_exact_offered_terms"},
+    {"at": 8, "choice": "perform_task_with_safety_stop"},
+    {"at": 10, "choice": "wait_until_11"},
+    {"at": 11, "choice": "continue_same_task_under_new_attempt"}
+  ],
+  "expected_milestones": [
+    {"at": 1, "effect": "notice_observation_and_receipt", "job_created": false},
+    {"at": 3, "effect": "single_actor_in_transit", "journey_progress": 0.5, "arrived": false},
+    {"at": 5, "effect": "arrival_at_stores"},
+    {"at": 6, "effect": "question_produced_received_and_understood", "answer_guaranteed": false},
+    {"at": 7, "effect": "offer_received", "agreement_formed": false},
+    {"at": 8, "effect": "qualified_agreement_and_recorded_allocation", "P_booking": [8, 12], "W_booking": null, "cash_due": 0},
+    {"at": 10, "effect": "joint_prior_span_settlement_and_safety_stop", "shelf_A": 2, "shelf_B": 2, "work_complete": 2, "released_booking_remainder": [10, 12], "bay_closed": true, "cash_due": 0, "return_player_decision": true},
+    {"at": 11, "effect": "clearance_receipt_and_explicit_continuation_choice", "P_new_booking": [11, 13], "W_started": false, "W_pending": true},
+    {"at": 13, "effect": "four_parcels_relocated", "shelf_A": 0, "shelf_B": 4, "work_complete": 4, "accepted": false, "cash_due": 0},
+    {"at": 14, "effect": "qualified_work_acceptance", "cash_due": 3, "workshop_cash": 3, "P_cash": 0},
+    {"at": 15, "effect": "funded_claim_settlement", "cash_due": 0, "cash_settled": 3, "workshop_cash": 0, "P_cash": 3, "W_pending_before_next_allocation_review": true}
+  ],
+  "required_invariants": [
+    "One actual P throughout origin, transit and arrival.",
+    "Total parcels remain four; total fixture cash remains three.",
+    "No capacity allocation from identifier, arrival or array order.",
+    "W has no started job or actual booking during the safety pause; its obligation remains unfulfilled.",
+    "P's original booking remainder is released, and continuation is a new qualified booking.",
+    "Original terms include conditional permission for resumption after clearance and valid allocation; receipt never chooses the player's resumption.",
+    "Question, offer, acceptance, work, inspection, claim and payment remain distinct.",
+    "No world fact is made known solely by global existence or an internal validation reason.",
+    "Receipt retry, presentation retry and inspection of saved state add no simulation effects.",
+    "A deliberately new physical action can use supported time even when its informational result is unchanged.",
+    "Coarse review preserves the allocation, interruption, player choices and actual milestone effects."
+  ],
+  "acceptance_case_ids": ["IC-01", "IC-02", "IC-03", "IC-04", "IC-05", "IC-06", "IC-07", "IC-08", "IC-09", "IC-10", "IC-11", "IC-12"]
+}

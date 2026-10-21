@@ -1,0 +1,90 @@
+{
+  "original_library_snapshot_source_sha256": "b8697e38f0e66a39dbadf008448efa82856951089b41e795fce159b939c1625f",
+  "current_full_release_r2_registry_sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+  "checks": [
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-COM-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-MED-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "selected_qualitative"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-PWR-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "selected_qualitative"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-SHOP-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "selected_qualitative"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-TOOL-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-RES-KNW-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "selected_qualitative"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-RES-KNW-002@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-STO-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-RES-PL-RES-FOOD-001@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-ARM-009@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "selected_qualitative"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-M-013@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-R-005@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-R-007@0.2",
+      "matched": true,
+      "differences": [],
+      "readiness": "source_backed_hold"
+    }
+  ]
+}

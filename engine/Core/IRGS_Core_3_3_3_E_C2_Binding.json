@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "document_id": "IRGS-ENGINE-3.3.3.E-C2",
+  "document": "Core/IRGS_Core_3_3_3_E_C2.md",
+  "sha256": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea",
+  "text_status": "C2_APPLIED_ENGINE_TEXT",
+  "design_edition": "C2",
+  "packaging_baseline": "3.3.3",
+  "selected_runtime_core": "3.3",
+  "selected_runtime_binding_changed": false,
+  "runtime_implemented": false,
+  "runtime_deployed": false,
+  "numerical_models_automatically_adopted": false,
+  "existing_save_migration": false,
+  "inherited_core_sha256": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
+  "source_owner_ids": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "acceptance_inventory": "design/C2/ACCEPTANCE_CASES.json",
+  "acceptance_case_count": 121,
+  "implementation_packets": 7,
+  "applied_sources": [
+    {
+      "anchor": "c2-shared-engine-contract",
+      "source": "engine/design/C2/IRGS_Core_3_3_C_Engine_Supplement.md",
+      "sha256": "55b62d25e3bfcad4657f9309119734682ca4f4fc6b5c8899385645f39112d90a",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-actions-and-dependencies",
+      "source": "engine/design/C2/ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "sha256": "938ced78f84de4c74fbb219782cb2d2303d1e1ec8ca2fb1dce58d6c2084b6a75",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-persistence-and-recovery",
+      "source": "engine/design/C2/PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "sha256": "cc732445a9513e35c410adabd1b51198c2cb4913fcfc75764c4ae6607bc364b3",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-agency-and-presentation",
+      "source": "engine/design/C2/AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "sha256": "c600e5c814fbd66f22f1c53bc017ee72b4e3fcb2cf1c85378c41f017fee39e33",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-institutional-execution",
+      "source": "engine/design/C2/INSTITUTIONAL_EXECUTION_MODEL.md",
+      "sha256": "4fb95af1fd78e0bda2e2fb4387b0af56ce27f71f19844c46f96213e95cbe6da6",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-timeline-and-processes",
+      "source": "engine/design/C2/TIMELINE_AND_PROCESS_CONTRACT.md",
+      "sha256": "867d3ba3ca02787717eeb24f4ff69f8a6cfe113ce630ceddf3a51000e4e6b271",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-movement-and-observation",
+      "source": "engine/design/C2/MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "sha256": "7a1e5b90b3d02057af5a0bd8b0169803ec255e8ddf2b78c0b293f9e4a4b2398d",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-dialogue-and-social-actions",
+      "source": "engine/design/C2/DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "sha256": "2ab81367dd8c91837b772b4b7be8988cd1ec077e2220ef582db2f00074389ab6",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-playable-action-cycle",
+      "source": "engine/design/C2/PLAYABLE_ACTION_CYCLE.md",
+      "sha256": "d09c977a5a8dea8342e2749d1ab474c7d0b1e633174c2e5f9828e888ccbb574c",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    }
+  ],
+  "engine_branch": "3.3.3.E",
+  "app_branch": "3.3.3.A"
+}

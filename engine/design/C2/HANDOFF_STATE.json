@@ -1,0 +1,280 @@
+{
+  "schema_version": "irgs.design.handoff.v1",
+  "date": "2026-10-20",
+  "engine_development_line": "3.3.C",
+  "presentation_development_line": "3.3.E",
+  "design_edition": "C2",
+  "previous_design_edition": "C1",
+  "selected_core": "3.3",
+  "delivery_status": "DESIGN_READY_FOR_IMPLEMENTATION_REVIEW",
+  "runtime_acceptance_claimed": false,
+  "implementation_evidence_received_for_C2": false,
+  "runtime_deployment_claimed": false,
+  "source_reference": "reference/SOURCE_BASELINE.json",
+  "primary_handoff": "CLAUDE_HANDOFF.md",
+  "packet_contract": "IMPLEMENTATION_PACKETS.md",
+  "change_record": "CHANGES_C2.md",
+  "acceptance_inventory": "ACCEPTANCE_CASES.json",
+  "acceptance_case_count": 121,
+  "retained_C1_cases": 55,
+  "new_C2_cases": 66,
+  "packets": [
+    {
+      "id": "PKT-00",
+      "depends_on": [],
+      "scope": "source_and_authority_audit",
+      "documents": [
+        "README.md",
+        "reference/SOURCE_BASELINE.json"
+      ],
+      "case_ranges": [],
+      "evidence_status": "SOURCE_COMPARISON_RECORDED_IMPLEMENTER_REAUDIT_REQUIRED",
+      "case_ids": []
+    },
+    {
+      "id": "PKT-01",
+      "depends_on": [
+        "PKT-00"
+      ],
+      "scope": "durable_consequential_action_foundation",
+      "documents": [
+        "ACTION_AND_DEPENDENCY_CONTRACT.md",
+        "PERSISTENCE_AND_RECOVERY_CONTRACT.md"
+      ],
+      "case_ranges": [
+        "A01-A22",
+        "PR-01-PR-16"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "PR-01",
+        "PR-02",
+        "PR-03",
+        "PR-04",
+        "PR-05",
+        "PR-06",
+        "PR-07",
+        "PR-08",
+        "PR-09",
+        "PR-10",
+        "PR-11",
+        "PR-12",
+        "PR-13",
+        "PR-14",
+        "PR-15",
+        "PR-16"
+      ]
+    },
+    {
+      "id": "PKT-02",
+      "depends_on": [
+        "PKT-01"
+      ],
+      "scope": "timeline_and_staged_processes",
+      "documents": [
+        "TIMELINE_AND_PROCESS_CONTRACT.md"
+      ],
+      "case_ranges": [
+        "TP-01-TP-18"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "TP-01",
+        "TP-02",
+        "TP-03",
+        "TP-04",
+        "TP-05",
+        "TP-06",
+        "TP-07",
+        "TP-08",
+        "TP-09",
+        "TP-10",
+        "TP-11",
+        "TP-12",
+        "TP-13",
+        "TP-14",
+        "TP-15",
+        "TP-16",
+        "TP-17",
+        "TP-18"
+      ]
+    },
+    {
+      "id": "PKT-03",
+      "depends_on": [
+        "PKT-01",
+        "PKT-02"
+      ],
+      "scope": "movement_observation_and_search",
+      "documents": [
+        "MOVEMENT_AND_OBSERVATION_CONTRACT.md"
+      ],
+      "case_ranges": [
+        "MO-01-MO-18"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "MO-01",
+        "MO-02",
+        "MO-03",
+        "MO-04",
+        "MO-05",
+        "MO-06",
+        "MO-07",
+        "MO-08",
+        "MO-09",
+        "MO-10",
+        "MO-11",
+        "MO-12",
+        "MO-13",
+        "MO-14",
+        "MO-15",
+        "MO-16",
+        "MO-17",
+        "MO-18"
+      ]
+    },
+    {
+      "id": "PKT-04",
+      "depends_on": [
+        "PKT-01",
+        "PKT-02"
+      ],
+      "scope": "dialogue_social_action_and_agreements",
+      "documents": [
+        "DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md"
+      ],
+      "case_ranges": [
+        "DS-01-DS-18"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "DS-01",
+        "DS-02",
+        "DS-03",
+        "DS-04",
+        "DS-05",
+        "DS-06",
+        "DS-07",
+        "DS-08",
+        "DS-09",
+        "DS-10",
+        "DS-11",
+        "DS-12",
+        "DS-13",
+        "DS-14",
+        "DS-15",
+        "DS-16",
+        "DS-17",
+        "DS-18"
+      ]
+    },
+    {
+      "id": "PKT-05",
+      "depends_on": [
+        "PKT-02",
+        "PKT-03",
+        "PKT-04"
+      ],
+      "scope": "integrated_playable_cycle_with_qualified_work_and_claim_adapters",
+      "documents": [
+        "PLAYABLE_ACTION_CYCLE.md",
+        "fixtures/PLAYABLE_CYCLE.json"
+      ],
+      "case_ranges": [
+        "IC-01-IC-12"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "IC-01",
+        "IC-02",
+        "IC-03",
+        "IC-04",
+        "IC-05",
+        "IC-06",
+        "IC-07",
+        "IC-08",
+        "IC-09",
+        "IC-10",
+        "IC-11",
+        "IC-12"
+      ]
+    },
+    {
+      "id": "PKT-06",
+      "depends_on": [
+        "PKT-01",
+        "PKT-02"
+      ],
+      "additional_dependencies": "Each policy's actual qualified action adapters, plus PKT-03/PKT-04/PKT-05 where its chosen methods use those capabilities.",
+      "scope": "campaign_native_autonomous_institutions",
+      "documents": [
+        "AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+        "INSTITUTIONAL_EXECUTION_MODEL.md"
+      ],
+      "case_ranges": [
+        "AG-01-AG-17"
+      ],
+      "evidence_status": "REQUIRED_NOT_EXECUTED_FOR_DESIGN",
+      "case_ids": [
+        "AG-01",
+        "AG-02",
+        "AG-03",
+        "AG-04",
+        "AG-05",
+        "AG-06",
+        "AG-07",
+        "AG-08",
+        "AG-09",
+        "AG-10",
+        "AG-11",
+        "AG-12",
+        "AG-13",
+        "AG-14",
+        "AG-15",
+        "AG-16",
+        "AG-17"
+      ]
+    }
+  ],
+  "coding_return_requirements": [
+    "exact_source_and_binding_versions",
+    "owner_reuse_map",
+    "typed_request_attempt_phase_outcome_examples",
+    "authorized_projection_examples",
+    "per_case_actual_evidence_and_holds",
+    "execution_derived_dependencies",
+    "recovery_and_compatibility_evidence",
+    "separate_implementation_deployment_adoption_calibration_and_playtest_status"
+  ],
+  "continued_design_policy": "Preserve each delivered archive; name changes and affected packets/cases. Accepted actions retain their selected binding/schema. Incompatible changes need an explicit bridge or hold.",
+  "excluded_material": [
+    "executable_runtime",
+    "inactive_coding_experiment",
+    "user_campaign_saves",
+    "website_design_changes",
+    "commercial_activation"
+  ]
+}

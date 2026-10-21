@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "development_line": "3.3.C",
+  "presentation_line": "3.3.E",
+  "selected_core": "3.3",
+  "design_status": "PROPOSED_IMPLEMENTATION_HANDOFF",
+  "archives": [
+    {
+      "name": "IRGS-3.3.C.zip",
+      "bytes": 55782297,
+      "sha256": "29fdb99bad12543c89f9656e0ae17b68b1c2286acd376fdc7d8af4827b353987"
+    },
+    {
+      "name": "IRGS-3.3.E.zip",
+      "bytes": 5562279,
+      "sha256": "6408981ece85d757d72bbb942316d7e7168ac98a9a6e892485f6b88606554815"
+    }
+  ],
+  "reference_files": [
+    {
+      "path": "IRGS_3_3/Core/IRGS_Core_Engine_v3_3.md",
+      "sha256": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
+      "bytes": 497019,
+      "status": "unchanged_source_reference"
+    },
+    {
+      "path": "IRGS_3_3/Core/IRGS_Core_3_3_Binding.json",
+      "sha256": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301",
+      "bytes": 914,
+      "status": "unchanged_source_reference"
+    },
+    {
+      "path": "IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
+      "sha256": "e0101206dcd24ede9ef391e405556c503154f10971e831775e7f662d8dafdf74",
+      "bytes": 111539,
+      "status": "proposed_reference_not_user_instruction"
+    }
+  ],
+  "verified_baseline_runtime_count": 57,
+  "runtime_sources": [
+    {
+      "path": "IRGS_3_3/runtime/ast_runtime.py",
+      "sha256": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9"
+    },
+    {
+      "path": "IRGS_3_3/runtime/ast_server.py",
+      "sha256": "83bb4942d4f462c0475518a32f310d5cc653eb3dcc5d395e3cad852cdece0f3d"
+    },
+    {
+      "path": "IRGS_3_3/runtime/campaign_library.py",
+      "sha256": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28"
+    },
+    {
+      "path": "IRGS_3_3/runtime/character_background.py",
+      "sha256": "dc5242c4429638c0582e0bdb238340a21639333405e035f27480e806f58e7aa5"
+    },
+    {
+      "path": "IRGS_3_3/runtime/content_library.py",
+      "sha256": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae"
+    },
+    {
+      "path": "IRGS_3_3/runtime/core_world.py",
+      "sha256": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77"
+    },
+    {
+      "path": "IRGS_3_3/runtime/economic_extension.py",
+      "sha256": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c"
+    },
+    {
+      "path": "IRGS_3_3/runtime/genre_receivers.py",
+      "sha256": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+    },
+    {
+      "path": "IRGS_3_3/runtime/historical_campaigns.py",
+      "sha256": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc"
+    },
+    {
+      "path": "IRGS_3_3/runtime/historical_plans.py",
+      "sha256": "36a9c357ff55a694ffff683efdab7458b131b6159033d7c1adbba377e84da537"
+    },
+    {
+      "path": "IRGS_3_3/runtime/irgs.py",
+      "sha256": "11e07e12c73e93ce119712e7ef838378c4f608ed25dcc3885d1e5d7902b42a47"
+    },
+    {
+      "path": "IRGS_3_3/runtime/irgs_r9.py",
+      "sha256": "99da015bb6dfb6f0cbdac4060a7f911c7ac860555a601e87b94157007b987798"
+    },
+    {
+      "path": "IRGS_3_3/runtime/irgs_reference.py",
+      "sha256": "d362701f1464176c42fb42e559c045de5036025954023e08b8d251e448470a87"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r5_audit.py",
+      "sha256": "355dd4a443c220cfcf02637d511d527e3009d430278dcfb7decd999200eea051"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r5_hazards.py",
+      "sha256": "4141090eae0e8b3b508015a01672f5c1e271924f3e0070d9bac041d4c7368807"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r5_scale.py",
+      "sha256": "a0580637e71c7a716363a4cba510ddcfe6e0a71ef0426e36fe3fbb971b30ed48"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r6_audit.py",
+      "sha256": "c281bd54e10857410b21af63571a9d77fa03e138c539f6ccc00c6f0d99e5271c"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r6_work.py",
+      "sha256": "adebf035585b18923233ebccdeed7da9779c15f8b5bb7d7b6fb3ca02c5d1acba"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r7_audit.py",
+      "sha256": "b7087ef2bbfc75abe19408a0aa494ee761cf6740ea0f54e779f0099395d0666c"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r7_frontier.py",
+      "sha256": "b1ff10cb688ca034d05c783bf323051ec29d830ba1ededd783af10fddcdda193"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r8_dependencies.py",
+      "sha256": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r8_strategy.py",
+      "sha256": "3d5ab61240635b1f6ee1eabd1fc8b05964cd49aafa4a08da95583082a7d88e27"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r9_adapters.py",
+      "sha256": "39067583d8282194a0e911354dc4ca6a5fd79b3860d69a3a3240d292c38f8f3a"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r9_runtime.py",
+      "sha256": "e6041fc47b90b1aa541e7b1309fd17e979a17121db12104dd796f45c2ff120b8"
+    },
+    {
+      "path": "IRGS_3_3/runtime/r9_strategy.py",
+      "sha256": "698e364e6a5e41306b92405cb4685388d3e0b4ac35490d3f64d44c49889e25c6"
+    },
+    {
+      "path": "IRGS_3_3/runtime/release_integrity.py",
+      "sha256": "edce7f7e5c7e54dc03a98b26885e9ebe9af2de629db3936ec1320d2e14d42153"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_economic_fixture.py",
+      "sha256": "43318795048fda75170f024fd9adf9a2d78c71c39e61d0e7fd565513b14e18ca"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_national_fixture.py",
+      "sha256": "93d6bde949d4156f032af7674ea18c056f35424c56b9a9caf434ab67071a756c"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_r9_certification.py",
+      "sha256": "98e2de4d19308780f620d87bce9f5d3ae53bfea5040da90f2238b272eb563723"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_r9_scenario.py",
+      "sha256": "58d23873b7ef1e5c6ff5ff8097b557e3f303b633c8985703b2a9ee08392ea5a9"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_round4_fixture.py",
+      "sha256": "2f9ae8fa6bf7d6b88000fbb8e9a156fd28b4fe24fb7d479b12a2507ebc4cf23c"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_round5_fixture.py",
+      "sha256": "31c40e71126e84929856b09ef43b73d9e82722e5aeab33e2a66b135308409c95"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_round6_fixture.py",
+      "sha256": "58f9cd46ba98df9e87d71bb63d030e0b0860a92b49f76bf2e8409bbae0bf25c8"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_round7_fixture.py",
+      "sha256": "361506c12ae828b75552e1fcf13aa26ac02c215de6a13818b1e8c75d2e1a4e29"
+    },
+    {
+      "path": "IRGS_3_3/runtime/run_round8_evidence.py",
+      "sha256": "4c328bd1a73edff3248d2acbf7c2302d1a5f6b1150c387522ab9b7914960c299"
+    },
+    {
+      "path": "IRGS_3_3/runtime/scale_coverage.py",
+      "sha256": "41b254fe753449853e89d14043111fa42073803f42f88e749df67da4a8314ed4"
+    },
+    {
+      "path": "IRGS_3_3/runtime/selective_coordinator.py",
+      "sha256": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f"
+    },
+    {
+      "path": "IRGS_3_3/runtime/starting_selection.py",
+      "sha256": "e8f32254c78d920cb2320d1944a3718e4fdafffe0715c8f326d46d85f0a473c8"
+    },
+    {
+      "path": "IRGS_3_3/runtime/strategic_execution.py",
+      "sha256": "74cbcb9e3de9ca9354b912a418da6d9c9c401b08797b7c41150d940d9ed029e7"
+    },
+    {
+      "path": "IRGS_3_3/runtime/temporal_registry.py",
+      "sha256": "fcb7289c1bc57c867a66a8c837085711241e7d75c0589b35563161fa5fe33ba1"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_ast33.py",
+      "sha256": "bf12eb18c89044fccac44a243f838d1ed6cc05ca735b8c284a0734541b5e65c6"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_character_background.py",
+      "sha256": "2f678312cd3bb43fc2d3a1e6d08290e6f6314c2be4bf89771c0985e35f2ca61a"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_economic_integration.py",
+      "sha256": "09fe797e425f64d44f19203db7eaa15277be24ddc1a517aaf710394b92be6b11"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_historical_campaigns.py",
+      "sha256": "e303c92474b2f4bc97eef3bc10cd50d23b25cf586b15b0384244663a0f3ceaca"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_historical_plans.py",
+      "sha256": "a72f94496dfcebd31a545e1f6c0fc69fbef948a662345e9f73828464636f9362"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_loss_and_scale.py",
+      "sha256": "878dd5ee338d20cd905927adfc3b89df6c454f8afec68f6014a00dc4f1005e63"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_r7_integration.py",
+      "sha256": "64bc1cf631e7acf304bb859c0a585687e031aa5afee777b08515154793906e25"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_r8_dependencies.py",
+      "sha256": "ad5791c3e12c913104c774e392046520a50dda34febff4676039aabee62215a5"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_r9_runtime.py",
+      "sha256": "427cd0eadefa95c204d28edc2f75262fb3034fd37555349c013fa24545dadb8d"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_release_integrity.py",
+      "sha256": "9e53f0004eda751d90d1be2904bb6645495a0dd61df555996a249078f75da847"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
+      "sha256": "dde9a1d56612d122d5d48fd31292ba27f768f53c61c2a6b9e49a888b8595b4d7"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_starting_selection.py",
+      "sha256": "2d83f6955faaf1a1408ca1d8fd74419af3f049bf2a78f7c63b6b29b7cecf1a37"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_strategy_rights.py",
+      "sha256": "b1cf570b0d7ce37f2c1314192dbe8f979467779200efb66d65b7840a4ea5c5ce"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_suite.py",
+      "sha256": "5bec891f6a1f3d602527889ab24c8b47a9f93503e51d2dbc637ba5a7fb914a6e"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_temporal_registry.py",
+      "sha256": "929ebbfca5997c03e9a447b475816963cd633a9f7ed33c2f9d90b8fdf07e4d36"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_unification.py",
+      "sha256": "0da2440c200257fd2d2f0e9c3a750dff5ddbca91d1e1c31d085b30e3e21dc6e9"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_work_recovery.py",
+      "sha256": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806"
+    }
+  ],
+  "emergent_engine_blob_sha1": "638d44e80fd0ffe1180aeeee2b760239c8c0763b",
+  "matches_reviewed_emergent_engine": true,
+  "active_runtime_modified": false,
+  "draft_code_included": false
+}

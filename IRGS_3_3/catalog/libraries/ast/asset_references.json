@@ -1,0 +1,323 @@
+{
+  "status": "Referenced source assets; not required for runtime or automatically adopted",
+  "concept_board_files_observed": 37,
+  "embedded_images": 0,
+  "assets": [
+    {
+      "file": "A Scot's Tale - Robert Atwood.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot's Tale - Robert Atwood.png",
+      "sha256": "f2870d292ee76981b7f35aa6c6605f58c867223f68a5b42a8378be63e715b62f",
+      "bytes": 3079161,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot's Tale - Simon Bellamy.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot's Tale - Simon Bellamy.png",
+      "sha256": "b03dc53b1880936baa093c1258b2e62a0b3c3069d1576f351904c314c9812f36",
+      "bytes": 3141416,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot's Tale - Stephen Mercer.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot's Tale - Stephen Mercer.png",
+      "sha256": "9e0e9c553c96bbf5f17aa170479f86a1c9ea23988ea48b5c776142422ccc9dc7",
+      "bytes": 3001304,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale - Clement Ward.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale - Clement Ward.png",
+      "sha256": "8f000b4170b29b9d7c6dfaa19d7b288d14ea7f3c0a4968168e5922e9220aba81",
+      "bytes": 2924872,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale - Thomas Grene.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale - Thomas Grene.png",
+      "sha256": "ef9eb597926bb767b083808c0d7e39382c64353a22c898ad076fdcf0c1bcd14d",
+      "bytes": 3899650,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale_ Adam Lark Character Sheet.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale_ Adam Lark Character Sheet.png",
+      "sha256": "f7d9f4b3c5a38e3ac608af1c4d4e8644dd76446efb4c6c3695e6587fc4a66e5f",
+      "bytes": 2855568,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale_ Master Hugh Atwood.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale_ Master Hugh Atwood.png",
+      "sha256": "1b2f6ac1db4d6341c71a7fda7f08ac4d920880d43958a71f504d5cca59a90d3c",
+      "bytes": 3078045,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale_ Master Simon Peterkin.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale_ Master Simon Peterkin.png",
+      "sha256": "a693d9187927d55bb2c1d4143842bbfad1ca29576a5a9e6d4e1f5143c80a36d9",
+      "bytes": 2873766,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale_ Quayside Carter.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale_ Quayside Carter.png",
+      "sha256": "677e1dba0b4488b11bccbc15b64e5f426b732aff5c65ac37d9d34b5793c57a80",
+      "bytes": 2744145,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "A Scot’s Tale_ William Harker Concept Board.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\A Scot’s Tale_ William Harker Concept Board.png",
+      "sha256": "f131f7fc4dde1ca9b4afe6ce11c35778c2192daae783504bb48ba51764241ae5",
+      "bytes": 3164499,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Able_ Highland Warhorse Concept Sheet.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Able_ Highland Warhorse Concept Sheet.png",
+      "sha256": "50ecfc65d411dc9a251e4d9ef49310280993a829d90151235d38fb31bb9383d0",
+      "bytes": 3082713,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Agnes Flowerdew_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Agnes Flowerdew_ A Scot’s Tale.png",
+      "sha256": "7c9b7a0e9749b5ff85dbdee0ba4356b7a1b6cc85d1abd62d8c6ac7995e58a0cd",
+      "bytes": 3294390,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Alice Flowerdew_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Alice Flowerdew_ A Scot’s Tale.png",
+      "sha256": "5848608dc03562c5f3eb3cdf035fa2960c85fccfc3b376d91f920999e9261a19",
+      "bytes": 3133852,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Aoife Cameron_ Highland Gentlewoman Concept Board.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Aoife Cameron_ Highland Gentlewoman Concept Board.png",
+      "sha256": "7d00c161d6ad14c6c2be2cad1821dfae734b59bae52b4fe15122dfbc6fc92d62",
+      "bytes": 3152999,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Captain Eoghan Cameron Character Dossier.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Captain Eoghan Cameron Character Dossier.png",
+      "sha256": "ffe1ad6b68548c3ab8308fb87ba5d0bc3a08e01b9305be1a3cf7f9193468e9c1",
+      "bytes": 3217190,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Edith Blackwell_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Edith Blackwell_ A Scot’s Tale.png",
+      "sha256": "0aab867f6b4160431081719ae8c4149debd18f31f6ec57ca4dd0f5ee0d6f08c8",
+      "bytes": 2955399,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Emrys Lloyd_ Welsh Timber Merchant.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Emrys Lloyd_ Welsh Timber Merchant.png",
+      "sha256": "f213facafe22dcfefcc51e219dcf1900cd82e6f84da72ab90a715d1133a0dcb8",
+      "bytes": 3261249,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Godric Blackwell_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Godric Blackwell_ A Scot’s Tale.png",
+      "sha256": "493559ed776f7c7bb44ac19317a94ff6af49ad3a0f99a82515265670a1a9b122",
+      "bytes": 3197939,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Highlander Character Concept Sheet.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Highlander Character Concept Sheet.png",
+      "sha256": "04df5c10466db3c9efce174046f68aa944826393d451ee16c3f6c96d7d7d2837",
+      "bytes": 3187717,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "King Henry V_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\King Henry V_ A Scot’s Tale.png",
+      "sha256": "177c798c84fcf242966c4751f01373646af3f35afe98142ed20732dea8c21e1f",
+      "bytes": 2992684,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Lord Thomas Camoys_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Lord Thomas Camoys_ A Scot’s Tale.png",
+      "sha256": "37076fdfc4499880ea4cf61c89d03dadc51a1848598445a556a26f337ebf1662",
+      "bytes": 3096844,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Martin Cooper_ Southampton Shieldwright.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Martin Cooper_ Southampton Shieldwright.png",
+      "sha256": "204e9ff8ea65acc8af3cbfcbf5607115746dff29b22e549c7afd4e05dc679e47",
+      "bytes": 3026689,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Master Bernard_ Medieval Saddler Profile.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Master Bernard_ Medieval Saddler Profile.png",
+      "sha256": "fd96c0633b58e34d6a0ba6b6c5fc1e308ce4266bd56cb2a2992134996dbaa1a3",
+      "bytes": 2583474,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Master Edmund_ Recruitment Clerk Character Sheet.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Master Edmund_ Recruitment Clerk Character Sheet.png",
+      "sha256": "dc482dedf4e1688160137d28e3ad0364eb9bb66d060d465256948cc4a67ab04b",
+      "bytes": 2896840,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Master Geoffrey Ashcombe_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Master Geoffrey Ashcombe_ A Scot’s Tale.png",
+      "sha256": "e610ba9abb4bae1ac21e2bbbb7f40df1702c3b74c4054543acf9f67652deb281",
+      "bytes": 3075520,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Master Hugh Fenwick Character Sheet.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Master Hugh Fenwick Character Sheet.png",
+      "sha256": "136e9390a890a0d6fb35db1c803a31e775cdc07e7443474d45a0aa5b584f75b3",
+      "bytes": 2738455,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Matthew Reed_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Matthew Reed_ A Scot’s Tale.png",
+      "sha256": "ab8e2d214a7e6d73f3c465a52237e71289b20625f67c045646c5f1e55a6e5e84",
+      "bytes": 2955413,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Ned Harrow_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Ned Harrow_ A Scot’s Tale.png",
+      "sha256": "87ac51702b1d3b4f08f45cbb0c3804f711ebc81c6214f8fa1f7433d2eac414ce",
+      "bytes": 2723567,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Osric Bell_ A Highland Household Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Osric Bell_ A Highland Household Tale.png",
+      "sha256": "18d36e917784f13fb39b924fd7bfedc772603e64e8ebd85b85a45b0b427cc2d0",
+      "bytes": 2975176,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Oswin Tanner_ Highland Stable Officer.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Oswin Tanner_ Highland Stable Officer.png",
+      "sha256": "bb1d4262909f2337fdff6b62bfd9e38006e13f94d85b73f210cc9107f15993c3",
+      "bytes": 3056858,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Peter Marsh_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Peter Marsh_ A Scot’s Tale.png",
+      "sha256": "654cc0a1a0a4e605d5828b3b24d3f1d23a0bdf64f952869f99e396c1d09f437a",
+      "bytes": 3147094,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Roger Kett_ Western Gate Guard.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Roger Kett_ Western Gate Guard.png",
+      "sha256": "da123e918f429d1924d5a9d4aeb42e5a0a666b9c37c1d7a08d6eb4fd5cac1f8b",
+      "bytes": 2588312,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Sir Nicholas Rookwood_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Sir Nicholas Rookwood_ A Scot’s Tale.png",
+      "sha256": "f6f8a52546e4756a6d95afd2c8c25aa909670e64add1dfc15d0380013dac33fe",
+      "bytes": 3110252,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Sir Richard Wycliffe_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Sir Richard Wycliffe_ A Scot’s Tale.png",
+      "sha256": "bac811c6da1734a048351af6c596d18c448dd312c5964f5b7ccf9da908fd3d7a",
+      "bytes": 3227356,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Steward Walter Hales Character Dossier.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Steward Walter Hales Character Dossier.png",
+      "sha256": "ed07aabb24d3e99be709387aedec201834c4a97b6fba79ba60b66b7f8024b14e",
+      "bytes": 3059568,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Thomas Fletcher_ Archer Character Bible.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Thomas Fletcher_ Archer Character Bible.png",
+      "sha256": "aedd4f53a6fedfc12838ccceea19bbdeabd3e9612b1eaaf9a08faff4d710e327",
+      "bytes": 3000504,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Ælfflæd Blackwell_ A Scot’s Tale.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\AST Character Concept Sheets\\Ælfflæd Blackwell_ A Scot’s Tale.png",
+      "sha256": "70ef374329976cf2041a2fc075c4cf69d72a2e739249b7c1a79cd14db4b3c435",
+      "bytes": 3108159,
+      "embedded": false,
+      "status": "Visual reference only; filename spelling or title does not override user corrections"
+    },
+    {
+      "file": "Coopian_Shield_Current_Inaccurate_Draft.png",
+      "source_path": "C:\\Users\\ian_c\\Documents\\Interactive Roleplaying Games Systems\\IRGS\\AST_v05\\AST_v05\\IRGS_AST\\references\\Coopian_Shield_Current_Inaccurate_Draft.png",
+      "sha256": "fb27f4f253177b7d3d82680b21c5657e0ed1a61454b7fade9530cc2304a56492",
+      "bytes": 2689510,
+      "embedded": false,
+      "status": "Imperfect visual draft; two ordinary arm straps plus smaller over-bracer connection correction controls"
+    }
+  ],
+  "canonical_name": "Abel",
+  "archival_spelling": "Able",
+  "source_bytes_unchanged": true,
+  "older_reference_index_note": "The preserved 0.5 visual index describes 29 older archive members; the inspected local source directory contains the separately counted current files",
+  "archive": {
+    "path": "C:\\Users\\ian_c\\Downloads\\AST Character Concept Sheets.7z",
+    "available_at_build": true,
+    "sha256": "fc1bf7b0630f935562d91e23dce7e9eb2e7c5c2eb60370923428f93ecf580200",
+    "bytes": 103235543,
+    "embedded": false,
+    "archive_member_equivalence_claimed": false
+  }
+}

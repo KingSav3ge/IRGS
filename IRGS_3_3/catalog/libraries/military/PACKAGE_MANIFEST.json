@@ -1,0 +1,82 @@
+{
+  "package_id": "IRGS-MIL-LIB-1.0",
+  "status": "Proposed source-reconciled candidate",
+  "date": "2026-10-14",
+  "core_sha256": "1817cc01bed02c8cb21bae393878e9234743ea4c538d25e1a4a8934182abf738",
+  "external_normative_scl_registry_sha256": "b8697e38f0e66a39dbadf008448efa82856951089b41e795fce159b939c1625f",
+  "source_files_preserved": 2,
+  "era_facets": 6,
+  "category_facets": 12,
+  "era_category_cells": 72,
+  "military_specialization_templates": 48,
+  "acceptance_specifications": 60,
+  "historical_calibration": "not_claimed",
+  "complete_military_slim_core_3_2_bridge": "not_claimed",
+  "files": [
+    {
+      "path": "IRGS_Military_Content_Catalogue_v1_0.json",
+      "bytes": 68563,
+      "sha256": "7f0ef7b23d321ee3d2e1e62595b0feedc8929a8b618b2513334195042e039fa6"
+    },
+    {
+      "path": "IRGS_Military_Content_Library_v1_0_Candidate.md",
+      "bytes": 63355,
+      "sha256": "4b6560ac44abbfe1b01c913ab065183a91afbc4e898e090631341b42f33657d8"
+    },
+    {
+      "path": "IRGS_Military_Library_v1_0_CMRR.md",
+      "bytes": 3200,
+      "sha256": "8ac99a2c29ed64f8339d08295c807d5cef659e347898f10213a718b765ad36f1"
+    },
+    {
+      "path": "Military_Acceptance_Cases_v1_0.csv",
+      "bytes": 8394,
+      "sha256": "77ceb7afb9977a038b2522f5aa4a8965224612f71d247078bf4abd98a4c676f3"
+    },
+    {
+      "path": "Military_Era_Category_Crosswalk_v1_0.csv",
+      "bytes": 18901,
+      "sha256": "6702a1a8127495fb7552c9d693ba7b35b77235ebc1592e2943a383ca61d3232d"
+    },
+    {
+      "path": "Military_SCL_Reference_Crosswalk_v1_0.csv",
+      "bytes": 1592,
+      "sha256": "41311dbe447e05277c9888a18a31571299d37bdfd9f63e7190cc907e2fd85c88"
+    },
+    {
+      "path": "Military_SCL_Reference_Verification_Snapshot.json",
+      "bytes": 3792,
+      "sha256": "65b60e54e88d142cf9765d33b8f662f5970e5f6d4beb74cf43e33c10b80acdf7"
+    },
+    {
+      "path": "Military_Slim_Core_3_2_Compatibility_Gate.md",
+      "bytes": 3130,
+      "sha256": "db91fae5945561381d0aa393518a2d9a9cedc4b70b64d857412dbf67875a411e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1059,
+      "sha256": "8f6c5ff5a4ae4d58c12ecaf58c094291db83e483dcde5022bc2263ee06d92b1b"
+    },
+    {
+      "path": "VALIDATION_REPORT.md",
+      "bytes": 1318,
+      "sha256": "0204cd26cfe4dde35febd5f2b2901374ae87f78ebd8a9e703c08b27d562e1b95"
+    },
+    {
+      "path": "provenance/IRGS_Military_Equipment_and_Technology_Library_v0_1.md",
+      "bytes": 12990,
+      "sha256": "2b0d36498a11cf09e6acfa87febb817bacf96d4603a7ae663c300cbb85947fbf"
+    },
+    {
+      "path": "provenance/IRGS_Soldier_Military_Life_Slim_v1_0.md",
+      "bytes": 51136,
+      "sha256": "f7a5d073369637a3c2e7a082b5c4528bfb122fd725f4ed31ce335c137aca34f0"
+    },
+    {
+      "path": "tests/verify_military_library.py",
+      "bytes": 6495,
+      "sha256": "656f3c8436ab70c73d87b28804f1fb8a8ba93e34b91c6fd53ede5656f338150d"
+    }
+  ]
+}

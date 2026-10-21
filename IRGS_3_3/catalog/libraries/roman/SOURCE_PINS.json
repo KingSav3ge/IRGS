@@ -1,0 +1,16 @@
+{
+  "document_id": "IRGS-RRCL-1.0",
+  "engine_sha256": "402c80e30727b086bd4b5289154f29679aac08494ae303734a3f3c26961a1710",
+  "native_bindings_sha256": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
+  "full_source_sha256": "0a77a92d7ee6140566baa85f199dc3b4eec9a57544aa0785258d2dfa44bf82a4",
+  "external_registry_sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+  "external_core_bindings_sha256": "e7d6a4250921787b673e4c2974711b3dc53a3b5d3a344a09da8ec9995242b0b7",
+  "counts": {
+    "content_entries": 118,
+    "source_native_profiles": 14,
+    "source_section_dispositions": 32,
+    "acceptance_requirements": 64,
+    "parameter_gates": 29
+  },
+  "preservation_policy": "Roman Slim v1.2 and its fourteen source-native content binding entries are immutable."
+}

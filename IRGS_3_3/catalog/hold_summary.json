@@ -1,0 +1,107 @@
+{
+  "shared": {
+    "counts": {
+      "neutral_source_rows": 286,
+      "family_definitions": 279,
+      "complete_selected_qualitative_definitions": 51,
+      "source_backed_candidate_holds": 228,
+      "source_references": 304,
+      "source_backed_reference_holds": 235,
+      "retained_scoped_extensions": 18,
+      "fantasy_adapters": 61,
+      "original_payload_blocks": 420
+    },
+    "qualification_counts": {
+      "catalogue_families": 279,
+      "selected": 51,
+      "held": 228,
+      "r1_drafts": 36,
+      "r2_drafts": 192,
+      "qualitative_held_dossiers": 228,
+      "r1_unpaired_acceptance_specs": 36,
+      "r2_paired_acceptance_specs": 384,
+      "runtime_tests_executed_for_all_dossiers": 0
+    },
+    "definition_revision": "0.2",
+    "rule": "Selected means qualitative source definition; held family replacement and numerical activation remain held"
+  },
+  "fantasy": {
+    "source_bindings": 111,
+    "native_adapters": 61,
+    "source_payloads": 168,
+    "proposed_archetypes": 12
+  },
+  "paf": {
+    "proposed_compositions": 43
+  },
+  "military": {
+    "proposed_unqualified_templates": 48
+  },
+  "roman": {
+    "proposed_templates": 118,
+    "native_profiles": 14
+  },
+  "shinobi": {
+    "records": 537,
+    "source_counts": {
+      "total": 537,
+      "retained_original": 122,
+      "added_legacy_reference": 415,
+      "native_techniques_retained": 18,
+      "proposed_opt_in_techniques_retained": 31,
+      "rank_distribution_legacy": {
+        "A": 65,
+        "B": 74,
+        "C": 60,
+        "D": 45,
+        "E": 32,
+        "S": 72,
+        "SS": 48,
+        "X": 19
+      },
+      "section_distribution_legacy": {
+        "Earth Release (Doton)": 33,
+        "Fire Release (Katon)": 32,
+        "Forbidden, Legendary and DSSN": 20,
+        "Fūinjutsu": 31,
+        "Genjutsu": 32,
+        "Illustrative sample in reading guide": 1,
+        "Kekkei Genkai": 20,
+        "Kekkei Tōta": 10,
+        "Lightning Release (Raiton)": 33,
+        "Medical Ninjutsu": 32,
+        "Puppetry and Tools": 28,
+        "Signature and Homebrew": 10,
+        "Summoning and Contracts": 32,
+        "Taijutsu": 33,
+        "Water Release (Suiton)": 33,
+        "Wind Release (Fūton)": 35
+      },
+      "pdf_reference_files": 11,
+      "pdf_aggregated_result_counts_not_unique": 2503
+    },
+    "status_rule": "Exactly original v0.1 statuses, under their existing conditions; every legacy_unconverted record is blocked.",
+    "readiness": {
+      "old_statuses": {
+        "native_source": "faithful selected R0.3 profile, source R0.1 remains proposed",
+        "native_derived": "an operating reference view derived from R0.3; no new owner",
+        "proposed_complete_opt_in": "new playable-scale proposal only on explicit profile activation; uncalibrated",
+        "proposed_template": "scenario/organization/service template requiring concrete campaign data",
+        "held_incomplete": "cannot activate as full mechanic without enumerated missing fields"
+      },
+      "legacy_unconverted": "Not usable as a technique or effect until an explicit complete compatible conversion is separately reviewed/accepted."
+    }
+  },
+  "space": {
+    "source_definitions": 8,
+    "optional_shared_aliases": 3
+  },
+  "ast": {
+    "characters": 37,
+    "provisional_ratings_adopted": false,
+    "post_day_2_guide": true,
+    "canonical_horse_name": "Abel"
+  },
+  "promotion_applied": false,
+  "lookup_creates_state": false
+}

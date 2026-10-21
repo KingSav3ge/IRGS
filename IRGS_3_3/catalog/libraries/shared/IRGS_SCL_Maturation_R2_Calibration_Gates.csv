@@ -1,0 +1,20 @@
+semantic_type,draft_count_R2,source_specific_calibration_dimensions,automatic_quantitative_values,promotion,source_or_genre_ownership
+armor,8,"Construction materials, verified coverage/fit; channel-specific protection and local degradation",None,Explicit per-entry review only,K-ASSET/K-ACTOR
+behavior,6,"Species population, senses, goals, ecology, reproduction and physical capacity",None,Explicit per-entry review only,K-ACTOR/K-POP/K-INFO
+crisis,10,"Geographic extent, initiating conditions, participating actors, interdependent processes, horizon",None,Explicit per-entry review only,K-TIME/K-ORG/K-ASSET/K-POP
+equipment,11,"Actual model/spec, installation/configuration, power/consumables, rated envelope, trained operator",None,Explicit per-entry review only,K-ASSET/K-WORK/K-STOCK
+flow,4,"Source/destination, consignment/people IDs, schedule, capacity, transit location and receipt",None,Explicit per-entry review only,K-NET/K-STOCK/K-INFO/K-POP
+habitation,7,"Population/bed demand, shelter protection, sanitation and water, security and recurring service",None,Explicit per-entry review only,K-ACTOR/K-POP/K-ASSET/K-NET
+hazard,10,"Actual source, intensity/unit, transport/exposure, target susceptibility, threshold/period and recovery",None,Explicit per-entry review only,K-ASSET/K-ACTOR/K-POP/K-TIME
+information_content,1,"Author/provenance, record age/version, custody, observation and legal authority",None,Explicit per-entry review only,K-INFO/K-ASSET
+institution,11,"Charter/statutory mandate, staffing, training, funds and actual enforcement/service means",None,Explicit per-entry review only,K-ORG/K-ACTOR/K-INFO
+link,7,"Endpoint coordinates, mode compatibility, throughput, time/delay, carrying vehicle/line condition",None,Explicit per-entry review only,K-NET/K-ASSET/K-TIME
+method,1,"Actor movement availability, position, technique access, feasible contact, native action commitment",None,Explicit per-entry review only,K-ACTOR/K-WORK
+movement_activity,6,"Existing cohort, authorization/consent, departure/arrival event, transport support, receiving services",None,Explicit per-entry review only,K-ACTOR/K-POP/K-NET/K-TIME
+natural_delivery,9,Species anatomy/scale; positional access; separate delivery versus exposures; native effect model,None,Explicit per-entry review only,K-ACTOR/K-POP
+program,13,"Deliverable acceptance tests, task network, resources, staffing, QA/commissioning and upkeep",None,Explicit per-entry review only,K-WORK/K-TIME/K-ORG
+service,24,"Useful-output unit and minimum quality, time horizon, buffers, delivery/throughput, shared bottlenecks",None,Explicit per-entry review only,K-NET/K-WORK/K-ASSET/K-STOCK
+site,20,"Actual infrastructure installed, legal access, workers, utility/feed, hazard exposure, commission state",None,Explicit per-entry review only,K-ASSET/K-ORG/K-INFO
+stock,16,"Commodity identity, compatible units, quality, mass/volume/conversion, custody, expiry and actual lot count",None,Explicit per-entry review only,K-STOCK
+storage_system,7,"Container material, real capacity, containment/cleaning, access and leakage/thermal hazard",None,Explicit per-entry review only,K-ASSET/K-STOCK
+weapon,21,Physical dimensions/grip; material state; technique prerequisites; attack modes; native reach/effect channels,None,Explicit per-entry review only,K-ASSET/K-ACTOR/K-STOCK

@@ -1,0 +1,14 @@
+﻿name,legacy_source,exact_scl_ref,selector,restriction
+Physical melee weapon,WPN-M-006A/B,SCL:PBC-WPN-FL-WPN-M-006@0.2,modes.cut / modes.thrust,Legacy Fantasy physical family; no universal Threat or historical rating
+Spear,WPN-M-013,SCL:PBC-WPN-FL-WPN-M-013@0.2,default,Physical family; actual form/mass/skill/period calibrated locally
+Crossbow,WPN-R-007,SCL:PBC-WPN-FL-WPN-R-007@0.2,default,Fantasy source mechanics not usable as firearms/modern ratings
+Plate armor,ARM-009,SCL:PBC-WPN-FL-ARM-009@0.2,none,Construction/coverage adapter required; no universal ballistic resistance
+Carry/storage container,STO-001,SCL:PBC-EQP-PL-STO-001@0.2,none,Capacity is not supply; contents stay independent
+First aid kit,EQP-MED-001,SCL:PBC-EQP-PL-EQP-MED-001@0.2,none,Equipment presence does not create treatment
+Hand tool kit,EQP-TOOL-001,SCL:PBC-EQP-PL-EQP-TOOL-001@0.2,none,Qualified work and materials separately required
+Workshop equipment,EQP-SHOP-001,SCL:PBC-EQP-PL-EQP-SHOP-001@0.2,none,Same real tooling for site/equipment/service facets
+Generator,EQP-PWR-001,SCL:PBC-EQP-PL-EQP-PWR-001@0.2,none,One finite fuel stock and service flow
+Radio,EQP-COM-001,SCL:PBC-EQP-PL-EQP-COM-001@0.2,none,Transmitter is not guaranteed transmission/reception
+Manuals,RES-KNW-001,SCL:PBC-EQP-PL-RES-KNW-001@0.2,none,Information content; physical copy may be separate object
+Map/records,RES-KNW-002,SCL:PBC-EQP-PL-RES-KNW-002@0.2,none,"Records are information, not magically current intelligence"
+Rations,RES-FOOD-001,SCL:PBC-RES-PL-RES-FOOD-001@0.2,none,Stock and nutritional profile independent

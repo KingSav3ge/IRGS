@@ -1,0 +1,61 @@
+﻿id,case,expected,evidence
+MIL-01,Six era labels survive unchanged,Exactly ERA-ANT/EAD/MED/EMD/CON/SCI,specified_not_executed_in_runtime
+MIL-02,Twelve categories survive unchanged,Exactly WPN/PRO/SUP/MUN/KIT/TRN/NAV/AIR/COM/OBS/ENG/MED,specified_not_executed_in_runtime
+MIL-03,Every era-category cell covered,Exactly 72 indexed pairs; no duplicate pair,specified_not_executed_in_runtime
+MIL-04,Old source has no weapon numbers,No new range/damage/penetration assigned from source index,specified_not_executed_in_runtime
+MIL-05,Modern tag on historical setting,Not available without date/region/institution evidence,specified_not_executed_in_runtime
+MIL-06,Old sword persists into future setting,Age is no automatic retirement; local availability determines,specified_not_executed_in_runtime
+MIL-07,Select identical physical sword in 2 attack modes,"One asset, two compatible modes, no doubled sword count",specified_not_executed_in_runtime
+MIL-08,Firearm equipped without ammunition,Cannot fire with missing compatible ammo/feed,specified_not_executed_in_runtime
+MIL-09,Cross-era cartridge mismatch,Reject unsupported firing; do not consume incompatible cartridge,specified_not_executed_in_runtime
+MIL-10,Fire one projectile then recover,Debit ready stock or move projectile once; recovery conditional on actual find/condition,specified_not_executed_in_runtime
+MIL-11,Weapon mode selected without parent object,No equipped weapon materializes,specified_not_executed_in_runtime
+MIL-12,Issue recorded as approved but not delivered,No inventory custody or carried mass change,specified_not_executed_in_runtime
+MIL-13,Issue under valid authority and received,Transfer same physical asset once; preserve institution ownership,specified_not_executed_in_runtime
+MIL-14,Duplicate issue event replay,"No second asset, ammo or custody transfer",specified_not_executed_in_runtime
+MIL-15,Lost item becomes a report,Physical loss recorded once; report is knowledge not another debit,specified_not_executed_in_runtime
+MIL-16,Qualification exists without assignment,"Actor has qualification, not automatic weapon or duty slot",specified_not_executed_in_runtime
+MIL-17,Rank increases without training,"No skill improvement, repair or equipment issue implied",specified_not_executed_in_runtime
+MIL-18,Uncrewed support gun used,No operation when required crew stations unavailable,specified_not_executed_in_runtime
+MIL-19,Two crew operate one station,No duplicate gun cycle or free extra attack,specified_not_executed_in_runtime
+MIL-20,Crew uses a source Fantasy damage value in modern campaign,Block absent complete compatible adapter,specified_not_executed_in_runtime
+MIL-21,Armor made of multiple layers,Count each physical layer/effect once using compatible protection model,specified_not_executed_in_runtime
+MIL-22,Environmental suit has armor,Armor does not create oxygen/heat/radiation protection without channels,specified_not_executed_in_runtime
+MIL-23,Don respirator without filter or seal,Unsupported exposure protection cannot be assumed,specified_not_executed_in_runtime
+MIL-24,Powered armor out of energy,No assisted functions where source unavailable; passive elements assessed separately,specified_not_executed_in_runtime
+MIL-25,Transport platform with no route or qualified crew,No journey from a catalogue lookup,specified_not_executed_in_runtime
+MIL-26,Cargo authorized but aboard/in transit,"Origin, transit and destination not counted as three stocks",specified_not_executed_in_runtime
+MIL-27,Mount with tack gets fatigued,Animal physiology and cargo persist; tack not a second animal,specified_not_executed_in_runtime
+MIL-28,Naval ship listed but no marine model,Cannot calculate propulsion/docking from generic vessel family,specified_not_executed_in_runtime
+MIL-29,Sci-fi spacecraft without SPACE profile,"No FTL, propulsion, docking or pressure envelope invented",specified_not_executed_in_runtime
+MIL-30,Command sent by courier without receipt,Recipient lacks command until actual channel receipt,specified_not_executed_in_runtime
+MIL-31,Radio detected a contact,Detection does not establish classification or exact location,specified_not_executed_in_runtime
+MIL-32,Report received after physical casualty,Casualty remains one actual event; delayed knowledge updated separately,specified_not_executed_in_runtime
+MIL-33,Workshop and base both list same lathe,One physical lathe and one competing work capacity,specified_not_executed_in_runtime
+MIL-34,Generator is on but downstream line disconnected,Fuel use may occur; downstream service cannot be assumed,specified_not_executed_in_runtime
+MIL-35,Field kitchen lists ration and meals,Consumption counted once; meal does not multiply underlying food,specified_not_executed_in_runtime
+MIL-36,Medical kit present without provider,"No automatic healing, triage or surgery",specified_not_executed_in_runtime
+MIL-37,Bed present with no clinical staff,Bed availability != medical throughput,specified_not_executed_in_runtime
+MIL-38,Repair completed but lacks acceptance test,Equipment condition/provision and readiness not automatically restored,specified_not_executed_in_runtime
+MIL-39,Ammo storage disrupted,"Only actual stocks, conditions, locations and supported hazards affected",specified_not_executed_in_runtime
+MIL-40,Training introduces improved doctrine,No rollout without approval/instruction/equipment receipt,specified_not_executed_in_runtime
+MIL-41,Loadout has issued and owned copies,Two actual items if truly distinct; no conflated owner,specified_not_executed_in_runtime
+MIL-42,Unit shifts from detailed combat to aggregate,"No replenished ammo, people, equipment condition, or repeated injuries",specified_not_executed_in_runtime
+MIL-43,Two orders demand same gun simultaneously,One valid resource allocation; conflict resolved under Core,specified_not_executed_in_runtime
+MIL-44,Undeclared science-fiction autonomous combat system,No independent omniscient AI actions,specified_not_executed_in_runtime
+MIL-45,Historical technology unavailable locally,"Entry remains candidate, deployment disallowed until eligibility",specified_not_executed_in_runtime
+MIL-46,Military slim engine pin is Core 3.0,No automatic rebinding to Core 3.2 without complete bridge/adoption,specified_not_executed_in_runtime
+MIL-47,SCL v1.0 releases an @0.2 family,Immutable @0.2 content identity and selectors retained,specified_not_executed_in_runtime
+MIL-48,Existing campaign loads proposed library,"No automatic inventory, pay, command, casualty, legal or progression changes",specified_not_executed_in_runtime
+MIL-49,Narrator reports offscreen repair,Work occurred only if real actor/means/time/support and accepted result,specified_not_executed_in_runtime
+MIL-50,Failure of limited radio message,No automatic unrelated crash/casualty; only feasible failure effects,specified_not_executed_in_runtime
+MIL-51,Deploy with unknown missile engagement envelope,Defer only dependent quantitative engagement; other actions proceed,specified_not_executed_in_runtime
+MIL-52,Transfer ammunition to magazine,Debit storage and credit magazine; no consumed shot yet,specified_not_executed_in_runtime
+MIL-53,"Ammo loaded, fired and casing ejected",Spent components persist/leave according to specific profile; no duplicate debit,specified_not_executed_in_runtime
+MIL-54,Crew casualty disables station,Recompute linked capability only; other stations remain per actual configuration,specified_not_executed_in_runtime
+MIL-55,Issue standard kit selection,Template spawns no goods until actual approved issue and delivery event,specified_not_executed_in_runtime
+MIL-56,Military competition with marksmanship event,Core competition owns eligibility/results; weapon method owns performance,specified_not_executed_in_runtime
+MIL-57,Long-term service without battle,"Ordinary duty, training, pay, family and retirement remain playable",specified_not_executed_in_runtime
+MIL-58,Ambiguous era boundary,Region/date evidence prevails over era tag; do not impose cross-cultural inevitability,specified_not_executed_in_runtime
+MIL-59,Partial equipment specification,Explicit unknown not overwritten by legacy Fantasy or zero/default,specified_not_executed_in_runtime
+MIL-60,Replayed event at different scale,Same event ID and write-set prevents repeated cost or physical result,specified_not_executed_in_runtime

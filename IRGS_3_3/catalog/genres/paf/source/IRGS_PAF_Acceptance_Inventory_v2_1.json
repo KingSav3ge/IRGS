@@ -1,0 +1,2738 @@
+{
+  "cases": [
+    {
+      "id": "PA13-01",
+      "source_cells": [
+        "PA13-01",
+        "One storm: region A restores power, region B loses water, region C remains intact",
+        "Separate regional/domain crisis views; no global stage or level",
+        "I02/I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-01",
+        "One storm: region A restores power, region B loses water, region C remains intact",
+        "Separate regional/domain crisis views; no global stage or level",
+        "I02/I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-02",
+      "source_cells": [
+        "PA13-02",
+        "Ordinary blackout; water tank still delivers water",
+        "Crisis pressure forecasts delayed vulnerability using Core; no immediate fake loss",
+        "I03/I05",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-02",
+        "Ordinary blackout; water tank still delivers water",
+        "Crisis pressure forecasts delayed vulnerability using Core; no immediate fake loss",
+        "I03/I05",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-03",
+      "source_cells": [
+        "PA13-03",
+        "Outage report arrives after repair",
+        "Report updates actor knowledge/assessment only; no second service interruption",
+        "I01/I02",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-03",
+        "Outage report arrives after repair",
+        "Report updates actor knowledge/assessment only; no second service interruption",
+        "I01/I02",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-04",
+      "source_cells": [
+        "PA13-04",
+        "Two crises expose one hospital's same generator",
+        "Two linked causes, one actual generator and finite capacity/fuel; no duplicated consumption",
+        "I01/I05",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-04",
+        "Two crises expose one hospital's same generator",
+        "Two linked causes, one actual generator and finite capacity/fuel; no duplicated consumption",
+        "I01/I05",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-05",
+      "source_cells": [
+        "PA13-05",
+        "Known former pharmacy has no actual usable medication",
+        "LegacySite history cannot create medicine or override Core inventory",
+        "I04",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-05",
+        "Known former pharmacy has no actual usable medication",
+        "LegacySite history cannot create medicine or override Core inventory",
+        "I04",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-06",
+      "source_cells": [
+        "PA13-06",
+        "Stripped factory still contains usable installed machines",
+        "Separate category/area and installed-capital assessment; do not erase productive asset",
+        "I04",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-06",
+        "Stripped factory still contains usable installed machines",
+        "Separate category/area and installed-capital assessment; do not erase productive asset",
+        "I04",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-07",
+      "source_cells": [
+        "PA13-07",
+        "Technicians depart while their equipment still works",
+        "LegacyDependency horizon worsens; no immediate invented machine failure",
+        "I08",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-07",
+        "Technicians depart while their equipment still works",
+        "LegacyDependency horizon worsens; no immediate invented machine failure",
+        "I08",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-08",
+      "source_cells": [
+        "PA13-08",
+        "Radio contact restored; food convoy route still impassable",
+        "RegionalRecovery improves information only; no phantom food delivery",
+        "I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-08",
+        "Radio contact restored; food convoy route still impassable",
+        "RegionalRecovery improves information only; no phantom food delivery",
+        "I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-09",
+      "source_cells": [
+        "PA13-09",
+        "School becomes emergency refuge during flood",
+        "RefugePosture creates no additional people, beds, water or civic authority",
+        "I05",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-09",
+        "School becomes emergency refuge during flood",
+        "RefugePosture creates no additional people, beds, water or civic authority",
+        "I05",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-10",
+      "source_cells": [
+        "PA13-10",
+        "A 120-person displaced wave splits across two actual destinations",
+        "Wave groups real movements; no duplicate population or automatic citizenship",
+        "I06",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-10",
+        "A 120-person displaced wave splits across two actual destinations",
+        "Wave groups real movements; no duplicate population or automatic citizenship",
+        "I06",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-11",
+      "source_cells": [
+        "PA13-11",
+        "Government's branches operate separately and claim succession",
+        "InstitutionFracture preserves function-specific service, claims and partial continuity",
+        "I07",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-11",
+        "Government's branches operate separately and claim succession",
+        "InstitutionFracture preserves function-specific service, claims and partial continuity",
+        "I07",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-12",
+      "source_cells": [
+        "PA13-12",
+        "Bridge construction complete but access approaches unready",
+        "ReconstructionTransition remains limited to accepted Core service; no false durable completion",
+        "I05/I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-12",
+        "Bridge construction complete but access approaches unready",
+        "ReconstructionTransition remains limited to accepted Core service; no false durable completion",
+        "I05/I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-13",
+      "source_cells": [
+        "PA13-13",
+        "New distributed power replaces failed historic centralized service",
+        "Redesign is legitimate transition; former topology need not be restored",
+        "I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-13",
+        "New distributed power replaces failed historic centralized service",
+        "Redesign is legitimate transition; former topology need not be restored",
+        "I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-14",
+      "source_cells": [
+        "PA13-14",
+        "Stable successor society persists through uneventful years",
+        "No imposed scarcity decay, uprising, apocalypse phase or harder foe",
+        "I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-14",
+        "Stable successor society persists through uneventful years",
+        "No imposed scarcity decay, uprising, apocalypse phase or harder foe",
+        "I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-15",
+      "source_cells": [
+        "PA13-15",
+        "Nuclear and ordinary fire profiles affect same real casualty",
+        "Cause-specific module effects, Core injury once per supported physical event; overlays do not re-injure",
+        "I03/I10",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-15",
+        "Nuclear and ordinary fire profiles affect same real casualty",
+        "Cause-specific module effects, Core injury once per supported physical event; overlays do not re-injure",
+        "I03/I10",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-16",
+      "source_cells": [
+        "PA13-16",
+        "Disable every extraordinary module",
+        "Mundane crisis, legacy depletion, fracture, refuge, recovery and successor paths remain supported",
+        "I10",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-16",
+        "Disable every extraordinary module",
+        "Mundane crisis, legacy depletion, fracture, refuge, recovery and successor paths remain supported",
+        "I10",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-17",
+      "source_cells": [
+        "PA13-17",
+        "Incomplete proposed Core implementation selected",
+        "Reject unconditional adoption; use an explicitly scoped bridge or defer unsupported deployment under Core §112",
+        "I10",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-17",
+        "Incomplete proposed Core implementation selected",
+        "Reject unconditional adoption; use an explicitly scoped bridge or defer unsupported deployment under Core §112",
+        "I10",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-18",
+      "source_cells": [
+        "PA13-18",
+        "Change presentation from region to building and back",
+        "Same Core event/stock/actor IDs; overlay summaries cause no additional charges",
+        "I01/I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-18",
+        "Change presentation from region to building and back",
+        "Same Core event/stock/actor IDs; overlay summaries cause no additional charges",
+        "I01/I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-19",
+      "source_cells": [
+        "PA13-19",
+        "No inherited reserves left but newly accepted local production is adequate",
+        "Legacy scarcity can end without invented replacement shortage",
+        "I04/I08",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-19",
+        "No inherited reserves left but newly accepted local production is adequate",
+        "Legacy scarcity can end without invented replacement shortage",
+        "I04/I08",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-20",
+      "source_cells": [
+        "PA13-20",
+        "Child arrives within refugee wave with private supplies",
+        "Actual demands/property/rights determined in Core; PA wave neither creates worker nor communal confiscation",
+        "I06",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-20",
+        "Child arrives within refugee wave with private supplies",
+        "Actual demands/property/rights determined in Core; PA wave neither creates worker nor communal confiscation",
+        "I06",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-21",
+      "source_cells": [
+        "PA13-21",
+        "Two successor governments claim an old treaty",
+        "PAF represents competing historical claims; GOV determines legal/practical status through actual process",
+        "I07/I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-21",
+        "Two successor governments claim an old treaty",
+        "PAF represents competing historical claims; GOV determines legal/practical status through actual process",
+        "I07/I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA13-22",
+      "source_cells": [
+        "PA13-22",
+        "A long-term rebuilding program is canceled for a peaceful local alternative",
+        "Program choice remains real; no compelled reconstruction ladder or punishment",
+        "I09",
+        "Specified; retained"
+      ],
+      "current_cells": [
+        "PA13-22",
+        "A long-term rebuilding program is canceled for a peaceful local alternative",
+        "Program choice remains real; no compelled reconstruction ladder or punishment",
+        "I09",
+        "Specified; retained"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-01",
+      "source_cells": [
+        "PA20-01",
+        "An older parent was proposed; current v3.1 carries explicit workshop confirmation",
+        "Pin confirmed v3.1 bytes and binding; preserve separate PAF design and campaign adoption status; no automatic later upgrade",
+        "I10",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-01",
+        "The preceding PAF pins Core 3.1; this deployment selects confirmed Core 3.2 and SCL 1.0",
+        "Pin exact current bytes, providers and catalogue; preserve separate PAF clause status and campaign adoption; no automatic later upgrade",
+        "I10",
+        "Specified; receiving locator revised in v2.1"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-02",
+      "source_cells": [
+        "PA20-02",
+        "Known legacy store revisited repeatedly after stock exhausted",
+        "No respawn; newly opened area changes access/evidence only until Core establishes/retrieves real stock",
+        "I04",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-02",
+        "Known legacy store revisited repeatedly after stock exhausted",
+        "No respawn; newly opened area changes access/evidence only until Core establishes/retrieves real stock",
+        "I04",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-03",
+      "source_cells": [
+        "PA20-03",
+        "A 120-person wave splits: 70 arrive A; 50 remain in transit",
+        "Origin 0, A 70, transit 50, B 0 for this cohort; destination forecast separate from current need; total 120",
+        "I06",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-03",
+        "A 120-person wave splits: 70 arrive A; 50 remain in transit",
+        "Origin 0, A 70, transit 50, B 0 for this cohort; destination forecast separate from current need; total 120",
+        "I06",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-04",
+      "source_cells": [
+        "PA20-04",
+        "Two indivisible services each require 6 units; shared budget is 10",
+        "At most one runs simultaneously unless another supported configuration exists; no two fractional full services",
+        "I05",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-04",
+        "Two indivisible services each require 6 units; shared budget is 10",
+        "At most one runs simultaneously unless another supported configuration exists; no two fractional full services",
+        "I05",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-05",
+      "source_cells": [
+        "PA20-05",
+        "Generator and powered fuel pump each require the other to start",
+        "No bootstrap; record required black-start means without fabricating them",
+        "I05",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-05",
+        "Generator and powered fuel pump each require the other to start",
+        "No bootstrap; record required black-start means without fabricating them",
+        "I05",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-06",
+      "source_cells": [
+        "PA20-06",
+        "Relief proposal needs new PC payment or evacuation after Mixed",
+        "Preserve actual work/costs; return the new voluntary decision; no implied spending or movement",
+        "I01/I06",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-06",
+        "Relief proposal needs new PC payment or evacuation after Mixed",
+        "Preserve actual work/costs; return the new voluntary decision; no implied spending or movement",
+        "I01/I06",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-07",
+      "source_cells": [
+        "PA20-07",
+        "Local part fabrication unavailable but reliable imports support the horizon",
+        "Record imported support; no compulsory self-sufficiency penalty; current service persists",
+        "I08/I09",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-07",
+        "Local part fabrication unavailable but reliable imports support the horizon",
+        "Record imported support; no compulsory self-sufficiency penalty; current service persists",
+        "I08/I09",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-08",
+      "source_cells": [
+        "PA20-08",
+        "Source stops while accumulated exposure remains",
+        "Stop future input only; apply selected persistence/recovery; no instant cure",
+        "I03/I10",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-08",
+        "Source stops while accumulated exposure remains",
+        "Stop future input only; apply selected persistence/recovery; no instant cure",
+        "I03/I10",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-09",
+      "source_cells": [
+        "PA20-09",
+        "Same cause appears in three overlays and its event is replayed",
+        "One Core effect; reference updates only; distinct real downstream effects still occur at their times",
+        "I01",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-09",
+        "Same cause appears in three overlays and its event is replayed",
+        "One Core effect; reference updates only; distinct real downstream effects still occur at their times",
+        "I01",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-10",
+      "source_cells": [
+        "PA20-10",
+        "A crisis ends with an unfinished repair and private debt",
+        "Archive crisis context; preserve work, obligations, property and consequences",
+        "I07/I09",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-10",
+        "A crisis ends with an unfinished repair and private debt",
+        "Archive crisis context; preserve work, obligations, property and consequences",
+        "I07/I09",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-11",
+      "source_cells": [
+        "PA20-11",
+        "Only source report says an unknown controller cannot be reproduced",
+        "Preserve source/confidence and unknown truth; do not turn a claim into proven impossibility",
+        "I02/I08",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-11",
+        "Only source report says an unknown controller cannot be reproduced",
+        "Preserve source/confidence and unknown truth; do not turn a claim into proven impossibility",
+        "I02/I08",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-12",
+      "source_cells": [
+        "PA20-12",
+        "Two campaigns share content IDs and a similarly named event",
+        "Campaign-scoped identities; no cross-campaign stock, lore or event application",
+        "I01/I10",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-12",
+        "Two campaigns share content IDs and a similarly named event",
+        "Campaign-scoped identities; no cross-campaign stock, lore or event application",
+        "I01/I10",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-13",
+      "source_cells": [
+        "PA20-13",
+        "SCL/PBC alias points to an incomplete replacement definition",
+        "Retain complete selected source definition; no substitute performance inferred from identifier",
+        "I10",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-13",
+        "SCL/PBC alias points to an incomplete replacement definition",
+        "Retain complete selected source definition; no substitute performance inferred from identifier",
+        "I10",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-14",
+      "source_cells": [
+        "PA20-14",
+        "Refuge demand rises at arrival before administrative registration",
+        "Immediate physical demand; legal status and labor availability remain independent",
+        "I03/I06",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-14",
+        "Refuge demand rises at arrival before administrative registration",
+        "Immediate physical demand; legal status and labor availability remain independent",
+        "I03/I06",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA20-15",
+      "source_cells": [
+        "PA20-15",
+        "Quiet ten-year interval with no selected demographic or wear rates",
+        "No fabricated counts or decay; preserve supported state, flag required unresolved projections and continue independent supported activity",
+        "I08/I09",
+        "Specified; new"
+      ],
+      "current_cells": [
+        "PA20-15",
+        "Quiet ten-year interval with no selected demographic or wear rates",
+        "No fabricated counts or decay; preserve supported state, flag required unresolved projections and continue independent supported activity",
+        "I08/I09",
+        "Specified; new"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-01",
+      "source_cells": [
+        "PA-01",
+        "Mundane crisis with all extraordinary modules disabled",
+        "All principal loops remain playable.",
+        "Core §112; PAF §8"
+      ],
+      "current_cells": [
+        "PA-01",
+        "Mundane crisis with all extraordinary modules disabled",
+        "All principal loops remain playable.",
+        "Core §112; PAF §8"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-02",
+      "source_cells": [
+        "PA-02",
+        "Stores remain stocked during institutional collapse",
+        "Access/distribution determine availability; stock does not vanish globally.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-02",
+        "Stores remain stocked during institutional collapse",
+        "Access/distribution determine availability; stock does not vanish globally.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-03",
+      "source_cells": [
+        "PA-03",
+        "Excellent search at empty pharmacy",
+        "No medicine is created.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-03",
+        "Excellent search at empty pharmacy",
+        "No medicine is created.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-04",
+      "source_cells": [
+        "PA-04",
+        "Failed search of established concealed cache",
+        "Cache persists.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-04",
+        "Failed search of established concealed cache",
+        "Cache persists.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-05",
+      "source_cells": [
+        "PA-05",
+        "Another team revisits depleted site",
+        "Updated depletion/history applies; no fresh loot allocation.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-05",
+        "Another team revisits depleted site",
+        "Updated depletion/history applies; no fresh loot allocation.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-06",
+      "source_cells": [
+        "PA-06",
+        "Factory stripped of portable goods",
+        "Installed machinery may remain.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-06",
+        "Factory stripped of portable goods",
+        "Installed machinery may remain.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-07",
+      "source_cells": [
+        "PA-07",
+        "Site secured but basement unmapped",
+        "Control and knowledge remain separate.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-07",
+        "Site secured but basement unmapped",
+        "Control and knowledge remain separate.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-08",
+      "source_cells": [
+        "PA-08",
+        "Generator found without lifting/transport capability",
+        "Discovery does not produce extraction/delivery.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-08",
+        "Generator found without lifting/transport capability",
+        "Discovery does not produce extraction/delivery.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-09",
+      "source_cells": [
+        "PA-09",
+        "Machine cannibalized for required component",
+        "Source capability reflects missing component.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-09",
+        "Machine cannibalized for required component",
+        "Source capability reflects missing component.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-10",
+      "source_cells": [
+        "PA-10",
+        "Building wiring removed as salvage",
+        "Recovered material increases; building restoration potential decreases.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "current_cells": [
+        "PA-10",
+        "Building wiring removed as salvage",
+        "Recovered material increases; building restoration potential decreases.",
+        "Core §§79, 104–105; PAF §4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-11",
+      "source_cells": [
+        "PA-11",
+        "Stock dispatched between settlements",
+        "Source decreases at dispatch; transit is location; destination increases at receipt.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-11",
+        "Stock dispatched between settlements",
+        "Source decreases at dispatch; transit is location; destination increases at receipt.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-12",
+      "source_cells": [
+        "PA-12",
+        "Same delivery appears in later report",
+        "No second inventory change.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-12",
+        "Same delivery appears in later report",
+        "No second inventory change.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-13",
+      "source_cells": [
+        "PA-13",
+        "One worker assigned to overlapping duties",
+        "Hours cannot be double allocated.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-13",
+        "One worker assigned to overlapping duties",
+        "Hours cannot be double allocated.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-14",
+      "source_cells": [
+        "PA-14",
+        "12 technician-hour project, max 2 parallel workers",
+        "Two technicians require six usable hours; four do not make it three.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-14",
+        "12 technician-hour project, max 2 parallel workers",
+        "Two technicians require six usable hours; four do not make it three.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-15",
+      "source_cells": [
+        "PA-15",
+        "Power fails two hours into two-person repair",
+        "Credit only feasible work completed before interruption.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-15",
+        "Power fails two hours into two-person repair",
+        "Credit only feasible work completed before interruption.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-16",
+      "source_cells": [
+        "PA-16",
+        "Expected harvest lies beyond reserve exhaustion",
+        "Future harvest does not count as current stock.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "current_cells": [
+        "PA-16",
+        "Expected harvest lies beyond reserve exhaustion",
+        "Future harvest does not count as current stock.",
+        "Core §§10–12, 35, 71, 73, 109; PAF §§3–4"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-17",
+      "source_cells": [
+        "PA-17",
+        "Seven days food, two days water",
+        "Water is immediate limiting requirement.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-17",
+        "Seven days food, two days water",
+        "Water is immediate limiting requirement.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-18",
+      "source_cells": [
+        "PA-18",
+        "Full water tank contaminated",
+        "Physical quantity can remain while potable reserve falls.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-18",
+        "Full water tank contaminated",
+        "Physical quantity can remain while potable reserve falls.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-19",
+      "source_cells": [
+        "PA-19",
+        "Settlement food-secure in summer but not winter",
+        "Seasonal continuity can fail despite current surplus.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-19",
+        "Settlement food-secure in summer but not winter",
+        "Seasonal continuity can fail despite current surplus.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-20",
+      "source_cells": [
+        "PA-20",
+        "300 evacuees occupy school",
+        "Refuge can exist without mature settlement.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-20",
+        "300 evacuees occupy school",
+        "Refuge can exist without mature settlement.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-21",
+      "source_cells": [
+        "PA-21",
+        "Shelter supports 500, water supports 300",
+        "Water remains binding service.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-21",
+        "Shelter supports 500, water supports 300",
+        "Water remains binding service.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-22",
+      "source_cells": [
+        "PA-22",
+        "100 new beds constructed",
+        "Water/sanitation/food do not magically expand.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-22",
+        "100 new beds constructed",
+        "Water/sanitation/food do not magically expand.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-23",
+      "source_cells": [
+        "PA-23",
+        "Stable settlement solves its water deficit",
+        "Do not create compensating shortage without cause.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "current_cells": [
+        "PA-23",
+        "Stable settlement solves its water deficit",
+        "Do not create compensating shortage without cause.",
+        "Core §§71–72, 103, 121; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-24",
+      "source_cells": [
+        "PA-24",
+        "Intact water plant loses grid power",
+        "Asset condition unchanged; service follows backup/buffer.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-24",
+        "Intact water plant loses grid power",
+        "Asset condition unchanged; service follows backup/buffer.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-25",
+      "source_cells": [
+        "PA-25",
+        "Elevated tank provides 12 hours after pumps stop",
+        "Consumer service does not instantly fall to zero.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-25",
+        "Elevated tank provides 12 hours after pumps stop",
+        "Consumer service does not instantly fall to zero.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-26",
+      "source_cells": [
+        "PA-26",
+        "Pump power returns but treatment chemical absent",
+        "Pumping can return without potable service.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-26",
+        "Pump power returns but treatment chemical absent",
+        "Pumping can return without potable service.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-27",
+      "source_cells": [
+        "PA-27",
+        "Bridge damaged",
+        "Supported transport modes assessed separately.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-27",
+        "Bridge damaged",
+        "Supported transport modes assessed separately.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-28",
+      "source_cells": [
+        "PA-28",
+        "Demand exceeds generation",
+        "Shortfall requires allocation; equipment not automatically damaged.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-28",
+        "Demand exceeds generation",
+        "Shortfall requires allocation; equipment not automatically damaged.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-29",
+      "source_cells": [
+        "PA-29",
+        "Hospital backup supports critical loads only",
+        "Critical service may continue while noncritical load is shed.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-29",
+        "Hospital backup supports critical loads only",
+        "Critical service may continue while noncritical load is shed.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-30",
+      "source_cells": [
+        "PA-30",
+        "Generator/fuel pump startup loop exists",
+        "No self-start without black-start capability.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-30",
+        "Generator/fuel pump startup loop exists",
+        "No self-start without black-start capability.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-31",
+      "source_cells": [
+        "PA-31",
+        "Alternate transmission line has capacity",
+        "Actual rerouting can preserve service.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-31",
+        "Alternate transmission line has capacity",
+        "Actual rerouting can preserve service.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-32",
+      "source_cells": [
+        "PA-32",
+        "Alternate line capacity insufficient",
+        "Partial continuity follows bottleneck.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-32",
+        "Alternate line capacity insufficient",
+        "Partial continuity follows bottleneck.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-33",
+      "source_cells": [
+        "PA-33",
+        "Repair complete but functional test fails",
+        "Asset remains uncommissioned.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-33",
+        "Repair complete but functional test fails",
+        "Asset remains uncommissioned.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-34",
+      "source_cells": [
+        "PA-34",
+        "Plant commissioned but distribution broken",
+        "Plant works; end-user service remains interrupted.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-34",
+        "Plant commissioned but distribution broken",
+        "Plant works; end-user service remains interrupted.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-35",
+      "source_cells": [
+        "PA-35",
+        "Sole qualified operator leaves",
+        "Physical asset remains; operational capability changes.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-35",
+        "Sole qualified operator leaves",
+        "Physical asset remains; operational capability changes.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-36",
+      "source_cells": [
+        "PA-36",
+        "One outage affects water/refrigeration/comms",
+        "Initiating event applied once; downstream systems use own buffers.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-36",
+        "One outage affects water/refrigeration/comms",
+        "Initiating event applied once; downstream systems use own buffers.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-37",
+      "source_cells": [
+        "PA-37",
+        "Temporary generators restore power",
+        "Temporary service recorded without declaring permanent reconstruction.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "current_cells": [
+        "PA-37",
+        "Temporary generators restore power",
+        "Temporary service recorded without declaring permanent reconstruction.",
+        "Core §§101–103, 109; PAF §§3, 7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-38",
+      "source_cells": [
+        "PA-38",
+        "100 refugees arrive",
+        "Demand changes at arrival.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "current_cells": [
+        "PA-38",
+        "100 refugees arrive",
+        "Demand changes at arrival.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-39",
+      "source_cells": [
+        "PA-39",
+        "40 arrivals are dependants",
+        "Do not count all 100 as workers.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "current_cells": [
+        "PA-39",
+        "40 arrivals are dependants",
+        "Do not count all 100 as workers.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-40",
+      "source_cells": [
+        "PA-40",
+        "Injured exhausted surgeon arrives",
+        "Expertise exists; current capacity may be limited.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "current_cells": [
+        "PA-40",
+        "Injured exhausted surgeon arrives",
+        "Expertise exists; current capacity may be limited.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-41",
+      "source_cells": [
+        "PA-41",
+        "Arrivals bring private food",
+        "Ownership remains private until transfer.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "current_cells": [
+        "PA-41",
+        "Arrivals bring private food",
+        "Ownership remains private until transfer.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-42",
+      "source_cells": [
+        "PA-42",
+        "Newcomer claims specialist credentials",
+        "Claim recorded/assessed; no automatic capability unlock.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "current_cells": [
+        "PA-42",
+        "Newcomer claims specialist credentials",
+        "Claim recorded/assessed; no automatic capability unlock.",
+        "Core §§68, 106, 118, 122; PAF §5"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-43",
+      "source_cells": [
+        "PA-43",
+        "Mayor dies with valid succession",
+        "Institution can continue without deletion.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "current_cells": [
+        "PA-43",
+        "Mayor dies with valid succession",
+        "Institution can continue without deletion.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-44",
+      "source_cells": [
+        "PA-44",
+        "Government loses building but relocates staff/records",
+        "Institution may continue displaced.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "current_cells": [
+        "PA-44",
+        "Government loses building but relocates staff/records",
+        "Institution may continue displaced.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-45",
+      "source_cells": [
+        "PA-45",
+        "Department named without staff/tools/authority",
+        "Naming grants no service.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "current_cells": [
+        "PA-45",
+        "Department named without staff/tools/authority",
+        "Naming grants no service.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-46",
+      "source_cells": [
+        "PA-46",
+        "Archive survives but experts die",
+        "Knowledge may survive while practical capability falls.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "current_cells": [
+        "PA-46",
+        "Archive survives but experts die",
+        "Knowledge may survive while practical capability falls.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-47",
+      "source_cells": [
+        "PA-47",
+        "Militia controls area without civil recognition",
+        "Control and legitimacy remain separate.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "current_cells": [
+        "PA-47",
+        "Militia controls area without civil recognition",
+        "Control and legitimacy remain separate.",
+        "Core §§28, 107–108, 113; PAF §§4, 6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-48",
+      "source_cells": [
+        "PA-48",
+        "Towns have radio contact but no viable road",
+        "Information link exists; material network may not.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "current_cells": [
+        "PA-48",
+        "Towns have radio contact but no viable road",
+        "Information link exists; material network may not.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-49",
+      "source_cells": [
+        "PA-49",
+        "Grain surplus exists beyond bottleneck bridge",
+        "Bridge can limit export.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "current_cells": [
+        "PA-49",
+        "Grain surplus exists beyond bottleneck bridge",
+        "Bridge can limit export.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-50",
+      "source_cells": [
+        "PA-50",
+        "Hospital serves three settlements",
+        "Local and external demand draw from same capacity.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "current_cells": [
+        "PA-50",
+        "Hospital serves three settlements",
+        "Local and external demand draw from same capacity.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-51",
+      "source_cells": [
+        "PA-51",
+        "Region has surplus but no transport vehicles",
+        "Delivery remains constrained.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "current_cells": [
+        "PA-51",
+        "Region has surplus but no transport vehicles",
+        "Delivery remains constrained.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-52",
+      "source_cells": [
+        "PA-52",
+        "Bridge fails at 14:00, report arrives 14:20",
+        "Physical flow changes at 14:00; recipient knowledge at 14:20.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "current_cells": [
+        "PA-52",
+        "Bridge fails at 14:00, report arrives 14:20",
+        "Physical flow changes at 14:00; recipient knowledge at 14:20.",
+        "Core §§30, 85, 102, 117; PAF §6"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-53",
+      "source_cells": [
+        "PA-53",
+        "Water plant construction completes without operators/inputs",
+        "Construction complete; service commissioning incomplete.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-53",
+        "Water plant construction completes without operators/inputs",
+        "Construction complete; service commissioning incomplete.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-54",
+      "source_cells": [
+        "PA-54",
+        "Microgrid replaces old centralized grid",
+        "Valid reconstruction through redesign.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-54",
+        "Microgrid replaces old centralized grid",
+        "Valid reconstruction through redesign.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-55",
+      "source_cells": [
+        "PA-55",
+        "Successor government occupies old capital",
+        "Does not automatically inherit every prior legal claim/treaty.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-55",
+        "Successor government occupies old capital",
+        "Does not automatically inherit every prior legal claim/treaty.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-56",
+      "source_cells": [
+        "PA-56",
+        "Stable network supports ordinary life",
+        "No compulsory threat escalation.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-56",
+        "Stable network supports ordinary life",
+        "No compulsory threat escalation.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-57",
+      "source_cells": [
+        "PA-57",
+        "Reconstructed service later damaged by war",
+        "Regression occurs through actual cause.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-57",
+        "Reconstructed service later damaged by war",
+        "Regression occurs through actual cause.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-58",
+      "source_cells": [
+        "PA-58",
+        "Successor society remains stable for decades",
+        "No forced return to apocalypse aesthetics.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "current_cells": [
+        "PA-58",
+        "Successor society remains stable for decades",
+        "No forced return to apocalypse aesthetics.",
+        "Core §§72–73, 93–96, 103, 107, 113, 117; PAF §7"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-59",
+      "source_cells": [
+        "PA-59",
+        "Regional summary zooms into local component",
+        "Detailed state reconciles with existing totals/history.",
+        "Core §§12, 62, 91; PAF §9"
+      ],
+      "current_cells": [
+        "PA-59",
+        "Regional summary zooms into local component",
+        "Detailed state reconciles with existing totals/history.",
+        "Core §§12, 62, 91; PAF §9"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-60",
+      "source_cells": [
+        "PA-60",
+        "Partial solution requires extra day/resources",
+        "Player/authority decides new voluntary commitment.",
+        "Core §§4–5, 8; PAF §9"
+      ],
+      "current_cells": [
+        "PA-60",
+        "Partial solution requires extra day/resources",
+        "Player/authority decides new voluntary commitment.",
+        "Core §§4–5, 8; PAF §9"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-61",
+      "source_cells": [
+        "PA-61",
+        "Successor PC takes over after death",
+        "History, obligations and actual transfers persist.",
+        "Core §§69–70, 97, 99; PAF §§7, 14"
+      ],
+      "current_cells": [
+        "PA-61",
+        "Successor PC takes over after death",
+        "History, obligations and actual transfers persist.",
+        "Core §§69–70, 97, 99; PAF §§7, 14"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA-62",
+      "source_cells": [
+        "PA-62",
+        "v1.1 attached to existing Hour Zero save",
+        "No automatic temporal reset, NPC insertion, resource creation or retrospective conversion.",
+        "Core §§3, 97, 99, 112; PAF §14"
+      ],
+      "current_cells": [
+        "PA-62",
+        "v1.1 attached to existing Hour Zero save",
+        "No automatic temporal reset, NPC insertion, resource creation or retrospective conversion.",
+        "Core §§3, 97, 99, 112; PAF §14"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R01",
+      "source_cells": [
+        "PA31-R01",
+        "Every APOCALYPTIC required provider resolves in the pinned Core; all thirteen local records preserved",
+        "Executed structural receiving check"
+      ],
+      "current_cells": [
+        "PA31-R01",
+        "Every APOCALYPTIC required provider resolves in the pinned Core; all thirteen local records preserved",
+        "Executed structural receiving check"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R02",
+      "source_cells": [
+        "PA31-R02",
+        "Every PL neutral source binding resolves to its exact release definition and original payload",
+        "Executed catalogue receiving check"
+      ],
+      "current_cells": [
+        "PA31-R02",
+        "Every PL neutral source binding resolves to its exact release definition and original payload",
+        "Executed catalogue receiving check"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R03",
+      "source_cells": [
+        "PA31-R03",
+        "PL alias target/type/selector/checksum agrees with its definition-local alias",
+        "Executed catalogue receiving check"
+      ],
+      "current_cells": [
+        "PA31-R03",
+        "PL alias target/type/selector/checksum agrees with its definition-local alias",
+        "Executed catalogue receiving check"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R04",
+      "source_cells": [
+        "PA31-R04",
+        "Repeated alias lookup changes neither registry nor supplied sentinel campaign state",
+        "Executed bounded read-only resolver check"
+      ],
+      "current_cells": [
+        "PA31-R04",
+        "Repeated alias lookup changes neither registry nor supplied sentinel campaign state",
+        "Executed bounded read-only resolver check"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R05",
+      "source_cells": [
+        "PA31-R05",
+        "Unknown version, missing identity or incorrect selector rejects resolution",
+        "Executed resolver rejection probes"
+      ],
+      "current_cells": [
+        "PA31-R05",
+        "Unknown version, missing identity or incorrect selector rejects resolution",
+        "Executed resolver rejection probes"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-R06",
+      "source_cells": [
+        "PA31-R06",
+        "Held PL content remains source-backed, with deprecation disabled",
+        "Executed gate preservation check"
+      ],
+      "current_cells": [
+        "PA31-R06",
+        "Held PL content remains source-backed, with deprecation disabled",
+        "Executed gate preservation check"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-G01",
+      "source_cells": [
+        "PA31-G01",
+        "Evacuation order issued before communications restore: no execution from an unreceived instruction; local autonomous action remains possible",
+        "Specified gameplay case; not executed"
+      ],
+      "current_cells": [
+        "PA31-G01",
+        "Evacuation order issued before communications restore: no execution from an unreceived instruction; local autonomous action remains possible",
+        "Specified gameplay case; not executed"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-G02",
+      "source_cells": [
+        "PA31-G02",
+        "New water-producing method exists but lacks distribution/operators: forecast changes, actual refuge delivery does not",
+        "Specified gameplay case; not executed"
+      ],
+      "current_cells": [
+        "PA31-G02",
+        "New water-producing method exists but lacks distribution/operators: forecast changes, actual refuge delivery does not",
+        "Specified gameplay case; not executed"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-G03",
+      "source_cells": [
+        "PA31-G03",
+        "A survival clock is redrawn into more segments: reserve, threshold time and processed spans unchanged",
+        "Specified gameplay case; not executed"
+      ],
+      "current_cells": [
+        "PA31-G03",
+        "A survival clock is redrawn into more segments: reserve, threshold time and processed spans unchanged",
+        "Specified gameplay case; not executed"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA31-G04",
+      "source_cells": [
+        "PA31-G04",
+        "A preservation effect prevents death but grants no healing/refund unless its declared contract does",
+        "Specified module case; not executed"
+      ],
+      "current_cells": [
+        "PA31-G04",
+        "A preservation effect prevents death but grants no healing/refund unless its declared contract does",
+        "Specified module case; not executed"
+      ],
+      "scope": "Retained specification or explicitly labelled prior receiving evidence; not automatically executed gameplay"
+    },
+    {
+      "id": "PA12-01",
+      "source_cells": [
+        "PA12-01",
+        "Two regions under one disaster retain different government/power conditions",
+        "No universal phase/state switch"
+      ],
+      "current_cells": [
+        "PA12-01",
+        "Two regions under one disaster retain different government/power conditions",
+        "No universal phase/state switch",
+        "PAF §§2–3/6; Core 101–103/107"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-02",
+      "source_cells": [
+        "PA12-02",
+        "Power station fails while downstream water tank remains usable",
+        "Buffered service survives until real limit; no double outage"
+      ],
+      "current_cells": [
+        "PA12-02",
+        "Power station fails while downstream water tank remains usable",
+        "Buffered service survives until real limit; no double outage",
+        "PAF §3; Core 101–103/109"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-03",
+      "source_cells": [
+        "PA12-03",
+        "Same outage is reported later",
+        "Report changes knowledge, not physical loss again"
+      ],
+      "current_cells": [
+        "PA12-03",
+        "Same outage is reported later",
+        "Report changes knowledge, not physical loss again",
+        "PAF §§3/9; Core 60–61/85/90"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-04",
+      "source_cells": [
+        "PA12-04",
+        "Several simultaneous crisis drivers affect one service",
+        "Shared dependency/cost applied once; remaining causes separately recorded"
+      ],
+      "current_cells": [
+        "PA12-04",
+        "Several simultaneous crisis drivers affect one service",
+        "Shared dependency/cost applied once; remaining causes separately recorded",
+        "PAF §3; Core 101–103/109"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-05",
+      "source_cells": [
+        "PA12-05",
+        "Pharmacy previously stripped and revisited",
+        "No new stock from search, scene change or site label"
+      ],
+      "current_cells": [
+        "PA12-05",
+        "Pharmacy previously stripped and revisited",
+        "No new stock from search, scene change or site label",
+        "PAF §4; Core 79/104–105/109"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-06",
+      "source_cells": [
+        "PA12-06",
+        "Factory portable stock exhausted, machines still installed",
+        "Portable depletion does not delete productive capital"
+      ],
+      "current_cells": [
+        "PA12-06",
+        "Factory portable stock exhausted, machines still installed",
+        "Portable depletion does not delete productive capital",
+        "PAF §4; Core 21–23/104–105"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-07",
+      "source_cells": [
+        "PA12-07",
+        "Generator found but cannot be transported",
+        "Knowledge without physical delivery or service"
+      ],
+      "current_cells": [
+        "PA12-07",
+        "Generator found but cannot be transported",
+        "Knowledge without physical delivery or service",
+        "PAF §4; Core 35/79/104–105"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-08",
+      "source_cells": [
+        "PA12-08",
+        "Building stripped for copper",
+        "Real material transfer and corresponding donor capability loss"
+      ],
+      "current_cells": [
+        "PA12-08",
+        "Building stripped for copper",
+        "Real material transfer and corresponding donor capability loss",
+        "PAF §4; Core 21–23/104–105"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-09",
+      "source_cells": [
+        "PA12-09",
+        "Refuge receives 100 evacuees including children/injured",
+        "One population count, immediate service demand, realistic work availability"
+      ],
+      "current_cells": [
+        "PA12-09",
+        "Refuge receives 100 evacuees including children/injured",
+        "One population count, immediate service demand, realistic work availability",
+        "PAF §5; Core 106/118/121–122"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-10",
+      "source_cells": [
+        "PA12-10",
+        "Food forecast good, potable reserve nearly gone",
+        "Water pressure from Core provision, no separate survival meter"
+      ],
+      "current_cells": [
+        "PA12-10",
+        "Food forecast good, potable reserve nearly gone",
+        "Water pressure from Core provision, no separate survival meter",
+        "PAF §§3/5; Core 71/103/109"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-11",
+      "source_cells": [
+        "PA12-11",
+        "Refuge becomes permanent settlement",
+        "Only real Core habitation/service/institution changes; no time unlock"
+      ],
+      "current_cells": [
+        "PA12-11",
+        "Refuge becomes permanent settlement",
+        "Only real Core habitation/service/institution changes; no time unlock",
+        "PAF §§5/7; Core 72–73/103/121–122"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-12",
+      "source_cells": [
+        "PA12-12",
+        "Mayor lost; two offices claim continuity",
+        "Existing institution need not disappear; recognition and control distinct"
+      ],
+      "current_cells": [
+        "PA12-12",
+        "Mayor lost; two offices claim continuity",
+        "Existing institution need not disappear; recognition and control distinct",
+        "PAF §6; Core 28–30/107/113"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-13",
+      "source_cells": [
+        "PA12-13",
+        "Technical archive survives loss of technicians",
+        "Information remains; competence does not spontaneously return"
+      ],
+      "current_cells": [
+        "PA12-13",
+        "Technical archive survives loss of technicians",
+        "Information remains; competence does not spontaneously return",
+        "PAF §§4/6; Core 60–61/108/117"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-14",
+      "source_cells": [
+        "PA12-14",
+        "Working legacy machine lacks replaceable control component",
+        "Current use distinct from future replacement vulnerability"
+      ],
+      "current_cells": [
+        "PA12-14",
+        "Working legacy machine lacks replaceable control component",
+        "Current use distinct from future replacement vulnerability",
+        "PAF §4; Core 108/117"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-15",
+      "source_cells": [
+        "PA12-15",
+        "Communication survives, freight bridge fails",
+        "Information network without material delivery"
+      ],
+      "current_cells": [
+        "PA12-15",
+        "Communication survives, freight bridge fails",
+        "Information network without material delivery",
+        "PAF §6; Core 102/116"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-16",
+      "source_cells": [
+        "PA12-16",
+        "Region produces surplus but lacks usable transport",
+        "No automatic distant satisfaction"
+      ],
+      "current_cells": [
+        "PA12-16",
+        "Region produces surplus but lacks usable transport",
+        "No automatic distant satisfaction",
+        "PAF §6; Core 102/116–117"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-17",
+      "source_cells": [
+        "PA12-17",
+        "New microgrid commissioned rather than old grid rebuilt",
+        "Valid redesigned recovery after all real acceptance requirements"
+      ],
+      "current_cells": [
+        "PA12-17",
+        "New microgrid commissioned rather than old grid rebuilt",
+        "Valid redesigned recovery after all real acceptance requirements",
+        "PAF §7; Core 101–103/108"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-18",
+      "source_cells": [
+        "PA12-18",
+        "Successor government occupies former capital",
+        "No automatic transfer of treaties, legitimacy or private property"
+      ],
+      "current_cells": [
+        "PA12-18",
+        "Successor government occupies former capital",
+        "No automatic transfer of treaties, legitimacy or private property",
+        "PAF §§6–7; Core 28–30/107/113"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-19",
+      "source_cells": [
+        "PA12-19",
+        "Stable successor society survives decades",
+        "No compulsory relapse or stronger enemy"
+      ],
+      "current_cells": [
+        "PA12-19",
+        "Stable successor society survives decades",
+        "No compulsory relapse or stronger enemy",
+        "PAF §7; Core 62/69/96/117"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-20",
+      "source_cells": [
+        "PA12-20",
+        "Extraordinary modules disabled",
+        "Ordinary disruption and recovery still work"
+      ],
+      "current_cells": [
+        "PA12-20",
+        "Extraordinary modules disabled",
+        "Ordinary disruption and recovery still work",
+        "PAF §§8–9; Core 112"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-21",
+      "source_cells": [
+        "PA12-21",
+        "New slim PAF selected with incomplete generic Core service machinery",
+        "Stop adoption or retain explicit v1.1 bridge; don't lose mechanics"
+      ],
+      "current_cells": [
+        "PA12-21",
+        "New slim PAF selected with incomplete generic Core service machinery",
+        "Stop adoption or retain explicit v1.1 bridge; don't lose mechanics",
+        "PAF §§1/14; Core 97/112; Appendix B"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-22",
+      "source_cells": [
+        "PA12-22",
+        "Source PAF site IDs migrate to Core/CCL aliases",
+        "Same assets/stocks/conditions/history; no new instances"
+      ],
+      "current_cells": [
+        "PA12-22",
+        "Source PAF site IDs migrate to Core/CCL aliases",
+        "Same assets/stocks/conditions/history; no new instances",
+        "PAF §§9/14; Core 88–89/111; exact PL map"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-23",
+      "source_cells": [
+        "PA12-23",
+        "Simultaneous aid, transport, and institutional requests contend for one stock",
+        "Core arbitration prevents double claim"
+      ],
+      "current_cells": [
+        "PA12-23",
+        "Simultaneous aid, transport, and institutional requests contend for one stock",
+        "Core arbitration prevents double claim",
+        "PAF §§3/5/6; Core 11–12/71/109"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-24",
+      "source_cells": [
+        "PA12-24",
+        "Mixed solution needs fresh purchase or PC evacuation decision",
+        "Return control; preserve authorized outcomes only"
+      ],
+      "current_cells": [
+        "PA12-24",
+        "Mixed solution needs fresh purchase or PC evacuation decision",
+        "Return control; preserve authorized outcomes only",
+        "PAF §§1/9; Core 4–5/83/90"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-25",
+      "source_cells": [
+        "PA12-25",
+        "Zoom from national network to local repair then back",
+        "No reset/duplicate materials, work, losses or time"
+      ],
+      "current_cells": [
+        "PA12-25",
+        "Zoom from national network to local repair then back",
+        "No reset/duplicate materials, work, losses or time",
+        "PAF §9; Core 10–12/90–91/96"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    },
+    {
+      "id": "PA12-26",
+      "source_cells": [
+        "PA12-26",
+        "Resolved water shortage followed by no new cause",
+        "Relief persists; no automatic replacement crisis"
+      ],
+      "current_cells": [
+        "PA12-26",
+        "Resolved water shortage followed by no new cause",
+        "Relief persists; no automatic replacement crisis",
+        "PAF §§3/7; Core 71/101–103"
+      ],
+      "scope": "Recovered v1.2 specification; not newly executed gameplay"
+    }
+  ],
+  "source_scope": "62 PA + 26 PA12 + 22 PA13 + 15 PA20 + 10 PA31 = 135 Foundation rows",
+  "core_CW_PA_cases": 20,
+  "full_runtime_execution": "Outstanding",
+  "library_cases": [
+    {
+      "id": "PA-L2-001",
+      "domain": "LEG",
+      "scenario": "Abandoned retail recovery survey: Survey request at formerly active store",
+      "expected_result": "Repeat visit to cleared aisles cannot renew food; previously unsearched freezer remains an unknown region",
+      "owner": "Core + PA.LegacySite",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-002",
+      "domain": "LEG",
+      "scenario": "Pharmacy inventory and cold-chain history: Former pharmacy assessed",
+      "expected_result": "An unlabeled bottle cannot become generic healing points",
+      "owner": "Core + PA.LegacySite, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-003",
+      "domain": "LEG",
+      "scenario": "Fuel depot salvage and pumping: Pump/stock condition inspected",
+      "expected_result": "Powerless station with fuel underground cannot yield delivered fuel without transfer capability",
+      "owner": "Core + PA.LegacySite, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-004",
+      "domain": "LEG",
+      "scenario": "Installed machinery salvage versus donor function: Machine cannibalization proposed",
+      "expected_result": "Removing the final serviceable controller disables donor operation; does not mint two controllers",
+      "owner": "Core + PA.LegacySite, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-005",
+      "domain": "LEG",
+      "scenario": "Unknown substructure in searched site: Partial building survey",
+      "expected_result": "Cleared ground floor does not declare unseen basement empty or full",
+      "owner": "Core + PA.LegacySite",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-006",
+      "domain": "LEG",
+      "scenario": "Recovered document and lost know-how: Manual or plans recovered",
+      "expected_result": "Recovered manual alone cannot commission complex apparatus",
+      "owner": "Core + PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-007",
+      "domain": "LEG",
+      "scenario": "Contaminated inherited potable-water lot: Evidence of contamination in reserve",
+      "expected_result": "One hundred liters can remain physically present yet be unavailable as potable service",
+      "owner": "Core + PA.LegacySite, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-008",
+      "domain": "LEG",
+      "scenario": "Long-term unreplaceable control component: Support/parts assessment changed",
+      "expected_result": "Running generator keeps running while unsupported component reproduction remains unresolved",
+      "owner": "Core + PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-009",
+      "domain": "PRV",
+      "scenario": "Emergency potable-water distribution point: Ordinary mains are disrupted",
+      "expected_result": "Road convoy dispatched, receiving water does not appear until arrival and unloading",
+      "owner": "Core + PA.DisruptedProvision, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-010",
+      "domain": "PRV",
+      "scenario": "Gravity-buffered urban water continuity: Powered pumping interrupted",
+      "expected_result": "Pump shuts off; gravity tank still supplies supported users during remaining actual buffer",
+      "owner": "Core + PA.DisruptedProvision, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-011",
+      "domain": "PRV",
+      "scenario": "Temporary generating supply prioritization: Emergency power activated",
+      "expected_result": "Ten usable units cannot deliver two simultaneous indivisible six-unit services",
+      "owner": "Core + PA.Disruption, PA.DisruptedProvision",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-012",
+      "domain": "PRV",
+      "scenario": "Battery-only emergency communications: Primary power lost",
+      "expected_result": "Battery expires but already-sent message does not vanish from recipient knowledge",
+      "owner": "Core + PA.DisruptedProvision",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-013",
+      "domain": "PRV",
+      "scenario": "Emergency feeding point: Central meal service activated",
+      "expected_result": "Serving 40 meals reduces available ingredients and does not manufacture nutrition",
+      "owner": "Core + PA.DisruptedProvision, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-014",
+      "domain": "PRV",
+      "scenario": "Temporary healthcare provision: Clinic opened after ordinary service interruption",
+      "expected_result": "An open clinic sign and medicine chest do not create a surgeon",
+      "owner": "Core + PA.DisruptedProvision, PA.RefugePosture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-015",
+      "domain": "PRV",
+      "scenario": "Emergency warming center: Cold-weather shelter operating",
+      "expected_result": "A heater cannot warm an unlimited population or operate without exhaust management",
+      "owner": "Core + PA.RefugePosture, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-016",
+      "domain": "REF",
+      "scenario": "Public shelter conversion: Former civic building used for shelter",
+      "expected_result": "School declared refuge; inhabitants unchanged until actual arrival",
+      "owner": "Core + PA.RefugePosture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-017",
+      "domain": "REF",
+      "scenario": "Moving emergency convoy: Displacement group departs",
+      "expected_result": "Split 120 travellers: 70 arrived and 50 transit; total 120",
+      "owner": "Core + PA.DisplacementWave",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-018",
+      "domain": "REF",
+      "scenario": "Temporary camp on constrained services: Camp starts operating",
+      "expected_result": "Shelter holds 500 but potable water supports 300: unmet water remains",
+      "owner": "Core + PA.RefugePosture, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-019",
+      "domain": "REF",
+      "scenario": "Rural distributed refuge network: Households coordinate remote assistance",
+      "expected_result": "Radio call received does not deliver medicine across broken route",
+      "owner": "Core + PA.RefugePosture, PA.RegionalRecovery",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-020",
+      "domain": "REF",
+      "scenario": "Displacement reception and rights: Newcomers arrive at intake",
+      "expected_result": "Unregistered children consume water as present people; are not assigned jobs",
+      "owner": "Core + PA.DisplacementWave, PA.RefugePosture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-021",
+      "domain": "REF",
+      "scenario": "Transition from refuge to durable housing: Housing conversion project accepted",
+      "expected_result": "Finishing walls without water does not automatically produce habitable capacity",
+      "owner": "Core + PA.RefugePosture, PA.ReconstructionTransition",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-022",
+      "domain": "INS",
+      "scenario": "Continuing local-government branch: Capital government links fail",
+      "expected_result": "Mayor displaced but municipal sanitation office still operates within its actual mandate",
+      "owner": "Core + PA.InstitutionFracture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-023",
+      "domain": "INS",
+      "scenario": "Competing successor claims: Branches assert continuity",
+      "expected_result": "Two councils claim authority; neither gains universal assent by selecting entry",
+      "owner": "Core + PA.InstitutionFracture, PA.SuccessorAssessment",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-024",
+      "domain": "INS",
+      "scenario": "Emergency public-health remnant: Health authority fragments",
+      "expected_result": "Outdated hospital report not equal current staffed bed capacity",
+      "owner": "Core + PA.InstitutionFracture, PA.DisruptedProvision",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-025",
+      "domain": "INS",
+      "scenario": "Emergency mutual-aid compact: Two local authorities negotiate aid",
+      "expected_result": "Signed food donation does not itself replenish recipient pantry",
+      "owner": "Core + PA.RegionalRecovery, PA.InstitutionFracture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-026",
+      "domain": "INS",
+      "scenario": "Archives as continuity without technicians: Institution recovers knowledge archive",
+      "expected_result": "Reconstituted archives cannot run factory absent competent operators",
+      "owner": "Core + PA.LegacyDependency, PA.SuccessorAssessment",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-027",
+      "domain": "REC",
+      "scenario": "Distributed microgrid successor: Alternative power topology built",
+      "expected_result": "Microgrid passes test; old regional station remains inoperable without denying local success",
+      "owner": "Core + PA.ReconstructionTransition, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-028",
+      "domain": "REC",
+      "scenario": "Clinic-capability replacement: Temporary aid becomes regional healthcare",
+      "expected_result": "Care ward commissioned without pharmaceuticals cannot perform drug-dependent services",
+      "owner": "Core + PA.ReconstructionTransition, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-029",
+      "domain": "REC",
+      "scenario": "Repair-to-reproduction industrial transition: Workshop proposes repeated fabrication",
+      "expected_result": "One prototype valve does not create industrial-scale spare-part supply",
+      "owner": "Core + PA.ReconstructionTransition, PA.LegacyDependency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-030",
+      "domain": "REC",
+      "scenario": "Reconstructed regional supply corridor: Road access and route services re-open",
+      "expected_result": "Bridge usable for foot travel but not heavy loads; no heavy cargo delivery",
+      "owner": "Core + PA.RegionalRecovery, PA.ReconstructionTransition",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-031",
+      "domain": "REC",
+      "scenario": "Agriculture without guaranteed harvest: Local planting capacity expanded",
+      "expected_result": "Crop planted today cannot feed hungry person today",
+      "owner": "Core + PA.ReconstructionTransition, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-032",
+      "domain": "REC",
+      "scenario": "Industrial import-dependent stability: Imports reliably support essential machines",
+      "expected_result": "Stable imported parts can legitimately support durable service",
+      "owner": "Core + PA.LegacyDependency, PA.SuccessorAssessment",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-033",
+      "domain": "REC",
+      "scenario": "Civic records and succession restoration: Authority rebuilds records system",
+      "expected_result": "Archive ownership documents alone do not confer universal sovereignty",
+      "owner": "Core + PA.InstitutionFracture, PA.SuccessorAssessment",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-034",
+      "domain": "REC",
+      "scenario": "Water service redesign after central-system failure: Community commissions local treatment",
+      "expected_result": "Source found without treatment does not create potable supply",
+      "owner": "Core + PA.ReconstructionTransition, PA.DisruptedProvision",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-035",
+      "domain": "CRI",
+      "scenario": "War-driven infrastructure disruption: Documented military action affects civilian functions",
+      "expected_result": "One bridge strike assessed in several overlays cannot damage it repeatedly",
+      "owner": "Core + PA.Crisis, PA.Disruption",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-036",
+      "domain": "CRI",
+      "scenario": "Civil fragmentation without physical devastation: Authority splits after crisis",
+      "expected_result": "Two administrations dispute legitimacy while water system remains working",
+      "owner": "Core + PA.Crisis, PA.InstitutionFracture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-037",
+      "domain": "CRI",
+      "scenario": "Specific-disease epidemic module socket: Confirmed infectious cause present",
+      "expected_result": "One infection exposure cannot be duplicated by clinic and district overlays",
+      "owner": "Core + PA.Crisis, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-038",
+      "domain": "CRI",
+      "scenario": "Grid and control-system dependency outage: Identified control failure or outage",
+      "expected_result": "Blackout leaves offline laptop intact absent actual damage cause",
+      "owner": "Core + PA.Crisis, PA.Disruption",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-039",
+      "domain": "CRI",
+      "scenario": "Regional flood and functional refuges: Flood actually reaches selected areas",
+      "expected_result": "Flooded district does not turn unaffected town into ruins",
+      "owner": "Core + PA.Crisis, PA.RefugePosture",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-040",
+      "domain": "CRI",
+      "scenario": "Agricultural disruption and regional trade: Harvest forecast downgraded by ecological cause",
+      "expected_result": "Harvest fails; existing storehouse food remains in place",
+      "owner": "Core + PA.Crisis, PA.Pressure",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-041",
+      "domain": "CRI",
+      "scenario": "Nuclear event under explicit module: Nuclear source/geometry established",
+      "expected_result": "Fallout is not automatically lethal everywhere and source termination does not erase dose",
+      "owner": "Core + PA.Crisis, PA.Disruption",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-042",
+      "domain": "CRI",
+      "scenario": "Geomagnetic disruption with bounded susceptibility: Solar/geophysical event declared",
+      "expected_result": "Off-grid stored hand tools do not fail because grid electronics do",
+      "owner": "Core + PA.Crisis, PA.Disruption",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-043",
+      "domain": "CRI",
+      "scenario": "Distribution/economic crisis without missing goods: Payment/trade access fails",
+      "expected_result": "Warehouse holds tons of food but consumers lack legal/economic access",
+      "owner": "Core + PA.Crisis, PA.DisruptedProvision",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-044",
+      "domain": "META",
+      "scenario": "All 193 original PL rows referenced",
+      "expected_result": "193 exact entries resolve to 191 shared refs and two scoped extension paths; no source entry silently lost",
+      "owner": "Library index",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-045",
+      "domain": "META",
+      "scenario": "Use wrong version or selector for a PL alias",
+      "expected_result": "Lookup rejects wrong or ambiguous reference; retained payload stays unchanged",
+      "owner": "SCL resolver",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-046",
+      "domain": "META",
+      "scenario": "All ordinary APX modules disabled",
+      "expected_result": "PAF crisis and reconstruction functions still work for mundane causes",
+      "owner": "PAF + Core",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-047",
+      "domain": "META",
+      "scenario": "One site variants two campaigns",
+      "expected_result": "Shared definition does not copy stock, characters, events, known secrets or institutional control",
+      "owner": "Core scoped identity",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-048",
+      "domain": "META",
+      "scenario": "Same physical cause referenced in five overlays",
+      "expected_result": "Cause committed once; overlays read the result and do not reapply loss",
+      "owner": "Core event",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-049",
+      "domain": "META",
+      "scenario": "Save/load during transit and repair",
+      "expected_result": "Transit people/stock and work/condition resume with exact committed state; no reset or extra cost",
+      "owner": "Core clock/ledger",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-050",
+      "domain": "META",
+      "scenario": "Remote command issued during communication outage",
+      "expected_result": "Local institution acts under its prior received authority; new order unavailable until arrival",
+      "owner": "K-INFO/K-ORG",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-051",
+      "domain": "META",
+      "scenario": "Mixed rescue outcome needs another PC expenditure",
+      "expected_result": "No uncommitted supplies, journey or speech invented; player control returns",
+      "owner": "Agency",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-052",
+      "domain": "META",
+      "scenario": "Site quantity is genuinely unknown",
+      "expected_result": "Unknown remains unknown; cannot substitute zero, filled store, or expected loot",
+      "owner": "K-INFO/K-STOCK",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-053",
+      "domain": "META",
+      "scenario": "Two simultaneous relief services compete for one fuel stock",
+      "expected_result": "Allocation uses same pre-event state, finite shared resource, and no duplicated source",
+      "owner": "K-STOCK/K-NET",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-054",
+      "domain": "META",
+      "scenario": "End crisis while debt and surgery continue",
+      "expected_result": "Crisis overlay can archive; debt, injuries and ongoing care retain real state",
+      "owner": "ECO/MED",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-055",
+      "domain": "META",
+      "scenario": "Quiet twenty-year settlement history without configured birth/decay rate",
+      "expected_result": "Do not invent people or wear; assess only configured processes; institutions remain autonomous",
+      "owner": "LIFE/WILD",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-056",
+      "domain": "META",
+      "scenario": "Replaced generator with repaired unit and new local technicians",
+      "expected_result": "Old damage/maintenance history preserved; new duty ability requires actual staff and acceptance",
+      "owner": "K-ASSET/K-ORG",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-057",
+      "domain": "META",
+      "scenario": "Precise radiation harm requested with no dose-response model",
+      "expected_result": "Defer dependent calculation; do not assign fake fatalities; independent play continues",
+      "owner": "MED/WILD",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-058",
+      "domain": "META",
+      "scenario": "Existing PAF v2.0 still references Core3.1/SCL0.2",
+      "expected_result": "Record scoped compatibility bridge and adoption; do not silently rewrite parent authority",
+      "owner": "Core §112",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-059",
+      "domain": "META",
+      "scenario": "Theme extension APX-X01 requested with no selected module",
+      "expected_result": "No anomaly power, undead, mutation, temporal reset or resurrection by title alone",
+      "owner": "Theme module",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-060",
+      "domain": "META",
+      "scenario": "Selected SCL family vs source-backed hold",
+      "expected_result": "Held original source remains with exact payload; no automatic deprecation or generic performance",
+      "owner": "SCL gates",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-061",
+      "domain": "META",
+      "scenario": "One old PA-RECON program appears with regional recovery assessment",
+      "expected_result": "Existing K-WORK/CIV progress has one owner; PAF holds historical relation only",
+      "owner": "K-WORK/CIV",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-062",
+      "domain": "META",
+      "scenario": "Availability of needed historical v1.2 source not verified",
+      "expected_result": "Do not claim all v1.2 cases were reconciled; preserve provenance gap",
+      "owner": "CMRR",
+      "execution_status": "Specified; not executed"
+    },
+    {
+      "id": "PA-L2-063",
+      "domain": "META",
+      "scenario": "Two independent runners given identical source, state and events",
+      "expected_result": "Compare IDs, times, quantities, knowledge, commitments; differing outcomes are test failures",
+      "owner": "Runtime reproducibility",
+      "execution_status": "Specified; not executed"
+    }
+  ],
+  "library_scope": "63 unchanged PACL v2.0 specification rows; actual runtime execution outstanding",
+  "source_recovery": {
+    "source": "PAF slim v1.2",
+    "library_file_id": "libfile_f6f50d0078a88191afff110bcd6eb049",
+    "bytes": 37490,
+    "sha256": "e6bc7ea2ed8c7911c0dfe4ac70bc7f012c0d9c150be4e2c80924bbb27e6cc4e8",
+    "case_ids": [
+      "PA12-01",
+      "PA12-02",
+      "PA12-03",
+      "PA12-04",
+      "PA12-05",
+      "PA12-06",
+      "PA12-07",
+      "PA12-08",
+      "PA12-09",
+      "PA12-10",
+      "PA12-11",
+      "PA12-12",
+      "PA12-13",
+      "PA12-14",
+      "PA12-15",
+      "PA12-16",
+      "PA12-17",
+      "PA12-18",
+      "PA12-19",
+      "PA12-20",
+      "PA12-21",
+      "PA12-22",
+      "PA12-23",
+      "PA12-24",
+      "PA12-25",
+      "PA12-26"
+    ],
+    "missing_source": false,
+    "evidence": "Complete backing-file text; contiguous lines 1–380, reconstructed UTF-8 byte size matches source metadata"
+  }
+}

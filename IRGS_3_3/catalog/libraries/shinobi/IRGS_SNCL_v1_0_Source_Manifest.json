@@ -1,0 +1,114 @@
+{
+  "release_id": "IRGS-SNCL-1.0",
+  "date": "2026-10-14",
+  "source_files": [
+    {
+      "name": "SSN_ Jutsu Compendium V1.docx",
+      "sha256": "d0f59d7f0e02052e8781feddc8c0933949ebdd6bf1425444ce2cee4f19239dcd",
+      "size_bytes": 101429
+    },
+    {
+      "name": "A Rank.pdf",
+      "sha256": "6dfcc4994707185b55983deb2ac2899c2c4fe047084d6bc352b229ddadae2890",
+      "size_bytes": 1001638
+    },
+    {
+      "name": "B Rank.pdf",
+      "sha256": "16be52d17c24065e21680ee747fcedd80f82f7ce40242953ef674aaf080d1bf0",
+      "size_bytes": 1322185
+    },
+    {
+      "name": "C Rank.pdf",
+      "sha256": "fd33696a0d3c4b1be496bf4ceac90fb8947d8c0a1bbff508b8740801a85f3d56",
+      "size_bytes": 937906
+    },
+    {
+      "name": "D Rank.pdf",
+      "sha256": "7988ee33479dfbd493b6b6d65e38ce0dce9de32d10cf812b91270eea76b087f2",
+      "size_bytes": 693613
+    },
+    {
+      "name": "E Rank.pdf",
+      "sha256": "93416c0e56cabd0954e58198f2c0d95018be188a12881fbd17f6100417ad5635",
+      "size_bytes": 601730
+    },
+    {
+      "name": "S Rank.pdf",
+      "sha256": "4b18adb32c4db18084f6d9e097b8f276243617621279d201b6a4c877ba2d68e3",
+      "size_bytes": 826935
+    },
+    {
+      "name": "Justu Pt 1.pdf",
+      "sha256": "fbfc587acf0848042e9eed7446becf5dc9ad98fc571ff6e7f974734b8fc94224",
+      "size_bytes": 3666287
+    },
+    {
+      "name": "Jutsu Pt 2.pdf",
+      "sha256": "96161b81b9c6e651ec0310cff16a003161763b4d8fb87c582c0602e4e56e1bb5",
+      "size_bytes": 3860420
+    },
+    {
+      "name": "Jutsu Pt 3.pdf",
+      "sha256": "6d7b9b9c12b8388db6e8603bebc83b228e5cd38ee83f0728aeb768e46be4769d",
+      "size_bytes": 3917184
+    },
+    {
+      "name": "Jutsu Pt 4.pdf",
+      "sha256": "2c2b0cc928addc67682b9955896447a66c042133a6a6c9e1a2f9b8249e4d5956",
+      "size_bytes": 4043849
+    },
+    {
+      "name": "Jutsu Pt 5.pdf",
+      "sha256": "bb7a708d3286f2bd40e738ebfa00146709e8b403b0c3d601f068e0c444b0a6c6",
+      "size_bytes": 2746754
+    },
+    {
+      "name": "IRGS_SNCL_v0_1_Registry.json",
+      "sha256": "8b6ca5588390c94f9a0577105d609c754234752c4d1eb42d867f1eb2a1aa072b",
+      "size_bytes": 111599
+    },
+    {
+      "name": "IRGS_Shinobi_Nexus_Content_Library_SNCL_v0_1_Proposed.md",
+      "sha256": "56ecc015c3d52d4a91851245631145d4b18ba11009b3b043ceb65f530a25389f",
+      "size_bytes": 89619
+    }
+  ],
+  "source_readiness": "DOCX structured legacy rows unconverted; PDFs browse references only; SNCL v0.1 preserved and proposed status unchanged",
+  "counts": {
+    "total": 537,
+    "retained_original": 122,
+    "added_legacy_reference": 415,
+    "native_techniques_retained": 18,
+    "proposed_opt_in_techniques_retained": 31,
+    "rank_distribution_legacy": {
+      "A": 65,
+      "B": 74,
+      "C": 60,
+      "D": 45,
+      "E": 32,
+      "S": 72,
+      "SS": 48,
+      "X": 19
+    },
+    "section_distribution_legacy": {
+      "Earth Release (Doton)": 33,
+      "Fire Release (Katon)": 32,
+      "Forbidden, Legendary and DSSN": 20,
+      "Fūinjutsu": 31,
+      "Genjutsu": 32,
+      "Illustrative sample in reading guide": 1,
+      "Kekkei Genkai": 20,
+      "Kekkei Tōta": 10,
+      "Lightning Release (Raiton)": 33,
+      "Medical Ninjutsu": 32,
+      "Puppetry and Tools": 28,
+      "Signature and Homebrew": 10,
+      "Summoning and Contracts": 32,
+      "Taijutsu": 33,
+      "Water Release (Suiton)": 33,
+      "Wind Release (Fūton)": 35
+    },
+    "pdf_reference_files": 11,
+    "pdf_aggregated_result_counts_not_unique": 2503
+  }
+}

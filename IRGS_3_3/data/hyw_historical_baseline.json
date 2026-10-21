@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "hyw-1415-historical-reference",
+  "revision": 1,
+  "status": "partial_researched_reference_not_executable",
+  "scope": {"scenario_id": "hundred-years-war", "year": 1415},
+  "policy": "conditional_historical_default_proposed",
+  "note": "Three researched reference anchors, not a complete causal model. No troops, resources, authority, deaths, calendar advancement or scheduled effects are initialized. No simulation end date is imposed.",
+  "calendar_note": "Dates retain the historical Julian convention used by this campaign. Day precision supplies no opening hour or within-day ordering.",
+  "sources": [
+    {
+      "id": "HYW-BASE-SRC-HENRY-LETTER",
+      "title": "Henry V's letter announcing Harfleur's capture, 22 September 1415; Riley's edition of London Letter-Book I, reproduced by the University of Southampton",
+      "url": "https://generic.wordpress.soton.ac.uk/agincourt600/wp-content/uploads/sites/169/2015/07/Letter-of-Henry-V.pdf",
+      "source_type": "primary_document_in_edited_translation",
+      "accessed": "2026-10-20",
+      "locator": "Memorials of London 1415, one-page reproduction; original Letter-Book I fol. cxliii; H. T. Riley (1868), pp. 601-624",
+      "scope_note": "Royal report of the 18 September negotiations and subsequent handover, dated 22 September. It is a partisan contemporary account, not an inventory or complete reconstruction. Its different siege-start date is not adopted here."
+    },
+    {
+      "id": "HYW-BASE-SRC-ROYAL-ARMOURIES",
+      "title": "The Hundred Years' War, Royal Armouries: Battle of Agincourt",
+      "url": "https://royalarmouries.org/objects-and-stories/stories/the-hundred-years-war-1337-1453",
+      "source_type": "national_museum_historical_summary",
+      "accessed": "2026-10-20",
+      "locator": "The Battle of Agincourt, dated 25 October 1415",
+      "scope_note": "Supports the battle date, Henry's English army meeting French opposition and the English victory. No quantities, casualty totals or detailed tactical model are imported."
+    },
+    {
+      "id": "HYW-BASE-SRC-ASSESSMENT-DESIGN",
+      "title": "Authored read-only conditional-plan assessment policy, revision 1",
+      "url": "local-design:historical-plans/read-only-v1",
+      "source_type": "authored_policy",
+      "scope_note": "Condition bindings and dependency edges are explicit design inferences for review, not claims that sources establish an exhaustive causal model. Missing records remain unknown."
+    }
+  ],
+  "events": [
+    {
+      "id": "hyw.1415.harfleur.negotiations",
+      "title": "Harfleur surrender negotiations",
+      "date": {"calendar": "julian", "precision": "day", "start": "1415-09-18"},
+      "description": "Henry's subsequent letter reports negotiations and the delivery of hostages on 18 September.",
+      "classification": "documented",
+      "research_status": "researched_reference",
+      "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"],
+      "historical_outcome_reference": {
+        "statement": "A conditional surrender arrangement was made while an opportunity for French relief remained.",
+        "classification": "documented",
+        "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"]
+      },
+      "participants": [
+        {"entity_id": "HYW-HENRY-V", "role": "English king", "classification": "documented", "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"]}
+      ],
+      "conditions": [
+        {"id": "henry-exists", "type": "entity_exists", "entity_id": "HYW-HENRY-V", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]},
+        {"id": "actual-negotiating-circumstances", "type": "record_assertion", "path": ["evidence", "HYW-COND-HARFLEUR-NEGOTIATIONS-FEASIBLE", "status"], "expected": "established", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]}
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "hyw.1415.harfleur.surrender",
+      "title": "Harfleur handover",
+      "date": {"calendar": "julian", "precision": "day", "start": "1415-09-22"},
+      "description": "Henry's letter dated 22 September reports the delivery of Harfleur's keys after no relieving battle occurred.",
+      "classification": "documented",
+      "research_status": "researched_reference",
+      "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"],
+      "historical_outcome_reference": {
+        "statement": "The town passed into Henry's possession in the reported historical sequence.",
+        "classification": "documented",
+        "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"]
+      },
+      "participants": [
+        {"entity_id": "HYW-HENRY-V", "role": "Recipient of the town's submission", "classification": "documented", "source_refs": ["HYW-BASE-SRC-HENRY-LETTER"]}
+      ],
+      "conditions": [
+        {"id": "henry-exists", "type": "entity_exists", "entity_id": "HYW-HENRY-V", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]},
+        {"id": "actual-handover-feasible", "type": "record_assertion", "path": ["evidence", "HYW-COND-HARFLEUR-HANDOVER-FEASIBLE", "status"], "expected": "established", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]}
+      ],
+      "dependencies": [
+        {"event_id": "hyw.1415.harfleur.negotiations", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-HENRY-LETTER", "HYW-BASE-SRC-ASSESSMENT-DESIGN"]}
+      ]
+    },
+    {
+      "id": "hyw.1415.agincourt",
+      "title": "Battle of Agincourt",
+      "date": {"calendar": "julian", "precision": "day", "start": "1415-10-25"},
+      "description": "Henry's returning army encountered French forces near Agincourt on 25 October 1415.",
+      "classification": "documented",
+      "research_status": "researched_reference",
+      "source_refs": ["HYW-BASE-SRC-ROYAL-ARMOURIES"],
+      "historical_outcome_reference": {
+        "statement": "The historical battle ended in an English victory; this is a reference outcome, not a campaign award.",
+        "classification": "documented",
+        "source_refs": ["HYW-BASE-SRC-ROYAL-ARMOURIES"]
+      },
+      "participants": [
+        {"entity_id": "HYW-HENRY-V", "role": "English king and commander", "classification": "documented", "source_refs": ["HYW-BASE-SRC-ROYAL-ARMOURIES"]}
+      ],
+      "conditions": [
+        {"id": "henry-exists", "type": "entity_exists", "entity_id": "HYW-HENRY-V", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]},
+        {"id": "actual-opposing-forces-can-meet", "type": "record_assertion", "path": ["evidence", "HYW-COND-OPPOSING-FORCES-IN-REACH", "status"], "expected": "established", "requirement": "hard", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]},
+        {"id": "current-terrain-and-weather-known", "type": "record_assertion", "path": ["evidence", "HYW-COND-AGINCOURT-GROUND-CONDITIONS", "status"], "expected": "established", "requirement": "supporting", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]}
+      ],
+      "dependencies": [
+        {"event_id": "hyw.1415.harfleur.surrender", "requirement": "supporting", "classification": "design_inference", "source_refs": ["HYW-BASE-SRC-ASSESSMENT-DESIGN"]}
+      ]
+    }
+  ]
+}

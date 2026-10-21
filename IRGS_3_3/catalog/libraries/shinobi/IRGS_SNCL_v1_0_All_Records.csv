@@ -1,0 +1,538 @@
+﻿id,name,kind,status,rank,legacy_rank,source,legacy_source,activation_gate
+SNCL-J-N001,Transformation,technique,native_source,E,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N002,Illusory Clone,technique,native_source,E,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N003,Chakra Adhesion,technique,native_source,E,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N004,Spark / Pebble / Droplet,technique,native_source,E,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N005,Substitution,technique,native_source,D,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N006,Body Flicker,technique,native_source,D,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N007,Field Mending,technique,native_source,D,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N008,Chakra Bolt,technique,native_source,D,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N009,Binding Slip,technique,native_source,D,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N010,Elemental Projectile,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N011,Elemental Wave,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N012,Smoke Veil,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N013,False Opening,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N014,Restraining Seal,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N015,Earthen Screen,technique,native_source,C,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N016,Piercing Lance,technique,native_source,B,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N017,Broad Barrier,technique,native_source,B,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-N018,Great Elemental Release,technique,native_source,A,,SNWE R0.3 §6.4 (retained R0.1 operating source),,Original v0.1 status and selected campaign binding
+SNCL-J-P001,Chakra Signal,technique,proposed_complete_opt_in,E,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P002,Marking Touch,technique,proposed_complete_opt_in,E,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P003,Quiet Footfall,technique,proposed_complete_opt_in,E,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P004,Surface Test,technique,proposed_complete_opt_in,E,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P005,Breath Steady,technique,proposed_complete_opt_in,E,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P006,Handhold Line,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P007,Signal Burst,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P008,Static Grip,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P009,Current Read,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P010,Air Pocket,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P011,Cord Release,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P012,Beacon Imprint,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P013,Misleading Sound,technique,proposed_complete_opt_in,D,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P014,False Trail,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P015,Earth Lock,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P016,Water Slick,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P017,Wind Relay,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P018,Electrical Trip,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P019,Fire Line,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P020,Stabilizing Earth,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P021,Seal of Warning,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P022,Sensory Doubt,technique,proposed_complete_opt_in,C,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P023,Tether Seal,technique,proposed_complete_opt_in,B,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P024,Sheltering Canopy,technique,proposed_complete_opt_in,B,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P025,Silencing Veil,technique,proposed_complete_opt_in,B,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P026,Barrier Redirect,technique,proposed_complete_opt_in,B,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P027,Chakra Anchorage,technique,proposed_complete_opt_in,B,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P028,Rapid Encirclement,technique,proposed_complete_opt_in,A,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P029,Fortress Gate,technique,proposed_complete_opt_in,A,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P030,Grand Smoke Screen,technique,proposed_complete_opt_in,A,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-J-P031,Emergency Chakra Shelter,technique,proposed_complete_opt_in,A,,New SNCL v0.1 proposal; not prior SSN canon,,Original v0.1 status and selected campaign binding
+SNCL-G-001,Thrown weapon (ordinary),equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-002,Field medical kit,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-003,Field ration bundle,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-004,Normal melee weapon,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-005,Light armor AR 1,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-006,Armor AR 2,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-007,Armor AR 3,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-008,Rope,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-009,Basic field tools,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-010,Repair/project materials allocation,equipment,native_source,,,SNWE R0.3 §2.4/§5/§9.4,,Original v0.1 status and selected campaign binding
+SNCL-G-011,Signal paper tags,equipment,proposed_complete_opt_in,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-012,Document roll and seal case,equipment,proposed_complete_opt_in,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-013,Medical dressing stock,equipment,proposed_complete_opt_in,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-014,Water flask,equipment,proposed_complete_opt_in,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-015,Chakra measurement scroll,equipment,held_incomplete,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-016,Explosive seal tag,equipment,held_incomplete,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-017,Puppet control assembly,equipment,held_incomplete,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-G-018,Permanent sealing matrix,equipment,held_incomplete,,,New SNCL v0.1 proposal / held,,Original v0.1 status and selected campaign binding
+SNCL-U-N001,Recon cell,unit_profile,native_source,,,SNWE R0.3 §12.1,,Original v0.1 status and selected campaign binding
+SNCL-U-N002,Assault detachment,unit_profile,native_source,,,SNWE R0.3 §12.1,,Original v0.1 status and selected campaign binding
+SNCL-U-N003,Sealing corps,unit_profile,native_source,,,SNWE R0.3 §12.1,,Original v0.1 status and selected campaign binding
+SNCL-U-N004,Medical support,unit_profile,native_source,,,SNWE R0.3 §12.1,,Original v0.1 status and selected campaign binding
+SNCL-M-001,Escort,mission_template,proposed_template,D,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-002,Retrieval,mission_template,proposed_template,D,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-003,Investigation,mission_template,proposed_template,C,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-004,Elimination,mission_template,proposed_template,B,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-005,Diplomacy,mission_template,proposed_template,C,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-006,Reconnaissance,mission_template,proposed_template,D,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-007,Sabotage,mission_template,proposed_template,B,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-008,Defense,mission_template,proposed_template,C,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-009,Disaster relief,mission_template,proposed_template,C,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-010,Espionage,mission_template,proposed_template,B,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-M-011,Mythic intervention,mission_template,proposed_template,S by contract,,SNWE R0.3 §9.1 mission generator; framing authored for SNCL 0.1,,Original v0.1 status and selected campaign binding
+SNCL-O-001,Village administration,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-002,Mission assignment office,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-003,Academy,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-004,Medical station,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-005,Field logistics depot,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-006,ANBU operations branch,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-007,Clan council,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-008,Sealing laboratory,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-009,Border watch,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-010,Municipal works office,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-011,Shinobi field hospital,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-O-012,Exam board,institution_template,proposed_template,,,SNWE R0.3 Part III §§24–30; Core 3.2 shared owners,,Original v0.1 status and selected campaign binding
+SNCL-S-001,Field stabilization,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-002,Major-injury treatment,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-003,Immediate minor treatment,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-004,Critical-injury intervention,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-005,Psychological support,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-006,Field Mending treatment,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-007,Academy instruction,service_profile,proposed_template,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-008,Escort logistics,service_profile,proposed_template,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-009,Border report relay,service_profile,proposed_template,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-010,Shinobi-assisted civil works,service_profile,proposed_template,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-011,Village emergency triage,service_profile,proposed_template,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-S-012,Sealing research,service_profile,native_derived,,,SNWE R0.3 §7/§9 and Part III; Core implementation by reference,,Original v0.1 status and selected campaign binding
+SNCL-H-001,Physical shadow clone,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-002,Summoned scout animal,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-003,Summoned combat animal,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-004,Puppet operator,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-005,Healing extraction technique,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-006,Persistent water-producing ninjutsu,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-007,Long-distance transit technique,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-008,Advanced Chakra sensor,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-009,Ocular inherited lineage,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-010,Fused-element lineage,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-011,Forbidden resurrection seal,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-012,Village-scale healing network,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-013,Mass-production chakra agriculture,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-014,Sealed explosive charge,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-015,Clan-specific canon jutsu compendium,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-H-016,Complete historic bloodline catalogue,held_candidate,held_incomplete,,,SNWE R0.3 §§6/11/17–31 source gaps; explicit new placeholder only,,Original v0.1 status and selected campaign binding
+SNCL-L-JC1-T001-R001,Sun Halo Barrier,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R001,Ember Spark,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R002,Warming Palm,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R003,Ash Flicker,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R004,Firecracker Pop,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R005,Ember Step,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R006,Cinder Shot,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R007,Smoldering Seal,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R008,Fireball Jutsu (Gōkakyū),legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R009,Ember Clone,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R010,Phoenix Sage Fire (Hōsenka),legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R011,Burning Hands,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R012,Dragon Fire (Ryūka),legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R013,Flame Bullet,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R014,Combustion Tag,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R015,Smoke Screen,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R016,Scorching Palm,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R017,Great Fireball (Dai Gōkakyū),legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R018,Blazing Vortex,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R019,Fire Dragon Flame Bomb,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R020,Solar Flare,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R021,Crimson Rain of Fire,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R022,Firestorm Halo,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R023,Celestial Combustion,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R024,Pillar of Purity,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R025,Sun Halo Barrier,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R026,Solar Flame Cannon,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R027,Crimson Lotus,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R028,Burning World Step,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R029,Eternal Blaze,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R030,Divine Sun Collapse,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R031,Phoenix Rebirth,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T005-R032,Katon: Apocalypse Comet,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R001,Gust Palm,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R002,Whistling Step,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R003,Breeze Cleanse,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R004,Gale Flicker,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R005,Feather Leap,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R006,Cutting Edge,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R007,Swift Escape,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R008,Wind Shuriken,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R009,Gale Palm,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R010,Vacuum Sphere,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R011,Cyclone Kick,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R012,Razor Dust,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R013,Air Bullet,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R014,Great Breakthrough,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R015,Gale Blade,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R016,Swift Reprisal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R017,Slicing Pressure,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R018,Air Scythe,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R019,Vacuum Wave (Shinkūgyoku),legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R020,Sickle Weasel Technique,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R021,Typhoon Wall,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R022,Wind Sickle Dome,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R023,Tornado Step,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R024,Gale Prison,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R025,Cyclone Barrier,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R026,Pressure Maelstrom,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R027,Edge of the Gale,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R028,Divine Downburst,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R029,Sky Splitter,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R030,Storm Chariot,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R031,Fūton: Grand Typhoon,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R032,Blade of the Storm King,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R033,Eternal Gale,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R034,Breath of the Divine Sky,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T006-R035,Judgment of the Heavens,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R001,Mist Drip,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R002,Cleanse Technique,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R003,Ripple Step,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R004,Bubble Screen,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R005,Surface Walk,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R006,Water Dart,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R007,Dampening Mist,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R008,Water Rope,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R009,Water Bullet (Mizurappa),legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R010,Water Clone,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R011,Hidden Mist (Kirigakure),legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R012,Flowing Wave,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R013,Liquid Shuriken,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R014,Water Whip,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R015,Aqua Shield,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R016,Water Prison (Suirō),legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R017,Exploding Water Colliding Wave,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R018,Water Dragon (Suiryūdan),legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R019,Black Rain,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R020,Grand Geyser,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R021,Waterfall Basin,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R022,Stinging Rain,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R023,Depth Mirage,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R024,Water Dragon Prison,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R025,Ocean’s Embrace,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R026,Depths of Despair,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R027,Great Waterfall,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R028,Tyrant Tide,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R029,Life-Current Restoration,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R030,Eternal Flood,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R031,Genesis of the Deep,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R032,Leviathan’s Wrath,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T007-R033,Suiton: Endless Deluge,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R001,Static Touch,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R002,Spark Flicker,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R003,Nerve Jolt,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R004,Pulse Step,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R005,Electrify Shuriken,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R006,Shock Snap,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R007,Static Barrier,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R008,Lightning String,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R009,Thunderclap,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R010,Shock Clone,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R011,Stun Needle,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R012,Electro Net,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R013,Thunder Rush,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R014,Electric Armor,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R015,Shockwave Palm,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R016,Thunder Edge,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R017,Paralysis Field,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R018,Lightning Ball,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R019,Electric Mine,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R020,Chidori,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R021,Black Panther,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R022,Thunderstorm Prison,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R023,Lateral Bolt,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R024,Flash Step,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R025,Godspeed Dance,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R026,Heavenly Chain,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R027,Lightning Armor: Ascendant,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R028,Raijin’s Judgment,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R029,Thunder God Descent,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R030,Flash of Creation,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R031,Infinite Storm,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R032,Storm King’s Avatar,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T008-R033,Raiton: Cataclysm,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R001,Pebble Toss,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R002,Harden Skin,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R003,Steady Stance,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R004,Mud Patch,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R005,Stone Pebble Shuriken,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R006,Earthen Cover,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R007,Earth Meld,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R008,Mud Wall (Doryūheki),legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R009,Earth Spear,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R010,Earth Flow River,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R011,Stone Clone,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R012,Dust Cloud,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R013,Burrow,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R014,Boulder Crash,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R015,Earth Fist,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R016,Pillar Uprising,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R017,Stone Gauntlets,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R018,Earth Armor,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R019,Quake Palm,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R020,Golem Summon,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R021,Stone Coffin,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R022,Avalanche,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R023,Fortress of Stone,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R024,Ground Swallow,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R025,Earthen Spikes,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R026,Stone Prison Domain,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R027,Mountain Breaker,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R028,Iron Sand Binding,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R029,Earth Release: World Split,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R030,Colossus Animation,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R031,Doton: Gaia’s Judgment,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R032,Unshakable Bastion,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T009-R033,Doton: Cataclysm,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R001,Distracting Image,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R002,Stumble Sense,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R003,False Sound,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R004,Phantom Pain,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R005,Blurred Form,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R006,Minor Hypnosis,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R007,Night Fright,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R008,Mirror Step,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R009,Vision Distort,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R010,Mind Knot,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R011,Flickering Shadow,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R012,Illusionary Trap,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R013,Dissonant Whispers,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R014,Hall of Mirrors,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R015,Phantom Pain Chain,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R016,Fear Mirage,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R017,Mirror Illusion Clone,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R018,Touch of Dread,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R019,Whispers in the Dark,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R020,Terror Image,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R021,Hallucination Plague,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R022,Mass Sleep,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R023,False Orders,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R024,Dream Prison,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R025,Nightmare Realm,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R026,Tsukuyomi,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R027,Memory Rewrite,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R028,Infinite Reflection,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R029,Kotoamatsukami,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R030,Dream Devourer,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R031,Eye of Samsara,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T010-R032,World of Eternal Sleep,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R001,Quick Jab,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R002,Steady Guard,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R003,Sprint Burst,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R004,Iron Palm,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R005,Foot Sweep,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R006,Grasp and Toss,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R007,Defensive Roll,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R008,Double Strike,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R009,Focused Kick,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R010,Leap Over,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R011,Swift Intercept,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R012,Pressure Point Strike,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R013,Rolling Barrage,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R014,Counter Grapple,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R015,Iron Body Stance,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R016,High Jump Kick,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R017,Snap Disarm,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R018,Sweeping Hurricane,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R019,Four Limbs Technique,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R020,Whirlwind Dash,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R021,Lotus Blossom Strike,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R022,Eight Gates: First Gate,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R023,Meteor Drop,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R024,Drunken Fist,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R025,Iron Chain Grapple,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R026,Eight Gates: Sixth Gate,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R027,Ultimate Body Blow,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R028,Heavenly Lotus,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R029,Eight Gates: Death Gate,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R030,Divine Beast Style,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R031,Grand Lotus Ascendant,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R032,Path of the Broken Body,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T011-R033,Ultimate Lotus: End of All,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R001,Binding Tag,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R002,Chakra Damp Seal,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R003,Paper Seal,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R004,Paralyze Glyph,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R005,Storage Scroll,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R006,Minor Barrier Tag,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R007,Cursed Mark Suppression,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R008,Tag Detonation,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R009,Chakra Lock Seal,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R010,Mirror Tag,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R011,Artifact Lock,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R012,Curse Detection,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R013,Barrier Ward,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R014,Chakra Absorption Seal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R015,Shadow Bind Seal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R016,Spirit Mark,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R017,Curse Break,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R018,Flash Barrier,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R019,Blood Seal,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R020,Five Elements Seal,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R021,Prison Barrier,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R022,Reverse Summoning,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R023,Domain Ward,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R024,Soul Prison Seal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R025,Divine Binding Array,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R026,Adamantine Sealing Chains,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R027,Chakra Seal: Death Mark,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R028,Barrier: Heavenly Dome,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R029,Seal: Genesis Reversal,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R030,Absolute Banishment,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T012-R031,Divine Cage: World’s End,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R001,Healing Touch,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R002,Basic Diagnosis,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R003,Sterilize,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R004,Field Bandage,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R005,Numbing Palm,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R006,Extract Poison,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R007,Chakra Suture,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R008,Vital Scan,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R009,Adrenal Surge,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R010,Stimulate Recovery,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R011,Mystic Palm,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R012,Vital Sign Mask,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R013,Surgical Precision,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R014,Chakra Scalpel,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R015,Toxin Neutralization,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R016,Life Transfer,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R017,Cellular Activation,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R018,Anesthetic Fog,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R019,Resuscitate,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R020,Major Trauma Cleanse,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R021,Pathogen Purge,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R022,Reconstruct Limb,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R023,Nerve Sever,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R024,Poison Mist Creation,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R025,Mystic Regeneration,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R026,Chakra Network Restoration,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R027,Resurrection Ritual,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R028,DNA Manipulation,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R029,Poison Extraction Mastery,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R030,Sage Healing,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R031,Rebirth of the White Snake,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T013-R032,Genesis of the Divine Body,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R001,Animal Scent,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R002,Minor Pact Seal,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R003,Insect Swarm Call,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R004,Scout Toad Summon,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R005,Snare Snake,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R006,Hawk Glider,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R007,Scout Weasel,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R008,Minor Healing Slug,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R009,Salamander Smokescreen,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R010,Ninja Hound Tracker,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R011,Toad Oil Spit,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R012,Chameleon Cloak,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R013,Ninken Pack,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R014,Turtle Shell Defense,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R015,Toad Water Cannon,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R016,Serpent's Coil,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R017,Hawk Dive Bomb,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R018,Slug Healing Field,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R019,Ninja Monkey Assault,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R020,Salamander Smoke Prison,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R021,White Snake Hypnosis,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R022,Great Toad Summon,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R023,Cheetah Speed Aid,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R024,Ape King Judgment,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R025,Giant Salamander Inferno,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R026,White Snake Renewal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R027,Slug Queen Blessing,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R028,Hydra’s Wrath,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R029,Ultimate Summoning: Animal Army,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R030,Domain Pact: Spirit Court,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R031,Contract: Living Mountain,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T014-R032,World’s End Summoning,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R001,Byakugan: Gentle Fist Blow,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R002,Byakugan: Palm Rotation,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R003,Byakugan: 64 Palms,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R004,Byakugan: 128 Palms,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R005,Sharingan: Copy Wheel,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R006,Sharingan: Genjutsu Break,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R007,Sharingan: Hypnotic Eye,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R008,Sharingan: Tsukuyomi,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R009,Mangekyō: Amaterasu,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R010,Mangekyō: Susanoo,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R011,Wood Release: Binding Roots,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R012,Wood Release: Forest Birth,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R013,Wood Release: Deep Forest Emergence,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R014,Ice Release: Ice Needles,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R015,Ice Release: Crystal Wall,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R016,Ice Release: Black Dragon Blizzard,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R017,Explosion Release: Detonating Palm,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R018,Explosion Release: Burst Sphere,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R019,Lava Release: Quicklime Prison,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T015-R020,Lava Release: Volcanic Eruption,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R001,Dust Release: Detachment of the Primitive World,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R002,Dust Release: Atomic Dismantling,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R003,Crystal Release: Crystal Needle Rain,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R004,Crystal Release: Prison,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R005,Magnet Release: Magnetic Force,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R006,Magnet Release: Iron Sand Storm,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R007,Explosion Release: Chain Detonation,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R008,Steam Release: Overpressure Burst,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R009,Scorch Release: Dry Heat Dome,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T016-R010,Storm Release: Laser Circus,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R001,Reaper Death Seal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R002,Edo Tensei (Impure World Reincarn.),legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R003,Infinite Tsukuyomi,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R004,Rinne Rebirth,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R005,Dead Demon Consuming Seal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R006,World Split: Cataclysm,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R007,Cursed Body: Resurrection Puppet,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R008,Eight Gates: Death Lotus,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R009,True Summoning: Divine Beast,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R010,Chakra Transcendence,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R011,Absolute Destruction Wave,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R012,Black Receiver Domain,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R013,Izanagi,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R014,Izanami,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R015,Sage Art: World-Tree Manifest,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R016,Karma Seal: Divine Absorption,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R017,World Reset: DSSN Miracle,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R018,Karma: God’s Vessel,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R019,Meteor Strike: Heavenly Judgment,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T017-R020,Divine Mandate,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R001,Sun Halo Barrier (Kaiori’s),legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R002,Celestial Reflection Blade,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R003,Aurora Judgment,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R004,Moonlit Veil,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R005,Fatebinder Seal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R006,Gale Wolf Sprint,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R007,Dragon’s Breath Rupture,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R008,Black Mirror Memory,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R009,Spirit Circuit Heal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T018-R010,Inheritor’s Oath,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R001,Chakra Thread Control,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R002,Quick-Deploy Kunai,legacy_jutsu,legacy_unconverted,,E,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R003,Puppet Limb Extension,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R004,Smoke Bomb Release,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R005,Blade Launcher Arm,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R006,Wire Trap Set,legacy_jutsu,legacy_unconverted,,D,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R007,Chakra-Powered Shield,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R008,Exploding Puppet Trap,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R009,Smoke Missile Barrage,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R010,Puppet Replacement,legacy_jutsu,legacy_unconverted,,C,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R011,Hidden Weapon Arsenal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R012,Chakra Drill,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R013,Puppet Master’s Strings,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R014,Poison Mist Dispersal,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R015,Sensory Puppet Scout,legacy_jutsu,legacy_unconverted,,B,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R016,Iron Maiden Capture,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R017,Flying Puppet Assault,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R018,Puppet Array: Ten Fingers,legacy_jutsu,legacy_unconverted,,A,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R019,Legendary Blade Unseal,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R020,Puppet Soul Transfer,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R021,Adamantine Puppet Creation,legacy_jutsu,legacy_unconverted,,S,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R022,Grand Arsenal: War Machine,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R023,Puppet: Marionette World,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R024,Sealed Art: Death-Trigger Trap,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R025,Legendary Tool: Bashōsen,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R026,Sealed Tool: Benihisago,legacy_jutsu,legacy_unconverted,,SS,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R027,Eternal Puppet: Human Core,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion
+SNCL-L-JC1-T019-R028,Mechanized Cataclysm,legacy_jutsu,legacy_unconverted,,X,,SSN_ Jutsu Compendium V1.docx,Blocked until explicit mechanical conversion

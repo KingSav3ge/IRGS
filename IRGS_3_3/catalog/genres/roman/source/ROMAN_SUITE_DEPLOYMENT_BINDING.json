@@ -1,0 +1,61 @@
+{
+  "document_id": "IRGS-ROMAN-COMBINED-PACKAGE-1.0",
+  "purpose": "Reference suite / distribution binding; not a campaign profile, play state, or implicit adoption event",
+  "release_status": "Integration candidate; engine accepted as existing workshop reference, Roman content extension proposed",
+  "normative_core": {
+    "id": "IRGS-CORE-3.2",
+    "path": "roman_republic_slim_v1_2/dependencies/IRGS_Core_Engine_v3_2.md",
+    "sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c"
+  },
+  "normative_scl": {
+    "id": "IRGS-SCL-1.0",
+    "registry": "roman_republic_slim_v1_2/dependencies/IRGS_Shared_Content_Registry_v1_0.json",
+    "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
+    "underlying_family_revision": "0.2",
+    "holds_unchanged": true
+  },
+  "roman_engine": {
+    "id": "IRGS-RRLS-SLIM-1.2",
+    "status": "Accepted finalized workshop reference; numerical/historical calibration provisional",
+    "path": "IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+    "sha256": "402c80e30727b086bd4b5289154f29679aac08494ae303734a3f3c26961a1710"
+  },
+  "roman_library": {
+    "id": "IRGS-RRCL-1.0",
+    "status": "Proposed; not adopted",
+    "path": "Roman_Content_Library/IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md",
+    "sha256": "3018fd00c489fe50dd3b1c448956fccb950d3273206300543197268fceece370",
+    "template_count": 118
+  },
+  "roman_native_bindings": {
+    "id": "IRGS-RRLS-CONTENT-1.2",
+    "path": "roman_republic_slim_v1_2/content_bindings.json",
+    "sha256": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
+    "count": 14,
+    "local_heavy_blunt_profile_preserved": true
+  },
+  "content_activation": {
+    "automatic": false,
+    "requires": [
+      "explicit campaign/setting adoption of selected Roman template",
+      "valid date and locality",
+      "institutional/legal eligibility where consequential",
+      "full supported effect/profile selector",
+      "actual instantiation with Core owners and finite stock/property"
+    ]
+  },
+  "campaign_migration": {
+    "automatic": false,
+    "existing_state_unchanged": true,
+    "retroactivity": false
+  },
+  "verification": {
+    "engine_bounded_named_checks": 116,
+    "library_structural_bounded_checks": 2069,
+    "complete_runtime_cases_executed": 0,
+    "full_live_playtesting": false,
+    "historical_calibration_complete": false
+  },
+  "maintenance_revision": "R3",
+  "current_core_binding_snapshot": "Roman_Content_Library/sources/Core_v3_2_Receiving_Bindings_R3.json"
+}

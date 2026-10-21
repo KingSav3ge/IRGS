@@ -1,0 +1,1792 @@
+{
+  "id": "IRGS-MIL-LIB-1.0",
+  "status": "Proposed; no automatic adoption",
+  "parent_reference": "IRGS-CORE-3.2",
+  "scl_reference": "IRGS-SCL-1.0",
+  "scl_entry_revision": "0.2",
+  "slim_engine_source_pin": "IRGS-CORE-3.0 / IRGS-SCL-0.1",
+  "source_index": "ML-0.1",
+  "eras": [
+    {
+      "id": "ERA-ANT",
+      "name": "Antiquity",
+      "scope": "Ancient societies before the first century AD; bronze and iron technologies where locally established"
+    },
+    {
+      "id": "ERA-EAD",
+      "name": "Early Centuries AD",
+      "scope": "Roughly the first–fifth centuries AD; early imperial and late-antique contexts"
+    },
+    {
+      "id": "ERA-MED",
+      "name": "Middle Ages",
+      "scope": "Roughly AD 500–1500; later regional/period subdivisions can refine availability"
+    },
+    {
+      "id": "ERA-EMD",
+      "name": "Early Modern",
+      "scope": "Roughly AD 1500–1800; expanding gunpowder warfare, maritime systems and organized military supply"
+    },
+    {
+      "id": "ERA-CON",
+      "name": "Contemporary",
+      "scope": "Used broadly in this library for industrial and modern military contexts, approximately the nineteenth century to the present"
+    },
+    {
+      "id": "ERA-SCI",
+      "name": "Science Fiction",
+      "scope": "Fictional future or alternative technological contexts; availability determined by the setting"
+    }
+  ],
+  "categories": [
+    {
+      "code": "WPN",
+      "name": "Personal weapons",
+      "scope": "Melee weapons, projectile weapons, firearms and other personal weapon systems"
+    },
+    {
+      "code": "PRO",
+      "name": "Protection and clothing",
+      "scope": "Armor, shields, helmets, uniforms, footwear and protective gear"
+    },
+    {
+      "code": "SUP",
+      "name": "Support weapons",
+      "scope": "Siege equipment, artillery and other crew-operated weapon systems"
+    },
+    {
+      "code": "MUN",
+      "name": "Ammunition and expendables",
+      "scope": "Projectiles, propellants, cartridges, shells and setting-specific consumables"
+    },
+    {
+      "code": "KIT",
+      "name": "Personal and camp equipment",
+      "scope": "Carrying gear, bedding, shelter, cooking, lighting and hygiene equipment"
+    },
+    {
+      "code": "TRN",
+      "name": "Land transport and animal equipment",
+      "scope": "Saddlery, pack equipment, carts, wagons, vehicles and rail transport"
+    },
+    {
+      "code": "NAV",
+      "name": "Naval equipment",
+      "scope": "Boats, ships, rigging, propulsion and maritime support"
+    },
+    {
+      "code": "AIR",
+      "name": "Aviation and space equipment",
+      "scope": "Balloons, aircraft, spacecraft and associated equipment where applicable"
+    },
+    {
+      "code": "COM",
+      "name": "Communication and administration",
+      "scope": "Signals, correspondence, records, printing, telegraphy, radio and digital systems"
+    },
+    {
+      "code": "OBS",
+      "name": "Observation and navigation",
+      "scope": "Maps, surveying, optical equipment, sensors and navigation aids"
+    },
+    {
+      "code": "ENG",
+      "name": "Engineering and production",
+      "scope": "Hand tools, agriculture, construction, workshops, machinery and utilities"
+    },
+    {
+      "code": "MED",
+      "name": "Care and medical equipment",
+      "scope": "Medical supplies, care facilities, evacuation equipment and setting-specific treatment technology"
+    }
+  ],
+  "templates": [
+    {
+      "id": "MIL-LIB:WPN-MELEE@1.0",
+      "category": "WPN",
+      "name": "Service melee weapon",
+      "source": "ML §3",
+      "description": "A purpose-built or issued weapon used through one or more physical contact modes",
+      "native_model_fields": [
+        "construction",
+        "mode geometry",
+        "reach",
+        "user handling",
+        "protection/effect adapter"
+      ],
+      "activation_gates": "Physical object; qualifying user; feasible action mode",
+      "scl_example_ref": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:WPN-MISSILE@1.0",
+      "category": "WPN",
+      "name": "Human-powered projectile weapon",
+      "source": "ML §3",
+      "description": "Bow, sling, crossbow or comparable projectile-delivery equipment",
+      "native_model_fields": [
+        "launcher mode",
+        "draw/operating requirement",
+        "projectile compatibility",
+        "range envelope",
+        "loading cycle"
+      ],
+      "activation_gates": "Compatible ammunition; physical capacity; supported line of effect",
+      "scl_example_ref": "SCL:PBC-WPN-FL-WPN-R-005@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:WPN-FIREARM@1.0",
+      "category": "WPN",
+      "name": "Individual firearm family",
+      "source": "ML §3",
+      "description": "Region/date-supported individual firearm or setting-defined projectile arm",
+      "native_model_fields": [
+        "chamber/feed",
+        "cartridge compatibility",
+        "cycle",
+        "ignition",
+        "handling",
+        "effect adapter",
+        "storage"
+      ],
+      "activation_gates": "Technology proof; functioning action; permitted user; stock separately tracked",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:WPN-ADVANCED@1.0",
+      "category": "WPN",
+      "name": "Speculative personal weapon",
+      "source": "ML §3 SCI",
+      "description": "Science-fiction personal armament without assumed energy mechanism",
+      "native_model_fields": [
+        "source/medium",
+        "power/feed",
+        "effect type",
+        "range",
+        "counterplay",
+        "failure envelope"
+      ],
+      "activation_gates": "Specific setting authorization; complete compatible effect/power model",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:PRO-UNIFORM@1.0",
+      "category": "PRO",
+      "name": "Service clothing and identification",
+      "source": "ML §§3,5",
+      "description": "Uniform, insignia and occupational clothing used for identification and ordinary function",
+      "native_model_fields": [
+        "cut/material",
+        "climate",
+        "fit",
+        "durability",
+        "recognition/issue policy"
+      ],
+      "activation_gates": "Actual issued or owned clothing; does not confer rank or legal authority",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:PRO-ARMOR@1.0",
+      "category": "PRO",
+      "name": "Military protective ensemble",
+      "source": "ML §3",
+      "description": "Assembled protective pieces with coverage, construction and protective channels",
+      "native_model_fields": [
+        "regions",
+        "layers",
+        "coverage gaps",
+        "mass/fit",
+        "threats",
+        "condition",
+        "mobility interface"
+      ],
+      "activation_gates": "Selected protection model; no summing full ratings for overlapping layers",
+      "scl_example_ref": "SCL:PBC-WPN-FL-ARM-009@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:PRO-RESPIRATOR@1.0",
+      "category": "PRO",
+      "name": "Hazard/environmental protective gear",
+      "source": "ML §§3,5 CON/SCI",
+      "description": "Respiratory or environmental protection for specified hazards",
+      "native_model_fields": [
+        "hazard channel",
+        "filter/air supply",
+        "seal",
+        "fit",
+        "duration",
+        "thermal burden",
+        "maintenance"
+      ],
+      "activation_gates": "Actual appropriate components/supply; not universal hazard immunity",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:PRO-POWERED@1.0",
+      "category": "PRO",
+      "name": "Powered protective suit or exoskeleton",
+      "source": "ML §3 SCI",
+      "description": "Powered worn system distinct from ordinary clothing and armor",
+      "native_model_fields": [
+        "actuation",
+        "power",
+        "control",
+        "mass",
+        "load",
+        "mobility",
+        "failure",
+        "protection modes"
+      ],
+      "activation_gates": "Setting technology; operator qualification; actual energy and maintenance",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:SUP-MECHANICAL@1.0",
+      "category": "SUP",
+      "name": "Mechanical support/siege weapon",
+      "source": "ML §3 ANT/MED",
+      "description": "Crew-operated mechanical artillery and siege systems",
+      "native_model_fields": [
+        "assembly",
+        "ammunition",
+        "crew stations",
+        "traverse",
+        "emplacement",
+        "range/effect envelope"
+      ],
+      "activation_gates": "Real crew, emplacement and suitable projectiles; no free coordinated shots",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:SUP-GUNPOWDER@1.0",
+      "category": "SUP",
+      "name": "Gunpowder artillery family",
+      "source": "ML §3 EMD/CON",
+      "description": "Crew-served cannon, mortar or related support arm",
+      "native_model_fields": [
+        "tube/launcher",
+        "projectile",
+        "charge",
+        "fuze",
+        "recoil",
+        "emplacement",
+        "crew",
+        "exposure"
+      ],
+      "activation_gates": "Historical/setting availability; separate munitions and service procedures",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:SUP-GUIDED@1.0",
+      "category": "SUP",
+      "name": "Guided or remote support weapon",
+      "source": "ML §3 CON/SCI",
+      "description": "System requiring target, control, guidance and effect configuration",
+      "native_model_fields": [
+        "launcher",
+        "munition",
+        "sensor/tracking",
+        "authorization",
+        "network",
+        "flight/effect model"
+      ],
+      "activation_gates": "No omniscient targeting or unlimited ammunition; actual contact/lock",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:SUP-FIXED@1.0",
+      "category": "SUP",
+      "name": "Installed defensive/vehicle armament",
+      "source": "ML §3",
+      "description": "Weapon physically integrated into fortification, vessel or platform",
+      "native_model_fields": [
+        "mount",
+        "orientation",
+        "stabilization",
+        "control",
+        "magazines",
+        "power",
+        "crew",
+        "maintenance"
+      ],
+      "activation_gates": "Parent asset configuration; component damage affects only linked functions",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MUN-PROJECTILE@1.0",
+      "category": "MUN",
+      "name": "Recoverable projectile expendable",
+      "source": "ML §§2,3",
+      "description": "Arrows, bolts, stones, sling ammunition or equivalent launched objects",
+      "native_model_fields": [
+        "material",
+        "dimension",
+        "compatible launcher",
+        "count/mass",
+        "recovered condition"
+      ],
+      "activation_gates": "Separate stock; fired/recovered only through actual location/condition change",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MUN-CHARGE@1.0",
+      "category": "MUN",
+      "name": "Propellant/charge input",
+      "source": "ML §§2,3",
+      "description": "Powder or other propellant consumed by a compatible weapon/engine",
+      "native_model_fields": [
+        "chemistry/energy type",
+        "storage",
+        "charge unit",
+        "compatibility",
+        "ignition",
+        "effects"
+      ],
+      "activation_gates": "Actual finite stock; incompatible charges rejected; never abstract bullets",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MUN-CARTRIDGE@1.0",
+      "category": "MUN",
+      "name": "Integrated firearm ammunition",
+      "source": "ML §3 CON",
+      "description": "Cartridge or ammunition assembly including declared consumable parts",
+      "native_model_fields": [
+        "caliber/chamber",
+        "projectile",
+        "propellant",
+        "primer",
+        "lot",
+        "condition",
+        "feed"
+      ],
+      "activation_gates": "Must match actual weapon; spent cases and recoverability per selected model",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MUN-PAYLOAD@1.0",
+      "category": "MUN",
+      "name": "Specialized expendable effect package",
+      "source": "ML §§3,5 CON/SCI",
+      "description": "Fuze, charge, missile, flare, smoke or other configured expendable",
+      "native_model_fields": [
+        "payload/effect",
+        "arming",
+        "delivery",
+        "safe handling",
+        "storage",
+        "counterplay"
+      ],
+      "activation_gates": "Effect must be separately modeled; no generic explosion or casualty",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:KIT-CAMP@1.0",
+      "category": "KIT",
+      "name": "Personal camp and bivouac kit",
+      "source": "ML §5",
+      "description": "Bedding, shelter, cooking, lighting and hygiene kit for personnel",
+      "native_model_fields": [
+        "component inventory",
+        "mass/bulk",
+        "water/fuel dependency",
+        "weather protection"
+      ],
+      "activation_gates": "Possession does not perform setup, preparation or personal care",
+      "scl_example_ref": "SCL:PBC-EQP-PL-STO-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:KIT-CARRY@1.0",
+      "category": "KIT",
+      "name": "Load-carrying system",
+      "source": "ML §§2,5",
+      "description": "Pack, harness and carrying structures for personal supplies",
+      "native_model_fields": [
+        "capacity",
+        "volume/bulk",
+        "attachment",
+        "condition",
+        "actual item positions"
+      ],
+      "activation_gates": "Load uses real mass distribution; capacity not stock",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:KIT-FIELDREPAIR@1.0",
+      "category": "KIT",
+      "name": "Portable repair and cleaning kit",
+      "source": "ML §5",
+      "description": "Occupation-specific supplies for maintaining issued field equipment",
+      "native_model_fields": [
+        "tools",
+        "compatible spare parts",
+        "consumables",
+        "expertise",
+        "repair scope"
+      ],
+      "activation_gates": "Kit cannot create parts, competence or accepted equipment without work",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-TOOL-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:KIT-RATIONS@1.0",
+      "category": "KIT",
+      "name": "Field food and water package",
+      "source": "ML §5",
+      "description": "Prepared or carried food/water/support selection",
+      "native_model_fields": [
+        "identity",
+        "actual lots",
+        "nutrition/water",
+        "packaging",
+        "shelf life",
+        "use"
+      ],
+      "activation_gates": "One source of stock; rations and feeding not charged twice",
+      "scl_example_ref": "SCL:PBC-RES-PL-RES-FOOD-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:TRN-SADDLERY@1.0",
+      "category": "TRN",
+      "name": "Mounted and pack-animal equipment",
+      "source": "ML §§2,4",
+      "description": "Tack, saddles, reins and burden attachment for living mounts",
+      "native_model_fields": [
+        "animal fit",
+        "pressure/load",
+        "tack condition",
+        "cargo attachment",
+        "skill"
+      ],
+      "activation_gates": "Animal remains autonomous living actor with actual needs",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:TRN-WAGON@1.0",
+      "category": "TRN",
+      "name": "Cart/wagon/chariot carriage",
+      "source": "ML §4",
+      "description": "Wheeled conveyance requiring actual propulsion/animals and road access",
+      "native_model_fields": [
+        "payload",
+        "traction",
+        "axles",
+        "terrain/route",
+        "maintenance",
+        "handling crew"
+      ],
+      "activation_gates": "Real route, draft means, loading and transfer",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:TRN-MOTOR@1.0",
+      "category": "TRN",
+      "name": "Motorized land transport",
+      "source": "ML §4 CON",
+      "description": "Fuel/electrically powered military transport platform",
+      "native_model_fields": [
+        "engine/feed",
+        "range/consumption",
+        "load",
+        "route",
+        "crew",
+        "failures",
+        "maintenance"
+      ],
+      "activation_gates": "Vehicle operating profile; no fuel or instant travel granted",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:TRN-ARMORED@1.0",
+      "category": "TRN",
+      "name": "Armored fighting/support land vehicle",
+      "source": "ML §4 CON/SCI",
+      "description": "Land platform combining mobility, crew stations and protective/weapon subsystems",
+      "native_model_fields": [
+        "hull",
+        "mobility",
+        "power",
+        "crew",
+        "protection channels",
+        "weapons",
+        "sensors",
+        "logistics"
+      ],
+      "activation_gates": "Platform composition no independent duplicated component/munition stock",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:NAV-OARED@1.0",
+      "category": "NAV",
+      "name": "Oared or sail-equipped military craft",
+      "source": "ML §4 ANT/EAD/MED",
+      "description": "Era/region-dependent naval transport or combat vessel",
+      "native_model_fields": [
+        "hull/loading",
+        "propulsion",
+        "weather",
+        "crew",
+        "seamanship",
+        "route",
+        "support"
+      ],
+      "activation_gates": "MAR module and actual qualified crew, not generic movement numbers",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:NAV-SAILING@1.0",
+      "category": "NAV",
+      "name": "Sailing ship and nautical equipment",
+      "source": "ML §4 MED/EMD",
+      "description": "Sailing transport/warship rigging and navigation systems",
+      "native_model_fields": [
+        "sail/rigging",
+        "hull",
+        "weather",
+        "berth",
+        "crew",
+        "maintenance",
+        "cargo"
+      ],
+      "activation_gates": "MAR module; physical ports/loading; separate weapons and supplies",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:NAV-POWERED@1.0",
+      "category": "NAV",
+      "name": "Powered surface or subsurface vessel",
+      "source": "ML §4 CON",
+      "description": "Engine-powered naval platform with optional subsurface operation",
+      "native_model_fields": [
+        "propulsion/feed",
+        "hull",
+        "endurance",
+        "crew",
+        "environmental envelope",
+        "sensors"
+      ],
+      "activation_gates": "MAR/vessel profile including pressure/depth where applicable",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:NAV-FUTURE@1.0",
+      "category": "NAV",
+      "name": "Speculative naval platform",
+      "source": "ML §4 SCI",
+      "description": "Setting-enabled advanced marine platform or ship",
+      "native_model_fields": [
+        "propulsion",
+        "environmental interface",
+        "command",
+        "power",
+        "failure/repair"
+      ],
+      "activation_gates": "No automatic FTL, invulnerability or artificial intelligence",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:AIR-LIGHTER@1.0",
+      "category": "AIR",
+      "name": "Lighter-than-air observation/transport craft",
+      "source": "ML §4 CON",
+      "description": "Balloons or airships where era/region support them",
+      "native_model_fields": [
+        "lift/gas",
+        "weather",
+        "controls",
+        "launch/landing",
+        "personnel/payload"
+      ],
+      "activation_gates": "Flight model and operational envelope; no airspeed by era",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:AIR-AIRCRAFT@1.0",
+      "category": "AIR",
+      "name": "Powered atmospheric aircraft",
+      "source": "ML §4 CON",
+      "description": "Fixed-wing or rotary-wing military aircraft",
+      "native_model_fields": [
+        "lift",
+        "propulsion",
+        "flight/landing",
+        "crew",
+        "payload",
+        "maintenance",
+        "weather"
+      ],
+      "activation_gates": "Compatible aviation model; airframe not a generic vehicle speed",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:AIR-UNMANNED@1.0",
+      "category": "AIR",
+      "name": "Uncrewed aerial vehicle",
+      "source": "ML §4 CON/SCI",
+      "description": "Uncrewed flight platform controlled locally or remotely",
+      "native_model_fields": [
+        "autonomy",
+        "sensor",
+        "communication",
+        "flight",
+        "endurance",
+        "control mandate"
+      ],
+      "activation_gates": "Real channels, operator knowledge and power; no omniscience",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:AIR-SPACE@1.0",
+      "category": "AIR",
+      "name": "Spacecraft and orbital platform",
+      "source": "ML §4 SCI",
+      "description": "Technology-gated space transport, station or combat craft",
+      "native_model_fields": [
+        "flight frame/epoch",
+        "propulsion",
+        "life support",
+        "power",
+        "thermal",
+        "crew",
+        "docking"
+      ],
+      "activation_gates": "SPACE foundation; no inferred FTL, gravity or vacuum immunity",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:COM-SIGNAL@1.0",
+      "category": "COM",
+      "name": "Visual/sound signal system",
+      "source": "ML §§2,4",
+      "description": "Standards, horns, flags and other line-of-sight signaling",
+      "native_model_fields": [
+        "signals/code",
+        "visibility/acoustics",
+        "recipient",
+        "training",
+        "latency"
+      ],
+      "activation_gates": "Actual observation/receipt; authority not transferred by flag alone",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:COM-COURIER@1.0",
+      "category": "COM",
+      "name": "Military records and courier equipment",
+      "source": "ML §4",
+      "description": "Dispatch cases, written orders, routes and administrative carriers",
+      "native_model_fields": [
+        "message identity",
+        "sender/recipient",
+        "route",
+        "security",
+        "issue/receipt times"
+      ],
+      "activation_gates": "Written order is information; copy possession not command execution",
+      "scl_example_ref": "SCL:PBC-EQP-PL-RES-KNW-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:COM-RADIO@1.0",
+      "category": "COM",
+      "name": "Radio/telegraph/telephone equipment",
+      "source": "ML §4 CON",
+      "description": "Era-enabled electrical communications",
+      "native_model_fields": [
+        "power",
+        "compatibility",
+        "medium",
+        "bandwidth",
+        "range",
+        "network",
+        "delay"
+      ],
+      "activation_gates": "Actual path and receivers; source messages separate from receipt",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-COM-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:COM-NETWORK@1.0",
+      "category": "COM",
+      "name": "Digital or speculative command network",
+      "source": "ML §4 CON/SCI",
+      "description": "Connected communications and administration service",
+      "native_model_fields": [
+        "interfaces",
+        "cyber/security",
+        "link",
+        "traffic",
+        "credentials",
+        "synchronization"
+      ],
+      "activation_gates": "No automatically global knowledge or unlimited AI agency",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:OBS-MAP@1.0",
+      "category": "OBS",
+      "name": "Cartographic/route/navigation aids",
+      "source": "ML §4",
+      "description": "Map, chart, compass and route planning references",
+      "native_model_fields": [
+        "scale/coverage",
+        "date",
+        "provenance",
+        "accuracy",
+        "update",
+        "literacy"
+      ],
+      "activation_gates": "Observation differs from interpretation; map is not route feasibility",
+      "scl_example_ref": "SCL:PBC-EQP-PL-RES-KNW-002@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:OBS-OPTICAL@1.0",
+      "category": "OBS",
+      "name": "Optical observation equipment",
+      "source": "ML §4 EMD/CON",
+      "description": "Binoculars, scopes or suitable era optics",
+      "native_model_fields": [
+        "field of view",
+        "environmental limits",
+        "effective detection",
+        "handling"
+      ],
+      "activation_gates": "Better observation never creates invisible target data",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:OBS-SENSOR@1.0",
+      "category": "OBS",
+      "name": "Electronic and remote sensor system",
+      "source": "ML §4 CON/SCI",
+      "description": "Radar, sonar, thermal or other spectrum sensors",
+      "native_model_fields": [
+        "channel",
+        "sensitivity",
+        "range",
+        "obstruction",
+        "power",
+        "processing",
+        "uncertainty"
+      ],
+      "activation_gates": "Detect ≠ classify ≠ locate precisely; genre channel required",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:OBS-SURVEY@1.0",
+      "category": "OBS",
+      "name": "Military surveying and intelligence tools",
+      "source": "ML §4",
+      "description": "Measuring and mapping equipment, sampling and reconnaissance record",
+      "native_model_fields": [
+        "instrument",
+        "method",
+        "coverage",
+        "error",
+        "operator",
+        "data storage"
+      ],
+      "activation_gates": "Separate observation, interpretation, report receipt and actual state",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:ENG-FIELD@1.0",
+      "category": "ENG",
+      "name": "Field engineering/entrenchment tools",
+      "source": "ML §5",
+      "description": "Tools and materials for fieldworks and obstacle alteration",
+      "native_model_fields": [
+        "tooling",
+        "material",
+        "qualified crew",
+        "site",
+        "work",
+        "inspection"
+      ],
+      "activation_gates": "Actual work and material debit; no instant completed fortification",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-TOOL-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:ENG-WORKSHOP@1.0",
+      "category": "ENG",
+      "name": "Military workshop/arsenal support",
+      "source": "ML §5",
+      "description": "Repair/manufacturing work areas using appropriate machines",
+      "native_model_fields": [
+        "site",
+        "tooling",
+        "skill",
+        "drawings",
+        "feeds",
+        "throughput",
+        "commissioning"
+      ],
+      "activation_gates": "Workshop/site/tool/service capacity one physical source of truth",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-SHOP-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:ENG-UTILITY@1.0",
+      "category": "ENG",
+      "name": "Power, water and field utility equipment",
+      "source": "ML §5 CON/SCI",
+      "description": "Generation, water, cold chain, heating and sanitation support",
+      "native_model_fields": [
+        "actual input/output",
+        "feeds",
+        "network",
+        "capacity",
+        "quality",
+        "maintenance"
+      ],
+      "activation_gates": "Service capacity not stock; no free energy or created water",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-PWR-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:ENG-FORT@1.0",
+      "category": "ENG",
+      "name": "Fortifications and fixed defense sites",
+      "source": "ML §§3,5",
+      "description": "Fieldworks, walls, prepared emplacements, shelters and fortresses",
+      "native_model_fields": [
+        "structure",
+        "position",
+        "maintenance",
+        "access",
+        "garrison",
+        "storage"
+      ],
+      "activation_gates": "Construction project accepted before functional site; no fortress HP",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MED-AID@1.0",
+      "category": "MED",
+      "name": "First-aid equipment",
+      "source": "ML §5",
+      "description": "Dressing, splint, assessment and first-response supplies",
+      "native_model_fields": [
+        "stock",
+        "sterility",
+        "care objective",
+        "qualified provider",
+        "exposure"
+      ],
+      "activation_gates": "Possession does not treat; medicine follows selected MED model",
+      "scl_example_ref": "SCL:PBC-EQP-PL-EQP-MED-001@0.2",
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MED-EVAC@1.0",
+      "category": "MED",
+      "name": "Casualty transport equipment",
+      "source": "ML §5",
+      "description": "Litters, stretchers, ambulance platforms and recovery transport",
+      "native_model_fields": [
+        "patient state",
+        "handling crew",
+        "route",
+        "movement",
+        "stabilization"
+      ],
+      "activation_gates": "Evacuation changes location only when executed; does not heal",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MED-FACILITY@1.0",
+      "category": "MED",
+      "name": "Military care facility",
+      "source": "ML §5",
+      "description": "Organized field/hospital care facility and service",
+      "native_model_fields": [
+        "space",
+        "sanitation",
+        "staff",
+        "supplies",
+        "procedures",
+        "beds",
+        "power"
+      ],
+      "activation_gates": "Beds ≠ staffed care capacity; no automatic recovery",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    },
+    {
+      "id": "MIL-LIB:MED-ADVANCED@1.0",
+      "category": "MED",
+      "name": "Speculative medical technology",
+      "source": "ML §5 SCI",
+      "description": "Fictional diagnostics, cybernetics or restorative intervention",
+      "native_model_fields": [
+        "power",
+        "method",
+        "anatomy",
+        "inputs",
+        "outputs",
+        "constraints",
+        "side effects"
+      ],
+      "activation_gates": "Setting enables intervention; no resurrection/instant healing by tag",
+      "scl_example_ref": null,
+      "status": "proposed-unqualified",
+      "instantiates_asset": false,
+      "owns_physical_state": false
+    }
+  ],
+  "matrix": [
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "spear, sword, axe, dagger, bow, sling, thrown weapon",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "shields, helmets, textiles, scale; mail only where locally attested",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "mechanical artillery, siege engines; chariot armament where used",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "arrows, sling stones, thrown projectiles; mechanical artillery ammunition",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "derived candidate; specific munition profiles absent from ML 0.1",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "clothing, carrying bags, bedding, camp shelter, cook vessels, lamp",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "pack/riding animal, cart, wagon, chariot, tack",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "oared or sailing vessel where established",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "Not sourced as a routinely available platform",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "explicit unsupported default (not globally impossible)",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "messengers, oral orders, standards, visual/sound signals, written record where literate",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "local route knowledge, surveying, maps/charts, astronomical navigation where known",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "agricultural, carpentry, metalworking, construction and waterworks tools",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-ANT",
+      "era": "Antiquity",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "period-specific care supplies, instruments and casualty transport",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "iron/steel blades, spears, lance, bow, sling, javelin; regional crossbow",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "shield, helmet, mail, scale, lamellar, regional protection",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "siege engine, assault equipment, mechanical artillery",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "projectiles and other compatible expendables for locally attested systems",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "derived candidate; specific munition profiles absent from ML 0.1",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "tent, blanket, cookware, water container, lamp, repair tools",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "animal transport, wagon, cavalry tack",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "merchant and war vessels where local capacity supports them",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "Not sourced as a routinely available platform",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "explicit unsupported default (not globally impossible)",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "courier network, written order, administrative record, military signal",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "map, survey tool, coast knowledge, astronomical aid",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "craft workshop, mill, road/bridge tool, fortification and supply equipment",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EAD",
+      "era": "Early Centuries AD",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "medical instruments, dressings, medicines and care equipment where organized",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "sword, spear, lance, axe, mace, polearm, bow, crossbow; late regional firearm",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "shield, helmet, padding, mail, lamellar/scale, coat of plates, brigandine, later plate",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "siege engine/tower; early gunpowder artillery where established",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "arrow, bolt, siege projectile and later region-specific powder/projectile",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "derived candidate; specific munition profiles absent from ML 0.1",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "clothing, shelter, bedding, cookware, lamp, containers, sewing tools",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "saddlery, pack train, cart, wagon",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "sailing ship or galley according to region/date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "Not sourced as a routinely available platform",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "explicit unsupported default (not globally impossible)",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "messenger, correspondence, standard, horn, bell, printing where established",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "map, compass, survey and maritime navigation aid where locally known",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "farming/smithy/mill tools, siege engineering, construction and stores",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-MED",
+      "era": "Middle Ages",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "period-specific care instruments, dressing, medicines and care facility",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "pike, sword, sabre, bayonet, musket, pistol, rifle; matchlock/wheellock/flintlock as applicable",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "uniform/clothing, selected helmet, cuirass and role-dependent armor",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "gunpowder cannon, mortar, siege artillery and naval gun",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "powder, shot, projectile, charge, fuze as supported by specific arm",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "derived candidate; specific munition profiles absent from ML 0.1",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "tents, packs, clothing, bedding, cookware, cleaning/repair kit",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "animal trains, wagons and their support equipment",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "sailing warships and merchant vessels",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "Not sourced as a routinely available platform",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "explicit unsupported default (not globally impossible)",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "printed material, courier/post, signal flag, institutional record",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "map, compass, survey equipment, optical instrument and navigation aids",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "arsenal, foundry, powder mill, print works, shipyard and powered mill",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-EMD",
+      "era": "Early Modern",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "medical chest, instruments, dressing and field/naval care equipment",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "percussion/cartridge/repeating/automatic arms, sidearm, anti-armor weapon by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "uniform, camouflage, helmet, respirator, body armor, carrying system by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "machine gun, mortar, artillery, rocket, missile, remote weapon where fielded",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "cartridge, shell, rocket, missile and other incompatible specified expendables",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "derived candidate; specific munition profiles absent from ML 0.1",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "manufactured uniforms, shelters, preserved rations, portable light, hygiene, electronics",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "rail, motor vehicle, armored vehicle by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "ship and submarine by technology/region",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "balloon, aircraft, helicopter and other aviation by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "telegraph, telephone, radio, satellite/digital communications by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "photography, optics, radar, sonar, night vision, thermal and satellite navigation by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "industrial plant, engines, machine tools, generator, refrigeration, diagnostic gear",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-CON",
+      "era": "Contemporary",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "field hospital, ambulance, surgery and advanced diagnostic/life-support by date",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "source-supported editorial subdivision",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "WPN",
+      "category": "Personal weapons",
+      "candidate_examples": "setting-defined advanced projectile, energy or other arm; legacy arms may remain",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "PRO",
+      "category": "Protection and clothing",
+      "candidate_examples": "advanced armor, powered protection, environmental suit where enabled",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "SUP",
+      "category": "Support weapons",
+      "candidate_examples": "directed-energy, orbital/remote or other advanced support platform where enabled",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "MUN",
+      "category": "Ammunition and expendables",
+      "candidate_examples": "specific compatible energy, ammunition, propellant or other finite expendable",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "KIT",
+      "category": "Personal and camp equipment",
+      "candidate_examples": "survival kit, environmental shelter, smart equipment, food/water processing",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "TRN",
+      "category": "Land transport and animal equipment",
+      "candidate_examples": "advanced vehicle, walker/mech or alternative conveyance where enabled",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "NAV",
+      "category": "Naval equipment",
+      "candidate_examples": "setting-defined advanced naval craft",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "AIR",
+      "category": "Aviation and space equipment",
+      "candidate_examples": "atmospheric advanced aircraft, spacecraft and orbital facility where enabled",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "COM",
+      "category": "Communication and administration",
+      "candidate_examples": "advanced network, AI-assisted link, interplanetary link per selected physics",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "OBS",
+      "category": "Observation and navigation",
+      "candidate_examples": "advanced sensor, autonomous reconnaissance, augmented display/navigation",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "ENG",
+      "category": "Engineering and production",
+      "candidate_examples": "robotic fabrication, advanced production, power and autonomous support",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    },
+    {
+      "era_id": "ERA-SCI",
+      "era": "Science Fiction",
+      "category_code": "MED",
+      "category": "Care and medical equipment",
+      "candidate_examples": "advanced diagnostics, cybernetics and setting-defined restorative technology",
+      "source_basis": "ML §2 category; §§3–5 source family index",
+      "evidence_class": "setting-only candidate, not enabled by default",
+      "actual_availability": "requires dated region/institution/setting profile"
+    }
+  ]
+}

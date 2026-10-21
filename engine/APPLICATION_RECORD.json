@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "text_engine_version": "3.3.3.E",
+  "applied_design": "C2",
+  "date": "2026-10-20",
+  "repository": "KingSav3ge/IRGS",
+  "base_branch": "3.3.3.E",
+  "base_commit": "a906b3316712d4f7902bb611eaccf2fc6dd0cf73",
+  "base_tree": "84131397120691a5a58f4fcee92f15855f57f4d0",
+  "target_branch": "3.3.3.E",
+  "baseline_package": "IRGS-3.3.3.zip",
+  "baseline_package_sha256": "f1efda6c1747f5cba3c00f0983aac56ed4fc1deab31a208c7a59cea1f7e01c6c",
+  "packaged_payload_files_unchanged": 274,
+  "runtime_python_files_unchanged": 57,
+  "engine_document": "engine/Core/IRGS_Core_3_3_3_E_C2.md",
+  "engine_sha256": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea",
+  "editorial_changes": [
+    "application cover and explicit chapter anchors",
+    "heading depth adjusted to distinguish inherited/applied sections",
+    "three inherited relative links repaired using preserved reference copies",
+    "current designation prose relabelled in applied C2 chapters; original sources unchanged"
+  ],
+  "rules_removed": false,
+  "selected_live_runtime_changed": false,
+  "runtime_acceptance_claimed": false,
+  "source_doc_status": "preserved_proposed_implementation_requirements",
+  "separate_handoff_workstream": false,
+  "applied_chapters": [
+    {
+      "anchor": "c2-shared-engine-contract",
+      "source": "engine/design/C2/IRGS_Core_3_3_C_Engine_Supplement.md",
+      "sha256": "55b62d25e3bfcad4657f9309119734682ca4f4fc6b5c8899385645f39112d90a",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-actions-and-dependencies",
+      "source": "engine/design/C2/ACTION_AND_DEPENDENCY_CONTRACT.md",
+      "sha256": "938ced78f84de4c74fbb219782cb2d2303d1e1ec8ca2fb1dce58d6c2084b6a75",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-persistence-and-recovery",
+      "source": "engine/design/C2/PERSISTENCE_AND_RECOVERY_CONTRACT.md",
+      "sha256": "cc732445a9513e35c410adabd1b51198c2cb4913fcfc75764c4ae6607bc364b3",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-agency-and-presentation",
+      "source": "engine/design/C2/AGENCY_TIME_AND_PRESENTATION_CONTRACT.md",
+      "sha256": "c600e5c814fbd66f22f1c53bc017ee72b4e3fcb2cf1c85378c41f017fee39e33",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-institutional-execution",
+      "source": "engine/design/C2/INSTITUTIONAL_EXECUTION_MODEL.md",
+      "sha256": "4fb95af1fd78e0bda2e2fb4387b0af56ce27f71f19844c46f96213e95cbe6da6",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-timeline-and-processes",
+      "source": "engine/design/C2/TIMELINE_AND_PROCESS_CONTRACT.md",
+      "sha256": "867d3ba3ca02787717eeb24f4ff69f8a6cfe113ce630ceddf3a51000e4e6b271",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-movement-and-observation",
+      "source": "engine/design/C2/MOVEMENT_AND_OBSERVATION_CONTRACT.md",
+      "sha256": "7a1e5b90b3d02057af5a0bd8b0169803ec255e8ddf2b78c0b293f9e4a4b2398d",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-dialogue-and-social-actions",
+      "source": "engine/design/C2/DIALOGUE_AND_SOCIAL_ACTION_CONTRACT.md",
+      "sha256": "2ab81367dd8c91837b772b4b7be8988cd1ec077e2220ef582db2f00074389ab6",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    },
+    {
+      "anchor": "c2-playable-action-cycle",
+      "source": "engine/design/C2/PLAYABLE_ACTION_CYCLE.md",
+      "sha256": "d09c977a5a8dea8342e2749d1ab474c7d0b1e633174c2e5f9828e888ccbb574c",
+      "application": "full_text_with_heading_depth_and_current_designation_prose_adjusted"
+    }
+  ],
+  "excluded": [
+    "inactive_coding_draft",
+    "user_campaign_saves",
+    "app_changes_tracked_on_3.3.3.A",
+    "new_Claude_handoff_wrapper"
+  ],
+  "development_designations": {
+    "engine_core": "3.3.3.E",
+    "app_web": "3.3.3.A"
+  },
+  "incorporation_register": "engine/C1_C2_INCORPORATION.md"
+}

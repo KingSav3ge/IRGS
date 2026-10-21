@@ -1,0 +1,889 @@
+{
+  "document_id": "IRGS-PACL-2.0",
+  "status": "proposed",
+  "core": "IRGS-CORE-3.2",
+  "scl": "IRGS-SCL-1.0",
+  "record_revision_policy": "PA-CNT are new proposed composition identities; published SCL families remain @0.2 and unchanged",
+  "templates": [
+    {
+      "id": "PA-CNT-LEG-001",
+      "group": "LEG",
+      "name": "Abandoned retail recovery survey",
+      "source_refs": [
+        "SITE-002",
+        "RES-FOOD-001",
+        "RES-FOOD-002"
+      ],
+      "overlays": [
+        "PA.LegacySite"
+      ],
+      "trigger": "Survey request at formerly active store",
+      "record": "Previous opening hours/use; closure history; accessed rooms; surveyed zones; observed food lots; theft/spoilage evidence",
+      "effect": "Refer to Core discovery and K-STOCK; no loot generation",
+      "gate": "Actual site access, inventory and storage/exposure profile",
+      "acceptance": "Repeat visit to cleared aisles cannot renew food; previously unsearched freezer remains an unknown region",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-002",
+      "group": "LEG",
+      "name": "Pharmacy inventory and cold-chain history",
+      "source_refs": [
+        "SITE-003",
+        "RES-MED-002",
+        "STO-007"
+      ],
+      "overlays": [
+        "PA.LegacySite",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Former pharmacy assessed",
+      "record": "Medicine identity and batch; storage time/temperature evidence; access and custodial claims; compatible care profile",
+      "effect": "Existing drugs keep quantity with separate suitability/knowledge assessments",
+      "gate": "Qualified medical assessment; specific storage/indication profile",
+      "acceptance": "An unlabeled bottle cannot become generic healing points",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-003",
+      "group": "LEG",
+      "name": "Fuel depot salvage and pumping",
+      "source_refs": [
+        "SITE-006",
+        "STO-004",
+        "RES-FUEL-002"
+      ],
+      "overlays": [
+        "PA.LegacySite",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Pump/stock condition inspected",
+      "record": "Existing fuel lot, grade and custody; transfer pump, power, fittings; site control and history",
+      "effect": "Only transferred actual fuel enters handling/transit record",
+      "gate": "Specific fuel quality, safe transfer, available equipment and transport",
+      "acceptance": "Powerless station with fuel underground cannot yield delivered fuel without transfer capability",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-004",
+      "group": "LEG",
+      "name": "Installed machinery salvage versus donor function",
+      "source_refs": [
+        "SITE-011",
+        "EQP-SHOP-001",
+        "RES-IND-001"
+      ],
+      "overlays": [
+        "PA.LegacySite",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Machine cannibalization proposed",
+      "record": "Donor machine id and component; removed assembly; recipient support; lost donor operation",
+      "effect": "Core debit/credit of component and condition/function of donor",
+      "gate": "Physical access, tooling, qualified labor, component compatibility",
+      "acceptance": "Removing the final serviceable controller disables donor operation; does not mint two controllers",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-005",
+      "group": "LEG",
+      "name": "Unknown substructure in searched site",
+      "source_refs": [
+        "SITE-001",
+        "RES-KNW-002"
+      ],
+      "overlays": [
+        "PA.LegacySite"
+      ],
+      "trigger": "Partial building survey",
+      "record": "Search coverage, observer access, structural constraints, source maps/uncertainty",
+      "effect": "Discovery changes K-INFO; no quantity until established",
+      "gate": "Access, survey method and hidden-state persistence",
+      "acceptance": "Cleared ground floor does not declare unseen basement empty or full",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-006",
+      "group": "LEG",
+      "name": "Recovered document and lost know-how",
+      "source_refs": [
+        "RES-KNW-001",
+        "SITE-011"
+      ],
+      "overlays": [
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Manual or plans recovered",
+      "record": "Artifact custody/location; information visibility; language; training/work instructions; personnel competence",
+      "effect": "Core receives documents and information, not instant expertise",
+      "gate": "Readable medium, actual study/training, equipment access",
+      "acceptance": "Recovered manual alone cannot commission complex apparatus",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-007",
+      "group": "LEG",
+      "name": "Contaminated inherited potable-water lot",
+      "source_refs": [
+        "RES-WAT-001",
+        "RES-WAT-002",
+        "HAZ-005"
+      ],
+      "overlays": [
+        "PA.LegacySite",
+        "PA.Pressure"
+      ],
+      "trigger": "Evidence of contamination in reserve",
+      "record": "Lot amount; test evidence; contamination state; drinking suitability; alternate stock",
+      "effect": "Quantity persists; qualifying usable potable quantity may fall",
+      "gate": "Contaminant profile, test validity, treatment and monitoring",
+      "acceptance": "One hundred liters can remain physically present yet be unavailable as potable service",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-LEG-008",
+      "group": "LEG",
+      "name": "Long-term unreplaceable control component",
+      "source_refs": [
+        "RES-IND-002",
+        "EQP-PWR-001"
+      ],
+      "overlays": [
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Support/parts assessment changed",
+      "record": "Current operating state; existing spares; diagnostics; manufacturing capability; imports; forecast horizon",
+      "effect": "Future support warning; no immediate fabricated component failure",
+      "gate": "Actual spare specification, qualified maintenance and replenishment evidence",
+      "acceptance": "Running generator keeps running while unsupported component reproduction remains unresolved",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-001",
+      "group": "PRV",
+      "name": "Emergency potable-water distribution point",
+      "source_refs": [
+        "WRK-WAT-001",
+        "RES-WAT-001",
+        "STO-003"
+      ],
+      "overlays": [
+        "PA.DisruptedProvision",
+        "PA.Pressure"
+      ],
+      "trigger": "Ordinary mains are disrupted",
+      "record": "Consumers, real accessible reserve/source, intake/replenishment, bottlenecks and allocation authority",
+      "effect": "Actual delivery transfers water from source through transit/receipts",
+      "gate": "Water standard, routes/handling, personnel, timing and storage",
+      "acceptance": "Road convoy dispatched, receiving water does not appear until arrival and unloading",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-002",
+      "group": "PRV",
+      "name": "Gravity-buffered urban water continuity",
+      "source_refs": [
+        "WRK-WAT-002",
+        "SVC-WAT-001"
+      ],
+      "overlays": [
+        "PA.DisruptedProvision",
+        "PA.Pressure"
+      ],
+      "trigger": "Powered pumping interrupted",
+      "record": "Tank amount, height/flow connection, demand and repair schedule",
+      "effect": "Core service forecast reflects buffer; no automatic immediate interruption",
+      "gate": "Known hydraulic envelope and quality",
+      "acceptance": "Pump shuts off; gravity tank still supplies supported users during remaining actual buffer",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-003",
+      "group": "PRV",
+      "name": "Temporary generating supply prioritization",
+      "source_refs": [
+        "WRK-PWR-001",
+        "EQP-PWR-001",
+        "SVC-PWR-001"
+      ],
+      "overlays": [
+        "PA.Disruption",
+        "PA.DisruptedProvision"
+      ],
+      "trigger": "Emergency power activated",
+      "record": "Fuel, safe generator connection, voltage/load, critical endpoints, operating shifts",
+      "effect": "Core allocates one finite output and fuel quantity to actual recipients",
+      "gate": "Complete generator envelope and compatible distribution",
+      "acceptance": "Ten usable units cannot deliver two simultaneous indivisible six-unit services",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-004",
+      "group": "PRV",
+      "name": "Battery-only emergency communications",
+      "source_refs": [
+        "WRK-PWR-002",
+        "SVC-COM-001",
+        "EQP-COM-001"
+      ],
+      "overlays": [
+        "PA.DisruptedProvision"
+      ],
+      "trigger": "Primary power lost",
+      "record": "Charge, discharge bound, radio endpoints, receiving capability and duty schedule",
+      "effect": "Actual operating runtime depends on stock/state; messages separate from device condition",
+      "gate": "Power and link profile, qualified use",
+      "acceptance": "Battery expires but already-sent message does not vanish from recipient knowledge",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-005",
+      "group": "PRV",
+      "name": "Emergency feeding point",
+      "source_refs": [
+        "WRK-FOOD-001",
+        "RES-FOOD-001",
+        "RES-WAT-001"
+      ],
+      "overlays": [
+        "PA.DisruptedProvision",
+        "PA.Pressure"
+      ],
+      "trigger": "Central meal service activated",
+      "record": "Food lots/ownership; potable water; cooking inputs; operators; serving and waste routes",
+      "effect": "Meals produced from actual input lots by Core service/work",
+      "gate": "Menu-specific needs, hygiene, staffing and equipment",
+      "acceptance": "Serving 40 meals reduces available ingredients and does not manufacture nutrition",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-006",
+      "group": "PRV",
+      "name": "Temporary healthcare provision",
+      "source_refs": [
+        "WRK-MED-001",
+        "EQP-MED-001",
+        "SVC-HEALTH-001"
+      ],
+      "overlays": [
+        "PA.DisruptedProvision",
+        "PA.RefugePosture"
+      ],
+      "trigger": "Clinic opened after ordinary service interruption",
+      "record": "Actual practitioners, care scope, beds, equipment, pharmaceuticals, power/water",
+      "effect": "Only declared qualified treatments and deliverable capacity available",
+      "gate": "Selected MED injury/illness/treatment profiles",
+      "acceptance": "An open clinic sign and medicine chest do not create a surgeon",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-PRV-007",
+      "group": "PRV",
+      "name": "Emergency warming center",
+      "source_refs": [
+        "WRK-HEAT-001",
+        "SVC-HEAT-001",
+        "EQP-TEMP-001"
+      ],
+      "overlays": [
+        "PA.RefugePosture",
+        "PA.Pressure"
+      ],
+      "trigger": "Cold-weather shelter operating",
+      "record": "Heat source, safe ventilation, fuel, shelter volume, occupants, exposure",
+      "effect": "Actual warmth only in supported area; survivor needs assessed through Core",
+      "gate": "Heating envelope, fuel, building insulation, organism profile",
+      "acceptance": "A heater cannot warm an unlimited population or operate without exhaust management",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-001",
+      "group": "REF",
+      "name": "Public shelter conversion",
+      "source_refs": [
+        "SITE-018",
+        "HAB-002",
+        "WRK-SHL-001"
+      ],
+      "overlays": [
+        "PA.RefugePosture"
+      ],
+      "trigger": "Former civic building used for shelter",
+      "record": "Original function; current floor areas; actual arrivals; operators; water/sanitation; exit routes",
+      "effect": "No free residents, beds, supplies or new authority",
+      "gate": "Site capacity, emergency use permissions, service resources",
+      "acceptance": "School declared refuge; inhabitants unchanged until actual arrival",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-002",
+      "group": "REF",
+      "name": "Moving emergency convoy",
+      "source_refs": [
+        "HAB-004",
+        "POP-002",
+        "SVC-ROAD-001"
+      ],
+      "overlays": [
+        "PA.DisplacementWave"
+      ],
+      "trigger": "Displacement group departs",
+      "record": "Named people/cohort; vehicles; food/water; transit legs, destination forecast",
+      "effect": "Core moves existing persons/assets; arrivals only on receipt",
+      "gate": "Transport capacity, crew, fuel, route profile",
+      "acceptance": "Split 120 travellers: 70 arrived and 50 transit; total 120",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-003",
+      "group": "REF",
+      "name": "Temporary camp on constrained services",
+      "source_refs": [
+        "HAB-003",
+        "SVC-SAN-001",
+        "SVC-WAT-001"
+      ],
+      "overlays": [
+        "PA.RefugePosture",
+        "PA.Pressure"
+      ],
+      "trigger": "Camp starts operating",
+      "record": "People physically present; real sanitation/water service; staff, weather and supply",
+      "effect": "Unmet needs remain visible; excess occupants do not disappear",
+      "gate": "Species physiological and service throughput profiles",
+      "acceptance": "Shelter holds 500 but potable water supports 300: unmet water remains",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-004",
+      "group": "REF",
+      "name": "Rural distributed refuge network",
+      "source_refs": [
+        "HAB-005",
+        "NET-L-002",
+        "SVC-HEALTH-001"
+      ],
+      "overlays": [
+        "PA.RefugePosture",
+        "PA.RegionalRecovery"
+      ],
+      "trigger": "Households coordinate remote assistance",
+      "record": "Independent properties, travel times, clinics, information latency",
+      "effect": "Access depends on real transport and service capacity",
+      "gate": "Rural geography, medical resources and reliable communications",
+      "acceptance": "Radio call received does not deliver medicine across broken route",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-005",
+      "group": "REF",
+      "name": "Displacement reception and rights",
+      "source_refs": [
+        "POP-003",
+        "INST-001",
+        "HAB-002"
+      ],
+      "overlays": [
+        "PA.DisplacementWave",
+        "PA.RefugePosture"
+      ],
+      "trigger": "Newcomers arrive at intake",
+      "record": "Actual presence; property; care needs; registration progress; rights claims; authority",
+      "effect": "Demand applies on arrival; legal classification decided separately",
+      "gate": "Local law/protection, personnel and genuine support",
+      "acceptance": "Unregistered children consume water as present people; are not assigned jobs",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REF-006",
+      "group": "REF",
+      "name": "Transition from refuge to durable housing",
+      "source_refs": [
+        "HAB-002",
+        "HAB-006",
+        "RCN-011"
+      ],
+      "overlays": [
+        "PA.RefugePosture",
+        "PA.ReconstructionTransition"
+      ],
+      "trigger": "Housing conversion project accepted",
+      "record": "Work stages; inspected components; sanitation/power/water; occupancy terms; institution",
+      "effect": "Accepted housing service only when actual support exists",
+      "gate": "Usability criteria, construction inputs, resident rights",
+      "acceptance": "Finishing walls without water does not automatically produce habitable capacity",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-INS-001",
+      "group": "INS",
+      "name": "Continuing local-government branch",
+      "source_refs": [
+        "INST-001",
+        "RES-KNW-002"
+      ],
+      "overlays": [
+        "PA.InstitutionFracture"
+      ],
+      "trigger": "Capital government links fail",
+      "record": "Current staff/mandates; prior offices; available records; received orders; local procedures",
+      "effect": "Institution continues functions it can actually perform",
+      "gate": "Authority and governance/records profile",
+      "acceptance": "Mayor displaced but municipal sanitation office still operates within its actual mandate",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-INS-002",
+      "group": "INS",
+      "name": "Competing successor claims",
+      "source_refs": [
+        "INST-002",
+        "INST-001"
+      ],
+      "overlays": [
+        "PA.InstitutionFracture",
+        "PA.SuccessorAssessment"
+      ],
+      "trigger": "Branches assert continuity",
+      "record": "Separate claims, recognition, control, contract/legal evidence",
+      "effect": "No automatic legitimacy or inherited treaty rights",
+      "gate": "Setting law/jurisdiction and relevant GOV process",
+      "acceptance": "Two councils claim authority; neither gains universal assent by selecting entry",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-INS-003",
+      "group": "INS",
+      "name": "Emergency public-health remnant",
+      "source_refs": [
+        "INST-004",
+        "SVC-HEALTH-001"
+      ],
+      "overlays": [
+        "PA.InstitutionFracture",
+        "PA.DisruptedProvision"
+      ],
+      "trigger": "Health authority fragments",
+      "record": "Surviving staff and jurisdiction, records, real clinic support, information",
+      "effect": "Surviving institution may coordinate support; cannot cause free treatments",
+      "gate": "MED profile, communications, authority",
+      "acceptance": "Outdated hospital report not equal current staffed bed capacity",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-INS-004",
+      "group": "INS",
+      "name": "Emergency mutual-aid compact",
+      "source_refs": [
+        "INST-009",
+        "NET-F-002",
+        "NET-L-002"
+      ],
+      "overlays": [
+        "PA.RegionalRecovery",
+        "PA.InstitutionFracture"
+      ],
+      "trigger": "Two local authorities negotiate aid",
+      "record": "Approved agreement, donor/receiver property, access routes, service/stock terms",
+      "effect": "Obligations change only on effective agreement; real aid needs actual delivery",
+      "gate": "Contract law, signatory mandate, stock and transport",
+      "acceptance": "Signed food donation does not itself replenish recipient pantry",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-INS-005",
+      "group": "INS",
+      "name": "Archives as continuity without technicians",
+      "source_refs": [
+        "INST-006",
+        "RES-KNW-001",
+        "RCN-012"
+      ],
+      "overlays": [
+        "PA.LegacyDependency",
+        "PA.SuccessorAssessment"
+      ],
+      "trigger": "Institution recovers knowledge archive",
+      "record": "Preserved source documents, readability, specialists and trainees",
+      "effect": "Records support training but do not replace it",
+      "gate": "Education/certification and work model",
+      "acceptance": "Reconstituted archives cannot run factory absent competent operators",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-001",
+      "group": "REC",
+      "name": "Distributed microgrid successor",
+      "source_refs": [
+        "RCN-004",
+        "SVC-PWR-001"
+      ],
+      "overlays": [
+        "PA.ReconstructionTransition",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Alternative power topology built",
+      "record": "Distributed installed generation; storage; distribution; operator skills; acceptance",
+      "effect": "Current consumers receive only delivered power; old grid need not be restored",
+      "gate": "Generation profile, commissioning and ongoing supplies",
+      "acceptance": "Microgrid passes test; old regional station remains inoperable without denying local success",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-002",
+      "group": "REC",
+      "name": "Clinic-capability replacement",
+      "source_refs": [
+        "RCN-008",
+        "SVC-HEALTH-001"
+      ],
+      "overlays": [
+        "PA.ReconstructionTransition",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Temporary aid becomes regional healthcare",
+      "record": "Real qualified staff, inventory, referral routes, facility support",
+      "effect": "Capability established service-by-service, not one hospital level",
+      "gate": "MED profile, working utilities and repeatable stock supply",
+      "acceptance": "Care ward commissioned without pharmaceuticals cannot perform drug-dependent services",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-003",
+      "group": "REC",
+      "name": "Repair-to-reproduction industrial transition",
+      "source_refs": [
+        "RCN-009",
+        "EQP-SHOP-001",
+        "RES-IND-001"
+      ],
+      "overlays": [
+        "PA.ReconstructionTransition",
+        "PA.LegacyDependency"
+      ],
+      "trigger": "Workshop proposes repeated fabrication",
+      "record": "Specific product drawing/standard; feedstock; tooling; qualified staff; trials/inspection",
+      "effect": "Accepted batch outputs are real stock; prototype does not prove sustainable volume",
+      "gate": "Quality control, measured production envelope",
+      "acceptance": "One prototype valve does not create industrial-scale spare-part supply",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-004",
+      "group": "REC",
+      "name": "Reconstructed regional supply corridor",
+      "source_refs": [
+        "RCN-015",
+        "SVC-ROAD-001",
+        "NET-F-001"
+      ],
+      "overlays": [
+        "PA.RegionalRecovery",
+        "PA.ReconstructionTransition"
+      ],
+      "trigger": "Road access and route services re-open",
+      "record": "Route ownership and geometry; vehicles; drivers; transload; legal access; throughput",
+      "effect": "Network useful flow only within actual logistical envelope",
+      "gate": "Road/bridge mode load limits, transport resource",
+      "acceptance": "Bridge usable for foot travel but not heavy loads; no heavy cargo delivery",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-005",
+      "group": "REC",
+      "name": "Agriculture without guaranteed harvest",
+      "source_refs": [
+        "RCN-006",
+        "RES-AGR-001",
+        "RES-FOOD-003"
+      ],
+      "overlays": [
+        "PA.ReconstructionTransition",
+        "PA.Pressure"
+      ],
+      "trigger": "Local planting capacity expanded",
+      "record": "Land/seed/water, inputs, people and growing-season calendar",
+      "effect": "Future yield forecast is not edible current stock",
+      "gate": "Crop/weather/ecology and labor models",
+      "acceptance": "Crop planted today cannot feed hungry person today",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-006",
+      "group": "REC",
+      "name": "Industrial import-dependent stability",
+      "source_refs": [
+        "RCN-009",
+        "NET-F-002",
+        "SVC-MFG-001"
+      ],
+      "overlays": [
+        "PA.LegacyDependency",
+        "PA.SuccessorAssessment"
+      ],
+      "trigger": "Imports reliably support essential machines",
+      "record": "Actual imports, terms, route risk, recurrent spares and skill needs",
+      "effect": "Local nonmanufacture does not imply present incapacity",
+      "gate": "Real sustained import agreements, deliveries, support horizon",
+      "acceptance": "Stable imported parts can legitimately support durable service",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-007",
+      "group": "REC",
+      "name": "Civic records and succession restoration",
+      "source_refs": [
+        "RCN-013",
+        "RES-KNW-002",
+        "INST-001"
+      ],
+      "overlays": [
+        "PA.InstitutionFracture",
+        "PA.SuccessorAssessment"
+      ],
+      "trigger": "Authority rebuilds records system",
+      "record": "Recovered documents, validity, staff, backup, laws, procedures, appeals",
+      "effect": "Rights and claims established only by applicable process",
+      "gate": "Institutional authorization and specific law",
+      "acceptance": "Archive ownership documents alone do not confer universal sovereignty",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-REC-008",
+      "group": "REC",
+      "name": "Water service redesign after central-system failure",
+      "source_refs": [
+        "RCN-002",
+        "SVC-WAT-001",
+        "RES-WAT-002"
+      ],
+      "overlays": [
+        "PA.ReconstructionTransition",
+        "PA.DisruptedProvision"
+      ],
+      "trigger": "Community commissions local treatment",
+      "record": "New source, plant, operators, distribution and potable tests",
+      "effect": "Only accepted output supports current consumers",
+      "gate": "Water-quality and service test profiles",
+      "acceptance": "Source found without treatment does not create potable supply",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-001",
+      "group": "CRI",
+      "name": "War-driven infrastructure disruption",
+      "source_refs": [
+        "APX-001",
+        "SITE-022",
+        "SVC-ROAD-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Disruption"
+      ],
+      "trigger": "Documented military action affects civilian functions",
+      "record": "Conflict events; casualties via Core; damage to actual assets; civilian access",
+      "effect": "One attack event links multiple dependent disruption views",
+      "gate": "Applicable combat/protection and law, no universal damage",
+      "acceptance": "One bridge strike assessed in several overlays cannot damage it repeatedly",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-002",
+      "group": "CRI",
+      "name": "Civil fragmentation without physical devastation",
+      "source_refs": [
+        "APX-002",
+        "INST-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.InstitutionFracture"
+      ],
+      "trigger": "Authority splits after crisis",
+      "record": "Competing mandates, communications, service continuity, observed control",
+      "effect": "No blanket shutdown of physically intact services",
+      "gate": "Institutional and public security profile",
+      "acceptance": "Two administrations dispute legitimacy while water system remains working",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-003",
+      "group": "CRI",
+      "name": "Specific-disease epidemic module socket",
+      "source_refs": [
+        "APX-003",
+        "HAZ-007"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Pressure"
+      ],
+      "trigger": "Confirmed infectious cause present",
+      "record": "Source-specific disease, actual transmission, care capacity, observations",
+      "effect": "PA groups exposure effects committed by configured MED/WILD module",
+      "gate": "No generic transmission/lethality; module must be selected",
+      "acceptance": "One infection exposure cannot be duplicated by clinic and district overlays",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-004",
+      "group": "CRI",
+      "name": "Grid and control-system dependency outage",
+      "source_refs": [
+        "APX-004",
+        "SVC-PWR-001",
+        "SVC-COM-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Disruption"
+      ],
+      "trigger": "Identified control failure or outage",
+      "record": "Affected network nodes; operating alternatives; alarm/report delay",
+      "effect": "Actual service chain determines function; no universal electronics destruction",
+      "gate": "Technological vulnerability and restart envelope",
+      "acceptance": "Blackout leaves offline laptop intact absent actual damage cause",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-005",
+      "group": "CRI",
+      "name": "Regional flood and functional refuges",
+      "source_refs": [
+        "APX-005",
+        "HAZ-003",
+        "HAB-002"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.RefugePosture"
+      ],
+      "trigger": "Flood actually reaches selected areas",
+      "record": "Water depth/route, shelter service, accessibility, real arrivals",
+      "effect": "Only affected sites/habitations take hazards; intact region continues",
+      "gate": "Specific flood and care/transport models",
+      "acceptance": "Flooded district does not turn unaffected town into ruins",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-006",
+      "group": "CRI",
+      "name": "Agricultural disruption and regional trade",
+      "source_refs": [
+        "APX-006",
+        "SVC-FOOD-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Pressure"
+      ],
+      "trigger": "Harvest forecast downgraded by ecological cause",
+      "record": "Affected crops, reserve stock, importing routes, recipients",
+      "effect": "Current food and future projection maintained separately",
+      "gate": "Selected crop/weather/market profile",
+      "acceptance": "Harvest fails; existing storehouse food remains in place",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-007",
+      "group": "CRI",
+      "name": "Nuclear event under explicit module",
+      "source_refs": [
+        "APX-007",
+        "HAZ-008"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Disruption"
+      ],
+      "trigger": "Nuclear source/geometry established",
+      "record": "Blast/thermal/radiological channels from selected module with actual timing",
+      "effect": "One physical injury per distinct supported effect channel; reports not exposures",
+      "gate": "Event-specific yield/source, geography, dose and medical profile",
+      "acceptance": "Fallout is not automatically lethal everywhere and source termination does not erase dose",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-008",
+      "group": "CRI",
+      "name": "Geomagnetic disruption with bounded susceptibility",
+      "source_refs": [
+        "APX-008",
+        "SVC-PWR-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.Disruption"
+      ],
+      "trigger": "Solar/geophysical event declared",
+      "record": "Actual field/technical susceptibility, isolation/protection, power network state",
+      "effect": "Only supported equipment/services affected",
+      "gate": "Validated or declared fictional event model; no blanket EMP",
+      "acceptance": "Off-grid stored hand tools do not fail because grid electronics do",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    },
+    {
+      "id": "PA-CNT-CRI-009",
+      "group": "CRI",
+      "name": "Distribution/economic crisis without missing goods",
+      "source_refs": [
+        "APX-010",
+        "SVC-FOOD-001"
+      ],
+      "overlays": [
+        "PA.Crisis",
+        "PA.DisruptedProvision"
+      ],
+      "trigger": "Payment/trade access fails",
+      "record": "Standing stock, ownership, pricing/claims, truck access and people’s needs",
+      "effect": "Goods remain physically present; access/service may be interrupted",
+      "gate": "ECO and GOV profile; transport contract details",
+      "acceptance": "Warehouse holds tons of food but consumers lack legal/economic access",
+      "status": "Proposed Post-Apocalyptic composition; not automatically available or instantiated",
+      "genre_owner": "PA content selection and assessment only"
+    }
+  ]
+}

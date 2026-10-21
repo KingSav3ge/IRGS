@@ -1,0 +1,303 @@
+{
+  "source_archive": "AST Character Concepts.zip",
+  "source_archive_sha256": "897a2d5b3cc067858bb912ab3afd1dcb9dcc8c50b444a79ee43c4b717c1b863e",
+  "source_archive_size": 89217361,
+  "library_file_id": "libfile_0ba5aeea67a8819180dc8f1b04c47a7f",
+  "members": [
+    {
+      "reference": "AST-VIS-01",
+      "filename": "A Scot’s Tale_ Master Hugh Atwood.png",
+      "source_member": "AST Character Concepts/A Scot’s Tale_ Master Hugh Atwood.png",
+      "sha256": "1b2f6ac1db4d6341c71a7fda7f08ac4d920880d43958a71f504d5cca59a90d3c",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-02",
+      "filename": "A Scot’s Tale_ Master Simon Peterkin.png",
+      "source_member": "AST Character Concepts/A Scot’s Tale_ Master Simon Peterkin.png",
+      "sha256": "a693d9187927d55bb2c1d4143842bbfad1ca29576a5a9e6d4e1f5143c80a36d9",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-03",
+      "filename": "A Scot’s Tale_ William Harker Concept Board.png",
+      "source_member": "AST Character Concepts/A Scot’s Tale_ William Harker Concept Board.png",
+      "sha256": "f131f7fc4dde1ca9b4afe6ce11c35778c2192daae783504bb48ba51764241ae5",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-04",
+      "filename": "Able_ Highland Warhorse Concept Sheet.png",
+      "source_member": "AST Character Concepts/Able_ Highland Warhorse Concept Sheet.png",
+      "sha256": "50ecfc65d411dc9a251e4d9ef49310280993a829d90151235d38fb31bb9383d0",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-05",
+      "filename": "Agnes Flowerdew_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Agnes Flowerdew_ A Scot’s Tale.png",
+      "sha256": "7c9b7a0e9749b5ff85dbdee0ba4356b7a1b6cc85d1abd62d8c6ac7995e58a0cd",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-06",
+      "filename": "Alice Flowerdew_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Alice Flowerdew_ A Scot’s Tale.png",
+      "sha256": "5848608dc03562c5f3eb3cdf035fa2960c85fccfc3b376d91f920999e9261a19",
+      "width": 1024,
+      "height": 1536,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-07",
+      "filename": "Aoife Cameron_ Highland Gentlewoman Concept Board.png",
+      "source_member": "AST Character Concepts/Aoife Cameron_ Highland Gentlewoman Concept Board.png",
+      "sha256": "7d00c161d6ad14c6c2be2cad1821dfae734b59bae52b4fe15122dfbc6fc92d62",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-08",
+      "filename": "Captain Eoghan Cameron Character Dossier.png",
+      "source_member": "AST Character Concepts/Captain Eoghan Cameron Character Dossier.png",
+      "sha256": "ffe1ad6b68548c3ab8308fb87ba5d0bc3a08e01b9305be1a3cf7f9193468e9c1",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-09",
+      "filename": "Edith Blackwell_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Edith Blackwell_ A Scot’s Tale.png",
+      "sha256": "0aab867f6b4160431081719ae8c4149debd18f31f6ec57ca4dd0f5ee0d6f08c8",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-10",
+      "filename": "Emrys Lloyd_ Welsh Timber Merchant.png",
+      "source_member": "AST Character Concepts/Emrys Lloyd_ Welsh Timber Merchant.png",
+      "sha256": "f213facafe22dcfefcc51e219dcf1900cd82e6f84da72ab90a715d1133a0dcb8",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-11",
+      "filename": "Godric Blackwell_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Godric Blackwell_ A Scot’s Tale.png",
+      "sha256": "493559ed776f7c7bb44ac19317a94ff6af49ad3a0f99a82515265670a1a9b122",
+      "width": 1024,
+      "height": 1536,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-12",
+      "filename": "Highlander Character Concept Sheet.png",
+      "source_member": "AST Character Concepts/Highlander Character Concept Sheet.png",
+      "sha256": "04df5c10466db3c9efce174046f68aa944826393d451ee16c3f6c96d7d7d2837",
+      "width": 1055,
+      "height": 1491,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-13",
+      "filename": "King Henry V_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/King Henry V_ A Scot’s Tale.png",
+      "sha256": "177c798c84fcf242966c4751f01373646af3f35afe98142ed20732dea8c21e1f",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-14",
+      "filename": "Lord Thomas Camoys_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Lord Thomas Camoys_ A Scot’s Tale.png",
+      "sha256": "37076fdfc4499880ea4cf61c89d03dadc51a1848598445a556a26f337ebf1662",
+      "width": 1024,
+      "height": 1536,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-15",
+      "filename": "Martin Cooper_ Southampton Shieldwright.png",
+      "source_member": "AST Character Concepts/Martin Cooper_ Southampton Shieldwright.png",
+      "sha256": "204e9ff8ea65acc8af3cbfcbf5607115746dff29b22e549c7afd4e05dc679e47",
+      "width": 1484,
+      "height": 1060,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-16",
+      "filename": "Master Clement Ward Character Sheet.png",
+      "source_member": "AST Character Concepts/Master Clement Ward Character Sheet.png",
+      "sha256": "8f000b4170b29b9d7c6dfaa19d7b288d14ea7f3c0a4968168e5922e9220aba81",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-17",
+      "filename": "Master Edmund_ Recruitment Clerk Character Sheet.png",
+      "source_member": "AST Character Concepts/Master Edmund_ Recruitment Clerk Character Sheet.png",
+      "sha256": "dc482dedf4e1688160137d28e3ad0364eb9bb66d060d465256948cc4a67ab04b",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-18",
+      "filename": "Master Geoffrey Ashcombe_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Master Geoffrey Ashcombe_ A Scot’s Tale.png",
+      "sha256": "e610ba9abb4bae1ac21e2bbbb7f40df1702c3b74c4054543acf9f67652deb281",
+      "width": 1055,
+      "height": 1491,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-19",
+      "filename": "Osric Bell_ A Highland Household Tale.png",
+      "source_member": "AST Character Concepts/Osric Bell_ A Highland Household Tale.png",
+      "sha256": "18d36e917784f13fb39b924fd7bfedc772603e64e8ebd85b85a45b0b427cc2d0",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-20",
+      "filename": "Oswin Tanner_ Highland Stable Officer.png",
+      "source_member": "AST Character Concepts/Oswin Tanner_ Highland Stable Officer.png",
+      "sha256": "bb1d4262909f2337fdff6b62bfd9e38006e13f94d85b73f210cc9107f15993c3",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-21",
+      "filename": "Peter Marsh_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Peter Marsh_ A Scot’s Tale.png",
+      "sha256": "654cc0a1a0a4e605d5828b3b24d3f1d23a0bdf64f952869f99e396c1d09f437a",
+      "width": 1024,
+      "height": 1536,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-22",
+      "filename": "Robert Atwood_ Keeper of the Saddles.png",
+      "source_member": "AST Character Concepts/Robert Atwood_ Keeper of the Saddles.png",
+      "sha256": "f2870d292ee76981b7f35aa6c6605f58c867223f68a5b42a8378be63e715b62f",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-23",
+      "filename": "Simon Bellamy_ Baggage Worker Dossier.png",
+      "source_member": "AST Character Concepts/Simon Bellamy_ Baggage Worker Dossier.png",
+      "sha256": "b03dc53b1880936baa093c1258b2e62a0b3c3069d1576f351904c314c9812f36",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-24",
+      "filename": "Sir Richard Wycliffe_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Sir Richard Wycliffe_ A Scot’s Tale.png",
+      "sha256": "bac811c6da1734a048351af6c596d18c448dd312c5964f5b7ccf9da908fd3d7a",
+      "width": 1122,
+      "height": 1402,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-25",
+      "filename": "Stephen Mercer_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Stephen Mercer_ A Scot’s Tale.png",
+      "sha256": "9e0e9c553c96bbf5f17aa170479f86a1c9ea23988ea48b5c776142422ccc9dc7",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-26",
+      "filename": "Steward Walter Hales Character Dossier.png",
+      "source_member": "AST Character Concepts/Steward Walter Hales Character Dossier.png",
+      "sha256": "ed07aabb24d3e99be709387aedec201834c4a97b6fba79ba60b66b7f8024b14e",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-27",
+      "filename": "Thomas Fletcher_ Archer Character Bible.png",
+      "source_member": "AST Character Concepts/Thomas Fletcher_ Archer Character Bible.png",
+      "sha256": "aedd4f53a6fedfc12838ccceea19bbdeabd3e9612b1eaaf9a08faff4d710e327",
+      "width": 1055,
+      "height": 1491,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-28",
+      "filename": "Thomas Grene_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Thomas Grene_ A Scot’s Tale.png",
+      "sha256": "ef9eb597926bb767b083808c0d7e39382c64353a22c898ad076fdcf0c1bcd14d",
+      "width": 1448,
+      "height": 1086,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    },
+    {
+      "reference": "AST-VIS-29",
+      "filename": "Ælfflæd Blackwell_ A Scot’s Tale.png",
+      "source_member": "AST Character Concepts/Ælfflæd Blackwell_ A Scot’s Tale.png",
+      "sha256": "70ef374329976cf2041a2fc075c4cf69d72a2e739249b7c1a79cd14db4b3c435",
+      "width": 1024,
+      "height": 1536,
+      "bundled": false,
+      "source_archive_url": "https://chatgpt.com/api/library/files/libfile_0ba5aeea67a8819180dc8f1b04c47a7f/download"
+    }
+  ],
+  "shield": {
+    "path": "references/Coopian_Shield_Current_Inaccurate_Draft.png",
+    "sha256": "fb27f4f253177b7d3d82680b21c5657e0ed1a61454b7fade9530cc2304a56492",
+    "status": "Current imperfect reference; textual S14 correction governs contradictory straps"
+  }
+}

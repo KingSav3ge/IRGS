@@ -1,0 +1,109 @@
+{
+  "id": "IRGS-BIND-FANTASY-CORE-3.3",
+  "genre_id": "fantasy",
+  "core_ref": "IRGS-CORE-3.3",
+  "core_version": "3.3",
+  "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+  "source_status": "Complete linked workshop specification; individual proposals and profile gates retained",
+  "source_core_ref": "IRGS-CORE-3.2",
+  "source_files": [
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+      "sha256": "b53e6d01fa8c01af6247cf2409f064b2149dd10fd3f22374eb71c78d27940977",
+      "bytes": 106680
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Binding_v1_2_Core3_2.json",
+      "sha256": "cc145d2f7b60ee62789700f31668bc7ff6b4deed88e45d42d04537fea8c3ab1d",
+      "bytes": 130656
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Content_Map_v1_2_Core3_2.csv",
+      "sha256": "f4a5db41e8f7a7108a21562c95a8b42811006c482de4130eff33b10890c08fb8",
+      "bytes": 45814
+    },
+    {
+      "path": "catalog/genres/fantasy/source/IRGS_Fantasy_Reconciliation_v1_2.csv",
+      "sha256": "0f7a4bb8def4213171ad4a2fc92fb760a69e61caa9db5ef17e1ad995f030f7a5",
+      "bytes": 66885
+    }
+  ],
+  "shared_library": "shared",
+  "library_ids": [
+    "shared",
+    "fantasy"
+  ],
+  "runtime_class": "core_world.CoreWorld",
+  "runtime_operations": [
+    "commit_activity",
+    "confirm_character_field",
+    "establish_stock",
+    "receive_evidence",
+    "receive_order",
+    "record_capacity",
+    "record_delegation",
+    "record_design",
+    "record_entity_eligibility",
+    "record_entity_relation",
+    "record_evidence",
+    "record_obligation",
+    "record_player_action",
+    "register_actor",
+    "register_entity",
+    "revoke_delegation",
+    "select_entity_control",
+    "set_scene",
+    "transfer_stock",
+    "transition_entity"
+  ],
+  "runtime_operation_inventory": "runtime/core_world.py:CORE_OPS",
+  "bounded_receiver_operations": [
+    "revoke_delegation"
+  ],
+  "bounded_receiver_source": "runtime/genre_receivers.py:GENRE_OPS",
+  "runtime_sources_sha256": {
+    "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+    "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+  },
+  "lookup_operations": [
+    "classify_record"
+  ],
+  "specialty_runtime_operations": [
+    "revoke_delegation"
+  ],
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "profile_requirements": [
+    "Select complete character, effect, injury, physiology, learning and travel profiles when used",
+    "Resilience, shield contact and transmission required when material",
+    "Enable a specific supernatural paradigm and finite resource translation before use",
+    "Fantasy nominal 20-hour TU is not the historical 4-hour TU"
+  ],
+  "compatibility_research_receivers": {
+    "operations": [],
+    "runtime": "runtime/r9_adapters.py",
+    "scope": "Synthetic R9 research state only; not this campaign route",
+    "certifies_native_engine": false
+  },
+  "single_state": "All effects use the selected campaign's authoritative Core owners and clock",
+  "selection_authority": "User requested live Core 3.3 plus genre engines and content libraries",
+  "activation_effect": "Selects routing and available source references; does not adopt proposed numbers or create instances",
+  "automatic_source_adoption": false,
+  "automatic_campaign_migration": false,
+  "numeric_profile_adoption": false,
+  "source_deprecation": false,
+  "certification": "This catalogue and binding make no execution or branch certification claim",
+  "limitations": [
+    "Native Fantasy arithmetic and supernatural execution remain unqualified specialty operations",
+    "Twelve new archetypes remain proposed and opt-in"
+  ]
+}

@@ -1,0 +1,1874 @@
+{
+  "document_id": "IRGS-RELEASE-3.2",
+  "core_ref": "IRGS-CORE-3.2",
+  "catalogue_ref": "IRGS-SCL-1.0",
+  "status": "Current clean workshop release",
+  "providers": {
+    "resolution_agency": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      90
+    ],
+    "time_events": [
+      10,
+      11,
+      12,
+      47,
+      62,
+      85,
+      90,
+      91,
+      96
+    ],
+    "actors_conditions": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      64,
+      68,
+      69,
+      70,
+      71,
+      106,
+      118,
+      122
+    ],
+    "stock_economy": [
+      12,
+      20,
+      22,
+      24,
+      35,
+      36,
+      37,
+      38,
+      105,
+      109,
+      114
+    ],
+    "assets_components": [
+      21,
+      23,
+      48,
+      49,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      101
+    ],
+    "work_services": [
+      23,
+      41,
+      43,
+      71,
+      72,
+      73,
+      101,
+      102,
+      103,
+      104,
+      107,
+      108,
+      110,
+      119,
+      121
+    ],
+    "information": [
+      2,
+      30,
+      60,
+      61,
+      79,
+      85,
+      86,
+      115,
+      120
+    ],
+    "institutions_life": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      38,
+      39,
+      40,
+      44,
+      45,
+      46,
+      65,
+      66,
+      67,
+      68,
+      69,
+      76,
+      107,
+      113,
+      117,
+      122
+    ],
+    "content_modules": [
+      88,
+      97,
+      98,
+      99,
+      111,
+      112
+    ],
+    "competitions": [
+      6,
+      47,
+      61,
+      91,
+      99,
+      112,
+      123
+    ],
+    "maritime": [
+      116
+    ]
+  },
+  "engine_bindings": [
+    {
+      "engine": "FANTASY",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "ECO",
+        "INV",
+        "MAR",
+        "CIV",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE",
+        "COMP",
+        "GOV"
+      ],
+      "local_models": [
+        "F attributes/creation",
+        "F combat Threat/Defeat/Resistance/injury and armor/shield stress",
+        "F load/travel/exertion/recovery",
+        "F learning schedule",
+        "F supernatural access, Power Units, techniques, channels and exceptions"
+      ],
+      "local_records": [
+        "genre attribute/creation selections",
+        "supernatural paradigms and techniques",
+        "selected effect/physiology profiles"
+      ],
+      "content": [
+        "FL-1.0",
+        "IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "F attributes/creation",
+        "F combat Threat/Defeat/Resistance/injury and armor/shield stress",
+        "F load/travel/exertion/recovery",
+        "F learning schedule",
+        "F supernatural access, Power Units, techniques, channels and exceptions"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-FANTASY-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "MILITARY",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "CIV",
+        "MED",
+        "INTEL",
+        "URBAN",
+        "LIFE"
+      ],
+      "local_models": [
+        "selected historical H-0.3 human creation/needs/learning/load/effect/care defaults when explicitly enabled",
+        "institution/branch duty, pay, rank, justice and deployment profiles",
+        "selected platform/weapon/interface and military morale/cohesion/suppression profiles"
+      ],
+      "local_records": [
+        "service terms",
+        "duty roster and handover",
+        "appointment/qualification",
+        "discipline/deployment/separation records"
+      ],
+      "content": [
+        "ML-0.1 classification metadata",
+        "IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "selected historical H-0.3 human creation/needs/learning/load/effect/care defaults when explicitly enabled",
+        "institution/branch duty, pay, rank, justice and deployment profiles",
+        "selected platform/weapon/interface and military morale/cohesion/suppression profiles"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-MILITARY-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "APOCALYPTIC",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "CIV",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE"
+      ],
+      "local_models": [
+        "crisis causes/themes",
+        "legacy history and replacement dependence",
+        "disruption/refuge/displacement/fracture/reconstruction/successor assessments"
+      ],
+      "local_records": [
+        "PA.Crisis",
+        "PA.RegionalDisruption",
+        "PA.Disruption",
+        "PA.Pressure",
+        "PA.LegacySite",
+        "PA.DisruptedProvision",
+        "PA.RefugePosture",
+        "PA.DisplacementWave",
+        "PA.InstitutionFracture",
+        "PA.LegacyDependency",
+        "PA.RegionalRecovery",
+        "PA.ReconstructionTransition",
+        "PA.SuccessorAssessment"
+      ],
+      "content": [
+        "PL-1.0",
+        "IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "crisis causes/themes",
+        "legacy history and replacement dependence",
+        "disruption/refuge/displacement/fracture/reconstruction/successor assessments"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-APOCALYPTIC-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "ROMAN",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE",
+        "COMP"
+      ],
+      "local_models": [
+        "ROM-INIT-01 35/30/35 ordering",
+        "ROM-DEFEND-01",
+        "ROM-RANGE-01",
+        "ROM-EFFECT-01",
+        "ROM-WEAR-01",
+        "ROM-TRAIN-01",
+        "ROM-LEGAL-01",
+        "ROM-MONEY-01",
+        "ROM-PLAN-01 action authorization applications",
+        "human Resilience 0 and permanent-death selection"
+      ],
+      "local_records": [
+        "dated Roman standing/custody",
+        "Roman denominations and administered property",
+        "arena agreements and career",
+        "native human/equipment/effect selections"
+      ],
+      "content": [
+        "period-eligible FL/PL/ML source profiles",
+        "IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "ROM-INIT-01 35/30/35 ordering",
+        "ROM-DEFEND-01",
+        "ROM-RANGE-01",
+        "ROM-EFFECT-01",
+        "ROM-WEAR-01",
+        "ROM-TRAIN-01",
+        "ROM-LEGAL-01",
+        "ROM-MONEY-01",
+        "ROM-PLAN-01 action authorization applications",
+        "human Resilience 0 and permanent-death selection"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-ROMAN-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3",
+      "conditional_domains": [
+        "CIV"
+      ]
+    },
+    {
+      "engine": "HISTORICAL",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE",
+        "COMP"
+      ],
+      "local_models": [
+        "ordinary real-world human and permanent-death selection",
+        "H needs/learning/load/effect/care game defaults",
+        "researched date/place/institutions/material culture profile"
+      ],
+      "local_records": [
+        "historical profile",
+        "native human selections",
+        "dated legal/career applications"
+      ],
+      "content": [
+        "selected period-eligible content through IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "ordinary real-world human and permanent-death selection",
+        "H needs/learning/load/effect/care game defaults",
+        "researched date/place/institutions/material culture profile"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-HISTORICAL-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "SPACE",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "CIV",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE"
+      ],
+      "local_models": [
+        "frames, epoch and ephemerides",
+        "flight/propulsion/arrival envelopes",
+        "pressure, chemistry, thermal/EVA models",
+        "moving-endpoint signal/link models",
+        "ISRU and interstellar/relativistic setting selections"
+      ],
+      "local_records": [
+        "SPACE.FlightState",
+        "SPACE.ContactPlan",
+        "SPACE.RemoteCommand",
+        "SPACE.PressureZone",
+        "SPACE.ThermalState",
+        "SPACE.SiteAssessment",
+        "SPACE.SettlementTransition"
+      ],
+      "content": [
+        "SPACE-LIB@0.1",
+        "IRGS-SCL-1.0"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "frames, epoch and ephemerides",
+        "flight/propulsion/arrival envelopes",
+        "pressure, chemistry, thermal/EVA models",
+        "moving-endpoint signal/link models",
+        "ISRU and interstellar/relativistic setting selections"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-SPACE-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Shared provider binding; specialized genre mechanics and models remain explicitly selected dependencies",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "SPORT",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE",
+        "COMP"
+      ],
+      "local_models": [
+        "RUN-FLY",
+        "TARGET-DISC",
+        "PASS-GATE",
+        "SEASON-CAREER",
+        "activity physical/measurement adapters",
+        "published format and safety/authority rules"
+      ],
+      "local_records": [
+        "IRGS.SPORT variant and profile references",
+        "sport-specific physical/measurement input extensions"
+      ],
+      "content": [
+        "IRGS.SPORT@0.1",
+        "IRGS-SCL-1.0 eligible equipment references"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "RUN-FLY",
+        "TARGET-DISC",
+        "PASS-GATE",
+        "SEASON-CAREER",
+        "activity physical/measurement adapters",
+        "published format and safety/authority rules"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-SPORT-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Content/module application under COMP; no additional Core domain",
+      "maintenance_revision": "R3"
+    },
+    {
+      "engine": "SSN_EXTRACTION",
+      "required_providers": {
+        "resolution_agency": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          90
+        ],
+        "time_events": [
+          10,
+          11,
+          12,
+          47,
+          62,
+          85,
+          90,
+          91,
+          96
+        ],
+        "actors_conditions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          64,
+          68,
+          69,
+          70,
+          71,
+          106,
+          118,
+          122
+        ],
+        "stock_economy": [
+          12,
+          20,
+          22,
+          24,
+          35,
+          36,
+          37,
+          38,
+          105,
+          109,
+          114
+        ],
+        "assets_components": [
+          21,
+          23,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          101
+        ],
+        "work_services": [
+          23,
+          41,
+          43,
+          71,
+          72,
+          73,
+          101,
+          102,
+          103,
+          104,
+          107,
+          108,
+          110,
+          119,
+          121
+        ],
+        "information": [
+          2,
+          30,
+          60,
+          61,
+          79,
+          85,
+          86,
+          115,
+          120
+        ],
+        "institutions_life": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39,
+          40,
+          44,
+          45,
+          46,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          107,
+          113,
+          117,
+          122
+        ],
+        "content_modules": [
+          88,
+          97,
+          98,
+          99,
+          111,
+          112
+        ],
+        "competitions": [
+          6,
+          47,
+          61,
+          91,
+          99,
+          112,
+          123
+        ],
+        "maritime": [
+          116
+        ]
+      },
+      "required_owners": [
+        "K-TIME",
+        "K-ACTOR",
+        "K-STOCK",
+        "K-ASSET",
+        "K-WORK",
+        "K-INFO",
+        "K-ORG",
+        "K-NET",
+        "K-POP"
+      ],
+      "domains": [
+        "GOV",
+        "ECO",
+        "INV",
+        "MAR",
+        "CIV",
+        "MED",
+        "WILD",
+        "INTEL",
+        "URBAN",
+        "LIFE",
+        "COMP"
+      ],
+      "local_models": [
+        "SSN native 2d6/d20 resolution and eleven statistics",
+        "chakra/SP/Trauma/overclock numerical profiles",
+        "jutsu/rank/bloodline/Destiny/DSSN and faction Resource Point implementations"
+      ],
+      "local_records": [
+        "native SSN capability/resource/technique and institution records remain SSN-owned"
+      ],
+      "content": [
+        "SSN native catalogues; no implicit IRGS import"
+      ],
+      "shared_legacy_runtime_dependencies": [],
+      "retained_local_model_dependencies": [
+        "SSN native 2d6/d20 resolution and eleven statistics",
+        "chakra/SP/Trauma/overclock numerical profiles",
+        "jutsu/rank/bloodline/Destiny/DSSN and faction Resource Point implementations"
+      ],
+      "authority": "Current user direction and established campaign overrides retain precedence; no automatic campaign adoption.",
+      "profile_binding": "Select one compatible complete interpretation per cause. Historical 4-hour TU and Fantasy nominal 20-hour TU stay separate; Roman three-way order remains a local profile.",
+      "runtime": "Shared §§5/11/90/91; native extensions read/write only the unique existing owner facts, with source-native parameters and exceptions.",
+      "finalization_gate": {
+        "shared_provider_specification": "complete_with_this_manifest",
+        "native_model_selection": "required_before_dependent_use",
+        "live_playtest": "outstanding",
+        "numerical_calibration": "not_claimed",
+        "source_deprecation": false
+      },
+      "binding_id": "IRGS-BIND-SSN_EXTRACTION-3.2",
+      "core_ref": "IRGS-CORE-3.2",
+      "catalogue_ref": "IRGS-SCL-1.0",
+      "status": "Current shared-provider contract; a selected genre declares its own version, native models and scoped adoption",
+      "source_deprecation": false,
+      "scope": "Portable-mechanism extraction only; no implicit native SSN-to-IRGS numerical adapter",
+      "maintenance_revision": "R3"
+    }
+  ],
+  "component_files": {
+    "engine": "IRGS_Core_Engine_v3_2.md",
+    "library": "IRGS_Shared_Content_Library_v1_0.md",
+    "registry": "IRGS_Shared_Content_Registry_v1_0.json",
+    "contracts": "IRGS_SCL_v1_0_Selected_Contracts.md",
+    "reference_map": "IRGS_SCL_v1_0_Reference_Map.csv",
+    "bindings": "IRGS_Engine_Bindings_v3_2.json",
+    "readme": "README.md"
+  },
+  "content_identity_revision": "0.2",
+  "state_owners": [
+    "K-ACTOR",
+    "K-ASSET",
+    "K-INFO",
+    "K-NET",
+    "K-ORG",
+    "K-POP",
+    "K-STOCK",
+    "K-TIME",
+    "K-WORK"
+  ],
+  "selection_policy": "One explicit parent Core, one catalogue release, exact immutable references/selectors, compatible complete native profile chains.",
+  "parameter_profile_contract": {
+    "required_when_material": [
+      "profile_id_and_exact_revision",
+      "supported_activities_and_effect_channels",
+      "units",
+      "inputs_outputs_and_dependencies",
+      "validity_time_and_environment",
+      "state_configuration_basis",
+      "capacity_rate_and_bounds",
+      "uncertainty_and_confidence",
+      "stop_interruption_and_recovery",
+      "read_write_owner"
+    ],
+    "missing_field": "Block only the dependent calculation; preserve supported ordinary actions and independent known events",
+    "conversion": "No automatic equivalence based on matching labels or favorable values"
+  },
+  "world_state_changes": null,
+  "campaign_adoption_applied": false,
+  "workshop_baseline": {
+    "status": "current_workshop_baseline",
+    "confirmed_on": "2026-10-14",
+    "authority": "User direction to build a clean Core 3.2 package with Engine, Content Library and necessary reference files",
+    "scope": "Core 3.2 with SCL 1.0 and current provider bindings",
+    "campaign_adoption": false,
+    "content_holds_promoted": false,
+    "numerical_calibration_or_live_playtests_certified": false
+  },
+  "maintenance_revision": "R3",
+  "domain_workflows": {
+    "GOV": [
+      113
+    ],
+    "ECO": [
+      114
+    ],
+    "INV": [
+      115
+    ],
+    "MAR": [
+      116
+    ],
+    "CIV": [
+      117
+    ],
+    "MED": [
+      118
+    ],
+    "WILD": [
+      119
+    ],
+    "INTEL": [
+      120
+    ],
+    "URBAN": [
+      121
+    ],
+    "LIFE": [
+      122
+    ],
+    "COMP": [
+      123
+    ]
+  },
+  "maintenance_scope": "Domain/provider completeness and editorial repair; no numerical/profile conversion, content promotion, or campaign migration."
+}

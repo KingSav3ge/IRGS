@@ -1,0 +1,114 @@
+{
+  "id": "IRGS-BIND-MILITARY-CORE-3.3",
+  "genre_id": "military",
+  "core_ref": "IRGS-CORE-3.3",
+  "core_version": "3.3",
+  "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+  "source_status": "Proposed complete receiving edition; not automatically campaign adopted",
+  "source_core_ref": "IRGS-CORE-3.2",
+  "source_files": [
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "sha256": "c93ba6fb3974b81852f1ca2dc9e03cb5db2aa050e1b65782df404c7b4940dec2",
+      "bytes": 63987
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "sha256": "05261ad3a7ee1fcbf87f108e9e30d12978eb6ad6cb34ebfcfc404bce42784199",
+      "bytes": 4090
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/Military_Current_SCL_Reference_Recheck.json",
+      "sha256": "28ac844ce082e38e3ed0a70880a6f2cd74304988d8a90f924c5b652d73ac5e5f",
+      "bytes": 2316
+    },
+    {
+      "path": "catalog/genres/military/source/MilitarySlim/Military_1_0_to_1_2_CMRR.csv",
+      "sha256": "3b137e5a24ef1431c7d8b6a3dd0627c5a1a25b86048aa6171cd21c3951c0e477",
+      "bytes": 2719
+    }
+  ],
+  "shared_library": "shared",
+  "library_ids": [
+    "shared",
+    "military"
+  ],
+  "runtime_class": "core_world.CoreWorld",
+  "runtime_operations": [
+    "commit_activity",
+    "confirm_character_field",
+    "establish_stock",
+    "military_issue_equipment",
+    "receive_evidence",
+    "receive_order",
+    "record_capacity",
+    "record_delegation",
+    "record_design",
+    "record_entity_eligibility",
+    "record_entity_relation",
+    "record_evidence",
+    "record_obligation",
+    "record_player_action",
+    "register_actor",
+    "register_entity",
+    "revoke_delegation",
+    "select_entity_control",
+    "set_scene",
+    "transfer_stock",
+    "transition_entity"
+  ],
+  "runtime_operation_inventory": "runtime/core_world.py:CORE_OPS",
+  "bounded_receiver_operations": [
+    "military_issue_equipment",
+    "revoke_delegation"
+  ],
+  "bounded_receiver_source": "runtime/genre_receivers.py:GENRE_OPS",
+  "runtime_sources_sha256": {
+    "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+    "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+  },
+  "lookup_operations": [
+    "classify_record"
+  ],
+  "specialty_runtime_operations": [
+    "military_issue_equipment",
+    "revoke_delegation"
+  ],
+  "required_owners": [
+    "K-TIME",
+    "K-ACTOR",
+    "K-STOCK",
+    "K-ASSET",
+    "K-WORK",
+    "K-INFO",
+    "K-ORG",
+    "K-NET",
+    "K-POP"
+  ],
+  "profile_requirements": [
+    "Actual service institution and qualification",
+    "Received orders and scoped authority",
+    "Actual equipment instances and readiness",
+    "Selected physiological, learning and effect profiles when material"
+  ],
+  "compatibility_research_receivers": {
+    "operations": [
+      "mil_issue_received_order"
+    ],
+    "runtime": "runtime/r9_adapters.py",
+    "scope": "Synthetic R9 research state only; not this campaign route",
+    "certifies_native_engine": false
+  },
+  "single_state": "All effects use the selected campaign's authoritative Core owners and clock",
+  "selection_authority": "User requested live Core 3.3 plus genre engines and content libraries",
+  "activation_effect": "Selects routing and available source references; does not adopt proposed numbers or create instances",
+  "automatic_source_adoption": false,
+  "automatic_campaign_migration": false,
+  "numeric_profile_adoption": false,
+  "source_deprecation": false,
+  "certification": "This catalogue and binding make no execution or branch certification claim",
+  "limitations": [
+    "Military native service/combat mechanics beyond listed Core operations are source references",
+    "48 library templates remain proposed and unqualified"
+  ]
+}

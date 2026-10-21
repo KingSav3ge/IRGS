@@ -1,0 +1,364 @@
+source,section,title,disposition,destination,loss
+Fantasy Engine v1.0,1,Core Principle,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,2,System Layers,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,3,Rules Priority,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,4,Core Runtime,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,5,Resolution Sequence,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,6,Default Check,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,7,Competence,Core generic rules inherited,Parts I–II; Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,8,Technique Access,Fantasy technique access retained,§12,none identified at inventory scope
+Fantasy Engine v1.0,9,Difficulty,"Core uncertainty, opposition, Mixed and margin inherited",Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,10,Circumstances,"Core uncertainty, opposition, Mixed and margin inherited",Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,11,Active Opposition,"Core uncertainty, opposition, Mixed and margin inherited",Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,12,Mixed Results,"Core uncertainty, opposition, Mixed and margin inherited",Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,13,Margin,"Core uncertainty, opposition, Mixed and margin inherited",Core v3.2,none identified at inventory scope
+Fantasy Engine v1.0,14,Character Record,Character record generic; ten-attribute implementation retained,§§8–9,none identified at inventory scope
+Fantasy Engine v1.0,15,Capability Categories,Character record generic; ten-attribute implementation retained,§§8–9,none identified at inventory scope
+Fantasy Engine v1.0,16,Default Fantasy Attribute Profile,Character record generic; ten-attribute implementation retained,§§8–9,none identified at inventory scope
+Fantasy Engine v1.0,17,Attribute Scale,Character record generic; ten-attribute implementation retained,§§8–9,none identified at inventory scope
+Fantasy Engine v1.0,18,Independent Attribute Modifier,Character record generic; ten-attribute implementation retained,§§8–9,none identified at inventory scope
+Fantasy Engine v1.0,19,Character-Creation Power Profiles,Creation and background/profession selections retained,§§10–11,none identified at inventory scope
+Fantasy Engine v1.0,20,"Ancestry, Culture, Background, Profession",Creation and background/profession selections retained,§§10–11,none identified at inventory scope
+Fantasy Engine v1.0,21,Background Package,Creation and background/profession selections retained,§§10–11,none identified at inventory scope
+Fantasy Engine v1.0,22,Profession Package,Creation and background/profession selections retained,§§10–11,none identified at inventory scope
+Fantasy Engine v1.0,23,Specialization,Creation and background/profession selections retained,§§10–11,none identified at inventory scope
+Fantasy Engine v1.0,24,Training Unit,Training and progression split,§§13–15 plus Core LIFE,none identified at inventory scope
+Fantasy Engine v1.0,25,Skill Advancement,Training and progression split,§§13–15 plus Core LIFE,none identified at inventory scope
+Fantasy Engine v1.0,26,Attribute Advancement,Training and progression split,§§13–15 plus Core LIFE,none identified at inventory scope
+Fantasy Engine v1.0,27,Progression Axes,Training and progression split,§§13–15 plus Core LIFE,none identified at inventory scope
+Fantasy Engine v1.0,28,Time Scales,"Generic time/priority inherited, selected exchange application retained",§16; Core,none identified at inventory scope
+Fantasy Engine v1.0,29,Tactical Exchange,"Generic time/priority inherited, selected exchange application retained",§16; Core,none identified at inventory scope
+Fantasy Engine v1.0,30,Initiative,"Generic time/priority inherited, selected exchange application retained",§16; Core,none identified at inventory scope
+Fantasy Engine v1.0,31,Engagement States,"Reach, terrain and movement retained",§§17–20,none identified at inventory scope
+Fantasy Engine v1.0,32,Movement,"Reach, terrain and movement retained",§§17–20,none identified at inventory scope
+Fantasy Engine v1.0,33,Terrain,"Reach, terrain and movement retained",§§17–20,none identified at inventory scope
+Fantasy Engine v1.0,34,Superior Reach,"Reach, terrain and movement retained",§§17–20,none identified at inventory scope
+Fantasy Engine v1.0,35,Sustainable Carry,Optional Fantasy carry/load model retained,§54,none identified at inventory scope
+Fantasy Engine v1.0,36,Load States,Optional Fantasy carry/load model retained,§54,none identified at inventory scope
+Fantasy Engine v1.0,37,Attack Sequence,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,38,Melee Check,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,39,Melee Outcome,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,40,Defensive Modes,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,41,Multiple Opponents,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,42,Maneuvers,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,43,Prone,Fantasy combat application retained,§§21–24,none identified at inventory scope
+Fantasy Engine v1.0,44,Weapon Record,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,45,Threat,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,46,Armor Defeat,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,47,Mundane Damage Modes,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,48,Default Weapon Profiles,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,49,Sunder,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,50,Range Bands,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,51,Aim,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,52,Called Shots,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,53,Default Ranged Weapons,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,54,Ammunition,Weapon profiles and modes retained through adapter/library,§§25–31,none identified at inventory scope
+Fantasy Engine v1.0,55,Protection Record,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,56,Default Armor,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,57,Zero Resistance,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,58,Cut/Pierce Protection,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,59,Secondary Transfer,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,60,Blunt Protection,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,61,Armor Material Stress,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,62,Local Armor Damage,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,63,Shield Defense,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,64,Shield Structure,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,65,Shield Stress,"Physical protection, wear and shields retained",§§32–40,none identified at inventory scope
+Fantasy Engine v1.0,66,Injury Formula,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,67,Force,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,68,Placement,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,69,Vulnerability,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,70,Injury Grade,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,71,Functional Effects,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,72,Humanoid Hit Location,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,73,Bleeding,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,74,Shock,Fantasy injury parameters retained; condition ownership inherited,§§41–50,none identified at inventory scope
+Fantasy Engine v1.0,75,Treatment Objectives,General treatment inherited; Fantasy recovery benchmarks retained,§51; Core MED,none identified at inventory scope
+Fantasy Engine v1.0,76,Routine First Aid,General treatment inherited; Fantasy recovery benchmarks retained,§51; Core MED,none identified at inventory scope
+Fantasy Engine v1.0,77,Recovery Phases,General treatment inherited; Fantasy recovery benchmarks retained,§51; Core MED,none identified at inventory scope
+Fantasy Engine v1.0,78,Default Human Recovery Windows,General treatment inherited; Fantasy recovery benchmarks retained,§51; Core MED,none identified at inventory scope
+Fantasy Engine v1.0,79,Fatigue,"Fatigue, exertion and deprivation profile retained",§§52–53,none identified at inventory scope
+Fantasy Engine v1.0,80,Human Exertion,"Fatigue, exertion and deprivation profile retained",§§52–53,none identified at inventory scope
+Fantasy Engine v1.0,81,Rest,"Fatigue, exertion and deprivation profile retained",§§52–53,none identified at inventory scope
+Fantasy Engine v1.0,82,Need/Deprivation Track,"Fatigue, exertion and deprivation profile retained",§§52–53,none identified at inventory scope
+Fantasy Engine v1.0,83,Creature Profile,Creature anatomy/Scale/behavior split,§§57–61; Core WILD,none identified at inventory scope
+Fantasy Engine v1.0,84,Scale,Creature anatomy/Scale/behavior split,§§57–61; Core WILD,none identified at inventory scope
+Fantasy Engine v1.0,85,Scale Interaction,Creature anatomy/Scale/behavior split,§§57–61; Core WILD,none identified at inventory scope
+Fantasy Engine v1.0,86,Natural Weapon Rule,Creature anatomy/Scale/behavior split,§§57–61; Core WILD,none identified at inventory scope
+Fantasy Engine v1.0,87,Creature Behavior,Creature anatomy/Scale/behavior split,§§57–61; Core WILD,none identified at inventory scope
+Fantasy Engine v1.0,88,Travel Record,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,89,Foot Pace,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,90,Pace Fatigue,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,91,Load During Travel,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,92,Mounted Travel,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,93,Navigation,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,94,Exploration State,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,95,Dungeons,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,96,Survival Resources,Generic travel/sites inherited; Fantasy numerical applications retained,§§55–56; Core,none identified at inventory scope
+Fantasy Engine v1.0,97,Item Record,"Generic item, quality and projects inherited",Core K-ASSET/K-WORK,none identified at inventory scope
+Fantasy Engine v1.0,98,Condition,"Generic item, quality and projects inherited",Core K-ASSET/K-WORK,none identified at inventory scope
+Fantasy Engine v1.0,99,Quality,"Generic item, quality and projects inherited",Core K-ASSET/K-WORK,none identified at inventory scope
+Fantasy Engine v1.0,100,Craft Project,"Generic item, quality and projects inherited",Core K-ASSET/K-WORK,none identified at inventory scope
+Fantasy Engine v1.0,101,Relationship Dimensions,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE; Fantasy section 15 restores optional conventions,none identified at inventory scope
+Fantasy Engine v1.0,102,Social Resolution,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE,none identified at inventory scope
+Fantasy Engine v1.0,103,Reputation,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE,none identified at inventory scope
+Fantasy Engine v1.0,104,Economy,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE,none identified at inventory scope
+Fantasy Engine v1.0,105,Availability,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE; Fantasy section 15 restores optional conventions,none identified at inventory scope
+Fantasy Engine v1.0,106,Property and Business,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE,none identified at inventory scope
+Fantasy Engine v1.0,107,Institution,"Social, economy, reputation and institutional systems inherited",Core GOV/ECO/LIFE,none identified at inventory scope
+Fantasy Engine v1.0,108,Paradigm Record,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,109,Technique Profile,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,110,Magnitude,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,111,Scope,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,112,Range,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,113,Duration,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,114,Complexity,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,115,Complexity Difficulty,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,116,Power Units,Supernatural construction retained,§§62–71,none identified at inventory scope
+Fantasy Engine v1.0,117,Harmful Supernatural Effects,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,118,Default Threat by Magnitude,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,119,Magical Defeat/Potency,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,120,Protection Channels,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,121,Zero Protection,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,122,Direct Damage Mixed Result,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,123,Resistance Types,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,124,Capacity Resistance,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,125,Discipline Resistance,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,126,Protection Resistance,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,127,Area Casting,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,128,Area Position,Magical effect/resistance retained,§§72–78,none identified at inventory scope
+Fantasy Engine v1.0,129,Mental Effect Categories,Mental magic and agency retained,§79,none identified at inventory scope
+Fantasy Engine v1.0,130,Player Agency under Mental Magic,Mental magic and agency retained,§79,none identified at inventory scope
+Fantasy Engine v1.0,131,Supernatural Healing,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,132,Divination,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,133,Summoning,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,134,Teleportation,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,135,Matter Creation,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,136,Resurrection,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,137,Enchantment,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,138,Alchemy,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,139,Ritual,Specialized supernatural applications retained,§§80–88,none identified at inventory scope
+Fantasy Engine v1.0,140,Supernatural Prevalence,Magic prevalence retained; ordinary world systems inherited,§§94–96,none identified at inventory scope
+Fantasy Engine v1.0,141,Settlement,Magic prevalence retained; ordinary world systems inherited,§§94–96,none identified at inventory scope
+Fantasy Engine v1.0,142,Production,Magic prevalence retained; ordinary world systems inherited,§§94–96,none identified at inventory scope
+Fantasy Engine v1.0,143,Faction,Magic prevalence retained; ordinary world systems inherited,§§94–96,none identified at inventory scope
+Fantasy Engine v1.0,144,Military Integration,Generic military inherited; Fantasy magical unit applications retained,§97,none identified at inventory scope
+Fantasy Engine v1.0,145,Fantasy Unit,Generic military inherited; Fantasy magical unit applications retained,§97,none identified at inventory scope
+Fantasy Engine v1.0,146,Battlemages,Generic military inherited; Fantasy magical unit applications retained,§97,none identified at inventory scope
+Fantasy Engine v1.0,147,Life State,Generic lives/generations inherited; exceptional variants retained,§98,none identified at inventory scope
+Fantasy Engine v1.0,148,Downtime,Generic lives/generations inherited; exceptional variants retained,§98,none identified at inventory scope
+Fantasy Engine v1.0,149,Family,Generic lives/generations inherited; exceptional variants retained,§98,none identified at inventory scope
+Fantasy Engine v1.0,150,Generational Continuity,Generic lives/generations inherited; exceptional variants retained,§98,none identified at inventory scope
+Fantasy Engine v1.0,151,Campaign Profile,Generic campaign runtime inherited; Fantasy configuration retained,§99 and Core,none identified at inventory scope
+Fantasy Engine v1.0,152,Scene Initialization,Generic campaign runtime inherited; Fantasy configuration retained,§99 and Core,none identified at inventory scope
+Fantasy Engine v1.0,153,Turn Processing,Generic campaign runtime inherited; Fantasy configuration retained,§99 and Core,none identified at inventory scope
+Fantasy Engine v1.0,154,State Update,Generic campaign runtime inherited; Fantasy configuration retained,§99 and Core,none identified at inventory scope
+Fantasy Engine v1.0,155,Aethelgard,Aethelgard relocated to selected profile,§100,none identified at inventory scope
+Fantasy Engine v1.0,156,Required Mundane Behaviors,Behavior and acceptance invariants preserved,§§101–105,none identified at inventory scope
+Fantasy Engine v1.0,157,Required Fantasy Behaviors,Behavior and acceptance invariants preserved,§§101–105,none identified at inventory scope
+Fantasy Engine v1.0,158,Final Resolution Model,Behavior and acceptance invariants preserved,§§101–105,none identified at inventory scope
+Fantasy Slim v1.1,1,Purpose,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 1,none; original numbered section retained
+Fantasy Slim v1.1,2,Architecture,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 2,none; original numbered section retained
+Fantasy Slim v1.1,3,Rules authority,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 3,none; original numbered section retained
+Fantasy Slim v1.1,4,Design status,Source/proposal/verification status retained; current parent status selected,Fantasy v1.2 section 4,none; original numbered section retained
+Fantasy Slim v1.1,5,Shared provider contract,Exact provider manifest and Core 3.2 links replace approximate provider table,Fantasy v1.2 section 5,none; original numbered section retained
+Fantasy Slim v1.1,6,Fantasy extension records,Record owners and constructed embodiment contract added,Fantasy v1.2 section 6,none; original numbered section retained
+Fantasy Slim v1.1,7,Runtime interaction,Current runtime/cost/event handoff explicit,Fantasy v1.2 section 7,none; original numbered section retained
+Fantasy Slim v1.1,8,Attribute-agnostic parent,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 8,none; original numbered section retained
+Fantasy Slim v1.1,9,Optional ten-attribute Fantasy profile,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 9,none; original numbered section retained
+Fantasy Slim v1.1,10,Character-creation power profiles,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 10,none; original numbered section retained
+Fantasy Slim v1.1,11,Character origins and specialization,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 11,none; original numbered section retained
+Fantasy Slim v1.1,12,Technique access,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 12,none; original numbered section retained
+Fantasy Slim v1.1,13,Training schedule,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 13,none; original numbered section retained
+Fantasy Slim v1.1,14,Attribute development,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 14,none; original numbered section retained
+Fantasy Slim v1.1,15,Noncombat progression,Original optional relationship and availability conventions restored,Fantasy v1.2 section 15,none; original numbered section retained
+Fantasy Slim v1.1,16,Tactical time and commitments,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 16,none; original numbered section retained
+Fantasy Slim v1.1,17,Engagement states,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 17,none; original numbered section retained
+Fantasy Slim v1.1,18,Movement,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 18,none; original numbered section retained
+Fantasy Slim v1.1,19,Terrain effects,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 19,none; original numbered section retained
+Fantasy Slim v1.1,20,Reach control,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 20,none; original numbered section retained
+Fantasy Slim v1.1,21,Multiple attackers,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 21,none; original numbered section retained
+Fantasy Slim v1.1,22,Defensive choices,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 22,none; original numbered section retained
+Fantasy Slim v1.1,23,Maneuvers and prone conditions,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 23,none; original numbered section retained
+Fantasy Slim v1.1,24,Selected physical-effect chain,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 24,none; original numbered section retained
+Fantasy Slim v1.1,25,Weapon modes,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 25,none; original numbered section retained
+Fantasy Slim v1.1,26,Threat,Native Incidental Threat 0 distinguished from causal termination,Fantasy v1.2 section 26,none; original numbered section retained
+Fantasy Slim v1.1,27,Armor Defeat,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 27,none; original numbered section retained
+Fantasy Slim v1.1,28,Mundane effect channels,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 28,none; original numbered section retained
+Fantasy Slim v1.1,29,Source melee reference profiles,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 29,none; original numbered section retained
+Fantasy Slim v1.1,30,Weapon traits,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 30,none; original numbered section retained
+Fantasy Slim v1.1,31,Ranged weapons,Original ammunition/recovery and aiming disruption functions explicit,Fantasy v1.2 section 31,none; original numbered section retained
+Fantasy Slim v1.1,32,Protection profile,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 32,none; original numbered section retained
+Fantasy Slim v1.1,33,Reference armor,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 33,none; original numbered section retained
+Fantasy Slim v1.1,34,Zero Resistance,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 34,none; original numbered section retained
+Fantasy Slim v1.1,35,Cut/Pierce protection,Attenuation clarification qualified by native zero semantics,Fantasy v1.2 section 35,none; original numbered section retained
+Fantasy Slim v1.1,36,Blunt protection,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 36,none; original numbered section retained
+Fantasy Slim v1.1,37,Local armor stress,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 37,none; original numbered section retained
+Fantasy Slim v1.1,38,Shield defense,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 38,none; original numbered section retained
+Fantasy Slim v1.1,39,Shield Structure,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 39,none; original numbered section retained
+Fantasy Slim v1.1,40,Shield stress,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 40,none; original numbered section retained
+Fantasy Slim v1.1,41,Injury Grade,Transmission gate explicit; injury formula unchanged,Fantasy v1.2 section 41,none; original numbered section retained
+Fantasy Slim v1.1,42,Force,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 42,none; original numbered section retained
+Fantasy Slim v1.1,43,Placement,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 43,none; original numbered section retained
+Fantasy Slim v1.1,44,Vulnerability,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 44,none; original numbered section retained
+Fantasy Slim v1.1,45,Resilience,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 45,none; original numbered section retained
+Fantasy Slim v1.1,46,Severity grades,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 46,none; original numbered section retained
+Fantasy Slim v1.1,47,Functional consequences,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 47,none; original numbered section retained
+Fantasy Slim v1.1,48,Humanoid hit location,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 48,none; original numbered section retained
+Fantasy Slim v1.1,49,Bleeding,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 49,none; original numbered section retained
+Fantasy Slim v1.1,50,Shock,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 50,none; original numbered section retained
+Fantasy Slim v1.1,51,Care and recovery,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 51,none; original numbered section retained
+Fantasy Slim v1.1,52,Fantasy fatigue profile,One fatigue profile and fractional/processed-span continuity explicit,Fantasy v1.2 section 52,none; original numbered section retained
+Fantasy Slim v1.1,53,Deprivation,Original Deprived recovery constraints restored,Fantasy v1.2 section 53,none; original numbered section retained
+Fantasy Slim v1.1,54,Carrying capacity,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 54,none; original numbered section retained
+Fantasy Slim v1.1,55,Travel pace,Original ordinary travel Load and alternate-state accounting explicit,Fantasy v1.2 section 55,none; original numbered section retained
+Fantasy Slim v1.1,56,Fantasy navigation and exploration,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 56,none; original numbered section retained
+Fantasy Slim v1.1,57,Creature construction,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 57,none; original numbered section retained
+Fantasy Slim v1.1,58,Scale,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 58,none; original numbered section retained
+Fantasy Slim v1.1,59,Natural weapons,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 59,none; original numbered section retained
+Fantasy Slim v1.1,60,Body plans,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 60,none; original numbered section retained
+Fantasy Slim v1.1,61,Creature autonomy,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 61,none; original numbered section retained
+Fantasy Slim v1.1,62,Optional supernatural activation,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 62,none; original numbered section retained
+Fantasy Slim v1.1,63,Paradigm record,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 63,none; original numbered section retained
+Fantasy Slim v1.1,64,Technique record,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 64,none; original numbered section retained
+Fantasy Slim v1.1,65,Magnitude,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 65,none; original numbered section retained
+Fantasy Slim v1.1,66,Scope,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 66,none; original numbered section retained
+Fantasy Slim v1.1,67,Range,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 67,none; original numbered section retained
+Fantasy Slim v1.1,68,Duration,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 68,none; original numbered section retained
+Fantasy Slim v1.1,69,Complexity,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 69,none; original numbered section retained
+Fantasy Slim v1.1,70,Complexity difficulty,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 70,none; original numbered section retained
+Fantasy Slim v1.1,71,Power Units,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 71,none; original numbered section retained
+Fantasy Slim v1.1,72,Harmful supernatural effects,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 72,none; original numbered section retained
+Fantasy Slim v1.1,73,Focused Potency,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 73,none; original numbered section retained
+Fantasy Slim v1.1,74,Supernatural protection channels,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 74,none; original numbered section retained
+Fantasy Slim v1.1,75,Zero supernatural protection,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 75,none; original numbered section retained
+Fantasy Slim v1.1,76,Supernatural Mixed outcomes,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 76,none; original numbered section retained
+Fantasy Slim v1.1,77,Resistance types,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 77,none; original numbered section retained
+Fantasy Slim v1.1,78,Area effects,One area raw result and independent target protection explicit,Fantasy v1.2 section 78,none; original numbered section retained
+Fantasy Slim v1.1,79,Mental effects,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 79,none; original numbered section retained
+Fantasy Slim v1.1,80,Healing,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 80,none; original numbered section retained
+Fantasy Slim v1.1,81,Divination,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 81,none; original numbered section retained
+Fantasy Slim v1.1,82,Summoning,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 82,none; original numbered section retained
+Fantasy Slim v1.1,83,Teleportation,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 83,none; original numbered section retained
+Fantasy Slim v1.1,84,Matter creation,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 84,none; original numbered section retained
+Fantasy Slim v1.1,85,Resurrection and death alteration,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 85,none; original numbered section retained
+Fantasy Slim v1.1,86,Enchantment,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 86,none; original numbered section retained
+Fantasy Slim v1.1,87,Alchemy,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 87,none; original numbered section retained
+Fantasy Slim v1.1,88,Rituals,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 88,none; original numbered section retained
+Fantasy Slim v1.1,89,Paradigm templates,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 89,none; original numbered section retained
+Fantasy Slim v1.1,90,Specific safeguards,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 90,none; original numbered section retained
+Fantasy Slim v1.1,91,Multiple paradigms,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 91,none; original numbered section retained
+Fantasy Slim v1.1,92,Materials and construction,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 92,none; original numbered section retained
+Fantasy Slim v1.1,93,Extraordinary material templates,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 93,none; original numbered section retained
+Fantasy Slim v1.1,94,Supernatural prevalence,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 94,none; original numbered section retained
+Fantasy Slim v1.1,95,Social and institutional consequences,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 95,none; original numbered section retained
+Fantasy Slim v1.1,96,Fantasy settlements,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 96,none; original numbered section retained
+Fantasy Slim v1.1,97,Fantasy warfare,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 97,none; original numbered section retained
+Fantasy Slim v1.1,98,Fantasy life and legacy,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 98,none; original numbered section retained
+Fantasy Slim v1.1,99,Campaign Profile — FANTASY-CPF-1.1,Current version/profile selections and override record added,Fantasy v1.2 section 99,none; original numbered section retained
+Fantasy Slim v1.1,100,Aethelgard binding,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 100,none; original numbered section retained
+Fantasy Slim v1.1,101,Reference calculation checks,Six arithmetic examples freshly rerun; bounded evidence,Fantasy v1.2 section 101,none; original numbered section retained
+Fantasy Slim v1.1,102,Fantasy regression requirements,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 102,none; original numbered section retained
+Fantasy Slim v1.1,103,Stress-test program,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 103,none; original numbered section retained
+Fantasy Slim v1.1,104,Open numerical issues,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 104,none; original numbered section retained
+Fantasy Slim v1.1,105,Runtime completeness boundary,Complete linked scope and material parameter gates,Fantasy v1.2 section 105,none; original numbered section retained
+Fantasy Slim v1.1,106,Source-to-destination matrix,Source mapping retained; omitted optional conventions accounted,Fantasy v1.2 section 106,none; original numbered section retained
+Fantasy Slim v1.1,107,Fantasy Content Library disposition,"All current FL aliases, native adapters and scoped payloads linked",Fantasy v1.2 section 107,none; original numbered section retained
+Fantasy Slim v1.1,108,Accounted removals,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 108,none; original numbered section retained
+Fantasy Slim v1.1,109,Changes from the preceding slim draft,Historical change table replaced by current complete change accounting,Fantasy v1.2 section 109,none; original numbered section retained
+Fantasy Slim v1.1,110,Prospective adoption,Current document identity distinguished from clause/campaign acceptance,Fantasy v1.2 section 110,none; original numbered section retained
+Fantasy Slim v1.1,111,Existing campaign migration,Retained; dependency/version wording changed only where applicable,Fantasy v1.2 section 111,none; original numbered section retained
+Fantasy Slim v1.1,112,Final governing principle,Governing principle retained; current reference appendices attached,Fantasy v1.2 section 112,none; original numbered section retained
+Fantasy Content Libraries v1.0,1,Purpose,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,2,Library inheritance,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,3,Stable ID families,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,4,Standard content record,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,5,Weapon-trait rules,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,6,Weapon construction principle,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,7,Melee library,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,8,Improvised weapons,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,9,Ranged profile fields,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,10,Ranged weapon library,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,11,Draw-capacity weapons,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,12,Ammunition profiles,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,13,Armor construction vs coverage,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,14,Standard construction library,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,15,Armor layering,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,16,Armor coverage packages,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,17,Standard shield library,Source procedures retained under current owner; content/native profiles retained in current registry,SCL source bindings and FL adapters; Fantasy 25-40,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,18,Material philosophy,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,19,Material record,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,20,Standard mundane materials,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,21,Material mechanical changes,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,22,Extraordinary material profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,23,Extraordinary material archetypes,Source procedures retained under current owner; content/native profiles retained in current registry,SCL material/scoped payloads; Fantasy 92-93,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,24,Creature design sequence,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,25,Creature record,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,26,Creature capability principle,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,27,Humanoid,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,28,Quadruped,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,29,Avian/winged,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,30,Serpentine,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,31,Arthropod/exoskeletal,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,32,Amorphous,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,33,Constructed body,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,34,Natural weapons,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,35,Grip,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,36,Constrict,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,37,Charge,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,38,Venom,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,39,Ordinary predator template,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,40,Pack hunter,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,41,Large charger,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,42,Flying predator,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,43,Swarm,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,44,Construct,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,45,Colossal creature,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,46,Paradigm record,Source procedures retained under current owner; content/native profiles retained in current registry,SCL anatomy/natural-weapon/creature payloads; Fantasy 57-61,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,47,Paradigm acceptance gate,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,48,PAR-ARC — Manipulative Arcane Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,49,PAR-DIV — Granted/Divine Power,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,50,PAR-SPR — Spirit/Relational Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,51,PAR-PSI — Psionic/Mental Capability,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,52,PAR-INT — Internal Energy / Ki,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,53,PAR-BLD — Blood/Sacrificial Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,54,PAR-RUN — Runic/Inscribed Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,55,PAR-ALC — Alchemical Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,56,PAR-NEC — Death/Necromantic Magic,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,57,Multiple paradigms,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,58,Technique record,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,59,Example neutral technique,Source procedures retained under current owner; content/native profiles retained in current registry,SCL scoped paradigms/technique payloads; Fantasy 62-91,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,60,CPF-BASE — Fantasy Campaign Profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,61,Identity,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,62,Authority and sources,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,63,Resolution,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,64,Character model,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,65,Ancestries/species,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,66,Equipment calibration,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,67,Movement and travel,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,68,Health,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,69,Survival,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,70,Economy,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,71,Social institutions,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,72,Creature ecology,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,73,Supernatural paradigms,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,74,Supernatural prevalence matrix,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,75,Supernatural world-consequence review,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,76,Death model,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,77,Military profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,78,Settlement profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,79,Information profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,80,Persistence profile,Source procedures retained under current owner; content/native profiles retained in current registry,SCL CPF-BASE payload; Fantasy 99,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,81,Build order,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,82,Creating a weapon variant,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,83,Creating armor variants,Corrected: composition defines configuration; actual instance requires authorized initialization/production,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,84,Creating creatures,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,85,Weapon tests,Source worked-case requirements retained; old Pass labels confer no new executed evidence,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,86,Armor tests,Source worked-case requirements retained; old Pass labels confer no new executed evidence,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,87,Creature tests,Source worked-case requirements retained; old Pass labels confer no new executed evidence,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,88,Supernatural tests,Source worked-case requirements retained; old Pass labels confer no new executed evidence,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,89,Campaign-profile tests,Source worked-case requirements retained; old Pass labels confer no new executed evidence,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,90,Established interfaces,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,91,Provisional calibrations,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,92,Core content-library rule,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately
+Fantasy Content Libraries v1.0,93,Master library principle,Source procedures retained under current owner; content/native profiles retained in current registry,Core 111-112; Fantasy 99/101-111; current SCL source-scoped payloads,none at section inventory; exact entry map verified separately

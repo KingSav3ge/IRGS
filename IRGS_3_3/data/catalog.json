@@ -1,0 +1,934 @@
+{
+  "schema_version": 1,
+  "core": {
+    "id": "IRGS-CORE-3.3",
+    "name": "IRGS Core",
+    "version": "3.3",
+    "status": "LIVE_LOCAL_SELECTED",
+    "runtime_operations": [
+      "commit_activity",
+      "confirm_character_field",
+      "establish_stock",
+      "receive_evidence",
+      "receive_order",
+      "record_capacity",
+      "record_delegation",
+      "record_design",
+      "record_entity_eligibility",
+      "record_entity_relation",
+      "record_evidence",
+      "record_obligation",
+      "record_player_action",
+      "register_actor",
+      "register_entity",
+      "select_entity_control",
+      "set_scene",
+      "transfer_stock",
+      "transition_entity"
+    ],
+    "lookup_operations": [
+      "classify_record"
+    ],
+    "single_world_per_campaign": true,
+    "certification": "See release execution evidence; catalogue presence is not runtime certification"
+  },
+  "genre_engines": [
+    {
+      "id": "military",
+      "name": "Soldier and Military Life",
+      "version": "1.2",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/military/source/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+        "catalog/genres/military/source/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+        "catalog/genres/military/source/MilitarySlim/Military_Current_SCL_Reference_Recheck.json",
+        "catalog/genres/military/source/MilitarySlim/Military_1_0_to_1_2_CMRR.csv"
+      ],
+      "primary_source": "catalog/genres/military/source/MilitarySlim/IRGS_Soldier_Military_Life_Slim_v1_2_Core3_2_MCL1_0_Proposed.md",
+      "source_binding": "catalog/genres/military/source/MilitarySlim/IRGS_Military_Slim_v1_2_Core3_2_Receiving_Binding.json",
+      "receiving_binding": "catalog/genres/military/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "military_issue_equipment",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "military_issue_equipment",
+        "revoke_delegation"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "military"
+      ],
+      "limitations": [
+        "Military native service/combat mechanics beyond listed Core operations are source references",
+        "48 library templates remain proposed and unqualified"
+      ],
+      "profile_requirements": [
+        "Actual service institution and qualification",
+        "Received orders and scoped authority",
+        "Actual equipment instances and readiness",
+        "Selected physiological, learning and effect profiles when material"
+      ],
+      "numeric_profile_adoption": false
+    },
+    {
+      "id": "roman",
+      "name": "Roman Republic Life",
+      "version": "1.2",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Accepted finalized workshop reference; numerical and historical calibration provisional",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/roman/source/IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+        "catalog/genres/roman/source/ROMAN_SUITE_DEPLOYMENT_BINDING.json",
+        "catalog/genres/roman/source/roman_republic_slim_v1_2/content_bindings.json"
+      ],
+      "primary_source": "catalog/genres/roman/source/IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md",
+      "source_binding": "catalog/genres/roman/source/ROMAN_SUITE_DEPLOYMENT_BINDING.json",
+      "receiving_binding": "catalog/genres/roman/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "military_issue_equipment",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "roman_begin_delegated_activity",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "military_issue_equipment",
+        "revoke_delegation",
+        "roman_begin_delegated_activity"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "roman"
+      ],
+      "limitations": [
+        "118 library templates remain proposed",
+        "Historical calibration and full native execution are not established by source packaging"
+      ],
+      "profile_requirements": [
+        "Actual date, locality and institutional/legal eligibility",
+        "Exact native selector and complete compatible profile",
+        "Actual finite instances with Core owners",
+        "Preserve Roman heavy-blunt and three-way order profiles"
+      ],
+      "numeric_profile_adoption": false
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy",
+      "version": "1.2",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/fantasy/source/IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+        "catalog/genres/fantasy/source/IRGS_Fantasy_Binding_v1_2_Core3_2.json",
+        "catalog/genres/fantasy/source/IRGS_Fantasy_Content_Map_v1_2_Core3_2.csv",
+        "catalog/genres/fantasy/source/IRGS_Fantasy_Reconciliation_v1_2.csv"
+      ],
+      "primary_source": "catalog/genres/fantasy/source/IRGS_Fantasy_Engine_Slim_v1_2_Core3_2.md",
+      "source_binding": "catalog/genres/fantasy/source/IRGS_Fantasy_Binding_v1_2_Core3_2.json",
+      "receiving_binding": "catalog/genres/fantasy/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "revoke_delegation"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "fantasy"
+      ],
+      "limitations": [
+        "Native Fantasy arithmetic and supernatural execution remain unqualified specialty operations",
+        "Twelve new archetypes remain proposed and opt-in"
+      ],
+      "profile_requirements": [
+        "Select complete character, effect, injury, physiology, learning and travel profiles when used",
+        "Resilience, shield contact and transmission required when material",
+        "Enable a specific supernatural paradigm and finite resource translation before use",
+        "Fantasy nominal 20-hour TU is not the historical 4-hour TU"
+      ],
+      "numeric_profile_adoption": false
+    },
+    {
+      "id": "paf",
+      "name": "Post-Apocalyptic Survival and Reconstruction",
+      "version": "2.1",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/paf/source/IRGS_PAF_Engine_v2_1_Core3_2.md",
+        "catalog/genres/paf/source/IRGS_PAF_Binding_v2_1_Core3_2.json",
+        "catalog/genres/paf/source/IRGS_PAF_Content_References_v2_1.csv",
+        "catalog/genres/paf/source/IRGS_PAF_Acceptance_Inventory_v2_1.json"
+      ],
+      "primary_source": "catalog/genres/paf/source/IRGS_PAF_Engine_v2_1_Core3_2.md",
+      "source_binding": "catalog/genres/paf/source/IRGS_PAF_Binding_v2_1_Core3_2.json",
+      "receiving_binding": "catalog/genres/paf/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "revoke_delegation"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "paf"
+      ],
+      "limitations": [
+        "PA assessment overlays must not create a second physical ledger",
+        "43 compositions remain proposed; no extraordinary module enabled by default"
+      ],
+      "profile_requirements": [
+        "Assessments reference actual Core facts and actor-visible evidence",
+        "Actual cause-specific needs, recovery, service and logistics profiles",
+        "No universal ration, collapse, hazard or deterioration rate",
+        "Extraordinary modules require explicit finite compatible models"
+      ],
+      "numeric_profile_adoption": false
+    },
+    {
+      "id": "shinobi",
+      "name": "Shinobi Nexus",
+      "version": "0.3",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Proposed complete Core 3.2 receiving edition; source mechanics retained",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+        "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json"
+      ],
+      "primary_source": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md",
+      "source_binding": "catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json",
+      "receiving_binding": "catalog/genres/shinobi/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "revoke_delegation"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "shinobi"
+      ],
+      "limitations": [
+        "Native resolution/chakra/technique execution is a source reference, not an implemented Core 3.3 specialty receiver",
+        "415 legacy techniques are unconverted and blocked; AP, CSLS and million-unit CU cannot be imported directly"
+      ],
+      "profile_requirements": [
+        "SSN native 2d6 task and d20 Precision; no parallel Core d100",
+        "SSN HP/SP/CU and action economy; no parallel Fantasy Threat",
+        "Explicit abstract-to-physical bridge in persistent mode",
+        "Exact permitted technique, finite cost, affected existing owners and actor knowledge"
+      ],
+      "numeric_profile_adoption": false
+    },
+    {
+      "id": "space",
+      "name": "Space Exploration and Colonization",
+      "version": "0.2",
+      "status": "LIVE_LOCAL_REFERENCE_ROUTING",
+      "source_status": "Complete proposed CMRR specification; no calibration or automatic campaign adoption",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_core_ref": "IRGS-CORE-3.2",
+      "source_files": [
+        "catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md",
+        "catalog/genres/space/source/source_space_binding.json",
+        "catalog/genres/space/source/content_bindings.json"
+      ],
+      "primary_source": "catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md",
+      "source_binding": "catalog/genres/space/source/source_space_binding.json",
+      "receiving_binding": "catalog/genres/space/receiving_core_3_3.json",
+      "runtime_operations": [
+        "commit_activity",
+        "confirm_character_field",
+        "establish_stock",
+        "receive_evidence",
+        "receive_order",
+        "record_capacity",
+        "record_delegation",
+        "record_design",
+        "record_entity_eligibility",
+        "record_entity_relation",
+        "record_evidence",
+        "record_obligation",
+        "record_player_action",
+        "register_actor",
+        "register_entity",
+        "revoke_delegation",
+        "select_entity_control",
+        "set_scene",
+        "transfer_stock",
+        "transition_entity"
+      ],
+      "lookup_operations": [
+        "classify_record"
+      ],
+      "specialty_runtime_operations": [
+        "revoke_delegation"
+      ],
+      "runtime_sources_sha256": {
+        "runtime/core_world.py": "097dcb9f916f4e6564cb8577639fd734ff4fb1b322864ff02c3b9802d10bde77",
+        "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      },
+      "library_ids": [
+        "shared",
+        "space"
+      ],
+      "limitations": [
+        "Flight, thermal, pressure, signals and ISRU specialty calculations are not Core 3.3 executable receivers",
+        "No spacecraft certification or universal physical rates claimed"
+      ],
+      "profile_requirements": [
+        "Selected frame, epoch and ephemerides",
+        "Supported flight/propulsion/arrival envelopes",
+        "Pressure, chemistry, thermal and EVA models where material",
+        "Moving-endpoint signal receipt, remote command authority and ISRU parameters"
+      ],
+      "numeric_profile_adoption": false
+    }
+  ],
+  "content_libraries": [
+    {
+      "id": "shared",
+      "name": "IRGS Shared Content Library",
+      "type": "shared_library",
+      "version": "1.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "core_ref": "IRGS-CORE-3.3",
+      "source_status": "51 selected qualitative definitions; 228 held families; qualification drafts proposed",
+      "source_files": [
+        "catalog/libraries/shared/IRGS_Core_Engine_v3_2.md",
+        "catalog/libraries/shared/IRGS_Engine_Bindings_v3_2.json",
+        "catalog/libraries/shared/IRGS_Full_Release_CMRR_Validation.md",
+        "catalog/libraries/shared/IRGS_SCL_Consolidated_Qualification_R2.json",
+        "catalog/libraries/shared/IRGS_SCL_Full_Reconciliation_Matrix.csv",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R1_CMRR_Report.md",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Contract_Data.json",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Hold_Register.csv",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R1_Qualitative_Contracts.md",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R2_192_Qualitative_Contracts.md",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Calibration_Gates.csv",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R2_CMRR_Report.md",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Complete_Hold_Register.csv",
+        "catalog/libraries/shared/IRGS_SCL_Maturation_R2_Contract_Data.json",
+        "catalog/libraries/shared/IRGS_SCL_Qualification_Acceptance_Matrix.csv",
+        "catalog/libraries/shared/IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+        "catalog/libraries/shared/IRGS_SCL_v1_0_Full_Release_Migration_Impact.md",
+        "catalog/libraries/shared/IRGS_SCL_v1_0_Reference_Map.csv",
+        "catalog/libraries/shared/IRGS_SCL_v1_0_Selected_Contracts.md",
+        "catalog/libraries/shared/IRGS_Shared_Content_Library_v1_0.md",
+        "catalog/libraries/shared/IRGS_Shared_Content_Registry_v1_0.json",
+        "catalog/libraries/shared/MAINTENANCE_R3.md",
+        "catalog/libraries/shared/PACKAGE_MANIFEST.json",
+        "catalog/libraries/shared/README.md",
+        "catalog/libraries/shared/RELEASE_VERIFICATION_RESULTS.json"
+      ],
+      "registry_file": "catalog/libraries/shared/IRGS_Shared_Content_Registry_v1_0.json",
+      "definition_revision": "0.2",
+      "automatic_numeric_adoption": false,
+      "hold_summary": {
+        "counts": {
+          "neutral_source_rows": 286,
+          "family_definitions": 279,
+          "complete_selected_qualitative_definitions": 51,
+          "source_backed_candidate_holds": 228,
+          "source_references": 304,
+          "source_backed_reference_holds": 235,
+          "retained_scoped_extensions": 18,
+          "fantasy_adapters": 61,
+          "original_payload_blocks": 420
+        },
+        "qualification_counts": {
+          "catalogue_families": 279,
+          "selected": 51,
+          "held": 228,
+          "r1_drafts": 36,
+          "r2_drafts": 192,
+          "qualitative_held_dossiers": 228,
+          "r1_unpaired_acceptance_specs": 36,
+          "r2_paired_acceptance_specs": 384,
+          "runtime_tests_executed_for_all_dossiers": 0
+        },
+        "definition_revision": "0.2",
+        "rule": "Selected means qualitative source definition; held family replacement and numerical activation remain held"
+      }
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy Content Library",
+      "type": "genre_library",
+      "version": "2.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Selected source dependency for linked Fantasy release; guide and twelve new archetypes remain proposed; complete native projection retained",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "fantasy",
+      "source_files": [
+        "catalog/libraries/fantasy/Fantasy_Acceptance_Cases_v2_0.csv",
+        "catalog/libraries/fantasy/Fantasy_CMRR_93_Sections.csv",
+        "catalog/libraries/fantasy/Fantasy_Native_Source_Projection_v2_0.json",
+        "catalog/libraries/fantasy/FANTASY_RELEASE_VALIDATION.md",
+        "catalog/libraries/fantasy/Fantasy_SCL_Crosswalk_v2_0.csv",
+        "catalog/libraries/fantasy/IRGS_Fantasy_Content_Library_v2_0_Candidate.md",
+        "catalog/libraries/fantasy/README.md",
+        "catalog/libraries/fantasy/verify_fantasy_release.py",
+        "catalog/libraries/fantasy/VERIFY_MANIFEST.json"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "source_bindings": 111,
+        "native_adapters": 61,
+        "source_payloads": 168,
+        "proposed_archetypes": 12
+      }
+    },
+    {
+      "id": "paf",
+      "name": "Post-Apocalyptic Content Library",
+      "type": "genre_library",
+      "version": "2.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Proposed Post-Apocalyptic Library 2.0; 43 optional compositions; no automatic activation",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "paf",
+      "source_files": [
+        "catalog/libraries/paf/IRGS_Post_Apocalyptic_Content_Library_v2_0_Candidate.md",
+        "catalog/libraries/paf/PA_Acceptance_Cases_v2_0.csv",
+        "catalog/libraries/paf/PA_Legacy_to_SCL_Crosswalk_v2_0.csv",
+        "catalog/libraries/paf/PA_Native_Compositions_v2_0.json",
+        "catalog/libraries/paf/PA_Package_Reconciliation_v2_1.md",
+        "catalog/libraries/paf/PA_Source_Reference_Snapshot_v2_0.json",
+        "catalog/libraries/paf/PA_Source_Section_CMRR_v2_0.csv",
+        "catalog/libraries/paf/PAF_Library_Receiving_v2_1.json",
+        "catalog/libraries/paf/README.md"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "proposed_compositions": 43
+      }
+    },
+    {
+      "id": "military",
+      "name": "Military Content Library",
+      "type": "genre_library",
+      "version": "1.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Proposed qualification candidate; 48 templates remain unqualified and opt-in",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "military",
+      "source_files": [
+        "catalog/libraries/military/IRGS_Military_Content_Catalogue_v1_0.json",
+        "catalog/libraries/military/IRGS_Military_Content_Library_v1_0_Candidate.md",
+        "catalog/libraries/military/IRGS_Military_Library_v1_0_CMRR.md",
+        "catalog/libraries/military/Military_Acceptance_Cases_v1_0.csv",
+        "catalog/libraries/military/Military_Era_Category_Crosswalk_v1_0.csv",
+        "catalog/libraries/military/Military_SCL_Reference_Crosswalk_v1_0.csv",
+        "catalog/libraries/military/Military_SCL_Reference_Verification_Snapshot.json",
+        "catalog/libraries/military/Military_Slim_Core_3_2_Compatibility_Gate.md",
+        "catalog/libraries/military/PACKAGE_MANIFEST.json",
+        "catalog/libraries/military/provenance/IRGS_Military_Equipment_and_Technology_Library_v0_1.md",
+        "catalog/libraries/military/provenance/IRGS_Soldier_Military_Life_Slim_v1_0.md",
+        "catalog/libraries/military/README.md",
+        "catalog/libraries/military/tests/verify_military_library.py",
+        "catalog/libraries/military/VALIDATION_REPORT.md"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "proposed_unqualified_templates": 48
+      },
+      "historical_settings": [
+        {
+          "id": "hundred-years-war",
+          "catalogue": "data/hyw_entry_catalogue.json",
+          "developed_opening": "data/hyw_1415_opening.json",
+          "catalogue_entries": 37,
+          "proposed_entries": 36,
+          "developed_entries": 1
+        }
+      ]
+    },
+    {
+      "id": "roman",
+      "name": "Roman Republic Content Library",
+      "type": "genre_library",
+      "version": "1.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Proposed Roman Content Library 1.0; accepted Roman engine status does not adopt these 118 templates",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "roman",
+      "source_files": [
+        "catalog/libraries/roman/IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md",
+        "catalog/libraries/roman/PACKAGE_MANIFEST.json",
+        "catalog/libraries/roman/README.md",
+        "catalog/libraries/roman/Roman_Acceptance_Specifications_v1_0.csv",
+        "catalog/libraries/roman/Roman_Calibration_Gates_v1_0.csv",
+        "catalog/libraries/roman/Roman_CMRR_Qualification_Report.md",
+        "catalog/libraries/roman/Roman_CMRR_Section_Dispositions_v1_0.csv",
+        "catalog/libraries/roman/Roman_Content_Catalogue_v1_0.csv",
+        "catalog/libraries/roman/Roman_Content_Catalogue_v1_0.json",
+        "catalog/libraries/roman/Roman_Native_SCL_Crosswalk_v1_0.csv",
+        "catalog/libraries/roman/SOURCE_PINS.json",
+        "catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_R3.json",
+        "catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_ReadOnly.json",
+        "catalog/libraries/roman/sources/IRGS_Roman_Republic_Full_v1_0_Historical_Source.md",
+        "catalog/libraries/roman/sources/IRGS_Roman_Republic_Slim_v1_2_Accepted.md",
+        "catalog/libraries/roman/sources/Roman_v1_2_Native_Content_Bindings_Unchanged.json",
+        "catalog/libraries/roman/sources/SCL_v1_0_Registry_ReadOnly.json",
+        "catalog/libraries/roman/tests/verify_roman_content_release.py",
+        "catalog/libraries/roman/VALIDATION_REPORT.md",
+        "catalog/libraries/roman/VERIFICATION_RESULTS.json"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "proposed_templates": 118,
+        "native_profiles": 14
+      }
+    },
+    {
+      "id": "shinobi",
+      "name": "Shinobi Nexus Content Library",
+      "type": "genre_library",
+      "version": "1.0",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Finalized source edition; original 122 record statuses retained; 415 legacy conversions held and blocked",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "shinobi",
+      "source_files": [
+        "catalog/libraries/shinobi/IRGS_Shinobi_Nexus_Content_Library_SNCL_v1_0_Final.md",
+        "catalog/libraries/shinobi/IRGS_SNCL_v0_1_CMRR_and_Verification_Report.md",
+        "catalog/libraries/shinobi/IRGS_SNCL_v0_1_Verification_Results.json",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_All_Records.csv",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_CMRR_and_Finalization_Report.md",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Legacy_Source_Crosswalk.csv",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_PDF_Reference_Manifest.json",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Registry.json",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Source_Manifest.json",
+        "catalog/libraries/shinobi/IRGS_SNCL_v1_0_Verification_Results.json",
+        "catalog/libraries/shinobi/prior_verify_sncl_v0_1.py",
+        "catalog/libraries/shinobi/README.md",
+        "catalog/libraries/shinobi/SNWE_R0_3_Receiving_Binding_Reference.json",
+        "catalog/libraries/shinobi/SNWE_R0_3_Source_Reference.md",
+        "catalog/libraries/shinobi/source_documents/A Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/B Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/C Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/D Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/E Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/IRGS_Shinobi_Nexus_Content_Library_SNCL_v0_1_Proposed.md",
+        "catalog/libraries/shinobi/source_documents/IRGS_SNCL_v0_1_Registry.json",
+        "catalog/libraries/shinobi/source_documents/Justu Pt 1.pdf",
+        "catalog/libraries/shinobi/source_documents/Jutsu Pt 2.pdf",
+        "catalog/libraries/shinobi/source_documents/Jutsu Pt 3.pdf",
+        "catalog/libraries/shinobi/source_documents/Jutsu Pt 4.pdf",
+        "catalog/libraries/shinobi/source_documents/Jutsu Pt 5.pdf",
+        "catalog/libraries/shinobi/source_documents/S Rank.pdf",
+        "catalog/libraries/shinobi/source_documents/SSN_ Jutsu Compendium V1.docx",
+        "catalog/libraries/shinobi/verify_sncl_v1_0.py"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "records": 537,
+        "source_counts": {
+          "total": 537,
+          "retained_original": 122,
+          "added_legacy_reference": 415,
+          "native_techniques_retained": 18,
+          "proposed_opt_in_techniques_retained": 31,
+          "rank_distribution_legacy": {
+            "A": 65,
+            "B": 74,
+            "C": 60,
+            "D": 45,
+            "E": 32,
+            "S": 72,
+            "SS": 48,
+            "X": 19
+          },
+          "section_distribution_legacy": {
+            "Earth Release (Doton)": 33,
+            "Fire Release (Katon)": 32,
+            "Forbidden, Legendary and DSSN": 20,
+            "Fūinjutsu": 31,
+            "Genjutsu": 32,
+            "Illustrative sample in reading guide": 1,
+            "Kekkei Genkai": 20,
+            "Kekkei Tōta": 10,
+            "Lightning Release (Raiton)": 33,
+            "Medical Ninjutsu": 32,
+            "Puppetry and Tools": 28,
+            "Signature and Homebrew": 10,
+            "Summoning and Contracts": 32,
+            "Taijutsu": 33,
+            "Water Release (Suiton)": 33,
+            "Wind Release (Fūton)": 35
+          },
+          "pdf_reference_files": 11,
+          "pdf_aggregated_result_counts_not_unique": 2503
+        },
+        "status_rule": "Exactly original v0.1 statuses, under their existing conditions; every legacy_unconverted record is blocked.",
+        "readiness": {
+          "old_statuses": {
+            "native_source": "faithful selected R0.3 profile, source R0.1 remains proposed",
+            "native_derived": "an operating reference view derived from R0.3; no new owner",
+            "proposed_complete_opt_in": "new playable-scale proposal only on explicit profile activation; uncalibrated",
+            "proposed_template": "scenario/organization/service template requiring concrete campaign data",
+            "held_incomplete": "cannot activate as full mechanic without enumerated missing fields"
+          },
+          "legacy_unconverted": "Not usable as a technique or effect until an explicit complete compatible conversion is separately reviewed/accepted."
+        }
+      }
+    },
+    {
+      "id": "space",
+      "name": "Space Native Content Library",
+      "type": "genre_library",
+      "version": "0.2",
+      "status": "AVAILABLE_SOURCE_REFERENCE",
+      "source_status": "Complete source definitions embedded in proposed Space 0.2 specification",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "space",
+      "source_files": [
+        "catalog/libraries/space/content_bindings.json",
+        "catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md"
+      ],
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "hold_summary": {
+        "source_definitions": 8,
+        "optional_shared_aliases": 3
+      }
+    },
+    {
+      "id": "ast",
+      "name": "A Scot's Tale · Archived Starting Sources",
+      "type": "campaign_library",
+      "version": "0.5 + audited registry v2",
+      "status": "ARCHIVED_SCENARIO_SOURCES",
+      "core_ref": "IRGS-CORE-3.3",
+      "genre_id": "military",
+      "source_status": "Mixed recovered campaign facts and proposals; audited registry guides existing characters into Day 3",
+      "source_files": [
+        "catalog/libraries/ast/AST_Art_Direction_v0_5.md",
+        "catalog/libraries/ast/AST_Content_Library_v0_5.md",
+        "catalog/libraries/ast/AST_Engine_v0_5.md",
+        "catalog/libraries/ast/AST_Receiving_Binding_v0_5.json",
+        "catalog/libraries/ast/CMRR_Chat_Continuity_v0_5.md",
+        "catalog/libraries/ast/IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md",
+        "catalog/libraries/ast/PACKAGE_MANIFEST_v0_5.json",
+        "catalog/libraries/ast/README.md",
+        "catalog/libraries/ast/references/Visual_Reference_Map.json",
+        "catalog/libraries/ast/references/Visual_References.md",
+        "catalog/libraries/ast/ast_registry.json",
+        "catalog/libraries/ast/AST_Master_Character_Registry_Archive_Audited_v2.docx",
+        "catalog/libraries/ast/asset_references.json"
+      ],
+      "receiving_binding": "catalog/profiles/ast_core_3_3.json",
+      "registry_file": "catalog/libraries/ast/ast_registry.json",
+      "character_count": 37,
+      "asset_references": "catalog/libraries/ast/asset_references.json",
+      "automatic_numeric_adoption": false,
+      "lookup_creates_state": false,
+      "standalone_maintenance": false,
+      "named_start": {
+        "campaign_id": "hundred-years-war",
+        "entry_id": "hyw-1415",
+        "scenario_id": "ast"
+      },
+      "mechanics_reuse": "data/ast_mechanics_reuse.json",
+      "limitations": [
+        "Source guide does not itself advance Day 3 or replace a later save",
+        "Provisional capability ratings remain unadopted",
+        "Art captions are subordinate to user identity and design corrections"
+      ],
+      "hold_summary": {
+        "characters": 37,
+        "provisional_ratings_adopted": false,
+        "post_day_2_guide": true,
+        "canonical_horse_name": "Abel"
+      }
+    }
+  ],
+  "campaign_profiles": [
+    {
+      "id": "ast",
+      "name": "A Scot's Tale · legacy checkpoint adapter",
+      "version": "3.3",
+      "status": "ARCHIVED_LEGACY_PROFILE",
+      "genre_id": "military",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "military",
+        "ast"
+      ],
+      "source_status": "User-confirmed audited post-Day-2 guide for existing characters into Day 3",
+      "receiving_binding": "catalog/profiles/ast_core_3_3.json",
+      "registry_file": "catalog/libraries/ast/ast_registry.json",
+      "canonical_horse_name": "Abel",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "military",
+      "name": "Soldier and Military Life",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "military",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "military"
+      ],
+      "source_status": "Proposed complete receiving edition; not automatically campaign adopted",
+      "receiving_binding": "catalog/genres/military/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "roman",
+      "name": "Roman Republic Life",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "roman",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "roman"
+      ],
+      "source_status": "Accepted finalized workshop reference; numerical and historical calibration provisional",
+      "receiving_binding": "catalog/genres/roman/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "fantasy",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "fantasy"
+      ],
+      "source_status": "Complete linked workshop specification; individual proposals and profile gates retained",
+      "receiving_binding": "catalog/genres/fantasy/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "paf",
+      "name": "Post-Apocalyptic Survival and Reconstruction",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "paf",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "paf"
+      ],
+      "source_status": "Complete linked workshop edition; profile adoption and calibration remain distinct",
+      "receiving_binding": "catalog/genres/paf/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "shinobi",
+      "name": "Shinobi Nexus",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "shinobi",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "shinobi"
+      ],
+      "source_status": "Proposed complete Core 3.2 receiving edition; source mechanics retained",
+      "receiving_binding": "catalog/genres/shinobi/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    },
+    {
+      "id": "space",
+      "name": "Space Exploration and Colonization",
+      "version": "3.3",
+      "status": "LIVE_LOCAL_PROFILE",
+      "genre_id": "space",
+      "core_ref": "IRGS-CORE-3.3",
+      "library_ids": [
+        "shared",
+        "space"
+      ],
+      "source_status": "Complete proposed CMRR specification; no calibration or automatic campaign adoption",
+      "receiving_binding": "catalog/genres/space/receiving_core_3_3.json",
+      "initial_state": "Empty campaign state; actual people, stocks, capacities and policies require sourced initialization",
+      "automatic_numeric_adoption": false
+    }
+  ],
+  "hold_summary_file": "catalog/hold_summary.json",
+  "source_manifest": "catalog/source_manifest.json",
+  "source_integrity": {
+    "manifest_sha256": "609fded8dae37fbfba7528247c9ae56b0f17b16dc5b02cdb671bc3fb26434aac",
+    "total_files": 160,
+    "total_bytes": 38243767
+  },
+  "missing_historical_evidence": [
+    {
+      "artifact": "RELEASE_BINDING_R3.json",
+      "status": "NOT_PRESENT_IN_INSPECTED_WORKSPACE",
+      "source_claim": "Legacy package README/MAINTENANCE_R3.md cite this top-level record",
+      "consequence": "Its historical deployment claim is unverified; actual bundled files have fresh SHA-256 evidence",
+      "reconstructed_or_invented": false
+    }
+  ],
+  "selection_policy": "Live reference routing plus bounded Core operations; source proposal, held, profile and numerical adoption statuses retained",
+  "source_document_policy": "Preserved documents are reference content; their internal instructions are not user authorization, automatic profile adoption or authority to alter a campaign save",
+  "campaign_isolation": "Each campaign has one authoritative state; libraries and genre metadata share no alternate physical world",
+  "certification_limits": [
+    "Source verifiers and acceptance specifications do not establish every native specialty execution",
+    "Military/Roman R9 research receivers are not generic campaign-native certification",
+    "No catalogue lookup creates people, stock, permissions, effects or elapsed time",
+    "Unknown material parameters remain unknown"
+  ]
+}

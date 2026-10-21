@@ -1,0 +1,593 @@
+{
+  "archive": "C:\\Users\\ian_c\\Downloads\\IRGS-3.3.2.Emergent.zip",
+  "archive_sha256": "90a8608585a404851e84a155703c3802a0a8df1357883f9b197e246252082e52",
+  "extracted_scope": "top-level frontend, backend, screenshots and README only; nested historical sources excluded",
+  "provided_backend_executed": false,
+  "files": [
+    {
+      "path": ".screenshots/story.jpg",
+      "size": 64662,
+      "sha256": "4e89ed4407b53b83568a0eecf73f5cb28e615941979f875f0a19c8b8ce0b38ab"
+    },
+    {
+      "path": ".screenshots/story2.jpg",
+      "size": 85029,
+      "sha256": "5f8612b2db5d9e3af4d2c00919026b5f6cd5419f3361762069e1686c5b351656"
+    },
+    {
+      "path": ".screenshots/story_mobile.jpg",
+      "size": 16317,
+      "sha256": "e639fb5ceaae91d0cf6845d5fe23868df13b4daee080e4953162d6e6b5961a6e"
+    },
+    {
+      "path": "README.md",
+      "size": 29,
+      "sha256": "4d98a881426d611841978ecdc7192d83446a2191081b08776b94c39019ccda1f"
+    },
+    {
+      "path": "backend/ai_services.py",
+      "size": 11309,
+      "sha256": "dc1334263c6d93db74d59325c0093c8c7c6d4c234b35862e7604882975efb317"
+    },
+    {
+      "path": "backend/auth.py",
+      "size": 7902,
+      "sha256": "e0868529105c3535c393ddea46352b33da13bb03116dc9bdb7805a78e0f3599c"
+    },
+    {
+      "path": "backend/data/hyw/hyw_1415_opening.json",
+      "size": 36667,
+      "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    },
+    {
+      "path": "backend/data/hyw/hyw_entry_catalogue.json",
+      "size": 10789,
+      "sha256": "cd47576c71fe5351e08b0755ce65f7778bb28c7887d1c76acca4aa90a6df7b7b"
+    },
+    {
+      "path": "backend/data/hyw/hyw_historical_baseline.json",
+      "size": 7460,
+      "sha256": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0"
+    },
+    {
+      "path": "backend/db.py",
+      "size": 2465,
+      "sha256": "b5285803a178c75decba7e4bb224da92476c2d779caadb84f7cf5282121f466e"
+    },
+    {
+      "path": "backend/engine.py",
+      "size": 14099,
+      "sha256": "05ec62a82182552d55d4b4bdafcea59882c217f1210b623988bcd740ac483beb"
+    },
+    {
+      "path": "backend/pytest.ini",
+      "size": 646,
+      "sha256": "6cb1fc884360a028c18965b664932f7caef56074ed2db617ae356876521b15b3"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "size": 469,
+      "sha256": "b6ea2378cf265d1d44b8c638a0fbbe92a507de63273f9bdc21334fbdcba194cb"
+    },
+    {
+      "path": "backend/seed_data.py",
+      "size": 17865,
+      "sha256": "7cb1e8c2bfe65517b57eaf3b65bb15b1161fbbf72ea39d0b58cc1193ca534aa2"
+    },
+    {
+      "path": "backend/server.py",
+      "size": 60657,
+      "sha256": "5a2ea86fb7a3dee7d05d2a5fdbcaa1716ef8c4f554f4d302a5c18737c4d5ff86"
+    },
+    {
+      "path": "backend/storybook.py",
+      "size": 1734,
+      "sha256": "74f00488c6d221dcb05d1b3ed596e2aa3e6922a8b6c317de2c2a9803342e7034"
+    },
+    {
+      "path": "backend/tests/test_irgs_api.py",
+      "size": 12651,
+      "sha256": "6e4c491e74da388172080c2ea5f3335cc05f5250477bdcaf3a2e9cb8495f94bb"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter2.py",
+      "size": 11441,
+      "sha256": "5924239ea07b9cbc4d36051889e46fc490f2be9fbd7eb824f80eb964e9db20be"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter3.py",
+      "size": 8875,
+      "sha256": "73826387ed61776d88e434bfb143abaf92059c76d731375db9f0fe1372d50978"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter4.py",
+      "size": 8764,
+      "sha256": "301e209cc22353b547832de3519ad4db5abdbb0ff2dfc6525ec25c2b11526d7e"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter5.py",
+      "size": 3875,
+      "sha256": "3a4263e5c1f46661bbed7c487ebf4ffadb17c6f42ffc00b0f4f150a5d08b6a05"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter6.py",
+      "size": 11708,
+      "sha256": "246780412c73821740a1f75fa6b0474535dfb86cb446f68215edc6acdef494a1"
+    },
+    {
+      "path": "backend/tests/test_irgs_iter7_security.py",
+      "size": 5816,
+      "sha256": "b57574a5413d3f64a46ebab80bbf4ddf32a43ee68b0bd426920fcedf5520aec7"
+    },
+    {
+      "path": "backend/tests/test_irgs_security_edges.py",
+      "size": 6245,
+      "sha256": "4363345c1c7b103372d65be86875e4d5c248bb6920493f108e06d946ee54ee5a"
+    },
+    {
+      "path": "frontend/.gitignore",
+      "size": 310,
+      "sha256": "d373417ea2a8844e3b7a1515aab123e90fbeb4b7225144d55d243d9f6f04f73a"
+    },
+    {
+      "path": "frontend/README.md",
+      "size": 1360,
+      "sha256": "c31d3ebe983a489162fcb452d790ff94886e480afadc5c1cca8083ea3402d4d2"
+    },
+    {
+      "path": "frontend/components.json",
+      "size": 427,
+      "sha256": "166be6cc4f3954c1c81cc759f50d2c8373e0b6c1f7fa4457ea75be3a55aca50e"
+    },
+    {
+      "path": "frontend/index.html",
+      "size": 5897,
+      "sha256": "7a3a310c19acc07ddd5b0810f4149e722edd8cf7e1b46a8f6cafe892e1a7831c"
+    },
+    {
+      "path": "frontend/jsconfig.json",
+      "size": 116,
+      "sha256": "696e14c6f246163a299d7ce3bd1003d52bc0fd4d97629ca468fbd38e8fe1f72f"
+    },
+    {
+      "path": "frontend/package.json",
+      "size": 3229,
+      "sha256": "036a02a217c151b7c82ece295d4a19f61f439fd6a2c68ef1ff527c1c4f2b487f"
+    },
+    {
+      "path": "frontend/public/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/App.css",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/App.js",
+      "size": 1873,
+      "sha256": "c95422622cc40493835cf8b68d137aa3377f611e3fae102b4f7e9848e04b9043"
+    },
+    {
+      "path": "frontend/src/components/AppShell.jsx",
+      "size": 3814,
+      "sha256": "d0b18d28135ad43e75175943d2532673a5401d7ba720f20bb5e6951e153d4770"
+    },
+    {
+      "path": "frontend/src/components/CheckoutDialog.jsx",
+      "size": 2102,
+      "sha256": "f934394d19b8d1ccb89c82937914e15034177968d6b0b613542141554f206116"
+    },
+    {
+      "path": "frontend/src/components/EntryCatalogueDialog.jsx",
+      "size": 2982,
+      "sha256": "ccd5db506806eeb47820a836438303c6e173cb23f863feecad02c2e8a1930760"
+    },
+    {
+      "path": "frontend/src/components/HistoryReference.jsx",
+      "size": 1963,
+      "sha256": "c233de0b5fed3c6d18e4b092c1a739f028aa0e5f9180b2723066961e35595d83"
+    },
+    {
+      "path": "frontend/src/components/PlaythroughList.jsx",
+      "size": 3523,
+      "sha256": "da2e5b09fb7ecae02a5adc84c6c5f22300d39832d010c277d5588bb334cd3870"
+    },
+    {
+      "path": "frontend/src/components/PortraitPanel.jsx",
+      "size": 3085,
+      "sha256": "7a873fb549614086fbf8826d51af7c9914df8e97bb41b579a1436d4d0c4c5d3a"
+    },
+    {
+      "path": "frontend/src/components/SavePreviewDialog.jsx",
+      "size": 3501,
+      "sha256": "7ed4a205719b69532775711b9837a44e605c3cb547e37698b763091735eaaa8e"
+    },
+    {
+      "path": "frontend/src/components/ShareDialog.jsx",
+      "size": 3904,
+      "sha256": "0beeee102c840799199a68d5f01f53877184b2f2a3a784fe9aa0eba038fe5ce5"
+    },
+    {
+      "path": "frontend/src/components/chronicle/DevelopmentPanel.jsx",
+      "size": 5439,
+      "sha256": "b1e14ae27007804d851979eb1672245df4afc3bce0738bbbc0c54cc9b01a0517"
+    },
+    {
+      "path": "frontend/src/components/chronicle/EntityHistory.jsx",
+      "size": 3231,
+      "sha256": "0f8f4e074182a0a171dd907b8effd3d8fa0a3b6712e464e0377afce3bd325aa0"
+    },
+    {
+      "path": "frontend/src/components/chronicle/NotesPanel.jsx",
+      "size": 4557,
+      "sha256": "b3b4d97a60ed7257cc18279dac8590898a2f7d5b12453ad21610aad7b8e4cd1c"
+    },
+    {
+      "path": "frontend/src/components/play/ActionComposer.jsx",
+      "size": 3329,
+      "sha256": "f455e660a60c9aaf39eb026342d75aa30854e00287e1735a89cd81e263f79010"
+    },
+    {
+      "path": "frontend/src/components/play/ControlPanel.jsx",
+      "size": 6499,
+      "sha256": "d8188077ff59d8df748df6b62a4d896ea0bbdd8e3c2a259743f8ec8d0c07b3d6"
+    },
+    {
+      "path": "frontend/src/components/play/NarrativeEntry.jsx",
+      "size": 4801,
+      "sha256": "df9fd332625e64ff7e11eb0ff2bd6ce4bf3c086575a163a43b892c328f9d7419"
+    },
+    {
+      "path": "frontend/src/components/play/StatusPanel.jsx",
+      "size": 4435,
+      "sha256": "e09a5088f8c90d795ae6aac16f5fb6c2293b2028bffc5e7a337d79e099022e16"
+    },
+    {
+      "path": "frontend/src/components/ui/accordion.jsx",
+      "size": 1615,
+      "sha256": "b47533b3783b8149550b8481e4ae93d54bdcbc51d434793c176b0aec5558ee1c"
+    },
+    {
+      "path": "frontend/src/components/ui/alert-dialog.jsx",
+      "size": 3461,
+      "sha256": "a20098cdc2eb2b5915575d3f0fb7a3e8e6c1035c7eef77144f3fc389e0fdbda0"
+    },
+    {
+      "path": "frontend/src/components/ui/alert.jsx",
+      "size": 1335,
+      "sha256": "c5baf27fb6a4bf130236fa0f336c21084fee192e8215bb6b20c87436c27f3b38"
+    },
+    {
+      "path": "frontend/src/components/ui/aspect-ratio.jsx",
+      "size": 140,
+      "sha256": "08b0aa0b05efc573c7d63363c03e83d4b101bfeb54140764e96ddea30659cfcc"
+    },
+    {
+      "path": "frontend/src/components/ui/avatar.jsx",
+      "size": 1029,
+      "sha256": "dc91f6b15da007904343e580ceeccc58fba37f8c207e12b1edd3057820805475"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.jsx",
+      "size": 998,
+      "sha256": "15f60d91cc8d849d7cb4b1980665b2131fd3ff70a45e2c967895c9196d099e36"
+    },
+    {
+      "path": "frontend/src/components/ui/breadcrumb.jsx",
+      "size": 2273,
+      "sha256": "50f118a81de445b794f0a8211935d4f0c199c55ad96040f32523f47f5c458d5d"
+    },
+    {
+      "path": "frontend/src/components/ui/button.jsx",
+      "size": 1667,
+      "sha256": "9881589d1070f0d4efeef6422e011d3ef21ca1f01df2f44fc2d074a66b7077d5"
+    },
+    {
+      "path": "frontend/src/components/ui/calendar.jsx",
+      "size": 2829,
+      "sha256": "6831bca596ebeec7f3ddb82d344c6d089bc84a91095b284c4f04d62f51ffc180"
+    },
+    {
+      "path": "frontend/src/components/ui/card.jsx",
+      "size": 1443,
+      "sha256": "d3611db84eb8c4367c413565dd52bd2f78babbe628f2dcef99f5622e1f8f0d1e"
+    },
+    {
+      "path": "frontend/src/components/ui/carousel.jsx",
+      "size": 4811,
+      "sha256": "62842d0a01459ffd8d9a83b0e5a34b8cc639eb2d06a7076c8488b7ac56864cdd"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox.jsx",
+      "size": 885,
+      "sha256": "d67af77d70ffac2174b57d837b4ecb6f246a0f17cdc54ce56efd87f47f78cef4"
+    },
+    {
+      "path": "frontend/src/components/ui/collapsible.jsx",
+      "size": 315,
+      "sha256": "6f5be8ba164c177759bf63cc25ad4d49391f162f6784ba624d72e5d5c0c0dde2"
+    },
+    {
+      "path": "frontend/src/components/ui/command.jsx",
+      "size": 3909,
+      "sha256": "73a490c316061f02fc22267317fd447be460dbd0c243d8102c3cf0835d4f3537"
+    },
+    {
+      "path": "frontend/src/components/ui/context-menu.jsx",
+      "size": 6163,
+      "sha256": "abddd3eab31552a136865833cd7e05696ceb9d82fe6e31a55fd12328facfca50"
+    },
+    {
+      "path": "frontend/src/components/ui/dialog.jsx",
+      "size": 3216,
+      "sha256": "49563d6384d7c95af2c4b3f1378aaa12e1a6e2190aa8fd3190c4e2f513211587"
+    },
+    {
+      "path": "frontend/src/components/ui/drawer.jsx",
+      "size": 2345,
+      "sha256": "ad946a1e3d6976f5da19f6fbdaa8a65dc96c6cbce926d1a60889ef5ec449e44c"
+    },
+    {
+      "path": "frontend/src/components/ui/dropdown-menu.jsx",
+      "size": 6328,
+      "sha256": "bbcf4ebb0f27894a915465eb984a3314653396e6ee7f5604a12157942ec90a1d"
+    },
+    {
+      "path": "frontend/src/components/ui/form.jsx",
+      "size": 3121,
+      "sha256": "68379f589cf2c031104cc39fd944713d611e31e26213be78074eb853e19dbcdf"
+    },
+    {
+      "path": "frontend/src/components/ui/hover-card.jsx",
+      "size": 1111,
+      "sha256": "70081cb63ef08cf91dfd8916157b6212a61cd867a8a1bc8eea8a9489869e3422"
+    },
+    {
+      "path": "frontend/src/components/ui/input-otp.jsx",
+      "size": 1806,
+      "sha256": "9d8c4ba1cb67564e95b4dc7904147b327d293cc8efce8fd4e3431cc3321ffdaf"
+    },
+    {
+      "path": "frontend/src/components/ui/input.jsx",
+      "size": 690,
+      "sha256": "983c406819d59186e30984c2751ac192ad208d1738f71ce15f14171a08fcf165"
+    },
+    {
+      "path": "frontend/src/components/ui/label.jsx",
+      "size": 525,
+      "sha256": "37c6425d2a5c798ade4e60f89f86054d703433a8977e12d796de2b5bb4e3d0b7"
+    },
+    {
+      "path": "frontend/src/components/ui/menubar.jsx",
+      "size": 6863,
+      "sha256": "4bc8149737f45dc9def934986fb45460d0e70c2880a163e5c7ca51d0e78e6f1c"
+    },
+    {
+      "path": "frontend/src/components/ui/navigation-menu.jsx",
+      "size": 4289,
+      "sha256": "0db05cd0548f4a94d05618a797d8251746a3dca3fe76af5015284f7f26d6940f"
+    },
+    {
+      "path": "frontend/src/components/ui/pagination.jsx",
+      "size": 2322,
+      "sha256": "1d519fc3ba1c8c6cf7f2d30c98739ecba2fa7af35cbc024d6793785e7a6d65c8"
+    },
+    {
+      "path": "frontend/src/components/ui/popover.jsx",
+      "size": 1218,
+      "sha256": "6c2038b7887f1a31320eb6d9956fb3d07db1ce275090b2285daf78e0cb86f931"
+    },
+    {
+      "path": "frontend/src/components/ui/progress.jsx",
+      "size": 653,
+      "sha256": "2d074c6026cd5ca44ef44b9027f267612c39877a7d2eb4a3faa387594c3eb37a"
+    },
+    {
+      "path": "frontend/src/components/ui/radio-group.jsx",
+      "size": 1138,
+      "sha256": "62e4002b4910ac0b2d00a76a0e4a7997eee0dfc79ad08f1e6f57654732a67d8a"
+    },
+    {
+      "path": "frontend/src/components/ui/resizable.jsx",
+      "size": 1558,
+      "sha256": "ad532b92913c1648c15cde420a2112c5f73f980a8906c8b5f3dcd882d4d21eda"
+    },
+    {
+      "path": "frontend/src/components/ui/scroll-area.jsx",
+      "size": 1356,
+      "sha256": "9acd9857451822cb29c2597cdba484fc7caf9d8cc1844ece5632b976d3a43630"
+    },
+    {
+      "path": "frontend/src/components/ui/select.jsx",
+      "size": 4753,
+      "sha256": "8a88d4d823935cdc1a44b2fa2f31adee9d4bbf6ea0a4609d26157e9bdbc172f3"
+    },
+    {
+      "path": "frontend/src/components/ui/separator.jsx",
+      "size": 594,
+      "sha256": "9b214eba41d1bf7f07413cb3c85a7e7940cc3d292f501dd0681a95734e817c57"
+    },
+    {
+      "path": "frontend/src/components/ui/sheet.jsx",
+      "size": 3537,
+      "sha256": "3d2e68cbc926caa070f265ee296c9b6dd6b1cdeafba29fd0ba04e657c8282b77"
+    },
+    {
+      "path": "frontend/src/components/ui/skeleton.jsx",
+      "size": 225,
+      "sha256": "78dad1ec71e4fc2c0060dd244ee68b2f9e7fc42ae680dab4f310e2ad8f17b741"
+    },
+    {
+      "path": "frontend/src/components/ui/slider.jsx",
+      "size": 919,
+      "sha256": "69c884047d455702a858ebf1e7b22c6f137d3aa3f6bfa7155ae1fc98d41e24d7"
+    },
+    {
+      "path": "frontend/src/components/ui/sonner.jsx",
+      "size": 797,
+      "sha256": "20962c4968b5792da4b408680321180f1c9b8f9cf322695d5173c0ef25132b40"
+    },
+    {
+      "path": "frontend/src/components/ui/switch.jsx",
+      "size": 1027,
+      "sha256": "bc576b80985c925c71e2ea9c098f5c7793110a3c2e7a7c237f45ab245dec750e"
+    },
+    {
+      "path": "frontend/src/components/ui/table.jsx",
+      "size": 2225,
+      "sha256": "d2b2866973c43d1767074c6661d48060b77ea066497bb8ceab0214f13a1f59e3"
+    },
+    {
+      "path": "frontend/src/components/ui/tabs.jsx",
+      "size": 1536,
+      "sha256": "50d3478f40ba2002fdb23ebfaffff9e4a1f5583012bdb062ea33ddb9a58c9d22"
+    },
+    {
+      "path": "frontend/src/components/ui/textarea.jsx",
+      "size": 587,
+      "sha256": "29b09d930699bd507a646ddd150d32d9317f29dec168109e3303a588df41351e"
+    },
+    {
+      "path": "frontend/src/components/ui/toast.jsx",
+      "size": 3821,
+      "sha256": "81e79ce98b62067373f5384097d085ec46392c69f774ac3c3f51c74e8e111368"
+    },
+    {
+      "path": "frontend/src/components/ui/toaster.jsx",
+      "size": 774,
+      "sha256": "7dd63e25d99c02b93b3868eef5b0c261ecc63b5f5542c4bf7155731ec234ef5d"
+    },
+    {
+      "path": "frontend/src/components/ui/toggle-group.jsx",
+      "size": 1268,
+      "sha256": "f40062b4037c151c9bba1b5de1ce60c60ce5b4dc6dc24f8efab85b382a3129fb"
+    },
+    {
+      "path": "frontend/src/components/ui/toggle.jsx",
+      "size": 1326,
+      "sha256": "345ba50035968f679340f43f560958bcb845d8feed40c98b653bb358565b509f"
+    },
+    {
+      "path": "frontend/src/components/ui/tooltip.jsx",
+      "size": 1127,
+      "sha256": "15e3faa509a33a39359cce757db9f2b9c05b99813de7855ac73203f4462af323"
+    },
+    {
+      "path": "frontend/src/constants/testIds/auth.js",
+      "size": 1207,
+      "sha256": "fd8bd503a0a124a853f874d76555636c1548501faf139a76ad24413faa02ff6e"
+    },
+    {
+      "path": "frontend/src/constants/testIds/home.js",
+      "size": 211,
+      "sha256": "65d1bcdef92435fd88347449efeb7c64c7213c9f9607ec1b8d19fc537570c649"
+    },
+    {
+      "path": "frontend/src/constants/testIds/index.js",
+      "size": 700,
+      "sha256": "656b30b4ca32f3685d11a4860fd0f96a3662db11b8e23f35172275cc3970c88a"
+    },
+    {
+      "path": "frontend/src/context/AuthContext.jsx",
+      "size": 1771,
+      "sha256": "91356cfd111ce80f29845cb19e988cf1ddb2f36f856e6867e4ad86cd0f66f92a"
+    },
+    {
+      "path": "frontend/src/hooks/use-toast.js",
+      "size": 3085,
+      "sha256": "767e0227c5c9406b5d00e25a57c6d01e9f6e083d36e803ccb0a5e260992a5225"
+    },
+    {
+      "path": "frontend/src/hooks/useNarrator.js",
+      "size": 1378,
+      "sha256": "08cbdea1d1daaed04177f11563bb65f11e5f1367c0a47790959aa8781158f94d"
+    },
+    {
+      "path": "frontend/src/hooks/useRecorder.js",
+      "size": 1259,
+      "sha256": "25a2e89b293a4c600683c853c142e70ab2ffdb70d3c7b5db6769cf386038fe31"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "size": 22600,
+      "sha256": "285b8e39fc473afcec9fb841bd913389ce7c135f68859b26255227fc01d56730"
+    },
+    {
+      "path": "frontend/src/index.js",
+      "size": 441,
+      "sha256": "da8322bddcfea14d88ebdeed602bc8b65fb5a9db16abf23e0a41ff50393d44a7"
+    },
+    {
+      "path": "frontend/src/lib/api.js",
+      "size": 1254,
+      "sha256": "abc26f82fcaffe835f36b3c1f4d7293f46de110e6f791e8b1feed8d099234258"
+    },
+    {
+      "path": "frontend/src/lib/queryClient.js",
+      "size": 305,
+      "sha256": "f1f29b9471910184e6e4289ad647c519adeeed6903de0fd5b7d86f5ed5f247b4"
+    },
+    {
+      "path": "frontend/src/lib/utils.js",
+      "size": 137,
+      "sha256": "5ba0ae526d768600bbfb4a4d345c47f6208cb941adbf456de80804a4cf938350"
+    },
+    {
+      "path": "frontend/src/pages/AuthCallback.jsx",
+      "size": 1044,
+      "sha256": "f248ffb3176a9e611107f6bba55dff132e87342d195856c87dda65b658d630e1"
+    },
+    {
+      "path": "frontend/src/pages/AuthPage.jsx",
+      "size": 11164,
+      "sha256": "b1db5e79ccca8b55575ccac61f444e4959c52063949ad33cf90d85dfb60eec62"
+    },
+    {
+      "path": "frontend/src/pages/CharacterCreator.jsx",
+      "size": 8237,
+      "sha256": "c07b82857dae9bf6587a5b9faaed854a923826483a50d6a2f5b913f13a982d65"
+    },
+    {
+      "path": "frontend/src/pages/Chronicle.jsx",
+      "size": 5794,
+      "sha256": "136aba61061b2e30c4a31f8d99656d85c35ca62d248751518580ea9a36f83d2e"
+    },
+    {
+      "path": "frontend/src/pages/Library.jsx",
+      "size": 5087,
+      "sha256": "5e6d312b44e01634baefb89cb1d90391c2a4ab57acc00fbadb1eb130d2dde06b"
+    },
+    {
+      "path": "frontend/src/pages/Marketplace.jsx",
+      "size": 1766,
+      "sha256": "83903f3251e1264b615c608636d2674679e2fefc5a82275eb047d7fc903265c4"
+    },
+    {
+      "path": "frontend/src/pages/Play.jsx",
+      "size": 7022,
+      "sha256": "4dac7514a251cfaece29885e48be34e85453f5d26bd2bfed81530678c41610ea"
+    },
+    {
+      "path": "frontend/src/pages/Saves.jsx",
+      "size": 5008,
+      "sha256": "9728050903385af56f28d1d26a37f226da507356ca2b16566980259c40b41619"
+    },
+    {
+      "path": "frontend/src/pages/Store.jsx",
+      "size": 5182,
+      "sha256": "17c0fd7f3cc0c9ff959eb672c7268f70287b465cd302b941d330fcbb3b4877a1"
+    },
+    {
+      "path": "frontend/src/pages/Storybook.jsx",
+      "size": 4260,
+      "sha256": "6b41460fd48103f11239e75f8386170930893b0604a9421be97738e2373c4bba"
+    },
+    {
+      "path": "frontend/vite.config.mjs",
+      "size": 7458,
+      "sha256": "c278d9d67c3f92cc3080546f9289fcdb21c82bc67e2a26fab0719d8b2722be30"
+    }
+  ]
+}

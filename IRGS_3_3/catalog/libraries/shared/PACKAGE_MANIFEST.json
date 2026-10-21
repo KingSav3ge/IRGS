@@ -1,0 +1,207 @@
+{
+  "package_id": "IRGS-CORE-3.2-SCL-1.0-FULL-MATURATION-R2",
+  "date": "2026-10-14",
+  "core_ref": "IRGS-CORE-3.2",
+  "catalogue_ref": "IRGS-SCL-1.0",
+  "content_holds_promoted": false,
+  "status": "Current workshop parent maintenance selection R3; qualification drafts retain their proposed status; no campaign migration.",
+  "normative_content_identity_revision": "0.2",
+  "manifest_scope": "All package files except PACKAGE_MANIFEST.json; manifest not self-hashed",
+  "counts": {
+    "normative_families": 279,
+    "selected": 51,
+    "held": 228,
+    "r1_qualitative_drafts": 36,
+    "r2_qualitative_drafts": 192,
+    "unexecuted_entry_acceptance_specs": 420
+  },
+  "files": [
+    {
+      "path": "IRGS_Core_Engine_v3_2.md",
+      "size": 363467,
+      "size_bytes": 363467,
+      "sha256": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c"
+    },
+    {
+      "path": "IRGS_Engine_Bindings_v3_2.json",
+      "size": 42828,
+      "size_bytes": 42828,
+      "sha256": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c"
+    },
+    {
+      "path": "IRGS_Full_Release_CMRR_Validation.md",
+      "size": 4264,
+      "size_bytes": 4264,
+      "sha256": "5573951d3377eedab376ec526248624bf116e0264d9b50b39cee5e79f28eaec3"
+    },
+    {
+      "path": "IRGS_SCL_Consolidated_Qualification_R2.json",
+      "size": 1220109,
+      "size_bytes": 1220109,
+      "sha256": "a97ed8c2de014507159a7a3cc6e6d69861957a557d062bf8e488bdb31d82cfd8"
+    },
+    {
+      "path": "IRGS_SCL_Full_Reconciliation_Matrix.csv",
+      "size": 62726,
+      "size_bytes": 62726,
+      "sha256": "559a4349fd05a4f47cbec88a18e54ba479694a2805f7ff3033eb3c4af5aeb120"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R1_CMRR_Report.md",
+      "size": 6924,
+      "size_bytes": 6924,
+      "sha256": "e88eca115b1e6d7ba88f3b948b421547b6c389b773cb2984958220d6031f1fbf"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R1_Contract_Data.json",
+      "size": 418281,
+      "size_bytes": 418281,
+      "sha256": "0db20174c6cc0606ae69704eecc1a11ca1795010cba2969e700d834403d2f60e"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R1_Hold_Register.csv",
+      "size": 137252,
+      "size_bytes": 137252,
+      "sha256": "1fb3698559e74686149ededd377263082af307c0acf79c2f82248ea810b26ec1"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R1_Qualitative_Contracts.md",
+      "size": 65404,
+      "size_bytes": 65404,
+      "sha256": "0e1c4328d110cb51238974ef912e9130ce5f69ebb8fbe668ad687cde5da3b759"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R2_192_Qualitative_Contracts.md",
+      "size": 552767,
+      "size_bytes": 552767,
+      "sha256": "36df9d46a141695d9f76363097d484744b66a48340a3331829cfdd6ea062f9fd"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R2_Calibration_Gates.csv",
+      "size": 3348,
+      "size_bytes": 3348,
+      "sha256": "c9c6ee11cb491ae291dc6f13801d16b88d1ba97d50e2ced28131c3614575295e"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R2_CMRR_Report.md",
+      "size": 6511,
+      "size_bytes": 6511,
+      "sha256": "36b9a6869b9555e33c762dc9be96f49a72fa3d12bdb3f4b6636c0f6824b6b61f"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R2_Complete_Hold_Register.csv",
+      "size": 86412,
+      "size_bytes": 86412,
+      "sha256": "c690103eb93b5753ef344009d31753d680886a7be04785199a9120352b0ee698"
+    },
+    {
+      "path": "IRGS_SCL_Maturation_R2_Contract_Data.json",
+      "size": 955210,
+      "size_bytes": 955210,
+      "sha256": "b502833a17e26814261fa1ce586dff3fc5ef6ec68531105404507e85c49fbfb4"
+    },
+    {
+      "path": "IRGS_SCL_Qualification_Acceptance_Matrix.csv",
+      "size": 143984,
+      "size_bytes": 143984,
+      "sha256": "6446375c0be7da6100a9e9b959816179930a4736657f946a868eadb04d7d1140"
+    },
+    {
+      "path": "IRGS_SCL_v1_0_Complete_Qualification_Compendium.md",
+      "size": 773021,
+      "size_bytes": 773021,
+      "sha256": "d5f0bd227c2557d7ced70aaf86eab316fe86843938c143a5f5d3e1a2010dc022"
+    },
+    {
+      "path": "IRGS_SCL_v1_0_Full_Release_Migration_Impact.md",
+      "size": 2202,
+      "size_bytes": 2202,
+      "sha256": "5871168817d09046029bf6d980120106443c85174414e26a962272455b9caf03"
+    },
+    {
+      "path": "IRGS_SCL_v1_0_Reference_Map.csv",
+      "size": 82611,
+      "size_bytes": 82611,
+      "sha256": "81872f9f124c5d753feb1982cb22fecb4dc2696403b4b847385b9061df3487f8"
+    },
+    {
+      "path": "IRGS_SCL_v1_0_Selected_Contracts.md",
+      "size": 67004,
+      "size_bytes": 67004,
+      "sha256": "7da2484a24f94b574a3c47fc4fa80189c091d5f44958783168071e6c3b099967"
+    },
+    {
+      "path": "IRGS_Shared_Content_Library_v1_0.md",
+      "size": 100379,
+      "size_bytes": 100379,
+      "sha256": "4f0a90687958bd6d54b0ab21dc0cfac4e02e0ed40992a3b86eb1cf1725164376"
+    },
+    {
+      "path": "IRGS_Shared_Content_Registry_v1_0.json",
+      "size": 2081427,
+      "size_bytes": 2081427,
+      "sha256": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9"
+    },
+    {
+      "path": "MAINTENANCE_R3.md",
+      "size": 727,
+      "size_bytes": 727,
+      "sha256": "e7438fa81d04f3e981f84ecf3dca594ad3cf2ee0ade4d022d5ffe29e1d6e1958"
+    },
+    {
+      "path": "provenance/IRGS_Core_v3_1_Complete_Release_Archived.zip",
+      "size": 1760308,
+      "size_bytes": 1760308,
+      "sha256": "7d4150fd73090f52f2d414bc92bd99f5770652fac5cce0344c896a30fca7992a"
+    },
+    {
+      "path": "provenance/IRGS_Core_v3_2_Original_Package_Manifest.json",
+      "size": 9133,
+      "size_bytes": 9133,
+      "sha256": "50b0ec166e9068c0d1cc6f27ef45aeb276f45eb85386be94c31279dabb6a0db9"
+    },
+    {
+      "path": "provenance/verify_maturation_r1_original.py",
+      "size": 9403,
+      "size_bytes": 9403,
+      "sha256": "58359958ea1a1926f23f25053dd8f224f266e8b7e7348d55cf4bf89d22128591"
+    },
+    {
+      "path": "README.md",
+      "size": 2831,
+      "size_bytes": 2831,
+      "sha256": "2f4639c20ba42d3125ca040d7bb826cf1227efac1e560397660876d67b59bd5e"
+    },
+    {
+      "path": "RELEASE_VERIFICATION_RESULTS.json",
+      "size": 1064,
+      "size_bytes": 1064,
+      "sha256": "4e23ef0ac966b843c1012d0a75d31b98ae2dff675a1ac42a13c9fd7e7a161aec"
+    },
+    {
+      "path": "tests/shared_contract_validation_R3.py",
+      "size": 4244,
+      "size_bytes": 4244,
+      "sha256": "3eec50a1869ba981ef5a292ff86cf2c453d208da581c26c8a8fcfb6fd3c05ed8"
+    },
+    {
+      "path": "tests/verify_full_release.py",
+      "size": 5570,
+      "size_bytes": 5570,
+      "sha256": "76960151c3f9b5112babd5759b9afa2c53e3fa5c7390e32c0afe9f997d326f40"
+    },
+    {
+      "path": "tests/verify_maturation_r1.py",
+      "size": 9573,
+      "size_bytes": 9573,
+      "sha256": "74acad28dd7ffb2a5332f78323f7742cefc90bdd0505a09b0f9b139847a20c5a"
+    },
+    {
+      "path": "tests/verify_maturation_r2.py",
+      "size": 5927,
+      "size_bytes": 5927,
+      "sha256": "be5802a28ed783c52d45f265f755d32a256a5b1eb6b16d8864e5ad5694728957"
+    }
+  ],
+  "maintenance_revision": "R3"
+}

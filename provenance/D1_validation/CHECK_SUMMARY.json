@@ -1,0 +1,63 @@
+{
+  "edition": "3.3.3-unified-development-D1",
+  "verified_on": "2026-10-21",
+  "status": "VERIFIED_DEVELOPMENT_BASELINE",
+  "source_assembly": {
+    "baseline_files_verified": 274,
+    "original_root_files_preserved": 8,
+    "runtime_python_files_unchanged": 57,
+    "canonical_app_copies": 1,
+    "user_saves_included": false
+  },
+  "tests": {
+    "runtime": {
+      "tests_run": 393,
+      "passed": 392,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "test_seconds": 31.767,
+      "expected_skip": "Unbundled historical user-save preservation fixture",
+      "log": "provenance/D1_validation/runtime_tests.txt"
+    },
+    "website": {
+      "tests_run": 93,
+      "passed": 93,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "test_seconds": 43.846,
+      "execution": "Loopback fixtures outside network isolation",
+      "log": "provenance/D1_validation/web_tests.txt"
+    },
+    "frontend": {
+      "checks_run": 30,
+      "passed": 30,
+      "skipped": 0,
+      "failures": 0,
+      "seconds": 1.867,
+      "log": "provenance/D1_validation/frontend_tests.txt"
+    }
+  },
+  "distribution_smoke": {
+    "status": "PASSED",
+    "extracted_source_verified": true,
+    "isolated_packaged_host": true,
+    "loopback_only": true,
+    "routes_checked": [
+      "/",
+      "/app.js",
+      "/style.css",
+      "/api/catalog",
+      "/api/campaigns",
+      "/api/content-library",
+      "/api/campaigns"
+    ],
+    "campaign_files_created": 0,
+    "existing_saves_opened": false,
+    "scope": "Fresh extracted package; selected Core and read-only app/assets/catalogue endpoints. Future C2 action acceptance is not claimed."
+  },
+  "selected_runtime_core": "3.3",
+  "C2_acceptance_inventory": 121,
+  "runtime_acceptance_for_C2": "NOT_EXECUTED"
+}

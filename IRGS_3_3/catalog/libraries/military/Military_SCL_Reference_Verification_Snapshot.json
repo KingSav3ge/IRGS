@@ -1,0 +1,108 @@
+{
+  "source_name": "IRGS_Shared_Content_Registry_v1_0.json",
+  "source_sha256": "b8697e38f0e66a39dbadf008448efa82856951089b41e795fce159b939c1625f",
+  "scope": "verified reference snapshot, not a complete or replacement SCL registry",
+  "identities": [
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-COM-001@0.2",
+      "name": "Portable Two-Way Radio",
+      "semantic_type": "equipment",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-MED-001@0.2",
+      "name": "Field Medical Kit",
+      "semantic_type": "equipment",
+      "status": "Complete selected qualitative definition; task activation still requires applicable parameters",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-PWR-001@0.2",
+      "name": "Portable Combustion Generator",
+      "semantic_type": "equipment",
+      "status": "Complete selected qualitative definition; task activation still requires applicable parameters",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-SHOP-001@0.2",
+      "name": "General Repair Workshop",
+      "semantic_type": "equipment",
+      "status": "Complete selected qualitative definition; task activation still requires applicable parameters",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-EQP-TOOL-001@0.2",
+      "name": "General Hand-Tool Kit",
+      "semantic_type": "equipment",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-RES-KNW-001@0.2",
+      "name": "Technical Documentation",
+      "semantic_type": "information_content",
+      "status": "Complete selected qualitative definition; task activation still requires applicable parameters",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-RES-KNW-002@0.2",
+      "name": "Maps and Civic/Property Records",
+      "semantic_type": "information_content",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-EQP-PL-STO-001@0.2",
+      "name": "Portable General Container",
+      "semantic_type": "storage_system",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-RES-PL-RES-FOOD-001@0.2",
+      "name": "Shelf-Stable Food",
+      "semantic_type": "stock",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-ARM-009@0.2",
+      "name": "Plate component",
+      "semantic_type": "armor",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-M-006@0.2",
+      "name": "Sword",
+      "semantic_type": "weapon",
+      "status": "Complete selected qualitative definition; task activation still requires applicable parameters",
+      "source_selectors": [
+        "modes.cut",
+        "modes.thrust"
+      ]
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-M-013@0.2",
+      "name": "Spear thrust",
+      "semantic_type": "weapon",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-R-005@0.2",
+      "name": "Shortbow",
+      "semantic_type": "weapon",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    },
+    {
+      "ref": "SCL:PBC-WPN-FL-WPN-R-007@0.2",
+      "name": "Light crossbow",
+      "semantic_type": "weapon",
+      "status": "Extracted candidate; activation parameters unresolved",
+      "source_selectors": []
+    }
+  ]
+}
