@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "app_line": "3.3.3.A",
+  "ui_edition": "UI1",
+  "path_basis": "repository_root",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "app/APPLICATION_RECORD.json",
+      "bytes": 1235,
+      "sha256": "182ede462ad49672c1d68a0fb2d6cf3df64040f884cd9f7f3d1f90f8cc1d766e",
+      "git_blob_sha": "a0350b512d2729072695d268ba41525bc82cd75d"
+    },
+    {
+      "path": "app/IRGS_3_3/release.json",
+      "bytes": 33175,
+      "sha256": "ad3c11a7568461e9f47391d9315c6bb447ae239116a88da368fe6a27837f69ac",
+      "git_blob_sha": "15171eadacd9ccc9051aa2b89b1a91190cc0b888"
+    },
+    {
+      "path": "app/IRGS_Web/features.py",
+      "bytes": 16080,
+      "sha256": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae",
+      "git_blob_sha": "0333e47cb40c49ac96fcc4e24640c5d18a6fc3f2"
+    },
+    {
+      "path": "app/IRGS_Web/gameplay_views.py",
+      "bytes": 13469,
+      "sha256": "cc1ce8dd418734bd98b66ef93bf8732a413a121b35a4c7b1a9d81b16c8b233b7",
+      "git_blob_sha": "372ef359918ca7e28eef381539bd6e1d7660285a"
+    },
+    {
+      "path": "app/IRGS_Web/history_views.py",
+      "bytes": 19962,
+      "sha256": "cc4d70ff4854f1b0e2b8bb6c9022c95068f331c779887e966be84b42ae163906",
+      "git_blob_sha": "39871ff0d5a4bcf2ee0ac9201b6d502615ea39a5"
+    },
+    {
+      "path": "app/IRGS_Web/opening_scene.py",
+      "bytes": 4211,
+      "sha256": "6ad795b9207412bdfeaf278e4cfda1c96cacbc71af559c80d9fdb33f83a0a460",
+      "git_blob_sha": "76a11c74cf7cc60cd90f2e106b41b82b635eb126"
+    },
+    {
+      "path": "app/IRGS_Web/README.md",
+      "bytes": 11905,
+      "sha256": "c06779d4a06d30478417ee88401c7b89fe4b061fd2b183fe6652bf06e71ba18c",
+      "git_blob_sha": "1257ff1737b30cf23bf2b9db70afc5470b29cb1a"
+    },
+    {
+      "path": "app/IRGS_Web/server.py",
+      "bytes": 29695,
+      "sha256": "1c43c036f9da3dd3462757f5ab30f2f30978f398120cbc7a5bc58824ec508b54",
+      "git_blob_sha": "e16fc7f0b877afa39959396a56d927a6def05659"
+    },
+    {
+      "path": "app/IRGS_Web/Start-IRGS.cmd",
+      "bytes": 171,
+      "sha256": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
+      "git_blob_sha": "843b7c92023f71018a4cad4018e0613a85f5dab1"
+    },
+    {
+      "path": "app/IRGS_Web/Start-IRGS.ps1",
+      "bytes": 505,
+      "sha256": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
+      "git_blob_sha": "8020205ea9a7ad3fd243aae13fc16f2ba0efa88a"
+    },
+    {
+      "path": "app/IRGS_Web/static/app.js",
+      "bytes": 105432,
+      "sha256": "d01f6fd17e603330018fd928645ee42c74252db3df1bac3e9e8ead4c5b58b6b6",
+      "git_blob_sha": "abf475b080987fab8edb0686bdf9183b453b0d93"
+    },
+    {
+      "path": "app/IRGS_Web/static/index.html",
+      "bytes": 15252,
+      "sha256": "89fc0479b1394e371a9990fd13bc00065f5167c2c41890a232a3dc8168879904",
+      "git_blob_sha": "b508959216bb439cac39ee36ce48c4190e30401a"
+    },
+    {
+      "path": "app/IRGS_Web/static/style.css",
+      "bytes": 37903,
+      "sha256": "6d529313dd3332210d83209c0e84b014792d071e75cf1460ef5a595b31f9d2c8",
+      "git_blob_sha": "b3f96aea36a0c0ec74a24881f2d5340ffba6e300"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_gameplay.py",
+      "bytes": 14311,
+      "sha256": "1ea6f689eba1ca4157aaa8dbfaa1ad598c7fd1f592ba4316cd6115b2f6f23e2f",
+      "git_blob_sha": "d8b4907f54ec6ed47fb9474efaeeba0284019494"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_gameplay_ui.js",
+      "bytes": 37831,
+      "sha256": "4a9845927d5e828cff35fdf2b35c194eaf13e169cf6dfe42d65db2a993731918",
+      "git_blob_sha": "685301f0b88784a7ccbfa14ef56976ea531bc1e7"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_history_views.py",
+      "bytes": 20318,
+      "sha256": "aec7784dd632f278f36528f8533cc10ee1d2fea131d303e4d2fe960deb4c9407",
+      "git_blob_sha": "c8ae5fb10319aa540526d49cfe97230e98e4eb0a"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_host.py",
+      "bytes": 23817,
+      "sha256": "96e4649f39525290481ae7170398d2f4d6fe5daac48f260f1eb4e9f7b2c46d2d",
+      "git_blob_sha": "adcda85c6ea760d874d91eab1d478a7baf2852b5"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_launcher.py",
+      "bytes": 5388,
+      "sha256": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6",
+      "git_blob_sha": "f746845c59501f8fd686b1e1f435d4a5b85c1799"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_stage1.py",
+      "bytes": 15887,
+      "sha256": "a317a031a86ef781c6c80597fbe809b64d10e5c963e0949426947e22b2f0c24a",
+      "git_blob_sha": "f114c976f039f35e02969d2c1c3a9a3a23421500"
+    },
+    {
+      "path": "app/IRGS_Web/tests/test_starting_flow.py",
+      "bytes": 16297,
+      "sha256": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b",
+      "git_blob_sha": "bcd51d67127e11c2fbaab1cbd31ec6411d8eebd9"
+    },
+    {
+      "path": "app/README.md",
+      "bytes": 2064,
+      "sha256": "44156d0d4601e3f64743255afda606d03af99c8385add40a0b3a4f0e8eed3fec",
+      "git_blob_sha": "ea10c63e07674268aa65cb964926abff07722ef5"
+    },
+    {
+      "path": "app/SOURCE_UI_MANIFEST.json",
+      "bytes": 20586,
+      "sha256": "942b07118181087a6708b37a1397e1dd4150abbf3feae580cf28a19762c7d397",
+      "git_blob_sha": "ee4d0b84ab16f54b483e3a165de3db56d02aa900"
+    }
+  ]
+}
