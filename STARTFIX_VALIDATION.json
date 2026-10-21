@@ -1,21 +1,112 @@
 {
-  "increment": "opening1-startfix-engine",
+  "increment": "opening1-startfix",
   "date": "2026-10-21",
   "selected_runtime_core": "3.3",
-  "scope": "Engine capitalization correction only; creation-error UI correction and fresh coverage on 3.3.3.A and main",
-  "runtime_tests_run": 458,
-  "runtime_passed": 457,
-  "external_fixture_skips": 1,
-  "new_scene_tests_passed": 20,
-  "runtime_sources_sha256": {
-    "IRGS_3_3/runtime/core_world.py": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58",
-    "IRGS_3_3/runtime/scene_setup.py": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b",
-    "IRGS_3_3/runtime/test_scene_setup.py": "a6724f7a51c29a43c5ed51799dd0b6e98ef813dbb224543c85ef6da8319ccb0b"
+  "base_commit": "5ad09722edff1c2f753b51856883c81eccf840a6",
+  "problem": "Capitalized Human rejected by human-only opening; generic creation failure reset to date selection.",
+  "change": "Compare registered human species case-insensitively, classify it as a person, preserve identity spelling; rejected creation keeps character and entry choices.",
+  "dependency_capture": {
+    "status": "captured",
+    "operation_spellings": 84,
+    "backend_operation_pairs": 169,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 86,
+    "pairs_with_failed_path_evidence": 32,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false,
+    "tests": {
+      "tests_run": 458,
+      "passed": 457,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1181,
+      "captured_executions": 2327,
+      "capture_origin_counts": {
+        "actual_apply": 2019,
+        "direct_observe": 308
+      },
+      "actual_committed_apply_count": 1921,
+      "excluded_unknown_operations": 6,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    }
   },
-  "creation_error_ui_corrected_on_this_branch": false,
-  "coverage1_report_current": false,
-  "all_branches_certified": false,
-  "general_freeform_resolution": false,
-  "combat_adjudication": false,
-  "elapsed_scope": "Whole bounded local action committed atomically; no interruptible phases/calendar scheduler"
+  "focused_checks": {
+    "startfix_engine.txt": {
+      "run": 20,
+      "seconds": 0.826,
+      "successful": true
+    },
+    "startfix_http.txt": {
+      "run": 13,
+      "seconds": 9.145,
+      "successful": true
+    }
+  },
+  "interface_checks_passed": 45,
+  "test_logs": "provenance/startfix_validation/",
+  "current_web_suite_scope": "13 opening HTTP tests; 45 interface checks. Unchanged unrelated host tests inherited from OPENING1_VALIDATION.json.",
+  "existing_saves_migrated": false,
+  "user_campaigns_created_by_checks": false,
+  "local_host_restarted": true,
+  "browser_form_reloaded": false,
+  "distribution_check": {
+    "status": "passed",
+    "extracted_files": 385,
+    "packaged_verification": {
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "development_files": 384,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "note": "Source package verified; final metadata-complete archive checked again and recorded outside itself."
+  },
+  "limits": [
+    "No change to freeform or combat resolution.",
+    "No blanket all-engine or all-branch certification."
+  ]
 }

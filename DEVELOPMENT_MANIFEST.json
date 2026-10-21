@@ -33,8 +33,8 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 5300,
-      "sha256": "e42c120bf672cf91acb614741fbd04573cb7ff578511e6c82019709fd1013d9c"
+      "bytes": 5812,
+      "sha256": "b9226c9049a2272a86973f9fac129fc3ccfabb3a6d2cd658a84fbfa477e2617f"
     },
     {
       "path": "COVERAGE1_VALIDATION.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 2465,
-      "sha256": "bd2d6dd0592e7282770b95d73796fffbb228ea947d0e8bf09ae086fe6eda6190"
+      "bytes": 2473,
+      "sha256": "56b9f3fe3b0680d391359a68339ac271354c3bc58adf2ab098bf5d7bcdd34bb9"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -938,8 +938,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 34938,
-      "sha256": "fff6901c3fce3a0ddea6a5bc46258f959e438651c08ee176dbdccae225915a3d"
+      "bytes": 34925,
+      "sha256": "988b6efaa97f17bba689da15770b2f1f15bc0159d920268dcf7208c99dd47ea0"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1458,8 +1458,8 @@
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 116193,
-      "sha256": "472e3e5d34d85ecbd269561e333cb88ed7a1d0f9db9c459ee282f471c819be24"
+      "bytes": 116102,
+      "sha256": "db30be25799acd3df3dd91ff0cd98957f27a042872e782f02d5e1232f91ffce5"
     },
     {
       "path": "IRGS_Web/static/index.html",
@@ -1483,8 +1483,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 57992,
-      "sha256": "d20f10f97d510b10ee6785935e0f8cc7efbe44c02b38ae9c073e4f58176aac5c"
+      "bytes": 59551,
+      "sha256": "093f7c681883d6115a15ff721471577c73b2ab84fb066a0141a4cc43f7d85e21"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1503,8 +1503,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_scene_play.py",
-      "bytes": 11763,
-      "sha256": "cc4f6e861f8108f27198bc338d6366598518bed6ef8c4873e54364be6daa6682"
+      "bytes": 12170,
+      "sha256": "4c074c5a67eb1a90548af6ef94e66204f5c68d433a206e27ad23f0343e7ce5d8"
     },
     {
       "path": "IRGS_Web/tests/test_stage1.py",
@@ -1523,8 +1523,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4143,
-      "sha256": "ef4aff4cec75a6b4631083ce3c58bc9f75d232f6068c7bfd80cbed3262c3d7e8"
+      "bytes": 3730,
+      "sha256": "7d17c2951c9665b00c9d4e5b6bfd566f86bb588017b8925f3f31eac171acccff"
     },
     {
       "path": "ROADMAP.md",
@@ -1538,8 +1538,8 @@
     },
     {
       "path": "STARTFIX_VALIDATION.json",
-      "bytes": 1013,
-      "sha256": "def69614c8d0fe620b85ca87f0373f9284c2b09c5aa72540688c69500918edfb"
+      "bytes": 3688,
+      "sha256": "7861e5969a486e301449a69f3e8bd6415de7b31b9086ab270b906133299eaf8e"
     },
     {
       "path": "Start-IRGS.cmd",
@@ -1593,8 +1593,8 @@
     },
     {
       "path": "engine/OPERATION_COVERAGE.md",
-      "bytes": 12108,
-      "sha256": "d829e32e2dca20023a7ee046d8b53dbf6b4e0b7640257f74819cb01cde02a7cc"
+      "bytes": 12109,
+      "sha256": "ed9c1c9ff121960d36dc9e9ab98a015a9ebb480916333d9b1715c18ffbd5511f"
     },
     {
       "path": "engine/PACKAGE_MANIFEST.json",
@@ -1733,8 +1733,8 @@
     },
     {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 8957927,
-      "sha256": "93816a3cda5542dec67fdfd549fac15eb212af80ad2e87f20eab29a61cd79bb6"
+      "bytes": 8960745,
+      "sha256": "82aeeab492d307c1e096338202973fcc274682d21ca1d2c4796753f184bb57c3"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
@@ -1865,6 +1865,26 @@
       "path": "provenance/opening1_validation/opening1_web_scene_final.txt",
       "bytes": 11917,
       "sha256": "17e274aaf7eb58e79594f973e9334c3f228bd2bb5e4de42bd780f147eeb0d4c8"
+    },
+    {
+      "path": "provenance/startfix_validation/startfix_capture_runtime.txt",
+      "bytes": 572,
+      "sha256": "6aa837025c764633f43dfd499e18b5e639874a7dbf20eba5fe5654d6b4a38af2"
+    },
+    {
+      "path": "provenance/startfix_validation/startfix_engine.txt",
+      "bytes": 102,
+      "sha256": "3c66ba633e366f62eba16b74b02126f824b0c043a14aff4d65859237dc4e58da"
+    },
+    {
+      "path": "provenance/startfix_validation/startfix_http.txt",
+      "bytes": 12492,
+      "sha256": "4a2688bb8b6010459463b2b19ae39e327440c7b4e5e94cd37e8dac99b4b9ed6e"
+    },
+    {
+      "path": "provenance/startfix_validation/startfix_ui.txt",
+      "bytes": 4245,
+      "sha256": "575813b8c3073206e276cd5ea5541445fc2da2c1154b6dbcf450c566113ea8e2"
     },
     {
       "path": "tools/build_operation_register.py",

@@ -231,6 +231,14 @@ class ScenePlayTests(unittest.TestCase):
                 self.create(**changes)
             self.assertEqual(self.store.listing(), [])
 
+    def test_capitalized_human_starts_the_reviewed_opening(self):
+        view = self.create(species='Human')
+        self.assertEqual(view['character']['species'], 'Human')
+        self.assertEqual(view['scene']['location'], 'quay')
+        self.assertTrue(view['capabilities']['playable_opening'])
+        self.assertTrue(view['supported_actions'])
+        self.assertEqual(len(self.store.listing()), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

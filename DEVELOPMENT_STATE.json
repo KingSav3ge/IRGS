@@ -38,9 +38,9 @@
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
   "next_milestone": "Extend this playable opening with qualified dialogue/offers, shared timed phases and broader dependency cases.",
   "verified_on": "2026-10-21",
-  "validation_record": "OPENING1_VALIDATION.json",
+  "validation_record": "STARTFIX_VALIDATION.json",
   "continuation": {
-    "id": "opening1",
+    "id": "opening1-startfix",
     "integration_base": "32d0debaf46865c8cff55625e292105867a281dc",
     "completed_items": [
       "DEV-01",
@@ -56,7 +56,7 @@
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "coverage1",
+    "previous_increment": "opening1",
     "operation_coverage_register": "engine/qualification/operation_register.json",
     "operation_spellings": 84,
     "backend_operation_contracts": 169,

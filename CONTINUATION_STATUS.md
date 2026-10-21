@@ -35,3 +35,7 @@ The coverage capture also records 381 refused post-state matches across legacy c
 ## Opening1 — playable local scene
 
 The 1415 new-character setup now offers an optional reviewed fictional opening, **A dispatch before departure**. It supports repeated local observation, movement, blocked attempts, delivery and continued return movement. Actual location, knowledge, conserved dispatch and explicitly selected elapsed seconds persist together with durable successful/unsuccessful outcomes. Existing starts receive no automatic scene or migration. See [implementation and limits](engine/PLAYABLE_OPENING_IMPLEMENTATION.md) and OPENING1_VALIDATION.json. General freeform, combat, dialogue, interrupted phases and autonomous wider play remain unavailable.
+
+## Campaign-start correction
+
+The authored human-only opening now compares the registered species without case sensitivity, preserving the selected identity spelling. `Human` and `human` can both start; genuinely different species remain unavailable. A rejected creation request returns to character details with the campaign, entry and exact text retained, instead of restarting date selection. Lost-acknowledgement recovery retains its prior request identity. See STARTFIX_VALIDATION.json for executed scope.

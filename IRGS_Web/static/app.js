@@ -635,7 +635,7 @@ $('#create-form').onsubmit=async event=>{
     if(record.status==='trashed'){writeLocal('irgs-create-pending',null);$('#create-dialog').close();view='trash';render();notice('This Start request already created a campaign that is now in Trash. Restore it there.');return;}
     await refreshList(record.id);workspaceMode='player';featuresRequest+=1;features=[];drawFeatureNav();view='story';await loadFeatureNav({applyRoute:false});await openCampaign(record.id);updateViewRoute('story');writeLocal('irgs-create-pending',null);$('#create-dialog').close();notice('Campaign started with the character and starting choices you reviewed.');
   }catch(error){notice(error.message,true);$('#create-error').textContent=error.message;
-    if(error.status===400){writeLocal('irgs-create-pending',null);reviewSelection=null;startingOptions=null;wizardStep=1;$('#create-error').textContent=error.message+' Review a fresh starting point and character selection.';if($('#create-profile').value==='__hyw'&&historicalEntryId){setBusy(false);await selectHistoricalEntry(historicalEntryId,true);setBusy(true);}}
+    if(error.status===400){writeLocal('irgs-create-pending',null);reviewSelection=null;wizardStep=2;$('#create-error').textContent=error.message+' Check your character details and review again. Your entries have been kept; use Back if you need to change the starting point.';}
     else if(reviewSelection){reviewSelection.recovery=true;renderReview(payload,true);}
   }finally{setBusy(false);}
 };
