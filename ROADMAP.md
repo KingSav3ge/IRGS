@@ -4,6 +4,8 @@ D1 assembles the complete development sources. The selected executable foundatio
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for the ordered continuation checklist, stable task IDs, dependencies and completion evidence. Start with DEV-01–DEV-04; qualify their dependencies and recovery as part of that first playable action.
 
+Opening1 adds a reviewed fictional Solo opening at 1415 with bounded local movement, observation, failed attempts and conserved delivery. See [the implementation record](engine/PLAYABLE_OPENING_IMPLEMENTATION.md). Broader phases, NPC agency and continued campaign play remain unfinished.
+
 Continuation status: DEV-01–DEV-04 now have a bounded equipment-action implementation and connected Solo flow. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for qualification and limits. DEV-05 now supplies [the operation coverage register](engine/OPERATION_COVERAGE.md); continue with the broader dependency cases under DEV-06–DEV-08 below; the general C2 resolver remains unfinished.
 
 ## 1. Resolve one consequential action

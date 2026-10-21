@@ -89,6 +89,10 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05
 
 **Completion evidence:** each delivered capability has an accurate status, reproducible tests and a clean distribution. Engine-only or app-only progress does not claim an end-to-end feature until the connected cycle works.
 
+## Current playable-opening increment
+
+Opening1 advances DEV-10, DEV-12–DEV-14, DEV-18 and DEV-25 with an optional reviewed fictional 1415 delivery scene. Local movement, observation, failed attempts, stock transfer and elapsed seconds have durable outcomes. These broad tasks remain open: there is no interruption/phase scheduler, hidden search, dialogue, combat or autonomous NPC response. See [the implementation record](engine/PLAYABLE_OPENING_IMPLEMENTATION.md) and OPENING1_VALIDATION.json.
+
 ## Start here
 
 Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 83 operation spellings across 168 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.

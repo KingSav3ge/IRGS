@@ -23,7 +23,7 @@ New historical playthroughs use their verified dated snapshots. Continuing playt
 
 Only committed effects and legitimate received records can support player-facing results. Testimony, beliefs, offers and obligations retain their actual status. Preserve actor-scoped filtering and never substitute a full template or raw save for a player's known view.
 
-Offer contextual response suggestions alongside an editable own-response field. Suggestions are intentions, not guaranteed successful or even feasible solutions. Keep risky approaches; do not filter choices using hidden truth to reveal a winning option. Selecting a draft commits no action. The current equipment action is a separate explicit structured operation; freeform and combat responses still record unresolved declarations.
+Offer contextual response suggestions alongside an editable own-response field. Suggestions are intentions, not guaranteed successful or even feasible solutions. Keep risky approaches; do not filter choices using hidden truth to reveal a winning option. Selecting a draft commits no action. The equipment action and optional authored local opening use explicit structured operations; freeform and combat responses still record unresolved declarations.
 
 ## Saves and local hosting
 

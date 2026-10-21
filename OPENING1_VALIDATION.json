@@ -1,25 +1,147 @@
 {
-  "increment": "opening1-engine",
+  "increment": "opening1",
+  "edition": "3.3.3-D1-opening1",
   "date": "2026-10-21",
   "selected_runtime_core": "3.3",
-  "scope": "Engine handlers/setup only; integrated Solo UI and fresh coverage on 3.3.3.A and main",
-  "runtime_tests_run": 457,
-  "runtime_passed": 456,
-  "external_fixture_skips": 1,
-  "new_scene_tests_passed": 19,
-  "runtime_sources_sha256": {
-    "IRGS_3_3/runtime/core_world.py": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5",
-    "IRGS_3_3/runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
-    "IRGS_3_3/runtime/starting_selection.py": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3",
-    "IRGS_3_3/runtime/scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
-    "IRGS_3_3/runtime/scene_setup.py": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699",
-    "IRGS_3_3/runtime/test_scene_actions.py": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10",
-    "IRGS_3_3/runtime/test_scene_setup.py": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f"
+  "integration_base": "f0fca9ef4fcac01b32dcea91a277ec6b28ec06c1",
+  "scope": "Opt-in authored fictional local Solo opening; not complete campaign or all C2 adoption",
+  "runtime": {
+    "run": 457,
+    "seconds": 35.646,
+    "successful": true,
+    "log": "provenance/opening1_validation/opening1_runtime.txt",
+    "passed": 456,
+    "expected_external_fixture_skips": 1
   },
-  "ui_opening_connected_on_this_branch": false,
-  "coverage1_report_current": false,
-  "all_branches_certified": false,
-  "general_freeform_resolution": false,
-  "combat_adjudication": false,
-  "elapsed_scope": "Whole bounded local action committed atomically; no interruptible phases/calendar scheduler"
+  "web": {
+    "run": 125,
+    "seconds": 62.77,
+    "successful": true,
+    "log": "provenance/opening1_validation/opening1_web.txt"
+  },
+  "final_content_scene_web": {
+    "run": 12,
+    "seconds": 8.14,
+    "successful": true,
+    "log": "provenance/opening1_validation/opening1_web_scene_final.txt"
+  },
+  "ui": {
+    "passed": 44,
+    "log": "provenance/opening1_validation/opening1_ui.txt"
+  },
+  "tooling": {
+    "run": 19,
+    "seconds": 1.962,
+    "successful": true,
+    "log": "provenance/opening1_validation/opening1_tools.txt"
+  },
+  "dependency_capture": {
+    "status": "captured",
+    "operation_spellings": 84,
+    "backend_operation_pairs": 169,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 86,
+    "pairs_with_failed_path_evidence": 32,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false,
+    "tests": {
+      "tests_run": 457,
+      "passed": 456,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1174,
+      "captured_executions": 2252,
+      "capture_origin_counts": {
+        "actual_apply": 1944,
+        "direct_observe": 308
+      },
+      "actual_committed_apply_count": 1846,
+      "excluded_unknown_operations": 6,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    }
+  },
+  "new_operation": {
+    "backend": "CoreWorld",
+    "operation": "execute_player_scene_action",
+    "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
+    "successful_observations": 52
+  },
+  "source_input_count": 260,
+  "browser_check": {
+    "synthetic_only": true,
+    "reviewed_fiction_and_durations": true,
+    "blocked_gate": true,
+    "movement": true,
+    "conserved_delivery": true,
+    "reload_retains_outcome_and_custom_draft": true,
+    "next_action_available": true,
+    "screenshot_sha256": "be1065ddbbe49551927858c0a0f002531450ef80b9cc4b5916775f29071827f2"
+  },
+  "distribution_check": {
+    "status": "passed",
+    "extracted_files": 380,
+    "packaged_verification": {
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "development_files": 379,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "note": "Source package extraction verified; final metadata-complete archive checked again and recorded outside its own manifest."
+  },
+  "limits": [
+    "Single host/writer and atomic local durations only; no power-loss or multi-process claim.",
+    "No interruptible phase, restored-branch fencing, civil date advance or scheduled expedition.",
+    "No general freeform, dialogue, combat, narrator or autonomous NPC adjudication.",
+    "No existing save migration; historical actors and historical snapshot remain untouched.",
+    "Coverage is current named synthetic observations, not all-branch/all-engine certification."
+  ],
+  "environment_notes": [
+    "Initial sandbox socket tests refused with WinError10013; integrated loopback tests passed outside sandbox.",
+    "An initial capture was discarded by its pre/post source guard after review wording changed; the final capture was fresh."
+  ]
 }

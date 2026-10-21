@@ -269,15 +269,20 @@ class Store:
             return self._supported_action(data)
 
     def _supported_action(self, data):
-        allowed = {'id', 'revision', 'request_id', 'actor', 'kind', 'order_id', 'text', 'mode'}
+        allowed = {'id', 'revision', 'request_id', 'actor', 'kind', 'order_id', 'action_id', 'text', 'mode'}
         if not isinstance(data, dict) or set(data) - allowed:
             raise ValueError('Use the supplied supported action without changing its parameters')
-        if data.get('kind') != 'issue_equipment':
+        kind = data.get('kind')
+        if kind not in ('issue_equipment', 'scene_action'):
             raise ValueError('This action type is not supported')
+        identifier = 'order_id' if kind == 'issue_equipment' else 'action_id'
+        other_identifier = 'action_id' if kind == 'issue_equipment' else 'order_id'
+        if other_identifier in data:
+            raise ValueError('Use only the selected action’s parameters')
         if not isinstance(data.get('actor'), str) or not data['actor']:
             raise ValueError('Explicitly select the player character making this request')
-        if not isinstance(data.get('order_id'), str) or not data['order_id']:
-            raise ValueError('Select a received equipment order')
+        if not isinstance(data.get(identifier), str) or not data[identifier]:
+            raise ValueError('Select a supplied action')
         text = data.get('text')
         if not isinstance(text, str) or not text.strip() or len(text) > 10000:
             raise ValueError('Describe the selected action using between 1 and 10000 characters')
@@ -287,7 +292,7 @@ class Store:
         record = self.read(data['id'])
         actor = controlled_actor(record['state'], data['actor'])
         payload = {'campaign_id': record['id'], 'actor': actor, 'kind': data['kind'],
-                   'order_id': data['order_id'], 'text': text}
+                   identifier: data[identifier], 'text': text}
         signature = digest(payload)
         saved = record.get('gameplay_requests', {}).get(request_id)
         if saved is not None:
@@ -303,24 +308,34 @@ class Store:
             raise ValueError('A declaration is awaiting resolution. Withdraw it before choosing another action.')
         world = CoreWorld(state=record['state'])
         from player_actions import equipment_options, execute_equipment_action
+        from scene_actions import scene_options, execute_scene_action
+        options = equipment_options(world.s, actor) if kind == 'issue_equipment' else scene_options(world.s, actor)
         reference = 'explicit-player-request:' + record['id'] + ':' + request_id
-        choice = next((option for option in equipment_options(world.s, actor)
-                       if option['order_id'] == payload['order_id']), None)
+        choice = next((option for option in options if option[identifier] == payload[identifier]), None)
+        if kind == 'scene_action' and choice is None:
+            raise ValueError('This opening action is not available. Reload the campaign to review your options.')
         if choice is not None and text != choice['text']:
-            raise ValueError('Use the exact listed equipment action. To choose different words or intent, '
+            raise ValueError('Use the exact listed action. To choose different words or intent, '
                              'write your own response in the declaration box.')
         try:
-            resolved = execute_equipment_action(world, 'gameplay:' + request_id, actor,
-                {'kind': payload['kind'], 'order_id': payload['order_id']}, reference)
+            execute = execute_equipment_action if kind == 'issue_equipment' else execute_scene_action
+            resolved = execute(world, 'gameplay:' + request_id, actor,
+                {'kind': kind, identifier: payload[identifier]}, reference)
         except (InvalidEvent, AssertionError, KeyError, TypeError, ValueError):
-            # Permission, stock and other private validation facts do not become
-            # knowledge merely because the player tried an action.
-            raise ValueError('This equipment issue could not be completed. No equipment was moved. '
-                             'Reload the campaign to review your received orders.') from None
+            # Private validation facts do not become knowledge on a failed request.
+            message = ('This equipment issue could not be completed. No equipment was moved. '
+                       'Reload the campaign to review your received orders.' if kind == 'issue_equipment'
+                       else 'This opening action could not be accepted. No action was committed. '
+                            'Reload the campaign to review your options.')
+            raise ValueError(message) from None
+        elapsed = ({'axis': 'authored-opening-seconds',
+                    'duration_seconds': resolved['outcome']['elapsed_seconds'],
+                    'total_seconds': resolved['outcome']['elapsed_total']}
+                   if kind == 'scene_action' else None)
         result = safe_result({'request_id': request_id, 'campaign_id': record['id'], 'actor': actor,
             'kind': payload['kind'], 'declaration': text, 'status': resolved['status'],
             'revision': record['revision'] + 1, 'recorded_sequence': world.s['clock'],
-            'elapsed_time': None, 'narrative': None,
+            'elapsed_time': elapsed, 'narrative': None,
             'outcome': resolved['outcome'], 'receipt': resolved['receipt']})
         record.setdefault('gameplay_requests', {})[request_id] = {
             'campaign_id': record['id'], 'actor': actor, 'kind': payload['kind'],

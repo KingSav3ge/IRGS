@@ -17,7 +17,7 @@ def build_opening(state, actor_id):
     blocks = [{'kind': 'character', 'text': 'You are ' + actor['name'] + '.', 'source_ids': []}]
     scene = projection['scene']
     if scene.get('location'):
-        blocks.append({'kind': 'scene', 'text': 'Your recorded location: ' + str(scene['location']), 'source_ids': []})
+        blocks.append({'kind': 'scene', 'text': 'Your recorded location: ' + str(scene.get('title') or scene['location']), 'source_ids': []})
     else:
         blocks.append({'kind': 'scene', 'text': 'Your current location and nearby people have not been established.', 'source_ids': []})
     evidence = [item for item in projection['evidence'] if item['id'] != 'setup:background-details']
@@ -35,7 +35,11 @@ def build_opening(state, actor_id):
         blocks.append({'kind': 'received_record', 'text': 'Received order:\n' + received['content'],
                        'content': received['content'], 'status': 'received', 'source_kind': 'received_order',
                        'record_id': received['id'], 'source_ids': []})
-    blocks.append({'kind': 'first_decision', 'text': PROMPT, 'source_ids': []})
+    prompt = ('Use a listed action to move, observe or deliver the dispatch in your selected fictional opening. '
+              'The actual result and stated local duration will be saved; an attempt can fail. '
+              'Your own written response remains available as unresolved intent.'
+              if projection['capabilities'].get('playable_opening') else PROMPT)
+    blocks.append({'kind': 'first_decision', 'text': prompt, 'source_ids': []})
     return {'id': 'opening:' + state['campaign_id'], 'version': VERSION,
         'scope_campaign_id': state['campaign_id'], 'actor_id': actor_id, 'title': 'Your opening', 'blocks': blocks,
         'presented_at_sequence': state['clock'], 'effects_applied': False,
@@ -51,6 +55,11 @@ def opening_view(state, actor_id, *, requests=None, save_id=None):
         ('id', 'version', 'title', 'blocks', 'presented_at_sequence', 'effects_applied', 'narration', 'presentation_only')}
     statuses = []
     for event in state.get('journal', []):
+        if (event['op'] in ('execute_player_scene_action', 'execute_player_equipment_issue')
+                and event.get('params', {}).get('actor') == actor_id
+                and event['at'] >= opening['presented_at_sequence']):
+            statuses.append('completed')
+            continue
         if (event['op'].removeprefix('ast_') != 'record_player_action' or event.get('params', {}).get('actor') != actor_id
                 or event['at'] < opening['presented_at_sequence']):
             continue
@@ -60,5 +69,6 @@ def opening_view(state, actor_id, *, requests=None, save_id=None):
                      and request.get('kind') == 'declaration' and request.get('status') == 'withdrawn')
         statuses.append('withdrawn' if withdrawn else 'declared')
     result['status'] = ('first_action_declared' if 'declared' in statuses else
+                        'interaction_started' if 'completed' in statuses else
                         'first_attempt_withdrawn' if statuses else 'awaiting_first_action')
     return result

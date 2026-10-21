@@ -63,7 +63,7 @@ Use the unified helpers for new development distributions. Inherited `IRGS_3_3/b
 
 The literal GitHub branch `main` is the unified 3.3.3 development baseline. Engine/Core work uses `3.3.3.E`; Website/App work uses `3.3.3.A`. Bring the current unified main into the relevant working branch through a normal merge or fast-forward before continuing, preserving any newer work. Integrations back to main retain both sides.
 
-The first bounded equipment action is implemented and connected to the Solo app. Continue with operation-level dependency qualification; elapsed phases and broader gameplay still require implementation. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
+The equipment action and optional authored 1415 Solo opening are connected to the app. The opening supports repeated observation, local movement and dispatch delivery with atomic local durations and durable successful/unsuccessful outcomes. Wider gameplay, interruptible elapsed phases and operation-level dependency qualification remain work. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
 
 ## Operation coverage and evidence freshness
 

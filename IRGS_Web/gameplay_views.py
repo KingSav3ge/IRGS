@@ -165,19 +165,33 @@ def playthrough(record, actor_id=None, *, mode='player'):
     pending = pending_declaration(record, actor_id) if actor_id else None
     exists = character_exists(state, actor_id)
     from player_actions import equipment_options
-    supported = equipment_options(state, actor_id) if exists and pending is None and actor_id else []
+    from scene_actions import scene_options
+    scene_supported = scene_options(state, actor_id) if exists and actor_id else []
+    supported = (equipment_options(state, actor_id) + scene_supported
+                 if exists and pending is None and actor_id else [])
+    rules = state.get('scene_rules', {})
+    # Reuse the engine's received-map and current-control checks. Never expose
+    # hidden conditions or the rest of an authored action rule in this view.
+    scene_scope = bool(scene_supported)
+    place = rules.get('places', {}).get(location, {}) if scene_scope else {}
+    elapsed = state.get('elapsed_time', {})
+    elapsed_view = ({'axis': elapsed['axis'], 'seconds': elapsed['seconds']}
+                    if scene_scope and elapsed.get('axis') == 'authored-opening-seconds'
+                    and type(elapsed.get('seconds')) is int else None)
     from response_options import response_choices
     prompt = response_choices(state, actor_id) if exists and actor_id else None
     completed = [safe_result(request['result']) for request in record.get('gameplay_requests', {}).values()
                  if request.get('campaign_id') == record['id'] and request.get('actor') == actor_id
-                 and request.get('kind') == 'issue_equipment'
-                 and request.get('status') == 'completed_successfully']
+                 and request.get('kind') in ('issue_equipment', 'scene_action')
+                 and request.get('status') in ('completed_successfully', 'completed_unsuccessfully')]
     result = {'id': record['id'], 'name': record['name'], 'revision': record['revision'], 'mode': mode,
         'actor_id': actor_id, 'requires_character': actor_id is None,
         'character_available': exists,
         'controlled_actors': [_identity(state['actors'][key]) for key in player_ids(state) if key in state['actors']],
         'binding': binding, 'campaign_time': time,
-        'scene': {'title': location or 'Current scene', 'location': location,
+        'elapsed_time': elapsed_view,
+        'scene': {'title': place.get('title') or location or 'Current scene', 'location': location,
+                  'scope': 'authored_fiction' if scene_scope else None,
                   'description': copy.deepcopy(current.get('current_activity', current.get('last_confirmed_activity', 'No character-observed scene record is available.')))},
         'character': character, 'known_actors': identities, 'evidence': evidence, 'orders': orders,
         'inventory': inventory, 'pending_declaration': pending,
@@ -192,7 +206,8 @@ def playthrough(record, actor_id=None, *, mode='player'):
         'chronicle': _chronicle(state, actor_id, evidence, orders, creator),
         'capabilities': {'can_declare': exists and pending is None, 'can_withdraw': pending is not None,
                          'action_resolution': False, 'narrator': False, 'time_advance': False,
-                         'supported_action_resolution': bool(supported),
+                         'supported_action_resolution': bool(supported), 'playable_opening': bool(scene_scope),
+                         'elapsed_scope': 'authored_opening_only' if scene_scope else None,
                          'creator_inspection': creator, 'inventory_scope': 'explicit_inspection_grants_only'}}
     if creator:
         result['clock'] = state['clock']
@@ -231,10 +246,14 @@ def playthrough(record, actor_id=None, *, mode='player'):
                 'text': 'The player withdrew this unresolved attempt; the original declaration remains recorded.',
                 'actor_ids': [request['actor']], 'recorded_at': request['result']['recorded_sequence'],
                 'status': 'withdrawn_not_executed', 'source_available': True, 'source_refs': []})
-        elif request.get('kind') == 'issue_equipment' and request.get('status') == 'completed_successfully':
+        elif (request.get('kind') in ('issue_equipment', 'scene_action')
+              and request.get('status') in ('completed_successfully', 'completed_unsuccessfully')):
             saved = safe_result(request['result'])
             result['chronicle'].append({'id': 'outcome:' + saved['request_id'],
-                'kind': 'action_completed', 'title': 'Equipment issued',
+                'kind': 'action_completed',
+                'title': ('Equipment issued' if request['kind'] == 'issue_equipment'
+                          else 'Action unsuccessful' if saved['status'] == 'completed_unsuccessfully'
+                          else 'Opening action completed'),
                 'text': saved['outcome']['summary'], 'actor_ids': [request['actor']],
                 'recorded_at': saved['recorded_sequence'], 'status': saved['status'],
                 'source_available': True, 'source_refs': [saved['receipt']['event_id']]})

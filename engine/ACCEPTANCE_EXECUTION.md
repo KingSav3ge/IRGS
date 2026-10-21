@@ -15,3 +15,7 @@
 `runtime/response_options.py` and its tests additionally qualify actor-scoped received response drafts, including risky options that are not filtered into guaranteed success. The UI suite verifies draft-only selection, custom editing, scope, recovery and truthful outcomes. Suggestions do not adjudicate combat, select dice, grant feasibility or advance time.
 
 Actual combined full-suite results and their logs are in [integrated main's ACTION1_VALIDATION.json](https://github.com/KingSav3ge/IRGS/blob/main/ACTION1_VALIDATION.json); the engine branch alone does not claim that its older host contains the connected UI. Preserve future case execution results as distinct records with test locations, dates, scope and limitations. Movement, dialogue adjudication, durable phases, restored branches and full institutional execution require further implementations and evidence.
+
+## Opening1 scoped extension
+
+The authored local scene extends repeated action, exact retry, actor knowledge, conserved transfer and ordinary movement evidence. Runtime scene/setup tests plus real loopback scene tests cover actual duration, blocked/depleted outcomes, current control, failed persistence and concurrent duplicate. This is one-transaction local duration, not scheduled phases or general C2 completion. See PLAYABLE_OPENING_IMPLEMENTATION.md and OPENING1_VALIDATION.json.
