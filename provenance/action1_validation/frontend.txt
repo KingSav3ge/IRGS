@@ -1,0 +1,42 @@
+PASS Player campaign loading uses a token and filtered playthrough only
+PASS Player mode rejects an accidental raw state response
+PASS A delayed A response cannot replace visible selection B
+PASS Creator raw access requires an explicit mode switch
+PASS Lost declaration acknowledgement retrieves its result without a second POST and preserves edited draft
+PASS Unknown declaration transport retains exact identity and checks before retry
+PASS Withdrawal is a distinct explicit metadata request
+PASS Only supplied equipment orders render and inspection never executes them
+PASS A completed equipment action updates the visible world and permits a second action
+PASS A lost equipment acknowledgement retrieves its committed result without another POST
+PASS Equipment transport survives reload with its exact kind, order and intent before retry
+PASS Equipment execution is blocked by pending intent, unavailable characters and stale controls
+PASS A rejected equipment action preserves the draft and never invents a completed outcome
+PASS Wizard navigation and cancellation create no campaign; new character is mandatory
+PASS Final review retains exact create ID and choices across a lost response and reload recovery
+PASS Archived AST is excluded from new authoring choices while legacy saves still load
+PASS HYW all 37 entries remain inspectable; proposed entries cannot proceed and stale previews lose
+PASS Review rejects changed choices and safe source rendering excludes unsafe URLs
+PASS Reading settings, tabs and temporary inspectors perform no world writes
+PASS Source gaps and timestamp objects are shown without invented transcript or date
+PASS A delayed creator catalogue cannot reopen a campaign after a newer selection
+PASS A delayed institution inspector cannot replace a later character inspector
+PASS Chronicle discards an earlier search that finishes after the latest one
+PASS An unavailable character remains selected with an explicit blocked action state
+PASS An authored eligible faction policy requires its actual representative and reviews exact powers
+PASS Ineligible or representative-less factions never become offered control choices
+PASS Ordinary New opens the configured campaign directory without fetching technical profiles
+PASS Clicking the verified 1415 entry carries its exact hash through character review and stable creation retry
+PASS A changed snapshot hash blocks the selected directory entry before character creation
+PASS Structured fields are optional testimony, omit existing-character edits and do not infer an employer
+PASS Own received background details display as testimony and a claimed position stays unconfirmed
+PASS The role-filtered registry supports child deep links and denies privileged route metadata in player mode
+PASS Navigation fetch failures expose a safe retry and late Creator metadata cannot replace player navigation
+PASS Opening presentation shows only supplied actor-safe blocks and never becomes a Chronicle occurrence
+PASS Historical assessment requires explicit Creator mode and drops delayed results after switching away
+INFO Current registry routes checked: 81 player / 131 Creator.
+PASS Every current registry node has an addressable safe route in its authorized workspace
+PASS Contextual response suggestions fill an editable draft without sending or implying an outcome
+PASS The player can replace a suggested answer and only an explicit submission records it
+PASS Response drafts and displayed choices stay scoped to their campaign, actor and current prompt
+PASS Combat wording assistance uses only received choices and never invents combat resolution
+40 frontend checks passed. No real save or live server was used.

@@ -1,0 +1,80 @@
+{
+  "increment": "action1",
+  "date": "2026-10-21",
+  "status": "CHECKS_PASSED",
+  "selected_core": "3.3",
+  "tests": {
+    "runtime": {
+      "run": 438,
+      "passed": 437,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 36.633,
+      "log": "provenance/action1_validation/runtime.txt",
+      "log_sha256": "847f52665bb9cd72992e270d62b9d97d490fe3dd4929f74d34ee5f7a80362d19"
+    },
+    "web": {
+      "run": 113,
+      "passed": 113,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 54.923,
+      "log": "provenance/action1_validation/web.txt",
+      "log_sha256": "48d97b6e3530416179e1a244f1390fc89be931467807496c02f66ef5e3bc3ce8"
+    },
+    "frontend": {
+      "checks": 40,
+      "passed": 40,
+      "log": "provenance/action1_validation/frontend.txt",
+      "log_sha256": "58c997ef5d346b974b2911c16bdd369a7c3d520e06e09473c18882644330e255"
+    }
+  },
+  "expected_skip": "Unbundled historical user-save preservation fixture",
+  "browser_check": {
+    "passed": true,
+    "scope": "Temporary synthetic loopback campaign only",
+    "verified": [
+      "risky suggestion fills draft without submitting",
+      "custom response remains editable",
+      "own-response button preserves edits",
+      "equipment outcome visible",
+      "outcome and separate unsent draft survive reload"
+    ],
+    "existing_campaigns_opened": false
+  },
+  "distribution_smoke": {
+    "status": "PASSED",
+    "archive": "IRGS_3_3_3_Action1_Development.zip",
+    "extracted_files": 356,
+    "selected_source_verified": true,
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "scope": "Clean extraction and read-only host smoke; full gameplay covered by separate HTTP tests."
+  },
+  "C2_full_inventory_execution_claimed": false,
+  "qualification_limits": [
+    "one bounded equipment operation",
+    "single host and writer",
+    "no general freeform or combat resolution",
+    "no elapsed phases or restore fencing",
+    "R9 reviewed JSON handlers, whole-list dependency granularity"
+  ]
+}

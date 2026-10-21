@@ -23,6 +23,8 @@ New historical playthroughs use their verified dated snapshots. Continuing playt
 
 Only committed effects and legitimate received records can support player-facing results. Testimony, beliefs, offers and obligations retain their actual status. Preserve actor-scoped filtering and never substitute a full template or raw save for a player's known view.
 
+Offer contextual response suggestions alongside an editable own-response field. Suggestions are intentions, not guaranteed successful or even feasible solutions. Keep risky approaches; do not filter choices using hidden truth to reveal a winning option. Selecting a draft commits no action. The current equipment action is a separate explicit structured operation; freeform and combat responses still record unresolved declarations.
+
 ## Saves and local hosting
 
 This development tree starts clean. Existing user campaigns remain in the original installation. Do not copy or migrate them as part of ordinary setup. Use synthetic fixtures and temporary save directories for checks. Keep saves, Trash contents, host process metadata, caches, credentials and newly generated runtime logs out of source distributions. The explicitly preserved historical validation files remain labelled source evidence.

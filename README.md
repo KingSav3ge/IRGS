@@ -11,10 +11,13 @@ Start the local site with [Start-IRGS.cmd](Start-IRGS.cmd). It verifies the inst
 | Applied C2 engine specification | [engine/Core/IRGS_Core_3_3_3_E_C2.md](engine/Core/IRGS_Core_3_3_3_E_C2.md) |
 | Development workflow | [DEVELOPMENT.md](DEVELOPMENT.md) |
 | Remaining implementation and gates | [ROADMAP.md](ROADMAP.md) |
+| Prioritised continuation checklist | [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) |
 | Current verification evidence | [VALIDATION.json](VALIDATION.json) |
 | Published source records | `provenance/` and [DEVELOPMENT_STATE.json](DEVELOPMENT_STATE.json) |
 
-Setup requires a selected character; dated availability, filtered inspection, exact-intent recovery, withdrawal and recoverable campaign Trash are implemented. The runtime also supports observed event frontiers and specific domain operations. General player action resolution, elapsed-time gameplay and the complete autonomous institutional cycle remain implementation work. C2's 121 acceptance cases remain required and unexecuted.
+Setup requires a selected character; dated availability, filtered inspection, exact-intent recovery, withdrawal and recoverable campaign Trash are implemented. The first continuation increment adds a bounded authorized equipment action with an atomic outcome and recoverable receipt, plus contextual response drafts and an editable own-response field. Suggested approaches may fail; they are not a list of guaranteed solutions. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope and evidence.
+
+General freeform action resolution, combat adjudication, elapsed-time gameplay and the complete autonomous institutional cycle remain implementation work. The original C2 inventory remains unchanged; scoped implementation evidence is tracked separately rather than claiming all 121 cases passed.
 
 This integrates [engine C2](https://github.com/KingSav3ge/IRGS/commit/96af47961b33df83031f98d0524415bba299ce03) and [app UI1](https://github.com/KingSav3ge/IRGS/commit/2022c922fb10bbcb1bb08c1ef160e38d6f449f8d). The primary branch is `main`; Engine/Core development uses `3.3.3.E`, App/Web uses `3.3.3.A`. Continue both from this unified layout, keeping one editable app and one campaign-state kernel. Historical overlays are retained through Git ancestry and their provenance records rather than duplicate editable app folders.
 

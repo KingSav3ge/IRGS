@@ -22,9 +22,19 @@
       "sha256": "3ef4d4dd97bdf9048f9ff0d12ce76370823f01d994d285e8ad652518e23dbdf3"
     },
     {
+      "path": "ACTION1_VALIDATION.json",
+      "bytes": 2453,
+      "sha256": "64d0304dbb297df2ef336ae01ec98e751377c5f76f7287cc19d96cb3639d771e"
+    },
+    {
       "path": "AGENTS.md",
-      "bytes": 4838,
-      "sha256": "1c441fb8a36fc243f1fee103da5864d647059d21bfad590ae72554caf1371974"
+      "bytes": 5272,
+      "sha256": "8a25eb4fa43535178a43706c42b64ae0276923c058c12733765430edc6237b65"
+    },
+    {
+      "path": "CONTINUATION_STATUS.md",
+      "bytes": 4010,
+      "sha256": "3f17964d2b76403fbd6789c8a5374271d15e0c335e734fc43e9f3bcd65766dbd"
     },
     {
       "path": "DEVELOPMENT.md",
@@ -32,9 +42,14 @@
       "sha256": "283b8900b78022c12517d4da3e89c81f4ca0a975566085e25154b79cdbc319b6"
     },
     {
+      "path": "DEVELOPMENT_LIST.md",
+      "bytes": 12943,
+      "sha256": "3ebe0d18921fbdf84a9a4f50a5fbe05e747c96790644e06ebd40044eb8e49a69"
+    },
+    {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 1492,
-      "sha256": "d3c5c0e4a99d1fbbc0ecd1a2b2bed40d1d38241f9053a814e0e2289208121632"
+      "bytes": 2060,
+      "sha256": "c032e3d1cedef007522731769552fd0593e532a8b634242fd924abbafd7ace4c"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -913,8 +928,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 33974,
-      "sha256": "304cfe3d16a6c762873651900c2da2f078a4112d6a3ee0bb7a9993e7ff6e6873"
+      "bytes": 34232,
+      "sha256": "f66c29fc5efdccbcefad4a013fe35e53651a137901b1e171259ea2c14cea87da"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1373,8 +1388,8 @@
     },
     {
       "path": "IRGS_Web/README.md",
-      "bytes": 11905,
-      "sha256": "c06779d4a06d30478417ee88401c7b89fe4b061fd2b183fe6652bf06e71ba18c"
+      "bytes": 13173,
+      "sha256": "ad72d8ed1400d3eff7fda78786735c23b045877b55c87edb53311eaa754abe29"
     },
     {
       "path": "IRGS_Web/Start-IRGS.cmd",
@@ -1393,8 +1408,8 @@
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
-      "bytes": 13469,
-      "sha256": "cc1ce8dd418734bd98b66ef93bf8732a413a121b35a4c7b1a9d81b16c8b233b7"
+      "bytes": 15278,
+      "sha256": "34e0aed3d7a96c1cde36a9d6f5af445167985f2f5959538b947078976595cf63"
     },
     {
       "path": "IRGS_Web/history_views.py",
@@ -1408,13 +1423,13 @@
     },
     {
       "path": "IRGS_Web/server.py",
-      "bytes": 29695,
-      "sha256": "1c43c036f9da3dd3462757f5ab30f2f30978f398120cbc7a5bc58824ec508b54"
+      "bytes": 34911,
+      "sha256": "d7d7c560e4d03b3ba5f65e198fea032b6024590f2250e3842b06d313b617623c"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 105432,
-      "sha256": "d01f6fd17e603330018fd928645ee42c74252db3df1bac3e9e8ead4c5b58b6b6"
+      "bytes": 110702,
+      "sha256": "37dddb1601d74f9a0ac69515bd630df4f421fbd63d64ec6737fe77b3cc4539ad"
     },
     {
       "path": "IRGS_Web/static/index.html",
@@ -1423,8 +1438,13 @@
     },
     {
       "path": "IRGS_Web/static/style.css",
-      "bytes": 37903,
-      "sha256": "6d529313dd3332210d83209c0e84b014792d071e75cf1460ef5a595b31f9d2c8"
+      "bytes": 39011,
+      "sha256": "53f42ebf87a6a884989cda4ec990f3321f5bbd809ff2488eff39d01ba15fea30"
+    },
+    {
+      "path": "IRGS_Web/tests/test_equipment_action.py",
+      "bytes": 22970,
+      "sha256": "6c6706edf73942a0157b63d04143779434576f25a1a53011123f3e2c7887874c"
     },
     {
       "path": "IRGS_Web/tests/test_gameplay.py",
@@ -1433,8 +1453,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 37831,
-      "sha256": "4a9845927d5e828cff35fdf2b35c194eaf13e169cf6dfe42d65db2a993731918"
+      "bytes": 51761,
+      "sha256": "8328742e549667c4ab110fa62a0abf7ccb22e3d728c1acf7714903a210273489"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1463,13 +1483,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2755,
-      "sha256": "98aaad76cd58b014d13fee6eb67c53839df5db04c970b511d8a8df095aa3628c"
+      "bytes": 3208,
+      "sha256": "2e448b509c1eda40870f9acc4a1ee4c861e580cb7034aa6349916204ab2f75c0"
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4111,
-      "sha256": "2a0d448936914d5459302487468497b093f04453fc5db5f5d038a7773350a388"
+      "bytes": 4715,
+      "sha256": "ddc49bdac40696edf9ee63d9e508c17e314510c666001336ce1d24eaec935d43"
     },
     {
       "path": "SHA256SUMS.txt",
@@ -1730,6 +1750,21 @@
       "path": "provenance/README.json",
       "bytes": 760,
       "sha256": "2cea2b590741c4ce3af18f15252f10f9dbb829be8ec949b4dd8f5ebe68b254aa"
+    },
+    {
+      "path": "provenance/action1_validation/frontend.txt",
+      "bytes": 3731,
+      "sha256": "58c997ef5d346b974b2911c16bdd369a7c3d520e06e09473c18882644330e255"
+    },
+    {
+      "path": "provenance/action1_validation/runtime.txt",
+      "bytes": 116,
+      "sha256": "847f52665bb9cd72992e270d62b9d97d490fe3dd4929f74d34ee5f7a80362d19"
+    },
+    {
+      "path": "provenance/action1_validation/web.txt",
+      "bytes": 42766,
+      "sha256": "48d97b6e3530416179e1a244f1390fc89be931467807496c02f66ef5e3bc3ce8"
     },
     {
       "path": "tools/package_development.py",

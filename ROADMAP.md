@@ -1,6 +1,10 @@
 # Development roadmap — D1
 
-D1 assembles the complete development sources. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 proposed acceptance cases; its general action resolver and autonomous institution cycle remain unimplemented. Existing bounded handlers and their evidence retain their actual scope.
+D1 assembles the complete development sources. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 proposed acceptance cases; its general action resolver and complete autonomous institution cycle remain unimplemented. Existing bounded handlers and synthetic institutional execution retain their actual scope.
+
+Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for the ordered continuation checklist, stable task IDs, dependencies and completion evidence. Start with DEV-01–DEV-04; qualify their dependencies and recovery as part of that first playable action.
+
+Continuation status: DEV-01–DEV-04 now have a bounded equipment-action implementation and connected Solo flow. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for qualification and limits. Continue with the cross-engine coverage register and broader dependency cases below; the general C2 resolver remains unfinished.
 
 ## 1. Resolve one consequential action
 

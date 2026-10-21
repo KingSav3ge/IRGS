@@ -28,7 +28,7 @@
     "runtime_tests": 438,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
-    "http_tests": 93,
+    "http_tests": 113,
     "observed_operations": 81,
     "common_operations": 19,
     "campaign_native_receivers": 3,
@@ -37,7 +37,7 @@
     "historical_opening_tests": 50,
     "historical_catalogue_entries": 37,
     "developed_historical_openings": 1,
-    "solo_interface_checks": 30,
+    "solo_interface_checks": 40,
     "player_mode": "Server-filtered Solo projection",
     "character_before_first_save": true,
     "temporal_entity_operations": 5,
@@ -50,7 +50,11 @@
     "historical_plan_assessment": "Read-only, pinned reference edition; no executable historical schedule",
     "general_action_resolution": false,
     "full_stage_one_gameplay_gate": "UNMET: actual resolved interaction and autonomous reaction remain unconnected",
-    "certification_scope": "Current code, executed cases and named profile backends; not all native effects or every branch"
+    "certification_scope": "Current code, executed cases and named profile backends; not all native effects or every branch",
+    "supported_player_actions": [
+      "issue_equipment"
+    ],
+    "response_choices": "received contextual drafts; success not guaranteed"
   },
   "files_sha256": {
     "runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
@@ -287,28 +291,29 @@
     "runtime/player_actions.py": "a1454bec3175e530589890acc08f3f947ee74fbe2b179d7d4df91d9f8b3e6b3f",
     "runtime/response_options.py": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8",
     "runtime/test_player_actions.py": "80da4dad18b138d17d468f1819b2b52b9fe224112f2d1317c3208f1e8e487583",
-    "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7",
-    "runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457"
+    "runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457",
+    "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7"
   },
   "host_sha256": {
-    "IRGS_Web/server.py": "1c43c036f9da3dd3462757f5ab30f2f30978f398120cbc7a5bc58824ec508b54",
+    "IRGS_Web/server.py": "d7d7c560e4d03b3ba5f65e198fea032b6024590f2250e3842b06d313b617623c",
     "IRGS_Web/features.py": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae",
     "IRGS_Web/opening_scene.py": "6ad795b9207412bdfeaf278e4cfda1c96cacbc71af559c80d9fdb33f83a0a460",
-    "IRGS_Web/gameplay_views.py": "cc1ce8dd418734bd98b66ef93bf8732a413a121b35a4c7b1a9d81b16c8b233b7",
+    "IRGS_Web/gameplay_views.py": "34e0aed3d7a96c1cde36a9d6f5af445167985f2f5959538b947078976595cf63",
     "IRGS_Web/history_views.py": "cc4d70ff4854f1b0e2b8bb6c9022c95068f331c779887e966be84b42ae163906",
-    "IRGS_Web/README.md": "c06779d4a06d30478417ee88401c7b89fe4b061fd2b183fe6652bf06e71ba18c",
+    "IRGS_Web/README.md": "ad72d8ed1400d3eff7fda78786735c23b045877b55c87edb53311eaa754abe29",
     "IRGS_Web/Start-IRGS.ps1": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
     "IRGS_Web/Start-IRGS.cmd": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
-    "IRGS_Web/static/app.js": "d01f6fd17e603330018fd928645ee42c74252db3df1bac3e9e8ead4c5b58b6b6",
+    "IRGS_Web/static/app.js": "37dddb1601d74f9a0ac69515bd630df4f421fbd63d64ec6737fe77b3cc4539ad",
     "IRGS_Web/static/index.html": "89fc0479b1394e371a9990fd13bc00065f5167c2c41890a232a3dc8168879904",
-    "IRGS_Web/static/style.css": "6d529313dd3332210d83209c0e84b014792d071e75cf1460ef5a595b31f9d2c8",
+    "IRGS_Web/static/style.css": "53f42ebf87a6a884989cda4ec990f3321f5bbd809ff2488eff39d01ba15fea30",
     "IRGS_Web/tests/test_gameplay.py": "1ea6f689eba1ca4157aaa8dbfaa1ad598c7fd1f592ba4316cd6115b2f6f23e2f",
-    "IRGS_Web/tests/test_gameplay_ui.js": "4a9845927d5e828cff35fdf2b35c194eaf13e169cf6dfe42d65db2a993731918",
+    "IRGS_Web/tests/test_gameplay_ui.js": "8328742e549667c4ab110fa62a0abf7ccb22e3d728c1acf7714903a210273489",
     "IRGS_Web/tests/test_history_views.py": "aec7784dd632f278f36528f8533cc10ee1d2fea131d303e4d2fe960deb4c9407",
     "IRGS_Web/tests/test_host.py": "96e4649f39525290481ae7170398d2f4d6fe5daac48f260f1eb4e9f7b2c46d2d",
     "IRGS_Web/tests/test_launcher.py": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6",
     "IRGS_Web/tests/test_stage1.py": "a317a031a86ef781c6c80597fbe809b64d10e5c963e0949426947e22b2f0c24a",
-    "IRGS_Web/tests/test_starting_flow.py": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b"
+    "IRGS_Web/tests/test_starting_flow.py": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b",
+    "IRGS_Web/tests/test_equipment_action.py": "6c6706edf73942a0157b63d04143779434576f25a1a53011123f3e2c7887874c"
   },
   "existing_save_migration": false,
   "development_designations": {
@@ -322,13 +327,11 @@
     "alternate_backend_activated": false
   },
   "continuation": {
-    "id": "action1-engine",
-    "host_integration_branch": "3.3.3.A",
-    "supported_player_actions": [
-      "issue_equipment"
-    ],
-    "contextual_response_drafts": true,
+    "id": "action1",
+    "validation_record": "ACTION1_VALIDATION.json",
+    "engine_record": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
     "general_freeform_resolution": false,
-    "combat_adjudication": false
+    "combat_adjudication": false,
+    "elapsed_time_advance": false
   }
 }

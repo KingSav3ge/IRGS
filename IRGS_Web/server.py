@@ -248,12 +248,86 @@ class Store:
         record=self.read(key)
         actor=controlled_actor(record['state'],actor_id)
         request=record.get('gameplay_requests',{}).get(request_id)
-        if not request or request.get('campaign_id')!=key or request.get('actor')!=actor:
+        if request is None:
+            raise FileNotFoundError('No saved action result exists for this request')
+        if request.get('campaign_id')!=key or request.get('actor')!=actor:
             raise PermissionError('This action result is not available to the selected character')
         result=safe_result(request['result'])
         if request['kind']=='declaration' and request['status']=='withdrawn':
             result.update(status='withdrawn',original_status='declared_not_resolved',
                           withdrawal_request_id=request['withdrawal_request_id'])
+        return result
+
+    def supported_action(self, data):
+        """Commit a qualified action and its recovery result in one save replacement.
+
+        This host is the single writer for a save directory. The same lock also
+        protects direct callers, not only HTTP requests. No accepted identity
+        or live-world mutation escapes a failed persistence attempt.
+        """
+        with self.lock:
+            return self._supported_action(data)
+
+    def _supported_action(self, data):
+        allowed = {'id', 'revision', 'request_id', 'actor', 'kind', 'order_id', 'text', 'mode'}
+        if not isinstance(data, dict) or set(data) - allowed:
+            raise ValueError('Use the supplied supported action without changing its parameters')
+        if data.get('kind') != 'issue_equipment':
+            raise ValueError('This action type is not supported')
+        if not isinstance(data.get('actor'), str) or not data['actor']:
+            raise ValueError('Explicitly select the player character making this request')
+        if not isinstance(data.get('order_id'), str) or not data['order_id']:
+            raise ValueError('Select a received equipment order')
+        text = data.get('text')
+        if not isinstance(text, str) or not text.strip() or len(text) > 10000:
+            raise ValueError('Describe the selected action using between 1 and 10000 characters')
+        request_id = data.get('request_id')
+        if not isinstance(request_id, str) or not re.fullmatch(r'[A-Za-z0-9_-]{1,128}', request_id):
+            raise ValueError('A stable action request identity is required')
+        record = self.read(data['id'])
+        actor = controlled_actor(record['state'], data['actor'])
+        payload = {'campaign_id': record['id'], 'actor': actor, 'kind': data['kind'],
+                   'order_id': data['order_id'], 'text': text}
+        signature = digest(payload)
+        saved = record.get('gameplay_requests', {}).get(request_id)
+        if saved is not None:
+            if saved.get('campaign_id') != record['id'] or saved.get('payload_digest') != signature:
+                raise ValueError('Request identity was reused with different action choices')
+            # Retrieve the accepted result before testing the current revision,
+            # existence, mandate, order status or remaining stock.
+            return safe_result(saved['result'])
+        controlled_actor(record['state'], actor, required=True)
+        if type(data.get('revision')) is not int or data['revision'] != record['revision']:
+            raise ValueError('This campaign changed. Reload before submitting a new request.')
+        if pending_declaration(record, actor) is not None:
+            raise ValueError('A declaration is awaiting resolution. Withdraw it before choosing another action.')
+        world = CoreWorld(state=record['state'])
+        from player_actions import equipment_options, execute_equipment_action
+        reference = 'explicit-player-request:' + record['id'] + ':' + request_id
+        choice = next((option for option in equipment_options(world.s, actor)
+                       if option['order_id'] == payload['order_id']), None)
+        if choice is not None and text != choice['text']:
+            raise ValueError('Use the exact listed equipment action. To choose different words or intent, '
+                             'write your own response in the declaration box.')
+        try:
+            resolved = execute_equipment_action(world, 'gameplay:' + request_id, actor,
+                {'kind': payload['kind'], 'order_id': payload['order_id']}, reference)
+        except (InvalidEvent, AssertionError, KeyError, TypeError, ValueError):
+            # Permission, stock and other private validation facts do not become
+            # knowledge merely because the player tried an action.
+            raise ValueError('This equipment issue could not be completed. No equipment was moved. '
+                             'Reload the campaign to review your received orders.') from None
+        result = safe_result({'request_id': request_id, 'campaign_id': record['id'], 'actor': actor,
+            'kind': payload['kind'], 'declaration': text, 'status': resolved['status'],
+            'revision': record['revision'] + 1, 'recorded_sequence': world.s['clock'],
+            'elapsed_time': None, 'narrative': None,
+            'outcome': resolved['outcome'], 'receipt': resolved['receipt']})
+        record.setdefault('gameplay_requests', {})[request_id] = {
+            'campaign_id': record['id'], 'actor': actor, 'kind': payload['kind'],
+            'payload': copy.deepcopy(payload), 'payload_digest': signature,
+            'result': copy.deepcopy(result), 'status': resolved['status'],
+            'dependencies': copy.deepcopy(resolved['dependencies'])}
+        self.commit(record, world, {'action_request_id': request_id})
         return result
 
 
@@ -393,7 +467,8 @@ def make_server(port=8765, folder=None):
                 name, mime = files[path]
                 self.reply(200, (ROOT / 'static' / name).read_bytes(), mime)
             except FileNotFoundError:
-                self.reply(404, {'error': 'Campaign not found'})
+                self.reply(404, {'error': 'No saved action result exists for this request'
+                                      if path.startswith('/api/action-result/') else 'Campaign not found'})
             except PermissionError as err:
                 self.reply(403, {'error':str(err)})
             except ValueError as err:
@@ -416,6 +491,8 @@ def make_server(port=8765, folder=None):
                         self.creator(mode)
                     if path == '/api/declaration':
                         result=store.gameplay_request(data)
+                    elif path == '/api/action':
+                        result=store.supported_action(data)
                     elif path == '/api/withdraw-declaration':
                         result=store.gameplay_request(data,withdrawal=True)
                     elif path == '/api/time-advance':
