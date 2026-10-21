@@ -25,7 +25,7 @@
   ],
   "selection_authority": "User requested live Core 3.3 plus genre engines/libraries, with AST as campaign content",
   "validation": {
-    "runtime_tests": 438,
+    "runtime_tests": 457,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
     "http_tests": 113,
@@ -60,9 +60,9 @@
     "runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
     "runtime/ast_server.py": "83bb4942d4f462c0475518a32f310d5cc653eb3dcc5d395e3cad852cdece0f3d",
     "runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",
-    "runtime/character_background.py": "dc5242c4429638c0582e0bdb238340a21639333405e035f27480e806f58e7aa5",
+    "runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
     "runtime/content_library.py": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae",
-    "runtime/core_world.py": "1615f2bed204950a89ed1fcacdfafc8d974018e962a530e77727a49b2d5a5bef",
+    "runtime/core_world.py": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5",
     "runtime/economic_extension.py": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c",
     "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98",
     "runtime/historical_campaigns.py": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc",
@@ -94,7 +94,7 @@
     "runtime/run_round8_evidence.py": "4c328bd1a73edff3248d2acbf7c2302d1a5f6b1150c387522ab9b7914960c299",
     "runtime/scale_coverage.py": "41b254fe753449853e89d14043111fa42073803f42f88e749df67da4a8314ed4",
     "runtime/selective_coordinator.py": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f",
-    "runtime/starting_selection.py": "e8f32254c78d920cb2320d1944a3718e4fdafffe0715c8f326d46d85f0a473c8",
+    "runtime/starting_selection.py": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3",
     "runtime/strategic_execution.py": "74cbcb9e3de9ca9354b912a418da6d9c9c401b08797b7c41150d940d9ed029e7",
     "runtime/temporal_registry.py": "fcb7289c1bc57c867a66a8c837085711241e7d75c0589b35563161fa5fe33ba1",
     "runtime/test_ast33.py": "bf12eb18c89044fccac44a243f838d1ed6cc05ca735b8c284a0734541b5e65c6",
@@ -292,7 +292,12 @@
     "runtime/response_options.py": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8",
     "runtime/test_player_actions.py": "80da4dad18b138d17d468f1819b2b52b9fe224112f2d1317c3208f1e8e487583",
     "runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457",
-    "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7"
+    "runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7",
+    "runtime/scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
+    "runtime/scene_setup.py": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699",
+    "runtime/test_scene_actions.py": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10",
+    "runtime/test_scene_setup.py": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f",
+    "data/solo_quay_opening.json": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5"
   },
   "host_sha256": {
     "IRGS_Web/server.py": "d7d7c560e4d03b3ba5f65e198fea032b6024590f2250e3842b06d313b617623c",
@@ -327,11 +332,12 @@
     "alternate_backend_activated": false
   },
   "continuation": {
-    "id": "action1",
-    "validation_record": "ACTION1_VALIDATION.json",
-    "engine_record": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
+    "id": "opening1-engine",
+    "host_integration_branch": "3.3.3.A",
+    "scene_handler_implemented": true,
+    "scene_ui_connected_on_this_branch": false,
     "general_freeform_resolution": false,
     "combat_adjudication": false,
-    "elapsed_time_advance": false
+    "validation_record": "OPENING1_VALIDATION.json"
   }
 }

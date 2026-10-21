@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "quay-delivery-v1",
+  "title": "A dispatch before departure",
+  "description": "An optional playable Solo opening for a new human character in the 1415 campaign. Carry a sealed dispatch from an embarkation quay to a receiving desk. This small scene is authored fiction within the historical setting.",
+  "requirements": "New human character; individual Solo control; 1415 opening only.",
+  "review": "You begin at a fictional embarkation quay with one sealed dispatch entrusted to you for delivery to a clerk's tray. You know a covered passage to the receiving desk and a possible gate shortcut. The clerk, places, dispatch and local conditions are fictional scenario facts, not reconstructed historical records. Walking, looking and handing over the dispatch have explicit authored durations. A blocked attempt can consume time without reaching its destination. The dispatch grants no office, payment, military command or broader resources.",
+  "scope": "Playable local movement, observation and delivery, with saved consequences. Selected local durations: looking 20 seconds; walking each passage leg 45 seconds; trying the gate 30 seconds; handing over the dispatch 10 seconds. The elapsed count begins at zero. Freeform actions, dialogue, combat and the wider expedition remain unresolved. Elapsed seconds measure this scene only; no historical departure or civil date is advanced automatically.",
+  "source_ref": "authored-solo-opening:quay-delivery-v1",
+  "initial_place": "quay",
+  "initial_material": "sealed_dispatch",
+  "destination": "clerk-tray",
+  "map_text": "You have been entrusted with one sealed dispatch for the receiving clerk's tray. From the quay a covered passage leads to the receiving desk. A quay gate may provide a shortcut, although you have not checked whether it is passable. You may return by the covered passage. These are local fictional places and arrangements, not a historical street plan.",
+  "elapsed_axis": "authored-opening-seconds",
+  "conditions": {
+    "quay-gate": {"passable": false, "source_ref": "authored-solo-opening:quay-delivery-v1"}
+  },
+  "places": {
+    "quay": {
+      "title": "Embarkation quay",
+      "description": "You are on a quay beside preparations for departure. A covered passage leads toward a receiving desk; a gate offers a possible shorter way.",
+      "observe": "You check your immediate surroundings. You can see the entrance to the covered passage and the quay gate. No search of stores or distant vessels has taken place.",
+      "actions": ["look-quay", "quay-passage", "quay-shortcut"]
+    },
+    "passage": {
+      "title": "Covered passage",
+      "description": "The covered passage connects the quay to the receiving desk. You can continue to the desk or return to the quay.",
+      "observe": "You look along the passage. The way toward the receiving desk is visible, as is the way back to the quay. This tells you nothing about the expedition's stores or readiness.",
+      "actions": ["look-passage", "passage-desk", "passage-quay"]
+    },
+    "desk": {
+      "title": "Receiving desk",
+      "description": "You stand at the receiving desk. A tray is set aside for the sealed dispatch entrusted to you. The covered passage leads back to the quay.",
+      "observe": "You inspect the receiving desk and identify the designated tray. Placing the dispatch there is permitted by your delivery instructions; it promises no pay or appointment.",
+      "actions": ["look-desk", "deliver-dispatch", "desk-passage"]
+    }
+  },
+  "actions": {
+    "look-quay": {"kind": "observe", "from": "quay", "label": "Look around the quay", "text": "Look around the quay for 20 seconds.", "description": "Observe your immediate surroundings. This is a new physical observation, not a receipt lookup.", "duration_seconds": 20, "success_text": "You have looked around the quay.", "failure_text": "You could not complete the observation."},
+    "quay-passage": {"kind": "move", "from": "quay", "to": "passage", "label": "Take the covered passage", "text": "Walk from the quay into the covered passage over 45 seconds.", "description": "Follow the route described in your received directions.", "duration_seconds": 45, "success_text": "You reach the covered passage.", "failure_text": "You do not reach the covered passage."},
+    "quay-shortcut": {"kind": "move", "from": "quay", "to": "desk", "blocked_by": "quay-gate", "label": "Try the gate shortcut", "text": "Try the quay gate shortcut to the receiving desk for 30 seconds.", "description": "A possible shorter route. You have not established whether the gate is passable; the attempt still takes time.", "duration_seconds": 30, "success_text": "You pass through the gate and reach the receiving desk.", "failure_text": "The gate is closed against passage. You remain on the quay after spending 30 seconds trying the route."},
+    "look-passage": {"kind": "observe", "from": "passage", "label": "Look along the passage", "text": "Look along the covered passage for 20 seconds.", "description": "Observe the local passage; this is not a search of concealed places.", "duration_seconds": 20, "success_text": "You have looked along the covered passage.", "failure_text": "You could not complete the observation."},
+    "passage-desk": {"kind": "move", "from": "passage", "to": "desk", "label": "Continue to the receiving desk", "text": "Walk from the covered passage to the receiving desk over 45 seconds.", "description": "Continue along the known local route.", "duration_seconds": 45, "success_text": "You reach the receiving desk.", "failure_text": "You do not reach the receiving desk."},
+    "passage-quay": {"kind": "move", "from": "passage", "to": "quay", "label": "Return to the quay", "text": "Walk from the covered passage back to the quay over 45 seconds.", "description": "Return by the route you know.", "duration_seconds": 45, "success_text": "You return to the embarkation quay.", "failure_text": "You do not reach the quay."},
+    "look-desk": {"kind": "observe", "from": "desk", "label": "Inspect the receiving desk", "text": "Look over the receiving desk for 20 seconds.", "description": "Observe the local desk and designated tray.", "duration_seconds": 20, "success_text": "You have inspected the receiving desk.", "failure_text": "You could not complete the observation."},
+    "deliver-dispatch": {"kind": "deliver", "from": "desk", "material": "sealed_dispatch", "destination": "clerk-tray", "quantity": 1, "label": "Deliver the sealed dispatch", "text": "Place the entrusted sealed dispatch in the receiving clerk's tray over 10 seconds.", "description": "Hand over the actual dispatch you were entrusted with. If you no longer carry it, delivery cannot succeed.", "duration_seconds": 10, "success_text": "You place the sealed dispatch in the receiving clerk's tray. Your delivery is complete; no payment or appointment has been promised.", "failure_text": "You no longer carry an undelivered sealed dispatch. No dispatch was handed over."},
+    "desk-passage": {"kind": "move", "from": "desk", "to": "passage", "label": "Return through the passage", "text": "Walk from the receiving desk back into the covered passage over 45 seconds.", "description": "Return toward the quay. Delivery does not end your ability to move and observe.", "duration_seconds": 45, "success_text": "You return to the covered passage.", "failure_text": "You do not reach the covered passage."}
+  }
+}

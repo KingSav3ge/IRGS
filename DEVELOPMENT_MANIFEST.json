@@ -927,14 +927,19 @@
       "sha256": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0"
     },
     {
+      "path": "IRGS_3_3/data/solo_quay_opening.json",
+      "bytes": 7447,
+      "sha256": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5"
+    },
+    {
       "path": "IRGS_3_3/package_release.py",
       "bytes": 14329,
       "sha256": "817ff0f017e55c09e26829a6f7499a003c42f9250897fd32f36d805ed8de8b16"
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 34232,
-      "sha256": "f66c29fc5efdccbcefad4a013fe35e53651a137901b1e171259ea2c14cea87da"
+      "bytes": 34778,
+      "sha256": "3601981e9ce9351872378093e299f27e0c4183dc0b3cd3cc7dd51a674ac0d560"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1068,8 +1073,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/character_background.py",
-      "bytes": 3106,
-      "sha256": "dc5242c4429638c0582e0bdb238340a21639333405e035f27480e806f58e7aa5"
+      "bytes": 3417,
+      "sha256": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062"
     },
     {
       "path": "IRGS_3_3/runtime/content_library.py",
@@ -1078,8 +1083,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 15405,
-      "sha256": "1615f2bed204950a89ed1fcacdfafc8d974018e962a530e77727a49b2d5a5bef"
+      "bytes": 15611,
+      "sha256": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1242,14 +1247,24 @@
       "sha256": "41b254fe753449853e89d14043111fa42073803f42f88e749df67da4a8314ed4"
     },
     {
+      "path": "IRGS_3_3/runtime/scene_actions.py",
+      "bytes": 11634,
+      "sha256": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1"
+    },
+    {
+      "path": "IRGS_3_3/runtime/scene_setup.py",
+      "bytes": 5396,
+      "sha256": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699"
+    },
+    {
       "path": "IRGS_3_3/runtime/selective_coordinator.py",
       "bytes": 10562,
       "sha256": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f"
     },
     {
       "path": "IRGS_3_3/runtime/starting_selection.py",
-      "bytes": 12816,
-      "sha256": "e8f32254c78d920cb2320d1944a3718e4fdafffe0715c8f326d46d85f0a473c8"
+      "bytes": 13016,
+      "sha256": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3"
     },
     {
       "path": "IRGS_3_3/runtime/strategic_execution.py",
@@ -1325,6 +1340,16 @@
       "path": "IRGS_3_3/runtime/test_response_options.py",
       "bytes": 9740,
       "sha256": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_scene_actions.py",
+      "bytes": 13517,
+      "sha256": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_scene_setup.py",
+      "bytes": 4717,
+      "sha256": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f"
     },
     {
       "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
@@ -1487,9 +1512,14 @@
       "sha256": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b"
     },
     {
+      "path": "OPENING1_VALIDATION.json",
+      "bytes": 1429,
+      "sha256": "f691b7227f177209a5ad5a5557c64a78a255acecf7fccf3b2326137b34ac37a6"
+    },
+    {
       "path": "README.md",
-      "bytes": 3417,
-      "sha256": "dd6aa5d5a0f0c9504518805d15ade95224aa2a7767ca0665a8df9223aa7ca674"
+      "bytes": 3813,
+      "sha256": "af7b6e4a45c538e2975e0c3aa18e79adc8037e146f34d5a54efaeaa11e0fb39e"
     },
     {
       "path": "ROADMAP.md",
@@ -1560,6 +1590,11 @@
       "path": "engine/PACKAGE_MANIFEST.json",
       "bytes": 8597,
       "sha256": "30bcbb3f12111096220f2c95ff7e22c9c223667c726468cbeb6085f8623648ce"
+    },
+    {
+      "path": "engine/PLAYABLE_OPENING_IMPLEMENTATION.md",
+      "bytes": 4654,
+      "sha256": "55e2db66b2048a8e99bbdca387d22f738f96f76d02de667f580ea2a76a680c4b"
     },
     {
       "path": "engine/TEXT_VALIDATION.json",
@@ -1803,8 +1838,8 @@
     },
     {
       "path": "tools/operation_inventory.py",
-      "bytes": 19024,
-      "sha256": "0354f9de8fc806234b1b4400ce9fedf6b98538bba80de8a567bcb2a2a625d0be"
+      "bytes": 19741,
+      "sha256": "9e179c475e677a6dbb47f13df4c97b479ce11c79936300f27818ef4040fd820a"
     },
     {
       "path": "tools/package_development.py",

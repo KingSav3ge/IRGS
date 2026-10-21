@@ -86,6 +86,8 @@ def options_for_world(world, starting_scenario_id=SCENARIO_ID):
         'snapshot_sha256': state.get('historical_start', {}).get('snapshot_sha256'),
         'entry_description': copy.deepcopy(state.get('historical_start', {}).get('snapshot', {}).get('entry_guide')),
         'control_note': 'Control covers the selected person’s voluntary declarations. It does not supply possessions, expertise or institutional authority.'}
+    from scene_setup import opening_options
+    result['playable_openings'] = opening_options(state)
     result['selection_digest'] = digest(result)
     return result
 
@@ -205,4 +207,5 @@ def initialize_player(world, character=None, starting_scenario_id=SCENARIO_ID,
         plans.update(baseline_snapshot=copy.deepcopy(baseline), storage='saved_prospective_reference',
                      installed_schedule=False)
         result.s['historical_planning'] = plans
-    return CoreWorld(state=result.s)
+    from scene_setup import initialize_opening
+    return initialize_opening(CoreWorld(state=result.s), character, actor_id, reference)

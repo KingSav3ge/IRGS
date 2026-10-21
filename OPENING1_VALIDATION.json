@@ -1,0 +1,25 @@
+{
+  "increment": "opening1-engine",
+  "date": "2026-10-21",
+  "selected_runtime_core": "3.3",
+  "scope": "Engine handlers/setup only; integrated Solo UI and fresh coverage on 3.3.3.A and main",
+  "runtime_tests_run": 457,
+  "runtime_passed": 456,
+  "external_fixture_skips": 1,
+  "new_scene_tests_passed": 19,
+  "runtime_sources_sha256": {
+    "IRGS_3_3/runtime/core_world.py": "6f13fcc88ee42b72def98af48261d24e82604080938e2fa0deeb7a4c8daf63d5",
+    "IRGS_3_3/runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
+    "IRGS_3_3/runtime/starting_selection.py": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3",
+    "IRGS_3_3/runtime/scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
+    "IRGS_3_3/runtime/scene_setup.py": "160c18279765ee54b197a88aa25bd543b88e428f507387661c2086c5f0655699",
+    "IRGS_3_3/runtime/test_scene_actions.py": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10",
+    "IRGS_3_3/runtime/test_scene_setup.py": "0e844e19ed9f19d1066148b94e66cdc305e607abe06d744371c425509c65dc0f"
+  },
+  "ui_opening_connected_on_this_branch": false,
+  "coverage1_report_current": false,
+  "all_branches_certified": false,
+  "general_freeform_resolution": false,
+  "combat_adjudication": false,
+  "elapsed_scope": "Whole bounded local action committed atomically; no interruptible phases/calendar scheduler"
+}

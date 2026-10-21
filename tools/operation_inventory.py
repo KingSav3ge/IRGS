@@ -174,14 +174,19 @@ def inventory(runtime_dir):
                     implementation = source.implementation("player_actions.py", "operate_equipment_action")
                     chain.append(source.implementation("genre_receivers.py", "operate", "military_issue_equipment"))
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", "transfer_stock"))
-                    limits.append("Only the explicit received equipment action has connected Solo physical resolution.")
+                    limits.append("Explicit received equipment action with current control, authority and stock checks.")
+                elif canonical == "execute_player_scene_action":
+                    chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
+                    implementation = source.implementation("scene_actions.py", "operate_scene_action")
+                    chain.append(source.implementation("core_world.py", "CoreWorld._operate", "transfer_stock"))
+                    limits.append("Opt-in authored local movement, observation and dispatch delivery only; atomic scene durations, no general phases or calendar scheduler.")
                 elif canonical == "receive_response_prompt":
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
                     implementation = source.implementation("response_options.py", "operate_response_prompt")
                     limits.append("Received suggestions are drafts, not feasibility findings or combat outcomes.")
                 else:
                     implementation = source.implementation("core_world.py", "CoreWorld._operate", canonical)
-                exposure = ("BOUNDED_SOLO_ACTION" if canonical == "execute_player_equipment_issue"
+                exposure = ("BOUNDED_SOLO_ACTION" if canonical in {"execute_player_equipment_issue", "execute_player_scene_action"}
                             else "SOLO_DECLARATION_ONLY" if canonical == "record_player_action"
                             else "CREATOR_EVENT_OR_INTERNAL_CORE_INTERFACE")
                 if alias:
@@ -245,7 +250,8 @@ _ROOT_OWNERS = {
     "designs": ("K-INFO",), "player_actions": ("K-INFO",),
     "delegations": ("K-ORG",), "starting_control": ("K-ORG",),
     "population": ("K-POP",),
-    "campaign_time": ("K-TIME",), "clock": ("K-TIME",),
+    "campaign_time": ("K-TIME",), "elapsed_time": ("K-TIME",), "clock": ("K-TIME",),
+    "site_conditions": ("K-NET",),
     "journal": ("K-TIME",), "processed": ("K-TIME",), "pending": ("K-TIME",),
     "r6_progress": ("K-WORK",), "r6_model_bindings": ("K-WORK",),
     "r7_intermediates": ("K-WORK",), "r7_profiles": ("K-WORK",),
@@ -258,7 +264,8 @@ _ECON_OWNERS = {
     "qualifications": ("K-ORG",), "sites": ("K-NET",),
 }
 _METADATA_ROOTS = {"campaign_id", "profile", "binding", "core_version", "gameplay_started",
-                   "fork_origin", "_r6_eid", "_r7_event_id", "r4_request_ids", "r4_frontiers"}
+                   "fork_origin", "_r6_eid", "_r7_event_id", "r4_request_ids", "r4_frontiers",
+                   "scene_rules", "scene_action_results"}
 
 
 def _classify(path):
