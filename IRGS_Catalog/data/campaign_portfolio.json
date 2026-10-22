@@ -3,7 +3,7 @@
   "id": "irgs-campaign-portfolio",
   "version": "0.4",
   "source": {
-    "path": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+    "path": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
     "sha256": "6ce0298f5a6157414d30f345c21907725d25257fa24e3d98ba9527a4e2d5952b",
     "kind": "user_supplied_catalogue_concept_draft"
   },
@@ -62,7 +62,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -128,7 +128,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -194,7 +194,7 @@
         "specific_review": "Specific Indigenous nations, their perspectives, land relationships, and documented histories require dedicated research and appropriate consultation."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -259,7 +259,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-04",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -323,7 +323,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-05",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -388,7 +388,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-06",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -452,7 +452,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-07",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -516,7 +516,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-08",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -580,7 +580,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-09",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -643,7 +643,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-10",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -707,7 +707,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-11",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -771,7 +771,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-12",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -835,7 +835,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-13",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -899,7 +899,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-14",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -962,7 +962,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-15",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1026,7 +1026,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-16",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1089,7 +1089,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-17",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1154,7 +1154,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "SS-18",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1220,7 +1220,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1285,7 +1285,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1350,7 +1350,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1415,7 +1415,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-04",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1480,7 +1480,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-05",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1547,7 +1547,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-06",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1613,7 +1613,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1678,7 +1678,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1744,7 +1744,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1810,7 +1810,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-04",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1878,7 +1878,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -1944,7 +1944,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2019,7 +2019,7 @@
         "specific_review": "Working canon was explicitly adopted by the user on 22 October 2026. Dated entry snapshots, resource inventories, permissions, geography scale and numerical magic rules remain to be authored and qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "GC-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2088,7 +2088,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-P01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2153,7 +2153,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-P02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2218,7 +2218,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CC-P03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2283,7 +2283,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-P01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2348,7 +2348,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "FC-P02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2417,7 +2417,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-P01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2483,7 +2483,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-P02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2550,7 +2550,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-P03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2615,7 +2615,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "MC-P04",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2681,7 +2681,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "GC-P01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2748,7 +2748,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "GC-P02",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2814,7 +2814,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "GC-P03",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."
@@ -2886,7 +2886,7 @@
         "specific_review": "Campaign-specific rules, initial population, resource balances, actor knowledge, recovery and acceptance checks remain to be qualified."
       },
       "provenance": {
-        "source": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+        "source": "IRGS_Catalog/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
         "section": "CSS-01",
         "copy_status": "working_proposal",
         "preview_authorization": "User requested app catalogue and previews; implementation is not release approval."

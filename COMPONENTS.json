@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
   "joined_branch": "main",
   "engine": {
@@ -15,11 +15,20 @@
   "app": {
     "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
     "branch": "main",
-    "commit": "3ec412c8e383022fa7a3b79b477daed27a122c95",
+    "commit": "2acfc42941425a4a8a20d2fc9de9c4dc2b7d0632",
     "source_paths": [
       "IRGS_Web",
       "Start-IRGS.cmd"
     ],
-    "engine_dependency": "Engine submodule, pinned to engine.commit"
+    "engine_dependency": "Engine submodule, pinned to engine.commit",
+    "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+  },
+  "catalog": {
+    "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
+    "branch": "main",
+    "commit": "b6c136210c533578b7215575f29182305473169d",
+    "source_paths": [
+      "IRGS_Catalog"
+    ]
   }
 }

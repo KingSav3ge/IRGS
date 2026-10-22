@@ -1,6 +1,6 @@
 # Campaign catalogue v0.4
 
-The user authorized implementation of the supplied catalogue and its app previews. The original pasted source is preserved byte for byte in [the specification](IRGS_Complete_Campaign_Catalogue_v0_4.md). Structured App-owned records live in `IRGS_Web/data/campaign_portfolio.json`.
+The user authorized implementation of the supplied catalogue and its app previews. The original pasted source is preserved byte for byte in [the specification](IRGS_Complete_Campaign_Catalogue_v0_4.md). Structured Catalog-owned records live in `IRGS_Catalog/data/campaign_portfolio.json`. The viewer belongs to IRGS-APP-WEB; the independent data source belongs to IRGS-Catalog.
 
 | Type | Launch targets | Future | Total |
 | --- | ---: | ---: | ---: |

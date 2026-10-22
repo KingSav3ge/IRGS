@@ -1,7 +1,7 @@
-"""Test newly pushed component pairs and publish reports on joined IRGS/main.
+"""Test newly pushed component sets and publish reports on joined IRGS/main.
 
 No component code is changed or merged. Candidate commits are local, disposable
-assemblies, identified separately from the published Engine and App commits.
+assemblies, identified separately from the published Engine, App and Catalog commits.
 """
 import argparse,fcntl,hashlib,io,json,os,shutil,signal,subprocess,sys,tarfile,time
 from datetime import datetime,timezone
@@ -40,18 +40,25 @@ def assemble(args,refs,run):
  candidate=run/'candidate';extract(args.joined,refs['joined'],candidate)
  qa_directory=candidate/'provenance/qa'
  retained_qa={p.relative_to(candidate):p.read_bytes() for p in qa_directory.rglob('*') if p.is_file()}
- for name in ('IRGS_3_3','engine','provenance','IRGS_Web'):
+ for name in ('engine/qualification/operation_register.json','engine/OPERATION_COVERAGE.md'):
+  path=candidate/name
+  if path.is_file():retained_qa[Path(name)]=path.read_bytes()
+ for name in ('IRGS_3_3','engine','provenance','IRGS_Web','IRGS_Catalog'):
   path=candidate/name
   if path.exists():shutil.rmtree(path)
  extract(args.engine,refs['engine'],candidate,['IRGS_3_3','engine','provenance','ROADMAP.md','CONTINUATION_STATUS.md','DEVELOPMENT_LIST.md'])
  extract(args.app,refs['app'],candidate,['IRGS_Web','Start-IRGS.cmd'])
+ extract(args.catalog,refs['catalog'],candidate,['IRGS_Catalog'])
+ components=json.loads((candidate/'COMPONENTS.json').read_text())
+ for name in ('engine','app','catalog'):components[name]['commit']=refs[name]
+ (candidate/'COMPONENTS.json').write_text(json.dumps(components,indent=2)+'\n')
  for relative,data in retained_qa.items():
   path=candidate/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data)
  check=subprocess.run([sys.executable,'-B','tools/verify_development.py','--refresh'],cwd=candidate,capture_output=True,text=True)
  (run/'assembly.txt').write_text(check.stdout+check.stderr)
  if check.returncode:raise RuntimeError('Assembled component source verification failed: '+(check.stdout+check.stderr)[-2000:])
  git(candidate,'init','-q');git(candidate,'config','user.name','IRGS QA');git(candidate,'config','user.email','qa@irgs.invalid')
- git(candidate,'add','.');git(candidate,'commit','-q','-m','Disposable QA assembly; Engine '+refs['engine']+' App '+refs['app'])
+ git(candidate,'add','.');git(candidate,'commit','-q','-m','Disposable QA assembly; Engine '+refs['engine']+' App '+refs['app']+' Catalog '+refs['catalog'])
  return candidate,git(candidate,'rev-parse','HEAD').stdout.decode().strip()
 
 def publish(args,report,markdown):
@@ -74,7 +81,7 @@ def publish(args,report,markdown):
     blob=git(args.joined,'hash-object','-w','--stdin',data=data).stdout.decode().strip()
     git(args.joined,'update-index','--add','--cacheinfo','100644,'+blob+','+name,env=environment)
    tree=git(args.joined,'write-tree',env=environment).stdout.decode().strip()
-   commit=git(args.joined,'commit-tree',tree,'-p',parent,'-m','QA component pair: '+report['status']).stdout.decode().strip()
+   commit=git(args.joined,'commit-tree',tree,'-p',parent,'-m','QA component set: '+report['status']).stdout.decode().strip()
    pushed=git(args.joined,'push','origin',commit+':refs/heads/main',check=False)
    if pushed.returncode==0:
     git(args.joined,'update-ref','refs/remotes/origin/main',commit)
@@ -83,10 +90,11 @@ def publish(args,report,markdown):
  raise RuntimeError('Joined main advanced during report publication; retain report for retry')
 
 def cycle(args,state):
- refs={name:tip(getattr(args,name)) for name in ('joined','engine','app')}
+ refs={name:tip(getattr(args,name)) for name in ('joined','engine','app','catalog')}
  pin=git(args.app,'rev-parse',refs['app']+':Engine').stdout.decode().strip()
+ catalog_pin=git(args.app,'rev-parse',refs['app']+':Catalog').stdout.decode().strip()
  signature=hashlib.sha256((ROOT/'tools/qa_irgs.py').read_bytes()+Path(__file__).read_bytes()).hexdigest()
- identity=refs['engine']+':'+refs['app']+':'+signature
+ identity=refs['engine']+':'+refs['app']+':'+refs['catalog']+':'+signature
  state['last_checked_at_utc']=now();state['published_components']=refs
  prior=state.setdefault('runs',{}).get(identity)
  if prior and prior.get('published_commit'):
@@ -94,7 +102,7 @@ def cycle(args,state):
   prior=None
  if not prior:
   run=args.storage/'runs'/str(time.time_ns());run.mkdir(parents=True)
-  print(now(),'Testing Engine',refs['engine'],'App',refs['app'],flush=True)
+  print(now(),'Testing Engine',refs['engine'],'App',refs['app'],'Catalog',refs['catalog'],flush=True)
   output=run/'report.json';candidate=None;candidate_commit=None
   try:
    candidate,candidate_commit=assemble(args,refs,run)
@@ -111,20 +119,21 @@ def cycle(args,state):
    report=json.loads(output.read_text())
   except (OSError,ValueError,RuntimeError,subprocess.TimeoutExpired) as error:
    report={'schema_version':1,'status':'blocked','finished_at_utc':now(),'independent':{'tests_run':0,'passed':0,'failed':0,'errors':0,'skipped':0},'diagnostic':str(error),'user_saves_opened':False}
-  report.update(candidate_kind='disposable_component_pair_assembly',candidate_commit=candidate_commit,
-   candidate_components={k:refs[k] for k in ('engine','app')},joined_template_commit=refs['joined'],
-   app_declared_engine_commit=pin,pin_matches_candidate=pin==refs['engine'],
+  report.update(candidate_kind='disposable_component_set_assembly',candidate_commit=candidate_commit,
+   candidate_components={k:refs[k] for k in ('engine','app','catalog')},joined_template_commit=refs['joined'],
+   app_declared_engine_commit=pin,app_declared_catalog_commit=catalog_pin,
+   pin_matches_candidate=pin==refs['engine'] and catalog_pin==refs['catalog'],
    integrated_or_deployed_by_qa=False,mechanics_modified_by_qa=False)
   from qa_irgs import markdown as qa_markdown
   if report['status']=='blocked':body='# IRGS component QA\n\nResult: **blocked**\n\n'+report['diagnostic']+'\n'
   else:body=qa_markdown(report)
-  body+='\n## Component identities\n\nEngine: `'+refs['engine']+'`\n\nApp: `'+refs['app']+'`\n\nThis is an isolated assembly, not an integration or deployment. App dependency matches candidate: **'+str(pin==refs['engine']).lower()+'**.\n'
+  body+='\n## Component identities\n\nEngine: `'+refs['engine']+'`\n\nApp: `'+refs['app']+'`\n\nCatalog: `'+refs['catalog']+'`\n\nThis is an isolated assembly, not an integration or deployment. App dependency matches candidate: **'+str(pin==refs['engine'] and catalog_pin==refs['catalog']).lower()+'**.\n'
   output.write_text(json.dumps(report,indent=2)+'\n');output.with_suffix('.md').write_text(body)
   prior={'report_path':str(output),'attempted_at':time.time()};state['runs'][identity]=prior
  output=Path(prior['report_path']);report=json.loads(output.read_text())
  published=publish(args,report,output.with_suffix('.md').read_text())
  prior.update(published_commit=published,status=report['status'])
- state['last_publication']={'commit':published,'status':report['status'],'engine':refs['engine'],'app':refs['app']}
+ state['last_publication']={'commit':published,'status':report['status'],'engine':refs['engine'],'app':refs['app'],'catalog':refs['catalog']}
  print(now(),'Published',report['status'],published,flush=True)
  return True
 
@@ -133,12 +142,13 @@ def main():
  parser.add_argument('--joined',type=Path,default=Path('/workspace/IRGS'))
  parser.add_argument('--engine',type=Path,default=Path('/workspace/IRGS-Engine'))
  parser.add_argument('--app',type=Path,default=Path('/workspace/IRGS-APP-WEB'))
+ parser.add_argument('--catalog',type=Path,default=Path('/workspace/IRGS-Catalog'))
  parser.add_argument('--storage',type=Path,default=Path('/workspace/irgs-cloud/component-qa'))
  parser.add_argument('--interval',type=int,default=60);parser.add_argument('--once',action='store_true')
  args=parser.parse_args()
  if args.interval<60:raise SystemExit('Use at least 60 seconds between checks')
  args.storage=args.storage.resolve()
- for name in ('joined','engine','app'):
+ for name in ('joined','engine','app','catalog'):
   setattr(args,name,getattr(args,name).resolve(strict=True))
   if args.storage.is_relative_to(getattr(args,name)):raise SystemExit('Keep QA storage outside source')
  args.storage.mkdir(parents=True,exist_ok=True);state_path=args.storage/'state.json'

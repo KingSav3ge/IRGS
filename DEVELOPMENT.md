@@ -9,6 +9,7 @@ This is the complete assembled development baseline: the selected Core 3.3 runti
 | `IRGS_3_3/runtime/` | Executable shared Core and its tests. |
 | `IRGS_3_3/catalog/` and `IRGS_3_3/data/` | Installed genres, libraries, profiles and dated starting references. |
 | `IRGS_3_3/Core/` | Selected runtime binding and inherited Core text. |
+| `IRGS_Catalog/` | Independently maintained campaign listings, preview data and catalogue design documents. |
 | `IRGS_Web/` | Canonical Solo website, transport and interface tests. |
 | `engine/` | Applied C2 engine text, incorporation audit and preserved design sources. |
 | `provenance/` | Historical source records; these are not current test results or instructions to adopt mechanics. |
@@ -41,7 +42,7 @@ node IRGS_Web/tests/test_gameplay_ui.js
 
 If the interface test cannot locate Python, set `IRGS_TEST_PYTHON` to the Python executable used for the other checks. The interface suite uses synthetic records and transport; it does not open a real save. A historical-save test may explicitly skip when its external historical save is absent. Windows launcher fixtures are platform-specific.
 
-Run checks appropriate to the change. After intentional source edits, run `python -B tools/refresh_component_releases.py` to update independent Engine and App source pins and refresh the unified development manifest:
+Run checks appropriate to the change. After intentional source edits, run `python -B tools/refresh_component_releases.py --component engine`, `--component app` or `--component catalog` for only the edited component and refresh the unified development manifest:
 
 ```powershell
 python -B tools/verify_development.py --refresh
@@ -61,7 +62,7 @@ Use the unified helpers for new development distributions. Inherited `IRGS_3_3/b
 
 ## Branches and next work
 
-The joined repository keeps `main`. Independent Engine and App development use their own repositories and `main` branches. The app pins its Engine checkout; joined IRGS contains both full source directories. See [component ownership and integration](COMPONENT_REPOSITORIES.md).
+The joined repository keeps `main`. Independent Engine, App and Catalog development use their own repositories and `main` branches. The app pins Engine and Catalog checkouts; joined IRGS contains all three full source directories. See [component ownership and integration](COMPONENT_REPOSITORIES.md).
 
 The equipment action and optional authored 1415 Solo opening are connected to the app. The opening supports repeated observation, local movement and dispatch delivery with atomic local durations and durable successful/unsuccessful outcomes. Wider gameplay, interruptible elapsed phases and operation-level dependency qualification remain work. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
 
