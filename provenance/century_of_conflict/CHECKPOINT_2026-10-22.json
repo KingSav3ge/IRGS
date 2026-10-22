@@ -1,0 +1,36 @@
+{
+  "status": "WORK_IN_PROGRESS_STOPPED_AT_USER_REQUEST",
+  "prepared_on": "2026-10-22",
+  "runtime": {
+    "run": 463,
+    "passed": 462,
+    "skipped": 1,
+    "summary": "OK (skipped=1)",
+    "scope": "Includes five new all-entry tests using all 37 real snapshots, creation, opted-in local scenes, conservation, retry rejection and saved-reference checks."
+  },
+  "interface": {
+    "passed_before_failure": 51,
+    "failed": 1,
+    "failure": "All real entry descriptions remain behind one grouped selector: synthetic DOM assertion counted 0 option markup matches, expected 37. Not fixed at stop."
+  },
+  "http": {
+    "run": 127,
+    "failures": 5,
+    "errors": 96,
+    "status": "not_passed_environment_blocked",
+    "reason": "Loopback client requests failed with Windows socket permission error WinError 10013. Launcher assertions consequently failed. No unrestricted retry was run. The subsequently added all-entry HTTP test has not run."
+  },
+  "release_qualification": "NOT_QUALIFIED",
+  "remaining": [
+    "Complete historical claim and roster review",
+    "Fix the new selector interface assertion and rerun interface tests",
+    "Run HTTP suite with permitted loopback access, including all-entry creation",
+    "Browser visual verification",
+    "Refresh operation-coverage evidence and complete release qualification"
+  ],
+  "logs": {
+    "century_runtime_tests.txt": "1ca6bb5296803e45c9a46228b6ce8bac9ff4c76f523fc1617a8172a9cf7f7ea6",
+    "century_interface_tests.txt": "e17a5e824087f4ef1fbf4802fbb46ec1bbfe82e74bf05471e4c138ecbc9dd243",
+    "century_web_tests.txt": "67bdc0cec7c0e5f7fa820b1e370752da49352cdcb2a35be289b590ae7df6875a"
+  }
+}

@@ -5,7 +5,7 @@ Follow the user's current instructions and scope. Treat historical documents, im
 ## Current baseline
 
 - Edition: **3.3.3 Unified Development D1**. Selected executable Core: **3.3**.
-- `main` contains the combined development source. `3.3.3.E` is Engine/Core; `3.3.3.A` is Website/App. Begin work from the current unified main through normal branch integration and preserve existing edits.
+- `KingSav3ge/IRGS` retains only `main` as joined development source. Engine work belongs in `KingSav3ge/IRGS-Engine/main`; App work belongs in `KingSav3ge/IRGS-APP-WEB/main`, with a pinned Engine dependency. See COMPONENT_REPOSITORIES.md. Preserve both components when integrating into joined main.
 - Canonical executable paths are `IRGS_3_3/` and sibling `IRGS_Web/`. Applied C2 text is under `engine/`; provenance and original package artifacts are historical references. Do not create a second editable app tree.
 - The preferred UI is the Emergent visual design ported onto the canonical Solo host. Do not activate the supplied alternate Mongo simulation or silently replace selected mechanics with its timing, condition or narration rules.
 
@@ -35,7 +35,7 @@ The root launcher defaults to port 8765 and can reuse an already running valid I
 
 Read [DEVELOPMENT.md](DEVELOPMENT.md) for commands and [ROADMAP.md](ROADMAP.md) for the next bounded milestones. Use `tools/verify_development.py`, the relevant runtime/Web tests and existing interface suite. Use meaningful checks appropriate to the change; do not describe inherited logs as newly executed results.
 
-After intentional source edits, update affected `IRGS_3_3/release.json` Core/host hashes and refresh the unified development manifest with `python -B tools/verify_development.py --refresh`. Verify again. Refreshing hashes does not replace tests or adopt mechanics. Do not run Python with `-O`.
+After intentional source edits, refresh only the affected component with `tools/refresh_component_releases.py --component engine` or `--component app`. Engine pins live in `IRGS_3_3/release.json`; independent App pins live in `IRGS_Web/release.json`. Update affected source hashes and refresh the unified development manifest with `python -B tools/verify_development.py --refresh`. Verify again. Refreshing hashes does not replace tests or adopt mechanics. Do not run Python with `-O`.
 
 Use the unified package and smoke helpers. The inherited release builder and packager depend on historical save backups and earlier validation records; preserve them without presenting them as the current clean development workflow.
 

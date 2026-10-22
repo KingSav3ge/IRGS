@@ -41,7 +41,7 @@ node IRGS_Web/tests/test_gameplay_ui.js
 
 If the interface test cannot locate Python, set `IRGS_TEST_PYTHON` to the Python executable used for the other checks. The interface suite uses synthetic records and transport; it does not open a real save. A historical-save test may explicitly skip when its external historical save is absent. Windows launcher fixtures are platform-specific.
 
-Run checks appropriate to the change. After intentional source edits, update the relevant Core or host hashes in `IRGS_3_3/release.json` and refresh the unified development manifest:
+Run checks appropriate to the change. After intentional source edits, run `python -B tools/refresh_component_releases.py` to update independent Engine and App source pins and refresh the unified development manifest:
 
 ```powershell
 python -B tools/verify_development.py --refresh
@@ -61,7 +61,7 @@ Use the unified helpers for new development distributions. Inherited `IRGS_3_3/b
 
 ## Branches and next work
 
-The literal GitHub branch `main` is the unified 3.3.3 development baseline. Engine/Core work uses `3.3.3.E`; Website/App work uses `3.3.3.A`. Bring the current unified main into the relevant working branch through a normal merge or fast-forward before continuing, preserving any newer work. Integrations back to main retain both sides.
+The joined repository keeps `main`. Independent Engine and App development use their own repositories and `main` branches. The app pins its Engine checkout; joined IRGS contains both full source directories. See [component ownership and integration](COMPONENT_REPOSITORIES.md).
 
 The equipment action and optional authored 1415 Solo opening are connected to the app. The opening supports repeated observation, local movement and dispatch delivery with atomic local durations and durable successful/unsuccessful outcomes. Wider gameplay, interruptible elapsed phases and operation-level dependency qualification remain work. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
 
@@ -87,3 +87,7 @@ This can take several minutes because it observes synthetic runtime test executi
 ## Rise settlement foundation
 
 Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).
+
+## Century of Conflict starts
+
+Content Library → Century of Conflict → entry dropdown reveals the selected starting reference. All 37 entries support reviewed individual Solo initialization and an optional fictional local opening; ten primary starts remain marked. The original 1415 snapshot and scene are preserved. See [implementation and CMRR](engine/CENTURY_STARTS_IMPLEMENTATION.md), [historical review and remaining research](provenance/century_of_conflict/HISTORICAL_REVIEW.md), and [current qualification](CENTURY_STARTS_VALIDATION.json). This adds no general action resolver, historical event schedule or existing-save migration.

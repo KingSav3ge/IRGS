@@ -1,0 +1,4073 @@
+{
+  "schema_version": 1,
+  "id": "century-of-conflict-research-reference",
+  "revision": 1,
+  "scope": {
+    "scenario_id": "hundred-years-war"
+  },
+  "status": "scoped_research_not_executable",
+  "sources": [
+    {
+      "id": "COC-BOOK",
+      "title": "Lynn Thorndike, The History of Medieval Europe (1917), chapter XXVII, printed pp. 511–530",
+      "url": "https://archive.org/details/historyofmedieva00thoruoft",
+      "source_type": "user_supplied_historical_synthesis",
+      "accessed": "2026-10-21",
+      "scope_note": "User-supplied scan/OCR; chapter extract and hash retained in provenance. Broad sequence and institutions only. Dated judgments, racial/national generalizations, exact force totals, the Black Prince nickname explanation and simplified treaty renunciations are not adopted."
+    },
+    {
+      "id": "COC-EDWARD",
+      "title": "Edward III, Royal Household",
+      "url": "https://www.royal.uk/edward-iii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Reign and principal campaigns only; not rounded force, population, economic or casualty claims."
+    },
+    {
+      "id": "COC-RICHARD",
+      "title": "Richard II, Royal Household",
+      "url": "https://www.royal.uk/richard-ii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Succession, deposition and peace policy only; disputed death circumstances are not resolved."
+    },
+    {
+      "id": "COC-HENRY4",
+      "title": "Henry IV, Royal Household",
+      "url": "https://www.royal.uk/henry-iv",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Kingship, Welsh revolt and Percy opposition only. Do not import every chronological detail of this overview."
+    },
+    {
+      "id": "COC-HENRY5",
+      "title": "Henry V, Royal Household",
+      "url": "https://www.royal.uk/henry-v",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Kingship and campaigns, not Shakespearean characterization or free institutional authority."
+    },
+    {
+      "id": "COC-HENRY6",
+      "title": "Henry VI, Royal Household",
+      "url": "https://www.royal.uk/henry-vi",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Minority, dual-monarchy claim, Bedford and Normandy only; very large battle/casualty figures on the page are excluded."
+    },
+    {
+      "id": "COC-FRENCH-KINGS",
+      "title": "Grandes Chroniques de France, Library of Congress catalogue",
+      "url": "https://www.loc.gov/item/2021668229/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Catalogue independently identifies Philip VI, John II and Charles V and their reigns. Manuscript partisanship is retained."
+    },
+    {
+      "id": "COC-CHARLES5",
+      "title": "Charles V authority record, Bibliothèque nationale de France",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb119360912",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Identification and reign 1364–1380; the birth date is not needed to generate a skill or personal history."
+    },
+    {
+      "id": "COC-MALESTROIT",
+      "title": "Malestroit, regional heritage inventory",
+      "url": "https://patrimoine.bzh/gertrude-diffusion/dossier/IA56006510",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Supports the 1343 truce and local commercial context; later buildings are not projected backward."
+    },
+    {
+      "id": "COC-MONTFORT",
+      "title": "Jean dit de Montfort, Institut culturel de Bretagne",
+      "url": "https://www.skoluhelarvro.bzh/article-thematique/noms-bretagne/personnalites/jean-dit-de-montfort/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Distinguishes the older claimant captured in 1341 from his son. No automatic inherited personal control."
+    },
+    {
+      "id": "COC-AURAY",
+      "title": "Auray au fil des siècles, municipal archives and heritage",
+      "url": "https://www.auray.fr/ma-ville/histoire/auray-au-fil-des-siecles",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Supports the 1364 battle and rival claimants, separately from the 1365 settlement."
+    },
+    {
+      "id": "COC-BRETIGNY",
+      "title": "British Library Add MS 48004, transfer and renunciation documents",
+      "url": "https://searcharchives.bl.uk/catalog/040-001951013",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Catalogue evidence that territorial delivery and renunciation required further instruments; not instantaneous complete transfer."
+    },
+    {
+      "id": "COC-PORTUGAL",
+      "title": "History of government: Anglo-Portuguese treaties",
+      "url": "https://history.blog.gov.uk/2016/05/09/historys-unparalleled-alliance-the-anglo-portuguese-treaty-of-windsor-9th-may-1386/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1373 London treaty (TNA E30/275), 1385 crisis and separate 1386 Windsor instrument; no automatic present-day alliance behavior."
+    },
+    {
+      "id": "COC-SCOTS1385",
+      "title": "Records of the Parliaments of Scotland, ordinance concerning the French army",
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=robertii_trans&id=1352&type=trans",
+      "source_type": "edited_primary_document",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited contemporary ordinance: joint command, supply and protection of sellers in the 1385 expedition. Prescribed conduct is not proof of compliance."
+    },
+    {
+      "id": "COC-RICHARD-TIME",
+      "title": "Richard II treasure project timeline, Institute of Historical Research",
+      "url": "https://archives.history.ac.uk/richardII/timeline.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1396 diplomacy, 1399 deposition and 1400 death; treasure descriptions do not initialize present stocks."
+    },
+    {
+      "id": "COC-WALES",
+      "title": "Cadw, Owain Glyndwr interpretation plan",
+      "url": "https://cadw.gov.wales/sites/default/files/2019-04/InterpplanOwainGlyndwr_EN.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Welsh revolt, French diplomacy and later intervention. The 1404 alliance and 1405 expedition cannot be installed in 1403."
+    },
+    {
+      "id": "COC-TROYES",
+      "title": "Sigilla/IRHT, Charles VI ratification of the Treaty of Troyes, TRA14200001/002",
+      "url": "https://sigilla.irht.cnrs.fr/A.php/88840",
+      "source_type": "primary_document_catalogue",
+      "accessed": "2026-10-21",
+      "scope_note": "Document dated 21 May 1420. Treaty claims do not establish universal obedience."
+    },
+    {
+      "id": "COC-ORLEANS",
+      "title": "Loiret heritage, Sur les pas de Jeanne",
+      "url": "https://www.loiretbalades.fr/fr/sur-les-pas-de-jeanne-darc",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Orléans and Loire campaign and Reims coronation in 1429; not evidence of every later location or military capacity."
+    },
+    {
+      "id": "COC-ARRAS",
+      "title": "Treaty of Arras, Institut de France record via FranceArchives",
+      "url": "https://francearchives.gouv.fr/facomponent/022ac1fc0b4b2542894d3633126ffde5f70a98db",
+      "source_type": "primary_document_catalogue",
+      "accessed": "2026-10-21",
+      "scope_note": "Archival treaty identification, September 1435; territorial terms, delivery and personal adherence remain distinct."
+    },
+    {
+      "id": "COC-ROCHELLE",
+      "title": "La Rochelle, Place de Verdun, Archéologie médiévale 26 (1996)",
+      "url": "https://www.persee.fr/doc/arcme_0153-9337_1996_num_26_1_1452_t1_0306_0000_4",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Historical/archaeological evidence for recovery of La Rochelle in 1372; no extrapolated modern street map."
+    },
+    {
+      "id": "COC-FROISSART",
+      "title": "Froissart, edited Chronicles VIII.1, apparatus on the Bruges truce",
+      "url": "https://www.gutenberg.org/files/74208/74208-h/74208-h.htm",
+      "source_type": "edited_chronicle",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited chronicle and apparatus: 1375 truce, prisoners and negotiations. Attributed medieval narrative, not neutral census."
+    },
+    {
+      "id": "COC-CASTILLON",
+      "title": "Castillon-la-Bataille municipal history",
+      "url": "https://www.castillonlabataille.fr/la-bataille-de-castillon/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1453 battle and Talbot. Modern commemorative performances are not historical troops; claims that feudalism simply ended are rejected."
+    },
+    {
+      "id": "COC-LABOUR",
+      "title": "The National Archives, plague and labour legislation",
+      "url": "https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/early-modern/plague/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1349 ordinance and 1351 statute; legal attempts to constrain wages and movement are not measured compliance or market prices."
+    },
+    {
+      "id": "COC-PAY",
+      "title": "The Soldier in Later Medieval England, soldiers named Large in Lancastrian Normandy",
+      "url": "https://medievalsoldier.org/about/soldier-profiles/soldiers-named-large-in-the-garrisons-of-lancastrian-normandy-1415-50/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Documentary pay expectations for the described service: archer 6d, mounted man-at-arms 12d, foot man-at-arms 8d per day. No paid wage or universal rate inferred."
+    },
+    {
+      "id": "COC-INDENTURE",
+      "title": "Agincourt 600, 27 April–3 May 1415 military indentures",
+      "url": "https://www.agincourt600.com/2015/03/24/27-april-3-may-1415-further-military-preparations-and-indentures/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1415 northern-France contract rates, 12d man-at-arms and 6d archer; rank, theatre, promised service and receipt remain separate."
+    },
+    {
+      "id": "COC-FRANC",
+      "title": "La Stabilisation de la monnaie par la création du franc (décembre 1360), Traditio",
+      "url": "https://www.cambridge.org/core/journals/traditio/article/abs/la-stabilisation-de-la-monnaie-par-la-creation-du-franc-decembre-1360-blocage-dune-societe/CC3B2D54CA9E3E82333BF51ED98F176D",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Scholarly abstract supports the 5 December ordinance and ransom/coinage context. Full article not acquired; no modern currency conversion or fixed exchange."
+    },
+    {
+      "id": "COC-SCHISM",
+      "title": "The Great Schism, New Cambridge Medieval History chapter 20",
+      "url": "https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/great-schism/E1808AB5741BCCD2A7B50B5A71FD578B",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Institutional papal schism context. Obedience, practice and individual affiliation remain separate; no automatic religion transfer."
+    },
+    {
+      "id": "COC-BERWICK",
+      "title": "Records of the Parliaments of Scotland, historical introduction",
+      "url": "https://www.rps.ac.uk/static/historicalintro2.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "David II’s release in 1357 and the subsequent ransom problem; a financial obligation is not a paid balance."
+    },
+    {
+      "id": "COC-GASCON-1389",
+      "title": "Gascon Rolls Project, C61/101 calendar",
+      "url": "https://www.gasconrolls.org/fr/edition/calendars/C61_101/document.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited archival calendar records the 1389 truce and breaches by routiers. Its July date differs from the June date in some treaty summaries; no disputed exact signing day is adopted."
+    },
+    {
+      "id": "COC-SOLDIER-GUIDE",
+      "title": "The National Archives, medieval and early modern soldiers",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-early-modern-soldiers/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Musters, accounts, retinues and treaty-roll research; an indexed name is not proof of current presence, loyalty or readiness."
+    },
+    {
+      "id": "COC-JEWISH-ENGLAND",
+      "title": "The National Archives, Jews in England in 1290",
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/jews-in-england-in-1290/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited letters establish discriminatory restrictions. Royal accusations are attributed hostile assertions, not facts about Jewish people. No absence, genetics or individual conduct is inferred."
+    },
+    {
+      "id": "COC-LANGUAGE",
+      "title": "The use of English: Language, law, and political culture in fourteenth-century England, University of York",
+      "url": "https://pure.york.ac.uk/portal/en/publications/the-use-of-english-language-law-and-political-culture-in-fourteen/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
+    },
+    {
+      "id": "COC-CONSTANCE",
+      "title": "Nelson H. Minnich, Great Western Schism, Pontifical Committee for Historical Sciences",
+      "url": "https://www.historia.va/content/dam/scienzestoriche/documenti/sezionestoriadellachiesa/Great%20Western%20Schism.Lessico.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Council depositions and Martin V’s November 1417 election; the late-1417 opening must reflect this change. Institutional recognition is not individual belief."
+    },
+    {
+      "id": "COC-HENRY6-CAPACITY",
+      "title": "Henry VI, Historic Royal Palaces",
+      "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/henry-vi/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Summer 1453 incapacity and continuing kingship. Used only to withhold unsupported voluntary player control at the late-1453 cutoff; no retrospective diagnosis, predetermined recovery or public knowledge is installed."
+    },
+    {
+      "id": "COC-DESIGN",
+      "title": "Century of Conflict opening and evidence policy, 21 October 2026",
+      "url": "local-design:century-of-conflict/openings-v1",
+      "source_type": "authored_policy",
+      "accessed": "2026-10-21",
+      "scope_note": "Authored cutoff, eligibility, qualitative scenario pressures and conditional requirements are design choices, not historical discoveries."
+    }
+  ],
+  "events": [
+    {
+      "id": "coc.reference.1337",
+      "title": "The War Begins",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1337"
+      },
+      "description": "Edward III and Philip VI are in open conflict over Aquitaine and contested royal rights.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Edward III and Philip VI are in open conflict over Aquitaine and contested royal rights.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1337:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1337:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1337:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1337:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1337:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1340",
+      "title": "The Flemish Alliance",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1340"
+      },
+      "description": "Sluys and the unsuccessful siege of Tournai have preceded the September truce at Esplechin.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Sluys and the unsuccessful siege of Tournai have preceded the September truce at Esplechin.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1340:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1340:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1340:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1340:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1340:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1341",
+      "title": "The Breton Succession",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1341"
+      },
+      "description": "The death of Brittany's duke has opened competing Montfort and Penthièvre–Blois claims; the older John of Montfort has been captured.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-MONTFORT"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The death of Brittany's duke has opened competing Montfort and Penthièvre–Blois claims; the older John of Montfort has been captured.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-MONTFORT"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1341:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1341:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1341:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1341:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1341:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1343",
+      "title": "The Truce of Malestroit",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1343"
+      },
+      "description": "The Malestroit truce has interrupted royal campaigning without settling the Breton succession.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-MALESTROIT"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The Malestroit truce has interrupted royal campaigning without settling the Breton succession.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-MALESTROIT"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1343:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1343:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1343:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1343:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1343:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1345",
+      "title": "The War Rekindled",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1345"
+      },
+      "description": "English operations in Gascony have resumed; Henry of Grosmont's campaign has altered the military situation.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "English operations in Gascony have resumed; Henry of Grosmont's campaign has altered the military situation.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1345:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1345:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1345:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1345:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1345:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1346",
+      "title": "Scotland Enters the Campaign",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1346"
+      },
+      "description": "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1346:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1346:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1346:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1346:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1346:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1347",
+      "title": "The Truce of Calais",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1347"
+      },
+      "description": "Calais has surrendered and a renewed truce follows; occupation and settlement now require administration.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Calais has surrendered and a renewed truce follows; occupation and settlement now require administration.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1347:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1347:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1347:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1347:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1347:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1355",
+      "title": "The Black Prince’s Campaign",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1355"
+      },
+      "description": "Edward of Woodstock has conducted a destructive raid from Gascony into southern France.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Edward of Woodstock has conducted a destructive raid from Gascony into southern France.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1355:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1355:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1355:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1355:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1355:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1356",
+      "title": "The Captive King",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1356"
+      },
+      "description": "John II has been captured at Poitiers. The dauphin Charles must conduct government amid a severe crisis.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "John II has been captured at Poitiers. The dauphin Charles must conduct government amid a severe crisis.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1356:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1356:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1356:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1356:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1356:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1357",
+      "title": "The Truces of Bordeaux and Berwick",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1357"
+      },
+      "description": "John II remains captive while French government and the Parisian reform movement contest authority.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-BERWICK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "John II remains captive while French government and the Parisian reform movement contest authority.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-BERWICK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1357:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1357:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1357:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1357:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1357:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1359",
+      "title": "Edward’s Final Edwardian Offensive",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1359"
+      },
+      "description": "Rejected peace terms have been followed by Edward III's new expedition toward Reims.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Rejected peace terms have been followed by Edward III's new expedition toward Reims.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1359:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1359:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1359:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1359:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1359:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1360",
+      "title": "The Peace of Brétigny",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1360"
+      },
+      "description": "Brétigny and the subsequent Calais settlement have established terms for peace and John II's release.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-BRETIGNY",
+        "COC-FRANC"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Brétigny and the subsequent Calais settlement have established terms for peace and John II's release.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-BRETIGNY",
+          "COC-FRANC"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1360:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1360:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1360:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1360:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1360:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1364",
+      "title": "The Breton Settlement",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1364"
+      },
+      "description": "Charles V is king of France. At Auray Charles of Blois has died and the younger John of Montfort has prevailed.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-AURAY"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Charles V is king of France. At Auray Charles of Blois has died and the younger John of Montfort has prevailed.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-AURAY"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1364:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1364:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1364:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1364:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1364:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1366",
+      "title": "The Castilian Civil War",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1366"
+      },
+      "description": "Henry of Trastámara's intervention has displaced Pedro from much of Castile; the crown remains contested.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry of Trastámara's intervention has displaced Pedro from much of Castile; the crown remains contested.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1366:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1366:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1366:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1366:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1366:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1369",
+      "title": "The Caroline War",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1369"
+      },
+      "description": "Charles V has renewed the Anglo-French war; Henry of Trastámara has defeated Pedro in Castile.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Charles V has renewed the Anglo-French war; Henry of Trastámara has defeated Pedro in Castile.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1369:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1369:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1369:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1369:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1369:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1372",
+      "title": "The Castilian Intervention",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1372"
+      },
+      "description": "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-ROCHELLE"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-ROCHELLE"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1372:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1372:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1372:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1372:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1372:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1373",
+      "title": "The Portuguese Connection",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1373"
+      },
+      "description": "John of Gaunt's long expedition is crossing France without resolving the war.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-PORTUGAL"
+      ],
+      "historical_outcome_reference": {
+        "statement": "John of Gaunt's long expedition is crossing France without resolving the war.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-PORTUGAL"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1373:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1373:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1373:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1373:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1373:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1375",
+      "title": "The Truce of Bruges",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1375"
+      },
+      "description": "French territorial recovery has narrowed England's position and a truce has been negotiated at Bruges.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-FROISSART"
+      ],
+      "historical_outcome_reference": {
+        "statement": "French territorial recovery has narrowed England's position and a truce has been negotiated at Bruges.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-FROISSART"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1375:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1375:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1375:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1375:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1375:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1377",
+      "title": "The War Resumes",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1377"
+      },
+      "description": "Edward III has died and Richard II is king; renewed fighting and coastal attacks complicate the transition.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Edward III has died and Richard II is king; renewed fighting and coastal attacks complicate the transition.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1377:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1377:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1377:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1377:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1377:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1385",
+      "title": "The Scottish and Portuguese Fronts",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1385"
+      },
+      "description": "A Franco-Scottish expedition has operated against England; Portugal's victory at Aljubarrota has strengthened John I.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-PORTUGAL",
+        "COC-SCOTS1385"
+      ],
+      "historical_outcome_reference": {
+        "statement": "A Franco-Scottish expedition has operated against England; Portugal's victory at Aljubarrota has strengthened John I.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-PORTUGAL",
+          "COC-SCOTS1385"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1385:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1385:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1385:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1385:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1385:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1389",
+      "title": "The Truce of Leulinghem",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1389"
+      },
+      "description": "Richard II and Charles VI remain the reigning kings as the Leulinghem truce opens a longer diplomatic interval.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-GASCON-1389"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Richard II and Charles VI remain the reigning kings as the Leulinghem truce opens a longer diplomatic interval.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-GASCON-1389"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1389:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1389:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1389:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1389:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1389:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1396",
+      "title": "The Great Diplomatic Settlement",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1396"
+      },
+      "description": "Richard II's marriage diplomacy with Isabella of France has reinforced the long truce.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Richard II's marriage diplomacy with Isabella of France has reinforced the long truce.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1396:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1396:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1396:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1396:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1396:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1399",
+      "title": "The Lancastrian Accession",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1399"
+      },
+      "description": "Henry IV has deposed Richard II and taken the English throne; Richard remains a living captive at this cutoff.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-RICHARD-TIME"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry IV has deposed Richard II and taken the English throne; Richard remains a living captive at this cutoff.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-RICHARD-TIME"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1399:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1399:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1399:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1399:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1399:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1400",
+      "title": "The Welsh Rebellion",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1400"
+      },
+      "description": "Owain Glyndŵr's revolt challenges English rule in Wales while Henry IV seeks to secure his kingship.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-WALES"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Owain Glyndŵr's revolt challenges English rule in Wales while Henry IV seeks to secure his kingship.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-WALES"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1400:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1400:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1400:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1400:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1400:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1403",
+      "title": "The Welsh War and Channel Conflict",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1403"
+      },
+      "description": "Henry IV has defeated the Percy rising at Shrewsbury; the Welsh conflict and maritime hostility continue.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-WALES"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry IV has defeated the Percy rising at Shrewsbury; the Welsh conflict and maritime hostility continue.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-WALES"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1403:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1403:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1403:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1403:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1403:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1411",
+      "title": "England and the French Civil War",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1411"
+      },
+      "description": "English forces have intervened in support of Burgundian interests in the French civil struggle.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-HENRY4"
+      ],
+      "historical_outcome_reference": {
+        "statement": "English forces have intervened in support of Burgundian interests in the French civil struggle.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-HENRY4"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1411:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1411:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1411:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1411:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1411:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1415",
+      "title": "The Lancastrian Invasion",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1415"
+      },
+      "description": "Henry V prepared a cross-Channel expedition in 1415; subsequent events require their own evidence.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry V prepared a cross-Channel expedition in 1415; subsequent events require their own evidence.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1415:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1415:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1415:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1415:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1415:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1417",
+      "title": "The Conquest of Normandy",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1417"
+      },
+      "description": "Henry V's renewed expedition has begun a sustained conquest in Normandy; Caen has fallen.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry V's renewed expedition has begun a sustained conquest in Normandy; Caen has fallen.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1417:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1417:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1417:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1417:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1417:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1419",
+      "title": "The Burgundian Alliance",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1419"
+      },
+      "description": "Rouen has surrendered and John the Fearless has been killed at Montereau; Philip the Good succeeds in Burgundy.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Rouen has surrendered and John the Fearless has been killed at Montereau; Philip the Good succeeds in Burgundy.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1419:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1419:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1419:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1419:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1419:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1420",
+      "title": "The Treaty of Troyes",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1420"
+      },
+      "description": "The Treaty of Troyes designates Henry V as heir and regent while Charles VI remains king; opposition continues.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-TROYES"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The Treaty of Troyes designates Henry V as heir and regent while Charles VI remains king; opposition continues.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-TROYES"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1420:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1420:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1420:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1420:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1420:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1422",
+      "title": "The Rival Monarchies",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1422"
+      },
+      "description": "Henry V and Charles VI have died. Henry VI is an infant king, while Charles VII maintains a rival French kingship.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-HENRY6"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Henry V and Charles VI have died. Henry VI is an infant king, while Charles VII maintains a rival French kingship.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-HENRY6"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1422:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1422:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1422:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1422:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1422:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1429",
+      "title": "The French Resurgence",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1429"
+      },
+      "description": "Orléans has been relieved and Charles VII crowned at Reims; the attempted recovery of Paris has not succeeded.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-ORLEANS"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Orléans has been relieved and Charles VII crowned at Reims; the attempted recovery of Paris has not succeeded.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-ORLEANS"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1429:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1429:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1429:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1429:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1429:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1435",
+      "title": "The Burgundian Reconciliation",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1435"
+      },
+      "description": "The Arras settlement has reconciled Philip the Good with Charles VII; Bedford has died.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-ARRAS"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The Arras settlement has reconciled Philip the Good with Charles VII; Bedford has died.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-ARRAS"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1435:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1435:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1435:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1435:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1435:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1444",
+      "title": "The Truce of Tours",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1444"
+      },
+      "description": "The Tours truce has interrupted major Anglo-French campaigning and marriage negotiations concern Margaret of Anjou.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The Tours truce has interrupted major Anglo-French campaigning and marriage negotiations concern Margaret of Anjou.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1444:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1444:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1444:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1444:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1444:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1449",
+      "title": "The Final War",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1449"
+      },
+      "description": "The seizure of Fougères has helped break the truce; French and Breton operations have recovered Rouen.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "The seizure of Fougères has helped break the truce; French and Breton operations have recovered Rouen.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1449:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1449:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1449:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1449:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1449:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1450",
+      "title": "The Fall of English Normandy",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1450"
+      },
+      "description": "Formigny and the surrender of Cherbourg have completed the collapse of English rule in Normandy.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Formigny and the surrender of Cherbourg have completed the collapse of English rule in Normandy.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1450:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1450:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1450:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1450:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1450:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coc.reference.1453",
+      "title": "The Fall of Bordeaux",
+      "date": {
+        "calendar": "julian",
+        "precision": "year",
+        "start": "1453"
+      },
+      "description": "Castillon and the recovery of Bordeaux have ended this historical sequence of major campaigning; Talbot is dead.",
+      "classification": "documented",
+      "research_status": "proposed_research",
+      "source_refs": [
+        "COC-BOOK",
+        "COC-CASTILLON"
+      ],
+      "historical_outcome_reference": {
+        "statement": "Castillon and the recovery of Bordeaux have ended this historical sequence of major campaigning; Talbot is dead.",
+        "classification": "documented",
+        "source_refs": [
+          "COC-BOOK",
+          "COC-CASTILLON"
+        ]
+      },
+      "participants": [],
+      "conditions": [
+        {
+          "id": "participants-and-capacity",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1453:participants-and-capacity",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "authority-and-decisions",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1453:authority-and-decisions",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "received-information",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1453:received-information",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "resources-and-logistics",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1453:resources-and-logistics",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        },
+        {
+          "id": "local-control-and-alternatives",
+          "type": "record_assertion",
+          "path": [
+            "evidence",
+            "coc.reference.1453:local-control-and-alternatives",
+            "status"
+          ],
+          "expected": "established",
+          "requirement": "hard",
+          "classification": "design_inference",
+          "source_refs": [
+            "COC-DESIGN"
+          ]
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "note": "Year windows are research references, not occurrence dates or schedules. Conditions require separate actual evidence and are not an exhaustive causal model. No arbitrary chain makes one historical outcome a prerequisite of all later events. Future personal deaths and campaign termination are never executed."
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
+  "joined_branch": "main",
+  "engine": {
+    "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
+    "branch": "main",
+    "commit": null,
+    "source_paths": [
+      "IRGS_3_3",
+      "engine",
+      "provenance"
+    ]
+  },
+  "app": {
+    "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
+    "branch": "main",
+    "commit": null,
+    "source_paths": [
+      "IRGS_Web",
+      "Start-IRGS.cmd"
+    ],
+    "engine_dependency": "Engine submodule, pinned to engine.commit"
+  }
+}

@@ -23,7 +23,7 @@ function campaignCatalogueMarkup(data){
 }
 function catalogueAvailableMarkup(data){
   const entries=data.portfolio.entries.filter(e=>e.available_slice);
-  return `<section class="catalogue-available-section" aria-labelledby="catalogue-available-title"><span class="eyebrow">AVAILABLE TO PLAY</span><h3 id="catalogue-available-title">Start with a development slice</h3><p class="note">These reviewed starts offer limited mechanics. The complete campaigns remain in development.</p><div class="catalogue-available-grid">${entries.map(e=>`<article class="panel"><span class="eyebrow">${esc(e.catalogue_id)}</span><h3>${esc(e.current_display_title||e.title)}</h3><p>${esc(e.catalogue_id==='CSS-01'?'A fictional household founding story in Greywater Reach.':'A reviewed 1415 character start, with an optional authored opening.')}</p><button type="button" class="primary" data-catalogue-preview="${esc(e.catalogue_id)}">Review available start</button></article>`).join('')||'<p class="note">No verified starting slice is currently available.</p>'}</div></section>`;
+  return `<section class="catalogue-available-section" aria-labelledby="catalogue-available-title"><span class="eyebrow">AVAILABLE TO PLAY</span><h3 id="catalogue-available-title">Start with a development slice</h3><p class="note">These reviewed starts offer limited mechanics. The complete campaigns remain in development.</p><div class="catalogue-available-grid">${entries.map(e=>`<article class="panel"><span class="eyebrow">${esc(e.catalogue_id)}</span><h3>${esc(e.current_display_title||e.title)}</h3><p>${esc(e.catalogue_id==='CSS-01'?'A fictional household founding story in Greywater Reach.':'Reviewed historical character starts, with optional authored local openings.')}</p><button type="button" class="primary" data-catalogue-preview="${esc(e.catalogue_id)}">Review available start</button></article>`).join('')||'<p class="note">No verified starting slice is currently available.</p>'}</div></section>`;
 }
 function filteredCatalogueEntries(){
   const f=catalogueFilters,terms=f.search.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
@@ -60,13 +60,17 @@ function catalogueCurrentAccess(entry){
   if(!current)return '<p class="reference-note">Preview only. A playable starting state is not available for this concept.</p>';
   if(entry.catalogue_id==='MC-01'){
     const starts=libraryEntries({campaigns:[current]}).filter(e=>e.ready===true&&verifiedLibraryEntry(e));
-    return '<h3>Available today</h3><p>The full Major Campaign is in development. Reviewed starts and the optional authored opening have bounded capabilities.</p>'+starts.map(e=>`<div class="buttons"><button type="button" class="quiet" data-inspect-entry="${esc(e.id)}">Read ${esc(e.year)} starting reference</button><button type="button" class="primary" data-start-entry="${esc(e.id)}">Review ${esc(e.year)} playthrough</button></div>`).join('')+(starts.length?'':'<p class="note">No verified start is currently available.</p>');
+    const options=starts.length>1?`<label>Choose a dated start<select id="catalogue-start-select">${historicalEntryOptions(starts,current.periods,current.featured_years||[])}</select></label><div id="catalogue-start-review"><p class="note">Select a year, then review its starting reference and character options.</p></div>`:starts.map(catalogueStartMarkup).join('');
+    return '<h3>Available today</h3><p>The full Major Campaign is in development. Reviewed starts and the optional authored openings have bounded capabilities.</p>'+options+(starts.length?'':'<p class="note">No verified start is currently available.</p>');
   }
   if(entry.catalogue_id==='CSS-01'){
     const ready=current.kind==='settlement_system'&&(current.templates||[]).some(t=>t.id==='R00'&&t.ready===true);
     return '<h3>Available today · The Rise of... You</h3><p>A clearly fictional R00 founding slice supports reviewed households, permission, supplies and bounded settlement work. The eight design families and full configurable system remain in development.</p>'+(ready?'<button type="button" class="primary" data-rise-setup>Review a fictional founding story</button>':'<p class="note">No reviewed founding start is currently available.</p>');
   }
   return '<h3>Available today · world guide</h3><p>Read the adopted world reference and map keys. A playable Kira starting snapshot is not available.</p>'+(current.reference_id==='world-of-kira'?'<button type="button" class="quiet" data-inspect-world="world-of-kira">Read the Kira world guide</button>':'');
+}
+function catalogueStartMarkup(entry){
+  return `<p>${esc(entry.year)} · ${esc(entry.title)}</p><div class="buttons"><button type="button" class="quiet" data-inspect-entry="${esc(entry.id)}">Read ${esc(entry.year)} starting reference</button><button type="button" class="primary" data-start-entry="${esc(entry.id)}">Review ${esc(entry.year)} playthrough</button></div>`;
 }
 function cataloguePreviewMarkup(entry){
   const dependencies=entry.content_dependencies;
@@ -79,5 +83,7 @@ function inspectCatalogueConcept(identity){
   $('#inspect-title').textContent='Campaign preview · out of character';
   $('#inspect-content').innerHTML=cataloguePreviewMarkup(entry);
   if(!$('#inspect-dialog').open)$('#inspect-dialog').showModal();
+  const select=$('#catalogue-start-select');
+  if(select)select.onchange=()=>{const start=approvedEntries.get(select.value);$('#catalogue-start-review').innerHTML=start?catalogueStartMarkup(start):'<p class="note">Choose a dated start to continue.</p>';bindLibraryControls();};
   bindLibraryControls();
 }

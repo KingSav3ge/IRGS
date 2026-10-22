@@ -1839,7 +1839,7 @@
       "slate": "launch",
       "development_status": "in_development",
       "geography": "Medieval Western Europe",
-      "period": "1337–1453 · verified start currently 1415",
+      "period": "1337–1453 · 37 supported dated starts",
       "setting_kind": "historical",
       "era": "medieval",
       "setting": "Medieval Western Europe, beginning at supported historical entry points between 1337 and 1453, with persistent continuation thereafter.",
@@ -1896,7 +1896,7 @@
       "version": "0.4",
       "readiness": {
         "full_campaign_ready": false,
-        "verification": "Existing 1415 reviewed initialization and bounded optional opening remain available; the full Major Campaign is in development."
+        "verification": "Existing 37 dated starts and bounded optional fictional openings remain available; the full Major Campaign is in development."
       }
     },
     {

@@ -159,7 +159,7 @@ def content_library():
                 if ready:
                     for scenario in preview['snapshot'].get('entity_registry_template', {}).get('scenarios', {}).values():
                         scenarios.append({'id': scenario['id'], 'title': scenario['title'], 'playable': True,
-                            'ready': True, 'readiness': 'Verified starting policy; character review required'})
+                            'ready': True, 'readiness': 'Supported starting policy; character review required'})
                 for reference in listing.get('starting_scenario_references', []):
                     if reference.get('campaign_id') == catalogue['id'] and reference.get('entry_id') == entry['id']:
                         scenarios.append({key: copy.deepcopy(reference[key]) for key in ('id', 'title', 'status', 'reason') if key in reference})
@@ -169,10 +169,11 @@ def content_library():
                     'snapshot_sha256': preview['snapshot_sha256'] if ready else None,
                     'profile_id': 'military', 'scenario_id': catalogue['id'],
                     'scenarios': scenarios,
-                    'readiness': 'Verified opening; character review available' if ready else 'Reference only; verified opening unavailable'})
+                    'readiness': 'Supported opening; review its historical scope and uncertainties' if ready else 'Reference only; supported opening unavailable'})
             periods.append({**copy.deepcopy(period), 'entries': entries})
         campaigns.append({key: copy.deepcopy(catalogue[key]) for key in ('id', 'title', 'period', 'status')})
         campaigns[-1].update(summary=catalogue['implementation_rule'], periods=periods,
+            featured_years=copy.deepcopy(catalogue['featured_years']),
             entry_count=sum(len(p['entries']) for p in periods),
             playable_entry_count=sum(e['ready'] for p in periods for e in p['entries']), starts_via='new-campaign',
             launch_capability='reviewed_initialization_and_pending_declarations')

@@ -19,11 +19,27 @@ def _pack():
     return json.loads(PACK.read_text(encoding='utf-8'))
 
 
+def _selected_pack(state):
+    entry = state.get('historical_start', {}).get('entry_id') or state.get('binding', {}).get('entry_id')
+    if entry == 'hyw-1415':
+        return _pack()
+    from historical_campaigns import SNAPSHOTS
+    if (entry not in SNAPSHOTS or state.get('binding', {}).get('scenario_id') != 'hundred-years-war'
+            or state.get('historical_start', {}).get('snapshot', {}).get('id') != entry):
+        return None
+    pack = json.loads((PACK.parent/'coc_local_delivery.json').read_text(encoding='utf-8'))
+    original_id = pack['id']
+    selected_id = 'coc-' + entry.removeprefix('hyw-') + '-delivery-v1'
+    pack = json.loads(json.dumps(pack).replace(original_id, selected_id))
+    label = state['historical_start']['opening']['label']
+    pack['description'] += ' Selected checkpoint: ' + label + '.'
+    return pack
+
+
 def opening_options(state):
-    if (state.get('historical_start', {}).get('entry_id') != 'hyw-1415'
-            and state.get('binding', {}).get('entry_id') != 'hyw-1415'):
+    pack = _selected_pack(state)
+    if pack is None:
         return []
-    pack = _pack()
     return [{**{key: copy.deepcopy(pack[key]) for key in
                 ('id', 'title', 'description', 'requirements', 'review', 'scope')},
              'content_sha256': digest(pack), 'fictional': True,
@@ -41,7 +57,7 @@ def initialize_opening(world, character, actor_id, reference):
             or species.strip().casefold() != 'human'
             or world.s.get('starting_control', {}).get('scenario_id') != 'individual'
             or opening_id not in {row['id'] for row in opening_options(world.s)}):
-        raise ValueError('This authored opening requires a new human character in the 1415 individual Solo start')
+        raise ValueError('This authored opening requires a new human character in the selected historical individual Solo start')
     if world.s.get('scene_rules') or world.s.get('elapsed_time'):
         raise ValueError('An opening is initialized only once in a new world')
     if (world.s.get('gameplay_started', {}).get('actor_id') != actor_id
@@ -49,7 +65,7 @@ def initialize_opening(world, character, actor_id, reference):
         raise ValueError('Authored circumstances cannot be inserted into a continuing playthrough')
     from core_world import CoreWorld
     result = CoreWorld(state=world.s)
-    pack = _pack()
+    pack = _selected_pack(world.s)
     source = pack['source_ref']
 
     def apply(key, op, **params):
