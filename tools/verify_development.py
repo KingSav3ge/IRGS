@@ -219,8 +219,12 @@ def verify() -> dict:
     selected = json.loads(completed.stdout)
     require(selected.get("status") == "verified" and selected.get("core") == "3.3",
             "Selected Core verification returned an unexpected result")
+    app = subprocess.run([sys.executable, "-B", str(ROOT / "IRGS_Web/app_integrity.py")],
+                         cwd=ROOT, env=environment, capture_output=True, text=True)
+    require(app.returncode == 0, "App release integrity failed: " + app.stdout[-1500:] + app.stderr[-1500:])
     return {"status": "verified", "development_files": count,
-            "selected_release": selected, "c2": c2, "campaigns_modified": False}
+            "selected_release": selected, "app_release": json.loads(app.stdout),
+            "c2": c2, "campaigns_modified": False}
 
 
 def main() -> None:

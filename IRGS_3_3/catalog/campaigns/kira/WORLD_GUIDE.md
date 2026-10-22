@@ -1,87 +1,49 @@
 # The World of Kira
 
-Larius and the lands beyond · world reference v0.1
+Adopted setting canon v0.5 · reference present: 1342 A.A.
 
-## Larius in 1342 A.A.
+The expanded [Larius lorebook](larius/LARIUS_LOREBOOK.md) and [Kieran Pelleas dossier](larius/KIERAN_PELLEAS.md) are the working canon. The earlier documents are a superseded creative archive.
 
-The dwarves of Akaria rose into a world already inhabited by elves and humans. Their Ascension began a new calendar. More than a thousand years later, the nations of Larius live with the borders, grievances and alliances left by their wars.
+## Larius and its five political cultures
 
-The surviving histories name 1342 A.A. as present day. Akaria holds its underground empire and surface cities. Sadion is ruled by Erik Vollan. Everwood remains an elven republic, while Kyrinus has its own council and a renewed relationship with its former homeland. Estru’s southern lands trade with the dwarves.
+Akaria is an industrious, aggressive dwarven empire whose heavy Battle Ram cavalry, imperial ceremony and suspicion of outsiders give it a formidable presence. Cathius Akarian favours trade and underground expansion while governing an order built on inherited rights and military prestige. Karkaria is its underground capital.
 
-Source records: `calendar`, `akaria`, `sadion`, `evalia`, `kyrinus`, `estru`.
+Sadion is the Sadire human kingdom ruled by Erik Vollan from Bay Watch. Roman legionary organization and medieval Holy Roman material culture meet within a realm of royal authority, regional privileges, chartered towns and competing obligations.
 
-## The nations of Larius
+Everwood, the Grand Republic of Evalia, is an isolationist elven civilization with exceptional magic and a caste system that survived the monarchy. Its capital is Evalia; Tethris preserves the memory of the former royal order. French-influenced prestige informs its etiquette and patronage.
 
-Akaria began beneath Iron Hill, where Barvaris Akarian brought the dwarven clans under one banner. Karkaria became the heart of its roads and cities. Emperor Cathius Akarian now favours trade and further underground expansion. Dwarven factories, firearms and gunpowder give the empire a distinctive place among its neighbours.
+Kyrinus is a more accepting, humbler Karthinian elven society with the commercial outlook of medieval Italian cities. It maintains trade and a non-aggression pact with Everwood while defending its independent civic life.
 
-Sadion grew from the settlements of the Sadire into a kingdom centred on Bay Watch. Grad Vollan founded the Legion of Valiance, and San Vollan established a navy and Hunter corps. The kingdom’s history remembers both its alliance with Everwood and its crushing victory over Estru.
+Estru is shaped by Sadire-descended humans and long-resident Desert Elves, whose initially unwilling involvement in Sadire settlement became a foundational contribution to its culture. Fragmented political power and pressure from stronger neighbours coexist with Etruscan- and Carthaginian-influenced civic, ancestral and mercantile traditions. Southern Estru trades with Akaria.
 
-Everwood’s elves survived disease, civil war and the fall of their monarchy. The Grand Republic of Evalia governs through representatives of its cities and villages. Its old colony Kyrinus became independent after rebellion, but the two elven nations now share trade and a non-aggression pact.
+## Elven communities and the wider population
 
-Estru also broke from its former homeland. Its later attack on Sadion ended in defeat. Southern Estru appears in the surviving records as a trading partner of Akaria and a client of the Rangers of Larius. The exact present divisions of Estru still need to be recovered.
+Sea Elves hold the highest recognized Evalian caste, while treating the numerous Plains and Tree Elves as equals despite their own sense of superiority. Mountain Elves are least numerous, valued for strength in war and looked down upon for weaker magic. Plains and Flatland are names for the same group; Tree and Forest are likewise equivalent.
 
-Source records: `akaria`, `sadion`, `evalia`, `kyrinus`, `estru`, `rangers`, `dwarven-technology`.
+Desert Elves also live in Kyrinus and Evalia. Ice Elves possess magic superior even to Sea Elves, mature faster and live slightly less long. Most of Larius is unsuitable for them and dwarves hold dominion over the suitable region. Exact Ice and Desert caste ranks remain further development.
 
-## Peoples and distant lands
+The dominant societies do not exhaust the continent’s peoples. Sivren communities preserve river and wetland knowledge through complex oral traditions. Keld communities inhabit fissures and narrow stone country. Vesh communication and group life challenge familiar assumptions about individual intention; their precise capacities remain to be developed.
 
-The Larius list names dwarves, Sadire humans, Estrusians and six Evalian elven groups: Flatland, Ice, Mountain, Forest, Sea and Desert. The histories distinguish Evalian and Karthinian political communities; nationality and elven ancestry are not interchangeable.
+## History that remains alive
 
-The TalmahKah map names thirty-two locations, including temples, watches, settlements and five communities grouped under Lupine Tribes: Woshi, Foxti, Nekhamen, Coyota and Dingishi. The Word list gives Lupine height and weight ranges; their societies and relations still need fuller accounts.
+Barvaris Akarian united the dwarven clans around 3000 B.A. Sadire migration and the elven disease crisis belong to the period around 2500 B.A.; Sadion had consolidated by the opening of trade with the elves in 1998 B.A. Everwood’s republican civil war ran from about 1010 to 1000 B.A. Kieran was born at its close.
 
-Source records: `akarian-dwarves`, `sadire`, `estrusians`, `flatland-elves`, `ice-elves`, `mountain-elves`, `forest-elves`, `sea-elves`, `desert-elves`, `lupine`, `talmahkah`.
+Ascension marks the dwarves’ emergence onto the snowy surface. The continental war ran from 80 to 400 A.A.; Kieran served actively for 228 years within that conflict. Estru and Kyrinus gained independence in 500 A.A. Estru attacked Sadion and was defeated in 600 A.A. The Long Peace since then contains unresolved dependence, grief and political struggle.
 
-## The original maps
+In 1342 A.A., Kieran is 2342 years old. His sustained healing practice, the Long Renewal, has extended his life far beyond the ordinary Plains Elven span. It supplies no immunity from injury, illness or death.
 
-Larius survives as a numbered Minecraft reference map. Its key distinguishes cities, underground cities, capitals and castles. Bay Watch, Griffin, Forlathis, Tethris, Estru City, Castle LuCain, Vlaris and Cthulis connect the map with the written accounts.
+## Faith, institutions and the central character
 
-TalmahKah has a separate numbered map. Its place names extend from BogTown and IceCrown through Prenceta Temple, Scrap Haven and Turtle Rock to the named Lupine communities. These are places to develop from the source, not evidence that their cultures or political relationships are already known.
+The First Hearth, Turning Bough, Lantern Covenant, Open Horizon, Concord of the Veil, Shared Table, Keepers of the Last Door and Doctrine of Continuance are established religious traditions. Their claims are beliefs within the setting; their existence does not make every teaching a proven cosmic fact.
 
-Both maps are retained as original references with no established campaign date or distance scale. Some labels differ from the histories, and the Larius key repeats number 25. The gazetteers preserve those differences.
+The League of Safe Roads, Witness Houses and Hearth Leagues give people ways to cooperate across institutional limits. Lethra Senn, Dorrun Valehammer, Rovan Kest, Neris Tal, Vessa Morn, Sera Vael and Taren Ash form part of the recurring supporting cast.
 
-Source records: `bay-watch`, `griffin`, `forlathis`, `tethris`, `estru-city`, `castle-lucain`, `vlaris`, `cthulis`, `talmahkah`, `lupine`.
+Kieran leads the Rangers of Larius, a company of roughly five hundred elves descended institutionally from a mixed refugee rescue. His central arc, The Price of Peace, concerns how to protect people without owning their decisions. The western expedition charter, the Rangers’ future and the politics of restoration offer open stories. No outcome is guaranteed by his narrative role.
 
-## Aldain and the other mapped regions
+## Beyond Larius
 
-Aldain’s map has an explicit political colour key. Light blue represents the Scalian Scalix Imperium; red the Rolling Hills Tribe; yellow the Mountain Peak Tribe; green the Eversong Hollow Tribe; blue the Frozen Lake Tribe; and purple the Primatarus Shenyan Republic.
+Larius, TalmahKah, Aldain, Azaloth, Falkion and Bendara occupy separate continental shelves. Falkion need not be classed as a continent. Their relative positions and distance scale remain to be developed.
 
-Its eleven numbered entries name Hissinberg, Salazar, Rotten Stump, the four tribes, Shindu Temple, Shenyang, Chirac and Chengdu. The states’ names and mapped associations are supplied; their rulers, peoples, histories and relationships still await fuller accounts.
+TalmahKah’s map names thirty-two places and five Lupine communities. Aldain’s eleven entries sit within six creator-defined political colour groups. Azaloth, Falkion and Bendara have terrain references awaiting fuller development. The [map gazetteer](MAP_GAZETTEER.md) preserves the supplied labels; current names follow this edition’s canon decisions.
 
-Azaloth and Bendara are represented by terrain maps without supplied place keys or political labels. Falkion’s map shows a small main landmass surrounded by water. The cyan line around it has no supplied explanation. These three maps establish named regions to develop without inventing their inhabitants or governments.
-
-Larius, TalmahKah, Aldain, Azaloth, Falkion and Bendara sit on separate continental shelves. Falkion remains a named region without requiring it to be classed as a continent. Their relative positions and a shared campaign-world distance scale have not yet been established.
-
-Source records: `aldain`, `azaloth`, `falkion`, `bendara`, `scalian-scalix-imperium`, `rolling-hills-tribe`, `mountain-peak-tribe`, `eversong-hollow-tribe`, `frozen-lake-tribe`, `primatarus-shenyan-republic`.
-
-## The long wars and the peace
-
-The national histories place the dwarven invasion of Estru and Kyrinus in 80 A.A. New war machines drove the colonies close to defeat. In 200 A.A., Sadion and Everwood combined their armies and began taking the occupied lands back.
-
-Peace was signed in 400 A.A., but the colonies resented the settlement. Estru and Kyrinus rebelled in 500 A.A. Though defeated, they received independence. A century later Estru attacked Sadion and was crushed; Kyrinus declined to join that war.
-
-These dates follow the national histories. Kieran’s account gives a different war duration, and the Akarian history compresses the later separations differently. Those differences remain part of the source review.
-
-Source records: `war-begins`, `war-machines`, `alliance`, `peace`, `independence`, `estrusian-war`.
-
-## People and institutions
-
-Cathius Akarian is the recorded emperor of the dwarves. His Battle Ram, Malachi, comes from the mounted tradition he helped establish. His trade with Southern Estru exchanges guns and weapons for rare materials.
-
-Kieran Pelleas leads the Rangers of Larius, a guild of around five hundred elves whose work must meet its own moral standards. His long life reaches back into Everwood’s royal and republican past. The age given in his biography exceeds the lifespan listed for Flatland elves; the reason is not recorded.
-
-Daniel Convor, called Dan or Fox, is a Sadire sergeant of the Legion of Valiance. His record preserves a story of crime, army service and Dole Company. These figures belong to the world’s surviving history; none is designated as the player character.
-
-Source records: `cathius`, `dwarven-technology`, `kieran`, `rangers`, `daniel`, `legion`, `dole-company`.
-
-## Magic, craft and exploration
-
-Kira’s records place magical craft beside dwarven industry. Kieran’s sheet names elemental spells, healing, resurrection, necromancy, runecrafting, enchanting and alchemy. Cathius’s sheet states that dwarves cannot use magic. The costs, limits and wider availability of these powers have not yet been established.
-
-One surviving thread looks beyond the known lands. A letter bearing the seals of Akaria and Estru offers Kieran and his Rangers a place with a westward exploration fleet. Their account ends as they march for Castle LuCain. The fleet’s destination and what it found remain unrecorded.
-
-Source records: `elven-magic`, `dwarven-magic`, `dwarven-technology`, `western-expedition`.
-
-## Reading the surviving records
-
-This revival edition organizes the original material without resolving its contradictions. Structured records in `world.json` cite exact document passages or attribute supplied map references. All nine Word documents remain unchanged in `sources/`. The six original map images remain in the conversation; this package contains their transcribed keys and descriptive references, not original image files.
-
-See [MAP_GAZETTEER.md](MAP_GAZETTEER.md), [CONTINUITY_REVIEW.md](CONTINUITY_REVIEW.md) and [IRGS_BINDING.md](IRGS_BINDING.md) for the full catalogue, open questions and existing fantasy-system binding.
+The western fleet’s destination and discoveries remain open. No mapped region is assigned as its destination merely because it has a map.

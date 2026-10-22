@@ -164,6 +164,37 @@
       "source_kind": "user_chat_statement",
       "text": "They are on separate continental shelfs, not sure many would call Falkion a continent though",
       "interpretation": "The six named regions occupy separate continental shelves. Falkion is not required to be classified as a continent."
+    },
+    {
+      "id": "KIRA-U03",
+      "source_kind": "user_chat_statement",
+      "text": "The Sadire Humans of Sadion are a mixture of Roman and Holy Roman design, using Legion as their military name and using similar tactics. Though they use Medieval HRE type equipment.\n\nThe Estrusian Humans of Estru being their descendants are likewise akin to Medieval Germans pre-unification. Oppressed by their larger and more powerful neighbors, their culture is more akin to the ancient Etruscans and Carthaginians.\n\nThe Akarian Dwarves of Akaria are Industrious and Aggressive, they use heavy mounted \"cavalry\" on the back of large Rams. Like the Sassanians & Byzantines but their culture is more insular and xenophobic, think Medieval England post William. Heavily armored Cavalry that smashes lines. Pompus and arrogant, etc, etc.\n\nThe Evalian Elves of Everwood are isolationists and superiorists, much like the French but without the accents. While not as connected as they once were, the elves are still the most powerful with Magic among the races of Larius and the most diverse with their numerous Elven sub-races mingling, though there is a cast system in this society based on Sub-Race.\n\nThe Karthinians are a more accepting and humble society of elves and Take on the Trader mindset of the Medieval Italians.",
+      "interpretation": "Creator-confirmed national inspirations and defining fictional cultural/military traits; historical analogues apply to design rather than literal imported history."
+    },
+    {
+      "id": "KIRA-U04",
+      "source_kind": "user_chat_statement",
+      "text": "The Sea Elves hold the highest caste due to their retained Magical superiority, the Plains Elves and Tree Elves are the most numerous and so make up the majority of society, so while the Sea Elves still feel superior to them, they recognize them as equals. The Mountain Elves are the least numerous still, and while their strength makes them efficient in the Elven armies to fight Humans and Dwarves, their lack of sufficient Magical capabilities sees them looked down upon.\nThough Evalia is a Republic, that hasn't erased the superiority complexes of the elves.\n\nAnd while it wasn't developed at the time, these are the dominant races of Larius and the Leaders of their respective nations. There are other minor races of varying intelligence/sentience on the continent aside from general Flora and Fauna.",
+      "interpretation": "Creator-confirmed nuanced elven caste relations and a nonexhaustive dominant-peoples list; other minor peoples exist."
+    },
+    {
+      "id": "KIRA-U05",
+      "source_kind": "user_chat_statement",
+      "text": "I did forget about the Desert and Ice Elves. The Desert Elves are residents (at first unwillingly, but it has been centuries since Sadire settlement before the transition to being...)of Estru. The Desert Elves were a component of how Estru formed culturally, though there are still those who live in Kyrinus and Evalia.\nThe Ice Elves have superior magic to even the Sea Elves, they mature faster but live slightly less as long. They are primarily isolationists due to most of the continent not being suitable for them and the Dwarves having dominion over the region that would be suitable for their habitation.",
+      "interpretation": "Creator clarification: Desert Elves are long-resident cultural contributors to Estru, with initially unwilling participation associated with Sadire settlement and communities also in Kyrinus and Evalia. Ice Elves exceed Sea Elves in magic, mature faster, live slightly less long and are primarily isolated by habitat suitability and dwarven dominion over suitable territory. Exact coercive arrangements, biological ages, territorial boundaries and caste positions are not supplied."
+    },
+    {
+      "id": "KIRA-U06",
+      "source_kind": "user_chat_statement",
+      "text": "Scratch the Originals. The expanded lore is more ideal. I was far less of a writer than I am now when those were created.",
+      "interpretation": "Adopt the expanded lore as the working setting canon. Original documents become superseded archival material; their contradictions do not veto the expanded setting. Retain explicit newer creator details and keep possible stories distinct from completed events."
+    },
+    {
+      "id": "KIRA-U02",
+      "source_kind": "user_chat_statement",
+      "text": "Starting with Larius, flesh out Lore, history, culture, religions, etc, etc. Kieran Pelleas is the continent's \"Main Character\"",
+      "interpretation": "Authorize new Larius worldbuilding and establish Kieran as the central narrative character, without assigning a player avatar."
     }
-  ]
+  ],
+  "original_material_role": "superseded_archive_without_canon_authority"
 }

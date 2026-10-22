@@ -1,4 +1,12 @@
-# Kira campaign world v0.1 original input
+# Kira original inputs and current canon
+
+`Kira_Larius_Expanded_v0_5.zip` is the second user-uploaded package, preserved byte for byte. On 22 October 2026 the user explicitly confirmed: **Adopt v0.5 as Kira's current working canon**. The canonical world directory now contains that package's v0.5 content. Its Larius lorebook and Kieran dossier supersede the earlier documents as working setting canon; the originals retain their exact bytes as creative history.
+
+The uploaded ZIP's two application patches target older captured source trees. They were inspected and retained inside the ZIP, not applied. Reference content was reconciled in the existing canonical world directory, with release pins and the development manifest refreshed for the current tree. The ZIP's validation record is inherited package evidence; fresh local checks are recorded separately.
+
+All nine original Word files, their exact transcription and the map catalogue match the preceding installation byte for byte. The v0.5 archive preserves former source comparisons. The package's `KIRA-U02`–`KIRA-U06` conversation statements remain attributed package provenance; this session's explicit v0.5 adoption supplies the integration authorization.
+
+## Earlier input
 
 `Kira_Campaign_World_v0_1.zip` is the original user-uploaded bundle, preserved byte for byte. Its length and SHA-256 are recorded in [SOURCE_IMPORTS.json](../SOURCE_IMPORTS.json).
 

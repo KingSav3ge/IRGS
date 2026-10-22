@@ -13,7 +13,8 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT.parent / 'IRGS_3_3' / 'runtime'))
+from engine_paths import ENGINE_ROOT
+sys.path.insert(0, str(ENGINE_ROOT / 'runtime'))
 from core_world import CoreWorld, SUPPORTED_OPS
 from campaign_library import initial_campaign, catalog, presentation_binding
 from historical_campaigns import historical_catalogue, historical_entry
@@ -489,7 +490,7 @@ def make_server(port=8765, folder=None):
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript'), '/catalogue.js': ('catalogue.js', 'text/javascript')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]
@@ -591,6 +592,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     from release_integrity import verify_release
     verify_release()
+    from app_integrity import verify_app
+    verify_app()
     server = make_server(args.port)
     print(f'IRGS ready at http://127.0.0.1:{server.server_port}', flush=True)
     try:

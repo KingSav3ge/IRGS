@@ -10,7 +10,7 @@ The printed number 25 is used twice, for Lethar and Sarinus. Internal keys 25a a
 
 Coloured linework and terrain are reference evidence. Political ownership, travel distance, navigability and a date are not automatically derived.
 
-The map labels Karwathis and Evalian differ from the written capital names Karkaria and Evalia. Ikarion may correspond to written Ikrarion; these have not been silently merged.
+Current canon uses Karkaria for the map’s Karwathis, Evalia for its Evalian label, and Ikarion for the older Ikrarion spelling. The table preserves the visible map labels as a transcription; those labels do not overrule the adopted worldbook.
 
 | Printed number | Place label | Visual grouping / transcription note |
 | --- | --- | --- |

@@ -29,6 +29,7 @@ function environment(){
   let responder=()=>{throw Error('Unconfigured synthetic transport');};
   vm.createContext(context);
   vm.runInContext(fs.readFileSync('IRGS_Web/static/rise.js','utf8'),context);
+  vm.runInContext(fs.readFileSync('IRGS_Web/static/catalogue.js','utf8'),context);
   // The production boot request is exercised separately with a controlled responder.
   vm.runInContext(source.slice(0,source.lastIndexOf('(async()=>{try{const campaigns=')),context);
   function run(code){return vm.runInContext(code,context);}
@@ -129,5 +130,74 @@ async function test(name,fn){await fn();results.push('PASS '+name);}
  });
  await test('Players see campaign controls while technical bindings stay in the creator workspace',async()=>{const h=environment();h.run("token='token';current="+JSON.stringify(projection('A'))+";$('#campaign').value='A';workspaceMode='player';syncControls();");assert.equal(h.elements.get('binding-badge').hidden,true);assert.equal(h.elements.get('library-nav').hidden,true);h.run("workspaceMode='creator';syncControls();");assert.equal(h.elements.get('binding-badge').hidden,false);assert.equal(h.elements.get('library-nav').hidden,false);assert.equal(h.calls.length,0);});
  await test('Rise retains a committed material quantity without inventing an unknown unit',async()=>{const h=environment(),p=projection('R');p.settlement={region:'Reach',opening_date:'Spring',location:'commons',elapsed_seconds:0,household_name:'Our household',people:['Ari'],inventory:[{material:'water',quantity:2,available:2,unit:null,unit_status:'unconfigured',reserved_for_work:0}],seed_reserve:0,projects:[],receipts:[],actions:[],limits:[]};h.setFetch(()=>h.reply(p));await h.run("openCampaign('R')");const text=h.elements.get('content').innerHTML;assert(text.includes('2 water'));assert(text.includes('unit not configured'));assert(!text.includes('litres'));assert.equal(h.calls.filter(c=>c.body).length,0);});
+ await test('The full portfolio filters type, genre, setting, period, place and perspective without changing a world',async()=>{
+   const h=environment(),fixture=discoveryFixture(),portfolio=JSON.parse(fs.readFileSync('IRGS_Web/data/campaign_portfolio.json','utf8'));
+   portfolio.counts={total:44,launch:31,future:12,systems:1,free_launch_stories:18,available_slices:1};
+   portfolio.entries.forEach(e=>e.available_slice=e.catalogue_id==='MC-01');fixture.data.portfolio=portfolio;
+   h.run("token='token';view='content-library';current="+JSON.stringify(projection('A'))+';');
+   const before=h.run('JSON.stringify(current)');h.setFetch(()=>h.reply(fixture.data));await h.run('renderContentLibrary()');
+   assert.equal(h.context.document.querySelectorAll('[data-catalogue-preview]').length,45);
+   assert(h.elements.get('catalogue-result-count').textContent.includes('44 of 44'));
+   h.elements.get('catalogue-type').value='short_story';h.elements.get('catalogue-type').onchange();
+   assert.equal(h.context.document.querySelectorAll('[data-catalogue-preview]').length,19);
+   h.elements.get('catalogue-search').value='retainer servant';h.elements.get('catalogue-search').oninput();
+   assert(h.elements.get('catalogue-result-count').textContent.includes('1 of 44'));
+   assert(h.elements.get('catalogue-results').innerHTML.includes('The Long Road Home'));
+   h.elements.get('catalogue-reset').click();assert.equal(h.context.document.activeElement.id,'catalogue-search');
+   h.elements.get('catalogue-slate').value='future';h.elements.get('catalogue-slate').onchange();
+   assert(h.elements.get('catalogue-result-count').textContent.includes('12 of 44'));
+   h.elements.get('catalogue-type').value='grand';h.elements.get('catalogue-type').onchange();
+   assert(h.elements.get('catalogue-result-count').textContent.includes('3 of 44'));
+   h.elements.get('catalogue-setting').value='fantasy';h.elements.get('catalogue-setting').onchange();
+   assert(h.elements.get('catalogue-results').innerHTML.includes('No matching concepts'));
+   h.elements.get('catalogue-reset').click();
+   h.elements.get('catalogue-genre').value='Science Fiction';h.elements.get('catalogue-genre').onchange();
+   h.elements.get('catalogue-era').value='future';h.elements.get('catalogue-era').onchange();
+   assert(h.elements.get('catalogue-result-count').textContent.includes('3 of 44'));
+   h.elements.get('catalogue-search').value='engineer';h.elements.get('catalogue-search').oninput();
+   assert(h.elements.get('catalogue-results').innerHTML.includes('Pressure Falling'));
+   assert.equal(h.run('JSON.stringify(current)'),before);assert.equal(h.calls.length,1);assert(!h.calls[0].body);
+ });
+ await test('New concept previews show the supplied scope without offering a forged launch or entitlement',async()=>{
+   const h=environment(),fixture=discoveryFixture(),portfolio=JSON.parse(fs.readFileSync('IRGS_Web/data/campaign_portfolio.json','utf8'));
+   portfolio.counts={total:44,launch:31,future:12,systems:1,free_launch_stories:18};fixture.data.portfolio=portfolio;
+   portfolio.entries[0].available_slice=true;portfolio.entries[0].current_campaign_id='hundred-years-war';portfolio.entries[0].playable=true;
+   h.run("token='token';view='content-library';");h.setFetch(()=>h.reply(fixture.data));await h.run('renderContentLibrary()');
+   await h.run('inspectCatalogueConcept("SS-01")');const preview=h.elements.get('inspect-content').innerHTML;
+   assert(h.elements.get('inspect-dialog').open);assert(preview.includes('The Long Road Home'));assert(preview.includes('retainer or the servant'));
+   assert(preview.includes('Proposed free Short Story at launch'));assert(preview.includes('working proposal'));
+   assert(!preview.includes('data-start-entry'));assert(!preview.includes('data-rise-setup'));
+   assert(!h.elements.get('create-dialog').open);assert.equal(h.calls.filter(c=>c.body).length,0);
+ });
+ await test('Catalogue text is escaped and draft classification cannot inject markup or style classes',async()=>{
+   const h=environment(),fixture=discoveryFixture(),portfolio=JSON.parse(fs.readFileSync('IRGS_Web/data/campaign_portfolio.json','utf8'));
+   portfolio.counts={total:44,launch:31,future:12,systems:1,free_launch_stories:18};fixture.data.portfolio=portfolio;
+   const e=portfolio.entries[0];e.title='<script>bad title</script>';e.tagline='<img src=x onerror=bad>';e.synopsis=['<svg onload=bad>'];e.perspectives='<script>bad role</script>';e.campaign_type='bad" onmouseover="bad';
+   h.run("token='token';view='content-library';");h.setFetch(()=>h.reply(fixture.data));await h.run('renderContentLibrary()');
+   await h.run('inspectCatalogueConcept("SS-01")');
+   for(const text of [h.elements.get('catalogue-results').innerHTML,h.elements.get('inspect-content').innerHTML]){
+     assert(!text.includes('<script>'));assert(!text.includes('<img src'));assert(!text.includes('<svg onload'));assert(!text.includes('onmouseover="bad'));
+   }
+   assert(h.elements.get('inspect-content').innerHTML.includes('&lt;svg'));assert.equal(h.calls.filter(c=>c.body).length,0);
+ });
+ await test('A catalogue preview preserves verified historical review and closes before opening character setup',async()=>{
+   const h=environment(),fixture=discoveryFixture(),portfolio=JSON.parse(fs.readFileSync('IRGS_Web/data/campaign_portfolio.json','utf8'));
+   portfolio.counts={total:44,launch:31,future:12,systems:1,free_launch_stories:18};fixture.data.portfolio=portfolio;
+   h.run("token='token';view='content-library';");h.setFetch(path=>path.startsWith('/api/content-library')?h.reply(fixture.data):h.reply({entries:[fixture.entry],featured_years:[1415]}));
+   await h.run('renderContentLibrary()');await h.run('inspectCatalogueConcept("MC-01")');
+   const preview=h.elements.get('inspect-content').innerHTML;assert(preview.includes('Review 1415 playthrough'));
+   const start=h.context.document.querySelectorAll('[data-start-entry]').at(-1);start.click();
+   assert(!h.elements.get('inspect-dialog').open);assert(h.elements.get('create-dialog').open);
+   assert.equal(h.run('setupEntryContext.snapshot_sha256'),fixture.entry.snapshot_sha256);assert.equal(h.calls.filter(c=>c.body).length,0);
+ });
+ await test('The separate Rise system preview opens only the reviewed fictional founding workflow',async()=>{
+   const h=environment(),fixture=discoveryFixture(),portfolio=JSON.parse(fs.readFileSync('IRGS_Web/data/campaign_portfolio.json','utf8'));
+   portfolio.counts={total:44,launch:31,future:12,systems:1,free_launch_stories:18};fixture.data.portfolio=portfolio;
+   fixture.data.campaigns.push({id:'rise',kind:'settlement_system',title:'The Rise of... You',templates:[{id:'R00',ready:true}]});
+   h.run("token='token';view='content-library';");h.setFetch(()=>h.reply(fixture.data));await h.run('renderContentLibrary()');await h.run('inspectCatalogueConcept("CSS-01")');
+   assert(h.elements.get('inspect-content').innerHTML.includes('eight design families'));
+   h.context.document.querySelectorAll('[data-rise-setup]').at(-1).click();assert(!h.elements.get('inspect-dialog').open);assert(h.elements.get('rise-dialog').open);
+   assert(h.elements.get('rise-content').innerHTML.includes('Review starting facts'));assert.equal(h.calls.filter(c=>c.body).length,0);
+ });
  console.log(results.join('\n')+'\n'+results.filter(result=>result.startsWith('PASS ')).length+' frontend checks passed. No real save or live server was used.');
 })().catch(error=>{console.error(results.join('\n'));console.error(error);process.exitCode=1;});

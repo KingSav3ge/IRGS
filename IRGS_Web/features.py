@@ -9,8 +9,9 @@ from pathlib import Path
 
 from historical_campaigns import historical_catalogue, historical_entry
 from campaign_worlds import WORLD_FILES, world_listing
+from campaign_portfolio import campaign_portfolio
 
-LISTINGS_PATH = Path(__file__).resolve().parent.parent / 'IRGS_3_3/data/campaign_listings.json'
+LISTINGS_PATH = Path(__file__).resolve().parent / 'data/campaign_listings.json'
 LIFECYCLES = ('planned', 'scaffold', 'in_development', 'functional', 'deferred')
 
 
@@ -179,7 +180,7 @@ def content_library():
                      if world_id in visible_campaign_ids())
     from rise_campaigns import listing as rise_listing
     if 'rise' in visible_campaign_ids(): campaigns.append(rise_listing())
-    return {'schema_version': 1, 'campaigns': campaigns,
+    return {'schema_version': 1, 'campaigns': campaigns, 'portfolio': campaign_portfolio(campaigns),
         'note': 'Campaign discovery excludes technical engines and libraries. General action resolution and narration remain unavailable.'}
 
 

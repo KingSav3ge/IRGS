@@ -35,6 +35,14 @@ def source_identity(root=ROOT):
         if not path.is_relative_to(root.resolve()):
             raise ValueError('Release-bound test input escapes the project')
         paths.add(path)
+    app_release_path = root / 'IRGS_Web/release.json'
+    paths.add(app_release_path)
+    app_release = json.loads(app_release_path.read_text(encoding='utf-8'))
+    for name in app_release['files_sha256']:
+        path = (root / 'IRGS_Web' / name).resolve()
+        if not path.is_relative_to((root / 'IRGS_Web').resolve()):
+            raise ValueError('App release-bound test input escapes the App')
+        paths.add(path)
     return {path.relative_to(root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
             for path in sorted(paths)}
 

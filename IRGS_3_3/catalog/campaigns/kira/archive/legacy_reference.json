@@ -1,0 +1,2208 @@
+{
+  "status": "superseded_archive",
+  "canon_authority": false,
+  "captured_from_version": "0.4",
+  "records": [
+    {
+      "id": "kira",
+      "category": "world",
+      "name": "Kira",
+      "summary": "The World of Kira is a homebrew fantasy setting. Its supplied records now cover Larius, TalmahKah, Aldain, Azaloth, Falkion and Bendara, with the most detailed written histories centred on Larius.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 6,
+          "quote": "Faction/Guild: Rangers of Larius"
+        },
+        {
+          "source_id": "KIRA-S05",
+          "paragraph": 1,
+          "quote": "Race Name: Lupine"
+        }
+      ],
+      "attribution": "World identity and purpose supplied by the user in this conversation; regional identities also occur in the archive directory names."
+    },
+    {
+      "id": "larius",
+      "category": "region",
+      "name": "Larius",
+      "summary": "The principal recorded region, containing the human, elven and dwarven nations and the Rangers of Larius.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 1,
+          "quote": "the strongest nation in Larius"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 22,
+          "quote": "Faction Location: Larius"
+        }
+      ],
+      "scale": "Rangers record says continent; no map, coordinates or distances supplied.",
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null,
+      "population_scope": {
+        "region_id": "larius",
+        "dominant_peoples_are_nonexhaustive": true,
+        "other_minor_peoples_exist": true,
+        "intelligence_and_sentience_vary": true,
+        "named_minor_peoples_confirmed_by_creator": []
+      },
+      "creator_confirmed_elven_communities": [
+        {
+          "people_id": "desert-elves",
+          "name": "Desert Elves",
+          "status": "user_confirmed",
+          "source_refs": [
+            "KIRA-U05"
+          ],
+          "resident_polity_ids": [
+            "estru",
+            "kyrinus",
+            "evalia"
+          ],
+          "estru": {
+            "long_resident": true,
+            "initial_participation": "unwilling",
+            "historical_context": "Sadire settlement preceded the transition to Estru; centuries have passed",
+            "formative_cultural_contribution": true,
+            "exact_arrangement_and_dates": null,
+            "present_legal_status": null
+          },
+          "ancestry_determines_nationality": false
+        },
+        {
+          "people_id": "ice-elves",
+          "name": "Ice Elves",
+          "status": "user_confirmed",
+          "source_refs": [
+            "KIRA-U05"
+          ],
+          "magic": {
+            "comparison_people_id": "sea-elves",
+            "relative_capability": "superior",
+            "automatic_individual_spell_list": false
+          },
+          "life_history": {
+            "maturation": "faster",
+            "lifespan": "slightly shorter",
+            "comparison_context_people_id": "sea-elves",
+            "numeric_maturity_age": null,
+            "new_numeric_lifespan": null
+          },
+          "isolation": {
+            "primarily_isolationist": true,
+            "most_of_larius_suitable": false,
+            "suitable_region_under_dwarven_dominion": true,
+            "polity_context_id": "akaria",
+            "exact_boundaries": null,
+            "cause_or_date_of_dwarven_dominion": null
+          },
+          "independent_nation_established": false
+        }
+      ]
+    },
+    {
+      "id": "talmahkah",
+      "category": "region",
+      "name": "TalmahKah",
+      "summary": "A region represented by a Minecraft reference map with thirty-two named entries and a Word list describing the Lupine.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S05",
+          "paragraph": 1,
+          "quote": "Race Name: Lupine"
+        }
+      ],
+      "geographic_extent": null,
+      "attribution": "Regional association comes from the original archive path, not an inferred map.",
+      "map_source_ids": [
+        "KIRA-M02"
+      ],
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null
+    },
+    {
+      "id": "calendar",
+      "category": "calendar",
+      "name": "Before Ascension / After Ascension",
+      "summary": "The dwarven emergence onto the surface marks the calendar transition. B.A. counts before Ascension; A.A. counts after it. The dwarven history explicitly names 1342 as present day.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 4,
+          "quote": "B.A or Before Ascension"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 7,
+          "quote": "From 600 A.A to 1342, present day"
+        }
+      ],
+      "reference_year": 1342,
+      "era": "A.A.",
+      "precision": "year",
+      "month": null,
+      "day": null,
+      "hour": null,
+      "variants": [
+        "Before Assent",
+        "Before Ascension",
+        "After Ascension"
+      ],
+      "arithmetic_policy": "Year zero is mentioned by the source; no executable civil calendar, month lengths or elapsed-time conversion selected."
+    },
+    {
+      "id": "akaria",
+      "category": "polity",
+      "name": "Akarian Empire",
+      "summary": "A dwarven empire centred on Iron Hill and the underground capital Karkaria. Its history describes ten underground cities and five surface cities in 1342 A.A. Cathius Akarian is the recorded emperor.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "this was Karkaria"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 7,
+          "quote": "10 underground cities and 5 above ground cities"
+        },
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Political Affiliation: Akarian Empire (Emperor)"
+        }
+      ],
+      "people_ids": [
+        "akarian-dwarves"
+      ],
+      "leader_id": "cathius",
+      "place_ids": [
+        "iron-hill",
+        "karkaria"
+      ],
+      "capability_status": "Industrial and military superlatives are source descriptions; exact population, production, stock and force totals are unprovided.",
+      "creator_confirmed_profile": {
+        "polity_id": "akaria",
+        "people_id": "akarian-dwarves",
+        "name": "Akaria",
+        "source_paragraph": 3,
+        "military_inspirations": [
+          "Sasanian heavy cavalry",
+          "Byzantine heavy cavalry"
+        ],
+        "cultural_inspirations": [
+          "Insular medieval England after William"
+        ],
+        "confirmed_traits": [
+          "Industrious",
+          "Aggressive",
+          "Insular",
+          "Xenophobic",
+          "Pompous and arrogant cultural posture",
+          "Heavily armoured cavalry on large Rams intended to smash enemy lines"
+        ],
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U03"
+        ]
+      }
+    },
+    {
+      "id": "sadion",
+      "category": "polity",
+      "name": "Kingdom of Sadion",
+      "summary": "The Sadire human kingdom, with Bay Watch as its recorded capital. Its present king is Erik Vollan, whose son is Alek Vollan. Its institutions include the Legion of Valiance, a navy and a Hunter corps.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 3,
+          "quote": "capital known as Bay Watch"
+        },
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 19,
+          "quote": "The current king of Sadion is Erik Vollan"
+        },
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 5,
+          "quote": "the first king to build a Navy and a Hunter corp"
+        }
+      ],
+      "people_ids": [
+        "sadire"
+      ],
+      "leader_id": "erik-vollan",
+      "place_ids": [
+        "bay-watch"
+      ],
+      "creator_confirmed_profile": {
+        "polity_id": "sadion",
+        "people_id": "sadire",
+        "name": "Sadion",
+        "source_paragraph": 1,
+        "design_inspirations": [
+          "Roman",
+          "Holy Roman"
+        ],
+        "military_inspirations": [
+          "Roman legionary institutions and broad tactics"
+        ],
+        "equipment_reference": "Medieval Holy Roman Empire",
+        "confirmed_traits": [
+          "Sadire human-led nation",
+          "Legion military terminology",
+          "Legion-like tactics with medieval equipment"
+        ],
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U03"
+        ]
+      }
+    },
+    {
+      "id": "evalia",
+      "category": "polity",
+      "name": "Grand Republic of Evalia",
+      "summary": "The elven republic of Everwood. Its history describes city and village representatives meeting four times a year and gives an assembly total of 256. The current prime minister is unnamed.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "The Grand Republic of Evalia"
+        },
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "a total 256 representatives"
+        }
+      ],
+      "people_ids": [
+        "flatland-elves",
+        "ice-elves",
+        "mountain-elves",
+        "forest-elves",
+        "sea-elves",
+        "desert-elves"
+      ],
+      "place_ids": [
+        "everwood",
+        "evalia-city",
+        "tethris",
+        "forlathis"
+      ],
+      "leader_id": null,
+      "note": "Population subtypes are recorded in the Larius list; their current citizenship and political distribution are not enumerated.",
+      "creator_confirmed_profile": {
+        "polity_id": "evalia",
+        "people_id": null,
+        "name": "Everwood / Evalia",
+        "source_paragraph": 4,
+        "cultural_inspirations": [
+          "French-influenced cultural prestige; no accent caricature"
+        ],
+        "confirmed_traits": [
+          "Isolationist",
+          "Elven superiority ideology",
+          "Less internationally connected than formerly",
+          "Elves remain the most magically powerful peoples of Larius",
+          "Numerous elven sub-races mingle",
+          "Sub-race-based caste system persists within a republic"
+        ],
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U03"
+        ]
+      },
+      "creator_confirmed_caste": {
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U04",
+          "KIRA-U05"
+        ],
+        "sea_elves": {
+          "position": "highest_caste",
+          "basis": "retained magical superiority",
+          "attitude_to_plains_and_tree": "feel superior but recognize them as equals"
+        },
+        "plains_and_tree_elves": {
+          "people_ids": [
+            "flatland-elves",
+            "forest-elves"
+          ],
+          "creator_terms": [
+            "Plains Elves",
+            "Tree Elves"
+          ],
+          "demography": "most numerous; majority of society",
+          "recognized_as_equals_by_sea_elves": true,
+          "not_an_automatically_subordinate_tier": true
+        },
+        "mountain_elves": {
+          "people_id": "mountain-elves",
+          "demography": "least numerous",
+          "military_value": "strength and efficiency fighting Humans and Dwarves",
+          "status": "looked down upon for insufficient magical capabilities"
+        },
+        "ice_elves_position": null,
+        "desert_elves_position": null,
+        "mixed_sub_race_classification": null,
+        "republic_abolished_superiority_attitudes": false,
+        "magic_and_status": {
+          "status": "user_confirmed",
+          "source_refs": [
+            "KIRA-U04",
+            "KIRA-U05"
+          ],
+          "sea_elves_highest_caste": true,
+          "ice_elves_magically_superior_to_sea_elves": true,
+          "ice_elves_caste_position_established": false,
+          "interpretation": "Highest recognized Evalian caste and greatest elven magical capability are separate claims; superior Ice Elven magic does not establish their caste rank."
+        }
+      }
+    },
+    {
+      "id": "kyrinus",
+      "category": "polity",
+      "name": "Kyrinus",
+      "summary": "The Karthinian elven nation, founded as an Evalian colony in 40 A.A. It rebelled in 500 A.A., gained independence after defeat and later renewed trade with Everwood. A non-aggression pact is recorded between the elven nations.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 1,
+          "quote": "founded in 40 A.A."
+        },
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 3,
+          "quote": "they currently have a Non-Aggression pact"
+        }
+      ],
+      "people_ids": [],
+      "place_ids": [
+        "vlaris",
+        "cthulis"
+      ],
+      "institution": "Karthinian Council mentioned in Kieran’s biography; composition and current officeholders unknown.",
+      "creator_confirmed_profile": {
+        "polity_id": "kyrinus",
+        "people_id": null,
+        "name": "Kyrinus / Karthinians",
+        "source_paragraph": 5,
+        "cultural_inspirations": [
+          "Medieval Italian mercantile societies"
+        ],
+        "confirmed_traits": [
+          "More accepting",
+          "Humbler elven society",
+          "Trader mindset"
+        ],
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U03"
+        ]
+      }
+    },
+    {
+      "id": "estru",
+      "category": "polity",
+      "name": "Estru",
+      "summary": "The Estrusian former Sadire colony, independent after the rebellion of 500 A.A. Its invasion of Sadion in 600 A.A. ended in defeat. Kieran’s and Cathius’s records distinguish Southern Estru as an Akarian trading partner.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 15,
+          "quote": "In 500 A.A the colonies"
+        },
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 17,
+          "quote": "in the year 600 A.A"
+        },
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Southern half of the Estrusian Protectorate"
+        }
+      ],
+      "people_ids": [
+        "estrusians"
+      ],
+      "place_ids": [
+        "estru-city",
+        "castle-lucain"
+      ],
+      "note": "The present constitutional relationship between Estru and its southern part is not established; Castle LuCain’s political location is also unprovided.",
+      "creator_confirmed_profile": {
+        "polity_id": "estru",
+        "people_id": "estrusians",
+        "name": "Estru",
+        "source_paragraph": 2,
+        "political_inspirations": [
+          "Pre-unification medieval Germans"
+        ],
+        "cultural_inspirations": [
+          "Ancient Etruscans",
+          "Carthaginians"
+        ],
+        "confirmed_traits": [
+          "Estrusian humans descend from the Sadire; Estru also has a foundational Desert Elven population",
+          "Oppressed by larger and more powerful neighbours",
+          "Desert Elves were initially unwilling residents in the history associated with Sadire settlement",
+          "Centuries of residence and Desert Elven contributions helped form Estru culturally"
+        ],
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U03",
+          "KIRA-U05"
+        ],
+        "cultural_formation_people_ids": [
+          "estrusians",
+          "desert-elves"
+        ]
+      }
+    },
+    {
+      "id": "iron-hill",
+      "category": "place",
+      "name": "Iron Hill",
+      "summary": "The named heartland above the Akarian underground.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 1,
+          "quote": "underground of what is known today as Iron Hill"
+        }
+      ],
+      "coordinates": null
+    },
+    {
+      "id": "karkaria",
+      "category": "place",
+      "name": "Karkaria",
+      "summary": "Central underground capital created during the consolidation attributed to Emperor Karcius Akarian.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "this was Karkaria"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "01",
+          "match_status": "capital_identity_difference_unresolved"
+        }
+      ]
+    },
+    {
+      "id": "stone-hill",
+      "category": "place",
+      "name": "Stone Hill",
+      "summary": "The recorded old homeland of the Great Ones, ancestors of the Sadire.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 1,
+          "quote": "originally located in modern day Stone Hill"
+        }
+      ],
+      "coordinates": null
+    },
+    {
+      "id": "bay-watch",
+      "category": "place",
+      "name": "Bay Watch",
+      "summary": "Recorded capital of Sadion, associated with Grad Vollan’s rise.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 3,
+          "quote": "capital known as Bay Watch"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "38",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "griffin",
+      "category": "place",
+      "name": "Griffin",
+      "summary": "City where Daniel Convor’s biography places his childhood.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "cold streets of Griffin"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "40",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "everwood",
+      "category": "place",
+      "name": "Everwood",
+      "summary": "Homeland of the Evalian elves and setting of the republic’s national history.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 1,
+          "quote": "The story of the Evalian Elves of Everwood"
+        }
+      ],
+      "coordinates": null
+    },
+    {
+      "id": "evalia-city",
+      "category": "place",
+      "name": "Evalia",
+      "summary": "Capital of the republic after the overthrow of King Carius; the name also appears in earlier national history.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "moved the capital from Tethris to Evalia"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "18",
+          "match_status": "candidate_spelling_variant_unresolved"
+        }
+      ]
+    },
+    {
+      "id": "tethris",
+      "category": "place",
+      "name": "Tethris",
+      "summary": "Former elven capital before the republican transition.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "moved the capital from Tethris to Evalia"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "22",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "forlathis",
+      "category": "place",
+      "name": "Forlathis",
+      "summary": "Kieran Pelleas’s recorded birthplace in Everwood.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 12,
+          "quote": "Born in Forlathis in Everwood"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "19",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "vlaris",
+      "category": "place",
+      "name": "Vlaris",
+      "summary": "Kyrinus settlement associated with Kieran’s colonial landing and later refuge.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 13,
+          "quote": "he landed in what is now Vlaris"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "56",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "cthulis",
+      "category": "place",
+      "name": "Cthulis",
+      "summary": "Kyrinus city captured by dwarves in Kieran’s account and briefly retaken by his resistance.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 15,
+          "quote": "the Dwarves invaded and quickly captured the city"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "58",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "estru-city",
+      "category": "place",
+      "name": "Estru City",
+      "summary": "A city named among the sieges in Kieran’s war account.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 16,
+          "quote": "sieges of Cthulis and Estru City"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "51",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "ikrarion",
+      "category": "place",
+      "name": "Ikrarion",
+      "summary": "A place Kieran’s biography says Sadion granted to Everwood for wartime aid; current borders unestablished.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 16,
+          "quote": "fall and recapture of Ikrarion"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "24",
+          "match_status": "candidate_spelling_variant_unresolved"
+        }
+      ]
+    },
+    {
+      "id": "glimfallow",
+      "category": "place",
+      "name": "Glimfallow",
+      "summary": "Village-area destination in Daniel’s account of the hunt for John.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "rode hard for Glimfallow"
+        }
+      ],
+      "coordinates": null
+    },
+    {
+      "id": "castle-lucain",
+      "category": "place",
+      "name": "Castle LuCain",
+      "summary": "The destination of Kieran and his Rangers after a letter about a westward exploration fleet.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "they march for Castle LuCain"
+        }
+      ],
+      "coordinates": null,
+      "map_refs": [
+        {
+          "source_id": "KIRA-M01",
+          "entry_key": "55",
+          "match_status": "same_label_reference"
+        }
+      ]
+    },
+    {
+      "id": "akarian-dwarves",
+      "category": "people",
+      "name": "Akarian dwarves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 1,
+          "quote": "Arkanians (Dwarves of Larius)Height Range: 4'0 - 5'0Weight Range: Child 100-150lbs Adults 150 – 250"
+        }
+      ],
+      "mechanical_adoption": false,
+      "aliases": [
+        "Arkanians",
+        "Akarians",
+        "Arkarians"
+      ],
+      "alias_status": "Spelling variants retained for review; the histories and Cathius use Akarian."
+    },
+    {
+      "id": "flatland-elves",
+      "category": "people",
+      "name": "Flatland / plains Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 2,
+          "quote": "Race Name: Flatland “Evalian” Elves (Base Larius Elf Race)Height Range: 5'9 - 8'2 Weight Range: 50-100 as child100 - 250 as adults Lifespan: 1,000 years"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 1000,
+      "alias_status": "Kieran is described as Plains Elf; equivalence with Flatland is plausible but not finalized."
+    },
+    {
+      "id": "ice-elves",
+      "category": "people",
+      "name": "Ice Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 3,
+          "quote": "Race Name: Ice “Evalian” Elves (Subrace of Larius Elf)Height Range: 6'0 - 6'5Weight Range: 40-70 as child70-140 as adultsLifespan: 870 years"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 870,
+      "creator_confirmed_community": {
+        "people_id": "ice-elves",
+        "name": "Ice Elves",
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U05"
+        ],
+        "magic": {
+          "comparison_people_id": "sea-elves",
+          "relative_capability": "superior",
+          "automatic_individual_spell_list": false
+        },
+        "life_history": {
+          "maturation": "faster",
+          "lifespan": "slightly shorter",
+          "comparison_context_people_id": "sea-elves",
+          "numeric_maturity_age": null,
+          "new_numeric_lifespan": null
+        },
+        "isolation": {
+          "primarily_isolationist": true,
+          "most_of_larius_suitable": false,
+          "suitable_region_under_dwarven_dominion": true,
+          "polity_context_id": "akaria",
+          "exact_boundaries": null,
+          "cause_or_date_of_dwarven_dominion": null
+        },
+        "independent_nation_established": false
+      }
+    },
+    {
+      "id": "mountain-elves",
+      "category": "people",
+      "name": "Mountain Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 4,
+          "quote": "Race Name: Mountain “Evalian” Elves (Subrace of Larius Elf)Height Range: 7'0 - 9'0Weight Range: 100-200 pounds for children 200-350 for adultsLifespan: 550 Years"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 550
+    },
+    {
+      "id": "forest-elves",
+      "category": "people",
+      "name": "Forest Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 5,
+          "quote": "Race Name: Forest “Evalian” Elves (Subrace of Larius Elf)Height Range: 4'0 - 5'7Weight Range: 75-100 as child100 - 150 as adultsLifespan: 1,200"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 1200,
+      "aliases": [
+        "Tree Elves"
+      ],
+      "creator_terminology_source_refs": [
+        "KIRA-U04"
+      ]
+    },
+    {
+      "id": "sea-elves",
+      "category": "people",
+      "name": "Sea Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 6,
+          "quote": "Race Name: Sea “Evalian” Elves (Subrace of Larius Elf)Height Range: 5'0 - 6'5Weight Range: 75-100 as child 100 - 250 as adultsLifespan: 900 years"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 900
+    },
+    {
+      "id": "desert-elves",
+      "category": "people",
+      "name": "Desert Evalian elves",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 9,
+          "quote": "Race Name: Desert “Evalian” Elves (Subrace of Larius Elf)Height Range: 5'0 - 6'2Weight Range: 40-75 as a child90-175 as adultsLifespan: 330 years"
+        }
+      ],
+      "mechanical_adoption": false,
+      "recorded_lifespan_years": 330,
+      "creator_confirmed_community": {
+        "people_id": "desert-elves",
+        "name": "Desert Elves",
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U05"
+        ],
+        "resident_polity_ids": [
+          "estru",
+          "kyrinus",
+          "evalia"
+        ],
+        "estru": {
+          "long_resident": true,
+          "initial_participation": "unwilling",
+          "historical_context": "Sadire settlement preceded the transition to Estru; centuries have passed",
+          "formative_cultural_contribution": true,
+          "exact_arrangement_and_dates": null,
+          "present_legal_status": null
+        },
+        "ancestry_determines_nationality": false
+      }
+    },
+    {
+      "id": "sadire",
+      "category": "people",
+      "name": "Sadire humans",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 10,
+          "quote": "Race Name: Sadire (Humans of Larius)Height range: 5'8-6'2Weight range: 100-200 as children. 200-350 as adults"
+        }
+      ],
+      "mechanical_adoption": false
+    },
+    {
+      "id": "estrusians",
+      "category": "people",
+      "name": "Estrusians",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 11,
+          "quote": "Race name: Estrusians (Sub Race of The Sadire)Height range: 5'9-6'3Weight range: 100-150 as children. 150-250 as adults."
+        }
+      ],
+      "mechanical_adoption": false,
+      "classification_note": "The legacy taxonomy is preserved; citizenship, ancestry and IRGS species are not automatically equated."
+    },
+    {
+      "id": "lupine",
+      "category": "people",
+      "name": "Lupine",
+      "summary": "A people entry in the surviving regional list. Original height, weight and lifespan statements are retained in its source quotation.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S05",
+          "paragraph": 1,
+          "quote": "Race Name: Lupine Height Range: 5-6ftWeight Range: 20-80lbs Child 80-140lbs Adult"
+        }
+      ],
+      "mechanical_adoption": false,
+      "region_id": "talmahkah",
+      "culture": null,
+      "anatomy": null,
+      "magic": null
+    },
+    {
+      "id": "rangers",
+      "category": "faction",
+      "name": "Rangers of Larius",
+      "summary": "Kieran Pelleas’s elven guild takes jobs across Larius that it considers morally acceptable. Its present description gives around 500 elves and names Akaria, Southern Estru and the Evalian republic as clients.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 32,
+          "quote": "The Rangers work for any and all as long as the job is morally acceptable"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 34,
+          "quote": "Hireable guild of around 500 elves"
+        }
+      ],
+      "leader_id": "kieran",
+      "membership": "Elves of differing specialties; ancestry and membership do not grant player control.",
+      "ranks": [
+        "Initiate",
+        "Apprentice",
+        "Ranger",
+        "Ranger Sergeant",
+        "Ranger Lieutenant",
+        "Grand Ranger",
+        "Ranger of Evalia"
+      ],
+      "strength": {
+        "value": 500,
+        "precision": "approximate_source_description",
+        "runtime_capacity_initialized": false
+      }
+    },
+    {
+      "id": "legion",
+      "category": "faction",
+      "name": "Legion of Valiance",
+      "summary": "Founded under Grad Vollan to keep peace in Bay Watch and Sadion. Daniel Convor is recorded as a sergeant.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 3,
+          "quote": "The Legion was made to keep peace of Bay Watch and all of Sadion"
+        },
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "Sergeant in the Legion of Valiance"
+        }
+      ],
+      "leader_id": null
+    },
+    {
+      "id": "dole-company",
+      "category": "faction",
+      "name": "Dole Company",
+      "summary": "Daniel’s army company. His biography records changes from Captain Dellin to Tiberious and Dougrous Bottlebrewer, with Eagle becoming lieutenant and Daniel sergeant.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "Dole Company under the command of Captain Dellin"
+        },
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "Doug promoted to Captain, Eagle promoted to Lieutenant, and Fox promoted to sergeant"
+        }
+      ],
+      "leader_id": null,
+      "note": "Doug is not silently equated with Dougrous Bottlebrewer; that reading is retained as an editorial inference pending confirmation."
+    },
+    {
+      "id": "hunter-corps",
+      "category": "faction",
+      "name": "Hunter corps",
+      "summary": "A Sadion institution attributed to San Vollan that hunts dangerous criminals across the continent.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 5,
+          "quote": "a Hunter corp (a group of bounty hunters that hunt down the most dangerous criminals on the continent)"
+        }
+      ],
+      "leader_id": null
+    },
+    {
+      "id": "cathius",
+      "category": "character",
+      "name": "Cathius Akarian",
+      "summary": "The recorded Akarian emperor, age 75, born in 1267. His biography describes a calm, stern and caring ruler who favours underground expansion and trade.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Cathius was born in 1267, 75 years before present day"
+        },
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "seeks to expand the empire underground rather than above"
+        }
+      ],
+      "people_id": "akarian-dwarves",
+      "role": "Emperor",
+      "player_controlled": false,
+      "equipment_reference": [
+        "Mithral great axe",
+        "Two steel hand cannons"
+      ],
+      "mount": "Malachi, a Bracatis / Battle Ram",
+      "childhood_and_succession": "Started public work at 15; styled Revered One at 20; assumed ruling duties after his mother died at 35; crowned after his father died when Cathius was 50.",
+      "abilities": "Two-handed weapons and guns are named expertise; no IRGS ratings selected."
+    },
+    {
+      "id": "daniel",
+      "category": "character",
+      "name": "Daniel Convor",
+      "summary": "A 24-year-old Sadire sergeant nicknamed Dan or Fox, associated with the Legion of Valiance and Dole Company. His biography follows an orphan and former raider into military service.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 1,
+          "quote": "Name: Daniel \"Dan/Fox\" Convor"
+        },
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 5,
+          "quote": "Sergeant in the Legion of Valiance"
+        }
+      ],
+      "aliases": [
+        "Dan",
+        "Fox",
+        "Daniel Conver (file title)"
+      ],
+      "people_id": "sadire",
+      "player_controlled": false,
+      "equipment_reference": [
+        "Hooded leather Legion armour",
+        "Two bronze sabers",
+        "Family amulet",
+        "10 iron throwing knives",
+        "Iron machete"
+      ],
+      "role": "Sergeant",
+      "private_history_status": "Archived biography; not automatically shared as character knowledge.",
+      "resources": "The 200,000 gold in the childhood account is a historical claim, not a current balance."
+    },
+    {
+      "id": "kieran",
+      "category": "character",
+      "name": "Kieran Pelleas",
+      "summary": "The plains elf who leads the Rangers of Larius. His biography records birth in Forlathis in 1000 B.A., age 2342, royal descent and ties to the present rulers and councils of Larius.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 3,
+          "quote": "Age: 2342"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 12,
+          "quote": "Born in Forlathis in Everwood in the year 1000 B.A"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 23,
+          "quote": "Faction Leader: Kieran Pelleas"
+        }
+      ],
+      "people_id": null,
+      "people_description": "Plains Elf",
+      "role": "Ranger leader",
+      "player_controlled": false,
+      "longevity_status": "Unresolved against the 1,000-year Flatland entry; no exception invented.",
+      "abilities": "Named mastery labels and spell names remain source descriptions, not selected IRGS ranks or resolved effects.",
+      "relationships": "Recorded as a friend of Lord Eric Vornwolf and Emperor Cathius, with Evalian government and Karthinian Council ties.",
+      "expedition": "A letter sealed by Akaria and Estru offers payment for a westward exploration fleet; his record ends with the Rangers marching for Castle LuCain.",
+      "narrative_role": {
+        "record_id": "kieran",
+        "role": "continental_main_character",
+        "status": "user_confirmed",
+        "source_refs": [
+          "KIRA-U02"
+        ],
+        "player_selected": false,
+        "guaranteed_survival": false,
+        "predetermined_outcomes": false,
+        "automatic_authority": false
+      },
+      "authored_dossier": "larius/KIERAN_PELLEAS.md"
+    },
+    {
+      "id": "erik-vollan",
+      "category": "character",
+      "name": "Erik Vollan",
+      "summary": "Recorded present king of Sadion; described favourably by its national history.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 19,
+          "quote": "The current king of Sadion is Erik Vollan"
+        }
+      ],
+      "player_controlled": false
+    },
+    {
+      "id": "alek-vollan",
+      "category": "character",
+      "name": "Alek Vollan",
+      "summary": "Son of Erik Vollan; no automatic succession or current independent office inferred.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 19,
+          "quote": "his son Alek Vollan"
+        }
+      ],
+      "player_controlled": false
+    },
+    {
+      "id": "eric-vornwolf",
+      "category": "character",
+      "name": "Lord Eric Vornwolf",
+      "summary": "A personal friend named in Kieran’s biography; realm and authority unprovided.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "personal friends of Lord Eric Vornwolf"
+        }
+      ],
+      "player_controlled": false
+    },
+    {
+      "id": "unification",
+      "category": "event",
+      "name": "Founding of the Akarian Empire",
+      "summary": "Barvaris Akarian unites the dwarven clans and establishes the recorded imperial history.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 1,
+          "quote": "Recorded History starts at 3000 B.A"
+        }
+      ],
+      "year": 3000,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "karthi-contact",
+      "category": "event",
+      "name": "Dwarven encounter with the Karthi",
+      "summary": "Dwarven miners reach another people’s tunnels; fighting ends with the connecting tunnel sealed.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "in the year 2625 B.A"
+        }
+      ],
+      "year": 2625,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "sadire-migration",
+      "category": "event",
+      "name": "Sadire migration and elven disease crisis",
+      "summary": "Sadire ancestors leave their old lands; the elven account connects their passage with devastating disease.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 1,
+          "quote": "in 2500 B.A the primitive Sadire humans traversed"
+        }
+      ],
+      "year": 2500,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "trade",
+      "category": "event",
+      "name": "Early human–elven trade",
+      "summary": "The elven history dates trade and Sadire tribal unification to 1998 B.A.; Sadion’s own founding sequence is less precise.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "The nations opened trade in 1998 B.A"
+        }
+      ],
+      "year": 1998,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "consolidation",
+      "category": "event",
+      "name": "Dwarven urban consolidation",
+      "summary": "Karcius Akarian replaces many small cities with large centres and builds Karkaria.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "in 1000 B.A Emperor Karcius Akarian"
+        }
+      ],
+      "year": 1000,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "republican-war",
+      "category": "event",
+      "name": "Elven republican civil war",
+      "summary": "The Everwood history places the republican civil war at 1010 B.A.; Kieran’s account places its end around his birth in 1000 B.A.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "In 1010 B.A Civil war ravaged Everwood"
+        }
+      ],
+      "year": 1010,
+      "era": "B.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "ascension",
+      "category": "event",
+      "name": "Dwarven Ascension",
+      "summary": "Dwarves reach the snowy surface and begin counting the new era from zero.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 4,
+          "quote": "The Dwarves changed their calendar starting from 0"
+        }
+      ],
+      "year": 0,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "kyrinus-foundation",
+      "category": "event",
+      "name": "Founding of the Kyrinus colony",
+      "summary": "Evalian colonists establish Kyrinus.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 1,
+          "quote": "founded in 40 A.A."
+        }
+      ],
+      "year": 40,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "war-begins",
+      "category": "event",
+      "name": "Dwarven invasion of Estru and Kyrinus",
+      "summary": "The national histories date the invasion to 80 A.A., drawing Sadion and Everwood into the war.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 3,
+          "quote": "In 80 A.A the Dwarves attacked"
+        }
+      ],
+      "year": 80,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "war-machines",
+      "category": "event",
+      "name": "New dwarven war machines",
+      "summary": "The histories describe dwarven advances that push into the colonial lands.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 3,
+          "quote": "colonial lands in 110 A.A."
+        }
+      ],
+      "year": 110,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "alliance",
+      "category": "event",
+      "name": "Evalian–Sadire wartime alliance",
+      "summary": "The combined forces begin recovering Estru and then Kyrinus.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 4,
+          "quote": "In 200 A.A, the combined Evalian and Sadire army"
+        }
+      ],
+      "year": 200,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "peace",
+      "category": "event",
+      "name": "Peace with Akaria",
+      "summary": "The national histories place the peace in 400 A.A., with disputed land and compensation arrangements.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 4,
+          "quote": "in 400 A.A peace was signed"
+        }
+      ],
+      "year": 400,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "independence",
+      "category": "event",
+      "name": "Colonial rebellion and independence",
+      "summary": "Estru and Kyrinus rebel over their treatment in the peace and gain independence despite defeat.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 1,
+          "quote": "In 500 A.A the Karthinians"
+        }
+      ],
+      "year": 500,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "estrusian-war",
+      "category": "event",
+      "name": "Estru’s war with Sadion",
+      "summary": "The later human war ends in Sadion’s victory. The Kyrinus history says the Karthinians declined to join.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 17,
+          "quote": "in the year 600 A.A"
+        }
+      ],
+      "year": 600,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "present",
+      "category": "event",
+      "name": "Recorded present day",
+      "summary": "The Akarian history explicitly names 1342 as present day. This is a world reference year, not a selected playthrough date.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 7,
+          "quote": "From 600 A.A to 1342, present day"
+        }
+      ],
+      "year": 1342,
+      "era": "A.A.",
+      "precision": "year",
+      "automatically_scheduled": false
+    },
+    {
+      "id": "dwarven-technology",
+      "category": "setting_rule",
+      "name": "Akarian industry and firearms",
+      "summary": "Akarian sources name Golem’s Flame, refined Golfla gunpowder, Kartac guns and Frikori factories. Cathius’s record describes trade of guns and weapons for rare materials with Southern Estru.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 5,
+          "quote": "called Golfla or in the new tongue Gun Powder"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 5,
+          "quote": "Frikori or Factories"
+        },
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "giving them guns and weapons in return for rare materials"
+        }
+      ],
+      "rule_status": "Qualitative source fact; no damage, production, prices, capacities or access privileges adopted."
+    },
+    {
+      "id": "dwarven-magic",
+      "category": "setting_rule",
+      "name": "Dwarven inability to use magic",
+      "summary": "Cathius’s character record explicitly states that dwarves cannot use magic. This setting-wide statement comes from one character sheet and remains a source rule for review.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Spells: None as Dwarves cannot use magic"
+        }
+      ],
+      "rule_status": "Source rule; exceptions, item use and executable enforcement unselected."
+    },
+    {
+      "id": "elven-magic",
+      "category": "setting_rule",
+      "name": "Elven magic and craft",
+      "summary": "The Everwood history describes magical and healing differences among elves. Kieran’s sheet names elemental magic, healing, resurrection, raising the dead, dispelling, runecrafting, enchanting and alchemy.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 1,
+          "quote": "Sea Elves being the most magical"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 9,
+          "quote": "Resurrection, Ultimate Raise Dead"
+        }
+      ],
+      "rule_status": "Named capabilities are retained; costs, limits, access, consequences and IRGS numerical rules are unresolved."
+    },
+    {
+      "id": "western-expedition",
+      "category": "world_thread",
+      "name": "Westward exploration fleet",
+      "summary": "Kieran’s final recorded scene concerns an exploration fleet heading west, a paid offer sealed by Akaria and Estru, and a march to Castle LuCain. It is a reusable world thread whose destination and outcome are not recorded.",
+      "status": "legacy_source_reference",
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "The letter told him of the exploration fleet heading west"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "they march for Castle LuCain"
+        }
+      ],
+      "status_override": "source_thread_not_launchable",
+      "future_outcome": null,
+      "note": "TalmahKah is not identified as the fleet’s destination by any supplied document."
+    },
+    {
+      "id": "aldain",
+      "category": "region",
+      "name": "Aldain",
+      "summary": "A mapped region with eleven named entries and an explicit user-supplied colour key for two states and four tribes.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "campaign_date": null,
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null
+    },
+    {
+      "id": "azaloth",
+      "category": "region",
+      "name": "Azaloth",
+      "summary": "A region named by the user and represented by a terrain map without a supplied place key.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M04"
+      ],
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "campaign_date": null,
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null
+    },
+    {
+      "id": "falkion",
+      "category": "region",
+      "name": "Falkion",
+      "summary": "A region named by the user and represented by a map showing a small main landmass surrounded by water.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M05"
+      ],
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "campaign_date": null,
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null
+    },
+    {
+      "id": "bendara",
+      "category": "region",
+      "name": "Bendara",
+      "summary": "A region named by the user and represented by a terrain map without a supplied place key.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M06"
+      ],
+      "geographic_relationship_to_other_regions": "separate_continental_shelf",
+      "campaign_date": null,
+      "geography_source_refs": [
+        "KIRA-U01"
+      ],
+      "continent_designation": null
+    },
+    {
+      "id": "scalian-scalix-imperium",
+      "category": "polity",
+      "name": "Scalian Scalix Imperium",
+      "summary": "Scalian Scalix Imperium is the user-specified Light Blue political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Light Blue",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Imperium",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    },
+    {
+      "id": "rolling-hills-tribe",
+      "category": "polity",
+      "name": "Rolling Hills Tribe",
+      "summary": "Rolling Hills Tribe is the user-specified Red political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Red",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Tribe",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    },
+    {
+      "id": "mountain-peak-tribe",
+      "category": "polity",
+      "name": "Mountain Peak Tribe",
+      "summary": "Mountain Peak Tribe is the user-specified Yellow political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Yellow",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Tribe",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    },
+    {
+      "id": "eversong-hollow-tribe",
+      "category": "polity",
+      "name": "Eversong Hollow Tribe",
+      "summary": "Eversong Hollow Tribe is the user-specified Green political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Green",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Tribe",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    },
+    {
+      "id": "frozen-lake-tribe",
+      "category": "polity",
+      "name": "Frozen Lake Tribe",
+      "summary": "Frozen Lake Tribe is the user-specified Blue political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Blue",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Tribe",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    },
+    {
+      "id": "primatarus-shenyan-republic",
+      "category": "polity",
+      "name": "Primatarus Shenyan Republic",
+      "summary": "Primatarus Shenyan Republic is the user-specified Purple political grouping on the Aldain map.",
+      "status": "user_confirmed_reference",
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M03"
+      ],
+      "region_id": "aldain",
+      "map_colour": "Purple",
+      "leader_id": null,
+      "people_ids": [],
+      "political_form_as_named": "Republic",
+      "interpretation": "The supplied name and colour association are established; species, rulers, institutional powers and current-date borders are not inferred."
+    }
+  ],
+  "continuity_issues": [
+    {
+      "id": "longevity",
+      "title": "Kieran’s longevity",
+      "description": "Kieran is 2342 years old; the Flatland Evalian entry gives a lifespan of 1000 years. His Plains identity may correspond to Flatland, but that mapping and any exception remain unconfirmed.",
+      "question": "Is Kieran exceptional, is the species lifespan a typical age rather than a limit, or should an old value change?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 3,
+          "quote": "Age: 2342"
+        },
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 2,
+          "quote": "Lifespan: 1,000 years"
+        }
+      ]
+    },
+    {
+      "id": "war-duration",
+      "title": "Duration of the dwarven war",
+      "description": "The national histories date the invasion to 80 A.A. and peace to 400 A.A.; Kieran’s biography calls the war 228 years long. The numbers cannot be used as one exact continuous war duration without an explanation.",
+      "question": "Does 228 describe Kieran’s participation or one phase, or is a date or duration incorrect?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 3,
+          "quote": "In 80 A.A the Dwarves attacked"
+        },
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 1,
+          "quote": "The war ended in 400 A.A"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 16,
+          "quote": "The war lasted 228 years"
+        }
+      ]
+    },
+    {
+      "id": "independence-date",
+      "title": "The rebellion and separation dates",
+      "description": "Sadion, Everwood, Kyrinus and Kieran place rebellion and independence around 500 A.A. Akaria’s retrospective describes the peoples splitting in 600 A.A.; it may compress separate developments.",
+      "question": "Should 500 A.A. be the political independence date, with 600 A.A. reserved for Estru’s later war?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S09",
+          "paragraph": 1,
+          "quote": "In 500 A.A the Karthinians"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 5,
+          "quote": "In 600 A.A the Dwarves watched"
+        }
+      ]
+    },
+    {
+      "id": "estru-structure",
+      "title": "Estru and Southern Estru",
+      "description": "The histories describe Estru’s independence and later defeat, while character sheets refer to Southern Estru and the southern half of an Estrusian Protectorate. No present constitution, border or ruler is specified.",
+      "question": "What are Estru’s current political divisions, rulers and relationship with Akaria?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Southern half of the Estrusian Protectorate"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 32,
+          "quote": "Southern Estru"
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Map and disputed colonial geography",
+      "description": "The user confirms that the six mapped regions sit on separate continental shelves, with Falkion not necessarily considered a continent. Their relative positions, map dates and campaign-world distance scale remain open. Aldain has an explicit political colour key; the written accounts still differ over the last Kyrinus refuge.",
+      "question": "What are the relative positions of the six shelves, which dates do the maps represent, and what world-distance scale should apply?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 3,
+          "quote": "an island off the mainland"
+        },
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 11,
+          "quote": "one on their land border off the mainland"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "they march for Castle LuCain"
+        }
+      ],
+      "map_source_ids": [
+        "KIRA-M01",
+        "KIRA-M02",
+        "KIRA-M03",
+        "KIRA-M04",
+        "KIRA-M05",
+        "KIRA-M06"
+      ],
+      "user_statement_refs": [
+        "KIRA-U01"
+      ]
+    },
+    {
+      "id": "names",
+      "title": "Spelling and identity variants",
+      "description": "The archive uses Arkanian/Akarian/Arkarian, Evalian/Elvanian/Elvalian, Sadion/Sadire and Daniel Conver/Convor. Some are likely spelling variants; others distinguish a people, country or period. Karthi is not silently equated with Karthinian.",
+      "question": "Which spellings and people/country distinctions should be canonical?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S04",
+          "paragraph": 1,
+          "quote": "Arkanians (Dwarves of Larius)"
+        },
+        {
+          "source_id": "KIRA-S02",
+          "paragraph": 1,
+          "quote": "Name: Daniel \"Dan/Fox\" Convor"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "they called them the Karthi"
+        }
+      ]
+    },
+    {
+      "id": "magic-limits",
+      "title": "Magic and technology rules",
+      "description": "The sources name firearms and strong magic, including resurrection and raising the dead, without rules for costs, availability, limits or consequences. Dwarven inability to use magic occurs in Cathius’s record.",
+      "question": "Which magical capabilities and limitations define Kira, and how widely available are guns and enchanted items?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Spells: None as Dwarves cannot use magic"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 9,
+          "quote": "Resurrection, Ultimate Raise Dead"
+        },
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 5,
+          "quote": "Gun Powder"
+        }
+      ]
+    },
+    {
+      "id": "sadion-sequence",
+      "title": "Early Sadion chronology",
+      "description": "Sadion’s narrative begins at 2500 B.A. and says “After 2000” before the eight cities and capital, without an explicit unit. Everwood dates Sadire unification and trade to 1998 B.A. These accounts have not been forced into a calculated founding date.",
+      "question": "What does “After 2000” mean, and how should Grad and San Vollan fit into the early timeline?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S06",
+          "paragraph": 3,
+          "quote": "After 2000 they had 8 cities"
+        },
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "The nations opened trade in 1998 B.A"
+        }
+      ]
+    },
+    {
+      "id": "opening-boundary",
+      "title": "World baseline and authored starting snapshots",
+      "description": "1342 A.A. is explicitly present day, but there is no month, day, time, global census or complete stock/authority snapshot. Character biographies may contain later additions and are not all independently dated.",
+      "question": "Which source material belongs to the chosen 1342 world baseline, and which earlier eras should receive separate developed snapshots?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 7,
+          "quote": "From 600 A.A to 1342, present day"
+        },
+        {
+          "source_id": "KIRA-S01",
+          "paragraph": 1,
+          "quote": "Cathius was born in 1267, 75 years before present day"
+        }
+      ]
+    },
+    {
+      "id": "western-destination",
+      "title": "Western expedition and TalmahKah",
+      "description": "The exploration fleet is headed west. TalmahKah now has a map with thirty-two entries and five named Lupine communities, but no supplied source explicitly identifies it as the fleet’s destination or records the expedition’s outcome.",
+      "question": "Was TalmahKah the intended western destination, and what happened on that expedition?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 19,
+          "quote": "exploration fleet heading west"
+        },
+        {
+          "source_id": "KIRA-S05",
+          "paragraph": 1,
+          "quote": "Race Name: Lupine"
+        }
+      ],
+      "map_source_ids": [
+        "KIRA-M02"
+      ]
+    },
+    {
+      "id": "map-capitals",
+      "title": "Map capitals and written place names",
+      "description": "The Larius map labels Karwathis at 1 and Evalian at 18, while the histories name Karkaria and Evalia. Ikarion at 24 resembles Ikrarion in Kieran’s account. These could be spelling changes, earlier canon or different places.",
+      "question": "Which names should be current canon, and do any of these labels identify different places?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [
+        {
+          "source_id": "KIRA-S07",
+          "paragraph": 2,
+          "quote": "this was Karkaria"
+        },
+        {
+          "source_id": "KIRA-S08",
+          "paragraph": 2,
+          "quote": "moved the capital from Tethris to Evalia"
+        },
+        {
+          "source_id": "KIRA-S03",
+          "paragraph": 16,
+          "quote": "fall and recapture of Ikrarion"
+        }
+      ],
+      "map_source_ids": [
+        "KIRA-M01"
+      ]
+    },
+    {
+      "id": "map-numbering",
+      "title": "Duplicate number 25 and small map lettering",
+      "description": "Larius uses 25 for both Lethar and Sarinus. TalmahKah’s small lettering makes at least Gilsglow worth checking against the original-resolution map. The transcription preserves visible spellings and records uncertainty.",
+      "question": "Which map markers belong to Lethar and Sarinus, and are there spelling corrections to the transcribed key?",
+      "status": "open",
+      "resolution": null,
+      "source_refs": [],
+      "map_source_ids": [
+        "KIRA-M01",
+        "KIRA-M02"
+      ]
+    }
+  ],
+  "guide_sections": [
+    {
+      "title": "Larius in 1342 A.A.",
+      "paragraphs": [
+        "The dwarves of Akaria rose into a world already inhabited by elves and humans. Their Ascension began a new calendar. More than a thousand years later, the nations of Larius live with the borders, grievances and alliances left by their wars.",
+        "The surviving histories name 1342 A.A. as present day. Akaria holds its underground empire and surface cities. Sadion is ruled by Erik Vollan. Everwood remains an elven republic, while Kyrinus has its own council and a renewed relationship with its former homeland. Estru’s southern lands trade with the dwarves."
+      ],
+      "record_ids": [
+        "calendar",
+        "akaria",
+        "sadion",
+        "evalia",
+        "kyrinus",
+        "estru"
+      ]
+    },
+    {
+      "title": "The nations of Larius",
+      "paragraphs": [
+        "Akaria began beneath Iron Hill, where Barvaris Akarian brought the dwarven clans under one banner. Karkaria became the heart of its roads and cities. Emperor Cathius Akarian now favours trade and further underground expansion. Dwarven factories, firearms and gunpowder give the empire a distinctive place among its neighbours.",
+        "Sadion grew from the settlements of the Sadire into a kingdom centred on Bay Watch. Grad Vollan founded the Legion of Valiance, and San Vollan established a navy and Hunter corps. The kingdom’s history remembers both its alliance with Everwood and its crushing victory over Estru.",
+        "Everwood’s elves survived disease, civil war and the fall of their monarchy. The Grand Republic of Evalia governs through representatives of its cities and villages. Its old colony Kyrinus became independent after rebellion, but the two elven nations now share trade and a non-aggression pact.",
+        "Estru also broke from its former homeland. Its later attack on Sadion ended in defeat. Southern Estru appears in the surviving records as a trading partner of Akaria and a client of the Rangers of Larius. The exact present divisions of Estru still need to be recovered."
+      ],
+      "record_ids": [
+        "akaria",
+        "sadion",
+        "evalia",
+        "kyrinus",
+        "estru",
+        "rangers",
+        "dwarven-technology"
+      ]
+    },
+    {
+      "title": "Peoples and distant lands",
+      "paragraphs": [
+        "The Larius list names dwarves, Sadire humans, Estrusians and six Evalian elven groups: Flatland, Ice, Mountain, Forest, Sea and Desert. The histories distinguish Evalian and Karthinian political communities; nationality and elven ancestry are not interchangeable.",
+        "The TalmahKah map names thirty-two locations, including temples, watches, settlements and five communities grouped under Lupine Tribes: Woshi, Foxti, Nekhamen, Coyota and Dingishi. The Word list gives Lupine height and weight ranges; their societies and relations still need fuller accounts."
+      ],
+      "record_ids": [
+        "akarian-dwarves",
+        "sadire",
+        "estrusians",
+        "flatland-elves",
+        "ice-elves",
+        "mountain-elves",
+        "forest-elves",
+        "sea-elves",
+        "desert-elves",
+        "lupine",
+        "talmahkah"
+      ]
+    },
+    {
+      "title": "The original maps",
+      "paragraphs": [
+        "Larius survives as a numbered Minecraft reference map. Its key distinguishes cities, underground cities, capitals and castles. Bay Watch, Griffin, Forlathis, Tethris, Estru City, Castle LuCain, Vlaris and Cthulis connect the map with the written accounts.",
+        "TalmahKah has a separate numbered map. Its place names extend from BogTown and IceCrown through Prenceta Temple, Scrap Haven and Turtle Rock to the named Lupine communities. These are places to develop from the source, not evidence that their cultures or political relationships are already known.",
+        "Both maps are retained as original references with no established campaign date or distance scale. Some labels differ from the histories, and the Larius key repeats number 25. The gazetteers preserve those differences."
+      ],
+      "record_ids": [
+        "bay-watch",
+        "griffin",
+        "forlathis",
+        "tethris",
+        "estru-city",
+        "castle-lucain",
+        "vlaris",
+        "cthulis",
+        "talmahkah",
+        "lupine"
+      ],
+      "map_source_ids": [
+        "KIRA-M01",
+        "KIRA-M02"
+      ]
+    },
+    {
+      "title": "Aldain and the other mapped regions",
+      "paragraphs": [
+        "Aldain’s map has an explicit political colour key. Light blue represents the Scalian Scalix Imperium; red the Rolling Hills Tribe; yellow the Mountain Peak Tribe; green the Eversong Hollow Tribe; blue the Frozen Lake Tribe; and purple the Primatarus Shenyan Republic.",
+        "Its eleven numbered entries name Hissinberg, Salazar, Rotten Stump, the four tribes, Shindu Temple, Shenyang, Chirac and Chengdu. The states’ names and mapped associations are supplied; their rulers, peoples, histories and relationships still await fuller accounts.",
+        "Azaloth and Bendara are represented by terrain maps without supplied place keys or political labels. Falkion’s map shows a small main landmass surrounded by water. The cyan line around it has no supplied explanation. These three maps establish named regions to develop without inventing their inhabitants or governments.",
+        "Larius, TalmahKah, Aldain, Azaloth, Falkion and Bendara sit on separate continental shelves. Falkion remains a named region without requiring it to be classed as a continent. Their relative positions and a shared campaign-world distance scale have not yet been established."
+      ],
+      "record_ids": [
+        "aldain",
+        "azaloth",
+        "falkion",
+        "bendara",
+        "scalian-scalix-imperium",
+        "rolling-hills-tribe",
+        "mountain-peak-tribe",
+        "eversong-hollow-tribe",
+        "frozen-lake-tribe",
+        "primatarus-shenyan-republic"
+      ],
+      "map_source_ids": [
+        "KIRA-M03",
+        "KIRA-M04",
+        "KIRA-M05",
+        "KIRA-M06"
+      ]
+    },
+    {
+      "title": "The long wars and the peace",
+      "paragraphs": [
+        "The national histories place the dwarven invasion of Estru and Kyrinus in 80 A.A. New war machines drove the colonies close to defeat. In 200 A.A., Sadion and Everwood combined their armies and began taking the occupied lands back.",
+        "Peace was signed in 400 A.A., but the colonies resented the settlement. Estru and Kyrinus rebelled in 500 A.A. Though defeated, they received independence. A century later Estru attacked Sadion and was crushed; Kyrinus declined to join that war.",
+        "These dates follow the national histories. Kieran’s account gives a different war duration, and the Akarian history compresses the later separations differently. Those differences remain part of the source review."
+      ],
+      "record_ids": [
+        "war-begins",
+        "war-machines",
+        "alliance",
+        "peace",
+        "independence",
+        "estrusian-war"
+      ]
+    },
+    {
+      "title": "People and institutions",
+      "paragraphs": [
+        "Cathius Akarian is the recorded emperor of the dwarves. His Battle Ram, Malachi, comes from the mounted tradition he helped establish. His trade with Southern Estru exchanges guns and weapons for rare materials.",
+        "Kieran Pelleas leads the Rangers of Larius, a guild of around five hundred elves whose work must meet its own moral standards. His long life reaches back into Everwood’s royal and republican past. The age given in his biography exceeds the lifespan listed for Flatland elves; the reason is not recorded.",
+        "Daniel Convor, called Dan or Fox, is a Sadire sergeant of the Legion of Valiance. His record preserves a story of crime, army service and Dole Company. These figures belong to the world’s surviving history; none is designated as the player character."
+      ],
+      "record_ids": [
+        "cathius",
+        "dwarven-technology",
+        "kieran",
+        "rangers",
+        "daniel",
+        "legion",
+        "dole-company"
+      ]
+    },
+    {
+      "title": "Magic, craft and exploration",
+      "paragraphs": [
+        "Kira’s records place magical craft beside dwarven industry. Kieran’s sheet names elemental spells, healing, resurrection, necromancy, runecrafting, enchanting and alchemy. Cathius’s sheet states that dwarves cannot use magic. The costs, limits and wider availability of these powers have not yet been established.",
+        "One surviving thread looks beyond the known lands. A letter bearing the seals of Akaria and Estru offers Kieran and his Rangers a place with a westward exploration fleet. Their account ends as they march for Castle LuCain. The fleet’s destination and what it found remain unrecorded."
+      ],
+      "record_ids": [
+        "elven-magic",
+        "dwarven-magic",
+        "dwarven-technology",
+        "western-expedition"
+      ]
+    }
+  ]
+}

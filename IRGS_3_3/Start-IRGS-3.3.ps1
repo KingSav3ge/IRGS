@@ -1,7 +1,8 @@
 param(
     [ValidateRange(1, 65535)][int]$Port = 8765,
     [switch]$NoBrowser,
-    [ValidateRange(2, 60)][int]$StartupWaitSeconds = 25
+    [ValidateRange(2, 60)][int]$StartupWaitSeconds = 25,
+    [string]$AppRoot = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -64,6 +65,7 @@ function Confirm-IrgsRelease([string]$PythonPath, [string]$SuiteFolder) {
 function Start-IrgsWebsite([int]$HostPort, [bool]$OpenBrowser, [int]$WaitSeconds) {
     $suiteFolder = $PSScriptRoot
     $hostFolder = Join-Path (Split-Path $suiteFolder -Parent) 'IRGS_Web'
+    if ($AppRoot) { $hostFolder = $AppRoot }
     $hostEntry = Join-Path $hostFolder 'server.py'
     $suitePython = Join-Path $env:USERPROFILE '.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
     if (-not (Test-Path -LiteralPath $suitePython)) {

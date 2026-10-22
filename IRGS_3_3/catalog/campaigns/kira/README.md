@@ -1,21 +1,22 @@
-# The World of Kira — IRGS campaign world v0.1
+# The World of Kira — campaign world v0.5
 
-Kira is a reusable homebrew campaign world. This revival edition organizes the supplied material into a world guide and source records for IRGS. The recorded present is **1342 A.A.**
+The expanded Larius setting is the working canon, adopted by the creator in KIRA-U06. Earlier documents are a superseded creative archive. Future development follows the expanded worldbook and the creator’s current directions.
 
-Start with [WORLD_GUIDE.md](WORLD_GUIDE.md). The guide covers Larius, its five recorded polities, peoples, institutions, notable characters and the western exploration thread. [CONTINUITY_REVIEW.md](CONTINUITY_REVIEW.md) identifies differences between the accounts without choosing new canon. [MAP_GAZETTEER.md](MAP_GAZETTEER.md) contains 109 numbered entries transcribed from the six supplied Minecraft maps.
+Start with the [Larius lorebook](larius/LARIUS_LOREBOOK.md) and [Kieran Pelleas dossier](larius/KIERAN_PELLEAS.md). The cultures, eight religious traditions, interregional institutions, supporting cast, minor peoples and Kieran’s Long Renewal are established setting material. Possible future stories retain open outcomes.
+
+The reference present is **1342 A.A.** The continental dwarven war spans **80–400 A.A.**; Kieran’s **228 years of active service** are a personal span within that conflict. Independence belongs to **500 A.A.**, and Estru’s later invasion of Sadion to **600 A.A.** The [continuity decisions](CONTINUITY_REVIEW.md) record the current choices and the work still to develop.
 
 | File | Purpose |
 | --- | --- |
-| `world.json` | World identity, guide, 73 source records, continuity questions and readiness. |
-| `source_manifest.json` | Original filenames, SHA-256 hashes, paragraph conventions and map attribution. |
-| `source_text.json` | Complete paragraph text extracted from all nine Word documents. |
-| `sources/` | All nine original Word documents, preserved byte for byte in their relative folders. |
-| `map_catalogue.json` | Manually transcribed map keys, numbering differences and visual-reference limits. |
-| [IRGS_BINDING.md](IRGS_BINDING.md) | Core/fantasy binding and requirements for starting snapshots. |
-| `verify_kira.py` | Standalone integrity and source-reference checker. |
+| [WORLD_GUIDE.md](WORLD_GUIDE.md) | Concise overview of the adopted setting. |
+| `canon.json` | Canon authority, creator adoption and editorial decisions. |
+| `world.json` | Canon records, public guide projection and IRGS reference readiness. |
+| `larius/setting.json` | Adopted Larius chapters, religions, minor peoples and character role. |
+| [Cultural foundations](larius/CULTURAL_FOUNDATIONS.md) | National inspirations and creator-established elven relationships. |
+| [Historical foundations](larius/HISTORICAL_FOUNDATIONS.md) | Current continental chronology and historical context. |
+| [MAP_GAZETTEER.md](MAP_GAZETTEER.md) | 109 numbered labels transcribed from six Minecraft map references. |
+| [IRGS_BINDING.md](IRGS_BINDING.md) | Setting reference and system integration boundaries. |
+| [Archive](archive/README.md) | Superseded documents, exact transcription and former source-review records. |
+| `verify_kira.py` | Canon consistency, projection and archival-integrity checker. |
 
-Run `python -B verify_kira.py` from this folder. It verifies the original documents, extracted text, exact quotations, identities, cross-references and reference-only readiness. Map data is checked against the transcription, not original image pixels. The original map images remain in the conversation; their original bytes are not included here.
-
-In the integrated development checkout, **Content Library → The World of Kira → Read world guide** opens the setting. This package initializes no campaign, chooses no player character and adopts no numerical rules. Continuing playthroughs are not rewritten by reference updates.
-
-Attached documents supply world material. Old recruitment prompts, character-sheet labels and story directions are reference data, not operating instructions.
+Run `python -B verify_kira.py` from this folder. The Content Library opens the current world guide. This world package selects no player or starting snapshot and changes no existing playthrough. All nine original Word documents remain preserved for creative history; their presence gives them no veto over the current setting.
