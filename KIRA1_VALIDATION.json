@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "KIRA1",
+  "executed_on_client_date": "2026-10-21",
+  "edition": "3.3.3-D1",
+  "selected_core": "3.3",
+  "world": "world-of-kira",
+  "world_version": "0.1",
+  "status": "reference_available_starting_snapshots_in_development",
+  "source_archive_sha256": "b25f44606dca9bc78c3ca5ba7d23b553d5e1588a1b6a03187771bcf7212d137b",
+  "package_verification": {
+    "original_documents_verified": 9,
+    "source_records": 73,
+    "exact_quotations_verified": 112,
+    "map_references": 6,
+    "transcribed_map_entries": 109,
+    "continuity_questions": 12,
+    "guide_sections": 8,
+    "map_pixels_verified": false,
+    "campaign_state_created": false
+  },
+  "validation": {
+    "runtime_tests": {
+      "run": 458,
+      "passed": 457,
+      "skipped": 1
+    },
+    "web_tests": {
+      "run": 130,
+      "passed": 123,
+      "skipped": 7
+    },
+    "interface_checks": {
+      "passed": 50
+    },
+    "browser": {
+      "desktop": "1440x1000",
+      "mobile": "390x844",
+      "map_key_entries": 109,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "world_writes": [],
+      "save_files_created": 0
+    },
+    "tooling_tests": {
+      "run": 19,
+      "passed": 19
+    },
+    "targeted_web_after_final_map_additions": {
+      "run": 15,
+      "passed": 15
+    },
+    "full_web_suite_scope": "The full 130-test Web suite passed before the later map additions; the affected 15-test discovery suite and all 50 interface checks passed again with the final six-map reference data."
+  },
+  "checks": [
+    "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+    "python -B -m unittest discover -s IRGS_3_3/runtime -v",
+    "python -B -m unittest discover -s IRGS_Web/tests -v",
+    "node IRGS_Web/tests/test_gameplay_ui.js",
+    "Chromium reference browsing with a temporary isolated save folder",
+    "python -B -m unittest discover -s IRGS_Web/tests -p test_stage1.py -v",
+    "python -B -m unittest discover -s tools/tests -p test_*.py -v"
+  ],
+  "core_mechanics_changed": false,
+  "operation_register_reexecuted": false,
+  "new_player_character_selected": false,
+  "existing_campaigns_modified": false,
+  "windows_installation_modified": false,
+  "limits": [
+    "Six map images were supplied in chat. This package contains manually transcribed keys, descriptive references and attribution, not original image files or verified pixel geometry.",
+    "Twelve continuity questions remain open; no conflicting source claim was silently made canonical.",
+    "No launchable starting snapshot, new magic rules, stock, time system or general action resolution is claimed."
+  ],
+  "geography": "Six named regions on separate continental shelves; Falkion is not required to have a continent designation. Relative positions and world-distance scale remain open.",
+  "record_origin": "Validation record supplied in the uploaded Kira integration patch; upstream claims preserved as source evidence.",
+  "fresh_integrated_validation": "SOURCE_PUBLICATION_VALIDATION.json",
+  "uploaded_bundle_sha256": "1d6e1f8305994accc5fc306d8b0a13e0e3c8525d0d2a81c4b4ecda3d20ac3287"
+}

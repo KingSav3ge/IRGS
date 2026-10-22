@@ -52,9 +52,9 @@ class StageOneTests(unittest.TestCase):
         return self.call('/api/event', {'id': record['id'], 'revision': record['revision'], 'op': op,
             'params': {'source_ref': 'stage-one-fixture', **params}}, creator=True)
 
-    def test_single_configured_campaign_with_exact_verified_entry_and_disabled_references(self):
+    def test_configured_campaigns_with_exact_verified_entry_and_disabled_references(self):
         library = self.call('/api/content-library')
-        self.assertEqual([c['id'] for c in library['campaigns']], ['hundred-years-war'])
+        self.assertEqual([c['id'] for c in library['campaigns']], ['hundred-years-war', 'world-of-kira'])
         campaign = library['campaigns'][0]
         entries = [e for p in campaign['periods'] for e in p['entries']]
         self.assertEqual(len(entries), 37); self.assertEqual(len(campaign['periods']), 3)
@@ -71,6 +71,51 @@ class StageOneTests(unittest.TestCase):
             library = self.call('/api/content-library')
         self.assertEqual(library['campaigns'][0]['playable_entry_count'], 0)
         self.assertTrue(all(not e['ready'] and e['snapshot_sha256'] is None for p in library['campaigns'][0]['periods'] for e in p['entries']))
+
+    def test_kira_world_reference_has_map_keys_without_a_launch_or_private_source_dump(self):
+        library = self.call('/api/content-library')
+        kira = next(c for c in library['campaigns'] if c['id'] == 'world-of-kira')
+        self.assertEqual(kira['kind'], 'campaign_world')
+        self.assertEqual(kira['periods'], [])
+        self.assertEqual(kira['playable_entry_count'], 0)
+        self.assertEqual(kira['launch_capability'], 'reference_only')
+        world = self.call('/api/campaign-world/world-of-kira')
+        self.assertNotIn('records', world)
+        self.assertNotIn('continuity_issues', world)
+        self.assertNotIn('source_text', world)
+        maps = world['guide']['map_catalogues']
+        self.assertEqual([len(m['entries']) for m in maps], [66, 32, 11, 0, 0, 0])
+        self.assertEqual([e['label'] for e in maps[0]['entries'] if e['printed_number'] == 25], ['Lethar', 'Sarinus'])
+        self.assertEqual(self.store.listing(), [])
+        self.assertNotIn('200,000', json.dumps(world))
+
+    def test_world_inspection_preserves_saved_playthrough_and_forged_start_cannot_launch(self):
+        created = self.call('/api/create', self.reviewed())
+        raw = self.store.path(created['id']).read_bytes()
+        for _ in range(2):
+            self.call('/api/campaign-world/world-of-kira')
+            self.call('/api/content-library')
+        self.assertEqual(self.store.path(created['id']).read_bytes(), raw)
+        with self.assertRaises(HTTPError) as err:
+            self.call('/api/create', {**self.reviewed(request_id='forged-kira-start'),
+                'profile_id': 'fantasy', 'scenario_id': 'world-of-kira', 'entry_id': 'kira-1342'})
+        self.assertEqual(err.exception.code, 403)
+        self.assertEqual(len(self.store.listing()), 1)
+
+    def test_unknown_or_malformed_world_reference_is_rejected(self):
+        for identity in ('unknown-world', '../source_text.json', 'world-of-kira/../source_text.json'):
+            with self.subTest(identity=identity), self.assertRaises(HTTPError) as err:
+                self.call('/api/campaign-world/' + identity)
+            self.assertEqual(err.exception.code, 400)
+        from campaign_worlds import WORLD_FILES
+        source = json.loads(WORLD_FILES['world-of-kira'].read_text(encoding='utf-8'))
+        source['readiness']['playable'] = True
+        invalid = Path(self.tmp.name) / 'invalid-reference.fixture'
+        invalid.write_text(json.dumps(source), encoding='utf-8')
+        with patch.dict(WORLD_FILES, {'world-of-kira': invalid}), self.assertRaises(HTTPError) as err:
+            self.call('/api/campaign-world/world-of-kira')
+        self.assertEqual(err.exception.code, 400)
+        self.assertEqual(self.store.listing(), [])
 
     def test_role_scoped_expanded_registry_stage_cannot_grant_privileges(self):
         player = self.call('/api/features?stage=development')
@@ -95,7 +140,7 @@ class StageOneTests(unittest.TestCase):
         self.assertEqual(err.exception.code, 400)
 
     def test_discovery_and_registry_session_host_origin_boundaries(self):
-        for path in ('/api/features', '/api/content-library'):
+        for path in ('/api/features', '/api/content-library', '/api/campaign-world/world-of-kira'):
             for options in ({'token': False}, {'headers': {'Origin': 'https://example.com'}},
                             {'headers': {'Host': 'attacker.example'}}):
                 with self.subTest(path=path, options=options), self.assertRaises(HTTPError) as err: self.call(path, **options)

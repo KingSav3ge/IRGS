@@ -1,0 +1,1072 @@
+{
+  "schema_version": 1,
+  "status": "manually_transcribed_reference_maps",
+  "maps": [
+    {
+      "id": "KIRA-M01",
+      "title": "Larius Minecraft reference map",
+      "region_id": "larius",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User: This was a minecraft map used for Larius.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [
+        "City",
+        "Underground capital",
+        "Castle",
+        "Underground city",
+        "Capital city"
+      ],
+      "entries": [
+        {
+          "key": "01",
+          "printed_number": 1,
+          "label": "Karwathis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "02",
+          "printed_number": 2,
+          "label": "Sillius",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "03",
+          "printed_number": 3,
+          "label": "Varkan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "04",
+          "printed_number": 4,
+          "label": "Sunduras",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "05",
+          "printed_number": 5,
+          "label": "Turonis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "06",
+          "printed_number": 6,
+          "label": "Kasis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "07",
+          "printed_number": 7,
+          "label": "Oporus",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "08",
+          "printed_number": 8,
+          "label": "Carkan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "09",
+          "printed_number": 9,
+          "label": "Desaris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "10",
+          "printed_number": 10,
+          "label": "Xarius",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "11",
+          "printed_number": 11,
+          "label": "Prathamus",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "12",
+          "printed_number": 12,
+          "label": "Nulis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "13",
+          "printed_number": 13,
+          "label": "Wasis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "14",
+          "printed_number": 14,
+          "label": "Taranus",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "15",
+          "printed_number": 15,
+          "label": "Milith",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "16",
+          "printed_number": 16,
+          "label": "SunWatch",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "17",
+          "printed_number": 17,
+          "label": "Forth Kilrath",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-left mountain region; yellow legend text"
+        },
+        {
+          "key": "18",
+          "printed_number": 18,
+          "label": "Evalian",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "19",
+          "printed_number": 19,
+          "label": "Forlathis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "20",
+          "printed_number": 20,
+          "label": "Minrois",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "21",
+          "printed_number": 21,
+          "label": "Lenais",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "22",
+          "printed_number": 22,
+          "label": "Tethris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "23",
+          "printed_number": 23,
+          "label": "Koranis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "24",
+          "printed_number": 24,
+          "label": "Ikarion",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "25a",
+          "printed_number": 25,
+          "label": "Lethar",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "25b",
+          "printed_number": 25,
+          "label": "Sarinus",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "26",
+          "printed_number": 26,
+          "label": "Brekan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "27",
+          "printed_number": 27,
+          "label": "Bretan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "28",
+          "printed_number": 28,
+          "label": "Clasis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "29",
+          "printed_number": 29,
+          "label": "Fort Corinth",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "30",
+          "printed_number": 30,
+          "label": "Iklethar Outlook",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "31",
+          "printed_number": 31,
+          "label": "Fort Evarius",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "32",
+          "printed_number": 32,
+          "label": "Nucarius’ Tower",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-left and central region; green legend text"
+        },
+        {
+          "key": "33",
+          "printed_number": 33,
+          "label": "Great Peak",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "34",
+          "printed_number": 34,
+          "label": "Ravendale",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "35",
+          "printed_number": 35,
+          "label": "Steel Gates",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "36",
+          "printed_number": 36,
+          "label": "West Spring",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "37",
+          "printed_number": 37,
+          "label": "Dole’s March",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "38",
+          "printed_number": 38,
+          "label": "Bay Watch",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "39",
+          "printed_number": 39,
+          "label": "Golden Blade",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "40",
+          "printed_number": 40,
+          "label": "Griffin",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "41",
+          "printed_number": 41,
+          "label": "Misty Pine",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "42",
+          "printed_number": 42,
+          "label": "Castle Victory",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "43",
+          "printed_number": 43,
+          "label": "Castle Grad",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "44",
+          "printed_number": 44,
+          "label": "Castle San",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "45",
+          "printed_number": 45,
+          "label": "Castle Dole",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "46",
+          "printed_number": 46,
+          "label": "Castle Kali",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "47",
+          "printed_number": 47,
+          "label": "Castle Erik",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "48",
+          "printed_number": 48,
+          "label": "Castle Alek",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "49",
+          "printed_number": 49,
+          "label": "Castle Vollan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Upper-right region; purple legend text"
+        },
+        {
+          "key": "50",
+          "printed_number": 50,
+          "label": "Wasali",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "51",
+          "printed_number": 51,
+          "label": "Estru City",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "52",
+          "printed_number": 52,
+          "label": "Carvom",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "53",
+          "printed_number": 53,
+          "label": "Pashilia",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "54",
+          "printed_number": 54,
+          "label": "Casohras",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "55",
+          "printed_number": 55,
+          "label": "Castle LuCain",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western and central region; blue legend text"
+        },
+        {
+          "key": "56",
+          "printed_number": 56,
+          "label": "Vlaris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "57",
+          "printed_number": 57,
+          "label": "Kyrinus City",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "58",
+          "printed_number": 58,
+          "label": "Cthulis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "59",
+          "printed_number": 59,
+          "label": "Prontis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "60",
+          "printed_number": 60,
+          "label": "Venatrois",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "61",
+          "printed_number": 61,
+          "label": "Leandris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "62",
+          "printed_number": 62,
+          "label": "Anthoris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "63",
+          "printed_number": 63,
+          "label": "Castle Nirack",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "64",
+          "printed_number": 64,
+          "label": "Fort Lekaris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        },
+        {
+          "key": "65",
+          "printed_number": 65,
+          "label": "Fort Perseus",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Lower-right region; gold legend text"
+        }
+      ],
+      "notes": [
+        "The printed number 25 is used twice, for Lethar and Sarinus. Internal keys 25a and 25b preserve both claims without renumbering the map.",
+        "Coloured linework and terrain are reference evidence. Political ownership, travel distance, navigability and a date are not automatically derived.",
+        "The map labels Karwathis and Evalian differ from the written capital names Karkaria and Evalia. Ikarion may correspond to written Ikrarion; these have not been silently merged."
+      ]
+    },
+    {
+      "id": "KIRA-M02",
+      "title": "TalmahKah Minecraft reference map",
+      "region_id": "talmahkah",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User: and this was TalmahKah.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [
+        "Numbered place names",
+        "Explicit Lupine Tribes group: entries 28–32"
+      ],
+      "entries": [
+        {
+          "key": "01",
+          "printed_number": 1,
+          "label": "BogTown",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northern region; red legend text"
+        },
+        {
+          "key": "02",
+          "printed_number": 2,
+          "label": "DeadMans Hollow",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northern region; red legend text"
+        },
+        {
+          "key": "03",
+          "printed_number": 3,
+          "label": "Rotten Bog",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northern region; red legend text"
+        },
+        {
+          "key": "04",
+          "printed_number": 4,
+          "label": "No Mans Crossing",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northern region; red legend text"
+        },
+        {
+          "key": "05",
+          "printed_number": 5,
+          "label": "HollowPoint",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northeastern region; cyan legend text"
+        },
+        {
+          "key": "06",
+          "printed_number": 6,
+          "label": "IceCrown",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northeastern region; cyan legend text"
+        },
+        {
+          "key": "07",
+          "printed_number": 7,
+          "label": "Shards Embrace",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northeastern region; cyan legend text"
+        },
+        {
+          "key": "08",
+          "printed_number": 8,
+          "label": "FrostMire Hollow",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Northeastern region; cyan legend text"
+        },
+        {
+          "key": "09",
+          "printed_number": 9,
+          "label": "SunderMount",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text"
+        },
+        {
+          "key": "10",
+          "printed_number": 10,
+          "label": "EverMount",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text"
+        },
+        {
+          "key": "11",
+          "printed_number": 11,
+          "label": "Gilsglow",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text",
+          "transcription_note": "Small label; spelling should be checked against an original-resolution map."
+        },
+        {
+          "key": "12",
+          "printed_number": 12,
+          "label": "Farvaris",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text"
+        },
+        {
+          "key": "13",
+          "printed_number": 13,
+          "label": "Calthia",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text"
+        },
+        {
+          "key": "14",
+          "printed_number": 14,
+          "label": "Mantoria",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Eastern and southeastern areas; purple legend text"
+        },
+        {
+          "key": "15",
+          "printed_number": 15,
+          "label": "Amazonia",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Southern region; yellow legend text"
+        },
+        {
+          "key": "16",
+          "printed_number": 16,
+          "label": "Prenceta Temple",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Southern region; yellow legend text"
+        },
+        {
+          "key": "17",
+          "printed_number": 17,
+          "label": "Gradens of Shifry",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Southern region; yellow legend text"
+        },
+        {
+          "key": "18",
+          "printed_number": 18,
+          "label": "Nynax Watch",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western locations; orange legend text"
+        },
+        {
+          "key": "19",
+          "printed_number": 19,
+          "label": "Victorys hill",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western locations; orange legend text"
+        },
+        {
+          "key": "20",
+          "printed_number": 20,
+          "label": "Tallon",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western locations; orange legend text"
+        },
+        {
+          "key": "21",
+          "printed_number": 21,
+          "label": "Centaurius",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western locations; yellow and blue legend text"
+        },
+        {
+          "key": "22",
+          "printed_number": 22,
+          "label": "Rhithopolis",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Western locations; yellow and blue legend text"
+        },
+        {
+          "key": "23",
+          "printed_number": 23,
+          "label": "Scrap Haven",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Central locations; brown legend text"
+        },
+        {
+          "key": "24",
+          "printed_number": 24,
+          "label": "Urgustan",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Central locations; brown legend text"
+        },
+        {
+          "key": "25",
+          "printed_number": 25,
+          "label": "LackNa",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Central locations; brown legend text"
+        },
+        {
+          "key": "26",
+          "printed_number": 26,
+          "label": "Razor Tusk Ranch",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Central locations; brown legend text"
+        },
+        {
+          "key": "27",
+          "printed_number": 27,
+          "label": "Turtle Rock",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Central locations; brown legend text"
+        },
+        {
+          "key": "28",
+          "printed_number": 28,
+          "label": "Woshi Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Explicit Lupine Tribes heading",
+          "source_group": "Lupine Tribes"
+        },
+        {
+          "key": "29",
+          "printed_number": 29,
+          "label": "Foxti Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Explicit Lupine Tribes heading",
+          "source_group": "Lupine Tribes"
+        },
+        {
+          "key": "30",
+          "printed_number": 30,
+          "label": "Nekhamen Village",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Explicit Lupine Tribes heading",
+          "source_group": "Lupine Tribes"
+        },
+        {
+          "key": "31",
+          "printed_number": 31,
+          "label": "Coyota Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Explicit Lupine Tribes heading",
+          "source_group": "Lupine Tribes"
+        },
+        {
+          "key": "32",
+          "printed_number": 32,
+          "label": "Dingishi Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Explicit Lupine Tribes heading",
+          "source_group": "Lupine Tribes"
+        }
+      ],
+      "notes": [
+        "The screenshot shows in-game X/Y/Z coordinates for a player position; this does not provide a conversion from the map to campaign-world distances.",
+        "Colours, terrain and symbols are retained as visual group descriptions. No political faction, language, species, travel rule or capital status is assigned solely from a colour or name.",
+        "The five entries under Lupine Tribes are Woshi Tribe, Foxti Tribe, Nekhamen Village, Coyota Tribe and Dingishi Tribe.",
+        "Source spellings such as Gradens of Shifry and Victorys hill are retained; no silent spelling corrections are made."
+      ]
+    },
+    {
+      "id": "KIRA-M03",
+      "title": "Aldain Minecraft reference map",
+      "region_id": "aldain",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User identifies this map as Aldain.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [
+        "Numbered places and user-supplied political colour key"
+      ],
+      "entries": [
+        {
+          "key": "01",
+          "printed_number": 1,
+          "label": "Hissinberg",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Light Blue",
+          "political_group_id": "scalian-scalix-imperium",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "02",
+          "printed_number": 2,
+          "label": "Salazar",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Light Blue",
+          "political_group_id": "scalian-scalix-imperium",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "03",
+          "printed_number": 3,
+          "label": "Rotten Stump.",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Light Blue",
+          "political_group_id": "scalian-scalix-imperium",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "04",
+          "printed_number": 4,
+          "label": "Rolling Hills Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Red",
+          "political_group_id": "rolling-hills-tribe",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "05",
+          "printed_number": 5,
+          "label": "Mountain Peak Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Yellow",
+          "political_group_id": "mountain-peak-tribe",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "06",
+          "printed_number": 6,
+          "label": "Eversong Hollow Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Green",
+          "political_group_id": "eversong-hollow-tribe",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "07",
+          "printed_number": 7,
+          "label": "Frozen Lake Tribe",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Blue",
+          "political_group_id": "frozen-lake-tribe",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "08",
+          "printed_number": 8,
+          "label": "Shindu Temple",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Purple",
+          "political_group_id": "primatarus-shenyan-republic",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "09",
+          "printed_number": 9,
+          "label": "Shenyang",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Purple",
+          "political_group_id": "primatarus-shenyan-republic",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "10",
+          "printed_number": 10,
+          "label": "Chirac",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Purple",
+          "political_group_id": "primatarus-shenyan-republic",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        },
+        {
+          "key": "11",
+          "printed_number": 11,
+          "label": "Chengdu",
+          "status": "visual_transcription",
+          "marker_position": null,
+          "visual_group": "Purple",
+          "political_group_id": "primatarus-shenyan-republic",
+          "association_basis": "Map text colour plus explicit user-supplied Aldain colour key."
+        }
+      ],
+      "notes": [
+        "The user explicitly supplied the six political colour associations; their names and colours are preserved exactly.",
+        "Labels 1–3 use light blue, 4 red, 5 yellow, 6 green, 7 blue and 8–11 purple. Those group associations follow the supplied key, not inferred species or political institutions.",
+        "Map date, campaign-world scale, present borders, rulers, constitutions and relationships with other regions remain unestablished."
+      ],
+      "explicit_user_colour_key": [
+        {
+          "colour": "Light Blue",
+          "name": "Scalian Scalix Imperium",
+          "world_record_id": "scalian-scalix-imperium"
+        },
+        {
+          "colour": "Red",
+          "name": "Rolling Hills Tribe",
+          "world_record_id": "rolling-hills-tribe"
+        },
+        {
+          "colour": "Yellow",
+          "name": "Mountain Peak Tribe",
+          "world_record_id": "mountain-peak-tribe"
+        },
+        {
+          "colour": "Green",
+          "name": "Eversong Hollow Tribe",
+          "world_record_id": "eversong-hollow-tribe"
+        },
+        {
+          "colour": "Blue",
+          "name": "Frozen Lake Tribe",
+          "world_record_id": "frozen-lake-tribe"
+        },
+        {
+          "colour": "Purple",
+          "name": "Primatarus Shenyan Republic",
+          "world_record_id": "primatarus-shenyan-republic"
+        }
+      ]
+    },
+    {
+      "id": "KIRA-M04",
+      "title": "Azaloth Minecraft reference map",
+      "region_id": "azaloth",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User identifies this map as Azaloth.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [],
+      "entries": [],
+      "notes": [
+        "The user identifies this Minecraft terrain map as Azaloth. No numbered place key, named political divisions or settlement labels were supplied.",
+        "The image visibly includes extensive green terrain, blue water features and pale terrain patches. These are visual descriptions, not adopted climate, biome, movement or resource mechanics."
+      ]
+    },
+    {
+      "id": "KIRA-M05",
+      "title": "Falkion Minecraft reference map",
+      "region_id": "falkion",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User identifies this map as Falkion.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [],
+      "entries": [],
+      "notes": [
+        "The user identifies this Minecraft reference map as Falkion. The image shows a small main landmass amid extensive water, with smaller visible land patches.",
+        "A cyan freehand line is visible around part of the main landmass and surrounding water. Its meaning is not supplied; it is not automatically a political boundary, coastline, route or territorial claim.",
+        "No named settlements, inhabitants, institutions, scale or map date were supplied."
+      ]
+    },
+    {
+      "id": "KIRA-M06",
+      "title": "Bendara Minecraft reference map",
+      "region_id": "bendara",
+      "source_kind": "user_supplied_chat_image",
+      "attribution": "User identifies this map as Bendara.",
+      "original_image_file": null,
+      "original_image_hash": null,
+      "availability": "Visible in the conversation; original image bytes are not available in the execution workspace.",
+      "date": null,
+      "scale": null,
+      "north_arrow": null,
+      "legend": [],
+      "entries": [],
+      "notes": [
+        "The user identifies this Minecraft terrain map as Bendara. No numbered place key, named political divisions or settlement labels were supplied.",
+        "The image visibly includes green terrain, blue water and a broad pale area toward the right. Those colours do not establish a selected climate, biome or movement rule."
+      ]
+    }
+  ],
+  "validation_limit": "Automated checks compare data with this transcription. They do not verify pixels, boundaries, coordinates, map dates or original image hashes."
+}

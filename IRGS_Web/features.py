@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 from historical_campaigns import historical_catalogue, historical_entry
+from campaign_worlds import WORLD_FILES, world_listing
 
 LISTINGS_PATH = Path(__file__).resolve().parent.parent / 'IRGS_3_3/data/campaign_listings.json'
 LIFECYCLES = ('planned', 'scaffold', 'in_development', 'functional', 'deferred')
@@ -174,6 +175,8 @@ def content_library():
             entry_count=sum(len(p['entries']) for p in periods),
             playable_entry_count=sum(e['ready'] for p in periods for e in p['entries']), starts_via='new-campaign',
             launch_capability='reviewed_initialization_and_pending_declarations')
+    campaigns.extend(world_listing(world_id) for world_id in WORLD_FILES
+                     if world_id in visible_campaign_ids())
     return {'schema_version': 1, 'campaigns': campaigns,
         'note': 'Campaign discovery excludes technical engines and libraries. General action resolution and narration remain unavailable.'}
 

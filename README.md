@@ -1,5 +1,7 @@
 # IRGS 3.3.3 — Unified Development D1
 
+**The World of Kira** is available as a campaign-world guide in the Content Library. Its revival package preserves nine original Word documents and catalogues six mapped regions on separate continental shelves, including Aldain’s supplied political colour key. Starting snapshots remain in development. See [the Kira package](IRGS_3_3/catalog/campaigns/kira/README.md).
+
 This is the combined development source for IRGS: the selected Core 3.3 runtime and complete catalogue, C2 engine specification, and the preferred Emergent visual design on the canonical Solo website. It is a verified development baseline, not a claim that the proposed general gameplay engine is finished.
 
 Start the local site with [Start-IRGS.cmd](Start-IRGS.cmd). It verifies the installed files and opens the existing loopback host at http://127.0.0.1:8765/. An already running compatible host may be reused. To inspect this clean checkout independently, run `python -B IRGS_Web/server.py --port 8766` and open http://127.0.0.1:8766/. Existing campaigns remain in the original installation; this copy includes no user saves or migration.
@@ -24,3 +26,7 @@ New human characters at the 1415 entry can opt into **A dispatch before departur
 This integrates [engine C2](https://github.com/KingSav3ge/IRGS/commit/96af47961b33df83031f98d0524415bba299ce03) and [app UI1](https://github.com/KingSav3ge/IRGS/commit/2022c922fb10bbcb1bb08c1ef160e38d6f449f8d). The primary branch is `main`; Engine/Core development uses `3.3.3.E`, App/Web uses `3.3.3.A`. Continue both from this unified layout, keeping one editable app and one campaign-state kernel. Historical overlays are retained through Git ancestry and their provenance records rather than duplicate editable app folders.
 
 The three original root ZIPs, original packaging manifest/checksums, build instructions and verifier are unchanged archival 3.3.3 inputs. They do not contain this new development consolidation. Historical validation under `IRGS_3_3/results/` is inherited evidence, not the fresh D1 verification. Use the new development tools for clean verification and packaging; do not run the old release rebuild scripts as if they were standalone development commands.
+
+The **Rise v0.4 implementation source** is now available as a [readable specification and implementation plan](engine/design/rise/README.md), with the original DOCX retained under `provenance/rise/`. The first executable Rise qualification will use the user-selected fictional founding example. This source import does not yet supply a playable settlement initializer. The original Kira package is retained under `provenance/kira/`.
+
+The [Century of Conflict paused submission](provenance/century_of_conflict/README.md) preserves the uploaded WIP archive, original pause note and expanded source changes. Its 36 additional opening drafts remain inactive pending historical and executable qualification.

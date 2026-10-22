@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "purpose": "User-requested publication of the Rise specification, Kira world package and Century of Conflict paused submission. Original inputs preserved byte for byte; inactive design and WIP inputs are not campaign adoption or executable qualification.",
+  "imports": [
+    {
+      "path": "provenance/rise/IRGS_The_Rise_of_You_Design_Specification_v0_4.docx",
+      "original_filename": "IRGS_The_Rise_of_You_Design_Specification_v0_4.docx",
+      "bytes": 101997,
+      "sha256": "8e8c16d8590280780064e1f566e3a595d1914da36c369fbb954ca0e3a670b49c"
+    },
+    {
+      "path": "provenance/kira/Kira_Campaign_World_v0_1.zip",
+      "original_filename": "Kira_Campaign_World_v0_1.zip",
+      "bytes": 607581,
+      "sha256": "1d6e1f8305994accc5fc306d8b0a13e0e3c8525d0d2a81c4b4ecda3d20ac3287"
+    },
+    {
+      "path": "provenance/century_of_conflict/Century_of_Conflict_WIP_2026-10-21.zip",
+      "original_filename": "Century_of_Conflict_WIP_2026-10-21.zip",
+      "bytes": 237826,
+      "sha256": "9fa171451cdd5f09c584f3d8a8093685648037c7abfb4e88803f7c5b9d4236a1",
+      "status": "paused_work_in_progress"
+    },
+    {
+      "path": "provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "original_filename": "PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57",
+      "status": "paused_work_in_progress"
+    }
+  ]
+}

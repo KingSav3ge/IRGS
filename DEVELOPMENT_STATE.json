@@ -13,7 +13,7 @@
   },
   "app": {
     "development_branch": "3.3.3.A",
-    "edition": "adventure-ui1",
+    "edition": "adventure-ui1+kira1",
     "source": "IRGS_Web/",
     "preferred_design": "IRGS-3.3.2.Emergent.zip top-level frontend",
     "alternate_backend_activated": false
@@ -38,9 +38,9 @@
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
   "next_milestone": "Extend this playable opening with qualified dialogue/offers, shared timed phases and broader dependency cases.",
   "verified_on": "2026-10-21",
-  "validation_record": "ADVENTURE_UI_VALIDATION.json",
+  "validation_record": "SOURCE_PUBLICATION_VALIDATION.json",
   "continuation": {
-    "id": "adventure-ui1",
+    "id": "kira1-rise-source",
     "integration_base": "0bb5c68a26766a350936304b6e43b7902823ec99",
     "completed_items": [
       "DEV-01",
@@ -56,7 +56,7 @@
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "opening1-startfix",
+    "previous_increment": "adventure-ui1",
     "operation_coverage_register": "engine/qualification/operation_register.json",
     "operation_spellings": 84,
     "backend_operation_contracts": 169,
@@ -64,6 +64,9 @@
     "playable_opening": "quay-delivery-v1",
     "authored_local_elapsed": true,
     "calendar_advance": false,
-    "presentation_record": "ADVENTURE_UI_VALIDATION.json"
+    "presentation_record": "ADVENTURE_UI_VALIDATION.json",
+    "kira_world_reference": "IRGS_3_3/catalog/campaigns/kira",
+    "rise_design": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
+    "rise_implementation": "Receiving analysis; user selected a fictional first founding example. No playable Rise initializer supplied yet."
   }
 }

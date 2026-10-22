@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "id": "hyw-1346",
+  "scenario_id": "hundred-years-war",
+  "revision": 1,
+  "status": "developed_historical_setup",
+  "title": "Scotland Enters the Campaign",
+  "opening": {
+    "date": "1346-12-15",
+    "calendar": "julian",
+    "precision": "day",
+    "time": null,
+    "boundary": "Authored late-year cutoff after the stated background developments; not their occurrence date.",
+    "label": "15 December 1346 · after the year’s turning points",
+    "classification": "authored_policy"
+  },
+  "briefing": "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues. Calais remains under siege rather than already an English possession. The Scottish defeat has not extinguished Scotland or created a general peace.",
+  "actors": [
+    {
+      "id": "HYW-EDWARD-III",
+      "name": "Edward III",
+      "species": "human",
+      "role": "King of England",
+      "source_ids": [
+        "COC-EDWARD"
+      ]
+    },
+    {
+      "id": "HYW-PHILIP-VI",
+      "name": "Philip VI",
+      "species": "human",
+      "role": "King of France",
+      "source_ids": [
+        "COC-FRENCH-KINGS"
+      ]
+    },
+    {
+      "id": "HYW-DAVID-II",
+      "name": "David II",
+      "species": "human",
+      "role": "King of Scots; captive after Neville’s Cross",
+      "source_ids": [
+        "COC-BOOK"
+      ]
+    }
+  ],
+  "domains": {
+    "political": [
+      {
+        "id": "hyw-1346-political-01",
+        "statement": "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues.",
+        "source_ids": [
+          "COC-BOOK"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1346-12-15",
+        "classification": "historical_reference"
+      }
+    ],
+    "military": [
+      {
+        "id": "hyw-1346-military-01",
+        "statement": "Siege service and the supply of both defenders and besiegers constrain choices.",
+        "source_ids": [
+          "COC-DESIGN",
+          "COC-BOOK"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1346-12-15",
+        "classification": "research_inference"
+      }
+    ],
+    "territorial": [
+      {
+        "id": "hyw-1346-territorial-01",
+        "statement": "Calais remains under siege rather than already an English possession.",
+        "source_ids": [
+          "COC-BOOK"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1346-12-15",
+        "classification": "historical_reference"
+      }
+    ],
+    "diplomatic": [
+      {
+        "id": "hyw-1346-diplomatic-01",
+        "statement": "The Scottish defeat has not extinguished Scotland or created a general peace.",
+        "source_ids": [
+          "COC-BOOK"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1346-12-15",
+        "classification": "historical_reference"
+      }
+    ]
+  },
+  "unknowns": [
+    "No complete current census, local price list, household inventory, treasury, deployable army or maintained road network is established by this scoped opening.",
+    "Exact personal locations, skills, health, loyalties and received reports remain unknown unless an explicit sourced or reviewed authored setup establishes them.",
+    "The authored civil cutoff has day precision and no invented hour. It is not a claim that each background development occurred on that day.",
+    "Culture, language, religion, legal status, office and personal allegiance are independent; no game category or appearance template determines them.",
+    "The fictional local opening supplies a small playable scene only. General freeform, dialogue, combat and autonomous world advancement retain the actual runtime limits."
+  ],
+  "sources": [
+    {
+      "id": "COC-BOOK",
+      "title": "Lynn Thorndike, The History of Medieval Europe (1917), chapter XXVII, printed pp. 511–530",
+      "url": "https://archive.org/details/historyofmedieva00thoruoft",
+      "source_type": "user_supplied_historical_synthesis",
+      "accessed": "2026-10-21",
+      "scope_note": "User-supplied scan/OCR; chapter extract and hash retained in provenance. Broad sequence and institutions only. Dated judgments, racial/national generalizations, exact force totals, the Black Prince nickname explanation and simplified treaty renunciations are not adopted."
+    },
+    {
+      "id": "COC-EDWARD",
+      "title": "Edward III, Royal Household",
+      "url": "https://www.royal.uk/edward-iii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Reign and principal campaigns only; not rounded force, population, economic or casualty claims."
+    },
+    {
+      "id": "COC-FRENCH-KINGS",
+      "title": "Grandes Chroniques de France, Library of Congress catalogue",
+      "url": "https://www.loc.gov/item/2021668229/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Catalogue independently identifies Philip VI, John II and Charles V and their reigns. Manuscript partisanship is retained."
+    },
+    {
+      "id": "COC-LABOUR",
+      "title": "The National Archives, plague and labour legislation",
+      "url": "https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/early-modern/plague/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1349 ordinance and 1351 statute; legal attempts to constrain wages and movement are not measured compliance or market prices."
+    },
+    {
+      "id": "COC-SCHISM",
+      "title": "The Great Schism, New Cambridge Medieval History chapter 20",
+      "url": "https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/great-schism/E1808AB5741BCCD2A7B50B5A71FD578B",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Institutional papal schism context. Obedience, practice and individual affiliation remain separate; no automatic religion transfer."
+    },
+    {
+      "id": "COC-DESIGN",
+      "title": "Century of Conflict opening and evidence policy, 21 October 2026",
+      "url": "local-design:century-of-conflict/openings-v1",
+      "source_type": "authored_policy",
+      "accessed": "2026-10-21",
+      "scope_note": "Authored cutoff, eligibility, qualitative scenario pressures and conditional requirements are design choices, not historical discoveries."
+    }
+  ],
+  "simulation_rules": [
+    "The snapshot initializes a new world only. Later facts come from actual committed campaign state.",
+    "Historical reference is out-of-character setup context, not automatically received character knowledge.",
+    "Personal identity and national allegiance are independent. No historical outcome, death, conversion or title transfer is scheduled.",
+    "Unknown quantities stay unknown. Authored fictional scene stock is explicitly reviewed and conserved through the existing Core."
+  ],
+  "entry_guide": {
+    "summary": [
+      "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues.",
+      "Calais remains under siege rather than already an English possession."
+    ],
+    "immediate_situation": [
+      "The Scottish defeat has not extinguished Scotland or created a general peace.",
+      "This is an authored 15 December cutoff after the developments described above; subsequent history remains open."
+    ],
+    "player_options": [
+      "Create an independent character or select an eligible historical individual. Review the dated world and your actual control before saving.",
+      "A new human character may explicitly choose the fictional local delivery opening. You may observe, attempt either route, deliver the entrusted item or write your own response. No national allegiance or employment is compulsory."
+    ],
+    "practical_pressures": [
+      "Siege service and the supply of both defenders and besiegers constrain choices.",
+      "Household, parish, manor, town, court and service relationships overlap. Royal jurisdiction does not establish a household’s wealth or an individual’s consent.",
+      "Use period and locality when establishing language, names, dress and religious practice. Neither kingdom is a homogeneous culture or ethnicity.",
+      "Markets, credit, customs and obligations matter alongside harvests and transport. No universal conversion from GDP, grain yields or tax assessments into spendable stock is adopted."
+    ],
+    "not_yet_established": [
+      "No complete current census, local price list, household inventory, treasury, deployable army or maintained road network is established by this scoped opening.",
+      "Exact personal locations, skills, health, loyalties and received reports remain unknown unless an explicit sourced or reviewed authored setup establishes them.",
+      "The authored civil cutoff has day precision and no invented hour. It is not a claim that each background development occurred on that day.",
+      "Culture, language, religion, legal status, office and personal allegiance are independent; no game category or appearance template determines them.",
+      "The fictional local opening supplies a small playable scene only. General freeform, dialogue, combat and autonomous world advancement retain the actual runtime limits."
+    ],
+    "future_rule": "Calais can fall, hold or be relieved only through the continuing siege circumstances. The continuing campaign is never reset to another entry snapshot or forced to end in 1453.",
+    "source_ids": [
+      "COC-BOOK",
+      "COC-EDWARD",
+      "COC-FRENCH-KINGS",
+      "COC-DESIGN",
+      "COC-LABOUR",
+      "COC-SCHISM"
+    ]
+  },
+  "entity_registry_template": {
+    "schema_version": 1,
+    "source_mode": "historical_template",
+    "axis": {
+      "id": "julian-day",
+      "unit": "day",
+      "calendar": "julian"
+    },
+    "as_of": 2213033,
+    "entities": {
+      "HYW-EDWARD-III": {
+        "id": "HYW-EDWARD-III",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-EDWARD",
+            "exists": true,
+            "identity": {
+              "name": "Edward III",
+              "species": "human",
+              "role": "King of England",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-PHILIP-VI": {
+        "id": "HYW-PHILIP-VI",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-FRENCH-KINGS",
+            "exists": true,
+            "identity": {
+              "name": "Philip VI",
+              "species": "human",
+              "role": "King of France",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-DAVID-II": {
+        "id": "HYW-DAVID-II",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-BOOK",
+            "exists": true,
+            "identity": {
+              "name": "David II",
+              "species": "human",
+              "role": "King of Scots; captive after Neville’s Cross",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-ENGLAND": {
+        "id": "HYW-ENGLAND",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-BOOK",
+            "exists": true,
+            "identity": {
+              "name": "Kingdom of England",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-EDWARD-III"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-FRANCE": {
+        "id": "HYW-FRANCE",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-BOOK",
+            "exists": true,
+            "identity": {
+              "name": "French royal government of Philip VI",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-PHILIP-VI"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-CONFLICT": {
+        "id": "HYW-CONFLICT",
+        "kind": "conflict",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-BOOK",
+            "exists": true,
+            "identity": {
+              "name": "Anglo-French dynastic and territorial conflict",
+              "category": "historical_conflict_complex"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      }
+    },
+    "relations": {},
+    "eligibility": {
+      "individual:HYW-EDWARD-III": {
+        "entity_id": "HYW-EDWARD-III",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-EDWARD-III"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-PHILIP-VI": {
+        "entity_id": "HYW-PHILIP-VI",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-PHILIP-VI"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-DAVID-II": {
+        "entity_id": "HYW-DAVID-II",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-DAVID-II"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-ENGLAND": {
+        "entity_id": "HYW-ENGLAND",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": false,
+            "reason": "Individual Solo control does not grant a polity or an infant adult agency.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-FRANCE": {
+        "entity_id": "HYW-FRANCE",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2213033,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": false,
+            "reason": "Individual Solo control does not grant a polity or an infant adult agency.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      }
+    },
+    "scenarios": {
+      "individual": {
+        "id": "individual",
+        "title": "Solo · individual character",
+        "character_creation_allowed": true,
+        "conflict_id": "HYW-CONFLICT",
+        "description": "One independent person; nationality, service, affiliation and actual control remain separate."
+      }
+    }
+  },
+  "research_extension": {
+    "review_status": "scoped_source_comparison_not_complete_world_reconstruction",
+    "society": [
+      "Household, parish, manor, town, court and service relationships overlap. Royal jurisdiction does not establish a household’s wealth or an individual’s consent.",
+      "Use period and locality when establishing language, names, dress and religious practice. Neither kingdom is a homogeneous culture or ethnicity.",
+      "Markets, credit, customs and obligations matter alongside harvests and transport. No universal conversion from GDP, grain yields or tax assessments into spendable stock is adopted."
+    ],
+    "economic_context": "Siege service and the supply of both defenders and besiegers constrain choices.",
+    "religious_context": "Ecclesiastical institutions and local religious practice are distinct from royal allegiance; personal adherence is not inferred.",
+    "quantities_status": "reference_units_and_documentary_examples_only; no default stocks or demographic interpolation",
+    "conditional_development": {
+      "statement": "Calais can fall, hold or be relieved only through the continuing siege circumstances.",
+      "classification": "research_inference",
+      "execution_available": false,
+      "required_records": [
+        "living and capable participants",
+        "actual authority and intentions",
+        "received information",
+        "finite people, supplies, transport and finance",
+        "current local control and alternatives"
+      ]
+    }
+  }
+}

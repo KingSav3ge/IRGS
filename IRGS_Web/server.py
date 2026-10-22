@@ -22,6 +22,7 @@ from r9_runtime import frontier, grant, resolve
 from irgs_reference import InvalidEvent, digest
 from gameplay_views import playthrough, controlled_actor, pending_declaration, safe_result
 from features import feature_registry, content_library, validate_player_creation
+from campaign_worlds import world_reference
 
 
 class Store:
@@ -396,6 +397,9 @@ def make_server(port=8765, folder=None):
                     if path=='/api/content-library':
                         self.session()
                         return self.reply(200,content_library())
+                    if path.startswith('/api/campaign-world/'):
+                        self.session()
+                        return self.reply(200,world_reference(path.removeprefix('/api/campaign-world/')))
                     if path=='/api/historical-baseline':
                         self.creator(mode)
                         from historical_plans import baseline_view

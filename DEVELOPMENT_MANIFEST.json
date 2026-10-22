@@ -58,8 +58,8 @@
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 2551,
-      "sha256": "3e7c06544ab26194e8b969dec94b8b00dce07940c8a31d91ef79bd5458b1dce9"
+      "bytes": 2849,
+      "sha256": "300c9f56e633c32920150d3b885ac623fe0f25a9f9c1c79c71ec0737e3295893"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -115,6 +115,101 @@
       "path": "IRGS_3_3/build_suite_catalog.py",
       "bytes": 33419,
       "sha256": "eaccfa38f6ce92fc264ee1db8b29f21414776a20c32feead7eeff3efe0fae389"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/CONTINUITY_REVIEW.md",
+      "bytes": 7659,
+      "sha256": "4101839c66b822eedefa06fa2af38df690943893a95a3762399281957a0798d1"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/IRGS_BINDING.md",
+      "bytes": 3457,
+      "sha256": "ef622fb6540f77f912e027e28540ffa51e51685ee214b17f097cd79dc9f58aab"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/MAP_GAZETTEER.md",
+      "bytes": 10621,
+      "sha256": "e0ce9c2c79ad3c759dcf53015bf2d8e0beb4d7301fd6cd2afa97697c45c95a5c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/README.md",
+      "bytes": 2153,
+      "sha256": "0ce6be9a6b071e93f90e8543287aba08ce0f2f7f666a1418c3681e1eba190446"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/WORLD_GUIDE.md",
+      "bytes": 8247,
+      "sha256": "1fc8fa9e9ef0978220615ee5a7c94a4fe67140eaabe069fda32609ac6e7c7cda"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/map_catalogue.json",
+      "bytes": 37294,
+      "sha256": "89dcefa4728a29ce094e6f3bc5acf233f7b24855b8da84a69904032fd298c54c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/source_manifest.json",
+      "bytes": 6500,
+      "sha256": "4da0a9d676250526e55ffa4c6189b5fddd070290b2bac0d4d931656abd47314e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/source_text.json",
+      "bytes": 29606,
+      "sha256": "36417984372158da8e9da08f2a6f38215a4ea44aca2b7b650cce8bb636d08ed4"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Cathius Akarian.docx",
+      "bytes": 13094,
+      "sha256": "b2280b3a579661fdacc1c6fbad3a529a6b7fda4b17d931359350b1b61d201d78"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Daniel Conver.docx",
+      "bytes": 13839,
+      "sha256": "05f7747208f18d9ab9523f8c6016fb62d5e6bc7d3c90ff0629cea90af3c035ab"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Kieran Pelleas.docx",
+      "bytes": 16804,
+      "sha256": "ec400f8fb0268f044a9702091421b23d9900505d774524c95cdac0979de480a4"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Races of Kira/Larius/Races of Larius.docx",
+      "bytes": 13261,
+      "sha256": "b2e770a3efba25b9399059f4a1646f09b21597876e1a7e66426c2163f192bd7e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Races of Kira/TalmahKah/Races of TalmahKah.docx",
+      "bytes": 12700,
+      "sha256": "d380fbf2d620445b86631d9b7a6343dba2d4dc00dfca532b8991f630cfe6871a"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of  Sadion (Sadire Humans).docx",
+      "bytes": 14161,
+      "sha256": "22fcf719cecabd40726679740822ed3eefe8b57e6b27ae273b4eaa1ce9825b4c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Akaria (Akarian Dwarves).docx",
+      "bytes": 15550,
+      "sha256": "3391ae5fd4760e4951c2d8a314b1f0cf407e4a157b0a9f64d586dbc6638e6c9d"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Everwood (Evalian Elves).docx",
+      "bytes": 15062,
+      "sha256": "9fd8162a65b45ca585180d0bf3ddfdcbaf13790969784f1427e308ef37bb406e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Kyrinus (Karthinian Elves).docx",
+      "bytes": 12259,
+      "sha256": "c1bd72260d22f178b823ff02bd2caa0743d722f18f09420298d9e2b8c28ca194"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "bytes": 8644,
+      "sha256": "9eea40d7da762982fd080823566c355cfbcb9bf806c4110e84d807b6f68a6589"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/world.json",
+      "bytes": 108396,
+      "sha256": "dcd507d70e3f0e502c92d4a941ed41d246a0a2c552a34e8b0808a3ba447dee16"
     },
     {
       "path": "IRGS_3_3/catalog/design_references/epoch_history_spec_v1_0.md",
@@ -903,8 +998,8 @@
     },
     {
       "path": "IRGS_3_3/data/campaign_listings.json",
-      "bytes": 972,
-      "sha256": "fe2e526ceb1e097d7e5c1043ce70e56710ad199c0273d1e31947b629dbac610f"
+      "bytes": 1054,
+      "sha256": "2c565f067292bb27c192bbc4d57d2214fbeeadf1f46b64ec670558919b04f2fd"
     },
     {
       "path": "IRGS_3_3/data/catalog.json",
@@ -943,8 +1038,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 35372,
-      "sha256": "37dbf613928f0ba19a4f4e2f17bd149c0e0ebd735ed09f0171da0cf90c2c29f8"
+      "bytes": 37716,
+      "sha256": "e324cece1e974ce691a8d8c86f6b143f69ace94f2d37a3dc8ac203b73527266a"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1437,9 +1532,14 @@
       "sha256": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6"
     },
     {
+      "path": "IRGS_Web/campaign_worlds.py",
+      "bytes": 1723,
+      "sha256": "1a4ee7902a44cd6dac59b328396295d35533a49d0aa30cd9d95adfbc838432c3"
+    },
+    {
       "path": "IRGS_Web/features.py",
-      "bytes": 16080,
-      "sha256": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae"
+      "bytes": 16268,
+      "sha256": "b23af787509df7201a67ea4da33678fb889651c3256a8ed11bb169640b1487ca"
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
@@ -1458,13 +1558,13 @@
     },
     {
       "path": "IRGS_Web/server.py",
-      "bytes": 36083,
-      "sha256": "bc6e42725486cb64b918dfe825d20aced142656b6420758117936ff42ea33abc"
+      "bytes": 36336,
+      "sha256": "4b007f130d533d2591bdcaec2033373c4cb8d24ff9eba9b620813e23f0ad46fb"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 118643,
-      "sha256": "5dd30a050079c704664350e82e051a921b07bdf5de827fcd486a87c51ec873b1"
+      "bytes": 121107,
+      "sha256": "bd81c7c11fed564350fb9df675d7e025f26fbf297dbbaebec1c82b6cfa1c71eb"
     },
     {
       "path": "IRGS_Web/static/index.html",
@@ -1493,8 +1593,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 61772,
-      "sha256": "713c15c0a0394a99d04fb22fa0c7e54c7783854e745792db91593d8b087a6f0a"
+      "bytes": 64646,
+      "sha256": "bac56c152e513d2bbbd0e07b7427488aac1229d4f38ed34861b30558166421db"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1518,13 +1618,18 @@
     },
     {
       "path": "IRGS_Web/tests/test_stage1.py",
-      "bytes": 15887,
-      "sha256": "a317a031a86ef781c6c80597fbe809b64d10e5c963e0949426947e22b2f0c24a"
+      "bytes": 18673,
+      "sha256": "ba90492ff2514cc295ab098c3c8fc8d40b1c2b613e3e66c2056bf765e7946839"
     },
     {
       "path": "IRGS_Web/tests/test_starting_flow.py",
       "bytes": 16297,
       "sha256": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b"
+    },
+    {
+      "path": "KIRA1_VALIDATION.json",
+      "bytes": 3105,
+      "sha256": "9daf5fcb90a45a19b8283090abf8db2753c2896d6b9f3f5362cab4660256544c"
     },
     {
       "path": "OPENING1_VALIDATION.json",
@@ -1533,8 +1638,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3730,
-      "sha256": "7d17c2951c9665b00c9d4e5b6bfd566f86bb588017b8925f3f31eac171acccff"
+      "bytes": 4807,
+      "sha256": "73ed029957f6f505d488596233dfc7dc863f3619d3f6123a46fd40ecfa36fed0"
     },
     {
       "path": "ROADMAP.md",
@@ -1545,6 +1650,11 @@
       "path": "SHA256SUMS.txt",
       "bytes": 546,
       "sha256": "2dc216320bb7a0e803b28284572c4dfe104a2285783f40e8f178c8f6de0674f8"
+    },
+    {
+      "path": "SOURCE_PUBLICATION_VALIDATION.json",
+      "bytes": 4177,
+      "sha256": "8f15152ba6bc127b8c3e18316007e294a5e6f59f56653ca032942dffe0f0a46b"
     },
     {
       "path": "STARTFIX_VALIDATION.json",
@@ -1742,9 +1852,19 @@
       "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978"
     },
     {
+      "path": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
+      "bytes": 145437,
+      "sha256": "fdabced665625ead9e05f2283b131e842abd7df0ca6683e144899372900b8f93"
+    },
+    {
+      "path": "engine/design/rise/README.md",
+      "bytes": 3244,
+      "sha256": "a852f27934341f5b8b79334b2f62ac4c80a6e44362c8ebb94df36fe2c1c9eec9"
+    },
+    {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 8960847,
-      "sha256": "71e742cef0583460648669b3a2ea8ac40a8f037911de325a93b275d7982f0e5f"
+      "bytes": 8963548,
+      "sha256": "31e0376a06187ec1e82fcb2a6514dbd92f56511c648407908126530ea39d651e"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
@@ -1822,6 +1942,11 @@
       "sha256": "2cea2b590741c4ce3af18f15252f10f9dbb829be8ec949b4dd8f5ebe68b254aa"
     },
     {
+      "path": "provenance/SOURCE_IMPORTS.json",
+      "bytes": 1428,
+      "sha256": "4c62f3101f8c74ff04819b3fcc76b14287960ebcd666702b23ec9cd6f747a81e"
+    },
+    {
       "path": "provenance/action1_validation/frontend.txt",
       "bytes": 3731,
       "sha256": "58c997ef5d346b974b2911c16bdd369a7c3d520e06e09473c18882644330e255"
@@ -1862,6 +1987,251 @@
       "sha256": "d841426b98873ec79c4eeb2734acc8ea7db3184f48a854edf8b2ebaa72dfb050"
     },
     {
+      "path": "provenance/century_of_conflict/Century_of_Conflict_WIP_2026-10-21.zip",
+      "bytes": 237826,
+      "sha256": "9fa171451cdd5f09c584f3d8a8093685648037c7abfb4e88803f7c5b9d4236a1"
+    },
+    {
+      "path": "provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
+    },
+    {
+      "path": "provenance/century_of_conflict/README.md",
+      "bytes": 1655,
+      "sha256": "f8b27849bd895ae39eaa0f3e777f7c78f1cc580de048374a9c630e681c81b4b5"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1337_opening.json",
+      "bytes": 17954,
+      "sha256": "aecc065e3ad28b832da5bbcfbd88db17f6b5c1a9a74a1616a3bf53c0fb65cf5c"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1340_opening.json",
+      "bytes": 17990,
+      "sha256": "11755e21f7282b564df08499eec3496812a62224338d24be65596b1461f60755"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1341_opening.json",
+      "bytes": 20222,
+      "sha256": "b851689579a39d00ecb6add924f78c41162c301c4fce1b793cb18337f1214fd8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1343_opening.json",
+      "bytes": 18485,
+      "sha256": "6127176489b03e14bfbc45219e1a30702159e997e67c3da774e2e5d9ea58f3b7"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1345_opening.json",
+      "bytes": 19528,
+      "sha256": "2bdb9d72731e147277fb1e3233801a78a33caea72d5d8179bfae74c5c3218218"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1346_opening.json",
+      "bytes": 19334,
+      "sha256": "bc716c10db9bb663b8a82453d96c3d585e9e8ab580c2c9c465d3934e4d84e584"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1347_opening.json",
+      "bytes": 17947,
+      "sha256": "07073552254e0440c1201e23c3cf579865108feabf3e3e98d9a2d02386ba1cf1"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1355_opening.json",
+      "bytes": 19427,
+      "sha256": "f35f1d89b1fc889ae3686b3c6a34a43bf47e010371a1a8d702c9afdf4e0300a9"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1356_opening.json",
+      "bytes": 19636,
+      "sha256": "919b0018c6a34cfc595f4c578cb897d84725b3b3b9ea3209248c9863e8fa80e8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1357_opening.json",
+      "bytes": 19651,
+      "sha256": "a23b7af8c0c7bbc0e01090d892003d034f5a5b404e99fa0f3ee7b59795129340"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1359_opening.json",
+      "bytes": 17818,
+      "sha256": "f023ad98500940f6fb14873d5517f3189a0c700127413b1df596a2405a2ea974"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1360_opening.json",
+      "bytes": 19444,
+      "sha256": "2db1c20bbdb1849cfbd9ed29a9260bff302d2aeba88403d2f4022c727ac43032"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1364_opening.json",
+      "bytes": 20265,
+      "sha256": "6ab768e1b689d7806e3cec2e2586d6e1b87dd8fdf47d8786b4f49f18fe57cf53"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1366_opening.json",
+      "bytes": 19524,
+      "sha256": "2711c0cf97810b42876f88bcb7eb767c994b70159010873c07743d37991bb23f"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1369_opening.json",
+      "bytes": 19465,
+      "sha256": "f42a0a5806d48ae90b4e75ad30c23a016d61010116cbed4f94b5a68c2ab9fb5e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1372_opening.json",
+      "bytes": 20088,
+      "sha256": "2454c84c4b811ac23fc32337a5b5a9a8994c65566a1fee5bf9280b8b7d110940"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1373_opening.json",
+      "bytes": 20194,
+      "sha256": "b3b64b0c39944dfe777aab2b9aa4bf1b5f1bc1f3dc1991165b5b91e8bb51b813"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1375_opening.json",
+      "bytes": 18479,
+      "sha256": "fc37dbab84a94b652bb538bf315cb5484667afec77841f9c55f6ca210a13423c"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1377_opening.json",
+      "bytes": 17925,
+      "sha256": "383d22f82517aad9788f1d89ea4a4728970ffc0aba28b9184c100453e59aec8d"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1385_opening.json",
+      "bytes": 20615,
+      "sha256": "b71ce5e44b801d0a56d772f68ce275a26597dcf3370ec112dfc79c001b0cbd91"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1389_opening.json",
+      "bytes": 17502,
+      "sha256": "a002d3519feb363c452b1198911d9ee75e11bf0c302460d4f6cb455333ceb965"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1396_opening.json",
+      "bytes": 17548,
+      "sha256": "33d0cb64e2e0bf43b85b2e4dab808dfecbfcdf150cf06ebc5a7f10d2178c9d6e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1399_opening.json",
+      "bytes": 19825,
+      "sha256": "fc491f269c8ae06e1ee29ab8677d333dc5d547fc54883dfd05109fdabe169ee5"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1400_opening.json",
+      "bytes": 19727,
+      "sha256": "82e4d9a2bf251844d4a344b44ce307b26593296781d9065e9afc8564b8d46ae6"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1403_opening.json",
+      "bytes": 19728,
+      "sha256": "ec38a435a4fd236cd0f5adac170386a3b36db27bd6776dfc1011f062f08073b9"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1411_opening.json",
+      "bytes": 19288,
+      "sha256": "d0ad955845195839bce5f3cbecc3b26a3325acd2440210bd8ff43b9dc0639afe"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1415_opening.json",
+      "bytes": 36667,
+      "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1417_opening.json",
+      "bytes": 18083,
+      "sha256": "f61c3be63697317bbbdfb4d06ebb4070c370110fc0aa29214b703bd75aaa1799"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1419_opening.json",
+      "bytes": 19786,
+      "sha256": "e40047b213a7845d0c9d8a06e8e5563ed550f1d8649b7d12f2ed95745dc04099"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1420_opening.json",
+      "bytes": 20359,
+      "sha256": "a5a4c4aa0e299810b0c3139e66880cc4c135e591258a5ef1303ad94726f5086e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1422_opening.json",
+      "bytes": 21427,
+      "sha256": "259d0a50035fd1a68cefa46bf53ac25778c8ad9b49ba7755ef99d6b7bf734a3b"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1429_opening.json",
+      "bytes": 21715,
+      "sha256": "20ab53ad8a981c10b1990e91f1bd88eb9c8d0cc8a267ab97dfd9f841db0b00dc"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1435_opening.json",
+      "bytes": 21739,
+      "sha256": "5ddfc0e9138ced67ddcd9e66f4b73b2684f350f65c5a5d2fa19cdfd3a3db2a50"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1444_opening.json",
+      "bytes": 21248,
+      "sha256": "af70a0b39d2dc743c6f5eb204fba9926b5e7d0f582a80aa98ebd5a9c4aabae58"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1449_opening.json",
+      "bytes": 19435,
+      "sha256": "dc73332619b3b812867d33e758cd7b10ab426e5c326aaa8bb89d65bad1b6fb48"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1450_opening.json",
+      "bytes": 19529,
+      "sha256": "3a2226a10d36cecafa7d870e190230bee075019eecb67fac77beec51f1bef7c8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1453_opening.json",
+      "bytes": 20209,
+      "sha256": "c5ec67ab344e564c7c0a1b5363f7e905e7d7d2d4b745cca8dd796a157a0374f8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_entry_catalogue.json",
+      "bytes": 27385,
+      "sha256": "7f721e1798f76458c981c4993e2c76acae6f85ee2617e07cef76f3b6f5474638"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/runtime/historical_campaigns.py",
+      "bytes": 11505,
+      "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/Thorndike_Chapter_XXVII_OCR_reference.txt",
+      "bytes": 54038,
+      "sha256": "2c6a331e3fe222f7e6da1698313a8d54de7b4b434b99fe19d2bad0ef1e9f6bf1"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/book_excerpt_provenance.json",
+      "bytes": 543,
+      "sha256": "f3c439cbf5e1af528426558f30cce43335d7f874c4cfb0df2e17bea9ab8fc8a7"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/opening_inventory.json",
+      "bytes": 25883,
+      "sha256": "4e63586236505e8e062059e4318b31d7f70763f760e2507f9b7c54b7fe8e28a3"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/tools/build_century_starts.py",
+      "bytes": 42140,
+      "sha256": "32f518224ce35495d1d3ced40af1a2b76b2e8b959620158b7efd4d1cf7a8586e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/submission_manifest.json",
+      "bytes": 8202,
+      "sha256": "7c6bf465413fa4c32a185ede822eaea2d6ccf4f968922bcf200e6a305d5cc4cd"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/tracked_changes.patch",
+      "bytes": 41958,
+      "sha256": "4a0ae5ded18e21c5c368f11f9c823fe2454510c30281481eae4089447a10c954"
+    },
+    {
       "path": "provenance/coverage1_validation/runtime_capture.txt",
       "bytes": 552,
       "sha256": "bf3a1854bd8b4ebc22376133e4124bd0d697bd675ad514470ca325155fa0b6e6"
@@ -1870,6 +2240,16 @@
       "path": "provenance/coverage1_validation/tool_tests.txt",
       "bytes": 3397,
       "sha256": "5abccd29f14881c9b0aff68cdf27474c7b7efe8a9b72113090a23a1cb4f5b495"
+    },
+    {
+      "path": "provenance/kira/Kira_Campaign_World_v0_1.zip",
+      "bytes": 607581,
+      "sha256": "1d6e1f8305994accc5fc306d8b0a13e0e3c8525d0d2a81c4b4ecda3d20ac3287"
+    },
+    {
+      "path": "provenance/kira/README.md",
+      "bytes": 1345,
+      "sha256": "f7f9d829bbfa380eab6d2ef36bbc13180af93619e2345f40ae2807434cd3ece2"
     },
     {
       "path": "provenance/opening1_validation/opening1_capture_runtime.txt",
@@ -1900,6 +2280,16 @@
       "path": "provenance/opening1_validation/opening1_web_scene_final.txt",
       "bytes": 11917,
       "sha256": "17e274aaf7eb58e79594f973e9334c3f228bd2bb5e4de42bd780f147eeb0d4c8"
+    },
+    {
+      "path": "provenance/rise/IRGS_The_Rise_of_You_Design_Specification_v0_4.docx",
+      "bytes": 101997,
+      "sha256": "8e8c16d8590280780064e1f566e3a595d1914da36c369fbb954ca0e3a670b49c"
+    },
+    {
+      "path": "provenance/rise/README.md",
+      "bytes": 532,
+      "sha256": "dbce3b50c67a8cd8275cc67cb323c09e74d039483a119a817a3225bf776aeeb8"
     },
     {
       "path": "provenance/startfix_validation/startfix_capture_runtime.txt",

@@ -1,0 +1,237 @@
+{
+  "status": "PAUSED_WORK_IN_PROGRESS_NOT_RELEASE_QUALIFIED",
+  "created_on": "2026-10-21",
+  "base_commit": "38f1847ab4774f05be8d4fab81b629918884ea75",
+  "scope": "Changed source files plus unchanged 1415 snapshot and pause documentation; no saves or runtime logs",
+  "structural_check": {
+    "entries": 37,
+    "loadable": 37,
+    "actor_rows": 99,
+    "historical_certification": false,
+    "ui_changes_implemented": false,
+    "full_regression_suite_run": false
+  },
+  "files": [
+    {
+      "path": "IRGS_3_3/data/hyw_1337_opening.json",
+      "bytes": 17954,
+      "sha256": "aecc065e3ad28b832da5bbcfbd88db17f6b5c1a9a74a1616a3bf53c0fb65cf5c"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1340_opening.json",
+      "bytes": 17990,
+      "sha256": "11755e21f7282b564df08499eec3496812a62224338d24be65596b1461f60755"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1341_opening.json",
+      "bytes": 20222,
+      "sha256": "b851689579a39d00ecb6add924f78c41162c301c4fce1b793cb18337f1214fd8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1343_opening.json",
+      "bytes": 18485,
+      "sha256": "6127176489b03e14bfbc45219e1a30702159e997e67c3da774e2e5d9ea58f3b7"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1345_opening.json",
+      "bytes": 19528,
+      "sha256": "2bdb9d72731e147277fb1e3233801a78a33caea72d5d8179bfae74c5c3218218"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1346_opening.json",
+      "bytes": 19334,
+      "sha256": "bc716c10db9bb663b8a82453d96c3d585e9e8ab580c2c9c465d3934e4d84e584"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1347_opening.json",
+      "bytes": 17947,
+      "sha256": "07073552254e0440c1201e23c3cf579865108feabf3e3e98d9a2d02386ba1cf1"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1355_opening.json",
+      "bytes": 19427,
+      "sha256": "f35f1d89b1fc889ae3686b3c6a34a43bf47e010371a1a8d702c9afdf4e0300a9"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1356_opening.json",
+      "bytes": 19636,
+      "sha256": "919b0018c6a34cfc595f4c578cb897d84725b3b3b9ea3209248c9863e8fa80e8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1357_opening.json",
+      "bytes": 19651,
+      "sha256": "a23b7af8c0c7bbc0e01090d892003d034f5a5b404e99fa0f3ee7b59795129340"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1359_opening.json",
+      "bytes": 17818,
+      "sha256": "f023ad98500940f6fb14873d5517f3189a0c700127413b1df596a2405a2ea974"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1360_opening.json",
+      "bytes": 19444,
+      "sha256": "2db1c20bbdb1849cfbd9ed29a9260bff302d2aeba88403d2f4022c727ac43032"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1364_opening.json",
+      "bytes": 20265,
+      "sha256": "6ab768e1b689d7806e3cec2e2586d6e1b87dd8fdf47d8786b4f49f18fe57cf53"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1366_opening.json",
+      "bytes": 19524,
+      "sha256": "2711c0cf97810b42876f88bcb7eb767c994b70159010873c07743d37991bb23f"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1369_opening.json",
+      "bytes": 19465,
+      "sha256": "f42a0a5806d48ae90b4e75ad30c23a016d61010116cbed4f94b5a68c2ab9fb5e"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1372_opening.json",
+      "bytes": 20088,
+      "sha256": "2454c84c4b811ac23fc32337a5b5a9a8994c65566a1fee5bf9280b8b7d110940"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1373_opening.json",
+      "bytes": 20194,
+      "sha256": "b3b64b0c39944dfe777aab2b9aa4bf1b5f1bc1f3dc1991165b5b91e8bb51b813"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1375_opening.json",
+      "bytes": 18479,
+      "sha256": "fc37dbab84a94b652bb538bf315cb5484667afec77841f9c55f6ca210a13423c"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1377_opening.json",
+      "bytes": 17925,
+      "sha256": "383d22f82517aad9788f1d89ea4a4728970ffc0aba28b9184c100453e59aec8d"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1385_opening.json",
+      "bytes": 20615,
+      "sha256": "b71ce5e44b801d0a56d772f68ce275a26597dcf3370ec112dfc79c001b0cbd91"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1389_opening.json",
+      "bytes": 17502,
+      "sha256": "a002d3519feb363c452b1198911d9ee75e11bf0c302460d4f6cb455333ceb965"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1396_opening.json",
+      "bytes": 17548,
+      "sha256": "33d0cb64e2e0bf43b85b2e4dab808dfecbfcdf150cf06ebc5a7f10d2178c9d6e"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1399_opening.json",
+      "bytes": 19825,
+      "sha256": "fc491f269c8ae06e1ee29ab8677d333dc5d547fc54883dfd05109fdabe169ee5"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1400_opening.json",
+      "bytes": 19727,
+      "sha256": "82e4d9a2bf251844d4a344b44ce307b26593296781d9065e9afc8564b8d46ae6"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1403_opening.json",
+      "bytes": 19728,
+      "sha256": "ec38a435a4fd236cd0f5adac170386a3b36db27bd6776dfc1011f062f08073b9"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1411_opening.json",
+      "bytes": 19288,
+      "sha256": "d0ad955845195839bce5f3cbecc3b26a3325acd2440210bd8ff43b9dc0639afe"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1415_opening.json",
+      "bytes": 36667,
+      "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1417_opening.json",
+      "bytes": 18083,
+      "sha256": "f61c3be63697317bbbdfb4d06ebb4070c370110fc0aa29214b703bd75aaa1799"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1419_opening.json",
+      "bytes": 19786,
+      "sha256": "e40047b213a7845d0c9d8a06e8e5563ed550f1d8649b7d12f2ed95745dc04099"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1420_opening.json",
+      "bytes": 20359,
+      "sha256": "a5a4c4aa0e299810b0c3139e66880cc4c135e591258a5ef1303ad94726f5086e"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1422_opening.json",
+      "bytes": 21427,
+      "sha256": "259d0a50035fd1a68cefa46bf53ac25778c8ad9b49ba7755ef99d6b7bf734a3b"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1429_opening.json",
+      "bytes": 21715,
+      "sha256": "20ab53ad8a981c10b1990e91f1bd88eb9c8d0cc8a267ab97dfd9f841db0b00dc"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1435_opening.json",
+      "bytes": 21739,
+      "sha256": "5ddfc0e9138ced67ddcd9e66f4b73b2684f350f65c5a5d2fa19cdfd3a3db2a50"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1444_opening.json",
+      "bytes": 21248,
+      "sha256": "af70a0b39d2dc743c6f5eb204fba9926b5e7d0f582a80aa98ebd5a9c4aabae58"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1449_opening.json",
+      "bytes": 19435,
+      "sha256": "dc73332619b3b812867d33e758cd7b10ab426e5c326aaa8bb89d65bad1b6fb48"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1450_opening.json",
+      "bytes": 19529,
+      "sha256": "3a2226a10d36cecafa7d870e190230bee075019eecb67fac77beec51f1bef7c8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1453_opening.json",
+      "bytes": 20209,
+      "sha256": "c5ec67ab344e564c7c0a1b5363f7e905e7d7d2d4b745cca8dd796a157a0374f8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_entry_catalogue.json",
+      "bytes": 27385,
+      "sha256": "7f721e1798f76458c981c4993e2c76acae6f85ee2617e07cef76f3b6f5474638"
+    },
+    {
+      "path": "IRGS_3_3/runtime/historical_campaigns.py",
+      "bytes": 11505,
+      "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
+    },
+    {
+      "path": "provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
+    },
+    {
+      "path": "provenance/century_of_conflict/Thorndike_Chapter_XXVII_OCR_reference.txt",
+      "bytes": 54038,
+      "sha256": "2c6a331e3fe222f7e6da1698313a8d54de7b4b434b99fe19d2bad0ef1e9f6bf1"
+    },
+    {
+      "path": "provenance/century_of_conflict/book_excerpt_provenance.json",
+      "bytes": 543,
+      "sha256": "f3c439cbf5e1af528426558f30cce43335d7f874c4cfb0df2e17bea9ab8fc8a7"
+    },
+    {
+      "path": "provenance/century_of_conflict/opening_inventory.json",
+      "bytes": 25883,
+      "sha256": "4e63586236505e8e062059e4318b31d7f70763f760e2507f9b7c54b7fe8e28a3"
+    },
+    {
+      "path": "tools/build_century_starts.py",
+      "bytes": 42140,
+      "sha256": "32f518224ce35495d1d3ced40af1a2b76b2e8b959620158b7efd4d1cf7a8586e"
+    }
+  ],
+  "tracked_patch_sha256": "4a0ae5ded18e21c5c368f11f9c823fe2454510c30281481eae4089447a10c954"
+}

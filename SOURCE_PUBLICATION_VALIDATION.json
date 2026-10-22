@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "increment": "kira1-rise-source",
+  "integration_base": "38f1847ab4774f05be8d4fab81b629918884ea75",
+  "selected_core": "3.3",
+  "scope": "Publish the Rise v0.4 design, the reviewed Kira v0.1 Content Library integration, and the Century of Conflict paused WIP archive and submission note.",
+  "original_inputs": "provenance/SOURCE_IMPORTS.json",
+  "rise": {
+    "design": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
+    "implementation_plan": "engine/design/rise/README.md",
+    "first_executable_example_selected_by_user": "clearly fictional founding example",
+    "playable_initializer_implemented": false,
+    "proposed_acceptance_tests_claimed_passed": false
+  },
+  "kira": {
+    "guide_available": true,
+    "playable": false,
+    "world_state_created": false,
+    "source_verification": {
+      "original_documents_verified": 9,
+      "source_records": 73,
+      "exact_quotations_verified": 112,
+      "map_references": 6,
+      "transcribed_map_entries": 109,
+      "continuity_questions": 12,
+      "map_pixels_verified": false
+    }
+  },
+  "fresh_checks": {
+    "runtime": {
+      "tests_run": 458,
+      "passed": 457,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1181,
+      "captured_executions": 2327,
+      "capture_origin_counts": {
+        "actual_apply": 2019,
+        "direct_observe": 308
+      },
+      "actual_committed_apply_count": 1921,
+      "excluded_unknown_operations": 6,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    },
+    "web": {
+      "run": 130,
+      "passed": 123,
+      "skipped": 7,
+      "failures": 0,
+      "errors": 0,
+      "skip_reason": "Windows PowerShell launcher cases on Linux"
+    },
+    "interface": {
+      "passed": 50,
+      "failures": 0
+    },
+    "tools": {
+      "run": 19,
+      "passed": 19,
+      "failures": 0
+    },
+    "browser": {
+      "status": "passed",
+      "checks": [
+        "desktop: guide and six map catalogues accessible, 109 entries, no overflow or campaign writes",
+        "mobile: guide and six map catalogues accessible, 109 entries, no overflow or campaign writes",
+        "small-mobile: guide and six map catalogues accessible, 109 entries, no overflow or campaign writes"
+      ],
+      "javascript_errors": [],
+      "campaign_writes": 0
+    }
+  },
+  "core_mechanics_changed": false,
+  "existing_campaigns_migrated": false,
+  "limits": [
+    "Kira map originals are absent from the bundle; transcriptions and source attribution were verified.",
+    "Kira continuity questions remain unresolved and no launchable snapshot is supplied.",
+    "Rise implementation remains in progress; source publication does not implement or adopt all detailed proposals.",
+    "Windows-only launcher checks were skipped on this instance.",
+    "Distribution verification is performed separately after this record is generated."
+  ],
+  "century_of_conflict": {
+    "archive_entries": 46,
+    "manifest_payloads_verified": 44,
+    "status": "PAUSED_WORK_IN_PROGRESS_NOT_RELEASE_QUALIFIED",
+    "new_snapshot_drafts": 36,
+    "snapshot_drafts_activated": false,
+    "claim_by_claim_historical_verification": false,
+    "runtime_changes_applied": false,
+    "source_reported_structural_check": {
+      "entries": 37,
+      "loadable": 37,
+      "actor_rows": 99,
+      "historical_certification": false,
+      "ui_changes_implemented": false,
+      "full_regression_suite_run": false
+    }
+  },
+  "operation_register": {
+    "operation_spellings": 84,
+    "backend_operation_pairs": 169,
+    "freshness": "current",
+    "all_branches_certified": false
+  }
+}
