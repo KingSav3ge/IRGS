@@ -177,13 +177,15 @@ def content_library():
             launch_capability='reviewed_initialization_and_pending_declarations')
     campaigns.extend(world_listing(world_id) for world_id in WORLD_FILES
                      if world_id in visible_campaign_ids())
+    from rise_campaigns import listing as rise_listing
+    if 'rise' in visible_campaign_ids(): campaigns.append(rise_listing())
     return {'schema_version': 1, 'campaigns': campaigns,
         'note': 'Campaign discovery excludes technical engines and libraries. General action resolution and narration remain unavailable.'}
 
 
 def validate_player_creation(profile_id, scenario_id, entry_id, snapshot_sha256):
     for campaign in content_library()['campaigns']:
-        for period in campaign['periods']:
+        for period in campaign.get('periods', []):
             for entry in period['entries']:
                 if (campaign['id'] == scenario_id and entry['id'] == entry_id and entry['profile_id'] == profile_id
                         and entry['ready'] and entry['snapshot_sha256'] == snapshot_sha256):

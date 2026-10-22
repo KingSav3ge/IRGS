@@ -6,7 +6,17 @@ Read the [v0.4 specification](IRGS_Rise_Design_Specification_v0_4.md). The [orig
 
 ## Current implementation status
 
-Design input imported and receiving analysis begun. No Rise campaign initializer, simulation adapter or playable Rise start is supplied by this import. The current executable Core remains 3.3. The specification's proposed tests have not become passing tests merely by being included.
+Rise foundation 1 adds reviewed setup and a playable fictional R00 founding path to the canonical Solo app. It uses the selected Core 3.3 with shared settlement handlers. Read the [implementation and receiving record](FOUNDATION_IMPLEMENTATION.md) for exact models, owners, tests and limits. The specification's entire acceptance catalogue remains separate from this bounded increment.
+
+| Development area | Current executable scope | Remaining work |
+| --- | --- | --- |
+| Setup | Names, fictional region/date labels, three company choices, independent grant/supply choices, review digest and atomic creation | Broader custom configurations and all eight qualified opening manifests |
+| Permission | Fictional steward offer, explicit acceptance, limited camp/dwelling rights and existing path | Broader tenure, disputes and historical instruments |
+| Work and services | Finite shelter and repair, tools, reserved inputs, actual progress, pause/resume and shelter shortfall | General construction, useful concurrency and additional services |
+| Provision | Consumed grain reconciles with opening stock; protected seed and explicit deficits | Calibrated needs, health consequences, crops and trade |
+| Agency | Reviewed sibling delegation, finite independent neighbor repair, invitation/consent/departure/arrival with private goods | General autonomous planning and more households/policies |
+| Recovery and app | Actor-filtered dashboard, durable creation/action retry and save/reload | Distributed writers, wider phase recovery and full T01–T37 qualification |
+| H01–H06, N01, F01 | Shared catalogue/validation contract; executable starts held | Historical curation, planetary/fantasy models and per-family qualification |
 
 ## Agreed implementation sequence
 
@@ -19,9 +29,9 @@ Design input imported and receiving analysis begun. No Rise campaign initializer
 ## Receiving boundaries
 
 - Rise owns configuration, templates, confirmations and support information. It must not create a parallel simulation kernel or mutable copies of Core resource totals.
-- Existing Core stock establishment and transfer do not constitute production, consumption or a generic economy. New material transformations require explicit accounting and qualified adapters.
+- Existing Core stock establishment and transfer remain distinct from production and consumption. Foundation 1 adds explicitly accounted consumption for its selected finite recipes and provision model; it supplies no generic economy or production rules.
 - Work bookings do not establish completed work. Physical effects, permission, information, presentation and retained outcomes remain separate.
-- General phases, interruption, autonomous choices and population movement require executable support and tests. Existing equipment and authored-quay actions retain their current scope.
-- Preserve current saves. No import, migration, historical snapshot change, numerical default, PC relationship or campaign adoption follows from publishing this source.
+- The bounded work scheduler and household movement have executable tests. General phases, interruptions, autonomous planning and population flows still require wider support and qualification. Existing equipment and authored-quay actions retain their current scope.
+- Preserve current saves. The reviewed fictional model applies only to newly confirmed Rise campaigns. Publishing or opening the Content Library migrates no save and changes no existing campaign's rules.
 
 The open decisions in the specification remain tracked as design dependencies. Use the user's selected fictional opening to make independent progress without inventing historical sites, grant issuers or calibrated rates.

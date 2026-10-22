@@ -30,3 +30,5 @@ The three original root ZIPs, original packaging manifest/checksums, build instr
 The **Rise v0.4 implementation source** is now available as a [readable specification and implementation plan](engine/design/rise/README.md), with the original DOCX retained under `provenance/rise/`. The first executable Rise qualification will use the user-selected fictional founding example. This source import does not yet supply a playable settlement initializer. The original Kira package is retained under `provenance/kira/`.
 
 The [Century of Conflict paused submission](provenance/century_of_conflict/README.md) preserves the uploaded WIP archive, original pause note and expanded source changes. Its 36 additional opening drafts remain inactive pending historical and executable qualification.
+
+The Content Library also offers **The Rise of... You**: a reviewed fictional settlement founding example with shared Core work, provision, limited permission and household migration. All eight historical, planetary and fantasy start families remain awaiting qualification. See [Rise status](engine/design/rise/README.md).

@@ -390,6 +390,10 @@ def make_server(port=8765, folder=None):
                         if mode=='creator':self.creator(mode)
                         return self.reply(200,playthrough(store.read(path.rsplit('/',1)[1]),
                                           query.get('actor_id',[None])[0],mode=mode))
+                    if path=='/api/rise/templates':
+                        self.session()
+                        from settlement_setup import templates
+                        return self.reply(200,templates())
                     if path=='/api/features':
                         self.session()
                         if mode=='creator':self.creator(mode)
@@ -480,7 +484,7 @@ def make_server(port=8765, folder=None):
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]
@@ -503,12 +507,22 @@ def make_server(port=8765, folder=None):
                 if not 0 < length <= 100000:
                     raise ValueError('Request is empty or too large')
                 data = json.loads(self.rfile.read(length))
+                if not isinstance(data,dict): raise ValueError('Submit a JSON object')
                 path=urlparse(self.path).path
                 mode=data.get('mode',parse_qs(urlparse(self.path).query).get('mode',['player'])[0])
                 with store.lock:
                     if path in ('/api/event','/api/frontier','/api/events','/api/mandate','/api/resolve','/api/fork'):
                         self.creator(mode)
-                    if path == '/api/declaration':
+                    if path == '/api/rise/preview':
+                        from settlement_setup import preview
+                        result=preview(data.get('choices'))
+                    elif path == '/api/rise/create':
+                        from rise_campaigns import create
+                        result=create(store,data)
+                    elif path == '/api/rise/action':
+                        from rise_campaigns import action
+                        result=action(store,data)
+                    elif path == '/api/declaration':
                         result=store.gameplay_request(data)
                     elif path == '/api/action':
                         result=store.supported_action(data)

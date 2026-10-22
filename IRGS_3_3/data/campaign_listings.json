@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "visible_campaign_ids": ["hundred-years-war", "world-of-kira"],
+  "visible_campaign_ids": ["hundred-years-war", "world-of-kira", "rise"],
   "starting_scenario_references": [
     {
       "id": "ast",

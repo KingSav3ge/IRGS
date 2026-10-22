@@ -83,3 +83,7 @@ python -B tools/build_operation_register.py --output engine/qualification/operat
 ```
 
 This can take several minutes because it observes synthetic runtime test executions. The external historical-save fixture is skipped by policy, even if present. Existing campaigns and inherited certification files are not inputs. Actual apply calls and detached probes are recorded separately. A listed handler, a named test or a successful observation does not establish complete branch coverage or player availability.
+
+## Rise settlement foundation
+
+Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).

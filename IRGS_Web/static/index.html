@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark light"><title>IRGS · Your campaign</title>
-  <link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script>
+  <link rel="stylesheet" href="/style.css"><script defer src="/rise.js"></script><script defer src="/app.js"></script>
 </head>
 <body data-reading="dark" data-design="emergent-ledger">
 <a class="skip-link" href="#content">Skip to campaign</a>
@@ -51,5 +51,6 @@
   <section data-setup-step="3" hidden><div id="setup-review"></div><p class="note">The campaign is saved only when you choose Start campaign. Back and Cancel submit no creation request and advance no time. An earlier unconfirmed Start request may already be saved.</p></section>
   <p id="create-error" class="note" role="status"></p><div class="buttons"><button type="button" id="cancel-create" class="quiet">Cancel</button><button type="button" id="setup-back" class="quiet" hidden>Back</button><button type="button" id="setup-next" class="primary">Choose starting point →</button><button id="create-submit" class="primary" hidden>Start campaign</button></div>
 </form></dialog>
+<dialog id="rise-dialog" aria-labelledby="rise-title"><div id="rise-content"></div></dialog>
 <dialog id="delete-dialog" aria-labelledby="delete-title"><form id="delete-form"><div class="eyebrow">RECOVERABLE DELETION</div><h2 id="delete-title">Move campaign to Trash?</h2><p><strong id="delete-name"></strong> will leave your active campaign list. Its complete save can be restored from Campaign Trash.</p><p>This does not permanently delete the save.</p><p id="delete-error" class="note" role="status"></p><div class="buttons"><button type="button" id="cancel-delete" class="quiet">Cancel</button><button class="primary danger-solid">Move to Trash</button></div></form></dialog>
 </body></html>

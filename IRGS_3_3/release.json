@@ -25,10 +25,10 @@
   ],
   "selection_authority": "User requested live Core 3.3 plus genre engines/libraries, with AST as campaign content",
   "validation": {
-    "runtime_tests": 458,
+    "runtime_tests": 471,
     "instrumented_tests": 392,
     "separate_sustained_test": 1,
-    "http_tests": 130,
+    "http_tests": 139,
     "observed_operations": 81,
     "common_operations": 19,
     "campaign_native_receivers": 3,
@@ -37,7 +37,7 @@
     "historical_opening_tests": 50,
     "historical_catalogue_entries": 37,
     "developed_historical_openings": 1,
-    "solo_interface_checks": 50,
+    "solo_interface_checks": 54,
     "player_mode": "Server-filtered Solo projection",
     "character_before_first_save": true,
     "temporal_entity_operations": 5,
@@ -45,7 +45,7 @@
     "player_campaign_listings": 1,
     "feature_routes_creator": 131,
     "feature_routes_player": 81,
-    "stage1_backend_checks": 12,
+    "stage1_backend_checks": 15,
     "structured_background_status": "Received player testimony only",
     "historical_plan_assessment": "Read-only, pinned reference edition; no executable historical schedule",
     "general_action_resolution": false,
@@ -56,7 +56,15 @@
       "scene_action"
     ],
     "response_choices": "received contextual drafts; success not guaranteed",
-    "rise_foundation": "Shared fictional runtime; 13 bounded contract tests; integrated qualification pending"
+    "rise_foundation": {
+      "version": "rise-foundation-1",
+      "runtime_contract_cases": 13,
+      "http_contract_cases": 9,
+      "playable_template": "R00",
+      "historical_planetary_fantasy_starts_qualified": false,
+      "record": "RISE_FOUNDATION_VALIDATION.json"
+    },
+    "counters_scope": "Current suite totals: runtime_tests, http_tests and solo_interface_checks. Other inherited counters retain their original scope; consult the named validation records."
   },
   "files_sha256": {
     "runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
@@ -118,7 +126,7 @@
     "runtime/test_work_recovery.py": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806",
     "data/ast_mechanics_reuse.json": "f11e711806bdf47b105b6b405ebba5d1e0fd4bbbd4920eac33b791d4924bb679",
     "data/ast_registry.json": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
-    "data/campaign_listings.json": "2c565f067292bb27c192bbc4d57d2214fbeeadf1f46b64ec670558919b04f2fd",
+    "data/campaign_listings.json": "cb8c6e6e41de99af971264f39f2772c6b2fdc41f74ca617f52045659968ab092",
     "data/catalog.json": "0dde4a1d719288ec600e79f702d3b956777046789de0314c31306c1637bce1f1",
     "data/hyw_1415_opening.json": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
     "data/hyw_design_references.json": "a04d6ec360c0b1ee1c518878ee5a151965a576cf180061fb49960a591300784a",
@@ -324,28 +332,31 @@
     "runtime/test_settlement.py": "a36fad999f1b8c7a80f02806617ca564710336febf2c1f69334d66eef93636a3"
   },
   "host_sha256": {
-    "IRGS_Web/server.py": "4b007f130d533d2591bdcaec2033373c4cb8d24ff9eba9b620813e23f0ad46fb",
-    "IRGS_Web/features.py": "b23af787509df7201a67ea4da33678fb889651c3256a8ed11bb169640b1487ca",
+    "IRGS_Web/server.py": "92896b368bd259bb9ed940915adc682c04aa17a0f2c59afb96fae6d50d31ceae",
+    "IRGS_Web/features.py": "896545e5e2ec49290678b97f885a89cddcc384d39af61dd729825a1d7b116ec5",
     "IRGS_Web/opening_scene.py": "53bc6a63ab593850a1b6566a3cba0f18c0f1ab98b960f315a9229d9412fda4e5",
-    "IRGS_Web/gameplay_views.py": "e32ce6dfc5534307ff9e3b0eae5eb9d41668bd21103cddd1b2c062db1479dfb7",
+    "IRGS_Web/gameplay_views.py": "c7300a48d487c2257922a6339024ea6986aa7bf519c23635d8082fd65f8806a2",
     "IRGS_Web/history_views.py": "cc4d70ff4854f1b0e2b8bb6c9022c95068f331c779887e966be84b42ae163906",
     "IRGS_Web/README.md": "07c4d4eab6e63a103722d68430d553698f911fe153154cf371cb7e3de4072e33",
     "IRGS_Web/Start-IRGS.ps1": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
     "IRGS_Web/Start-IRGS.cmd": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
-    "IRGS_Web/static/app.js": "bd81c7c11fed564350fb9df675d7e025f26fbf297dbbaebec1c82b6cfa1c71eb",
-    "IRGS_Web/static/index.html": "4aa8e260853af072cffab41fa98e82467c1db6bf73fad863c7fb5275c7ddc0ac",
-    "IRGS_Web/static/style.css": "cffbdd8844b11225138ca6b074e75f48fd33b88b2eefa01bbca4d42d2247d103",
+    "IRGS_Web/static/app.js": "ce95d378ee196b365749c7ae8c0ff6d1080139835eff3f1a2d79b399ef6387ba",
+    "IRGS_Web/static/index.html": "0a21255beef95f4205748595b7e511a6802d842fb96a285a83bd3c1142a91a93",
+    "IRGS_Web/static/style.css": "f4d795384a81fd3fdc714d8163bf4e11622dfae152cf39824799a969512960eb",
     "IRGS_Web/tests/test_gameplay.py": "1ea6f689eba1ca4157aaa8dbfaa1ad598c7fd1f592ba4316cd6115b2f6f23e2f",
-    "IRGS_Web/tests/test_gameplay_ui.js": "bac56c152e513d2bbbd0e07b7427488aac1229d4f38ed34861b30558166421db",
+    "IRGS_Web/tests/test_gameplay_ui.js": "2347409a9acd71a89ebb1d399c827769df30de694eb043bd94fc87a3968848a4",
     "IRGS_Web/tests/test_history_views.py": "aec7784dd632f278f36528f8533cc10ee1d2fea131d303e4d2fe960deb4c9407",
     "IRGS_Web/tests/test_host.py": "805792a0342e92d80e2ad5f800a35f5a74373012f642dbce18e9dfe958b433be",
     "IRGS_Web/tests/test_launcher.py": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6",
-    "IRGS_Web/tests/test_stage1.py": "ba90492ff2514cc295ab098c3c8fc8d40b1c2b613e3e66c2056bf765e7946839",
+    "IRGS_Web/tests/test_stage1.py": "4778b8abd7555b447f317f75de2296bccdac4e04d3f2c417c185a48063cad9bf",
     "IRGS_Web/tests/test_starting_flow.py": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b",
     "IRGS_Web/tests/test_equipment_action.py": "6c6706edf73942a0157b63d04143779434576f25a1a53011123f3e2c7887874c",
     "IRGS_Web/tests/test_scene_play.py": "4c074c5a67eb1a90548af6ef94e66204f5c68d433a206e27ad23f0343e7ce5d8",
     "IRGS_Web/static/voyage.svg": "064ebe9c533c55d892d541d13c994e51b33853b7e32374e4f318ded4623bf760",
-    "IRGS_Web/campaign_worlds.py": "1a4ee7902a44cd6dac59b328396295d35533a49d0aa30cd9d95adfbc838432c3"
+    "IRGS_Web/campaign_worlds.py": "1a4ee7902a44cd6dac59b328396295d35533a49d0aa30cd9d95adfbc838432c3",
+    "IRGS_Web/rise_campaigns.py": "27aeddf924dc9a3cef69f478789e7ac784f01d521e789ccbc4074c0b5459c724",
+    "IRGS_Web/static/rise.js": "5dd4438a021d77f6d1e9b83710654a4ec19f46b8554a6739886ce3ed125dec7a",
+    "IRGS_Web/tests/test_rise.py": "62d71174e0802232f88526e989458f6d00c94f2a74caaad4a17212d51a5c33a8"
   },
   "existing_save_migration": false,
   "development_designations": {
@@ -358,14 +369,7 @@
     "integration": "visual_port_to_canonical_solo_host",
     "alternate_backend_activated": false
   },
-  "continuation": {
-    "id": "kira1-rise-source",
-    "validation_record": "SOURCE_PUBLICATION_VALIDATION.json",
-    "engine_record": "engine/PLAYABLE_OPENING_IMPLEMENTATION.md",
-    "general_freeform_resolution": false,
-    "combat_adjudication": false,
-    "elapsed_time_advance": "explicit authored local scene only"
-  },
+  "continuation": "rise-foundation-1",
   "campaign_worlds": [
     {
       "id": "world-of-kira",

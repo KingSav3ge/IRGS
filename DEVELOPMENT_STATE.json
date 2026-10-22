@@ -1,6 +1,6 @@
 {
   "edition": "3.3.3-unified-development-D1",
-  "date": "2026-10-20",
+  "date": "2026-10-22",
   "status": "VERIFIED_CONTINUATION_READY_FOR_CONTINUED_DEVELOPMENT",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
@@ -13,7 +13,7 @@
   },
   "app": {
     "development_branch": "3.3.3.A",
-    "edition": "adventure-ui1+kira1",
+    "edition": "adventure-ui1+kira1+rise-foundation-1",
     "source": "IRGS_Web/",
     "preferred_design": "IRGS-3.3.2.Emergent.zip top-level frontend",
     "alternate_backend_activated": false
@@ -36,12 +36,12 @@
   "existing_save_migration": false,
   "C2_acceptance_cases": 121,
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
-  "next_milestone": "Extend this playable opening with qualified dialogue/offers, shared timed phases and broader dependency cases.",
-  "verified_on": "2026-10-21",
-  "validation_record": "SOURCE_PUBLICATION_VALIDATION.json",
+  "next_milestone": "Broaden Rise contracts and qualify the first sourced family without changing existing saves.",
+  "verified_on": "2026-10-22",
+  "validation_record": "RISE_FOUNDATION_VALIDATION.json",
   "continuation": {
-    "id": "kira1-rise-source",
-    "integration_base": "0bb5c68a26766a350936304b6e43b7902823ec99",
+    "id": "rise-foundation-1",
+    "integration_base": "7c2300225b9dbb696f65ad5385f1aca5a442be95",
     "completed_items": [
       "DEV-01",
       "DEV-02",
@@ -49,17 +49,17 @@
       "DEV-04",
       "DEV-05"
     ],
-    "supported_action": "authorized equipment and opt-in local movement, observation and dispatch delivery",
+    "supported_action": "authorized equipment, opt-in local opening actions, and selected R00 settlement permission, work, provision and migration",
     "general_freeform_resolution": false,
     "combat_adjudication": false,
     "contextual_response_drafts": true,
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "adventure-ui1",
+    "previous_increment": "kira1-rise-source",
     "operation_coverage_register": "engine/qualification/operation_register.json",
-    "operation_spellings": 84,
-    "backend_operation_contracts": 169,
+    "operation_spellings": 85,
+    "backend_operation_contracts": 170,
     "all_branches_certified": false,
     "playable_opening": "quay-delivery-v1",
     "authored_local_elapsed": true,
@@ -67,6 +67,7 @@
     "presentation_record": "ADVENTURE_UI_VALIDATION.json",
     "kira_world_reference": "IRGS_3_3/catalog/campaigns/kira",
     "rise_design": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
-    "rise_implementation": "Receiving analysis; user selected a fictional first founding example. No playable Rise initializer supplied yet."
+    "rise_implementation": "Reviewed R00 fictional founding: scoped grant, finite work, provision, delegation and household migration; all eight design families held",
+    "settlement_record": "RISE_FOUNDATION_VALIDATION.json"
   }
 }

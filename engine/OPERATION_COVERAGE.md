@@ -2,7 +2,7 @@
 
 This is a current-source inventory and execution record, not blanket certification. Run `python -B tools/build_operation_register.py --check engine/qualification/operation_register.json` to check freshness. That check does not rerun the tests.
 
-84 spellings across 169 backend/operation pairs. 86 pairs have observed successful cases; 83 still lack one. 32 pairs have named rejected-path evidence.
+85 spellings across 170 backend/operation pairs. 87 pairs have observed successful cases; 83 still lack one. 33 pairs have named rejected-path evidence.
 
 The machine-readable [register](qualification/operation_register.json) records source locations, actual read/write paths, rejected reads, rolled-back attempts, owner annotations, test identities and observation refusals. Unmapped paths and unsupported backend/profile combinations remain explicit. AST compatibility names share CoreWorld; they are not a separately maintained engine.
 
@@ -23,6 +23,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | CoreWorld | `establish_stock` | OBSERVED_SUCCESS_ONLY | 100 | 0 |
 | CoreWorld | `execute_player_equipment_issue` | OBSERVED_SUCCESS_AND_FAILURE | 38 | 34 |
 | CoreWorld | `execute_player_scene_action` | OBSERVED_SUCCESS_AND_FAILURE | 52 | 32 |
+| CoreWorld | `execute_settlement_action` | OBSERVED_SUCCESS_AND_FAILURE | 185 | 6 |
 | CoreWorld | `military_issue_equipment` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
 | CoreWorld | `receive_evidence` | OBSERVED_SUCCESS_ONLY | 88 | 0 |
 | CoreWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 38 | 0 |

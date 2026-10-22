@@ -1,4 +1,8 @@
-# First action and contextual-response increment
+# Current continuation
+
+2026-10-22: Rise foundation 1 adds a reviewed fictional settlement founding path: limited permission, finite work and provision, bounded delegation and actual household migration in the shared Core. The eight design families remain held. See [current Rise status](engine/design/rise/README.md) and [qualification](RISE_FOUNDATION_VALIDATION.json).
+
+## Earlier action and contextual-response increment
 
 2026-10-21. Continues unified D1 with selected executable Core 3.3. Engine/Core changes belong to `3.3.3.E`, website changes to `3.3.3.A`, and the integrated source to `main`.
 

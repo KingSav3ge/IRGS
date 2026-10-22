@@ -54,7 +54,7 @@ class StageOneTests(unittest.TestCase):
 
     def test_configured_campaigns_with_exact_verified_entry_and_disabled_references(self):
         library = self.call('/api/content-library')
-        self.assertEqual([c['id'] for c in library['campaigns']], ['hundred-years-war', 'world-of-kira'])
+        self.assertEqual([c['id'] for c in library['campaigns']], ['hundred-years-war', 'world-of-kira', 'rise'])
         campaign = library['campaigns'][0]
         entries = [e for p in campaign['periods'] for e in p['entries']]
         self.assertEqual(len(entries), 37); self.assertEqual(len(campaign['periods']), 3)
