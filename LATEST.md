@@ -1,16 +1,16 @@
 # IRGS independent QA
 
-Candidate: `bf6cf48b1c4f76589fb5854811f072e4bb9fda30`
-Result: **needs_fixes** · 2026-10-22T14:11:26.805870+00:00
+Candidate: `59f24344d2ff51404071822f8975f3d70b972814`
+Result: **passed** · 2026-10-22T14:29:51.378631+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
 | Finding | Priority | Status | Result |
 | --- | --- | --- | --- |
-| IRGS-QA-001 | P1 | open | Accepted Core material establishment breaks Rise playthrough views |
-| IRGS-QA-002 | P1 | open | Canonical Core location records are incompatible with Rise location consumers |
+| IRGS-QA-001 | P1 | not_reproduced | Accepted Core material establishment breaks Rise playthrough views |
+| IRGS-QA-002 | P1 | not_reproduced | Canonical Core location records are incompatible with Rise location consumers |
 
-Independent cases: 6 passed, 2 failed, 0 errors.
+Independent cases: 8 passed, 0 failed, 0 errors.
 
 | Check | Status |
 | --- | --- |
@@ -36,52 +36,6 @@ Reproduce:
 3. Observe the successful save and valid CoreWorld state.
 4. GET /api/playthrough/<id> with the normal session token.
 
-Observed:
-
-```text
-Traceback (most recent call last):
-  File "/workspace/irgs-cloud/qa/qa_irgs.py", line 234, in test_new_material_does_not_break_committed_campaign
-    try: projected = self.view(r)
-                     ^^^^^^^^^^^^
-  File "/workspace/irgs-cloud/qa/qa_irgs.py", line 110, in view
-    def view(self, record): return self.call('/api/playthrough/' + record['id'])
-                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/irgs-cloud/qa/qa_irgs.py", line 76, in call
-    with self.opener.open(request, timeout=10) as response:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 515, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 532, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 1373, in http_open
-    return self.do_open(http.client.HTTPConnection, req)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 1348, in do_open
-    r = h.getresponse()
-        ^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py", line 1478, in getresponse
-    response.begin()
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py", line 343, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py", line 312, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/workspace/irgs-cloud/qa/qa_irgs.py", line 236, in test_new_material_does_not_break_committed_campaign
-    self.fail('IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: ' + repr(error))
-AssertionError: IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: RemoteDisconnected('Remote end closed connection without response')
-
-```
-
 ## IRGS-QA-002
 
 Canonical Core location records are incompatible with Rise location consumers
@@ -96,16 +50,6 @@ Reproduce:
 2. Creator records and delivers established evidence placing the founder at commons.
 3. Creator confirms founder.location=commons through confirm_character_field with authority and player instruction references.
 4. Inspect local inventory and submit walk_clearing.
-
-Observed:
-
-```text
-Traceback (most recent call last):
-  File "/workspace/irgs-cloud/qa/qa_irgs.py", line 250, in test_core_location_confirmation_remains_usable
-    self.assertIsNotNone(self.view(r)['settlement']['inventory'],
-AssertionError: unexpectedly None : IRGS-QA-002: a canonical same-site location confirmation made the founder appear absent from their own stores
-
-```
 
 ## Scope
 
