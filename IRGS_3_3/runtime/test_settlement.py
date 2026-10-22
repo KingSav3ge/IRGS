@@ -176,5 +176,27 @@ class SettlementTests(unittest.TestCase):
             self.assertEqual(set(result['deferred']), set(ids)); self.assertEqual(result['committed'], [])
             self.assertNotIn('shelter', clone.s['projects'])
 
+    def test_established_core_location_record_remains_usable_by_settlement_actions(self):
+        w = self.world(permission='held')
+        for key, operation, parameters in [
+            ('where', 'record_evidence', {'evidence_id': 'where', 'subject': 'founder',
+                'status': 'established', 'assertion': 'Founder observed at commons.'}),
+            ('heard', 'receive_evidence', {'evidence_id': 'where', 'recipient': 'founder'}),
+            ('confirmed', 'confirm_character_field', {'subject': 'founder', 'field': 'location',
+                'value': 'commons', 'evidence_id': 'where', 'authority_ref': 'synthetic observation',
+                'instruction_ref': 'explicit synthetic confirmation'})]:
+            w.apply(key, w.s['clock']+1, operation, campaign_id=w.s['campaign_id'],
+                source_ref='synthetic interoperability test', **parameters)
+        self.assertIsInstance(w.s['actors']['founder']['current']['location'], dict)
+        event = {'id': 'canonical-location-walk', 'at': w.s['clock']+1, 'op': OPERATION,
+            'params': {'campaign_id': w.s['campaign_id'], 'actor': 'founder', 'action': 'walk_clearing',
+                'request_id': 'canonical-location-walk', 'instruction_ref': 'explicit synthetic walk',
+                'source_ref': 'synthetic interoperability test'}}
+        self.assertIn(('actors', 'founder', 'current', 'location', 'value'), observe(w.s, event)['reads'])
+        self.act(w, 'walk_clearing')
+        self.assertEqual(w.s['actors']['founder']['current']['location'], 'clearing')
+        self.assertEqual(w.s['elapsed_time']['seconds'], 300)
+        self.assertIn('where', w.s['evidence'])
+
 
 if __name__ == '__main__': unittest.main()

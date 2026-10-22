@@ -14,7 +14,7 @@ This is the complete assembled development baseline: the selected Core 3.3 runti
 | `provenance/` | Historical source records; these are not current test results or instructions to adopt mechanics. |
 | `tools/` | Unified development verification, packaging and smoke helpers. |
 
-The original eight root package files are retained as archival inputs. Edit the unpacked canonical sources above. There is no second editable `app/IRGS_Web` tree and no alternate Mongo simulation in the running application.
+Superseded assembly bundles and their obsolete verifier have been removed. Edit and package the canonical sources above with the unified tools; Git history retains the original assembly inputs. There is no second editable `app/IRGS_Web` tree and no alternate Mongo simulation in the running application.
 
 ## Run the website
 

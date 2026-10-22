@@ -13,7 +13,7 @@
   },
   "app": {
     "development_branch": "3.3.3.A",
-    "edition": "adventure-ui1+kira1+rise-foundation-1",
+    "edition": "adventure-ui1+kira1+rise-foundation-1 + creator-only technical configuration",
     "source": "IRGS_Web/",
     "preferred_design": "IRGS-3.3.2.Emergent.zip top-level frontend",
     "alternate_backend_activated": false
@@ -36,12 +36,12 @@
   "existing_save_migration": false,
   "C2_acceptance_cases": 121,
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
-  "next_milestone": "Broaden Rise contracts and qualify the first sourced family without changing existing saves.",
+  "next_milestone": "Extend named collection, rejection and cross-engine dependency cases; broaden the selected Rise contracts without migrating existing saves.",
   "verified_on": "2026-10-22",
-  "validation_record": "RISE_FOUNDATION_VALIDATION.json",
+  "validation_record": "DEPENDENCY_REJECTIONS_VALIDATION.json",
   "continuation": {
-    "id": "rise-foundation-1",
-    "integration_base": "7c2300225b9dbb696f65ad5385f1aca5a442be95",
+    "id": "core-consolidation-1",
+    "integration_base": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
     "completed_items": [
       "DEV-01",
       "DEV-02",
@@ -56,7 +56,7 @@
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "kira1-rise-source",
+    "previous_increment": "rise-foundation-1",
     "operation_coverage_register": "engine/qualification/operation_register.json",
     "operation_spellings": 85,
     "backend_operation_contracts": 170,
@@ -68,6 +68,8 @@
     "kira_world_reference": "IRGS_3_3/catalog/campaigns/kira",
     "rise_design": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
     "rise_implementation": "Reviewed R00 fictional founding: scoped grant, finite work, provision, delegation and household migration; all eight design families held",
-    "settlement_record": "RISE_FOUNDATION_VALIDATION.json"
+    "settlement_record": "RISE_FOUNDATION_VALIDATION.json",
+    "rejected_dependency_record": "engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md",
+    "core_routines_record": "engine/CORE_CONSOLIDATION.md"
   }
 }

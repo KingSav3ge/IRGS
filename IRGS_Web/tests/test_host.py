@@ -124,12 +124,22 @@ class HostTests(unittest.TestCase):
             self.assertIn("frame-ancestors 'none'",r.headers['Content-Security-Policy'])
 
     def test_catalog_separates_core_genres_libraries_and_campaign_profiles(self):
-        catalog = self.call('/api/catalog')
+        catalog = self.call('/api/catalog?mode=creator')
         self.assertEqual(str(catalog['core']['version']), '3.3')
         self.assertEqual({p['id'] for p in catalog['campaign_profiles']},
                          {'ast','military','roman','fantasy','paf','shinobi','space'})
         self.assertNotIn('ast', {g['id'] for g in catalog['genre_engines']})
         self.assertIn('ast', {lib['id'] for lib in catalog['content_libraries']})
+
+    def test_player_catalog_contains_core_health_without_technical_engine_choices(self):
+        catalog = self.call('/api/catalog', creator=False)
+        self.assertEqual(set(catalog), {'core'})
+        self.assertEqual(str(catalog['core']['version']), '3.3')
+        self.assertTrue(catalog['core']['single_world_per_campaign'])
+        self.assertTrue(self.call('/api/content-library', creator=False)['campaigns'])
+        with self.assertRaises(HTTPError) as denied:
+            self.call('/api/catalog?mode=creator', token='invalid-session')
+        self.assertEqual(denied.exception.code, 403)
 
     def test_content_lookup_preserves_campaign_and_source_status(self):
         r=self.create()

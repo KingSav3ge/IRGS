@@ -104,7 +104,9 @@ def view(state, actor):
                  'worked_seconds': p['worked'], 'required_seconds': p['duration']}
                 for p in state['projects'].values() if p['site'] == site]
     assessments = [copy.deepcopy(a) for a in state['provision']['assessments'].values() if a['household'] == h] if at_stores else []
-    inventory = [{'material': material, 'quantity': quantity, 'unit': state['settlement_model']['units'][material],
+    units = state['settlement_model'].get('units', {})
+    inventory = [{'material': material, 'quantity': quantity, 'unit': units.get(material),
+                  'unit_status': 'configured' if units.get(material) else 'unconfigured',
                   'available': max(0, _free(state, h, material)),
                   'reserved_for_work': sum(p['timber'] if material == 'timber' else 1 if material == 'axe' else 0
                       for p in state['projects'].values() if p['household'] == h and p['status'] == 'active'),

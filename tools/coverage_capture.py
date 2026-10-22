@@ -72,7 +72,7 @@ def capture_suite(runtime_dir: Path):
     def probing():
         frame = sys._getframe(1)
         while frame:
-            if (frame.f_code.co_name == 'observe'
+            if (frame.f_code.co_name in ('observe', 'observe_rejection')
                     and frame.f_globals.get('__name__') in ('r9_runtime', 'r8_dependencies')):
                 return True
             frame = frame.f_back

@@ -10,8 +10,7 @@ from r6_work import NEW_OPS
 from r8_dependencies import SUPPORTED as BASE_OPS, changed, conflicts, code_identity
 from r9_adapters import ReceiverWorld, NATIVE_OPS
 from ast_runtime import ASTWorld, AST_OPS
-from core_world import CoreWorld, CORE_OPS
-from genre_receivers import GENRE_OPS
+from core_world import CoreWorld, CORE_OPS, GENRE_OPS
 
 SUPPORTED = BASE_OPS | NEW_OPS | FAB_OPS | {'physical_loss'} | NATIVE_OPS | AST_OPS | CORE_OPS | GENRE_OPS
 META = {'clock','journal','processed','_r6_eid','_r7_event_id'}
@@ -176,10 +175,51 @@ class TracedDict(dict):
 def effect_paths(paths):
     return sorted(p for p in paths if not p or p[0] not in META)
 
+def _backend(state):
+    return (CoreWorld if state.get('profile') in ('IRGS-CORE-3.3','AST-CORE-3.3')
+            else ReceiverWorld if 'r9_engine_bindings' in state
+            else R7World if 'econ3' in state else World)
+
+
+def observe_rejection(state,event):
+    """Qualify a fresh rejected probe without converting scratch writes to effects.
+
+    Both selected-backend executions must reject identically and leave their
+    state unchanged. Unknown handlers, replay, normalization, mismatched errors
+    and non-atomic failure are refused, never labelled a qualified rejection.
+    This private evidence is not a successful execution certificate.
+    """
+    if event['op'] not in SUPPORTED:raise InvalidEvent('native/unknown handler not qualified')
+    if event['id'] in state['processed']:raise InvalidEvent('processed event is not a fresh request')
+    cls=_backend(state); snapshot=digest(state)
+    errors=(InvalidEvent,AssertionError,KeyError,ValueError,TypeError)
+    reference=cls(state=state)
+    if digest(reference.s)!=snapshot:raise InvalidEvent('backend normalized the rejection snapshot')
+    plain_error=None
+    try:reference.apply(event['id'],event['at'],event['op'],**copy.deepcopy(event['params']))
+    except errors as error:plain_error=error
+    if plain_error is None:raise InvalidEvent('plain execution did not reject')
+    if digest(reference.s)!=snapshot:raise InvalidEvent('rejected execution changed state')
+    worker=cls(state=state);trace=Trace();worker.s=TracedDict(worker.s,trace)
+    traced_error=None
+    try:worker.apply(event['id'],event['at'],event['op'],**copy.deepcopy(event['params']))
+    except errors as error:traced_error=error
+    if traced_error is None:raise InvalidEvent('instrumented execution did not reject')
+    if digest(plain(worker.s))!=snapshot:raise InvalidEvent('instrumented rejection changed state')
+    if type(traced_error) is not type(plain_error) or traced_error.args!=plain_error.args:
+        raise InvalidEvent('instrumented rejection differs from plain execution')
+    return {'event':copy.deepcopy(event),'snapshot':snapshot,'code':code_identity(),
+            'backend':cls.__name__,'profile':state.get('profile','legacy_research_fixture'),
+            'status':'rejected_no_effects','successful_certificate':False,
+            'rejection_type':type(plain_error).__name__,'post_state':snapshot,
+            'reads':effect_paths(trace.reads),'writes':[],
+            'attempted_writes':effect_paths(trace.writes),
+            'validation_reads':sorted(trace.validation_reads)}
+
 def observe(state,event):
     if event['op'] not in SUPPORTED: raise InvalidEvent('native/unknown handler not qualified')
     if event['id'] in state['processed']:raise InvalidEvent('processed event is not a fresh request')
-    cls=CoreWorld if state.get('profile') in ('IRGS-CORE-3.3','AST-CORE-3.3') else ReceiverWorld if 'r9_engine_bindings' in state else R7World if 'econ3' in state else World
+    cls=_backend(state)
     worker=cls(state=state)
     trace=Trace(); worker.s=TracedDict(worker.s,trace)
     worker.apply(event['id'],event['at'],event['op'],**copy.deepcopy(event['params']))
@@ -212,10 +252,14 @@ def frontier(world,events):
     for event in events:
         if event['id'] in store['requests'] or event['id'] in candidate.s['processed']:
             raise InvalidEvent('request identity already used')
-    certificates={}; errors={}
+    certificates={}; errors={}; rejected={}; refusals={}
     for e in events:
         try: certificates[e['id']]=observe(candidate.s,e)
-        except (InvalidEvent,AssertionError,KeyError,ValueError,TypeError) as err:errors[e['id']]=str(err)
+        except (InvalidEvent,AssertionError,KeyError,ValueError,TypeError) as err:
+            errors[e['id']]=str(err)
+            try:rejected[e['id']]=observe_rejection(candidate.s,e)
+            except (InvalidEvent,AssertionError,KeyError,ValueError,TypeError) as refusal:
+                refusals[e['id']]=str(refusal)
     # Qualified physical observations are occurrences, not allocation requests.
     # Verify their combined measured amount before committing any part of the
     # frontier. A reserved input can still physically be destroyed.
@@ -232,9 +276,10 @@ def frontier(world,events):
     loss_ids={e['id'] for e in losses}
     edges=[]; blocked=set(errors)
     if errors: blocked.update(e['id'] for e in events)
+    evidence={**certificates,**rejected}
     for i,a in enumerate(events):
         for b in events[:i]:
-            if a['id'] in certificates and b['id'] in certificates and conflicts(certificates[a['id']],certificates[b['id']]):
+            if a['id'] in evidence and b['id'] in evidence and conflicts(evidence[a['id']],evidence[b['id']]):
                 edges.append([a['id'],b['id']]);blocked.update((a['id'],b['id']))
     blocked.difference_update(loss_ids)
     accepted=[]
@@ -245,13 +290,16 @@ def frontier(world,events):
     # apply replaces the state: reacquire the authoritative store afterwards.
     store=candidate.s['r9']
     for e in events:
-        certificate=certificates.get(e['id'])
+        certificate=evidence.get(e['id'])
         if certificate:
             certificate={k:v for k,v in certificate.items() if k!='validation_reads'}
         store['requests'][e['id']]={'original':copy.deepcopy(e),'status':'unresolved' if e['id'] in blocked else 'committed',
             'original_digest':digest(e),
             'reason':errors.get(e['id'],'dependency conflict or unqualified peer' if e['id'] in blocked else None),
-            'certificate':certificate}
+            'certificate':certificate,
+            'dependency_status':('qualified_successful_probe' if e['id'] in certificates
+                                 else 'qualified_rejected_probe' if e['id'] in rejected else 'unqualified'),
+            'dependency_refusal':refusals.get(e['id'])}
     store['frontiers'].append({'at':at,'requests':[e['id'] for e in events],'edges':edges})
     candidate.s['clock']=at
     candidate._validate(candidate.s); world.s=candidate.s

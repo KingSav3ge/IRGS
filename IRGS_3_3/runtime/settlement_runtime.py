@@ -30,7 +30,9 @@ def household_of(s, actor):
 
 
 def location(s, actor):
-    return s['actors'][actor]['current']['location']
+    value = s['actors'][actor]['current'].get('location')
+    if isinstance(value, dict): value = value.get('value')
+    return value if isinstance(value, str) and value.strip() else None
 
 
 def notice(s, actor, at, key, text):

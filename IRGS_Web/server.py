@@ -465,7 +465,12 @@ def make_server(port=8765, folder=None):
                             area=query.get('area',['timeline'])[0],limit=int(query.get('limit',['30'])[0]),
                             cursor=query.get('cursor',[None])[0]))
                     if path == '/api/catalog':
-                        return self.reply(200, catalog())
+                        if mode == 'creator':
+                            self.creator(mode)
+                            return self.reply(200, catalog())
+                        core = catalog()['core']
+                        return self.reply(200, {'core': {key: core[key] for key in
+                            ('id', 'version', 'single_world_per_campaign')}})
                     if path == '/api/historical-campaigns':
                         return self.reply(200, historical_catalogue())
                     if path.startswith('/api/historical-entry/'):

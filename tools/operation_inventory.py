@@ -127,7 +127,7 @@ def inventory(runtime_dir):
     fabrication = set(modules["r7_frontier"].FAB_OPS)
     receivers = set(modules["r9_adapters"].NATIVE_OPS)
     core = modules["core_world"]
-    genres = set(modules["genre_receivers"].GENRE_OPS)
+    genres = set(core.GENRE_OPS)
     entities = set(modules["temporal_registry"].ENTITY_OPS)
     economic = set(modules["economic_extension"].ECON_OPS)
     r7 = base | work | fabrication | {"physical_loss"}
@@ -165,14 +165,14 @@ def inventory(runtime_dir):
                         default_after="record_entity_eligibility" if canonical == "select_entity_control" else None)
                     limits.append("Temporal mutation requires the saved playthrough registry and its actual coordinate.")
                 elif canonical in genres:
-                    support += source.declaration("genre_receivers.py", "GENRE_OPS")
+                    support += source.declaration("core_world.py", "GENRE_OPS")
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate"))
-                    implementation = source.implementation("genre_receivers.py", "operate", canonical)
+                    implementation = source.implementation("core_world.py", "CoreWorld._operate_domain", canonical)
                     limits.append("Genre/binding, received instruction or delegation constraints are conditional.")
                 elif canonical == "execute_player_equipment_issue":
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
                     implementation = source.implementation("player_actions.py", "operate_equipment_action")
-                    chain.append(source.implementation("genre_receivers.py", "operate", "military_issue_equipment"))
+                    chain.append(source.implementation("core_world.py", "CoreWorld._operate_domain", "military_issue_equipment"))
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", "transfer_stock"))
                     limits.append("Explicit received equipment action with current control, authority and stock checks.")
                 elif canonical == "execute_player_scene_action":

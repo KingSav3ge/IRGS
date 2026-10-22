@@ -95,6 +95,10 @@ Opening1 advances DEV-10, DEV-12–DEV-14, DEV-18 and DEV-25 with an optional re
 
 ## Start here
 
-Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 83 operation spellings across 168 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
+Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 85 operation spellings across 170 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
 
 Use [ROADMAP.md](ROADMAP.md) for the broader sequence, [DEVELOPMENT.md](DEVELOPMENT.md) for working and verification commands, and [VALIDATION.json](VALIDATION.json) for the recorded D1 evidence. This list records continuation progress; supporting execution evidence is linked separately.
+
+## Core consolidation and rejected dependencies
+
+The 2026-10-22 increment advances named DEV-07–DEV-08 paths, keeps verified rejected-probe reads with unresolved requests, consolidates domain routines inside Core and restricts technical configuration to Creator mode. It also corrects independent environment findings IRGS-QA-001 and IRGS-QA-002. The broader milestones remain open; see `engine/CORE_CONSOLIDATION.md`, `engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md` and `DEPENDENCY_REJECTIONS_VALIDATION.json`.

@@ -47,3 +47,11 @@ The authored human-only opening now compares the registered species without case
 ## Adventure UI — Solo presentation
 
 Campaign entry and character setup now use illustrative voyage artwork. The Solo story foregrounds the received scene, exact supported action choices and latest character-scoped outcome. Campaign controls, older records, historical references and the own-response editor remain available through expandable sections. Custom drafts still submit unresolved declarations; this presentation update adds no engine resolution. See [ADVENTURE_UI_VALIDATION.json](ADVENTURE_UI_VALIDATION.json) for the executed checks. This increment belongs to `3.3.3.A` and unified `main`; `3.3.3.E` retains its existing engine commit.
+
+## Qualified failed-path dependencies
+
+The dependency-rejections-1 increment retains verified rejected-probe reads with unresolved R9 frontier requests. Paired ordinary/traced rejection checks separate rolled-back attempts from effects, and named tests cover the selected Core, reference, economic and military/Roman backends plus settlement permission and worker reservations. Equipment and scene rejection diagnostics use the same check. See [implementation and limits](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md) and DEPENDENCY_REJECTIONS_VALIDATION.json. DEV-06–DEV-08 remain broader open work.
+
+## Consolidated Core and lean distribution
+
+Existing genre receiving operations now execute as Core methods. Players see campaigns while technical setup remains in Creator mode. Superseded bundle archives and obsolete assembly tooling have been removed from the current source; original campaign data and referenced source evidence remain. Independent QA findings about unknown inventory units and canonical location records reproduce before correction and pass after correction. See `engine/CORE_CONSOLIDATION.md`, `QA_RESPONSE.md` and the current validation record.

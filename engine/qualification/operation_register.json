@@ -1,17 +1,16 @@
 {
   "schema_version": 1,
   "milestone": "DEV-05",
-  "generated_at_utc": "2026-10-22T13:06:55.648838+00:00",
+  "generated_at_utc": "2026-10-22T14:20:52.925690+00:00",
   "scope": "Declared backend/operation inventory with current synthetic test execution; not a per-campaign availability list or all-branch certification.",
   "source_sha256": {
-    "IRGS_3_3/Core/IRGS_Core_3_3_Binding.json": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301",
-    "IRGS_3_3/Core/IRGS_Core_Engine_v3_3.md": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
+    "engine/Core/IRGS_Core_3_3_3_E_C2.md": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea",
+    "engine/Core/IRGS_Core_3_3_3_E_C2_Binding.json": "dbca027031700261abbdd645b1883b6dfc27a10b221215cbcb7d3fcf54faea92",
     "IRGS_3_3/catalog/campaigns/kira/CONTINUITY_REVIEW.md": "4101839c66b822eedefa06fa2af38df690943893a95a3762399281957a0798d1",
     "IRGS_3_3/catalog/campaigns/kira/IRGS_BINDING.md": "ef622fb6540f77f912e027e28540ffa51e51685ee214b17f097cd79dc9f58aab",
+    "IRGS_3_3/catalog/campaigns/kira/map_catalogue.json": "89dcefa4728a29ce094e6f3bc5acf233f7b24855b8da84a69904032fd298c54c",
     "IRGS_3_3/catalog/campaigns/kira/MAP_GAZETTEER.md": "e0ce9c2c79ad3c759dcf53015bf2d8e0beb4d7301fd6cd2afa97697c45c95a5c",
     "IRGS_3_3/catalog/campaigns/kira/README.md": "0ce6be9a6b071e93f90e8543287aba08ce0f2f7f666a1418c3681e1eba190446",
-    "IRGS_3_3/catalog/campaigns/kira/WORLD_GUIDE.md": "1fc8fa9e9ef0978220615ee5a7c94a4fe67140eaabe069fda32609ac6e7c7cda",
-    "IRGS_3_3/catalog/campaigns/kira/map_catalogue.json": "89dcefa4728a29ce094e6f3bc5acf233f7b24855b8da84a69904032fd298c54c",
     "IRGS_3_3/catalog/campaigns/kira/source_manifest.json": "4da0a9d676250526e55ffa4c6189b5fddd070290b2bac0d4d931656abd47314e",
     "IRGS_3_3/catalog/campaigns/kira/source_text.json": "36417984372158da8e9da08f2a6f38215a4ea44aca2b7b650cce8bb636d08ed4",
     "IRGS_3_3/catalog/campaigns/kira/sources/Cathius Akarian.docx": "b2280b3a579661fdacc1c6fbad3a529a6b7fda4b17d931359350b1b61d201d78",
@@ -25,6 +24,7 @@
     "IRGS_3_3/catalog/campaigns/kira/sources/The History of Kyrinus (Karthinian Elves).docx": "c1bd72260d22f178b823ff02bd2caa0743d722f18f09420298d9e2b8c28ca194",
     "IRGS_3_3/catalog/campaigns/kira/verify_kira.py": "9eea40d7da762982fd080823566c355cfbcb9bf806c4110e84d807b6f68a6589",
     "IRGS_3_3/catalog/campaigns/kira/world.json": "dcd507d70e3f0e502c92d4a941ed41d246a0a2c552a34e8b0808a3ba447dee16",
+    "IRGS_3_3/catalog/campaigns/kira/WORLD_GUIDE.md": "1fc8fa9e9ef0978220615ee5a7c94a4fe67140eaabe069fda32609ac6e7c7cda",
     "IRGS_3_3/catalog/design_references/epoch_history_spec_v1_0.md": "a1154f7c16c80dd7198112d4cc3b6858a2bcffe610f7e8c8f41103fe1e5b46c2",
     "IRGS_3_3/catalog/design_references/gameplay_screen_proposal_v0_1.md": "dac339fb65a5eb7ac731392878c49b59b97e9606e1e83ab5db1e2b034b7ec5ff",
     "IRGS_3_3/catalog/design_references/historical_timeline_event_framework_v0_2.md": "db093854c0400fe0746f2c28828aa06f38c14dff25b57ae106998c6c0e443a36",
@@ -48,38 +48,38 @@
     "IRGS_3_3/catalog/genres/paf/source/IRGS_PAF_Engine_v2_1_Core3_2.md": "293f08601de8504418531c15e6a4a3d5a3d3a5f1601de7956636ab40bb28f24a",
     "IRGS_3_3/catalog/genres/roman/receiving_core_3_3.json": "198345cc7e469974229a1aa637256bf923e4914023eb64b3f3a04a4a543c71b9",
     "IRGS_3_3/catalog/genres/roman/source/IRGS_Roman_Republic_Life_Simulation_Engine_Slim_v1_2.md": "5f6e0742f0bc69dd9bd76c027000bda0d2b1c8c61120498b394483a0ce0e8318",
-    "IRGS_3_3/catalog/genres/roman/source/ROMAN_SUITE_DEPLOYMENT_BINDING.json": "1659b2927aee015f78cae27b2bd5a2c304bdcd174fbf2632692e76b17d5c68d3",
     "IRGS_3_3/catalog/genres/roman/source/roman_republic_slim_v1_2/content_bindings.json": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
+    "IRGS_3_3/catalog/genres/roman/source/ROMAN_SUITE_DEPLOYMENT_BINDING.json": "1659b2927aee015f78cae27b2bd5a2c304bdcd174fbf2632692e76b17d5c68d3",
     "IRGS_3_3/catalog/genres/shinobi/receiving_core_3_3.json": "15f6235087e5408aec8111502eb70e28f7876def99bdf5d4a1bb6c428d2c7e97",
-    "IRGS_3_3/catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json": "16d1c16c9ff9dc94aadc8a4f57a59f591e45bd734025bad7804f1cdce9694a95",
     "IRGS_3_3/catalog/genres/shinobi/source/SNWE_R0.3/IRGS_Shinobi_Nexus_World_Engine_SNWE_R0_3_Core3_2_SCL1_0_CMRR.md": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
+    "IRGS_3_3/catalog/genres/shinobi/source/SNWE_R0.3/IRGS_SNWE_R0_3_Core3_2_Receiving_Binding.json": "16d1c16c9ff9dc94aadc8a4f57a59f591e45bd734025bad7804f1cdce9694a95",
     "IRGS_3_3/catalog/genres/space/receiving_core_3_3.json": "be7787e8ebbea58b4cc02c0b67e7f6902e9c53b96f3a2ddf682d8d4d00a33fb0",
-    "IRGS_3_3/catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md": "a3c290917fe04c76384204605b042d6214648d8b24988ebcb67358b29e8a4901",
     "IRGS_3_3/catalog/genres/space/source/content_bindings.json": "acc68d89e2c500945e9da25bab01e2a68a236ac6b3e8cfa9417097eb910ec564",
+    "IRGS_3_3/catalog/genres/space/source/IRGS_Space_Exploration_and_Colonization_Foundation_Slim_v0_2_Proposed.md": "a3c290917fe04c76384204605b042d6214648d8b24988ebcb67358b29e8a4901",
     "IRGS_3_3/catalog/genres/space/source/source_space_binding.json": "8bc3d85b3dc97f0327d016ee2f4cc83132ba351bf4105db82ae151366f7622ae",
     "IRGS_3_3/catalog/hold_summary.json": "d7bd1d0fdf3602d4a6dd1f40f2ce493e448c95546b3de17ba1eed2188ea93212",
+    "IRGS_3_3/catalog/libraries/ast/asset_references.json": "1d86adc8565d200f0b225237fb7303ca5c195c78a26a9f50f7979a1a87523089",
     "IRGS_3_3/catalog/libraries/ast/AST_Art_Direction_v0_5.md": "887d5b35121fe4399d6f4a207a08362bc533caabedd3040852ba09bc4c933f7f",
     "IRGS_3_3/catalog/libraries/ast/AST_Content_Library_v0_5.md": "941432e39ebd4bbaead08811ed3e6bbe3e6a655da6628e96d89dab52bada219d",
     "IRGS_3_3/catalog/libraries/ast/AST_Engine_v0_5.md": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
     "IRGS_3_3/catalog/libraries/ast/AST_Master_Character_Registry_Archive_Audited_v2.docx": "a16e52e3f7f45fd712af58436dcc111ad5e724f77fa52630ba5d4fcb7b2ac477",
     "IRGS_3_3/catalog/libraries/ast/AST_Receiving_Binding_v0_5.json": "dd003e222f78808ffd4ba5ffcf63b8e3fc8d6d60ecc61e1690db6d1fe3682df4",
+    "IRGS_3_3/catalog/libraries/ast/ast_registry.json": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
     "IRGS_3_3/catalog/libraries/ast/CMRR_Chat_Continuity_v0_5.md": "22aa9df5bf6e0141a8a9edefe448282f57ee3ef1d3c62b17a7310a2abe38ed8e",
     "IRGS_3_3/catalog/libraries/ast/IRGS_ChatGPT_Play_Continuity_Adapter_v1_0.md": "420d439a539dc375a38c6fb27e5ade9e5e89e4d7c5edfb5b537518655e363935",
     "IRGS_3_3/catalog/libraries/ast/PACKAGE_MANIFEST_v0_5.json": "6166321533b1c72629e12bd38afc83d59eb12a8e1c14ed78c46d1fa0a8f12e82",
     "IRGS_3_3/catalog/libraries/ast/README.md": "e4d9342393c385464e99336020739f8c015e57519cb1956a333dc0364d0b8dd5",
-    "IRGS_3_3/catalog/libraries/ast/asset_references.json": "1d86adc8565d200f0b225237fb7303ca5c195c78a26a9f50f7979a1a87523089",
-    "IRGS_3_3/catalog/libraries/ast/ast_registry.json": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
     "IRGS_3_3/catalog/libraries/ast/references/Visual_Reference_Map.json": "797d9d3ae106a3fd761decf251435fe48b0e2cf1570ceec453c4ec41ad1ba23a",
     "IRGS_3_3/catalog/libraries/ast/references/Visual_References.md": "44f013ec7e59534709146b4445866e6fa4b4662543c70811916d79fb2d4c0e10",
-    "IRGS_3_3/catalog/libraries/fantasy/FANTASY_RELEASE_VALIDATION.md": "f6c3a33ff2c494d5dcec4b21eba568f5508e2928d0d65935eb02858183b06401",
     "IRGS_3_3/catalog/libraries/fantasy/Fantasy_Acceptance_Cases_v2_0.csv": "4ecbc2872802d5e6698853d1526e5d124a0bcbb787bf72d95c4a88b14b9ae28f",
     "IRGS_3_3/catalog/libraries/fantasy/Fantasy_CMRR_93_Sections.csv": "1ae7eb9fee7ecca606c1f10de8d7f66f017b0bf749e782e57e1391d6ed1468e9",
     "IRGS_3_3/catalog/libraries/fantasy/Fantasy_Native_Source_Projection_v2_0.json": "4123a39f4d9b53800ab0e91a4bdebc539d3fad20b06775060d8a1b904c474fdb",
+    "IRGS_3_3/catalog/libraries/fantasy/FANTASY_RELEASE_VALIDATION.md": "f6c3a33ff2c494d5dcec4b21eba568f5508e2928d0d65935eb02858183b06401",
     "IRGS_3_3/catalog/libraries/fantasy/Fantasy_SCL_Crosswalk_v2_0.csv": "ea1354f9487b3ce181d578f20b735399f4a1b07829a2101cc4d33bc20deebc35",
     "IRGS_3_3/catalog/libraries/fantasy/IRGS_Fantasy_Content_Library_v2_0_Candidate.md": "562a0c15a0de6bfe5f77916682a8ee23df65abd79bda908e3d0bbaeb4f372bcd",
     "IRGS_3_3/catalog/libraries/fantasy/README.md": "8e6f1c345122d138220718cfb39502fe1014b221dedea12d24634b923f0a60ad",
-    "IRGS_3_3/catalog/libraries/fantasy/VERIFY_MANIFEST.json": "05ce8afdaffa7aa6f3acc9aa2448fdac7407916d496a36fcf6de865ad273eb4e",
     "IRGS_3_3/catalog/libraries/fantasy/verify_fantasy_release.py": "20e609bcf0d6678fe60a7e9c2138239ba62f2b1f1613d2490667b74c59c0869d",
+    "IRGS_3_3/catalog/libraries/fantasy/VERIFY_MANIFEST.json": "05ce8afdaffa7aa6f3acc9aa2448fdac7407916d496a36fcf6de865ad273eb4e",
     "IRGS_3_3/catalog/libraries/military/IRGS_Military_Content_Catalogue_v1_0.json": "7f0ef7b23d321ee3d2e1e62595b0feedc8929a8b618b2513334195042e039fa6",
     "IRGS_3_3/catalog/libraries/military/IRGS_Military_Content_Library_v1_0_Candidate.md": "4b6560ac44abbfe1b01c913ab065183a91afbc4e898e090631341b42f33657d8",
     "IRGS_3_3/catalog/libraries/military/IRGS_Military_Library_v1_0_CMRR.md": "8ac99a2c29ed64f8339d08295c807d5cef659e347898f10213a718b765ad36f1",
@@ -89,33 +89,31 @@
     "IRGS_3_3/catalog/libraries/military/Military_SCL_Reference_Verification_Snapshot.json": "65b60e54e88d142cf9765d33b8f662f5970e5f6d4beb74cf43e33c10b80acdf7",
     "IRGS_3_3/catalog/libraries/military/Military_Slim_Core_3_2_Compatibility_Gate.md": "db91fae5945561381d0aa393518a2d9a9cedc4b70b64d857412dbf67875a411e",
     "IRGS_3_3/catalog/libraries/military/PACKAGE_MANIFEST.json": "fdb0578de0e46f66c56ff9f3c2456c601f83e5e4eab66824b8789d16f8a375e0",
-    "IRGS_3_3/catalog/libraries/military/README.md": "8f6c5ff5a4ae4d58c12ecaf58c094291db83e483dcde5022bc2263ee06d92b1b",
-    "IRGS_3_3/catalog/libraries/military/VALIDATION_REPORT.md": "0204cd26cfe4dde35febd5f2b2901374ae87f78ebd8a9e703c08b27d562e1b95",
     "IRGS_3_3/catalog/libraries/military/provenance/IRGS_Military_Equipment_and_Technology_Library_v0_1.md": "2b0d36498a11cf09e6acfa87febb817bacf96d4603a7ae663c300cbb85947fbf",
     "IRGS_3_3/catalog/libraries/military/provenance/IRGS_Soldier_Military_Life_Slim_v1_0.md": "f7a5d073369637a3c2e7a082b5c4528bfb122fd725f4ed31ce335c137aca34f0",
+    "IRGS_3_3/catalog/libraries/military/README.md": "8f6c5ff5a4ae4d58c12ecaf58c094291db83e483dcde5022bc2263ee06d92b1b",
     "IRGS_3_3/catalog/libraries/military/tests/verify_military_library.py": "656f3c8436ab70c73d87b28804f1fb8a8ba93e34b91c6fd53ede5656f338150d",
+    "IRGS_3_3/catalog/libraries/military/VALIDATION_REPORT.md": "0204cd26cfe4dde35febd5f2b2901374ae87f78ebd8a9e703c08b27d562e1b95",
     "IRGS_3_3/catalog/libraries/paf/IRGS_Post_Apocalyptic_Content_Library_v2_0_Candidate.md": "f6939447375b7d86c59db2feff59fb87df815d0af52e8481ff97a905cc4b0968",
-    "IRGS_3_3/catalog/libraries/paf/PAF_Library_Receiving_v2_1.json": "0eb663558cd43778fb7d81b1ce1bc4760b3993651283601b3f9ece96dc6b79df",
     "IRGS_3_3/catalog/libraries/paf/PA_Acceptance_Cases_v2_0.csv": "25a54cab104f98d70bce356a02d444ef4626b479c52553dab30276289061a5d7",
     "IRGS_3_3/catalog/libraries/paf/PA_Legacy_to_SCL_Crosswalk_v2_0.csv": "5b0417f1fa4ce9f6983f45b817b780f8efb554ef796bc7cf2b9e2e599da21410",
     "IRGS_3_3/catalog/libraries/paf/PA_Native_Compositions_v2_0.json": "5bdff57f2545c2c70c887617a60ff9d651559097fba1e09c48139709139a22f0",
     "IRGS_3_3/catalog/libraries/paf/PA_Package_Reconciliation_v2_1.md": "5bb4821d993fecdc101b2020debb1bf5149c6a11b61d4cc0e6765f2f145690c7",
     "IRGS_3_3/catalog/libraries/paf/PA_Source_Reference_Snapshot_v2_0.json": "0931ee84e6d23f31b817118a4e17f27af21753301135faf1c76993e3058b169f",
     "IRGS_3_3/catalog/libraries/paf/PA_Source_Section_CMRR_v2_0.csv": "18d8162efbb4e934e748e180540477048fca90923ceecbc81d498ff000209442",
+    "IRGS_3_3/catalog/libraries/paf/PAF_Library_Receiving_v2_1.json": "0eb663558cd43778fb7d81b1ce1bc4760b3993651283601b3f9ece96dc6b79df",
     "IRGS_3_3/catalog/libraries/paf/README.md": "8a8d60d771160749130a0842d80fc7397ae55458efadfb784bf99e8023cf2303",
     "IRGS_3_3/catalog/libraries/roman/IRGS_Roman_Republic_Content_Library_v1_0_Candidate.md": "3018fd00c489fe50dd3b1c448956fccb950d3273206300543197268fceece370",
     "IRGS_3_3/catalog/libraries/roman/PACKAGE_MANIFEST.json": "7cc44d55cec934cb879417cf12afb825d5d670cd1d001ada57ce820fef911676",
     "IRGS_3_3/catalog/libraries/roman/README.md": "113a142ca922abcc6b7ad3c4059989cb252ad1726c3baeaa8680fb1348a2d5b6",
     "IRGS_3_3/catalog/libraries/roman/Roman_Acceptance_Specifications_v1_0.csv": "7bdf0271153c67788faec131d6741ed6f3435ddef8effe8f70f6d54ae9af2309",
+    "IRGS_3_3/catalog/libraries/roman/Roman_Calibration_Gates_v1_0.csv": "a887953dfa79246a869f41dda30ded5f120bf23d7ce560d695ed352bcd3dab49",
     "IRGS_3_3/catalog/libraries/roman/Roman_CMRR_Qualification_Report.md": "fdb1faa92884cf806126874343c026b8f01fd9bfbd8151a9bbd95f96ae13ab03",
     "IRGS_3_3/catalog/libraries/roman/Roman_CMRR_Section_Dispositions_v1_0.csv": "e02a47fc119ec9619273f237f61537b6965d46d5f75e11feebbbafc6092dcf52",
-    "IRGS_3_3/catalog/libraries/roman/Roman_Calibration_Gates_v1_0.csv": "a887953dfa79246a869f41dda30ded5f120bf23d7ce560d695ed352bcd3dab49",
     "IRGS_3_3/catalog/libraries/roman/Roman_Content_Catalogue_v1_0.csv": "3f137e2976c65b3852735c370d96e72da5de50e92b21ac0d75e1c31c463ba5ec",
     "IRGS_3_3/catalog/libraries/roman/Roman_Content_Catalogue_v1_0.json": "7ad766d40830f22e7e32b9e3bc68ae95e516f38c605f9373aaf1e0f2cc1e617c",
     "IRGS_3_3/catalog/libraries/roman/Roman_Native_SCL_Crosswalk_v1_0.csv": "34549f8ba4c619d4fcbdfdbbf349ca06b90f6ee0bc12d241c8d9574e4e443f04",
     "IRGS_3_3/catalog/libraries/roman/SOURCE_PINS.json": "a1de5f6b8fac053bc4409b8abf6959f4a88cd7849be05d8e489f697fe965ac3b",
-    "IRGS_3_3/catalog/libraries/roman/VALIDATION_REPORT.md": "bfd1c762d7ae6d63fb74e7119cdd609fcb4ddda5f299f75fca855a822c188de9",
-    "IRGS_3_3/catalog/libraries/roman/VERIFICATION_RESULTS.json": "8dcba1ee091bd6ed209aa492c545d1af5a1ba73488d7ff4a69c0f35569fa479d",
     "IRGS_3_3/catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_R3.json": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c",
     "IRGS_3_3/catalog/libraries/roman/sources/Core_v3_2_Receiving_Bindings_ReadOnly.json": "e7d6a4250921787b673e4c2974711b3dc53a3b5d3a344a09da8ec9995242b0b7",
     "IRGS_3_3/catalog/libraries/roman/sources/IRGS_Roman_Republic_Full_v1_0_Historical_Source.md": "0a77a92d7ee6140566baa85f199dc3b4eec9a57544aa0785258d2dfa44bf82a4",
@@ -123,6 +121,8 @@
     "IRGS_3_3/catalog/libraries/roman/sources/Roman_v1_2_Native_Content_Bindings_Unchanged.json": "b1acd807495fdc5ced05659592600c365fa958b30155dd332461d3fef39e6d2a",
     "IRGS_3_3/catalog/libraries/roman/sources/SCL_v1_0_Registry_ReadOnly.json": "67c4e0eb4b67fbc8f2cf874dae06381bf2e4c9eb48850a35d7ffc10c8a4a35b9",
     "IRGS_3_3/catalog/libraries/roman/tests/verify_roman_content_release.py": "50776519f77d896f6ebce8d24650755b72836c392183f853d06a17e9063928e1",
+    "IRGS_3_3/catalog/libraries/roman/VALIDATION_REPORT.md": "bfd1c762d7ae6d63fb74e7119cdd609fcb4ddda5f299f75fca855a822c188de9",
+    "IRGS_3_3/catalog/libraries/roman/VERIFICATION_RESULTS.json": "8dcba1ee091bd6ed209aa492c545d1af5a1ba73488d7ff4a69c0f35569fa479d",
     "IRGS_3_3/catalog/libraries/shared/IRGS_Core_Engine_v3_2.md": "c89b3bdcae026921b904bdf5a90949e921c847b9f69340d87da7d0046939d94c",
     "IRGS_3_3/catalog/libraries/shared/IRGS_Engine_Bindings_v3_2.json": "4d6716246ec2034d7ca811eba9d4e4ccbe849fa773e8fed2f05ba1adceba003c",
     "IRGS_3_3/catalog/libraries/shared/IRGS_Full_Release_CMRR_Validation.md": "5573951d3377eedab376ec526248624bf116e0264d9b50b39cee5e79f28eaec3",
@@ -133,8 +133,8 @@
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R1_Hold_Register.csv": "1fb3698559e74686149ededd377263082af307c0acf79c2f82248ea810b26ec1",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R1_Qualitative_Contracts.md": "0e1c4328d110cb51238974ef912e9130ce5f69ebb8fbe668ad687cde5da3b759",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_192_Qualitative_Contracts.md": "36df9d46a141695d9f76363097d484744b66a48340a3331829cfdd6ea062f9fd",
-    "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_CMRR_Report.md": "36b9a6869b9555e33c762dc9be96f49a72fa3d12bdb3f4b6636c0f6824b6b61f",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_Calibration_Gates.csv": "c9c6ee11cb491ae291dc6f13801d16b88d1ba97d50e2ced28131c3614575295e",
+    "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_CMRR_Report.md": "36b9a6869b9555e33c762dc9be96f49a72fa3d12bdb3f4b6636c0f6824b6b61f",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_Complete_Hold_Register.csv": "c690103eb93b5753ef344009d31753d680886a7be04785199a9120352b0ee698",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Maturation_R2_Contract_Data.json": "b502833a17e26814261fa1ce586dff3fc5ef6ec68531105404507e85c49fbfb4",
     "IRGS_3_3/catalog/libraries/shared/IRGS_SCL_Qualification_Acceptance_Matrix.csv": "6446375c0be7da6100a9e9b959816179930a4736657f946a868eadb04d7d1140",
@@ -148,6 +148,7 @@
     "IRGS_3_3/catalog/libraries/shared/PACKAGE_MANIFEST.json": "0d8cf7c8b9a8ade78ba025fcd3a20a3cf62c580eecd73113d0914e46fde2cfe7",
     "IRGS_3_3/catalog/libraries/shared/README.md": "2f4639c20ba42d3125ca040d7bb826cf1227efac1e560397660876d67b59bd5e",
     "IRGS_3_3/catalog/libraries/shared/RELEASE_VERIFICATION_RESULTS.json": "4e23ef0ac966b843c1012d0a75d31b98ae2dff675a1ac42a13c9fd7e7a161aec",
+    "IRGS_3_3/catalog/libraries/shinobi/IRGS_Shinobi_Nexus_Content_Library_SNCL_v1_0_Final.md": "d305d8857d1b6ee7167c189d2e32f581c58296f0ee7b4a209f573e1d0493c4f7",
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v0_1_CMRR_and_Verification_Report.md": "50992a23d2be577d457bd53d6fa3bf3ba60c7f7e8abf476ce05b9a7c6bfd1941",
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v0_1_Verification_Results.json": "94cbdc2dfc32a4f4be2661e1eeee4d49b886fec43011e04c70cf4c585736721e",
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v1_0_All_Records.csv": "0b8b09675796efafbd8f6587d9c12135e2cb67aed1a9cad17b0505485aecd867",
@@ -157,18 +158,17 @@
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v1_0_Registry.json": "b4fd3e16090cbb79dc128ab8304eb6ec6087e4c4b89c7fb02b3cdf70a3d2c29b",
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v1_0_Source_Manifest.json": "3b77211629d7bacb42ae4b2d6eb40fb1d429a06f0fbde5bdcdddcf047147434d",
     "IRGS_3_3/catalog/libraries/shinobi/IRGS_SNCL_v1_0_Verification_Results.json": "e70d74574d624b73e18c68f70ff318772d6d07f435c62bf3880e4c361824f2a1",
-    "IRGS_3_3/catalog/libraries/shinobi/IRGS_Shinobi_Nexus_Content_Library_SNCL_v1_0_Final.md": "d305d8857d1b6ee7167c189d2e32f581c58296f0ee7b4a209f573e1d0493c4f7",
+    "IRGS_3_3/catalog/libraries/shinobi/prior_verify_sncl_v0_1.py": "60771e36b776579ac01e43bf51604eb7fb9fa95df0f7ab1544f32329e1f87125",
     "IRGS_3_3/catalog/libraries/shinobi/README.md": "f72e61e4697834ef16549bcd332f1003930cf8d2cd08f2c18be205cd9d2a32a7",
     "IRGS_3_3/catalog/libraries/shinobi/SNWE_R0_3_Receiving_Binding_Reference.json": "e135f37604f0c9c4111682a97da26b201d2cae954d9d03633251bcae5a34de27",
     "IRGS_3_3/catalog/libraries/shinobi/SNWE_R0_3_Source_Reference.md": "2b4e2e496af03224d9f3aee6902bf9629538a9033c119141b89fdf35741e9e84",
-    "IRGS_3_3/catalog/libraries/shinobi/prior_verify_sncl_v0_1.py": "60771e36b776579ac01e43bf51604eb7fb9fa95df0f7ab1544f32329e1f87125",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/A Rank.pdf": "6dfcc4994707185b55983deb2ac2899c2c4fe047084d6bc352b229ddadae2890",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/B Rank.pdf": "16be52d17c24065e21680ee747fcedd80f82f7ce40242953ef674aaf080d1bf0",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/C Rank.pdf": "fd33696a0d3c4b1be496bf4ceac90fb8947d8c0a1bbff508b8740801a85f3d56",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/D Rank.pdf": "7988ee33479dfbd493b6b6d65e38ce0dce9de32d10cf812b91270eea76b087f2",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/E Rank.pdf": "93416c0e56cabd0954e58198f2c0d95018be188a12881fbd17f6100417ad5635",
-    "IRGS_3_3/catalog/libraries/shinobi/source_documents/IRGS_SNCL_v0_1_Registry.json": "8b6ca5588390c94f9a0577105d609c754234752c4d1eb42d867f1eb2a1aa072b",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/IRGS_Shinobi_Nexus_Content_Library_SNCL_v0_1_Proposed.md": "56ecc015c3d52d4a91851245631145d4b18ba11009b3b043ceb65f530a25389f",
+    "IRGS_3_3/catalog/libraries/shinobi/source_documents/IRGS_SNCL_v0_1_Registry.json": "8b6ca5588390c94f9a0577105d609c754234752c4d1eb42d867f1eb2a1aa072b",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/Justu Pt 1.pdf": "fbfc587acf0848042e9eed7446becf5dc9ad98fc571ff6e7f974734b8fc94224",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/Jutsu Pt 2.pdf": "96161b81b9c6e651ec0310cff16a003161763b4d8fb87c582c0602e4e56e1bb5",
     "IRGS_3_3/catalog/libraries/shinobi/source_documents/Jutsu Pt 3.pdf": "6d7b9b9c12b8388db6e8603bebc83b228e5cd38ee83f0728aeb768e46be4769d",
@@ -180,6 +180,8 @@
     "IRGS_3_3/catalog/libraries/space/content_bindings.json": "acc68d89e2c500945e9da25bab01e2a68a236ac6b3e8cfa9417097eb910ec564",
     "IRGS_3_3/catalog/profiles/ast_core_3_3.json": "9857136d3ed9656b29fbb47da3a5d7c508930ebe3fd7963763fcb5991d015c75",
     "IRGS_3_3/catalog/source_manifest.json": "609fded8dae37fbfba7528247c9ae56b0f17b16dc5b02cdb671bc3fb26434aac",
+    "IRGS_3_3/Core/IRGS_Core_3_3_Binding.json": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301",
+    "IRGS_3_3/Core/IRGS_Core_Engine_v3_3.md": "dd80a3c59477fb24141b47cd8633ad70fb1aea637ce6a2f1a1cf70c2e4e63494",
     "IRGS_3_3/data/ast_mechanics_reuse.json": "f11e711806bdf47b105b6b405ebba5d1e0fd4bbbd4920eac33b791d4924bb679",
     "IRGS_3_3/data/ast_registry.json": "e7eb572f8cadfc87cda9d8e2d78c4a6dd7a3aef1ae9dd031822d644646f29742",
     "IRGS_3_3/data/campaign_listings.json": "cb8c6e6e41de99af971264f39f2772c6b2fdc41f74ca617f52045659968ab092",
@@ -189,21 +191,21 @@
     "IRGS_3_3/data/hyw_entry_catalogue.json": "cd47576c71fe5351e08b0755ce65f7778bb28c7887d1c76acca4aa90a6df7b7b",
     "IRGS_3_3/data/hyw_historical_baseline.json": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0",
     "IRGS_3_3/data/solo_quay_opening.json": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5",
-    "IRGS_3_3/release.json": "f4aea739ce3c0065cdc7b42dc4a906895e92f42acf476f6f302cf7a196c7449f",
+    "IRGS_3_3/release.json": "d7529d6468277f48ff1ea618a3bfc74120f8ff47ec9007690169eb2f2265357f",
     "IRGS_3_3/runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
     "IRGS_3_3/runtime/ast_server.py": "83bb4942d4f462c0475518a32f310d5cc653eb3dcc5d395e3cad852cdece0f3d",
     "IRGS_3_3/runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",
     "IRGS_3_3/runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
     "IRGS_3_3/runtime/content_library.py": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae",
-    "IRGS_3_3/runtime/core_world.py": "f0a005c03e435bd3480f8ac6685ba98c5af913f6468f2fcbc95d542bbbab5738",
+    "IRGS_3_3/runtime/core_world.py": "ad3b5133b0649454628c5c5befd37cb6598dc21522c5fec468bb7edf91293262",
     "IRGS_3_3/runtime/economic_extension.py": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c",
-    "IRGS_3_3/runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98",
+    "IRGS_3_3/runtime/genre_receivers.py": "8bff97bf7e0a78a9115c18c5beb87535f1dd8f6fafa6718aad4e13d06a325c60",
     "IRGS_3_3/runtime/historical_campaigns.py": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc",
     "IRGS_3_3/runtime/historical_plans.py": "36a9c357ff55a694ffff683efdab7458b131b6159033d7c1adbba377e84da537",
     "IRGS_3_3/runtime/irgs.py": "11e07e12c73e93ce119712e7ef838378c4f608ed25dcc3885d1e5d7902b42a47",
     "IRGS_3_3/runtime/irgs_r9.py": "99da015bb6dfb6f0cbdac4060a7f911c7ac860555a601e87b94157007b987798",
     "IRGS_3_3/runtime/irgs_reference.py": "d362701f1464176c42fb42e559c045de5036025954023e08b8d251e448470a87",
-    "IRGS_3_3/runtime/player_actions.py": "a1454bec3175e530589890acc08f3f947ee74fbe2b179d7d4df91d9f8b3e6b3f",
+    "IRGS_3_3/runtime/player_actions.py": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0",
     "IRGS_3_3/runtime/r5_audit.py": "355dd4a443c220cfcf02637d511d527e3009d430278dcfb7decd999200eea051",
     "IRGS_3_3/runtime/r5_hazards.py": "4141090eae0e8b3b508015a01672f5c1e271924f3e0070d9bac041d4c7368807",
     "IRGS_3_3/runtime/r5_scale.py": "a0580637e71c7a716363a4cba510ddcfe6e0a71ef0426e36fe3fbb971b30ed48",
@@ -214,7 +216,7 @@
     "IRGS_3_3/runtime/r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
     "IRGS_3_3/runtime/r8_strategy.py": "3d5ab61240635b1f6ee1eabd1fc8b05964cd49aafa4a08da95583082a7d88e27",
     "IRGS_3_3/runtime/r9_adapters.py": "39067583d8282194a0e911354dc4ca6a5fd79b3860d69a3a3240d292c38f8f3a",
-    "IRGS_3_3/runtime/r9_runtime.py": "05d2053b0c6f14d6e28169125747b59ba8b14edb1bd87e3f72d6f1e3349f012a",
+    "IRGS_3_3/runtime/r9_runtime.py": "bf6d74c32f4288ab53aae502827e8107316b1593dc7293426ff95fec95bd7d5b",
     "IRGS_3_3/runtime/r9_strategy.py": "698e364e6a5e41306b92405cb4685388d3e0b4ac35490d3f64d44c49889e25c6",
     "IRGS_3_3/runtime/release_integrity.py": "edce7f7e5c7e54dc03a98b26885e9ebe9af2de629db3936ec1320d2e14d42153",
     "IRGS_3_3/runtime/response_options.py": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8",
@@ -231,13 +233,14 @@
     "IRGS_3_3/runtime/scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
     "IRGS_3_3/runtime/scene_setup.py": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b",
     "IRGS_3_3/runtime/selective_coordinator.py": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f",
-    "IRGS_3_3/runtime/settlement_runtime.py": "d26d0bde8da3820d07080898d8f2224b10d63e590638c30b59a74bed712b18f9",
+    "IRGS_3_3/runtime/settlement_runtime.py": "3e0fc6be4c592f008eff91608c5a073c73e296813fe02ad03273fe2ad731343f",
     "IRGS_3_3/runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
     "IRGS_3_3/runtime/starting_selection.py": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3",
     "IRGS_3_3/runtime/strategic_execution.py": "74cbcb9e3de9ca9354b912a418da6d9c9c401b08797b7c41150d940d9ed029e7",
     "IRGS_3_3/runtime/temporal_registry.py": "fcb7289c1bc57c867a66a8c837085711241e7d75c0589b35563161fa5fe33ba1",
     "IRGS_3_3/runtime/test_ast33.py": "bf12eb18c89044fccac44a243f838d1ed6cc05ca735b8c284a0734541b5e65c6",
     "IRGS_3_3/runtime/test_character_background.py": "2f678312cd3bb43fc2d3a1e6d08290e6f6314c2be4bf89771c0985e35f2ca61a",
+    "IRGS_3_3/runtime/test_core_domains.py": "a5745af305821e5ca625b966dc9fe0236ae71d6475baeb38ad1c62111252e73c",
     "IRGS_3_3/runtime/test_economic_integration.py": "09fe797e425f64d44f19203db7eaa15277be24ddc1a517aaf710394b92be6b11",
     "IRGS_3_3/runtime/test_historical_campaigns.py": "e303c92474b2f4bc97eef3bc10cd50d23b25cf586b15b0384244663a0f3ceaca",
     "IRGS_3_3/runtime/test_historical_plans.py": "a72f94496dfcebd31a545e1f6c0fc69fbef948a662345e9f73828464636f9362",
@@ -247,54 +250,53 @@
     "IRGS_3_3/runtime/test_r8_dependencies.py": "ad5791c3e12c913104c774e392046520a50dda34febff4676039aabee62215a5",
     "IRGS_3_3/runtime/test_r9_collections.py": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7",
     "IRGS_3_3/runtime/test_r9_runtime.py": "427cd0eadefa95c204d28edc2f75262fb3034fd37555349c013fa24545dadb8d",
+    "IRGS_3_3/runtime/test_rejected_dependencies.py": "184c9ace389715dbfc4d659caf3897eaa361ee7fe0cb1ea7fc00ac2bdae5d2d6",
     "IRGS_3_3/runtime/test_release_integrity.py": "9e53f0004eda751d90d1be2904bb6645495a0dd61df555996a249078f75da847",
     "IRGS_3_3/runtime/test_response_options.py": "5a058bd28a453fba01746b223f230d00a5c9b12963eb5ed34e8b2492a7658457",
     "IRGS_3_3/runtime/test_scene_actions.py": "5ed2835ebc971898f064cf6267bde0f8a483cfec4900dccba9cfc8ba8d69ad10",
     "IRGS_3_3/runtime/test_scene_setup.py": "a6724f7a51c29a43c5ed51799dd0b6e98ef813dbb224543c85ef6da8319ccb0b",
     "IRGS_3_3/runtime/test_selective_and_scale.py": "dde9a1d56612d122d5d48fd31292ba27f768f53c61c2a6b9e49a888b8595b4d7",
-    "IRGS_3_3/runtime/test_settlement.py": "a36fad999f1b8c7a80f02806617ca564710336febf2c1f69334d66eef93636a3",
+    "IRGS_3_3/runtime/test_settlement.py": "16946b0c16bc6e66116b1918dd9d5ad5610e77dc722b1e3b9c2d48899f47c485",
     "IRGS_3_3/runtime/test_starting_selection.py": "2d83f6955faaf1a1408ca1d8fd74419af3f049bf2a78f7c63b6b29b7cecf1a37",
     "IRGS_3_3/runtime/test_strategy_rights.py": "b1cf570b0d7ce37f2c1314192dbe8f979467779200efb66d65b7840a4ea5c5ce",
     "IRGS_3_3/runtime/test_suite.py": "5bec891f6a1f3d602527889ab24c8b47a9f93503e51d2dbc637ba5a7fb914a6e",
     "IRGS_3_3/runtime/test_temporal_registry.py": "929ebbfca5997c03e9a447b475816963cd633a9f7ed33c2f9d90b8fdf07e4d36",
     "IRGS_3_3/runtime/test_unification.py": "0da2440c200257fd2d2f0e9c3a750dff5ddbca91d1e1c31d085b30e3e21dc6e9",
     "IRGS_3_3/runtime/test_work_recovery.py": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806",
-    "IRGS_Web/README.md": "07c4d4eab6e63a103722d68430d553698f911fe153154cf371cb7e3de4072e33",
-    "IRGS_Web/Start-IRGS.cmd": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
-    "IRGS_Web/Start-IRGS.ps1": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
     "IRGS_Web/campaign_worlds.py": "1a4ee7902a44cd6dac59b328396295d35533a49d0aa30cd9d95adfbc838432c3",
     "IRGS_Web/features.py": "896545e5e2ec49290678b97f885a89cddcc384d39af61dd729825a1d7b116ec5",
     "IRGS_Web/gameplay_views.py": "c7300a48d487c2257922a6339024ea6986aa7bf519c23635d8082fd65f8806a2",
     "IRGS_Web/history_views.py": "cc4d70ff4854f1b0e2b8bb6c9022c95068f331c779887e966be84b42ae163906",
     "IRGS_Web/opening_scene.py": "53bc6a63ab593850a1b6566a3cba0f18c0f1ab98b960f315a9229d9412fda4e5",
-    "IRGS_Web/rise_campaigns.py": "27aeddf924dc9a3cef69f478789e7ac784f01d521e789ccbc4074c0b5459c724",
-    "IRGS_Web/server.py": "92896b368bd259bb9ed940915adc682c04aa17a0f2c59afb96fae6d50d31ceae",
-    "IRGS_Web/static/app.js": "ce95d378ee196b365749c7ae8c0ff6d1080139835eff3f1a2d79b399ef6387ba",
+    "IRGS_Web/README.md": "07c4d4eab6e63a103722d68430d553698f911fe153154cf371cb7e3de4072e33",
+    "IRGS_Web/rise_campaigns.py": "64acf6854708aa8ccd5b11c4903650c5e1bb14dd687741bc8d86cb347d9c860f",
+    "IRGS_Web/server.py": "ff8aa7f8c904cdf8cb46baecb35ebb21d21df7d75d9be88268b5e972e3f5e955",
+    "IRGS_Web/Start-IRGS.cmd": "9c13ce95f10205c3b28a934dabc112237151bba46f5c2445eac361d224ba04d5",
+    "IRGS_Web/Start-IRGS.ps1": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6",
+    "IRGS_Web/static/app.js": "099e456ad4f38de7234dac0d2a785fef5f579895706c51715739a1bbf40757df",
     "IRGS_Web/static/index.html": "0a21255beef95f4205748595b7e511a6802d842fb96a285a83bd3c1142a91a93",
-    "IRGS_Web/static/rise.js": "5dd4438a021d77f6d1e9b83710654a4ec19f46b8554a6739886ce3ed125dec7a",
+    "IRGS_Web/static/rise.js": "7778d48220147ded119a06094a1411ad160a334f5afe0876a33516a6db173ff8",
     "IRGS_Web/static/style.css": "f4d795384a81fd3fdc714d8163bf4e11622dfae152cf39824799a969512960eb",
     "IRGS_Web/static/voyage.svg": "064ebe9c533c55d892d541d13c994e51b33853b7e32374e4f318ded4623bf760",
     "IRGS_Web/tests/test_equipment_action.py": "6c6706edf73942a0157b63d04143779434576f25a1a53011123f3e2c7887874c",
     "IRGS_Web/tests/test_gameplay.py": "1ea6f689eba1ca4157aaa8dbfaa1ad598c7fd1f592ba4316cd6115b2f6f23e2f",
-    "IRGS_Web/tests/test_gameplay_ui.js": "2347409a9acd71a89ebb1d399c827769df30de694eb043bd94fc87a3968848a4",
+    "IRGS_Web/tests/test_gameplay_ui.js": "770ab8f14dd8a0adb41b6f36a5fa56837f7db26ba63bfd060e531e8eee9a1f7b",
     "IRGS_Web/tests/test_history_views.py": "aec7784dd632f278f36528f8533cc10ee1d2fea131d303e4d2fe960deb4c9407",
-    "IRGS_Web/tests/test_host.py": "805792a0342e92d80e2ad5f800a35f5a74373012f642dbce18e9dfe958b433be",
+    "IRGS_Web/tests/test_host.py": "a7cec6537583db6d400530e556ad0caa9bd37d3250837b2d1e123d59f60ecfd2",
     "IRGS_Web/tests/test_launcher.py": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6",
-    "IRGS_Web/tests/test_rise.py": "62d71174e0802232f88526e989458f6d00c94f2a74caaad4a17212d51a5c33a8",
+    "IRGS_Web/tests/test_rise.py": "78e4b61b18228ed263bc780f9eab734c1b521d93e43754f81994132d52709c39",
     "IRGS_Web/tests/test_scene_play.py": "4c074c5a67eb1a90548af6ef94e66204f5c68d433a206e27ad23f0343e7ce5d8",
     "IRGS_Web/tests/test_stage1.py": "4778b8abd7555b447f317f75de2296bccdac4e04d3f2c417c185a48063cad9bf",
     "IRGS_Web/tests/test_starting_flow.py": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b",
-    "engine/Core/IRGS_Core_3_3_3_E_C2.md": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea",
-    "engine/Core/IRGS_Core_3_3_3_E_C2_Binding.json": "dbca027031700261abbdd645b1883b6dfc27a10b221215cbcb7d3fcf54faea92",
     "tools/build_operation_register.py": "06933f88747a93921154aa869717d019ec8cdde8fb1f9bc96514134dba5114b4",
-    "tools/coverage_capture.py": "524ec0e271ae404773e893026728b165a8fdc7dee1bb4e624d1cabaad731499c",
-    "tools/operation_inventory.py": "3b4f88712c2973c7d98e9f4ae9cc26a568a9cadac98bd08861939ea116f25d70",
-    "tools/tests/test_coverage_capture.py": "b401c6e2e0138bfd92fefa2135ceb6f9ca6d0c7ad7d9445870cb5df5aa4a4850",
+    "tools/coverage_capture.py": "82c86d47af6f3a4a4ebb10fd198913ec6cb221bdf2a2bafd6751af0e48384474",
+    "tools/operation_inventory.py": "cd7050c27ba05735de4c5a940b4633744d4ee9795add14772dc9be692d2cc8ca",
+    "tools/tests/test_coverage_capture.py": "3380d1c3f1199052ba6c7629362d93cbdc4cb0217f52d3e6c4f827ff9a7219e5",
     "tools/tests/test_operation_coverage.py": "49c2d28dce28a335ab835350482ba8a484e0cdba5defbfecf9fdedd166ab7a73"
   },
   "tests": {
-    "tests_run": 471,
-    "passed": 470,
+    "tests_run": 486,
+    "passed": 485,
     "skipped": 1,
     "failures": 0,
     "errors": 0,
@@ -325,6 +327,8 @@
       "test_character_background.CharacterBackgroundTests.test_future_reference_is_pinned_without_becoming_an_event_or_actor_knowledge": "passed",
       "test_character_background.CharacterBackgroundTests.test_new_player_may_have_no_affiliation_or_career_information": "passed",
       "test_character_background.CharacterBackgroundTests.test_scottish_origin_and_seeking_english_service_remain_independent_testimony": "passed",
+      "test_core_domains.CoreDomainTests.test_core_bootstrap_and_equipment_execution_need_no_genre_receiver_module": "passed",
+      "test_core_domains.CoreDomainTests.test_creator_compatibility_import_forwards_to_the_same_core_routine": "passed",
       "test_economic_integration.EconomicConcurrencyRegressionTests.test_67_three_simultaneous_jobs_cannot_overbook_two_person_site": "passed",
       "test_economic_integration.EconomicConcurrencyRegressionTests.test_68_commit_shift_cannot_claim_past_work_time": "passed",
       "test_economic_integration.EconomicConcurrencyRegressionTests.test_69_mandate_and_enrollment_same_frontier_not_sorted_into_authority": "passed",
@@ -557,6 +561,18 @@
       "test_r9_runtime.ReceiverTests.test_roman_actual_reservation": "passed",
       "test_r9_runtime.ReceiverTests.test_unauthorized_military_directive": "passed",
       "test_r9_runtime.ReceiverTests.test_unreceived_military_order_has_no_effects": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_economic_rejection_uses_the_selected_backend": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_error_mismatch_and_nonatomic_probes_are_refused": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_freshness_guard_refuses_an_already_processed_event": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_frontier_retains_rejection_and_its_conflict_for_both_input_orders": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_instrumentation_refusal_does_not_manufacture_a_failed_action_certificate": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_reference_late_rejection_retains_reads_and_rolled_back_attempts": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_settlement_rejection_retains_actual_permission_and_worker_reads": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_shared_worker_rejection_keeps_actual_capacity_reads": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_unknown_or_successful_operations_cannot_be_labelled_qualified_rejections": "passed",
       "test_release_integrity.LayeredReplayTests.test_altered_wip_loss_replay_is_rejected_atomically": "passed",
       "test_release_integrity.LayeredReplayTests.test_confirmed_loss_commits_while_same_time_work_stays_unexecuted": "passed",
       "test_release_integrity.LayeredReplayTests.test_inconsistent_combined_losses_roll_back_frontier": "passed",
@@ -638,6 +654,7 @@
       "test_settlement.SettlementTests.test_control_scope_and_exact_core_replay": "passed",
       "test_settlement.SettlementTests.test_delegated_and_autonomous_work_share_inputs_while_founder_is_elsewhere": "passed",
       "test_settlement.SettlementTests.test_eight_families_remain_unqualified_and_setup_digest_fences_backtracking": "passed",
+      "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions": "passed",
       "test_settlement.SettlementTests.test_migration_preserves_existing_people_goods_and_delays_membership_until_arrival": "passed",
       "test_settlement.SettlementTests.test_missing_construction_model_holds_only_its_dependent_action": "passed",
       "test_settlement.SettlementTests.test_no_permission_means_atomic_rejection_and_no_free_goods_from_grant": "passed",
@@ -772,14 +789,14 @@
       "test_work_recovery.WorkRecoveryTests.test_164_full_output_cannot_be_settled_early": "passed",
       "test_work_recovery.WorkRecoveryTests.test_165_fulfilled_claim_keeps_loss_history": "passed"
     },
-    "capture_records": 1209,
-    "captured_executions": 2518,
+    "capture_records": 1227,
+    "captured_executions": 2534,
     "capture_origin_counts": {
-      "actual_apply": 2110,
-      "direct_observe": 408
+      "actual_apply": 2109,
+      "direct_observe": 425
     },
-    "actual_committed_apply_count": 2011,
-    "excluded_unknown_operations": 6,
+    "actual_committed_apply_count": 2043,
+    "excluded_unknown_operations": 7,
     "external_fixture_policy_skips": [
       "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
     ],
@@ -831,7 +848,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -4209,7 +4226,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -7565,7 +7582,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -10965,7 +10982,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -14301,7 +14318,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -17645,7 +17662,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -21013,7 +21030,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -24375,7 +24392,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -30810,7 +30827,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -34149,7 +34166,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -37556,7 +37573,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -38407,7 +38424,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -38466,15 +38483,17 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 39,
+      "successful_observations": 40,
       "rejected_observations": 0,
-      "actual_apply_successes": 39,
+      "actual_apply_successes": 40,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
         "/actors/@exists",
         "/actors/PC-b78d658cd59b8780499b7fc4/@exists",
         "/actors/PC-b78d658cd59b8780499b7fc4/current/@exists",
+        "/actors/founder/@exists",
+        "/actors/founder/current/@exists",
         "/actors/pc/@exists",
         "/actors/pc/current/@exists",
         "/actors/worker/@exists",
@@ -38502,12 +38521,18 @@
         "/evidence/setup:scene-location/status/@exists",
         "/evidence/setup:scene-location/subject",
         "/evidence/setup:scene-location/subject/@exists",
+        "/evidence/where/@exists",
+        "/evidence/where/status",
+        "/evidence/where/status/@exists",
+        "/evidence/where/subject",
+        "/evidence/where/subject/@exists",
         "/player_actor_ids",
         "/player_actor_ids/@exists"
       ],
       "writes": [
         "/actors/PC-b78d658cd59b8780499b7fc4/current/current_activity",
         "/actors/PC-b78d658cd59b8780499b7fc4/current/location",
+        "/actors/founder/current/location",
         "/actors/pc/current/location",
         "/actors/worker/current/location"
       ],
@@ -38540,6 +38565,15 @@
         "/actors/delegate/@exists",
         "/actors/delegate/id",
         "/actors/delegate/id/@exists",
+        "/actors/elin/@exists",
+        "/actors/elin/id",
+        "/actors/elin/id/@exists",
+        "/actors/founder/@exists",
+        "/actors/founder/id",
+        "/actors/founder/id/@exists",
+        "/actors/oren/@exists",
+        "/actors/oren/id",
+        "/actors/oren/id/@exists",
         "/actors/owner/@exists",
         "/actors/owner/id",
         "/actors/owner/id/@exists",
@@ -38552,12 +38586,22 @@
         "/actors/worker/@exists",
         "/actors/worker/id",
         "/actors/worker/id/@exists",
+        "/assets",
+        "/assets/@exists",
+        "/binding/@exists",
+        "/binding/campaign_profile",
+        "/binding/campaign_profile/@exists",
         "/campaign_id",
         "/campaign_id/@exists",
         "/capacities",
         "/capacities/@exists",
         "/clock",
         "/clock/@exists",
+        "/elapsed_time/@exists",
+        "/elapsed_time/axis",
+        "/elapsed_time/axis/@exists",
+        "/elapsed_time/seconds",
+        "/elapsed_time/seconds/@exists",
         "/entity_registry",
         "/entity_registry/@exists",
         "/entity_registry/as_of",
@@ -39667,6 +39711,21 @@
         "/evidence/setup:scene-map/@exists",
         "/evidence/setup:scene-map/recorded_at",
         "/evidence/setup:scene-map/recorded_at/@exists",
+        "/evidence/where/@exists",
+        "/evidence/where/recorded_at",
+        "/evidence/where/recorded_at/@exists",
+        "/households",
+        "/households/@exists",
+        "/households/founder-home/@exists",
+        "/households/founder-home/members",
+        "/households/founder-home/members/@exists",
+        "/households/founder-home/seed_reserve",
+        "/households/founder-home/seed_reserve/@exists",
+        "/households/oren-home/@exists",
+        "/households/oren-home/members",
+        "/households/oren-home/members/@exists",
+        "/households/oren-home/seed_reserve",
+        "/households/oren-home/seed_reserve/@exists",
         "/journal",
         "/journal/0",
         "/journal/0/at",
@@ -39679,8 +39738,12 @@
         "/journal/0/params/@exists",
         "/journal/0/params/actor_id",
         "/journal/0/params/actor_id/@exists",
+        "/journal/0/params/assertion",
+        "/journal/0/params/assertion/@exists",
         "/journal/0/params/campaign_id",
         "/journal/0/params/campaign_id/@exists",
+        "/journal/0/params/evidence_id",
+        "/journal/0/params/evidence_id/@exists",
         "/journal/0/params/instruction_ref",
         "/journal/0/params/instruction_ref/@exists",
         "/journal/0/params/name",
@@ -39691,6 +39754,10 @@
         "/journal/0/params/source_ref/@exists",
         "/journal/0/params/species",
         "/journal/0/params/species/@exists",
+        "/journal/0/params/status",
+        "/journal/0/params/status/@exists",
+        "/journal/0/params/subject",
+        "/journal/0/params/subject/@exists",
         "/journal/1",
         "/journal/1/at",
         "/journal/1/at/@exists",
@@ -39726,6 +39793,8 @@
         "/journal/1/params/name/@exists",
         "/journal/1/params/reason",
         "/journal/1/params/reason/@exists",
+        "/journal/1/params/recipient",
+        "/journal/1/params/recipient/@exists",
         "/journal/1/params/scenario_id",
         "/journal/1/params/scenario_id/@exists",
         "/journal/1/params/source_ref",
@@ -39772,6 +39841,8 @@
         "/journal/2/params/@exists",
         "/journal/2/params/actor_id",
         "/journal/2/params/actor_id/@exists",
+        "/journal/2/params/authority_ref",
+        "/journal/2/params/authority_ref/@exists",
         "/journal/2/params/campaign_id",
         "/journal/2/params/campaign_id/@exists",
         "/journal/2/params/effective_at",
@@ -39780,6 +39851,8 @@
         "/journal/2/params/entity_id/@exists",
         "/journal/2/params/evidence_id",
         "/journal/2/params/evidence_id/@exists",
+        "/journal/2/params/field",
+        "/journal/2/params/field/@exists",
         "/journal/2/params/instruction_ref",
         "/journal/2/params/instruction_ref/@exists",
         "/journal/2/params/name",
@@ -39792,6 +39865,10 @@
         "/journal/2/params/source_ref/@exists",
         "/journal/2/params/species",
         "/journal/2/params/species/@exists",
+        "/journal/2/params/subject",
+        "/journal/2/params/subject/@exists",
+        "/journal/2/params/value",
+        "/journal/2/params/value/@exists",
         "/journal/3",
         "/journal/3/at",
         "/journal/3/at/@exists",
@@ -39985,6 +40062,15 @@
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/@exists",
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/received_at",
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/received_at/@exists",
+        "/knowledge/elin",
+        "/knowledge/elin/@exists",
+        "/knowledge/founder",
+        "/knowledge/founder/@exists",
+        "/knowledge/founder/where/@exists",
+        "/knowledge/founder/where/received_at",
+        "/knowledge/founder/where/received_at/@exists",
+        "/knowledge/oren",
+        "/knowledge/oren/@exists",
         "/knowledge/pc",
         "/knowledge/pc/@exists",
         "/knowledge/pc/setup:position/@exists",
@@ -39993,19 +40079,30 @@
         "/knowledge/pc/setup:scene-map/@exists",
         "/knowledge/pc/setup:scene-map/received_at",
         "/knowledge/pc/setup:scene-map/received_at/@exists",
+        "/material_flows",
         "/material_flows/@exists",
+        "/migrations",
+        "/migrations/@exists",
         "/opening_stock",
         "/opening_stock/@exists",
+        "/opening_stock/axe",
+        "/opening_stock/axe/@exists",
         "/opening_stock/grain",
         "/opening_stock/grain/@exists",
+        "/opening_stock/timber",
+        "/opening_stock/timber/@exists",
         "/player_actor_ids",
         "/player_actor_ids/@exists",
         "/processed",
         "/processed/@exists",
         "/processed/actor",
         "/processed/actor/@exists",
+        "/processed/confirmed",
+        "/processed/confirmed/@exists",
         "/processed/e",
         "/processed/e/@exists",
+        "/processed/heard",
+        "/processed/heard/@exists",
         "/processed/located",
         "/processed/located/@exists",
         "/processed/map",
@@ -40050,8 +40147,25 @@
         "/processed/setup:scene:map-receipt/@exists",
         "/processed/stock",
         "/processed/stock/@exists",
+        "/processed/where",
+        "/processed/where/@exists",
         "/profile",
         "/profile/@exists",
+        "/projects",
+        "/projects/@exists",
+        "/projects/oren-repair/@exists",
+        "/projects/oren-repair/duration",
+        "/projects/oren-repair/duration/@exists",
+        "/projects/oren-repair/household",
+        "/projects/oren-repair/household/@exists",
+        "/projects/oren-repair/status",
+        "/projects/oren-repair/status/@exists",
+        "/projects/oren-repair/timber",
+        "/projects/oren-repair/timber/@exists",
+        "/projects/oren-repair/worked",
+        "/projects/oren-repair/worked/@exists",
+        "/projects/oren-repair/worker",
+        "/projects/oren-repair/worker/@exists",
         "/r9/@exists",
         "/registry/@exists",
         "/registry/characters",
@@ -40059,8 +40173,34 @@
         "/registry/withdrawn_duplicate_ids",
         "/registry/withdrawn_duplicate_ids/@exists",
         "/settlement_model/@exists",
+        "/settlements",
+        "/settlements/@exists",
+        "/stock_accounts",
+        "/stock_accounts/@exists",
+        "/stock_accounts/founder-home/@exists",
+        "/stock_accounts/founder-home/household",
+        "/stock_accounts/founder-home/household/@exists",
+        "/stock_accounts/oren-home/@exists",
+        "/stock_accounts/oren-home/household",
+        "/stock_accounts/oren-home/household/@exists",
         "/stocks",
         "/stocks/@exists",
+        "/stocks/founder-home",
+        "/stocks/founder-home/@exists",
+        "/stocks/founder-home/axe",
+        "/stocks/founder-home/axe/@exists",
+        "/stocks/founder-home/grain",
+        "/stocks/founder-home/grain/@exists",
+        "/stocks/founder-home/timber",
+        "/stocks/founder-home/timber/@exists",
+        "/stocks/oren-home",
+        "/stocks/oren-home/@exists",
+        "/stocks/oren-home/axe",
+        "/stocks/oren-home/axe/@exists",
+        "/stocks/oren-home/grain",
+        "/stocks/oren-home/grain/@exists",
+        "/stocks/oren-home/timber",
+        "/stocks/oren-home/timber/@exists",
         "/stocks/store",
         "/stocks/store/@exists",
         "/stocks/store/grain",
@@ -40083,15 +40223,17 @@
         "validation": {
           "owners": [
             "K-ACTOR",
+            "K-ASSET",
             "K-INFO",
             "K-NET",
             "K-ORG",
+            "K-POP",
             "K-STOCK",
             "K-TIME",
             "K-WORK"
           ],
-          "unmapped_path_count": 713,
-          "metadata_path_count": 23,
+          "unmapped_path_count": 727,
+          "metadata_path_count": 26,
           "note": "All validation paths remain in validation_reads; detailed namespace labels can be reproduced with owner_classification."
         }
       },
@@ -40257,6 +40399,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_suite.SuiteTests.test_legacy_names_and_canonical_operations_have_same_domain_effects",
           "status": "success",
           "executions": 1,
@@ -40281,7 +40433,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -40340,9 +40492,9 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 100,
+      "successful_observations": 104,
       "rejected_observations": 0,
-      "actual_apply_successes": 100,
+      "actual_apply_successes": 104,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -42265,6 +42417,16 @@
       },
       "test_cases": [
         {
+          "test_id": "test_core_domains.CoreDomainTests.test_creator_compatibility_import_forwards_to_the_same_core_routine",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_player_actions.PlayerEquipmentActionTests.test_available_choices_do_not_reveal_stock_or_hidden_authority_validity",
           "status": "success",
           "executions": 1,
@@ -42525,6 +42687,36 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_instrumentation_refusal_does_not_manufacture_a_failed_action_certificate",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_scene_actions.SceneActionTests.test_absent_future_or_wrong_map_receipt_is_refused",
           "status": "success",
           "executions": 10,
@@ -42729,7 +42921,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -42787,9 +42979,9 @@
           "status": "OPERATION_BRANCH"
         },
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
-          "symbol": "operate",
-          "line": 5,
+          "path": "IRGS_3_3/runtime/core_world.py",
+          "symbol": "CoreWorld._operate_domain",
+          "line": 224,
           "status": "OPERATION_BRANCH"
         },
         {
@@ -42808,7 +43000,7 @@
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
       "successful_observations": 38,
-      "rejected_observations": 34,
+      "rejected_observations": 19,
       "actual_apply_successes": 13,
       "direct_observe_successes": 25,
       "all_branches_certified": false,
@@ -43277,6 +43469,7 @@
         "/entity_registry/source_mode",
         "/entity_registry/source_mode/@exists",
         "/orders/@exists",
+        "/orders/missing-order/@exists",
         "/orders/order-1/@exists",
         "/orders/order-1/authority_ref",
         "/orders/order-1/authority_ref/@exists",
@@ -44284,6 +44477,7 @@
           "/entity_registry/entities/worker/versions/1/start/@exists",
           "/entity_registry/entities/worker/versions/@exists",
           "/orders/@exists",
+          "/orders/missing-order/@exists",
           "/orders/order-1/@exists",
           "/orders/order-1/authority_ref",
           "/orders/order-1/authority_ref/@exists",
@@ -44420,27 +44614,7 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_dissolved_control_actor_cannot_execute",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_dissolved_controlling_faction_blocks_its_stale_representative",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -44480,27 +44654,7 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_first_recipient_write_rolls_back_when_second_exhausts_stock",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_missing_authority_has_negative_lookup_evidence",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -44531,16 +44685,6 @@
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_noncontrolled_actor_cannot_impersonate_commander",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -44570,16 +44714,6 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_recipient_dissolution_conflicts_and_then_blocks_execution",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
@@ -44600,16 +44734,6 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_revoked_current_individual_eligibility_blocks_stale_player_list",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
@@ -44620,27 +44744,7 @@
           "executions": 4,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_revoked_expired_or_unreceived_order_is_rejected",
-          "status": "failed_attempt",
-          "executions": 4,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_revoked_mandate_is_observed_and_rejected",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -44730,16 +44834,6 @@
           "executions": 5,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_player_actions.PlayerEquipmentActionTests.test_wrong_actor_scope_future_or_expired_mandate_is_rejected",
-          "status": "failed_attempt",
-          "executions": 5,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
@@ -44747,6 +44841,26 @@
         {
           "test_id": "test_r9_collections.CollectionObservationTests.test_successful_equipment_list_reads_do_not_reserve_authority_as_write",
           "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup",
+          "status": "failed_attempt",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read",
+          "status": "failed_attempt",
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
@@ -44769,7 +44883,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -44842,7 +44956,7 @@
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
       "successful_observations": 52,
-      "rejected_observations": 32,
+      "rejected_observations": 16,
       "actual_apply_successes": 26,
       "direct_observe_successes": 26,
       "all_branches_certified": false,
@@ -48744,16 +48858,6 @@
           "executions": 5,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_scene_actions.SceneActionTests.test_absent_future_or_wrong_map_receipt_is_refused",
-          "status": "failed_attempt",
-          "executions": 5,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
@@ -48824,16 +48928,6 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_scene_actions.SceneActionTests.test_late_failure_rolls_back_transfer_and_elapsed_work",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
@@ -48855,16 +48949,6 @@
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_scene_actions.SceneActionTests.test_location_wrong_action_invalid_duration_or_axis_is_refused",
-          "status": "failed_attempt",
-          "executions": 7,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -48944,27 +49028,7 @@
           "executions": 1,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_scene_actions.SceneActionTests.test_other_activity_cannot_be_bypassed_without_elapsed_binding",
-          "status": "failed_attempt",
-          "executions": 1,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
-          "usable": true,
-          "test_outcome": "passed"
-        },
-        {
-          "test_id": "test_scene_actions.SceneActionTests.test_other_actor_no_control_and_revoked_eligibility_are_refused",
-          "status": "failed_attempt",
-          "executions": 2,
-          "actual_backend": "CoreWorld",
-          "profile": "IRGS-CORE-3.3",
-          "capture_origin": "actual_apply",
           "usable": true,
           "test_outcome": "passed"
         },
@@ -49053,7 +49117,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -49095,7 +49159,7 @@
         {
           "path": "IRGS_3_3/runtime/settlement_runtime.py",
           "symbol": "operate_settlement_action",
-          "line": 162,
+          "line": 164,
           "status": "FUNCTION_ENTRY"
         },
         {
@@ -49119,10 +49183,10 @@
         "Reviewed fictional Rise model only: bounded permission, work, provision and household migration; no general economy or calendar scheduler."
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
-      "successful_observations": 185,
-      "rejected_observations": 6,
-      "actual_apply_successes": 90,
-      "direct_observe_successes": 95,
+      "successful_observations": 194,
+      "rejected_observations": 8,
+      "actual_apply_successes": 94,
+      "direct_observe_successes": 100,
       "all_branches_certified": false,
       "reads": [
         "/activities",
@@ -49136,6 +49200,8 @@
         "/actors/founder/current/@exists",
         "/actors/founder/current/location",
         "/actors/founder/current/location/@exists",
+        "/actors/founder/current/location/value",
+        "/actors/founder/current/location/value/@exists",
         "/actors/founder/name",
         "/actors/founder/name/@exists",
         "/actors/oren/@exists",
@@ -49393,6 +49459,8 @@
         "/settlement_receipts/founder/action-8:inspection/@exists",
         "/settlement_receipts/founder/action-9/@exists",
         "/settlement_receipts/founder/action-9:inspection/@exists",
+        "/settlement_receipts/founder/canonical-location-walk/@exists",
+        "/settlement_receipts/founder/canonical-location-walk:inspection/@exists",
         "/settlement_receipts/founder/grant-request/@exists",
         "/settlement_receipts/founder/grant-request:inspection/@exists",
         "/settlement_receipts/founder/one/@exists",
@@ -49563,6 +49631,8 @@
         "/settlement_receipts/founder/action-8:inspection",
         "/settlement_receipts/founder/action-9",
         "/settlement_receipts/founder/action-9:inspection",
+        "/settlement_receipts/founder/canonical-location-walk",
+        "/settlement_receipts/founder/canonical-location-walk:inspection",
         "/settlement_receipts/founder/grant-request",
         "/settlement_receipts/founder/grant-request:inspection",
         "/settlement_receipts/founder/one",
@@ -49709,6 +49779,10 @@
         "/elapsed_time/seconds",
         "/elapsed_time/seconds/@exists",
         "/entity_registry/@exists",
+        "/evidence/@exists",
+        "/evidence/where/@exists",
+        "/evidence/where/recorded_at",
+        "/evidence/where/recorded_at/@exists",
         "/households",
         "/households/@exists",
         "/households/founder-home/@exists",
@@ -49735,14 +49809,22 @@
         "/journal/0/params/action/@exists",
         "/journal/0/params/actor",
         "/journal/0/params/actor/@exists",
+        "/journal/0/params/assertion",
+        "/journal/0/params/assertion/@exists",
         "/journal/0/params/campaign_id",
         "/journal/0/params/campaign_id/@exists",
+        "/journal/0/params/evidence_id",
+        "/journal/0/params/evidence_id/@exists",
         "/journal/0/params/instruction_ref",
         "/journal/0/params/instruction_ref/@exists",
         "/journal/0/params/request_id",
         "/journal/0/params/request_id/@exists",
         "/journal/0/params/source_ref",
         "/journal/0/params/source_ref/@exists",
+        "/journal/0/params/status",
+        "/journal/0/params/status/@exists",
+        "/journal/0/params/subject",
+        "/journal/0/params/subject/@exists",
         "/journal/1",
         "/journal/1/at",
         "/journal/1/at/@exists",
@@ -49758,8 +49840,12 @@
         "/journal/1/params/actor/@exists",
         "/journal/1/params/campaign_id",
         "/journal/1/params/campaign_id/@exists",
+        "/journal/1/params/evidence_id",
+        "/journal/1/params/evidence_id/@exists",
         "/journal/1/params/instruction_ref",
         "/journal/1/params/instruction_ref/@exists",
+        "/journal/1/params/recipient",
+        "/journal/1/params/recipient/@exists",
         "/journal/1/params/request_id",
         "/journal/1/params/request_id/@exists",
         "/journal/1/params/source_ref",
@@ -49987,14 +50073,24 @@
         "/journal/2/params/action/@exists",
         "/journal/2/params/actor",
         "/journal/2/params/actor/@exists",
+        "/journal/2/params/authority_ref",
+        "/journal/2/params/authority_ref/@exists",
         "/journal/2/params/campaign_id",
         "/journal/2/params/campaign_id/@exists",
+        "/journal/2/params/evidence_id",
+        "/journal/2/params/evidence_id/@exists",
+        "/journal/2/params/field",
+        "/journal/2/params/field/@exists",
         "/journal/2/params/instruction_ref",
         "/journal/2/params/instruction_ref/@exists",
         "/journal/2/params/request_id",
         "/journal/2/params/request_id/@exists",
         "/journal/2/params/source_ref",
         "/journal/2/params/source_ref/@exists",
+        "/journal/2/params/subject",
+        "/journal/2/params/subject/@exists",
+        "/journal/2/params/value",
+        "/journal/2/params/value/@exists",
         "/journal/20",
         "/journal/20/at",
         "/journal/20/at/@exists",
@@ -50653,6 +50749,9 @@
         "/knowledge/elin/@exists",
         "/knowledge/founder",
         "/knowledge/founder/@exists",
+        "/knowledge/founder/where/@exists",
+        "/knowledge/founder/where/received_at",
+        "/knowledge/founder/where/received_at/@exists",
         "/knowledge/oren",
         "/knowledge/oren/@exists",
         "/knowledge/rowan",
@@ -50797,6 +50896,12 @@
         "/player_actor_ids/@exists",
         "/processed",
         "/processed/@exists",
+        "/processed/canonical-location-walk",
+        "/processed/canonical-location-walk/@exists",
+        "/processed/confirmed",
+        "/processed/confirmed/@exists",
+        "/processed/heard",
+        "/processed/heard/@exists",
         "/processed/one",
         "/processed/one/@exists",
         "/processed/settlement:action-1",
@@ -50891,6 +50996,8 @@
         "/processed/settlement:grant-request/@exists",
         "/processed/two",
         "/processed/two/@exists",
+        "/processed/where",
+        "/processed/where/@exists",
         "/profile",
         "/profile/@exists",
         "/projects",
@@ -51074,6 +51181,36 @@
       },
       "test_cases": [
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_settlement_rejection_retains_actual_permission_and_worker_reads",
+          "status": "failed_attempt",
+          "executions": 2,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_settlement_rejection_retains_actual_permission_and_worker_reads",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_settlement_rejection_retains_actual_permission_and_worker_reads",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_settlement.SettlementTests.test_actual_dependency_observation_and_conflicts_never_choose_by_identity",
           "status": "success",
           "executions": 2,
@@ -51167,6 +51304,26 @@
           "test_id": "test_settlement.SettlementTests.test_delegated_and_autonomous_work_share_inputs_while_founder_is_elsewhere",
           "status": "success",
           "executions": 7,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions",
+          "status": "success",
+          "executions": 2,
           "actual_backend": "CoreWorld",
           "profile": "IRGS-CORE-3.3",
           "capture_origin": "direct_observe",
@@ -51368,7 +51525,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -51376,16 +51533,16 @@
           "line": 19
         },
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
+          "path": "IRGS_3_3/runtime/core_world.py",
           "symbol": "GENRE_OPS",
-          "line": 2
+          "line": 6
         }
       ],
       "implementation_sources": [
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
-          "symbol": "operate",
-          "line": 5,
+          "path": "IRGS_3_3/runtime/core_world.py",
+          "symbol": "CoreWorld._operate_domain",
+          "line": 224,
           "status": "OPERATION_BRANCH"
         },
         {
@@ -51914,7 +52071,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -51973,9 +52130,9 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 88,
+      "successful_observations": 89,
       "rejected_observations": 0,
-      "actual_apply_successes": 88,
+      "actual_apply_successes": 89,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -51988,6 +52145,7 @@
         "/actors/PC-b78d658cd59b8780499b7fc4/@exists",
         "/actors/PC-c76acee57271cd73885a4b1b/@exists",
         "/actors/PC-cbf0105381b8e451137f37ed/@exists",
+        "/actors/founder/@exists",
         "/actors/owner/@exists",
         "/actors/pc/@exists",
         "/campaign_id",
@@ -52017,6 +52175,9 @@
         "/evidence/setup:scene-map/@exists",
         "/evidence/setup:scene-map/recorded_at",
         "/evidence/setup:scene-map/recorded_at/@exists",
+        "/evidence/where/@exists",
+        "/evidence/where/recorded_at",
+        "/evidence/where/recorded_at/@exists",
         "/knowledge/@exists",
         "/knowledge/PC-166fb37892e348ae61f6097f/@exists",
         "/knowledge/PC-166fb37892e348ae61f6097f/setup:background/@exists",
@@ -52037,6 +52198,8 @@
         "/knowledge/PC-c76acee57271cd73885a4b1b/setup:background/@exists",
         "/knowledge/PC-cbf0105381b8e451137f37ed/@exists",
         "/knowledge/PC-cbf0105381b8e451137f37ed/setup:background/@exists",
+        "/knowledge/founder/@exists",
+        "/knowledge/founder/where/@exists",
         "/knowledge/owner/@exists",
         "/knowledge/owner/established/@exists",
         "/knowledge/pc/@exists",
@@ -52063,6 +52226,7 @@
         "/knowledge/PC-c76acee57271cd73885a4b1b/setup:background",
         "/knowledge/PC-cbf0105381b8e451137f37ed",
         "/knowledge/PC-cbf0105381b8e451137f37ed/setup:background",
+        "/knowledge/founder/where",
         "/knowledge/owner",
         "/knowledge/owner/established",
         "/knowledge/pc",
@@ -52119,6 +52283,15 @@
         "/actors/delegate/@exists",
         "/actors/delegate/id",
         "/actors/delegate/id/@exists",
+        "/actors/elin/@exists",
+        "/actors/elin/id",
+        "/actors/elin/id/@exists",
+        "/actors/founder/@exists",
+        "/actors/founder/id",
+        "/actors/founder/id/@exists",
+        "/actors/oren/@exists",
+        "/actors/oren/id",
+        "/actors/oren/id/@exists",
         "/actors/owner/@exists",
         "/actors/owner/id",
         "/actors/owner/id/@exists",
@@ -52131,12 +52304,22 @@
         "/actors/worker/@exists",
         "/actors/worker/id",
         "/actors/worker/id/@exists",
+        "/assets",
+        "/assets/@exists",
+        "/binding/@exists",
+        "/binding/campaign_profile",
+        "/binding/campaign_profile/@exists",
         "/campaign_id",
         "/campaign_id/@exists",
         "/capacities",
         "/capacities/@exists",
         "/clock",
         "/clock/@exists",
+        "/elapsed_time/@exists",
+        "/elapsed_time/axis",
+        "/elapsed_time/axis/@exists",
+        "/elapsed_time/seconds",
+        "/elapsed_time/seconds/@exists",
         "/entity_registry",
         "/entity_registry/@exists",
         "/entity_registry/as_of",
@@ -53720,6 +53903,21 @@
         "/evidence/setup:scene-map/@exists",
         "/evidence/setup:scene-map/recorded_at",
         "/evidence/setup:scene-map/recorded_at/@exists",
+        "/evidence/where/@exists",
+        "/evidence/where/recorded_at",
+        "/evidence/where/recorded_at/@exists",
+        "/households",
+        "/households/@exists",
+        "/households/founder-home/@exists",
+        "/households/founder-home/members",
+        "/households/founder-home/members/@exists",
+        "/households/founder-home/seed_reserve",
+        "/households/founder-home/seed_reserve/@exists",
+        "/households/oren-home/@exists",
+        "/households/oren-home/members",
+        "/households/oren-home/members/@exists",
+        "/households/oren-home/seed_reserve",
+        "/households/oren-home/seed_reserve/@exists",
         "/journal",
         "/journal/0",
         "/journal/0/at",
@@ -53732,8 +53930,12 @@
         "/journal/0/params/@exists",
         "/journal/0/params/actor_id",
         "/journal/0/params/actor_id/@exists",
+        "/journal/0/params/assertion",
+        "/journal/0/params/assertion/@exists",
         "/journal/0/params/campaign_id",
         "/journal/0/params/campaign_id/@exists",
+        "/journal/0/params/evidence_id",
+        "/journal/0/params/evidence_id/@exists",
         "/journal/0/params/instruction_ref",
         "/journal/0/params/instruction_ref/@exists",
         "/journal/0/params/name",
@@ -53744,6 +53946,10 @@
         "/journal/0/params/source_ref/@exists",
         "/journal/0/params/species",
         "/journal/0/params/species/@exists",
+        "/journal/0/params/status",
+        "/journal/0/params/status/@exists",
+        "/journal/0/params/subject",
+        "/journal/0/params/subject/@exists",
         "/journal/1",
         "/journal/1/at",
         "/journal/1/at/@exists",
@@ -53779,6 +53985,8 @@
         "/journal/1/params/name/@exists",
         "/journal/1/params/reason",
         "/journal/1/params/reason/@exists",
+        "/journal/1/params/recipient",
+        "/journal/1/params/recipient/@exists",
         "/journal/1/params/scenario_id",
         "/journal/1/params/scenario_id/@exists",
         "/journal/1/params/source_ref",
@@ -54108,6 +54316,15 @@
         "/knowledge/PC-cbf0105381b8e451137f37ed/setup:background/@exists",
         "/knowledge/PC-cbf0105381b8e451137f37ed/setup:background/received_at",
         "/knowledge/PC-cbf0105381b8e451137f37ed/setup:background/received_at/@exists",
+        "/knowledge/elin",
+        "/knowledge/elin/@exists",
+        "/knowledge/founder",
+        "/knowledge/founder/@exists",
+        "/knowledge/founder/where/@exists",
+        "/knowledge/founder/where/received_at",
+        "/knowledge/founder/where/received_at/@exists",
+        "/knowledge/oren",
+        "/knowledge/oren/@exists",
         "/knowledge/owner",
         "/knowledge/owner/@exists",
         "/knowledge/owner/established/@exists",
@@ -54121,11 +54338,18 @@
         "/knowledge/pc/setup:scene-map/@exists",
         "/knowledge/pc/setup:scene-map/received_at",
         "/knowledge/pc/setup:scene-map/received_at/@exists",
+        "/material_flows",
         "/material_flows/@exists",
+        "/migrations",
+        "/migrations/@exists",
         "/opening_stock",
         "/opening_stock/@exists",
+        "/opening_stock/axe",
+        "/opening_stock/axe/@exists",
         "/opening_stock/grain",
         "/opening_stock/grain/@exists",
+        "/opening_stock/timber",
+        "/opening_stock/timber/@exists",
         "/player_actor_ids",
         "/player_actor_ids/@exists",
         "/processed",
@@ -54134,6 +54358,8 @@
         "/processed/actor/@exists",
         "/processed/e",
         "/processed/e/@exists",
+        "/processed/heard",
+        "/processed/heard/@exists",
         "/processed/map",
         "/processed/map/@exists",
         "/processed/map-received",
@@ -54188,8 +54414,25 @@
         "/processed/setup:scene:map-receipt/@exists",
         "/processed/stock",
         "/processed/stock/@exists",
+        "/processed/where",
+        "/processed/where/@exists",
         "/profile",
         "/profile/@exists",
+        "/projects",
+        "/projects/@exists",
+        "/projects/oren-repair/@exists",
+        "/projects/oren-repair/duration",
+        "/projects/oren-repair/duration/@exists",
+        "/projects/oren-repair/household",
+        "/projects/oren-repair/household/@exists",
+        "/projects/oren-repair/status",
+        "/projects/oren-repair/status/@exists",
+        "/projects/oren-repair/timber",
+        "/projects/oren-repair/timber/@exists",
+        "/projects/oren-repair/worked",
+        "/projects/oren-repair/worked/@exists",
+        "/projects/oren-repair/worker",
+        "/projects/oren-repair/worker/@exists",
         "/r9/@exists",
         "/registry/@exists",
         "/registry/characters",
@@ -54197,8 +54440,34 @@
         "/registry/withdrawn_duplicate_ids",
         "/registry/withdrawn_duplicate_ids/@exists",
         "/settlement_model/@exists",
+        "/settlements",
+        "/settlements/@exists",
+        "/stock_accounts",
+        "/stock_accounts/@exists",
+        "/stock_accounts/founder-home/@exists",
+        "/stock_accounts/founder-home/household",
+        "/stock_accounts/founder-home/household/@exists",
+        "/stock_accounts/oren-home/@exists",
+        "/stock_accounts/oren-home/household",
+        "/stock_accounts/oren-home/household/@exists",
         "/stocks",
         "/stocks/@exists",
+        "/stocks/founder-home",
+        "/stocks/founder-home/@exists",
+        "/stocks/founder-home/axe",
+        "/stocks/founder-home/axe/@exists",
+        "/stocks/founder-home/grain",
+        "/stocks/founder-home/grain/@exists",
+        "/stocks/founder-home/timber",
+        "/stocks/founder-home/timber/@exists",
+        "/stocks/oren-home",
+        "/stocks/oren-home/@exists",
+        "/stocks/oren-home/axe",
+        "/stocks/oren-home/axe/@exists",
+        "/stocks/oren-home/grain",
+        "/stocks/oren-home/grain/@exists",
+        "/stocks/oren-home/timber",
+        "/stocks/oren-home/timber/@exists",
         "/stocks/store",
         "/stocks/store/@exists",
         "/stocks/store/grain",
@@ -54221,15 +54490,17 @@
         "validation": {
           "owners": [
             "K-ACTOR",
+            "K-ASSET",
             "K-INFO",
             "K-NET",
             "K-ORG",
+            "K-POP",
             "K-STOCK",
             "K-TIME",
             "K-WORK"
           ],
-          "unmapped_path_count": 972,
-          "metadata_path_count": 23,
+          "unmapped_path_count": 986,
+          "metadata_path_count": 26,
           "note": "All validation paths remain in validation_reads; detailed namespace labels can be reproduced with owner_classification."
         }
       },
@@ -54415,6 +54686,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_starting_selection.StartingSelectionTests.test_all_generic_profiles_can_create_one_actual_player_without_free_resources",
           "status": "success",
           "executions": 6,
@@ -54449,7 +54730,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -54508,9 +54789,9 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 38,
+      "successful_observations": 42,
       "rejected_observations": 0,
-      "actual_apply_successes": 38,
+      "actual_apply_successes": 42,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -55222,6 +55503,16 @@
       },
       "test_cases": [
         {
+          "test_id": "test_core_domains.CoreDomainTests.test_creator_compatibility_import_forwards_to_the_same_core_routine",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_player_actions.PlayerEquipmentActionTests.test_available_choices_do_not_reveal_stock_or_hidden_authority_validity",
           "status": "success",
           "executions": 1,
@@ -55482,6 +55773,36 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_instrumentation_refusal_does_not_manufacture_a_failed_action_certificate",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_suite.SuiteTests.test_legacy_names_and_canonical_operations_have_same_domain_effects",
           "status": "success",
           "executions": 1,
@@ -55516,7 +55837,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -56613,7 +56934,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -57304,7 +57625,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -57761,7 +58082,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -58348,7 +58669,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -64512,7 +64833,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -68751,7 +69072,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -68810,9 +69131,9 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 97,
+      "successful_observations": 98,
       "rejected_observations": 0,
-      "actual_apply_successes": 97,
+      "actual_apply_successes": 98,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -68825,6 +69146,7 @@
         "/actors/PC-b78d658cd59b8780499b7fc4/@exists",
         "/actors/PC-c76acee57271cd73885a4b1b/@exists",
         "/actors/PC-cbf0105381b8e451137f37ed/@exists",
+        "/actors/founder/@exists",
         "/actors/pc/@exists",
         "/actors/worker/@exists",
         "/campaign_id",
@@ -68841,7 +69163,8 @@
         "/evidence/setup:scene-activity/@exists",
         "/evidence/setup:scene-dispatch/@exists",
         "/evidence/setup:scene-location/@exists",
-        "/evidence/setup:scene-map/@exists"
+        "/evidence/setup:scene-map/@exists",
+        "/evidence/where/@exists"
       ],
       "writes": [
         "/evidence/e",
@@ -68855,7 +69178,8 @@
         "/evidence/setup:scene-activity",
         "/evidence/setup:scene-dispatch",
         "/evidence/setup:scene-location",
-        "/evidence/setup:scene-map"
+        "/evidence/setup:scene-map",
+        "/evidence/where"
       ],
       "failed_attempt_reads": [],
       "failed_attempt_writes": [],
@@ -68907,6 +69231,15 @@
         "/actors/delegate/@exists",
         "/actors/delegate/id",
         "/actors/delegate/id/@exists",
+        "/actors/elin/@exists",
+        "/actors/elin/id",
+        "/actors/elin/id/@exists",
+        "/actors/founder/@exists",
+        "/actors/founder/id",
+        "/actors/founder/id/@exists",
+        "/actors/oren/@exists",
+        "/actors/oren/id",
+        "/actors/oren/id/@exists",
         "/actors/owner/@exists",
         "/actors/owner/id",
         "/actors/owner/id/@exists",
@@ -68919,12 +69252,22 @@
         "/actors/worker/@exists",
         "/actors/worker/id",
         "/actors/worker/id/@exists",
+        "/assets",
+        "/assets/@exists",
+        "/binding/@exists",
+        "/binding/campaign_profile",
+        "/binding/campaign_profile/@exists",
         "/campaign_id",
         "/campaign_id/@exists",
         "/capacities",
         "/capacities/@exists",
         "/clock",
         "/clock/@exists",
+        "/elapsed_time/@exists",
+        "/elapsed_time/axis",
+        "/elapsed_time/axis/@exists",
+        "/elapsed_time/seconds",
+        "/elapsed_time/seconds/@exists",
         "/entity_registry",
         "/entity_registry/@exists",
         "/entity_registry/as_of",
@@ -70508,6 +70851,18 @@
         "/evidence/setup:scene-map/@exists",
         "/evidence/setup:scene-map/recorded_at",
         "/evidence/setup:scene-map/recorded_at/@exists",
+        "/households",
+        "/households/@exists",
+        "/households/founder-home/@exists",
+        "/households/founder-home/members",
+        "/households/founder-home/members/@exists",
+        "/households/founder-home/seed_reserve",
+        "/households/founder-home/seed_reserve/@exists",
+        "/households/oren-home/@exists",
+        "/households/oren-home/members",
+        "/households/oren-home/members/@exists",
+        "/households/oren-home/seed_reserve",
+        "/households/oren-home/seed_reserve/@exists",
         "/journal",
         "/journal/0",
         "/journal/0/at",
@@ -70520,8 +70875,12 @@
         "/journal/0/params/@exists",
         "/journal/0/params/actor_id",
         "/journal/0/params/actor_id/@exists",
+        "/journal/0/params/assertion",
+        "/journal/0/params/assertion/@exists",
         "/journal/0/params/campaign_id",
         "/journal/0/params/campaign_id/@exists",
+        "/journal/0/params/evidence_id",
+        "/journal/0/params/evidence_id/@exists",
         "/journal/0/params/instruction_ref",
         "/journal/0/params/instruction_ref/@exists",
         "/journal/0/params/name",
@@ -70532,6 +70891,10 @@
         "/journal/0/params/source_ref/@exists",
         "/journal/0/params/species",
         "/journal/0/params/species/@exists",
+        "/journal/0/params/status",
+        "/journal/0/params/status/@exists",
+        "/journal/0/params/subject",
+        "/journal/0/params/subject/@exists",
         "/journal/1",
         "/journal/1/at",
         "/journal/1/at/@exists",
@@ -70897,6 +71260,12 @@
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/@exists",
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/received_at",
         "/knowledge/PC-b78d658cd59b8780499b7fc4/setup:scene-map/received_at/@exists",
+        "/knowledge/elin",
+        "/knowledge/elin/@exists",
+        "/knowledge/founder",
+        "/knowledge/founder/@exists",
+        "/knowledge/oren",
+        "/knowledge/oren/@exists",
         "/knowledge/pc",
         "/knowledge/pc/@exists",
         "/knowledge/pc/scene:execute:enter-passage/@exists",
@@ -70917,13 +71286,20 @@
         "/knowledge/pc/setup:scene-map/@exists",
         "/knowledge/pc/setup:scene-map/received_at",
         "/knowledge/pc/setup:scene-map/received_at/@exists",
+        "/material_flows",
         "/material_flows/@exists",
+        "/migrations",
+        "/migrations/@exists",
         "/opening_stock",
         "/opening_stock/@exists",
+        "/opening_stock/axe",
+        "/opening_stock/axe/@exists",
         "/opening_stock/grain",
         "/opening_stock/grain/@exists",
         "/opening_stock/sealed_dispatch",
         "/opening_stock/sealed_dispatch/@exists",
+        "/opening_stock/timber",
+        "/opening_stock/timber/@exists",
         "/player_actor_ids",
         "/player_actor_ids/@exists",
         "/processed",
@@ -70994,8 +71370,25 @@
         "/processed/stock/@exists",
         "/processed/tray",
         "/processed/tray/@exists",
+        "/processed/where",
+        "/processed/where/@exists",
         "/profile",
         "/profile/@exists",
+        "/projects",
+        "/projects/@exists",
+        "/projects/oren-repair/@exists",
+        "/projects/oren-repair/duration",
+        "/projects/oren-repair/duration/@exists",
+        "/projects/oren-repair/household",
+        "/projects/oren-repair/household/@exists",
+        "/projects/oren-repair/status",
+        "/projects/oren-repair/status/@exists",
+        "/projects/oren-repair/timber",
+        "/projects/oren-repair/timber/@exists",
+        "/projects/oren-repair/worked",
+        "/projects/oren-repair/worked/@exists",
+        "/projects/oren-repair/worker",
+        "/projects/oren-repair/worker/@exists",
         "/r9/@exists",
         "/registry/@exists",
         "/registry/characters",
@@ -71003,12 +71396,38 @@
         "/registry/withdrawn_duplicate_ids",
         "/registry/withdrawn_duplicate_ids/@exists",
         "/settlement_model/@exists",
+        "/settlements",
+        "/settlements/@exists",
+        "/stock_accounts",
+        "/stock_accounts/@exists",
+        "/stock_accounts/founder-home/@exists",
+        "/stock_accounts/founder-home/household",
+        "/stock_accounts/founder-home/household/@exists",
+        "/stock_accounts/oren-home/@exists",
+        "/stock_accounts/oren-home/household",
+        "/stock_accounts/oren-home/household/@exists",
         "/stocks",
         "/stocks/@exists",
         "/stocks/clerk-tray",
         "/stocks/clerk-tray/@exists",
         "/stocks/clerk-tray/sealed_dispatch",
         "/stocks/clerk-tray/sealed_dispatch/@exists",
+        "/stocks/founder-home",
+        "/stocks/founder-home/@exists",
+        "/stocks/founder-home/axe",
+        "/stocks/founder-home/axe/@exists",
+        "/stocks/founder-home/grain",
+        "/stocks/founder-home/grain/@exists",
+        "/stocks/founder-home/timber",
+        "/stocks/founder-home/timber/@exists",
+        "/stocks/oren-home",
+        "/stocks/oren-home/@exists",
+        "/stocks/oren-home/axe",
+        "/stocks/oren-home/axe/@exists",
+        "/stocks/oren-home/grain",
+        "/stocks/oren-home/grain/@exists",
+        "/stocks/oren-home/timber",
+        "/stocks/oren-home/timber/@exists",
         "/stocks/pc",
         "/stocks/pc/@exists",
         "/stocks/pc/sealed_dispatch",
@@ -71035,15 +71454,17 @@
         "validation": {
           "owners": [
             "K-ACTOR",
+            "K-ASSET",
             "K-INFO",
             "K-NET",
             "K-ORG",
+            "K-POP",
             "K-STOCK",
             "K-TIME",
             "K-WORK"
           ],
-          "unmapped_path_count": 972,
-          "metadata_path_count": 23,
+          "unmapped_path_count": 986,
+          "metadata_path_count": 26,
           "note": "All validation paths remain in validation_reads; detailed namespace labels can be reproduced with owner_classification."
         }
       },
@@ -71229,6 +71650,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_starting_selection.StartingSelectionTests.test_all_generic_profiles_can_create_one_actual_player_without_free_resources",
           "status": "success",
           "executions": 6,
@@ -71283,7 +71714,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -71849,7 +72280,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -74517,7 +74948,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -74576,9 +75007,9 @@
         "Implementation references are not complete transitive call or branch coverage."
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
-      "successful_observations": 267,
+      "successful_observations": 279,
       "rejected_observations": 1,
-      "actual_apply_successes": 266,
+      "actual_apply_successes": 278,
       "direct_observe_successes": 1,
       "all_branches_certified": false,
       "reads": [
@@ -77023,6 +77454,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_core_domains.CoreDomainTests.test_creator_compatibility_import_forwards_to_the_same_core_routine",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_player_actions.PlayerEquipmentActionTests.test_available_choices_do_not_reveal_stock_or_hidden_authority_validity",
           "status": "success",
           "executions": 3,
@@ -77284,6 +77725,36 @@
         },
         {
           "test_id": "test_r9_collections.CollectionObservationTests.test_successful_equipment_list_reads_do_not_reserve_authority_as_write",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_instrumentation_refusal_does_not_manufacture_a_failed_action_certificate",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup",
+          "status": "success",
+          "executions": 3,
+          "actual_backend": "CoreWorld",
+          "profile": "IRGS-CORE-3.3",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read",
           "status": "success",
           "executions": 3,
           "actual_backend": "CoreWorld",
@@ -77737,7 +78208,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -82071,7 +82542,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -82079,16 +82550,16 @@
           "line": 19
         },
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
+          "path": "IRGS_3_3/runtime/core_world.py",
           "symbol": "GENRE_OPS",
-          "line": 2
+          "line": 6
         }
       ],
       "implementation_sources": [
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
-          "symbol": "operate",
-          "line": 33,
+          "path": "IRGS_3_3/runtime/core_world.py",
+          "symbol": "CoreWorld._operate_domain",
+          "line": 252,
           "status": "OPERATION_BRANCH"
         },
         {
@@ -82543,7 +83014,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -82551,16 +83022,16 @@
           "line": 19
         },
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
+          "path": "IRGS_3_3/runtime/core_world.py",
           "symbol": "GENRE_OPS",
-          "line": 2
+          "line": 6
         }
       ],
       "implementation_sources": [
         {
-          "path": "IRGS_3_3/runtime/genre_receivers.py",
-          "symbol": "operate",
-          "line": 23,
+          "path": "IRGS_3_3/runtime/core_world.py",
+          "symbol": "CoreWorld._operate_domain",
+          "line": 242,
           "status": "OPERATION_BRANCH"
         },
         {
@@ -83093,7 +83564,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -89316,7 +89787,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -90662,7 +91133,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -91370,7 +91841,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/core_world.py",
@@ -97010,7 +97481,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -97574,7 +98045,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -100417,7 +100888,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -100511,7 +100982,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -100582,7 +101053,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -102738,7 +103209,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -102809,7 +103280,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -102987,7 +103458,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -103314,7 +103785,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -104156,7 +104627,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -104227,7 +104698,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -107102,7 +107573,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -107247,7 +107718,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -110601,7 +111072,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -110672,7 +111143,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -110916,7 +111387,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -111822,7 +112293,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -111893,7 +112364,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -111964,7 +112435,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -112035,7 +112506,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -112184,7 +112655,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -112774,7 +113245,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -112865,7 +113336,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -113613,7 +114084,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -113684,7 +114155,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -113767,7 +114238,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -114648,7 +115119,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -114742,7 +115213,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -116628,7 +117099,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -116699,7 +117170,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         }
       ],
       "implementation_sources": [
@@ -117998,7 +118469,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -118069,7 +118540,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -120774,7 +121245,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -120845,7 +121316,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -121045,7 +121516,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -121116,7 +121587,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -122134,7 +122605,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -122290,7 +122761,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -122384,7 +122855,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -125840,7 +126311,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -126396,7 +126867,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -126655,7 +127126,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -126804,7 +127275,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -126975,7 +127446,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -130368,7 +130839,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -131318,7 +131789,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -131401,7 +131872,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -131432,7 +131903,7 @@
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
       "successful_observations": 61,
-      "rejected_observations": 1,
+      "rejected_observations": 2,
       "actual_apply_successes": 33,
       "direct_observe_successes": 28,
       "all_branches_certified": false,
@@ -132018,6 +132489,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_economic_rejection_uses_the_selected_backend",
+          "status": "failed_attempt",
+          "executions": 1,
+          "actual_backend": "R7World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_selective_and_scale.Round4Tests.test_101_permutation_independent_components_equivalent_resources",
           "status": "observation_refused",
           "executions": 2,
@@ -132109,7 +132590,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -132180,7 +132661,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -132259,7 +132740,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -132330,7 +132811,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -132401,7 +132882,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -132479,7 +132960,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -132550,7 +133031,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -132628,7 +133109,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -132699,7 +133180,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -132729,9 +133210,9 @@
         "R9 selects the observation backend from saved state shape, not caller class alone."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 12,
+      "successful_observations": 13,
       "rejected_observations": 0,
-      "actual_apply_successes": 12,
+      "actual_apply_successes": 13,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -133146,6 +133627,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "ReceiverWorld",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_release_integrity.PayloadOwnershipTests.test_native_submission_detaches_outer_payload",
           "status": "success",
           "executions": 1,
@@ -133170,7 +133661,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -133590,7 +134081,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -133661,7 +134152,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -133739,7 +134230,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -133818,7 +134309,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -133889,7 +134380,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -133967,7 +134458,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -133997,9 +134488,9 @@
         "R9 selects the observation backend from saved state shape, not caller class alone."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 12,
+      "successful_observations": 13,
       "rejected_observations": 0,
-      "actual_apply_successes": 12,
+      "actual_apply_successes": 13,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -134447,6 +134938,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "ReceiverWorld",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_release_integrity.PayloadOwnershipTests.test_native_submission_detaches_outer_payload",
           "status": "success",
           "executions": 1,
@@ -134471,7 +134972,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -134542,7 +135043,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -134613,7 +135114,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -135038,7 +135539,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -135109,7 +135610,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -135180,7 +135681,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -135259,7 +135760,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -135330,7 +135831,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -135360,9 +135861,9 @@
         "R9 selects the observation backend from saved state shape, not caller class alone."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 12,
+      "successful_observations": 13,
       "rejected_observations": 0,
-      "actual_apply_successes": 12,
+      "actual_apply_successes": 13,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -135807,6 +136308,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "ReceiverWorld",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_release_integrity.PayloadOwnershipTests.test_native_submission_detaches_outer_payload",
           "status": "success",
           "executions": 1,
@@ -135831,7 +136342,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -135902,7 +136413,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -135973,7 +136484,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r9_adapters.py",
@@ -136577,7 +137088,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -136648,7 +137159,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -136726,7 +137237,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -136797,7 +137308,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         }
       ],
       "implementation_sources": [
@@ -136870,7 +137381,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -136941,7 +137452,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -137019,7 +137530,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -137049,9 +137560,9 @@
         "R9 selects the observation backend from saved state shape, not caller class alone."
       ],
       "coverage_status": "OBSERVED_SUCCESS_ONLY",
-      "successful_observations": 12,
+      "successful_observations": 13,
       "rejected_observations": 0,
-      "actual_apply_successes": 12,
+      "actual_apply_successes": 13,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
       "reads": [
@@ -137512,6 +138023,16 @@
           "test_outcome": "passed"
         },
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "ReceiverWorld",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_release_integrity.PayloadOwnershipTests.test_native_submission_detaches_outer_payload",
           "status": "success",
           "executions": 1,
@@ -137536,7 +138057,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -137614,7 +138135,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -137685,7 +138206,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -137756,7 +138277,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -137834,7 +138355,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -137905,7 +138426,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -137976,7 +138497,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r9_adapters.py",
@@ -138422,7 +138943,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r9_adapters.py",
@@ -138454,7 +138975,7 @@
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
       "successful_observations": 5,
-      "rejected_observations": 1,
+      "rejected_observations": 2,
       "actual_apply_successes": 1,
       "direct_observe_successes": 4,
       "all_branches_certified": false,
@@ -139015,6 +139536,16 @@
           "capture_origin": "direct_observe",
           "usable": true,
           "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read",
+          "status": "failed_attempt",
+          "executions": 1,
+          "actual_backend": "ReceiverWorld",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
         }
       ],
       "observation_refusals": 0,
@@ -139031,7 +139562,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r7_frontier.py",
@@ -139102,7 +139633,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -139173,7 +139704,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -139244,7 +139775,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -139315,7 +139846,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -139393,7 +139924,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r6_work.py",
@@ -139464,7 +139995,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -139535,7 +140066,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -139606,7 +140137,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -139684,7 +140215,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -139940,7 +140471,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -140147,7 +140678,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -140225,7 +140756,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -144989,7 +145520,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -145067,7 +145598,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -150222,7 +150753,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -150536,7 +151067,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -150734,7 +151265,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -150765,7 +151296,7 @@
       ],
       "coverage_status": "OBSERVED_FAILURE_ONLY",
       "successful_observations": 0,
-      "rejected_observations": 1,
+      "rejected_observations": 2,
       "actual_apply_successes": 0,
       "direct_observe_successes": 0,
       "all_branches_certified": false,
@@ -150802,6 +151333,16 @@
       },
       "test_cases": [
         {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_shared_worker_rejection_keeps_actual_capacity_reads",
+          "status": "failed_attempt",
+          "executions": 1,
+          "actual_backend": "World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
           "test_id": "test_unification.UnificationTests.test_08_double_booking_rejected_without_changing_membership",
           "status": "failed_attempt",
           "executions": 1,
@@ -150826,7 +151367,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -150904,7 +151445,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -150982,7 +151523,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -151236,7 +151777,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -151314,7 +151855,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -151629,7 +152170,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -157344,7 +157885,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -157415,7 +157956,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -157511,7 +158052,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -157589,7 +158130,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -163595,7 +164136,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -163783,7 +164324,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -164005,7 +164546,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -164227,7 +164768,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -164305,7 +164846,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -164488,7 +165029,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -164681,7 +165222,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -164759,7 +165300,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -164965,7 +165506,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -165043,7 +165584,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -165258,7 +165799,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -165336,7 +165877,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -165528,7 +166069,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -165690,7 +166231,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -165932,7 +166473,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -166010,7 +166551,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -166247,7 +166788,7 @@
         {
           "path": "IRGS_3_3/runtime/r9_runtime.py",
           "symbol": "SUPPORTED",
-          "line": 16
+          "line": 15
         },
         {
           "path": "IRGS_3_3/runtime/r8_dependencies.py",
@@ -166277,10 +166818,10 @@
         "R9 selects the observation backend from saved state shape, not caller class alone."
       ],
       "coverage_status": "OBSERVED_SUCCESS_AND_FAILURE",
-      "successful_observations": 6,
-      "rejected_observations": 2,
-      "actual_apply_successes": 6,
-      "direct_observe_successes": 0,
+      "successful_observations": 9,
+      "rejected_observations": 5,
+      "actual_apply_successes": 7,
+      "direct_observe_successes": 2,
       "all_branches_certified": false,
       "reads": [
         "/cash/@exists",
@@ -166298,11 +166839,14 @@
       ],
       "failed_attempt_reads": [
         "/cash/@exists",
+        "/cash/missing-account/@exists",
         "/cash/treasury",
         "/cash/treasury/@exists"
       ],
       "failed_attempt_writes": [],
-      "rolled_back_attempted_writes": [],
+      "rolled_back_attempted_writes": [
+        "/cash/treasury"
+      ],
       "validation_reads": [
         "/actors",
         "/actors/@exists",
@@ -171300,8 +171844,12 @@
         "/processed/M6/@exists",
         "/processed/cash",
         "/processed/cash/@exists",
+        "/processed/failed",
+        "/processed/failed/@exists",
         "/processed/pay",
         "/processed/pay/@exists",
+        "/processed/peer",
+        "/processed/peer/@exists",
         "/wage_due",
         "/wage_due/@exists"
       ],
@@ -171329,6 +171877,46 @@
         }
       },
       "test_cases": [
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_freshness_guard_refuses_an_already_processed_event",
+          "status": "success",
+          "executions": 1,
+          "actual_backend": "World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "actual_apply",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_frontier_retains_rejection_and_its_conflict_for_both_input_orders",
+          "status": "failed_attempt",
+          "executions": 2,
+          "actual_backend": "World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_frontier_retains_rejection_and_its_conflict_for_both_input_orders",
+          "status": "success",
+          "executions": 2,
+          "actual_backend": "World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
+        {
+          "test_id": "test_rejected_dependencies.RejectedDependencyTests.test_reference_late_rejection_retains_reads_and_rolled_back_attempts",
+          "status": "failed_attempt",
+          "executions": 1,
+          "actual_backend": "World",
+          "profile": "legacy_research_fixture",
+          "capture_origin": "direct_observe",
+          "usable": true,
+          "test_outcome": "passed"
+        },
         {
           "test_id": "test_unification.ConcurrencyRegression.test_33_same_time_independent_funded_transfers_both_commit",
           "status": "success",

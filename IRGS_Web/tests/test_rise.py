@@ -55,6 +55,40 @@ class RiseTests(unittest.TestCase):
     def camp(self, saved):
         self.act(saved, 'walk_clearing'); self.act(saved, 'found')
 
+    def creator_event(self, saved, operation, **parameters):
+        result = self.call('/api/event', {'id': saved['id'], 'revision': saved['revision'],
+            'mode': 'creator', 'op': operation, 'params': {'source_ref': 'synthetic Core/Rise regression', **parameters}})
+        saved['revision'] = result['revision']
+        return result
+
+    def test_new_material_remains_inspectable_with_explicit_unknown_unit(self):
+        saved = self.begin()
+        self.creator_event(saved, 'establish_stock', location='founder-home', material='water',
+            quantity=2, inventory_evidence_ref='synthetic measured inventory')
+        before = self.store.path(saved['id']).read_bytes()
+        inventory = self.call('/api/playthrough/'+saved['id'])['settlement']['inventory']
+        water = next(item for item in inventory if item['material'] == 'water')
+        self.assertEqual(water['quantity'], 2)
+        self.assertIsNone(water['unit'])
+        self.assertEqual(water['unit_status'], 'unconfigured')
+        self.assertTrue(next(item for item in inventory if item['material'] == 'grain')['unit'])
+        self.assertEqual(self.store.path(saved['id']).read_bytes(), before)
+        self.act(saved, 'inspect')
+
+    def test_core_location_confirmation_keeps_inventory_and_movement_usable(self):
+        saved = self.begin()
+        self.creator_event(saved, 'record_evidence', evidence_id='where', subject='founder',
+            status='established', assertion='Founder is at commons.')
+        self.creator_event(saved, 'receive_evidence', evidence_id='where', recipient='founder')
+        self.creator_event(saved, 'confirm_character_field', subject='founder', field='location',
+            value='commons', evidence_id='where', authority_ref='synthetic observation',
+            instruction_ref='explicit synthetic confirmation')
+        projected = self.call('/api/playthrough/'+saved['id'])['settlement']
+        self.assertEqual(projected['location'], 'commons')
+        self.assertIsNotNone(projected['inventory'])
+        self.act(saved, 'walk_clearing')
+        self.assertEqual(self.call('/api/playthrough/'+saved['id'])['settlement']['location'], 'clearing')
+
     def test_discovery_and_review_are_read_only_and_session_guarded(self):
         families = self.call('/api/rise/templates')['templates']
         self.assertEqual(len(families), 9)

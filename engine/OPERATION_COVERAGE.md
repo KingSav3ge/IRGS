@@ -19,24 +19,24 @@ The machine-readable [register](qualification/operation_register.json) records s
 | CoreWorld | `ast_set_scene` | OBSERVED_SUCCESS_ONLY | 2 | 0 |
 | CoreWorld | `ast_transfer_stock` | OBSERVED_SUCCESS_AND_FAILURE | 6 | 1 |
 | CoreWorld | `commit_activity` | OBSERVED_SUCCESS_AND_FAILURE | 6 | 1 |
-| CoreWorld | `confirm_character_field` | OBSERVED_SUCCESS_ONLY | 39 | 0 |
-| CoreWorld | `establish_stock` | OBSERVED_SUCCESS_ONLY | 100 | 0 |
-| CoreWorld | `execute_player_equipment_issue` | OBSERVED_SUCCESS_AND_FAILURE | 38 | 34 |
-| CoreWorld | `execute_player_scene_action` | OBSERVED_SUCCESS_AND_FAILURE | 52 | 32 |
-| CoreWorld | `execute_settlement_action` | OBSERVED_SUCCESS_AND_FAILURE | 185 | 6 |
+| CoreWorld | `confirm_character_field` | OBSERVED_SUCCESS_ONLY | 40 | 0 |
+| CoreWorld | `establish_stock` | OBSERVED_SUCCESS_ONLY | 104 | 0 |
+| CoreWorld | `execute_player_equipment_issue` | OBSERVED_SUCCESS_AND_FAILURE | 38 | 19 |
+| CoreWorld | `execute_player_scene_action` | OBSERVED_SUCCESS_AND_FAILURE | 52 | 16 |
+| CoreWorld | `execute_settlement_action` | OBSERVED_SUCCESS_AND_FAILURE | 194 | 8 |
 | CoreWorld | `military_issue_equipment` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
-| CoreWorld | `receive_evidence` | OBSERVED_SUCCESS_ONLY | 88 | 0 |
-| CoreWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 38 | 0 |
+| CoreWorld | `receive_evidence` | OBSERVED_SUCCESS_ONLY | 89 | 0 |
+| CoreWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 42 | 0 |
 | CoreWorld | `receive_response_prompt` | OBSERVED_SUCCESS_AND_FAILURE | 15 | 13 |
 | CoreWorld | `record_capacity` | OBSERVED_SUCCESS_ONLY | 4 | 0 |
 | CoreWorld | `record_delegation` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
 | CoreWorld | `record_design` | OBSERVED_SUCCESS_AND_FAILURE | 3 | 1 |
 | CoreWorld | `record_entity_eligibility` | OBSERVED_SUCCESS_ONLY | 43 | 0 |
 | CoreWorld | `record_entity_relation` | OBSERVED_SUCCESS_ONLY | 8 | 0 |
-| CoreWorld | `record_evidence` | OBSERVED_SUCCESS_ONLY | 97 | 0 |
+| CoreWorld | `record_evidence` | OBSERVED_SUCCESS_ONLY | 98 | 0 |
 | CoreWorld | `record_obligation` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
 | CoreWorld | `record_player_action` | OBSERVED_SUCCESS_ONLY | 2 | 0 |
-| CoreWorld | `register_actor` | OBSERVED_SUCCESS_AND_FAILURE | 267 | 1 |
+| CoreWorld | `register_actor` | OBSERVED_SUCCESS_AND_FAILURE | 279 | 1 |
 | CoreWorld | `register_entity` | OBSERVED_SUCCESS_ONLY | 17 | 0 |
 | CoreWorld | `revoke_delegation` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
 | CoreWorld | `roman_begin_delegated_activity` | OBSERVED_SUCCESS_AND_FAILURE | 3 | 1 |
@@ -90,7 +90,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | R7World | `start_job` | OBSERVED_SUCCESS_AND_FAILURE | 47 | 1 |
 | R7World | `start_tracked_job` | OBSERVED_SUCCESS_ONLY | 13 | 0 |
 | R7World | `summarize_engagement` | UNQUALIFIED | 0 | 0 |
-| R7World | `transfer_cash` | OBSERVED_SUCCESS_AND_FAILURE | 61 | 1 |
+| R7World | `transfer_cash` | OBSERVED_SUCCESS_AND_FAILURE | 61 | 2 |
 | ReceiverWorld | `accept_intermediate` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `accrue_job_wages` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `accrue_pay` | UNQUALIFIED | 0 | 0 |
@@ -99,14 +99,14 @@ The machine-readable [register](qualification/operation_register.json) records s
 | ReceiverWorld | `attest_training` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `audit_needs` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `authorize_budget` | UNQUALIFIED | 0 | 0 |
-| ReceiverWorld | `authorize_mobilization` | OBSERVED_SUCCESS_ONLY | 12 | 0 |
+| ReceiverWorld | `authorize_mobilization` | OBSERVED_SUCCESS_ONLY | 13 | 0 |
 | ReceiverWorld | `capture` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
 | ReceiverWorld | `commit_shift` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `complete_care` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `complete_job` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `demobilize` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `dispatch_stock` | UNQUALIFIED | 0 | 0 |
-| ReceiverWorld | `enroll` | OBSERVED_SUCCESS_ONLY | 12 | 0 |
+| ReceiverWorld | `enroll` | OBSERVED_SUCCESS_ONLY | 13 | 0 |
 | ReceiverWorld | `enroll_from_residual` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `escape` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `execute_order` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
@@ -114,7 +114,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | ReceiverWorld | `inspect_intermediate` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `interrupt_job` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `issue_kits` | UNQUALIFIED | 0 | 0 |
-| ReceiverWorld | `issue_order` | OBSERVED_SUCCESS_ONLY | 12 | 0 |
+| ReceiverWorld | `issue_order` | OBSERVED_SUCCESS_ONLY | 13 | 0 |
 | ReceiverWorld | `legal_status_change` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `make_intermediate` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `mil_issue_received_order` | OBSERVED_SUCCESS_AND_FAILURE | 6 | 3 |
@@ -124,7 +124,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | ReceiverWorld | `physical_loss` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `propose_release` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `provision_meals` | UNQUALIFIED | 0 | 0 |
-| ReceiverWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 12 | 0 |
+| ReceiverWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 13 | 0 |
 | ReceiverWorld | `receive_stock` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `recognize_status` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `record_work_milestone` | UNQUALIFIED | 0 | 0 |
@@ -132,7 +132,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | ReceiverWorld | `report` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `review_no_change` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `rom_revoke_delegation` | OBSERVED_SUCCESS_ONLY | 2 | 0 |
-| ReceiverWorld | `rom_start_delegated_job` | OBSERVED_SUCCESS_AND_FAILURE | 5 | 1 |
+| ReceiverWorld | `rom_start_delegated_job` | OBSERVED_SUCCESS_AND_FAILURE | 5 | 2 |
 | ReceiverWorld | `salvage_intermediate` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `settle_disrupted_job` | UNQUALIFIED | 0 | 0 |
 | ReceiverWorld | `simultaneous_exchange` | UNQUALIFIED | 0 | 0 |
@@ -150,7 +150,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | World | `authorize_budget` | OBSERVED_SUCCESS_ONLY | 12 | 0 |
 | World | `authorize_mobilization` | OBSERVED_SUCCESS_AND_FAILURE | 15 | 1 |
 | World | `capture` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
-| World | `commit_shift` | OBSERVED_FAILURE_ONLY | 0 | 1 |
+| World | `commit_shift` | OBSERVED_FAILURE_ONLY | 0 | 2 |
 | World | `complete_care` | UNQUALIFIED | 0 | 0 |
 | World | `complete_job` | UNQUALIFIED | 0 | 0 |
 | World | `demobilize` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
@@ -177,7 +177,7 @@ The machine-readable [register](qualification/operation_register.json) records s
 | World | `simultaneous_exchange` | OBSERVED_SUCCESS_AND_FAILURE | 2 | 2 |
 | World | `start_job` | UNQUALIFIED | 0 | 0 |
 | World | `summarize_engagement` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
-| World | `transfer_cash` | OBSERVED_SUCCESS_AND_FAILURE | 6 | 2 |
+| World | `transfer_cash` | OBSERVED_SUCCESS_AND_FAILURE | 9 | 5 |
 
 ## Remaining qualification
 
