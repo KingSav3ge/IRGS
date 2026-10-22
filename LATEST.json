@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "candidate_commit": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+  "finished_at_utc": "2026-10-22T14:11:26.805870+00:00",
+  "status": "needs_fixes",
+  "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+  "candidate_source_root": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/candidate",
+  "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
+  "regression_checks": [
+    {
+      "name": "source-integrity",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.27,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/source-integrity.txt"
+    },
+    {
+      "name": "evidence-freshness",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 0.62,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/evidence-freshness.txt"
+    },
+    {
+      "name": "runtime",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 83.4,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/runtime.txt",
+      "tests_run": 471,
+      "skipped": 1
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 65.16,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/web.txt",
+      "tests_run": 139,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 5.5,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/interface.txt",
+      "checks_passed": 54
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 4.12,
+      "log": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/logs/tooling.txt",
+      "tests_run": 19,
+      "skipped": 0
+    }
+  ],
+  "independent": {
+    "tests_run": 8,
+    "passed": 6,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "test": "test_concurrent_retry_has_one_commit_and_one_elapsed_span",
+        "status": "passed"
+      },
+      {
+        "test": "test_core_location_confirmation_remains_usable",
+        "status": "failed",
+        "detail": "Traceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 250, in test_core_location_confirmation_remains_usable\n    self.assertIsNotNone(self.view(r)['settlement']['inventory'],\nAssertionError: unexpectedly None : IRGS-QA-002: a canonical same-site location confirmation made the founder appear absent from their own stores\n",
+        "finding_id": "IRGS-QA-002"
+      },
+      {
+        "test": "test_founding_delegation_migration_and_material_continuity",
+        "status": "passed"
+      },
+      {
+        "test": "test_freeform_is_retained_intent_with_no_automatic_elapsed_effect",
+        "status": "passed"
+      },
+      {
+        "test": "test_new_material_does_not_break_committed_campaign",
+        "status": "failed",
+        "detail": "Traceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 234, in test_new_material_does_not_break_committed_campaign\n    try: projected = self.view(r)\n                     ^^^^^^^^^^^^\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 110, in view\n    def view(self, record): return self.call('/api/playthrough/' + record['id'])\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 76, in call\n    with self.opener.open(request, timeout=10) as response:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 515, in open\n    response = self._open(req, data)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 532, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 1373, in http_open\n    return self.do_open(http.client.HTTPConnection, req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 1348, in do_open\n    r = h.getresponse()\n        ^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 1478, in getresponse\n    response.begin()\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 312, in _read_status\n    raise RemoteDisconnected(\"Remote end closed connection without\"\nhttp.client.RemoteDisconnected: Remote end closed connection without response\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 236, in test_new_material_does_not_break_committed_campaign\n    self.fail('IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: ' + repr(error))\nAssertionError: IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: RemoteDisconnected('Remote end closed connection without response')\n",
+        "finding_id": "IRGS-QA-001"
+      },
+      {
+        "test": "test_pause_resume_preserves_work_and_finishes_once",
+        "status": "passed"
+      },
+      {
+        "test": "test_private_state_and_hidden_permission_do_not_select_player_options",
+        "status": "passed"
+      },
+      {
+        "test": "test_results_survive_host_restart_and_trash_restore",
+        "status": "passed"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "IRGS-QA-001",
+      "severity": "P1",
+      "title": "Accepted Core material establishment breaks Rise playthrough views",
+      "expected": "Reject an unsupported material atomically, or retain a readable campaign with explicit unknown unit support.",
+      "reproduction": [
+        "Create a reviewed R00 Rise campaign.",
+        "Creator POST /api/event: establish_stock(location=founder-home, material=water, quantity=2, inventory_evidence_ref=synthetic-measured-water).",
+        "Observe the successful save and valid CoreWorld state.",
+        "GET /api/playthrough/<id> with the normal session token."
+      ],
+      "boundary": "IRGS_Web/rise_campaigns.py view indexes model.units[material]; Core stock establishment accepts material IDs without that unit binding.",
+      "status": "open",
+      "observed": "Traceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 234, in test_new_material_does_not_break_committed_campaign\n    try: projected = self.view(r)\n                     ^^^^^^^^^^^^\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 110, in view\n    def view(self, record): return self.call('/api/playthrough/' + record['id'])\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 76, in call\n    with self.opener.open(request, timeout=10) as response:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 515, in open\n    response = self._open(req, data)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 532, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 1373, in http_open\n    return self.do_open(http.client.HTTPConnection, req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py\", line 1348, in do_open\n    r = h.getresponse()\n        ^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 1478, in getresponse\n    response.begin()\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py\", line 312, in _read_status\n    raise RemoteDisconnected(\"Remote end closed connection without\"\nhttp.client.RemoteDisconnected: Remote end closed connection without response\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 236, in test_new_material_does_not_break_committed_campaign\n    self.fail('IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: ' + repr(error))\nAssertionError: IRGS-QA-001: the stock write committed and Core validates, but the playthrough request failed: RemoteDisconnected('Remote end closed connection without response')\n"
+    },
+    {
+      "id": "IRGS-QA-002",
+      "severity": "P1",
+      "title": "Canonical Core location records are incompatible with Rise location consumers",
+      "expected": "A supported, established location confirmation must leave local inventory and supported movement usable.",
+      "reproduction": [
+        "Create R00 at the commons.",
+        "Creator records and delivers established evidence placing the founder at commons.",
+        "Creator confirms founder.location=commons through confirm_character_field with authority and player instruction references.",
+        "Inspect local inventory and submit walk_clearing."
+      ],
+      "boundary": "Core confirm_character_field writes {value,evidence_id,at}; settlement_runtime.location and Rise view consume the whole record as a site string.",
+      "status": "open",
+      "observed": "Traceback (most recent call last):\n  File \"/workspace/irgs-cloud/qa/qa_irgs.py\", line 250, in test_core_location_confirmation_remains_usable\n    self.assertIsNotNone(self.view(r)['settlement']['inventory'],\nAssertionError: unexpectedly None : IRGS-QA-002: a canonical same-site location confirmation made the founder appear absent from their own stores\n"
+    }
+  ],
+  "user_saves_opened": false,
+  "mechanics_modified_by_qa": false,
+  "candidate_branches": [
+    "main",
+    "3.3.3.A",
+    "3.3.3.E"
+  ],
+  "report_path": "/workspace/irgs-cloud/qa/runs/bf6cf48b1c4f-1792678120237036097/report.json"
+}
