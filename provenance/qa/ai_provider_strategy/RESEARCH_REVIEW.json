@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-22",
+  "status": "research_review_only",
+  "submitted_source": {
+    "path": "USER_ASSESSMENT_2026_10_20.md",
+    "bytes": 37730,
+    "sha256": "30ecc4f28cc37f8a7aca5dd700cfb482f8bc1d15a5d6742593cfe6143b63eb8a",
+    "instructions_status": "User explicitly supplied pasted text as their request; translated into staged requirements."
+  },
+  "preserved_master": {
+    "path": "engine/design/C2/reference/IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
+    "sha256": "e0101206dcd24ede9ef391e405556c503154f10971e831775e7f662d8dafdf74",
+    "modified": false
+  },
+  "research_retrievals": [
+    {
+      "id": "openai_pricing",
+      "requested_url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at_utc": "2026-10-22T22:20:58.884592+00:00",
+      "status": 200,
+      "final_url": "https://developers.openai.com/api/docs/pricing",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 577063,
+      "sha256": "f6bdcd25e5710bd389fd06293337e25019a7300943fe8b0ad40104f92d95009c"
+    },
+    {
+      "id": "anthropic_pricing",
+      "requested_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "retrieved_at_utc": "2026-10-22T22:20:58.885767+00:00",
+      "status": 200,
+      "final_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 913325,
+      "sha256": "fc28cf54f917be1fc387a36d31b6f79d932251740c3fe09bc8ef46e127a8b96f"
+    },
+    {
+      "id": "google_pricing",
+      "requested_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieved_at_utc": "2026-10-22T22:20:58.886445+00:00",
+      "status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 253707,
+      "sha256": "95509f09c29b6168d68c59f4a5afa5a87b0a8528f25ad281d424ef066294f771"
+    },
+    {
+      "id": "deepseek_pricing",
+      "requested_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "retrieved_at_utc": "2026-10-22T22:20:58.887074+00:00",
+      "status": 200,
+      "final_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "content_type": "text/html",
+      "bytes": 26043,
+      "sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66"
+    },
+    {
+      "id": "mistral_models",
+      "requested_url": "https://docs.mistral.ai/models",
+      "retrieved_at_utc": "2026-10-22T22:20:58.887649+00:00",
+      "status": 200,
+      "final_url": "https://docs.mistral.ai/models",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1439916,
+      "sha256": "436af2fc557411e93da8115e6a2a884a38c06e5d69b362d1dbd118a40459f30d"
+    },
+    {
+      "id": "inception_models",
+      "requested_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "retrieved_at_utc": "2026-10-22T22:20:58.888072+00:00",
+      "status": 200,
+      "final_url": "https://docs.inceptionlabs.ai/get-started/models",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 593559,
+      "sha256": "08bed631d58e648fb89ea28f00ec5e5c1fabdc556a808ec7d3426f6180933ecf"
+    },
+    {
+      "id": "openrouter_models",
+      "requested_url": "https://openrouter.ai/api/v1/models",
+      "retrieved_at_utc": "2026-10-22T22:20:59.300837+00:00",
+      "status": 200,
+      "final_url": "https://openrouter.ai/api/v1/models",
+      "content_type": "application/json",
+      "bytes": 787619,
+      "sha256": "108fd0607d2196ee3bee21b5928de33114b7c1714874508526b5af7d478dcab3"
+    },
+    {
+      "id": "vercel_gateway",
+      "requested_url": "https://vercel.com/docs/ai-gateway",
+      "retrieved_at_utc": "2026-10-22T22:20:59.411458+00:00",
+      "status": 200,
+      "final_url": "https://vercel.com/docs/ai-gateway",
+      "content_type": "text/markdown; charset=utf-8",
+      "bytes": 10053,
+      "sha256": "9a38a7e7e096474cf2e8daa317782385df3e5e84c98c16fee60adac6a0dbbbb5"
+    },
+    {
+      "id": "openrouter_privacy",
+      "requested_url": "https://openrouter.ai/docs/guides/privacy/logging",
+      "retrieved_at_utc": "2026-10-22T22:20:59.487131+00:00",
+      "status": 200,
+      "final_url": "https://openrouter.ai/docs/guides/privacy/provider-logging",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 433337,
+      "sha256": "4e2b47e9de7f3b5979a5ceb939dbee6320ae2b25bd283129f913cd23fbcca9a6"
+    },
+    {
+      "id": "blackbox_router",
+      "requested_url": "https://www.blackbox.ai/api",
+      "retrieved_at_utc": "2026-10-22T22:20:59.531881+00:00",
+      "status": 200,
+      "final_url": "https://www.blackbox.ai/api",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1149869,
+      "sha256": "67639020a5fc69e1b0c08aa4456ca407d2729ccf399645adb3d9429e8390e34a"
+    },
+    {
+      "id": "zai_pricing",
+      "requested_url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at_utc": "2026-10-22T22:22:26.837410+00:00",
+      "status": 200,
+      "final_url": "https://docs.z.ai/guides/overview/pricing",
+      "bytes": 170043,
+      "sha256": "be651360ce7b1d30cf95d1fe377f0bd1e55a661fc5fb5dfea0735177638d700d"
+    },
+    {
+      "id": "minimax_pricing",
+      "requested_url": "https://platform.minimax.io/docs/pricing/pay-as-you-go",
+      "retrieved_at_utc": "2026-10-22T22:22:26.838544+00:00",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "moonshot_pricing",
+      "requested_url": "https://platform.moonshot.ai/docs/pricing/chat",
+      "retrieved_at_utc": "2026-10-22T22:22:26.839151+00:00",
+      "status": 200,
+      "final_url": "https://platform.kimi.ai/docs/pricing/chat",
+      "bytes": 285183,
+      "sha256": "faac039c3e3014ea01764838a45386a593d0bf5bf1c85a2d93352b21551a0c56"
+    },
+    {
+      "id": "openrouter_fees",
+      "requested_url": "https://openrouter.ai/docs/faq",
+      "retrieved_at_utc": "2026-10-22T22:22:26.839710+00:00",
+      "status": 200,
+      "final_url": "https://openrouter.ai/docs/faq",
+      "bytes": 560909,
+      "sha256": "47984b5fb654d6889390291df21f9c624d6958a1bca272932e08256409a81cb3"
+    },
+    {
+      "id": "mistral_small",
+      "requested_url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+      "retrieved_at_utc": "2026-10-22T22:23:03.419026+00:00",
+      "status": 200,
+      "final_url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+      "bytes": 1286523,
+      "sha256": "271213e4b962b604e2ee76ec14ce8b747eff712a07f8303a254ead578ec48bee"
+    },
+    {
+      "id": "mistral_large",
+      "requested_url": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+      "retrieved_at_utc": "2026-10-22T22:23:03.422217+00:00",
+      "status": 200,
+      "final_url": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+      "bytes": 1281581,
+      "sha256": "731a4f1194f92494856980aba92cb1f11370abe35d85118ec43c2bf5662bda1f"
+    }
+  ],
+  "observations": [
+    {
+      "id": "openai_standard",
+      "finding": "Direct standard GPT-6.1 Sol, Luna and Astra rates match the submission.",
+      "evidence": {
+        "source_id": "openai_pricing",
+        "url": "https://developers.openai.com/api/docs/pricing",
+        "excerpt": "hed input 30m write 12h write gpt-6-astra $10.00 $50.00 $1.00 $12.50 $25.00 gpt-6.1-sol $2.00 $10.00 $0.10 $2.50 $5.00 gpt-6-luna $0.10 $0.50 $0.01 $0.125 $0.25 All models Batch Prompt caching Model Input Output Cached input 30m write 12h write gpt-6-astra $5.00 $25.00 $0.50 $6.25 $12.50 gpt-6.1-s"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "anthropic_context_condition",
+      "finding": "Haiku 5.5 has a higher rate above 100,000 prompt tokens.",
+      "evidence": {
+        "source_id": "anthropic_pricing",
+        "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+        "excerpt": "/ MTok $4 / MTok $0.10 / MTok Claude Haiku 5.5 For high-volume, latency-sensitive tasks such as classification, extraction, and routing $0.10 / MTok for prompts up to 100,000 tokens $0.50 / MTok $0.125 / MTok $0.20 / MTok $0.01 / MTok $0.50 / MTok for prompts over 100,000 tokens $2.50 / MTok $0.625 / MTok $1 / MTok $0.05 / MTok  Additional models Claude Mythos 5.1  $10 / MTok $50 / MTok $12.50 / MTok $20 / MTok $0.25 / MTok Claude Fable 5 $10 / MTok $50 / MTok $12.50 / MTok $20 / MTok $1 / MTok Claude Mythos 5  $10 / MTok $50 / MTok $12.50 / MTok $20 / MTok $1 / MTok Claude Opus 5 $5 / MTok $25 / MTok $6.25 / MTok $10 / MTok $0.50 / MTok Claude Opus 4.8 $5 / MTok $25 / MTok $6.25 / MTok $10 / MTok $0.50 / MTok Claude Opus 4.7 $5 / MTok $25 / MTok $6"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "google_argon_expiry",
+      "finding": "Argon standard promotion ends 2026-11-30; future standard rates are $4/$20.",
+      "evidence": {
+        "source_id": "google_pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing",
+        "excerpt": "garden and more Contact Sales Gemini 4 Argon gemini-4-argon Try it in Google AI Studio Our flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, autonomous multi-step agents, and long-decode generation up to 1M tokens. Note: Gemini 4 Argon is not available on the Free tier. Standard Free Tier Paid Tier, per 1M tokens in USD Input price Not available $2.00 through November 30, 2026. $4.00 starting December 1, 2026. Output price (including thinking tokens) Not available $10.00 through November 30, 2026. $20.00 starting December 1, 2026. Context caching price Not available $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported). Grounding with Google Search* Not available 5,000 free search requests per month (share"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "google_flash_expiry",
+      "finding": "Flash 3.8 standard promotion ends 2026-12-31; future rates are $1.50/$7.50.",
+      "evidence": {
+        "source_id": "google_pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing",
+        "excerpt": "idual search query performed. Gemini 3.8 Flash gemini-3.8-flash Try it in Google AI Studio Our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows. Standard Free Tier Paid Tier, per 1M tokens in USD Input price Free of charge $0.75 through December 31, 2026. $1.50 starting January 1, 2027. Output price (including thinking tokens) Free of charge $3.75 through December 31, 2026. $7.50 starting January 1, 2027. Context caching price Free of charge $0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. Grounding with Google Search* Not available 5,000 free "
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "deepseek_identity",
+      "finding": "The direct API alias and reported underlying version are distinct.",
+      "evidence": {
+        "source_id": "deepseek_pricing",
+        "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+        "excerpt": " by the model. Model Details​ MODEL deepseek-flash(1) deepseek-v4-pro BASE URL (OpenAI Format) https://api.deepseek.com BASE URL (Anthropic Format) https://api.deepseek.com/anthropic MODEL VERSION DeepSeek-V4.1-Flash-1017 DeepSeek-V4-Pro-0813 THINKING MODE Supports both non-thinking and thinking (default) modes See Thinking Mode for how to switch CONTEXT LENGTH 1M MAX OUTPUT MAXIMUM: 384K FEATURES Json Output ✓ ✓ Tool Calls ✓ ✓ Responses API ✓ ✓ Anthropic API ✓ ✓ Chat Prefix Completion（Beta） ✓ ✓ FIM Completion（Beta） Non-thinking mode only Non-thinking mode only Vision ✓ Not supported PRICING(2) 1M INPUT TOKENS (CACHE HIT) OFF-PEAK $0.003 $0.022 PEAK $0.006 $0.044 1M INPUT TOKENS (CACHE MISS) OFF-PEAK $0.15 $0.66 PEAK $0.3 $1.32 1M OUTPUT TOKENS OFF-PEAK $0.6 $1.98 PEAK $1.2 $3.96 Concurrency Limit(3) 2500 500 (1) Use deepseek-flash as the model name. The legacy names deepseek-v4-flash and deepseek-v4-flash-vision-exp are still accepted, but the corresponding models have been retired, their requests are served by the DeepSeek-V4.1-Flash-1017 model and billed at the Flash price. (2) Off-peak rates are half of the peak rates. Peak hour"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "deepseek_peak",
+      "finding": "Peak times, holidays and the alias substitution affect pricing/version records.",
+      "evidence": {
+        "source_id": "deepseek_pricing",
+        "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+        "excerpt": "Concurrency Limit(3) 2500 500 (1) Use deepseek-flash as the model name. The legacy names deepseek-v4-flash and deepseek-v4-flash-vision-exp are still accepted, but the corresponding models have been retired, their requests are served by the DeepSeek-V4.1-Flash-1017 model and billed at the Flash price. (2) Off-peak rates are half of the peak rates. Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday, excluding Chinese public holidays. All other hours are off-peak, including weekends and Chinese public holidays in full. (3) For more details on concurrency limits, please refer to Rate Limit & Isolation . Search & Fetch Pricing​ Search and Fetch are standalone APIs billed per request. API Unit Price Search Per 1,000 successful requests $0.75 Fetch Per 1,000 successful requests $0.75 Note: when you use the DeepSeek API through DeepSeek Harness, Claude Code, or Codex, server-side tool calls already hit the Search and Fetch APIs. These calls are currently free of charge; per-request billing starts at 00:00 Beijing time on"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "mistral_small",
+      "finding": "Small 4 price, API ID, context and documented license.",
+      "evidence": {
+        "source_id": "mistral_small",
+        "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+        "excerpt": " Compare Legal March 16, 2026 GA Apache 2.0 v26.03 Mistral Small 4 Our powerful hybrid model unifying instruct, reasoning, and coding capabilities in a single model. 119B parameters with 6.5B active. mistral-small-2603 +1 Speed Performance Modalities Context i 256k Price i USD EUR $0.15 /M Tokens $0.6 /M Tokens Speed Performance Modalities Context 256k Price USD EUR $0.15 /M Tokens $0.6 /M Tokens FEATURES WEIGHTS Features Chat Completions /v1/chat/completions Function Calling /v1/chat/completions /v1/conversations Agents & Conversations /v1/agents /v1/conve"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "mistral_large",
+      "finding": "Large 3 price, API ID, context and documented license.",
+      "evidence": {
+        "source_id": "mistral_large",
+        "url": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+        "excerpt": "re Legal December 2, 2025Blog GA Apache 2.0 v25.12 Mistral Large 3 Mistral Large 3, is a state-of-the-art, open-weight, general-purpose multimodal model with a granular Mixture-of-Experts architecture. It features 41B active parameters and 675B total parameters. mistral-large-2512 +1 Speed Performance Modalities Context i 256k Price i USD EUR $0.5 /M Tokens $1.5 /M Tokens Speed Performance Modalities Context 256k Price USD EUR $0.5 /M Tokens $1.5 /M Tokens FEATURES WEIGHTS Features Structured Outputs /v1/chat/completions /v1/conversations Function Calling /v1/chat/completions /v1/conversations Document QnA /v1/chat/completions /v1/conversations Prefix /v1"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "mercury_promotion",
+      "finding": "Mercury 3 launch prices, context and advertised structured/tool support.",
+      "evidence": {
+        "source_id": "inception_models",
+        "url": "https://docs.inceptionlabs.ai/get-started/models",
+        "excerpt": "ry 3 50% off Mercury Decide ​ Models Model Input Price (1M Tokens) Cached Input Price (1M Tokens) Output Price (1M Tokens) Supported Endpoints Context Window Max Output Tokens Features Supported Formats Mercury 3 $0.20 → $0.10 $0.02 → $0.01 $0.70 → $0.35 v1/chat/completions Chat: 1M 131,072 Tool Calling Structured Outputs Text Mercury Voice $0.40 → $0.20 $0.04 → $0.02 $1.50 → $0.75 v1/chat/completions Chat: 128K 50,000 Tool Calling Structured Outputs Text Mercury Decide $0.04 → $0.02 $0 $0 v1/decisions — — Classification Scoring Extraction Text / JSON / Image Mercury 2.5 $0.20 $0.02 $0.75 v1/chat/completions Chat: 260K 65,536 Tool Calling Structured Outputs Text Mercury 2 $0.25 $0.025 $0.75 v1/chat/completions Chat: 128K 50,000 Tool Calling Structured Outputs Text Mercury Edit 2 $0.25 $0.025 $0.75 v1/fim/completions v1/edit/completions FIM: 3"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "zai_rates",
+      "finding": "GLM-5.3 Flash and GLM-5.1 direct rate table.",
+      "evidence": {
+        "source_id": "zai_pricing",
+        "url": "https://docs.z.ai/guides/overview/pricing",
+        "excerpt": " $0.26 Limited-time Free $4.4 GLM-5.3-Flash $0.15 $0.03 Limited-time Free $0.50 GLM-5.3-FlashX $0.37 $0.075 Limited-time Free $1.25 ​ Text Models Prices per 1M tokens. Model Input Cached Input Cached Input Storage Output GLM-5.3-FlashX-Legal $0.37 $0.075 Limited-time Free $1.25 GLM-5.2 $1.4 $0.26 Limited-time Free $4.4 GLM-5.1 $1.4 $0.26 Limited-time Free $4.4 GLM-5 $1 $0.2 Limited-time Free $3.2 GLM-4.7 $0.6 $0.11 Limited-time Free $2.2 GLM-4.6 $0.6 $0.11 Limited-time Free $2.2 ​ Built-in Tools Tool Cost Web Search $0.01 / use ​ Image Generation Models Prices per image. Model Price GLM-Image $0.015 ​ Agents Agent Price GLM Slide/Poster Agent(beta) $0.7 / MTok General-Purpose Translation $3 / MTok Popular Special Effects Video Templates $0"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "vercel_stack",
+      "finding": "Provider-token markup claim and deployment-independent access; this is not total-cost certification.",
+      "evidence": {
+        "source_id": "vercel_gateway",
+        "url": "https://vercel.com/docs/ai-gateway",
+        "excerpt": "and-byok/byok) for your team. AI Gateway adds zero markup to provider token prices, including with BYOK. ## Centralize multi-provider AI operations Your application does not need to run on Vercel. Call AI Gateway from any server, cloud, or local environment with an [AI Gateway API key](/docs/ai-gateway/authentication-and-byok/api-keys). Vercel deployments can use [OpenID Connect (OIDC)](/docs/ai-gateway/authentication-and-byok/oidc) instead. Use AI Gateway when you want these controls without operating your own proxy, database, and routing control plane: | Requirement | How AI Gateway handles it | | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | | Centralized credentials | Authenticate your application once, then use AI Gateway system credentials or your own provider accounts through [BYOK](/docs/ai-gateway/authentication-and-byok/byok). | | R"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "blackbox_route",
+      "finding": "Marketing describes compatible routing and qualifies upstream retention controls.",
+      "evidence": {
+        "source_id": "blackbox_router",
+        "url": "https://www.blackbox.ai/api",
+        "excerpt": "CONTACT SALES BLACKBOX ROUTER 300+ models. One endpoint. Zero retention. 300+ open and closed models behind one OpenAI-compatible endpoint, and the gateway enforces zero data retention and no training. START BUILDING VIEW PRICING ONE ENDPOINT ROUTER MODELS NOTHING STORED 300+ MODELS, ONE API KEY 454 TOK/SEC, AA-VERIFIED, JUL 2026 <5 MINUTES TO MIGRATE 0 PROMPTS RETAINED We suppress retention and training on routed traffic through provider terms and per-request flags, wherever the provider API supports it. QUICKSTART MIGRATE: <5 MINUTES ENDPOINT: OPENAI COMPATIBLE MODELS: 300+ Change the base URL. Keep your stack. The endpoint is OpenAI-compatible, so the SDKs, frameworks, and streaming code that you run today keep working. Collapse your provider keys into one, point the base URL at the Router, and every model in the catalog is one string away. ENV Copy # before: one key per provider OPENAI_API_KEY =sk-... ANTHROPIC_API_KEY =sk-ant-... GOOGLE_API_KEY =AIza... # after: one key for 300+ models "
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    },
+    {
+      "id": "openrouter_policy",
+      "finding": "Endpoint-specific training/retention policies require route selection controls.",
+      "evidence": {
+        "source_id": "openrouter_privacy",
+        "url": "https://openrouter.ai/docs/guides/privacy/provider-logging",
+        "excerpt": " policies Copy page Copy page Each AI provider on OpenRouter has its own data handling policies for logging and retention. This page explains how to control which providers can access your data. ​ Provider Policies ​ Training on Prompts Each provider on OpenRouter has its own data handling policies. We reflect those policies in structured data on each AI endpoint that we offer. On your account settings page, you can set whether you would like to allow routing to providers that may train on your data (according to their own policies). There are separate settings for paid and free models. Wherever possible, OpenRouter works with providers to ensure that prompts will not be trained on, but there are exceptions. If you opt out of training in your account settings, OpenRouter will not route to providers that train. This setting has no bearing on OpenRouter’s own policies and what we do with your prompts. Data Policy Filtering You can restrict individual requests to only use providers with a certain data policy. This is also available as an account-wide setting in your privacy settings . ​ Data Retention & Logging Providers also have their own data"
+      },
+      "status": "documented_claim_observed; not runtime qualified"
+    }
+  ],
+  "gateway_catalog_snapshot": {
+    "source_id": "openrouter_models",
+    "pricing_units": "USD per token; not direct-provider prices",
+    "selected_entries": [
+      {
+        "id": "openai/gpt-6.1-sol",
+        "name": "OpenAI: GPT-6.1 Sol",
+        "context_length": 1050000,
+        "pricing": {
+          "prompt": "0.000002",
+          "completion": "0.00001",
+          "web_search": "0.01",
+          "input_cache_read": "0.0000001",
+          "input_cache_write": "0.0000025",
+          "overrides": [
+            {
+              "min_prompt_tokens": 272000,
+              "prompt": "0.000004",
+              "completion": "0.000015",
+              "input_cache_read": "0.0000002",
+              "input_cache_write": "0.000005"
+            }
+          ]
+        }
+      },
+      {
+        "id": "openai/gpt-6-luna",
+        "name": "OpenAI: GPT-6 Luna",
+        "context_length": 1050000,
+        "pricing": {
+          "prompt": "0.0000001",
+          "completion": "0.0000005",
+          "web_search": "0.01",
+          "input_cache_read": "0.00000001",
+          "input_cache_write": "0.000000125",
+          "overrides": [
+            {
+              "min_prompt_tokens": 272000,
+              "prompt": "0.0000002",
+              "completion": "0.00000075",
+              "input_cache_read": "0.00000002",
+              "input_cache_write": "0.00000025"
+            }
+          ]
+        }
+      },
+      {
+        "id": "anthropic/claude-sonnet-5.5",
+        "name": "Anthropic: Claude Sonnet 5.5",
+        "context_length": 1000000,
+        "pricing": {
+          "prompt": "0.000002",
+          "completion": "0.00001",
+          "web_search": "0.01",
+          "input_cache_read": "0.0000001",
+          "input_cache_write": "0.0000025",
+          "input_cache_write_1h": "0.000004"
+        }
+      },
+      {
+        "id": "google/gemini-3.8-flash",
+        "name": "Google: Gemini 3.8 Flash",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.000000825",
+          "completion": "0.000004125",
+          "image": "0.000000825",
+          "audio": "0.000000825",
+          "input_audio_cache": "0.0000000825",
+          "web_search": "0.014",
+          "internal_reasoning": "0.000004125",
+          "input_cache_read": "0.0000000825",
+          "input_cache_write": "0.0000000416666666666667"
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash-1017",
+        "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003",
+          "overrides": [
+            {
+              "utc_days": [
+                "saturday",
+                "sunday"
+              ],
+              "prompt": "0.00000015",
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003"
+            },
+            {
+              "utc_days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday"
+              ],
+              "utc_start": 0,
+              "utc_end": 100,
+              "prompt": "0.00000015",
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003"
+            },
+            {
+              "utc_days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday"
+              ],
+              "utc_start": 100,
+              "utc_end": 400,
+              "prompt": "0.0000003",
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006"
+            },
+            {
+              "utc_days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday"
+              ],
+              "utc_start": 400,
+              "utc_end": 600,
+              "prompt": "0.00000015",
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003"
+            },
+            {
+              "utc_days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday"
+              ],
+              "utc_start": 600,
+              "utc_end": 1000,
+              "prompt": "0.0000003",
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006"
+            },
+            {
+              "utc_days": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday"
+              ],
+              "utc_start": 1000,
+              "utc_end": 0,
+              "prompt": "0.00000015",
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003"
+            }
+          ]
+        }
+      },
+      {
+        "id": "inception/mercury-3",
+        "name": "Inception: Mercury 3",
+        "context_length": 1000000,
+        "pricing": {
+          "prompt": "0.0000001",
+          "completion": "0.00000035",
+          "input_cache_read": "0.00000001"
+        }
+      },
+      {
+        "id": "z-ai/glm-5.3-flash",
+        "name": "Z.ai: GLM 5.3 Flash",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.0000000052",
+          "completion": "0.0000001985",
+          "input_cache_read": "0.0000000052"
+        }
+      },
+      {
+        "id": "minimax/minimax-m2.7",
+        "name": "MiniMax: MiniMax M2.7",
+        "context_length": 204800,
+        "pricing": {
+          "prompt": "0.0000003",
+          "completion": "0.0000012",
+          "input_cache_read": "0.00000006"
+        }
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.000000239",
+          "completion": "0.000011936",
+          "input_cache_read": "0.00000021"
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-27b",
+        "name": "Qwen: Qwen3.8 27B",
+        "context_length": 1000000,
+        "pricing": {
+          "prompt": "0.00000004",
+          "completion": "0.00000135",
+          "input_cache_read": "0.000000018"
+        }
+      }
+    ]
+  },
+  "arithmetic": {
+    "status": "all_nine_submitted_100_call_examples_match_after_rounding",
+    "examples": [
+      {
+        "candidate": "Mercury 3",
+        "input_usd_per_million": ".10",
+        "output_usd_per_million": ".35",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.135",
+        "rounded_usd": "0.14",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "GPT-6 Luna",
+        "input_usd_per_million": ".10",
+        "output_usd_per_million": ".50",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.15",
+        "rounded_usd": "0.15",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "GLM-5.3 Flash",
+        "input_usd_per_million": ".15",
+        "output_usd_per_million": ".50",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.20",
+        "rounded_usd": "0.20",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "Mistral Small 4",
+        "input_usd_per_million": ".15",
+        "output_usd_per_million": ".60",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.21",
+        "rounded_usd": "0.21",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "DeepSeek V4.1 Flash off-peak",
+        "input_usd_per_million": ".15",
+        "output_usd_per_million": ".60",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.21",
+        "rounded_usd": "0.21",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "Mistral Large 3",
+        "input_usd_per_million": ".50",
+        "output_usd_per_million": "1.50",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "0.65",
+        "rounded_usd": "0.65",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "GPT-6.1 Sol",
+        "input_usd_per_million": "2",
+        "output_usd_per_million": "10",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "3",
+        "rounded_usd": "3.00",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "Claude Sonnet 5.5",
+        "input_usd_per_million": "2",
+        "output_usd_per_million": "10",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "3",
+        "rounded_usd": "3.00",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      },
+      {
+        "candidate": "Kimi K3",
+        "input_usd_per_million": "3",
+        "output_usd_per_million": "15",
+        "tokens_per_call": {
+          "uncached_input": 10000,
+          "output": 1000
+        },
+        "calls": 100,
+        "exact_usd": "4.5",
+        "rounded_usd": "4.50",
+        "price_basis": "submitted_rate_scenario; independent pricing verification varies by source"
+      }
+    ],
+    "blended_operations": [
+      {
+        "task": "routing",
+        "input_tokens": 1500,
+        "output_tokens": 150,
+        "input_usd_per_million": ".10",
+        "output_usd_per_million": ".50",
+        "exact_usd": "0.000225"
+      },
+      {
+        "task": "character",
+        "input_tokens": 4000,
+        "output_tokens": 400,
+        "input_usd_per_million": "2",
+        "output_usd_per_million": "10",
+        "exact_usd": "0.012"
+      },
+      {
+        "task": "dialogue",
+        "input_tokens": 2000,
+        "output_tokens": 500,
+        "input_usd_per_million": "2",
+        "output_usd_per_million": "10",
+        "exact_usd": "0.009"
+      },
+      {
+        "task": "narration",
+        "input_tokens": 3000,
+        "output_tokens": 700,
+        "input_usd_per_million": ".50",
+        "output_usd_per_million": "1.50",
+        "exact_usd": "0.00255"
+      },
+      {
+        "task": "summary",
+        "input_tokens": 2000,
+        "output_tokens": 200,
+        "input_usd_per_million": ".15",
+        "output_usd_per_million": ".50",
+        "exact_usd": "0.0004"
+      }
+    ],
+    "blended_exact_usd": "0.024175",
+    "blended_100_exact_usd": "2.417500",
+    "production_forecast": false
+  },
+  "unverified_in_this_pass": [
+    "MiniMax direct pricing: attempted official URL returned 404; gateway listing is separate evidence.",
+    "Kimi K3 direct pricing: retrieved page did not expose asserted price in readable content.",
+    "Qwen regional prices, xAI, Cohere and inference-host price/performance comparisons.",
+    "Gateway funding, BYOK and non-token fees; no complete billing-contract audit.",
+    "Licenses except the documented Mistral model-page labels; no legal/contract approval.",
+    "Specific LiteLLM vulnerability and minimum fixed version assertion.",
+    "Provider account availability, actual version pinning guarantees and end-to-end retention/geography compliance."
+  ],
+  "activation": {
+    "live_inference_calls": 0,
+    "model_benchmarks_run": 0,
+    "configured_default_provider": null,
+    "approved_runtime_workloads": [],
+    "accounts_or_subscriptions_created": false,
+    "environment_status_observed_spec_revision": "13",
+    "environment_secret_bindings_observed": 0
+  },
+  "implementation_disposition": "Requirements added; runtime implementation is assigned to owning development chats. No provider candidate is adopted as a benchmark winner."
+}

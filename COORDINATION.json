@@ -40,13 +40,13 @@
       "commit": null,
       "deliverable": "component_update",
       "checks": [],
-      "candidate_source_commit": "33f76542b594b6fe8d49dba71a11359027d59a0d",
+      "candidate_source_commit": "f64ef3132c363925739acbda1e8421fbd4b4642f",
       "initial_checks": [
         "Engine release integrity passed",
         "Six historical-reference tests passed",
         "Atlas CHECKSUMS.sha256 inventory passed"
       ],
-      "limits": "No App/Catalog compatibility qualification for this new set yet.",
+      "limits": "Scoped checks passed. Full source review, complete archive verification, exact compatible App pins and joined qualification remain pending.",
       "source_review": {
         "commit": "33f76542b594b6fe8d49dba71a11359027d59a0d",
         "status": "passed_scoped_checks",
@@ -67,24 +67,89 @@
           "Multipart Historical Details support remains assigned.",
           "Atlas pixel accuracy and additional canon adoption are not certified by these checks."
         ]
+      },
+      "candidate_published_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+      "latest_candidate_checks": {
+        "reviewed_on": "2026-10-22",
+        "tested_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+        "status": "passed_scoped_checks; approval pending",
+        "checks": {
+          "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p 'test_historical*.py' -v",
+          "run": 65,
+          "passed": 65,
+          "failed": 0,
+          "integrity": "passed",
+          "scope": "Historical archive, multipart and historical-plan family only; not the full runtime suite."
+        },
+        "source_review_complete": false,
+        "integration_approved": false
       }
     },
     "app": {
-      "status": "pending",
+      "status": "in_review",
       "commit": null,
       "deliverable": "component_update",
-      "checks": []
+      "checks": [],
+      "candidate_source_commit": "02d260e80ee62c90d3563e0c063460f97eeec99c",
+      "candidate_published_commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+      "latest_candidate_checks": {
+        "reviewed_on": "2026-10-22",
+        "tested_commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+        "status": "passed_scoped_checks; approval pending",
+        "checks": {
+          "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_historical_reference.py' -v",
+          "run": 10,
+          "passed": 10,
+          "failed": 0,
+          "integrity": "passed",
+          "frontend_command": "node IRGS_Web/tests/test_gameplay_ui.js",
+          "frontend_checks_passed": 72,
+          "prospective_dependency_repeat": {
+            "run": 10,
+            "passed": 10,
+            "engine_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+            "catalog_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+            "selection": "Process-only IRGS_ENGINE_ROOT/IRGS_CATALOG_ROOT overrides; submodule pins unchanged."
+          },
+          "scope": "Historical-reference HTTP cases and synthetic UI checks; multipart error mapping includes test doubles. Not full Web/browser/launcher qualification."
+        },
+        "source_review_complete": false,
+        "integration_approved": false
+      },
+      "limits": "Scoped checks passed. Full source review, complete archive verification, exact compatible App pins and joined qualification remain pending."
     },
     "catalog": {
-      "status": "pending",
+      "status": "in_review",
       "commit": null,
       "deliverable": "component_update",
-      "checks": []
+      "checks": [],
+      "candidate_source_commit": "ab3e127f4a0bc504158fd91617e4f76fef5a2f7d",
+      "candidate_published_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+      "latest_candidate_checks": {
+        "reviewed_on": "2026-10-22",
+        "tested_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+        "status": "passed_scoped_checks; approval pending",
+        "checks": {
+          "command": "python -B -m unittest discover -s tools/tests -p 'test_historical_details.py' -v",
+          "run": 30,
+          "passed": 30,
+          "failed": 0,
+          "integrity": "passed",
+          "payload_status": "blocked_missing_source",
+          "complete_archive_verified": false,
+          "scope": "Synthetic packaging, rejection and intake/blocked-source checks; no actual full archive round-trip."
+        },
+        "source_review_complete": false,
+        "integration_approved": false
+      },
+      "limits": "Scoped checks passed. Full source review, complete archive verification, exact compatible App pins and joined qualification remain pending."
     }
   },
   "blockers": [
-    "Direct chat dispatch is unavailable in this cloud session; work orders must be read when each chat resumes.",
-    "Original Historical Grand Archive ZIP is not accessible in this cloud workspace."
+    "Direct chat dispatch is unavailable in this cloud session; updated repository work orders are published but not delivered as messages.",
+    "Catalog manifest is blocked_missing_source: the original ZIP is identified on Drive but full payload bytes/parts and complete round-trip proof are absent.",
+    "App still pins Engine 2c5590bcb2d7ee7e02f597526c3cb341841bd2dd and Catalog c70dc16d4e48493b833dba5a0f68f43a972bdcb5 rather than the new candidates.",
+    "Exact candidate source reviews, coordinator approvals and joined qualification are incomplete; scoped passing tests alone do not release the set."
   ],
   "integration_status": "held",
   "component_source_integration_performed": false,
@@ -104,5 +169,53 @@
       "work_order_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
       "product_code_changed_by_this_commit": false
     }
-  ]
+  ],
+  "ai_provider_program": {
+    "requirements_status": "documented_and_assigned_backlog",
+    "specification": "AI_PROVIDER_STRATEGY.md",
+    "research_review": "AI_PROVIDER_REVIEW.md",
+    "evaluation_cases": "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json",
+    "required_evaluation_cases": 16,
+    "executed_model_evaluation_cases": 0,
+    "stage": "AIP-S1 offline provider/access/validation/ledger contract first",
+    "runtime_implemented_by_this_change": false,
+    "paid_inference_activated": false,
+    "provider_quality_winner": null,
+    "message_dispatched": false,
+    "current_historical_details_cycle_replaced": false,
+    "observed_component_chat_status_on_2026_10_22": {
+      "engine": "active",
+      "app": "active",
+      "catalog": "active"
+    },
+    "work_order_publication": [
+      {
+        "repository": "IRGS-Engine",
+        "commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      },
+      {
+        "repository": "IRGS-APP-WEB",
+        "commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      },
+      {
+        "repository": "IRGS-Catalog",
+        "commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      }
+    ]
+  }
 }

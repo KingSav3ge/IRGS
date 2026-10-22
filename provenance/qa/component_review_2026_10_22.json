@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-22T22:33:26.344998+00:00",
+  "review_status": "scoped_checks_passed_integration_held",
+  "cycle_id": "historical-details-01",
+  "tested_components": {
+    "engine": {
+      "published_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+      "product_change_commit": "f64ef3132c363925739acbda1e8421fbd4b4642f",
+      "checks": {
+        "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p 'test_historical*.py' -v",
+        "run": 65,
+        "passed": 65,
+        "failed": 0,
+        "integrity": "passed",
+        "scope": "Historical archive, multipart and historical-plan family only; not the full runtime suite."
+      }
+    },
+    "app": {
+      "published_commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+      "product_change_commit": "02d260e80ee62c90d3563e0c063460f97eeec99c",
+      "checks": {
+        "command": "python -B -m unittest discover -s IRGS_Web/tests -p 'test_historical_reference.py' -v",
+        "run": 10,
+        "passed": 10,
+        "failed": 0,
+        "integrity": "passed",
+        "frontend_command": "node IRGS_Web/tests/test_gameplay_ui.js",
+        "frontend_checks_passed": 72,
+        "prospective_dependency_repeat": {
+          "run": 10,
+          "passed": 10,
+          "engine_commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+          "catalog_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+          "selection": "Process-only IRGS_ENGINE_ROOT/IRGS_CATALOG_ROOT overrides; submodule pins unchanged."
+        },
+        "scope": "Historical-reference HTTP cases and synthetic UI checks; multipart error mapping includes test doubles. Not full Web/browser/launcher qualification."
+      }
+    },
+    "catalog": {
+      "published_commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+      "product_change_commit": "ab3e127f4a0bc504158fd91617e4f76fef5a2f7d",
+      "checks": {
+        "command": "python -B -m unittest discover -s tools/tests -p 'test_historical_details.py' -v",
+        "run": 30,
+        "passed": 30,
+        "failed": 0,
+        "integrity": "passed",
+        "payload_status": "blocked_missing_source",
+        "complete_archive_verified": false,
+        "scope": "Synthetic packaging, rejection and intake/blocked-source checks; no actual full archive round-trip."
+      }
+    }
+  },
+  "app_declared_pins": {
+    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
+    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  },
+  "integration_gate": {
+    "cycle_id": "historical-details-01",
+    "status": "held",
+    "ready": false,
+    "selected_components": {
+      "engine": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+      "app": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+      "catalog": "02db97383a8a0c785250b98585253d24f3365a9b"
+    },
+    "reasons": [
+      "engine: this exact component update needs coordinator approval.",
+      "engine: passing review evidence is incomplete.",
+      "app: this exact component update needs coordinator approval.",
+      "app: passing review evidence is incomplete.",
+      "catalog: this exact component update needs coordinator approval.",
+      "catalog: passing review evidence is incomplete.",
+      "app: its engine dependency pin differs from the selected commit.",
+      "app: its catalog dependency pin differs from the selected commit."
+    ]
+  },
+  "source_review_complete": false,
+  "full_runtime_web_or_joined_suite_rerun": false,
+  "actual_archive_bytes_verified": false,
+  "product_source_imported_to_joined": false,
+  "scope_note": "Independent coordinator checks executed on exact commits. Author-supplied full-suite/browser claims are not repeated as coordinator executions."
+}

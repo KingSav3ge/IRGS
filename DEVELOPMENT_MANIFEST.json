@@ -34,8 +34,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 7033,
-      "sha256": "ecaa5dc5f0ba9a45b99aea047b7bc622f480c4678f5a01c5b237daa31afef7ea"
+      "bytes": 7507,
+      "sha256": "0ef355ff3dcc102dac7d538d4d170fc81957dc116496e2a679562f24c82197fb"
+    },
+    {
+      "path": "AI_PROVIDER_REVIEW.md",
+      "bytes": 6961,
+      "sha256": "93df9e1783d06d92cda0609576500f191b62260b86d8b5e00f1f7a91ba157253"
+    },
+    {
+      "path": "AI_PROVIDER_STRATEGY.md",
+      "bytes": 12615,
+      "sha256": "05232082197ec80d20c21e27ce2db6b1551713c1664b4e9e5b0630327a32b96a"
     },
     {
       "path": "CATALOGUE_COMPONENT_VALIDATION.json",
@@ -79,13 +89,13 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 3568,
-      "sha256": "837defdf643913574b493a42c4ab1ef4ca9a0f5a7e2fd80f5eed75da0d60ae24"
+      "bytes": 8996,
+      "sha256": "e0648c94bbf5234fc9f670c704b1c30363d604904f5c496e2af50c9d8d3612cb"
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 4007,
-      "sha256": "f4c0b431b67d037cef058f32e5fb2c09df9dd0e84f421085151bafb8a73efe56"
+      "bytes": 6431,
+      "sha256": "924736d2ae170f22c45b17e7c3a595f62fc5d743639e326ea518fa0cd55cb706"
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
@@ -3291,6 +3301,31 @@
       "path": "provenance/qa/README.md",
       "bytes": 2298,
       "sha256": "d00506b2d502a3f6c5ad4043713666825013e27649181085e369bb2452e86296"
+    },
+    {
+      "path": "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json",
+      "bytes": 14139,
+      "sha256": "c15c4aca210e1303fd049f2b2f6b464151d3f8a4fd18603fad735980f1283ea3"
+    },
+    {
+      "path": "provenance/qa/ai_provider_strategy/RESEARCH_REVIEW.json",
+      "bytes": 35268,
+      "sha256": "2b8198b55ed3e216668c24a1f7ef114e3015ac10cb1e736c0f7e1a9e7e1056ed"
+    },
+    {
+      "path": "provenance/qa/ai_provider_strategy/USER_ASSESSMENT_2026_10_20.md",
+      "bytes": 37730,
+      "sha256": "30ecc4f28cc37f8a7aca5dd700cfb482f8bc1d15a5d6742593cfe6143b63eb8a"
+    },
+    {
+      "path": "provenance/qa/ai_provider_strategy/VALIDATION.json",
+      "bytes": 2270,
+      "sha256": "f6bc0a2866bf2ec8b673d07268ef69184f52641b107cde3e5a6fd2c869ff5639"
+    },
+    {
+      "path": "provenance/qa/component_review_2026_10_22.json",
+      "bytes": 3698,
+      "sha256": "bd7dad6b0db4bc02b293a5523e523cb93b722298d6967a36c6861d560bbbc992"
     },
     {
       "path": "provenance/qa/current_report.json",

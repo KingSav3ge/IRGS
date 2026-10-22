@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "AI provider engineering requirements, source preservation, research/arithmetic and published component work orders; no provider runtime implemented by coordinator.",
+  "status": "checks_passed_runtime_not_activated",
+  "checks": {
+    "source_assessment_bytes_and_sha256": "matched",
+    "preserved_master_sha256": "matched",
+    "json_consistency": "passed",
+    "local_and_work_order_links": "passed",
+    "cost_scenarios_checked": 9,
+    "blended_exact_usd": "0.024175",
+    "evaluation_case_inventory": {
+      "required": 16,
+      "executed_model_cases": 0
+    },
+    "joined_integrity": "passed; selected Core/App/Catalog hashes unchanged",
+    "operation_register_freshness": "current; this check does not replay tests",
+    "component_work_order_publication": [
+      {
+        "repository": "IRGS-Engine",
+        "commit": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      },
+      {
+        "repository": "IRGS-APP-WEB",
+        "commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      },
+      {
+        "repository": "IRGS-Catalog",
+        "commit": "02db97383a8a0c785250b98585253d24f3365a9b",
+        "changed_paths": [
+          "COORDINATOR_WORK_ORDER.md"
+        ],
+        "product_source_changed_by_commit": false,
+        "remote_head_confirmed": true
+      }
+    ]
+  },
+  "research_scope": "16 official URL fetch attempts; 13 documented observations, explicit failed/unverified claims. No model performance benchmark.",
+  "component_followup": "../component_review_2026_10_22.json",
+  "runtime_changes": {
+    "live_inference_calls": 0,
+    "paid_services_activated": false,
+    "product_source_imported_to_joined": false,
+    "component_pins_changed": false
+  },
+  "unrun": [
+    "Actual provider inference and semantic/latency benchmarks",
+    "Full original Historical Grand Archive round-trip",
+    "Full new candidate source review and joined release qualification"
+  ]
+}
