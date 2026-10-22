@@ -59,8 +59,8 @@
     },
     {
       "path": "COMPONENTS.json",
-      "bytes": 958,
-      "sha256": "2c55c534d441f753150be96fec991f902427aa5280f50a433eb4a55bc02d1046"
+      "bytes": 992,
+      "sha256": "67f7072ff5c025d235cfa7ccd9d8d39cca1ca65be2ed7b640288d7256d134eb8"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -104,8 +104,8 @@
     },
     {
       "path": "HISTORICAL_REFERENCE_VALIDATION.json",
-      "bytes": 6533,
-      "sha256": "d0ecc02e58bc833418488cd917cac8178fa5a46199242a43b791ce6a8cf6619f"
+      "bytes": 7282,
+      "sha256": "e5cf94ef9280841735038bd0031097882416a0301f9125972e83a1202e541eb4"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -3291,6 +3291,11 @@
       "path": "provenance/qa/historical_reference_20261022/historical_attachment_smoke.json",
       "bytes": 2126,
       "sha256": "7a0c92dce83d83efbefcd43049bee37ad0156d293205ab2e925ec86ee2d188b4"
+    },
+    {
+      "path": "provenance/qa/historical_reference_20261022/independent_local_summary.json",
+      "bytes": 3649,
+      "sha256": "6ad000bc72c73ab73bfb23add4c25ead5002a0a78efe0565df9ea766822a52dc"
     },
     {
       "path": "provenance/qa/historical_reference_20261022/reference_capture.txt",

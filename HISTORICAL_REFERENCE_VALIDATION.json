@@ -171,6 +171,16 @@
       "app_interface_checks": 67,
       "cache_export_test": 1,
       "catalogue_utf8_cases": 6
+    },
+    "independent_local": {
+      "run": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "executed_locally": true,
+      "candidate_commit": "d5a5920219f862323ed106c0d15b9d865de11a31",
+      "record": "provenance/qa/historical_reference_20261022/independent_local_summary.json"
     }
   },
   "dependency_register": {
@@ -201,5 +211,18 @@
     "A capture interrupted by intentional source edits was refused and superseded by the final source-matched capture.",
     "No assertion, game definition, uncertain date, permit or reconstructed quantity was installed in a campaign.",
     "The independent cloud report for an older candidate is preserved separately and is not relabelled as a new retest."
-  ]
+  ],
+  "component_sync": {
+    "changed_source_paths": [],
+    "removed_source_paths": [],
+    "component_metadata_updated": true,
+    "app_engine_pin_matches": true,
+    "app_catalog_pin_unchanged": true
+  },
+  "distribution": {
+    "target": "GitHub source repositories only",
+    "local_package_created": false,
+    "package_smoke_executed": false,
+    "reason": "User requested GitHub publication without a local package."
+  }
 }
