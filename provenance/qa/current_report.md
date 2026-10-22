@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `69c0f4f6bd7c65f9a41adc76d9eba807ce3b6b83`
-Result: **passed** · 2026-10-22T17:01:23.699870+00:00
+Candidate: `c56572caac5e94c2d949d1b83eaa803a415ffa29`
+Result: **passed** · 2026-10-22T17:51:24.232441+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -16,11 +16,10 @@ Independent cases: 8 passed, 0 failed, 0 errors.
 | --- | --- |
 | source-integrity | passed |
 | evidence-freshness | passed |
-| runtime_operation_capture | passed |
+| runtime | passed |
 | web | passed |
 | interface | passed |
 | tooling | passed |
-| fresh_recursive_clone | passed |
 
 ## IRGS-QA-001
 
@@ -54,16 +53,16 @@ Reproduce:
 
 ## Scope
 
-Fresh independent HTTP checks against the exact assembled Engine/App/Catalog commits. Completed runtime capture, Web, interface and tooling checks from this update are included only after every recorded source hash matched the assembly. See CATALOG_V0_5_VALIDATION.json. No all-branch certification or new campaign release is claimed.
+Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.
 
 This report is not full C2/T01–T37 certification. Skips and missing providers are not passes. No user campaign was loaded or migrated.
 
-## Component identities
+## Repository and attachment validation
 
-Engine: `c0777be7e68021bd1bee66437d555390778c0adb`
+Engine: `2c5590bcb2d7ee7e02f597526c3cb341841bd2dd`
 
-App: `aac20055270cc64ba870061085cd8f6bfe43a93c`
+App: `3980e5665814847d3cd02c0f0b86417a231e2be6`
 
 Catalog: `c70dc16d4e48493b833dba5a0f68f43a972bdcb5`
 
-App dependency pins match the candidate. Regression evidence matches every recorded source hash; the eight independent HTTP cases were newly executed against this assembly.
+All Git object checks and source integrity checks passed. The App pins match the standalone component commits, and the joined source import dry-run reported no changed or removed files. Fresh standalone Historical Reference checks passed (6 provider and 4 HTTP cases). The archive ZIP remains an external attachment and was not available in this cloud run; synthetic reference archives were used. Package smoke passed on 9 routes without creating campaign records.
