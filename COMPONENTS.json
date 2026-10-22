@@ -5,7 +5,7 @@
   "engine": {
     "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
     "branch": "main",
-    "commit": null,
+    "commit": "c0777be7e68021bd1bee66437d555390778c0adb",
     "source_paths": [
       "IRGS_3_3",
       "engine",
@@ -15,7 +15,7 @@
   "app": {
     "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
     "branch": "main",
-    "commit": null,
+    "commit": "3ec412c8e383022fa7a3b79b477daed27a122c95",
     "source_paths": [
       "IRGS_Web",
       "Start-IRGS.cmd"

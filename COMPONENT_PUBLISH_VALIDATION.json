@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "status": "passed",
+    "engine_clone": "/tmp/irgs-component-fresh-2bd3bv6j/IRGS-Engine",
+    "app_clone": "/tmp/irgs-component-fresh-2bd3bv6j/IRGS-APP-WEB",
+    "engine_commit": "c0777be7e68021bd1bee66437d555390778c0adb",
+    "app_commit": "3ec412c8e383022fa7a3b79b477daed27a122c95",
+    "engine": {
+      "status": "verified",
+      "component": "engine",
+      "checks": {
+        "engine": {
+          "release": "IRGS-CORE-3.3-SUITE",
+          "status": "verified",
+          "core": "3.3"
+        }
+      },
+      "behavioral_tests_executed": false
+    },
+    "app": {
+      "status": "verified",
+      "component": "app",
+      "checks": {
+        "engine": {
+          "release": "IRGS-CORE-3.3-SUITE",
+          "status": "verified",
+          "core": "3.3"
+        },
+        "app": {
+          "status": "verified",
+          "component": "IRGS-APP-WEB",
+          "files": 34
+        },
+        "engine_commit": "c0777be7e68021bd1bee66437d555390778c0adb"
+      },
+      "behavioral_tests_executed": false
+    },
+    "app_engine_path": "/tmp/irgs-component-fresh-2bd3bv6j/IRGS-APP-WEB/Engine/IRGS_3_3",
+    "engine_has_canonical_app_tree": false,
+    "web": {
+      "tests_run": 148,
+      "passed": 141,
+      "skipped": 7
+    },
+    "interface_checks_passed": 65,
+    "existing_user_saves_touched": false
+  },
+  "joined_source_origin": "5fbc2ad22f94737846cd63a5a0dc5e63b1de277d",
+  "scope": "Fresh GitHub clones, standalone integrity, App Engine-path selection, Web and interface checks. No existing user campaign was opened."
+}

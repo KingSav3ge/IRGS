@@ -48,8 +48,13 @@
     },
     {
       "path": "COMPONENTS.json",
-      "bytes": 592,
-      "sha256": "a25fca459cdb94d5e92d8006d64f1408dd2906fe62c2e5bafe97f5f0f600eb00"
+      "bytes": 668,
+      "sha256": "dea13656fd02eac3929d3426245a8145b37f919c229dd323f4ad7d9302b5fc77"
+    },
+    {
+      "path": "COMPONENT_PUBLISH_VALIDATION.json",
+      "bytes": 1608,
+      "sha256": "cb8a51a2dc98cb14f5d3928d341e1338510d2ce442b185c503cee9498853071c"
     },
     {
       "path": "COMPONENT_REPOSITORIES.md",
@@ -2727,6 +2732,11 @@
       "sha256": "17e274aaf7eb58e79594f973e9334c3f228bd2bb5e4de42bd780f147eeb0d4c8"
     },
     {
+      "path": "provenance/qa/README.md",
+      "bytes": 1865,
+      "sha256": "4bbf118fa96264d13ee75eacecde5404c67198a4b335cac96e1fa5316966d572"
+    },
+    {
       "path": "provenance/qa_handoff/CURRENT_REFS.json",
       "bytes": 171,
       "sha256": "12cfd5c7ba59f4482f7d6baa9c8d2aa61f4dbe0d09dbca32cbf17fcffb7671ea"
@@ -2807,19 +2817,24 @@
       "sha256": "4c78fcea7e59736fead447db69c43802e7c5ee808818211e487cb04213a57ac8"
     },
     {
+      "path": "tools/qa_irgs.py",
+      "bytes": 22957,
+      "sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705"
+    },
+    {
       "path": "tools/refresh_component_releases.py",
       "bytes": 1953,
       "sha256": "8098e3e371efaecb22dcc7aeffef216303d30d16d3aaa964f147018e106ee4e5"
     },
     {
       "path": "tools/smoke_development.py",
-      "bytes": 8696,
-      "sha256": "5b5466f8ccfcbdf67ec13129294d55995d53344c714f8580795fe14d3319dc61"
+      "bytes": 8885,
+      "sha256": "3a88c3784ed4c92b8585474460314340d82edcc1261c2cc92757775cc357e596"
     },
     {
       "path": "tools/sync_components.py",
-      "bytes": 3756,
-      "sha256": "14a51190b2e31f848371d77ab6a59d96a577cddcf93ab2400b2e21f51ffbdf9f"
+      "bytes": 3956,
+      "sha256": "80ea152877f0b01988ebb279f7d01a6814818bcd81f5f96136e77f73cd0e4e4f"
     },
     {
       "path": "tools/tests/test_coverage_capture.py",
@@ -2840,6 +2855,11 @@
       "path": "tools/verify_development.py",
       "bytes": 11301,
       "sha256": "44a24b57d89ff21826879d81773a088528cdad6da33495341cc422d58e814d16"
+    },
+    {
+      "path": "tools/watch_component_qa.py",
+      "bytes": 10063,
+      "sha256": "86243fdd6e95ec812ac3e7e381510c9f459fc293223197d83b6385a23ed34586"
     }
   ]
 }

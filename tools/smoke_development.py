@@ -118,6 +118,8 @@ try:
     if b"IRGS" not in html or b"/app.js" not in html:
         raise RuntimeError("The packaged page did not reference its application")
     get("/app.js")
+    get("/rise.js")
+    get("/catalogue.js")
     get("/style.css")
     catalogue = json.loads(get("/api/catalog"))
     core = catalogue.get("core", {})
@@ -134,6 +136,8 @@ try:
     library = json.loads(get("/api/content-library", token))
     if not isinstance(library.get("campaigns"), list):
         raise RuntimeError("The Content Library response was invalid")
+    if library.get("portfolio", {}).get("counts", {}).get("total") != 44:
+        raise RuntimeError("The campaign portfolio was not packaged")
     after = json.loads(get("/api/campaigns"))
     if after.get("campaigns") != [] or list(saves.rglob("*.json")):
         raise RuntimeError("Read-only smoke inspection created campaign records")

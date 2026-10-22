@@ -32,6 +32,8 @@ def snapshot(repo, prefixes):
         for member in archive:
             if member.isdir():
                 continue
+            if member.name.startswith('provenance/qa/'):
+                continue  # Current QA reports belong to joined integration.
             path = PurePosixPath(member.name)
             if (not member.isfile() or path.is_absolute() or '..' in path.parts
                     or '\\' in member.name or member.size > 100 * 1024 * 1024
@@ -48,7 +50,8 @@ def sync(engine, app, apply=False):
     if git(app, 'rev-parse', 'HEAD:Engine').decode().strip() != engine_commit:
         raise ValueError('Selected Engine commit differs from the App pin')
     sources = engine_files | app_files
-    old = set(git(ROOT, 'ls-files', '--', *ENGINE_PATHS, *APP_PATHS).decode().splitlines())
+    old = {name for name in git(ROOT, 'ls-files', '--', *ENGINE_PATHS, *APP_PATHS).decode().splitlines()
+           if not name.startswith('provenance/qa/')}
     changed = sorted(name for name, data in sources.items()
         if not (ROOT / name).exists() or (ROOT / name).read_bytes() != data)
     removed = sorted(old - sources.keys())
