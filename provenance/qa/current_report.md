@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `86528c60a0a3d3946cf7f81177b0115cf1528e34`
-Result: **passed** · 2026-10-22T16:23:26.349840+00:00
+Candidate: `69c0f4f6bd7c65f9a41adc76d9eba807ce3b6b83`
+Result: **passed** · 2026-10-22T17:01:23.699870+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -20,7 +20,7 @@ Independent cases: 8 passed, 0 failed, 0 errors.
 | web | passed |
 | interface | passed |
 | tooling | passed |
-| browser | passed |
+| fresh_recursive_clone | passed |
 
 ## IRGS-QA-001
 
@@ -54,7 +54,7 @@ Reproduce:
 
 ## Scope
 
-Fresh independent HTTP cases against this assembled pair. Existing completed regression runs are included only after verifying the exact Engine/App release hashes match their recorded source identities. See CATALOGUE_COMPONENT_VALIDATION.json and COMPONENT_PUBLISH_VALIDATION.json.
+Fresh independent HTTP checks against the exact assembled Engine/App/Catalog commits. Completed runtime capture, Web, interface and tooling checks from this update are included only after every recorded source hash matched the assembly. See CATALOG_V0_5_VALIDATION.json. No all-branch certification or new campaign release is claimed.
 
 This report is not full C2/T01–T37 certification. Skips and missing providers are not passes. No user campaign was loaded or migrated.
 
@@ -62,8 +62,8 @@ This report is not full C2/T01–T37 certification. Skips and missing providers 
 
 Engine: `c0777be7e68021bd1bee66437d555390778c0adb`
 
-App: `3ec412c8e383022fa7a3b79b477daed27a122c95`
+App: `aac20055270cc64ba870061085cd8f6bfe43a93c`
 
-This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **true**.
+Catalog: `c70dc16d4e48493b833dba5a0f68f43a972bdcb5`
 
-Regression evidence was reused only after matching both component release hashes to the completed fresh runs. The independent HTTP cases were newly executed against this assembly.
+App dependency pins match the candidate. Regression evidence matches every recorded source hash; the eight independent HTTP cases were newly executed against this assembly.
