@@ -55,7 +55,8 @@
       "issue_equipment",
       "scene_action"
     ],
-    "response_choices": "received contextual drafts; success not guaranteed"
+    "response_choices": "received contextual drafts; success not guaranteed",
+    "rise_foundation": "Shared fictional runtime; 13 bounded contract tests; integrated qualification pending"
   },
   "files_sha256": {
     "runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
@@ -63,7 +64,7 @@
     "runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",
     "runtime/character_background.py": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062",
     "runtime/content_library.py": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae",
-    "runtime/core_world.py": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58",
+    "runtime/core_world.py": "f0a005c03e435bd3480f8ac6685ba98c5af913f6468f2fcbc95d542bbbab5738",
     "runtime/economic_extension.py": "278333562c51ae497a34f7c0b5740643a011e7c732b5c66aa344428610306c5c",
     "runtime/genre_receivers.py": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98",
     "runtime/historical_campaigns.py": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc",
@@ -317,7 +318,10 @@
     "catalog/campaigns/kira/sources/The History of Everwood (Evalian Elves).docx": "9fd8162a65b45ca585180d0bf3ddfdcbaf13790969784f1427e308ef37bb406e",
     "catalog/campaigns/kira/sources/The History of Kyrinus (Karthinian Elves).docx": "c1bd72260d22f178b823ff02bd2caa0743d722f18f09420298d9e2b8c28ca194",
     "catalog/campaigns/kira/verify_kira.py": "9eea40d7da762982fd080823566c355cfbcb9bf806c4110e84d807b6f68a6589",
-    "catalog/campaigns/kira/world.json": "dcd507d70e3f0e502c92d4a941ed41d246a0a2c552a34e8b0808a3ba447dee16"
+    "catalog/campaigns/kira/world.json": "dcd507d70e3f0e502c92d4a941ed41d246a0a2c552a34e8b0808a3ba447dee16",
+    "runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
+    "runtime/settlement_runtime.py": "d26d0bde8da3820d07080898d8f2224b10d63e590638c30b59a74bed712b18f9",
+    "runtime/test_settlement.py": "a36fad999f1b8c7a80f02806617ca564710336febf2c1f69334d66eef93636a3"
   },
   "host_sha256": {
     "IRGS_Web/server.py": "4b007f130d533d2591bdcaec2033373c4cb8d24ff9eba9b620813e23f0ad46fb",

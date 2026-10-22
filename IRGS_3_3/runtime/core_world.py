@@ -14,6 +14,7 @@ CORE_OPS=set(ALIASES.values())
 CORE_OPS.update({'register_actor','record_capacity','commit_activity','record_delegation'})
 CORE_OPS.update({'execute_player_equipment_issue','receive_response_prompt'})
 CORE_OPS.add('execute_player_scene_action')
+CORE_OPS.add('execute_settlement_action')
 CORE_OPS.update(ENTITY_OPS)
 SUPPORTED_OPS=CORE_OPS|set(ALIASES)|GENRE_OPS
 
@@ -42,7 +43,14 @@ class CoreWorld:
         assert materials==set(s['opening_stock']), 'every physical material requires a conserved opening basis'
         for material,total in s['opening_stock'].items():
             assert type(total) is int and total>=0
-            assert sum(loc.get(material,0) for loc in s['stocks'].values())==total
+            consumed=sum(f['quantity'] for f in s.get('material_flows',{}).values() if f['material']==material)
+            assert sum(loc.get(material,0) for loc in s['stocks'].values())==total-consumed
+        for flow in s.get('material_flows',{}).values():
+            assert flow['kind']=='consumption' and type(flow['quantity']) is int and flow['quantity']>0
+            assert flow['material'] in s['opening_stock'] and flow['source_ref'] and flow['purpose']
+            assert flow['account'] in s['stocks']
+        from settlement_runtime import validate_settlement
+        validate_settlement(s)
         ids=[e['id'] for e in s['journal']]
         assert len(ids)==len(set(ids)) and set(ids)==set(s['processed'])
         assert all(s['processed'][e['id']]==digest(e) for e in s['journal'])
@@ -87,6 +95,9 @@ class CoreWorld:
         if op=='execute_player_equipment_issue':
             from player_actions import operate_equipment_action
             return operate_equipment_action(self,s,at,p)
+        if op=='execute_settlement_action':
+            from settlement_runtime import operate_settlement_action
+            return operate_settlement_action(self,s,at,p)
         if op=='execute_player_scene_action':
             from scene_actions import operate_scene_action
             return operate_scene_action(self,s,at,p)

@@ -1038,8 +1038,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 37716,
-      "sha256": "e324cece1e974ce691a8d8c86f6b143f69ace94f2d37a3dc8ac203b73527266a"
+      "bytes": 38138,
+      "sha256": "61258098f61c030a85e7f2676d6c20de3008392458cb55e43d2375b1ec874350"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1183,8 +1183,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 15630,
-      "sha256": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58"
+      "bytes": 16377,
+      "sha256": "f0a005c03e435bd3480f8ac6685ba98c5af913f6468f2fcbc95d542bbbab5738"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1362,6 +1362,16 @@
       "sha256": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f"
     },
     {
+      "path": "IRGS_3_3/runtime/settlement_runtime.py",
+      "bytes": 19258,
+      "sha256": "d26d0bde8da3820d07080898d8f2224b10d63e590638c30b59a74bed712b18f9"
+    },
+    {
+      "path": "IRGS_3_3/runtime/settlement_setup.py",
+      "bytes": 9227,
+      "sha256": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27"
+    },
+    {
       "path": "IRGS_3_3/runtime/starting_selection.py",
       "bytes": 13016,
       "sha256": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3"
@@ -1455,6 +1465,11 @@
       "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
       "bytes": 16203,
       "sha256": "dde9a1d56612d122d5d48fd31292ba27f768f53c61c2a6b9e49a888b8595b4d7"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_settlement.py",
+      "bytes": 10655,
+      "sha256": "a36fad999f1b8c7a80f02806617ca564710336febf2c1f69334d66eef93636a3"
     },
     {
       "path": "IRGS_3_3/runtime/test_starting_selection.py",
@@ -1850,6 +1865,11 @@
       "path": "engine/design/C2/reference/SOURCE_BASELINE.json",
       "bytes": 10300,
       "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978"
+    },
+    {
+      "path": "engine/design/rise/FOUNDATION_IMPLEMENTATION.md",
+      "bytes": 5683,
+      "sha256": "f9dee2d79e63776c171c8aff98e2ad4e0a6c0c05e09399d8b2dada80b6d6c31b"
     },
     {
       "path": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
@@ -2323,8 +2343,8 @@
     },
     {
       "path": "tools/operation_inventory.py",
-      "bytes": 19741,
-      "sha256": "9e179c475e677a6dbb47f13df4c97b479ce11c79936300f27818ef4040fd820a"
+      "bytes": 20531,
+      "sha256": "3b4f88712c2973c7d98e9f4ae9cc26a568a9cadac98bd08861939ea116f25d70"
     },
     {
       "path": "tools/package_development.py",
