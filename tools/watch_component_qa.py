@@ -146,6 +146,7 @@ def main():
   try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
   except BlockingIOError:raise SystemExit('A component QA watcher is already active')
   state=json.loads(state_path.read_text()) if state_path.exists() else {'runs':{}}
+  print(now(),'Component QA watcher started; checking published main commits every',args.interval,'seconds',flush=True)
   while True:
    state['pid']=os.getpid()
    state_path.write_text(json.dumps(state,indent=2)+'\n')
