@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+  "archive_bytes": 533064680,
+  "collections": [
+    {
+      "collection": "chronology",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    },
+    {
+      "collection": "figures",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.078
+    },
+    {
+      "collection": "research",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    },
+    {
+      "collection": "claims",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    },
+    {
+      "collection": "sources",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    },
+    {
+      "collection": "rights",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.062
+    },
+    {
+      "collection": "concepts",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.063
+    },
+    {
+      "collection": "places",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    },
+    {
+      "collection": "routes",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.093
+    },
+    {
+      "collection": "population",
+      "rows_on_page": 2,
+      "has_more": true,
+      "detail_read": true,
+      "campaign_effects": false,
+      "seconds": 0.047
+    }
+  ],
+  "agincourt_matches": 2,
+  "campaigns_opened": false,
+  "archive_extracted": false,
+  "seconds": 1.031
+}

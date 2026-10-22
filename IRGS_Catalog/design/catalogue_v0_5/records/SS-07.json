@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "SS-07",
+  "tier_code": "SS",
+  "tier": "Short Story",
+  "tier_short_story_equivalent": 1,
+  "title": "The Price of Bread",
+  "tagline": "When food becomes scarce, every household feels the consequences.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": true,
+    "pricing_status": "free_launch_intent"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Economy",
+      "Slice of Life",
+      "Survival"
+    ],
+    "setting_label": "Ancient Mesopotamian community",
+    "period_label": "c. 1800 BCE proposed",
+    "synopsis": "A weakened harvest alters the food supply of an ancient town and its nearby farms. Producers, market workers, officials, and households respond using existing stocks, prices, contracts, and social obligations. Characters may trade, work, organize distribution, petition authorities, or try to safeguard dependents as the economy changes.",
+    "playable_perspectives": [
+      "Farmer",
+      "Food producer",
+      "Merchant",
+      "Laborer",
+      "Official",
+      "Household member"
+    ],
+    "featured_experiences": [
+      "Harvest assessment",
+      "Storage and trade",
+      "Household provision",
+      "Market changes",
+      "Resolution or recovery"
+    ],
+    "featured_irgs_systems": [
+      "Agriculture",
+      "Stocks",
+      "Households",
+      "Prices and claims",
+      "Institutions",
+      "Labor"
+    ]
+  },
+  "design": {
+    "scope_statement": "Localized bounded incident with player freedom and simulated external activity",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Agriculture",
+      "Stocks",
+      "Households",
+      "Prices and claims",
+      "Institutions",
+      "Labor"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Anachronistic modern market assumptions",
+      "Invented grain",
+      "Generic Mesopotamian law"
+    ],
+    "acceptance_checks": [
+      "Food conserved",
+      "Transfers recorded",
+      "Authority depends on chosen city-state"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§14 Actor Capability",
+      "§17 Conditions/Injury",
+      "§86 Hidden State",
+      "§92 Anti Railroad"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/ss-07",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "SS",
+      "genre": [
+        "Historical",
+        "Economy",
+        "Slice of Life",
+        "Survival"
+      ],
+      "era": "c. 1800 BCE proposed",
+      "setting": "Ancient Mesopotamian community",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

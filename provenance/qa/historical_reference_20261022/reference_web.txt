@@ -1,0 +1,1077 @@
+test_a_reference_status_or_missing_initializer_never_becomes_playable (test_campaign_portfolio.CampaignPortfolioTests.test_a_reference_status_or_missing_initializer_never_becomes_playable) ... ok
+test_complete_slate_preserves_source_and_proposal_boundaries (test_campaign_portfolio.CampaignPortfolioTests.test_complete_slate_preserves_source_and_proposal_boundaries) ... ok
+test_concept_metadata_cannot_create_or_borrow_a_launch_capability (test_campaign_portfolio.CampaignPortfolioTests.test_concept_metadata_cannot_create_or_borrow_a_launch_capability) ... ok
+test_expanded_v05_records_preserve_copy_and_prior_adoption_boundaries (test_campaign_portfolio.CampaignPortfolioTests.test_expanded_v05_records_preserve_copy_and_prior_adoption_boundaries) ... ok
+test_http_previews_preserve_an_existing_world_and_forged_concepts_cannot_start (test_campaign_portfolio.CampaignPortfolioTests.test_http_previews_preserve_an_existing_world_and_forged_concepts_cannot_start) ... 127.0.0.1 - - [22/Oct/2026 14:33:54] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:54] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:54] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:54] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "GET /api/content-library HTTP/1.1" 403 -
+ok
+test_internal_drafts_are_filtered_before_projection_and_counts (test_campaign_portfolio.CampaignPortfolioTests.test_internal_drafts_are_filtered_before_projection_and_counts) ... ok
+test_accepted_retry_retrieves_history_after_authority_and_stock_change (test_equipment_action.EquipmentActionTests.test_accepted_retry_retrieves_history_after_authority_and_stock_change) ... 127.0.0.1 - - [22/Oct/2026 14:33:55] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/equipment-1?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:55] "POST /api/action HTTP/1.1" 400 -
+ok
+test_changed_payload_and_stale_new_request_cannot_reuse_accepted_identity (test_equipment_action.EquipmentActionTests.test_changed_payload_and_stale_new_request_cannot_reuse_accepted_identity) ... 127.0.0.1 - - [22/Oct/2026 14:33:56] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:56] "POST /api/action HTTP/1.1" 400 -
+ok
+test_concurrent_retries_commit_one_effect_and_one_receipt (test_equipment_action.EquipmentActionTests.test_concurrent_retries_commit_one_effect_and_one_receipt) ... 127.0.0.1 - - [22/Oct/2026 14:33:56] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:57] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:57] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:57] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:57] "POST /api/action HTTP/1.1" 200 -
+ok
+test_depletion_during_multi_recipient_issue_has_no_partial_effects (test_equipment_action.EquipmentActionTests.test_depletion_during_multi_recipient_issue_has_no_partial_effects) ... 127.0.0.1 - - [22/Oct/2026 14:33:57] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:57] "POST /api/action HTTP/1.1" 400 -
+ok
+test_different_words_cannot_silently_execute_a_listed_equipment_action (test_equipment_action.EquipmentActionTests.test_different_words_cannot_silently_execute_a_listed_equipment_action) ... 127.0.0.1 - - [22/Oct/2026 14:33:58] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+ok
+test_expired_unreceived_or_other_orders_are_rejected_atomically (test_equipment_action.EquipmentActionTests.test_expired_unreceived_or_other_orders_are_rejected_atomically) ... 127.0.0.1 - - [22/Oct/2026 14:33:58] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:33:58] "POST /api/action HTTP/1.1" 400 -
+ok
+test_explicit_combat_prompt_offers_tentative_drafts_without_resolving_combat (test_equipment_action.EquipmentActionTests.test_explicit_combat_prompt_offers_tentative_drafts_without_resolving_combat) ... 127.0.0.1 - - [22/Oct/2026 14:33:59] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+ok
+test_failed_persistence_leaves_the_campaign_and_retry_safe (test_equipment_action.EquipmentActionTests.test_failed_persistence_leaves_the_campaign_and_retry_safe) ... 127.0.0.1 - - [22/Oct/2026 14:33:59] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "POST /api/action HTTP/1.1" 503 -
+127.0.0.1 - - [22/Oct/2026 14:33:59] "POST /api/action HTTP/1.1" 200 -
+ok
+test_missing_receipt_still_requires_controlled_actor_before_absence_disclosure (test_equipment_action.EquipmentActionTests.test_missing_receipt_still_requires_controlled_actor_before_absence_disclosure) ... 127.0.0.1 - - [22/Oct/2026 14:34:00] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:00] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/not-accepted?actor_id=private HTTP/1.1" 403 -
+ok
+test_next_action_works_after_a_completed_outcome_and_reload (test_equipment_action.EquipmentActionTests.test_next_action_works_after_a_completed_outcome_and_reload) ... 127.0.0.1 - - [22/Oct/2026 14:34:00] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:00] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:00] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:01] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:01] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+ok
+test_outcome_commits_conserved_stock_and_own_safe_chronicle (test_equipment_action.EquipmentActionTests.test_outcome_commits_conserved_stock_and_own_safe_chronicle) ... 127.0.0.1 - - [22/Oct/2026 14:34:01] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:01] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:01] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:01] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=other-player HTTP/1.1" 200 -
+ok
+test_own_response_preserves_exact_words_as_unresolved_intent_without_combat_effects (test_equipment_action.EquipmentActionTests.test_own_response_preserves_exact_words_as_unresolved_intent_without_combat_effects) ... 127.0.0.1 - - [22/Oct/2026 14:34:02] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+ok
+test_pending_declaration_requires_withdrawal_before_a_different_action (test_equipment_action.EquipmentActionTests.test_pending_declaration_requires_withdrawal_before_a_different_action) ... 127.0.0.1 - - [22/Oct/2026 14:34:02] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/withdraw-declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:02] "POST /api/action HTTP/1.1" 200 -
+ok
+test_receipt_is_actor_scoped_and_a_fork_cannot_replay_the_original_save (test_equipment_action.EquipmentActionTests.test_receipt_is_actor_scoped_and_a_fork_cannot_replay_the_original_save) ... 127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/equipment-1?actor_id=other-player HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/action-result/f58a2557c4834343ac6f5b5865e3345f/equipment-1?actor_id=commander HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/equipment-1?actor_id=commander HTTP/1.1" 200 -
+ok
+test_received_options_do_not_disclose_current_stock_or_private_authority (test_equipment_action.EquipmentActionTests.test_received_options_do_not_disclose_current_stock_or_private_authority) ... 127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=other-player HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:03] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+ok
+test_received_prompt_projection_is_private_and_read_only (test_equipment_action.EquipmentActionTests.test_received_prompt_projection_is_private_and_read_only) ... 127.0.0.1 - - [22/Oct/2026 14:34:04] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:04] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:04] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:04] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:04] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=other-player HTTP/1.1" 200 -
+ok
+test_rejected_action_has_no_receipt_or_pending_state_and_later_play_continues (test_equipment_action.EquipmentActionTests.test_rejected_action_has_no_receipt_or_pending_state_and_later_play_continues) ... 127.0.0.1 - - [22/Oct/2026 14:34:05] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/rejected-action?actor_id=commander HTTP/1.1" 404 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "GET /api/playthrough/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?actor_id=commander HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "POST /api/action HTTP/1.1" 200 -
+ok
+test_retry_and_new_store_reload_recover_identical_outcome_without_effects (test_equipment_action.EquipmentActionTests.test_retry_and_new_store_reload_recover_identical_outcome_without_effects) ... 127.0.0.1 - - [22/Oct/2026 14:34:05] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:05] "GET /api/action-result/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/equipment-1?actor_id=commander HTTP/1.1" 200 -
+ok
+test_revoked_future_or_wrong_scope_authority_fails_without_private_details (test_equipment_action.EquipmentActionTests.test_revoked_future_or_wrong_scope_authority_fails_without_private_details) ... 127.0.0.1 - - [22/Oct/2026 14:34:06] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+ok
+test_selected_actor_and_local_session_boundaries_prevent_impersonation (test_equipment_action.EquipmentActionTests.test_selected_actor_and_local_session_boundaries_prevent_impersonation) ... 127.0.0.1 - - [22/Oct/2026 14:34:06] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:06] "POST /api/action HTTP/1.1" 403 -
+ok
+test_actor_impersonation_and_session_boundaries_fail_without_writes (test_gameplay.GameplayTests.test_actor_impersonation_and_session_boundaries_fail_without_writes) ... 127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c?actor_id=private HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "POST /api/declaration HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c?actor_id=AST-08 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "POST /api/declaration HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c?actor_id=nonexistent HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "POST /api/declaration HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:07] "GET /api/playthrough/4dad7e65fc034c82a90152e24c2d306c HTTP/1.1" 403 -
+ok
+test_changed_payload_stale_revision_and_pending_queue_are_rejected (test_gameplay.GameplayTests.test_changed_payload_stale_revision_and_pending_queue_are_rejected) ... 127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "POST /api/declaration HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "POST /api/declaration HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "POST /api/declaration HTTP/1.1" 400 -
+ok
+test_creator_requires_explicit_mode_and_token (test_gameplay.GameplayTests.test_creator_requires_explicit_mode_and_token) ... 127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/campaign/1dcb1027417c4040b0ea3afbf2466651 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/campaign/1dcb1027417c4040b0ea3afbf2466651?mode=creator HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/binding/1dcb1027417c4040b0ea3afbf2466651 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/playthrough/1dcb1027417c4040b0ea3afbf2466651?mode=creator HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:08] "GET /api/playthrough/1dcb1027417c4040b0ea3afbf2466651?mode=creator HTTP/1.1" 200 -
+ok
+test_default_payload_and_chronicle_contain_no_private_records (test_gameplay.GameplayTests.test_default_payload_and_chronicle_contain_no_private_records) ... 127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/playthrough/07c04e6492f94d8abb2ee6c8e6dfc011 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/chronicle/07c04e6492f94d8abb2ee6c8e6dfc011 HTTP/1.1" 200 -
+ok
+test_fork_cannot_replay_or_retrieve_another_campaign_receipt (test_gameplay.GameplayTests.test_fork_cannot_replay_or_retrieve_another_campaign_receipt) ... 127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/action-result/c26b6793e79644f7ac9b0d701bce178d/decl-1 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "POST /api/declaration HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:09] "GET /api/playthrough/c26b6793e79644f7ac9b0d701bce178d HTTP/1.1" 200 -
+ok
+test_legacy_editor_endpoints_are_not_player_backdoors (test_gameplay.GameplayTests.test_legacy_editor_endpoints_are_not_player_backdoors) ... 127.0.0.1 - - [22/Oct/2026 14:34:10] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/event HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/events HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/frontier HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/mandate HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/resolve HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:10] "POST /api/fork HTTP/1.1" 403 -
+ok
+test_lost_ack_replay_is_exact_and_text_preserves_no_outcomes (test_gameplay.GameplayTests.test_lost_ack_replay_is_exact_and_text_preserves_no_outcomes) ... 127.0.0.1 - - [22/Oct/2026 14:34:10] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "GET /api/action-result/38a2c1e12cea4bc788c8623d649091a9/decl-1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "GET /api/playthrough/38a2c1e12cea4bc788c8623d649091a9 HTTP/1.1" 200 -
+ok
+test_new_create_and_restore_default_to_safe_summaries (test_gameplay.GameplayTests.test_new_create_and_restore_default_to_safe_summaries) ... 127.0.0.1 - - [22/Oct/2026 14:34:11] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:11] "POST /api/restore HTTP/1.1" 200 -
+ok
+test_no_pc_projection_does_not_choose_a_character (test_gameplay.GameplayTests.test_no_pc_projection_does_not_choose_a_character) ... 127.0.0.1 - - [22/Oct/2026 14:34:12] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:12] "GET /api/playthrough/bacf35ea3de6478fa3d1a0b2a3c59be8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:12] "POST /api/declaration HTTP/1.1" 403 -
+ok
+test_only_explicit_current_inventory_rights_expose_quantities (test_gameplay.GameplayTests.test_only_explicit_current_inventory_rights_expose_quantities) ... 127.0.0.1 - - [22/Oct/2026 14:34:12] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:12] "GET /api/playthrough/431a012b2479424ca537e3a1912b220e HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:12] "GET /api/playthrough/431a012b2479424ca537e3a1912b220e HTTP/1.1" 200 -
+ok
+test_simultaneous_retries_commit_one_declaration (test_gameplay.GameplayTests.test_simultaneous_retries_commit_one_declaration) ... 127.0.0.1 - - [22/Oct/2026 14:34:13] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:13] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:13] "POST /api/declaration HTTP/1.1" 200 -
+ok
+test_time_advance_and_failed_persistence_have_no_effects (test_gameplay.GameplayTests.test_time_advance_and_failed_persistence_have_no_effects) ... 127.0.0.1 - - [22/Oct/2026 14:34:13] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:13] "POST /api/time-advance HTTP/1.1" 422 -
+ok
+test_withdrawal_is_durable_idempotent_and_does_not_erase_history (test_gameplay.GameplayTests.test_withdrawal_is_durable_idempotent_and_does_not_erase_history) ... 127.0.0.1 - - [22/Oct/2026 14:34:14] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "POST /api/withdraw-declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "POST /api/withdraw-declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "GET /api/action-result/0800572eb40044a3b9af54bb7b5e0352/withdraw-1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "GET /api/action-result/0800572eb40044a3b9af54bb7b5e0352/decl-1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "GET /api/playthrough/0800572eb40044a3b9af54bb7b5e0352 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:14] "POST /api/declaration HTTP/1.1" 200 -
+ok
+test_all_reference_routes_require_creator_and_session (test_historical_reference.HistoricalReferenceHTTPTests.test_all_reference_routes_require_creator_and_session) ... 127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference?mode=creator HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/search HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/search?mode=creator HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/record?collection=figures&row=1 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/record?collection=figures&row=1&mode=creator HTTP/1.1" 403 -
+ok
+test_invalid_lookup_cannot_read_arbitrary_paths_or_publish_actions (test_historical_reference.HistoricalReferenceHTTPTests.test_invalid_lookup_cannot_read_arbitrary_paths_or_publish_actions) ... 127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/search?collection=../server.py&mode=creator HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "GET /api/historical-reference/record?collection=figures&row=0&mode=creator HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:15] "POST /api/historical-reference?mode=creator HTTP/1.1" 400 -
+ok
+test_library_is_creator_reference_and_never_a_playable_campaign (test_historical_reference.HistoricalReferenceHTTPTests.test_library_is_creator_reference_and_never_a_playable_campaign) ... 127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/campaigns HTTP/1.1" 200 -
+ok
+test_search_detail_and_retry_preserve_archive_and_empty_campaign_store (test_historical_reference.HistoricalReferenceHTTPTests.test_search_detail_and_retry_preserve_archive_and_empty_campaign_store) ... 127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/historical-reference?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/historical-reference/search?collection=figures&q=Henry&mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/historical-reference/record?collection=research&row=1&mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/historical-reference/search?collection=figures&q=Henry&mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:16] "GET /api/historical-reference/record?collection=research&row=1&mode=creator HTTP/1.1" 200 -
+ok
+test_explicit_table_grows_and_resets_inside_next_epoch (test_history_views.BudgetPolicyTests.test_explicit_table_grows_and_resets_inside_next_epoch) ... ok
+test_invalid_or_nongrowing_configurations_fail (test_history_views.BudgetPolicyTests.test_invalid_or_nongrowing_configurations_fail) ... ok
+test_linear_growth_requires_explicit_selection_and_positive_increment (test_history_views.BudgetPolicyTests.test_linear_growth_requires_explicit_selection_and_positive_increment) ... ok
+test_unconfigured_policy_has_symbols_and_no_adopted_numbers (test_history_views.BudgetPolicyTests.test_unconfigured_policy_has_symbols_and_no_adopted_numbers) ... ok
+test_available_datasets_require_supported_records_not_text_inference (test_history_views.ChronicleRetrievalTests.test_available_datasets_require_supported_records_not_text_inference) ... ok
+test_bad_inputs_do_not_guess_or_fall_back_to_an_authoritative_world (test_history_views.ChronicleRetrievalTests.test_bad_inputs_do_not_guess_or_fall_back_to_an_authoritative_world) ... ok
+test_candidate_summary_is_not_a_published_epoch_or_new_year_closure (test_history_views.ChronicleRetrievalTests.test_candidate_summary_is_not_a_published_epoch_or_new_year_closure) ... ok
+test_cursor_cannot_cross_scope_search_area_page_size_or_changed_records (test_history_views.ChronicleRetrievalTests.test_cursor_cannot_cross_scope_search_area_page_size_or_changed_records) ... ok
+test_exact_declaration_is_preserved_as_attempt_not_an_outcome (test_history_views.ChronicleRetrievalTests.test_exact_declaration_is_preserved_as_attempt_not_an_outcome) ... ok
+test_exact_duplicates_are_deduplicated_and_conflicting_identity_is_rejected (test_history_views.ChronicleRetrievalTests.test_exact_duplicates_are_deduplicated_and_conflicting_identity_is_rejected) ... ok
+test_explicit_cross_campaign_branch_or_access_scope_in_record_is_rejected (test_history_views.ChronicleRetrievalTests.test_explicit_cross_campaign_branch_or_access_scope_in_record_is_rejected) ... ok
+test_inspection_and_nested_return_values_never_mutate_input_or_open_files (test_history_views.ChronicleRetrievalTests.test_inspection_and_nested_return_values_never_mutate_input_or_open_files) ... ok
+test_missing_source_is_a_gap_and_never_an_exact_reconstructed_conversation (test_history_views.ChronicleRetrievalTests.test_missing_source_is_a_gap_and_never_an_exact_reconstructed_conversation) ... ok
+test_occurrence_observation_transmission_receipt_remain_distinct (test_history_views.ChronicleRetrievalTests.test_occurrence_observation_transmission_receipt_remain_distinct) ... ok
+test_only_explicit_closed_years_produce_a_preview_not_published_history (test_history_views.ChronicleRetrievalTests.test_only_explicit_closed_years_produce_a_preview_not_published_history) ... ok
+test_order_receipt_never_manufactures_execution (test_history_views.ChronicleRetrievalTests.test_order_receipt_never_manufactures_execution) ... ok
+test_paginated_order_is_stable_under_input_reordering (test_history_views.ChronicleRetrievalTests.test_paginated_order_is_stable_under_input_reordering) ... ok
+test_same_occurrence_reports_are_not_counted_as_resources_or_duplicate_events (test_history_views.ChronicleRetrievalTests.test_same_occurrence_reports_are_not_counted_as_resources_or_duplicate_events) ... ok
+test_search_only_returns_supplied_records_and_preserves_identity_filters (test_history_views.ChronicleRetrievalTests.test_search_only_returns_supplied_records_and_preserves_identity_filters) ... ok
+test_intermediate_century_examples_and_separate_epochs (test_history_views.EpochCoverageTests.test_intermediate_century_examples_and_separate_epochs) ... ok
+test_property_exact_coverage_alignment_and_twelve_entry_bound (test_history_views.EpochCoverageTests.test_property_exact_coverage_alignment_and_twelve_entry_bound) ... ok
+test_repeated_plans_are_identical_and_bad_ordinals_are_rejected (test_history_views.EpochCoverageTests.test_repeated_plans_are_identical_and_bad_ordinals_are_rejected) ... ok
+test_required_boundaries_and_incomplete_groups (test_history_views.EpochCoverageTests.test_required_boundaries_and_incomplete_groups) ... ok
+test_source_centuries_are_disjoint_not_overlapping_cumulative_inputs (test_history_views.EpochCoverageTests.test_source_centuries_are_disjoint_not_overlapping_cumulative_inputs) ... ok
+test_branch_is_independent (test_host.HostTests.test_branch_is_independent) ... 127.0.0.1 - - [22/Oct/2026 14:34:17] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "POST /api/event HTTP/1.1" 200 -
+ok
+test_campaign_artwork_is_static_and_creates_no_campaign (test_host.HostTests.test_campaign_artwork_is_static_and_creates_no_campaign) ... 127.0.0.1 - - [22/Oct/2026 14:34:17] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "GET /voyage.svg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:17] "GET /unlisted-artwork.svg HTTP/1.1" 404 -
+ok
+test_campaign_trash_survives_http_server_restart (test_host.HostTests.test_campaign_trash_survives_http_server_restart) ... 127.0.0.1 - - [22/Oct/2026 14:34:18] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "GET /api/trash HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:18] "POST /api/restore HTTP/1.1" 200 -
+ok
+test_catalog_separates_core_genres_libraries_and_campaign_profiles (test_host.HostTests.test_catalog_separates_core_genres_libraries_and_campaign_profiles) ... 127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/catalog?mode=creator HTTP/1.1" 200 -
+ok
+test_content_lookup_preserves_campaign_and_source_status (test_host.HostTests.test_content_lookup_preserves_campaign_and_source_status) ... 127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:19] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/content?library=ast&q=Abel&limit=5 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/content?library=unknown HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:19] "GET /api/content?library=ast&limit=1000 HTTP/1.1" 400 -
+ok
+test_delete_and_restore_preserve_exact_save_bytes (test_host.HostTests.test_delete_and_restore_preserve_exact_save_bytes) ... 127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/trash HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/campaign/f8c68d1261ca44dabec73c810392fec6?mode=creator HTTP/1.1" 404 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "POST /api/restore HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/trash HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:20] "GET /api/campaigns HTTP/1.1" 200 -
+ok
+test_delete_and_restore_require_local_token_host_and_origin (test_host.HostTests.test_delete_and_restore_require_local_token_host_and_origin) ... 127.0.0.1 - - [22/Oct/2026 14:34:21] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/delete HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/delete HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/delete HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/restore HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/restore HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/restore HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "GET /api/trash HTTP/1.1" 403 -
+ok
+test_event_persists_and_does_not_resolve_outcome (test_host.HostTests.test_event_persists_and_does_not_resolve_outcome) ... 127.0.0.1 - - [22/Oct/2026 14:34:21] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:21] "GET /api/campaign/3bb6ed77c5c5478487288bb65f3335af?mode=creator HTTP/1.1" 200 -
+ok
+test_frontier_persists_contention_and_resolves_later_without_duplicate_effects (test_host.HostTests.test_frontier_persists_contention_and_resolves_later_without_duplicate_effects) ... 127.0.0.1 - - [22/Oct/2026 14:34:22] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/frontier HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/mandate HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/resolve HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/resolve HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/resolve HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/resolve HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/resolve HTTP/1.1" 200 -
+ok
+test_generic_actor_capacity_and_activity_use_shared_records (test_host.HostTests.test_generic_actor_capacity_and_activity_use_shared_records) ... 127.0.0.1 - - [22/Oct/2026 14:34:22] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:22] "POST /api/event HTTP/1.1" 200 -
+ok
+test_historical_catalogue_and_preview_are_read_only (test_host.HostTests.test_historical_catalogue_and_preview_are_read_only) ... 127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-entry/hyw-1360 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-campaigns HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 403 -
+ok
+test_historical_create_requires_exact_ready_scope_and_preview_hash (test_host.HostTests.test_historical_create_requires_exact_ready_scope_and_preview_hash) ... 127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:23] "POST /api/create HTTP/1.1" 200 -
+ok
+test_historical_fork_and_scene_preserve_opening_and_original_save (test_host.HostTests.test_historical_fork_and_scene_preserve_opening_and_original_save) ... 127.0.0.1 - - [22/Oct/2026 14:34:24] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:24] "GET /api/binding/8760a33534b44ec4bbccb74416a870c3?mode=creator HTTP/1.1" 200 -
+ok
+test_invalid_batch_request_is_durable_but_invalid_single_event_is_rejected (test_host.HostTests.test_invalid_batch_request_is_durable_but_invalid_single_event_is_rejected) ... 127.0.0.1 - - [22/Oct/2026 14:34:25] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/event HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/frontier HTTP/1.1" 200 -
+ok
+test_inventory_runs_actual_engine_and_conserves (test_host.HostTests.test_inventory_runs_actual_engine_and_conserves) ... 127.0.0.1 - - [22/Oct/2026 14:34:25] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:25] "POST /api/event HTTP/1.1" 400 -
+ok
+test_legacy_ast_reads_preserve_exact_file_bytes (test_host.HostTests.test_legacy_ast_reads_preserve_exact_file_bytes) ... 127.0.0.1 - - [22/Oct/2026 14:34:26] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "GET /api/campaign/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "GET /api/binding/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?mode=creator HTTP/1.1" 200 -
+ok
+test_new_ast_campaigns_have_distinct_scope_before_replay (test_host.HostTests.test_new_ast_campaigns_have_distinct_scope_before_replay) ... 127.0.0.1 - - [22/Oct/2026 14:34:26] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:26] "POST /api/event HTTP/1.1" 400 -
+ok
+test_non_ast_profile_uses_core_world_and_actual_campaign_scope (test_host.HostTests.test_non_ast_profile_uses_core_world_and_actual_campaign_scope) ... 127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/starting-options?profile_id=fantasy HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "POST /api/event HTTP/1.1" 400 -
+ok
+test_player_catalog_contains_core_health_without_technical_engine_choices (test_host.HostTests.test_player_catalog_contains_core_health_without_technical_engine_choices) ... 127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/catalog HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:27] "GET /api/catalog?mode=creator HTTP/1.1" 403 -
+ok
+test_rejected_and_stale_events_preserve_save (test_host.HostTests.test_rejected_and_stale_events_preserve_save) ... 127.0.0.1 - - [22/Oct/2026 14:34:28] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/event HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/event HTTP/1.1" 400 -
+ok
+test_restore_collision_preserves_active_and_trashed_campaigns (test_host.HostTests.test_restore_collision_preserves_active_and_trashed_campaigns) ... 127.0.0.1 - - [22/Oct/2026 14:34:28] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:28] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/restore HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 400 -
+ok
+test_stale_missing_and_invalid_trash_requests_preserve_saves (test_host.HostTests.test_stale_missing_and_invalid_trash_requests_preserve_saves) ... 127.0.0.1 - - [22/Oct/2026 14:34:29] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "GET /api/trash HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/restore HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/restore HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/delete HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:29] "POST /api/restore HTTP/1.1" 400 -
+ok
+test_static_entrypoint (test_host.HostTests.test_static_entrypoint) ... 127.0.0.1 - - [22/Oct/2026 14:34:30] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:30] "GET / HTTP/1.1" 200 -
+ok
+test_token_origin_host_and_paths (test_host.HostTests.test_token_origin_host_and_paths) ... 127.0.0.1 - - [22/Oct/2026 14:34:30] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:30] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:30] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:30] "POST /api/create HTTP/1.1" 403 -
+ok
+test_closed_listener_is_stopped (test_launcher.LauncherTests.test_closed_listener_is_stopped) ... ok
+test_complete_irgs_health_is_ready_and_uses_only_read_routes (test_launcher.LauncherTests.test_complete_irgs_health_is_ready_and_uses_only_read_routes) ... ok
+test_irgs_looking_catalogue_without_session_health_is_occupied (test_launcher.LauncherTests.test_irgs_looking_catalogue_without_session_health_is_occupied) ... ok
+test_occupied_main_entrypoint_fails_readably_without_launching (test_launcher.LauncherTests.test_occupied_main_entrypoint_fails_readably_without_launching) ... ok
+test_powershell_entrypoints_parse_without_execution (test_launcher.LauncherTests.test_powershell_entrypoints_parse_without_execution) ... ok
+test_repeated_ready_launches_reuse_without_starting_process_or_browser (test_launcher.LauncherTests.test_repeated_ready_launches_reuse_without_starting_process_or_browser) ... ok
+test_unrelated_http_listener_is_occupied_not_reused (test_launcher.LauncherTests.test_unrelated_http_listener_is_occupied_not_reused) ... ok
+test_action_replay_before_stale_revision_and_result_lookup_after_restart (test_rise.RiseTests.test_action_replay_before_stale_revision_and_result_lookup_after_restart) ... 127.0.0.1 - - [22/Oct/2026 14:34:38] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "GET /api/action-result/4c88ec596acd5a52848a8052e2dafab9/offer?actor_id=founder HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "GET /api/chronicle/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:38] "POST /api/rise/action HTTP/1.1" 400 -
+ok
+test_concurrent_retries_commit_only_one_creation_and_one_action (test_rise.RiseTests.test_concurrent_retries_commit_only_one_creation_and_one_action) ... 127.0.0.1 - - [22/Oct/2026 14:34:39] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/rise/preview HTTP/1.1" 200 -
+ok
+test_core_location_confirmation_keeps_inventory_and_movement_usable (test_rise.RiseTests.test_core_location_confirmation_keeps_inventory_and_movement_usable) ... 127.0.0.1 - - [22/Oct/2026 14:34:39] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "GET /api/playthrough/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:39] "GET /api/playthrough/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+ok
+test_creation_retries_preserve_bytes_and_recover_from_trash (test_rise.RiseTests.test_creation_retries_preserve_bytes_and_recover_from_trash) ... 127.0.0.1 - - [22/Oct/2026 14:34:40] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/restore HTTP/1.1" 200 -
+ok
+test_discovery_and_review_are_read_only_and_session_guarded (test_rise.RiseTests.test_discovery_and_review_are_read_only_and_session_guarded) ... 127.0.0.1 - - [22/Oct/2026 14:34:40] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "GET /api/rise/templates HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "GET /api/rise/templates HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/preview HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:40] "POST /api/rise/preview HTTP/1.1" 403 -
+ok
+test_failed_persistence_does_not_accept_identity_or_repeat_effects (test_rise.RiseTests.test_failed_persistence_does_not_accept_identity_or_repeat_effects) ... 127.0.0.1 - - [22/Oct/2026 14:34:41] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:41] "POST /api/rise/preview HTTP/1.1" 200 -
+ok
+test_new_material_remains_inspectable_with_explicit_unknown_unit (test_rise.RiseTests.test_new_material_remains_inspectable_with_explicit_unknown_unit) ... 127.0.0.1 - - [22/Oct/2026 14:34:41] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:41] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "GET /api/playthrough/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/rise/action HTTP/1.1" 200 -
+ok
+test_pending_freeform_intent_blocks_automatic_settlement_actions (test_rise.RiseTests.test_pending_freeform_intent_blocks_automatic_settlement_actions) ... 127.0.0.1 - - [22/Oct/2026 14:34:42] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:42] "POST /api/rise/action HTTP/1.1" 400 -
+ok
+test_remote_stocks_private_policies_and_distant_work_are_absent_from_player_view (test_rise.RiseTests.test_remote_stocks_private_policies_and_distant_work_are_absent_from_player_view) ... 127.0.0.1 - - [22/Oct/2026 14:34:43] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "GET /api/playthrough/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "GET /api/playthrough/4c88ec596acd5a52848a8052e2dafab9 HTTP/1.1" 200 -
+ok
+test_review_digest_rejects_changed_or_held_family_before_initial_save (test_rise.RiseTests.test_review_digest_rejects_changed_or_held_family_before_initial_save) ... 127.0.0.1 - - [22/Oct/2026 14:34:43] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:43] "POST /api/rise/create HTTP/1.1" 400 -
+ok
+test_unauthorized_or_infeasible_action_leaves_save_unchanged_without_private_reason (test_rise.RiseTests.test_unauthorized_or_infeasible_action_leaves_save_unchanged_without_private_reason) ... 127.0.0.1 - - [22/Oct/2026 14:34:44] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/preview HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/action HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "POST /api/rise/action HTTP/1.1" 400 -
+ok
+test_actual_play_arc_conserves_dispatch_and_can_continue_after_delivery (test_scene_play.ScenePlayTests.test_actual_play_arc_conserves_dispatch_and_can_continue_after_delivery) ... 127.0.0.1 - - [22/Oct/2026 14:34:44] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:44] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:45] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+ok
+test_capitalized_human_starts_the_reviewed_opening (test_scene_play.ScenePlayTests.test_capitalized_human_starts_the_reviewed_opening) ... 127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+ok
+test_changed_action_text_kind_parameters_or_stale_new_identity_cannot_execute (test_scene_play.ScenePlayTests.test_changed_action_text_kind_parameters_or_stale_new_identity_cannot_execute) ... 127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:46] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 400 -
+ok
+test_concurrent_duplicate_commits_one_movement (test_scene_play.ScenePlayTests.test_concurrent_duplicate_commits_one_movement) ... 127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:47] "POST /api/action HTTP/1.1" 200 -
+ok
+test_current_world_control_is_rechecked_and_rejected_attempt_has_no_elapsed_effect (test_scene_play.ScenePlayTests.test_current_world_control_is_rechecked_and_rejected_attempt_has_no_elapsed_effect) ... 127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "POST /api/action HTTP/1.1" 400 -
+ok
+test_failed_completed_attempt_has_durable_receipt_and_same_retry_no_cost (test_scene_play.ScenePlayTests.test_failed_completed_attempt_has_durable_receipt_and_same_retry_no_cost) ... 127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:48] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/action HTTP/1.1" 200 -
+ok
+test_freeform_stays_exact_unresolved_intent_and_blocks_structured_actions (test_scene_play.ScenePlayTests.test_freeform_stays_exact_unresolved_intent_and_blocks_structured_actions) ... 127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:49] "POST /api/action HTTP/1.1" 400 -
+ok
+test_hidden_gate_condition_does_not_filter_menu_or_leak_to_views (test_scene_play.ScenePlayTests.test_hidden_gate_condition_does_not_filter_menu_or_leak_to_views) ... 127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:50] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+ok
+test_lost_ack_and_restarted_store_return_original_without_new_observation (test_scene_play.ScenePlayTests.test_lost_ack_and_restarted_store_return_original_without_new_observation) ... 127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/action HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/action-result/597d80de7d3f43044419c8fe5eaf2900/original-observation?actor_id=PC-e1a820f12fcbe323707c6288 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/action HTTP/1.1" 200 -
+ok
+test_persistence_failure_rolls_back_elapsed_location_and_request_then_retry_works (test_scene_play.ScenePlayTests.test_persistence_failure_rolls_back_elapsed_location_and_request_then_retry_works) ... 127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/action HTTP/1.1" 503 -
+127.0.0.1 - - [22/Oct/2026 14:34:51] "POST /api/action HTTP/1.1" 200 -
+ok
+test_review_is_explicit_and_default_start_stays_unplaced (test_scene_play.ScenePlayTests.test_review_is_explicit_and_default_start_stays_unplaced) ... 127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:52] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+ok
+test_setup_does_not_assign_historical_actors_scene_or_resources (test_scene_play.ScenePlayTests.test_setup_does_not_assign_historical_actors_scene_or_resources) ... 127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:52] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "GET /api/playthrough/597d80de7d3f43044419c8fe5eaf2900 HTTP/1.1" 200 -
+ok
+test_unavailable_opening_or_nonhuman_does_not_create_campaign (test_scene_play.ScenePlayTests.test_unavailable_opening_or_nonhuman_does_not_create_campaign) ... 127.0.0.1 - - [22/Oct/2026 14:34:53] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:34:53] "POST /api/create HTTP/1.1" 400 -
+ok
+test_background_details_require_own_actual_matching_receipt (test_stage1.StageOneTests.test_background_details_require_own_actual_matching_receipt) ... 127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+ok
+test_configured_campaigns_with_exact_verified_entry_and_disabled_references (test_stage1.StageOneTests.test_configured_campaigns_with_exact_verified_entry_and_disabled_references) ... 127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:54] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+ok
+test_discovery_and_registry_session_host_origin_boundaries (test_stage1.StageOneTests.test_discovery_and_registry_session_host_origin_boundaries) ... 127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/features HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/features HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/features HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/content-library HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/content-library HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/content-library HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/campaign-world/world-of-kira HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/campaign-world/world-of-kira HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/campaign-world/world-of-kira HTTP/1.1" 403 -
+ok
+test_every_catalogue_entry_can_start_its_own_reviewed_local_playthrough (test_stage1.StageOneTests.test_every_catalogue_entry_can_start_its_own_reviewed_local_playthrough) ... 127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/historical-campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/historical-entry/hyw-1337 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:55] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1337&snapshot_sha256=5d77da58e2f8f1b4e72472773d416c6fb6e5c066f2df3249c68d8efa1400847a HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/4ae0019d915421f3de744442365b823b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1340 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1340&snapshot_sha256=c5d18c7ea2c21b6f7c850fca584d5597eae7f7ea8e7a117a5eee269b791d2e0d HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/6f91acfcc3c7f48dd66ab71e7e339016 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1341 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1341&snapshot_sha256=a36244b371ae1f73f279fdc0c31c297a7688352600db656148e019cd952481e8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/bc62d900937ef9d3bc6e2e4647633441 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1343 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1343&snapshot_sha256=d47a30e1363b16dab7a9340a8aec0926f85c6946e5b08a8272d4908eaff2bca5 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/a6105d8b5fbb57b27ab0d9cbf4768d87 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1345 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1345&snapshot_sha256=59f395ceb4f7a82d680bc31131f39333844a3d3295a6dadefc872e2331a48eeb HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/12806ce931b96966b043ce24f9fc0e98 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1346 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1346&snapshot_sha256=0da9c5f1835906d6eb21f1c742d2a03a57bc95e8b291c88f19b476a3abafda67 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/f9d4c6cdaaae0dd28afc845c2581c996 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1347 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1347&snapshot_sha256=dd8543d8fe97e22865dcb0658062ae3c5b320120e4682fbccbff57d41967371e HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/ca9f595a1083c5adad7dede8fc00ebc8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1355 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1355&snapshot_sha256=318cc9d97d0b37785a5249e48c348849e54b528e519cad21cd566c4bc46bba1b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/072a7368371af1bc979b392d5e66cc0f HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/historical-entry/hyw-1356 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1356&snapshot_sha256=94cf541c542f1c68164348a4e0a5f40ffb4eb21500741c5c90ae6e08b49e7d85 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:56] "GET /api/playthrough/1c738efcd664a1741ac0727582423aac HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1357 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1357&snapshot_sha256=b8f92746b66c806dc0caba31a9a6c84857021c229c080804c3c157e6fa746f7b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/e54bfd28b6375fda6518a1110392efda HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1359 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1359&snapshot_sha256=07969179ae627e10202a5b69a1eefd9c736945ff3fb259e683e0f5d0289aa9fd HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/44f1172ce2ec6792cd4ac2dc705fdeb1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1360 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1360&snapshot_sha256=afee9da025fd6b68e5c6db941b4cb684d699605c108187b9c996674b387cce77 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/0594de31d2714921e3f64f3d4a956df7 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1364 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1364&snapshot_sha256=38e01d6590bf26a38119b64650727fe127abc6e2890b46692fa24e75cef0b7e7 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/d5f28e06441599746349dc5f7203c597 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1366 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1366&snapshot_sha256=d04f2ef2cfe88b94cdc13bd83383468bc32097daad74ffd83981b31044d56d7d HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/d2e90105ebab5211e6ffcf3b194ba0f8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1369 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1369&snapshot_sha256=79e5813d89ea9d6fee52ece0da3ba228d6a2a3bbf4bba4fca165c8c45ef18d12 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/7e29c32e88eb9db94b8d5d997c1a15cf HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1372 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1372&snapshot_sha256=843f94b5b2cedc331311d8ff8ba77d5a1253f5e3672378bbd4eff7d6c34df057 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/9fd3fba0d41cc0e25821831f75aefcb3 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1373 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1373&snapshot_sha256=a92bd020822567871385a63c5dac660ff0b171c5dde16bff278109546c2b20f0 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/playthrough/ab18de9fbee904d398a67ddb0d4b2f9c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/historical-entry/hyw-1375 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:57] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1375&snapshot_sha256=b24aa084206c69af937de37c6c1225d56477ea1709753ef988a6f0aae70ac664 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/3403441a2bc7d9d869a53ef0e49f63d3 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1377 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1377&snapshot_sha256=37acd969d5ca6ffe28eeb0c15d15832aec9e289329ded434ded947484a502f3d HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/9a5ccb41a1cc9a680d4b6ac99b9e0a1a HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1385 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1385&snapshot_sha256=a290dfbce090c2bf754c3f16208acf32bf00a0897bc8cf0f158d017e9a9af618 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/9467fc927e1e385f20e791bac1565ad7 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1389 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1389&snapshot_sha256=d3bcf54a7f6f8fec35a004b1552804beed54f109e8f97009b70b5f98ccc85076 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/6e303153f605b8db969e63f9db6b4066 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1396 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1396&snapshot_sha256=fe96546c3f1cd4e6c5386d9e829b7d7359bddec8842a3b16cfe5b8f559a66b84 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/1eb0ed9748ce9b72c84f97c118312303 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1399 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1399&snapshot_sha256=8d1d2fd35d61e60f7dc8a4f150f224a6267c68cd781ab99aa1d1fad832cd7d07 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/15300a1a33e18e23fa98c08bdd7042b3 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1400 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1400&snapshot_sha256=37b3a3501cf1d891466c4e71fd906202df9c309ad0c7295072e6157549ae38c1 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/5766bd9dfa6f5f724856e042899cbb1b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1403 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1403&snapshot_sha256=fd34530cfb3b9e7e97bc47a29656beda50828f364862b2b404d2dd7ac1a89ef8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/playthrough/18de4492c6dd81ac7624987921dec874 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:58] "GET /api/historical-entry/hyw-1411 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1411&snapshot_sha256=84c967241d40fadb1143f9337523f211594065451198f34d34c16b3571b6084c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/ff2a20f102231c783d0da32bbb33f13c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/5ee000fdb72371c31f13bb66a2fb2b55 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1417 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1417&snapshot_sha256=bb575e21e67506533a5ad1cef72f391ea3a75db7d685fc08f08bbf40d9d1fc03 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/508a3cc2fd1634adc59c88c3bfdc0e09 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1419 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1419&snapshot_sha256=e7df1c42e364e1019b210653dba5cdcdb8b365150d7a1624eb19d49c443cdd77 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/a8b80c0711f6f05d18dcb58370fcac44 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1420 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1420&snapshot_sha256=c79549891796e2aab4da7850d28efabc9f9aa0dbe75531dfe8e00223c42a10e8 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/0981be9c6f3902e4c3d73ae1085c5d6d HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1422 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1422&snapshot_sha256=40eb3ab639ee6268d9034295c618cab09a3e0b059127fb3e22b9a58aa476da7c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/20ac0da0bb2b3e0e257cc692d765a62d HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1429 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1429&snapshot_sha256=e05d27eff270b1f71fa52788ca837a2063a2311815f176163fefcd181b2b14f0 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/3bff53520d4970d237888777f74e8577 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1435 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1435&snapshot_sha256=a4ac1a7f53398ccfc3bb82c08f7f42f3855f07bb9f1549f817841c78f428c2f0 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/playthrough/f3fe67bbfc44153a8f25059c042cd19b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/historical-entry/hyw-1444 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:34:59] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1444&snapshot_sha256=e22f3067bc735c421c6737f9eb8a7101ad5f14750d3a36989c00b0a48714e86c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/playthrough/6fc67eddaa93983c188a5a5f919cfefe HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/historical-entry/hyw-1449 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1449&snapshot_sha256=1f5da009adc58c4f2a579ba2f22b5d4f1c4d96f04b5bd5c97ddd977353bfbd1e HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/playthrough/cc9173b6a03b8af11da92386259f121b HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/historical-entry/hyw-1450 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1450&snapshot_sha256=02a8214238f41998c8c73413f47ef405096b34946a917637337b81dfa0ebc568 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/playthrough/4c29800bfcefd7397d197b6070f01830 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/historical-entry/hyw-1453 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1453&snapshot_sha256=944d80572582771ab8e4f29013198c9f0fda06cef68a4e76ad786f8de5e7a129 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/playthrough/ea49753bc068f5d8005f4aa732e04765 HTTP/1.1" 200 -
+ok
+test_fork_rebinds_pinned_historical_reference_without_replaying_history (test_stage1.StageOneTests.test_fork_rebinds_pinned_historical_reference_without_replaying_history) ... 127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:00] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/historical-plans/65ee7876139e47838c1611e46e1bd711?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/playthrough/65ee7876139e47838c1611e46e1bd711 HTTP/1.1" 200 -
+ok
+test_generic_player_create_and_mismatched_entries_rejected_before_save (test_stage1.StageOneTests.test_generic_player_create_and_mismatched_entries_rejected_before_save) ... 127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "GET /api/starting-options?profile_id=fantasy HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:01] "POST /api/create HTTP/1.1" 200 -
+ok
+test_historical_comparison_endpoints_are_creator_only_and_read_only (test_stage1.StageOneTests.test_historical_comparison_endpoints_are_creator_only_and_read_only) ... 127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-baseline HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-baseline?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-baseline?mode=creator HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-plans/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-plans/a4f29f90c1137e5324db2dfaf7546ce2?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:02] "GET /api/historical-plans/a4f29f90c1137e5324db2dfaf7546ce2?mode=creator HTTP/1.1" 403 -
+ok
+test_kira_world_reference_has_map_keys_without_a_launch_or_private_source_dump (test_stage1.StageOneTests.test_kira_world_reference_has_map_keys_without_a_launch_or_private_source_dump) ... 127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/campaign-world/world-of-kira HTTP/1.1" 200 -
+ok
+test_legacy_reads_do_not_create_opening_or_migrate_and_branch_is_scoped (test_stage1.StageOneTests.test_legacy_reads_do_not_create_opening_or_migrate_and_branch_is_scoped) ... 127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/playthrough/b54c76f67af54c0c80b82b54eac865ff HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "POST /api/fork HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/playthrough/23d7a14583e044ae9803592d2eb00e9c HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:03] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+ok
+test_opening_does_not_disclose_historical_reference_or_fabricate_scene (test_stage1.StageOneTests.test_opening_does_not_disclose_historical_reference_or_fabricate_scene) ... 127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+ok
+test_opening_uses_only_own_received_record_and_never_overrides_later_scene (test_stage1.StageOneTests.test_opening_uses_only_own_received_record_and_never_overrides_later_scene) ... 127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:04] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+ok
+test_read_reload_create_retry_and_withdrawn_first_attempt_are_exact_once (test_stage1.StageOneTests.test_read_reload_create_retry_and_withdrawn_first_attempt_are_exact_once) ... 127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/chronicle/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "POST /api/withdraw-declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:05] "GET /api/playthrough/a4f29f90c1137e5324db2dfaf7546ce2 HTTP/1.1" 200 -
+ok
+test_role_scoped_expanded_registry_stage_cannot_grant_privileges (test_stage1.StageOneTests.test_role_scoped_expanded_registry_stage_cannot_grant_privileges) ... 127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/features?stage=development HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/features?stage=development&mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/features?stage=release&mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/features?stage=invalid HTTP/1.1" 400 -
+ok
+test_snapshot_status_alone_does_not_claim_launch_readiness (test_stage1.StageOneTests.test_snapshot_status_alone_does_not_claim_launch_readiness) ... 127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:06] "GET /api/content-library HTTP/1.1" 200 -
+ok
+test_unknown_or_malformed_world_reference_is_rejected (test_stage1.StageOneTests.test_unknown_or_malformed_world_reference_is_rejected) ... 127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/unknown-world HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/../source_text.json HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/world-of-kira/../source_text.json HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/world-of-kira HTTP/1.1" 400 -
+ok
+test_world_inspection_preserves_saved_playthrough_and_forged_start_cannot_launch (test_stage1.StageOneTests.test_world_inspection_preserves_saved_playthrough_and_forged_start_cannot_launch) ... 127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/world-of-kira HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/campaign-world/world-of-kira HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/content-library HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:07] "POST /api/create HTTP/1.1" 403 -
+ok
+test_canonical_ast_default_is_existing_ian_and_reads_do_not_migrate (test_starting_flow.StartingFlowTests.test_canonical_ast_default_is_existing_ian_and_reads_do_not_migrate) ... 127.0.0.1 - - [22/Oct/2026 14:35:08] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:08] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:08] "GET /api/availability/228cd5efd7a149909a69864f6d31be22 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:08] "GET /api/starting-options HTTP/1.1" 200 -
+ok
+test_character_death_retains_history_without_automatic_successor (test_starting_flow.StartingFlowTests.test_character_death_retains_history_without_automatic_successor) ... 127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/playthrough/12f5d4ea70a84e199ce54f5ed06f92bd HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/declaration HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/action-result/12f5d4ea70a84e199ce54f5ed06f92bd/prior-intent HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/declaration HTTP/1.1" 403 -
+ok
+test_creation_lost_ack_replays_before_source_validation_and_rejects_changed_choice (test_starting_flow.StartingFlowTests.test_creation_lost_ack_replays_before_source_validation_and_rejects_changed_choice) ... 127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:09] "POST /api/create HTTP/1.1" 400 -
+ok
+test_creation_retry_does_not_resurrect_trashed_game (test_starting_flow.StartingFlowTests.test_creation_retry_does_not_resurrect_trashed_game) ... 127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "POST /api/delete HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "POST /api/create HTTP/1.1" 200 -
+ok
+test_custom_date_no_matching_snapshot_is_unavailable_without_fallback (test_starting_flow.StartingFlowTests.test_custom_date_no_matching_snapshot_is_unavailable_without_fallback) ... 127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34&custom_year=1416 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:10] "GET /api/starting-options?profile_id=military&custom_year=1415 HTTP/1.1" 200 -
+ok
+test_divergent_live_registry_uses_committed_records_not_historical_template (test_starting_flow.StartingFlowTests.test_divergent_live_registry_uses_committed_records_not_historical_template) ... 127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/availability/792d3dd69a914e11b1d7667a5d0044d4?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "POST /api/event HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/availability/792d3dd69a914e11b1d7667a5d0044d4?mode=creator HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/availability/792d3dd69a914e11b1d7667a5d0044d4 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:11] "GET /api/availability/792d3dd69a914e11b1d7667a5d0044d4?at=2238109 HTTP/1.1" 400 -
+ok
+test_exact_background_is_own_testimony_without_invented_assets (test_starting_flow.StartingFlowTests.test_exact_background_is_own_testimony_without_invented_assets) ... 127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/playthrough/2ec5cd50b21143a8aafb87a2ad4d57df HTTP/1.1" 200 -
+ok
+test_historical_review_has_only_five_configured_existing_characters (test_starting_flow.StartingFlowTests.test_historical_review_has_only_five_configured_existing_characters) ... 127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/historical-entry/hyw-1415 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/playthrough/07bcda567f3b42b5b393637ba2cb5d1f HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/availability/07bcda567f3b42b5b393637ba2cb5d1f HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "GET /api/starting-options?profile_id=military&scenario_id=hundred-years-war&entry_id=hyw-1415&snapshot_sha256=eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34 HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:12] "POST /api/create HTTP/1.1" 200 -
+ok
+test_legacy_registry_absence_remains_unavailable_and_never_hydrates (test_starting_flow.StartingFlowTests.test_legacy_registry_absence_remains_unavailable_and_never_hydrates) ... 127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/availability/6566ec1dfab244d5b688bca4d41b75cb HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/playthrough/6566ec1dfab244d5b688bca4d41b75cb HTTP/1.1" 200 -
+ok
+test_live_player_availability_omits_internal_identity_and_policy_prose (test_starting_flow.StartingFlowTests.test_live_player_availability_omits_internal_identity_and_policy_prose) ... 127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/availability/c73bf02bd9ab449e8f1296c8e8b112ef HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:13] "GET /api/availability/c73bf02bd9ab449e8f1296c8e8b112ef?mode=creator HTTP/1.1" 200 -
+ok
+test_missing_or_invalid_character_leaves_no_save (test_starting_flow.StartingFlowTests.test_missing_or_invalid_character_leaves_no_save) ... 127.0.0.1 - - [22/Oct/2026 14:35:14] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+ok
+test_review_digest_and_scenario_are_validated_before_writing (test_starting_flow.StartingFlowTests.test_review_digest_and_scenario_are_validated_before_writing) ... 127.0.0.1 - - [22/Oct/2026 14:35:14] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+127.0.0.1 - - [22/Oct/2026 14:35:14] "POST /api/create HTTP/1.1" 400 -
+ok
+test_simultaneous_create_retries_persist_one_complete_game (test_starting_flow.StartingFlowTests.test_simultaneous_create_retries_persist_one_complete_game) ... 127.0.0.1 - - [22/Oct/2026 14:35:15] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:15] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:15] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:15] "POST /api/create HTTP/1.1" 200 -
+ok
+test_starting_and_live_availability_require_session_and_preserve_bytes (test_starting_flow.StartingFlowTests.test_starting_and_live_availability_require_session_and_preserve_bytes) ... 127.0.0.1 - - [22/Oct/2026 14:35:15] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "POST /api/create HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/starting-options HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/starting-options HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/starting-options HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/availability/8f9d75cb2c16478da69d6a73fc07145f HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/availability/8f9d75cb2c16478da69d6a73fc07145f HTTP/1.1" 403 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/availability/8f9d75cb2c16478da69d6a73fc07145f HTTP/1.1" 403 -
+ok
+test_unacknowledged_creation_write_failure_can_retry_without_empty_game (test_starting_flow.StartingFlowTests.test_unacknowledged_creation_write_failure_can_retry_without_empty_game) ... 127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/campaigns HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "GET /api/starting-options?profile_id=military HTTP/1.1" 200 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "POST /api/create HTTP/1.1" 503 -
+127.0.0.1 - - [22/Oct/2026 14:35:16] "POST /api/create HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 153 tests in 82.320s
+
+OK

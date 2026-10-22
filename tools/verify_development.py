@@ -17,7 +17,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = "DEVELOPMENT_MANIFEST.json"
-SOURCE_DIRS = {"IRGS_3_3", "IRGS_Web", "engine", "provenance", "tools"}
+SOURCE_DIRS = {"IRGS_3_3", "IRGS_Web", "IRGS_Catalog", "engine", "provenance", "tools"}
 ROOT_FILES = {
     ".gitignore", ".gitattributes", "LICENSE", "LICENSE.txt",
     "Start-IRGS.cmd",
@@ -219,8 +219,15 @@ def verify() -> dict:
     selected = json.loads(completed.stdout)
     require(selected.get("status") == "verified" and selected.get("core") == "3.3",
             "Selected Core verification returned an unexpected result")
-    return {"status": "verified", "development_files": count,
-            "selected_release": selected, "c2": c2, "campaigns_modified": False}
+    app = subprocess.run([sys.executable, "-B", str(ROOT / "IRGS_Web/app_integrity.py")],
+                         cwd=ROOT, env=environment, capture_output=True, text=True)
+    require(app.returncode == 0, "App release integrity failed: " + app.stdout[-1500:] + app.stderr[-1500:])
+    catalog = subprocess.run([sys.executable, "-B", str(ROOT / "IRGS_Catalog/verify_catalog.py")],
+                             capture_output=True, text=True, cwd=ROOT)
+    require(catalog.returncode == 0, "Catalog integrity failed: " + catalog.stdout + catalog.stderr)
+    return {"status": "verified", "development_files": count, "catalog_release": json.loads(catalog.stdout),
+            "selected_release": selected, "app_release": json.loads(app.stdout),
+            "c2": c2, "campaigns_modified": False}
 
 
 def main() -> None:

@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.5.0",
+  "launch_order": [
+    "SS-01",
+    "SS-02",
+    "SS-03",
+    "SS-04",
+    "SS-05",
+    "SS-06",
+    "SS-07",
+    "SS-08",
+    "SS-09",
+    "SS-10",
+    "SS-11",
+    "SS-12",
+    "SS-13",
+    "SS-14",
+    "SS-15",
+    "SS-16",
+    "SS-17",
+    "SS-18",
+    "CC-01",
+    "CC-02",
+    "CC-03",
+    "CC-04",
+    "CC-05",
+    "CC-06",
+    "FC-01",
+    "FC-02",
+    "FC-03",
+    "FC-04",
+    "MC-01",
+    "MC-02",
+    "GC-01"
+  ],
+  "future_proposals": [
+    "CC-P01",
+    "CC-P02",
+    "CC-P03",
+    "FC-P01",
+    "FC-P02",
+    "MC-P01",
+    "MC-P02",
+    "MC-P03",
+    "MC-P04",
+    "GC-P01",
+    "GC-P02",
+    "GC-P03"
+  ],
+  "separate_systems": [
+    "CSS-01"
+  ],
+  "adopted_identifiers": [
+    "MC-01",
+    "GC-01",
+    "CSS-01"
+  ],
+  "note": "Launch target is not a deployment guarantee; no play controls activated."
+}

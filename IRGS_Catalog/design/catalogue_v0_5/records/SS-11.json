@@ -1,0 +1,125 @@
+{
+  "catalogue_id": "SS-11",
+  "tier_code": "SS",
+  "tier": "Short Story",
+  "tier_short_story_equivalent": 1,
+  "title": "A Wedding in Spring",
+  "tagline": "Two lives come together, bringing two households with them.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": true,
+    "pricing_status": "free_launch_intent"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Slice of Life",
+      "Romance",
+      "Family",
+      "Historical"
+    ],
+    "setting_label": "Joseon Korea",
+    "period_label": "c. 1700 proposed",
+    "synopsis": "A marriage approaches and several households organize their lives around preparations, finances, social expectations, and personal relationships. Guests, relatives, workers, and prospective spouses each have perspectives and independent priorities. The day may proceed peacefully, imperfectly, or change through ordinary consequences.",
+    "playable_perspectives": [
+      "Either prospective spouse",
+      "Relative",
+      "Guest",
+      "Household worker"
+    ],
+    "featured_experiences": [
+      "Preparations",
+      "Customs and finance",
+      "Relatives and social relations",
+      "Ceremony or alternatives",
+      "Aftermath"
+    ],
+    "featured_irgs_systems": [
+      "Households",
+      "Relationships",
+      "Cultural practices",
+      "Property",
+      "Time",
+      "Reputation"
+    ]
+  },
+  "design": {
+    "scope_statement": "Localized bounded incident with player freedom and simulated external activity",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Households",
+      "Relationships",
+      "Cultural practices",
+      "Property",
+      "Time",
+      "Reputation"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Universalized Korean customs",
+      "Forced romance outcomes",
+      "Autonomous spouses turned into pawns"
+    ],
+    "acceptance_checks": [
+      "Historical customs checked",
+      "Player consent and agency respected",
+      "Social time and resources accounted"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§14 Actor Capability",
+      "§17 Conditions/Injury",
+      "§86 Hidden State",
+      "§92 Anti Railroad"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/ss-11",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "SS",
+      "genre": [
+        "Slice of Life",
+        "Romance",
+        "Family",
+        "Historical"
+      ],
+      "era": "c. 1700 proposed",
+      "setting": "Joseon Korea",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

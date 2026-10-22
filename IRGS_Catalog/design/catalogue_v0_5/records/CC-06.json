@@ -1,0 +1,130 @@
+{
+  "catalogue_id": "CC-06",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "Midnight in Meridian",
+  "tagline": "A modern city has thousands of stories. Choose yours.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Modern Life",
+      "Drama",
+      "Business",
+      "Crime"
+    ],
+    "setting_label": "Original contemporary North American city",
+    "period_label": "Contemporary fictional",
+    "synopsis": "Meridian is a connected urban district with functioning homes, jobs, businesses, transport, public services, social communities, and criminal organizations. The player can pursue a routine livelihood, relationships, enterprise, public service, or other feasible path while the population and institutions operate independently.",
+    "playable_perspectives": [
+      "Employee",
+      "Business owner",
+      "Student",
+      "Resident",
+      "Public worker",
+      "Contractor",
+      "Criminal associate"
+    ],
+    "featured_experiences": [
+      "Work and livelihoods",
+      "Housing",
+      "Social and family life",
+      "Business development",
+      "Public services",
+      "Local crime and law"
+    ],
+    "featured_irgs_systems": [
+      "Urban",
+      "Careers",
+      "Property",
+      "Economy",
+      "Organizations",
+      "Transport",
+      "Healthcare"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Urban/Crime"
+    ],
+    "core_capability_candidates": [
+      "Urban",
+      "Careers",
+      "Property",
+      "Economy",
+      "Organizations",
+      "Transport",
+      "Healthcare"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Crime becomes obligatory",
+      "Modern systems simulated as cosmetic menus"
+    ],
+    "acceptance_checks": [
+      "Six integrated neighborhoods/functions",
+      "No forced faction allegiance",
+      "Economic records persist"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-06",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Modern Life",
+        "Drama",
+        "Business",
+        "Crime"
+      ],
+      "era": "Contemporary fictional",
+      "setting": "Original contemporary North American city",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

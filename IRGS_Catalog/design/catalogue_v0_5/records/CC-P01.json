@@ -1,0 +1,126 @@
+{
+  "catalogue_id": "CC-P01",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "The Greywater Chronicles",
+  "tagline": "Every street has a history. Every household has a story.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical-Inspired",
+      "Community",
+      "Life",
+      "Commerce"
+    ],
+    "setting_label": "Original historically inspired medieval market town",
+    "period_label": "c. AD 1300 inspired",
+    "synopsis": "A deeply developed market town of households, workshops, merchants, religious institutions, and local officials produces interconnected social and economic stories. Rather than relying on one central crisis, six community domains remain active as careers, property, relationships, and local institutions develop.",
+    "playable_perspectives": [
+      "Resident",
+      "Newcomer",
+      "Artisan",
+      "Trader",
+      "Laborer",
+      "Official"
+    ],
+    "featured_experiences": [
+      "Household life",
+      "Workshops",
+      "Markets",
+      "Property disputes",
+      "Civic institutions",
+      "Settlement development"
+    ],
+    "featured_irgs_systems": [
+      "Households",
+      "Production",
+      "Trade",
+      "Legal position",
+      "Urban services",
+      "Reputation"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Households",
+      "Production",
+      "Trade",
+      "Legal position",
+      "Urban services",
+      "Reputation"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Generic town without local history",
+      "Invisible civilian labor"
+    ],
+    "acceptance_checks": [
+      "Six domain ledger consistency",
+      "Peaceful play supported"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-p01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Historical-Inspired",
+        "Community",
+        "Life",
+        "Commerce"
+      ],
+      "era": "c. AD 1300 inspired",
+      "setting": "Original historically inspired medieval market town",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

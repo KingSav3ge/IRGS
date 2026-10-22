@@ -1,0 +1,129 @@
+{
+  "catalogue_id": "GC-P03",
+  "tier_code": "GC",
+  "tier": "Grand Campaign",
+  "tier_short_story_equivalent": 240,
+  "title": "Worlds of the Frontier",
+  "tagline": "The future belongs to more than one world.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Science Fiction",
+      "Civilization",
+      "Exploration",
+      "Life"
+    ],
+    "setting_label": "Authored original interstellar civilization",
+    "period_label": "Original future chronology to establish",
+    "synopsis": "Multiple inhabited systems, worlds, stations, institutions, and economies interact through finite transport and communication systems. The player can live as an ordinary worker, enter organizations, explore, trade, serve public institutions, or shape political developments without a required central destiny.",
+    "playable_perspectives": [
+      "Resident",
+      "Engineer",
+      "Pilot",
+      "Trader",
+      "Researcher",
+      "Politician",
+      "Worker",
+      "Eligible institution"
+    ],
+    "featured_experiences": [
+      "Multiple star systems",
+      "Interstellar transport",
+      "Distinct societies",
+      "Governance",
+      "Exploration",
+      "Generational change"
+    ],
+    "featured_irgs_systems": [
+      "Civilizations",
+      "Long-distance logistics",
+      "Economy",
+      "Communication",
+      "Infrastructure",
+      "Tech diffusion"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple interacting civilization networks with continuous historical and individual state",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Space"
+    ],
+    "core_capability_candidates": [
+      "Civilizations",
+      "Long-distance logistics",
+      "Economy",
+      "Communication",
+      "Infrastructure",
+      "Tech diffusion"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Instant unbounded faster-than-light assumptions",
+      "Scales erase local events"
+    ],
+    "acceptance_checks": [
+      "Multiple major theaters",
+      "Transit and info delay coherent",
+      "No aggregate losses doubled"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§69 Succession/Generational Continuity",
+      "§74 Technology Development and Diffusion",
+      "§117 Civilization and Grand Strategy",
+      "§62 Resolution Scales"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/gc-p03",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "GC",
+      "genre": [
+        "Science Fiction",
+        "Civilization",
+        "Exploration",
+        "Life"
+      ],
+      "era": "Original future chronology to establish",
+      "setting": "Authored original interstellar civilization",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

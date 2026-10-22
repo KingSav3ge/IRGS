@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "FC-03",
+  "tier_code": "FC",
+  "tier": "Full Campaign",
+  "tier_short_story_equivalent": 30,
+  "title": "Provinces at War",
+  "tagline": "In an age of rivals, life continues beyond battle.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Regional Life",
+      "Politics",
+      "Military"
+    ],
+    "setting_label": "Sengoku Japan",
+    "period_label": "c. AD 1540–1600 proposed",
+    "synopsis": "Villages, castle domains, markets, religious institutions, and military forces in several connected Japanese provinces respond to political and economic change. The player can enter independently as a civilian, service member, or institutional actor where historically feasible. War shapes conditions without mandating participation.",
+    "playable_perspectives": [
+      "Farmer",
+      "Merchant",
+      "Retainer",
+      "Religious practitioner",
+      "Official",
+      "Craftworker",
+      "Independent contractor"
+    ],
+    "featured_experiences": [
+      "Villages",
+      "Castle domains",
+      "Regional markets",
+      "Religious institutions",
+      "Military and administration"
+    ],
+    "featured_irgs_systems": [
+      "Land and taxation",
+      "Military mobilization",
+      "Trade",
+      "Religion and institutions",
+      "Regional logistics",
+      "Succession"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple mutually dependent communities and regional institutions",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Military"
+    ],
+    "core_capability_candidates": [
+      "Land and taxation",
+      "Military mobilization",
+      "Trade",
+      "Religion and institutions",
+      "Regional logistics",
+      "Succession"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "All roles mapped to soldier",
+      "Sengoku institutions generalized across regions"
+    ],
+    "acceptance_checks": [
+      "Five connected domains",
+      "Civilians continue during war",
+      "Military consumes real supplies"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§35 Shared Logistics",
+      "§102 Networks and Routes",
+      "§106 Population, Presence and Movement",
+      "§107 Institutional Functions"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/fc-03",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "FC",
+      "genre": [
+        "Historical",
+        "Regional Life",
+        "Politics",
+        "Military"
+      ],
+      "era": "c. AD 1540–1600 proposed",
+      "setting": "Sengoku Japan",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

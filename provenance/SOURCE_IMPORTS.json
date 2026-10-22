@@ -27,6 +27,21 @@
       "bytes": 4733,
       "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57",
       "status": "paused_work_in_progress"
+    },
+    {
+      "path": "provenance/kira/Kira_Larius_Expanded_v0_5.zip",
+      "original_filename": "Kira_Larius_Expanded_v0_5.zip",
+      "bytes": 815009,
+      "sha256": "53196479c8e4489bd42022217991467a89ca8df6918624e9b717c6d9fd05b6a8",
+      "status": "working_setting_canon_explicitly_adopted_by_user_2026_10_22",
+      "integration": "Canonical Kira world reference only; supplied application patches not applied."
+    },
+    {
+      "path": "IRGS_Web/design/campaign_catalogue/IRGS_Complete_Campaign_Catalogue_v0_4.md",
+      "original_filename": "Pasted text.txt",
+      "bytes": 64747,
+      "sha256": "6ce0298f5a6157414d30f345c21907725d25257fa24e3d98ba9527a4e2d5952b",
+      "status": "user_authorized_catalogue_previews_only"
     }
   ]
 }

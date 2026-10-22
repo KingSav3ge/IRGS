@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "check": "capture",
+      "exit_code": 0,
+      "seconds": 143.531
+    },
+    {
+      "check": "web",
+      "exit_code": 0,
+      "seconds": 82.703
+    },
+    {
+      "check": "ui",
+      "exit_code": 0,
+      "seconds": 2.25
+    },
+    {
+      "check": "tools",
+      "exit_code": 0,
+      "seconds": 5.641
+    }
+  ],
+  "successful": true
+}

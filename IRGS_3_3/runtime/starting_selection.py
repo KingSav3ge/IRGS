@@ -202,7 +202,7 @@ def initialize_player(world, character=None, starting_scenario_id=SCENARIO_ID,
         'instruction_ref': reference, 'background_status': 'player_testimony_not_automatic_capabilities'}
     if result.s.get('historical_start'):
         from historical_plans import baseline_view, initialize_plans
-        baseline = baseline_view()
+        baseline = baseline_view(result.s['historical_start']['entry_id'])
         plans = initialize_plans(baseline, result.s)
         plans.update(baseline_snapshot=copy.deepcopy(baseline), storage='saved_prospective_reference',
                      installed_schedule=False)

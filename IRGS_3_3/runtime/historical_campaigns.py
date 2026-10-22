@@ -7,11 +7,16 @@ The causal clock remains distinct from the snapshot's dated opening boundary.
 import copy
 import hashlib
 import json
+import re
 from pathlib import Path
+from temporal_registry import julian_day, validate_registry
 
 ROOT = Path(__file__).resolve().parent.parent
 SCENARIO_ID = 'hundred-years-war'
-SNAPSHOTS = {'hyw-1415': 'data/hyw_1415_opening.json'}
+SNAPSHOTS = {f'hyw-{year}': f'data/hyw_{year}_opening.json' for year in (
+    1337,1340,1341,1343,1345,1346,1347,1355,1356,1357,1359,1360,
+    1364,1366,1369,1372,1373,1375,1377,1385,1389,1396,1399,1400,
+    1403,1411,1415,1417,1419,1420,1422,1429,1435,1444,1449,1450,1453)}
 
 
 def _text(value):
@@ -77,11 +82,15 @@ def _validate_snapshot(snapshot, entry):
             or type(snapshot.get('revision')) is not int or snapshot['revision'] < 1):
         raise ValueError('Historical snapshot identity, scope, revision or readiness is invalid')
     opening = snapshot['opening']
-    if (entry['year'] != 1415 or opening.get('date') != '1415-08-11'
+    date = opening.get('date')
+    expected = entry.get('opening_date', '1415-08-11' if entry['id'] == 'hyw-1415' else None)
+    if (not isinstance(date, str) or not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}', date)
+            or int(date[:4]) != entry['year'] or date != expected
             or opening.get('calendar') != 'julian' or opening.get('precision') != 'day'
             or opening.get('time') is not None or not _text(opening.get('boundary'))
             or not _text(opening.get('label'))):
-        raise ValueError('Historical snapshot requires the selected 11 August 1415 Julian opening cutoff')
+        raise ValueError('Historical snapshot requires its exact selected Julian opening cutoff')
+    ordinal = julian_day(*map(int, date.split('-')))
     sources = snapshot['sources']
     if not isinstance(sources, list) or not sources:
         raise ValueError('Historical snapshot requires source provenance')
@@ -113,6 +122,10 @@ def _validate_snapshot(snapshot, entry):
             _source_ids(fact, source_ids)
     if not isinstance(snapshot.get('unknowns'), list) or not isinstance(snapshot.get('simulation_rules'), list):
         raise ValueError('Historical opening must disclose unknowns and simulation limits')
+    registry = snapshot.get('entity_registry_template')
+    if not isinstance(registry, dict) or registry.get('as_of') != ordinal or registry.get('axis') != {'id':'julian-day','unit':'day','calendar':'julian'}:
+        raise ValueError('Historical registry must match the exact opening coordinate')
+    validate_registry(registry, {actor['id']: actor for actor in actors})
 
 
 def historical_entry(entry_id):

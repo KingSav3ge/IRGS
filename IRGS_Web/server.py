@@ -14,7 +14,8 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT.parent / 'IRGS_3_3' / 'runtime'))
+from engine_paths import ENGINE_ROOT
+sys.path.insert(0, str(ENGINE_ROOT / 'runtime'))
 from core_world import CoreWorld, SUPPORTED_OPS
 from campaign_library import initial_campaign, catalog, presentation_binding
 from historical_campaigns import historical_catalogue, historical_entry
@@ -392,7 +393,7 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                             raise ValueError('Attach a historical archive before searching')
                         return self.reply(200, {'status': 'unavailable' if reference_error else 'not_attached',
                             'title': 'Historical Grand Archive', 'campaign_effects': False,
-                            'notice': 'No historical reference archive is available. Attach the existing source ZIP with tools/register_historical_archive.py.'})
+                            'notice': 'No historical reference archive is available. Attach the existing source ZIP with IRGS_Web/register_historical_archive.py.'})
                     try:
                         if path == '/api/historical-reference':
                             result = reference_library.status()
@@ -512,7 +513,7 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript'), '/catalogue.js': ('catalogue.js', 'text/javascript')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]
@@ -615,6 +616,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
     from release_integrity import verify_release
     verify_release()
+    from app_integrity import verify_app
+    verify_app()
+    from catalog_paths import verify_catalog
+    verify_catalog()
     reference_library, reference_error = None, None
     if args.reference_config.exists():
         from historical_archive import from_registration

@@ -1,6 +1,7 @@
 """Windows launcher probes use temporary HTTP fixtures, never real saves."""
 import json
 import os
+import sys
 import subprocess
 import threading
 import unittest
@@ -9,7 +10,9 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CANONICAL = ROOT / 'IRGS_3_3' / 'Start-IRGS-3.3.ps1'
+sys.path.insert(0, str(ROOT / 'IRGS_Web'))
+from engine_paths import ENGINE_ROOT
+CANONICAL = ENGINE_ROOT / 'Start-IRGS-3.3.ps1'
 WEB = ROOT / 'IRGS_Web' / 'Start-IRGS.ps1'
 
 

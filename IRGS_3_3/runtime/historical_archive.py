@@ -82,11 +82,15 @@ class HistoricalArchive:
             if info.file_size > 8 * 1024 * 1024:
                 raise ValueError('Historical archive manifest is too large')
             document = json.loads(archive.read(info))
+            if not isinstance(document, dict):
+                raise ValueError('Unsupported historical archive manifest')
             rows = document.get('files')
             if document.get('edition') != 'Grand 1.1' or not isinstance(rows, list):
                 raise ValueError('Unsupported historical archive manifest')
             manifest = {}
             for row in rows:
+                if not isinstance(row, dict):
+                    raise ValueError('Invalid historical archive manifest row')
                 name = row.get('path', '')
                 if not _safe_name(name) or name in manifest:
                     raise ValueError('Ambiguous historical archive manifest')
@@ -225,7 +229,9 @@ class HistoricalArchive:
 def from_registration(path):
     """Load only the owner's explicit local attachment; never discover files."""
     document = json.loads(Path(path).read_text(encoding='utf-8'))
-    if document.get('schema_version') != 1:
+    if not isinstance(document, dict) or document.get('schema_version') != 1:
         raise ValueError('Unsupported local reference registration')
-    source = document['historical_archive']
+    source = document.get('historical_archive')
+    if not isinstance(source, dict) or not isinstance(source.get('path'), str):
+        raise ValueError('Invalid local historical reference attachment')
     return HistoricalArchive(source['path'], source['sha256'])

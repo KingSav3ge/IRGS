@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "id": "hyw-1372",
+  "scenario_id": "hundred-years-war",
+  "revision": 1,
+  "status": "developed_historical_setup",
+  "title": "The Castilian Intervention",
+  "opening": {
+    "date": "1372-12-15",
+    "calendar": "julian",
+    "precision": "day",
+    "time": null,
+    "boundary": "Authored late-year cutoff after the stated background developments; not their occurrence date.",
+    "label": "15 December 1372 · after the year’s turning points",
+    "classification": "authored_policy"
+  },
+  "briefing": "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority. Control of La Rochelle does not establish a timeless monopoly of every sea route. French cooperation with Castile affects English communications and supply.",
+  "actors": [
+    {
+      "id": "HYW-EDWARD-III",
+      "name": "Edward III",
+      "species": "human",
+      "role": "King of England",
+      "source_ids": [
+        "COC-EDWARD"
+      ]
+    },
+    {
+      "id": "HYW-CHARLES-V",
+      "name": "Charles V",
+      "species": "human",
+      "role": "King of France",
+      "source_ids": [
+        "COC-CHARLES5"
+      ]
+    },
+    {
+      "id": "HYW-HENRY-TRASTAMARA",
+      "name": "Henry of Trastámara",
+      "species": "human",
+      "role": "King of Castile; French ally",
+      "source_ids": [
+        "COC-ROCHELLE"
+      ]
+    }
+  ],
+  "domains": {
+    "political": [
+      {
+        "id": "hyw-1372-political-01",
+        "statement": "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority.",
+        "source_ids": [
+          "COC-BOOK",
+          "COC-ROCHELLE"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1372-12-15",
+        "classification": "historical_reference"
+      }
+    ],
+    "military": [
+      {
+        "id": "hyw-1372-military-01",
+        "statement": "Shipping, relief and contractual obligations require actual vessels, crews and secure destinations.",
+        "source_ids": [
+          "COC-DESIGN",
+          "COC-BOOK",
+          "COC-ROCHELLE"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1372-12-15",
+        "classification": "research_inference"
+      }
+    ],
+    "territorial": [
+      {
+        "id": "hyw-1372-territorial-01",
+        "statement": "Control of La Rochelle does not establish a timeless monopoly of every sea route.",
+        "source_ids": [
+          "COC-BOOK",
+          "COC-ROCHELLE"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1372-12-15",
+        "classification": "historical_reference"
+      }
+    ],
+    "diplomatic": [
+      {
+        "id": "hyw-1372-diplomatic-01",
+        "statement": "French cooperation with Castile affects English communications and supply.",
+        "source_ids": [
+          "COC-BOOK",
+          "COC-ROCHELLE"
+        ],
+        "knowledge_scope": "historical_setup_reference",
+        "effective_not_after": "1372-12-15",
+        "classification": "historical_reference"
+      }
+    ]
+  },
+  "unknowns": [
+    "No complete current census, local price list, household inventory, treasury, deployable army or maintained road network is established by this scoped opening.",
+    "Exact personal locations, skills, health, loyalties and received reports remain unknown unless an explicit sourced or reviewed authored setup establishes them.",
+    "The authored civil cutoff has day precision and no invented hour. It is not a claim that each background development occurred on that day.",
+    "Culture, language, religion, legal status, office and personal allegiance are independent; no game category or appearance template determines them.",
+    "The fictional local opening supplies a small playable scene only. General freeform, dialogue, combat and autonomous world advancement retain the actual runtime limits."
+  ],
+  "sources": [
+    {
+      "id": "COC-BOOK",
+      "title": "Lynn Thorndike, The History of Medieval Europe (1917), chapter XXVII, printed pp. 511–530",
+      "url": "https://archive.org/details/historyofmedieva00thoruoft",
+      "source_type": "user_supplied_historical_synthesis",
+      "accessed": "2026-10-21",
+      "scope_note": "User-supplied scan/OCR; chapter extract and hash retained in provenance. Broad sequence and institutions only. Dated judgments, racial/national generalizations, exact force totals, the Black Prince nickname explanation and simplified treaty renunciations are not adopted."
+    },
+    {
+      "id": "COC-EDWARD",
+      "title": "Edward III, Royal Household",
+      "url": "https://www.royal.uk/edward-iii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Reign and principal campaigns only; not rounded force, population, economic or casualty claims."
+    },
+    {
+      "id": "COC-CHARLES5",
+      "title": "Charles V authority record, Bibliothèque nationale de France",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb119360912",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Identification and reign 1364–1380; the birth date is not needed to generate a skill or personal history."
+    },
+    {
+      "id": "COC-ROCHELLE",
+      "title": "La Rochelle, Place de Verdun, Archéologie médiévale 26 (1996)",
+      "url": "https://www.persee.fr/doc/arcme_0153-9337_1996_num_26_1_1452_t1_0306_0000_4",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Historical/archaeological evidence for recovery of La Rochelle in 1372; no extrapolated modern street map."
+    },
+    {
+      "id": "COC-LABOUR",
+      "title": "The National Archives, plague and labour legislation",
+      "url": "https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/early-modern/plague/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1349 ordinance and 1351 statute; legal attempts to constrain wages and movement are not measured compliance or market prices."
+    },
+    {
+      "id": "COC-SCHISM",
+      "title": "The Great Schism, New Cambridge Medieval History chapter 20",
+      "url": "https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/great-schism/E1808AB5741BCCD2A7B50B5A71FD578B",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Institutional papal schism context. Obedience, practice and individual affiliation remain separate; no automatic religion transfer."
+    },
+    {
+      "id": "COC-SOLDIER-GUIDE",
+      "title": "The National Archives, medieval and early modern soldiers",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-early-modern-soldiers/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Musters, accounts, retinues and treaty-roll research; an indexed name is not proof of current presence, loyalty or readiness."
+    },
+    {
+      "id": "COC-JEWISH-ENGLAND",
+      "title": "The National Archives, Jews in England in 1290",
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/jews-in-england-in-1290/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited letters establish discriminatory restrictions. Royal accusations are attributed hostile assertions, not facts about Jewish people. No absence, genetics or individual conduct is inferred."
+    },
+    {
+      "id": "COC-LANGUAGE",
+      "title": "The use of English: Language, law, and political culture in fourteenth-century England, University of York",
+      "url": "https://pure.york.ac.uk/portal/en/publications/the-use-of-english-language-law-and-political-culture-in-fourteen/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
+    },
+    {
+      "id": "COC-DESIGN",
+      "title": "Century of Conflict opening and evidence policy, 21 October 2026",
+      "url": "local-design:century-of-conflict/openings-v1",
+      "source_type": "authored_policy",
+      "accessed": "2026-10-21",
+      "scope_note": "Authored cutoff, eligibility, qualitative scenario pressures and conditional requirements are design choices, not historical discoveries."
+    }
+  ],
+  "simulation_rules": [
+    "The snapshot initializes a new world only. Later facts come from actual committed campaign state.",
+    "Historical reference is out-of-character setup context, not automatically received character knowledge.",
+    "Personal identity and national allegiance are independent. No historical outcome, death, conversion or title transfer is scheduled.",
+    "Unknown quantities stay unknown. Authored fictional scene stock is explicitly reviewed and conserved through the existing Core."
+  ],
+  "entry_guide": {
+    "summary": [
+      "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority.",
+      "Control of La Rochelle does not establish a timeless monopoly of every sea route."
+    ],
+    "immediate_situation": [
+      "French cooperation with Castile affects English communications and supply.",
+      "This is an authored 15 December cutoff after the developments described above; subsequent history remains open."
+    ],
+    "player_options": [
+      "Create an independent character or select an eligible historical individual. Review the dated world and your actual control before saving.",
+      "A new human character may explicitly choose the fictional local delivery opening. You may observe, attempt either route, deliver the entrusted item or write your own response. No national allegiance or employment is compulsory."
+    ],
+    "practical_pressures": [
+      "Shipping, relief and contractual obligations require actual vessels, crews and secure destinations.",
+      "Household, parish, manor, town, court and service relationships overlap. Royal jurisdiction does not establish a household’s wealth or an individual’s consent.",
+      "Use period and locality when establishing language, names, dress and religious practice. Neither kingdom is a homogeneous culture or ethnicity.",
+      "Markets, credit, customs and obligations matter alongside harvests and transport. No universal conversion from GDP, grain yields or tax assessments into spendable stock is adopted."
+    ],
+    "not_yet_established": [
+      "No complete current census, local price list, household inventory, treasury, deployable army or maintained road network is established by this scoped opening.",
+      "Exact personal locations, skills, health, loyalties and received reports remain unknown unless an explicit sourced or reviewed authored setup establishes them.",
+      "The authored civil cutoff has day precision and no invented hour. It is not a claim that each background development occurred on that day.",
+      "Culture, language, religion, legal status, office and personal allegiance are independent; no game category or appearance template determines them.",
+      "The fictional local opening supplies a small playable scene only. General freeform, dialogue, combat and autonomous world advancement retain the actual runtime limits."
+    ],
+    "future_rule": "Additional territorial recovery needs living commanders, logistics and local decisions. The continuing campaign is never reset to another entry snapshot or forced to end in 1453.",
+    "source_ids": [
+      "COC-BOOK",
+      "COC-ROCHELLE",
+      "COC-EDWARD",
+      "COC-CHARLES5",
+      "COC-DESIGN",
+      "COC-LABOUR",
+      "COC-SCHISM",
+      "COC-SOLDIER-GUIDE",
+      "COC-JEWISH-ENGLAND",
+      "COC-LANGUAGE"
+    ]
+  },
+  "entity_registry_template": {
+    "schema_version": 1,
+    "source_mode": "historical_template",
+    "axis": {
+      "id": "julian-day",
+      "unit": "day",
+      "calendar": "julian"
+    },
+    "as_of": 2222530,
+    "entities": {
+      "HYW-EDWARD-III": {
+        "id": "HYW-EDWARD-III",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-EDWARD",
+            "exists": true,
+            "identity": {
+              "name": "Edward III",
+              "species": "human",
+              "role": "King of England",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-CHARLES-V": {
+        "id": "HYW-CHARLES-V",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-CHARLES5",
+            "exists": true,
+            "identity": {
+              "name": "Charles V",
+              "species": "human",
+              "role": "King of France",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-HENRY-TRASTAMARA": {
+        "id": "HYW-HENRY-TRASTAMARA",
+        "kind": "character",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-ROCHELLE",
+            "exists": true,
+            "identity": {
+              "name": "Henry of Trastámara",
+              "species": "human",
+              "role": "King of Castile; French ally",
+              "category": "person"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-ENGLAND": {
+        "id": "HYW-ENGLAND",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-BOOK,COC-ROCHELLE",
+            "exists": true,
+            "identity": {
+              "name": "Kingdom of England",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-EDWARD-III"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-FRANCE": {
+        "id": "HYW-FRANCE",
+        "kind": "faction",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-BOOK,COC-ROCHELLE",
+            "exists": true,
+            "identity": {
+              "name": "French royal government of Charles V",
+              "category": "kingdom",
+              "government": "monarchy",
+              "leader_ids": [
+                "HYW-CHARLES-V"
+              ]
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      },
+      "HYW-CONFLICT": {
+        "id": "HYW-CONFLICT",
+        "kind": "conflict",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-BOOK",
+            "exists": true,
+            "identity": {
+              "name": "Anglo-French dynastic and territorial conflict",
+              "category": "historical_conflict_complex"
+            },
+            "formation_time": null,
+            "territory_refs": [],
+            "resource_refs": [],
+            "resources_status": "uninitialized"
+          }
+        ]
+      }
+    },
+    "relations": {},
+    "eligibility": {
+      "individual:HYW-EDWARD-III": {
+        "entity_id": "HYW-EDWARD-III",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-EDWARD-III"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-CHARLES-V": {
+        "entity_id": "HYW-CHARLES-V",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-CHARLES-V"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-HENRY-TRASTAMARA": {
+        "entity_id": "HYW-HENRY-TRASTAMARA",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": true,
+            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [
+                "HYW-HENRY-TRASTAMARA"
+              ],
+              "powers": [
+                "declare_own_intent"
+              ]
+            }
+          }
+        ]
+      },
+      "individual:HYW-ENGLAND": {
+        "entity_id": "HYW-ENGLAND",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": false,
+            "reason": "Individual Solo control does not grant a polity or an infant adult agency.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      },
+      "individual:HYW-FRANCE": {
+        "entity_id": "HYW-FRANCE",
+        "scenario_id": "individual",
+        "versions": [
+          {
+            "start": 2222530,
+            "end": null,
+            "source_ref": "COC-DESIGN",
+            "eligible": false,
+            "reason": "Individual Solo control does not grant a polity or an infant adult agency.",
+            "control": {
+              "mode": "individual",
+              "actor_ids": [],
+              "powers": []
+            }
+          }
+        ]
+      }
+    },
+    "scenarios": {
+      "individual": {
+        "id": "individual",
+        "title": "Solo · individual character",
+        "character_creation_allowed": true,
+        "conflict_id": "HYW-CONFLICT",
+        "description": "One independent person; nationality, service, affiliation and actual control remain separate."
+      }
+    }
+  },
+  "research_extension": {
+    "review_status": "scoped_source_comparison_not_complete_world_reconstruction",
+    "society": [
+      "Household, parish, manor, town, court and service relationships overlap. Royal jurisdiction does not establish a household’s wealth or an individual’s consent.",
+      "Use period and locality when establishing language, names, dress and religious practice. Neither kingdom is a homogeneous culture or ethnicity.",
+      "Markets, credit, customs and obligations matter alongside harvests and transport. No universal conversion from GDP, grain yields or tax assessments into spendable stock is adopted."
+    ],
+    "economic_context": "Shipping, relief and contractual obligations require actual vessels, crews and secure destinations.",
+    "material_context": [
+      {
+        "topic": "Recruitment and logistics",
+        "statement": "Musters, accounts, retinues and service periods need separate evidence. An indexed name is not proof of current presence, loyalty or readiness.",
+        "source_ids": [
+          "COC-SOLDIER-GUIDE"
+        ],
+        "classification": "source_method"
+      },
+      {
+        "topic": "Labour and household economy",
+        "statement": "The 1349 ordinance and 1351 statute attempted to constrain wages and labour mobility after plague. Legal rules do not establish local compliance, individual status or market prices.",
+        "source_ids": [
+          "COC-LABOUR"
+        ],
+        "classification": "historical_reference"
+      },
+      {
+        "topic": "Language and law",
+        "statement": "The 1362 pleading statute forms part of changing legal language. French, English and Latin usage depends on context; a statute does not give everyone identical speech or literacy.",
+        "source_ids": [
+          "COC-LANGUAGE"
+        ],
+        "classification": "historical_reference"
+      },
+      {
+        "topic": "Religion and legal status",
+        "statement": "England’s 1290 expulsion forms part of the legal background facing Jewish people. It does not prove universal absence, uniform identity or individual conduct. Locality and personal circumstances need evidence.",
+        "source_ids": [
+          "COC-JEWISH-ENGLAND"
+        ],
+        "classification": "historical_reference"
+      }
+    ],
+    "religious_context": "Ecclesiastical institutions and local religious practice are distinct from royal allegiance; personal adherence is not inferred.",
+    "quantities_status": "reference_units_and_documentary_examples_only; no default stocks or demographic interpolation",
+    "conditional_development": {
+      "statement": "Additional territorial recovery needs living commanders, logistics and local decisions.",
+      "classification": "research_inference",
+      "execution_available": false,
+      "required_records": [
+        "living and capable participants",
+        "actual authority and intentions",
+        "received information",
+        "finite people, supplies, transport and finance",
+        "current local control and alternatives"
+      ]
+    }
+  }
+}

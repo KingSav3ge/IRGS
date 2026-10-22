@@ -1,40 +1,25 @@
-# Kira’s IRGS binding
+# Kira and IRGS
 
-Kira supplies a reusable campaign world using selected **Core 3.3**, the existing **Fantasy** genre and the **shared** and **fantasy** libraries.
+Kira is a reusable fantasy campaign world for selected Core **3.3**, the **fantasy** profile and the **shared** and **fantasy** libraries. The expanded Larius lorebook and Kieran dossier are adopted setting canon under KIRA-U06. The earlier documents are a superseded creative archive.
 
-## Content and live state
+## Setting and playthrough authority
 
-The package supports authoring future starting worlds. Its peoples, histories and biographies do not become another live authority. Each developed starting snapshot must initialize the one campaign-state kernel through its existing owners. Later changes come from committed events in that playthrough.
+The reference present is 1342 A.A., with year precision. No month, day, hour, opening scene, player character or resource inventory is selected. Content Library browsing reads the public world guide and creates no playthrough or character knowledge.
 
-Kira is listed as a world in development. The guide exposes no launchable entry or snapshot digest. Browsing creates neither a save nor character knowledge.
+The setting establishes religions, cultures, people and historical relationships. Their existence supplies material for authoring a starting snapshot. It does not give a character a live appointment, resources, knowledge or permission in a running campaign. Continuing campaigns retain their committed history, including changes to leadership, membership and political control.
 
-## Reference boundary and maps
+Kieran’s central narrative role supplies no player selection, automatic mandate, guaranteed survival or scheduled outcome. The Price of Peace and other possible stories retain open outcomes.
 
-The Akarian history names 1342 as present day; Cathius’s birth year and age corroborate it. This is a reference year only. No month, day, hour, calendar arithmetic, world census or exact opening boundary is selected.
+## Magic, technology and qualitative canon
 
-The six Minecraft maps supply named places, terrain and visual linework. The user confirms separate continental shelves and supplies Aldain’s political colour key. Map dates, distances, relative shelf positions and the remaining political interpretation stay open. Screenshot player coordinates do not establish settlement coordinates or campaign scale. The package includes transcriptions and references to the chat images, without original image bytes.
+The Long Renewal is the established explanation for Kieran’s exceptional lifespan. It supplies no general immortality rule, resurrection guarantee or automatically executable ability. Ice Elven magical superiority is qualitative; it supplies no spell list or numerical rating. Religious teachings remain attributed beliefs.
 
-Legacy dates do not schedule future outcomes, determine a continuing ruler’s survival or reset history. The western expedition is an unfinished world thread. No source establishes TalmahKah as its destination.
+Firearms, gunpowder, factories, Battle Rams, magical craft and restoration belong to the setting. Exact prices, stocks, combat values, access, costs and resolution rules require scoped system authoring. Dwarves’ lack of spellcasting does not settle whether they can operate every enchanted object.
 
-## Setting rules and resources
+## Geography and future starting snapshots
 
-| Source material | Treatment |
-| --- | --- |
-| Guns, Golfla, Golem’s Flame and factories | Preserve qualitative technology. Damage, access, production, prices and stock need authored data. |
-| Dwarves cannot use magic | Preserve Cathius’s statement. Exceptions, magic-item use and enforcement remain unselected. |
-| Spells, resurrection and raising the dead | Preserve names; costs, access, limits and effects remain unselected. |
-| Master, Expert, Learned and Attuned | Source descriptions without automatic conversion into IRGS ratings. |
-| Lifespans and physical ranges | Reference claims; resolve Kieran’s age and the meaning of ranges before selecting limits. |
-| Approximately 500 Rangers | Faction description, without manufacturing named actors, equipment, capacity or authority. |
-| Leaders and institutions | Source roles, without automatic player control, resources or mandates. |
-| Character equipment and historical wealth | Preserve records. Past proceeds do not establish current balance or player inventory. |
+The six mapped regions occupy separate continental shelves. Map dates, relative shelf positions, distances and routes remain to be developed. Screenshot player coordinates do not establish settlement coordinates or world scale. The map catalogue preserves transcriptions; original screenshot bytes are not included.
 
-## Developing starting snapshots
+Develop a selectable snapshot by choosing its time and location, defining the necessary people and institutions, authoring permissions and information scopes, supplying resources within that boundary and validating entry initialization. Further worldbuilding proceeds from current canon; agreement with superseded documents is unnecessary.
 
-1. Resolve continuity questions relevant to the chosen era. Record decisions alongside source claims and preserve originals.
-2. Establish map interpretation, political control, location relationships, scale and routes within the selected boundary.
-3. Define Kira’s selected magic and technology rules using existing fantasy contracts. Record numerical choices within their actual scope.
-4. Author each snapshot separately: time boundary and precision, dated people and institutions, relationships, permissions, resources, information scopes and unknowns.
-5. Connect entry review and initialization. Verify integrity, selection and campaign isolation before marking an entry launchable.
-
-This edition creates no personal campaign, character selection or starting scenario.
+This package changes setting content and leaves executable mechanics and existing saves untouched.

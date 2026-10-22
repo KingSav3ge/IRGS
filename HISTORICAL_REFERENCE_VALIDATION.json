@@ -1,0 +1,205 @@
+{
+  "increment": "historical-reference-1",
+  "date": "2026-10-22",
+  "status": "verified_bounded_reference_integration",
+  "integration_base": "d2651512ce6540d55f126ba025ab3fdbbb976d41",
+  "selected_core": "3.3",
+  "components": {
+    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
+    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
+    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  },
+  "catalog_changed": false,
+  "legacy_engine_app_branches_recreated": false,
+  "source_archive": {
+    "edition": "Grand 1.1",
+    "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "bytes": 533064680,
+    "copied_or_extracted": false,
+    "redistributed_in_source": false,
+    "supported_member_bindings_verified": 10,
+    "historical_authentication_claimed": false
+  },
+  "capabilities": {
+    "creator_search_collections": 10,
+    "pagination": true,
+    "original_records": true,
+    "source_citations_and_rights": true,
+    "unresolved_sources_explicit": true,
+    "campaign_effects": false,
+    "adoption_implemented": false,
+    "player_knowledge_changed": false,
+    "local_registration_in_distribution": false
+  },
+  "checks": {
+    "runtime": {
+      "tests_run": 497,
+      "passed": 496,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1244,
+      "captured_executions": 3755,
+      "capture_origin_counts": {
+        "actual_apply": 3145,
+        "direct_observe": 610
+      },
+      "actual_committed_apply_count": 3079,
+      "excluded_unknown_operations": 7,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    },
+    "web": {
+      "run": 153,
+      "passed": 153,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "interface": {
+      "passed": 67
+    },
+    "tools": {
+      "run": 25,
+      "passed": 24,
+      "skipped": 1,
+      "skip_reason": "POSIX-only cloud watcher process-lock fixture on Windows"
+    },
+    "actual_attachment": {
+      "status": "passed",
+      "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+      "archive_bytes": 533064680,
+      "collections": [
+        {
+          "collection": "chronology",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        },
+        {
+          "collection": "figures",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.078
+        },
+        {
+          "collection": "research",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        },
+        {
+          "collection": "claims",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        },
+        {
+          "collection": "sources",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        },
+        {
+          "collection": "rights",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.062
+        },
+        {
+          "collection": "concepts",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.063
+        },
+        {
+          "collection": "places",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        },
+        {
+          "collection": "routes",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.093
+        },
+        {
+          "collection": "population",
+          "rows_on_page": 2,
+          "has_more": true,
+          "detail_read": true,
+          "campaign_effects": false,
+          "seconds": 0.047
+        }
+      ],
+      "agincourt_matches": 2,
+      "campaigns_opened": false,
+      "archive_extracted": false,
+      "seconds": 1.031
+    },
+    "standalone_pair": {
+      "engine_provider_tests": 6,
+      "app_reference_http_tests": 4,
+      "app_interface_checks": 67,
+      "cache_export_test": 1,
+      "catalogue_utf8_cases": 6
+    }
+  },
+  "dependency_register": {
+    "status": "captured",
+    "operation_spellings": 85,
+    "backend_operation_pairs": 170,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 87,
+    "pairs_with_failed_path_evidence": 33,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false
+  },
+  "test_logs": "provenance/qa/historical_reference_20261022/",
+  "existing_saves_opened_or_migrated": false,
+  "all_branches_certified": false,
+  "implementation": "engine/HISTORICAL_REFERENCE_INTEGRATION.md",
+  "verification_notes": [
+    "Final checks apply to the merged current component source; earlier partial runs are not used as current qualification.",
+    "An initial Windows HTTP connection interruption passed its targeted rerun and the final full suite.",
+    "An inherited catalogue test used the platform default text encoding. Its input read now names UTF-8; no catalogue payload changed.",
+    "A capture interrupted by intentional source edits was refused and superseded by the final source-matched capture.",
+    "No assertion, game definition, uncertain date, permit or reconstructed quantity was installed in a campaign.",
+    "The independent cloud report for an older candidate is preserved separately and is not relabelled as a new retest."
+  ]
+}

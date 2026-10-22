@@ -1,0 +1,32 @@
+[
+  {
+    "candidate_commit": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+    "candidate_branches": [
+      "main",
+      "3.3.3.A",
+      "3.3.3.E"
+    ],
+    "status": "needs_fixes",
+    "finished_at_utc": "2026-10-22T14:11:26.805870+00:00"
+  },
+  {
+    "candidate_commit": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+    "candidate_branches": [
+      "main",
+      "3.3.3.A",
+      "3.3.3.E"
+    ],
+    "status": "needs_fixes",
+    "finished_at_utc": "2026-10-22T14:11:26.805870+00:00"
+  },
+  {
+    "candidate_commit": "59f24344d2ff51404071822f8975f3d70b972814",
+    "candidate_branches": [
+      "main",
+      "3.3.3.A",
+      "3.3.3.E"
+    ],
+    "status": "passed",
+    "finished_at_utc": "2026-10-22T14:29:51.378631+00:00"
+  }
+]

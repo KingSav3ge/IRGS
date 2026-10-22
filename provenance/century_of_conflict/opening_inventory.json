@@ -1,0 +1,970 @@
+{
+  "edition": "century-starts-1",
+  "prepared": "2026-10-21",
+  "catalogue_entries": 37,
+  "featured_entries": [
+    1337,
+    1360,
+    1369,
+    1389,
+    1415,
+    1422,
+    1435,
+    1444,
+    1449,
+    1453
+  ],
+  "entries": [
+    {
+      "id": "hyw-1337",
+      "year": 1337,
+      "date": "1337-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1340",
+      "year": 1340,
+      "date": "1340-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1341",
+      "year": 1341,
+      "date": "1341-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-MONTFORT",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1343",
+      "year": 1343,
+      "date": "1343-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-MALESTROIT",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1345",
+      "year": 1345,
+      "date": "1345-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1346",
+      "year": 1346,
+      "date": "1346-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1347",
+      "year": 1347,
+      "date": "1347-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1355",
+      "year": 1355,
+      "date": "1355-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1356",
+      "year": 1356,
+      "date": "1356-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1357",
+      "year": 1357,
+      "date": "1357-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-BERWICK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1359",
+      "year": 1359,
+      "date": "1359-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1360",
+      "year": 1360,
+      "date": "1360-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-BRETIGNY",
+        "COC-FRANC",
+        "COC-EDWARD",
+        "COC-FRENCH-KINGS",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1364",
+      "year": 1364,
+      "date": "1364-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-AURAY",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1366",
+      "year": 1366,
+      "date": "1366-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1369",
+      "year": 1369,
+      "date": "1369-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1372",
+      "year": 1372,
+      "date": "1372-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-ROCHELLE",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1373",
+      "year": 1373,
+      "date": "1373-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-PORTUGAL",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1375",
+      "year": 1375,
+      "date": "1375-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-FROISSART",
+        "COC-EDWARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1377",
+      "year": 1377,
+      "date": "1377-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-RICHARD",
+        "COC-CHARLES5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1385",
+      "year": 1385,
+      "date": "1385-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-PORTUGAL",
+        "COC-SCOTS1385",
+        "COC-RICHARD",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1389",
+      "year": 1389,
+      "date": "1389-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-GASCON-1389",
+        "COC-RICHARD",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1396",
+      "year": 1396,
+      "date": "1396-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-RICHARD",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1399",
+      "year": 1399,
+      "date": "1399-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-RICHARD-TIME",
+        "COC-HENRY4",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1400",
+      "year": 1400,
+      "date": "1400-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-WALES",
+        "COC-HENRY4",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1403",
+      "year": 1403,
+      "date": "1403-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-WALES",
+        "COC-HENRY4",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1411",
+      "year": 1411,
+      "date": "1411-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY4",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1415",
+      "year": 1415,
+      "date": "1415-08-11",
+      "preserved_existing_snapshot": true
+    },
+    {
+      "id": "hyw-1417",
+      "year": 1417,
+      "date": "1417-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY",
+        "COC-CONSTANCE"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1419",
+      "year": 1419,
+      "date": "1419-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1420",
+      "year": 1420,
+      "date": "1420-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-TROYES",
+        "COC-HENRY5",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1422",
+      "year": 1422,
+      "date": "1422-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1429",
+      "year": 1429,
+      "date": "1429-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-ORLEANS",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1435",
+      "year": 1435,
+      "date": "1435-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-ARRAS",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1444",
+      "year": 1444,
+      "date": "1444-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 3,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1449",
+      "year": 1449,
+      "date": "1449-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1450",
+      "year": 1450,
+      "date": "1450-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    },
+    {
+      "id": "hyw-1453",
+      "year": 1453,
+      "date": "1453-12-15",
+      "source_ids": [
+        "COC-BOOK",
+        "COC-CASTILLON",
+        "COC-HENRY6",
+        "COC-DESIGN",
+        "COC-LABOUR",
+        "COC-SCHISM",
+        "COC-SOLDIER-GUIDE",
+        "COC-JEWISH-ENGLAND",
+        "COC-LANGUAGE",
+        "COC-PAY",
+        "COC-HENRY6-CAPACITY"
+      ],
+      "people": 2,
+      "scope": "bounded start; incomplete operational reconstruction"
+    }
+  ],
+  "sources": [
+    {
+      "id": "COC-BOOK",
+      "title": "Lynn Thorndike, The History of Medieval Europe (1917), chapter XXVII, printed pp. 511–530",
+      "url": "https://archive.org/details/historyofmedieva00thoruoft",
+      "source_type": "user_supplied_historical_synthesis",
+      "accessed": "2026-10-21",
+      "scope_note": "User-supplied scan/OCR; chapter extract and hash retained in provenance. Broad sequence and institutions only. Dated judgments, racial/national generalizations, exact force totals, the Black Prince nickname explanation and simplified treaty renunciations are not adopted."
+    },
+    {
+      "id": "COC-EDWARD",
+      "title": "Edward III, Royal Household",
+      "url": "https://www.royal.uk/edward-iii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Reign and principal campaigns only; not rounded force, population, economic or casualty claims."
+    },
+    {
+      "id": "COC-RICHARD",
+      "title": "Richard II, Royal Household",
+      "url": "https://www.royal.uk/richard-ii",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Succession, deposition and peace policy only; disputed death circumstances are not resolved."
+    },
+    {
+      "id": "COC-HENRY4",
+      "title": "Henry IV, Royal Household",
+      "url": "https://www.royal.uk/henry-iv",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Kingship, Welsh revolt and Percy opposition only. Do not import every chronological detail of this overview."
+    },
+    {
+      "id": "COC-HENRY5",
+      "title": "Henry V, Royal Household",
+      "url": "https://www.royal.uk/henry-v",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Kingship and campaigns, not Shakespearean characterization or free institutional authority."
+    },
+    {
+      "id": "COC-HENRY6",
+      "title": "Henry VI, Royal Household",
+      "url": "https://www.royal.uk/henry-vi",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Minority, dual-monarchy claim, Bedford and Normandy only; very large battle/casualty figures on the page are excluded."
+    },
+    {
+      "id": "COC-FRENCH-KINGS",
+      "title": "Grandes Chroniques de France, Library of Congress catalogue",
+      "url": "https://www.loc.gov/item/2021668229/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Catalogue independently identifies Philip VI, John II and Charles V and their reigns. Manuscript partisanship is retained."
+    },
+    {
+      "id": "COC-CHARLES5",
+      "title": "Charles V authority record, Bibliothèque nationale de France",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb119360912",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Identification and reign 1364–1380; the birth date is not needed to generate a skill or personal history."
+    },
+    {
+      "id": "COC-MALESTROIT",
+      "title": "Malestroit, regional heritage inventory",
+      "url": "https://patrimoine.bzh/gertrude-diffusion/dossier/IA56006510",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Supports the 1343 truce and local commercial context; later buildings are not projected backward."
+    },
+    {
+      "id": "COC-MONTFORT",
+      "title": "Jean dit de Montfort, Institut culturel de Bretagne",
+      "url": "https://www.skoluhelarvro.bzh/article-thematique/noms-bretagne/personnalites/jean-dit-de-montfort/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Distinguishes the older claimant captured in 1341 from his son. No automatic inherited personal control."
+    },
+    {
+      "id": "COC-AURAY",
+      "title": "Auray au fil des siècles, municipal archives and heritage",
+      "url": "https://www.auray.fr/ma-ville/histoire/auray-au-fil-des-siecles",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Supports the 1364 battle and rival claimants, separately from the 1365 settlement."
+    },
+    {
+      "id": "COC-BRETIGNY",
+      "title": "British Library Add MS 48004, transfer and renunciation documents",
+      "url": "https://searcharchives.bl.uk/catalog/040-001951013",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Catalogue evidence that territorial delivery and renunciation required further instruments; not instantaneous complete transfer."
+    },
+    {
+      "id": "COC-PORTUGAL",
+      "title": "History of government: Anglo-Portuguese treaties",
+      "url": "https://history.blog.gov.uk/2016/05/09/historys-unparalleled-alliance-the-anglo-portuguese-treaty-of-windsor-9th-may-1386/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1373 London treaty (TNA E30/275), 1385 crisis and separate 1386 Windsor instrument; no automatic present-day alliance behavior."
+    },
+    {
+      "id": "COC-SCOTS1385",
+      "title": "Records of the Parliaments of Scotland, ordinance concerning the French army",
+      "url": "https://www.rps.ac.uk/search.php?action=print&filename=robertii_trans&id=1352&type=trans",
+      "source_type": "edited_primary_document",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited contemporary ordinance: joint command, supply and protection of sellers in the 1385 expedition. Prescribed conduct is not proof of compliance."
+    },
+    {
+      "id": "COC-RICHARD-TIME",
+      "title": "Richard II treasure project timeline, Institute of Historical Research",
+      "url": "https://archives.history.ac.uk/richardII/timeline.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1396 diplomacy, 1399 deposition and 1400 death; treasure descriptions do not initialize present stocks."
+    },
+    {
+      "id": "COC-WALES",
+      "title": "Cadw, Owain Glyndwr interpretation plan",
+      "url": "https://cadw.gov.wales/sites/default/files/2019-04/InterpplanOwainGlyndwr_EN.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Welsh revolt, French diplomacy and later intervention. The 1404 alliance and 1405 expedition cannot be installed in 1403."
+    },
+    {
+      "id": "COC-TROYES",
+      "title": "Sigilla/IRHT, Charles VI ratification of the Treaty of Troyes, TRA14200001/002",
+      "url": "https://sigilla.irht.cnrs.fr/A.php/88840",
+      "source_type": "primary_document_catalogue",
+      "accessed": "2026-10-21",
+      "scope_note": "Document dated 21 May 1420. Treaty claims do not establish universal obedience."
+    },
+    {
+      "id": "COC-ORLEANS",
+      "title": "Loiret heritage, Sur les pas de Jeanne",
+      "url": "https://www.loiretbalades.fr/fr/sur-les-pas-de-jeanne-darc",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Orléans and Loire campaign and Reims coronation in 1429; not evidence of every later location or military capacity."
+    },
+    {
+      "id": "COC-ARRAS",
+      "title": "Treaty of Arras, Institut de France record via FranceArchives",
+      "url": "https://francearchives.gouv.fr/facomponent/022ac1fc0b4b2542894d3633126ffde5f70a98db",
+      "source_type": "primary_document_catalogue",
+      "accessed": "2026-10-21",
+      "scope_note": "Archival treaty identification, September 1435; territorial terms, delivery and personal adherence remain distinct."
+    },
+    {
+      "id": "COC-ROCHELLE",
+      "title": "La Rochelle, Place de Verdun, Archéologie médiévale 26 (1996)",
+      "url": "https://www.persee.fr/doc/arcme_0153-9337_1996_num_26_1_1452_t1_0306_0000_4",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Historical/archaeological evidence for recovery of La Rochelle in 1372; no extrapolated modern street map."
+    },
+    {
+      "id": "COC-FROISSART",
+      "title": "Froissart, edited Chronicles VIII.1, apparatus on the Bruges truce",
+      "url": "https://www.gutenberg.org/files/74208/74208-h/74208-h.htm",
+      "source_type": "edited_chronicle",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited chronicle and apparatus: 1375 truce, prisoners and negotiations. Attributed medieval narrative, not neutral census."
+    },
+    {
+      "id": "COC-CASTILLON",
+      "title": "Castillon-la-Bataille municipal history",
+      "url": "https://www.castillonlabataille.fr/la-bataille-de-castillon/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1453 battle and Talbot. Modern commemorative performances are not historical troops; claims that feudalism simply ended are rejected."
+    },
+    {
+      "id": "COC-LABOUR",
+      "title": "The National Archives, plague and labour legislation",
+      "url": "https://www.nationalarchives.gov.uk/explore-the-collection/explore-by-time-period/early-modern/plague/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1349 ordinance and 1351 statute; legal attempts to constrain wages and movement are not measured compliance or market prices."
+    },
+    {
+      "id": "COC-PAY",
+      "title": "The Soldier in Later Medieval England, soldiers named Large in Lancastrian Normandy",
+      "url": "https://medievalsoldier.org/about/soldier-profiles/soldiers-named-large-in-the-garrisons-of-lancastrian-normandy-1415-50/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Documentary pay expectations for the described service: archer 6d, mounted man-at-arms 12d, foot man-at-arms 8d per day. No paid wage or universal rate inferred."
+    },
+    {
+      "id": "COC-INDENTURE",
+      "title": "Agincourt 600, 27 April–3 May 1415 military indentures",
+      "url": "https://www.agincourt600.com/2015/03/24/27-april-3-may-1415-further-military-preparations-and-indentures/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "1415 northern-France contract rates, 12d man-at-arms and 6d archer; rank, theatre, promised service and receipt remain separate."
+    },
+    {
+      "id": "COC-FRANC",
+      "title": "La Stabilisation de la monnaie par la création du franc (décembre 1360), Traditio",
+      "url": "https://www.cambridge.org/core/journals/traditio/article/abs/la-stabilisation-de-la-monnaie-par-la-creation-du-franc-decembre-1360-blocage-dune-societe/CC3B2D54CA9E3E82333BF51ED98F176D",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Scholarly abstract supports the 5 December ordinance and ransom/coinage context. Full article not acquired; no modern currency conversion or fixed exchange."
+    },
+    {
+      "id": "COC-SCHISM",
+      "title": "The Great Schism, New Cambridge Medieval History chapter 20",
+      "url": "https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/great-schism/E1808AB5741BCCD2A7B50B5A71FD578B",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Institutional papal schism context. Obedience, practice and individual affiliation remain separate; no automatic religion transfer."
+    },
+    {
+      "id": "COC-BERWICK",
+      "title": "Records of the Parliaments of Scotland, historical introduction",
+      "url": "https://www.rps.ac.uk/static/historicalintro2.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "David II’s release in 1357 and the subsequent ransom problem; a financial obligation is not a paid balance."
+    },
+    {
+      "id": "COC-GASCON-1389",
+      "title": "Gascon Rolls Project, C61/101 calendar",
+      "url": "https://www.gasconrolls.org/fr/edition/calendars/C61_101/document.html",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited archival calendar records the 1389 truce and breaches by routiers. Its July date differs from the June date in some treaty summaries; no disputed exact signing day is adopted."
+    },
+    {
+      "id": "COC-SOLDIER-GUIDE",
+      "title": "The National Archives, medieval and early modern soldiers",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/medieval-early-modern-soldiers/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Musters, accounts, retinues and treaty-roll research; an indexed name is not proof of current presence, loyalty or readiness."
+    },
+    {
+      "id": "COC-JEWISH-ENGLAND",
+      "title": "The National Archives, Jews in England in 1290",
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/jews-in-england-in-1290/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Edited letters establish discriminatory restrictions. Royal accusations are attributed hostile assertions, not facts about Jewish people. No absence, genetics or individual conduct is inferred."
+    },
+    {
+      "id": "COC-LANGUAGE",
+      "title": "The use of English: Language, law, and political culture in fourteenth-century England, University of York",
+      "url": "https://pure.york.ac.uk/portal/en/publications/the-use-of-english-language-law-and-political-culture-in-fourteen/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-21",
+      "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
+    },
+    {
+      "id": "COC-CONSTANCE",
+      "title": "Nelson H. Minnich, Great Western Schism, Pontifical Committee for Historical Sciences",
+      "url": "https://www.historia.va/content/dam/scienzestoriche/documenti/sezionestoriadellachiesa/Great%20Western%20Schism.Lessico.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Council depositions and Martin V’s November 1417 election; the late-1417 opening must reflect this change. Institutional recognition is not individual belief."
+    },
+    {
+      "id": "COC-HENRY6-CAPACITY",
+      "title": "Henry VI, Historic Royal Palaces",
+      "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/henry-vi/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Summer 1453 incapacity and continuing kingship. Used only to withhold unsupported voluntary player control at the late-1453 cutoff; no retrospective diagnosis, predetermined recovery or public knowledge is installed."
+    },
+    {
+      "id": "COC-DESIGN",
+      "title": "Century of Conflict opening and evidence policy, 21 October 2026",
+      "url": "local-design:century-of-conflict/openings-v1",
+      "source_type": "authored_policy",
+      "accessed": "2026-10-21",
+      "scope_note": "Authored cutoff, eligibility, qualitative scenario pressures and conditional requirements are design choices, not historical discoveries."
+    }
+  ],
+  "historical_accuracy_limit": "Source-backed scoped contexts and explicit unknowns; not complete regional statistics or authentication of all earlier archive data."
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "status": "user_confirmed",
+  "source_refs": [
+    "KIRA-U03",
+    "KIRA-U04",
+    "KIRA-U05"
+  ],
+  "scope": "Authoring influences and fictional cultural traits; no real-world history, stereotype, unit count or executable rule is imported wholesale.",
+  "nations": [
+    {
+      "polity_id": "sadion",
+      "people_id": "sadire",
+      "name": "Sadion",
+      "source_paragraph": 1,
+      "design_inspirations": [
+        "Roman",
+        "Holy Roman"
+      ],
+      "military_inspirations": [
+        "Roman legionary institutions and broad tactics"
+      ],
+      "equipment_reference": "Medieval Holy Roman Empire",
+      "confirmed_traits": [
+        "Sadire human-led nation",
+        "Legion military terminology",
+        "Legion-like tactics with medieval equipment"
+      ],
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U03"
+      ]
+    },
+    {
+      "polity_id": "estru",
+      "people_id": "estrusians",
+      "name": "Estru",
+      "source_paragraph": 2,
+      "political_inspirations": [
+        "Pre-unification medieval Germans"
+      ],
+      "cultural_inspirations": [
+        "Ancient Etruscans",
+        "Carthaginians"
+      ],
+      "confirmed_traits": [
+        "Estrusian humans descend from the Sadire; Estru also has a foundational Desert Elven population",
+        "Oppressed by larger and more powerful neighbours",
+        "Desert Elves were initially unwilling residents in the history associated with Sadire settlement",
+        "Centuries of residence and Desert Elven contributions helped form Estru culturally"
+      ],
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U03",
+        "KIRA-U05"
+      ],
+      "cultural_formation_people_ids": [
+        "estrusians",
+        "desert-elves"
+      ]
+    },
+    {
+      "polity_id": "akaria",
+      "people_id": "akarian-dwarves",
+      "name": "Akaria",
+      "source_paragraph": 3,
+      "military_inspirations": [
+        "Sasanian heavy cavalry",
+        "Byzantine heavy cavalry"
+      ],
+      "cultural_inspirations": [
+        "Insular medieval England after William"
+      ],
+      "confirmed_traits": [
+        "Industrious",
+        "Aggressive",
+        "Insular",
+        "Xenophobic",
+        "Pompous and arrogant cultural posture",
+        "Heavily armoured cavalry on large Rams intended to smash enemy lines"
+      ],
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U03"
+      ]
+    },
+    {
+      "polity_id": "evalia",
+      "people_id": null,
+      "name": "Everwood / Evalia",
+      "source_paragraph": 4,
+      "cultural_inspirations": [
+        "French-influenced cultural prestige; no accent caricature"
+      ],
+      "confirmed_traits": [
+        "Isolationist",
+        "Elven superiority ideology",
+        "Less internationally connected than formerly",
+        "Elves remain the most magically powerful peoples of Larius",
+        "Numerous elven sub-races mingle",
+        "Sub-race-based caste system persists within a republic"
+      ],
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U03"
+      ]
+    },
+    {
+      "polity_id": "kyrinus",
+      "people_id": null,
+      "name": "Kyrinus / Karthinians",
+      "source_paragraph": 5,
+      "cultural_inspirations": [
+        "Medieval Italian mercantile societies"
+      ],
+      "confirmed_traits": [
+        "More accepting",
+        "Humbler elven society",
+        "Trader mindset"
+      ],
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U03"
+      ]
+    }
+  ],
+  "everwood_caste": {
+    "status": "user_confirmed",
+    "source_refs": [
+      "KIRA-U04",
+      "KIRA-U05"
+    ],
+    "sea_elves": {
+      "position": "highest_caste",
+      "basis": "retained magical superiority",
+      "attitude_to_plains_and_tree": "feel superior but recognize them as equals"
+    },
+    "plains_and_tree_elves": {
+      "people_ids": [
+        "flatland-elves",
+        "forest-elves"
+      ],
+      "creator_terms": [
+        "Plains Elves",
+        "Tree Elves"
+      ],
+      "demography": "most numerous; majority of society",
+      "recognized_as_equals_by_sea_elves": true,
+      "not_an_automatically_subordinate_tier": true
+    },
+    "mountain_elves": {
+      "people_id": "mountain-elves",
+      "demography": "least numerous",
+      "military_value": "strength and efficiency fighting Humans and Dwarves",
+      "status": "looked down upon for insufficient magical capabilities"
+    },
+    "ice_elves_position": null,
+    "desert_elves_position": null,
+    "mixed_sub_race_classification": null,
+    "republic_abolished_superiority_attitudes": false,
+    "magic_and_status": {
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U04",
+        "KIRA-U05"
+      ],
+      "sea_elves_highest_caste": true,
+      "ice_elves_magically_superior_to_sea_elves": true,
+      "ice_elves_caste_position_established": false,
+      "interpretation": "Highest recognized Evalian caste and greatest elven magical capability are separate claims; superior Ice Elven magic does not establish their caste rank."
+    }
+  },
+  "population_scope": {
+    "region_id": "larius",
+    "dominant_peoples_are_nonexhaustive": true,
+    "other_minor_peoples_exist": true,
+    "intelligence_and_sentience_vary": true,
+    "named_minor_peoples_confirmed_by_creator": []
+  },
+  "elven_communities": [
+    {
+      "people_id": "desert-elves",
+      "name": "Desert Elves",
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U05"
+      ],
+      "resident_polity_ids": [
+        "estru",
+        "kyrinus",
+        "evalia"
+      ],
+      "estru": {
+        "long_resident": true,
+        "initial_participation": "unwilling",
+        "historical_context": "Sadire settlement preceded the transition to Estru; centuries have passed",
+        "formative_cultural_contribution": true,
+        "exact_arrangement_and_dates": null,
+        "present_legal_status": null
+      },
+      "ancestry_determines_nationality": false
+    },
+    {
+      "people_id": "ice-elves",
+      "name": "Ice Elves",
+      "status": "user_confirmed",
+      "source_refs": [
+        "KIRA-U05"
+      ],
+      "magic": {
+        "comparison_people_id": "sea-elves",
+        "relative_capability": "superior",
+        "automatic_individual_spell_list": false
+      },
+      "life_history": {
+        "maturation": "faster",
+        "lifespan": "slightly shorter",
+        "comparison_context_people_id": "sea-elves",
+        "numeric_maturity_age": null,
+        "new_numeric_lifespan": null
+      },
+      "isolation": {
+        "primarily_isolationist": true,
+        "most_of_larius_suitable": false,
+        "suitable_region_under_dwarven_dominion": true,
+        "polity_context_id": "akaria",
+        "exact_boundaries": null,
+        "cause_or_date_of_dwarven_dominion": null
+      },
+      "independent_nation_established": false
+    }
+  ]
+}

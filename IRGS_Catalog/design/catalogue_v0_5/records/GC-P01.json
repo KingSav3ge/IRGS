@@ -1,0 +1,128 @@
+{
+  "catalogue_id": "GC-P01",
+  "tier_code": "GC",
+  "tier": "Grand Campaign",
+  "tier_short_story_equivalent": 240,
+  "title": "From Republic to Empire",
+  "tagline": "The world changes as Rome changes.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Political",
+      "Civilization",
+      "Society"
+    ],
+    "setting_label": "Roman Mediterranean and neighboring societies",
+    "period_label": "Late Republic through imperial periods, scope to research",
+    "synopsis": "A civilization-scale simulation follows social, economic, and political transformation across Roman and neighboring societies. Historical entry points are grounded, but subsequent player-influenced developments need not reproduce the documented transition. The empire, its communities, and its critics operate as autonomous institutions.",
+    "playable_perspectives": [
+      "Resident",
+      "Farmer",
+      "Merchant",
+      "Soldier",
+      "Politician",
+      "Official",
+      "Household member",
+      "Institution"
+    ],
+    "featured_experiences": [
+      "Italy",
+      "Western Mediterranean",
+      "Eastern Mediterranean",
+      "Frontiers",
+      "Historical change"
+    ],
+    "featured_irgs_systems": [
+      "Governance",
+      "Political reform",
+      "Military institutions",
+      "Demography",
+      "Economies",
+      "Generational continuity"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple interacting civilization networks with continuous historical and individual state",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Roman",
+      "Military"
+    ],
+    "core_capability_candidates": [
+      "Governance",
+      "Political reform",
+      "Military institutions",
+      "Demography",
+      "Economies",
+      "Generational continuity"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Predetermined imperial formation",
+      "No offscreen civic life"
+    ],
+    "acceptance_checks": [
+      "Multiple major theaters and generations",
+      "Institutions change without state resets"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§69 Succession/Generational Continuity",
+      "§74 Technology Development and Diffusion",
+      "§117 Civilization and Grand Strategy",
+      "§62 Resolution Scales"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/gc-p01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "GC",
+      "genre": [
+        "Historical",
+        "Political",
+        "Civilization",
+        "Society"
+      ],
+      "era": "Late Republic through imperial periods, scope to research",
+      "setting": "Roman Mediterranean and neighboring societies",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

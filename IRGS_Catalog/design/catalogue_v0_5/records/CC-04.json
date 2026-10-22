@@ -1,0 +1,128 @@
+{
+  "catalogue_id": "CC-04",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "Kilwa: The Monsoon Port",
+  "tagline": "Across the sea come people, goods and opportunity.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Maritime",
+      "Commerce",
+      "Social"
+    ],
+    "setting_label": "Swahili coast, Kilwa",
+    "period_label": "c. AD 1400 proposed",
+    "synopsis": "A living Swahili Indian Ocean trading community connects merchant households, craftworkers, port labor, ships, religious institutions, and visiting traders. Cargo arrivals and departures affect production, wealth, occupations, and local decisions, while residents sustain lives beyond commercial expeditions.",
+    "playable_perspectives": [
+      "Sailor",
+      "Trader",
+      "Craftworker",
+      "Port worker",
+      "Scholar",
+      "Resident",
+      "Official"
+    ],
+    "featured_experiences": [
+      "Maritime commerce",
+      "Household enterprise",
+      "Port operations",
+      "Religious and civic institutions",
+      "Ship voyages",
+      "Regional relations"
+    ],
+    "featured_irgs_systems": [
+      "Maritime",
+      "Trade",
+      "Property",
+      "Cultural knowledge",
+      "Institutions",
+      "Logistics"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Maritime"
+    ],
+    "core_capability_candidates": [
+      "Maritime",
+      "Trade",
+      "Property",
+      "Cultural knowledge",
+      "Institutions",
+      "Logistics"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Flattening Swahili societies",
+      "Invented instant shipping and credit"
+    ],
+    "acceptance_checks": [
+      "Historical port practices researched",
+      "Cargo in transit not at origin",
+      "Local residents autonomous"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-04",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Historical",
+        "Maritime",
+        "Commerce",
+        "Social"
+      ],
+      "era": "c. AD 1400 proposed",
+      "setting": "Swahili coast, Kilwa",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

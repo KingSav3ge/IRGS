@@ -1,0 +1,145 @@
+{
+  "catalogue_id": "CSS-01",
+  "tier_code": "CSS",
+  "tier": "Curated Simulation System",
+  "tier_short_story_equivalent": null,
+  "title": "Rise of ______",
+  "tagline": "Choose where you begin. Build what comes next. Decide what rises.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "separate_approval",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "adopted",
+    "premise": "adopted",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Settlement",
+      "Dynasty",
+      "Life",
+      "Historical",
+      "Survival",
+      "Variable"
+    ],
+    "setting_label": "Player-configured historical, alternate, or fictional region",
+    "period_label": "Any supported era and region",
+    "synopsis": "A player-configurable household and settlement simulation rather than a fixed authored campaign. Choose the period, region, cultures, local institutions, starting household or accompanying settlers, existing rights or absence of a grant, and the name of what rises. Seek permission, establish a livelihood and home, attract households, and potentially develop an enduring community. The system generates separate persistent instances and does not require the player to begin as leader.",
+    "playable_perspectives": [
+      "Lone arrival",
+      "Family member",
+      "Member of multiple-family party",
+      "Hired worker",
+      "Grant holder",
+      "Nonleader of expedition"
+    ],
+    "featured_experiences": [
+      "Select world and region",
+      "Select societies and politics",
+      "Choose party and land rights",
+      "Establish household",
+      "Settlement development",
+      "Generational continuation"
+    ],
+    "featured_irgs_systems": [
+      "Households",
+      "Land rights",
+      "Construction",
+      "Institutions",
+      "Migration",
+      "Agriculture",
+      "Settlement services",
+      "Continuity"
+    ]
+  },
+  "design": {
+    "scope_statement": "Reusable configuration framework creating discrete persistent campaign instances",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Historical/Fantasy"
+    ],
+    "core_capability_candidates": [
+      "Households",
+      "Land rights",
+      "Construction",
+      "Institutions",
+      "Migration",
+      "Agriculture",
+      "Settlement services",
+      "Continuity"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Inaccurate universal land grants",
+      "New territory depicted as uninhabited by default",
+      "Automatically assigning player group authority"
+    ],
+    "acceptance_checks": [
+      "Start without grant supported",
+      "People arrive causally",
+      "Historical rules apply",
+      "Nonleader playable"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "additional_dependencies": [
+      "Configuration generator",
+      "Founding and land rights",
+      "Cultural feasibility checks",
+      "Migration and household founding",
+      "Separate product entitlements"
+    ],
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§68 Households and Property",
+      "§69 Succession",
+      "§72 Settlement Services",
+      "§73 Projects and Production",
+      "§121 Urban Development"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/css-01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CSS",
+      "genre": [
+        "Settlement",
+        "Dynasty",
+        "Life",
+        "Historical",
+        "Survival",
+        "Variable"
+      ],
+      "era": "Any supported era and region",
+      "setting": "Player-configured historical, alternate, or fictional region",
+      "availability": "separate_system"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

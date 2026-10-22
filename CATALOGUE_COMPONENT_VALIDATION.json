@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-22T16:06:08.160841+00:00",
+  "status": "passed",
+  "scope": "Joined catalogue, Kira canon, Century branch reconciliation and Engine/App source boundary. Standalone publication is recorded separately after fresh-clone verification.",
+  "source_identity": {
+    "IRGS_3_3/release.json": "90c696e90fe0217156a5634bde5abc891ec3f7ac54a2370fd5f0fa164f9ce0d4",
+    "IRGS_Web/release.json": "5cdfcf16bf94517027a6a82db0cb70698fe47a73385a3ddc5b648767ea5c7175"
+  },
+  "checks": {
+    "runtime_operation_capture": {
+      "tests_run": 491,
+      "passed": 490,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "skip": "External historical user-save fixture excluded by policy"
+    },
+    "web": {
+      "tests_run": 148,
+      "passed": 141,
+      "skipped": 7,
+      "failures": 0,
+      "errors": 0,
+      "skip": "Windows PowerShell fixtures unavailable on Linux"
+    },
+    "interface": {
+      "checks_passed": 65
+    },
+    "tooling": {
+      "tests_run": 20,
+      "passed": 20
+    },
+    "independent_http": {
+      "cases_passed": 8,
+      "failed": 0,
+      "scope": "Synthetic R00 interoperability, concurrency, recovery, privacy, retained intent and continuity; working source identified by component release hashes."
+    },
+    "browser": {
+      "status": "passed",
+      "desktop": "1440x1000",
+      "mobile": "390x844",
+      "concepts": 44,
+      "dated_starts": 37,
+      "kira_guide_sections": 81,
+      "synthetic_campaigns_created": 1,
+      "before_confirmation_posts": 0,
+      "javascript_errors": [],
+      "user_saves_touched": false
+    },
+    "kira": {
+      "archived_original_documents_verified": 9,
+      "canonical_records": 91,
+      "archival_source_records": 73,
+      "exact_quotations_verified": 112,
+      "map_references": 6,
+      "transcribed_map_entries": 109,
+      "resolved_canon_decisions": 6,
+      "further_development_topics": 6,
+      "guide_sections": 81,
+      "authored_manuscripts": 2,
+      "authored_words": 15404,
+      "religious_traditions": 8,
+      "creator_confirmed_national_profiles": 5,
+      "creator_confirmed_elven_communities": 2,
+      "map_pixels_verified": false,
+      "campaign_state_created": false
+    }
+  },
+  "catalogue": {
+    "launch_targets": 31,
+    "future_campaigns": 12,
+    "separate_systems": 1,
+    "concepts": 44,
+    "free_launch_story_proposals": 18,
+    "new_playable_initializers": 0,
+    "concepts_are_released_games": false
+  },
+  "integrated_century_branch": "7584287b8915fcd22f54c462e8a263dfcfb50427",
+  "kira_working_canon": "0.5; explicitly adopted by the user",
+  "existing_user_saves_opened_or_migrated": false,
+  "full_C2_certification": false,
+  "all_operation_branches_certified": false,
+  "limits": [
+    "Windows launcher execution remains platform-skipped.",
+    "Browser tests used one temporary synthetic 1337 campaign and no existing user save.",
+    "Existing limited openings and R00 remain distinct from full campaign release readiness.",
+    "Kira remains a reference guide, not a playable snapshot."
+  ]
+}

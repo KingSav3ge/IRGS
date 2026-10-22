@@ -1,0 +1,125 @@
+{
+  "catalogue_id": "SS-01",
+  "tier_code": "SS",
+  "tier": "Short Story",
+  "tier_short_story_equivalent": 1,
+  "title": "The Long Road Home",
+  "tagline": "Two survivors. Hostile territory. One uncertain road home.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": true,
+    "pricing_status": "free_launch_intent"
+  },
+  "approval": {
+    "identity": "user_defined_premise_working_title",
+    "premise": "user_directed",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Survival",
+      "Action",
+      "Adventure",
+      "Thriller",
+      "Historical"
+    ],
+    "setting_label": "Sengoku Japan",
+    "period_label": "16th century, precise entry configurable",
+    "synopsis": "A retainer and loyal servant become separated from their military force after an ambush. With limited supplies and incomplete information, the pair attempts to reach safety through a region inhabited by villagers, officials, soldiers, and travelers who pursue their own interests. The player chooses either survivor; the other remains autonomous. Returning home is a goal, not a guaranteed or scripted ending.",
+    "playable_perspectives": [
+      "Retainer",
+      "Servant"
+    ],
+    "featured_experiences": [
+      "Aftermath of ambush",
+      "Navigation and survival",
+      "Obtaining aid or passage",
+      "Companion relationships",
+      "Return, escape or alternative outcomes"
+    ],
+    "featured_irgs_systems": [
+      "Companion autonomy",
+      "Travel",
+      "Inventory",
+      "Injury and recovery",
+      "Stealth and perception",
+      "Information flow"
+    ]
+  },
+  "design": {
+    "scope_statement": "Localized bounded incident with player freedom and simulated external activity",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Military"
+    ],
+    "core_capability_candidates": [
+      "Companion autonomy",
+      "Travel",
+      "Inventory",
+      "Injury and recovery",
+      "Stealth and perception",
+      "Information flow"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Companion treated as obedient pawn",
+      "All civilians depicted as hostile",
+      "Invented supplies after ambush"
+    ],
+    "acceptance_checks": [
+      "Companion acts without overriding player",
+      "No omniscient pursuers",
+      "All resources remain owned and accounted for"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§14 Actor Capability",
+      "§17 Conditions/Injury",
+      "§86 Hidden State",
+      "§92 Anti Railroad"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/ss-01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "SS",
+      "genre": [
+        "Survival",
+        "Action",
+        "Adventure",
+        "Thriller",
+        "Historical"
+      ],
+      "era": "16th century, precise entry configurable",
+      "setting": "Sengoku Japan",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

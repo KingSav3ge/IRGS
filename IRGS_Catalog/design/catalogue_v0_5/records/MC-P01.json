@@ -1,0 +1,131 @@
+{
+  "catalogue_id": "MC-P01",
+  "tier_code": "MC",
+  "tier": "Major Campaign",
+  "tier_short_story_equivalent": 120,
+  "title": "The Roman World",
+  "tagline": "An empire is more than its legions.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Civilization",
+      "Military",
+      "Life",
+      "Economy"
+    ],
+    "setting_label": "Roman Mediterranean and neighboring societies",
+    "period_label": "c. AD 100–300 proposed",
+    "synopsis": "A multiregional Roman-era simulation of Italy, western and eastern provinces, frontier zones, and neighbors. Towns, rural estates, army supply systems, commerce, households, and political institutions remain independently active, including populations beyond Roman rule.",
+    "playable_perspectives": [
+      "Resident",
+      "Trader",
+      "Soldier",
+      "Farmer",
+      "Administrator",
+      "Craftworker",
+      "Institutional perspective"
+    ],
+    "featured_experiences": [
+      "Italy",
+      "Western provinces",
+      "Eastern provinces",
+      "Frontier society"
+    ],
+    "featured_irgs_systems": [
+      "Government",
+      "Trade",
+      "Army",
+      "Law",
+      "Slavery and social position",
+      "Logistics",
+      "Demography"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiregional political, economic and social simulation",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Roman",
+      "Military"
+    ],
+    "core_capability_candidates": [
+      "Government",
+      "Trade",
+      "Army",
+      "Law",
+      "Slavery and social position",
+      "Logistics",
+      "Demography"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Reducing imperial society to soldiers",
+      "Inconsistent provincial laws"
+    ],
+    "acceptance_checks": [
+      "Four theaters interact",
+      "Civilians remain autonomous",
+      "Military draws real supplies"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§65 Faction Simulation",
+      "§113 Government",
+      "§117 Civilization and Grand Strategy",
+      "§124 Armed Institutions"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/mc-p01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "MC",
+      "genre": [
+        "Historical",
+        "Civilization",
+        "Military",
+        "Life",
+        "Economy"
+      ],
+      "era": "c. AD 100–300 proposed",
+      "setting": "Roman Mediterranean and neighboring societies",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

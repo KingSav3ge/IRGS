@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
+  "files": 95,
+  "record_count": 44,
+  "individual_records_match_aggregate": true,
+  "supplied_hash_mismatches": [
+    "FILE_HASHES.json"
+  ],
+  "unlisted_files": [],
+  "schema_keys": [
+    "$schema",
+    "title",
+    "description",
+    "type",
+    "required",
+    "properties",
+    "additionalProperties"
+  ],
+  "active_catalogue_version": "0.5",
+  "original_archive": "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip",
+  "source_documents_preserved": true,
+  "publication_policy": "Existing user-authorized 44 previews retained; no concept grants launch or release authority.",
+  "reconciliations": [
+    "Existing 37 Century starts remain verified runtime authority.",
+    "Kira expanded Larius v0.5 remains adopted working canon; original nine documents remain superseded sources.",
+    "The Rise of... You display name and fictional R00 availability remain; eight families held."
+  ],
+  "supplied_hash_note": "All 94 other supplied hashes match. FILE_HASHES.json includes a mismatched self-hash; the unchanged original and full archive are independently pinned by this repository release inventory."
+}

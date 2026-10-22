@@ -1,0 +1,126 @@
+{
+  "catalogue_id": "CC-P02",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "The Salt Road",
+  "tagline": "Across the desert, wealth travels with those who carry it.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Commerce",
+      "Travel",
+      "Adventure"
+    ],
+    "setting_label": "Historically researched trans-Saharan trade corridor",
+    "period_label": "c. AD 1200–1500 proposed",
+    "synopsis": "A connected network of desert trading communities, caravan workers, markets, and authorities supports journeys and resident livelihoods alike. Goods change hands and locations as people negotiate passage, maintain animals, finance expeditions, and deal with different jurisdictions.",
+    "playable_perspectives": [
+      "Merchant",
+      "Caravan organizer",
+      "Guide",
+      "Porter",
+      "Guard",
+      "Resident"
+    ],
+    "featured_experiences": [
+      "Caravan work",
+      "Desert routes",
+      "Market trade",
+      "Animal care",
+      "Contracts",
+      "Political relations"
+    ],
+    "featured_irgs_systems": [
+      "Commerce",
+      "Routes",
+      "Contracts",
+      "Transport",
+      "Climate",
+      "Institutions"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Commerce",
+      "Routes",
+      "Contracts",
+      "Transport",
+      "Climate",
+      "Institutions"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Undifferentiated Sahel/Sahara culture",
+      "Invented unlimited water"
+    ],
+    "acceptance_checks": [
+      "Goods conserved across caravan legs",
+      "Community economic effects visible"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-p02",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Historical",
+        "Commerce",
+        "Travel",
+        "Adventure"
+      ],
+      "era": "c. AD 1200–1500 proposed",
+      "setting": "Historically researched trans-Saharan trade corridor",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

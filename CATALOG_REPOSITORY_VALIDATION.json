@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "scope": "Independent Catalog repository split of the previously implemented v0.4 preview data. New v0.5 upload is under separate comparison.",
+  "components": {
+    "engine": "c0777be7e68021bd1bee66437d555390778c0adb",
+    "app": "2acfc42941425a4a8a20d2fc9de9c4dc2b7d0632",
+    "catalog": "b6c136210c533578b7215575f29182305473169d"
+  },
+  "original_v0_4_sha256": "6ce0298f5a6157414d30f345c21907725d25257fa24e3d98ba9527a4e2d5952b",
+  "checks": {
+    "catalog_standalone_integrity": "passed",
+    "joined_web": {
+      "run": 148,
+      "passed": 141,
+      "skipped": 7,
+      "failed": 0
+    },
+    "joined_interface": {
+      "passed": 65
+    },
+    "joined_tools": {
+      "run": 24,
+      "passed": 24
+    },
+    "fresh_recursive_app_clone": {
+      "clone": "/tmp/irgs-catalog-fresh-nev2c_57/IRGS-APP-WEB",
+      "app_commit": "2acfc42941425a4a8a20d2fc9de9c4dc2b7d0632",
+      "verification": {
+        "status": "verified",
+        "component": "app",
+        "checks": {
+          "engine": {
+            "release": "IRGS-CORE-3.3-SUITE",
+            "status": "verified",
+            "core": "3.3"
+          },
+          "app": {
+            "status": "verified",
+            "component": "IRGS-APP-WEB",
+            "files": 31
+          },
+          "catalog": {
+            "status": "verified",
+            "component": "IRGS-Catalog",
+            "files": 5,
+            "concepts": 44,
+            "campaign_release_approved_by_check": false
+          },
+          "catalog_commit": "b6c136210c533578b7215575f29182305473169d",
+          "engine_commit": "c0777be7e68021bd1bee66437d555390778c0adb"
+        },
+        "behavioral_tests_executed": false
+      },
+      "web": "passed; see catalog-fresh-web.log for run/skip counts",
+      "ui": "passed; see catalog-fresh-ui.log for count",
+      "source_status": ""
+    },
+    "runtime_capture": {
+      "operation_spellings": 85,
+      "backend_operation_pairs": 170,
+      "backends": [
+        "CoreWorld",
+        "R7World",
+        "ReceiverWorld",
+        "World"
+      ],
+      "pairs_with_success": 87,
+      "pairs_with_failed_path_evidence": 33,
+      "pairs_without_success": 83,
+      "unqualified_pairs": 81,
+      "observations_outside_declared_backend_pairs": 0,
+      "all_branches_certified": false
+    },
+    "loopback_app": {
+      "port": 8767,
+      "assets_verified": 5,
+      "previews": 44,
+      "save_files": 0
+    }
+  },
+  "user_saves_opened": false,
+  "mechanics_modified": false
+}

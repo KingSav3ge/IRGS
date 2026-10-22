@@ -2,10 +2,10 @@
 import copy
 import json
 from pathlib import Path
+from engine_paths import ENGINE_ROOT
 
 WORLD_FILES = {
-    'world-of-kira': Path(__file__).resolve().parent.parent
-        / 'IRGS_3_3/catalog/campaigns/kira/world.json',
+    'world-of-kira': ENGINE_ROOT / 'catalog/campaigns/kira/world.json',
 }
 
 

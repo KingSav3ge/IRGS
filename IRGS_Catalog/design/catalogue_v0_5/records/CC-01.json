@@ -1,0 +1,128 @@
+{
+  "catalogue_id": "CC-01",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "The Nile’s Ledger",
+  "tagline": "A community lives by the river and the work of its people.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Community Life",
+      "Economy",
+      "Politics"
+    ],
+    "setting_label": "Ptolemaic Egypt",
+    "period_label": "c. 200 BCE proposed",
+    "synopsis": "In an Egyptian agricultural community, households, fields, marketplaces, temples, and officials operate through interlocking economic and social obligations. Irrigation cycles, food production, taxes, ownership, labor, and family relationships determine what each resident can accomplish. Six linked experience domains share a single persistent population and economy.",
+    "playable_perspectives": [
+      "Farmer",
+      "Craftworker",
+      "Merchant",
+      "Official",
+      "Laborer",
+      "Household member"
+    ],
+    "featured_experiences": [
+      "Farm and irrigation life",
+      "Market activity",
+      "Local administration",
+      "Household continuity",
+      "Community projects",
+      "Institutional disputes"
+    ],
+    "featured_irgs_systems": [
+      "Households",
+      "Land rights",
+      "Agriculture",
+      "Taxation",
+      "Institutions",
+      "Trade",
+      "Infrastructure"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Households",
+      "Land rights",
+      "Agriculture",
+      "Taxation",
+      "Institutions",
+      "Trade",
+      "Infrastructure"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Over-generalizing Ptolemaic rights",
+      "Community frozen outside scenes"
+    ],
+    "acceptance_checks": [
+      "Six linked situations share same ledgers",
+      "Time and agricultural output consistent"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Historical",
+        "Community Life",
+        "Economy",
+        "Politics"
+      ],
+      "era": "c. 200 BCE proposed",
+      "setting": "Ptolemaic Egypt",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

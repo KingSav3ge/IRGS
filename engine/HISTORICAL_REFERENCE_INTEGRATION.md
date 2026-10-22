@@ -12,10 +12,10 @@ The initial supported collections are chronology, figure references, supplement 
 
 ## Attach once on each installation
 
-From the repository root:
+From the joined IRGS or standalone App repository root:
 
 ```text
-python -B tools/register_historical_archive.py "path/to/IRGS_Historical_Grand_Archive_v1_1.zip"
+python -B IRGS_Web/register_historical_archive.py "path/to/IRGS_Historical_Grand_Archive_v1_1.zip"
 ```
 
 The command stores only a local attachment path and hash under `IRGS_Web/cache/reference_sources.json`. The cache directory is ignored by Git and excluded from the unified source package. It does not copy the archive or write a campaign. The normal website launcher loads this registration. The source ZIP must remain accessible at that location; a moved or revised attachment requires explicit re-registration. `--config` can select an installation-specific registration location, and the host accepts `--reference-config` for the corresponding path.
