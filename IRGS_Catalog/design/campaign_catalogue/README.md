@@ -29,3 +29,9 @@ Kira v0.5 was separately, explicitly adopted by the user as working canon. Its l
 The library provides type, setting, period, genre, launch/future/system and availability filters. Text search includes titles, places, periods, roles, synopses and featured systems. Filters combine, preserve a zero-result state and reset accessibly. All previews and guide searches are read-only and escape supplied text. No remote image is loaded; covers are typographic placeholders.
 
 Before any full concept can release, its project must pass the supplied eight phases: concept approval; historical or fictional foundation; player entry design; shared simulation integration; living-world population; scenario implementation; verification; publication. A requirements list or a passing preview test does not complete those phases.
+
+## Expanded v0.5 update
+
+The user selected the v0.5 package as the update to all 44 existing concepts. Active preview data now adapts its expanded synopses, perspectives, experiences, systems, scope, risks and acceptance checks. Exact supplied JSON records, Markdown briefs, schema and decision notes remain under `../catalogue_v0_5/`; the original ZIP remains under `../source_packages/`. The original v0.4 specification above remains unchanged. `../CATALOGUE_V0_5_IMPORT.json` records hashes and reconciliation.
+
+The imported package predates current Kira canon adoption and Rise availability. Its default-disabled publication and older implementation notes do not revoke prior user decisions. Active previews preserve current approved publication, Kira v0.5 canon, Rise display naming, verified Century/R00 access and independent release gating. Source Core section references are design references, not runtime certification.

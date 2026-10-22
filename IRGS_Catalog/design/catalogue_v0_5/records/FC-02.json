@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "FC-02",
+  "tier_code": "FC",
+  "tier": "Full Campaign",
+  "tier_short_story_equivalent": 30,
+  "title": "The Four Quarters",
+  "tagline": "Across the Andes, communities are connected by obligation and roads.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Regional Life",
+      "Economy",
+      "Administration"
+    ],
+    "setting_label": "Tawantinsuyu, Andean South America",
+    "period_label": "c. AD 1450–1532 proposed",
+    "synopsis": "Communities, agricultural terraces, roads, storage, labor obligations, and imperial officials connect a regional portion of the Andean world. The simulation emphasizes local societies as well as overarching infrastructure and administrative networks, making regional integration visible through actual production and transport.",
+    "playable_perspectives": [
+      "Community member",
+      "Agricultural worker",
+      "Messenger",
+      "Craftworker",
+      "Administrator",
+      "Transport worker"
+    ],
+    "featured_experiences": [
+      "Local settlements",
+      "Agricultural systems",
+      "Roads and communications",
+      "Storage and redistribution",
+      "Regional administration"
+    ],
+    "featured_irgs_systems": [
+      "Labor obligations",
+      "Road networks",
+      "Production",
+      "Storage",
+      "Institutions",
+      "Geography"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple mutually dependent communities and regional institutions",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Labor obligations",
+      "Road networks",
+      "Production",
+      "Storage",
+      "Institutions",
+      "Geography"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Incorrectly treating imperial systems as modern markets",
+      "Erasure of local polities"
+    ],
+    "acceptance_checks": [
+      "Five interacting domains",
+      "No double-counted transported goods",
+      "Local authority modeled"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§35 Shared Logistics",
+      "§102 Networks and Routes",
+      "§106 Population, Presence and Movement",
+      "§107 Institutional Functions"
+    ],
+    "sensitive_context_review": "specific historical/Indigenous cultural research and appropriate cultural consultation required"
+  },
+  "app": {
+    "preview_route": "/content/fc-02",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "FC",
+      "genre": [
+        "Historical",
+        "Regional Life",
+        "Economy",
+        "Administration"
+      ],
+      "era": "c. AD 1450–1532 proposed",
+      "setting": "Tawantinsuyu, Andean South America",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

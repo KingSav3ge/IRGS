@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "CC-05",
+  "tier_code": "CC",
+  "tier": "Curated Campaign",
+  "tier_short_story_equivalent": 6,
+  "title": "The Ambassador’s Household",
+  "tagline": "Diplomacy is conducted by people who have lives of their own.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Historical",
+      "Diplomacy",
+      "Politics",
+      "Life"
+    ],
+    "setting_label": "Ottoman Istanbul",
+    "period_label": "c. AD 1600 proposed",
+    "synopsis": "An embassy and its household are embedded within the social, commercial, religious, and political institutions of Istanbul. Correspondence, audiences, employment, servants, interpreters, and personal relationships are tracked through connected situations. The player is free to participate in ordinary life or diplomatic work from a feasible position.",
+    "playable_perspectives": [
+      "Diplomat",
+      "Interpreter",
+      "Secretary",
+      "Servant",
+      "Merchant",
+      "Local official"
+    ],
+    "featured_experiences": [
+      "Household management",
+      "Correspondence",
+      "Court audiences",
+      "Commerce",
+      "Negotiation",
+      "Personal relationships"
+    ],
+    "featured_irgs_systems": [
+      "Diplomacy",
+      "Communication",
+      "Households",
+      "Employment",
+      "Hierarchy",
+      "Information"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple linked experiences with persistent community / institutional state",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Diplomacy",
+      "Communication",
+      "Households",
+      "Employment",
+      "Hierarchy",
+      "Information"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Foreign envoys treated as sovereign everywhere",
+      "Real-world historical protocol unchecked"
+    ],
+    "acceptance_checks": [
+      "Messages have transit times",
+      "Offices enforce authority",
+      "Six linked domains persist"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§66 Social Resolution",
+      "§68 Households, Property and Care",
+      "§72 Settlement/Community Services",
+      "§76 Ordinary Life and Careers"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/cc-05",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "CC",
+      "genre": [
+        "Historical",
+        "Diplomacy",
+        "Politics",
+        "Life"
+      ],
+      "era": "c. AD 1600 proposed",
+      "setting": "Ottoman Istanbul",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

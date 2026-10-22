@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IRGS Catalogue Concept Record v0.5",
+  "description": "Draft app-facing campaign concept record; not a completed campaign profile.",
+  "type": "object",
+  "required": [
+    "catalogue_id",
+    "tier",
+    "title",
+    "tagline",
+    "placement",
+    "approval",
+    "public",
+    "design",
+    "app",
+    "schema_version"
+  ],
+  "properties": {
+    "catalogue_id": {
+      "type": "string",
+      "pattern": "^(SS|CC|FC|MC|GC|CSS)-(P)?[0-9]{2}$"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "Short Story",
+        "Curated Campaign",
+        "Full Campaign",
+        "Major Campaign",
+        "Grand Campaign",
+        "Curated Simulation System"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "tier_short_story_equivalent": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "placement": {
+      "type": "object",
+      "required": [
+        "launch_target",
+        "release_wave",
+        "pricing_status"
+      ],
+      "properties": {
+        "launch_target": {
+          "type": "boolean"
+        },
+        "release_wave": {
+          "type": "string"
+        },
+        "pricing_status": {
+          "type": "string"
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "identity",
+        "premise",
+        "public_preview",
+        "implementation",
+        "launch_control_enabled"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "premise": {
+          "type": "string"
+        },
+        "public_preview": {
+          "type": "string"
+        },
+        "implementation": {
+          "type": "string"
+        },
+        "launch_control_enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "public": {
+      "type": "object",
+      "required": [
+        "genres",
+        "setting_label",
+        "period_label",
+        "synopsis",
+        "playable_perspectives",
+        "featured_experiences",
+        "featured_irgs_systems"
+      ],
+      "properties": {
+        "genres": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "setting_label": {
+          "type": "string"
+        },
+        "period_label": {
+          "type": "string"
+        },
+        "synopsis": {
+          "type": "string"
+        },
+        "playable_perspectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "featured_experiences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "featured_irgs_systems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "design": {
+      "type": "object",
+      "required": [
+        "scope_statement",
+        "core_capability_candidates",
+        "risk_notes",
+        "acceptance_checks",
+        "core_reference_sections"
+      ]
+    },
+    "app": {
+      "type": "object",
+      "required": [
+        "preview_route",
+        "preview_enabled_default",
+        "launch_enabled_default",
+        "media",
+        "filters"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

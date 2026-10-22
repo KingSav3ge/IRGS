@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "SS-18",
+  "tier_code": "SS",
+  "tier": "Short Story",
+  "tier_short_story_equivalent": 1,
+  "title": "The Missing Manuscript",
+  "tagline": "A missing book may reveal far more than its contents.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": true,
+    "pricing_status": "free_launch_intent"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Mystery",
+      "Investigation",
+      "Historical",
+      "Scholarship"
+    ],
+    "setting_label": "Baghdad",
+    "period_label": "c. AD 950 proposed",
+    "synopsis": "A valuable manuscript disappears from a scholarly collection, creating questions of ownership, access, and conflicting testimony. Scholars, scribes, patrons, servants, and local authorities pursue their own responses. Clues exist in established world state and are discovered through investigation, not invented to validate player speculation.",
+    "playable_perspectives": [
+      "Scholar",
+      "Scribe",
+      "Patron",
+      "Librarian",
+      "Investigator",
+      "Servant"
+    ],
+    "featured_experiences": [
+      "Examine collection",
+      "Interview and research",
+      "Follow evidence",
+      "Handle institutional relationships",
+      "Resolve or leave open"
+    ],
+    "featured_irgs_systems": [
+      "Evidence",
+      "Knowledge",
+      "Literacy",
+      "Property",
+      "Memory",
+      "Institutions"
+    ]
+  },
+  "design": {
+    "scope_statement": "Localized bounded incident with player freedom and simulated external activity",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Crime"
+    ],
+    "core_capability_candidates": [
+      "Evidence",
+      "Knowledge",
+      "Literacy",
+      "Property",
+      "Memory",
+      "Institutions"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Anachronistic policing",
+      "Clue fabrication",
+      "Forced solution"
+    ],
+    "acceptance_checks": [
+      "Evidence source and chronology stable",
+      "Witness knowledge bounded",
+      "Multiple feasible outcomes"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§14 Actor Capability",
+      "§17 Conditions/Injury",
+      "§86 Hidden State",
+      "§92 Anti Railroad"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/ss-18",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "SS",
+      "genre": [
+        "Mystery",
+        "Investigation",
+        "Historical",
+        "Scholarship"
+      ],
+      "era": "c. AD 950 proposed",
+      "setting": "Baghdad",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

@@ -1,0 +1,132 @@
+{
+  "catalogue_id": "MC-P03",
+  "tier_code": "MC",
+  "tier": "Major Campaign",
+  "tier_short_story_equivalent": 120,
+  "title": "The Age of Sail",
+  "tagline": "Across the oceans, commerce and empire reshape the world.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Maritime",
+      "Commerce",
+      "Politics",
+      "Exploration"
+    ],
+    "setting_label": "Atlantic, Indian and Pacific Ocean networks",
+    "period_label": "c. AD 1600–1800 proposed",
+    "synopsis": "Maritime networks across oceans connect ports, state institutions, commercial enterprises, Indigenous communities, migrants, and naval forces. Each region retains its own cultures and politics while distant trade, violence, migration, and diplomacy affect prices and lives.",
+    "playable_perspectives": [
+      "Sailor",
+      "Navigator",
+      "Merchant",
+      "Port worker",
+      "Indigenous community member",
+      "Settler",
+      "Official",
+      "Diplomat"
+    ],
+    "featured_experiences": [
+      "Atlantic",
+      "Indian Ocean",
+      "Pacific",
+      "Metropolitan and coastal institutions"
+    ],
+    "featured_irgs_systems": [
+      "Maritime logistics",
+      "Diplomacy",
+      "Colonial processes",
+      "Trade",
+      "Demography",
+      "Military"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiregional political, economic and social simulation",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Maritime",
+      "Military"
+    ],
+    "core_capability_candidates": [
+      "Maritime logistics",
+      "Diplomacy",
+      "Colonial processes",
+      "Trade",
+      "Demography",
+      "Military"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Colonial perspectives dominate",
+      "Unresearched Indigenous actors",
+      "Instant global travel"
+    ],
+    "acceptance_checks": [
+      "Four oceanic theaters coherent",
+      "Indigenous sovereignty represented",
+      "Time and trade conserved"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§65 Faction Simulation",
+      "§113 Government",
+      "§117 Civilization and Grand Strategy",
+      "§124 Armed Institutions"
+    ],
+    "sensitive_context_review": "specific historical/Indigenous cultural research and appropriate cultural consultation required"
+  },
+  "app": {
+    "preview_route": "/content/mc-p03",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "MC",
+      "genre": [
+        "Historical",
+        "Maritime",
+        "Commerce",
+        "Politics",
+        "Exploration"
+      ],
+      "era": "c. AD 1600–1800 proposed",
+      "setting": "Atlantic, Indian and Pacific Ocean networks",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

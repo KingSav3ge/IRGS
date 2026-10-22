@@ -1,0 +1,127 @@
+{
+  "catalogue_id": "SS-17",
+  "tier_code": "SS",
+  "tier": "Short Story",
+  "tier_short_story_equivalent": 1,
+  "title": "Pressure Falling",
+  "tagline": "In orbit, every system matters.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": true,
+    "release_wave": "launch",
+    "target_launch_free": true,
+    "pricing_status": "free_launch_intent"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "planned",
+  "public": {
+    "genres": [
+      "Science Fiction",
+      "Survival",
+      "Thriller",
+      "Technical"
+    ],
+    "setting_label": "Original near-Earth orbital facility",
+    "period_label": "Fictional 23rd century",
+    "synopsis": "An orbital facility experiences a structural, environmental, or life-support malfunction. Crew and passengers respond through diagnostics, maintenance, emergency procedure, communication, and resource management. Station layout, technical capabilities, limited atmosphere, and component condition remain consistent throughout.",
+    "playable_perspectives": [
+      "Engineer",
+      "Technician",
+      "Medic",
+      "Security worker",
+      "Administrator",
+      "Passenger"
+    ],
+    "featured_experiences": [
+      "Fault detection",
+      "Diagnose",
+      "Stabilize life support",
+      "Repair or relocate",
+      "Aftermath"
+    ],
+    "featured_irgs_systems": [
+      "Life support",
+      "Infrastructure",
+      "Maintenance",
+      "Automation",
+      "Injuries",
+      "Logistics"
+    ]
+  },
+  "design": {
+    "scope_statement": "Localized bounded incident with player freedom and simulated external activity",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Space"
+    ],
+    "core_capability_candidates": [
+      "Life support",
+      "Infrastructure",
+      "Maintenance",
+      "Automation",
+      "Injuries",
+      "Logistics"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Undefined physics",
+      "Free oxygen/energy",
+      "Forced catastrophe"
+    ],
+    "acceptance_checks": [
+      "Every consumable is bounded",
+      "Work follows qualification",
+      "No magically changing fault"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§14 Actor Capability",
+      "§17 Conditions/Injury",
+      "§86 Hidden State",
+      "§92 Anti Railroad"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/ss-17",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "SS",
+      "genre": [
+        "Science Fiction",
+        "Survival",
+        "Thriller",
+        "Technical"
+      ],
+      "era": "Fictional 23rd century",
+      "setting": "Original near-Earth orbital facility",
+      "availability": "launch_target"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

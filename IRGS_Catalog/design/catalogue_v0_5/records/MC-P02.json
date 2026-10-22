@@ -1,0 +1,125 @@
+{
+  "catalogue_id": "MC-P02",
+  "tier_code": "MC",
+  "tier": "Major Campaign",
+  "tier_short_story_equivalent": 120,
+  "title": "The Crowns of Britain",
+  "tagline": "Crowns change hands. Lives endure.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Dynastic",
+      "Political",
+      "Society"
+    ],
+    "setting_label": "Britain and Ireland",
+    "period_label": "c. AD 900–1250 proposed",
+    "synopsis": "Medieval kingdoms, lordships, townships, households, religious institutions, markets, and legal relationships develop through political change. The player is free to inhabit any feasible social position and need not pursue ruling power or military service.",
+    "playable_perspectives": [
+      "Farmer",
+      "Merchant",
+      "Cleric",
+      "Retainer",
+      "Noble",
+      "Artisan",
+      "Resident"
+    ],
+    "featured_experiences": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Ireland and Irish Sea links"
+    ],
+    "featured_irgs_systems": [
+      "Political succession",
+      "Land tenure",
+      "Households",
+      "Diplomacy",
+      "Religious institutions",
+      "Trade"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiregional political, economic and social simulation",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical"
+    ],
+    "core_capability_candidates": [
+      "Political succession",
+      "Land tenure",
+      "Households",
+      "Diplomacy",
+      "Religious institutions",
+      "Trade"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Flattening distinct cultures",
+      "Unhistorical universal succession law"
+    ],
+    "acceptance_checks": [
+      "Four theaters interact causally",
+      "Different legal positions represented"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§65 Faction Simulation",
+      "§113 Government",
+      "§117 Civilization and Grand Strategy",
+      "§124 Armed Institutions"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/mc-p02",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "MC",
+      "genre": [
+        "Historical",
+        "Dynastic",
+        "Political",
+        "Society"
+      ],
+      "era": "c. AD 900–1250 proposed",
+      "setting": "Britain and Ireland",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

@@ -1,0 +1,126 @@
+{
+  "catalogue_id": "FC-P01",
+  "tier_code": "FC",
+  "tier": "Full Campaign",
+  "tier_short_story_equivalent": 30,
+  "title": "Cities of the Mediterranean",
+  "tagline": "Between three continents lies a sea of opportunity.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Historical",
+      "Maritime",
+      "Politics",
+      "Economy"
+    ],
+    "setting_label": "Mediterranean basin",
+    "period_label": "Late medieval / early modern period to select",
+    "synopsis": "Interconnected port cities, islands, inland hinterlands, shipping routes, merchants, institutions, and communities form a historically grounded regional world. Players participate through trade, professional work, family, diplomacy, maritime travel, and politics as regional relationships evolve.",
+    "playable_perspectives": [
+      "Merchant",
+      "Sailor",
+      "Craftworker",
+      "Official",
+      "Resident",
+      "Scholar",
+      "Traveler"
+    ],
+    "featured_experiences": [
+      "Western ports",
+      "Central Italian networks",
+      "Eastern ports",
+      "Shipping",
+      "Rural hinterlands"
+    ],
+    "featured_irgs_systems": [
+      "Regional trade",
+      "Navigation",
+      "Institutions",
+      "Urban settlements",
+      "Economy",
+      "Diplomacy"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiple mutually dependent communities and regional institutions",
+    "setting_kind": "historical_research_required",
+    "genre_engine_dependencies": [
+      "Historical/Maritime"
+    ],
+    "core_capability_candidates": [
+      "Regional trade",
+      "Navigation",
+      "Institutions",
+      "Urban settlements",
+      "Economy",
+      "Diplomacy"
+    ],
+    "historical_cultural_validation": true,
+    "risk_notes": [
+      "Chronologically incompatible states combined",
+      "Unbounded navigation"
+    ],
+    "acceptance_checks": [
+      "Five domains with date-specific politics",
+      "Physical trade flows audited"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§35 Shared Logistics",
+      "§102 Networks and Routes",
+      "§106 Population, Presence and Movement",
+      "§107 Institutional Functions"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/fc-p01",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "FC",
+      "genre": [
+        "Historical",
+        "Maritime",
+        "Politics",
+        "Economy"
+      ],
+      "era": "Late medieval / early modern period to select",
+      "setting": "Mediterranean basin",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

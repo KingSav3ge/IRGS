@@ -158,7 +158,7 @@
     "local_rerun_claimed": false
   },
   "component_integration_record": "COMPONENTS.json",
-  "current_integration_validation": "CATALOG_REPOSITORY_VALIDATION.json",
+  "current_integration_validation": "CATALOG_V0_5_VALIDATION.json",
   "catalog_repository": {
     "repository": "KingSav3ge/IRGS-Catalog",
     "owned_source": "IRGS_Catalog",

@@ -1,0 +1,125 @@
+{
+  "catalogue_id": "MC-P04",
+  "tier_code": "MC",
+  "tier": "Major Campaign",
+  "tier_short_story_equivalent": 120,
+  "title": "The Shattered Kingdoms",
+  "tagline": "The old order has fractured. The future remains unwritten.",
+  "series": "IRGS",
+  "placement": {
+    "launch_target": false,
+    "release_wave": "future",
+    "target_launch_free": null,
+    "pricing_status": "undecided"
+  },
+  "approval": {
+    "identity": "proposed",
+    "premise": "proposal",
+    "long_description": "draft_unapproved",
+    "public_preview": "requires_approval",
+    "implementation": "not_verified",
+    "playability_designation": "not_designated",
+    "launch_control_enabled": false,
+    "evidence": "User directives in IRGS Campaign Design conversation; earlier drafted concept text."
+  },
+  "catalogue_status": "concept_draft",
+  "public": {
+    "genres": [
+      "Fantasy",
+      "Political",
+      "Economic",
+      "Civilization"
+    ],
+    "setting_label": "Authored original fantasy multiregion",
+    "period_label": "Fictional chronology to establish",
+    "synopsis": "Multiple successor states, independent towns, frontier communities, institutions, and trade systems operate after a political fragmentation. No reunification outcome is required. Characters can pursue daily lives, commerce, politics, military service, household growth, or other feasible goals.",
+    "playable_perspectives": [
+      "Resident",
+      "Trader",
+      "Scholar",
+      "Household member",
+      "Official",
+      "Soldier",
+      "Ruler"
+    ],
+    "featured_experiences": [
+      "Successor realms",
+      "Independent cities",
+      "Frontier territories",
+      "Transregional institutions"
+    ],
+    "featured_irgs_systems": [
+      "Faction autonomy",
+      "Diplomacy",
+      "War",
+      "Trade",
+      "Legal authority",
+      "Population"
+    ]
+  },
+  "design": {
+    "scope_statement": "Multiregional political, economic and social simulation",
+    "setting_kind": "fictional_original",
+    "genre_engine_dependencies": [
+      "Fantasy"
+    ],
+    "core_capability_candidates": [
+      "Faction autonomy",
+      "Diplomacy",
+      "War",
+      "Trade",
+      "Legal authority",
+      "Population"
+    ],
+    "historical_cultural_validation": false,
+    "risk_notes": [
+      "Reunification as mandatory plot",
+      "Institutions with unlimited resources"
+    ],
+    "acceptance_checks": [
+      "Four theaters interact independently",
+      "Peace and coexistence possible"
+    ],
+    "core_3_3_verification": "document_reference_only; runtime capability not certified by this catalogue",
+    "core_integration_policy": "inherit Core; propose upstream changes by CMRR; do not replicate shared resource/state owners",
+    "player_agency_requirement": "Do not invent player speech, thoughts, motives, travel, allegiance, or voluntary decisions.",
+    "persistent_state_requirement": "Maintain coherent records of actors, knowledge, time, possessions, ownership, transit, work, and consequences.",
+    "core_reference_sections": [
+      "§4 Player Agency",
+      "§10 Time, Commitments and Concurrency",
+      "§12 Persistent Records",
+      "§64 Autonomous Actors",
+      "§88 Campaign Initialization",
+      "§90 Shared Runtime",
+      "§65 Faction Simulation",
+      "§113 Government",
+      "§117 Civilization and Grand Strategy",
+      "§124 Armed Institutions"
+    ]
+  },
+  "app": {
+    "preview_route": "/content/mc-p04",
+    "preview_enabled_default": false,
+    "launch_enabled_default": false,
+    "editable_concept": true,
+    "media": {
+      "cover_asset_id": null,
+      "credit": null,
+      "status": "not_commissioned"
+    },
+    "filters": {
+      "tier": "MC",
+      "genre": [
+        "Fantasy",
+        "Political",
+        "Economic",
+        "Civilization"
+      ],
+      "era": "Fictional chronology to establish",
+      "setting": "Authored original fantasy multiregion",
+      "availability": "future_candidate"
+    }
+  },
+  "schema_version": "0.5.0",
+  "record_version": "0.1.0"
+}

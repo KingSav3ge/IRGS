@@ -15,7 +15,7 @@
   "app": {
     "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
     "branch": "main",
-    "commit": "2acfc42941425a4a8a20d2fc9de9c4dc2b7d0632",
+    "commit": "aac20055270cc64ba870061085cd8f6bfe43a93c",
     "source_paths": [
       "IRGS_Web",
       "Start-IRGS.cmd"
@@ -26,7 +26,7 @@
   "catalog": {
     "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
     "branch": "main",
-    "commit": "b6c136210c533578b7215575f29182305473169d",
+    "commit": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5",
     "source_paths": [
       "IRGS_Catalog"
     ]
