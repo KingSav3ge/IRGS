@@ -159,6 +159,14 @@
       "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
     },
     {
+      "id": "COC-CONSTANCE",
+      "title": "Nelson H. Minnich, Great Western Schism, Pontifical Committee for Historical Sciences",
+      "url": "https://www.historia.va/content/dam/scienzestoriche/documenti/sezionestoriadellachiesa/Great%20Western%20Schism.Lessico.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Council depositions and Martin V’s November 1417 election; the late-1417 opening must reflect this change. Institutional recognition is not individual belief."
+    },
+    {
       "id": "COC-DESIGN",
       "title": "Century of Conflict opening and evidence policy, 21 October 2026",
       "url": "local-design:century-of-conflict/openings-v1",
@@ -209,7 +217,8 @@
       "COC-SOLDIER-GUIDE",
       "COC-JEWISH-ENGLAND",
       "COC-LANGUAGE",
-      "COC-PAY"
+      "COC-PAY",
+      "COC-CONSTANCE"
     ]
   },
   "entity_registry_template": {
@@ -478,7 +487,7 @@
         "classification": "documentary_reference_rate"
       }
     ],
-    "religious_context": "The Western Church is institutionally divided by rival papal obediences; local practice and personal adherence need their own evidence.",
+    "religious_context": "Martin V has been elected at Constance in November 1417, changing the institutional position after the schism. Recognition and local religious practice still need separate evidence.",
     "quantities_status": "reference_units_and_documentary_examples_only; no default stocks or demographic interpolation",
     "conditional_development": {
       "statement": "Rouen's later surrender needs the actual siege and negotiations; it is not scheduled from the historical year.",

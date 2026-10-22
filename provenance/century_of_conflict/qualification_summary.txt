@@ -1,0 +1,15 @@
+python -X utf8 -B -m unittest discover -s IRGS_3_3/runtime -v
+run=491 passed=490 skipped=1 failed=0 errors=0
+log_sha256=067f0a8cc8c37745bcb27aac473da73718dd703caa3b80dca4473b11612ca641
+
+python -X utf8 -B -m unittest discover -s IRGS_Web/tests -v
+run=143 passed=143 skipped=0 failed=0 errors=0
+log_sha256=b6cf15b83b96020f19272542ec46944a6b243f0dd2da1c1cc7c0dce295c95904
+
+python -X utf8 -B -m unittest discover -s tools/tests -p test_*.py -v
+run=20 passed=20 skipped=0 failed=0 errors=0
+log_sha256=227246812962052079e7673f3308ca091bd39ec44e4a1ef55a83e51081895f0d
+
+node IRGS_Web/tests/test_gameplay_ui.js
+run=60 passed=60 skipped=0 failed=0 errors=0
+log_sha256=8d70eeba9f7e7cac294468f9b610511535905a96c169562ef1783b0f404df506

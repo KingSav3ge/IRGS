@@ -510,7 +510,8 @@
         "COC-SOLDIER-GUIDE",
         "COC-JEWISH-ENGLAND",
         "COC-LANGUAGE",
-        "COC-PAY"
+        "COC-PAY",
+        "COC-CONSTANCE"
       ],
       "people": 2,
       "scope": "bounded start; incomplete operational reconstruction"
@@ -676,7 +677,8 @@
         "COC-SOLDIER-GUIDE",
         "COC-JEWISH-ENGLAND",
         "COC-LANGUAGE",
-        "COC-PAY"
+        "COC-PAY",
+        "COC-HENRY6-CAPACITY"
       ],
       "people": 2,
       "scope": "bounded start; incomplete operational reconstruction"
@@ -938,6 +940,22 @@
       "source_type": "institutional_or_scholarly_reference",
       "accessed": "2026-10-21",
       "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
+    },
+    {
+      "id": "COC-CONSTANCE",
+      "title": "Nelson H. Minnich, Great Western Schism, Pontifical Committee for Historical Sciences",
+      "url": "https://www.historia.va/content/dam/scienzestoriche/documenti/sezionestoriadellachiesa/Great%20Western%20Schism.Lessico.pdf",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Council depositions and Martin V’s November 1417 election; the late-1417 opening must reflect this change. Institutional recognition is not individual belief."
+    },
+    {
+      "id": "COC-HENRY6-CAPACITY",
+      "title": "Henry VI, Historic Royal Palaces",
+      "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/henry-vi/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Summer 1453 incapacity and continuing kingship. Used only to withhold unsupported voluntary player control at the late-1453 cutoff; no retrospective diagnosis, predetermined recovery or public knowledge is installed."
     },
     {
       "id": "COC-DESIGN",

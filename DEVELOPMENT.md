@@ -87,3 +87,7 @@ This can take several minutes because it observes synthetic runtime test executi
 ## Rise settlement foundation
 
 Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).
+
+## Century of Conflict starts
+
+Content Library → Century of Conflict → entry dropdown reveals the selected starting reference. All 37 entries support reviewed individual Solo initialization and an optional fictional local opening; ten primary starts remain marked. The original 1415 snapshot and scene are preserved. See [implementation and CMRR](engine/CENTURY_STARTS_IMPLEMENTATION.md), [historical review and remaining research](provenance/century_of_conflict/HISTORICAL_REVIEW.md), and [current qualification](CENTURY_STARTS_VALIDATION.json). This adds no general action resolver, historical event schedule or existing-save migration.

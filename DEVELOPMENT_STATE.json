@@ -13,7 +13,7 @@
   },
   "app": {
     "development_branch": "3.3.3.A",
-    "edition": "adventure-ui1+kira1+rise-foundation-1 + creator-only technical configuration",
+    "edition": "adventure-ui1+kira1+rise-foundation-1 + creator-only technical configuration + century-starts-1",
     "source": "IRGS_Web/",
     "preferred_design": "IRGS-3.3.2.Emergent.zip top-level frontend",
     "alternate_backend_activated": false
@@ -70,7 +70,14 @@
     "rise_implementation": "Reviewed R00 fictional founding: scoped grant, finite work, provision, delegation and household migration; all eight design families held",
     "settlement_record": "RISE_FOUNDATION_VALIDATION.json",
     "rejected_dependency_record": "engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md",
-    "core_routines_record": "engine/CORE_CONSOLIDATION.md"
+    "core_routines_record": "engine/CORE_CONSOLIDATION.md",
+    "century_starts": {
+      "id": "century-starts-1",
+      "record": "CENTURY_STARTS_VALIDATION.json",
+      "entries": 37,
+      "scope": "reviewed new-game references and optional bounded local fiction; no general resolver or migration",
+      "current_main_integrated": "50643a112b442e6050bd66740fc8e840bc5746df"
+    }
   },
   "environment_qa": {
     "source_branch": "qa/engine-validation",

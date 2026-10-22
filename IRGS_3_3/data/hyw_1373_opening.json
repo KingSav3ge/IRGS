@@ -14,7 +14,7 @@
     "label": "15 December 1373 · after the year’s turning points",
     "classification": "authored_policy"
   },
-  "briefing": "John of Gaunt's long expedition has crossed France without resolving the war. A chevauchée's route is not permanent possession of all territory traversed. The London alliance with Ferdinand of Portugal is distinct from the later Windsor treaty.",
+  "briefing": "John of Gaunt's long expedition is crossing France without resolving the war. A chevauchée's route is not permanent possession of all territory traversed. The London alliance with Ferdinand of Portugal is distinct from the later Windsor treaty.",
   "actors": [
     {
       "id": "HYW-EDWARD-III",
@@ -48,7 +48,7 @@
     "political": [
       {
         "id": "hyw-1373-political-01",
-        "statement": "John of Gaunt's long expedition has crossed France without resolving the war.",
+        "statement": "John of Gaunt's long expedition is crossing France without resolving the war.",
         "source_ids": [
           "COC-BOOK",
           "COC-PORTUGAL"
@@ -196,7 +196,7 @@
   ],
   "entry_guide": {
     "summary": [
-      "John of Gaunt's long expedition has crossed France without resolving the war.",
+      "John of Gaunt's long expedition is crossing France without resolving the war.",
       "A chevauchée's route is not permanent possession of all territory traversed."
     ],
     "immediate_situation": [

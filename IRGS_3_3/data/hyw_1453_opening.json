@@ -171,6 +171,14 @@
       "scope_note": "Scholarly abstract on the 1362 statute and continued French/English legal usage; no instant universal language change."
     },
     {
+      "id": "COC-HENRY6-CAPACITY",
+      "title": "Henry VI, Historic Royal Palaces",
+      "url": "https://www.hrp.org.uk/tower-of-london/history-and-stories/henry-vi/",
+      "source_type": "institutional_or_scholarly_reference",
+      "accessed": "2026-10-22",
+      "scope_note": "Summer 1453 incapacity and continuing kingship. Used only to withhold unsupported voluntary player control at the late-1453 cutoff; no retrospective diagnosis, predetermined recovery or public knowledge is installed."
+    },
+    {
       "id": "COC-DESIGN",
       "title": "Century of Conflict opening and evidence policy, 21 October 2026",
       "url": "local-design:century-of-conflict/openings-v1",
@@ -222,7 +230,8 @@
       "COC-SOLDIER-GUIDE",
       "COC-JEWISH-ENGLAND",
       "COC-LANGUAGE",
-      "COC-PAY"
+      "COC-PAY",
+      "COC-HENRY6-CAPACITY"
     ]
   },
   "entity_registry_template": {
@@ -380,17 +389,13 @@
           {
             "start": 2252115,
             "end": null,
-            "source_ref": "COC-DESIGN",
-            "eligible": true,
-            "reason": "Authored Solo policy allows voluntary declarations by this individual; office grants no operational mandate.",
+            "source_ref": "COC-DESIGN,COC-HENRY6-CAPACITY",
+            "eligible": false,
+            "reason": "Henry VI exists and retains his title; the documented 1453 incapacity prevents assuming voluntary control at this cutoff. No diagnosis or future recovery is imposed.",
             "control": {
               "mode": "individual",
-              "actor_ids": [
-                "HYW-HENRY-VI"
-              ],
-              "powers": [
-                "declare_own_intent"
-              ]
+              "actor_ids": [],
+              "powers": []
             }
           }
         ]

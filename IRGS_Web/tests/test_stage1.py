@@ -83,7 +83,7 @@ class StageOneTests(unittest.TestCase):
                 options=self.call('/api/starting-options?'+urlencode(origin))
                 character={'kind':'new','name':'Independent local traveller','species':'human',
                     'opening_id':options['playable_openings'][0]['id']}
-                payload={**origin,'name':'Synthetic '+entry['id'],'request_id':'all-entries:'+entry['id'],
+                payload={**origin,'name':'Synthetic '+entry['id'],'request_id':'all-entries-'+entry['id'],
                     'character':character,'selection_digest':options['selection_digest']}
                 created=self.call('/api/create',payload)
                 replay=self.call('/api/create',payload)

@@ -47,6 +47,11 @@ class CenturyStartsTests(unittest.TestCase):
         opts=options_for_world(opening('hyw-1422'))
         infant=next(c for c in opts['characters'] if c['id']=='HYW-HENRY-VI')
         self.assertTrue(infant['exists']);self.assertFalse(infant['eligible'])
+        late=options_for_world(opening('hyw-1453'))
+        king=next(c for c in late['characters'] if c['id']=='HYW-HENRY-VI')
+        self.assertTrue(king['exists']);self.assertFalse(king['eligible'])
+        self.assertIn('1453 incapacity',king['eligibility_reason'])
+        self.assertIn('Martin V',historical_entry('hyw-1417')['snapshot']['research_extension']['religious_context'])
 
     def test_every_entry_creates_an_independent_character_without_free_resources_or_news(self):
         for entry in historical_catalogue()['entries']:
