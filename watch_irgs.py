@@ -13,6 +13,7 @@ import os
 from pathlib import Path, PurePosixPath
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import tarfile
@@ -24,6 +25,21 @@ QA_BRANCH = 'qa/engine-validation'
 
 
 def timestamp(): return datetime.now(timezone.utc).isoformat()
+
+
+def blocked_report(output, commit, source, code, log):
+    """Publish startup/runner failures without claiming unexecuted cases passed."""
+    from qa_irgs import FINDINGS, markdown
+    report = {'schema_version': 1, 'candidate_commit': commit, 'finished_at_utc': timestamp(),
+        'status': 'blocked', 'candidate_source_root': str(source),
+        'scope': 'The candidate or QA runner did not complete. No mechanics pass is claimed.',
+        'regression_checks': [{'name': 'qa-runner', 'status': 'blocked', 'exit_code': code}],
+        'independent': {'tests_run': 0, 'passed': 0, 'failed': 0, 'errors': 0, 'skipped': 0, 'cases': []},
+        'findings': [{**finding, 'status': 'inconclusive'} for finding in FINDINGS.values()],
+        'runner_diagnostic': log.read_text(errors='replace')[-5000:],
+        'user_saves_opened': False, 'mechanics_modified_by_qa': False}
+    output.write_text(json.dumps(report, indent=2)+'\n')
+    output.with_suffix('.md').write_text(markdown(report)+'\n## Runner diagnostic\n\n```text\n'+report['runner_diagnostic']+'\n```\n')
 
 
 def git(repo, *arguments, data=None, check=True):
@@ -122,11 +138,18 @@ def cycle(args, directory, state):
             print(timestamp(), 'Testing', commit, 'branches', [b for b,v in refs.items() if v == commit], flush=True)
             command = [sys.executable, '-B', str(directory/'qa_irgs.py'), '--source-root', str(source),
                        '--commit', commit, '--output', str(output)]
-            with (run/'runner.txt').open('w') as log:
-                result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT,
-                                        timeout=1500, check=False)
-            if result.returncode not in (0, 1) or not output.is_file():
-                raise RuntimeError('QA runner did not finish; inspect ' + str(run/'runner.txt'))
+            log_path = run/'runner.txt'
+            with log_path.open('w') as log:
+                process = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
+                try: code = process.wait(timeout=1500)
+                except subprocess.TimeoutExpired:
+                    os.killpg(process.pid, signal.SIGTERM)
+                    try: process.wait(timeout=5)
+                    except subprocess.TimeoutExpired:
+                        os.killpg(process.pid, signal.SIGKILL); process.wait()
+                    code = 124
+            if code not in (0, 1) or not output.is_file():
+                blocked_report(output, commit, source, code, log_path)
             previous = {'report_path': str(output)}
             state['runs'][identity] = previous
         report = json.loads(output.read_text())
