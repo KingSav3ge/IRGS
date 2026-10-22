@@ -5,6 +5,7 @@ import json
 from pathlib import Path, PurePosixPath
 import subprocess
 import tarfile
+from check_integration_gate import from_file, require_ready
 
 ROOT = Path(__file__).resolve().parent.parent
 ENGINE_PATHS = ('IRGS_3_3', 'engine', 'provenance', 'ROADMAP.md', 'CONTINUATION_STATUS.md', 'DEVELOPMENT_LIST.md')
@@ -50,10 +51,16 @@ def sync(engine, app, catalog, apply=False):
     engine_commit, engine_files = snapshot(engine, ENGINE_PATHS)
     app_commit, app_files = snapshot(app, APP_PATHS)
     catalog_commit, catalog_files = snapshot(catalog, CATALOG_PATHS)
+    commits = {'engine': engine_commit, 'app': app_commit, 'catalog': catalog_commit}
+    pins = {name: git(app, 'rev-parse', 'HEAD:' + name.title()).decode().strip()
+            for name in ('engine', 'catalog')}
+    gate = from_file(ROOT, commits, pins)
     if git(app, 'rev-parse', 'HEAD:Engine').decode().strip() != engine_commit:
         raise ValueError('Selected Engine commit differs from the App pin')
     if git(app, 'rev-parse', 'HEAD:Catalog').decode().strip() != catalog_commit:
         raise ValueError('Selected Catalog commit differs from the App pin')
+    if apply:
+        require_ready(ROOT, commits, pins)
     sources = engine_files | app_files | catalog_files
     old = {name for name in git(ROOT, 'ls-files', '--', *ENGINE_PATHS, *APP_PATHS, *CATALOG_PATHS).decode().splitlines()
            if not name.startswith('provenance/qa/') and name not in JOINED_EVIDENCE}
@@ -78,7 +85,8 @@ def sync(engine, app, catalog, apply=False):
         (ROOT / 'COMPONENTS.json').write_text(json.dumps(config, indent=2) + '\n')
     return {'applied': apply, 'engine_commit': engine_commit, 'app_commit': app_commit,
         'catalog_commit': catalog_commit,
-        'changed_paths': changed, 'removed_paths': removed, 'committed': False, 'pushed': False}
+        'changed_paths': changed, 'removed_paths': removed, 'integration_gate': gate,
+        'committed': False, 'pushed': False}
 
 
 if __name__ == '__main__':

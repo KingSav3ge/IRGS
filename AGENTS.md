@@ -44,3 +44,7 @@ AST is archived campaign content and a named 1415 starting reference, not a sepa
 ## Core routines and lean source
 
 Genre mechanics are called Core routines, not separately maintained player engines. Keep technical routine/library configuration in explicit Creator mode. Players select campaigns and reviewed starts. Preserve compatibility event spellings and actual authority/ownership checks when consolidating implementation. Do not reintroduce superseded root build bundles or duplicate verification extractions; use current canonical source, unified packaging and referenced source evidence.
+
+## Coordinator integration policy
+
+Read `COORDINATION.md` and `COORDINATION.json`. The user assigns this chat to direct/review the existing Engine, App/Website and Catalog development chats. Component chats push only their own repositories. Import product source to unified main only after all three have viable coordinator-approved updates for the same cycle, with exact compatible App pins and passing joined checks. `sync_components.py --apply` enforces the coordinator gate. Work-order and QA metadata publication does not integrate product source. Be accurate about unavailable chat-dispatch tools and missing archive payloads.

@@ -57,3 +57,7 @@ App `catalog_paths.py` accepts explicit `IRGS_CATALOG_ROOT`, otherwise sibling `
 5. Refresh the joined development manifest, run current qualification and the package smoke check, review the diff, and commit/push `IRGS/main`. The sync tool never commits or pushes.
 
 No direction automatically deploys a site, applies a historical future, imports a user save or grants campaign release approval. Existing playthroughs retain their committed state. Engine, App and Catalog development can proceed independently; joining remains an explicit, tested integration.
+
+## Coordinator review gate
+
+The user now assigns unified integration to **IRGS Enviroment**. Read [COORDINATION.md](COORDINATION.md) and [COORDINATION.json](COORDINATION.json) before importing. All three components need viable updates, exact coordinator approvals and matching App dependency pins. `tools/check_integration_gate.py` reports the held/ready state; `sync_components.py --apply` enforces it. Component work orders are published in each repository. Historical Grand Archive multipart payload belongs to Catalog under `IRGS_Catalog/historical_details/`; Engine owns its reader and App owns the Creator viewer.

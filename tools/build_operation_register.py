@@ -23,7 +23,9 @@ def source_identity(root=ROOT):
     """Hash code and test inputs; copied historical logs supply no evidence."""
     paths = set((root / 'IRGS_3_3/runtime').glob('*.py'))
     paths.update(root / 'tools' / name for name in
-                 ('operation_inventory.py', 'coverage_capture.py', 'build_operation_register.py'))
+                 ('operation_inventory.py', 'coverage_capture.py', 'build_operation_register.py',
+                  'check_integration_gate.py', 'sync_components.py', 'watch_component_qa.py',
+                  'refresh_component_releases.py'))
     paths.update((root / 'tools/tests').glob('test_*.py'))
     for directory in ('IRGS_3_3/data', 'IRGS_3_3/catalog', 'IRGS_3_3/Core', 'engine/Core'):
         paths.update(path for path in (root / directory).rglob('*') if path.is_file())

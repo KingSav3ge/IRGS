@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "cycle_id": "historical-details-01",
+  "coordinator": {
+    "title": "IRGS Enviroment",
+    "thread_id": "01a160b2-07ac-74f6-a1e2-90975ba000c8",
+    "host_id": "durable"
+  },
+  "threads": {
+    "engine": {
+      "title": "IRGS Engine",
+      "thread_id": "01a164cf-5c1b-74ae-a63e-ff93cc9d10da",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/COORDINATOR_WORK_ORDER.md"
+    },
+    "app": {
+      "title": "IRGS App/Website",
+      "thread_id": "01a164a6-687b-723a-ac81-acb55e3d50d2",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md"
+    },
+    "catalog": {
+      "title": "IRGS Catalog",
+      "thread_id": "01a164ac-89ba-72ff-b5b3-32cca95ec0c7",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/COORDINATOR_WORK_ORDER.md"
+    }
+  },
+  "baseline_components": {
+    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
+    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
+    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  },
+  "reviews": {
+    "engine": {
+      "status": "in_review",
+      "commit": null,
+      "deliverable": "component_update",
+      "checks": [],
+      "candidate_source_commit": "33f76542b594b6fe8d49dba71a11359027d59a0d",
+      "initial_checks": [
+        "Engine release integrity passed",
+        "Six historical-reference tests passed",
+        "Atlas CHECKSUMS.sha256 inventory passed"
+      ],
+      "limits": "No App/Catalog compatibility qualification for this new set yet.",
+      "source_review": {
+        "commit": "33f76542b594b6fe8d49dba71a11359027d59a0d",
+        "status": "passed_scoped_checks",
+        "runtime_tests": {
+          "run": 497,
+          "passed": 496,
+          "skipped": 1,
+          "failed": 0
+        },
+        "historical_reference_tests": {
+          "run": 6,
+          "passed": 6
+        },
+        "atlas_checksum_inventory": "passed",
+        "existing_kira_canon_verifier": "passed",
+        "limits": [
+          "Not a qualified Engine/App/Catalog set.",
+          "Multipart Historical Details support remains assigned.",
+          "Atlas pixel accuracy and additional canon adoption are not certified by these checks."
+        ]
+      }
+    },
+    "app": {
+      "status": "pending",
+      "commit": null,
+      "deliverable": "component_update",
+      "checks": []
+    },
+    "catalog": {
+      "status": "pending",
+      "commit": null,
+      "deliverable": "component_update",
+      "checks": []
+    }
+  },
+  "blockers": [
+    "Direct chat dispatch is unavailable in this cloud session; work orders must be read when each chat resumes.",
+    "Original Historical Grand Archive ZIP is not accessible in this cloud workspace."
+  ],
+  "integration_status": "held",
+  "component_source_integration_performed": false,
+  "work_order_publication": [
+    {
+      "repository": "IRGS-Engine",
+      "work_order_commit": "f775601aa22111ce08116874053a10f7ec8f622b",
+      "product_code_changed_by_this_commit": false
+    },
+    {
+      "repository": "IRGS-APP-WEB",
+      "work_order_commit": "d3dae7b0092b65b2c7902488a1a99aa82a7522cc",
+      "product_code_changed_by_this_commit": false
+    },
+    {
+      "repository": "IRGS-Catalog",
+      "work_order_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
+      "product_code_changed_by_this_commit": false
+    }
+  ]
+}
