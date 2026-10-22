@@ -51,9 +51,9 @@ class HistoricalCatalogueTests(unittest.TestCase):
         self.assertEqual(preview['snapshot']['opening']['date'], '1415-08-11')
         self.assertEqual(preview['snapshot']['opening']['calendar'], 'julian')
         proposed = historical_entry('hyw-1360')
-        self.assertFalse(proposed['ready'])
-        self.assertIsNone(proposed['snapshot'])
-        self.assertIsNone(proposed['snapshot_sha256'])
+        self.assertTrue(proposed['ready'])
+        self.assertEqual(proposed['snapshot']['opening']['date'],'1360-12-15')
+        self.assertNotEqual(proposed['snapshot_sha256'],preview['snapshot_sha256'])
 
     def test_invalid_scope_identity_date_and_sources_cannot_be_developed_openings(self):
         preview = historical_entry('hyw-1415')

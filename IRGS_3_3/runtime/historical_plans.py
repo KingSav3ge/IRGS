@@ -376,9 +376,18 @@ def assess_plans(world, baseline, plans=None):
     return copy.deepcopy(result)
 
 
-def baseline_view():
+def baseline_view(entry_id=None):
     """Creator-side reference loader; no active-campaign installation."""
-    baseline = json.loads((ROOT / "data/hyw_historical_baseline.json").read_text(encoding="utf-8-sig"))
+    if entry_id is None or entry_id == 'hyw-1415':
+        path = ROOT / 'data/hyw_historical_baseline.json'
+    else:
+        from historical_campaigns import SNAPSHOTS
+        _require(entry_id in SNAPSHOTS, 'Unknown historical reference entry')
+        path = ROOT / 'data/coc_conditional_references.json'
+    baseline = json.loads(path.read_text(encoding='utf-8-sig'))
+    if entry_id is not None and entry_id != 'hyw-1415':
+        baseline['id'] += ':' + entry_id
+        baseline['scope']['entry_id'] = entry_id
     validate_baseline(baseline)
     return baseline
 
@@ -387,7 +396,7 @@ def campaign_plan_view(world):
     state = _state(world)
     saved = state.get("historical_planning")
     if saved is None:
-        report = assess_plans(state, baseline_view())
+        report = assess_plans(state, baseline_view(state.get('historical_start', {}).get('entry_id')))
         report.update(storage="preview_only", baseline_source="current_reference_file", installed_schedule=False)
         return report
     _require(isinstance(saved, dict) and isinstance(saved.get("baseline_snapshot"), dict), "Saved historical reference needs its pinned baseline snapshot")

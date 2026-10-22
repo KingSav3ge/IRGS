@@ -912,9 +912,199 @@
       "sha256": "0dde4a1d719288ec600e79f702d3b956777046789de0314c31306c1637bce1f1"
     },
     {
+      "path": "IRGS_3_3/data/coc_conditional_references.json",
+      "bytes": 128508,
+      "sha256": "dba9d8d1432ea71b5df9c913b6df385a89196808adbc12ce1dca56fc1e78a8c7"
+    },
+    {
+      "path": "IRGS_3_3/data/coc_local_delivery.json",
+      "bytes": 8028,
+      "sha256": "1652c5597a6d0ac32d67acd9e9ac4924871e8bdbc768bf596d955efae4e950f9"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1337_opening.json",
+      "bytes": 20404,
+      "sha256": "5d77da58e2f8f1b4e72472773d416c6fb6e5c066f2df3249c68d8efa1400847a"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1340_opening.json",
+      "bytes": 20440,
+      "sha256": "c5d18c7ea2c21b6f7c850fca584d5597eae7f7ea8e7a117a5eee269b791d2e0d"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1341_opening.json",
+      "bytes": 22672,
+      "sha256": "a36244b371ae1f73f279fdc0c31c297a7688352600db656148e019cd952481e8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1343_opening.json",
+      "bytes": 20935,
+      "sha256": "d47a30e1363b16dab7a9340a8aec0926f85c6946e5b08a8272d4908eaff2bca5"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1345_opening.json",
+      "bytes": 21978,
+      "sha256": "59f395ceb4f7a82d680bc31131f39333844a3d3295a6dadefc872e2331a48eeb"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1346_opening.json",
+      "bytes": 21784,
+      "sha256": "0da9c5f1835906d6eb21f1c742d2a03a57bc95e8b291c88f19b476a3abafda67"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1347_opening.json",
+      "bytes": 20397,
+      "sha256": "dd8543d8fe97e22865dcb0658062ae3c5b320120e4682fbccbff57d41967371e"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1355_opening.json",
+      "bytes": 22264,
+      "sha256": "318cc9d97d0b37785a5249e48c348849e54b528e519cad21cd566c4bc46bba1b"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1356_opening.json",
+      "bytes": 22473,
+      "sha256": "94cf541c542f1c68164348a4e0a5f40ffb4eb21500741c5c90ae6e08b49e7d85"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1357_opening.json",
+      "bytes": 23066,
+      "sha256": "b8f92746b66c806dc0caba31a9a6c84857021c229c080804c3c157e6fa746f7b"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1359_opening.json",
+      "bytes": 20655,
+      "sha256": "07969179ae627e10202a5b69a1eefd9c736945ff3fb259e683e0f5d0289aa9fd"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1360_opening.json",
+      "bytes": 22281,
+      "sha256": "afee9da025fd6b68e5c6db941b4cb684d699605c108187b9c996674b387cce77"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1364_opening.json",
+      "bytes": 23477,
+      "sha256": "38e01d6590bf26a38119b64650727fe127abc6e2890b46692fa24e75cef0b7e7"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1366_opening.json",
+      "bytes": 22736,
+      "sha256": "d04f2ef2cfe88b94cdc13bd83383468bc32097daad74ffd83981b31044d56d7d"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1369_opening.json",
+      "bytes": 22677,
+      "sha256": "79e5813d89ea9d6fee52ece0da3ba228d6a2a3bbf4bba4fca165c8c45ef18d12"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1372_opening.json",
+      "bytes": 23300,
+      "sha256": "843f94b5b2cedc331311d8ff8ba77d5a1253f5e3672378bbd4eff7d6c34df057"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1373_opening.json",
+      "bytes": 23406,
+      "sha256": "ebd3439ca9802183964942cded77f8b32385d5943448e3fff53cf0625905eaa9"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1375_opening.json",
+      "bytes": 21691,
+      "sha256": "b24aa084206c69af937de37c6c1225d56477ea1709753ef988a6f0aae70ac664"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1377_opening.json",
+      "bytes": 21137,
+      "sha256": "37acd969d5ca6ffe28eeb0c15d15832aec9e289329ded434ded947484a502f3d"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1385_opening.json",
+      "bytes": 23827,
+      "sha256": "a290dfbce090c2bf754c3f16208acf32bf00a0897bc8cf0f158d017e9a9af618"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1389_opening.json",
+      "bytes": 21386,
+      "sha256": "d3bcf54a7f6f8fec35a004b1552804beed54f109e8f97009b70b5f98ccc85076"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1396_opening.json",
+      "bytes": 20760,
+      "sha256": "fe96546c3f1cd4e6c5386d9e829b7d7359bddec8842a3b16cfe5b8f559a66b84"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1399_opening.json",
+      "bytes": 23037,
+      "sha256": "8d1d2fd35d61e60f7dc8a4f150f224a6267c68cd781ab99aa1d1fad832cd7d07"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1400_opening.json",
+      "bytes": 22939,
+      "sha256": "37b3a3501cf1d891466c4e71fd906202df9c309ad0c7295072e6157549ae38c1"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1403_opening.json",
+      "bytes": 22940,
+      "sha256": "fd34530cfb3b9e7e97bc47a29656beda50828f364862b2b404d2dd7ac1a89ef8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1411_opening.json",
+      "bytes": 22500,
+      "sha256": "84c967241d40fadb1143f9337523f211594065451198f34d34c16b3571b6084c"
+    },
+    {
       "path": "IRGS_3_3/data/hyw_1415_opening.json",
       "bytes": 36667,
       "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1417_opening.json",
+      "bytes": 21731,
+      "sha256": "59a5f93ca2131ee44d3101201021203c54f9d45089a32498eae12f054248f2d2"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1419_opening.json",
+      "bytes": 23434,
+      "sha256": "e7df1c42e364e1019b210653dba5cdcdb8b365150d7a1624eb19d49c443cdd77"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1420_opening.json",
+      "bytes": 24007,
+      "sha256": "c79549891796e2aab4da7850d28efabc9f9aa0dbe75531dfe8e00223c42a10e8"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1422_opening.json",
+      "bytes": 25075,
+      "sha256": "40eb3ab639ee6268d9034295c618cab09a3e0b059127fb3e22b9a58aa476da7c"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1429_opening.json",
+      "bytes": 25363,
+      "sha256": "e05d27eff270b1f71fa52788ca837a2063a2311815f176163fefcd181b2b14f0"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1435_opening.json",
+      "bytes": 25387,
+      "sha256": "a4ac1a7f53398ccfc3bb82c08f7f42f3855f07bb9f1549f817841c78f428c2f0"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1444_opening.json",
+      "bytes": 24896,
+      "sha256": "e22f3067bc735c421c6737f9eb8a7101ad5f14750d3a36989c00b0a48714e86c"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1449_opening.json",
+      "bytes": 23083,
+      "sha256": "1f5da009adc58c4f2a579ba2f22b5d4f1c4d96f04b5bd5c97ddd977353bfbd1e"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1450_opening.json",
+      "bytes": 23177,
+      "sha256": "02a8214238f41998c8c73413f47ef405096b34946a917637337b81dfa0ebc568"
+    },
+    {
+      "path": "IRGS_3_3/data/hyw_1453_opening.json",
+      "bytes": 23421,
+      "sha256": "a5159e94b4e91a8564201e84f5ad3a52ac63b525eb909cd30932828998064584"
     },
     {
       "path": "IRGS_3_3/data/hyw_design_references.json",
@@ -923,8 +1113,8 @@
     },
     {
       "path": "IRGS_3_3/data/hyw_entry_catalogue.json",
-      "bytes": 10789,
-      "sha256": "cd47576c71fe5351e08b0755ce65f7778bb28c7887d1c76acca4aa90a6df7b7b"
+      "bytes": 27385,
+      "sha256": "7f721e1798f76458c981c4993e2c76acae6f85ee2617e07cef76f3b6f5474638"
     },
     {
       "path": "IRGS_3_3/data/hyw_historical_baseline.json",
@@ -943,8 +1133,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 35372,
-      "sha256": "37dbf613928f0ba19a4f4e2f17bd149c0e0ebd735ed09f0171da0cf90c2c29f8"
+      "bytes": 39817,
+      "sha256": "07d6ef7f5f197dd9af276d30dc677a187b526a48ba4d144c56c568c5d3ba00c4"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1103,13 +1293,13 @@
     },
     {
       "path": "IRGS_3_3/runtime/historical_campaigns.py",
-      "bytes": 10585,
-      "sha256": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc"
+      "bytes": 11505,
+      "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
     },
     {
       "path": "IRGS_3_3/runtime/historical_plans.py",
-      "bytes": 24120,
-      "sha256": "36a9c357ff55a694ffff683efdab7458b131b6159033d7c1adbba377e84da537"
+      "bytes": 24597,
+      "sha256": "1b14cbc2d82a5b124cf142fcbfc7feb6e6f9a85096c5cc89e49196309ee8086d"
     },
     {
       "path": "IRGS_3_3/runtime/irgs.py",
@@ -1258,8 +1448,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/scene_setup.py",
-      "bytes": 5515,
-      "sha256": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b"
+      "bytes": 6285,
+      "sha256": "764f7ecbb774a1448fa39f21ec1e8ac25db31ac6f5ec7d4a558a7aa2960f0b91"
     },
     {
       "path": "IRGS_3_3/runtime/selective_coordinator.py",
@@ -1268,8 +1458,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/starting_selection.py",
-      "bytes": 13016,
-      "sha256": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3"
+      "bytes": 13056,
+      "sha256": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce"
     },
     {
       "path": "IRGS_3_3/runtime/strategic_execution.py",
@@ -1287,6 +1477,11 @@
       "sha256": "bf12eb18c89044fccac44a243f838d1ed6cc05ca735b8c284a0734541b5e65c6"
     },
     {
+      "path": "IRGS_3_3/runtime/test_century_starts.py",
+      "bytes": 6667,
+      "sha256": "c677f3bcd40de7cf44526d5d9ade62393c41a72096df898c466f30c01f649017"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_character_background.py",
       "bytes": 6771,
       "sha256": "2f678312cd3bb43fc2d3a1e6d08290e6f6314c2be4bf89771c0985e35f2ca61a"
@@ -1298,8 +1493,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_campaigns.py",
-      "bytes": 9167,
-      "sha256": "e303c92474b2f4bc97eef3bc10cd50d23b25cf586b15b0384244663a0f3ceaca"
+      "bytes": 9387,
+      "sha256": "fc3367d47eb56f3c6f1d0fb61d30d9d1ad55a55f654169a2c041c6e2ff5b9e75"
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_plans.py",
@@ -1438,8 +1633,8 @@
     },
     {
       "path": "IRGS_Web/features.py",
-      "bytes": 16080,
-      "sha256": "5946e86dd45551bef1044b1c85f5eb5f0ccf306bea4285058dd6cac9c444adae"
+      "bytes": 16173,
+      "sha256": "39b9e721b4838cc2133484cb3af114797f825cb8a9200070ab08b853c18d360d"
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
@@ -1463,18 +1658,18 @@
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 118643,
-      "sha256": "5dd30a050079c704664350e82e051a921b07bdf5de827fcd486a87c51ec873b1"
+      "bytes": 120825,
+      "sha256": "9554cc3a8e9779342f8893cd97bdd61e7e805f49adee237311bc9eebbf4416dd"
     },
     {
       "path": "IRGS_Web/static/index.html",
-      "bytes": 15951,
-      "sha256": "4aa8e260853af072cffab41fa98e82467c1db6bf73fad863c7fb5275c7ddc0ac"
+      "bytes": 15763,
+      "sha256": "91c97f8073b2e54dff21b797ed94a26e50b3fa427701f975903aafb5985c2c50"
     },
     {
       "path": "IRGS_Web/static/style.css",
-      "bytes": 59319,
-      "sha256": "cffbdd8844b11225138ca6b074e75f48fd33b88b2eefa01bbca4d42d2247d103"
+      "bytes": 59899,
+      "sha256": "7d00e551f8a7597afcdee8aeaadf400396191de1166078aa7b044e8b45f3e1f2"
     },
     {
       "path": "IRGS_Web/static/voyage.svg",
@@ -1493,8 +1688,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 61772,
-      "sha256": "713c15c0a0394a99d04fb22fa0c7e54c7783854e745792db91593d8b087a6f0a"
+      "bytes": 66323,
+      "sha256": "9485ef071a3b9d2f0c9c00a2e1fedc861316175dcc6e175a14ac0e7afa3a469c"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1503,8 +1698,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_host.py",
-      "bytes": 24428,
-      "sha256": "805792a0342e92d80e2ad5f800a35f5a74373012f642dbce18e9dfe958b433be"
+      "bytes": 24814,
+      "sha256": "78ee43fa89072aa50434e1b997fd3861c4351a1416f69936f150038e14106f1f"
     },
     {
       "path": "IRGS_Web/tests/test_launcher.py",
@@ -1518,8 +1713,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_stage1.py",
-      "bytes": 15887,
-      "sha256": "a317a031a86ef781c6c80597fbe809b64d10e5c963e0949426947e22b2f0c24a"
+      "bytes": 18175,
+      "sha256": "a1ad9451413d4b54cdd686e8586bdf6a3fb2a2bfdd2a5bb8d8066909cb53fc29"
     },
     {
       "path": "IRGS_Web/tests/test_starting_flow.py",
@@ -1862,6 +2057,36 @@
       "sha256": "d841426b98873ec79c4eeb2734acc8ea7db3184f48a854edf8b2ebaa72dfb050"
     },
     {
+      "path": "provenance/century_of_conflict/CHECKPOINT_2026-10-22.json",
+      "bytes": 1693,
+      "sha256": "033b89db7de80f649a3c5fbb5a4a2af29a4580f1f86cf252b5eed0dc926efafc"
+    },
+    {
+      "path": "provenance/century_of_conflict/CHECKPOINT_2026-10-22.md",
+      "bytes": 2679,
+      "sha256": "45df0846cf02408f90aeca685b2945084e35be244268d5f12a01d27edf464c18"
+    },
+    {
+      "path": "provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
+    },
+    {
+      "path": "provenance/century_of_conflict/Thorndike_Chapter_XXVII_OCR_reference.txt",
+      "bytes": 54038,
+      "sha256": "2c6a331e3fe222f7e6da1698313a8d54de7b4b434b99fe19d2bad0ef1e9f6bf1"
+    },
+    {
+      "path": "provenance/century_of_conflict/book_excerpt_provenance.json",
+      "bytes": 543,
+      "sha256": "f3c439cbf5e1af528426558f30cce43335d7f874c4cfb0df2e17bea9ab8fc8a7"
+    },
+    {
+      "path": "provenance/century_of_conflict/opening_inventory.json",
+      "bytes": 31515,
+      "sha256": "0f97884726c3436f83b40714a9ff4304297dc177d8baf4b5d891d9a2147dd8e1"
+    },
+    {
       "path": "provenance/coverage1_validation/runtime_capture.txt",
       "bytes": 552,
       "sha256": "bf3a1854bd8b4ebc22376133e4124bd0d697bd675ad514470ca325155fa0b6e6"
@@ -1920,6 +2145,11 @@
       "path": "provenance/startfix_validation/startfix_ui.txt",
       "bytes": 4245,
       "sha256": "575813b8c3073206e276cd5ea5541445fc2da2c1154b6dbcf450c566113ea8e2"
+    },
+    {
+      "path": "tools/build_century_starts.py",
+      "bytes": 47723,
+      "sha256": "e92ee9fc886f9fe03bf6e4ae4bf237fb8e7de66a10dc41f6e853ac30acc600e7"
     },
     {
       "path": "tools/build_operation_register.py",

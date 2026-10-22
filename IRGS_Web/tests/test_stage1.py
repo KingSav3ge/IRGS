@@ -59,10 +59,11 @@ class StageOneTests(unittest.TestCase):
         entries = [e for p in campaign['periods'] for e in p['entries']]
         self.assertEqual(len(entries), 37); self.assertEqual(len(campaign['periods']), 3)
         ready = [e for e in entries if e['ready']]
-        self.assertEqual([e['id'] for e in ready], ['hyw-1415'])
-        self.assertEqual(ready[0]['snapshot_sha256'], self.call('/api/historical-entry/hyw-1415')['snapshot_sha256'])
+        self.assertEqual(len(ready),37)
+        selected=next(e for e in ready if e['id']=='hyw-1415')
+        self.assertEqual(selected['snapshot_sha256'], self.call('/api/historical-entry/hyw-1415')['snapshot_sha256'])
         self.assertTrue(all(e['snapshot_sha256'] is None for e in entries if not e['ready']))
-        references = [s for s in ready[0]['scenarios'] if s['id'] != 'individual']
+        references = [s for s in selected['scenarios'] if s['id'] != 'individual']
         self.assertTrue(all(not s['ready'] and not s['playable'] for s in references))
         self.assertEqual(self.store.listing(), [])
 
@@ -71,6 +72,34 @@ class StageOneTests(unittest.TestCase):
             library = self.call('/api/content-library')
         self.assertEqual(library['campaigns'][0]['playable_entry_count'], 0)
         self.assertTrue(all(not e['ready'] and e['snapshot_sha256'] is None for p in library['campaigns'][0]['periods'] for e in p['entries']))
+
+    def test_every_catalogue_entry_can_start_its_own_reviewed_local_playthrough(self):
+        entries=self.call('/api/historical-campaigns')['entries']
+        for entry in entries:
+            with self.subTest(entry=entry['id']):
+                preview=self.call('/api/historical-entry/'+entry['id'])
+                origin={'profile_id':'military','scenario_id':'hundred-years-war',
+                    'entry_id':entry['id'],'snapshot_sha256':preview['snapshot_sha256']}
+                options=self.call('/api/starting-options?'+urlencode(origin))
+                character={'kind':'new','name':'Independent local traveller','species':'human',
+                    'opening_id':options['playable_openings'][0]['id']}
+                payload={**origin,'name':'Synthetic '+entry['id'],'request_id':'all-entries:'+entry['id'],
+                    'character':character,'selection_digest':options['selection_digest']}
+                created=self.call('/api/create',payload)
+                replay=self.call('/api/create',payload)
+                self.assertEqual(created['id'],replay['id'])
+                saved=self.store.read(created['id'])['state']
+                self.assertEqual(saved['historical_start']['entry_id'],entry['id'])
+                self.assertEqual(saved['historical_start']['date'],preview['snapshot']['opening']['date'])
+                actor=saved['player_actor_ids'][0]
+                self.assertEqual(saved['stocks'][actor]['sealed_dispatch'],1)
+                self.assertTrue(saved['gameplay_started']['authored_opening']['fictional'])
+                self.assertFalse(saved['historical_start']['automatic_future_history'])
+                self.assertFalse(saved['historical_planning']['installed_schedule'])
+                projection=self.call('/api/playthrough/'+created['id'])
+                self.assertEqual(projection['actor_id'],actor)
+                self.assertNotIn('historical_start',projection)
+        self.assertEqual(len(self.store.listing()),37)
 
     def test_role_scoped_expanded_registry_stage_cannot_grant_privileges(self):
         player = self.call('/api/features?stage=development')

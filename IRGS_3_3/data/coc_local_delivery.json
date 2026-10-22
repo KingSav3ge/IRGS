@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "id": "century-yard-delivery-v1",
+  "title": "A message through the market yard",
+  "description": "An optional local opening for an independent new character at the selected historical checkpoint. The yard, passage, receiving desk and entrusted dispatch are fictional circumstances.",
+  "requirements": "New human character; individual Solo control; explicit review of this local opening.",
+  "review": "Begin in an unnamed fictional market yard with one sealed dispatch entrusted for delivery to a receiving tray. A covered passage connects the yard and desk; a gate may offer a shortcut. No historical street plan, employer, allegiance, payment or office is assigned. You may observe, move, attempt a route or deliver the item using the supported local actions. These fictional circumstances are established only if you choose this opening.",
+  "scope": "Local observation, movement and delivery use the existing Core handlers. Their selected local durations remain 20, 45, 30 and 10 seconds, as in the inherited authored opening. These are scenario values, not historical travel measurements or universal mechanics. Freeform actions, dialogue, combat and general calendar advancement remain outside this bounded scene.",
+  "source_ref": "authored-solo-opening:century-yard-delivery-v1",
+  "initial_place": "yard",
+  "initial_material": "sealed_dispatch",
+  "destination": "clerk-tray",
+  "map_text": "You have been entrusted with one sealed dispatch for the receiving clerk's tray. From the yard a covered passage leads to the receiving desk. A yard gate may provide a shortcut, although you have not checked whether it is passable. You may return by the covered passage. These are local fictional places and arrangements, not a historical street plan.",
+  "elapsed_axis": "authored-opening-seconds",
+  "conditions": {
+    "yard-gate": {
+      "passable": false,
+      "source_ref": "authored-solo-opening:century-yard-delivery-v1"
+    }
+  },
+  "places": {
+    "yard": {
+      "title": "Market yard",
+      "description": "You are in a fictional market yard. A covered passage leads toward a receiving desk; a gate offers a possible shorter way.",
+      "observe": "You check your immediate surroundings. You can see the entrance to the covered passage and the yard gate. No search of stores or distant vessels has taken place.",
+      "actions": [
+        "look-yard",
+        "yard-passage",
+        "yard-shortcut"
+      ]
+    },
+    "passage": {
+      "title": "Covered passage",
+      "description": "The covered passage connects the yard to the receiving desk. You can continue to the desk or return to the yard.",
+      "observe": "You look along the passage. The receiving desk and the way back to the yard are visible. This reveals no hidden stores or distant activity.",
+      "actions": [
+        "look-passage",
+        "passage-desk",
+        "passage-yard"
+      ]
+    },
+    "desk": {
+      "title": "Receiving desk",
+      "description": "You stand at the receiving desk. A tray is set aside for the sealed dispatch entrusted to you. The covered passage leads back to the yard.",
+      "observe": "You inspect the receiving desk and identify the designated tray. Placing the dispatch there is permitted by your delivery instructions; it promises no pay or appointment.",
+      "actions": [
+        "look-desk",
+        "deliver-dispatch",
+        "desk-passage"
+      ]
+    }
+  },
+  "actions": {
+    "look-yard": {
+      "kind": "observe",
+      "from": "yard",
+      "label": "Look around the yard",
+      "text": "Look around the yard for 20 seconds.",
+      "description": "Observe your immediate surroundings. This is a new physical observation, not a receipt lookup.",
+      "duration_seconds": 20,
+      "success_text": "You have looked around the yard.",
+      "failure_text": "You could not complete the observation."
+    },
+    "yard-passage": {
+      "kind": "move",
+      "from": "yard",
+      "to": "passage",
+      "label": "Take the covered passage",
+      "text": "Walk from the yard into the covered passage over 45 seconds.",
+      "description": "Follow the route described in your received directions.",
+      "duration_seconds": 45,
+      "success_text": "You reach the covered passage.",
+      "failure_text": "You do not reach the covered passage."
+    },
+    "yard-shortcut": {
+      "kind": "move",
+      "from": "yard",
+      "to": "desk",
+      "blocked_by": "yard-gate",
+      "label": "Try the gate shortcut",
+      "text": "Try the yard gate shortcut to the receiving desk for 30 seconds.",
+      "description": "A possible shorter route. You have not established whether the gate is passable; the attempt still takes time.",
+      "duration_seconds": 30,
+      "success_text": "You pass through the gate and reach the receiving desk.",
+      "failure_text": "The gate is closed against passage. You remain on the yard after spending 30 seconds trying the route."
+    },
+    "look-passage": {
+      "kind": "observe",
+      "from": "passage",
+      "label": "Look along the passage",
+      "text": "Look along the covered passage for 20 seconds.",
+      "description": "Observe the local passage; this is not a search of concealed places.",
+      "duration_seconds": 20,
+      "success_text": "You have looked along the covered passage.",
+      "failure_text": "You could not complete the observation."
+    },
+    "passage-desk": {
+      "kind": "move",
+      "from": "passage",
+      "to": "desk",
+      "label": "Continue to the receiving desk",
+      "text": "Walk from the covered passage to the receiving desk over 45 seconds.",
+      "description": "Continue along the known local route.",
+      "duration_seconds": 45,
+      "success_text": "You reach the receiving desk.",
+      "failure_text": "You do not reach the receiving desk."
+    },
+    "passage-yard": {
+      "kind": "move",
+      "from": "passage",
+      "to": "yard",
+      "label": "Return to the yard",
+      "text": "Walk from the covered passage back to the yard over 45 seconds.",
+      "description": "Return by the route you know.",
+      "duration_seconds": 45,
+      "success_text": "You return to the market yard.",
+      "failure_text": "You do not reach the yard."
+    },
+    "look-desk": {
+      "kind": "observe",
+      "from": "desk",
+      "label": "Inspect the receiving desk",
+      "text": "Look over the receiving desk for 20 seconds.",
+      "description": "Observe the local desk and designated tray.",
+      "duration_seconds": 20,
+      "success_text": "You have inspected the receiving desk.",
+      "failure_text": "You could not complete the observation."
+    },
+    "deliver-dispatch": {
+      "kind": "deliver",
+      "from": "desk",
+      "material": "sealed_dispatch",
+      "destination": "clerk-tray",
+      "quantity": 1,
+      "label": "Deliver the sealed dispatch",
+      "text": "Place the entrusted sealed dispatch in the receiving clerk's tray over 10 seconds.",
+      "description": "Hand over the actual dispatch you were entrusted with. If you no longer carry it, delivery cannot succeed.",
+      "duration_seconds": 10,
+      "success_text": "You place the sealed dispatch in the receiving clerk's tray. Your delivery is complete; no payment or appointment has been promised.",
+      "failure_text": "You no longer carry an undelivered sealed dispatch. No dispatch was handed over."
+    },
+    "desk-passage": {
+      "kind": "move",
+      "from": "desk",
+      "to": "passage",
+      "label": "Return through the passage",
+      "text": "Walk from the receiving desk back into the covered passage over 45 seconds.",
+      "description": "Return toward the yard. Delivery does not end your ability to move and observe.",
+      "duration_seconds": 45,
+      "success_text": "You return to the covered passage.",
+      "failure_text": "You do not reach the covered passage."
+    }
+  }
+}

@@ -335,7 +335,7 @@ class HostTests(unittest.TestCase):
         preview=self.call('/api/historical-entry/hyw-1415')
         self.assertTrue(preview['ready'])
         self.assertEqual(preview['snapshot']['opening']['date'],'1415-08-11')
-        self.assertFalse(self.call('/api/historical-entry/hyw-1360')['ready'])
+        self.assertTrue(self.call('/api/historical-entry/hyw-1360')['ready'])
         self.assertEqual(store.path(existing['id']).read_bytes(),raw)
         self.assertEqual(len(self.call('/api/campaigns')['campaigns']),1)
         for endpoint in ('/api/historical-campaigns','/api/historical-entry/hyw-1415'):

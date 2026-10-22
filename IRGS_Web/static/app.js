@@ -141,9 +141,14 @@ async function mutate(path,payload){
 function submit(op,params){return mutate('event',{op,params});}function submitBatch(events){return mutate('frontier',{events});}
 function textItems(value) {return (Array.isArray(value)?value:value?[value]:[]).map(item=>typeof item==='string'?item:item.statement || item.text || item.summary || JSON.stringify(item));}
 function safeHttpUrl(value) {try{const url=new URL(value);return ['http:','https:'].includes(url.protocol)?url.href:null;}catch{return null;}}
+function historicalResearchMarkup(research){
+  if(!research)return '';
+  const records=(research.material_context||[]).map(item=>'<section><h4>'+esc(item.topic)+'</h4><p>'+esc(item.statement)+'</p><small>'+esc((item.source_ids||[]).join(', '))+'</small></section>').join('');
+  return '<details class="setting-details"><summary>Everyday life, institutions and material evidence</summary>'+(research.society||[]).map(text=>'<p>'+esc(text)+'</p>').join('')+(research.religious_context?'<p>'+esc(research.religious_context)+'</p>':'')+records+'<p class="note">These references describe historical context and research limits. Documentary rates do not create wages, stock, employment or personal knowledge.</p></details>';
+}
 function historicalSnapshotMarkup(snapshot) {
   const opening=snapshot.opening||{},briefing=textItems(snapshot.briefing),domains=snapshot.domains||{},sources=snapshot.sources||[];
-  return `<div class="historical-opening"><span class="eyebrow">YOUR STARTING MOMENT</span><h3>${esc(opening.label||opening.date||'Opening date not specified')}</h3><p class="opening-date">${esc(label(opening.calendar||'calendar unspecified'))} calendar · ${opening.time?esc(opening.time):'hour unknown'}${opening.precision?' · '+esc(opening.precision)+' precision':''}</p><div class="historical-briefing">${briefing.map(value=>`<p>${esc(value)}</p>`).join('')}</div><details class="setting-details"><summary>Explore the historical setting</summary>${entryGuideMarkup(snapshot.entry_guide)}<div class="historical-domains">${['political','military','territorial','diplomatic'].map(key=>`<section><h3>${label(key)}</h3>${(domains[key]||[]).map(item=>`<p>${esc(typeof item==='string'?item:item.statement)}${item.source_ids?.length?` <small>[${esc(item.source_ids.join(', '))}]</small>`:''}</p>`).join('')||'<p class="note">No opening record supplied.</p>'}</section>`).join('')}</div>${snapshot.actors?.length?`<details><summary>People in this historical world</summary>${snapshot.actors.map(actor=>`<div class="list-row"><strong>${esc(actor.name)}</strong><small>${esc(actor.role||'')}</small></div>`).join('')}</details>`:''}<h3>What remains unknown</h3>${textItems(snapshot.unknowns).map(value=>`<p class="note">${esc(value)}</p>`).join('')||'<p class="note">No additional unknowns are listed.</p>'}</details><details class="setting-details"><summary>Sources and starting assumptions</summary>${opening.boundary?`<p>${esc(opening.boundary)}</p>`:''}<p>Historical setting references describe the starting world. They do not automatically become your character's knowledge or determine future events.</p>${textItems(snapshot.simulation_rules).map(value=>`<p>${esc(value)}</p>`).join('')}${sources.map(source=>{const url=safeHttpUrl(source.url),title=source.title||source.id||'Source';return `<p>${source.id?`<small>${esc(source.id)} · </small>`:''}${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a>`:esc(title)}</p>`;}).join('')||'<p>No source links supplied.</p>'}</details></div>`;
+  return `<div class="historical-opening"><span class="eyebrow">YOUR STARTING MOMENT</span><h3>${esc(opening.label||opening.date||'Opening date not specified')}</h3><p class="opening-date">${esc(label(opening.calendar||'calendar unspecified'))} calendar · ${opening.time?esc(opening.time):'hour unknown'}${opening.precision?' · '+esc(opening.precision)+' precision':''}</p><div class="historical-briefing">${briefing.map(value=>`<p>${esc(value)}</p>`).join('')}</div><details class="setting-details"><summary>Explore the historical setting</summary>${entryGuideMarkup(snapshot.entry_guide)}<div class="historical-domains">${['political','military','territorial','diplomatic'].map(key=>`<section><h3>${label(key)}</h3>${(domains[key]||[]).map(item=>`<p>${esc(typeof item==='string'?item:item.statement)}${item.source_ids?.length?` <small>[${esc(item.source_ids.join(', '))}]</small>`:''}</p>`).join('')||'<p class="note">No opening record supplied.</p>'}</section>`).join('')}</div>${historicalResearchMarkup(snapshot.research_extension)}${snapshot.actors?.length?`<details><summary>People in this historical world</summary>${snapshot.actors.map(actor=>`<div class="list-row"><strong>${esc(actor.name)}</strong><small>${esc(actor.role||'')}</small></div>`).join('')}</details>`:''}<h3>What remains unknown</h3>${textItems(snapshot.unknowns).map(value=>`<p class="note">${esc(value)}</p>`).join('')||'<p class="note">No additional unknowns are listed.</p>'}</details><details class="setting-details"><summary>Sources and starting assumptions</summary>${opening.boundary?`<p>${esc(opening.boundary)}</p>`:''}<p>Historical setting references describe the starting world. They do not automatically become your character's knowledge or determine future events.</p>${textItems(snapshot.simulation_rules).map(value=>`<p>${esc(value)}</p>`).join('')}${sources.map(source=>{const url=safeHttpUrl(source.url),title=source.title||source.id||'Source';return `<p>${source.id?`<small>${esc(source.id)} · </small>`:''}${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a>`:esc(title)}</p>`;}).join('')||'<p>No source links supplied.</p>'}</details></div>`;
 }
 
 function historicalReferenceMarkup(start) {
@@ -266,14 +271,34 @@ function renderFeature(id){
 function scenarioReferencesMarkup(entry){const references=entry.starting_scenario_references||entry.scenario_references||entry.scenarios||[];return references.map(scenario=>'<section class="scenario-reference"><strong>'+esc(scenario.title||scenario.id)+'</strong><span class="badge">'+esc(scenario.ready===true&&scenario.playable===true?'Available for review':label(scenario.status||'Reference only'))+'</span><p class="note">'+esc(scenario.reason||scenario.readiness||(scenario.ready===true&&scenario.playable===true?'Review this scenario through the entry’s Start new playthrough button.':'This scenario is a reference and cannot start a new playthrough.'))+'</p></section>').join('');}
 function libraryEntries(data){return (data.campaigns||[]).flatMap(campaign=>(campaign.periods||[]).flatMap(period=>(period.entries||[]).map(entry=>({...entry,campaign_id:campaign.id}))));}
 function verifiedLibraryEntry(entry){return entry.playable===true&&/^[a-f0-9]{64}$/i.test(entry.snapshot_sha256||'');}
+function historicalEntryOptions(entries,periods=[],featured=[]){
+  const option=entry=>'<option value="'+esc(entry.id)+'">'+esc(entry.year)+' · '+esc(entry.title)+(featured.includes(entry.year)?' · primary start':'')+'</option>';
+  const grouped=periods.length?periods.map(period=>'<optgroup label="'+esc(period.name)+'">'+entries.filter(entry=>entry.period_id===period.id||(period.entries||[]).some(item=>item.id===entry.id)).map(option).join('')+'</optgroup>').join(''):entries.map(option).join('');
+  return '<option value="">Choose an entry point…</option>'+grouped;
+}
 async function renderContentLibrary(){
   const request=++contentLibraryRequest,mode=workspaceMode;$('#content').innerHTML='<div class="empty">Loading the Content Library…</div>';
   try{
     const data=await api('content-library',undefined,{creator:false});if(request!==contentLibraryRequest||view!=='content-library'||mode!==workspaceMode)return;
     approvedEntries=new Map(libraryEntries(data).filter(verifiedLibraryEntry).map(entry=>[entry.id,entry]));
-    $('#content').innerHTML='<section class="library-hero"><span class="eyebrow">THE CONTENT LIBRARY</span><h2>History opens a door.<br>Step into a story.</h2><p>Begin with a dated world. What happens next belongs to your playthrough.</p><span class="hero-rule" aria-hidden="true"></span></section>'+(data.campaigns||[]).map(campaign=>'<article class="panel library-campaign"><div class="library-campaign-heading"><span class="eyebrow">HISTORICAL CAMPAIGN · '+esc(campaign.period)+'</span><h2>'+esc(campaign.title)+'</h2><p>'+esc(campaign.summary)+'</p><p class="note">'+esc(campaign.playable_entry_count)+' of '+esc(campaign.entry_count)+' entry points have a verified opening. Others remain proposed references.</p></div>'+(campaign.periods||[]).map(period=>'<details '+((period.entries||[]).some(verifiedLibraryEntry)?'open':'')+'><summary>'+esc(period.name)+' · '+esc(period.range)+'</summary>'+(period.entries||[]).map(entry=>'<div class="list-row library-entry"><div><strong>'+esc(entry.year)+' · '+esc(entry.title)+'</strong><p>'+esc(entry.description||'')+'</p>'+scenarioReferencesMarkup(entry)+'<small>'+esc(entry.readiness||'Opening snapshot not verified')+'</small></div><div class="buttons"><button class="quiet" data-inspect-entry="'+esc(entry.id)+'">Inspect reference</button>'+(verifiedLibraryEntry(entry)?'<button class="primary" data-start-entry="'+esc(entry.id)+'">Start new playthrough</button>':'<span class="badge">Proposed · cannot start</span>')+'</div></div>').join('')+'</details>').join('')+'</article>').join('')+'<p class="note">'+esc(data.note||'Campaign references do not become character knowledge.')+'</p>';
-    document.querySelectorAll('[data-start-entry]').forEach(button=>button.onclick=()=>{const entry=approvedEntries.get(button.dataset.startEntry);if(entry)openCreateDialog(entry);});
-    document.querySelectorAll('[data-inspect-entry]').forEach(button=>button.onclick=()=>inspectLibraryEntry(button.dataset.inspectEntry));
+    $('#content').innerHTML='<section class="library-hero"><span class="eyebrow">THE CONTENT LIBRARY</span><h2>History opens a door.<br>Step into a story.</h2><p>Begin with a dated world. What happens next belongs to your playthrough.</p><span class="hero-rule" aria-hidden="true"></span></section>'+(data.campaigns||[]).map(campaign=>'<article class="panel library-campaign"><div class="library-campaign-heading"><span class="eyebrow">HISTORICAL CAMPAIGN · '+esc(campaign.period)+'</span><h2>'+esc(campaign.title)+'</h2><p>'+esc(campaign.summary)+'</p><p class="note">'+esc(campaign.playable_entry_count)+' starting references available. Each explains its evidence and remaining uncertainties.</p></div><label for="library-entry-'+esc(campaign.id)+'">Choose your entry point</label><select id="library-entry-'+esc(campaign.id)+'" data-library-entry-select="'+esc(campaign.id)+'">'+historicalEntryOptions((campaign.periods||[]).flatMap(period=>period.entries||[]),campaign.periods,campaign.featured_years||[])+'</select><div id="library-detail-'+esc(campaign.id)+'" class="selected-entry-detail" aria-live="polite"><p class="note">Select a year to see its description, starting situation and available scenarios.</p></div></article>').join('')+'<p class="note">'+esc(data.note||'Campaign references do not become character knowledge.')+'</p>';
+    document.querySelectorAll('[data-library-entry-select]').forEach(picker=>{
+      picker.value='';let selectionRequest=0;
+      const campaign=(data.campaigns||[]).find(item=>item.id===picker.dataset.libraryEntrySelect),entries=(campaign.periods||[]).flatMap(period=>period.entries||[]);
+      picker.onchange=async()=>{
+        const selected=++selectionRequest,id=picker.value,target=$('#library-detail-'+campaign.id),entry=entries.find(item=>item.id===id);
+        if(!entry){target.innerHTML='<p class="note">Select a year to see its description, starting situation and available scenarios.</p>';return;}
+        target.innerHTML='<p class="note">Loading the selected starting point…</p>';
+        try{
+          const preview=await api('historical-entry/'+encodeURIComponent(id),undefined,{creator:false});
+          if(selected!==selectionRequest||request!==contentLibraryRequest||view!=='content-library'||mode!==workspaceMode||picker.value!==id)return;
+          if(preview.entry?.id!==id)throw Error('The opening response identifies another entry. Select the starting point again.');
+          if(preview.ready&&(!verifiedLibraryEntry(entry)||preview.snapshot_sha256!==entry.snapshot_sha256))throw Error('The opening reference changed. Refresh the Content Library before starting.');
+          target.innerHTML='<article class="historical-preview"><span class="eyebrow">'+esc(entry.year)+' ENTRY POINT</span><h3>'+esc(entry.title)+'</h3><p>'+esc(entry.description||'')+'</p>'+(preview.snapshot?historicalSnapshotMarkup(preview.snapshot):'<p class="note">A supported opening is not available for this reference.</p>')+scenarioReferencesMarkup(entry)+(preview.ready&&verifiedLibraryEntry(entry)?'<button class="primary" data-start-entry="'+esc(id)+'">Start new playthrough</button>':'<p class="note">This entry is available for reference only.</p>')+'</article>';
+          const start=target.querySelector('[data-start-entry]');if(start)start.onclick=()=>{const approved=approvedEntries.get(id);if(approved&&!busy)openCreateDialog(approved);};
+        }catch(error){if(selected===selectionRequest&&request===contentLibraryRequest&&view==='content-library'&&mode===workspaceMode&&picker.value===id)target.innerHTML='<p class="note">'+esc(error.message)+'</p>';}
+      };
+    });
   }catch(error){if(request!==contentLibraryRequest||view!=='content-library'||mode!==workspaceMode)return;$('#content').innerHTML='<div class="empty"><p>'+esc(error.message)+'</p><button id="retry-content-library" class="quiet">Retry Content Library</button></div>';$('#retry-content-library').onclick=renderContentLibrary;}
 }
 async function inspectLibraryEntry(id){
@@ -400,20 +425,16 @@ function resetHistoricalSetup() {
   $('#historical-setup').hidden=true;$('#create-dialog').classList.toggle('historical-mode',false);syncCreateControls();
 }
 function historicalRequestCurrent(request,id) {return request===historicalRequest && $('#create-profile').value==='__hyw' && $('#create-dialog').open && (!id || historicalEntryId===id);}
-function bindHistoricalButtons(selector) {
-  document.querySelectorAll(selector).forEach(button=>{button.onclick=()=>{if(!busy)selectHistoricalEntry(button.dataset.historicalEntry);};});
-}
 function renderHistoricalChoices() {
-  const entries=historicalCatalogue.entries || [],featured=historicalCatalogue.featured_years || [];
-  $('#historical-featured').innerHTML=featured.map(year=>entries.find(entry=>String(entry.year)===String(year))).filter(Boolean).map(entry=>`<button type="button" class="quiet year-choice" data-historical-entry="${esc(entry.id)}" aria-pressed="false" title="${esc(entry.title)}">${esc(entry.year)}</button>`).join('');
-  $('#historical-count').textContent=`All ${entries.length} entry points`;
-  const draw=()=>{
-    const query=$('#historical-search').value.trim().toLowerCase();
-    const filtered=entries.filter(entry=>`${entry.year} ${entry.title || ''} ${entry.description || ''} ${entry.period_id || ''}`.toLowerCase().includes(query));
-    $('#historical-all').innerHTML=filtered.map(entry=>`<button type="button" class="historical-entry" data-historical-entry="${esc(entry.id)}" aria-pressed="${entry.id===historicalEntryId}"><strong>${esc(entry.year)} · ${esc(entry.title)}</strong><small>${entry.status==='developed_historical_setup'?'Developed opening reference':'Proposed entry · snapshot pending'}</small></button>`).join('') || '<p class="note">No matching entry points.</p>';
-    bindHistoricalButtons('#historical-all [data-historical-entry]');syncCreateControls();
-  };
-  $('#historical-search').value='';$('#historical-search').oninput=draw;$('#historical-search').onkeydown=event=>{if(event.key==='Enter')event.preventDefault();};draw();bindHistoricalButtons('#historical-featured [data-historical-entry]');
+  const entries=historicalCatalogue.entries||[],picker=$('#historical-entry-select');
+  picker.innerHTML=historicalEntryOptions(entries,historicalCatalogue.periods||[],historicalCatalogue.featured_years||[]);picker.value=historicalEntryId||'';
+  $('#historical-count').textContent=`${entries.length} entry points · choose one to explore`;
+  picker.onchange=()=>{
+    if(busy)return;
+    if(picker.value)return selectHistoricalEntry(picker.value);
+    historicalRequest+=1;historicalEntryId=null;historicalPreview=null;historicalLoading=false;startingOptions=null;reviewSelection=null;startingRequest+=1;
+    $('#historical-preview').innerHTML='<p class="note">Select an entry point to read its description and details.</p>';syncCreateControls();
+  };syncCreateControls();
 }
 async function showHistoricalSetup(preferredId=null) {
   const request=++historicalRequest;historicalEntryId=null;historicalPreview=null;historicalLoading=true;
@@ -423,7 +444,9 @@ async function showHistoricalSetup(preferredId=null) {
     const catalogue=historicalCatalogue || await api('historical-campaigns');
     if(!historicalRequestCurrent(request))return false;
     historicalCatalogue=catalogue;renderHistoricalChoices();
-    const preferred=catalogue.entries.find(entry=>entry.id===(preferredId||setupEntryContext?.entry_id||'hyw-1415'));
+    const selected=preferredId||setupEntryContext?.entry_id;
+    if(!selected){historicalLoading=false;$('#historical-preview').innerHTML='<p class="note">Select an entry point to read its description and details.</p>';syncCreateControls();return true;}
+    const preferred=catalogue.entries.find(entry=>entry.id===selected);
     if(!preferred)throw new Error('The selected entry is unavailable in this catalogue. Refresh the Content Library.');
     return await selectHistoricalEntry(preferred.id);
   } catch(err) {
@@ -436,7 +459,7 @@ async function selectHistoricalEntry(id,preserveError=false) {
   if(!(historicalCatalogue?.entries || []).some(entry=>entry.id===id))return false;
   const request=++historicalRequest;historicalEntryId=id;historicalPreview=null;historicalLoading=true;startingOptions=null;reviewSelection=null;startingRequest+=1;
   if(!preserveError)$('#create-error').textContent='';
-  document.querySelectorAll('[data-historical-entry]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.historicalEntry===id)));
+  $('#historical-entry-select').value=id;
   $('#historical-preview').innerHTML='<p class="note">Loading the selected opening reference…</p>';syncCreateControls();
   try {
     const result=await api('historical-entry/'+encodeURIComponent(id));
@@ -444,7 +467,7 @@ async function selectHistoricalEntry(id,preserveError=false) {
     if(result.entry?.id!==id)throw new Error('Historical entry identity mismatch. Select the entry again.');
     historicalPreview={...result,request};historicalLoading=false;if(workspaceMode==='player'&&result.ready&&approvedEntries.get(id)?.snapshot_sha256!==result.snapshot_sha256)throw new Error('The opening reference changed. Refresh the Content Library and review the starting point again.');
     const entry=result.entry;
-    $('#historical-preview').innerHTML=`<article class="historical-preview"><div class="eyebrow">${esc(entry.year)} ENTRY POINT</div><h3>${esc(entry.title)}</h3><p>${esc(entry.description || '')}</p>${result.snapshot?historicalSnapshotMarkup(result.snapshot):'<p class="reference-note">Opening date and detailed snapshot not yet verified. This is catalogue reference material; campaign creation remains unavailable for this entry.</p>'}${validHistoricalPreview()?'<p class="ready-note">Opening snapshot available. Review the reference, choose your character, and confirm the campaign before it is saved.</p>':'<p class="note">This entry is available for inspection. A ready, verified opening snapshot is required for creation.</p>'}</article>`;
+    $('#historical-preview').innerHTML=`<article class="historical-preview"><div class="eyebrow">${esc(entry.year)} ENTRY POINT</div><h3>${esc(entry.title)}</h3><p>${esc(entry.description || '')}</p>${result.snapshot?historicalSnapshotMarkup(result.snapshot):'<p class="reference-note">Opening date and detailed snapshot not yet verified. This is catalogue reference material; campaign creation remains unavailable for this entry.</p>'}${validHistoricalPreview()?'<p class="ready-note">Starting reference available. Review its scope, choose your character, and confirm before saving.</p>':'<p class="note">This entry is available for inspection. A ready, verified opening snapshot is required for creation.</p>'}</article>`;
     syncCreateControls();return true;
   } catch(err) {
     if(historicalRequestCurrent(request,id)){historicalLoading=false;historicalPreview=null;$('#historical-preview').innerHTML=`<p class="note">${esc(err.message)}</p>`;syncCreateControls();}
@@ -463,7 +486,7 @@ function validStartingOptions(){return !startingLoading&&startingOptions?.availa
 function invalidateReview(){reviewSelection=null;}
 function syncCreateControls(){
   const historical=$('#create-profile').value==='__hyw',pendingReview=Boolean(reviewSelection?.recovery);
-  $('#create-profile').disabled=busy||workspaceMode==='player';$('#cancel-create').disabled=busy;$('#historical-search').disabled=busy;
+  $('#create-profile').disabled=busy||workspaceMode==='player';$('#cancel-create').disabled=busy;$('#historical-entry-select').disabled=busy;
   document.querySelectorAll('#historical-setup button').forEach(button=>button.disabled=busy);
   document.querySelectorAll('[data-setup-step]').forEach(section=>section.hidden=Number(section.dataset.setupStep)!==wizardStep);
   document.querySelectorAll('#setup-progress li').forEach((item,index)=>{if(index===wizardStep)item.setAttribute('aria-current','step');else item.removeAttribute('aria-current');});
