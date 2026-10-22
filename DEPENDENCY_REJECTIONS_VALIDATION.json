@@ -171,8 +171,83 @@
       "independent_passed": 8,
       "independent_failed": 0
     },
-    "status": "locally_fixed_environment_retest_pending",
-    "mechanism": "Unmodified independent QA script from the named branch; synthetic saves only."
+    "status": "fixed_independently_confirmed_at_59f2434",
+    "mechanism": "Unmodified independent QA script from the named branch; synthetic saves only.",
+    "environment_retest": {
+      "source_branch": "qa/engine-validation",
+      "report_commit": "0f5e10fd8904a72acc603d0c6505ed45abf29590",
+      "candidate_commit": "59f24344d2ff51404071822f8975f3d70b972814",
+      "finished_at_utc": "2026-10-22T14:29:51.378631+00:00",
+      "status": "passed",
+      "independent": {
+        "tests_run": 8,
+        "passed": 8,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "findings": {
+        "IRGS-QA-001": "not_reproduced",
+        "IRGS-QA-002": "not_reproduced"
+      },
+      "regression_checks": [
+        {
+          "name": "source-integrity",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 1.69,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/source-integrity.txt"
+        },
+        {
+          "name": "evidence-freshness",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 0.67,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/evidence-freshness.txt"
+        },
+        {
+          "name": "runtime",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 125.77,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/runtime.txt",
+          "tests_run": 486,
+          "skipped": 1
+        },
+        {
+          "name": "web",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 67.8,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/web.txt",
+          "tests_run": 142,
+          "skipped": 7
+        },
+        {
+          "name": "interface",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 8.83,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/interface.txt",
+          "checks_passed": 56
+        },
+        {
+          "name": "tooling",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 2.83,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/tooling.txt",
+          "tests_run": 20,
+          "skipped": 0
+        }
+      ],
+      "report": "provenance/core_consolidation_validation/cloud_QA_59f2434.json",
+      "report_sha256": "74c826ff0bb672a4dafbb39c89d07979295c4add993e0b261499a7f2474cf218",
+      "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+      "all_branches_certified": false,
+      "user_saves_opened": false,
+      "local_rerun_claimed": false
+    }
   },
   "dependency_capture": {
     "status": "captured",

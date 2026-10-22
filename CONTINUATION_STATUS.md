@@ -55,3 +55,7 @@ The dependency-rejections-1 increment retains verified rejected-probe reads with
 ## Consolidated Core and lean distribution
 
 Existing genre receiving operations now execute as Core methods. Players see campaigns while technical setup remains in Creator mode. Superseded bundle archives and obsolete assembly tooling have been removed from the current source; original campaign data and referenced source evidence remain. Independent QA findings about unknown inventory units and canonical location records reproduce before correction and pass after correction. See `engine/CORE_CONSOLIDATION.md`, `QA_RESPONSE.md` and the current validation record.
+
+## Independent environment confirmation
+
+2026-10-22: The independent cloud QA report tests published candidate `59f2434` and passes all eight independent cases plus its listed source, freshness, runtime, Web, interface and tooling checks. IRGS-QA-001 and IRGS-QA-002 are not reproduced. Platform and external-fixture skips remain skips. See [QA_RESPONSE.md](QA_RESPONSE.md) for preserved reports and counts. This is confirmation of the existing implementation; broader DEV-06–DEV-08 and C2 certification remain open.
