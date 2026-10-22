@@ -1,4 +1,8 @@
-# First action and contextual-response increment
+# Current continuation
+
+2026-10-22: Rise foundation 1 adds a reviewed fictional settlement founding path: limited permission, finite work and provision, bounded delegation and actual household migration in the shared Core. The eight design families remain held. See [current Rise status](engine/design/rise/README.md) and [qualification](RISE_FOUNDATION_VALIDATION.json).
+
+## Earlier action and contextual-response increment
 
 2026-10-21. Continues unified D1 with selected executable Core 3.3. Engine/Core changes belong to `3.3.3.E`, website changes to `3.3.3.A`, and the integrated source to `main`.
 
@@ -43,3 +47,15 @@ The authored human-only opening now compares the registered species without case
 ## Adventure UI — Solo presentation
 
 Campaign entry and character setup now use illustrative voyage artwork. The Solo story foregrounds the received scene, exact supported action choices and latest character-scoped outcome. Campaign controls, older records, historical references and the own-response editor remain available through expandable sections. Custom drafts still submit unresolved declarations; this presentation update adds no engine resolution. See [ADVENTURE_UI_VALIDATION.json](ADVENTURE_UI_VALIDATION.json) for the executed checks. This increment belongs to `3.3.3.A` and unified `main`; `3.3.3.E` retains its existing engine commit.
+
+## Qualified failed-path dependencies
+
+The dependency-rejections-1 increment retains verified rejected-probe reads with unresolved R9 frontier requests. Paired ordinary/traced rejection checks separate rolled-back attempts from effects, and named tests cover the selected Core, reference, economic and military/Roman backends plus settlement permission and worker reservations. Equipment and scene rejection diagnostics use the same check. See [implementation and limits](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md) and DEPENDENCY_REJECTIONS_VALIDATION.json. DEV-06–DEV-08 remain broader open work.
+
+## Consolidated Core and lean distribution
+
+Existing genre receiving operations now execute as Core methods. Players see campaigns while technical setup remains in Creator mode. Superseded bundle archives and obsolete assembly tooling have been removed from the current source; original campaign data and referenced source evidence remain. Independent QA findings about unknown inventory units and canonical location records reproduce before correction and pass after correction. See `engine/CORE_CONSOLIDATION.md`, `QA_RESPONSE.md` and the current validation record.
+
+## Independent environment confirmation
+
+2026-10-22: The independent cloud QA report tests published candidate `59f2434` and passes all eight independent cases plus its listed source, freshness, runtime, Web, interface and tooling checks. IRGS-QA-001 and IRGS-QA-002 are not reproduced. Platform and external-fixture skips remain skips. See [QA_RESPONSE.md](QA_RESPONSE.md) for preserved reports and counts. This is confirmation of the existing implementation; broader DEV-06–DEV-08 and C2 certification remain open.

@@ -22,6 +22,7 @@ from r9_runtime import frontier, grant, resolve
 from irgs_reference import InvalidEvent, digest
 from gameplay_views import playthrough, controlled_actor, pending_declaration, safe_result
 from features import feature_registry, content_library, validate_player_creation
+from campaign_worlds import world_reference
 
 
 class Store:
@@ -389,6 +390,10 @@ def make_server(port=8765, folder=None):
                         if mode=='creator':self.creator(mode)
                         return self.reply(200,playthrough(store.read(path.rsplit('/',1)[1]),
                                           query.get('actor_id',[None])[0],mode=mode))
+                    if path=='/api/rise/templates':
+                        self.session()
+                        from settlement_setup import templates
+                        return self.reply(200,templates())
                     if path=='/api/features':
                         self.session()
                         if mode=='creator':self.creator(mode)
@@ -396,6 +401,9 @@ def make_server(port=8765, folder=None):
                     if path=='/api/content-library':
                         self.session()
                         return self.reply(200,content_library())
+                    if path.startswith('/api/campaign-world/'):
+                        self.session()
+                        return self.reply(200,world_reference(path.removeprefix('/api/campaign-world/')))
                     if path=='/api/historical-baseline':
                         self.creator(mode)
                         from historical_plans import baseline_view
@@ -457,7 +465,12 @@ def make_server(port=8765, folder=None):
                             area=query.get('area',['timeline'])[0],limit=int(query.get('limit',['30'])[0]),
                             cursor=query.get('cursor',[None])[0]))
                     if path == '/api/catalog':
-                        return self.reply(200, catalog())
+                        if mode == 'creator':
+                            self.creator(mode)
+                            return self.reply(200, catalog())
+                        core = catalog()['core']
+                        return self.reply(200, {'core': {key: core[key] for key in
+                            ('id', 'version', 'single_world_per_campaign')}})
                     if path == '/api/historical-campaigns':
                         return self.reply(200, historical_catalogue())
                     if path.startswith('/api/historical-entry/'):
@@ -476,7 +489,7 @@ def make_server(port=8765, folder=None):
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]
@@ -499,12 +512,22 @@ def make_server(port=8765, folder=None):
                 if not 0 < length <= 100000:
                     raise ValueError('Request is empty or too large')
                 data = json.loads(self.rfile.read(length))
+                if not isinstance(data,dict): raise ValueError('Submit a JSON object')
                 path=urlparse(self.path).path
                 mode=data.get('mode',parse_qs(urlparse(self.path).query).get('mode',['player'])[0])
                 with store.lock:
                     if path in ('/api/event','/api/frontier','/api/events','/api/mandate','/api/resolve','/api/fork'):
                         self.creator(mode)
-                    if path == '/api/declaration':
+                    if path == '/api/rise/preview':
+                        from settlement_setup import preview
+                        result=preview(data.get('choices'))
+                    elif path == '/api/rise/create':
+                        from rise_campaigns import create
+                        result=create(store,data)
+                    elif path == '/api/rise/action':
+                        from rise_campaigns import action
+                        result=action(store,data)
+                    elif path == '/api/declaration':
                         result=store.gameplay_request(data)
                     elif path == '/api/action':
                         result=store.supported_action(data)

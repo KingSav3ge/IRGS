@@ -257,4 +257,20 @@ def playthrough(record, actor_id=None, *, mode='player'):
                 'text': saved['outcome']['summary'], 'actor_ids': [request['actor']],
                 'recorded_at': saved['recorded_sequence'], 'status': saved['status'],
                 'source_available': True, 'source_refs': [saved['receipt']['event_id']]})
+    from rise_campaigns import view as settlement_view
+    settlement = settlement_view(state, actor_id)
+    if settlement is not None:
+        result['settlement'] = settlement
+        result['capabilities'].update(settlement_foundation=True, elapsed_scope='selected_settlement_model')
+        inventory = copy.deepcopy(settlement['inventory'] or [])
+        result['inventory'] = inventory
+        if not creator:
+            result['world'].update(inventory=inventory, activities=copy.deepcopy(settlement['projects']),
+                                   locations=['commons', 'clearing'])
+        for key, receipt in state['settlement_receipts'].get(actor_id, {}).items():
+            result['chronicle'].append({'id': 'settlement-receipt:' + key, 'kind': 'settlement_observation',
+                'title': 'Settlement record', 'text': receipt['text'], 'actor_ids': [actor_id],
+                'recorded_at': receipt['recorded_at'], 'received_at': receipt['recorded_at'],
+                'elapsed_seconds': receipt['elapsed_seconds'], 'status': 'received', 'source_available': True,
+                'source_refs': [state['settlement_model']['source_ref']]})
     return result

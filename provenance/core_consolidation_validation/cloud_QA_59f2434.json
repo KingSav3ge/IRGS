@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "candidate_commit": "59f24344d2ff51404071822f8975f3d70b972814",
+  "finished_at_utc": "2026-10-22T14:29:51.378631+00:00",
+  "status": "passed",
+  "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+  "candidate_source_root": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/candidate",
+  "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
+  "regression_checks": [
+    {
+      "name": "source-integrity",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.69,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/source-integrity.txt"
+    },
+    {
+      "name": "evidence-freshness",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 0.67,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/evidence-freshness.txt"
+    },
+    {
+      "name": "runtime",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 125.77,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/runtime.txt",
+      "tests_run": 486,
+      "skipped": 1
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 67.8,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/web.txt",
+      "tests_run": 142,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 8.83,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/interface.txt",
+      "checks_passed": 56
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 2.83,
+      "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/tooling.txt",
+      "tests_run": 20,
+      "skipped": 0
+    }
+  ],
+  "independent": {
+    "tests_run": 8,
+    "passed": 8,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "test": "test_concurrent_retry_has_one_commit_and_one_elapsed_span",
+        "status": "passed"
+      },
+      {
+        "test": "test_core_location_confirmation_remains_usable",
+        "status": "passed",
+        "finding_id": "IRGS-QA-002"
+      },
+      {
+        "test": "test_founding_delegation_migration_and_material_continuity",
+        "status": "passed"
+      },
+      {
+        "test": "test_freeform_is_retained_intent_with_no_automatic_elapsed_effect",
+        "status": "passed"
+      },
+      {
+        "test": "test_new_material_does_not_break_committed_campaign",
+        "status": "passed",
+        "finding_id": "IRGS-QA-001"
+      },
+      {
+        "test": "test_pause_resume_preserves_work_and_finishes_once",
+        "status": "passed"
+      },
+      {
+        "test": "test_private_state_and_hidden_permission_do_not_select_player_options",
+        "status": "passed"
+      },
+      {
+        "test": "test_results_survive_host_restart_and_trash_restore",
+        "status": "passed"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "IRGS-QA-001",
+      "severity": "P1",
+      "title": "Accepted Core material establishment breaks Rise playthrough views",
+      "expected": "Reject an unsupported material atomically, or retain a readable campaign with explicit unknown unit support.",
+      "reproduction": [
+        "Create a reviewed R00 Rise campaign.",
+        "Creator POST /api/event: establish_stock(location=founder-home, material=water, quantity=2, inventory_evidence_ref=synthetic-measured-water).",
+        "Observe the successful save and valid CoreWorld state.",
+        "GET /api/playthrough/<id> with the normal session token."
+      ],
+      "boundary": "IRGS_Web/rise_campaigns.py view indexes model.units[material]; Core stock establishment accepts material IDs without that unit binding.",
+      "status": "not_reproduced"
+    },
+    {
+      "id": "IRGS-QA-002",
+      "severity": "P1",
+      "title": "Canonical Core location records are incompatible with Rise location consumers",
+      "expected": "A supported, established location confirmation must leave local inventory and supported movement usable.",
+      "reproduction": [
+        "Create R00 at the commons.",
+        "Creator records and delivers established evidence placing the founder at commons.",
+        "Creator confirms founder.location=commons through confirm_character_field with authority and player instruction references.",
+        "Inspect local inventory and submit walk_clearing."
+      ],
+      "boundary": "Core confirm_character_field writes {value,evidence_id,at}; settlement_runtime.location and Rise view consume the whole record as a site string.",
+      "status": "not_reproduced"
+    }
+  ],
+  "user_saves_opened": false,
+  "mechanics_modified_by_qa": false,
+  "candidate_branches": [
+    "main",
+    "3.3.3.A",
+    "3.3.3.E"
+  ],
+  "report_path": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/report.json"
+}

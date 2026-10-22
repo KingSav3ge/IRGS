@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "visible_campaign_ids": ["hundred-years-war"],
+  "visible_campaign_ids": ["hundred-years-war", "world-of-kira", "rise"],
   "starting_scenario_references": [
     {
       "id": "ast",
@@ -16,7 +16,7 @@
     }
   ],
   "scope": "Player campaign discovery, separate from installed technical profiles and saved playthroughs.",
-  "source": "User-supplied Stage-One candidate design, reconciled for the requested local website integration.",
+  "source": "User-supplied Stage-One historical campaign design and Kira world archive with six map references and author clarifications, reconciled for the canonical website.",
   "legacy_profiles_preserved": true,
   "registration_alone_grants_listing": false
 }

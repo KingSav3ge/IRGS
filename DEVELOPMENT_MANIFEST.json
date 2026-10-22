@@ -33,13 +33,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5291,
-      "sha256": "3e25e7676a724f788d8cb0058318f1e8e74734a2993e16ca36d21fd1353000fe"
+      "bytes": 5807,
+      "sha256": "cce2227390dc41d7afc8af6233f89b123e254cae223222eb4696c91d3dc3467f"
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 6465,
-      "sha256": "ceb0b85c94fd975699d7d6d8255845f487cff0fbce2238dcf297b63a8aefbfec"
+      "bytes": 8536,
+      "sha256": "172d774c990bfd90d52cfc4dae7a3a650528195cd9932151bd4832ecf06d50fd"
     },
     {
       "path": "COVERAGE1_VALIDATION.json",
@@ -47,19 +47,24 @@
       "sha256": "7e9c0add4ede3d66844a7f579d3ca2bd7696e5497ab0a2ae86e261b6434232c0"
     },
     {
+      "path": "DEPENDENCY_REJECTIONS_VALIDATION.json",
+      "bytes": 11016,
+      "sha256": "d4cc5a6610d1c8875a61df0c8bb0acf0e09707c8c86cf421976cccdad5ed80eb"
+    },
+    {
       "path": "DEVELOPMENT.md",
-      "bytes": 5756,
-      "sha256": "623b4af14e76929bf7d83fbc022efe913f9b2b562887466fa1f1cf917e99d17f"
+      "bytes": 6279,
+      "sha256": "07add70b43cbaa06fdfbcb4feae9e3cb626763c36d14cef7eceeefd093609ad2"
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 13681,
-      "sha256": "1070948df8892cc993d23d20672068249a14d18154d5343debffb876a6421906"
+      "bytes": 14197,
+      "sha256": "1e5005297232db1075e5d5cece2a08a6890b36eab7ae9ded799ce52c638e28a9"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 2551,
-      "sha256": "3e7c06544ab26194e8b969dec94b8b00dce07940c8a31d91ef79bd5458b1dce9"
+      "bytes": 5809,
+      "sha256": "bea36a35b9deda02e589ced14c29742876b28a199530d6c6dbffb67e1ca31355"
     },
     {
       "path": "IRGS_3_3/CMRR_3_3_Release.md",
@@ -115,6 +120,101 @@
       "path": "IRGS_3_3/build_suite_catalog.py",
       "bytes": 33419,
       "sha256": "eaccfa38f6ce92fc264ee1db8b29f21414776a20c32feead7eeff3efe0fae389"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/CONTINUITY_REVIEW.md",
+      "bytes": 7659,
+      "sha256": "4101839c66b822eedefa06fa2af38df690943893a95a3762399281957a0798d1"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/IRGS_BINDING.md",
+      "bytes": 3457,
+      "sha256": "ef622fb6540f77f912e027e28540ffa51e51685ee214b17f097cd79dc9f58aab"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/MAP_GAZETTEER.md",
+      "bytes": 10621,
+      "sha256": "e0ce9c2c79ad3c759dcf53015bf2d8e0beb4d7301fd6cd2afa97697c45c95a5c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/README.md",
+      "bytes": 2153,
+      "sha256": "0ce6be9a6b071e93f90e8543287aba08ce0f2f7f666a1418c3681e1eba190446"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/WORLD_GUIDE.md",
+      "bytes": 8247,
+      "sha256": "1fc8fa9e9ef0978220615ee5a7c94a4fe67140eaabe069fda32609ac6e7c7cda"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/map_catalogue.json",
+      "bytes": 37294,
+      "sha256": "89dcefa4728a29ce094e6f3bc5acf233f7b24855b8da84a69904032fd298c54c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/source_manifest.json",
+      "bytes": 6500,
+      "sha256": "4da0a9d676250526e55ffa4c6189b5fddd070290b2bac0d4d931656abd47314e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/source_text.json",
+      "bytes": 29606,
+      "sha256": "36417984372158da8e9da08f2a6f38215a4ea44aca2b7b650cce8bb636d08ed4"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Cathius Akarian.docx",
+      "bytes": 13094,
+      "sha256": "b2280b3a579661fdacc1c6fbad3a529a6b7fda4b17d931359350b1b61d201d78"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Daniel Conver.docx",
+      "bytes": 13839,
+      "sha256": "05f7747208f18d9ab9523f8c6016fb62d5e6bc7d3c90ff0629cea90af3c035ab"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Kieran Pelleas.docx",
+      "bytes": 16804,
+      "sha256": "ec400f8fb0268f044a9702091421b23d9900505d774524c95cdac0979de480a4"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Races of Kira/Larius/Races of Larius.docx",
+      "bytes": 13261,
+      "sha256": "b2e770a3efba25b9399059f4a1646f09b21597876e1a7e66426c2163f192bd7e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/Races of Kira/TalmahKah/Races of TalmahKah.docx",
+      "bytes": 12700,
+      "sha256": "d380fbf2d620445b86631d9b7a6343dba2d4dc00dfca532b8991f630cfe6871a"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of  Sadion (Sadire Humans).docx",
+      "bytes": 14161,
+      "sha256": "22fcf719cecabd40726679740822ed3eefe8b57e6b27ae273b4eaa1ce9825b4c"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Akaria (Akarian Dwarves).docx",
+      "bytes": 15550,
+      "sha256": "3391ae5fd4760e4951c2d8a314b1f0cf407e4a157b0a9f64d586dbc6638e6c9d"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Everwood (Evalian Elves).docx",
+      "bytes": 15062,
+      "sha256": "9fd8162a65b45ca585180d0bf3ddfdcbaf13790969784f1427e308ef37bb406e"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/sources/The History of Kyrinus (Karthinian Elves).docx",
+      "bytes": 12259,
+      "sha256": "c1bd72260d22f178b823ff02bd2caa0743d722f18f09420298d9e2b8c28ca194"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "bytes": 8644,
+      "sha256": "9eea40d7da762982fd080823566c355cfbcb9bf806c4110e84d807b6f68a6589"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/world.json",
+      "bytes": 108396,
+      "sha256": "dcd507d70e3f0e502c92d4a941ed41d246a0a2c552a34e8b0808a3ba447dee16"
     },
     {
       "path": "IRGS_3_3/catalog/design_references/epoch_history_spec_v1_0.md",
@@ -903,8 +1003,8 @@
     },
     {
       "path": "IRGS_3_3/data/campaign_listings.json",
-      "bytes": 972,
-      "sha256": "fe2e526ceb1e097d7e5c1043ce70e56710ad199c0273d1e31947b629dbac610f"
+      "bytes": 1062,
+      "sha256": "cb8c6e6e41de99af971264f39f2772c6b2fdc41f74ca617f52045659968ab092"
     },
     {
       "path": "IRGS_3_3/data/catalog.json",
@@ -912,199 +1012,9 @@
       "sha256": "0dde4a1d719288ec600e79f702d3b956777046789de0314c31306c1637bce1f1"
     },
     {
-      "path": "IRGS_3_3/data/coc_conditional_references.json",
-      "bytes": 128508,
-      "sha256": "dba9d8d1432ea71b5df9c913b6df385a89196808adbc12ce1dca56fc1e78a8c7"
-    },
-    {
-      "path": "IRGS_3_3/data/coc_local_delivery.json",
-      "bytes": 8028,
-      "sha256": "1652c5597a6d0ac32d67acd9e9ac4924871e8bdbc768bf596d955efae4e950f9"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1337_opening.json",
-      "bytes": 20404,
-      "sha256": "5d77da58e2f8f1b4e72472773d416c6fb6e5c066f2df3249c68d8efa1400847a"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1340_opening.json",
-      "bytes": 20440,
-      "sha256": "c5d18c7ea2c21b6f7c850fca584d5597eae7f7ea8e7a117a5eee269b791d2e0d"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1341_opening.json",
-      "bytes": 22672,
-      "sha256": "a36244b371ae1f73f279fdc0c31c297a7688352600db656148e019cd952481e8"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1343_opening.json",
-      "bytes": 20935,
-      "sha256": "d47a30e1363b16dab7a9340a8aec0926f85c6946e5b08a8272d4908eaff2bca5"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1345_opening.json",
-      "bytes": 21978,
-      "sha256": "59f395ceb4f7a82d680bc31131f39333844a3d3295a6dadefc872e2331a48eeb"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1346_opening.json",
-      "bytes": 21784,
-      "sha256": "0da9c5f1835906d6eb21f1c742d2a03a57bc95e8b291c88f19b476a3abafda67"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1347_opening.json",
-      "bytes": 20397,
-      "sha256": "dd8543d8fe97e22865dcb0658062ae3c5b320120e4682fbccbff57d41967371e"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1355_opening.json",
-      "bytes": 22264,
-      "sha256": "318cc9d97d0b37785a5249e48c348849e54b528e519cad21cd566c4bc46bba1b"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1356_opening.json",
-      "bytes": 22473,
-      "sha256": "94cf541c542f1c68164348a4e0a5f40ffb4eb21500741c5c90ae6e08b49e7d85"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1357_opening.json",
-      "bytes": 23066,
-      "sha256": "b8f92746b66c806dc0caba31a9a6c84857021c229c080804c3c157e6fa746f7b"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1359_opening.json",
-      "bytes": 20655,
-      "sha256": "07969179ae627e10202a5b69a1eefd9c736945ff3fb259e683e0f5d0289aa9fd"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1360_opening.json",
-      "bytes": 22281,
-      "sha256": "afee9da025fd6b68e5c6db941b4cb684d699605c108187b9c996674b387cce77"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1364_opening.json",
-      "bytes": 23477,
-      "sha256": "38e01d6590bf26a38119b64650727fe127abc6e2890b46692fa24e75cef0b7e7"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1366_opening.json",
-      "bytes": 22736,
-      "sha256": "d04f2ef2cfe88b94cdc13bd83383468bc32097daad74ffd83981b31044d56d7d"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1369_opening.json",
-      "bytes": 22677,
-      "sha256": "79e5813d89ea9d6fee52ece0da3ba228d6a2a3bbf4bba4fca165c8c45ef18d12"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1372_opening.json",
-      "bytes": 23300,
-      "sha256": "843f94b5b2cedc331311d8ff8ba77d5a1253f5e3672378bbd4eff7d6c34df057"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1373_opening.json",
-      "bytes": 23406,
-      "sha256": "ebd3439ca9802183964942cded77f8b32385d5943448e3fff53cf0625905eaa9"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1375_opening.json",
-      "bytes": 21691,
-      "sha256": "b24aa084206c69af937de37c6c1225d56477ea1709753ef988a6f0aae70ac664"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1377_opening.json",
-      "bytes": 21137,
-      "sha256": "37acd969d5ca6ffe28eeb0c15d15832aec9e289329ded434ded947484a502f3d"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1385_opening.json",
-      "bytes": 23827,
-      "sha256": "a290dfbce090c2bf754c3f16208acf32bf00a0897bc8cf0f158d017e9a9af618"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1389_opening.json",
-      "bytes": 21386,
-      "sha256": "d3bcf54a7f6f8fec35a004b1552804beed54f109e8f97009b70b5f98ccc85076"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1396_opening.json",
-      "bytes": 20760,
-      "sha256": "fe96546c3f1cd4e6c5386d9e829b7d7359bddec8842a3b16cfe5b8f559a66b84"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1399_opening.json",
-      "bytes": 23037,
-      "sha256": "8d1d2fd35d61e60f7dc8a4f150f224a6267c68cd781ab99aa1d1fad832cd7d07"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1400_opening.json",
-      "bytes": 22939,
-      "sha256": "37b3a3501cf1d891466c4e71fd906202df9c309ad0c7295072e6157549ae38c1"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1403_opening.json",
-      "bytes": 22940,
-      "sha256": "fd34530cfb3b9e7e97bc47a29656beda50828f364862b2b404d2dd7ac1a89ef8"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1411_opening.json",
-      "bytes": 22500,
-      "sha256": "84c967241d40fadb1143f9337523f211594065451198f34d34c16b3571b6084c"
-    },
-    {
       "path": "IRGS_3_3/data/hyw_1415_opening.json",
       "bytes": 36667,
       "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1417_opening.json",
-      "bytes": 21731,
-      "sha256": "59a5f93ca2131ee44d3101201021203c54f9d45089a32498eae12f054248f2d2"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1419_opening.json",
-      "bytes": 23434,
-      "sha256": "e7df1c42e364e1019b210653dba5cdcdb8b365150d7a1624eb19d49c443cdd77"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1420_opening.json",
-      "bytes": 24007,
-      "sha256": "c79549891796e2aab4da7850d28efabc9f9aa0dbe75531dfe8e00223c42a10e8"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1422_opening.json",
-      "bytes": 25075,
-      "sha256": "40eb3ab639ee6268d9034295c618cab09a3e0b059127fb3e22b9a58aa476da7c"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1429_opening.json",
-      "bytes": 25363,
-      "sha256": "e05d27eff270b1f71fa52788ca837a2063a2311815f176163fefcd181b2b14f0"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1435_opening.json",
-      "bytes": 25387,
-      "sha256": "a4ac1a7f53398ccfc3bb82c08f7f42f3855f07bb9f1549f817841c78f428c2f0"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1444_opening.json",
-      "bytes": 24896,
-      "sha256": "e22f3067bc735c421c6737f9eb8a7101ad5f14750d3a36989c00b0a48714e86c"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1449_opening.json",
-      "bytes": 23083,
-      "sha256": "1f5da009adc58c4f2a579ba2f22b5d4f1c4d96f04b5bd5c97ddd977353bfbd1e"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1450_opening.json",
-      "bytes": 23177,
-      "sha256": "02a8214238f41998c8c73413f47ef405096b34946a917637337b81dfa0ebc568"
-    },
-    {
-      "path": "IRGS_3_3/data/hyw_1453_opening.json",
-      "bytes": 23421,
-      "sha256": "a5159e94b4e91a8564201e84f5ad3a52ac63b525eb909cd30932828998064584"
     },
     {
       "path": "IRGS_3_3/data/hyw_design_references.json",
@@ -1113,8 +1023,8 @@
     },
     {
       "path": "IRGS_3_3/data/hyw_entry_catalogue.json",
-      "bytes": 27385,
-      "sha256": "7f721e1798f76458c981c4993e2c76acae6f85ee2617e07cef76f3b6f5474638"
+      "bytes": 10789,
+      "sha256": "cd47576c71fe5351e08b0755ce65f7778bb28c7887d1c76acca4aa90a6df7b7b"
     },
     {
       "path": "IRGS_3_3/data/hyw_historical_baseline.json",
@@ -1133,8 +1043,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 39817,
-      "sha256": "07d6ef7f5f197dd9af276d30dc677a187b526a48ba4d144c56c568c5d3ba00c4"
+      "bytes": 38814,
+      "sha256": "d7529d6468277f48ff1ea618a3bfc74120f8ff47ec9007690169eb2f2265357f"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1278,8 +1188,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 15630,
-      "sha256": "0aeeaaa298da7820cc7f9b5b2b7c23aad19369a70ec0ce7dc0633a70e63e5a58"
+      "bytes": 18975,
+      "sha256": "ad3b5133b0649454628c5c5befd37cb6598dc21522c5fec468bb7edf91293262"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1288,18 +1198,18 @@
     },
     {
       "path": "IRGS_3_3/runtime/genre_receivers.py",
-      "bytes": 2480,
-      "sha256": "4f5e96cb0e79ede8169cf836cc6b5b63c8b5e566a9e0e0510529ca279fdb9c98"
+      "bytes": 190,
+      "sha256": "8bff97bf7e0a78a9115c18c5beb87535f1dd8f6fafa6718aad4e13d06a325c60"
     },
     {
       "path": "IRGS_3_3/runtime/historical_campaigns.py",
-      "bytes": 11505,
-      "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
+      "bytes": 10585,
+      "sha256": "67cef733206b5c52bfc48714ee84ddd06a4a28fa4b766340f5da565dbd1a73dc"
     },
     {
       "path": "IRGS_3_3/runtime/historical_plans.py",
-      "bytes": 24597,
-      "sha256": "1b14cbc2d82a5b124cf142fcbfc7feb6e6f9a85096c5cc89e49196309ee8086d"
+      "bytes": 24120,
+      "sha256": "36a9c357ff55a694ffff683efdab7458b131b6159033d7c1adbba377e84da537"
     },
     {
       "path": "IRGS_3_3/runtime/irgs.py",
@@ -1318,8 +1228,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/player_actions.py",
-      "bytes": 10760,
-      "sha256": "a1454bec3175e530589890acc08f3f947ee74fbe2b179d7d4df91d9f8b3e6b3f"
+      "bytes": 10673,
+      "sha256": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0"
     },
     {
       "path": "IRGS_3_3/runtime/r5_audit.py",
@@ -1373,8 +1283,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/r9_runtime.py",
-      "bytes": 16885,
-      "sha256": "05d2053b0c6f14d6e28169125747b59ba8b14edb1bd87e3f72d6f1e3349f012a"
+      "bytes": 19778,
+      "sha256": "bf6d74c32f4288ab53aae502827e8107316b1593dc7293426ff95fec95bd7d5b"
     },
     {
       "path": "IRGS_3_3/runtime/r9_strategy.py",
@@ -1448,8 +1358,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/scene_setup.py",
-      "bytes": 6285,
-      "sha256": "764f7ecbb774a1448fa39f21ec1e8ac25db31ac6f5ec7d4a558a7aa2960f0b91"
+      "bytes": 5515,
+      "sha256": "47c8e3146474f17cc6748397fe3cfbccbdf551cb293d6db7f2b8f8e5d8b1a92b"
     },
     {
       "path": "IRGS_3_3/runtime/selective_coordinator.py",
@@ -1457,9 +1367,19 @@
       "sha256": "d0fc143d863ea5ed1fc0ed025c8aa355ab3ee0551fab4628838f57f4a266787f"
     },
     {
+      "path": "IRGS_3_3/runtime/settlement_runtime.py",
+      "bytes": 19393,
+      "sha256": "3e0fc6be4c592f008eff91608c5a073c73e296813fe02ad03273fe2ad731343f"
+    },
+    {
+      "path": "IRGS_3_3/runtime/settlement_setup.py",
+      "bytes": 9227,
+      "sha256": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27"
+    },
+    {
       "path": "IRGS_3_3/runtime/starting_selection.py",
-      "bytes": 13056,
-      "sha256": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce"
+      "bytes": 13016,
+      "sha256": "338812c2bc0bf107af7bbb81ec9bf0700c45c45a79a46476acd6e5be71c7a9f3"
     },
     {
       "path": "IRGS_3_3/runtime/strategic_execution.py",
@@ -1477,14 +1397,14 @@
       "sha256": "bf12eb18c89044fccac44a243f838d1ed6cc05ca735b8c284a0734541b5e65c6"
     },
     {
-      "path": "IRGS_3_3/runtime/test_century_starts.py",
-      "bytes": 6667,
-      "sha256": "c677f3bcd40de7cf44526d5d9ade62393c41a72096df898c466f30c01f649017"
-    },
-    {
       "path": "IRGS_3_3/runtime/test_character_background.py",
       "bytes": 6771,
       "sha256": "2f678312cd3bb43fc2d3a1e6d08290e6f6314c2be4bf89771c0985e35f2ca61a"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_core_domains.py",
+      "bytes": 1964,
+      "sha256": "a5745af305821e5ca625b966dc9fe0236ae71d6475baeb38ad1c62111252e73c"
     },
     {
       "path": "IRGS_3_3/runtime/test_economic_integration.py",
@@ -1493,8 +1413,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_campaigns.py",
-      "bytes": 9387,
-      "sha256": "fc3367d47eb56f3c6f1d0fb61d30d9d1ad55a55f654169a2c041c6e2ff5b9e75"
+      "bytes": 9167,
+      "sha256": "e303c92474b2f4bc97eef3bc10cd50d23b25cf586b15b0384244663a0f3ceaca"
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_plans.py",
@@ -1532,6 +1452,11 @@
       "sha256": "427cd0eadefa95c204d28edc2f75262fb3034fd37555349c013fa24545dadb8d"
     },
     {
+      "path": "IRGS_3_3/runtime/test_rejected_dependencies.py",
+      "bytes": 9344,
+      "sha256": "184c9ace389715dbfc4d659caf3897eaa361ee7fe0cb1ea7fc00ac2bdae5d2d6"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_release_integrity.py",
       "bytes": 5086,
       "sha256": "9e53f0004eda751d90d1be2904bb6645495a0dd61df555996a249078f75da847"
@@ -1555,6 +1480,11 @@
       "path": "IRGS_3_3/runtime/test_selective_and_scale.py",
       "bytes": 16203,
       "sha256": "dde9a1d56612d122d5d48fd31292ba27f768f53c61c2a6b9e49a888b8595b4d7"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_settlement.py",
+      "bytes": 12321,
+      "sha256": "16946b0c16bc6e66116b1918dd9d5ad5610e77dc722b1e3b9c2d48899f47c485"
     },
     {
       "path": "IRGS_3_3/runtime/test_starting_selection.py",
@@ -1587,31 +1517,6 @@
       "sha256": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806"
     },
     {
-      "path": "IRGS_3_3_3_Build_Instructions.md",
-      "bytes": 12275,
-      "sha256": "d47100598317458d52bc068144f82c42735d1d00bbfa76dfe5e724ca9f743e70"
-    },
-    {
-      "path": "IRGS_3_3_3_PACKAGE_MANIFEST.json",
-      "bytes": 38262,
-      "sha256": "74a517c60d12ae47774a6ffa541a2ed4732b1fc7ab9ff4d9a796952ecdcbf746"
-    },
-    {
-      "path": "IRGS_Catalog_3_3_3.zip",
-      "bytes": 25355871,
-      "sha256": "a0961deb51559129afd1dc704ad6da58d32e029a3ae354b9c158c8734f7a4960"
-    },
-    {
-      "path": "IRGS_Core_3_3_3.zip",
-      "bytes": 1395867,
-      "sha256": "312d230926fe8eeca1be9ad52142db285124d7914e39bafacf91f3839f4df44d"
-    },
-    {
-      "path": "IRGS_Live_3_3_3.zip",
-      "bytes": 104271,
-      "sha256": "27944c382808eff3d1790a995c06dbbe57c181ecffde98dfe4d1f6877bc925ce"
-    },
-    {
       "path": "IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
       "bytes": 111539,
       "sha256": "e0101206dcd24ede9ef391e405556c503154f10971e831775e7f662d8dafdf74"
@@ -1632,14 +1537,19 @@
       "sha256": "31bb51d272f5c92263d1281713d62a53267360b5c60b6e78badc422bd383b4c6"
     },
     {
+      "path": "IRGS_Web/campaign_worlds.py",
+      "bytes": 1723,
+      "sha256": "1a4ee7902a44cd6dac59b328396295d35533a49d0aa30cd9d95adfbc838432c3"
+    },
+    {
       "path": "IRGS_Web/features.py",
-      "bytes": 16173,
-      "sha256": "39b9e721b4838cc2133484cb3af114797f825cb8a9200070ab08b853c18d360d"
+      "bytes": 16405,
+      "sha256": "896545e5e2ec49290678b97f885a89cddcc384d39af61dd729825a1d7b116ec5"
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
-      "bytes": 16631,
-      "sha256": "e32ce6dfc5534307ff9e3b0eae5eb9d41668bd21103cddd1b2c062db1479dfb7"
+      "bytes": 17792,
+      "sha256": "c7300a48d487c2257922a6339024ea6986aa7bf519c23635d8082fd65f8806a2"
     },
     {
       "path": "IRGS_Web/history_views.py",
@@ -1652,24 +1562,34 @@
       "sha256": "53bc6a63ab593850a1b6566a3cba0f18c0f1ab98b960f315a9229d9412fda4e5"
     },
     {
+      "path": "IRGS_Web/rise_campaigns.py",
+      "bytes": 8561,
+      "sha256": "64acf6854708aa8ccd5b11c4903650c5e1bb14dd687741bc8d86cb347d9c860f"
+    },
+    {
       "path": "IRGS_Web/server.py",
-      "bytes": 36083,
-      "sha256": "bc6e42725486cb64b918dfe825d20aced142656b6420758117936ff42ea33abc"
+      "bytes": 37484,
+      "sha256": "ff8aa7f8c904cdf8cb46baecb35ebb21d21df7d75d9be88268b5e972e3f5e955"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 120825,
-      "sha256": "9554cc3a8e9779342f8893cd97bdd61e7e805f49adee237311bc9eebbf4416dd"
+      "bytes": 121846,
+      "sha256": "099e456ad4f38de7234dac0d2a785fef5f579895706c51715739a1bbf40757df"
     },
     {
       "path": "IRGS_Web/static/index.html",
-      "bytes": 15763,
-      "sha256": "91c97f8073b2e54dff21b797ed94a26e50b3fa427701f975903aafb5985c2c50"
+      "bytes": 16083,
+      "sha256": "0a21255beef95f4205748595b7e511a6802d842fb96a285a83bd3c1142a91a93"
+    },
+    {
+      "path": "IRGS_Web/static/rise.js",
+      "bytes": 12309,
+      "sha256": "7778d48220147ded119a06094a1411ad160a334f5afe0876a33516a6db173ff8"
     },
     {
       "path": "IRGS_Web/static/style.css",
-      "bytes": 59899,
-      "sha256": "7d00e551f8a7597afcdee8aeaadf400396191de1166078aa7b044e8b45f3e1f2"
+      "bytes": 60322,
+      "sha256": "f4d795384a81fd3fdc714d8163bf4e11622dfae152cf39824799a969512960eb"
     },
     {
       "path": "IRGS_Web/static/voyage.svg",
@@ -1688,8 +1608,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 66323,
-      "sha256": "9485ef071a3b9d2f0c9c00a2e1fedc861316175dcc6e175a14ac0e7afa3a469c"
+      "bytes": 69677,
+      "sha256": "770ab8f14dd8a0adb41b6f36a5fa56837f7db26ba63bfd060e531e8eee9a1f7b"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -1698,13 +1618,18 @@
     },
     {
       "path": "IRGS_Web/tests/test_host.py",
-      "bytes": 24814,
-      "sha256": "78ee43fa89072aa50434e1b997fd3861c4351a1416f69936f150038e14106f1f"
+      "bytes": 25043,
+      "sha256": "a7cec6537583db6d400530e556ad0caa9bd37d3250837b2d1e123d59f60ecfd2"
     },
     {
       "path": "IRGS_Web/tests/test_launcher.py",
       "bytes": 5388,
       "sha256": "e5c51958f154ec239a6185588ef26513b9510f8c9d33eb20cbb7a1b7937da7d6"
+    },
+    {
+      "path": "IRGS_Web/tests/test_rise.py",
+      "bytes": 13440,
+      "sha256": "78e4b61b18228ed263bc780f9eab734c1b521d93e43754f81994132d52709c39"
     },
     {
       "path": "IRGS_Web/tests/test_scene_play.py",
@@ -1713,8 +1638,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_stage1.py",
-      "bytes": 18175,
-      "sha256": "a1ad9451413d4b54cdd686e8586bdf6a3fb2a2bfdd2a5bb8d8066909cb53fc29"
+      "bytes": 18681,
+      "sha256": "4778b8abd7555b447f317f75de2296bccdac4e04d3f2c417c185a48063cad9bf"
     },
     {
       "path": "IRGS_Web/tests/test_starting_flow.py",
@@ -1722,24 +1647,39 @@
       "sha256": "ffd15db6f3781c372eb34c350b0432e2c832a69e898ae74b45654c7b768bb44b"
     },
     {
+      "path": "KIRA1_VALIDATION.json",
+      "bytes": 3105,
+      "sha256": "9daf5fcb90a45a19b8283090abf8db2753c2896d6b9f3f5362cab4660256544c"
+    },
+    {
       "path": "OPENING1_VALIDATION.json",
       "bytes": 4915,
       "sha256": "5537d709757955be5ea5367db49df3e05f582383b19ce16be622ce6852199ef9"
     },
     {
+      "path": "QA_RESPONSE.md",
+      "bytes": 2851,
+      "sha256": "d286acad932dd29e5509c017f4d78fe3946c758f479cc1d56986fbef7ef157fa"
+    },
+    {
       "path": "README.md",
-      "bytes": 3730,
-      "sha256": "7d17c2951c9665b00c9d4e5b6bfd566f86bb588017b8925f3f31eac171acccff"
+      "bytes": 5130,
+      "sha256": "af9917000bd6a030c2d8deef5b0e78c7c151bdcc21f5cf5f16bff6530ccc5bb6"
+    },
+    {
+      "path": "RISE_FOUNDATION_VALIDATION.json",
+      "bytes": 5841,
+      "sha256": "26aa99f60bb1f1daa61d3542d352d56b919b7b219bf63d148fbb5d9a6dd9f1af"
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 5076,
-      "sha256": "f0e387ab39873061ecc7a2c752f2675682e502fb36471cfbab5cdda88937dc53"
+      "bytes": 5437,
+      "sha256": "a2cde8e0e0f97745d14ef7dba64f2f43eeb7f94dffe788e240e319d00958205d"
     },
     {
-      "path": "SHA256SUMS.txt",
-      "bytes": 546,
-      "sha256": "2dc216320bb7a0e803b28284572c4dfe104a2285783f40e8f178c8f6de0674f8"
+      "path": "SOURCE_PUBLICATION_VALIDATION.json",
+      "bytes": 4177,
+      "sha256": "8f15152ba6bc127b8c3e18316007e294a5e6f59f56653ca032942dffe0f0a46b"
     },
     {
       "path": "STARTFIX_VALIDATION.json",
@@ -1758,8 +1698,8 @@
     },
     {
       "path": "engine/ACCEPTANCE_EXECUTION.md",
-      "bytes": 3619,
-      "sha256": "79409339803d94f7917716962ea048fd8e4ea97cae127c4fe3bdc3572976974f"
+      "bytes": 4198,
+      "sha256": "56ca9c70b9149e2c0bd7f643536c3157ac21da8ceffbf3a5f2baf8eef43dbf75"
     },
     {
       "path": "engine/APPLICATION_RECORD.json",
@@ -1782,6 +1722,11 @@
       "sha256": "dab849be04a89ccad4754a42df78a01a5e7095f47b94338fe0134888d5d6fa51"
     },
     {
+      "path": "engine/CORE_CONSOLIDATION.md",
+      "bytes": 3305,
+      "sha256": "4f9786404dbd5d6b8f2906608b6544849f1b416eb33bd4d10405a8c2bb9e745d"
+    },
+    {
       "path": "engine/Core/IRGS_Core_3_3_3_E_C2.md",
       "bytes": 634950,
       "sha256": "31e47937e8a63d1b51c016f7a4085cde42312261e0903bb3ea806b23ccff77ea"
@@ -1798,8 +1743,8 @@
     },
     {
       "path": "engine/OPERATION_COVERAGE.md",
-      "bytes": 12109,
-      "sha256": "ed9c1c9ff121960d36dc9e9ab98a015a9ebb480916333d9b1715c18ffbd5511f"
+      "bytes": 12194,
+      "sha256": "62d158ef3b06da560c8ab5bb9c3cecee5d0b2a70e5c1e6ae902810b51af78557"
     },
     {
       "path": "engine/PACKAGE_MANIFEST.json",
@@ -1810,6 +1755,11 @@
       "path": "engine/PLAYABLE_OPENING_IMPLEMENTATION.md",
       "bytes": 4654,
       "sha256": "55e2db66b2048a8e99bbdca387d22f738f96f76d02de667f580ea2a76a680c4b"
+    },
+    {
+      "path": "engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md",
+      "bytes": 3999,
+      "sha256": "f5852e9c6a4a00d6f4382a52ddd6f89e02f22aac54e58f8f8c059b5a24c0434d"
     },
     {
       "path": "engine/TEXT_VALIDATION.json",
@@ -1937,9 +1887,24 @@
       "sha256": "6991373ccc044b4c5c459aa05db7a7f7e3d97cfa6c04951b785f7fd88dc0e978"
     },
     {
+      "path": "engine/design/rise/FOUNDATION_IMPLEMENTATION.md",
+      "bytes": 5683,
+      "sha256": "f9dee2d79e63776c171c8aff98e2ad4e0a6c0c05e09399d8b2dada80b6d6c31b"
+    },
+    {
+      "path": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
+      "bytes": 145437,
+      "sha256": "fdabced665625ead9e05f2283b131e842abd7df0ca6683e144899372900b8f93"
+    },
+    {
+      "path": "engine/design/rise/README.md",
+      "bytes": 4865,
+      "sha256": "df8a066b0dd6ba17ec856003b838595c8ad14a0de22cded2fe23b453b10d7db1"
+    },
+    {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 8960847,
-      "sha256": "71e742cef0583460648669b3a2ea8ac40a8f037911de325a93b275d7982f0e5f"
+      "bytes": 9092764,
+      "sha256": "a58d103d84463d47c7c10ef6383aa9a60e177aed4e7c24f27536da17c6bbd599"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
@@ -2017,6 +1982,11 @@
       "sha256": "2cea2b590741c4ce3af18f15252f10f9dbb829be8ec949b4dd8f5ebe68b254aa"
     },
     {
+      "path": "provenance/SOURCE_IMPORTS.json",
+      "bytes": 1428,
+      "sha256": "4c62f3101f8c74ff04819b3fcc76b14287960ebcd666702b23ec9cd6f747a81e"
+    },
+    {
       "path": "provenance/action1_validation/frontend.txt",
       "bytes": 3731,
       "sha256": "58c997ef5d346b974b2911c16bdd369a7c3d520e06e09473c18882644330e255"
@@ -2057,14 +2027,9 @@
       "sha256": "d841426b98873ec79c4eeb2734acc8ea7db3184f48a854edf8b2ebaa72dfb050"
     },
     {
-      "path": "provenance/century_of_conflict/CHECKPOINT_2026-10-22.json",
-      "bytes": 1693,
-      "sha256": "033b89db7de80f649a3c5fbb5a4a2af29a4580f1f86cf252b5eed0dc926efafc"
-    },
-    {
-      "path": "provenance/century_of_conflict/CHECKPOINT_2026-10-22.md",
-      "bytes": 2679,
-      "sha256": "45df0846cf02408f90aeca685b2945084e35be244268d5f12a01d27edf464c18"
+      "path": "provenance/century_of_conflict/Century_of_Conflict_WIP_2026-10-21.zip",
+      "bytes": 237826,
+      "sha256": "9fa171451cdd5f09c584f3d8a8093685648037c7abfb4e88803f7c5b9d4236a1"
     },
     {
       "path": "provenance/century_of_conflict/PAUSED_SUBMISSION.md",
@@ -2072,19 +2037,284 @@
       "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
     },
     {
-      "path": "provenance/century_of_conflict/Thorndike_Chapter_XXVII_OCR_reference.txt",
+      "path": "provenance/century_of_conflict/README.md",
+      "bytes": 1655,
+      "sha256": "f8b27849bd895ae39eaa0f3e777f7c78f1cc580de048374a9c630e681c81b4b5"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1337_opening.json",
+      "bytes": 17954,
+      "sha256": "aecc065e3ad28b832da5bbcfbd88db17f6b5c1a9a74a1616a3bf53c0fb65cf5c"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1340_opening.json",
+      "bytes": 17990,
+      "sha256": "11755e21f7282b564df08499eec3496812a62224338d24be65596b1461f60755"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1341_opening.json",
+      "bytes": 20222,
+      "sha256": "b851689579a39d00ecb6add924f78c41162c301c4fce1b793cb18337f1214fd8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1343_opening.json",
+      "bytes": 18485,
+      "sha256": "6127176489b03e14bfbc45219e1a30702159e997e67c3da774e2e5d9ea58f3b7"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1345_opening.json",
+      "bytes": 19528,
+      "sha256": "2bdb9d72731e147277fb1e3233801a78a33caea72d5d8179bfae74c5c3218218"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1346_opening.json",
+      "bytes": 19334,
+      "sha256": "bc716c10db9bb663b8a82453d96c3d585e9e8ab580c2c9c465d3934e4d84e584"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1347_opening.json",
+      "bytes": 17947,
+      "sha256": "07073552254e0440c1201e23c3cf579865108feabf3e3e98d9a2d02386ba1cf1"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1355_opening.json",
+      "bytes": 19427,
+      "sha256": "f35f1d89b1fc889ae3686b3c6a34a43bf47e010371a1a8d702c9afdf4e0300a9"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1356_opening.json",
+      "bytes": 19636,
+      "sha256": "919b0018c6a34cfc595f4c578cb897d84725b3b3b9ea3209248c9863e8fa80e8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1357_opening.json",
+      "bytes": 19651,
+      "sha256": "a23b7af8c0c7bbc0e01090d892003d034f5a5b404e99fa0f3ee7b59795129340"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1359_opening.json",
+      "bytes": 17818,
+      "sha256": "f023ad98500940f6fb14873d5517f3189a0c700127413b1df596a2405a2ea974"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1360_opening.json",
+      "bytes": 19444,
+      "sha256": "2db1c20bbdb1849cfbd9ed29a9260bff302d2aeba88403d2f4022c727ac43032"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1364_opening.json",
+      "bytes": 20265,
+      "sha256": "6ab768e1b689d7806e3cec2e2586d6e1b87dd8fdf47d8786b4f49f18fe57cf53"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1366_opening.json",
+      "bytes": 19524,
+      "sha256": "2711c0cf97810b42876f88bcb7eb767c994b70159010873c07743d37991bb23f"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1369_opening.json",
+      "bytes": 19465,
+      "sha256": "f42a0a5806d48ae90b4e75ad30c23a016d61010116cbed4f94b5a68c2ab9fb5e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1372_opening.json",
+      "bytes": 20088,
+      "sha256": "2454c84c4b811ac23fc32337a5b5a9a8994c65566a1fee5bf9280b8b7d110940"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1373_opening.json",
+      "bytes": 20194,
+      "sha256": "b3b64b0c39944dfe777aab2b9aa4bf1b5f1bc1f3dc1991165b5b91e8bb51b813"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1375_opening.json",
+      "bytes": 18479,
+      "sha256": "fc37dbab84a94b652bb538bf315cb5484667afec77841f9c55f6ca210a13423c"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1377_opening.json",
+      "bytes": 17925,
+      "sha256": "383d22f82517aad9788f1d89ea4a4728970ffc0aba28b9184c100453e59aec8d"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1385_opening.json",
+      "bytes": 20615,
+      "sha256": "b71ce5e44b801d0a56d772f68ce275a26597dcf3370ec112dfc79c001b0cbd91"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1389_opening.json",
+      "bytes": 17502,
+      "sha256": "a002d3519feb363c452b1198911d9ee75e11bf0c302460d4f6cb455333ceb965"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1396_opening.json",
+      "bytes": 17548,
+      "sha256": "33d0cb64e2e0bf43b85b2e4dab808dfecbfcdf150cf06ebc5a7f10d2178c9d6e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1399_opening.json",
+      "bytes": 19825,
+      "sha256": "fc491f269c8ae06e1ee29ab8677d333dc5d547fc54883dfd05109fdabe169ee5"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1400_opening.json",
+      "bytes": 19727,
+      "sha256": "82e4d9a2bf251844d4a344b44ce307b26593296781d9065e9afc8564b8d46ae6"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1403_opening.json",
+      "bytes": 19728,
+      "sha256": "ec38a435a4fd236cd0f5adac170386a3b36db27bd6776dfc1011f062f08073b9"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1411_opening.json",
+      "bytes": 19288,
+      "sha256": "d0ad955845195839bce5f3cbecc3b26a3325acd2440210bd8ff43b9dc0639afe"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1415_opening.json",
+      "bytes": 36667,
+      "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1417_opening.json",
+      "bytes": 18083,
+      "sha256": "f61c3be63697317bbbdfb4d06ebb4070c370110fc0aa29214b703bd75aaa1799"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1419_opening.json",
+      "bytes": 19786,
+      "sha256": "e40047b213a7845d0c9d8a06e8e5563ed550f1d8649b7d12f2ed95745dc04099"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1420_opening.json",
+      "bytes": 20359,
+      "sha256": "a5a4c4aa0e299810b0c3139e66880cc4c135e591258a5ef1303ad94726f5086e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1422_opening.json",
+      "bytes": 21427,
+      "sha256": "259d0a50035fd1a68cefa46bf53ac25778c8ad9b49ba7755ef99d6b7bf734a3b"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1429_opening.json",
+      "bytes": 21715,
+      "sha256": "20ab53ad8a981c10b1990e91f1bd88eb9c8d0cc8a267ab97dfd9f841db0b00dc"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1435_opening.json",
+      "bytes": 21739,
+      "sha256": "5ddfc0e9138ced67ddcd9e66f4b73b2684f350f65c5a5d2fa19cdfd3a3db2a50"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1444_opening.json",
+      "bytes": 21248,
+      "sha256": "af70a0b39d2dc743c6f5eb204fba9926b5e7d0f582a80aa98ebd5a9c4aabae58"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1449_opening.json",
+      "bytes": 19435,
+      "sha256": "dc73332619b3b812867d33e758cd7b10ab426e5c326aaa8bb89d65bad1b6fb48"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1450_opening.json",
+      "bytes": 19529,
+      "sha256": "3a2226a10d36cecafa7d870e190230bee075019eecb67fac77beec51f1bef7c8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_1453_opening.json",
+      "bytes": 20209,
+      "sha256": "c5ec67ab344e564c7c0a1b5363f7e905e7d7d2d4b745cca8dd796a157a0374f8"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/data/hyw_entry_catalogue.json",
+      "bytes": 27385,
+      "sha256": "7f721e1798f76458c981c4993e2c76acae6f85ee2617e07cef76f3b6f5474638"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/IRGS_3_3/runtime/historical_campaigns.py",
+      "bytes": 11505,
+      "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/PAUSED_SUBMISSION.md",
+      "bytes": 4733,
+      "sha256": "a1ac6695f0911fbd3b5e052a3b8f0ad4058effe71c61acba9850934169e42b57"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/Thorndike_Chapter_XXVII_OCR_reference.txt",
       "bytes": 54038,
       "sha256": "2c6a331e3fe222f7e6da1698313a8d54de7b4b434b99fe19d2bad0ef1e9f6bf1"
     },
     {
-      "path": "provenance/century_of_conflict/book_excerpt_provenance.json",
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/book_excerpt_provenance.json",
       "bytes": 543,
       "sha256": "f3c439cbf5e1af528426558f30cce43335d7f874c4cfb0df2e17bea9ab8fc8a7"
     },
     {
-      "path": "provenance/century_of_conflict/opening_inventory.json",
-      "bytes": 31515,
-      "sha256": "0f97884726c3436f83b40714a9ff4304297dc177d8baf4b5d891d9a2147dd8e1"
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/provenance/century_of_conflict/opening_inventory.json",
+      "bytes": 25883,
+      "sha256": "4e63586236505e8e062059e4318b31d7f70763f760e2507f9b7c54b7fe8e28a3"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/IRGS_Development/tools/build_century_starts.py",
+      "bytes": 42140,
+      "sha256": "32f518224ce35495d1d3ced40af1a2b76b2e8b959620158b7efd4d1cf7a8586e"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/submission_manifest.json",
+      "bytes": 8202,
+      "sha256": "7c6bf465413fa4c32a185ede822eaea2d6ccf4f968922bcf200e6a305d5cc4cd"
+    },
+    {
+      "path": "provenance/century_of_conflict/submission/tracked_changes.patch",
+      "bytes": 41958,
+      "sha256": "4a0ae5ded18e21c5c368f11f9c823fe2454510c30281481eae4089447a10c954"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/cloud_QA_59f2434.json",
+      "bytes": 5168,
+      "sha256": "74c826ff0bb672a4dafbb39c89d07979295c4add993e0b261499a7f2474cf218"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/cloud_QA_59f2434.md",
+      "bytes": 2458,
+      "sha256": "bb88df5957842be54ea46dd5bed7f7fa3baeeb2823b1478b3c15ef97db687e6b"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/consolidation_capture.txt",
+      "bytes": 1165,
+      "sha256": "77ad8f44f84ce92d99c1861998546a486b3653f59c8898cdee4767ce7732dbd6"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/consolidation_runtime.txt",
+      "bytes": 600,
+      "sha256": "ceb81177e85df12443cf210029c2fae5253e349131693906ac63e04ee47e2fff"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/consolidation_tools.txt",
+      "bytes": 3578,
+      "sha256": "afcf4cac25487637f09b5fd443641190bd141afe25459491d2593ec810d49b7b"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/consolidation_ui.txt",
+      "bytes": 5155,
+      "sha256": "ca6c8e2e0404fe3e0d5a3b6d6675f1f27529f607a956e1536970d855f527ea4e"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/consolidation_web.txt",
+      "bytes": 87795,
+      "sha256": "ed9a18b2c2cbfdcfaaa9d230820ab7bc3d40d409a85a4d57f39155c123b033ed"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/environment_qa_irgs.py",
+      "bytes": 22957,
+      "sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705"
+    },
+    {
+      "path": "provenance/core_consolidation_validation/independent_environment_QA.json",
+      "bytes": 2634,
+      "sha256": "142546eaa3aca3003947e89b3d963780652b7f868cf935b50243fae654581907"
     },
     {
       "path": "provenance/coverage1_validation/runtime_capture.txt",
@@ -2095,6 +2325,16 @@
       "path": "provenance/coverage1_validation/tool_tests.txt",
       "bytes": 3397,
       "sha256": "5abccd29f14881c9b0aff68cdf27474c7b7efe8a9b72113090a23a1cb4f5b495"
+    },
+    {
+      "path": "provenance/kira/Kira_Campaign_World_v0_1.zip",
+      "bytes": 607581,
+      "sha256": "1d6e1f8305994accc5fc306d8b0a13e0e3c8525d0d2a81c4b4ecda3d20ac3287"
+    },
+    {
+      "path": "provenance/kira/README.md",
+      "bytes": 1345,
+      "sha256": "f7f9d829bbfa380eab6d2ef36bbc13180af93619e2345f40ae2807434cd3ece2"
     },
     {
       "path": "provenance/opening1_validation/opening1_capture_runtime.txt",
@@ -2127,6 +2367,16 @@
       "sha256": "17e274aaf7eb58e79594f973e9334c3f228bd2bb5e4de42bd780f147eeb0d4c8"
     },
     {
+      "path": "provenance/rise/IRGS_The_Rise_of_You_Design_Specification_v0_4.docx",
+      "bytes": 101997,
+      "sha256": "8e8c16d8590280780064e1f566e3a595d1914da36c369fbb954ca0e3a670b49c"
+    },
+    {
+      "path": "provenance/rise/README.md",
+      "bytes": 532,
+      "sha256": "dbce3b50c67a8cd8275cc67cb323c09e74d039483a119a817a3225bf776aeeb8"
+    },
+    {
       "path": "provenance/startfix_validation/startfix_capture_runtime.txt",
       "bytes": 572,
       "sha256": "6aa837025c764633f43dfd499e18b5e639874a7dbf20eba5fe5654d6b4a38af2"
@@ -2147,24 +2397,19 @@
       "sha256": "575813b8c3073206e276cd5ea5541445fc2da2c1154b6dbcf450c566113ea8e2"
     },
     {
-      "path": "tools/build_century_starts.py",
-      "bytes": 47723,
-      "sha256": "e92ee9fc886f9fe03bf6e4ae4bf237fb8e7de66a10dc41f6e853ac30acc600e7"
-    },
-    {
       "path": "tools/build_operation_register.py",
       "bytes": 15322,
       "sha256": "06933f88747a93921154aa869717d019ec8cdde8fb1f9bc96514134dba5114b4"
     },
     {
       "path": "tools/coverage_capture.py",
-      "bytes": 16771,
-      "sha256": "524ec0e271ae404773e893026728b165a8fdc7dee1bb4e624d1cabaad731499c"
+      "bytes": 16794,
+      "sha256": "82c86d47af6f3a4a4ebb10fd198913ec6cb221bdf2a2bafd6751af0e48384474"
     },
     {
       "path": "tools/operation_inventory.py",
-      "bytes": 19741,
-      "sha256": "9e179c475e677a6dbb47f13df4c97b479ce11c79936300f27818ef4040fd820a"
+      "bytes": 20530,
+      "sha256": "cd7050c27ba05735de4c5a940b4633744d4ee9795add14772dc9be692d2cc8ca"
     },
     {
       "path": "tools/package_development.py",
@@ -2178,8 +2423,8 @@
     },
     {
       "path": "tools/tests/test_coverage_capture.py",
-      "bytes": 5498,
-      "sha256": "b401c6e2e0138bfd92fefa2135ceb6f9ca6d0c7ad7d9445870cb5df5aa4a4850"
+      "bytes": 6296,
+      "sha256": "3380d1c3f1199052ba6c7629362d93cbdc4cb0217f52d3e6c4f827ff9a7219e5"
     },
     {
       "path": "tools/tests/test_operation_coverage.py",
@@ -2188,13 +2433,8 @@
     },
     {
       "path": "tools/verify_development.py",
-      "bytes": 11085,
-      "sha256": "2f2ec3b54ad802b7b160e0ace7c578b73c550a5bc7937dd7ed57a225c28155e5"
-    },
-    {
-      "path": "verify_irgs_3_3_3.py",
-      "bytes": 2965,
-      "sha256": "906eaff21401b9a400a373daf90635ed41b059cdf4fd6bc3c90c4d0d61dfdf4e"
+      "bytes": 10967,
+      "sha256": "b8e3a864bfc1bfca67abd0b267934d6800d3387eef422799a2f447f8740c0cbb"
     }
   ]
 }

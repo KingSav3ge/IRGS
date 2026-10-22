@@ -1,6 +1,6 @@
 {
   "edition": "3.3.3-unified-development-D1",
-  "date": "2026-10-20",
+  "date": "2026-10-22",
   "status": "VERIFIED_CONTINUATION_READY_FOR_CONTINUED_DEVELOPMENT",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
@@ -13,7 +13,7 @@
   },
   "app": {
     "development_branch": "3.3.3.A",
-    "edition": "adventure-ui1",
+    "edition": "adventure-ui1+kira1+rise-foundation-1 + creator-only technical configuration",
     "source": "IRGS_Web/",
     "preferred_design": "IRGS-3.3.2.Emergent.zip top-level frontend",
     "alternate_backend_activated": false
@@ -36,12 +36,12 @@
   "existing_save_migration": false,
   "C2_acceptance_cases": 121,
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
-  "next_milestone": "Extend this playable opening with qualified dialogue/offers, shared timed phases and broader dependency cases.",
-  "verified_on": "2026-10-21",
-  "validation_record": "ADVENTURE_UI_VALIDATION.json",
+  "next_milestone": "Extend named collection, rejection and cross-engine dependency cases; broaden the selected Rise contracts without migrating existing saves.",
+  "verified_on": "2026-10-22",
+  "validation_record": "DEPENDENCY_REJECTIONS_VALIDATION.json",
   "continuation": {
-    "id": "adventure-ui1",
-    "integration_base": "0bb5c68a26766a350936304b6e43b7902823ec99",
+    "id": "core-consolidation-1",
+    "integration_base": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
     "completed_items": [
       "DEV-01",
       "DEV-02",
@@ -49,21 +49,102 @@
       "DEV-04",
       "DEV-05"
     ],
-    "supported_action": "authorized equipment and opt-in local movement, observation and dispatch delivery",
+    "supported_action": "authorized equipment, opt-in local opening actions, and selected R00 settlement permission, work, provision and migration",
     "general_freeform_resolution": false,
     "combat_adjudication": false,
     "contextual_response_drafts": true,
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "opening1-startfix",
+    "previous_increment": "rise-foundation-1",
     "operation_coverage_register": "engine/qualification/operation_register.json",
-    "operation_spellings": 84,
-    "backend_operation_contracts": 169,
+    "operation_spellings": 85,
+    "backend_operation_contracts": 170,
     "all_branches_certified": false,
     "playable_opening": "quay-delivery-v1",
     "authored_local_elapsed": true,
     "calendar_advance": false,
-    "presentation_record": "ADVENTURE_UI_VALIDATION.json"
+    "presentation_record": "ADVENTURE_UI_VALIDATION.json",
+    "kira_world_reference": "IRGS_3_3/catalog/campaigns/kira",
+    "rise_design": "engine/design/rise/IRGS_Rise_Design_Specification_v0_4.md",
+    "rise_implementation": "Reviewed R00 fictional founding: scoped grant, finite work, provision, delegation and household migration; all eight design families held",
+    "settlement_record": "RISE_FOUNDATION_VALIDATION.json",
+    "rejected_dependency_record": "engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md",
+    "core_routines_record": "engine/CORE_CONSOLIDATION.md"
+  },
+  "environment_qa": {
+    "source_branch": "qa/engine-validation",
+    "report_commit": "0f5e10fd8904a72acc603d0c6505ed45abf29590",
+    "candidate_commit": "59f24344d2ff51404071822f8975f3d70b972814",
+    "finished_at_utc": "2026-10-22T14:29:51.378631+00:00",
+    "status": "passed",
+    "independent": {
+      "tests_run": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "findings": {
+      "IRGS-QA-001": "not_reproduced",
+      "IRGS-QA-002": "not_reproduced"
+    },
+    "regression_checks": [
+      {
+        "name": "source-integrity",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 1.69,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/source-integrity.txt"
+      },
+      {
+        "name": "evidence-freshness",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 0.67,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/evidence-freshness.txt"
+      },
+      {
+        "name": "runtime",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 125.77,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/runtime.txt",
+        "tests_run": 486,
+        "skipped": 1
+      },
+      {
+        "name": "web",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 67.8,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/web.txt",
+        "tests_run": 142,
+        "skipped": 7
+      },
+      {
+        "name": "interface",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 8.83,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/interface.txt",
+        "checks_passed": 56
+      },
+      {
+        "name": "tooling",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 2.83,
+        "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/tooling.txt",
+        "tests_run": 20,
+        "skipped": 0
+      }
+    ],
+    "report": "provenance/core_consolidation_validation/cloud_QA_59f2434.json",
+    "report_sha256": "74c826ff0bb672a4dafbb39c89d07979295c4add993e0b261499a7f2474cf218",
+    "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+    "all_branches_certified": false,
+    "user_saves_opened": false,
+    "local_rerun_claimed": false
   }
 }

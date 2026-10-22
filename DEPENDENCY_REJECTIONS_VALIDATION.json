@@ -1,0 +1,376 @@
+{
+  "increment": "core-consolidation-1",
+  "date": "2026-10-22",
+  "selected_runtime_core": "3.3",
+  "integration_base": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+  "status": "verified_bounded_core_consolidation",
+  "implementation": "engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md",
+  "existing_saves_opened_or_migrated": false,
+  "all_branches_certified": false,
+  "publication_branches": [
+    "3.3.3.E",
+    "3.3.3.A",
+    "main"
+  ],
+  "app_source_changed": true,
+  "test_logs": "provenance/core_consolidation_validation/",
+  "core_routines_record": "engine/CORE_CONSOLIDATION.md",
+  "cleanup": {
+    "workspace_bytes_removed": 778027933,
+    "workspace_targets": [
+      {
+        "name": ".release_verification",
+        "bytes": 504455770,
+        "files": 2395
+      },
+      {
+        "name": "IRGS_3_3_3_StartFix_Development.zip",
+        "bytes": 54767153,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Opening1_Development.zip",
+        "bytes": 54760745,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Coverage1_Development.zip",
+        "bytes": 54678396,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Action1_Development.zip",
+        "bytes": 54092374,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Development_D1.zip",
+        "bytes": 54043693,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_A_UI1.zip",
+        "bytes": 133879,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_E_C2_Applied.zip",
+        "bytes": 542166,
+        "files": 1
+      },
+      {
+        "name": "IRGS-3.3.C-Engine-Design-C1.zip",
+        "bytes": 255829,
+        "files": 1
+      },
+      {
+        "name": "IRGS-3.3.C-Engine-Design-C2.zip",
+        "bytes": 297038,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_StartFix_Development.zip.sha256",
+        "bytes": 103,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Opening1_Development.zip.sha256",
+        "bytes": 103,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Coverage1_Development.zip.sha256",
+        "bytes": 104,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Action1_Development.zip.sha256",
+        "bytes": 102,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_Development_D1.zip.sha256",
+        "bytes": 97,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_A_UI1.zip.sha256",
+        "bytes": 88,
+        "files": 1
+      },
+      {
+        "name": "IRGS_3_3_3_E_C2_Applied.zip.sha256",
+        "bytes": 95,
+        "files": 1
+      },
+      {
+        "name": "IRGS-3.3.C-Engine-Design-C1.zip.sha256",
+        "bytes": 99,
+        "files": 1
+      },
+      {
+        "name": "IRGS-3.3.C-Engine-Design-C2.zip.sha256",
+        "bytes": 99,
+        "files": 1
+      }
+    ],
+    "source_bundle_bytes_removed": 26910057,
+    "source_bundle_files": [
+      {
+        "name": "IRGS_Core_3_3_3.zip",
+        "bytes": 1395867,
+        "sha256": "312d230926fe8eeca1be9ad52142db285124d7914e39bafacf91f3839f4df44d"
+      },
+      {
+        "name": "IRGS_Catalog_3_3_3.zip",
+        "bytes": 25355871,
+        "sha256": "a0961deb51559129afd1dc704ad6da58d32e029a3ae354b9c158c8734f7a4960"
+      },
+      {
+        "name": "IRGS_Live_3_3_3.zip",
+        "bytes": 104271,
+        "sha256": "27944c382808eff3d1790a995c06dbbe57c181ecffde98dfe4d1f6877bc925ce"
+      },
+      {
+        "name": "verify_irgs_3_3_3.py",
+        "bytes": 2965,
+        "sha256": "906eaff21401b9a400a373daf90635ed41b059cdf4fd6bc3c90c4d0d61dfdf4e"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 546,
+        "sha256": "2dc216320bb7a0e803b28284572c4dfe104a2285783f40e8f178c8f6de0674f8"
+      },
+      {
+        "name": "IRGS_3_3_3_PACKAGE_MANIFEST.json",
+        "bytes": 38262,
+        "sha256": "74a517c60d12ae47774a6ffa541a2ed4732b1fc7ab9ff4d9a796952ecdcbf746"
+      },
+      {
+        "name": "IRGS_3_3_3_Build_Instructions.md",
+        "bytes": 12275,
+        "sha256": "d47100598317458d52bc068144f82c42735d1d00bbfa76dfe5e724ca9f743e70"
+      }
+    ],
+    "historical_restore_commit": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+    "existing_campaign_installations_removed": false
+  },
+  "environment_findings": {
+    "source_branch": "qa/engine-validation",
+    "report_commit": "a28d1d44f31e00ba2cab4f91a894cf266e7d4bec",
+    "reported_candidate": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
+    "finding_ids": [
+      "IRGS-QA-001",
+      "IRGS-QA-002"
+    ],
+    "local_reproduction": {
+      "independent_passed": 6,
+      "independent_failed": 2
+    },
+    "local_retest": {
+      "independent_passed": 8,
+      "independent_failed": 0
+    },
+    "status": "fixed_independently_confirmed_at_59f2434",
+    "mechanism": "Unmodified independent QA script from the named branch; synthetic saves only.",
+    "environment_retest": {
+      "source_branch": "qa/engine-validation",
+      "report_commit": "0f5e10fd8904a72acc603d0c6505ed45abf29590",
+      "candidate_commit": "59f24344d2ff51404071822f8975f3d70b972814",
+      "finished_at_utc": "2026-10-22T14:29:51.378631+00:00",
+      "status": "passed",
+      "independent": {
+        "tests_run": 8,
+        "passed": 8,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "findings": {
+        "IRGS-QA-001": "not_reproduced",
+        "IRGS-QA-002": "not_reproduced"
+      },
+      "regression_checks": [
+        {
+          "name": "source-integrity",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 1.69,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/source-integrity.txt"
+        },
+        {
+          "name": "evidence-freshness",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 0.67,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/evidence-freshness.txt"
+        },
+        {
+          "name": "runtime",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 125.77,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/runtime.txt",
+          "tests_run": 486,
+          "skipped": 1
+        },
+        {
+          "name": "web",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 67.8,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/web.txt",
+          "tests_run": 142,
+          "skipped": 7
+        },
+        {
+          "name": "interface",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 8.83,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/interface.txt",
+          "checks_passed": 56
+        },
+        {
+          "name": "tooling",
+          "status": "passed",
+          "exit_code": 0,
+          "duration_seconds": 2.83,
+          "log": "/workspace/irgs-cloud/qa/runs/59f24344d2ff-1792679176930059204/logs/tooling.txt",
+          "tests_run": 20,
+          "skipped": 0
+        }
+      ],
+      "report": "provenance/core_consolidation_validation/cloud_QA_59f2434.json",
+      "report_sha256": "74c826ff0bb672a4dafbb39c89d07979295c4add993e0b261499a7f2474cf218",
+      "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+      "all_branches_certified": false,
+      "user_saves_opened": false,
+      "local_rerun_claimed": false
+    }
+  },
+  "dependency_capture": {
+    "status": "captured",
+    "operation_spellings": 85,
+    "backend_operation_pairs": 170,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 87,
+    "pairs_with_failed_path_evidence": 33,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false,
+    "tests": {
+      "tests_run": 486,
+      "passed": 485,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1227,
+      "captured_executions": 2534,
+      "capture_origin_counts": {
+        "actual_apply": 2109,
+        "direct_observe": 425
+      },
+      "actual_committed_apply_count": 2043,
+      "excluded_unknown_operations": 7,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    }
+  },
+  "checks": {
+    "web": {
+      "run": 142,
+      "passed": 142,
+      "skipped": 0,
+      "seconds": 72.936
+    },
+    "tools": {
+      "run": 20,
+      "passed": 20,
+      "skipped": 0,
+      "seconds": 1.59
+    },
+    "interface": {
+      "passed": 56
+    },
+    "tools_and_suite_exit": {
+      "checks": [
+        {
+          "check": "capture",
+          "exit_code": 0,
+          "seconds": 104.438
+        },
+        {
+          "check": "web",
+          "exit_code": 0,
+          "seconds": 73.328
+        },
+        {
+          "check": "ui",
+          "exit_code": 0,
+          "seconds": 2.125
+        },
+        {
+          "check": "tools",
+          "exit_code": 0,
+          "seconds": 1.906
+        }
+      ],
+      "successful": true
+    }
+  },
+  "independent_QA_evidence": "provenance/core_consolidation_validation/independent_environment_QA.json",
+  "distribution_check": {
+    "status": "passed",
+    "extracted_files": 484,
+    "packaged_verification": {
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "development_files": 483,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false,
+    "note": "Initial extraction passed; metadata-complete archive is checked again with its final hash and smoke result kept outside itself."
+  }
+}

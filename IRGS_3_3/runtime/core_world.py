@@ -3,7 +3,7 @@ Legacy AST event spellings remain accepted for existing saved journals.
 """
 import copy,json
 from irgs_reference import InvalidEvent,canon,digest
-from genre_receivers import GENRE_OPS, operate as operate_genre
+GENRE_OPS={'military_issue_equipment','roman_begin_delegated_activity','revoke_delegation'}
 from temporal_registry import ENTITY_OPS, operate_entity, validate_registry
 
 ALIASES={"ast_"+op:op for op in (
@@ -14,6 +14,7 @@ CORE_OPS=set(ALIASES.values())
 CORE_OPS.update({'register_actor','record_capacity','commit_activity','record_delegation'})
 CORE_OPS.update({'execute_player_equipment_issue','receive_response_prompt'})
 CORE_OPS.add('execute_player_scene_action')
+CORE_OPS.add('execute_settlement_action')
 CORE_OPS.update(ENTITY_OPS)
 SUPPORTED_OPS=CORE_OPS|set(ALIASES)|GENRE_OPS
 
@@ -42,7 +43,14 @@ class CoreWorld:
         assert materials==set(s['opening_stock']), 'every physical material requires a conserved opening basis'
         for material,total in s['opening_stock'].items():
             assert type(total) is int and total>=0
-            assert sum(loc.get(material,0) for loc in s['stocks'].values())==total
+            consumed=sum(f['quantity'] for f in s.get('material_flows',{}).values() if f['material']==material)
+            assert sum(loc.get(material,0) for loc in s['stocks'].values())==total-consumed
+        for flow in s.get('material_flows',{}).values():
+            assert flow['kind']=='consumption' and type(flow['quantity']) is int and flow['quantity']>0
+            assert flow['material'] in s['opening_stock'] and flow['source_ref'] and flow['purpose']
+            assert flow['account'] in s['stocks']
+        from settlement_runtime import validate_settlement
+        validate_settlement(s)
         ids=[e['id'] for e in s['journal']]
         assert len(ids)==len(set(ids)) and set(ids)==set(s['processed'])
         assert all(s['processed'][e['id']]==digest(e) for e in s['journal'])
@@ -87,6 +95,9 @@ class CoreWorld:
         if op=='execute_player_equipment_issue':
             from player_actions import operate_equipment_action
             return operate_equipment_action(self,s,at,p)
+        if op=='execute_settlement_action':
+            from settlement_runtime import operate_settlement_action
+            return operate_settlement_action(self,s,at,p)
         if op=='execute_player_scene_action':
             from scene_actions import operate_scene_action
             return operate_scene_action(self,s,at,p)
@@ -96,7 +107,7 @@ class CoreWorld:
         if op in ENTITY_OPS:
             return operate_entity(self,s,at,op,p)
         if op in GENRE_OPS:
-            return operate_genre(self,s,at,op,p)
+            return self._operate_domain(s,at,op,p)
         if op=='register_actor':
             cid=p['actor_id'];assert isinstance(cid,str) and cid.strip() and cid not in s['actors']
             assert cid not in s.get('registry',{}).get('withdrawn_duplicate_ids',[])
@@ -207,3 +218,39 @@ class CoreWorld:
             s['orders'][p['order_id']]={'recipient':recipient,'content':p['content'],'received_at':at,
                 'authority_ref':p['authority_ref'],'executed':False,'source_ref':p['source_ref']}
             if 'directives' in p:s['orders'][p['order_id']]['directives']=copy.deepcopy(p['directives'])
+
+    def _operate_domain(self,s,at,op,p):
+        """Called Core routines; authority and effects use this same transaction."""
+        if op=='military_issue_equipment':
+            binding=s.get('binding',{})
+            assert binding.get('genre_id') in ('military','roman'),'military/historical receiving profile required'
+            order=s['orders'][p['order_id']]
+            assert order['recipient']==p['commander'] and not order['executed']
+            assert order['received_at']<=at
+            directives=order['directives']
+            assert directives['operation']=='issue_equipment' and at<=directives['deadline']
+            assert directives['persons']==p['persons'] and directives['material']==p['material']
+            assert directives['from']==p['from'] and directives['quantity_each']==p['quantity_each']
+            assert p['authority_ref']==order['authority_ref']
+            assert p['persons'] and len(set(p['persons']))==len(p['persons'])
+            assert all(cid in s['actors'] for cid in p['persons'])
+            assert type(p['quantity_each']) is int and p['quantity_each']>0
+            for cid in p['persons']:
+                self._operate(s,at,'transfer_stock',{'from':p['from'],'to':cid,'material':p['material'],
+                    'quantity':p['quantity_each'],'authority_ref':p['authority_ref'],'source_ref':p['source_ref']})
+            order['executed']=True;order['executed_at']=at
+        elif op=='roman_begin_delegated_activity':
+            assert s.get('binding',{}).get('genre_id')=='roman','Roman receiving profile required'
+            d=s['delegations'][p['delegation_id']]
+            assert d['active'] and d['delegate']==p['delegate']
+            assert d['start']<=p['start']<p['end']<=d['end']
+            assert p['site']==d['site'] and p['role']==d['role'] and p['actors']==d['actors']
+            assert p['authority_ref']==d['authority_ref']
+            params={k:p[k] for k in ('activity_id','actors','site','capacity_id','start','end','role','authority_ref','source_ref')}
+            if 'instruction_ref' in p:params['instruction_ref']=p['instruction_ref']
+            self._operate(s,at,'commit_activity',params)
+        elif op=='revoke_delegation':
+            d=s['delegations'][p['delegation_id']]
+            assert d['principal']==p['principal'] and p['authority_ref']==d['authority_ref']
+            if d['principal'] in self.player_ids(s):assert p.get('instruction_ref')
+            d['active']=False;d['revoked_at']=at;d['revoke_source']=p['source_ref']

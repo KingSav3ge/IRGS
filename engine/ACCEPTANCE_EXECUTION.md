@@ -19,3 +19,7 @@ Actual combined full-suite results and their logs are in [integrated main's ACTI
 ## Opening1 scoped extension
 
 The authored local scene extends repeated action, exact retry, actor knowledge, conserved transfer and ordinary movement evidence. Runtime scene/setup tests plus real loopback scene tests cover actual duration, blocked/depleted outcomes, current control, failed persistence and concurrent duplicate. This is one-transaction local duration, not scheduled phases or general C2 completion. See PLAYABLE_OPENING_IMPLEMENTATION.md and OPENING1_VALIDATION.json.
+
+## Rejected dependency evidence extension
+
+Dependency-rejections-1 advances the rejection and conflicting-decision properties associated with A09–A15 and A22 through `runtime/test_rejected_dependencies.py`. The tests cover named backend paths, paired atomic rejection, negative lookups, actual scarce-resource/authority/worker reads, retained unresolved intent and save/load. They do not claim full completion of those C2 cases or a general saved-failure lifecycle for player submissions. See REJECTED_DEPENDENCIES_IMPLEMENTATION.md and DEPENDENCY_REJECTIONS_VALIDATION.json.

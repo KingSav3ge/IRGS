@@ -20,8 +20,7 @@ MANIFEST = "DEVELOPMENT_MANIFEST.json"
 SOURCE_DIRS = {"IRGS_3_3", "IRGS_Web", "engine", "provenance", "tools"}
 ROOT_FILES = {
     ".gitignore", ".gitattributes", "LICENSE", "LICENSE.txt",
-    "Start-IRGS.cmd", "verify_irgs_3_3_3.py", "SHA256SUMS.txt",
-    "IRGS_Core_3_3_3.zip", "IRGS_Catalog_3_3_3.zip", "IRGS_Live_3_3_3.zip",
+    "Start-IRGS.cmd",
 }
 EXCLUDED_PARTS = {
     ".git", ".hg", ".svn", "__pycache__", ".pytest_cache", ".mypy_cache",

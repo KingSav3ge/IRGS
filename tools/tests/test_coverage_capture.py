@@ -53,6 +53,19 @@ class CaptureSafetyTests(unittest.TestCase):
         self.assertTrue(all(row['status'] == 'observation_refused' for row in records))
         self.assertTrue(all(not row['writes'] for row in records))
 
+    def test_rejection_probes_are_not_counted_as_actual_committed_events(self):
+        def body(test):
+            world = initial_campaign('military', 'rejection-probe-origin')
+            with test.assertRaisesRegex(InvalidEvent, 'did not reject'):
+                r9_runtime.observe_rejection(world.s, event(world, 'detached-only'))
+            current = event(world, 'actual')
+            world.apply(current['id'], current['at'], current['op'], **current['params'])
+            test.assertNotIn('detached-only', world.s['actors'])
+        summary, records, _ = self.capture(body)
+        self.assertTrue(summary['tests_successful'])
+        self.assertEqual(summary['actual_committed_apply_count'], 1)
+        self.assertTrue(all(row['capture_origin'] == 'actual_apply' for row in records))
+
     def test_rejecting_actual_handler_with_live_mutation_is_not_rollback_evidence(self):
         def broken_apply(world, *args, **kwargs):
             world.s['capture-test-mutation'] = True

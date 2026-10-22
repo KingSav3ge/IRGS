@@ -127,7 +127,7 @@ def inventory(runtime_dir):
     fabrication = set(modules["r7_frontier"].FAB_OPS)
     receivers = set(modules["r9_adapters"].NATIVE_OPS)
     core = modules["core_world"]
-    genres = set(modules["genre_receivers"].GENRE_OPS)
+    genres = set(core.GENRE_OPS)
     entities = set(modules["temporal_registry"].ENTITY_OPS)
     economic = set(modules["economic_extension"].ECON_OPS)
     r7 = base | work | fabrication | {"physical_loss"}
@@ -165,14 +165,14 @@ def inventory(runtime_dir):
                         default_after="record_entity_eligibility" if canonical == "select_entity_control" else None)
                     limits.append("Temporal mutation requires the saved playthrough registry and its actual coordinate.")
                 elif canonical in genres:
-                    support += source.declaration("genre_receivers.py", "GENRE_OPS")
+                    support += source.declaration("core_world.py", "GENRE_OPS")
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate"))
-                    implementation = source.implementation("genre_receivers.py", "operate", canonical)
+                    implementation = source.implementation("core_world.py", "CoreWorld._operate_domain", canonical)
                     limits.append("Genre/binding, received instruction or delegation constraints are conditional.")
                 elif canonical == "execute_player_equipment_issue":
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
                     implementation = source.implementation("player_actions.py", "operate_equipment_action")
-                    chain.append(source.implementation("genre_receivers.py", "operate", "military_issue_equipment"))
+                    chain.append(source.implementation("core_world.py", "CoreWorld._operate_domain", "military_issue_equipment"))
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", "transfer_stock"))
                     limits.append("Explicit received equipment action with current control, authority and stock checks.")
                 elif canonical == "execute_player_scene_action":
@@ -180,13 +180,17 @@ def inventory(runtime_dir):
                     implementation = source.implementation("scene_actions.py", "operate_scene_action")
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", "transfer_stock"))
                     limits.append("Opt-in authored local movement, observation and dispatch delivery only; atomic scene durations, no general phases or calendar scheduler.")
+                elif canonical == "execute_settlement_action":
+                    chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
+                    implementation = source.implementation("settlement_runtime.py", "operate_settlement_action")
+                    limits.append("Reviewed fictional Rise model only: bounded permission, work, provision and household migration; no general economy or calendar scheduler.")
                 elif canonical == "receive_response_prompt":
                     chain.append(source.implementation("core_world.py", "CoreWorld._operate", canonical))
                     implementation = source.implementation("response_options.py", "operate_response_prompt")
                     limits.append("Received suggestions are drafts, not feasibility findings or combat outcomes.")
                 else:
                     implementation = source.implementation("core_world.py", "CoreWorld._operate", canonical)
-                exposure = ("BOUNDED_SOLO_ACTION" if canonical in {"execute_player_equipment_issue", "execute_player_scene_action"}
+                exposure = ("BOUNDED_SOLO_ACTION" if canonical in {"execute_player_equipment_issue", "execute_player_scene_action", "execute_settlement_action"}
                             else "SOLO_DECLARATION_ONLY" if canonical == "record_player_action"
                             else "CREATOR_EVENT_OR_INTERNAL_CORE_INTERFACE")
                 if alias:
@@ -241,6 +245,11 @@ def inventory(runtime_dir):
 _ROOT_OWNERS = {
     "actors": ("K-ACTOR",), "player_actor_ids": ("K-ACTOR",),
     "stocks": ("K-STOCK",), "opening_stock": ("K-STOCK",),
+    "stock_accounts": ("K-STOCK",), "material_flows": ("K-STOCK",),
+    "projects": ("K-WORK",), "assets": ("K-ASSET",),
+    "organizations": ("K-ORG",), "grants": ("K-ORG",),
+    "land_claims": ("K-ASSET",), "settlement_receipts": ("K-INFO",),
+    "migrations": ("K-POP",),
     "cash": ("K-STOCK",), "cash_baseline": ("K-STOCK",),
     "equipment": ("K-STOCK",), "kit_baseline": ("K-STOCK",),
     "activities": ("K-WORK",), "commitments": ("K-WORK",),
@@ -265,7 +274,7 @@ _ECON_OWNERS = {
 }
 _METADATA_ROOTS = {"campaign_id", "profile", "binding", "core_version", "gameplay_started",
                    "fork_origin", "_r6_eid", "_r7_event_id", "r4_request_ids", "r4_frontiers",
-                   "scene_rules", "scene_action_results"}
+                   "scene_rules", "scene_action_results", "rise", "settlement_model"}
 
 
 def _classify(path):

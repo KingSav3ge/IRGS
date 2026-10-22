@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "increment": "rise-foundation-1",
+  "verified_on": "2026-10-22",
+  "status": "verified_bounded_fictional_foundation",
+  "integration_base": "7c2300225b9dbb696f65ad5385f1aca5a442be95",
+  "engine_commit": "6efbaa7",
+  "scope": {
+    "playable": "R00 fictional founding only",
+    "held_families": [
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "N01",
+      "F01"
+    ],
+    "new_universal_rules": false,
+    "general_freeform_resolver": false,
+    "all_Rise_acceptance_cases_certified": false,
+    "existing_saves_opened_or_migrated": false,
+    "single_host_single_writer": true,
+    "original_uploads_preserved": 4
+  },
+  "implemented": [
+    "Reviewed configurable setup with independent company, permission and supplies; source/model digest and atomic initialization",
+    "Limited grant offer and explicit acceptance, preserved seasonal path and current permission validation",
+    "One finite shelter project, independent neighbor repair, retained partial work, bounded delegation and pause/resume",
+    "Consumption flows, protected seed and actual household provision deficits",
+    "Consent, departure, transit and arrival of an existing household with private goods and no labor-control grant",
+    "Actor-filtered local dashboard and Chronicle, common durable action lookup/retry and recoverable campaign Trash"
+  ],
+  "checks": {
+    "runtime": {
+      "tests_run": 471,
+      "passed": 470,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true
+    },
+    "web": {
+      "tests_run": 139,
+      "passed": 132,
+      "skipped": 7,
+      "failures": 0,
+      "errors": 0,
+      "skip_scope": "Windows PowerShell launcher fixtures"
+    },
+    "frontend": {
+      "passed": 54,
+      "failed": 0,
+      "scope": "Synthetic DOM and transport"
+    },
+    "tools": {
+      "tests_run": 19,
+      "passed": 19
+    },
+    "rise_specific": {
+      "runtime_contract_tests": 13,
+      "http_persistence_tests": 9,
+      "scope": "Bounded contracts; not blanket T01\u2013T37 qualification"
+    },
+    "browser": {
+      "status": "passed",
+      "checks": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "setup_review_backtracking": true,
+          "grant_work_delegation_migration": true,
+          "reload": true,
+          "overflow": false,
+          "camp": {
+            "name": "Willow Camp desktop",
+            "residents": 3,
+            "present": 3,
+            "shelter_places": 2,
+            "shelter_shortfall": 1
+          },
+          "creation_posts": 2
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "setup_review_backtracking": true,
+          "grant_work_delegation_migration": true,
+          "reload": true,
+          "overflow": false,
+          "camp": {
+            "name": "Willow Camp mobile",
+            "residents": 3,
+            "present": 3,
+            "shelter_places": 2,
+            "shelter_shortfall": 1
+          },
+          "creation_posts": 1
+        },
+        {
+          "viewport": "small-mobile",
+          "width": 320,
+          "setup_review_backtracking": true,
+          "grant_work_delegation_migration": true,
+          "reload": true,
+          "overflow": false,
+          "camp": {
+            "name": "Willow Camp small-mobile",
+            "residents": 3,
+            "present": 3,
+            "shelter_places": 2,
+            "shelter_shortfall": 1
+          },
+          "creation_posts": 1
+        }
+      ],
+      "javascript_errors": [],
+      "saves": "synthetic temporary directory only",
+      "lost_acknowledgements": "creation and action recovered on desktop with original identities"
+    },
+    "original_sources": {
+      "status": "all four sizes and SHA-256 values matched",
+      "manifest": "provenance/SOURCE_IMPORTS.json"
+    }
+  },
+  "operation_coverage": {
+    "operation_spellings": 85,
+    "backend_operation_pairs": 170,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 87,
+    "pairs_with_failed_path_evidence": 33,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false
+  },
+  "commands": [
+    "python -B tools/build_operation_register.py --output engine/qualification/operation_register.json --markdown engine/OPERATION_COVERAGE.md --test-log development_results/rise_operation_capture.txt",
+    "python -B -m unittest discover -s IRGS_Web/tests -v",
+    "node IRGS_Web/tests/test_gameplay_ui.js",
+    "python -B -m unittest discover -s tools/tests -p \"test_*.py\" -v",
+    "python -B tools/verify_development.py",
+    "python -B tools/package_development.py",
+    "python -B tools/smoke_development.py"
+  ],
+  "packaging": {
+    "status": "passed",
+    "extracted_files": 478,
+    "packaged_source_integrity": "verified",
+    "loopback_only": true,
+    "campaign_files_created": 0,
+    "existing_saves_opened": false,
+    "project_imports_from_extracted_package": true,
+    "scope": "Fresh extracted package verification and read-only HTTP smoke. Archive checksum is written alongside the archive outside source to avoid a self-referential hash."
+  },
+  "limits": [
+    "Authored fictional quantities and rates are uncalibrated; exact scope is reviewed before each new campaign.",
+    "One shelter project and one authored neighboring-household decision; no general autonomous planner or sustainable economic sandbox.",
+    "No crop, trade, health, death, succession, planetary, supernatural or legal-dispute resolver.",
+    "No numerical calendar advancement or distributed writer coordination.",
+    "Historical, planetary and fantasy curation plus broader Rise/C2 acceptance remain unfinished."
+  ]
+}

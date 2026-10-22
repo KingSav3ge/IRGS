@@ -14,7 +14,7 @@ This is the complete assembled development baseline: the selected Core 3.3 runti
 | `provenance/` | Historical source records; these are not current test results or instructions to adopt mechanics. |
 | `tools/` | Unified development verification, packaging and smoke helpers. |
 
-The original eight root package files are retained as archival inputs. Edit the unpacked canonical sources above. There is no second editable `app/IRGS_Web` tree and no alternate Mongo simulation in the running application.
+Superseded assembly bundles and their obsolete verifier have been removed. Edit and package the canonical sources above with the unified tools; Git history retains the original assembly inputs. There is no second editable `app/IRGS_Web` tree and no alternate Mongo simulation in the running application.
 
 ## Run the website
 
@@ -83,3 +83,7 @@ python -B tools/build_operation_register.py --output engine/qualification/operat
 ```
 
 This can take several minutes because it observes synthetic runtime test executions. The external historical-save fixture is skipped by policy, even if present. Existing campaigns and inherited certification files are not inputs. Actual apply calls and detached probes are recorded separately. A listed handler, a named test or a successful observation does not establish complete branch coverage or player availability.
+
+## Rise settlement foundation
+
+Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).

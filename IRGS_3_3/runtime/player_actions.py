@@ -144,25 +144,22 @@ def operate_equipment_action(core, state, at, params):
 def _failed_dependencies(state, event):
     """Retain attempted reads without describing rolled-back writes as effects.
 
-    R9's successful observation refuses invalid operations. This separate failure
-    record is explicitly not a successful certificate and is private diagnostic
-    evidence only. The existing observer's conservative list limits still apply.
+    Both ordinary and instrumented execution must reproduce the same atomic
+    rejection. A mismatch remains unqualified. This private diagnostic record is
+    not a successful certificate; conservative collection granularity remains.
     """
-    from core_world import CoreWorld
     from r8_dependencies import code_identity
-    from r9_runtime import Trace, TracedDict, effect_paths
-    worker = CoreWorld(state=state)
-    trace = Trace()
-    worker.s = TracedDict(worker.s, trace)
+    from r9_runtime import observe_rejection
     try:
-        worker.apply(event['id'], event['at'], event['op'], **copy.deepcopy(event['params']))
+        return observe_rejection(state, event)
     except (InvalidEvent, AssertionError, KeyError, TypeError, ValueError):
+        # An observer mismatch is not evidence that ordinary execution rejects.
+        # Keep the public action unavailable without manufacturing qualification.
         pass
     return {'event': copy.deepcopy(event), 'snapshot': digest(state), 'code': code_identity(),
-            'status': 'rejected_no_effects', 'successful_certificate': False,
-            'reads': effect_paths(trace.reads), 'writes': [],
-            'attempted_writes': effect_paths(trace.writes),
-            'validation_reads': sorted(trace.validation_reads)}
+            'status': 'observation_refused', 'successful_certificate': False,
+            'reason_code': 'rejection_not_qualified', 'reads': [], 'writes': [],
+            'attempted_writes': [], 'validation_reads': []}
 
 
 def execute_equipment_action(world, event_id, actor_id, action, instruction_ref):

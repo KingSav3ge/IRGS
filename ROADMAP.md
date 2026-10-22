@@ -43,3 +43,5 @@ Completion evidence: longer synthetic simulations survive stop/resume and compet
 Execute the relevant C2 acceptance cases as adapters become available, then run the combined cycle and sustained cross-engine checks. Record executed cases separately from proposed inventory, inherited evidence, numerical calibration and deployment. Advertise a capability as available only after its implementation and supporting evidence exist.
 
 The website/app follows these engine capabilities while retaining the preferred visual design, reviewed character creation, dated availability, recoverable campaign Trash and stable request recovery. Co-Op remains deferred. No historical future occurs merely because a reference timeline contains it.
+
+Rise foundation 1 supplies a selected fictional settlement slice, including finite household provision, shelter work, bounded delegation, neighbor repair and actual migration. These share the Core world and do not complete the general institutional cycle or the eight starting families. See [Rise status and receiving contracts](engine/design/rise/README.md).

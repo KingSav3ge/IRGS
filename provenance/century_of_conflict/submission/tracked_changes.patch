@@ -1,0 +1,693 @@
+diff --git a/IRGS_3_3/data/hyw_entry_catalogue.json b/IRGS_3_3/data/hyw_entry_catalogue.json
+index 52dca24..6572673 100644
+--- a/IRGS_3_3/data/hyw_entry_catalogue.json
++++ b/IRGS_3_3/data/hyw_entry_catalogue.json
+@@ -1,62 +1,575 @@
+-{
+-  "schema_version": 1,
+-  "id": "hundred-years-war",
+-  "title": "The Hundred Years’ War",
+-  "period": "1337–1453",
+-  "version": "0.1",
+-  "profile_id": "military",
+-  "genre_id": "military",
+-  "library_ids": ["shared", "military"],
+-  "status": "Proposed catalogue with one developed historical opening",
+-  "source": "User-supplied campaign entry-point catalogue, 18 October 2026",
+-  "knowledge_scope": "scenario_selection_reference",
+-  "requested_catalogue_count": 35,
+-  "actual_catalogue_count": 37,
+-  "count_note": "The supplied tables contain 12 Edwardian, 14 Caroline/interwar and 11 Lancastrian entries: 37 unique dates. All supplied entries are retained.",
+-  "implementation_rule": "Each developed entry is a dated starting-state reference. Later events depend on simulation and player choices. Historical battles, alliances, accessions, deaths and the end of the war are never scheduled merely because they occurred in recorded history.",
+-  "featured_years": [1337, 1360, 1369, 1389, 1415, 1422, 1435, 1444, 1449, 1453],
+-  "periods": [
+-    {"id": "edwardian", "name": "Edwardian War", "range": "1337–1360"},
+-    {"id": "caroline", "name": "Caroline War and interwar period", "range": "1360–1415"},
+-    {"id": "lancastrian", "name": "Lancastrian War", "range": "1415–1453"}
+-  ],
+-  "entries": [
+-    {"id":"hyw-1337","year":1337,"title":"The War Begins","description":"Edward III of England and Philip VI of France enter open conflict over French territories and royal authority.","type":"War begins","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1340","year":1340,"title":"The Flemish Alliance","description":"Edward III claims the French crown, campaigns with Flemish support, and concludes the Truce of Espléchin in September.","type":"Alliance / Truce","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1341","year":1341,"title":"The Breton Succession","description":"Brittany splits between rival claimants supported by England and France.","type":"Regional war","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1343","year":1343,"title":"The Truce of Malestroit","description":"A negotiated suspension of Anglo-French hostilities amid continuing regional tensions.","type":"Truce","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1345","year":1345,"title":"The War Rekindled","description":"Major English campaigns resume following the expiry of the truce.","type":"War resumes","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1346","year":1346,"title":"Scotland Enters the Campaign","description":"David II invades England in support of France; Edward III campaigns in France.","type":"Allied offensive","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1347","year":1347,"title":"The Truce of Calais","description":"Calais falls to England and a new Anglo-French truce begins.","type":"Truce","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1355","year":1355,"title":"The Black Prince’s Campaign","description":"Large-scale English offensives resume in southern France.","type":"War escalates","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1356","year":1356,"title":"The Captive King","description":"John II of France is captured at Poitiers, creating a French succession and government crisis.","type":"Turning point","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1357","year":1357,"title":"The Truces of Bordeaux and Berwick","description":"Anglo-French and Anglo-Scottish truces establish separate diplomatic settlements.","type":"Truces","period_id":"edwardian","status":"proposed","review_note":"Exact diplomatic instruments and the ransom/peace character of the Berwick settlement require dated source review before activation."},
+-    {"id":"hyw-1359","year":1359,"title":"Edward’s Final Edwardian Offensive","description":"Failed peace negotiations lead to a major invasion of France.","type":"War escalates","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1360","year":1360,"title":"The Peace of Brétigny","description":"England and France agree to a major territorial settlement.","type":"Major peace","period_id":"edwardian","status":"proposed"},
+-    {"id":"hyw-1364","year":1364,"title":"The Breton Settlement","description":"The Battle of Auray resolves the military contest over Brittany’s succession; the 1365 treaty formalizes its settlement.","type":"Regional resolution","period_id":"caroline","status":"proposed","review_note":"A 1364 snapshot must not pre-apply the 1365 treaty."},
+-    {"id":"hyw-1366","year":1366,"title":"The Castilian Civil War","description":"France and England support competing claimants for the Castilian throne.","type":"New theatre","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1369","year":1369,"title":"The Caroline War","description":"Charles V resumes major Anglo-French hostilities; the victorious Trastámara dynasty becomes an important French ally.","type":"War resumes","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1372","year":1372,"title":"The Castilian Intervention","description":"Castilian naval power helps France defeat England at La Rochelle.","type":"Allied offensive","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1373","year":1373,"title":"The Portuguese Connection","description":"Portugal establishes a formal alliance with England while pursuing its own conflict with Castile.","type":"Alliance","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1375","year":1375,"title":"The Truce of Bruges","description":"Anglo-French hostilities are suspended after extensive French territorial recovery.","type":"Truce","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1377","year":1377,"title":"The War Resumes","description":"The truce expires; Edward III dies and Richard II inherits England.","type":"War resumes","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1385","year":1385,"title":"The Scottish and Portuguese Fronts","description":"French forces assist Scotland against England; Portugal defeats Castile at Aljubarrota.","type":"Allied offensives","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1389","year":1389,"title":"The Truce of Leulinghem","description":"England, France, and their allies enter a prolonged truce.","type":"Major truce","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1396","year":1396,"title":"The Great Diplomatic Settlement","description":"Anglo-French marriage diplomacy reinforces the long truce.","type":"Truce extended","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1399","year":1399,"title":"The Lancastrian Accession","description":"Henry IV takes the English throne amid deteriorating Anglo-French relations.","type":"Dynastic change","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1400","year":1400,"title":"The Welsh Rebellion","description":"Owain Glyndŵr challenges English rule; France subsequently supports the revolt.","type":"Regional war","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1403","year":1403,"title":"French Intervention in Wales","description":"Anglo-French hostility continues through limited operations despite the wider truce arrangements.","type":"Limited conflict","period_id":"caroline","status":"proposed","review_note":"The supplied title is retained as a proposal. Distinguish 1403 activity from the 1404 alliance and the major French expedition of 1405 before activating a snapshot."},
+-    {"id":"hyw-1411","year":1411,"title":"England and the French Civil War","description":"English forces intervene in France’s Armagnac–Burgundian struggle.","type":"Factional conflict","period_id":"caroline","status":"proposed"},
+-    {"id":"hyw-1415","year":1415,"title":"The Lancastrian Invasion","source_title":"The Return of the English","description":"Henry V prepares to take his expedition across the Channel. Begin before departure; the campaign’s course and outcomes remain open.","source_description":"Henry V invades France; the campaign culminates at Agincourt.","type":"Major war resumes","period_id":"lancastrian","status":"developed_historical_setup","snapshot_file":"hyw_1415_opening.json"},
+-    {"id":"hyw-1417","year":1417,"title":"The Conquest of Normandy","description":"Henry V launches a sustained campaign to establish English control over Normandy.","type":"Major offensive","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1419","year":1419,"title":"The Burgundian Alliance","description":"The assassination of John the Fearless helps drive Burgundy into an alliance with England.","type":"Alliance shift","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1420","year":1420,"title":"The Treaty of Troyes","description":"Henry V is recognized by the treaty as Charles VI’s successor, but the Dauphin’s supporters continue resisting.","type":"Dynastic settlement","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1422","year":1422,"title":"The Rival Monarchies","description":"Henry V and Charles VI die; the infant Henry VI and Charles VII become rival claimants.","type":"Dynastic transition","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1429","year":1429,"title":"The French Resurgence","description":"The relief of Orléans and the coronation of Charles VII transform French military and political prospects.","type":"Turning point","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1435","year":1435,"title":"The Burgundian Reconciliation","description":"Burgundy abandons England and concludes the Treaty of Arras with Charles VII.","type":"Alliance shift","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1444","year":1444,"title":"The Truce of Tours","description":"England and France suspend major fighting while diplomatic negotiations continue.","type":"Major truce","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1449","year":1449,"title":"The Final War","description":"The truce breaks down; France and Brittany launch the campaign to recover Normandy.","type":"War resumes","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1450","year":1450,"title":"The Fall of English Normandy","description":"French victory at Formigny precedes the completion of Normandy’s reconquest.","type":"Turning point","period_id":"lancastrian","status":"proposed"},
+-    {"id":"hyw-1453","year":1453,"title":"The Fall of Bordeaux","description":"France recaptures Bordeaux following the Battle of Castillon; the Hundred Years’ War effectively ends.","type":"War ends","period_id":"lancastrian","status":"proposed","review_note":"The historical label never imposes a campaign end date or prevents later simulation."}
+-  ]
+-}
++{
++  "schema_version": 1,
++  "id": "hundred-years-war",
++  "title": "Century of Conflict: The Hundred-Years’ War",
++  "period": "1337–1453",
++  "version": "1.0",
++  "profile_id": "military",
++  "genre_id": "military",
++  "library_ids": [
++    "shared",
++    "military"
++  ],
++  "status": "37 sourced scoped starting references with optional bounded local play",
++  "source": "User-supplied campaign entry-point catalogue, 18 October 2026",
++  "knowledge_scope": "scenario_selection_reference",
++  "requested_catalogue_count": 35,
++  "actual_catalogue_count": 37,
++  "count_note": "The supplied tables contain 12 Edwardian, 14 Caroline/interwar and 11 Lancastrian entries: 37 unique dates. All supplied entries are retained.",
++  "implementation_rule": "Each developed entry is a dated starting-state reference. Later events depend on simulation and player choices. Historical battles, alliances, accessions, deaths and the end of the war are never scheduled merely because they occurred in recorded history.",
++  "featured_years": [
++    1337,
++    1360,
++    1369,
++    1389,
++    1415,
++    1422,
++    1435,
++    1444,
++    1449,
++    1453
++  ],
++  "periods": [
++    {
++      "id": "edwardian",
++      "name": "Edwardian War",
++      "range": "1337–1360"
++    },
++    {
++      "id": "caroline",
++      "name": "Caroline War and interwar period",
++      "range": "1360–1415"
++    },
++    {
++      "id": "lancastrian",
++      "name": "Lancastrian War",
++      "range": "1415–1453"
++    }
++  ],
++  "entries": [
++    {
++      "id": "hyw-1337",
++      "year": 1337,
++      "title": "The War Begins",
++      "description": "Edward III and Philip VI are in open conflict over Aquitaine and contested royal rights.",
++      "type": "War begins",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The War Begins",
++      "source_description": "Edward III of England and Philip VI of France enter open conflict over French territories and royal authority.",
++      "snapshot_file": "hyw_1337_opening.json",
++      "opening_date": "1337-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1340",
++      "year": 1340,
++      "title": "The Flemish Alliance",
++      "description": "Sluys and the unsuccessful siege of Tournai have preceded the September truce at Esplechin.",
++      "type": "Alliance / Truce",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Flemish Alliance",
++      "source_description": "Edward III claims the French crown, campaigns with Flemish support, and concludes the Truce of Espléchin in September.",
++      "snapshot_file": "hyw_1340_opening.json",
++      "opening_date": "1340-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1341",
++      "year": 1341,
++      "title": "The Breton Succession",
++      "description": "The death of Brittany's duke has opened competing Montfort and Penthièvre–Blois claims; the older John of Montfort has been captured.",
++      "type": "Regional war",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Breton Succession",
++      "source_description": "Brittany splits between rival claimants supported by England and France.",
++      "snapshot_file": "hyw_1341_opening.json",
++      "opening_date": "1341-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1343",
++      "year": 1343,
++      "title": "The Truce of Malestroit",
++      "description": "The Malestroit truce has interrupted royal campaigning without settling the Breton succession.",
++      "type": "Truce",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Truce of Malestroit",
++      "source_description": "A negotiated suspension of Anglo-French hostilities amid continuing regional tensions.",
++      "snapshot_file": "hyw_1343_opening.json",
++      "opening_date": "1343-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1345",
++      "year": 1345,
++      "title": "The War Rekindled",
++      "description": "English operations in Gascony have resumed; Henry of Grosmont's campaign has altered the military situation.",
++      "type": "War resumes",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The War Rekindled",
++      "source_description": "Major English campaigns resume following the expiry of the truce.",
++      "snapshot_file": "hyw_1345_opening.json",
++      "opening_date": "1345-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1346",
++      "year": 1346,
++      "title": "Scotland Enters the Campaign",
++      "description": "Crécy and Neville's Cross have already occurred. David II is a captive; the siege of Calais continues.",
++      "type": "Allied offensive",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "Scotland Enters the Campaign",
++      "source_description": "David II invades England in support of France; Edward III campaigns in France.",
++      "snapshot_file": "hyw_1346_opening.json",
++      "opening_date": "1346-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1347",
++      "year": 1347,
++      "title": "The Truce of Calais",
++      "description": "Calais has surrendered and a renewed truce follows; occupation and settlement now require administration.",
++      "type": "Truce",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Truce of Calais",
++      "source_description": "Calais falls to England and a new Anglo-French truce begins.",
++      "snapshot_file": "hyw_1347_opening.json",
++      "opening_date": "1347-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1355",
++      "year": 1355,
++      "title": "The Black Prince’s Campaign",
++      "description": "Edward of Woodstock has conducted a destructive raid from Gascony into southern France.",
++      "type": "War escalates",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Black Prince’s Campaign",
++      "source_description": "Large-scale English offensives resume in southern France.",
++      "snapshot_file": "hyw_1355_opening.json",
++      "opening_date": "1355-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1356",
++      "year": 1356,
++      "title": "The Captive King",
++      "description": "John II has been captured at Poitiers. The dauphin Charles must conduct government amid a severe crisis.",
++      "type": "Turning point",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Captive King",
++      "source_description": "John II of France is captured at Poitiers, creating a French succession and government crisis.",
++      "snapshot_file": "hyw_1356_opening.json",
++      "opening_date": "1356-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1357",
++      "year": 1357,
++      "title": "The Truces of Bordeaux and Berwick",
++      "description": "John II remains captive while French government and the Parisian reform movement contest authority.",
++      "type": "Truces",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "review_note": "Exact diplomatic instruments and the ransom/peace character of the Berwick settlement require dated source review before activation.",
++      "source_title": "The Truces of Bordeaux and Berwick",
++      "source_description": "Anglo-French and Anglo-Scottish truces establish separate diplomatic settlements.",
++      "snapshot_file": "hyw_1357_opening.json",
++      "opening_date": "1357-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1359",
++      "year": 1359,
++      "title": "Edward’s Final Edwardian Offensive",
++      "description": "Rejected peace terms have been followed by Edward III's new expedition toward Reims.",
++      "type": "War escalates",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "Edward’s Final Edwardian Offensive",
++      "source_description": "Failed peace negotiations lead to a major invasion of France.",
++      "snapshot_file": "hyw_1359_opening.json",
++      "opening_date": "1359-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1360",
++      "year": 1360,
++      "title": "The Peace of Brétigny",
++      "description": "Brétigny and the subsequent Calais settlement have established terms for peace and John II's release.",
++      "type": "Major peace",
++      "period_id": "edwardian",
++      "status": "developed_historical_setup",
++      "source_title": "The Peace of Brétigny",
++      "source_description": "England and France agree to a major territorial settlement.",
++      "snapshot_file": "hyw_1360_opening.json",
++      "opening_date": "1360-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1364",
++      "year": 1364,
++      "title": "The Breton Settlement",
++      "description": "Charles V is king of France. At Auray Charles of Blois has died and the younger John of Montfort has prevailed.",
++      "type": "Regional resolution",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "review_note": "A 1364 snapshot must not pre-apply the 1365 treaty.",
++      "source_title": "The Breton Settlement",
++      "source_description": "The Battle of Auray resolves the military contest over Brittany’s succession; the 1365 treaty formalizes its settlement.",
++      "snapshot_file": "hyw_1364_opening.json",
++      "opening_date": "1364-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1366",
++      "year": 1366,
++      "title": "The Castilian Civil War",
++      "description": "Henry of Trastámara's intervention has displaced Pedro from much of Castile; the crown remains contested.",
++      "type": "New theatre",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Castilian Civil War",
++      "source_description": "France and England support competing claimants for the Castilian throne.",
++      "snapshot_file": "hyw_1366_opening.json",
++      "opening_date": "1366-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1369",
++      "year": 1369,
++      "title": "The Caroline War",
++      "description": "Charles V has renewed the Anglo-French war; Henry of Trastámara has defeated Pedro in Castile.",
++      "type": "War resumes",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Caroline War",
++      "source_description": "Charles V resumes major Anglo-French hostilities; the victorious Trastámara dynasty becomes an important French ally.",
++      "snapshot_file": "hyw_1369_opening.json",
++      "opening_date": "1369-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1372",
++      "year": 1372,
++      "title": "The Castilian Intervention",
++      "description": "Castilian naval success at La Rochelle has damaged the English position; the town has returned to French authority.",
++      "type": "Allied offensive",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Castilian Intervention",
++      "source_description": "Castilian naval power helps France defeat England at La Rochelle.",
++      "snapshot_file": "hyw_1372_opening.json",
++      "opening_date": "1372-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1373",
++      "year": 1373,
++      "title": "The Portuguese Connection",
++      "description": "John of Gaunt's long expedition has crossed France without resolving the war.",
++      "type": "Alliance",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Portuguese Connection",
++      "source_description": "Portugal establishes a formal alliance with England while pursuing its own conflict with Castile.",
++      "snapshot_file": "hyw_1373_opening.json",
++      "opening_date": "1373-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1375",
++      "year": 1375,
++      "title": "The Truce of Bruges",
++      "description": "French territorial recovery has narrowed England's position and a truce has been negotiated at Bruges.",
++      "type": "Truce",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Truce of Bruges",
++      "source_description": "Anglo-French hostilities are suspended after extensive French territorial recovery.",
++      "snapshot_file": "hyw_1375_opening.json",
++      "opening_date": "1375-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1377",
++      "year": 1377,
++      "title": "The War Resumes",
++      "description": "Edward III has died and Richard II is king; renewed fighting and coastal attacks complicate the transition.",
++      "type": "War resumes",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The War Resumes",
++      "source_description": "The truce expires; Edward III dies and Richard II inherits England.",
++      "snapshot_file": "hyw_1377_opening.json",
++      "opening_date": "1377-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1385",
++      "year": 1385,
++      "title": "The Scottish and Portuguese Fronts",
++      "description": "A Franco-Scottish expedition has operated against England; Portugal's victory at Aljubarrota has strengthened John I.",
++      "type": "Allied offensives",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Scottish and Portuguese Fronts",
++      "source_description": "French forces assist Scotland against England; Portugal defeats Castile at Aljubarrota.",
++      "snapshot_file": "hyw_1385_opening.json",
++      "opening_date": "1385-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1389",
++      "year": 1389,
++      "title": "The Truce of Leulinghem",
++      "description": "Richard II and Charles VI remain the reigning kings as the Leulinghem truce opens a longer diplomatic interval.",
++      "type": "Major truce",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Truce of Leulinghem",
++      "source_description": "England, France, and their allies enter a prolonged truce.",
++      "snapshot_file": "hyw_1389_opening.json",
++      "opening_date": "1389-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1396",
++      "year": 1396,
++      "title": "The Great Diplomatic Settlement",
++      "description": "Richard II's marriage diplomacy with Isabella of France has reinforced the long truce.",
++      "type": "Truce extended",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Great Diplomatic Settlement",
++      "source_description": "Anglo-French marriage diplomacy reinforces the long truce.",
++      "snapshot_file": "hyw_1396_opening.json",
++      "opening_date": "1396-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1399",
++      "year": 1399,
++      "title": "The Lancastrian Accession",
++      "description": "Henry IV has deposed Richard II and taken the English throne; Richard remains a living captive at this cutoff.",
++      "type": "Dynastic change",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Lancastrian Accession",
++      "source_description": "Henry IV takes the English throne amid deteriorating Anglo-French relations.",
++      "snapshot_file": "hyw_1399_opening.json",
++      "opening_date": "1399-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1400",
++      "year": 1400,
++      "title": "The Welsh Rebellion",
++      "description": "Owain Glyndŵr's revolt challenges English rule in Wales while Henry IV seeks to secure his kingship.",
++      "type": "Regional war",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "The Welsh Rebellion",
++      "source_description": "Owain Glyndŵr challenges English rule; France subsequently supports the revolt.",
++      "snapshot_file": "hyw_1400_opening.json",
++      "opening_date": "1400-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1403",
++      "year": 1403,
++      "title": "The Welsh War and Channel Conflict",
++      "description": "Henry IV has defeated the Percy rising at Shrewsbury; the Welsh conflict and maritime hostility continue.",
++      "type": "Limited conflict",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "review_note": "The supplied title is retained as a proposal. Distinguish 1403 activity from the 1404 alliance and the major French expedition of 1405 before activating a snapshot.",
++      "source_title": "French Intervention in Wales",
++      "source_description": "Anglo-French hostility continues through limited operations despite the wider truce arrangements.",
++      "snapshot_file": "hyw_1403_opening.json",
++      "opening_date": "1403-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1411",
++      "year": 1411,
++      "title": "England and the French Civil War",
++      "description": "English forces have intervened in support of Burgundian interests in the French civil struggle.",
++      "type": "Factional conflict",
++      "period_id": "caroline",
++      "status": "developed_historical_setup",
++      "source_title": "England and the French Civil War",
++      "source_description": "English forces intervene in France’s Armagnac–Burgundian struggle.",
++      "snapshot_file": "hyw_1411_opening.json",
++      "opening_date": "1411-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1415",
++      "year": 1415,
++      "title": "The Lancastrian Invasion",
++      "source_title": "The Return of the English",
++      "description": "Henry V prepares to take his expedition across the Channel. Begin before departure; the campaign’s course and outcomes remain open.",
++      "source_description": "Henry V invades France; the campaign culminates at Agincourt.",
++      "type": "Major war resumes",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "snapshot_file": "hyw_1415_opening.json",
++      "opening_date": "1415-08-11",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1417",
++      "year": 1417,
++      "title": "The Conquest of Normandy",
++      "description": "Henry V's renewed expedition has begun a sustained conquest in Normandy; Caen has fallen.",
++      "type": "Major offensive",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Conquest of Normandy",
++      "source_description": "Henry V launches a sustained campaign to establish English control over Normandy.",
++      "snapshot_file": "hyw_1417_opening.json",
++      "opening_date": "1417-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1419",
++      "year": 1419,
++      "title": "The Burgundian Alliance",
++      "description": "Rouen has surrendered and John the Fearless has been killed at Montereau; Philip the Good succeeds in Burgundy.",
++      "type": "Alliance shift",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Burgundian Alliance",
++      "source_description": "The assassination of John the Fearless helps drive Burgundy into an alliance with England.",
++      "snapshot_file": "hyw_1419_opening.json",
++      "opening_date": "1419-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1420",
++      "year": 1420,
++      "title": "The Treaty of Troyes",
++      "description": "The Treaty of Troyes designates Henry V as heir and regent while Charles VI remains king; opposition continues.",
++      "type": "Dynastic settlement",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Treaty of Troyes",
++      "source_description": "Henry V is recognized by the treaty as Charles VI’s successor, but the Dauphin’s supporters continue resisting.",
++      "snapshot_file": "hyw_1420_opening.json",
++      "opening_date": "1420-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1422",
++      "year": 1422,
++      "title": "The Rival Monarchies",
++      "description": "Henry V and Charles VI have died. Henry VI is an infant king, while Charles VII maintains a rival French kingship.",
++      "type": "Dynastic transition",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Rival Monarchies",
++      "source_description": "Henry V and Charles VI die; the infant Henry VI and Charles VII become rival claimants.",
++      "snapshot_file": "hyw_1422_opening.json",
++      "opening_date": "1422-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1429",
++      "year": 1429,
++      "title": "The French Resurgence",
++      "description": "Orléans has been relieved and Charles VII crowned at Reims; the attempted recovery of Paris has not succeeded.",
++      "type": "Turning point",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The French Resurgence",
++      "source_description": "The relief of Orléans and the coronation of Charles VII transform French military and political prospects.",
++      "snapshot_file": "hyw_1429_opening.json",
++      "opening_date": "1429-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1435",
++      "year": 1435,
++      "title": "The Burgundian Reconciliation",
++      "description": "The Arras settlement has reconciled Philip the Good with Charles VII; Bedford has died.",
++      "type": "Alliance shift",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Burgundian Reconciliation",
++      "source_description": "Burgundy abandons England and concludes the Treaty of Arras with Charles VII.",
++      "snapshot_file": "hyw_1435_opening.json",
++      "opening_date": "1435-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1444",
++      "year": 1444,
++      "title": "The Truce of Tours",
++      "description": "The Tours truce has interrupted major Anglo-French campaigning and marriage negotiations concern Margaret of Anjou.",
++      "type": "Major truce",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Truce of Tours",
++      "source_description": "England and France suspend major fighting while diplomatic negotiations continue.",
++      "snapshot_file": "hyw_1444_opening.json",
++      "opening_date": "1444-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1449",
++      "year": 1449,
++      "title": "The Final War",
++      "description": "The seizure of Fougères has helped break the truce; French and Breton operations have recovered Rouen.",
++      "type": "War resumes",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Final War",
++      "source_description": "The truce breaks down; France and Brittany launch the campaign to recover Normandy.",
++      "snapshot_file": "hyw_1449_opening.json",
++      "opening_date": "1449-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1450",
++      "year": 1450,
++      "title": "The Fall of English Normandy",
++      "description": "Formigny and the surrender of Cherbourg have completed the collapse of English rule in Normandy.",
++      "type": "Turning point",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "source_title": "The Fall of English Normandy",
++      "source_description": "French victory at Formigny precedes the completion of Normandy’s reconquest.",
++      "snapshot_file": "hyw_1450_opening.json",
++      "opening_date": "1450-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    },
++    {
++      "id": "hyw-1453",
++      "year": 1453,
++      "title": "The Fall of Bordeaux",
++      "description": "Castillon and the recovery of Bordeaux have ended this historical sequence of major campaigning; Talbot is dead.",
++      "type": "War ends",
++      "period_id": "lancastrian",
++      "status": "developed_historical_setup",
++      "review_note": "The historical label never imposes a campaign end date or prevents later simulation.",
++      "source_title": "The Fall of Bordeaux",
++      "source_description": "France recaptures Bordeaux following the Battle of Castillon; the Hundred Years’ War effectively ends.",
++      "snapshot_file": "hyw_1453_opening.json",
++      "opening_date": "1453-12-15",
++      "readiness_scope": "sourced_opening_and_optional_bounded_fictional_scene"
++    }
++  ],
++  "default_entry_id": "hyw-1337",
++  "cutoff_policy": "1415 preserves 11 August before departure; other entries use an explicitly authored 15 December checkpoint after the described developments. No opening hour is invented."
++}
+diff --git a/IRGS_3_3/runtime/historical_campaigns.py b/IRGS_3_3/runtime/historical_campaigns.py
+index 333b417..0344f1f 100644
+--- a/IRGS_3_3/runtime/historical_campaigns.py
++++ b/IRGS_3_3/runtime/historical_campaigns.py
+@@ -7,11 +7,16 @@ The causal clock remains distinct from the snapshot's dated opening boundary.
+ import copy
+ import hashlib
+ import json
++import re
+ from pathlib import Path
++from temporal_registry import julian_day, validate_registry
+ 
+ ROOT = Path(__file__).resolve().parent.parent
+ SCENARIO_ID = 'hundred-years-war'
+-SNAPSHOTS = {'hyw-1415': 'data/hyw_1415_opening.json'}
++SNAPSHOTS = {f'hyw-{year}': f'data/hyw_{year}_opening.json' for year in (
++    1337,1340,1341,1343,1345,1346,1347,1355,1356,1357,1359,1360,
++    1364,1366,1369,1372,1373,1375,1377,1385,1389,1396,1399,1400,
++    1403,1411,1415,1417,1419,1420,1422,1429,1435,1444,1449,1450,1453)}
+ 
+ 
+ def _text(value):
+@@ -77,11 +82,15 @@ def _validate_snapshot(snapshot, entry):
+             or type(snapshot.get('revision')) is not int or snapshot['revision'] < 1):
+         raise ValueError('Historical snapshot identity, scope, revision or readiness is invalid')
+     opening = snapshot['opening']
+-    if (entry['year'] != 1415 or opening.get('date') != '1415-08-11'
++    date = opening.get('date')
++    expected = entry.get('opening_date', '1415-08-11' if entry['id'] == 'hyw-1415' else None)
++    if (not isinstance(date, str) or not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}', date)
++            or int(date[:4]) != entry['year'] or date != expected
+             or opening.get('calendar') != 'julian' or opening.get('precision') != 'day'
+             or opening.get('time') is not None or not _text(opening.get('boundary'))
+             or not _text(opening.get('label'))):
+-        raise ValueError('Historical snapshot requires the selected 11 August 1415 Julian opening cutoff')
++        raise ValueError('Historical snapshot requires its exact selected Julian opening cutoff')
++    ordinal = julian_day(*map(int, date.split('-')))
+     sources = snapshot['sources']
+     if not isinstance(sources, list) or not sources:
+         raise ValueError('Historical snapshot requires source provenance')
+@@ -113,6 +122,10 @@ def _validate_snapshot(snapshot, entry):
+             _source_ids(fact, source_ids)
+     if not isinstance(snapshot.get('unknowns'), list) or not isinstance(snapshot.get('simulation_rules'), list):
+         raise ValueError('Historical opening must disclose unknowns and simulation limits')
++    registry = snapshot.get('entity_registry_template')
++    if not isinstance(registry, dict) or registry.get('as_of') != ordinal or registry.get('axis') != {'id':'julian-day','unit':'day','calendar':'julian'}:
++        raise ValueError('Historical registry must match the exact opening coordinate')
++    validate_registry(registry, {actor['id']: actor for actor in actors})
+ 
+ 
+ def historical_entry(entry_id):

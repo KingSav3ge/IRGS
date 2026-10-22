@@ -40,3 +40,7 @@ After intentional source edits, update affected `IRGS_3_3/release.json` Core/hos
 Use the unified package and smoke helpers. The inherited release builder and packager depend on historical save backups and earlier validation records; preserve them without presenting them as the current clean development workflow.
 
 AST is archived campaign content and a named 1415 starting reference, not a separately maintained engine. Reusable mechanics can support Core or other genres. The horse's canonical name is Abel. Keep Co-Op deferred while developing the Solo experience.
+
+## Core routines and lean source
+
+Genre mechanics are called Core routines, not separately maintained player engines. Keep technical routine/library configuration in explicit Creator mode. Players select campaigns and reviewed starts. Preserve compatibility event spellings and actual authority/ownership checks when consolidating implementation. Do not reintroduce superseded root build bundles or duplicate verification extractions; use current canonical source, unified packaging and referenced source evidence.
