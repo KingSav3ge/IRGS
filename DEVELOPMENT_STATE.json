@@ -38,9 +38,9 @@
   "C2_acceptance_execution": "SCOPED_IMPLEMENTATION_EVIDENCE_SEPARATE_FROM_IMMUTABLE_INVENTORY",
   "next_milestone": "Extend named collection, rejection and cross-engine dependency cases; broaden the selected Rise contracts without migrating existing saves.",
   "verified_on": "2026-10-22",
-  "validation_record": "DEPENDENCY_REJECTIONS_VALIDATION.json",
+  "validation_record": "HISTORICAL_REFERENCE_VALIDATION.json",
   "continuation": {
-    "id": "core-consolidation-1",
+    "id": "historical-reference-1",
     "integration_base": "bf6cf48b1c4f76589fb5854811f072e4bb9fda30",
     "completed_items": [
       "DEV-01",
@@ -56,7 +56,7 @@
     "guaranteed_success_menu": false,
     "single_host_single_writer_qualification": true,
     "execution_ledger": "engine/ACCEPTANCE_EXECUTION.md",
-    "previous_increment": "rise-foundation-1",
+    "previous_increment": "core-consolidation-1",
     "operation_coverage_register": "engine/qualification/operation_register.json",
     "operation_spellings": 85,
     "backend_operation_contracts": 170,
@@ -145,6 +145,19 @@
     "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
     "all_branches_certified": false,
     "user_saves_opened": false,
-    "local_rerun_claimed": false
+    "local_rerun_claimed": false,
+    "scope_note": "Prior independent confirmation applies to its named candidate 59f2434. This new increment requires a separate candidate-matched report."
+  },
+  "historical_reference_library": {
+    "id": "historical-grand-archive",
+    "edition": "1.1",
+    "provider": "IRGS_3_3/runtime/historical_archive.py",
+    "interface": "Creator workspace / Historical Reference Library",
+    "source_payload_included": false,
+    "attachment": "explicit_local_source_zip",
+    "collections": 10,
+    "campaign_effects": false,
+    "adoption_implemented": false,
+    "record": "engine/HISTORICAL_REFERENCE_INTEGRATION.md"
   }
 }

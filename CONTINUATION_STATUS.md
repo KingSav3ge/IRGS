@@ -59,3 +59,7 @@ Existing genre receiving operations now execute as Core methods. Players see cam
 ## Independent environment confirmation
 
 2026-10-22: The independent cloud QA report tests published candidate `59f2434` and passes all eight independent cases plus its listed source, freshness, runtime, Web, interface and tooling checks. IRGS-QA-001 and IRGS-QA-002 are not reproduced. Platform and external-fixture skips remain skips. See [QA_RESPONSE.md](QA_RESPONSE.md) for preserved reports and counts. This is confirmation of the existing implementation; broader DEV-06–DEV-08 and C2 certification remain open.
+
+## Historical Grand Archive reference library
+
+The historical-reference-1 increment attaches the separately supplied Grand Archive 1.1 as a read-only Creator library. Ten structured collections support search, paging, original source records, citations, uncertainty and provenance. The archive stays in its supplied source location; local registration is excluded from Git and packages. No historical start, continuing campaign, player knowledge or resource stock is initialized from these readings. See [integration](engine/HISTORICAL_REFERENCE_INTEGRATION.md) and HISTORICAL_REFERENCE_VALIDATION.json for the executed scope. The broader dependency and C2 milestones remain open.

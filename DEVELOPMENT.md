@@ -84,6 +84,10 @@ python -B tools/build_operation_register.py --output engine/qualification/operat
 
 This can take several minutes because it observes synthetic runtime test executions. The external historical-save fixture is skipped by policy, even if present. Existing campaigns and inherited certification files are not inputs. Actual apply calls and detached probes are recorded separately. A listed handler, a named test or a successful observation does not establish complete branch coverage or player availability.
 
+## Historical reference library
+
+The local owner can attach an existing Historical Grand Archive 1.1 ZIP with `python -B tools/register_historical_archive.py "path/to/archive.zip"`, then use Creator workspace → Historical Reference Library. The normal launcher remembers the local attachment. Search and citations are read-only and establish no campaign facts. The original archive and local attachment path are excluded from source packages. Each cloud/local installation needs its own accessible attachment. See [integration and limits](engine/HISTORICAL_REFERENCE_INTEGRATION.md).
+
 ## Rise settlement foundation
 
 Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).

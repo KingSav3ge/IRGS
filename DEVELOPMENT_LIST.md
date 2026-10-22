@@ -102,3 +102,7 @@ Use [ROADMAP.md](ROADMAP.md) for the broader sequence, [DEVELOPMENT.md](DEVELOPM
 ## Core consolidation and rejected dependencies
 
 The 2026-10-22 increment advances named DEV-07–DEV-08 paths, keeps verified rejected-probe reads with unresolved requests, consolidates domain routines inside Core and restricts technical configuration to Creator mode. It also corrects independent environment findings IRGS-QA-001 and IRGS-QA-002. The broader milestones remain open; see `engine/CORE_CONSOLIDATION.md`, `engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md` and `DEPENDENCY_REJECTIONS_VALIDATION.json`.
+
+## Completed reference integration — historical-reference-1
+
+Attached the supplied Grand Archive 1.1 through an external, read-only source provider and a Creator-only search/detail interface. Preserved record identity, source qualifications, uncertainty and rights metadata; local attachment configuration and mixed-rights payload remain outside published source. See HISTORICAL_REFERENCE_VALIDATION.json. This completes reference browsing only; adopting sourced starting facts, resolving historical identities and wider C2 certification remain separate work.

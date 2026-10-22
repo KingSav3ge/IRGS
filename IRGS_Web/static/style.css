@@ -210,4 +210,7 @@ body[data-workspace=story] .workspace-heading,body[data-workspace=home] .workspa
 .rise-actions button{text-align:left;white-space:normal;padding:16px;overflow-wrap:anywhere}
 .rise-actions strong,.rise-actions small{display:block}.rise-actions small{font-weight:normal;line-height:1.5;margin-top:7px;opacity:.75}
 .rise-story .panel{margin-bottom:20px}.rise-story .feed-entry p{margin:8px 0}.rise-library details{margin-top:22px}
+.reference-search{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin:24px 0}
+.reference-search label{flex:1 1 220px;min-width:0}.reference-search input,.reference-search select{width:100%;max-width:100%}
+.reference-source-record{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.82em;max-width:100%}
 @media(max-width:550px){.rise-actions{grid-template-columns:1fr}.rise-facts{grid-template-columns:1fr;gap:6px}.rise-facts dd{margin-bottom:12px}}
