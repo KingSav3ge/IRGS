@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `4bf60ff3df0420801c5fa50038c0e10305c79141`
-Result: **passed** · 2026-10-23T19:45:30.747173+00:00
+Candidate: `0dacbc9a62be5e2a2f4048049eb3d7aa3d05a762`
+Result: **passed** · 2026-10-23T19:55:48.577884+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -59,10 +59,10 @@ This report is not full C2/T01–T37 certification. Skips and missing providers 
 
 ## Component identities
 
-Engine: `5ef18f7d75d8a477af06921288569220f3475f85`
+Engine: `e2d7fd3d2c3aef436fda280c45c0e4508c02618a`
 
-App: `754ad7318dc482b396367e852ade67ed923e82ac`
+App: `a6da825d4180773ee97f2b76d0808dbde79c7a69`
 
-Catalog: `f22049396795425838add515960a3e95a5e98189`
+Catalog: `0a6a754494b2b5c12f47bbd392d215ce81ebf663`
 
 This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **false**.
