@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "report_kind": "four_repository_functional_audit",
+  "status": "passed",
+  "finished_at_utc": "2026-10-23T18:23:30.271169+00:00",
+  "tested_repository_heads": {
+    "IRGS": "cde6de472fe3a7b59359d5c6cc1f572ddd14b19b",
+    "IRGS-Engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "IRGS-APP-WEB": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+    "IRGS-Catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  },
+  "all_fetched_heads_equal_local_heads": true,
+  "all_tested_worktrees_clean": true,
+  "dependency_pins_match_component_main_and_joined_selection": true,
+  "repository_object_connectivity": "passed for all four repositories; unreferenced objects are not corruption",
+  "engine": {
+    "source_integrity": "passed",
+    "kira_canon_verification": "passed",
+    "runtime": {
+      "tests_run": 527,
+      "passed": 526,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "log_sha256": "aac13b427d8274da05877e46ab808cedfbf635f0314253f0f29e9f30f33bcd3e"
+    }
+  },
+  "app": {
+    "source_and_submodule_integrity": "passed",
+    "web": {
+      "tests_run": 166,
+      "passed": 159,
+      "skipped": 7,
+      "failures": 0,
+      "errors": 0,
+      "log_sha256": "80dd29984df7adbc8d94616087e59ff22fd029087e8537e6001d352a9a3d1da4"
+    },
+    "frontend_checks_passed": 72
+  },
+  "catalog": {
+    "source_integrity": "passed",
+    "concept_records_verified": 44,
+    "tests_including_actual_engine_app_consumers": {
+      "tests_run": 55,
+      "passed": 55,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0,
+      "log_sha256": "a57a6b68ac66c330d9d94f010dc682955a89a6ab862c0a6e44ac84626a6d1649"
+    }
+  },
+  "joined": {
+    "commit": "cde6de472fe3a7b59359d5c6cc1f572ddd14b19b",
+    "regression_checks": [
+      {
+        "name": "source-integrity",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 27.2,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/source-integrity.txt"
+      },
+      {
+        "name": "evidence-freshness",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 1.28,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/evidence-freshness.txt"
+      },
+      {
+        "name": "runtime",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 97.6,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/runtime.txt",
+        "tests_run": 527,
+        "skipped": 1
+      },
+      {
+        "name": "web",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 81.36,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/web.txt",
+        "tests_run": 166,
+        "skipped": 7
+      },
+      {
+        "name": "interface",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 4.86,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/interface.txt",
+        "checks_passed": 72
+      },
+      {
+        "name": "tooling",
+        "status": "passed",
+        "exit_code": 0,
+        "duration_seconds": 21.01,
+        "log": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z/logs/tooling.txt",
+        "tests_run": 29,
+        "skipped": 0
+      }
+    ],
+    "independent_http": {
+      "tests_run": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "test": "test_concurrent_retry_has_one_commit_and_one_elapsed_span",
+          "status": "passed"
+        },
+        {
+          "test": "test_core_location_confirmation_remains_usable",
+          "status": "passed",
+          "finding_id": "IRGS-QA-002"
+        },
+        {
+          "test": "test_founding_delegation_migration_and_material_continuity",
+          "status": "passed"
+        },
+        {
+          "test": "test_freeform_is_retained_intent_with_no_automatic_elapsed_effect",
+          "status": "passed"
+        },
+        {
+          "test": "test_new_material_does_not_break_committed_campaign",
+          "status": "passed",
+          "finding_id": "IRGS-QA-001"
+        },
+        {
+          "test": "test_pause_resume_preserves_work_and_finishes_once",
+          "status": "passed"
+        },
+        {
+          "test": "test_private_state_and_hidden_permission_do_not_select_player_options",
+          "status": "passed"
+        },
+        {
+          "test": "test_results_survive_host_restart_and_trash_restore",
+          "status": "passed"
+        }
+      ]
+    },
+    "status": "passed"
+  },
+  "component_release_equivalence": {
+    "IRGS-Engine": {
+      "release_files_identical_to_joined": 335,
+      "release_manifest_identical": true,
+      "mismatches": []
+    },
+    "IRGS-APP-WEB": {
+      "release_files_identical_to_joined": 35,
+      "release_manifest_identical": true,
+      "mismatches": []
+    },
+    "IRGS-Catalog": {
+      "release_files_identical_to_joined": 140,
+      "release_manifest_identical": true,
+      "mismatches": []
+    }
+  },
+  "historical_details": {
+    "status": "passed",
+    "parts": 32,
+    "archive_bytes": 533064680,
+    "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "members_verified": 5146,
+    "delivery_bindings_verified": 5145,
+    "collections_tested": 10,
+    "creator_boundary_denials": 6,
+    "campaign_save_bytes_unchanged": true,
+    "source_parts_unchanged": true,
+    "cache_reused": true
+  },
+  "chromium": {
+    "status": "passed",
+    "collections": 10,
+    "original_record_and_citations_opened": true,
+    "retry_retains_query": true,
+    "return_to_player_hides_reference": true,
+    "reference_posts": 0,
+    "browser_page_errors": [],
+    "campaign_files_created": 0
+  },
+  "distribution": {
+    "status": "passed",
+    "archive_bytes": 577349396,
+    "archive_sha256": "2bad14918220491a8886877b61e2cf173542ace93461d6721386a1838938c3a6",
+    "extracted_files": 769,
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/rise.js",
+        "/catalogue.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "tested_source_commit": "cde6de472fe3a7b59359d5c6cc1f572ddd14b19b",
+    "includes_this_later_audit_report": false
+  },
+  "qa_monitor": {
+    "restarted": true,
+    "pid_at_review": 61865,
+    "alive_at_review": true,
+    "last_successful_poll_utc": "2026-10-23T18:22:38.183882+00:00",
+    "last_error": null
+  },
+  "environment": {
+    "python": "3.12.14",
+    "node": "24.19.0",
+    "platform": "Linux",
+    "normal_shell_sandbox_mount_fault": true,
+    "approved_fallback_execution_used": true
+  },
+  "limits": [
+    "One private historical-save test was replaced by an explicit policy skip in each Engine runtime run. No user save was opened.",
+    "Seven Windows PowerShell launcher tests were skipped on Linux in each Web suite.",
+    "Standalone and joined suites overlap; their counts must not be summed as unique coverage.",
+    "Existing operation evidence was checked for source freshness. This audit did not regenerate it or certify every branch.",
+    "The implemented bounded systems were tested; the general freeform/combat resolver and full C2 remain incomplete.",
+    "The monitor operates while this cloud environment remains running."
+  ],
+  "product_source_modified": false,
+  "user_campaigns_opened_or_migrated": false,
+  "local_artifact_directory": "/workspace/irgs-cloud/validation/repository-audit-20261023T181728Z"
+}
