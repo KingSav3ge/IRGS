@@ -1,45 +1,59 @@
 {
   "schema_version": 1,
-  "candidate_commit": null,
-  "finished_at_utc": "2026-10-23T14:39:55.691244+00:00",
+  "candidate_commit": "4bf60ff3df0420801c5fa50038c0e10305c79141",
+  "finished_at_utc": "2026-10-23T19:45:30.747173+00:00",
   "status": "passed",
-  "scope": "Fresh full runtime capture, Web/interface/tooling regressions and independent HTTP checks after the direct user-requested editorial cleanup. Exact component commits and source fingerprint identify the tested inputs.",
-  "candidate_source_root": "/workspace/IRGS",
+  "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
+  "candidate_source_root": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/candidate",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
-      "status": "passed"
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 17.91,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
-      "status": "passed"
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.27,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 132.5,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/runtime.txt",
       "tests_run": 527,
-      "passed": 526,
-      "skipped": 1,
-      "origin": "Fresh execution-derived capture after editorial maintenance."
+      "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 80.08,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/web.txt",
       "tests_run": 166,
-      "passed": 159,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 5.65,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/interface.txt",
       "checks_passed": 72
     },
     {
       "name": "tooling",
       "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 19.45,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792784413340912780/logs/tooling.txt",
       "tests_run": 29,
-      "passed": 29,
       "skipped": 0
     }
   ],
@@ -118,18 +132,15 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "candidate_kind": "working_tree_editorial_maintenance_qualified_by_exact_component_commits_and_source_fingerprint",
-  "base_joined_commit": "eba8d466b2fda04ab31c2d28445145dfeaa0ce5b",
-  "component_commits": {
-    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
-    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
-    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  "candidate_kind": "disposable_component_set_assembly",
+  "candidate_components": {
+    "engine": "5ef18f7d75d8a477af06921288569220f3475f85",
+    "app": "754ad7318dc482b396367e852ade67ed923e82ac",
+    "catalog": "f22049396795425838add515960a3e95a5e98189"
   },
-  "integrated_component_commits": {
-    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
-    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
-    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
-  },
-  "joined_source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
-  "app_dependency_pins_match": true
+  "joined_template_commit": "48efb7137f380f749bcfe40d1f05f6fa0c7d79ce",
+  "app_declared_engine_commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+  "app_declared_catalog_commit": "3e898acb2179f18a41d7967817bedf429df29d3f",
+  "pin_matches_candidate": false,
+  "integrated_or_deployed_by_qa": false
 }

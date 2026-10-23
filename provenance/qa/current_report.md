@@ -1,13 +1,68 @@
-# IRGS current qualification
+# IRGS independent QA
 
-Result: **passed**.
+Candidate: `4bf60ff3df0420801c5fa50038c0e10305c79141`
+Result: **passed** · 2026-10-23T19:45:30.747173+00:00
 
-Fresh post-cleanup checks: 527 runtime tests (526 passed, one external-save policy skip); 166 Web tests (159 passed, seven Windows skips); 72 interface checks; 29 tooling tests; eight independent mechanics/privacy/recovery HTTP probes. Chromium reference browsing passed with all ten collections, no page errors and no campaign files created.
+Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
-Engine: `723627e629231b5e90f38b9d52b65c9a3967b92a`
+| Finding | Priority | Status | Result |
+| --- | --- | --- | --- |
+| IRGS-QA-001 | P1 | not_reproduced | Accepted Core material establishment breaks Rise playthrough views |
+| IRGS-QA-002 | P1 | not_reproduced | Canonical Core location records are incompatible with Rise location consumers |
 
-App: `d8dc35ed653e516ccd0cacf91ee9693258491032`
+Independent cases: 8 passed, 0 failed, 0 errors.
 
-Catalog: `3e898acb2179f18a41d7967817bedf429df29d3f`
+| Check | Status |
+| --- | --- |
+| source-integrity | passed |
+| evidence-freshness | passed |
+| runtime | passed |
+| web | passed |
+| interface | passed |
+| tooling | passed |
 
-The source fingerprint and exact executed scope are recorded in current_report.json. Adopted mechanics/content and original archive records remain unchanged.
+## IRGS-QA-001
+
+Accepted Core material establishment breaks Rise playthrough views
+
+**Expected:** Reject an unsupported material atomically, or retain a readable campaign with explicit unknown unit support.
+
+**Boundary:** IRGS_Web/rise_campaigns.py view indexes model.units[material]; Core stock establishment accepts material IDs without that unit binding.
+
+Reproduce:
+
+1. Create a reviewed R00 Rise campaign.
+2. Creator POST /api/event: establish_stock(location=founder-home, material=water, quantity=2, inventory_evidence_ref=synthetic-measured-water).
+3. Observe the successful save and valid CoreWorld state.
+4. GET /api/playthrough/<id> with the normal session token.
+
+## IRGS-QA-002
+
+Canonical Core location records are incompatible with Rise location consumers
+
+**Expected:** A supported, established location confirmation must leave local inventory and supported movement usable.
+
+**Boundary:** Core confirm_character_field writes {value,evidence_id,at}; settlement_runtime.location and Rise view consume the whole record as a site string.
+
+Reproduce:
+
+1. Create R00 at the commons.
+2. Creator records and delivers established evidence placing the founder at commons.
+3. Creator confirms founder.location=commons through confirm_character_field with authority and player instruction references.
+4. Inspect local inventory and submit walk_clearing.
+
+## Scope
+
+Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.
+
+This report is not full C2/T01–T37 certification. Skips and missing providers are not passes. No user campaign was loaded or migrated.
+
+## Component identities
+
+Engine: `5ef18f7d75d8a477af06921288569220f3475f85`
+
+App: `754ad7318dc482b396367e852ade67ed923e82ac`
+
+Catalog: `f22049396795425838add515960a3e95a5e98189`
+
+This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **false**.
