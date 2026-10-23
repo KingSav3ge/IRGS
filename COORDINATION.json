@@ -30,9 +30,9 @@
     }
   },
   "baseline_components": {
-    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
-    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
-    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
   "reviews": {
     "engine": {
@@ -151,11 +151,9 @@
       ]
     }
   },
-  "blockers": [
-    "Isolated joined regression, source-matched operation evidence and package smoke remain to be completed."
-  ],
-  "integration_status": "approved_for_joined_qualification",
-  "component_source_integration_performed": false,
+  "blockers": [],
+  "integration_status": "integrated",
+  "component_source_integration_performed": true,
   "work_order_publication": [
     {
       "repository": "IRGS-Engine",
@@ -351,7 +349,34 @@
     "archive_member_matches": 0,
     "archive_members_scanned": 5146,
     "original_source_and_rights_records_preserved": true,
-    "scope": "IRGS-owned wording and validation excerpts; original archive retained byte for byte under the existing preservation instruction."
+    "scope": "IRGS-owned wording and validation excerpts; original archive retained byte for byte under the existing preservation instruction.",
+    "adopted_mechanics_and_content_preserved": true,
+    "original_records_preserved_by_explicit_user_direction": true,
+    "irgs_material_scan": {
+      "scope": "Tracked text outside preserved original archive indexes/payload. Embedded design packages and all original archive members separately scanned for the requested unwanted name. Adopted mechanics/content unchanged.",
+      "matching_files": [],
+      "preserve_adopted_mechanics_and_content": true,
+      "preserve_original_archive_records": true
+    }
   },
-  "component_reviewed_at_utc": "2026-10-23T14:10:36.000136+00:00"
+  "component_reviewed_at_utc": "2026-10-23T14:10:36.000136+00:00",
+  "cycle_start_components": {
+    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
+    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
+    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  },
+  "completed_components": {
+    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  },
+  "qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
+  "source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
+  "completed_at_utc": "2026-10-23T14:26:46.010880+00:00",
+  "next_assignments": {
+    "engine": "Continue DEV-06\u2013DEV-08 qualification and implement the AIP-S1 offline provider/access/validation/ledger foundation with fake transport before a live adapter.",
+    "app": "Consume the reviewed Engine contract when delivered; expose honest disabled/unconfigured states and protected diagnostics without a second router or simulator.",
+    "catalog": "Prepare rights-labelled synthetic evaluation inputs and processing classifications; preserve adopted content and the original archive. Continue independent catalogue validation."
+  },
+  "completion_scope": "Historical Details integration complete. No general C2 resolver, provider runtime or model-quality benchmark completion is claimed."
 }

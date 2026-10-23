@@ -69,8 +69,8 @@
     },
     {
       "path": "COMPONENTS.json",
-      "bytes": 992,
-      "sha256": "67f7072ff5c025d235cfa7ccd9d8d39cca1ca65be2ed7b640288d7256d134eb8"
+      "bytes": 958,
+      "sha256": "2526d04ea9f4d9901bfd4b7b01762fc68742d7ce0d2bca729b6b26512a1f533a"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -84,23 +84,23 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 9218,
-      "sha256": "a8144464b2df66ced9756490be4660c13fe2bcc934e8bc7819bcfa0385e94fc6"
+      "bytes": 15743,
+      "sha256": "9b57e9bf5c7f87fc7b3221d7ffb6fd64ab4a747d55aeef4c648426c3f617b9cf"
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 13188,
-      "sha256": "34a7eaf0115164d58a96e9b012d827125904405c9676f7fd822e532626ab4b24"
+      "bytes": 14938,
+      "sha256": "8fe37118ce450ec07bdb5311e1c0a55f1c4441fa433ff2e6724bfbeeb07047ac"
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 6431,
-      "sha256": "924736d2ae170f22c45b17e7c3a595f62fc5d743639e326ea518fa0cd55cb706"
+      "bytes": 4285,
+      "sha256": "db97679e8faabe4d1c70e8d660ec41c3560a6133a7057a0316b080a75188277c"
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 2998,
-      "sha256": "1fe098e45512c1e74db9742830fa87d0b426e490fd57bcb48c20379c134a3582"
+      "bytes": 6217,
+      "sha256": "70b8b9417fa908a34edcba324577a8a6736f32e2f61c6993eb989233d6ad22e9"
     },
     {
       "path": "COVERAGE1_VALIDATION.json",
@@ -114,13 +114,13 @@
     },
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 7667,
-      "sha256": "2d366a438bacfaac64461b4499bfc183218117e5bddec0a803324d1a7246f24b"
+      "bytes": 7968,
+      "sha256": "c5fa0bc336b0b13488f0c9a504ee09d822029bcb4eba064e12813bc54819af84"
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 14760,
-      "sha256": "ac8d02dab301dbb4f3df751517b5f1efa718fd3d29817170b1c89091d9760185"
+      "bytes": 17733,
+      "sha256": "f7bb73db85846eb90a3693e5ca2a3afcfcca2ecf551febc78247b061b303d84b"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
@@ -204,8 +204,8 @@
     },
     {
       "path": "IRGS_3_3/catalog/campaigns/kira/README.md",
-      "bytes": 2332,
-      "sha256": "03d670dbad9b8bf821f50c24aac1791d1d38ed88189f5381a42c392166843121"
+      "bytes": 2876,
+      "sha256": "e5e2db894feb081888b6ba31b60d3a6ca406e29b9260f773490211b7054dfcf2"
     },
     {
       "path": "IRGS_3_3/catalog/campaigns/kira/WORLD_GUIDE.md",
@@ -221,6 +221,91 @@
       "path": "IRGS_3_3/catalog/campaigns/kira/archive/legacy_reference.json",
       "bytes": 79124,
       "sha256": "523fa0c1ccdc030f76ae8985428e269d8abd7579e2a17015c5691eee410b0c09"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/ALDAIN_FOUNDATIONS.md",
+      "bytes": 1706,
+      "sha256": "bccc6f6c13f88df3fbad0205decdd659b11463e2695c5037707563aae34223db"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/AZALOTH_FOUNDATIONS.md",
+      "bytes": 725,
+      "sha256": "a72552c748eaaf248b26ee024eee1ec5d9deeda4bcf8fc31479af07cec3b5195"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/Aldain_Atlas.png",
+      "bytes": 3675151,
+      "sha256": "4756553d1eadb6ef2622c0acc1f2763048e93b7196e92356a68b97e57f9831c2"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/Azaloth_Atlas.png",
+      "bytes": 4069011,
+      "sha256": "93d3beafefbcf3dfa4ad453879f13250e29dcc5be08a7d930beb21b63b6f7665"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/BENDARA_FOUNDATIONS.md",
+      "bytes": 672,
+      "sha256": "9df96ec7fd72c0de17c8c125e0e6dc97f6ff015b3b53b4fadcc6c93cdc450b34"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/Bendara_Atlas.png",
+      "bytes": 3944620,
+      "sha256": "becd0015629edfb097fc9d7ba1363e1bd2799c57fb3f4e4e99493e8839f305bd"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/CHECKSUMS.sha256",
+      "bytes": 1385,
+      "sha256": "fab0d1e86c3c41033bb505b747e4bc807474f304fcff4ad8c743aeb6d32b6996"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/FALKION_FOUNDATIONS.md",
+      "bytes": 1196,
+      "sha256": "43a82344ef6952315bb5206119c1120379ba2f6ed131bbe672ad3f3dc90cf178"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/Falkion_Atlas.png",
+      "bytes": 3365422,
+      "sha256": "6d5e98a4c3f68d1b1f7768a9fdb394ae08f904f6bfd56573a3ecbf67b57c3826"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/Larius_Atlas.png",
+      "bytes": 2879174,
+      "sha256": "649e2ef2aae2e00abb9e39047b0fbaf274ded995a6814ea08ab887433ad12ec4"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/README.md",
+      "bytes": 3471,
+      "sha256": "f43b1cecc08e649d40098cd269215155993f4c6af2a587c2616a31bd775f0ff1"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/TALMAKAH_FOUNDATIONS.md",
+      "bytes": 3255,
+      "sha256": "5b19eef637070fee60222799164aaf819dc01bc2ac74938620a019e69d05468f"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/TalmaKah_Atlas.png",
+      "bytes": 3197991,
+      "sha256": "80a48c06738631ac3e043fae347d00f8d90b78b7b9705f97e8970eb78d9963f7"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/VALIDATION.json",
+      "bytes": 1065,
+      "sha256": "85aaa0a43bcae0c48c308bf06863f3bdbe1208da89fa8cd5c9746a21452e93e3"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/atlas_manifest.json",
+      "bytes": 1408,
+      "sha256": "3d4cf6ae63800a23e1fd46d431b291f6869cd739424a6e3bc9621411a89c5eb8"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/cartography_foundations.json",
+      "bytes": 6320,
+      "sha256": "759184a63e43606f10f0a98a7fe8631da1ed7d10d5fe1350c9bcbc17146fe383"
+    },
+    {
+      "path": "IRGS_3_3/catalog/campaigns/kira/atlas/sources/Races of TalmahKah.docx",
+      "bytes": 12700,
+      "sha256": "d380fbf2d620445b86631d9b7a6343dba2d4dc00dfca532b8991f630cfe6871a"
     },
     {
       "path": "IRGS_3_3/catalog/campaigns/kira/canon.json",
@@ -1349,8 +1434,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 44126,
-      "sha256": "45779a7b89aaa0c1f6afcae063e0ef559ee3ff03d09f66fe2c6e697502219fcf"
+      "bytes": 46470,
+      "sha256": "bbe4e24cbb7fc92994bb5d282d5f874af0d54b043922b8eb981176ca34314846"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1509,13 +1594,18 @@
     },
     {
       "path": "IRGS_3_3/runtime/historical_archive.py",
-      "bytes": 12689,
-      "sha256": "3aee6e245f323b921f960d481242b731a3dccd840b2408ce7be113efdb51e18d"
+      "bytes": 16775,
+      "sha256": "8d1e4a2f1ea6b5effe3a64f20d01314d73f6153c26773dc615b8b3d33dcf568d"
     },
     {
       "path": "IRGS_3_3/runtime/historical_campaigns.py",
       "bytes": 11505,
       "sha256": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f"
+    },
+    {
+      "path": "IRGS_3_3/runtime/historical_parts.py",
+      "bytes": 12870,
+      "sha256": "7b6509dd7d9ed7337dbf31f40145cb91ba4ad8b49a4ddb3d47a36f962be83f5d"
     },
     {
       "path": "IRGS_3_3/runtime/historical_plans.py",
@@ -1729,13 +1819,18 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_archive.py",
-      "bytes": 6032,
-      "sha256": "8349cb06c2b5282a6a4e40cddd01a59bd5435e40dc8625efe59ba4d328693d66"
+      "bytes": 6152,
+      "sha256": "6239a019743da8eaeb403b1b8ab2c8cd5a18fc33c9be594c076753bd63e67799"
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_campaigns.py",
       "bytes": 9387,
       "sha256": "fc3367d47eb56f3c6f1d0fb61d30d9d1ad55a55f654169a2c041c6e2ff5b9e75"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_historical_parts.py",
+      "bytes": 16389,
+      "sha256": "cdad2cd896bb13d201b3ad1356c4aad2be7cb82f05db217640ac2c1569022a8d"
     },
     {
       "path": "IRGS_3_3/runtime/test_historical_plans.py",
@@ -2343,14 +2438,204 @@
       "sha256": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8"
     },
     {
+      "path": "IRGS_Catalog/historical_details/README.md",
+      "bytes": 6357,
+      "sha256": "2f2bbe22e998cb233dee564c41d18fd10e7ccbe2ad9e03752e11862c91cb603a"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/intake/README.md",
+      "bytes": 2672,
+      "sha256": "e39f2b7382290de72c60fb74ac5d81526093740b09c4cdd694478fcd9afd6f15"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/intake/drive_delivery_manifest.json",
+      "bytes": 1127761,
+      "sha256": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/manifest.json",
+      "bytes": 10581,
+      "sha256": "1543cd65b5c4b3ed6f160565b4e4bf01d09dd44a392d53c7036efcd5c0dcf21f"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/member_inventory.json",
+      "bytes": 1600082,
+      "sha256": "1f7a0495ad1f08a56ac5d22057a6e3cc24504ba62189d7279a8bed8d2f1a5044"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0001",
+      "bytes": 16777216,
+      "sha256": "570bc1d79fa39d0ecebc8876522db54a125b24a6887d686a4330e4099da7984a"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0002",
+      "bytes": 16777216,
+      "sha256": "7f564da7fa2ab0d3b7abe6ada1c44d46c68bee945714af8c3616ea21b0c6c9c5"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0003",
+      "bytes": 16777216,
+      "sha256": "f54677bcf3e4e5c70ed384662bd8899359fea795d6845666132bdbe701b74b5d"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0004",
+      "bytes": 16777216,
+      "sha256": "175fe86bdb109d51461aa8afa367b317ad56e5aa0b9b17144ea5038dd3f665cc"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0005",
+      "bytes": 16777216,
+      "sha256": "1643f79b42b9e3f6f4edfe8161c6c32c366caf73e3c2346621eade8f97c16f14"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0006",
+      "bytes": 16777216,
+      "sha256": "be14c2bef0ed22fb0454382cd7dec2dce703c4b28eaf85a87113c514aed46f1e"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0007",
+      "bytes": 16777216,
+      "sha256": "bb0067eeed451178487adc2cffce617175a9580253a8befda138ad6c5f2b2e01"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0008",
+      "bytes": 16777216,
+      "sha256": "a21ce9f91011690666b35a0de1c0419e2324840236b89c477d97a422bab0cba6"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0009",
+      "bytes": 16777216,
+      "sha256": "b6132440bb5eb52bf34176a9c8f42dc87fc1009f75d014f99dc3923634562870"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0010",
+      "bytes": 16777216,
+      "sha256": "7430b9334c27b54829314d7862bc945814f75684d5f09f0560f5f309ffcf9182"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0011",
+      "bytes": 16777216,
+      "sha256": "1da2adf6a30f7f09f33146cbfd10c6f88d6e2ca25b14c735bd64ac9927dcb2c1"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0012",
+      "bytes": 16777216,
+      "sha256": "0a2bb0e35d42b7c47139af4a91097c2ebc1a841f97f5d2b8ac28ba96f9348138"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0013",
+      "bytes": 16777216,
+      "sha256": "799a68264ff3ba1651fb9a6bca509757ecbd4ce2c08cb615cdaa184653d3d0e2"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0014",
+      "bytes": 16777216,
+      "sha256": "116d16bbf57c7fac8b5355b034e9b0be439e501c2fd17ae0da6fa58eae5eb212"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0015",
+      "bytes": 16777216,
+      "sha256": "82341a84f6fa26977d6427c4b7fe60fe961a6c3efc55e830e94ed156cd2ceb77"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0016",
+      "bytes": 16777216,
+      "sha256": "7b0b8fd9ebf910097ca6f57e46bd8a0fecaf049384daa14a49f4f722f380b767"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0017",
+      "bytes": 16777216,
+      "sha256": "b00a78089678813e663fc106c8cced165e70528f90677765a3732d61d9fee30d"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0018",
+      "bytes": 16777216,
+      "sha256": "64b4a6e631262539666906b0b2852d1a3215f7dbf776cba5b526df011c81e999"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0019",
+      "bytes": 16777216,
+      "sha256": "902c198555f1f5347c807dced1d399882701527e22eb89e500bd0ffacded570c"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0020",
+      "bytes": 16777216,
+      "sha256": "867d39fdb151168273fb6b3a7911c6ecbe1fedc4a8e835ede961708174af68be"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0021",
+      "bytes": 16777216,
+      "sha256": "c54c358b76d272ae8e6d6fc4b8614b84fe4ac1abe22fbde46861029aa8ba8c55"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0022",
+      "bytes": 16777216,
+      "sha256": "6953c7bcb35ebfe171cacfc3df57ef3c0e565bda7f3dc4e3c7583d6ea2a74be6"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0023",
+      "bytes": 16777216,
+      "sha256": "ce42a57d95fae534300565b842b267b428d69cc243303e10313607956c06388f"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0024",
+      "bytes": 16777216,
+      "sha256": "c0c629eec1ac49035b6baf6590c9de9f252ec06efdd54852f2624db9aafad787"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0025",
+      "bytes": 16777216,
+      "sha256": "aa3312a04a9bd1e42c9553fc9893a38c8823261159ed4cc982cca969a11239f9"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0026",
+      "bytes": 16777216,
+      "sha256": "f3c0c1318ede991ba5875f78a305b4033bf3c14c804190a0017a7c8197501b42"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0027",
+      "bytes": 16777216,
+      "sha256": "125ab8fad08ec1a2005a32b6b7f305dcd78faca007945e25595772e39fdad295"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0028",
+      "bytes": 16777216,
+      "sha256": "83b01c303f5951859eb307d54f074408a9d6f8d081335011af2a9c5eca261acf"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0029",
+      "bytes": 16777216,
+      "sha256": "315de0341f6ae7ad7fe664abce18d8435e7387409533a5a8c2808482f1409c22"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0030",
+      "bytes": 16777216,
+      "sha256": "5b717e9aa0373cc886e99ebd7cb5a8abd041dff870150000f1d9818019ab9155"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031",
+      "bytes": 16777216,
+      "sha256": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032",
+      "bytes": 12970984,
+      "sha256": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7"
+    },
+    {
+      "path": "IRGS_Catalog/historical_details_package.py",
+      "bytes": 20197,
+      "sha256": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665"
+    },
+    {
       "path": "IRGS_Catalog/release.json",
-      "bytes": 11953,
-      "sha256": "4bfbdfd04a50539f69bc067b1567123722bb7bc2e5fbc7203dfe8f202c55c08a"
+      "bytes": 17363,
+      "sha256": "eec1afcb5266fa67692eb37691a5f20534d7309e2ca1c0fe71a6a69728b8a3b7"
     },
     {
       "path": "IRGS_Catalog/verify_catalog.py",
-      "bytes": 2774,
-      "sha256": "32992da8c3c88461b766d0b25388035f5895fc43fab984bf3f8b592f7dcca237"
+      "bytes": 7241,
+      "sha256": "57cfef89333f147f83637969d148dbd77ab771c9cace1badceefdbb49d0e26e1"
     },
     {
       "path": "IRGS_Unified_Master_Codex_Instruction_v1_4_CMRR.md",
@@ -2359,8 +2644,8 @@
     },
     {
       "path": "IRGS_Web/README.md",
-      "bytes": 14849,
-      "sha256": "75313f862d69ebd96cfdfda559d49ba72b3d04743e87a19691d1d0adaba6e685"
+      "bytes": 17265,
+      "sha256": "103ab523e22779a54951e46182090d488f3f7baa28d26d03d2de11d6dff19197"
     },
     {
       "path": "IRGS_Web/Start-IRGS.cmd",
@@ -2399,13 +2684,18 @@
     },
     {
       "path": "IRGS_Web/features.py",
-      "bytes": 16876,
-      "sha256": "ac8520d058113e630eccfa793aa9085e5294002ce1868b53f12d69810570f36d"
+      "bytes": 16903,
+      "sha256": "52a05cad335be57fd168c9a422176c469faf2c68158379534f63aa9f57883839"
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
       "bytes": 17792,
       "sha256": "c7300a48d487c2257922a6339024ea6986aa7bf519c23635d8082fd65f8806a2"
+    },
+    {
+      "path": "IRGS_Web/historical_reference.py",
+      "bytes": 5890,
+      "sha256": "018330bc0935b3f3cd1aed54a4171fb0984a148dc68a7e938d0f51ff1b7574e8"
     },
     {
       "path": "IRGS_Web/history_views.py",
@@ -2424,8 +2714,8 @@
     },
     {
       "path": "IRGS_Web/release.json",
-      "bytes": 3396,
-      "sha256": "5f5c215a47730ece802669dded6341210222cdc99d2da789ff49b626cf135481"
+      "bytes": 3564,
+      "sha256": "ac2676a384b93e375f13a4752533f658ca707e45ce2bd898239815f208967736"
     },
     {
       "path": "IRGS_Web/rise_campaigns.py",
@@ -2434,13 +2724,13 @@
     },
     {
       "path": "IRGS_Web/server.py",
-      "bytes": 40043,
-      "sha256": "b25e605e0780cf8ad7cb936cc50bce921097a27ae07eac45db8547b25320f750"
+      "bytes": 39115,
+      "sha256": "b1f4de8a6c2f2dd2267e1725fb42afb71ff5bf29e3b9a1bc1ace0347c128a96e"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 133880,
-      "sha256": "61af2dda402736305cf784051c35acec902e92222eb05f4c76554e94cf85cb8c"
+      "bytes": 135455,
+      "sha256": "8921b6d60dfef9f126e17872f8e4f54f7290946d68392cb505f01fe9fdb1df46"
     },
     {
       "path": "IRGS_Web/static/catalogue.js",
@@ -2484,13 +2774,18 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 85425,
-      "sha256": "c08d306483d7d810dad0470806f8fc8521ebc031b12015df5067623094c868d6"
+      "bytes": 90622,
+      "sha256": "bfb30c9ecbf8393662c351a9242c3066bad0de754d7435b9d69c5073989cc7ba"
+    },
+    {
+      "path": "IRGS_Web/tests/test_historical_multipart.py",
+      "bytes": 9303,
+      "sha256": "76b4a3ff3298ccf209c2080bc65b6bb6012e3f0916bde65bdc0e6189ea3e3bed"
     },
     {
       "path": "IRGS_Web/tests/test_historical_reference.py",
-      "bytes": 4054,
-      "sha256": "5d65f94c213f608976a821571f8119cd217de4e9eefd038660ae5edc8562285e"
+      "bytes": 10638,
+      "sha256": "14bc71f9b7dc56f58e82d459dfb4f689a0382711e6a705d5bb209fa1e507cfaa"
     },
     {
       "path": "IRGS_Web/tests/test_history_views.py",
@@ -2544,8 +2839,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2035,
-      "sha256": "ec12013be8062823550ee093d762c1b460b4bd7a21c34679f3aadb34edaac1e6"
+      "bytes": 2267,
+      "sha256": "b34812877c0539c990b15a199442aee530f4a93113ecf582921184ade7c37c1b"
     },
     {
       "path": "RISE_FOUNDATION_VALIDATION.json",
@@ -2554,8 +2849,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 5931,
-      "sha256": "c50c8d0f96058a71d0149afafc388ef4cea283b5fe489a3fb8b319cb0745a82d"
+      "bytes": 10223,
+      "sha256": "6d09be10d70e39058057d47c8929f72634bf5e47222115a44521c46292651b1f"
     },
     {
       "path": "SOURCE_PUBLICATION_VALIDATION.json",
@@ -2581,6 +2876,11 @@
       "path": "engine/ACCEPTANCE_EXECUTION.md",
       "bytes": 4198,
       "sha256": "56ca9c70b9149e2c0bd7f643536c3157ac21da8ceffbf3a5f2baf8eef43dbf75"
+    },
+    {
+      "path": "engine/AI_PROVIDER_PLAN.md",
+      "bytes": 6373,
+      "sha256": "83e921fb5a1fc982b03d59bbaa2c133bb7fdcbb501fa07fcbc4f46316d5b97d0"
     },
     {
       "path": "engine/APPLICATION_RECORD.json",
@@ -2623,14 +2923,34 @@
       "sha256": "dbca027031700261abbdd645b1883b6dfc27a10b221215cbcb7d3fcf54faea92"
     },
     {
+      "path": "engine/ENGINE_MODEL.md",
+      "bytes": 5677,
+      "sha256": "37b3c39609a75fe299738e60690bf9c845b213bfb158dba972597be588ba3a81"
+    },
+    {
       "path": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
       "bytes": 9450,
       "sha256": "839a6d8432eaa25758174f45a323315cb461642a0e8add56ba80c09fb0035f65"
     },
     {
+      "path": "engine/HISTORICAL_DETAILS_API.md",
+      "bytes": 9284,
+      "sha256": "33ae690b94e84d33e66d8d63c3eda8e6106c85c2d5672e9540bd64865e653f0c"
+    },
+    {
+      "path": "engine/HISTORICAL_DETAILS_DELIVERY_VALIDATION.json",
+      "bytes": 4929,
+      "sha256": "05a01dc3369d134c3a88377e6f7725b539b30af2a68cb765cddcc27e13a9941a"
+    },
+    {
+      "path": "engine/HISTORICAL_DETAILS_VALIDATION.json",
+      "bytes": 2928,
+      "sha256": "f1dcc38ef9413e35b12824743e06d27bc1a6ba19483e21da133bd12480f61152"
+    },
+    {
       "path": "engine/HISTORICAL_REFERENCE_INTEGRATION.md",
-      "bytes": 4626,
-      "sha256": "33e31422f9fba80588d2cfb084e4cf5c5351b8b1be8926dd1b4cf0f7e13a350c"
+      "bytes": 5003,
+      "sha256": "3177507e5babd8472a217ba1ea7d506cf97a77330f21f69979f5c418e437d8c6"
     },
     {
       "path": "engine/OPERATION_COVERAGE.md",
@@ -2794,13 +3114,13 @@
     },
     {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 12846113,
-      "sha256": "452092f13c0ae88cfe2c85963ed76f81c76c3eaa8f0f387e3627d32c8e5fccbd"
+      "bytes": 12858286,
+      "sha256": "627a4341e50a40869f0f83297f79b3aaef59796ceeb5420ccd5fb2d8ad3add58"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",
-      "bytes": 16951,
-      "sha256": "590bd2d17e864695c2c22f884316a59264080b9697d67f521df360f9073d7c58"
+      "bytes": 16955,
+      "sha256": "56ad66a2e77d4ba5f3e420fad67b940ea577fc9fc2bbc04d0fb1bb0876dcb8d8"
     },
     {
       "path": "engine/reference/DESIGN_INTEGRATION_2026_10_20.md",
@@ -3329,18 +3649,18 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 6838,
-      "sha256": "69cd491e413308fe6c543337bb92f053130d7a74d5a44cf268dd32a713f33147"
+      "bytes": 5737,
+      "sha256": "15414fa452809618687d6fefce93a0cdd30f5b45746064b679f0308eafb67f55"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 3119,
-      "sha256": "a221328e26cccf1c5c083089c2e9c06a9519d996ef031eb18f1b873dace426e6"
+      "bytes": 2745,
+      "sha256": "81d954ad7660f99906b2e9eee8142644c273ed301a12013b518421273c26ef2c"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
-      "bytes": 4349,
-      "sha256": "bab38b42420223773099969528bb8cee0a9804e99c09ad9afc9bfe82c0544131"
+      "bytes": 13566,
+      "sha256": "cf0958185fb45fa7ea5bffc005a7b55f726c949ec6e1b22ff2e5908dd7497ddf"
     },
     {
       "path": "provenance/qa/historical_reference_20261022/historical_attachment_smoke.json",

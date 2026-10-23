@@ -1,59 +1,59 @@
 {
   "schema_version": 1,
-  "candidate_commit": "c56572caac5e94c2d949d1b83eaa803a415ffa29",
-  "finished_at_utc": "2026-10-22T17:51:24.232441+00:00",
+  "candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
+  "finished_at_utc": "2026-10-23T14:23:01.801403+00:00",
   "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/tmp/irgs-four-repo-validation-ihqpvywx/IRGS",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/candidate",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.87,
-      "log": "/workspace/irgs-cloud/validation/logs/source-integrity.txt"
+      "duration_seconds": 17.86,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.52,
-      "log": "/workspace/irgs-cloud/validation/logs/evidence-freshness.txt"
+      "duration_seconds": 1.12,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 65.93,
-      "log": "/workspace/irgs-cloud/validation/logs/runtime.txt",
-      "tests_run": 497,
+      "duration_seconds": 91.61,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/runtime.txt",
+      "tests_run": 527,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 69.54,
-      "log": "/workspace/irgs-cloud/validation/logs/web.txt",
-      "tests_run": 153,
+      "duration_seconds": 83.76,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/web.txt",
+      "tests_run": 166,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 3.94,
-      "log": "/workspace/irgs-cloud/validation/logs/interface.txt",
-      "checks_passed": 67
+      "duration_seconds": 4.63,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/interface.txt",
+      "checks_passed": 72
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 2.32,
-      "log": "/workspace/irgs-cloud/validation/logs/tooling.txt",
-      "tests_run": 25,
+      "duration_seconds": 22.54,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/tooling.txt",
+      "tests_run": 29,
       "skipped": 0
     }
   ],
@@ -132,69 +132,17 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "candidate_kind": "joined_repository_main",
-  "candidate_components": {
-    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
-    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
-    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  "component_commits": {
+    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
-  "joined_template_commit": "c56572caac5e94c2d949d1b83eaa803a415ffa29",
-  "app_declared_engine_commit": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
-  "app_declared_catalog_commit": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5",
-  "pin_matches_candidate": true,
-  "integrated_or_deployed_by_qa": false,
-  "source_archive_attached_in_cloud": false,
-  "actual_historical_source_archive_tested_in_cloud": false,
-  "package_smoke": {
-    "status": "passed",
-    "archive": "/workspace/irgs-cloud/validation/latest-main-package.zip",
-    "extracted_files": 692,
-    "packaged_verification": {
-      "app_release": {
-        "component": "IRGS-APP-WEB",
-        "files": 33,
-        "status": "verified"
-      },
-      "c2": {
-        "acceptance_execution_claimed": false,
-        "required_cases": 121,
-        "source_files_verified": 23
-      },
-      "campaigns_modified": false,
-      "catalog_release": {
-        "campaign_release_approved_by_check": false,
-        "component": "IRGS-Catalog",
-        "concepts": 44,
-        "files": 102,
-        "status": "verified"
-      },
-      "development_files": 691,
-      "selected_release": {
-        "core": "3.3",
-        "release": "IRGS-CORE-3.3-SUITE",
-        "status": "verified"
-      },
-      "status": "verified"
-    },
-    "http_smoke": {
-      "status": "passed",
-      "loopback_only": true,
-      "selected_core": "3.3",
-      "single_world_per_campaign": true,
-      "routes_checked": [
-        "/",
-        "/app.js",
-        "/rise.js",
-        "/catalogue.js",
-        "/style.css",
-        "/api/catalog",
-        "/api/campaigns",
-        "/api/content-library",
-        "/api/campaigns"
-      ],
-      "campaign_files_created": 0,
-      "project_imports_from_extracted_package": true
-    },
-    "existing_saves_opened": false
-  }
+  "app_dependency_pins_match": true,
+  "joined_source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
+  "integrated_component_commits": {
+    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  },
+  "scope_note": "Executed on the named isolated joined source. Final joined source inputs match exactly; integration documentation is updated separately."
 }

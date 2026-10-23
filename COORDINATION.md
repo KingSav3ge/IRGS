@@ -1,43 +1,35 @@
 # IRGS development coordination
 
-The user assigns **IRGS Enviroment** as coordinator and reviewer for three development chats. Each component chat owns its repository; the coordinator publishes qualified combined source to `KingSav3ge/IRGS/main`.
+IRGS Enviroment coordinates the existing Engine, App/Website and Catalog chats. Each component develops in its own repository; the coordinator reviews exact commits and publishes qualified combined source to unified IRGS/main.
 
-| Development chat | Repository | Current assignment |
+## Completed cycle: historical-details-01
+
+Historical Details is integrated. The complete original archive is included in Catalog as 32 ordered parts, and Creator browsing uses the reviewed Engine reader. All 533,064,680 original bytes, 5,146 files and 5,145 delivery bindings were verified. The ten exposed collections contain 387,273 reference rows. Reading preserves source qualifications and creates no campaign facts or player knowledge.
+
+| Component | Reviewed and integrated commit | Delivered behavior |
 | --- | --- | --- |
-| IRGS Engine | [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine) | [Verified Catalog multipart reader](https://github.com/KingSav3ge/IRGS-Engine/blob/main/COORDINATOR_WORK_ORDER.md) and continuing dependency qualification. |
-| IRGS App/Website | [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB) | [Creator Historical Details browser](https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md), compatible component pins and App plan. |
-| IRGS Catalog | [IRGS-Catalog](https://github.com/KingSav3ge/IRGS-Catalog) | [Complete archive multipart payload](https://github.com/KingSav3ge/IRGS-Catalog/blob/main/COORDINATOR_WORK_ORDER.md) under Historical Details, with provenance and a Catalog plan. |
+| Engine | `7fe99a55bab7d731674f56d8adde2b84ae73a860` | Verified multipart reader, strict source checks, legacy ZIP compatibility and IRGS wording. |
+| App/Website | `9fe8b07820701ce5bbb68829a9dffae852a1e3af` | Protected Historical Details browser, read-only recovery, exact dependency pins and safe presentation. |
+| Catalog | `3e898acb2179f18a41d7967817bedf429df29d3f` | Complete archive preservation and validation of 44 campaign preview records. |
 
-## Current cycle
+Fresh qualification passed the full synthetic Engine and Web suites, interface checks, tooling, eight independent mechanics/privacy/recovery HTTP probes, real archive reads, Chromium navigation and package extraction/HTTP smoke. Exact counts, source identities, platform skips and limits are recorded in [COORDINATOR_VALIDATION.json](COORDINATOR_VALIDATION.json) and [the integration review](provenance/qa/historical_details_integration_review.json). Current operation evidence matches the integrated source inputs; it does not certify every branch or complete C2.
 
-`historical-details-01` is assigned, not complete. `COORDINATION.json` records baseline commits, thread identities, review status and blockers. The last integrated component set remains selected in `COMPONENTS.json`. Engine's multipart reader, App's reference recovery and Catalog's packaging/intake tools are now published candidates. Fresh scoped checks passed on 22 October; full source review and integration approval remain pending. Catalog identifies the original ZIP on Drive, but its manifest still reports missing source bytes and contains no archive parts.
+The App pins exactly the Engine and Catalog commits above. `COMPONENTS.json` selects the same set. `COORDINATION.json` retains the completed reviews and advances its baseline to this integrated set. Further imports require new viable updates in all three components, matching approvals and compatible App pins; rerunning the gate on the already integrated set is held because it contains no new update.
 
-| Candidate product change | Fresh coordinator checks | Remaining release condition |
+## Naming and original records
+
+Describe IRGS mechanics and content in IRGS terms. Adopted systems and content remain in place. External-product comparisons and associations in IRGS-authored material are removed; original archive records, filenames and citations remain exact under the user's explicit preservation instruction. The archive was scanned in full for the requested unwanted name; no member matched.
+
+## Next component assignments
+
+| Chat | Repository work order | Next responsibility |
 | --- | --- | --- |
-| Engine `f64ef3132c363925739acbda1e8421fbd4b4642f` | Integrity and 65 historical-reference/plan tests passed. | Full source review and full archive/compatible App qualification. |
-| App `02d260e80ee62c90d3563e0c063460f97eeec99c` | Integrity, 10 reference HTTP tests and 72 synthetic interface checks passed. The 10 cases also passed with prospective Engine/Catalog overrides. | Pin exact approved dependencies; actual multipart and broader joined qualification. |
-| Catalog `ab3e127f4a0bc504158fd91617e4f76fef5a2f7d` | Integrity and 30 synthetic packaging/intake tests passed. | Complete source payload and actual round-trip verification; metadata is not the archive. |
+| IRGS Engine | [Engine work order](https://github.com/KingSav3ge/IRGS-Engine/blob/main/COORDINATOR_WORK_ORDER.md) | Continue DEV-06–DEV-08; build the AIP-S1 offline provider/access/validation/ledger contracts with fake transport. |
+| IRGS App/Website | [App work order](https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md) | Consume the reviewed Engine contract, with honest disabled states and protected diagnostics. |
+| IRGS Catalog | [Catalog work order](https://github.com/KingSav3ge/IRGS-Catalog/blob/main/COORDINATOR_WORK_ORDER.md) | Prepare rights-labelled synthetic evaluation inputs and processing classifications; continue catalogue validation. |
 
-The exact tested published commits include the subsequent provider work-order additions and are recorded in [the scoped review](provenance/qa/component_review_2026_10_22.json). Process-only dependency overrides did not change App pins. No full runtime/Web suite or manual browser run is claimed for this coordinator follow-up.
+[AI_PROVIDER_STRATEGY.md](AI_PROVIDER_STRATEGY.md) extends the existing master plan without replacing its six Director categories, nine state owners or gameplay priorities. Provider assignments remain hypotheses; the 16 model evaluation scenarios are unrun. Credentials and a finite eligible workload budget are required before live inference. Source/gameplay review and model quality are separate evidence.
 
-All three component updates must be viable before unified source integration. For each exact pushed commit, review its changes, scope, provenance, source integrity and meaningful executed checks. Record findings and coordinator approval separately from author-supplied claims. Root planning commits and checksum refreshes alone do not satisfy the deliverables.
+## Coordination mechanism
 
-Then select an App commit pinning exactly the approved Engine and Catalog commits. Test an isolated joined assembly, including compatibility, mechanics/privacy/recovery probes, evidence freshness and package integrity where affected. Fixes return to the owning component chat/repository. The coordinator updates `COMPONENTS.json`, the development inventory and source-matched qualification, then commits and pushes unified main after the set passes. Retain the prior working set if any component remains incomplete or fails.
-
-`tools/check_integration_gate.py --engine /path/to/IRGS-Engine --app /path/to/IRGS-APP-WEB --catalog /path/to/IRGS-Catalog` reports readiness. `tools/sync_components.py --apply` refuses a set without matching approvals, a new update in each component and matching App pins. Dry-run/import tools never push. Advancing an independent component is not automatic integration.
-
-Coordination guidance and QA reports may be published on joined main while the component set is held; those commits do not change the selected product sources. The QA watcher tests prospective pushed sets and reports results, but it neither qualifies a complete deliverable by itself nor moves integrated component pointers. Tests passing and integration approval are separate facts.
-
-## Dispatch capability
-
-The coordinator can list/read these existing chats and read/write the repositories. This cloud session has no send, steer or start-thread tool. These linked work orders are published directions; they have not been delivered as chat messages and do not start chats. A chat must read its current work order when resumed. On 22 October the coordinator observed all three chats active after user resumption. No replacement chats or subagents have been created.
-
-## Historical Details
-
-Catalog owns a deterministic multipart preservation of the complete original archive, its source identity and provenance. Engine owns verification and read-only access; App owns Creator presentation and explicit readiness/error states. Full archive preservation includes the source database and assets, not only ten exposed structured collections. Reference storage creates no live campaign facts, new player knowledge or historical schedule.
-
-## AI provider development backlog
-
-The user's provider assessment is reconciled in [AI_PROVIDER_STRATEGY.md](AI_PROVIDER_STRATEGY.md), extending the existing master specification without replacing its six-Director hierarchy or gameplay priorities. [AI_PROVIDER_REVIEW.md](AI_PROVIDER_REVIEW.md) records checked prices, conditions and unresolved claims. All three component work orders carry their relevant responsibilities. The [16 evaluation scenarios](provenance/qa/ai_provider_strategy/EVALUATION_CASES.json) are required but unrun; no model-quality result or paid service is implied.
-
-Engine owns provider contracts, access enforcement, routing, validation and usage records. App owns server-controlled integration and developer presentation. Catalog owns content/provenance and processing-rights metadata. Start offline with fake transport and then qualify one opt-in direct integration. Historical Details remains the current integration cycle, with exact three-component approvals still required. Provider-planning commits do not satisfy that gate or complete archive delivery.
+The current session can read the existing chats and publish repository directions/reviews. It has no direct send/start-thread tool. Repository work orders and this status are the handoff; no chat messages or replacement agents are claimed. Component chats push only their own repositories; the coordinator alone publishes a qualified unified set. Planning and checksum-only commits do not satisfy a viable component delivery.

@@ -1,10 +1,10 @@
 # IRGS continuation development list
 
-Prepared 2026-10-21 against **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. This list defines future work; it does not adopt new mechanics or certify unfinished capabilities.
+Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-22. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
 
 The immediate target is a complete Solo action cycle: a player makes a supported decision, the engine commits its legitimate consequences, the player sees the outcome, and play can continue after reload. Complete that cycle before widening the historical catalogue or adding interface sections.
 
-DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05 is completed as an operation inventory with scoped execution evidence and explicit gaps; all other items remain open. See [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope, evidence and limitations. Existing setup, filtered inspection, request recovery, campaign Trash, observed handlers and bounded institutional fixtures are foundations to extend. Applied C2 text contains 121 required cases whose execution remains unclaimed.
+DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05 is completed as an operation inventory with scoped execution evidence and explicit gaps; all other items remain open. DEV-06–DEV-08 are the next priority, with partial collection and rejected-path implementations already present. Authored local scenes, Rise work and dated starts also advance portions of later tasks without completing them. See [ROADMAP.md](ROADMAP.md) for the completed/in-progress/remaining summary and [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for scope, evidence and limitations. Existing App setup, filtered inspection, request recovery and campaign Trash are integration foundations in the App repository. Applied C2 text contains 121 required cases; the scoped execution ledger does not claim full completion.
 
 ## 1. Deliver the first consequential action
 
@@ -64,7 +64,7 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05
 
 - [ ] **DEV-18 — Verify the 1415 playable opening.** Check that its detailed description, dated characters/factions, selected scenario, actual control and available actions agree with the established starting state. Keep unsupported opening facts explicit.
 - [ ] **DEV-19 — Verify continuing-world availability.** Test formation, dissolution, succession, allegiance, territorial change and loss of control against committed simulation state. A historical template must not revive a collapsed polity or replace a simulated ruler.
-- [ ] **DEV-20 — Complete eligibility and setup regressions.** Keep existence, participation, playability and control separate for both characters and factions. Preserve entry point → scenario → character/faction selection or creation → review → atomic campaign creation. Retain all 37 catalogue entries with accurate readiness labels; expand launchable dates after the shared gameplay loop is qualified.
+- [ ] **DEV-20 — Complete eligibility and setup regressions.** Keep existence, participation, playability and control separate for both characters and factions. Preserve entry point → scenario → character/faction selection or creation → review → atomic campaign creation. Retain all 37 catalogue entries with accurate readiness and evidence limits; deepen dated starting facts without inventing unsupported operational state.
 
 **Completion evidence:** a fresh historical start and a continuing playthrough at the same date can legitimately offer different choices. Neither setup nor reload creates a characterless game or silently resets world history.
 
@@ -82,10 +82,10 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05
 
 **Depends on:** each implemented increment. These are continuing requirements, not work to postpone until all other stages finish.
 
-- [ ] **DEV-24 — Track executable acceptance evidence.** Map implemented capabilities to relevant C2 case IDs, test locations, actual results and limitations in a new execution ledger. Preserve the immutable 121-case design inventory; distinguish required, implemented, tested and qualified scope.
-- [ ] **DEV-25 — Keep the Solo interface truthful.** Preserve the preferred design while showing saved declarations, awaiting requirements, active work, interruptions and completed outcomes accurately. Retain filtered knowledge, reading preferences, character creation, recoverable Trash and the easy launcher. Co-Op stays deferred.
-- [ ] **DEV-26 — Qualify each integrated increment.** Run relevant runtime, host and interface checks, update affected release hashes, refresh and verify the development manifest, then package and smoke-test an extraction before calling it a distributable version. Keep existing saves outside development fixtures; require an explicit compatibility/migration plan before using new mechanics with them.
-- [ ] **DEV-27 — Integrate and report capabilities.** Continue from unified `main`, integrate Engine/Core changes through `3.3.3.E` and Website/App changes through `3.3.3.A`, and preserve both in main. Report what actually became playable, supporting evidence and remaining limits without implying that all C2 requirements are complete.
+- [ ] **DEV-24 — Track executable acceptance evidence.** Extend [the scoped execution ledger](engine/ACCEPTANCE_EXECUTION.md) with implemented capabilities, relevant C2 case IDs, test locations, actual results and limitations. Preserve the immutable 121-case design inventory; distinguish required, implemented, tested and qualified scope.
+- [ ] **DEV-25 — Keep the Solo interface truthful.** Track this as an App-owned integration requirement: preserve the preferred design while showing saved declarations, awaiting requirements, active work, interruptions and completed outcomes accurately. Engine results must support filtered knowledge and truthful status. Interface, character creation, recoverable Trash and launcher changes belong in IRGS-APP-WEB. Co-Op stays deferred.
+- [ ] **DEV-26 — Qualify each delivered increment.** Run relevant Engine runtime checks, refresh affected Engine source pins and verify this component. Host/interface checks belong to the App workstream; qualify the pinned pair when integration is requested. Package and smoke-test an extraction before calling it a distributable version. Keep existing saves outside development fixtures; use an explicit compatibility/migration plan before applying new mechanics to them.
+- [ ] **DEV-27 — Publish and report Engine capabilities.** Commit and push verified Engine changes to `KingSav3ge/IRGS-Engine` on its `main` branch. Maintain completed, in-progress and remaining work here. Keep Catalog development, App dependency updates and joined IRGS publication in their own workstreams. Report implemented scope, supporting evidence and remaining limits without implying that all C2 requirements or a connected App feature are complete.
 
 **Completion evidence:** each delivered capability has an accurate status, reproducible tests and a clean distribution. Engine-only or app-only progress does not claim an end-to-end feature until the connected cycle works.
 
@@ -97,7 +97,7 @@ Opening1 advances DEV-10, DEV-12–DEV-14, DEV-18 and DEV-25 with an optional re
 
 Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 85 operation spellings across 170 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
 
-Use [ROADMAP.md](ROADMAP.md) for the broader sequence, [DEVELOPMENT.md](DEVELOPMENT.md) for working and verification commands, and [VALIDATION.json](VALIDATION.json) for the recorded D1 evidence. This list records continuation progress; supporting execution evidence is linked separately.
+Use [ROADMAP.md](ROADMAP.md) for the broader sequence, [DEVELOPMENT.md](DEVELOPMENT.md) for working and verification commands, and [the preserved D1 check summary](provenance/D1_validation/CHECK_SUMMARY.json) for historical D1 evidence. This list records continuation progress; supporting execution evidence is linked separately.
 
 ## Core consolidation and rejected dependencies
 
@@ -106,3 +106,17 @@ The 2026-10-22 increment advances named DEV-07–DEV-08 paths, keeps verified re
 ## Completed reference integration — historical-reference-1
 
 Attached the supplied Grand Archive 1.1 through an external, read-only source provider and a Creator-only search/detail interface. Preserved record identity, source qualifications, uncertainty and rights metadata; local attachment configuration and mixed-rights payload remain outside published source. See HISTORICAL_REFERENCE_VALIDATION.json. This completes reference browsing only; adopting sourced starting facts, resolving historical identities and wider C2 certification remain separate work.
+
+## Historical Details — historical-details-01
+
+Completed the Engine reader increment: pinned manifest/part verification, exact reconstruction into an ignored installation cache, atomic publication/retry, bounded failure codes, ten-collection binding validation and unchanged source-row identity through the existing reference API. Explicit local ZIP attachment remains supported. See [the API and cross-component contract](engine/HISTORICAL_DETAILS_API.md).
+
+The subsequent delivery increment verifies Catalog `58ce55672bdd75076b94882bd8715a1d2a1f383a`: 32 actual parts reconstruct the original archive, and all ten reader collections match their pinned record counts. It adds deep verification and a repeatable qualification command, plus stricter portable-path, link and exact part-directory checks. App's reviewed dependency pins and coordinator integration remain separate gates. This reference verification does not complete DEV-06–DEV-08 or establish historical truth.
+
+## Staged AI provider foundation — AIP-01–AIP-09
+
+Read [the Engine provider plan](engine/AI_PROVIDER_PLAN.md) for all nine open requirements, AIP-S1–S4 sequencing and the 16 unexecuted model-evaluation cases. Preparation is complete; provider implementation is not started. Historical Details integration, supported gameplay and DEV-06–DEV-08 retain priority. The first provider increment uses a disabled-by-default registry, scoped contracts, fake transport, validation and attempt ledger before one reviewed opt-in direct adapter. No credentials, budget, entitlement, paid calls, model-quality winner or new authoritative owner is supplied by that plan.
+
+## Kira atlas reference delivery
+
+The [six-region atlas](IRGS_3_3/catalog/campaigns/kira/atlas/README.md) adds the creator-requested maps and companion regional foundations to Kira’s existing world files. The atlas manifest and checksums identify the delivered artwork; component verification pins it with the rest of the Engine content. No DEV gameplay milestone is completed by this reference addition. App dependency updates and joined publication remain separate workstreams.

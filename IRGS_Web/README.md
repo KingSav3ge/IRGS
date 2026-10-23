@@ -71,6 +71,46 @@ Run `python -m unittest discover -s tests -v` from `IRGS_Web` for HTTP, gameplay
 
 ## Campaign portfolio and independent development
 
-The App owns 44 catalogue concept previews and its discovery configuration under `data/`. All new concepts remain unreleased; existing Century dated starts and the fictional Rise founding slice retain their reviewed workflows. Kira v0.5 is an adopted, searchable world reference without a playable snapshot. See [catalogue scope](design/campaign_catalogue/README.md).
+The App owns the viewer for 44 catalogue concept previews. Catalogue records and discovery configuration belong to the pinned `Catalog/IRGS_Catalog/data/` dependency. All new concepts remain unreleased; existing Century dated starts and the fictional Rise founding slice retain their reviewed workflows. Kira v0.5 is an adopted, searchable world reference without a playable snapshot. See [catalogue scope](../Catalog/IRGS_Catalog/design/campaign_catalogue/README.md).
 
 App source integrity is recorded in `IRGS_Web/release.json`, separately from the Engine. Run `python -B tools/refresh_component_releases.py --component app` after intentional App edits, then `python -B tools/verify_components.py --component app` and the relevant Web/interface tests. Independent development uses `KingSav3ge/IRGS-APP-WEB/main`; joined `KingSav3ge/IRGS/main` retains both components.
+
+
+## Historical Details — Creator reference
+
+The Creator navigation entry **Historical Details** retains the existing
+`#/historical-reference-library` bookmark and `/api/historical-reference` routes.
+It is absent from Player navigation. All reference endpoints require the current
+local session token and explicit Creator mode, including status and retry.
+Browsing, literal search, paging and source-record inspection cannot initialize a
+world, adopt history, submit an event or change a campaign save.
+
+An explicit local source attachment remains supported:
+
+```bash
+python3 -B IRGS_Web/register_historical_archive.py /absolute/path/to/IRGS_Historical_Grand_Archive_v1_1.zip
+```
+
+Run this from the repository root. Registration records the chosen ZIP and its
+SHA-256 in ignored `IRGS_Web/cache/reference_sources.json`; it does not copy the
+archive into source. The host reloads registration on the next reference request.
+An invalid explicit attachment is reported rather than silently substituted.
+Empty, unavailable and failed-verification states offer **Check again**. Search
+and source-detail failures offer their own retries. Source text, uncertainty,
+original row identities, citation and rights records remain reference material.
+The default source is the pinned Catalog's
+`historical_details/manifest.json`, using its exact SHA-256 from Catalog's release
+record. Engine verifies/reconstructs all parts into ignored
+`IRGS_Web/cache/historical_details/`; App never copies an editable content tree.
+An explicit ZIP registration takes precedence, including when it is broken.
+The complete archive includes books, assets and its central database, while the
+browser exposes ten structured collections. Preservation and reading establish
+no new historical truth, license, campaign fact or player knowledge.
+
+Run `python3 -B tools/qualify_historical_details.py --output /tmp/irgs-app-qualification.json`
+from the repository root to repeat actual full-archive HTTP qualification. It
+uses temporary synthetic saves/cache and reports exact dependency commits,
+source hashes and collection probes. Catalog's own
+`historical_details_package.py verify` checks every source member and binding.
+See [development status](../DEVELOPMENT.md) for executed evidence, coordinator
+review and the sequenced AI provider backlog.

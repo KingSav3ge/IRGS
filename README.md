@@ -17,3 +17,5 @@ Content Library contains 44 expanded v0.5 concept previews: 31 launch targets, 1
 Century of Conflict has 37 reviewed dated starts with optional bounded fictional openings. The Rise of... You offers a fictional R00 founding slice; its eight design families remain held. Kira v0.5 is the user-adopted working world canon, available as a searchable reference guide with no playable starting snapshot. General freeform resolution, combat, a complete autonomous institutional cycle and all 121 C2 acceptance cases remain unfinished.
 
 Original uploads and historical qualification evidence remain labelled under `provenance/`. They do not establish fresh verification or automatically apply draft mechanics. Core and App have independent integrity records so either component can develop without rewriting the other's release pins.
+
+Historical Details now includes the complete original archive in Catalog’s 32 verified parts, with a protected Creator browser for ten reference collections. See [the completed integration and next assignments](COORDINATION.md).

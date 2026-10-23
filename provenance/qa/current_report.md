@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `c56572caac5e94c2d949d1b83eaa803a415ffa29`
-Result: **passed** · 2026-10-22T17:51:24.232441+00:00
+Candidate: `272f710b6094ed72ec62fd937769bf956d2ebbe3`
+Result: **passed** · 2026-10-23T14:23:01.801403+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -57,12 +57,12 @@ Current Core/App regression suites plus independent HTTP checks. Contracts: R00 
 
 This report is not full C2/T01–T37 certification. Skips and missing providers are not passes. No user campaign was loaded or migrated.
 
-## Repository and attachment validation
+## Qualified component set
 
-Engine: `2c5590bcb2d7ee7e02f597526c3cb341841bd2dd`
+Engine: `7fe99a55bab7d731674f56d8adde2b84ae73a860`
 
-App: `3980e5665814847d3cd02c0f0b86417a231e2be6`
+App: `9fe8b07820701ce5bbb68829a9dffae852a1e3af`
 
-Catalog: `c70dc16d4e48493b833dba5a0f68f43a972bdcb5`
+Catalog: `3e898acb2179f18a41d7967817bedf429df29d3f`
 
-All Git object checks and source integrity checks passed. The App pins match the standalone component commits, and the joined source import dry-run reported no changed or removed files. Fresh standalone Historical Reference checks passed (6 provider and 4 HTTP cases). The archive ZIP remains an external attachment and was not available in this cloud run; synthetic reference archives were used. Package smoke passed on 9 routes without creating campaign records.
+The integrated source inputs match this tested assembly. Original source records remain reference data.

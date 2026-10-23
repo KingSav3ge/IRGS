@@ -1,4 +1,46 @@
-# Current continuation
+# Current Engine continuation
+
+## Historical Details real delivery — 2026-10-22
+
+**Completed:** Catalog `58ce55672bdd75076b94882bd8715a1d2a1f383a` supplies the actual 32-part archive. The Engine verifies the 533,064,680 original bytes and SHA-256 `51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773`, all ten reader bindings and all 387,273 rows against pinned Catalog counts. New deep verification and `tools/qualify_historical_details.py` reproduce that check. Portable-path, symbolic-link and exact part-directory checks now match the published source contract. See [delivery evidence and exact inputs](engine/HISTORICAL_DETAILS_DELIVERY_VALIDATION.json).
+
+**Verification:** 70 focused historical tests passed; the full suite ran 527 tests with 526 passes and one historical private-save fixture skipped. Six negative cases on the real delivery refused missing/changed/unrecorded/linked/reordered/duplicated inputs despite a valid cache. Search and detail match the legacy ZIP reader for all ten collections. The exact App boundary module at `e8ef2b0e683a46fab4fe586e86afd26196ab2869` passed status/search/detail through explicitly supplied inputs; this is not HTTP/interface or approved-pair qualification. Engine integrity, Kira canon and active documentation links pass.
+
+**In progress / remaining:** coordinator approval, App's exact Engine/Catalog pins and connected qualification remain separate gates. Source identity is verified; historical truth, expanded rights, campaign adoption and new gameplay are not asserted. DEV-06–DEV-08 remain open. The [AI provider plan](engine/AI_PROVIDER_PLAN.md) now records all nine staged AIP requirements and the 16 evaluation cases; no provider code, live call or quality result is activated by that preparation.
+
+## Historical Details reader — 2026-10-22
+
+**Completed:** `historical-details-01` implements pinned multipart assembly into an ignored installation cache, verified original ZIP identity and all ten collection bindings, atomic publication/retry, changed-source detection and the existing read-only reference API. Original source names, attribution, rights, uncertainty, dates and source-row addresses survive unchanged. Explicit local ZIP attachment remains supported. See [API and pin contract](engine/HISTORICAL_DETAILS_API.md) and [executed verification](engine/HISTORICAL_DETAILS_VALIDATION.json).
+
+**Verification:** 65 focused historical tests passed, including 25 new multipart/recovery cases and the six existing ZIP cases. The full Engine suite ran 522 tests: 521 passed and one historical private-save fixture was skipped. Engine integrity, Kira canon verification, all 16 atlas checksums and active planning/API links passed. No user campaigns or private saves were used.
+
+**Active/blocked:** the actual Grand Archive, a published compatible Catalog manifest, and the App's exact reviewed dependency pair remain unavailable/unqualified. Catalog work-order input `5c007e16be6ab8930b3bcd4ad10ab320733102a6` and App work-order input `d3dae7b0092b65b2c7902488a1a99aa82a7522cc` were reviewed; neither is a new component-set approval. App/HTTP and joined integration checks were not run. The completed increment is the Engine reader, not the full import or playable historical content.
+
+**Next:** coordinate the documented manifest/API with the real Catalog delivery, qualify that source and the App's pinned pair, and continue general dependency qualification under DEV-06–DEV-08. No additional C2 completion is claimed.
+
+## Current increment — 2026-10-22
+
+Publication destination: **KingSav3ge/IRGS-Engine**, on this repository's `main` branch. [ROADMAP.md](ROADMAP.md) is the current completed/in-progress/remaining summary; [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) retains task IDs and completion criteria.
+
+**Completed:** added the [Engine model](engine/ENGINE_MODEL.md), clarified behavior-based design language, refined archive introduction wording while retaining original source attribution, and aligned active development instructions with the standalone Engine repository. Gameplay rules and the scope of supported operations are unchanged.
+
+**In progress:** DEV-06–DEV-08 have bounded collection and rejected-path coverage; broader dependency and cross-engine qualification remain open. Authored local scenes, settlement work and historical initialization remain partial foundations for later milestones.
+
+**Next:** choose named DEV-06–DEV-08 gaps from [the operation register](engine/OPERATION_COVERAGE.md). General C2 resolution, durable phases, wider movement/dialogue and sustained institutional autonomy remain on the plan.
+
+**Verification:** the Engine runtime baseline ran 497 tests successfully with one historical private-save fixture skipped. All six archive-provider tests passed after the wording change, and Engine component integrity verified. This increment includes no fresh App/HTTP qualification and does not complete any additional C2 acceptance case.
+
+## Kira atlas reference delivery — 2026-10-22
+
+Added six [illustrated regional atlas plates](IRGS_3_3/catalog/campaigns/kira/atlas/README.md), their creator statements and regional foundations beside the existing Kira worldbook. The notes record the Lupine desert and raids, Aldain’s five lizard-folk homelands and monkey-folk republic, open cultural design for Azaloth and Bendara, and Falkion’s selected fortified-island and maritime direction. Atlas views establish no shared distance scale, executable travel rules or starting snapshots. The PNGs are preserved byte for byte; archive and component verification qualify source integrity, not pixel-perfect survey accuracy or new gameplay behavior.
+
+The Engine development milestones above retain their existing status. App dependency updates and joined IRGS integration are separate from this Engine reference publication.
+
+Verification: all six PNGs match the delivered artwork byte for byte; atlas manifest checksums, the reintroduced Lupine sheet and relative README links pass. The existing Kira canon/archive verifier and Engine component integrity check pass. See [atlas validation](IRGS_3_3/catalog/campaigns/kira/atlas/VALIDATION.json). No fresh App or gameplay qualification is claimed.
+
+## Inherited component and joined-development record
+
+The entries below preserve earlier increment descriptions and evidence identities. Old branch names, App checks and original validation filenames describe those source runs. They do not direct current pushes or certify the present standalone Engine/App pair.
 
 2026-10-22: Rise foundation 1 adds a reviewed fictional settlement founding path: limited permission, finite work and provision, bounded delegation and actual household migration in the shared Core. The eight design families remain held. See [current Rise status](engine/design/rise/README.md) and [qualification](RISE_FOUNDATION_VALIDATION.json).
 

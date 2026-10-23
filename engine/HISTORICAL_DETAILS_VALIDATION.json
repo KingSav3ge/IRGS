@@ -1,0 +1,64 @@
+{
+  "increment": "historical-details-01",
+  "date": "2026-10-22",
+  "component": "KingSav3ge/IRGS-Engine",
+  "source_baseline": "f775601aa22111ce08116874053a10f7ec8f622b",
+  "status": "SYNTHETIC_READER_QUALIFIED_REAL_DATASET_AND_INTEGRATION_PENDING",
+  "reviewed_work_order_inputs": {
+    "catalog_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
+    "app_commit": "d3dae7b0092b65b2c7902488a1a99aa82a7522cc",
+    "scope": "Work orders reviewed; no Catalog multipart manifest/payload or approved App dependency pair available at these inputs. These are not new runtime dependency approvals."
+  },
+  "checks": [
+    {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p 'test_historical*.py' -v",
+      "run": 65,
+      "passed": 65,
+      "skipped": 0,
+      "new_multipart_cases": 25,
+      "existing_zip_reader_cases": 6
+    },
+    {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -v",
+      "run": 522,
+      "passed": 521,
+      "skipped": 1,
+      "skip": "test_legacy_ast_save_load_does_not_rewrite: historical local save not packaged"
+    },
+    {
+      "command": "python -B tools/verify_components.py --component engine",
+      "status": "verified",
+      "behavioral_test": false
+    },
+    {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "passed"
+    },
+    {
+      "check": "All entries in IRGS_3_3/catalog/campaigns/kira/atlas/CHECKSUMS.sha256",
+      "verified": 16
+    },
+    {
+      "check": "Active development and reader API local documentation links",
+      "status": "passed"
+    }
+  ],
+  "implemented_scope": [
+    "Explicit manifest SHA-256, typed bounded inventory, portable contained paths, unique entries and contiguous order",
+    "Streamed part hashes, original size and archive SHA-256, plus all ten required collection/member bindings before publication",
+    "Atomic installation cache publication, retry and concurrent reader reuse without overwriting an active cached file",
+    "Missing, changed or corrupt sets refused even with an existing cache; failed attempts expose no partial ZIP",
+    "Unchanged explicit ZIP attachment and source-row identity, attribution, dates, uncertainty, citations and rights",
+    "Stable path-free error codes and documented registration/API contract"
+  ],
+  "unrun_or_unqualified": [
+    "The real 533064680-byte Grand Archive and actual Catalog part delivery: source input unavailable",
+    "Compatibility with a published Catalog manifest and the App's reviewed Engine/Catalog pins",
+    "App HTTP/interface checks and joined three-component integration",
+    "Independent-process crash, power-loss or Windows filesystem qualification; recovery tests use synthetic failures and concurrent reader instances"
+  ],
+  "campaign_effects": false,
+  "private_user_saves_used": false,
+  "additional_c2_completion_claimed": false,
+  "continuing_priority": "DEV-06–DEV-08"
+}

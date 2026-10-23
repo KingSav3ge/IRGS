@@ -1,0 +1,187 @@
+{
+  "world": "The World of Kira",
+  "region": "TalmaKah",
+  "established_name_variant": "TalmahKah",
+  "source_kind": "Creator statements in this conversation, plus the explicitly reintroduced Lupine sheet",
+  "larius_border_key": {
+    "orange": "Estru",
+    "black": "Akaria",
+    "red": "Kyrinus",
+    "blue": "Sadion",
+    "purple": "Everwood"
+  },
+  "talmakah_homeland_key": {
+    "light_purple": "Centaurs and Rhinopolis",
+    "red": "Swamp Elves",
+    "yellow": "Humans (Amazonians)",
+    "orange": "Ice Elves",
+    "light_blue": "Frost Trolls",
+    "purple": "Dwarves",
+    "pink": "Oxmen"
+  },
+  "social_character": {
+    "comparatively_tribal_and_nomadic": true,
+    "creator_comparison_region": "Larius",
+    "beastlike_peoples_have_comparatively_high_sentience": true
+  },
+  "central_desert": {
+    "homeland": "Lupine",
+    "creator_name_variant": "Lupin",
+    "settlement_keys": [
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "tribal_community_keys": [
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "creator_confirmed_relationships": [
+      "Nomadic groups, traders and travellers cross the desert to reach other regions",
+      "Desert travellers are prey to the Lupine",
+      "Lupine also raid out into neighbouring regions",
+      "Lupine are difficult to pursue once back in their native desert"
+    ],
+    "specific_trade_routes_established": false,
+    "specific_wells_or_treaties_established": false,
+    "eighth_homeland_colour_supplied": false
+  },
+  "reintroduced_sheet": {
+    "path": "sources/Races of TalmahKah.docx",
+    "sha256": "d380fbf2d620445b86631d9b7a6343dba2d4dc00dfca532b8991f630cfe6871a",
+    "text": "Race Name: Lupine Height Range: 5-6ftWeight Range: 20-80lbs Child 80-140lbs Adult",
+    "interpretation": {
+      "recorded_height_feet": [
+        5,
+        6
+      ],
+      "recorded_child_weight_pounds": [
+        20,
+        80
+      ],
+      "recorded_adult_weight_pounds": [
+        80,
+        140
+      ]
+    },
+    "operating_instructions": false
+  },
+  "creator_statements": [
+    "Larius:\nOrange: Estru\nBlack: Akaria\nRed: Kyrinus\nBlue: Sadion\nPurple: Everwood\n\nlet's turn this into a real map",
+    "Here is TalmaKah, it's populations are more tribal/nomadic compared to Larius. Though even the more beastial races are of higher sentience than elsewhere:\nLight Purple: Centaurs and Rhinopolis\nRed: Swamp Elves\nYellow: Humans (Amazonians)\nOrange: Ice Elves\nLight Blue: Frost Trolls\nPurple: Dwarves\nPink: Oxmen",
+    "The Lupin, the only ones we made in this sheet before stopping.",
+    "That's who occupies the central desert region of TalmaKah",
+    "Yeah nomadic groups and traders/travelers transit the desert to reach other regions and this causes them to be prey to the Lupine who also raid out into the other regions. Being difficult to pursue once in their native desert",
+    "Aldain\nLight Blue: Scalian Scalix Imperium\nRed: Rolling Hills Tribe\nYellow: Mountain Peak Tribe\nGreen: Eversong Hollow Tribe\nBlue: Frozen Lake Tribe\nPurple: Primatarus Shenyan Republic\n\nA continent dominated by lizard-folk adapted to the regions they are in.",
+    "except the purple is a race of sentient monkey-folk like Sun-Wukong",
+    "Nothing was decided on for Azaloth",
+    "Nothing was decided on for Bendara",
+    "and for Falkion, I think it was going to be an Atlantis-esque thing with hostile sea elves I think",
+    "A fortified island and maritime realm"
+  ],
+  "engine_rules_selected": false,
+  "campaign_state_initialized": false,
+  "map_name_conventions": {
+    "Larius": {
+      "Karwathis": "Karkaria",
+      "Evalian": "Evalia",
+      "Ikrarion": "Ikarion",
+      "Forth Kilrath": "Fort Kilrath"
+    },
+    "TalmaKah": {
+      "Rhithopolis": "Rhinopolis",
+      "Gradens of Shifry": "Gardens of Shifry",
+      "DeadMans Hollow": "Deadman's Hollow",
+      "No Mans Crossing": "No Man's Crossing",
+      "Shards Embrace": "Shard's Embrace",
+      "Victorys hill": "Victory's Hill"
+    }
+  },
+  "aldain": {
+    "dominant_peoples": "Regionally adapted lizard-folk",
+    "polities": [
+      {
+        "colour": "Light Blue",
+        "name": "Scalian Scalix Imperium",
+        "people": "Lizard-folk",
+        "settlement_keys": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "colour": "Red",
+        "name": "Rolling Hills Tribe",
+        "people": "Lizard-folk",
+        "settlement_keys": [
+          4
+        ]
+      },
+      {
+        "colour": "Yellow",
+        "name": "Mountain Peak Tribe",
+        "people": "Lizard-folk",
+        "settlement_keys": [
+          5
+        ]
+      },
+      {
+        "colour": "Green",
+        "name": "Eversong Hollow Tribe",
+        "people": "Lizard-folk",
+        "settlement_keys": [
+          6
+        ]
+      },
+      {
+        "colour": "Blue",
+        "name": "Frozen Lake Tribe",
+        "people": "Lizard-folk",
+        "settlement_keys": [
+          7
+        ]
+      },
+      {
+        "colour": "Purple",
+        "name": "Primatarus Shenyan Republic",
+        "people": "Sentient monkey-folk",
+        "inspiration": "Sun Wukong",
+        "settlement_keys": [
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "specific_rulers_biology_and_cultures_undeveloped": true
+  },
+  "azaloth": {
+    "peoples_cultures_and_nations": "Undecided by the creator",
+    "map_treatment": "Physical geography only",
+    "inhabitation_status": "Not established; undecided does not mean uninhabited"
+  },
+  "bendara": {
+    "peoples_cultures_and_nations": "Undecided by the creator",
+    "map_treatment": "Physical geography only",
+    "inhabitation_status": "Not established; undecided does not mean uninhabited"
+  },
+  "falkion": {
+    "creator_recollection": "Atlantis-esque with hostile sea elves; tentative recollection",
+    "creator_selected_direction": "A fortified island and maritime realm",
+    "underwater_or_drowned_capital_selected": false,
+    "map_treatment": "Living surface island, fortifications and surrounding maritime domain",
+    "illustrative_proposals": [
+      "Exact unnamed harbour and watchtower positions",
+      "Cyan reference line interpreted as a maritime perimeter"
+    ],
+    "specific_settlement_names_rulers_and_history_undeveloped": true
+  },
+  "shared_scale_selected": false
+}

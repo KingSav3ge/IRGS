@@ -1,0 +1,48 @@
+{
+  "world": "The World of Kira",
+  "kind": "illustrated_atlas",
+  "plate_count": 6,
+  "plates": [
+    {
+      "path": "Aldain_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4756553d1eadb6ef2622c0acc1f2763048e93b7196e92356a68b97e57f9831c2"
+    },
+    {
+      "path": "Azaloth_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "93d3beafefbcf3dfa4ad453879f13250e29dcc5be08a7d930beb21b63b6f7665"
+    },
+    {
+      "path": "Bendara_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "becd0015629edfb097fc9d7ba1363e1bd2799c57fb3f4e4e99493e8839f305bd"
+    },
+    {
+      "path": "Falkion_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6d5e98a4c3f68d1b1f7768a9fdb394ae08f904f6bfd56573a3ecbf67b57c3826"
+    },
+    {
+      "path": "Larius_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "649e2ef2aae2e00abb9e39047b0fbaf274ded995a6814ea08ab887433ad12ec4"
+    },
+    {
+      "path": "TalmaKah_Atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "80a48c06738631ac3e043fae347d00f8d90b78b7b9705f97e8970eb78d9963f7"
+    }
+  ],
+  "creator_foundations": "cartography_foundations.json",
+  "common_world_scale_selected": false,
+  "original_screenshot_bytes_included": false,
+  "executable_rules_or_saved_campaign_changes": false,
+  "repository_path": "IRGS_3_3/catalog/campaigns/kira/atlas"
+}

@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "id": "historical-details",
+  "display_name": "Historical Details",
+  "status": "complete",
+  "archive": {
+    "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+    "bytes": 533064680,
+    "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+  },
+  "part_size_bytes": 16777216,
+  "parts": [
+    {
+      "ordinal": 1,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0001",
+      "bytes": 16777216,
+      "sha256": "570bc1d79fa39d0ecebc8876522db54a125b24a6887d686a4330e4099da7984a"
+    },
+    {
+      "ordinal": 2,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0002",
+      "bytes": 16777216,
+      "sha256": "7f564da7fa2ab0d3b7abe6ada1c44d46c68bee945714af8c3616ea21b0c6c9c5"
+    },
+    {
+      "ordinal": 3,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0003",
+      "bytes": 16777216,
+      "sha256": "f54677bcf3e4e5c70ed384662bd8899359fea795d6845666132bdbe701b74b5d"
+    },
+    {
+      "ordinal": 4,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0004",
+      "bytes": 16777216,
+      "sha256": "175fe86bdb109d51461aa8afa367b317ad56e5aa0b9b17144ea5038dd3f665cc"
+    },
+    {
+      "ordinal": 5,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0005",
+      "bytes": 16777216,
+      "sha256": "1643f79b42b9e3f6f4edfe8161c6c32c366caf73e3c2346621eade8f97c16f14"
+    },
+    {
+      "ordinal": 6,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0006",
+      "bytes": 16777216,
+      "sha256": "be14c2bef0ed22fb0454382cd7dec2dce703c4b28eaf85a87113c514aed46f1e"
+    },
+    {
+      "ordinal": 7,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0007",
+      "bytes": 16777216,
+      "sha256": "bb0067eeed451178487adc2cffce617175a9580253a8befda138ad6c5f2b2e01"
+    },
+    {
+      "ordinal": 8,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0008",
+      "bytes": 16777216,
+      "sha256": "a21ce9f91011690666b35a0de1c0419e2324840236b89c477d97a422bab0cba6"
+    },
+    {
+      "ordinal": 9,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0009",
+      "bytes": 16777216,
+      "sha256": "b6132440bb5eb52bf34176a9c8f42dc87fc1009f75d014f99dc3923634562870"
+    },
+    {
+      "ordinal": 10,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0010",
+      "bytes": 16777216,
+      "sha256": "7430b9334c27b54829314d7862bc945814f75684d5f09f0560f5f309ffcf9182"
+    },
+    {
+      "ordinal": 11,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0011",
+      "bytes": 16777216,
+      "sha256": "1da2adf6a30f7f09f33146cbfd10c6f88d6e2ca25b14c735bd64ac9927dcb2c1"
+    },
+    {
+      "ordinal": 12,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0012",
+      "bytes": 16777216,
+      "sha256": "0a2bb0e35d42b7c47139af4a91097c2ebc1a841f97f5d2b8ac28ba96f9348138"
+    },
+    {
+      "ordinal": 13,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0013",
+      "bytes": 16777216,
+      "sha256": "799a68264ff3ba1651fb9a6bca509757ecbd4ce2c08cb615cdaa184653d3d0e2"
+    },
+    {
+      "ordinal": 14,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0014",
+      "bytes": 16777216,
+      "sha256": "116d16bbf57c7fac8b5355b034e9b0be439e501c2fd17ae0da6fa58eae5eb212"
+    },
+    {
+      "ordinal": 15,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0015",
+      "bytes": 16777216,
+      "sha256": "82341a84f6fa26977d6427c4b7fe60fe961a6c3efc55e830e94ed156cd2ceb77"
+    },
+    {
+      "ordinal": 16,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0016",
+      "bytes": 16777216,
+      "sha256": "7b0b8fd9ebf910097ca6f57e46bd8a0fecaf049384daa14a49f4f722f380b767"
+    },
+    {
+      "ordinal": 17,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0017",
+      "bytes": 16777216,
+      "sha256": "b00a78089678813e663fc106c8cced165e70528f90677765a3732d61d9fee30d"
+    },
+    {
+      "ordinal": 18,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0018",
+      "bytes": 16777216,
+      "sha256": "64b4a6e631262539666906b0b2852d1a3215f7dbf776cba5b526df011c81e999"
+    },
+    {
+      "ordinal": 19,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0019",
+      "bytes": 16777216,
+      "sha256": "902c198555f1f5347c807dced1d399882701527e22eb89e500bd0ffacded570c"
+    },
+    {
+      "ordinal": 20,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0020",
+      "bytes": 16777216,
+      "sha256": "867d39fdb151168273fb6b3a7911c6ecbe1fedc4a8e835ede961708174af68be"
+    },
+    {
+      "ordinal": 21,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0021",
+      "bytes": 16777216,
+      "sha256": "c54c358b76d272ae8e6d6fc4b8614b84fe4ac1abe22fbde46861029aa8ba8c55"
+    },
+    {
+      "ordinal": 22,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0022",
+      "bytes": 16777216,
+      "sha256": "6953c7bcb35ebfe171cacfc3df57ef3c0e565bda7f3dc4e3c7583d6ea2a74be6"
+    },
+    {
+      "ordinal": 23,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0023",
+      "bytes": 16777216,
+      "sha256": "ce42a57d95fae534300565b842b267b428d69cc243303e10313607956c06388f"
+    },
+    {
+      "ordinal": 24,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0024",
+      "bytes": 16777216,
+      "sha256": "c0c629eec1ac49035b6baf6590c9de9f252ec06efdd54852f2624db9aafad787"
+    },
+    {
+      "ordinal": 25,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0025",
+      "bytes": 16777216,
+      "sha256": "aa3312a04a9bd1e42c9553fc9893a38c8823261159ed4cc982cca969a11239f9"
+    },
+    {
+      "ordinal": 26,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0026",
+      "bytes": 16777216,
+      "sha256": "f3c0c1318ede991ba5875f78a305b4033bf3c14c804190a0017a7c8197501b42"
+    },
+    {
+      "ordinal": 27,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0027",
+      "bytes": 16777216,
+      "sha256": "125ab8fad08ec1a2005a32b6b7f305dcd78faca007945e25595772e39fdad295"
+    },
+    {
+      "ordinal": 28,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0028",
+      "bytes": 16777216,
+      "sha256": "83b01c303f5951859eb307d54f074408a9d6f8d081335011af2a9c5eca261acf"
+    },
+    {
+      "ordinal": 29,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0029",
+      "bytes": 16777216,
+      "sha256": "315de0341f6ae7ad7fe664abce18d8435e7387409533a5a8c2808482f1409c22"
+    },
+    {
+      "ordinal": 30,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0030",
+      "bytes": 16777216,
+      "sha256": "5b717e9aa0373cc886e99ebd7cb5a8abd041dff870150000f1d9818019ab9155"
+    },
+    {
+      "ordinal": 31,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031",
+      "bytes": 16777216,
+      "sha256": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af"
+    },
+    {
+      "ordinal": 32,
+      "path": "parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032",
+      "bytes": 12970984,
+      "sha256": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7"
+    }
+  ],
+  "source_verification": "verified_from_complete_payload",
+  "coverage": {
+    "archive_bytes": "complete",
+    "delivery_manifest": "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json",
+    "delivery_bindings_verified": 5145,
+    "collections": [
+      {
+        "id": "chronology",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/archive_chronology_assertions.json",
+        "bytes": 199487,
+        "sha256": "ffae89f3f1cc641dbe0d6d665d468cd0b974214bf319b6790a1954a49a114c18",
+        "record_count": 248
+      },
+      {
+        "id": "figures",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/08_Historical_Character_Library/records.json",
+        "bytes": 3275551,
+        "sha256": "0f193b1398e49650fb0b8791b321d6baef6e8b6d9e8f4480d9b5c57ff37d448a",
+        "record_count": 715
+      },
+      {
+        "id": "research",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/research_records.jsonl.gz",
+        "bytes": 38941,
+        "sha256": "573df69c1f3bf717e61c26f321cb3f49d909feb76a1c4039437d7071fa1ac82e",
+        "record_count": 501
+      },
+      {
+        "id": "claims",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/reviewed_claims.json",
+        "bytes": 42951,
+        "sha256": "3c741018b37e1428d9c93b9a484165f01bc23536daa39d41d3339677e4193db1",
+        "record_count": 69
+      },
+      {
+        "id": "sources",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/archive_source_register.json",
+        "bytes": 98255,
+        "sha256": "9a72af983692ae857eef5d7754ae2a0ffd01ad9cb8085342e9886127ca1efc13",
+        "record_count": 98
+      },
+      {
+        "id": "rights",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/merged_rights_inventory.json",
+        "bytes": 114822,
+        "sha256": "f4d1f2514e7de05403e759c8d46e4d832592b1f38384c1dcfff7f3ea5e80684f",
+        "record_count": 103
+      },
+      {
+        "id": "concepts",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/entities.jsonl.gz",
+        "bytes": 2453688,
+        "sha256": "c07dedef0c685772d8a7fbd0830b538565dd50a1b61e50e9c4f8e50174155994",
+        "record_count": 194796
+      },
+      {
+        "id": "places",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/pleiades_places.jsonl.gz",
+        "bytes": 2409654,
+        "sha256": "30f63e5b4fa8eece56a3a18f12fc835ad0e4825a18b0330c3ee061a76d781c16",
+        "record_count": 42406
+      },
+      {
+        "id": "routes",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/itiner_routes.jsonl.gz",
+        "bytes": 13367692,
+        "sha256": "c41033f99d459622dc7a013ccad6d0f54184e2a69f140f63c2c4b5ad55e8d1ad",
+        "record_count": 17193
+      },
+      {
+        "id": "population",
+        "member": "IRGS_Historical_Grand_Archive_v1_1/03_Data/mpd_country_year.jsonl.gz",
+        "bytes": 1080847,
+        "sha256": "679c55d3c80855069ab6cb7424c5356b3d5173813d6b58b1d890eeccccf2363a",
+        "record_count": 131144
+      }
+    ],
+    "reader_collections": "partial_view_of_complete_archive",
+    "historical_truth_verified": false,
+    "rights_expanded": false,
+    "campaign_adoption_performed": false,
+    "unbound_member_count": 1,
+    "member_inventory": {
+      "path": "member_inventory.json",
+      "bytes": 1600082,
+      "sha256": "1f7a0495ad1f08a56ac5d22057a6e3cc24504ba62189d7279a8bed8d2f1a5044",
+      "member_count": 5146
+    }
+  }
+}

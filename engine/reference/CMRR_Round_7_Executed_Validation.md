@@ -114,4 +114,4 @@ python run_round7_fixture.py
 
 ## Provenance and disposition conclusion
 
-R7 is a **positive bounded integration result** for event scheduling and work-in-progress preservation, not a completed Questner-class game runtime or genre-wide simulation engine. The next logical gate is independently qualified owner/footprint inference and disposition-recovery decisions across ambiguous causal order, followed by sustained autonomous strategic execution. Resubmission alone **does not change authority status**.
+R7 is a **positive bounded integration result** for event scheduling and work-in-progress preservation, not a complete autonomous gameplay runtime or fully qualified simulation engine. The next logical gate is independently qualified owner/footprint inference and disposition-recovery decisions across ambiguous causal order, followed by sustained autonomous strategic execution. Resubmission alone **does not change authority status**.

@@ -10,7 +10,7 @@ import zipfile
 from historical_archive import COLLECTIONS, HistoricalArchive, file_hash, from_registration
 
 
-def fixture_archive(folder, *, corrupt_member=False):
+def fixture_archive(folder, *, corrupt_member=False, complete=False):
     path = Path(folder) / 'synthetic-reference.zip'
     payloads = {
         'chronology': [{'id': 'A:one', 'title': 'A disputed beginning', 'start_astronomical': 0,
@@ -28,6 +28,9 @@ def fixture_archive(folder, *, corrupt_member=False):
                      {'id': 'duplicate-local-id', 'name': 'Second source assertion'}],
     }
     files = {}
+    if complete:
+        for collection in COLLECTIONS:
+            payloads.setdefault(collection, [])
     for collection, rows in payloads.items():
         name = COLLECTIONS[collection][1]
         data = (gzip.compress(('\n'.join(json.dumps(r) for r in rows) + '\n').encode())

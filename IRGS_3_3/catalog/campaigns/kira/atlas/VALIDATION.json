@@ -1,0 +1,31 @@
+{
+  "scope": "Kira atlas reference publication",
+  "date": "2026-10-22",
+  "repository": "KingSav3ge/IRGS-Engine",
+  "branch": "main",
+  "checks": {
+    "illustrated_plates": 6,
+    "image_dimensions": [
+      1536,
+      1024
+    ],
+    "original_generated_png_bytes_preserved": true,
+    "asset_manifest_hashes_verified": true,
+    "reintroduced_lupine_sheet_hash_verified": true,
+    "relative_readme_links_verified": true,
+    "existing_kira_canon_and_archive_verifier_passed": true
+  },
+  "reproduce": [
+    "sha256sum -c CHECKSUMS.sha256 (from this atlas directory)",
+    "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py (from repository root)",
+    "python -B tools/verify_components.py --component engine (from repository root)"
+  ],
+  "limits": {
+    "pixel_perfect_agreement_with_minecraft_reference_claimed": false,
+    "common_world_distance_scale_selected": false,
+    "executable_rules_changed": false,
+    "campaign_state_initialized": false,
+    "app_behavior_changed": false,
+    "joined_repository_or_app_dependency_updated": false
+  }
+}

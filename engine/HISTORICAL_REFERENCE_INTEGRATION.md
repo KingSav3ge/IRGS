@@ -2,6 +2,8 @@
 
 The separately supplied Grand Archive 1.1 is attached as a read-only Creator reference library. It does not replace the selected Core, initialize a historical start, populate a continuing world, infer character eligibility or grant a player knowledge of historical outcomes.
 
+The Engine also supports verified multipart storage for **Historical Details**. See [the reader API and manifest contract](HISTORICAL_DETAILS_API.md) for the verified 32-part Catalog delivery, explicit installation caching, failure codes, deep row-count verification and preserved ZIP attachment support. Connected App and three-component qualification remain separate gates.
+
 ## Ownership and provenance
 
 `IRGS_3_3/runtime/historical_archive.py` reads a ZIP selected explicitly by the local owner. Registration pins the entire archive SHA-256 and verifies the delivery manifest bindings for supported collections. Each search/detail read checks the relevant member's size and hash. Changed attachments fail closed until the intended source is registered. Original payloads, namespaces, dates, uncertainty, units, rights dispositions and missing values remain source data. Duplicate local IDs retain different source-row addresses; finding two assertions does not merge their subjects or count quantities twice.

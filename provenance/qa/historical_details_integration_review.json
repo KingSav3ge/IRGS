@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "phase": "component_review_passed_joined_qualification_pending",
+  "phase": "joined_qualified_and_integrated",
   "components": {
     "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
     "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
@@ -135,5 +135,286 @@
     "scope": "Case-insensitive literal byte scan of member names and every decompressed member, including the database. Binary document internal compression is not decoded."
   },
   "private_user_saves_opened": false,
-  "full_c2_or_provider_completion_claimed": false
+  "full_c2_or_provider_completion_claimed": false,
+  "qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
+  "joined_source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
+  "joined_regression": [
+    {
+      "name": "source-integrity",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 17.86,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/source-integrity.txt"
+    },
+    {
+      "name": "evidence-freshness",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.12,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/evidence-freshness.txt"
+    },
+    {
+      "name": "runtime",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 91.61,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/runtime.txt",
+      "tests_run": 527,
+      "skipped": 1
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 83.76,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/web.txt",
+      "tests_run": 166,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 4.63,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/interface.txt",
+      "checks_passed": 72
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 22.54,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/tooling.txt",
+      "tests_run": 29,
+      "skipped": 0
+    }
+  ],
+  "independent_http": {
+    "tests_run": 8,
+    "passed": 8,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "test": "test_concurrent_retry_has_one_commit_and_one_elapsed_span",
+        "status": "passed"
+      },
+      {
+        "test": "test_core_location_confirmation_remains_usable",
+        "status": "passed",
+        "finding_id": "IRGS-QA-002"
+      },
+      {
+        "test": "test_founding_delegation_migration_and_material_continuity",
+        "status": "passed"
+      },
+      {
+        "test": "test_freeform_is_retained_intent_with_no_automatic_elapsed_effect",
+        "status": "passed"
+      },
+      {
+        "test": "test_new_material_does_not_break_committed_campaign",
+        "status": "passed",
+        "finding_id": "IRGS-QA-001"
+      },
+      {
+        "test": "test_pause_resume_preserves_work_and_finishes_once",
+        "status": "passed"
+      },
+      {
+        "test": "test_private_state_and_hidden_permission_do_not_select_player_options",
+        "status": "passed"
+      },
+      {
+        "test": "test_results_survive_host_restart_and_trash_restore",
+        "status": "passed"
+      }
+    ]
+  },
+  "browser_review": {
+    "status": "passed",
+    "source_components": {
+      "schema_version": 2,
+      "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
+      "joined_branch": "main",
+      "engine": {
+        "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
+        "branch": "main",
+        "commit": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+        "source_paths": [
+          "IRGS_3_3",
+          "engine",
+          "provenance"
+        ]
+      },
+      "app": {
+        "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
+        "branch": "main",
+        "commit": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+        "source_paths": [
+          "IRGS_Web",
+          "Start-IRGS.cmd"
+        ],
+        "engine_dependency": "Engine submodule, pinned to engine.commit",
+        "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+      },
+      "catalog": {
+        "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
+        "branch": "main",
+        "commit": "3e898acb2179f18a41d7967817bedf429df29d3f",
+        "source_paths": [
+          "IRGS_Catalog"
+        ]
+      }
+    },
+    "collections": 10,
+    "search": "literal historical figure query",
+    "original_record_and_citations_opened": true,
+    "retry_retains_query": true,
+    "return_to_player_hides_reference": true,
+    "reference_posts": 0,
+    "browser_page_errors": [],
+    "campaign_files_created": 0,
+    "scope": "Actual joined source and complete archive, headless Chromium; temporary empty save directory and cache."
+  },
+  "package_smoke": {
+    "status": "passed",
+    "archive": "/workspace/irgs-cloud/integration/historical-details-01/IRGS_Historical_Details_Qualified.zip",
+    "extracted_files": 769,
+    "packaged_verification": {
+      "app_release": {
+        "component": "IRGS-APP-WEB",
+        "files": 35,
+        "status": "verified"
+      },
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "catalog_release": {
+        "campaign_records": {
+          "development_status_counts": {
+            "concept_draft": 0,
+            "in_development": 3,
+            "planned": 41
+          },
+          "runtime_availability_inferred": false,
+          "status": "verified",
+          "unique_concepts": 44
+        },
+        "campaign_release_approved_by_check": false,
+        "component": "IRGS-Catalog",
+        "concepts": 44,
+        "files": 140,
+        "historical_details": {
+          "archive": {
+            "bytes": 533064680,
+            "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+            "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+          },
+          "archive_coverage": "complete",
+          "campaign_adoption_performed": false,
+          "collection_bindings_verified": 10,
+          "delivery_bindings_verified": 5145,
+          "historical_truth_verified": false,
+          "members_verified": 5146,
+          "parts": 32,
+          "status": "verified",
+          "unbound_members": [
+            "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+          ]
+        },
+        "status": "verified"
+      },
+      "development_files": 768,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/rise.js",
+        "/catalogue.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false
+  },
+  "naming_cleanup": {
+    "irgs_authored_comparison_removed": true,
+    "embedded_design_package_matches": 0,
+    "archive_member_matches": 0,
+    "archive_members_scanned": 5146,
+    "original_source_and_rights_records_preserved": true,
+    "scope": "IRGS-owned wording and validation excerpts; original archive retained byte for byte under the existing preservation instruction.",
+    "adopted_mechanics_and_content_preserved": true,
+    "original_records_preserved_by_explicit_user_direction": true,
+    "irgs_material_scan": {
+      "scope": "Tracked text outside preserved original archive indexes/payload. Embedded design packages and all original archive members separately scanned for the requested unwanted name. Adopted mechanics/content unchanged.",
+      "matching_files": [],
+      "preserve_adopted_mechanics_and_content": true,
+      "preserve_original_archive_records": true
+    }
+  },
+  "operation_capture_summary": {
+    "status": "captured",
+    "operation_spellings": 85,
+    "backend_operation_pairs": 170,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 87,
+    "pairs_with_failed_path_evidence": 33,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false,
+    "tests": {
+      "tests_run": 527,
+      "passed": 526,
+      "skipped": 1,
+      "failures": 0,
+      "errors": 0,
+      "tests_successful": true,
+      "capture_records": 1244,
+      "captured_executions": 3755,
+      "capture_origin_counts": {
+        "actual_apply": 3145,
+        "direct_observe": 610
+      },
+      "actual_committed_apply_count": 3079,
+      "excluded_unknown_operations": 7,
+      "external_fixture_policy_skips": [
+        "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+      ],
+      "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+      "limits": [
+        "Repeated probes are observations, not unique committed world events.",
+        "Failed-attempt writes are scratch attempts, never committed effects.",
+        "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+        "Rejected probes mirror the current R9 backend selection policy."
+      ]
+    }
+  }
 }

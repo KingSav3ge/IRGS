@@ -1,37 +1,74 @@
 {
   "schema_version": 1,
-  "scope": "Coordinator role, component work orders and enforced unified integration gate; no component product source imported.",
+  "scope": "Reviewed Engine/App/Catalog set integrated after isolated joined regression, complete archive, browser, evidence and extraction qualification.",
   "cycle_id": "historical-details-01",
-  "integrated_component_pins": {
-    "engine": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
-    "app": "3980e5665814847d3cd02c0f0b86417a231e2be6",
-    "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
+  "status": "passed_and_integrated",
+  "component_commits": {
+    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
-  "work_orders": [
+  "qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
+  "joined_source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
+  "regression_checks": [
     {
-      "repository": "IRGS-Engine",
-      "work_order_commit": "f775601aa22111ce08116874053a10f7ec8f622b",
-      "product_code_changed_by_this_commit": false
+      "name": "source-integrity",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 17.86,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/source-integrity.txt"
     },
     {
-      "repository": "IRGS-APP-WEB",
-      "work_order_commit": "d3dae7b0092b65b2c7902488a1a99aa82a7522cc",
-      "product_code_changed_by_this_commit": false
+      "name": "evidence-freshness",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.12,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/evidence-freshness.txt"
     },
     {
-      "repository": "IRGS-Catalog",
-      "work_order_commit": "5c007e16be6ab8930b3bcd4ad10ab320733102a6",
-      "product_code_changed_by_this_commit": false
+      "name": "runtime",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 91.61,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/runtime.txt",
+      "tests_run": 527,
+      "skipped": 1
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 83.76,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/web.txt",
+      "tests_run": 166,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 4.63,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/interface.txt",
+      "checks_passed": 72
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 22.54,
+      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/tooling.txt",
+      "tests_run": 29,
+      "skipped": 0
     }
   ],
-  "tooling_tests": {
-    "run": 29,
-    "passed": 29,
+  "independent_http": {
+    "run": 8,
+    "passed": 8,
     "failed": 0
   },
   "runtime_capture": {
-    "tests_run": 497,
-    "passed": 496,
+    "tests_run": 527,
+    "passed": 526,
     "skipped": 1,
     "failures": 0,
     "errors": 0,
@@ -55,28 +92,104 @@
       "Rejected probes mirror the current R9 backend selection policy."
     ]
   },
-  "integration_gate": {
-    "cycle_id": "historical-details-01",
-    "status": "held",
-    "ready": false,
-    "selected_components": {
-      "engine": "f775601aa22111ce08116874053a10f7ec8f622b",
-      "app": "d3dae7b0092b65b2c7902488a1a99aa82a7522cc",
-      "catalog": "5c007e16be6ab8930b3bcd4ad10ab320733102a6"
-    },
-    "reasons": [
-      "engine: this exact component update needs coordinator approval.",
-      "engine: passing review evidence is incomplete.",
-      "app: this exact component update needs coordinator approval.",
-      "app: passing review evidence is incomplete.",
-      "catalog: this exact component update needs coordinator approval.",
-      "catalog: passing review evidence is incomplete.",
-      "app: its engine dependency pin differs from the selected commit.",
-      "app: its catalog dependency pin differs from the selected commit."
-    ]
+  "browser": {
+    "status": "passed",
+    "collections": 10,
+    "campaign_files_created": 0,
+    "reference_posts": 0,
+    "page_errors": 0
   },
-  "chat_messages_dispatched": false,
-  "archive_payload_available": false,
-  "component_source_integration_performed": false,
-  "user_saves_opened": false
+  "archive": {
+    "bytes": 533064680,
+    "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "parts": 32,
+    "members_verified": 5146,
+    "delivery_bindings_verified": 5145,
+    "reader_rows": 387273
+  },
+  "package_smoke": {
+    "status": "passed",
+    "archive": "/workspace/irgs-cloud/integration/historical-details-01/IRGS_Historical_Details_Qualified.zip",
+    "extracted_files": 769,
+    "packaged_verification": {
+      "app_release": {
+        "component": "IRGS-APP-WEB",
+        "files": 35,
+        "status": "verified"
+      },
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "catalog_release": {
+        "campaign_records": {
+          "development_status_counts": {
+            "concept_draft": 0,
+            "in_development": 3,
+            "planned": 41
+          },
+          "runtime_availability_inferred": false,
+          "status": "verified",
+          "unique_concepts": 44
+        },
+        "campaign_release_approved_by_check": false,
+        "component": "IRGS-Catalog",
+        "concepts": 44,
+        "files": 140,
+        "historical_details": {
+          "archive": {
+            "bytes": 533064680,
+            "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+            "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+          },
+          "archive_coverage": "complete",
+          "campaign_adoption_performed": false,
+          "collection_bindings_verified": 10,
+          "delivery_bindings_verified": 5145,
+          "historical_truth_verified": false,
+          "members_verified": 5146,
+          "parts": 32,
+          "status": "verified",
+          "unbound_members": [
+            "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+          ]
+        },
+        "status": "verified"
+      },
+      "development_files": 768,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/rise.js",
+        "/catalogue.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false
+  },
+  "source_inputs_match_candidate": true,
+  "adopted_mechanics_and_content_preserved": true,
+  "original_archive_unchanged": true,
+  "private_user_saves_used": false,
+  "live_inference_activated": false
 }

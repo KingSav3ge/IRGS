@@ -1,0 +1,115 @@
+{
+  "increment": "historical-details-delivery-01",
+  "date": "2026-10-22",
+  "component": "KingSav3ge/IRGS-Engine",
+  "source_baseline": "b3e7d760a2cf3712292b09328566cf1ed0d78c97",
+  "status": "REAL_CATALOG_DELIVERY_AND_ENGINE_READER_VERIFIED_COORDINATOR_APP_INTEGRATION_PENDING",
+  "catalog": {
+    "commit": "58ce55672bdd75076b94882bd8715a1d2a1f383a",
+    "manifest": "IRGS_Catalog/historical_details/manifest.json",
+    "manifest_sha256": "1543cd65b5c4b3ed6f160565b4e4bf01d09dd44a392d53c7036efcd5c0dcf21f",
+    "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "archive_bytes": 533064680,
+    "parts": 32,
+    "record_counts": {
+      "chronology": 248,
+      "figures": 715,
+      "research": 501,
+      "claims": 69,
+      "sources": 98,
+      "rights": 103,
+      "concepts": 194796,
+      "places": 42406,
+      "routes": 17193,
+      "population": 131144
+    },
+    "total_reader_rows": 387273,
+    "scope": "Original full ZIP identity, every part, ten reader member bindings and row counts verified by Engine. The reader remains a partial view of the full archive; this check does not independently re-index all ancillary ZIP members.",
+    "source_acquisition": "Downloaded immutable part URLs at the exact Catalog commit into temporary qualification data; per-part hashes rechecked before reader use. Payload and reconstructed cache are excluded from Engine source."
+  },
+  "checks": [
+    {
+      "command": "python -B tools/qualify_historical_details.py <explicit-manifest> --manifest-sha256 1543cd65b5c4b3ed6f160565b4e4bf01d09dd44a392d53c7036efcd5c0dcf21f --cache-dir <ignored-installation-cache>",
+      "status": "verified",
+      "catalog_coverage_verified": true
+    },
+    {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p 'test_historical*.py' -v",
+      "run": 70,
+      "passed": 70,
+      "skipped": 0,
+      "multipart_cases": 30,
+      "existing_zip_cases": 6
+    },
+    {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -v",
+      "run": 527,
+      "passed": 526,
+      "skipped": 1,
+      "skip": "test_legacy_ast_save_load_does_not_rewrite: historical local save not packaged"
+    },
+    {
+      "check": "Real delivery failure probes against an existing complete cache, using an isolated temporary source copy",
+      "passed": 6,
+      "cases": [
+        "missing part",
+        "changed part",
+        "unrecorded part",
+        "symbolic link",
+        "reordered inventory",
+        "duplicated inventory"
+      ],
+      "valid_delivery_restored": true
+    },
+    {
+      "check": "Legacy ZIP equivalence on actual records",
+      "search_collections": 10,
+      "detail_collections": 10,
+      "status": "passed"
+    },
+    {
+      "check": "Engine component integrity",
+      "status": "verified"
+    },
+    {
+      "check": "Kira canon/archive verifier",
+      "status": "passed"
+    },
+    {
+      "check": "Active development/API/provider-plan documentation links",
+      "status": "passed"
+    }
+  ],
+  "app_boundary": {
+    "source_commit": "e8ef2b0e683a46fab4fe586e86afd26196ab2869",
+    "source_module": "IRGS_Web/historical_reference.py",
+    "source_module_sha256": "1c16c32b53975aea4c5640d6498c66479eaf27b95137211c8b33be41357fa62d",
+    "tests": "Status, literal search and original record detail passed through the exact source module with explicitly supplied Catalog manifest/pin/cache.",
+    "scope": "Isolated module consumer check using a temporary catalog_paths selector; no App source or dependency pin was changed.",
+    "checked_in_engine_pin": "2c5590bcb2d7ee7e02f597526c3cb341841bd2dd",
+    "checked_in_catalog_pin": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5",
+    "app_http_interface_or_approved_pair_qualified": false
+  },
+  "implemented_scope": [
+    "Catalog-compatible rejection of nonportable names, linked manifests/parts and unrecorded entries in the flat parts directory",
+    "Explicit verify_delivery API validates actual row counts and original collection metadata",
+    "Repeatable Engine-only qualification command",
+    "Verified actual Catalog delivery and legacy/App boundary interoperability"
+  ],
+  "remaining": [
+    "Coordinator review of exact component candidates, App dependency pin updates and connected HTTP/interface/joined qualification",
+    "DEV-06–DEV-08 general dependency qualification remains open",
+    "AIP-01–AIP-09 recorded as staged requirements only; provider implementation and all 16 model evaluations remain unexecuted"
+  ],
+  "unrun": [
+    "App HTTP/interface and joined three-component tests",
+    "Independent-process crash/power-loss and Windows filesystem qualification",
+    "Live inference and model-quality benchmarks"
+  ],
+  "historical_truth_verified": false,
+  "rights_expanded": false,
+  "campaign_effects": false,
+  "adoption_performed": false,
+  "private_user_saves_used": false,
+  "additional_c2_completion_claimed": false
+}
