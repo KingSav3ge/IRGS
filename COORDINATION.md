@@ -2,6 +2,8 @@
 
 ## Active cycle: solo-runtime-01
 
+Target iteration: **IRGS 3.4.0 — in development**. The current cycle contributes to that release; its existing cycle ID and integration gate remain in use.
+
 The user's priority is completion of the systems needed for IRGS to run as a continuing Solo experience. Follow [the Solo completion plan](SOLO_COMPLETION_PLAN.md). The target is editable player intent, actor-scoped AI interpretation, explicit acceptance, real Core validation/execution, durable outcomes and grounded narration followed by the next decision. Complete the supporting recovery, time, dialogue and shared-world processes through the existing owners.
 
 | Existing development chat | Immediate assignment | Delivery evidence |

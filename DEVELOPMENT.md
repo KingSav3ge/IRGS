@@ -1,5 +1,7 @@
 # IRGS 3.3.3 Unified Development D1
 
+Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+
 This is the complete assembled development baseline: the selected Core 3.3 runtime and catalogue, C2's applied engine specification, and the preferred Emergent visual design connected to the canonical Solo host. D1 identifies this combined source edition. It does not claim that the remaining C2 mechanics are implemented.
 
 ## Source layout

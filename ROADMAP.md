@@ -1,5 +1,7 @@
 # IRGS Engine development roadmap
 
+Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+
 Updated 2026-10-22. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies and completion criteria, and [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for delivered increments and verification limits. The statuses below describe implemented scope; historical App/HTTP evidence is not fresh qualification of this standalone Engine checkout.

@@ -171,5 +171,7 @@
       "product_code_changed_by_this_commit": false,
       "viable_component_update": false
     }
-  ]
+  ],
+  "target_version": "3.4.0",
+  "target_version_status": "in_development"
 }

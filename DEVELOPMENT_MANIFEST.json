@@ -89,13 +89,13 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 6618,
-      "sha256": "85cb4b289cd3b04abe2ff99032f34e729c0b3bdaee88f2e0f3730388f3229125"
+      "bytes": 6692,
+      "sha256": "5be8d2f00010267e3d49ff97310279bb363d62ee3199de45614cc0e82f02eed2"
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 3636,
-      "sha256": "23b948c5faf98f9cb5111e61460f2df92017453cd0066b79ffc2329cafd9a26c"
+      "bytes": 3795,
+      "sha256": "b21b41ff03d14f3722eeae553f341de04670f06bcf55b8b83b94f78d6fab2a0e"
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
@@ -114,8 +114,8 @@
     },
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 7968,
-      "sha256": "c5fa0bc336b0b13488f0c9a504ee09d822029bcb4eba064e12813bc54819af84"
+      "bytes": 8159,
+      "sha256": "29fb63423fb5903743f36ebaa6875732444f5a5bdea13e1c7ea6cc73054e14f5"
     },
     {
       "path": "DEVELOPMENT_LIST.md",
@@ -2849,13 +2849,13 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 10604,
-      "sha256": "43a7905b4d719790533f77f0b1dc757d747626d3606d4abd9da779ceadea2443"
+      "bytes": 10795,
+      "sha256": "0c26b67dcb0cf3cc85756f749fce25d3288faa6bedd51b7921752adba4272e23"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
-      "bytes": 9316,
-      "sha256": "dd3199e7519d41bbb511ca31dd5fbeed74de62162bf738e68aca3fb191eb1cde"
+      "bytes": 9663,
+      "sha256": "1b17dc9bed373b6ba942809180213e6a1d898bb1eba7b3c2e8ac46e2efb9df4d"
     },
     {
       "path": "SOURCE_PUBLICATION_VALIDATION.json",

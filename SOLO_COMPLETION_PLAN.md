@@ -1,4 +1,6 @@
-# IRGS Solo runtime completion
+# IRGS 3.4.0 Solo runtime completion
+
+Target iteration: **3.4.0**, currently in development. This version identifies the next coordinated Engine, App and Catalog delivery. Existing qualified releases, Core compatibility identifiers, content versions and historical evidence retain their recorded versions. Publish the 3.4.0 release identity with the qualified integrated build.
 
 Priority set by the user on 23 October 2026. The next release target is a continuing Solo campaign with an AI-assisted action loop. Work belongs to the existing Engine, App/Website and Catalog chats; this coordinator reviews and integrates their exact commits.
 
