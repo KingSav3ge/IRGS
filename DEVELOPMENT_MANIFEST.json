@@ -89,8 +89,8 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 8996,
-      "sha256": "e0648c94bbf5234fc9f670c704b1c30363d604904f5c496e2af50c9d8d3612cb"
+      "bytes": 13188,
+      "sha256": "34a7eaf0115164d58a96e9b012d827125904405c9676f7fd822e532626ab4b24"
     },
     {
       "path": "COORDINATION.md",
@@ -3336,6 +3336,11 @@
       "path": "provenance/qa/current_report.md",
       "bytes": 3119,
       "sha256": "a221328e26cccf1c5c083089c2e9c06a9519d996ef031eb18f1b873dace426e6"
+    },
+    {
+      "path": "provenance/qa/historical_details_integration_review.json",
+      "bytes": 4349,
+      "sha256": "bab38b42420223773099969528bb8cee0a9804e99c09ad9afc9bfe82c0544131"
     },
     {
       "path": "provenance/qa/historical_reference_20261022/historical_attachment_smoke.json",
