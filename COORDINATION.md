@@ -8,8 +8,8 @@ Historical Details is integrated. The complete original archive is included in C
 
 | Component | Reviewed and integrated commit | Delivered behavior |
 | --- | --- | --- |
-| Engine | `7fe99a55bab7d731674f56d8adde2b84ae73a860` | Verified multipart reader, strict source checks, legacy ZIP compatibility and IRGS wording. |
-| App/Website | `9fe8b07820701ce5bbb68829a9dffae852a1e3af` | Protected Historical Details browser, read-only recovery, exact dependency pins and safe presentation. |
+| Engine | `723627e629231b5e90f38b9d52b65c9a3967b92a` | Verified multipart reader, strict source checks, legacy ZIP compatibility and IRGS wording. |
+| App/Website | `d8dc35ed653e516ccd0cacf91ee9693258491032` | Protected Historical Details browser, read-only recovery, exact dependency pins and safe presentation. |
 | Catalog | `3e898acb2179f18a41d7967817bedf429df29d3f` | Complete archive preservation and validation of 44 campaign preview records. |
 
 Fresh qualification passed the full synthetic Engine and Web suites, interface checks, tooling, eight independent mechanics/privacy/recovery HTTP probes, real archive reads, Chromium navigation and package extraction/HTTP smoke. Exact counts, source identities, platform skips and limits are recorded in [COORDINATOR_VALIDATION.json](COORDINATOR_VALIDATION.json) and [the integration review](provenance/qa/historical_details_integration_review.json). Current operation evidence matches the integrated source inputs; it does not certify every branch or complete C2.
@@ -33,3 +33,5 @@ Describe IRGS mechanics and content in IRGS terms. Adopted systems and content r
 ## Coordination mechanism
 
 The current session can read the existing chats and publish repository directions/reviews. It has no direct send/start-thread tool. Repository work orders and this status are the handoff; no chat messages or replacement agents are claimed. Component chats push only their own repositories; the coordinator alone publishes a qualified unified set. Planning and checksum-only commits do not satisfy a viable component delivery.
+
+A final user-requested editorial maintenance pass replaces an obsolete campaign-title comparison in the authored library summary. Its original source and adopted content remain intact. Fresh runtime, Web, interface, tooling, HTTP and Chromium checks pass on the updated source fingerprint.

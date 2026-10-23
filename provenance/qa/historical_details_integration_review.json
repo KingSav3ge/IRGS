@@ -2,8 +2,8 @@
   "schema_version": 1,
   "phase": "joined_qualified_and_integrated",
   "components": {
-    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
-    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
     "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
   "component_checks": {
@@ -136,56 +136,41 @@
   },
   "private_user_saves_opened": false,
   "full_c2_or_provider_completion_claimed": false,
-  "qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
-  "joined_source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
+  "joined_source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
   "joined_regression": [
     {
       "name": "source-integrity",
-      "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 17.86,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/source-integrity.txt"
+      "status": "passed"
     },
     {
       "name": "evidence-freshness",
-      "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 1.12,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/evidence-freshness.txt"
+      "status": "passed"
     },
     {
       "name": "runtime",
       "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 91.61,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/runtime.txt",
       "tests_run": 527,
-      "skipped": 1
+      "passed": 526,
+      "skipped": 1,
+      "origin": "Fresh execution-derived capture after editorial maintenance."
     },
     {
       "name": "web",
       "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 83.76,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/web.txt",
       "tests_run": 166,
+      "passed": 159,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 4.63,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/interface.txt",
       "checks_passed": 72
     },
     {
       "name": "tooling",
       "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 22.54,
-      "log": "/workspace/irgs-cloud/integration/historical-details-01/assembly-1/logs/tooling.txt",
       "tests_run": 29,
+      "passed": 29,
       "skipped": 0
     }
   ],
@@ -241,7 +226,7 @@
       "engine": {
         "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
         "branch": "main",
-        "commit": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+        "commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
         "source_paths": [
           "IRGS_3_3",
           "engine",
@@ -251,7 +236,7 @@
       "app": {
         "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
         "branch": "main",
-        "commit": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+        "commit": "d8dc35ed653e516ccd0cacf91ee9693258491032",
         "source_paths": [
           "IRGS_Web",
           "Start-IRGS.cmd"
@@ -416,5 +401,20 @@
         "Rejected probes mirror the current R9 backend selection policy."
       ]
     }
-  }
+  },
+  "editorial_maintenance": {
+    "kind": "direct_user_requested_naming_cleanup",
+    "previous_integrated_source": "eba8d466b2fda04ab31c2d28445145dfeaa0ce5b",
+    "scope": "One IRGS-authored campaign-summary sentence and its source hash. Original records, archive bytes, adopted mechanics and campaign content unchanged.",
+    "fresh_qualification": "passed",
+    "source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
+    "component_commits": {
+      "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+      "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+      "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+    },
+    "adopted_mechanics_and_content_preserved": true,
+    "original_source_records_preserved": true
+  },
+  "initial_qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3"
 }

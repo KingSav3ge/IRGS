@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "milestone": "DEV-05",
-  "generated_at_utc": "2026-10-23T14:18:54.757113+00:00",
+  "generated_at_utc": "2026-10-23T14:42:50.058974+00:00",
   "scope": "Declared backend/operation inventory with current synthetic test execution; not a per-campaign availability list or all-branch certification.",
   "source_sha256": {
     "IRGS_3_3/Core/IRGS_Core_3_3_Binding.json": "4051a65303582ca21bbdfed855f28ff121a25705c7251d6c2c119f32b9d2f301",
@@ -87,7 +87,7 @@
     "IRGS_3_3/catalog/genres/space/source/source_space_binding.json": "8bc3d85b3dc97f0327d016ee2f4cc83132ba351bf4105db82ae151366f7622ae",
     "IRGS_3_3/catalog/hold_summary.json": "d7bd1d0fdf3602d4a6dd1f40f2ce493e448c95546b3de17ba1eed2188ea93212",
     "IRGS_3_3/catalog/libraries/ast/AST_Art_Direction_v0_5.md": "887d5b35121fe4399d6f4a207a08362bc533caabedd3040852ba09bc4c933f7f",
-    "IRGS_3_3/catalog/libraries/ast/AST_Content_Library_v0_5.md": "941432e39ebd4bbaead08811ed3e6bbe3e6a655da6628e96d89dab52bada219d",
+    "IRGS_3_3/catalog/libraries/ast/AST_Content_Library_v0_5.md": "c8b57750afa0490153df39c7eee95c6942c3926745f7b9423bd6f00993839d64",
     "IRGS_3_3/catalog/libraries/ast/AST_Engine_v0_5.md": "06d75c34537bf8d66235b8b51fe35455f939a066955ac42f69cf19e78dc01a38",
     "IRGS_3_3/catalog/libraries/ast/AST_Master_Character_Registry_Archive_Audited_v2.docx": "a16e52e3f7f45fd712af58436dcc111ad5e724f77fa52630ba5d4fcb7b2ac477",
     "IRGS_3_3/catalog/libraries/ast/AST_Receiving_Binding_v0_5.json": "dd003e222f78808ffd4ba5ffcf63b8e3fc8d6d60ecc61e1690db6d1fe3682df4",
@@ -254,7 +254,7 @@
     "IRGS_3_3/data/hyw_entry_catalogue.json": "2530c21a03dceab23a7119b9ebd9a486479879451ee5500562bf10cc1fc8c736",
     "IRGS_3_3/data/hyw_historical_baseline.json": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0",
     "IRGS_3_3/data/solo_quay_opening.json": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5",
-    "IRGS_3_3/release.json": "bbe4e24cbb7fc92994bb5d282d5f874af0d54b043922b8eb981176ca34314846",
+    "IRGS_3_3/release.json": "55eb6f0f32cafd3cd74d8b6e85c89e3e2227220effb39ca307bf4a0727a965f6",
     "IRGS_3_3/runtime/ast_runtime.py": "d55847c9ffbfa18985b426479daafb5087cc00bba009f8ce86ef1d0646d75fa9",
     "IRGS_3_3/runtime/ast_server.py": "83bb4942d4f462c0475518a32f310d5cc653eb3dcc5d395e3cad852cdece0f3d",
     "IRGS_3_3/runtime/campaign_library.py": "71e64a45f0b8a35182b14f2cac2061f5c101752245e32edce48e1042bd657e28",

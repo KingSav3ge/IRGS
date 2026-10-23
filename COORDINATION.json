@@ -30,14 +30,14 @@
     }
   },
   "baseline_components": {
-    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
-    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
     "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
+      "commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
       "deliverable": "component_update",
       "checks": [
         {
@@ -61,7 +61,7 @@
         {
           "name": "reference_wording_cleanup",
           "status": "passed",
-          "scope": "Documentation-only final change; executable/release bytes unchanged."
+          "scope": "Authored wording only; executable gameplay and numeric campaign data unchanged. Integrity pins refreshed and full source-bound qualification rerun."
         }
       ],
       "source_review_complete": true,
@@ -74,7 +74,7 @@
     },
     "app": {
       "status": "approved",
-      "commit": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+      "commit": "d8dc35ed653e516ccd0cacf91ee9693258491032",
       "deliverable": "component_update",
       "checks": [
         {
@@ -331,8 +331,8 @@
     }
   },
   "selected_components": {
-    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
-    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
     "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
   "resolved_blockers": [
@@ -357,7 +357,8 @@
       "matching_files": [],
       "preserve_adopted_mechanics_and_content": true,
       "preserve_original_archive_records": true
-    }
+    },
+    "broad_irgs_material_matches": 0
   },
   "component_reviewed_at_utc": "2026-10-23T14:10:36.000136+00:00",
   "cycle_start_components": {
@@ -366,17 +367,31 @@
     "catalog": "c70dc16d4e48493b833dba5a0f68f43a972bdcb5"
   },
   "completed_components": {
-    "engine": "7fe99a55bab7d731674f56d8adde2b84ae73a860",
-    "app": "9fe8b07820701ce5bbb68829a9dffae852a1e3af",
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
     "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
   },
-  "qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3",
-  "source_input_sha256": "b203a67376ec9f849ede64f95b6c49b976a160dd6bd7e493ede8f94a4f7a20d9",
-  "completed_at_utc": "2026-10-23T14:26:46.010880+00:00",
+  "source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
+  "completed_at_utc": "2026-10-23T14:45:06.579205+00:00",
   "next_assignments": {
     "engine": "Continue DEV-06\u2013DEV-08 qualification and implement the AIP-S1 offline provider/access/validation/ledger foundation with fake transport before a live adapter.",
     "app": "Consume the reviewed Engine contract when delivered; expose honest disabled/unconfigured states and protected diagnostics without a second router or simulator.",
     "catalog": "Prepare rights-labelled synthetic evaluation inputs and processing classifications; preserve adopted content and the original archive. Continue independent catalogue validation."
   },
-  "completion_scope": "Historical Details integration complete. No general C2 resolver, provider runtime or model-quality benchmark completion is claimed."
+  "completion_scope": "Historical Details integration complete. No general C2 resolver, provider runtime or model-quality benchmark completion is claimed.",
+  "editorial_maintenance": {
+    "kind": "direct_user_requested_naming_cleanup",
+    "previous_integrated_source": "eba8d466b2fda04ab31c2d28445145dfeaa0ce5b",
+    "scope": "One IRGS-authored campaign-summary sentence and its source hash. Original records, archive bytes, adopted mechanics and campaign content unchanged.",
+    "fresh_qualification": "passed",
+    "source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
+    "component_commits": {
+      "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+      "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+      "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+    },
+    "adopted_mechanics_and_content_preserved": true,
+    "original_source_records_preserved": true
+  },
+  "initial_qualified_candidate_commit": "272f710b6094ed72ec62fd937769bf956d2ebbe3"
 }

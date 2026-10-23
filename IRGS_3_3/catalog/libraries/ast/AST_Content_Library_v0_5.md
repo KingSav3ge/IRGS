@@ -165,7 +165,7 @@ Four hits from these six shots. A seventh, earlier unauthorized shot hit but end
 | AST-QUESTION-GATEHOUSE@0.3 | Ethical disagreement about post and comrade unresolved | No standing permission to abandon duty |
 | AST-QUESTION-SWORD@0.3 | Richard cannot read the Gaelic text; questions about maker/history/inscription were unanswered at the historical handoff; S11 refers to subsequently established narrative/sequence without reproducing their full text | Player-authored family lore cannot be supplied by a skill roll, Library entry or art |
 
-Earlier titles **Frontline: Total War** and **The Cameron Chronicle** are aliases for this archived campaign, according to S1. They do not import other games or universes.
+This archived campaign uses **A Scot’s Tale** as its current title; earlier titles remain recorded in source S1.
 
 ## L8. Proposed task and content templates
 
