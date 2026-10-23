@@ -1,32 +1,33 @@
 {
   "schema_version": 1,
-  "candidate_commit": "0dacbc9a62be5e2a2f4048049eb3d7aa3d05a762",
-  "finished_at_utc": "2026-10-23T19:55:48.577884+00:00",
-  "status": "passed",
+  "candidate_commit": "afe4c3d614116ab3b61072e365fd8aa8bc6e9047",
+  "finished_at_utc": "2026-10-23T20:03:05.130508+00:00",
+  "status": "needs_fixes",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/candidate",
+  "candidate_source_root": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/candidate",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 17.79,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/source-integrity.txt"
+      "duration_seconds": 27.8,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
-      "status": "passed",
-      "exit_code": 0,
-      "duration_seconds": 1.88,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/evidence-freshness.txt"
+      "status": "failed",
+      "exit_code": 1,
+      "duration_seconds": 0.82,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/evidence-freshness.txt",
+      "diagnostic_tail": "{\"status\": \"failed\", \"error\": \"Operation evidence is stale: code, tests or capture tools changed\"}\n"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 101.67,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/runtime.txt",
+      "duration_seconds": 96.89,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/runtime.txt",
       "tests_run": 527,
       "skipped": 1
     },
@@ -34,8 +35,8 @@
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 88.9,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/web.txt",
+      "duration_seconds": 80.02,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/web.txt",
       "tests_run": 166,
       "skipped": 7
     },
@@ -43,16 +44,16 @@
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.53,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/interface.txt",
+      "duration_seconds": 4.59,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/interface.txt",
       "checks_passed": 72
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 44.14,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792785009515450971/logs/tooling.txt",
+      "duration_seconds": 18.63,
+      "log": "/workspace/irgs-cloud/component-qa/runs/1792785477440640021/logs/tooling.txt",
       "tests_run": 29,
       "skipped": 0
     }
@@ -136,9 +137,9 @@
   "candidate_components": {
     "engine": "e2d7fd3d2c3aef436fda280c45c0e4508c02618a",
     "app": "a6da825d4180773ee97f2b76d0808dbde79c7a69",
-    "catalog": "0a6a754494b2b5c12f47bbd392d215ce81ebf663"
+    "catalog": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3"
   },
-  "joined_template_commit": "29499ffbc6e140ad02674a9274d44a3ab36e0a8a",
+  "joined_template_commit": "827a91af2495b6e906d78ce7d950e55a2c09e343",
   "app_declared_engine_commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
   "app_declared_catalog_commit": "3e898acb2179f18a41d7967817bedf429df29d3f",
   "pin_matches_candidate": false,

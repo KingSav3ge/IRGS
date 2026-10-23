@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `0dacbc9a62be5e2a2f4048049eb3d7aa3d05a762`
-Result: **passed** · 2026-10-23T19:55:48.577884+00:00
+Candidate: `afe4c3d614116ab3b61072e365fd8aa8bc6e9047`
+Result: **needs_fixes** · 2026-10-23T20:03:05.130508+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -15,7 +15,7 @@ Independent cases: 8 passed, 0 failed, 0 errors.
 | Check | Status |
 | --- | --- |
 | source-integrity | passed |
-| evidence-freshness | passed |
+| evidence-freshness | failed |
 | runtime | passed |
 | web | passed |
 | interface | passed |
@@ -63,6 +63,6 @@ Engine: `e2d7fd3d2c3aef436fda280c45c0e4508c02618a`
 
 App: `a6da825d4180773ee97f2b76d0808dbde79c7a69`
 
-Catalog: `0a6a754494b2b5c12f47bbd392d215ce81ebf663`
+Catalog: `2e4f389882df0807fc8064c1a0b533aaa3b1bcd3`
 
 This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **false**.
