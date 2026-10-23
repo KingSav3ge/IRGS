@@ -40,4 +40,4 @@ For each enabled route, record the actual gateway and host terms, version, permi
 
 Use the [master-spec addendum](AI_PROVIDER_STRATEGY.md) and the component work orders. First build and test the disabled-by-default adapter/access/ledger contract with fake transport, then qualify one opt-in direct integration beside an already supported gameplay operation. Add comparative providers and routing only after that bounded flow works. Keep unknown provider charges and unrun model evaluations explicit.
 
-The existing Historical Details cycle remains held pending viable, reviewed component updates. This review neither imports the missing archive nor moves App dependencies. It adds engineering requirements and a test programme, with no live AI feature or paid service activated.
+Historical Details was subsequently integrated with the complete archive and reviewed App dependencies. The user's 23 October priority is completion of the Solo runtime; follow [the completion plan](SOLO_COMPLETION_PLAN.md) and `solo-runtime-01` work orders. This research review establishes no provider implementation, paid service activation or model-quality result.

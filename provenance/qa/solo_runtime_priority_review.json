@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "cycle_id": "solo-runtime-01",
+  "review_type": "coordinator_priority_and_work_order_publication",
+  "status": "assigned_awaiting_implementation",
+  "date": "2026-10-23",
+  "base_joined_commit": "30e9a18b060e00aa4198e7ea143a0740e34cbc33",
+  "completion_plan": "SOLO_COMPLETION_PLAN.md",
+  "work_order_publication": [
+    {
+      "component": "engine",
+      "repository": "IRGS-Engine",
+      "work_order_commit": "5ef18f7d75d8a477af06921288569220f3475f85",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    },
+    {
+      "component": "app",
+      "repository": "IRGS-APP-WEB",
+      "work_order_commit": "754ad7318dc482b396367e852ade67ed923e82ac",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    },
+    {
+      "component": "catalog",
+      "repository": "IRGS-Catalog",
+      "work_order_commit": "f22049396795425838add515960a3e95a5e98189",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    }
+  ],
+  "selected_runtime_components": {
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  },
+  "previous_cycle_preserved_exactly": "provenance/qa/completed_cycles/historical-details-01.json",
+  "fresh_checks": {
+    "component_integrity": {
+      "engine": "verified",
+      "app": "verified",
+      "catalog": "verified"
+    },
+    "joined_integrity": "verified",
+    "operation_evidence_freshness": "current",
+    "integration_gate_unit_tests": {
+      "tests_run": 4,
+      "passed": 4
+    },
+    "new_cycle_gate": "held as expected; no new runtime implementation is approved",
+    "active_document_links": "passed",
+    "whitespace": "passed"
+  },
+  "runtime_code_or_campaign_data_changed": false,
+  "dependency_pins_changed": false,
+  "runtime_implemented_by_this_update": false,
+  "new_SOLO_acceptance_scenarios_executed": 0,
+  "model_evaluation_cases_executed": 0,
+  "live_calls_made": 0,
+  "chats_observed_idle": true,
+  "chat_messages_dispatched": false,
+  "chat_start_tool_available": false,
+  "scope": "Published the user-requested runtime completion priorities. No new gameplay/provider capability, product-source import or model-quality completion is claimed."
+}

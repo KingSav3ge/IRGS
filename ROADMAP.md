@@ -14,9 +14,13 @@ Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies
 - **Engine framing:** the [Engine model](engine/ENGINE_MODEL.md), behavior-based design guidance and neutral archive introduction. Source provenance remains available; this increment adds no gameplay resolver.
 - **Kira atlas reference:** [six illustrated regional plates and creator-supplied regional foundations](IRGS_3_3/catalog/campaigns/kira/atlas/README.md) are published beside the Kira worldbook. This is world reference content; it adds no executable capability or starting snapshot.
 
+## Coordinator priority — 23 October 2026
+
+Complete the runnable Solo systems under [SOLO_COMPLETION_PLAN.md](SOLO_COMPLETION_PLAN.md) and `solo-runtime-01`. Historical Details is integrated. Component Engine milestones below preserve the last imported plan; the new work order prioritizes the provider/action boundary and qualified dependency/recovery behavior. This coordinator metadata update imports no component source.
+
 ## Work in progress
 
-- **Historical Details coordination:** the real archive and compatible Catalog manifest are verified at exact source pins. App still needs its coordinator-reviewed Engine/Catalog dependencies and connected qualification before the combined set is ready. DEV-06–DEV-08 remain the continuing general dependency priority.
+- **Solo runtime coordination:** new provider/action contracts, the AI-assisted player round trip and synthetic runtime fixtures are assigned. Historical Details is complete. Exact component approvals and joined qualification remain required for each new runtime increment.
 - **DEV-06–DEV-08 — dependency qualification:** collection observation and named rejected-path cases exist. Broader conflict, authorization and cross-engine coverage remain open. See [rejected dependencies](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md).
 - **DEV-10, DEV-12–DEV-14 and DEV-18–DEV-20 — processes and campaign continuity:** local actions, bounded settlement work and dated initialization supply partial implementations. General interrupted travel/search, evolving historical authority and full setup regressions remain open.
 - **DEV-24–DEV-26 — evidence and delivery:** the [scoped acceptance ledger](engine/ACCEPTANCE_EXECUTION.md) and component integrity checks exist. Each new Engine capability needs its own behavioral evidence; connected App behavior is qualified in the App workstream.

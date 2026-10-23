@@ -1,5 +1,9 @@
 # IRGS continuation development list
 
+## Coordinator priority — 23 October 2026
+
+The active delivery is `solo-runtime-01`. Follow [SOLO_COMPLETION_PLAN.md](SOLO_COMPLETION_PLAN.md) and the component work orders for provider/action contracts, actual Core execution/recovery and the player round trip. Historical Details is integrated. This coordinator priority update implements no runtime and completes no additional DEV item. The imported Engine milestones and dated evidence below retain their original scope.
+
 Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-22. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
 
 The immediate target is a complete Solo action cycle: a player makes a supported decision, the engine commits its legitimate consequences, the player sees the outcome, and play can continue after reload. Complete that cycle before widening the historical catalogue or adding interface sections.
