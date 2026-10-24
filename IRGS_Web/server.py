@@ -3,6 +3,7 @@ import argparse
 import copy
 import hashlib
 import json
+import os
 import re
 import secrets
 import sys
@@ -25,6 +26,7 @@ from gameplay_views import playthrough, controlled_actor, pending_declaration, s
 from features import feature_registry, content_library, validate_player_creation
 from campaign_worlds import world_reference
 from historical_reference import HistoricalReferences
+from assistance import SoloService, sync_parent
 
 
 class Store:
@@ -32,6 +34,7 @@ class Store:
         self.folder = Path(folder)
         self.folder.mkdir(parents=True, exist_ok=True)
         self.lock = threading.RLock()
+        self.before_restore = None
 
     def path(self, key):
         if not isinstance(key, str) or len(key) != 32 or any(c not in '0123456789abcdef' for c in key):
@@ -44,8 +47,12 @@ class Store:
     def write(self, record):
         path = self.path(record['id'])
         tmp = path.with_suffix('.tmp')
-        tmp.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding='utf-8')
+        with tmp.open('w', encoding='utf-8') as stream:
+            json.dump(record, stream, ensure_ascii=False, indent=2)
+            stream.flush()
+            os.fsync(stream.fileno())
         tmp.replace(path)
+        sync_parent(path)
 
     def create(self, name, profile_id='ast', *, scenario_id=None, entry_id=None, snapshot_sha256=None,
                character=None, starting_scenario_id='individual', selection_digest=None, request_id=None, creator=True):
@@ -121,6 +128,8 @@ class Store:
         record = json.loads(source.read_text(encoding='utf-8'))
         if type(revision) is not int or revision != record['revision']:
             raise ValueError('This Trash record changed. Reload Trash before restoring it.')
+        if self.before_restore is not None:
+            self.before_restore(key)
         try:
             source.rename(destination)
         except OSError as err:
@@ -351,11 +360,12 @@ class Store:
 
 def make_server(port=8765, folder=None, *, reference_library=None, reference_error=None,
                 reference_config=None, reference_manifest=None, reference_manifest_pin=None,
-                reference_cache=None):
+                reference_cache=None, solo_configuration=None):
     references = HistoricalReferences(config=reference_config, manifest=reference_manifest,
         manifest_pin=reference_manifest_pin, cache=reference_cache,
         library=reference_library, error=reference_error)
     store = Store(folder or ROOT / 'saves')
+    solo = SoloService(store, solo_configuration)
     token = secrets.token_urlsafe(32)
 
     class Handler(BaseHTTPRequestHandler):
@@ -391,6 +401,18 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
             query = parse_qs(urlparse(self.path).query)
             mode=query.get('mode',['player'])[0]
             try:
+                if path == '/api/ai/status':
+                    self.session()
+                    if mode == 'creator':
+                        self.creator(mode)
+                    return self.reply(200, solo.status(developer=mode == 'creator'))
+                if path.startswith('/api/ai/proposal-result/'):
+                    self.session()
+                    parts = path.strip('/').split('/')
+                    if len(parts) != 5:
+                        raise ValueError('Invalid proposal-result path')
+                    return self.reply(200, solo.propose({'id': parts[3], 'request_id': parts[4],
+                        'actor': query.get('actor_id', [None])[0]}, lookup=True))
                 if path in ('/api/historical-reference', '/api/historical-reference/search', '/api/historical-reference/record'):
                     self.creator(mode)
                     if path == '/api/historical-reference':
@@ -407,8 +429,10 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                     if path.startswith('/api/playthrough/'):
                         self.session()
                         if mode=='creator':self.creator(mode)
-                        return self.reply(200,playthrough(store.read(path.rsplit('/',1)[1]),
-                                          query.get('actor_id',[None])[0],mode=mode))
+                        projection = playthrough(store.read(path.rsplit('/',1)[1]),
+                            query.get('actor_id',[None])[0],mode=mode)
+                        projection['assistance'] = solo.status(record=store.read(path.rsplit('/', 1)[1]), actor=projection['actor_id'])
+                        return self.reply(200, projection)
                     if path=='/api/rise/templates':
                         self.session()
                         from settlement_setup import templates
@@ -508,7 +532,7 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                     if path.startswith('/api/binding/'):
                         self.creator(mode)
                         return self.reply(200, presentation_binding(store.read(path.rsplit('/', 1)[1])['state']))
-                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript'), '/catalogue.js': ('catalogue.js', 'text/javascript')}
+                files = {'/': ('index.html', 'text/html'), '/app.js': ('app.js', 'text/javascript'), '/style.css': ('style.css', 'text/css'), '/voyage.svg': ('voyage.svg', 'image/svg+xml'), '/rise.js': ('rise.js', 'text/javascript'), '/catalogue.js': ('catalogue.js', 'text/javascript'), '/solo.js': ('solo.js', 'text/javascript')}
                 if path not in files:
                     return self.reply(404, {'error': 'Not found'})
                 name, mime = files[path]
@@ -534,6 +558,13 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                 if not isinstance(data,dict): raise ValueError('Submit a JSON object')
                 path=urlparse(self.path).path
                 mode=data.get('mode',parse_qs(urlparse(self.path).query).get('mode',['player'])[0])
+                if path in ('/api/ai/proposal', '/api/ai/accept', '/api/ai/cancel'):
+                    operation = {'/api/ai/proposal': solo.propose, '/api/ai/accept': solo.accept,
+                                 '/api/ai/cancel': solo.cancel}[path]
+                    result = operation(data)
+                    if path == '/api/ai/accept' and result.get('status') == 'unavailable':
+                        return self.reply(422, {**result, 'error': result['message']})
+                    return self.reply(200, result)
                 with store.lock:
                     if path in ('/api/event','/api/frontier','/api/events','/api/mandate','/api/resolve','/api/fork'):
                         self.creator(mode)
@@ -599,6 +630,11 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                 self.reply(503, {'error':'The save could not be persisted. Recover the request result or retry with the same request identity.'})
 
     server = ThreadingHTTPServer(('127.0.0.1', port), Handler)
+    original_close = server.server_close
+    def close():
+        solo.close()
+        original_close()
+    server.server_close = close
     return server
 
 

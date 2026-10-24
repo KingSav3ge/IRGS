@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewed Engine/App/Catalog set integrated after isolated joined regression, complete archive, browser, evidence and extraction qualification.",
+  "cycle_id": "historical-details-01",
+  "status": "passed_and_integrated",
+  "component_commits": {
+    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+  },
+  "joined_source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
+  "regression_checks": [
+    {
+      "name": "source-integrity",
+      "status": "passed"
+    },
+    {
+      "name": "evidence-freshness",
+      "status": "passed"
+    },
+    {
+      "name": "runtime",
+      "status": "passed",
+      "tests_run": 527,
+      "passed": 526,
+      "skipped": 1,
+      "origin": "Fresh execution-derived capture after editorial maintenance."
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "tests_run": 166,
+      "passed": 159,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "checks_passed": 72
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "tests_run": 29,
+      "passed": 29,
+      "skipped": 0
+    }
+  ],
+  "independent_http": {
+    "run": 8,
+    "passed": 8,
+    "failed": 0
+  },
+  "runtime_capture": {
+    "tests_run": 527,
+    "passed": 526,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "tests_successful": true,
+    "capture_records": 1244,
+    "captured_executions": 3755,
+    "capture_origin_counts": {
+      "actual_apply": 3145,
+      "direct_observe": 610
+    },
+    "actual_committed_apply_count": 3079,
+    "excluded_unknown_operations": 7,
+    "external_fixture_policy_skips": [
+      "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    ],
+    "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+    "limits": [
+      "Repeated probes are observations, not unique committed world events.",
+      "Failed-attempt writes are scratch attempts, never committed effects.",
+      "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+      "Rejected probes mirror the current R9 backend selection policy."
+    ]
+  },
+  "browser": {
+    "status": "passed",
+    "collections": 10,
+    "campaign_files_created": 0,
+    "reference_posts": 0,
+    "page_errors": 0
+  },
+  "archive": {
+    "bytes": 533064680,
+    "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "parts": 32,
+    "members_verified": 5146,
+    "delivery_bindings_verified": 5145,
+    "reader_rows": 387273
+  },
+  "adopted_mechanics_and_content_preserved": true,
+  "original_archive_unchanged": true,
+  "private_user_saves_used": false,
+  "live_inference_activated": false,
+  "direct_editorial_maintenance": {
+    "kind": "direct_user_requested_naming_cleanup",
+    "previous_integrated_source": "eba8d466b2fda04ab31c2d28445145dfeaa0ce5b",
+    "scope": "One IRGS-authored campaign-summary sentence and its source hash. Original records, archive bytes, adopted mechanics and campaign content unchanged.",
+    "fresh_qualification": "passed",
+    "source_input_sha256": "bf01809dd2207a675b78f5bd3abc77ae1b71a3da19764406aab3840d4c46d08c",
+    "component_commits": {
+      "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+      "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+      "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+    },
+    "adopted_mechanics_and_content_preserved": true,
+    "original_source_records_preserved": true
+  },
+  "qualification_base_joined_commit": "eba8d466b2fda04ab31c2d28445145dfeaa0ce5b",
+  "initial_integration_package_smoke": {
+    "status": "passed",
+    "archive": "/workspace/irgs-cloud/integration/historical-details-01/IRGS_Historical_Details_Qualified.zip",
+    "extracted_files": 769,
+    "packaged_verification": {
+      "app_release": {
+        "component": "IRGS-APP-WEB",
+        "files": 35,
+        "status": "verified"
+      },
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "catalog_release": {
+        "campaign_records": {
+          "development_status_counts": {
+            "concept_draft": 0,
+            "in_development": 3,
+            "planned": 41
+          },
+          "runtime_availability_inferred": false,
+          "status": "verified",
+          "unique_concepts": 44
+        },
+        "campaign_release_approved_by_check": false,
+        "component": "IRGS-Catalog",
+        "concepts": 44,
+        "files": 140,
+        "historical_details": {
+          "archive": {
+            "bytes": 533064680,
+            "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+            "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+          },
+          "archive_coverage": "complete",
+          "campaign_adoption_performed": false,
+          "collection_bindings_verified": 10,
+          "delivery_bindings_verified": 5145,
+          "historical_truth_verified": false,
+          "members_verified": 5146,
+          "parts": 32,
+          "status": "verified",
+          "unbound_members": [
+            "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+          ]
+        },
+        "status": "verified"
+      },
+      "development_files": 768,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/rise.js",
+        "/catalogue.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false
+  },
+  "package_smoke": {
+    "status": "passed",
+    "archive": "/workspace/irgs-cloud/integration/historical-details-01/IRGS_Historical_Details_Qualified.zip",
+    "extracted_files": 769,
+    "packaged_verification": {
+      "app_release": {
+        "component": "IRGS-APP-WEB",
+        "files": 35,
+        "status": "verified"
+      },
+      "c2": {
+        "acceptance_execution_claimed": false,
+        "required_cases": 121,
+        "source_files_verified": 23
+      },
+      "campaigns_modified": false,
+      "catalog_release": {
+        "campaign_records": {
+          "development_status_counts": {
+            "concept_draft": 0,
+            "in_development": 3,
+            "planned": 41
+          },
+          "runtime_availability_inferred": false,
+          "status": "verified",
+          "unique_concepts": 44
+        },
+        "campaign_release_approved_by_check": false,
+        "component": "IRGS-Catalog",
+        "concepts": 44,
+        "files": 140,
+        "historical_details": {
+          "archive": {
+            "bytes": 533064680,
+            "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+            "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+          },
+          "archive_coverage": "complete",
+          "campaign_adoption_performed": false,
+          "collection_bindings_verified": 10,
+          "delivery_bindings_verified": 5145,
+          "historical_truth_verified": false,
+          "members_verified": 5146,
+          "parts": 32,
+          "status": "verified",
+          "unbound_members": [
+            "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+          ]
+        },
+        "status": "verified"
+      },
+      "development_files": 768,
+      "selected_release": {
+        "core": "3.3",
+        "release": "IRGS-CORE-3.3-SUITE",
+        "status": "verified"
+      },
+      "status": "verified"
+    },
+    "http_smoke": {
+      "status": "passed",
+      "loopback_only": true,
+      "selected_core": "3.3",
+      "single_world_per_campaign": true,
+      "routes_checked": [
+        "/",
+        "/app.js",
+        "/rise.js",
+        "/catalogue.js",
+        "/style.css",
+        "/api/catalog",
+        "/api/campaigns",
+        "/api/content-library",
+        "/api/campaigns"
+      ],
+      "campaign_files_created": 0,
+      "project_imports_from_extracted_package": true
+    },
+    "existing_saves_opened": false
+  },
+  "initial_integration_inputs_matched_candidate": true,
+  "source_inputs_match_reviewed_components": true
+}

@@ -198,7 +198,7 @@ def run(archive: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", nargs="?", type=Path,
-                        default=ROOT.parent / "IRGS_3_3_3_Development_D1.zip")
+                        default=ROOT.parent / "IRGS_3_4_0_Development.zip")
     args = parser.parse_args()
     try:
         result = run(args.archive)

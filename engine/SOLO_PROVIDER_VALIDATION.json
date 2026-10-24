@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "work_order": "solo-runtime-01",
+  "delivery": "direct-adapter-and-catalog-r00-1",
+  "target_iteration": "IRGS 3.4.0 — in development",
+  "coordinator_update": "e2d7fd3d2c3aef436fda280c45c0e4508c02618a (iteration designation only)",
+  "base_commit": "500ab4286aed5354719a78006195922316b41023",
+  "status": "OFFLINE_ENGINE_PROVIDER_AND_CATALOG_PASSED_WITH_LIMITS",
+  "implementation": [
+    "IRGS_3_3/runtime/solo_provider.py",
+    "IRGS_3_3/runtime/solo_actions.py",
+    "IRGS_3_3/runtime/openai_proposals.py",
+    "tools/qualify_solo_provider.py"
+  ],
+  "fixture": {
+    "kind": "Pinned Catalog R00 plus local synthetic Core fixtures",
+    "catalog_commit": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "version": "1.0.0",
+    "classification": "synthetic-evaluation-actor-input-only",
+    "rights": "Original synthetic actor exports; metadata selects no provider",
+    "source": "IRGS_Catalog/solo_evaluation.py:export_actor_input",
+    "storage": "Temporary synthetic saves/ledgers; external Catalog snapshot under /tmp; no user save or evaluator file added to Engine source",
+    "model_input": "Actor-received options/records plus hash-checked actor exports in evaluation only; evaluator setup/oracle remain separate",
+    "manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+    "loader_sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97"
+  },
+  "actual_effect_evidence": {
+    "handler": "execute_scene_action / execute_player_scene_action on CoreWorld",
+    "sequence": [
+      "enter-passage",
+      "reach-desk",
+      "deliver"
+    ],
+    "elapsed_seconds": 39,
+    "sealed_dispatch_final": {
+      "pc": 0,
+      "clerk-tray": 1,
+      "total": 1
+    },
+    "recovery": "Reload after each atomic synthetic host save; original receipt on duplicate; one write after lost acknowledgment",
+    "dependency_evidence": "Existing execution-derived success/rejection observation; private certificates retained in technical ledger",
+    "rise": {
+      "handler": "settlement_runtime.execute / execute_settlement_action on CoreWorld",
+      "sequence": [
+        "walk_clearing",
+        "found",
+        "build",
+        "wait_hour",
+        "wait_hour"
+      ],
+      "elapsed_seconds": 3900,
+      "material_consumption": {
+        "grain": 0,
+        "timber": 4,
+        "axe": 0
+      },
+      "founder_timber_consumption": 3,
+      "npc_repair_timber_consumption": 1,
+      "founder_shelter_places": 2,
+      "recovery": "Actual save reload after every accepted action; duplicate original receipt and stale/changed replay rejection",
+      "report": "engine/SOLO_CATALOG_VALIDATION.json"
+    }
+  },
+  "checks": {
+    "focused": {
+      "command": "python -B -m unittest test_solo_provider test_openai_proposals test_solo_rise test_scene_actions test_player_actions test_work_recovery test_rejected_dependencies test_settlement -q (runtime cwd)",
+      "tests": 133,
+      "new_provider_cases": 43,
+      "status": "PASS"
+    },
+    "full_runtime": {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -q",
+      "tests": 570,
+      "passed": 569,
+      "skipped": 1,
+      "skip_reason": "historical local save not packaged (existing private fixture)",
+      "status": "PASS"
+    },
+    "engine_integrity": {
+      "command": "python -B tools/verify_components.py --component engine",
+      "status": "PASS"
+    },
+    "whitespace": {
+      "command": "git -c core.whitespace=cr-at-eol diff --check",
+      "status": "PASS"
+    },
+    "synthetic_http": {
+      "cases": 14,
+      "status": "PASS",
+      "live_calls": 0
+    },
+    "catalog_r00": {
+      "command": "python -B tools/qualify_solo_provider.py --catalog-root /path/to/pinned/IRGS_Catalog",
+      "cases": 10,
+      "accepted_actions": 5,
+      "skipped": 0,
+      "status": "PASS",
+      "report": "engine/SOLO_CATALOG_VALIDATION.json"
+    },
+    "kira_canon": {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "PASS"
+    },
+    "delivery_links": {
+      "status": "PASS",
+      "scope": "API/review/readme/active plan links; inherited historical continuation entries excluded"
+    }
+  },
+  "solo_scope": {
+    "SOLO-01": "Offline request/proposal with unchanged world; explicit review still requires App integration",
+    "SOLO-02": "Real local delivery and Rise movement/founding/reserved shelter work with conserved stock, supported elapsed boundaries, persisted receipt and next action",
+    "SOLO-03": "Duplicate/concurrent dispatch and acceptance, restart ambiguity, reload, lost acknowledgment and restore fencing under mandatory host CAS",
+    "SOLO-04": "Foreign/revoked control, hidden input exclusion, unsupported action, conflicting work and atomic denied Rise build. Local blocked/depleted physical attempts retain their selected unsuccessful/elapsed rule, never a successful transfer",
+    "SOLO-05": "Malformed/denied/timeout/cancelled/late output, disallowed fallback, bounded reservations and unknown charge retained",
+    "SOLO-06": "Scope checked before presentation and acceptance; state/restore/session invalidation tested; real App lifecycle pending",
+    "SOLO-07": "Only committed handler outcome supplies narration; semantic intention/action agreement and character fidelity require human/model evaluation",
+    "SOLO-08": "Not qualified: exact App/Catalog joined candidate and conditional live smoke remain separate"
+  },
+  "aip_evaluation_scope": {
+    "offline_boundary_evidence": [
+      "AIP-E02",
+      "AIP-E05",
+      "AIP-E06",
+      "AIP-E07",
+      "AIP-E08",
+      "AIP-E09",
+      "AIP-E10",
+      "AIP-E11"
+    ],
+    "partial_only": [
+      "AIP-E01",
+      "AIP-E03",
+      "AIP-E04",
+      "AIP-E12",
+      "AIP-E15",
+      "AIP-E16"
+    ],
+    "not_executed": [
+      "AIP-E13",
+      "AIP-E14"
+    ],
+    "qualification": "Named integration checks cover portions of these requirements; original coordinator model cases and blinded semantic evaluation are not reported passed",
+    "executed_model_cases": 0,
+    "model_quality_winners": []
+  },
+  "dev_scope": {
+    "DEV-06": "Reuses actual handler observation; no general refinement of collection granularity",
+    "DEV-07": "Current control/commitment/resource/stale and host-write conflicts tested; wider rejected branches remain open",
+    "DEV-08": "One shared Core handler and host CAS; no new general simultaneous frontier/cross-scale qualification",
+    "DEV-09": "One action identity and durable Core receipt; general phase scheduler remains open",
+    "DEV-10": "Existing atomic local durations and bounded Rise work boundaries/reservations/completion exercised; no new general scheduler or interrupted process semantics",
+    "DEV-11": "Bounded restart/replay and host-supplied branch/restore/CAS contract; actual App integration remains unqualified"
+  },
+  "live_calls": 0,
+  "remaining": [
+    "App authenticated scope/session lifecycle and its existing atomic save/receipt CAS integration",
+    "Exact reviewed App/Engine/Catalog clean-extract joined qualification",
+    "Approved server credential, account-available exact model, permitted input/workload, current policy/price ceiling and explicit finite live budget",
+    "Human semantic/character review and measured model quality",
+    "General DEV-06 through DEV-11 completion, accounting reconciliation and wider routing/migration"
+  ],
+  "assignment_base_commit": "5ef18f7d75d8a477af06921288569220f3475f85",
+  "early_api_delivery": {
+    "commit": "500ab4286aed5354719a78006195922316b41023",
+    "runtime_tests": 549,
+    "runtime_passed": 548,
+    "runtime_skipped": 1,
+    "focused_tests": 86
+  },
+  "adapter": {
+    "id": "openai-responses-local-1",
+    "official_review_date": "2026-10-23",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "checked_model": "gpt-5.4-mini-2026-03-17",
+    "enabled_by_default": false,
+    "review": "engine/OPENAI_ADAPTER_REVIEW.md",
+    "credentials": "Synthetic credential reader only in tests; live server credential not inspected or used",
+    "requested_reported_identity": "Route metadata and actual reported model/version retained separately; connection host is not geographic attestation",
+    "usage": "Known token reports retained; missing usage/actual charge unknown; full conservative reservation held"
+  }
+}

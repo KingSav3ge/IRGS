@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-solo-r00-eval-v1",
+  "case_id": "solo-stale-inspect",
+  "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+  "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-stale-inspect",
+  "processing_classification": "synthetic-evaluation-actor-input-only",
+  "actor_id": "founder",
+  "user_intent": "Inspect my surroundings using the submission prepared at revision zero.",
+  "context": {
+    "revision": 1,
+    "location": "clearing",
+    "elapsed_seconds": 300,
+    "own_inventory": {
+      "grain": 12,
+      "timber": 6,
+      "axe": 1
+    },
+    "reserved_for_work": {
+      "grain": 0,
+      "timber": 0,
+      "axe": 0
+    },
+    "protected_seed_grain": 2,
+    "accepted_rights": [
+      "camp",
+      "temporary_dwelling"
+    ],
+    "camp_established": false,
+    "shelter_worked_seconds": 0
+  }
+}

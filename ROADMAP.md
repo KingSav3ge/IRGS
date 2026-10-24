@@ -1,8 +1,12 @@
 # IRGS Engine development roadmap
 
+## Coordinator integration — IRGS 3.4.0 development
+
+The bounded offline provider/action foundation and App authored-scene/Rise round trip are integrated with the qualified Catalog fixture. See [release notes](RELEASE_NOTES_3_4_0.md) and [coordination](COORDINATION.md) for exact inputs and current remaining work. Operator configuration, bounded live smoke, general narration/dialogue and broader DEV/C2 completion remain pending. Component publication records below retain their original scope.
+
 Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
-Updated 2026-10-22. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
+Updated 2026-10-24. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies and completion criteria, and [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for delivered increments and verification limits. The statuses below describe implemented scope; historical App/HTTP evidence is not fresh qualification of this standalone Engine checkout.
 
@@ -16,20 +20,21 @@ Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies
 - **Engine framing:** the [Engine model](engine/ENGINE_MODEL.md), behavior-based design guidance and neutral archive introduction. Source provenance remains available; this increment adds no gameplay resolver.
 - **Kira atlas reference:** [six illustrated regional plates and creator-supplied regional foundations](IRGS_3_3/catalog/campaigns/kira/atlas/README.md) are published beside the Kira worldbook. This is world reference content; it adds no executable capability or starting snapshot.
 
-## Coordinator priority — 23 October 2026
+## Active priority — 23 October 2026
 
-Complete the runnable Solo systems under [SOLO_COMPLETION_PLAN.md](SOLO_COMPLETION_PLAN.md) and `solo-runtime-01`. Historical Details is integrated. Component Engine milestones below preserve the last imported plan; the new work order prioritizes the provider/action boundary and qualified dependency/recovery behavior. This coordinator metadata update imports no component source.
+The user prioritizes completion of the runnable Solo systems. `solo-runtime-01` replaces the completed Historical Details cycle. Implement the provider/action/validation/attempt-ledger contract, qualify relevant existing operations and recovery, publish an App API and then one opt-in direct adapter. Offline implementation needs no credentials. See [the work order](COORDINATOR_WORK_ORDER.md) and [Solo completion plan](https://github.com/KingSav3ge/IRGS/blob/main/SOLO_COMPLETION_PLAN.md). The broader stable DEV items below remain open until their evidence exists.
 
 ## Work in progress
 
-- **Solo runtime coordination:** new provider/action contracts, the AI-assisted player round trip and synthetic runtime fixtures are assigned. Historical Details is complete. Exact component approvals and joined qualification remain required for each new runtime increment.
+- **Solo runtime:** the [provider/action API](engine/SOLO_PROVIDER_API.md) now implements typed actor scope, disabled dispatch, durable attempts and finite reservations, proposal validation and explicit acceptance through existing local/Rise Core handlers. The [opt-in direct adapter](engine/OPENAI_ADAPTER_REVIEW.md) and [ten pinned Catalog R00 cases](engine/SOLO_CATALOG_VALIDATION.json) pass offline checks. Connected App flow, conditional live smoke and wider DEV-06–DEV-11 qualification remain open.
+- **Solo lifecycle:** [registration/admission race fixes](engine/SOLO_LIFECYCLE_VALIDATION.json) preserve early cancellation across restart, keep invalid duplicate routes from terminating valid attempts, and hide expired/cancelled drafts. Legacy uncertain attempts stay held. App host/session integration and wider DEV-11 completion remain open.
 - **DEV-06–DEV-08 — dependency qualification:** collection observation and named rejected-path cases exist. Broader conflict, authorization and cross-engine coverage remain open. See [rejected dependencies](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md).
 - **DEV-10, DEV-12–DEV-14 and DEV-18–DEV-20 — processes and campaign continuity:** local actions, bounded settlement work and dated initialization supply partial implementations. General interrupted travel/search, evolving historical authority and full setup regressions remain open.
 - **DEV-24–DEV-26 — evidence and delivery:** the [scoped acceptance ledger](engine/ACCEPTANCE_EXECUTION.md) and component integrity checks exist. Each new Engine capability needs its own behavioral evidence; connected App behavior is qualified in the App workstream.
 
 ## Remaining work
 
-1. **Next: DEV-06–DEV-08.** Select named gaps from the operation register and qualify collection, failed-decision and simultaneous-frontier behavior without widening claims beyond executed cases.
+1. **Next: solo-runtime-01 integration with DEV-06–DEV-11.** Qualify App consumption of the delivered provider/action API and direct adapter against the exact reviewed Catalog input. Broaden collection, failed-decision, simultaneous-frontier and recovery coverage while keeping general register gaps explicit. Live smoke requires a separately permitted workload, account model and finite budget.
 2. **DEV-09–DEV-11.** Complete general durable phases, supported elapsed processes, interruption, restart and restore fencing through the existing Core owners.
 3. **DEV-12–DEV-17.** Extend movement and observation beyond authored local scenes, then add supported speech, testimony, offers, acceptance and result-grounded character responses.
 4. **DEV-18–DEV-20.** Finish broader opening, eligibility and continuing-world authority checks using actual committed state and verified historical evidence.
@@ -38,7 +43,7 @@ Complete the runnable Solo systems under [SOLO_COMPLETION_PLAN.md](SOLO_COMPLETI
 
 ## Delivery sequence and completion evidence
 
-The [AI provider foundation plan](engine/AI_PROVIDER_PLAN.md) carries AIP-01–AIP-09 as staged, unimplemented requirements. Its first delivery is an offline, disabled-by-default scoped contract/fake transport/validation/ledger foundation, then one opt-in direct adapter after checking its exact official API. Provider quality, policy approval and conditional live checks remain separate evidence gates; the current archive/gameplay/dependency priorities continue.
+The [AI provider foundation plan](engine/AI_PROVIDER_PLAN.md) carries AIP-01–AIP-09 as broader open requirements with a bounded foundation and one opt-in direct adapter now executable. The exact official API and synthetic HTTP behavior are checked. Provider quality, policy approval, connected App/joined qualification and conditional live checks remain separate evidence gates.
 
 ## 1. Resolve one consequential action
 

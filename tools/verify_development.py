@@ -128,7 +128,8 @@ def refresh_manifest() -> None:
     names = inventory()
     result = {
         "schema_version": 1,
-        "development_edition": "3.3.3-D1",
+        "development_edition": "3.4.0",
+        "release_status": "development",
         "manifest_excludes_itself": True,
         "scope": "curated portable development source; user data and generated local results excluded",
         "source_directories": sorted(SOURCE_DIRS),

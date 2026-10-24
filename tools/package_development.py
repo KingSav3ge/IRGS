@@ -14,7 +14,7 @@ from verify_development import ROOT, MANIFEST, safe_path, verify
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path,
-                        default=ROOT.parent / "IRGS_3_3_3_Development_D1.zip")
+                        default=ROOT.parent / "IRGS_3_4_0_Development.zip")
     args = parser.parse_args()
     temporary = None
     try:

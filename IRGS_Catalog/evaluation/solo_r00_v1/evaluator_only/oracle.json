@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-solo-r00-eval-v1",
+  "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+  "hidden_markers": [
+    "EVALUATOR_ONLY_SOLO_R00_ORACLE_1"
+  ],
+  "hidden_facts": {
+    "opening_npc_inventory": {
+      "grain": 4,
+      "timber": 3,
+      "axe": 1
+    },
+    "standing_project": "oren-repair: private household inputs; one timber consumed on completion at 1800 elapsed seconds"
+  },
+  "cases": [
+    {
+      "case_id": "solo-denied-build",
+      "kind": "denied",
+      "request_id": "solo-denied-build",
+      "request_revision": 0,
+      "action_id": "build",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-denied-build",
+      "replay_of": null,
+      "expected": {
+        "revision": 0,
+        "clock": 0,
+        "elapsed_seconds": 0,
+        "location": "commons",
+        "camp_established": false,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-unsupported-grain",
+      "kind": "unsupported",
+      "request_id": "solo-unsupported-grain",
+      "request_revision": 0,
+      "action_id": "invent_grain",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-unsupported-grain",
+      "replay_of": null,
+      "expected": {
+        "revision": 0,
+        "clock": 0,
+        "elapsed_seconds": 0,
+        "location": "commons",
+        "camp_established": false,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-walk",
+      "kind": "legitimate",
+      "request_id": "solo-walk",
+      "request_revision": 0,
+      "action_id": "walk_clearing",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-walk",
+      "replay_of": null,
+      "expected": {
+        "revision": 1,
+        "clock": 1,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": false,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-stale-inspect",
+      "kind": "stale",
+      "request_id": "solo-stale-inspect",
+      "request_revision": 0,
+      "action_id": "inspect",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-stale-inspect",
+      "replay_of": null,
+      "expected": {
+        "revision": 1,
+        "clock": 1,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": false,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-found",
+      "kind": "legitimate",
+      "request_id": "solo-found",
+      "request_revision": 1,
+      "action_id": "found",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-found",
+      "replay_of": null,
+      "expected": {
+        "revision": 2,
+        "clock": 2,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-replay-walk",
+      "kind": "replay",
+      "request_id": "solo-walk",
+      "request_revision": 0,
+      "action_id": "walk_clearing",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-replay-walk",
+      "replay_of": "solo-walk",
+      "expected": {
+        "revision": 2,
+        "clock": 2,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-changed-replay",
+      "kind": "changed_replay",
+      "request_id": "solo-walk",
+      "request_revision": 2,
+      "action_id": "wait_hour",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-changed-replay",
+      "replay_of": "solo-walk",
+      "expected": {
+        "revision": 2,
+        "clock": 2,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "absent",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-build",
+      "kind": "legitimate",
+      "request_id": "solo-build",
+      "request_revision": 2,
+      "action_id": "build",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-build",
+      "replay_of": null,
+      "expected": {
+        "revision": 3,
+        "clock": 3,
+        "elapsed_seconds": 300,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 6,
+        "npc_timber": 3,
+        "shelter_status": "active",
+        "shelter_worked_seconds": 0
+      }
+    },
+    {
+      "case_id": "solo-work-boundary",
+      "kind": "legitimate",
+      "request_id": "solo-work-boundary",
+      "request_revision": 3,
+      "action_id": "wait_hour",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-work-boundary",
+      "replay_of": null,
+      "expected": {
+        "revision": 4,
+        "clock": 4,
+        "elapsed_seconds": 1800,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 6,
+        "npc_timber": 2,
+        "shelter_status": "active",
+        "shelter_worked_seconds": 1500
+      }
+    },
+    {
+      "case_id": "solo-finish-shelter",
+      "kind": "legitimate",
+      "request_id": "solo-finish-shelter",
+      "request_revision": 4,
+      "action_id": "wait_hour",
+      "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+      "intent_ref": "authored-synthetic:irgs-catalog:solo-r00:v1:solo-finish-shelter",
+      "replay_of": null,
+      "expected": {
+        "revision": 5,
+        "clock": 5,
+        "elapsed_seconds": 3900,
+        "location": "clearing",
+        "camp_established": true,
+        "founder_timber": 3,
+        "npc_timber": 2,
+        "shelter_status": "complete",
+        "shelter_worked_seconds": 3600
+      }
+    }
+  ],
+  "final_state": {
+    "elapsed_seconds": 3900,
+    "founder_inventory": {
+      "grain": 12,
+      "timber": 3,
+      "axe": 1
+    },
+    "npc_inventory": {
+      "grain": 4,
+      "timber": 2,
+      "axe": 1
+    },
+    "material_consumption": {
+      "grain": 0,
+      "timber": 4,
+      "axe": 0
+    },
+    "shelter_places": 2
+  }
+}

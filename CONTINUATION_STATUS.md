@@ -1,8 +1,40 @@
 # Current Engine continuation
 
-## Coordinator priority — 23 October 2026
+## Coordinator integration — IRGS 3.4.0 development
 
-The active delivery is `solo-runtime-01`. Follow [SOLO_COMPLETION_PLAN.md](SOLO_COMPLETION_PLAN.md) and the component work orders for provider/action contracts, actual Core execution/recovery and the player round trip. Historical Details is integrated. This coordinator priority update implements no runtime and completes no additional DEV item. The imported Engine milestones and dated evidence below retain their original scope.
+The bounded offline provider/action foundation and App authored-scene/Rise round trip are integrated with the qualified Catalog fixture. See [release notes](RELEASE_NOTES_3_4_0.md) and [coordination](COORDINATION.md) for exact inputs and current remaining work. Operator configuration, bounded live smoke, general narration/dialogue and broader DEV/C2 completion remain pending. Component publication records below retain their original scope.
+
+## Active priority — 24 October 2026
+
+The user prioritizes completion of the systems needed for a continuing Solo campaign. `solo-runtime-01` now has the executable offline boundary, opt-in direct adapter and pinned R00 execution described below; connected App/joined qualification remains active. Historical Details is integrated at Engine `723627e629231b5e90f38b9d52b65c9a3967b92a`, App `d8dc35ed653e516ccd0cacf91ee9693258491032` and Catalog `3e898acb2179f18a41d7967817bedf429df29d3f`; no archive or historical integration input is missing. Follow [the current work order](COORDINATOR_WORK_ORDER.md). Entries below preserve their original dates, source identities and then-pending gates.
+
+## Solo lifecycle races — 2026-10-24
+
+**Completed for IRGS 3.4.0 development:** reproduced and fixed cancellation before registration allowing a later call, expired cached drafts returning ready, and a wrong-route duplicate terminating the valid in-flight request. Durable cancellation records now fence registration/restart. Workers recheck route/configuration and authorized scope before serialized dispatch admission. Admission distinguishes known unstarted work from legacy uncertainty; migration preserves reservations and does not authorize another dispatch. Broker unavailable results omit cancelled drafts while private recovery records and committed Core receipts remain intact.
+
+**Verification:** 13 new deterministic lifecycle checks and 146 focused regressions pass. The full runtime suite runs 583 tests: 582 pass and the existing historical private-save fixture is skipped. All ten pinned Catalog cases pass with zero skips; Engine integrity, Kira canon and active documentation links pass. See [lifecycle validation](engine/SOLO_LIFECYCLE_VALIDATION.json). All saves/ledgers are synthetic and temporary; no live inference or credential was used.
+
+**Remaining:** actual App session/persistence integration, exact reviewed component pins and joined qualification, semantic/model evaluation and separately configured live smoke. These fixes advance named DEV-11/AIP recovery paths and do not complete general scheduling, billing reconciliation or broader DEV milestones.
+
+## Solo direct adapter and Catalog R00 — 2026-10-23
+
+**Completed for IRGS 3.4.0 development:** published the passing offline API early at `500ab4286aed5354719a78006195922316b41023`, then implemented [the opt-in direct OpenAI adapter](engine/OPENAI_ADAPTER_REVIEW.md) after checking current official API/model/data/error contracts. Default dispatch remains disabled. Typed requests now explicitly bind the existing local or Rise operation. Technical traces retain complete route/adapter/price metadata and distinct provider request/response IDs. The received-record window remains bounded during continued play.
+
+**Actual dependencies/effects:** Catalog `2e4f389882df0807fc8064c1a0b533aaa3b1bcd3`, fixture `irgs-solo-r00-eval-v1` version 1.0.0, hash-checked loader/manifest/actor exports and physically separate evaluator data. Ten [Catalog cases](engine/SOLO_CATALOG_VALIDATION.json) pass with zero skips through the real `execute_settlement_action` handler. Five accepted actions persist/reload, reach 3,900 elapsed seconds, consume three founder timber plus one NPC repair timber and produce two founder shelter places. Denied, unsupported, stale and changed-replay requests cause no effects; duplicate lookup returns the original receipt. Evaluator-only facts remain outside model inputs. See [the complete delivery record](engine/SOLO_PROVIDER_VALIDATION.json) for current regression counts.
+
+**Verification:** 133 focused regressions pass, including 43 new provider/HTTP/Rise cases. The full runtime suite runs 570 tests: 569 pass and the existing historical private-save fixture is skipped. Engine integrity, Kira canon and delivery documentation links pass.
+
+**Remaining:** App authentication/session cancellation, its existing save CAS and restore-identity integration, exact reviewed component pins and clean-extract joined qualification. This delivery uses temporary synthetic host persistence and fake HTTP, with zero live inference calls. A server credential, account-available exact model, permitted input/workload, current reviewed policy/price ceiling and finite explicit budget are required for conditional live smoke. Semantic/character review, measured model quality, automatic billing reconciliation, broader routing and general DEV-06–DEV-11 completion remain open.
+
+## Solo offline foundation — 2026-10-23
+
+Target iteration: **IRGS 3.4.0 — in development**; existing Core/schema IDs remain unchanged.
+
+**Completed:** version 1 [server API](engine/SOLO_PROVIDER_API.md), disabled-by-default registry/Capability Broker, actor-received context, exact intention/state/restore binding, deterministic proposal validation, SQLite technical attempt ledger, finite concurrent/lifetime reservations and explicit acceptance through `execute_player_scene_action`. Only committed actor-legitimate handler outcomes supply narration. No new world owner, arbitrary event resolver or provider authority is introduced.
+
+**Evidence:** 22 new offline cases exercise real local handler effects, successive movement and conserved delivery, durable save/receipt CAS, reload/replay, lost acknowledgment, concurrent acceptance/dispatch, stale state/restore/session closure before presentation, cancellation/timeout/late reply, denied route/policy, revoked authority, conflicting work and depleted stock. The 86-test focused provider/local/equipment/work-recovery regression passes. All saves and inference ledgers are temporary synthetic test data. Full verification is recorded in [the delivery report](engine/SOLO_PROVIDER_VALIDATION.json).
+
+**Active / remaining:** publish this passing API early for App; implement one opt-in direct HTTP adapter against current official docs. Catalog's R00 fixture was absent from the inspected current tree, so initial tests use the existing local synthetic fixture. App must implement/authenticate the host save CAS, rotate restore identity and cancel on session closure/navigation. DEV-06–DEV-11 retain broader dependency/frontier/phase gaps. Conditional live smoke, policy/price/account eligibility, semantic/character review, measured model quality and exact joined pair are unqualified.
 
 ## Historical Details real delivery — 2026-10-22
 

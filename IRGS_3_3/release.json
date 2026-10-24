@@ -439,7 +439,14 @@
     "runtime/test_suite.py": "5bec891f6a1f3d602527889ab24c8b47a9f93503e51d2dbc637ba5a7fb914a6e",
     "runtime/test_temporal_registry.py": "929ebbfca5997c03e9a447b475816963cd633a9f7ed33c2f9d90b8fdf07e4d36",
     "runtime/test_unification.py": "0da2440c200257fd2d2f0e9c3a750dff5ddbca91d1e1c31d085b30e3e21dc6e9",
-    "runtime/test_work_recovery.py": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806"
+    "runtime/test_work_recovery.py": "ea21ce83d3c0cf521533b852efd41236269a6d8fd8cfd2d4146997217e2a2806",
+    "runtime/solo_actions.py": "d08ec0f47be7713b011954028c3ba49f6cc09a669da0d0fe23393c7e13508d2f",
+    "runtime/solo_provider.py": "68d58acbb732a43e2000f942cf93f6e48aa90e1d14c294f9528676c2c7371d5c",
+    "runtime/test_solo_provider.py": "26f2a8aa8eddbab2f5bebc15e7cc5be0a9aea024bb0291fe7f3eb4203b7e822b",
+    "runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+    "runtime/test_openai_proposals.py": "ca5e04694365d8bb8e63469ef7d7ff703f76ba115558775273d5b556dabd46b7",
+    "runtime/test_solo_rise.py": "58e50730071005f63c50b490ab4281d514af70628b85d1d3bd2b90efce23b9f4",
+    "runtime/test_solo_lifecycle.py": "155a7c4b5dcaf922721f75e214f9fc9227db4830858e7e9798ab36e5b80414bd"
   },
   "existing_save_migration": false,
   "development_designations": {

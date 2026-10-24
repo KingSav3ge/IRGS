@@ -104,6 +104,20 @@
     "design/catalogue_v0_5/records/SS-17.json": "79078463604daa023144f35c2d35dd22b6c4cba58e278531034d2e8c7e5fde62",
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
+    "evaluation/solo_r00_v1/README.md": "f321e13da32782d84c5ecc29f65e9ff1457b7e1aecd5e553335f728e5bc5b24f",
+    "evaluation/solo_r00_v1/actor_inputs/solo-build.json": "033adf3a71f31173e4192b5fdff5bd7250fd200a45fa0345fe5947570047e468",
+    "evaluation/solo_r00_v1/actor_inputs/solo-changed-replay.json": "793c735d8f41989d4d47201d2249846ad3c4af1a5a6e0cf0b331e374feadffa3",
+    "evaluation/solo_r00_v1/actor_inputs/solo-denied-build.json": "81b43655c2e5ec251287f1d05507a501b5844af8254fd7643c9fb8fe6b47f8cd",
+    "evaluation/solo_r00_v1/actor_inputs/solo-finish-shelter.json": "69701f88e17290468a423e973d88b95518aaeda8655365d79a80e12287f9f9b3",
+    "evaluation/solo_r00_v1/actor_inputs/solo-found.json": "e4ea92d5c9d3cca168ebf7e84ba7780563420274b063ee333729949227af0384",
+    "evaluation/solo_r00_v1/actor_inputs/solo-replay-walk.json": "4a536876a4157ddee4c375033d4371f51e98f819fa98a9296fa6e1037038c6d3",
+    "evaluation/solo_r00_v1/actor_inputs/solo-stale-inspect.json": "c63da2f87ad97e86294a8030e1fc2c810d4c94c885b22dcf63f4d000c86d05a2",
+    "evaluation/solo_r00_v1/actor_inputs/solo-unsupported-grain.json": "b5eca0fb02af6b08286d0f215a9f189d34925e947e98194dfadec18e6d30e01b",
+    "evaluation/solo_r00_v1/actor_inputs/solo-walk.json": "1da55a44e52f963e0bb3cc0a28c65c45df33f604a50ac5d9ccb3d7d12c992a38",
+    "evaluation/solo_r00_v1/actor_inputs/solo-work-boundary.json": "22313474acfd457e3e0e2ca97f8a6eaca9a434ca463118efa692f295fd715dea",
+    "evaluation/solo_r00_v1/evaluator_only/oracle.json": "46535db4b5b6d1502f3d93372d00a7ad9e0bd51be3ed978bed8a9bbe7f37450f",
+    "evaluation/solo_r00_v1/evaluator_only/setup.json": "7bc289eb783203d66fa11fbd7ad3132570aebe206bff673ce516fe28c0e953e8",
+    "evaluation/solo_r00_v1/manifest.json": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
     "historical_details/README.md": "2f2bbe22e998cb233dee564c41d18fd10e7ccbe2ad9e03752e11862c91cb603a",
     "historical_details/intake/README.md": "e39f2b7382290de72c60fb74ac5d81526093740b09c4cdd694478fcd9afd6f15",
     "historical_details/intake/drive_delivery_manifest.json": "48abac57689a0110ba65f58a7407bd9860161bbc3f2d0185a604d11037adb304",
@@ -142,6 +156,7 @@
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af",
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7",
     "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
-    "verify_catalog.py": "57cfef89333f147f83637969d148dbd77ab771c9cace1badceefdbb49d0e26e1"
+    "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+    "verify_catalog.py": "446add701ad00f4608704023d6f776379c77cf46c38029c7201fdc61648160c5"
   }
 }

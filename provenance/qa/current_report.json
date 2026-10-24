@@ -1,59 +1,58 @@
 {
   "schema_version": 1,
-  "candidate_commit": "bd45f6b02f029565f807f5b37dfcec00f0363bfd",
-  "finished_at_utc": "2026-10-23T20:25:40.540311+00:00",
-  "status": "needs_fixes",
+  "candidate_commit": "a408b1a79a27f732def26b6d4a16cb77cc15f47b",
+  "finished_at_utc": "2026-10-24T13:05:02.828272+00:00",
+  "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/candidate",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/assembly/candidate",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 15.43,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/source-integrity.txt"
+      "duration_seconds": 21.4,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
-      "status": "failed",
-      "exit_code": 1,
-      "duration_seconds": 0.87,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/evidence-freshness.txt",
-      "diagnostic_tail": "{\"status\": \"failed\", \"error\": \"Operation evidence is stale: code, tests or capture tools changed\"}\n"
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.42,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 106.77,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/runtime.txt",
-      "tests_run": 570,
+      "duration_seconds": 99.15,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/runtime.txt",
+      "tests_run": 583,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 91.07,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/web.txt",
-      "tests_run": 166,
+      "duration_seconds": 116.93,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/web.txt",
+      "tests_run": 183,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.76,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/interface.txt",
-      "checks_passed": 72
+      "duration_seconds": 6.5,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/interface.txt",
+      "checks_passed": 86
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 23.29,
-      "log": "/workspace/irgs-cloud/component-qa/runs/1792786836073482936/logs/tooling.txt",
+      "duration_seconds": 26.92,
+      "log": "/workspace/irgs-cloud/integration/solo-runtime-01/20261024T123043Z/logs/tooling.txt",
       "tests_run": 29,
       "skipped": 0
     }
@@ -133,15 +132,12 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "candidate_kind": "disposable_component_set_assembly",
-  "candidate_components": {
-    "engine": "63ca5fe34fe8ae2f1aba4396152e02d99dab8ea3",
-    "app": "a6da825d4180773ee97f2b76d0808dbde79c7a69",
-    "catalog": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3"
+  "published_component_commits": {
+    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "app": "277554aac21a092b8a55562309da274bbe74a3af",
+    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
   },
-  "joined_template_commit": "74840316ef1b6495a9f9687e021d79f9b0d542ef",
-  "app_declared_engine_commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
-  "app_declared_catalog_commit": "3e898acb2179f18a41d7967817bedf429df29d3f",
-  "pin_matches_candidate": false,
-  "integrated_or_deployed_by_qa": false
+  "source_input_sha256": "d03fa5c8034ab97d52af95393180e050e025b8c78c8841614d21eaa8eab42b8b",
+  "primary_update_review": "provenance/qa/primary_update_3_4_0_review.json",
+  "qualification_scope": "Isolated candidate; integrated Core/App/Catalog inputs are verified byte-identical. Live AI and full C2 unqualified."
 }

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-solo-r00-eval-v1",
+  "version": "1.0.0",
+  "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+  "provenance": {
+    "author": "IRGS Catalog",
+    "derived_from": "authored-fictional:greywater-reach:v1 / rise-foundation-1 / R00",
+    "historical_calibration": false
+  },
+  "rights": {
+    "authorship": "original-synthetic-evaluation-content",
+    "permitted_processing": [
+      "local-offline-evaluation",
+      "external-evaluation-of-actor-exports"
+    ],
+    "scope": "fixture-authored-text-only",
+    "imported_material": "none",
+    "transfer_authority": "Engine authorization still required; metadata selects no provider"
+  },
+  "classification": "synthetic-evaluation-only",
+  "public_discovery": false,
+  "canon": false,
+  "playable_start": false,
+  "release_approved": false,
+  "contracts": {
+    "engine_commit": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+    "app_commit": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+    "operation_id": "execute_settlement_action",
+    "supported_action_ids": [
+      "request_grant",
+      "accept_grant",
+      "walk_clearing",
+      "walk_commons",
+      "found",
+      "build",
+      "delegate",
+      "pause",
+      "resume",
+      "invite",
+      "arrange_departure",
+      "wait_hour",
+      "inspect"
+    ]
+  },
+  "actor_inputs": {
+    "solo-denied-build": {
+      "path": "actor_inputs/solo-denied-build.json",
+      "sha256": "81b43655c2e5ec251287f1d05507a501b5844af8254fd7643c9fb8fe6b47f8cd"
+    },
+    "solo-unsupported-grain": {
+      "path": "actor_inputs/solo-unsupported-grain.json",
+      "sha256": "b5eca0fb02af6b08286d0f215a9f189d34925e947e98194dfadec18e6d30e01b"
+    },
+    "solo-walk": {
+      "path": "actor_inputs/solo-walk.json",
+      "sha256": "1da55a44e52f963e0bb3cc0a28c65c45df33f604a50ac5d9ccb3d7d12c992a38"
+    },
+    "solo-stale-inspect": {
+      "path": "actor_inputs/solo-stale-inspect.json",
+      "sha256": "c63da2f87ad97e86294a8030e1fc2c810d4c94c885b22dcf63f4d000c86d05a2"
+    },
+    "solo-found": {
+      "path": "actor_inputs/solo-found.json",
+      "sha256": "e4ea92d5c9d3cca168ebf7e84ba7780563420274b063ee333729949227af0384"
+    },
+    "solo-replay-walk": {
+      "path": "actor_inputs/solo-replay-walk.json",
+      "sha256": "4a536876a4157ddee4c375033d4371f51e98f819fa98a9296fa6e1037038c6d3"
+    },
+    "solo-changed-replay": {
+      "path": "actor_inputs/solo-changed-replay.json",
+      "sha256": "793c735d8f41989d4d47201d2249846ad3c4af1a5a6e0cf0b331e374feadffa3"
+    },
+    "solo-build": {
+      "path": "actor_inputs/solo-build.json",
+      "sha256": "033adf3a71f31173e4192b5fdff5bd7250fd200a45fa0345fe5947570047e468"
+    },
+    "solo-work-boundary": {
+      "path": "actor_inputs/solo-work-boundary.json",
+      "sha256": "22313474acfd457e3e0e2ca97f8a6eaca9a434ca463118efa692f295fd715dea"
+    },
+    "solo-finish-shelter": {
+      "path": "actor_inputs/solo-finish-shelter.json",
+      "sha256": "69701f88e17290468a423e973d88b95518aaeda8655365d79a80e12287f9f9b3"
+    }
+  },
+  "evaluator_only": {
+    "setup": {
+      "path": "evaluator_only/setup.json",
+      "sha256": "7bc289eb783203d66fa11fbd7ad3132570aebe206bff673ce516fe28c0e953e8"
+    },
+    "oracle": {
+      "path": "evaluator_only/oracle.json",
+      "sha256": "46535db4b5b6d1502f3d93372d00a7ad9e0bd51be3ed978bed8a9bbe7f37450f"
+    }
+  }
+}

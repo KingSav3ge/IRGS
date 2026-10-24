@@ -117,9 +117,15 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     historical = checker.package_status(root / 'historical_details/manifest.json')
+    spec = importlib.util.spec_from_file_location('catalog_solo_fixture_check',
+        root / 'solo_evaluation.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    solo = checker.validate_fixture(root / 'evaluation/solo_r00_v1')
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
-        'campaign_records': campaign_records, 'historical_details': historical}
+        'campaign_records': campaign_records, 'historical_details': historical,
+        'solo_evaluation': solo}
 
 
 if __name__ == '__main__':

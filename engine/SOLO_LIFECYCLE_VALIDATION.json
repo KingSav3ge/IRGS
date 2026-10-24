@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "work_order": "solo-runtime-01",
+  "target_iteration": "IRGS 3.4.0 — in development",
+  "base_commit": "63ca5fe34fe8ae2f1aba4396152e02d99dab8ea3",
+  "status": "PASS_OFFLINE_ENGINE_LIFECYCLE_WITH_LIMITS",
+  "reproduced_before": {
+    "cancellation_before_registration": "unknown_request, then proposal_ready with one transport call",
+    "expired_cached_proposal": "proposal_ready after deadline",
+    "wrong_route_duplicate": "route_denied also terminated the authorized in-flight attempt"
+  },
+  "changed_behavior": [
+    "Cancellation before registration is durable and prevents later reservation/dispatch of that request ID",
+    "Cancellation and expiry before serialized admission suppress transport",
+    "Route/configuration and authorized scope revalidate before admission",
+    "Rejected duplicates do not finalize attempts claimed by a different invocation",
+    "Expired/cancelled broker responses omit drafts; original proposals remain private for Core receipt recovery",
+    "Legacy admission telemetry migrates to unknown, retaining reservations and recovery holds"
+  ],
+  "technical_accounting": {
+    "states": [
+      "not_started",
+      "admitted",
+      "unknown"
+    ],
+    "dispatch_started": "Admission timestamp, not proof of HTTP receipt or a charge",
+    "reservation_refunds": "none",
+    "unknown_usage": "never treated as zero",
+    "campaign_state_owner_added": false
+  },
+  "checks": {
+    "new_lifecycle_cases": {
+      "tests": 13,
+      "names": [
+        "test_cancellation_before_registration_survives_restart_without_reservation",
+        "test_callback_cancellation_before_registration_also_prevents_later_retry",
+        "test_cached_proposal_cancellation_hides_draft_and_preserves_private_recovery",
+        "test_cancellation_wins_between_preflight_and_registration",
+        "test_cancellation_after_reservation_and_before_admission_never_enters_transport",
+        "test_deadline_after_reservation_prevents_transport_admission",
+        "test_session_closure_after_reservation_prevents_transport_admission",
+        "test_route_revocation_or_replacement_after_reservation_prevents_transport",
+        "test_wrong_route_duplicate_cannot_terminate_an_authorized_inflight_attempt",
+        "test_expired_cached_draft_is_unavailable_without_losing_its_recovery_record",
+        "test_admitted_attempt_cannot_be_admitted_twice_or_reclassified_unsent",
+        "test_legacy_unknown_attempt_stays_unknown_across_schema_upgrade",
+        "test_cancelling_accepted_action_preserves_durable_core_receipt"
+      ],
+      "status": "PASS"
+    },
+    "focused": {
+      "command": "python -B -m unittest test_solo_lifecycle test_solo_provider test_openai_proposals test_solo_rise test_scene_actions test_player_actions test_work_recovery test_rejected_dependencies test_settlement -q (runtime cwd)",
+      "tests": 146,
+      "status": "PASS"
+    },
+    "full_runtime": {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -q",
+      "tests": 583,
+      "passed": 582,
+      "skipped": 1,
+      "skip_reason": "historical local save not packaged (existing private fixture)",
+      "status": "PASS"
+    },
+    "catalog_r00": {
+      "command": "python -B tools/qualify_solo_provider.py --catalog-root /path/to/pinned/IRGS_Catalog",
+      "cases": 10,
+      "skipped": 0,
+      "accepted_actions": 5,
+      "status": "PASS",
+      "report": "engine/SOLO_CATALOG_VALIDATION.json"
+    },
+    "engine_integrity": {
+      "command": "python -B tools/verify_components.py --component engine",
+      "status": "PASS"
+    },
+    "kira_canon": {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "PASS"
+    },
+    "delivery_links": {
+      "scope": "README/API/active plans; inherited historical continuation entries excluded",
+      "status": "PASS"
+    },
+    "whitespace": {
+      "command": "git -c core.whitespace=cr-at-eol diff --check",
+      "status": "PASS"
+    }
+  },
+  "dependencies": {
+    "catalog_commit": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
+    "catalog_manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+    "catalog_loader_sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+    "app_work_order_inspected_at": "a6da825d4180773ee97f2b76d0808dbde79c7a69",
+    "app_runtime_qualification": "NOT_EXECUTED"
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/solo_provider.py": "68d58acbb732a43e2000f942cf93f6e48aa90e1d14c294f9528676c2c7371d5c",
+    "IRGS_3_3/runtime/test_solo_lifecycle.py": "155a7c4b5dcaf922721f75e214f9fc9227db4830858e7e9798ab36e5b80414bd",
+    "IRGS_3_3/runtime/test_solo_provider.py": "26f2a8aa8eddbab2f5bebc15e7cc5be0a9aea024bb0291fe7f3eb4203b7e822b"
+  },
+  "live_calls": 0,
+  "source_data": "Synthetic temporary campaign saves and inference ledgers only; no user save or credential inspected",
+  "remaining": [
+    "Actual App authentication/session lifecycle, atomic host persistence and restore integration",
+    "Exact reviewed Engine/App/Catalog pair and isolated joined qualification",
+    "General DEV-06 through DEV-11 completion and billing reconciliation",
+    "Separately authorized credential/account model/workload/policy/current price/finite budget for live smoke",
+    "Human semantic/character review and measured model quality"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux"
+  }
+}

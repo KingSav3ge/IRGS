@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-solo-r00-eval-v1",
+  "source_ref": "authored-synthetic:irgs-catalog:solo-r00:v1",
+  "choices": {
+    "template_id": "R00",
+    "founder_name": "Ari",
+    "household_name": "Ari household",
+    "settlement_name": "Willow Camp",
+    "region_name": "Greywater Reach",
+    "date_label": "Spring, Year 1",
+    "company": "solo",
+    "permission": "held",
+    "supplies": "basic"
+  }
+}

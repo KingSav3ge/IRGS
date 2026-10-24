@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "PASS_OFFLINE_ENGINE_CATALOG_WITH_LIMITS",
+  "target_iteration": "IRGS 3.4.0 — in development",
+  "catalog_commit": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
+  "engine_sources_sha256": {
+    "core_world.py": "ad3b5133b0649454628c5c5befd37cb6598dc21522c5fec468bb7edf91293262",
+    "settlement_runtime.py": "3e0fc6be4c592f008eff91608c5a073c73e296813fe02ad03273fe2ad731343f",
+    "scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
+    "solo_provider.py": "68d58acbb732a43e2000f942cf93f6e48aa90e1d14c294f9528676c2c7371d5c",
+    "solo_actions.py": "d08ec0f47be7713b011954028c3ba49f6cc09a669da0d0fe23393c7e13508d2f",
+    "r9_runtime.py": "bf6d74c32f4288ab53aae502827e8107316b1593dc7293426ff95fec95bd7d5b",
+    "r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129"
+  },
+  "manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+  "loader_sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+  "fixture": {
+    "status": "verified",
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "cases": 10,
+    "legitimate_actions": 5,
+    "actor_oracle_separation": true,
+    "runtime_execution_verified_by_schema": false,
+    "public_discovery": false
+  },
+  "operation": "execute_settlement_action",
+  "cases": [
+    {
+      "case_id": "solo-denied-build",
+      "kind": "denied",
+      "result": "rejected_no_effects",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-unsupported-grain",
+      "kind": "unsupported",
+      "result": "unsupported_action",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-walk",
+      "kind": "legitimate",
+      "result": "committed",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-stale-inspect",
+      "kind": "stale",
+      "result": "stale_state",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-found",
+      "kind": "legitimate",
+      "result": "committed",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-replay-walk",
+      "kind": "replay",
+      "result": "original_receipt",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-changed-replay",
+      "kind": "changed_replay",
+      "result": "request_identity_conflict",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-build",
+      "kind": "legitimate",
+      "result": "committed",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-work-boundary",
+      "kind": "legitimate",
+      "result": "committed",
+      "status": "PASS"
+    },
+    {
+      "case_id": "solo-finish-shelter",
+      "kind": "legitimate",
+      "result": "committed",
+      "status": "PASS"
+    }
+  ],
+  "successful_actions": 5,
+  "elapsed_seconds": 3900,
+  "material_consumption": {
+    "axe": 0,
+    "grain": 0,
+    "timber": 4
+  },
+  "shelter_places": 2,
+  "actor_oracle_separation": true,
+  "temporary_save_reload_after_each_commit": true,
+  "transport": "synthetic offline transport",
+  "live_calls": 0,
+  "skipped": 0,
+  "limits": [
+    "Temporary synthetic host CAS only; actual App integration unqualified",
+    "Actor export is evaluation content, not initialization or world authority",
+    "No live model, semantic/human quality or exact joined set qualification"
+  ]
+}

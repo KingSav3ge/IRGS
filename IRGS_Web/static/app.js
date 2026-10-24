@@ -38,7 +38,7 @@ function restoreScroll(){const key=viewKey();requestAnimationFrame(()=>{if(key==
 function draftKey(){return current?`irgs-draft:${current.id}:${current.actor_id||'none'}`:null;}
 function pendingKey(){return current?`irgs-pending:${current.id}:${current.actor_id||'none'}`:null;}
 function stashDraft(){const key=draftKey();if(key)writeLocal(key,$('#declaration').value||'');}
-function loadDraft(){const key=draftKey();$('#declaration').value=key?readLocal(key,''):'';transportPending=pendingKey()?readLocal(pendingKey()):null;}
+function loadDraft(){const key=draftKey();$('#declaration').value=key?readLocal(key,''):'';transportPending=pendingKey()?readLocal(pendingKey()):null;loadSoloAttempt();}
 function displayTime(){if(current?.settlement)return current.settlement.opening_date+' \u00b7 '+riseElapsedLabel(current.settlement.elapsed_seconds)+' since arrival';const time=current?.campaign_time||{};return [time.date||time.calendar_date||(time.day!==undefined?'Day '+time.day:null),time.time||'time unknown',time.precision&&time.precision!=='exact'?time.precision:null].filter(Boolean).join(' · ');}
 async function refreshList(selected){const data=await api('campaigns');token=data.token;$('#campaign').innerHTML='<option value="">Choose a campaign</option>'+data.campaigns.map(campaign=>`<option value="${esc(campaign.id)}">${esc(campaign.name)}</option>`).join('');if(selected)$('#campaign').value=selected;return data.campaigns;}
 function syncControls(){
@@ -56,7 +56,7 @@ function syncControls(){
 }
 function setBusy(value){busy=value;syncControls();}
 async function openCampaign(id,options={}){
-  stashDraft();rememberScroll();const request=++campaignRequest,selected=id||'',mode=workspaceMode;
+  stashDraft();rememberScroll();invalidateActionReview();const request=++campaignRequest,selected=id||'',mode=workspaceMode;
   $('#campaign').value=selected;current=null;currentBinding=null;transportPending=null;loadingCampaign=Boolean(selected);render();
   if(!selected){localStorage.removeItem('irgs-active');return true;}
   const query=new URLSearchParams();if(options.actorId)query.set('actor_id',options.actorId);
@@ -68,7 +68,7 @@ async function openCampaign(id,options={}){
     loadDraft();render();restoreScroll();return true;
   }catch(error){if(request!==campaignRequest||$('#campaign').value!==selected||workspaceMode!==mode)return false;loadingCampaign=false;render();throw error;}
 }
-function changeView(next,options={}){rememberScroll();stashDraft();++historicalReferenceRequest;++inspectorRequest;view=next;if($('#inspect-dialog').open)$('#inspect-dialog').close();document.body.classList.remove('nav-open');$('#toggle-nav').setAttribute('aria-expanded','false');if(options.route!==false)updateViewRoute(next,options.featureId);render();restoreScroll();}
+function changeView(next,options={}){rememberScroll();stashDraft();invalidateActionReview();++historicalReferenceRequest;++inspectorRequest;view=next;if($('#inspect-dialog').open)$('#inspect-dialog').close();document.body.classList.remove('nav-open');$('#toggle-nav').setAttribute('aria-expanded','false');if(options.route!==false)updateViewRoute(next,options.featureId);render();restoreScroll();}
 function empty(){return '<div class="empty adventure-welcome"><div class="welcome-copy"><span class="eyebrow">HISTORY IS ONLY THE BEGINNING</span><h2>Find your place.<br>Choose your path.</h2><p>A life at the edge of a changing world. Begin with a character, a moment in history, and a choice.</p><button id="empty-create" class="primary">Find your adventure <span aria-hidden="true">→</span></button><small>All 37 Century of Conflict starts offer an optional local Solo opening.</small></div><span class="art-caption">Illustrative campaign artwork</span></div>';}
 function render(){
   document.body.dataset.workspace=view;
@@ -97,7 +97,7 @@ function renderStory(){
   $('#declaration').placeholder=responseChoices().length?'Write your own response, or edit a suggested answer here…':current.opening?.status==='awaiting_first_action'?'Your first move: describe what you say or attempt. A freeform declaration remains pending until resolved.':'Describe what your character says or attempts…';
   const draw=()=>{const query=$('#story-search').value.toLowerCase();const filtered=entries.filter(entry=>`${entry.text||''} ${entry.title||''}`.toLowerCase().includes(query));$('#story-feed').innerHTML=filtered.map(entryMarkup).join('')||'<div class="story-empty"><h3>The next choice is yours.</h3><p>No matching narrative or action records are available. Your confirmed checkpoint remains intact.</p></div>';document.querySelectorAll('[data-bookmark]').forEach(button=>{button.setAttribute('aria-pressed',String(bookmarks.has(button.dataset.bookmark)));button.textContent=bookmarks.has(button.dataset.bookmark)?'Bookmarked':'Bookmark';button.onclick=()=>{bookmarks.has(button.dataset.bookmark)?bookmarks.delete(button.dataset.bookmark):bookmarks.add(button.dataset.bookmark);writeLocal(key,[...bookmarks]);button.setAttribute('aria-pressed',String(bookmarks.has(button.dataset.bookmark)));button.textContent=bookmarks.has(button.dataset.bookmark)?'Bookmarked':'Bookmark';};});};
   $('#story-search').oninput=draw;draw();$('#jump-latest').onclick=()=>$('#feed-end').scrollIntoView({behavior:preferences.motion==='reduce'?'instant':'auto',block:'end'});
-  const campaign=current.id,actor=current.actor_id,available=supportedActions(),responses=responseChoices();document.querySelectorAll('[data-supported-action]').forEach(button=>{const action=available[Number(button.dataset.supportedAction)];button.onclick=()=>submitSupportedAction(action.kind==='scene_action'?action.action_id:action.order_id,campaign,actor,action.kind,action.text);});document.querySelectorAll('[data-response-choice]').forEach(button=>{const choice=responses[Number(button.dataset.responseChoice)];button.onclick=()=>chooseResponse(choice.id,campaign,actor,choice.text);});if($('#write-own-response'))$('#write-own-response').onclick=focusOwnResponse;syncComposer();
+  const campaign=current.id,actor=current.actor_id,available=supportedActions(),responses=responseChoices();document.querySelectorAll('[data-supported-action]').forEach(button=>{const action=available[Number(button.dataset.supportedAction)];button.onclick=()=>reviewSupportedAction(action,campaign,actor);});document.querySelectorAll('[data-response-choice]').forEach(button=>{const choice=responses[Number(button.dataset.responseChoice)];button.onclick=()=>chooseResponse(choice.id,campaign,actor,choice.text);});if($('#write-own-response'))$('#write-own-response').onclick=focusOwnResponse;syncComposer();
 }
 function renderWorld(){
   const world=current.world||{};
@@ -321,6 +321,7 @@ async function inspectHistoricalReference(collection,row){
 }
 function renderFeature(id){
   const feature=features.find(item=>item.id===id&&featureAllowed(item));
+  if(feature&&workspaceMode==='creator'&&id==='providers-models'){renderAssistanceStatus();return;}
   if(feature&&workspaceMode==='creator'&&id==='historical-reference-library'){renderHistoricalReference();return;}
   if(feature&&workspaceMode==='creator'&&['historical-comparison','historical-inspector'].includes(id)){renderHistoricalPlans(id);return;}
   if(!feature){$('#content').innerHTML='<div class="empty"><h2>Section unavailable</h2><p>This route is not available in the current workspace.</p></div>';return;}
@@ -419,7 +420,7 @@ function actionCapabilityNote(){
 function supportedActionsMarkup(){
   const actions=supportedActions();if(!actions.length)return '';
   const opening=actions.some(action=>action.kind==='scene_action');
-  return `<section class="supported-actions" aria-labelledby="supported-actions-title"><div class="decision-heading"><span class="eyebrow">THE NEXT MOVE IS YOURS</span><h3 id="supported-actions-title">${opening?'What will you do?':'Your received orders'}</h3></div><p class="choice-guidance">${opening?'Listed approaches can fail. Read the attempt, then choose your next move.':'Authority and available stock are checked when you issue equipment.'}</p><div class="adventure-choices">${actions.map((action,index)=>`<article class="supported-action"><button type="button" class="adventure-choice" data-supported-action="${index}" aria-label="${esc(action.title||'Attempt action')}"><span class="choice-number" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><span class="choice-copy"><strong>${esc(action.title||'Attempt action')}</strong>${action.description?`<span>${esc(action.description)}</span>`:''}<small class="record">${esc(action.text)}</small></span><span class="choice-arrow" aria-hidden="true">→</span></button></article>`).join('')}</div></section>`;
+  return `<section class="supported-actions" aria-labelledby="supported-actions-title"><div class="decision-heading"><span class="eyebrow">THE NEXT MOVE IS YOURS</span><h3 id="supported-actions-title">${opening?'What will you do?':'Your received orders'}</h3></div><p class="choice-guidance">${opening?'Listed approaches can fail. Read the attempt, then review your next move. Selecting an action sends nothing.':'Review an order before confirming it. Authority and available stock are checked on submission.'}</p><div class="adventure-choices">${actions.map((action,index)=>`<article class="supported-action"><button type="button" class="adventure-choice" data-supported-action="${index}" aria-label="${esc(action.title||'Attempt action')}"><span class="choice-number" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><span class="choice-copy"><strong>${esc(action.title||'Attempt action')}</strong>${action.description?`<span>${esc(action.description)}</span>`:''}<small class="record">${esc(action.text)}</small></span><span class="choice-arrow" aria-hidden="true">→</span></button></article>`).join('')}</div></section>`;
 }
 function latestOutcomeMarkup(){
   const outcomes=(current?.completed_actions||[]).filter(item=>item.actor===current.actor_id&&['completed_successfully','completed_unsuccessfully'].includes(item.status)&&typeof item.outcome?.summary==='string');
@@ -447,9 +448,11 @@ async function renderHistoricalPlans(featureId){
   }catch(error){if(request!==historyPlanningRequest||workspaceMode!==mode||current?.id!==campaign||view!=='feature:'+featureId)return;$('#content').innerHTML='<section class="panel"><p>'+esc(error.message)+'</p><button class="quiet" id="retry-historical-plans">Retry historical reference</button></section>';$('#retry-historical-plans').onclick=()=>renderHistoricalPlans(featureId);}
 }
 function syncComposer(){
+  syncActionReview();
+  syncAssistanceControls();
   const player=workspaceMode==='player'&&current&&!loadingCampaign&&view==='story';$('#composer-form').hidden=!player;
   $('#own-response-panel').hidden=!player;if(player&&(current.pending_declaration||transportPending))$('#own-response-panel').open=true;
-  const accepted=current?.pending_declaration,allowed=Boolean(current?.capabilities?.can_declare)&&!accepted&&!transportPending;
+  const accepted=current?.pending_declaration,allowed=Boolean(current?.capabilities?.can_declare)&&!accepted&&!transportPending&&!soloAttempt;
   $('#send-declaration').disabled=busy||!player||!allowed||!$('#declaration').value.trim();
   $('#retry-action').hidden=!transportPending;$('#retry-action').disabled=busy;
   $('#withdraw-action').hidden=!accepted||Boolean(transportPending);$('#withdraw-action').disabled=busy;
@@ -482,7 +485,7 @@ async function deliverAction(pending,checkFirst=false){
   }catch(error){notice(error.message,true);}finally{setBusy(false);}
 }
 async function submitDeclaration(){
-  if(busy||!current?.capabilities?.can_declare||current.pending_declaration||transportPending)return;
+  if(busy||!current?.capabilities?.can_declare||current.pending_declaration||transportPending||soloAttempt)return;
   const declaration=$('#declaration').value;if(!declaration.trim())return;
   stashDraft();const pending={endpoint:'declaration',body:{id:current.id,revision:current.revision,request_id:crypto.randomUUID(),actor:current.actor_id,declaration}};storeTransport(pending);await deliverAction(pending);
 }
@@ -731,19 +734,19 @@ function loadProfiles(){
 
 document.querySelectorAll('[data-view]').forEach(button=>button.onclick=()=>changeView(button.dataset.view));
 document.querySelectorAll('[role=tab]').forEach(button=>button.onkeydown=event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const tabs=[...document.querySelectorAll('[role=tab]')],index=tabs.indexOf(button),next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;changeView(tabs[next].dataset.view);tabs[next].focus();});
-bindInspectors();$('#inspect-dialog').addEventListener('close',()=>{++inspectorRequest;});$('#close-inspector').onclick=()=>$('#inspect-dialog').close();
+bindInspectors();bindSoloControls();$('#inspect-dialog').addEventListener('close',()=>{++inspectorRequest;});$('#close-inspector').onclick=()=>$('#inspect-dialog').close();
 $('#toggle-nav').onclick=()=>{const open=document.body.classList.toggle('nav-open');$('#toggle-nav').setAttribute('aria-expanded',String(open));};
 $('#toggle-context').onclick=()=>{const open=document.body.classList.toggle('context-open');$('#toggle-context').setAttribute('aria-expanded',String(open));if(open)$('#close-context').focus();};
 $('#close-context').onclick=()=>{document.body.classList.remove('context-open');$('#toggle-context').setAttribute('aria-expanded','false');$('#toggle-context').focus();};
 document.addEventListener('keydown',event=>{if(event.key!=='Escape'||document.querySelector('dialog[open]'))return;if(document.body.classList.contains('context-open')){$('#close-context').click();event.preventDefault();}else if(document.body.classList.contains('nav-open')){document.body.classList.remove('nav-open');$('#toggle-nav').setAttribute('aria-expanded','false');$('#toggle-nav').focus();event.preventDefault();}});
 $('#settings').onclick=openSettings;$('#close-settings').onclick=()=>$('#preferences-dialog').close();$('#preferences-form').onsubmit=event=>event.preventDefault();
 $('#preferences-form').oninput=event=>{const control=event.target;if(control.name){preferences[control.name]=control.type==='range'?Number(control.value):control.value;applyPreferences();document.querySelectorAll('.mechanical-detail').forEach(detail=>detail.open=preferences.mechanics==='expanded');}};
-$('#declaration').oninput=()=>{stashDraft();syncComposer();};$('#declaration').onkeydown=event=>{const submit=event.key==='Enter'&&(preferences.submitKey==='enter'?!event.shiftKey:(event.ctrlKey||event.metaKey));if(submit){event.preventDefault();if(!$('#send-declaration').disabled)$('#composer-form').requestSubmit();}};
+$('#declaration').oninput=()=>{invalidateSoloProposal();stashDraft();syncComposer();};$('#declaration').onkeydown=event=>{const submit=event.key==='Enter'&&(preferences.submitKey==='enter'?!event.shiftKey:(event.ctrlKey||event.metaKey));if(submit){event.preventDefault();if(!$('#send-declaration').disabled)$('#composer-form').requestSubmit();}};
 $('#composer-form').onsubmit=event=>{event.preventDefault();return submitDeclaration();};$('#retry-action').onclick=()=>{if(transportPending)deliverAction(transportPending,true);};$('#withdraw-action').onclick=withdrawDeclaration;
 $('#campaign').onchange=()=>{if(busy){$('#campaign').value=current?.id||'';return;}openCampaign($('#campaign').value).catch(error=>notice(error.message,true));};
 $('#player-character').onchange=()=>{if(busy){$('#player-character').value=current?.actor_id||'';return;}if(current)openCampaign(current.id,{actorId:$('#player-character').value}).catch(error=>notice(error.message,true));};
 $('#workspace-mode').onclick=async()=>{
-  if(busy)return;stashDraft();rememberScroll();const id=current?.id,actor=current?.actor_id;
+  if(busy)return;invalidateActionReview();stashDraft();rememberScroll();const id=current?.id,actor=current?.actor_id;
   campaignRequest+=1;createDialogRequest+=1;featuresRequest+=1;features=[];drawFeatureNav();workspaceMode=workspaceMode==='creator'?'player':'creator';view=workspaceMode==='creator'?'creator':'story';current=null;currentBinding=null;transportPending=null;
   if($('#inspect-dialog').open)$('#inspect-dialog').close();$('#inspect-content').innerHTML='';render();
   const mode=workspaceMode,request=campaignRequest;

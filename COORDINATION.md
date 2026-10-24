@@ -1,31 +1,17 @@
 # IRGS development coordination
 
-## Active cycle: solo-runtime-01
+## IRGS 3.4.0 primary development update
 
-Target iteration: **IRGS 3.4.0 — in development**. The current cycle contributes to that release; its existing cycle ID and integration gate remain in use.
+The reviewed offline foundation is integrated under `solo-runtime-01`. Engine supplies actor-scoped proposals, durable attempt accounting and an opt-in direct API adapter. App supplies explicit acceptance, recovery and actual authored-scene/Rise handler integration. Catalog supplies the separately scoped synthetic R00 fixture. Stock local hosting remains unconfigured for AI; this development update activates no live inference or complete narrator.
 
-The user's priority is completion of the systems needed for IRGS to run as a continuing Solo experience. Follow [the Solo completion plan](SOLO_COMPLETION_PLAN.md). The target is editable player intent, actor-scoped AI interpretation, explicit acceptance, real Core validation/execution, durable outcomes and grounded narration followed by the next decision. Complete the supporting recovery, time, dialogue and shared-world processes through the existing owners.
+| Integrated component | Exact reviewed commit |
+| --- | --- |
+| Engine | `8234044c089131314019ecaf6799a2f08028a3f8` |
+| App | `277554aac21a092b8a55562309da274bbe74a3af` |
+| Catalog | `401df26a1f16be864dd15d7c5250da5d75f8ccca` |
 
-| Existing development chat | Immediate assignment | Delivery evidence |
-| --- | --- | --- |
-| IRGS Engine | Scoped provider/action contracts, offline transport/validation/attempt accounting, qualified existing Core actions, then one opt-in direct API adapter. | Actual supported effects, denial/concurrency/retry/restart/restore and finite usage tests; documented App API and exact commit. |
-| IRGS App/Website | Consume Engine API for the intent/proposal/explicit-submit/result loop, honest unavailable states and protected diagnostics. | Two consecutive actions, editable intent, safe rendering, stale-output/privacy and browser/recovery checks on exact pins. |
-| IRGS Catalog | Versioned synthetic R00-derived runtime fixture with actor-visible inputs separated from evaluator-only oracles. | Rights/classification/schema validation and actual Engine consumer tests; no campaign release or new mechanics. |
+Fresh source-bound capture, full joined regression, actual HTTP/Chromium and candidate package/extraction checks passed. See [the primary review](provenance/qa/primary_update_3_4_0_review.json), [release notes](RELEASE_NOTES_3_4_0.md) and [completion plan](SOLO_COMPLETION_PLAN.md). The operation register retains its unqualified paths; 121 C2 design cases do not become passed tests.
 
-Each repository's `COORDINATOR_WORK_ORDER.md` has the actionable assignment. Documentation-only publication does not constitute a viable implementation. The existing integrated set remains selected in `COMPONENTS.json`. New source integration requires all three real deliverables, exact approved commits, compatible App pins and passing joined checks; no prior-cycle review approves a new commit.
+This cycle remains partial. Next are operator configuration, conditional bounded live smoke, semantic/voice review, grounded narration/dialogue and the remaining general simulation systems. Wider hosting, additional providers and optional content expansion follow their documented prerequisites. The prior Historical Details cycle and its original archive remain preserved.
 
-AI configuration is absent. Offline implementation can proceed now; conditional live smoke requires a server credential, eligible exact model/workload and finite budget. Mock transport is integration evidence, not live AI gameplay or model-quality evidence. The general freeform/combat resolver and wider C2 systems remain unfinished and retain their stable DEV IDs.
-
-Optional portfolio expansion, artwork, provider comparisons, Workshop, Marketplace and Co-op follow the runnable Solo systems. Adopted content and mechanics remain, and original archive records stay exact.
-
-## Completed cycle: historical-details-01
-
-Historical Details is integrated. All 533,064,680 original bytes, 5,146 files and 5,145 delivery bindings were verified in 32 parts. The ten structured collections hold 387,273 rows. Creator browsing and recovery do not change campaign facts or player knowledge. The complete approvals are preserved in [the completed-cycle record](provenance/qa/completed_cycles/historical-details-01.json); the [fresh four-repository audit](provenance/qa/repository_functional_audit_2026_10_23.md) passed for the integrated baseline.
-
-- Integrated engine: `723627e629231b5e90f38b9d52b65c9a3967b92a`.
-- Integrated app: `d8dc35ed653e516ccd0cacf91ee9693258491032`.
-- Integrated catalog: `3e898acb2179f18a41d7967817bedf429df29d3f`.
-
-## Coordination and monitoring
-
-IRGS Enviroment reviews and integrates the existing three development chats. All three were read and observed idle. This session has no direct chat-start/send tool; work orders published in their repositories are the handoff. No dispatch or active background development is claimed. The QA monitor tests newly pushed component sets while the environment runs; it does not start chats, implement features or import product source.
+New source integration continues to require viable exact Engine/App/Catalog updates, compatible App pins and passing coordinator reviews. The baseline now advances to the integrated set above. The monitor tests pushed sets while the environment runs; it does not start development chats or import product source.

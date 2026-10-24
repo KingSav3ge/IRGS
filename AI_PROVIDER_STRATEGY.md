@@ -6,7 +6,7 @@ The original submission is preserved [byte for byte](provenance/qa/ai_provider_s
 
 ## Current implementation and reconciliation
 
-The current Solo host is Python with a vanilla JavaScript interface. It needs no Vercel hosting migration, React rewrite, second simulator or external AI service to retain its existing supported operations. `IRGS_Web/features.py` labels the developer AI Network as planned; there is no connected provider or autonomous narrator. General freeform submissions still record unresolved declarations.
+The current Solo host is Python with a vanilla JavaScript interface. It needs no Vercel hosting migration, React rewrite, second simulator or external AI service to retain its existing supported operations. `IRGS_Web/features.py` labels the developer AI Network as planned; the bounded provider/action foundation and opt-in direct transport are now present, while stock hosting remains unconfigured and no autonomous narrator is active. General freeform submissions still record unresolved declarations.
 
 Retain exactly six Director categories: Game Master, World, National, Regional, Local and Scene. The proposed twelve responsibilities are logical task types, not twelve new Directors, twelve mandatory model calls or a dedicated Game Master specialist team. They cover coordination, character intent, dialogue, narration, scene composition, social reasoning, strategy, world reasoning, knowledge retrieval, memory, continuity and rules assistance. Reuse the existing planned registry/Capability Broker design instead of adding a competing coordinator or registry.
 
