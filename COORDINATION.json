@@ -52,25 +52,55 @@
   },
   "reviews": {
     "engine": {
-      "status": "pending",
-      "commit": null,
+      "status": "approved",
+      "commit": "8234044c089131314019ecaf6799a2f08028a3f8",
       "deliverable": "component_update",
-      "checks": []
+      "checks": [
+        {
+          "name": "source review and component integrity",
+          "status": "passed"
+        },
+        {
+          "name": "fresh synthetic Core capture and regressions",
+          "status": "passed"
+        }
+      ],
+      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
     },
     "app": {
-      "status": "pending",
-      "commit": null,
+      "status": "approved",
+      "commit": "277554aac21a092b8a55562309da274bbe74a3af",
       "deliverable": "component_update",
-      "checks": []
+      "checks": [
+        {
+          "name": "source review and component integrity",
+          "status": "passed"
+        },
+        {
+          "name": "full Web/interface and actual Rise HTTP/Chromium qualification",
+          "status": "passed"
+        }
+      ],
+      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
     },
     "catalog": {
-      "status": "pending",
-      "commit": null,
+      "status": "approved",
+      "commit": "401df26a1f16be864dd15d7c5250da5d75f8ccca",
       "deliverable": "component_update",
-      "checks": []
+      "checks": [
+        {
+          "name": "source review and component integrity",
+          "status": "passed"
+        },
+        {
+          "name": "73 declared-contract tests plus ten current Engine/App fixture cases",
+          "status": "passed"
+        }
+      ],
+      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
     }
   },
-  "integration_status": "awaiting_component_implementation",
+  "integration_status": "approved_offline_development_update",
   "component_source_integration_performed": false,
   "blockers": [
     "Engine provider/action contract and direct adapter are not implemented.",
@@ -173,5 +203,11 @@
     }
   ],
   "target_version": "3.4.0",
-  "target_version_status": "in_development"
+  "target_version_status": "in_development",
+  "proposed_components": {
+    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "app": "277554aac21a092b8a55562309da274bbe74a3af",
+    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
+  },
+  "reviewed_at_utc": "2026-10-24T13:11:49.647084+00:00"
 }
