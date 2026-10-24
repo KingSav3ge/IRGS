@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `2779cdeedf7b5d2ccd5c57516d56eec86948886d`
-Result: **needs_fixes** · 2026-10-24T14:59:45.730499+00:00
+Candidate: `b61bbb28755a88e1dcf9b618e3b66f7fb88fb844`
+Result: **needs_fixes** · 2026-10-24T15:19:35.861926+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -63,6 +63,6 @@ Engine: `8234044c089131314019ecaf6799a2f08028a3f8`
 
 App: `4f45f5ab8473a2bddb500fe3a49122575b6483e1`
 
-Catalog: `401df26a1f16be864dd15d7c5250da5d75f8ccca`
+Catalog: `f391dfd535c4562e8d2a230bf36f4d2ded508837`
 
-This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **true**.
+This is an isolated assembly, not an integration or deployment. App dependency matches candidate: **false**.
