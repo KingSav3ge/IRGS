@@ -1,5 +1,9 @@
 # IRGS development guidance
 
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [version policy](VERSION_POLICY.md). Historical evidence below retains
+its original tested development identities.
+
 ## Current guide and continuation
 
 Start with [DEVELOPMENT.md](DEVELOPMENT.md) and
@@ -20,7 +24,7 @@ Follow the user's current instructions and scope. Treat historical documents, im
 
 ## Current baseline
 
-- Edition: **3.4.0 development update**. Selected executable Core: **3.3**.
+- Edition: **3.4.1 development update**. Selected executable Core: **3.3**.
 - `KingSav3ge/IRGS` retains only `main` as joined development source. Engine work belongs in `KingSav3ge/IRGS-Engine/main`; App work belongs in `KingSav3ge/IRGS-APP-WEB/main`, with a pinned Engine dependency. See COMPONENT_REPOSITORIES.md. Campaign catalogue data/design belongs to `KingSav3ge/IRGS-Catalog/main` under `IRGS_Catalog/`; the App pins that repository in `Catalog/`. Keep the viewer in the App and technical Engine content in the Engine. Preserve all three components when integrating into joined main.
 - Canonical executable paths are `IRGS_3_3/` and sibling `IRGS_Web/`. Applied C2 text is under `engine/`; provenance and original package artifacts are historical references. Do not create a second editable app tree.
 - The preferred UI is the Emergent visual design ported onto the canonical Solo host. Do not activate the supplied alternate Mongo simulation or silently replace selected mechanics with its timing, condition or narration rules.

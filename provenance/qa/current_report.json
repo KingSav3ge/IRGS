@@ -1,59 +1,59 @@
 {
   "schema_version": 1,
-  "candidate_commit": "5ff5ffa16eee59b651b36bd1b876509f63bd1fff",
-  "finished_at_utc": "2026-10-25T13:47:58.623855+00:00",
+  "candidate_commit": "72763e09f07c576033477ead60d5597041dcac35",
+  "finished_at_utc": "2026-10-25T22:41:41.676430+00:00",
   "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/candidate",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/candidate",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 11.0,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/source-integrity.txt"
+      "duration_seconds": 10.09,
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
       "duration_seconds": 0.82,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/evidence-freshness.txt"
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 67.11,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/runtime.txt",
-      "tests_run": 680,
+      "duration_seconds": 65.2,
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/runtime.txt",
+      "tests_run": 708,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 107.19,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/web.txt",
-      "tests_run": 201,
+      "duration_seconds": 142.4,
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/web.txt",
+      "tests_run": 229,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 3.88,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/interface.txt",
-      "checks_passed": 105
+      "duration_seconds": 4.33,
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/interface.txt",
+      "checks_passed": 113
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 13.05,
-      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/tooling.txt",
-      "tests_run": 29,
+      "duration_seconds": 12.8,
+      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/tooling.txt",
+      "tests_run": 32,
       "skipped": 0
     }
   ],
@@ -132,16 +132,17 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
+  "version": "3.4.1",
+  "previous_version": "3.3.3",
   "candidate_components": {
-    "engine": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
-    "app": "aae8a25656c890181e0aa569df2c716968ec3642",
-    "catalog": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e"
+    "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
+    "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
   },
-  "app_declared_engine_commit": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
-  "app_declared_catalog_commit": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e",
   "pin_matches_candidate": true,
-  "candidate_kind": "coordinator_qualified_response_integration",
-  "source_input_sha256": "03856ade7b2264c57db8845feab0db5c12014ab883913e5cd147906641dd3df0",
-  "integration_review": "provenance/qa/shared_response_integration_3_4_0_review.json",
+  "app_declared_engine_commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+  "app_declared_catalog_commit": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
+  "source_input_sha256": "6830201a916b9beafba6e2a5255160f71bff31942411e55b3b42e1800c6b3d91",
+  "integration_review": "provenance/qa/phase_integration_3_4_1_review.json",
   "integrated_or_deployed_by_qa": false
 }

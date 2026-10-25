@@ -1,15 +1,11 @@
-# Shared response integration — current coordinator review
+# IRGS 3.4.1 coordinator qualification
 
-The exact Engine/App/Catalog set passed fresh source-bound capture, joined
-Core/Web/interface/tooling and independent HTTP checks. App pins now match.
-The verified-byte loading patch passes both reproduced update races.
+Previous release: 3.3.3. Fresh source-bound operation capture, joined regressions,
+independent HTTP and real Chromium pass for the reviewed component set.
+Non-Rise observation and Rise work use actual selected Core handlers with
+explicit Begin/review/continue controls and durable original-result recovery.
+Catalog source checks and original exact-consumer fixtures pass separately.
+No live inference, user campaign migration or complete C2 claim is made.
 
-Real Chromium exercises ordinary non-Rise and Rise actions through one response
-contract, preserving physical failure, exact drafts and lost acknowledgements.
-All nine Catalog reference cases pass separately against the current pair;
-the original exact-consumer tests retain their own recorded selections.
-Six Creator-initialized synthetic profile checks preserve unresolved intentions.
-
-See `shared_response_integration_3_4_0_review.json` for inputs, checks and limits.
-No live provider call or user-save migration occurred. Package qualification
-is recorded beside the external release archive.
+See phase_integration_3_4_1_review.json for exact sources, results and limits.
+Final archive qualification is recorded outside source under release/.

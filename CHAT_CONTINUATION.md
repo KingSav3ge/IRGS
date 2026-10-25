@@ -1,5 +1,9 @@
 # Continuation instructions — IRGS Enviroment
 
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [version policy](VERSION_POLICY.md). Historical evidence below retains
+its original tested development identities.
+
 Prepared 25 October 2026 for `KingSav3ge/IRGS/main`. Preserve local changes
 before pulling. Resume coordination and review. Make necessary compatibility
 fixes in their owning repositories and publish only qualified combined source
@@ -17,7 +21,23 @@ Read `AGENTS.md`, [DEVELOPMENT.md](DEVELOPMENT.md),
 [COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md), then COORDINATION.json, COMPONENTS.json and the latest source/evidence review.
 Inspect the current diff/remote and exact dependencies before editing.
 
-## Qualified baseline and scope
+## Current 3.4.1 integration
+
+The reviewed source set is recorded in COMPONENTS.json and
+[the 3.4.1 review](provenance/qa/phase_integration_3_4_1_review.json).
+This increment integrates selected Engine phase capabilities, App Begin/review/
+continuation/recovery controls and separately versioned Catalog compatibility
+fixtures. Observation in the non-Rise authored opening and Rise work remain
+selected handlers; their rules do not become universal campaign mechanics.
+
+Next, advance Engine communication/offer participant and legitimate received-
+source contracts, then matching App controls and Catalog evaluation. Preserve
+completed phase controls and exact older fixtures. Operator configuration,
+general freeform/combat, wider DEV/C2 and live model quality remain open.
+Every unified main publication increments the version; QA stays local until a
+qualified versioned coordinator push. The previous release is recorded as 3.3.3.
+
+## Prior qualified baseline and scope
 
 IRGS **3.4.0 development**, Core compatibility **3.3**. Develop shared systems
 across campaigns and themes. Rise R00 and the existing non-Rise authored opening
@@ -46,8 +66,9 @@ independent content/schema versions and historical evidence. See
 ## Next bounded task
 
 Review the next exact pushed component set against its published contracts and
-this shared scope. Track the Engine phase/capability interface, App controls and
-Catalog current-consumer/evaluation follow-up as coordinated dependencies.
+this shared scope. Preserve the integrated phase/capability interface, App process controls and
+Catalog compatibility fixtures. Track communication/source contracts and their
+App/Catalog consumers as the next coordinated dependencies.
 Keep useful owner work moving when another interface is pending. Resolve actual
 compatibility bugs in the owning repo, align App pins, then capture fresh source-
 bound evidence and test an isolated candidate. Gate the import, prove identical

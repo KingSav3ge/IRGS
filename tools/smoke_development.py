@@ -7,6 +7,7 @@ isolated Python processes, without importing a checkout's project modules.
 from __future__ import annotations
 
 import argparse
+from versioning import archive_name
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -198,7 +199,7 @@ def run(archive: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", nargs="?", type=Path,
-                        default=ROOT.parent / "IRGS_3_4_0_Development.zip")
+                        default=ROOT.parent / archive_name(ROOT))
     args = parser.parse_args()
     try:
         result = run(args.archive)

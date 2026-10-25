@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from versioning import archive_name
 import hashlib
 import json
 from pathlib import Path
@@ -14,7 +15,7 @@ from verify_development import ROOT, MANIFEST, safe_path, verify
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path,
-                        default=ROOT.parent / "IRGS_3_4_0_Development.zip")
+                        default=ROOT.parent / archive_name(ROOT))
     args = parser.parse_args()
     temporary = None
     try:

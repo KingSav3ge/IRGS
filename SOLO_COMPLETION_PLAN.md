@@ -1,5 +1,12 @@
 # IRGS 3.4.0 Solo runtime completion
 
+Current coordinated increment: **3.4.1**, previous release **3.3.3**. Selected
+phase capability discovery, App process controls/recovery and Catalog compatibility
+are now qualified together; see provenance/qa/phase_integration_3_4_1_review.json.
+Continue communication/offer received-source contracts and their App/Catalog
+consumers, operator setup and the existing broader open requirements.
+
+
 ## Latest combined response integration
 
 The exact current Engine/App/Catalog update is reviewed in

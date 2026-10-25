@@ -17,6 +17,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = "DEVELOPMENT_MANIFEST.json"
+from versioning import release_metadata
+
 SOURCE_DIRS = {"IRGS_3_3", "IRGS_Web", "IRGS_Catalog", "engine", "provenance", "tools"}
 ROOT_FILES = {
     ".gitignore", ".gitattributes", "LICENSE", "LICENSE.txt",
@@ -128,7 +130,8 @@ def refresh_manifest() -> None:
     names = inventory()
     result = {
         "schema_version": 1,
-        "development_edition": "3.4.0",
+        "development_edition": release_metadata(ROOT)["version"],
+        "previous_version": release_metadata(ROOT)["previous_version"],
         "release_status": "development",
         "manifest_excludes_itself": True,
         "scope": "curated portable development source; user data and generated local results excluded",
@@ -206,6 +209,10 @@ def verify() -> dict:
     document = json.loads((ROOT / MANIFEST).read_text(encoding="utf-8"))
     require(document.get("schema_version") == 1 and document.get("manifest_excludes_itself") is True,
             "Unsupported development manifest schema")
+    edition = release_metadata(ROOT)
+    require(document.get("development_edition") == edition["version"]
+            and document.get("previous_version") == edition["previous_version"],
+            "Development manifest edition differs from VERSION.json")
     count = check_file_manifest(ROOT, document, development=True)
     c2 = verify_c2()
     environment = dict(os.environ)
@@ -226,7 +233,7 @@ def verify() -> dict:
     catalog = subprocess.run([sys.executable, "-B", str(ROOT / "IRGS_Catalog/verify_catalog.py")],
                              capture_output=True, text=True, cwd=ROOT)
     require(catalog.returncode == 0, "Catalog integrity failed: " + catalog.stdout + catalog.stderr)
-    return {"status": "verified", "development_files": count, "catalog_release": json.loads(catalog.stdout),
+    return {"status": "verified", "version": edition["version"], "previous_version": edition["previous_version"], "development_files": count, "catalog_release": json.loads(catalog.stdout),
             "selected_release": selected, "app_release": json.loads(app.stdout),
             "c2": c2, "campaigns_modified": False}
 

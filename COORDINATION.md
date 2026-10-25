@@ -1,33 +1,23 @@
 # IRGS development coordination
 
-Current integration: **shared-response-integration-02**, **3.4.0 development**.
-Continue [shared IRGS scope](IRGS_SYSTEMS_SCOPE.md) across campaigns and themes.
+Current cycle: **phase-integration-3.4.1**. Edition: **3.4.1 development**.
+Previous release: **3.3.3**. Exact reviewed Engine/App/Catalog sources are in
+COMPONENTS.json and the 3.4.1 review; App pins match those component commits.
 
-| Reviewed component | Exact commit |
-| --- | --- |
-| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
-| App | `aae8a25656c890181e0aa569df2c716968ec3642` |
-| Catalog | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
+The combined increment provides selected Engine phase capability discovery,
+App Begin/review/continue controls, atomic world/result persistence and recovery,
+plus separately versioned Catalog compatibility contracts. Fresh operation
+capture, joined regressions, source checks, original exact fixture consumers
+and two-context browser qualification pass. The actual committed ZIP and its
+extracted host/browser are checked before the single unified publication.
 
-Engine publishes provider-independent actor/capability/intent/receipt contracts
-and the exact neutral response depot. App now consumes Engine receipt/draft
-interfaces and selected Catalog semantic drafts server-side. Ordinary actions,
-optional assisted acceptance and saved results retain exact outcomes and local
-presentation. Draft selection commits nothing. Additional shared intent/process/
-communication App controls and semantic adapters remain separate work.
+Next: communication/offer participant and legitimate received-source contracts,
+then matching App controls/Catalog evaluation. General freeform/combat, wider
+DEV/C2, operator setup and live/model quality retain their open scope.
+Rise remains one fixture; the non-Rise authored opening is independently checked.
+Original archives and historical validation identities remain unchanged.
 
-The coordinator aligned both pins and fixed a reproduced response-intake race:
-loading now consumes the same bytes whose hashes were verified. Fresh actual
-operation capture replaces stale joined evidence. Full regression, current
-Catalog arcs, two-context Chromium and six synthetic profile checks passed.
-See [exact review](provenance/qa/shared_response_integration_3_4_0_review.json).
-Clean-package/browser qualification is recorded with the external release.
-
-Original fixture contracts and archives remain preserved. The Catalog's eight
-declared-consumer tests run against their original exact commits; new current
-consumers have separate qualification. Content portability and unresolved generic
-declarations establish no new campaign mechanics. No live inference was made.
-
-Further imports require exact compatible three-component review and gated sync.
-QA monitoring tests new pushes while this environment runs; repository work
-orders provide handoffs without claiming chat dispatch.
+Every unified main push increments the version. Automatic QA retains local
+reports for versioned coordinator review and makes no commit or push. Component
+chats publish only their own repositories; repository briefs provide handoff
+without claiming chat dispatch. See VERSION_POLICY.md and CHAT_CONTINUATION.md.

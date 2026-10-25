@@ -1,6 +1,7 @@
-"""Test newly pushed component sets and publish reports on joined IRGS/main.
+"""Test newly pushed component sets and retain reports outside repository source.
 
-No component code is changed or merged. Candidate commits are local, disposable
+No Git commit or push is made. The coordinator includes reviewed QA in a versioned
+unified publication. No component code is changed or merged. Candidate commits are local, disposable
 assemblies, identified separately from the published Engine, App and Catalog commits.
 """
 import argparse,fcntl,hashlib,io,json,os,shutil,signal,subprocess,sys,tarfile,time
@@ -61,34 +62,6 @@ def assemble(args,refs,run):
  git(candidate,'add','.');git(candidate,'commit','-q','-m','Disposable QA assembly; Engine '+refs['engine']+' App '+refs['app']+' Catalog '+refs['catalog'])
  return candidate,git(candidate,'rev-parse','HEAD').stdout.decode().strip()
 
-def publish(args,report,markdown):
- # An isolated index changes only report files and their curated manifest rows.
- paths={'provenance/qa/current_report.json':(json.dumps(report,indent=2)+'\n').encode(),
-        'provenance/qa/current_report.md':markdown.encode()}
- for attempt in range(3):
-  parent=tip(args.joined)
-  index=args.storage/('publish-index-'+str(os.getpid()))
-  index.unlink(missing_ok=True)
-  environment=os.environ.copy();environment['GIT_INDEX_FILE']=str(index)
-  try:
-   git(args.joined,'read-tree',parent,env=environment)
-   manifest=json.loads(git(args.joined,'show',parent+':DEVELOPMENT_MANIFEST.json').stdout)
-   rows={r['path']:r for r in manifest['files']}
-   for name,data in paths.items():rows[name]={'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
-   manifest['files']=[rows[name] for name in sorted(rows)]
-   changed=paths|{'DEVELOPMENT_MANIFEST.json':(json.dumps(manifest,indent=2)+'\n').encode()}
-   for name,data in changed.items():
-    blob=git(args.joined,'hash-object','-w','--stdin',data=data).stdout.decode().strip()
-    git(args.joined,'update-index','--add','--cacheinfo','100644,'+blob+','+name,env=environment)
-   tree=git(args.joined,'write-tree',env=environment).stdout.decode().strip()
-   commit=git(args.joined,'commit-tree',tree,'-p',parent,'-m','QA component set: '+report['status']).stdout.decode().strip()
-   pushed=git(args.joined,'push','origin',commit+':refs/heads/main',check=False)
-   if pushed.returncode==0:
-    git(args.joined,'update-ref','refs/remotes/origin/main',commit)
-    return commit
-  finally:index.unlink(missing_ok=True)
- raise RuntimeError('Joined main advanced during report publication; retain report for retry')
-
 def cycle(args,state):
  refs={name:tip(getattr(args,name)) for name in ('joined','engine','app','catalog')}
  pin=git(args.app,'rev-parse',refs['app']+':Engine').stdout.decode().strip()
@@ -97,7 +70,7 @@ def cycle(args,state):
  identity=refs['engine']+':'+refs['app']+':'+refs['catalog']+':'+signature
  state['last_checked_at_utc']=now();state['published_components']=refs
  prior=state.setdefault('runs',{}).get(identity)
- if prior and prior.get('published_commit'):
+ if prior and (prior.get('published_commit') or prior.get('retained_locally')):
   if prior.get('status')!='blocked' or time.time()-prior.get('attempted_at',0)<300:return False
   prior=None
  if not prior:
@@ -131,11 +104,13 @@ def cycle(args,state):
   output.write_text(json.dumps(report,indent=2)+'\n');output.with_suffix('.md').write_text(body)
   prior={'report_path':str(output),'attempted_at':time.time()};state['runs'][identity]=prior
  output=Path(prior['report_path']);report=json.loads(output.read_text())
- published=publish(args,report,output.with_suffix('.md').read_text())
- prior.update(published_commit=published,status=report['status'])
- state['last_publication']={'commit':published,'status':report['status'],'engine':refs['engine'],'app':refs['app'],'catalog':refs['catalog']}
- print(now(),'Published',report['status'],published,flush=True)
+ prior.update(retained_locally=True,status=report['status'])
+ state['last_local_report']={'path':str(output),'status':report['status'],
+     'components':{name:refs[name] for name in ('engine','app','catalog')},
+     'publication':'held_for_versioned_coordinator_review'}
+ print(now(),'Retained local QA',report['status'],str(output),flush=True)
  return True
+
 
 def main():
  parser=argparse.ArgumentParser(description=__doc__)

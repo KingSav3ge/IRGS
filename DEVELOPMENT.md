@@ -1,9 +1,29 @@
 # Unified IRGS development and coordination guide
 
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [version policy](VERSION_POLICY.md). Historical evidence below retains
+its original tested development identities.
+
 Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS/main`.
 Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
-## Qualified baseline and scope
+## Current 3.4.1 integration
+
+The reviewed source set is recorded in COMPONENTS.json and
+[the 3.4.1 review](provenance/qa/phase_integration_3_4_1_review.json).
+This increment integrates selected Engine phase capabilities, App Begin/review/
+continuation/recovery controls and separately versioned Catalog compatibility
+fixtures. Observation in the non-Rise authored opening and Rise work remain
+selected handlers; their rules do not become universal campaign mechanics.
+
+Next, advance Engine communication/offer participant and legitimate received-
+source contracts, then matching App controls and Catalog evaluation. Preserve
+completed phase controls and exact older fixtures. Operator configuration,
+general freeform/combat, wider DEV/C2 and live model quality remain open.
+Every unified main publication increments the version; QA stays local until a
+qualified versioned coordinator push. The previous release is recorded as 3.3.3.
+
+## Prior qualified baseline and scope
 
 IRGS **3.4.0 development**, Core compatibility **3.3**. Develop shared systems
 across campaigns and themes. Rise R00 and the existing non-Rise authored opening
@@ -44,16 +64,18 @@ and [shared completion plan](SOLO_COMPLETION_PLAN.md). Original dated evidence
 stays preserved. `DEVELOPMENT_STATE_HISTORY_2026-10-22.json` archives the superseded
 3.3.3 state; it is not the active task list.
 
-The latest merge aligns App pins, consumes shared response contracts and fixes
-the Catalog code/text intake race. Shared Engine intent APIs exist; App currently
-uses its reviewed existing handler/receipt adapters. Process/communication controls,
-further semantic adapters, operator setup and broader DEV/C2 remain open.
+The current merge aligns App pins and integrates Engine-selected process starts
+and received continuation commands with App durability/recovery and Catalog
+presentation. The earlier verified-byte Catalog intake fix remains in place.
+Communication controls, further semantic adapters, operator setup and broader
+DEV/C2 remain open.
 
 ## Next coordination increment
 
 Review the next exact pushed component set against its published contracts and
-this shared scope. Track the Engine phase/capability interface, App controls and
-Catalog current-consumer/evaluation follow-up as coordinated dependencies.
+this shared scope. Preserve the integrated phase/capability interface, App process controls and
+Catalog compatibility fixtures. Track communication/source contracts and their
+App/Catalog consumers as the next coordinated dependencies.
 Keep useful owner work moving when another interface is pending. Resolve actual
 compatibility bugs in the owning repo, align App pins, then capture fresh source-
 bound evidence and test an isolated candidate. Gate the import, prove identical
@@ -108,8 +130,8 @@ builder that expects historical backups/certification files.
 5. Package the actual committed tree and test extraction before pushing main:
 
 ```bash
-python -B tools/package_development.py --output ../IRGS_3_4_0_Development.zip
-python -B tools/smoke_development.py ../IRGS_3_4_0_Development.zip
+python -B tools/package_development.py --output ../IRGS_3_4_1_Development.zip
+python -B tools/smoke_development.py ../IRGS_3_4_1_Development.zip
 ```
 
 Use explicit candidate/import paths. For clean-package checks clear only stale
@@ -120,7 +142,7 @@ outside curated source. Run actual extracted browser play for changed UI/contrac
 ## QA monitor and guide-only publication
 
 `tools/watch_component_qa.py` polls pushed component mains while the environment
-runs, tests isolated sets and publishes QA metadata. It does not implement work,
+runs, tests isolated sets and retains local QA reports for versioned coordinator review. It does not implement work,
 start chats, import product source or deploy. Recheck PID/cmdline, lock and fresh
 state before claiming it is running. Pause only its verified process while
 coordinating publication; restore it afterward.

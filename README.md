@@ -1,4 +1,8 @@
-# IRGS 3.4.0 — joined development source
+# IRGS 3.4.1 — joined development source
+
+Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+See [3.4.1 release notes](RELEASE_NOTES_3_4_1.md) and [version policy](VERSION_POLICY.md). Historical evidence below retains
+its original tested development identities.
 
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
 
@@ -11,7 +15,7 @@ This repository's `main` combines the Engine, App and Catalog. Independent devel
 | Campaign catalogue, reference payload and evaluation fixtures | [IRGS-Catalog](https://github.com/KingSav3ge/IRGS-Catalog) | `IRGS_Catalog/` |
 | Joined IRGS | [IRGS](https://github.com/KingSav3ge/IRGS) | Full Engine, App and Catalog sources on `main` |
 
-The development edition is 3.4.0; the selected executable Core retains compatibility ID 3.3. See [component integration](COMPONENT_REPOSITORIES.md), [development commands](DEVELOPMENT.md), [roadmap](ROADMAP.md), and [operation coverage](engine/OPERATION_COVERAGE.md).
+The development edition is 3.4.1; the selected executable Core retains compatibility ID 3.3. See [component integration](COMPONENT_REPOSITORIES.md), [development commands](DEVELOPMENT.md), [roadmap](ROADMAP.md), and [operation coverage](engine/OPERATION_COVERAGE.md).
 
 Run `python -B IRGS_Web/server.py --port 8766`, or use `Start-IRGS.cmd` on Windows. Hosts bind to loopback. Existing user saves are not included or migrated.
 
