@@ -100,8 +100,8 @@
       "scope": "Selected non-Rise observation and Rise work phase capabilities, explicit App controls and durable result recovery; original Catalog fixtures remain preserved."
     }
   },
-  "integration_status": "approved_pending_source_import",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_1_development_update",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
     "engine": "Communication/offer participant and received-source contracts and matching App controls; preserve qualified phase API and actual rules.",
@@ -206,10 +206,14 @@
     "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
   },
   "reviewed_at_utc": "2026-10-25T22:41:53.150915+00:00",
-  "completed_components": {},
+  "completed_components": {
+    "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
+    "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+  },
   "source_input_sha256": "6830201a916b9beafba6e2a5255160f71bff31942411e55b3b42e1800c6b3d91",
   "qualified_candidate_commit": "72763e09f07c576033477ead60d5597041dcac35",
-  "integrated_at_utc": "2026-10-25T13:49:03.881566+00:00",
+  "integrated_at_utc": "2026-10-25T22:42:06.787632+00:00",
   "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
     "Communication/offer participant and received-source contracts and matching App controls",

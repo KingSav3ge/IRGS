@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SELECTED_PHASE_CAPABILITY_CONTRACT_WITH_LIMITS",
+  "date_utc": "2026-10-25",
+  "target_iteration": "IRGS 3.4.0 development",
+  "python": "3.12.14",
+  "api_schema": "irgs-phase-capabilities-1",
+  "pulled_base_commit": "28c0ebe9c74a16c0baf2f18141d8024d1a12aad6",
+  "initial_api_commit": "8ab620099090413ed706aa70894065544347fbf3",
+  "tests_run": 28,
+  "passed": 28,
+  "skipped": 0,
+  "test_ids": [
+    "test_phase_contract.PhaseContractTests.test_actor_control_foreign_phases_and_parent_identity_never_leak",
+    "test_phase_contract.PhaseContractTests.test_actual_success_observes_control_location_rules_and_reservations",
+    "test_phase_contract.PhaseContractTests.test_both_selected_contexts_expose_attemptable_starts_without_effects",
+    "test_phase_contract.PhaseContractTests.test_changed_permission_holds_actual_work_and_resume_revalidates_authority",
+    "test_phase_contract.PhaseContractTests.test_changed_replay_intention_details_or_parent_cannot_rewrite_identity",
+    "test_phase_contract.PhaseContractTests.test_changed_selected_rule_rejects_atomically_with_private_actual_reads",
+    "test_phase_contract.PhaseContractTests.test_concurrent_host_delivery_commits_one_phase_and_one_elapsed_span",
+    "test_phase_contract.PhaseContractTests.test_explicit_acceptance_and_persistence_are_required_before_effects",
+    "test_phase_contract.PhaseContractTests.test_failed_save_leaves_world_unchanged_and_exact_retry_can_commit",
+    "test_phase_contract.PhaseContractTests.test_hidden_stock_permission_and_worker_changes_do_not_select_a_winning_menu",
+    "test_phase_contract.PhaseContractTests.test_invalid_commands_spans_and_travel_adapter_do_not_commit",
+    "test_phase_contract.PhaseContractTests.test_last_received_status_and_commands_do_not_probe_live_work_and_inspect_refreshes",
+    "test_phase_contract.PhaseContractTests.test_lost_ack_restart_and_terminal_replay_return_original_public_receipt",
+    "test_phase_contract.PhaseContractTests.test_no_selected_time_axis_and_no_received_map_mean_no_observation_adapter",
+    "test_phase_contract.PhaseContractTests.test_observation_completes_once_with_actual_elapsed_and_received_knowledge",
+    "test_phase_contract.PhaseContractTests.test_observation_pause_resume_cancel_retains_elapsed_and_reservation",
+    "test_phase_contract.PhaseContractTests.test_original_received_phase_and_snapshot_are_bound_to_actor_branch_and_restore",
+    "test_phase_contract.PhaseContractTests.test_persistence_receives_the_same_filtered_public_result_as_acknowledgment",
+    "test_phase_contract.PhaseContractTests.test_public_dto_mutation_and_literal_fallback_do_not_change_core",
+    "test_phase_contract.PhaseContractTests.test_rejected_stock_attempt_keeps_actual_dependencies_private_and_no_effects",
+    "test_phase_contract.PhaseContractTests.test_restore_fences_discarded_future_and_new_request_resumes_saved_progress",
+    "test_phase_contract.PhaseContractTests.test_safe_phase_and_shared_actor_views_omit_private_records_and_certificates",
+    "test_phase_contract.PhaseContractTests.test_scarce_stock_and_parent_claims_have_no_arrival_order_frontier_winner",
+    "test_phase_contract.PhaseContractTests.test_stale_request_and_scope_refuse_before_any_new_phase_effect",
+    "test_phase_contract.PhaseContractTests.test_two_observations_cannot_book_the_same_actor_by_event_id_order",
+    "test_phase_contract.PhaseContractTests.test_unsupported_contexts_and_generic_tags_do_not_create_phase_capabilities",
+    "test_phase_contract.PhaseContractTests.test_work_pause_cancel_and_new_explicit_resume_keep_one_physical_project",
+    "test_phase_contract.PhaseContractTests.test_work_uses_existing_project_reservations_and_conserved_inputs"
+  ],
+  "actual_handler": "Core continue_player_process through process_runtime.execute and host CAS bridge",
+  "contexts": {
+    "non_rise_observation": "Received selected authored three-second observe action; 2+1 seconds delivers knowledge only at completion",
+    "rise_work": "One existing shelter project; 3600 worked seconds across actual provision boundaries, three founder timber consumed once",
+    "reservations": "Paused observation retains actual actor reservation; work cancellation retains physical progress and new explicit resume reuses the project",
+    "availability": "Attemptable selected contexts, no hidden stock/permission feasibility menu",
+    "received_status": "Immutable received phases and supported attempts; external live work is not probed, explicit inspect refreshes"
+  },
+  "dependencies": "Actual R9 handler success/rejection reads include control, rules, locations, stocks and reservations; private certificate evidence is excluded from public DTOs",
+  "scarcity": "Two competing observations and stock/work frontier claims defer both in either event order",
+  "recovery": [
+    "Mandatory atomic host save/result CAS",
+    "Same safe persisted and returned receipt",
+    "Failed save leaves original world unchanged",
+    "Concurrent phase delivery once",
+    "Lost acknowledgment and pending native JSON restart",
+    "Terminal replay retains the original receipt",
+    "Changed identity payload rejects",
+    "Discarded future restore request rejects"
+  ],
+  "source_sha256": {
+    "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
+    "IRGS_3_3/runtime/test_phase_contract.py": "f015fdaf8d2129a1bb96c68ec2678668ba6e543c9053f35efa657e19ec9e45fd",
+    "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+    "IRGS_3_3/runtime/shared_runtime.py": "0e23d78fcaaeded6ead34f964df29e0d7a93279364f0caa8c926f2dd124aa323",
+    "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+    "IRGS_3_3/runtime/player_actions.py": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0",
+    "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "IRGS_3_3/runtime/r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
+    "IRGS_3_3/runtime/offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+    "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+    "IRGS_3_3/runtime/routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
+    "IRGS_3_3/data/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "IRGS_3_3/data/responses/depot_v1/SOURCE.json": "5a2f98e8bd70b9cacd26066d651c3057bf2ae00062a8151235e459ad176f8478",
+    "IRGS_3_3/data/responses/engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e"
+  },
+  "provider_calls": 0,
+  "model_tokens": 0,
+  "user_saves_used": false,
+  "remaining": [
+    "New App phase controls/adapter, exact reviewed pins and coordinator joined qualification",
+    "Next bounded communication/offer participant and received-source contract",
+    "Travel remains native-only; no universal travel/stock/timing rule is introduced",
+    "Broader DEV-06–DEV-17, general freeform/combat, sustained institutions and full C2 remain open",
+    "Distributed host durability, live inference and model/human evaluation remain outside this evidence"
+  ],
+  "checks": {
+    "phase_contract": {
+      "command": "python -B tools/qualify_phase_capabilities.py --output engine/PHASE_CAPABILITY_VALIDATION.json",
+      "tests": 28,
+      "passed": 28,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "focused": {
+      "tests": 292,
+      "passed": 292,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "shared_systems": {
+      "command": "python -B tools/qualify_shared_systems.py",
+      "tests": 35,
+      "passed": 35,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "native_process": {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p test_process_runtime.py -v",
+      "tests": 20,
+      "passed": 20,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "native_communication": {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -p test_communication_runtime.py -v",
+      "tests": 13,
+      "passed": 13,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "full_runtime": {
+      "command": "DEVELOPMENT.md full-suite runner with PrivateFixtureSkip replacement",
+      "tests": 708,
+      "passed": 707,
+      "skipped": 1,
+      "status": "PASS_WITH_PRIVATE_FIXTURE_POLICY_SKIP",
+      "excluded_test": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite",
+      "skip_reason": "External private save excluded by development policy",
+      "private_save_read": false
+    },
+    "engine_integrity": {
+      "command": "python -B tools/verify_components.py --component engine",
+      "pinned_files": 362,
+      "status": "PASS"
+    },
+    "kira_canon": {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "PASS"
+    },
+    "active_doc_links": {
+      "documents": 10,
+      "local_links": 152,
+      "status": "PASS"
+    },
+    "diff_whitespace": {
+      "command": "git -c core.whitespace=cr-at-eol diff --cached --check",
+      "status": "PASS"
+    }
+  },
+  "qualified_prior_response_set": {
+    "joined": "65351ebcfe2538d880f576a3ce4aa2230537e08d",
+    "engine": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
+    "app": "aae8a25656c890181e0aa569df2c716968ec3642",
+    "catalog": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e",
+    "scope": "Attributed integrated shared-response baseline; not new phase UI qualification"
+  },
+  "new_app_phase_or_joined_checks": "NOT_EXECUTED; separate owning workstreams",
+  "api_runtime_unchanged_since_initial_publication": true
+}

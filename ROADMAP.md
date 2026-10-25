@@ -2,6 +2,10 @@
 
 ## Current continuation pointer
 
+**Latest-source compatibility checked:** all three development repositories are pulled. [Engine-owned interaction qualification](engine/COMPONENT_INTERACTION.md) passes real Catalog cases, App HTTP process continuation and both Chromium suites with current source overrides. App's continuation controls already exist; the remaining UI adapter is Engine start-discovery adoption. App pins and historical fixture consumers remain unchanged. Engine runtime code needs no compatibility fix. Communication/offer contracts remain the next Engine task.
+
+**Completed bounded increment:** the version-1 [phase capability API](engine/PHASE_CAPABILITY_API.md) exposes selected observation/Rise work starts, received status/commands and sanitized outcomes, including shared actor views. It reuses native execution, reservations and mandatory save/result CAS. [Qualification](engine/PHASE_CAPABILITY_VALIDATION.json) covers 28 new cases, actual reads/rejection, competing resources and lifecycle/recovery; 708 runtime cases run with one explicit private-fixture policy skip. **Next:** communication/offer participant/source contracts. New phase UI/pins/joined review remain with App/coordinator; the prior shared-response integration stays qualified.
+
 The qualified 3.4.0 shared response update is integrated. Read
 [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)
 for the current baseline and next bounded process/interaction work. Stable DEV

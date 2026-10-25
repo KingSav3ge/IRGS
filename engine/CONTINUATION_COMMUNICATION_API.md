@@ -1,5 +1,12 @@
 # Engine continuations, communication and accounting
 
+For the new actor-safe host interface over selected observation/Rise work, use
+[phase capabilities v1](PHASE_CAPABILITY_API.md). It reuses the native request
+and Core rules below while filtering public outcomes and bridging atomic host
+persistence. The shared-response source set is already integrated as recorded
+in the current development guide; new phase UI/pins need separate qualification.
+The earlier source identities and scope notes below retain their original dates.
+
 IRGS 3.4.0 development. These are server-only, explicitly selected Core APIs.
 They add no world owner, historical fact, universal duration, NPC decision or
 default provider permission. The prior bounded Solo/App integration is qualified

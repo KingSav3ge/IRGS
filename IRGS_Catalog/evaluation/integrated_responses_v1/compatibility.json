@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "compatibility_id": "irgs-integrated-responses-v1",
+  "classification": "offline-synthetic-consumer-qualification",
+  "rights": {
+    "authorship": "original-authored-evaluation-instructions",
+    "imported_material": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "source_fixture": {
+    "fixture_id": "irgs-shared-responses-v1",
+    "manifest": "evaluation/shared_responses_v1/manifest.json",
+    "sha256": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1"
+  },
+  "consumers": {
+    "engine_commit": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
+    "app_commit": "aae8a25656c890181e0aa569df2c716968ec3642",
+    "app_catalog_pin": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e"
+  },
+  "presentation_contract": {
+    "schema_version": 1,
+    "view_field": "local_responses",
+    "saved_result_field": "presentation",
+    "catalog_library_id": "irgs-response-depot-v1",
+    "engine_library_id": "irgs-engine-routine-responses-v1",
+    "format": "plain_text",
+    "provider_calls": 0,
+    "model_tokens": 0
+  },
+  "context_ids": [
+    "rise",
+    "quay"
+  ]
+}

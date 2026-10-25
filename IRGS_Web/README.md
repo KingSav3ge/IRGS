@@ -254,3 +254,23 @@ Run `node tools/qualify_shared_responses.js /tmp/irgs-shared-responses.json` for
 real Chromium/Core round trip in two independently initialized synthetic contexts
 with no provider configured. See the [response contract](responses/README.md)
 for current mappings, source boundaries and unimplemented adapters.
+
+
+## Received process continuation
+
+Story offers a common review/confirmation path for Engine-selected process starts
+and already received phases. The qualified contexts are non-Rise authored
+observation and Rise shelter work. Enter elapsed seconds explicitly; pause/resume retain actual work,
+and an Inspect command obtains a fresh local receipt. Review cancellation sends
+no execution. Last received progress is distinct from remote live state, and a
+committed phase does not imply a completed parent process.
+
+Prepared commands and accepted results recover across lost replies, reload,
+restart, retries and supported Trash/restore operations. Candidate Core state
+and the exact received result are persisted atomically before acknowledgment.
+These controls use no provider or model tokens. Begin options and continuation
+commands come from Engine's published `irgs-phase-capabilities-1` contract. They
+remain attempts checked by Core; themes create no operations. See the
+[HTTP, persistence and dependency contract](PROCESS_BRIDGE.md).
+Run `node tools/qualify_process_bridge.js /tmp/irgs-process-browser.json` in
+addition to the ordinary guide checks for actual Chromium process qualification.

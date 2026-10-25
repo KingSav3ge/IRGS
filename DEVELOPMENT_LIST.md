@@ -2,6 +2,10 @@
 
 ## Current continuation pointer
 
+**Component interaction evidence:** [latest-source checks](engine/COMPONENT_INTERACTION.md) exercise Engine/App/Catalog actual effects, typed phases, source intake, receipt replay and browser recovery. Five Engine-owned checks, 211 passing App Python checks (seven Windows skips), 123 static UI/response checks and both real Chromium suites pass. This advances DEV-25–DEV-27 delivery evidence without changing mechanics or claiming a newly pinned/joined release. Remaining App work is start-discovery adoption and reviewed pins; next Engine work is communication/offer participant/source contracts.
+
+**Delivered bounded contract:** [phase capabilities v1](engine/PHASE_CAPABILITY_API.md) advances named DEV-06–DEV-17 properties with actor-safe options/status/commands and outcomes over existing non-Rise observation and Rise work. [28 new cases](engine/PHASE_CAPABILITY_VALIDATION.json) qualify actual reads/rejection, stock/actor competition, pause/resume/cancel and recovery; broader stable DEV completion criteria remain open. Shared-response integration is complete for its recorded set; new phase controls/pins need App/coordinator qualification. **Next bounded work:** communication/offer participant and received-source contracts.
+
 The qualified 3.4.0 shared response update is integrated. Read
 [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)
 for the current baseline and next bounded process/interaction work. Stable DEV

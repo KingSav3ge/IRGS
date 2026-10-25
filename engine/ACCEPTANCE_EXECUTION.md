@@ -1,5 +1,7 @@
 # Scoped C2 implementation evidence — Action 1
 
+The [selected phase capability record](PHASE_CAPABILITY_VALIDATION.json) adds 28 actor-safe API cases over the existing observation/Rise work handlers: actual dependency reads and atomic rejection, competing stock/actor claims, pause/resume/cancel, filtered receipts, mandatory CAS and restart/restore. This qualifies the named DEV-06–DEV-17 properties; it does not close the broader milestones or rewrite the immutable 121-case inventory. Prior shared-response integration remains qualified; new phase UI/pins/joined evidence is separate.
+
 The 25 October [shared-system record](SHARED_SYSTEMS_VALIDATION.json) adds independently initialized non-Rise/Rise acceptance and actual outcomes, actor/capability/received/receipt contracts, neutral depot adoption and current-control rejection inside Core declarations. Its 35 new cases advance named dependency, intention, knowledge and recovery properties. Four-theme formatting establishes content portability; the immutable 121-case inventory and broader unresolved C2 requirements remain unchanged.
 
 The [Engine offline response record](OFFLINE_RESPONSES_VALIDATION.json) separately qualifies all 338 bundled variants and 15 recipes, actual received/committed result presentation, actor boundaries, exact fallback and editable intentions with zero rendering calls. Authored text and rendering checks establish no new adjudication rule or additional completed C2 acceptance case.

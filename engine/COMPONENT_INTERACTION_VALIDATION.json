@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "status": "PASS_EXPLICIT_COMPONENT_SOURCES_WITH_LIMITS",
+  "target_iteration": "IRGS 3.4.0 development",
+  "sources": {
+    "engine": {
+      "root": "/workspace/IRGS-Engine",
+      "commit": "0fdfc21f45510e3fd99fd6a8087cd3314d077267"
+    },
+    "app": {
+      "root": "/workspace/IRGS-APP-WEB",
+      "commit": "67411f8ef5214c8cb51af2b244590751e6ea20df",
+      "committed_pins": {
+        "Engine": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
+        "Catalog": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e"
+      }
+    },
+    "catalog": {
+      "root": "/workspace/IRGS-Catalog",
+      "commit": "4bd572843cebc94e7d043c3706d1be85249d6c10"
+    }
+  },
+  "selection": "Explicit latest-head overrides; committed App pins and original Catalog consumer identities preserved",
+  "tests_run": 5,
+  "passed": 5,
+  "skipped": 0,
+  "test_ids": [
+    "__main__.ComponentInteractionTests.test_catalog_and_engine_runtime_intake_the_same_exact_depot_and_drafts_submit_nothing",
+    "__main__.ComponentInteractionTests.test_catalog_nine_cases_execute_real_http_outcomes_and_conserved_final_state",
+    "__main__.ComponentInteractionTests.test_missing_text_keeps_real_http_outcome_without_paid_fallback",
+    "__main__.ComponentInteractionTests.test_new_engine_phase_contract_and_existing_app_commands_interoperate_in_both_contexts",
+    "__main__.ComponentInteractionTests.test_start_discovery_is_available_to_app_adapter_but_not_invented_as_an_http_feature"
+  ],
+  "evidence": {
+    "imported_modules": {
+      "core_world": "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py",
+      "phase_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/phase_contract.py",
+      "shared_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py",
+      "response_depot": "/workspace/IRGS-Engine/IRGS_3_3/runtime/response_depot.py",
+      "offline_responses": "/workspace/IRGS-Engine/IRGS_3_3/runtime/offline_responses.py",
+      "runtime_contracts": "/workspace/IRGS-Engine/IRGS_3_3/runtime/runtime_contracts.py",
+      "starting_selection": "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py",
+      "historical_campaigns": "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py",
+      "settlement_setup": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_setup.py",
+      "solo_provider": "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py",
+      "openai_proposals": "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py",
+      "process_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/process_runtime.py",
+      "scene_actions": "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py",
+      "settlement_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_runtime.py",
+      "r9_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/r9_runtime.py",
+      "server": "/workspace/IRGS-APP-WEB/IRGS_Web/server.py",
+      "process_bridge": "/workspace/IRGS-APP-WEB/IRGS_Web/process_bridge.py",
+      "local_presentation": "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py",
+      "engine_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/engine_paths.py",
+      "catalog_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/catalog_paths.py",
+      "response_depot_compatibility": "/workspace/IRGS-Catalog/IRGS_Catalog/response_depot_compatibility.py",
+      "solo_evaluation": "/workspace/IRGS-Catalog/IRGS_Catalog/solo_evaluation.py",
+      "scripted_responses": "/workspace/IRGS-Catalog/IRGS_Catalog/scripted_responses.py"
+    },
+    "fixture": {
+      "status": "verified",
+      "fixture_id": "irgs-shared-responses-v1",
+      "contexts": 2,
+      "non_rise_contexts": 1,
+      "cases": 9,
+      "actor_oracle_separation": true,
+      "runtime_execution_verified_by_schema": false
+    },
+    "original_fixture_consumers": {
+      "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+      "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+      "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+    },
+    "fixture_identity_preserved": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1",
+    "qualification_script_sha256": "859719c2a5beca5411c98b3f6a24118d8b5710877d7bf0d886cc6000fe0e4e95",
+    "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "actual_catalog_cases": [
+      {
+        "case_id": "rise-walk",
+        "status": "completed_successfully",
+        "elapsed_seconds": 300
+      },
+      {
+        "case_id": "rise-inspect",
+        "status": "completed_successfully",
+        "elapsed_seconds": 0
+      },
+      {
+        "case_id": "quay-look",
+        "status": "completed_successfully",
+        "elapsed_seconds": 20
+      },
+      {
+        "case_id": "quay-blocked",
+        "status": "completed_unsuccessfully",
+        "elapsed_seconds": 30
+      },
+      {
+        "case_id": "quay-passage",
+        "status": "completed_successfully",
+        "elapsed_seconds": 45
+      },
+      {
+        "case_id": "quay-desk",
+        "status": "completed_successfully",
+        "elapsed_seconds": 45
+      },
+      {
+        "case_id": "quay-inspect",
+        "status": "completed_successfully",
+        "elapsed_seconds": 20
+      },
+      {
+        "case_id": "quay-deliver",
+        "status": "completed_successfully",
+        "elapsed_seconds": 10
+      },
+      {
+        "case_id": "quay-empty",
+        "status": "completed_unsuccessfully",
+        "elapsed_seconds": 10
+      }
+    ],
+    "phase_interaction": [
+      {
+        "context": "rise",
+        "kind": "work",
+        "worked_seconds": 3600,
+        "pause_resume": true,
+        "replay_once": true,
+        "new_engine_start_existing_app_continuation": true
+      },
+      {
+        "context": "quay",
+        "kind": "observation",
+        "worked_seconds": 20,
+        "pause_resume": true,
+        "replay_once": true,
+        "new_engine_start_existing_app_continuation": true
+      }
+    ],
+    "app_start_adapter_pending": true
+  },
+  "provider_calls": 0,
+  "model_tokens": 0,
+  "user_saves_used": false,
+  "source_sha256": {
+    "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
+    "IRGS_3_3/runtime/shared_runtime.py": "0e23d78fcaaeded6ead34f964df29e0d7a93279364f0caa8c926f2dd124aa323",
+    "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+    "IRGS_3_3/runtime/offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+    "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+    "IRGS_3_3/runtime/starting_selection.py": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce",
+    "IRGS_3_3/runtime/historical_campaigns.py": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f",
+    "IRGS_3_3/runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
+    "IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+    "IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+    "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+    "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "IRGS_Web/server.py": "0b702fd13295f6d37f4fb814c972c7c528f7169fb8c979619395488e213f19d2",
+    "IRGS_Web/process_bridge.py": "228a739959dcd358d9a53a39b911639306b1d321397d7703a2c790d07edc22d7",
+    "IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+    "IRGS_Web/engine_paths.py": "a4186fe5e19d7cb0b3b039e3e92b92f8c7da178ad0916f681e3b4a6955d3ef42",
+    "IRGS_Web/catalog_paths.py": "2952fbf5aeec83e9c662b5f8733153fd91c7a0bbfde453a6caa87d598a72a3a4",
+    "IRGS_Catalog/response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
+    "IRGS_Catalog/solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+    "IRGS_Catalog/scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313"
+  },
+  "remaining": [
+    "App adoption of Engine start discovery; current HTTP starts remain unavailable",
+    "App-owned compatible dependency pins and coordinator joined/package qualification",
+    "Communication/offer participant and received-source contract remains the next Engine bounded task"
+  ],
+  "date_utc": "2026-10-25",
+  "checks": {
+    "engine_owned_http": {
+      "command": "python -B tools/qualify_component_interaction.py --app-root ../IRGS-APP-WEB --catalog-root ../IRGS-Catalog --output engine/COMPONENT_INTERACTION_VALIDATION.json",
+      "tests": 5,
+      "passed": 5,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "app_full": {
+      "command": "python -B -m unittest discover -s IRGS_Web/tests -v (App cwd, both source selectors)",
+      "tests": 218,
+      "passed": 211,
+      "skipped": 7,
+      "status": "PASS_WITH_WINDOWS_ONLY_SKIPS",
+      "skip_lines": [
+        "test_closed_listener_is_stopped (test_launcher.LauncherTests.test_closed_listener_is_stopped) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_complete_irgs_health_is_ready_and_uses_only_read_routes (test_launcher.LauncherTests.test_complete_irgs_health_is_ready_and_uses_only_read_routes) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_irgs_looking_catalogue_without_session_health_is_occupied (test_launcher.LauncherTests.test_irgs_looking_catalogue_without_session_health_is_occupied) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_occupied_main_entrypoint_fails_readably_without_launching (test_launcher.LauncherTests.test_occupied_main_entrypoint_fails_readably_without_launching) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_powershell_entrypoints_parse_without_execution (test_launcher.LauncherTests.test_powershell_entrypoints_parse_without_execution) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_repeated_ready_launches_reuse_without_starting_process_or_browser (test_launcher.LauncherTests.test_repeated_ready_launches_reuse_without_starting_process_or_browser) ... skipped 'The installed launchers target Windows PowerShell'",
+        "test_unrelated_http_listener_is_occupied_not_reused (test_launcher.LauncherTests.test_unrelated_http_listener_is_occupied_not_reused) ... skipped 'The installed launchers target Windows PowerShell'"
+      ]
+    },
+    "app_process_bridge": {
+      "tests": 17,
+      "passed": 17,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "app_shared_responses": {
+      "tests": 10,
+      "passed": 10,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "app_gameplay_ui": {
+      "command": "node IRGS_Web/tests/test_gameplay_ui.js (App cwd, both source selectors)",
+      "checks": 110,
+      "status": "PASS"
+    },
+    "app_response_library": {
+      "command": "node IRGS_Web/tests/test_responses.js (App cwd)",
+      "checks": 13,
+      "status": "PASS"
+    },
+    "catalog_contracts": {
+      "command": "python -B -m unittest tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_shared_response_contract tools.tests.test_integrated_response_contract -q (Catalog cwd)",
+      "tests": 39,
+      "passed": 39,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "engine_shared": {
+      "command": "python -B tools/qualify_shared_systems.py",
+      "tests": 35,
+      "passed": 35,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "engine_phases": {
+      "command": "python -B tools/qualify_phase_capabilities.py",
+      "tests": 28,
+      "passed": 28,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "engine_integrity": {
+      "command": "python -B tools/verify_components.py --component engine",
+      "files": 362,
+      "status": "PASS"
+    },
+    "app_integrity": {
+      "command": "python -B tools/verify_components.py --component app (App cwd, both selectors)",
+      "files": 55,
+      "status": "PASS",
+      "pin_scope": "Committed pointers checked against their materialized submodules; explicit runtime sources recorded separately"
+    },
+    "catalog_integrity": {
+      "command": "python -B IRGS_Catalog/verify_catalog.py (Catalog cwd)",
+      "files": 172,
+      "status": "PASS"
+    },
+    "kira_canon": {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "PASS"
+    },
+    "process_browser": {
+      "command": "node tools/qualify_process_bridge.js /tmp/irgs-heads-process-browser.json (App cwd, both selectors)",
+      "result": {
+        "status": "passed",
+        "contexts": [
+          {
+            "kind": "observation",
+            "committed_phases": 4,
+            "elapsed_seconds": 3,
+            "prepare_reload_recovered": true,
+            "cancel_does_not_execute": true,
+            "lost_commit_ack_recovered": true,
+            "phase_identity_preserved": true,
+            "pause_resume": true,
+            "stale_navigation_fenced": true
+          },
+          {
+            "kind": "work",
+            "committed_phases": 5,
+            "elapsed_seconds": 3900,
+            "prepare_reload_recovered": true,
+            "cancel_does_not_execute": true,
+            "lost_commit_ack_recovered": true,
+            "phase_identity_preserved": true,
+            "pause_resume": true,
+            "stale_navigation_fenced": true
+          }
+        ],
+        "provider_configured": false,
+        "provider_calls": 0,
+        "browser_errors": 0,
+        "mobile_width": 390
+      }
+    },
+    "shared_browser": {
+      "command": "node tools/qualify_shared_responses.js /tmp/irgs-heads-shared-browser.json (App cwd, both selectors)",
+      "result": {
+        "status": "passed",
+        "contexts": [
+          {
+            "adapter": "authored_scene",
+            "committed_actions": 4,
+            "elapsed_seconds": 43,
+            "zero_action_spans": [],
+            "local_drafts_non_submitting": true,
+            "lost_acknowledgement_recovered": true,
+            "stale_navigation_fenced": true,
+            "reload_preserves_draft": true
+          },
+          {
+            "adapter": "settlement",
+            "committed_actions": 5,
+            "elapsed_seconds": 3900,
+            "zero_action_spans": [
+              "found",
+              "build"
+            ],
+            "local_drafts_non_submitting": true,
+            "lost_acknowledgement_recovered": true,
+            "stale_navigation_fenced": true,
+            "reload_preserves_draft": true
+          }
+        ],
+        "common_response_schema": 1,
+        "catalog_library": "irgs-response-depot-v1",
+        "engine_library": "irgs-engine-routine-responses-v1",
+        "provider_configured": false,
+        "provider_calls": 0,
+        "browser_errors": 0,
+        "mobile_width": 390
+      }
+    },
+    "active_doc_links": {
+      "documents": 8,
+      "local_links": 148,
+      "status": "PASS"
+    },
+    "patch_whitespace": {
+      "command": "git -c core.whitespace=cr-at-eol diff --cached --check",
+      "status": "PASS"
+    }
+  },
+  "runtime_changes_required": false,
+  "engine_runtime_matches_selected_commit": true,
+  "new_joined_package_approval": false
+}
