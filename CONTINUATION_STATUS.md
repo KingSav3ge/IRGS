@@ -1,12 +1,29 @@
 # Current Engine continuation
 
-## Coordinator integration — IRGS 3.4.0 development
+## Current priority — shared IRGS systems
 
-The bounded offline provider/action foundation and App authored-scene/Rise round trip are integrated with the qualified Catalog fixture. See [release notes](RELEASE_NOTES_3_4_0.md) and [coordination](COORDINATION.md) for exact inputs and current remaining work. Operator configuration, bounded live smoke, general narration/dialogue and broader DEV/C2 completion remain pending. Component publication records below retain their original scope.
+The user's current direction is development across campaigns and themes.
+Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
+[the current work order](COORDINATOR_WORK_ORDER.md) before selecting work.
+Rise R00 remains one regression fixture. Shared-system completion requires
+supported non-Rise evidence; campaign-specific mechanics retain their own scope.
+The records below preserve previously delivered work and historical evidence.
 
 ## Active priority — 24 October 2026
 
-The user prioritizes completion of the systems needed for a continuing Solo campaign. `solo-runtime-01` now has the executable offline boundary, opt-in direct adapter and pinned R00 execution described below; connected App/joined qualification remains active. Historical Details is integrated at Engine `723627e629231b5e90f38b9d52b65c9a3967b92a`, App `d8dc35ed653e516ccd0cacf91ee9693258491032` and Catalog `3e898acb2179f18a41d7967817bedf429df29d3f`; no archive or historical integration input is missing. Follow [the current work order](COORDINATOR_WORK_ORDER.md). Entries below preserve their original dates, source identities and then-pending gates.
+The latest user request is Engine-owned responses without API tokens. [The Engine implementation](engine/OFFLINE_RESPONSES_API.md) bundles 338 variants and 15 recipes, automatically presents supported committed Core results, and supplies editable local drafts. [Offline qualification](engine/OFFLINE_RESPONSES_VALIDATION.json) verifies actual sources and zero rendering dispatch; App adoption and joined pins remain separate. The broader Engine tasks below are included in this delivery.
+
+**Executed delivery checks:** 217 focused regressions pass; all 17 dedicated offline-response cases pass with zero skips, including all 338 variants and 15 recipes. The full runtime suite runs 645 tests: 644 pass and one existing private historical-save fixture is skipped. All ten pinned Catalog R00 cases pass with zero skips and unchanged 3,900-second/conserved-stock results. Only synthetic temporary saves are used; rendering makes zero provider calls and uses zero model tokens. See [combined task evidence](engine/ENGINE_TASKS_VALIDATION.json).
+
+The bounded Solo foundation is coordinator-qualified at Engine `8234044c089131314019ecaf6799a2f08028a3f8`, App `277554aac21a092b8a55562309da274bbe74a3af` and Catalog `401df26a1f16be864dd15d7c5250da5d75f8ccca`; Historical Details also remains integrated. The user now directs completion of Engine tasks. This component extends selected continuations, communication and technical accounting below. New APIs require their own App/pin/joined qualification. Follow [the current work order](COORDINATOR_WORK_ORDER.md). Older entries preserve their original evidence and then-pending gates.
+
+## Engine task implementation — 2026-10-24
+
+**Implemented:** `continue_player_process` adds durable parent/phase identities over existing Rise work, selected-duration travel and authored observation. Partial travel keeps people/goods in transit; work and observation can pause/resume without duplicate work or premature knowledge. Explicit cancellation retains physical work; unsupported return-trip rules remain unavailable. Received phase projections enter actor/model context without raw world records. `execute_local_communication` records local attributed testimony and selected-policy offers, withdrawal, decline, counteroffer and explicit conserved fulfillment through actual Core stock transfer. Model prose cannot accept an offer or establish truth. Operator-reviewed final inference charges now reconcile finite reservations without changing campaign money or silently freeing unknown calls. R9 dictionary copy/comparison/union/clear/popitem dependencies are observed explicitly.
+
+**Evidence:** [API and scope](engine/CONTINUATION_COMMUNICATION_API.md), [execution record](engine/ENGINE_TASKS_VALIDATION.json), real Core process/communication handlers, actual R9 observation and temporary host CAS. Named cases cover stock conservation, scarce-resource frontiers, late rollback after attempted writes, current authority/worker conflicts, loss of acknowledgment, concurrent delivery, restart and restore. No user save, live credential or paid inference is used.
+
+**Remaining:** consumer controls and new exact component qualification, broader unselected movement/search/obligation rules, autonomous NPC/voice/semantic evaluation, full operation/C2 coverage and distributed persistence. Real billing ingestion and live smoke require reviewed account evidence/configuration; synthetic charge records establish only the accounting contract. Stable DEV milestones remain open beyond the named selected contracts.
 
 ## Solo lifecycle races — 2026-10-24
 
@@ -78,7 +95,7 @@ Verification: all six PNGs match the delivered artwork byte for byte; atlas mani
 
 The entries below preserve earlier increment descriptions and evidence identities. Old branch names, App checks and original validation filenames describe those source runs. They do not direct current pushes or certify the present standalone Engine/App pair.
 
-2026-10-22: Rise foundation 1 adds a reviewed fictional settlement founding path: limited permission, finite work and provision, bounded delegation and actual household migration in the shared Core. The eight design families remain held. See [current Rise status](engine/design/rise/README.md) and [qualification](RISE_FOUNDATION_VALIDATION.json).
+2026-10-22: Rise foundation 1 adds a reviewed fictional settlement founding path: limited permission, finite work and provision, bounded delegation and actual household migration in the shared Core. The eight design families remain held. See [current Rise status](engine/design/rise/README.md) and [qualification](https://github.com/KingSav3ge/IRGS/blob/main/RISE_FOUNDATION_VALIDATION.json).
 
 ## Earlier action and contextual-response increment
 
@@ -108,9 +125,9 @@ Collection qualification also corrects a caller-context dependency: unrelated co
 
 ## Evidence and next work
 
-See [ACTION1_VALIDATION.json](ACTION1_VALIDATION.json) for the actual executed checks, [engine/EQUIPMENT_ACTION_IMPLEMENTATION.md](engine/EQUIPMENT_ACTION_IMPLEMENTATION.md) for engine scope, and [engine/ACCEPTANCE_EXECUTION.md](engine/ACCEPTANCE_EXECUTION.md) for the C2 coverage mapping. The immutable 121-case source inventory has not been rewritten into a passing test report.
+See [ACTION1_VALIDATION.json](https://github.com/KingSav3ge/IRGS/blob/main/ACTION1_VALIDATION.json) for the actual executed checks, [engine/EQUIPMENT_ACTION_IMPLEMENTATION.md](engine/EQUIPMENT_ACTION_IMPLEMENTATION.md) for engine scope, and [engine/ACCEPTANCE_EXECUTION.md](engine/ACCEPTANCE_EXECUTION.md) for the C2 coverage mapping. The immutable 121-case source inventory has not been rewritten into a passing test report.
 
-DEV-05 is now complete: [the operation register](engine/OPERATION_COVERAGE.md) lists all 168 declared backend/operation contracts, current observations, test identities and explicit gaps. See [COVERAGE1_VALIDATION.json](COVERAGE1_VALIDATION.json). Next: broader collection/failed-branch/conflict qualification under DEV-06â€“DEV-08. Durable phases, movement, dialogue, evolving historical control and sustained institutional autonomy remain on the continuation list. Suggested responses are a universal presentation feature alongside these capabilities, not a separate combat world.
+DEV-05 is now complete: [the operation register](engine/OPERATION_COVERAGE.md) lists all 168 declared backend/operation contracts, current observations, test identities and explicit gaps. See [COVERAGE1_VALIDATION.json](https://github.com/KingSav3ge/IRGS/blob/main/COVERAGE1_VALIDATION.json). Next: broader collection/failed-branch/conflict qualification under DEV-06â€“DEV-08. Durable phases, movement, dialogue, evolving historical control and sustained institutional autonomy remain on the continuation list. Suggested responses are a universal presentation feature alongside these capabilities, not a separate combat world.
 
 The coverage capture also records 381 refused post-state matches across legacy caller/observer backend selections and 23 failed-probe rollback anomalies. These observations are excluded from qualification, with their named test contexts retained for DEV-06–DEV-08. There are no such refusals in the selected Core observations. These are repeated synthetic observation counts, not player incidents.
 
@@ -124,7 +141,7 @@ The authored human-only opening now compares the registered species without case
 
 ## Adventure UI — Solo presentation
 
-Campaign entry and character setup now use illustrative voyage artwork. The Solo story foregrounds the received scene, exact supported action choices and latest character-scoped outcome. Campaign controls, older records, historical references and the own-response editor remain available through expandable sections. Custom drafts still submit unresolved declarations; this presentation update adds no engine resolution. See [ADVENTURE_UI_VALIDATION.json](ADVENTURE_UI_VALIDATION.json) for the executed checks. This increment belongs to `3.3.3.A` and unified `main`; `3.3.3.E` retains its existing engine commit.
+Campaign entry and character setup now use illustrative voyage artwork. The Solo story foregrounds the received scene, exact supported action choices and latest character-scoped outcome. Campaign controls, older records, historical references and the own-response editor remain available through expandable sections. Custom drafts still submit unresolved declarations; this presentation update adds no engine resolution. See [ADVENTURE_UI_VALIDATION.json](https://github.com/KingSav3ge/IRGS/blob/main/ADVENTURE_UI_VALIDATION.json) for the executed checks. This increment belongs to `3.3.3.A` and unified `main`; `3.3.3.E` retains its existing engine commit.
 
 ## Qualified failed-path dependencies
 
@@ -136,7 +153,7 @@ Existing genre receiving operations now execute as Core methods. Players see cam
 
 ## Independent environment confirmation
 
-2026-10-22: The independent cloud QA report tests published candidate `59f2434` and passes all eight independent cases plus its listed source, freshness, runtime, Web, interface and tooling checks. IRGS-QA-001 and IRGS-QA-002 are not reproduced. Platform and external-fixture skips remain skips. See [QA_RESPONSE.md](QA_RESPONSE.md) for preserved reports and counts. This is confirmation of the existing implementation; broader DEV-06–DEV-08 and C2 certification remain open.
+2026-10-22: The independent cloud QA report tests published candidate `59f2434` and passes all eight independent cases plus its listed source, freshness, runtime, Web, interface and tooling checks. IRGS-QA-001 and IRGS-QA-002 are not reproduced. Platform and external-fixture skips remain skips. See [QA_RESPONSE.md](https://github.com/KingSav3ge/IRGS/blob/main/QA_RESPONSE.md) for preserved reports and counts. This is confirmation of the existing implementation; broader DEV-06–DEV-08 and C2 certification remain open.
 
 ## Historical Grand Archive reference library
 

@@ -86,12 +86,14 @@ def scene_options(state, actor_id):
         return []
 
 
-def operate_scene_action(core, state, at, params):
+def operate_scene_action(core, state, at, params, *, committed_duration=None):
     """Executed inside Core's cloned transaction and observed ordinary handler."""
     assert set(params) == {'campaign_id', 'source_ref', 'instruction_ref', 'actor', 'action', 'action_event_id'}
     _action(params['action'])
     actor = params['actor']
     rules = _rules(state, actor)
+    from process_runtime import reserved_actors
+    assert actor not in reserved_actors(state), 'unfinished process reserves this actor'
     # Legacy activity spans use a different coordinate. Until their calendars
     # are explicitly bound, local walking must not bypass an existing actor
     # commitment by treating its causal coordinates as elapsed seconds.
@@ -176,7 +178,10 @@ def operate_scene_action(core, state, at, params):
                 'from': actor, 'to': destination, 'material': material, 'quantity': 1,
                 'authority_ref': rules['source_ref'], 'source_ref': reference})
         receive(summary)
-    elapsed['seconds'] += duration
+    if committed_duration is None:
+        elapsed['seconds'] += duration
+    else:
+        assert kind == 'observe' and committed_duration == duration
     outcome = {'summary': summary, 'kind': kind, 'elapsed_seconds': duration,
                'elapsed_total': elapsed['seconds'], 'observations': observations}
     receipt = {'event_id': event_id, 'at': at, 'operation': OPERATION,
@@ -209,4 +214,6 @@ def execute_scene_action(world, event_id, actor_id, action, instruction_ref):
     result.pop('actor')
     result['dependencies'] = certificate
     world.s = candidate.s
+    from offline_responses import render_receipt
+    result['presentation'] = render_receipt(world, actor_id, event_id)
     return result

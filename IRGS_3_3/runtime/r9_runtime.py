@@ -154,6 +154,34 @@ class TracedDict(dict):
     def values(self):
         self.trace.add(self.path)
         return (self[k] for k in dict.__iter__(self))
+    def copy(self):
+        # CPython's dict.copy/union/equality can read scalar values without
+        # invoking __getitem__. Keep those decision reads explicitly visible.
+        self.trace.add(self.path)
+        return dict.copy(self)
+    def _comparison_reads(self,other):
+        self.trace.add(self.path)
+        if isinstance(other,TracedDict):other.trace.add(other.path)
+    def __eq__(self,other):
+        self._comparison_reads(other);return dict.__eq__(self,other)
+    def __ne__(self,other):
+        self._comparison_reads(other);return dict.__ne__(self,other)
+    def __or__(self,other):
+        self._comparison_reads(other);return dict.__or__(self,other)
+    def __ror__(self,other):
+        self._comparison_reads(other);return dict.__ror__(self,other)
+    def __ior__(self,other):
+        if isinstance(other,TracedDict):other.trace.add(other.path)
+        self.update(other);return self
+    def clear(self):
+        self.trace.add(self.path)
+        if dict.__len__(self):self.trace.add(self.path,True)
+        dict.clear(self)
+    def popitem(self):
+        self.trace.add(self.path)  # The selected item depends on insertion order.
+        key,value=dict.popitem(self)
+        self.trace.add(self.path+(str(key),),True)
+        return key,value
     def setdefault(self,key,default=None):
         if key not in self: self[key]=default
         return self[key]

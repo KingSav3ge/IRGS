@@ -122,10 +122,22 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     solo = checker.validate_fixture(root / 'evaluation/solo_r00_v1')
+    spec = importlib.util.spec_from_file_location('catalog_proposal_compatibility_check',
+        root / 'solo_proposal_compatibility.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    proposals = checker.validate_compatibility(root)
+    spec = importlib.util.spec_from_file_location('catalog_scripted_response_check',
+        root / 'scripted_responses.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    responses = checker.validate_library(checker.load_library(root / 'responses/depot_v1/library.json'))
+    original_responses = checker.validate_library(checker.load_library(root / 'responses/routine_v1/library.json'))
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
-        'solo_evaluation': solo}
+        'solo_evaluation': solo, 'solo_proposal_compatibility': proposals,
+        'scripted_responses': responses, 'original_scripted_responses': original_responses}
 
 
 if __name__ == '__main__':

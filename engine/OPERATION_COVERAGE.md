@@ -2,7 +2,7 @@
 
 This is a current-source inventory and execution record, not blanket certification. Run `python -B tools/build_operation_register.py --check engine/qualification/operation_register.json` to check freshness. That check does not rerun the tests.
 
-85 spellings across 170 backend/operation pairs. 87 pairs have observed successful cases; 83 still lack one. 33 pairs have named rejected-path evidence.
+87 spellings across 172 backend/operation pairs. 89 pairs have observed successful cases; 83 still lack one. 35 pairs have named rejected-path evidence.
 
 The machine-readable [register](qualification/operation_register.json) records source locations, actual read/write paths, rejected reads, rolled-back attempts, owner annotations, test identities and observation refusals. Unmapped paths and unsupported backend/profile combinations remain explicit. AST compatibility names share CoreWorld; they are not a separately maintained engine.
 
@@ -19,13 +19,15 @@ The machine-readable [register](qualification/operation_register.json) records s
 | CoreWorld | `ast_set_scene` | OBSERVED_SUCCESS_ONLY | 2 | 0 |
 | CoreWorld | `ast_transfer_stock` | OBSERVED_SUCCESS_AND_FAILURE | 6 | 1 |
 | CoreWorld | `commit_activity` | OBSERVED_SUCCESS_AND_FAILURE | 7 | 1 |
-| CoreWorld | `confirm_character_field` | OBSERVED_SUCCESS_ONLY | 165 | 0 |
-| CoreWorld | `establish_stock` | OBSERVED_SUCCESS_ONLY | 280 | 0 |
+| CoreWorld | `confirm_character_field` | OBSERVED_SUCCESS_ONLY | 187 | 0 |
+| CoreWorld | `continue_player_process` | OBSERVED_SUCCESS_AND_FAILURE | 108 | 15 |
+| CoreWorld | `establish_stock` | OBSERVED_SUCCESS_ONLY | 324 | 0 |
+| CoreWorld | `execute_local_communication` | OBSERVED_SUCCESS_AND_FAILURE | 58 | 9 |
 | CoreWorld | `execute_player_equipment_issue` | OBSERVED_SUCCESS_AND_FAILURE | 38 | 19 |
-| CoreWorld | `execute_player_scene_action` | OBSERVED_SUCCESS_AND_FAILURE | 462 | 17 |
-| CoreWorld | `execute_settlement_action` | OBSERVED_SUCCESS_AND_FAILURE | 352 | 11 |
+| CoreWorld | `execute_player_scene_action` | OBSERVED_SUCCESS_AND_FAILURE | 482 | 18 |
+| CoreWorld | `execute_settlement_action` | OBSERVED_SUCCESS_AND_FAILURE | 388 | 12 |
 | CoreWorld | `military_issue_equipment` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
-| CoreWorld | `receive_evidence` | OBSERVED_SUCCESS_ONLY | 376 | 0 |
+| CoreWorld | `receive_evidence` | OBSERVED_SUCCESS_ONLY | 420 | 0 |
 | CoreWorld | `receive_order` | OBSERVED_SUCCESS_ONLY | 42 | 0 |
 | CoreWorld | `receive_response_prompt` | OBSERVED_SUCCESS_AND_FAILURE | 15 | 13 |
 | CoreWorld | `record_capacity` | OBSERVED_SUCCESS_ONLY | 5 | 0 |
@@ -33,10 +35,10 @@ The machine-readable [register](qualification/operation_register.json) records s
 | CoreWorld | `record_design` | OBSERVED_SUCCESS_AND_FAILURE | 3 | 1 |
 | CoreWorld | `record_entity_eligibility` | OBSERVED_SUCCESS_ONLY | 154 | 0 |
 | CoreWorld | `record_entity_relation` | OBSERVED_SUCCESS_ONLY | 8 | 0 |
-| CoreWorld | `record_evidence` | OBSERVED_SUCCESS_ONLY | 386 | 0 |
+| CoreWorld | `record_evidence` | OBSERVED_SUCCESS_ONLY | 435 | 0 |
 | CoreWorld | `record_obligation` | OBSERVED_SUCCESS_ONLY | 1 | 0 |
 | CoreWorld | `record_player_action` | OBSERVED_SUCCESS_ONLY | 2 | 0 |
-| CoreWorld | `register_actor` | OBSERVED_SUCCESS_AND_FAILURE | 441 | 1 |
+| CoreWorld | `register_actor` | OBSERVED_SUCCESS_AND_FAILURE | 464 | 1 |
 | CoreWorld | `register_entity` | OBSERVED_SUCCESS_ONLY | 17 | 0 |
 | CoreWorld | `revoke_delegation` | OBSERVED_SUCCESS_ONLY | 3 | 0 |
 | CoreWorld | `roman_begin_delegated_activity` | OBSERVED_SUCCESS_AND_FAILURE | 3 | 1 |

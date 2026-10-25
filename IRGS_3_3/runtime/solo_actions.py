@@ -46,6 +46,10 @@ def prepare_request(world, *, request_id, actor_id, intention, branch_id, restor
             continue
         received.append({'id': key, 'assertion': evidence['assertion'], 'status': evidence['status'],
                          'source_ref': evidence['source_ref'], 'received_at': receipt['received_at']})
+        if key.startswith('communication:'):
+            communication = world.s.get('communication_results', {}).get(key[len('communication:'):])
+            if communication and communication['evidence_id'] == key:
+                received[-1]['originator'] = communication['actor']
         refs.append(key)
     if operation == RISE_OPERATION:
         for key, record in sorted(world.s['settlement_receipts'].get(actor_id, {}).items()):
@@ -56,6 +60,15 @@ def prepare_request(world, *, request_id, actor_id, intention, branch_id, restor
                 'source_ref': world.s['rise']['source_ref'], 'received_at': record['recorded_at'],
                 'elapsed_total': record['elapsed_seconds']})
             refs.append(reference)
+    for key, record in world.s.get('process_phase_receipts', {}).items():
+        if record['actor'] != actor_id or not 0 <= record['at'] <= world.s['clock']:
+            continue
+        reference = 'process-phase:' + key
+        received.append({'id': reference, 'assertion': record['summary'], 'status': 'received_process_phase',
+            'source_ref': record['source_ref'], 'received_at': record['at'],
+            'elapsed_total': record['elapsed_total'], 'process_id': record['process_id'],
+            'phase_index': record['phase_index'], 'process_status': record['status'],
+            'worked_seconds': record['worked_seconds'], 'remaining_seconds': record['remaining_seconds']})
     total_received = len(received)
     received = sorted(received, key=lambda record: (record['received_at'], record['id']))[-MAX_RECEIVED_RECORDS:]
     refs = [record['id'] for record in received]
@@ -74,15 +87,18 @@ def _public_result(world, event_id, request, token):
         event = next(item for item in world.s['journal'] if item['id'] == event_id)
         records = world.s['settlement_receipts'][request.actor_id]
         primary, inspection = records[token], records[token + ':inspection']
-        return {'status': 'completed_successfully',
+        result = {'status': 'completed_successfully',
             'outcome': {'summary': primary['text'], 'observations': [inspection['text']],
                         'kind': 'settlement_action', 'elapsed_total': primary['elapsed_seconds']},
             'receipt': {'event_id': event_id, 'at': event['at'], 'operation': RISE_OPERATION,
                         'actor': request.actor_id, 'action_id': event['params']['action']}}
-    result = copy.deepcopy(world.s['scene_action_results'][event_id])
+    else:
+        result = copy.deepcopy(world.s['scene_action_results'][event_id])
     result.pop('actor', None)
     # Only the committed handler's actor-legitimate outcome supplies narration.
     # Private dependency certificates and full validation reads are not output.
+    from offline_responses import render_receipt
+    result['presentation'] = render_receipt(world, request.actor_id, event_id)
     return result
 
 

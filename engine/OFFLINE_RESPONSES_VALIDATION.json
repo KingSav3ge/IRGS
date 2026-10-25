@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "PASS_OFFLINE_ENGINE_RESPONSES_WITH_LIMITS",
+  "target_iteration": "IRGS 3.4.0 — in development",
+  "library": {
+    "status": "verified",
+    "library_id": "irgs-engine-routine-responses-v1",
+    "families": 86,
+    "variants": 338,
+    "recipes": 15,
+    "provider_dispatch": false,
+    "runtime_integration_verified_by_schema": false
+  },
+  "system_variants": 285,
+  "player_draft_variants": 53,
+  "tests_run": 17,
+  "passed": 17,
+  "skipped": 0,
+  "test_ids": [
+    "test_offline_responses.OfflineResponseTests.test_actor_control_foreign_receipts_unknown_events_and_stale_scope_fail_closed",
+    "test_offline_responses.OfflineResponseTests.test_all_338_variants_and_15_recipes_format_without_dispatch",
+    "test_offline_responses.OfflineResponseTests.test_composition_rejects_mixed_actors_snapshots_intentions_conflicts_and_missing_receipt",
+    "test_offline_responses.OfflineResponseTests.test_default_scene_result_needs_no_key_transport_or_network",
+    "test_offline_responses.OfflineResponseTests.test_host_status_keeps_general_intentions_unresolved_and_hides_private_diagnoses",
+    "test_offline_responses.OfflineResponseTests.test_library_schema_rejects_unsafe_templates_duplicate_fields_and_missing_anchor",
+    "test_offline_responses.OfflineResponseTests.test_missing_or_invalid_library_retains_literal_receipt_without_paid_fallback",
+    "test_offline_responses.OfflineResponseTests.test_no_cross_actor_or_world_response_cache",
+    "test_offline_responses.OfflineResponseTests.test_nonterminal_phase_text_replay_uses_received_boundary_not_live_progress",
+    "test_offline_responses.OfflineResponseTests.test_offer_words_do_not_accept_and_only_actual_fulfillment_is_presented",
+    "test_offline_responses.OfflineResponseTests.test_old_receipt_is_identical_after_more_actions_restart_and_changed_hidden_state",
+    "test_offline_responses.OfflineResponseTests.test_phase_observation_only_prints_new_knowledge_at_completion",
+    "test_offline_responses.OfflineResponseTests.test_rise_52_drafts_remain_editable_without_stock_or_permission_feasibility_filter",
+    "test_offline_responses.OfflineResponseTests.test_scene_drafts_keep_exact_authored_text_and_blocked_options",
+    "test_offline_responses.OfflineResponseTests.test_settlement_receipts_do_not_mislabel_cumulative_time_as_action_time",
+    "test_offline_responses.OfflineResponseTests.test_speech_negation_braces_html_and_4096_characters_remain_attributed_testimony",
+    "test_offline_responses.OfflineResponseTests.test_wording_variants_do_not_rewrite_exact_committed_observations"
+  ],
+  "render_provider_calls": 0,
+  "render_model_tokens": 0,
+  "live_calls": 0,
+  "user_saves_used": false,
+  "source_sha256": {
+    "IRGS_3_3/runtime/offline_responses.py": "a33d1c4a034d96b95ee93d85720b49aec2a79a74aca7bfd25bf9f5d17aaec277",
+    "IRGS_3_3/runtime/routine_format.py": "5d1195e7b4db5aab56ab04daf4cd342b7be82f8d5fd6fd65cb9e8c3928ad64c3",
+    "IRGS_3_3/runtime/test_offline_responses.py": "e8e8e2bef0e88511279a55690da2077ccfa64e8cea9ceecdb3bf01eee5e7d200",
+    "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "IRGS_3_3/runtime/solo_actions.py": "3d07a615911d0deac3d5b0fc8744015ab8efaa2e5e454877a1ab45ef543e8363",
+    "IRGS_3_3/runtime/process_runtime.py": "a3e38e58bd603be6f655085cce1a346152a391a8b0617b13381f1edae284adaf",
+    "IRGS_3_3/runtime/communication_runtime.py": "8c1f65fcadcbfc1ad8c26833d3d66f7b09ec732f09028bcfd521da5fb57b2567",
+    "IRGS_3_3/data/responses/engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e",
+    "IRGS_3_3/data/responses/PROVENANCE.json": "3868b157d950637af84b20ef1e846ec21b3bf242c4d577dba83ac3b31cc43f76"
+  },
+  "evidence": [
+    "338 variants and 15 recipes formatted",
+    "Real Core default result paths preserve successful and unsuccessful outcomes",
+    "Provider transport and network connection forbidden in offline action/draft/status test",
+    "Actual received phase/communication records, atomic Core effects and temporary host recovery",
+    "Actor/receipt/scope checks, exact-source fallback and draft selection without effects"
+  ],
+  "limits": [
+    "App consumer controls, dependency pins and joined qualification are separate",
+    "No general freeform/combat resolution or natural-language interpretation is added",
+    "No live model, semantic quality, human review or historical calibration is measured"
+  ]
+}

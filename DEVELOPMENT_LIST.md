@@ -1,5 +1,14 @@
 # IRGS continuation development list
 
+## Current priority — shared IRGS systems
+
+The user's current direction is development across campaigns and themes.
+Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
+[the current work order](COORDINATOR_WORK_ORDER.md) before selecting work.
+Rise R00 remains one regression fixture. Shared-system completion requires
+supported non-Rise evidence; campaign-specific mechanics retain their own scope.
+The records below preserve previously delivered work and historical evidence.
+
 Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
 Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-24. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
@@ -96,6 +105,10 @@ DEV-01–DEV-04 are completed for the qualified bounded equipment action. DEV-05
 Opening1 advances DEV-10, DEV-12–DEV-14, DEV-18 and DEV-25 with an optional reviewed fictional 1415 delivery scene. Local movement, observation, failed attempts, stock transfer and elapsed seconds have durable outcomes. These broad tasks remain open: there is no interruption/phase scheduler, hidden search, dialogue, combat or autonomous NPC response. See [the implementation record](engine/PLAYABLE_OPENING_IMPLEMENTATION.md) and OPENING1_VALIDATION.json.
 
 ## Start here
+
+The user's latest priority is implemented in [Engine offline responses](engine/OFFLINE_RESPONSES_API.md): 338 bundled variants, 15 recipes, automatic local presentation on supported result APIs and editable drafts, with no rendering API call or token. [Engine qualification](engine/OFFLINE_RESPONSES_VALIDATION.json) covers actual outcomes, received information, replay and actor boundaries. This advances the presentation portion of DEV-17; general NPC decisions, freeform/combat adjudication and App adoption retain their separate work.
+
+Current completion pass: the prior bounded Solo/App/Catalog integration is coordinator-qualified. [New Engine continuations and communication](engine/CONTINUATION_COMMUNICATION_API.md) implement selected DEV-09–DEV-17 contracts; dictionary observation and actual competing/independent frontiers extend DEV-06–DEV-08. Reviewed technical charge reconciliation advances AIP accounting. See [current executed cases](engine/ENGINE_TASKS_VALIDATION.json). These scoped implementations do not close every general DEV milestone or authorize unselected mechanics. Next qualify App consumption/new pins and expand named rules/branches without repeating the completed provider foundation.
 
 Completed: **DEV-01–DEV-04**, including their bounded dependency, recovery and acceptance checks. DEV-05 now records 85 operation spellings across 170 backend/operation contracts. Next extend the named collection, failed-path and cross-engine cases under **DEV-06–DEV-08**, using [the coverage register](engine/OPERATION_COVERAGE.md) to choose gaps. The reviewable result is a supported equipment action with real consequences, a durable result visible in the Solo app, and a working next action. This is the first continuation milestone; no new live-version designation is assigned by this list.
 

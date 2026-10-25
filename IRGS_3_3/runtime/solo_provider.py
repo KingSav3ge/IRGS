@@ -167,7 +167,7 @@ class SpecialistRegistry:
                 route.policy_ref == request.policy_ref and nonempty(route.price_revision), 'policy_denied')
         require(request.classification in route.classifications and
                 request.task in route.workloads and request.operation_id in route.operations, 'policy_denied')
-        require(type(route.reservation_units) is int and route.reservation_units > 0,
+        require(type(route.reservation_units) is int and 0 < route.reservation_units <= 2**63-1,
                 'budget_unconfigured')
         require(len(canon(request.model_input()).encode()) <= route.max_input_bytes and
                 request.max_output_tokens <= route.max_output_tokens, 'limit_exceeded')
@@ -260,13 +260,16 @@ class AttemptLedger:
     reopening the database cannot authorize another call for that request ID.
     """
     def __init__(self, path, *, budget_units, max_inflight=1):
-        require(type(budget_units) is int and budget_units >= 0 and
+        require(type(budget_units) is int and 0 <= budget_units <= 2**63-1 and
                 type(max_inflight) is int and max_inflight > 0, 'invalid_configuration')
         self.path = str(Path(path).resolve())
         with self.connection() as db:
             db.execute('BEGIN IMMEDIATE')
             db.execute('CREATE TABLE IF NOT EXISTS limits (id INTEGER PRIMARY KEY, budget INTEGER, inflight INTEGER)')
             db.execute('CREATE TABLE IF NOT EXISTS cancellations (id TEXT PRIMARY KEY)')
+            db.execute('CREATE TABLE IF NOT EXISTS reconciliations (attempt_id TEXT PRIMARY KEY,'
+                ' reconciliation_id TEXT UNIQUE NOT NULL, charged_units INTEGER NOT NULL,'
+                ' payload TEXT NOT NULL, recorded_at REAL NOT NULL)')
             db.execute('CREATE TABLE IF NOT EXISTS attempts (id TEXT PRIMARY KEY, fingerprint TEXT NOT NULL,'
                 ' request TEXT NOT NULL, route TEXT NOT NULL, reserved INTEGER NOT NULL,'
                 ' status TEXT NOT NULL, finished INTEGER NOT NULL DEFAULT 0, result TEXT,'
@@ -329,8 +332,12 @@ class AttemptLedger:
             require(db.execute('SELECT 1 FROM cancellations WHERE id=?',
                                (request.request_id,)).fetchone() is None, 'cancelled')
             budget, inflight = db.execute('SELECT budget,inflight FROM limits WHERE id=1').fetchone()
-            reserved, active = db.execute('SELECT COALESCE(SUM(reserved),0),'
-                ' COALESCE(SUM(CASE WHEN finished=0 THEN 1 ELSE 0 END),0) FROM attempts').fetchone()
+            rows = db.execute('SELECT a.reserved,a.finished,r.charged_units FROM attempts a'
+                ' LEFT JOIN reconciliations r ON a.id=r.attempt_id').fetchall()
+            # Exact Python integer sums avoid SQLite overflow or float rounding
+            # when reviewed overruns exceed the configured finite ceiling.
+            reserved = sum(row[0] if row[2] is None else row[2] for row in rows)
+            active = sum(row[1] == 0 for row in rows)
             require(reserved + route.reservation_units <= budget, 'budget_exhausted')
             require(active < inflight, 'concurrency_exhausted')
             db.execute('INSERT INTO attempts (id,fingerprint,request,route,reserved,status,'

@@ -175,3 +175,59 @@ Fetch that Catalog commit into the dependency before running the command. Exact
 fixture files are selected from Git into a temporary directory without moving the
 committed dependency. This does not certify R00 interpretation through the new API.
 Core remains 3.3; 3.4.0 identifies this development iteration.
+
+
+## Application and campaign themes
+
+Application pages use the warm charcoal/brown base with bronze/coral accents.
+Campaign pages select a palette from their public genre binding; known campaigns
+can override those accents. Seven genres are supported: military, Roman, fantasy,
+post-apocalyptic, shinobi, space and settlement. Century of Conflict, A Scot's Tale
+and Rise have campaign variants. Unknown bindings use the base. Names and private
+world facts do not select styles. Dark, Light and Parchment remain independent
+reading preferences and survive switching/reload. Theme selection changes no save.
+`static/themes.css` owns palette tokens; `static/themes.js` selects only known
+public presentation IDs. Layout lives in `static/style.css`.
+
+## Protected usage and budgets
+
+Creator workspace → AI Network → Usage & Budgets reads Engine's technical ledger.
+The view shows total lifetime reservations/remaining operator units and occupied
+transport slots, plus recent requested/reported identities, reported token fields
+and errors. `GET /api/ai/usage?mode=creator&limit=25` requires the local session,
+accepted Origin and explicit Creator mode. `limit` is bounded to 1–50; summary
+totals always cover the entire ledger. Request/context text, private dependencies,
+credentials and storage paths never appear in this projection. The default host
+shows unconfigured status and creates no ledger just to inspect it.
+
+Reservations remain consumed after failures/cancellation. Missing token reports
+and actual charges stay unknown; reported tokens are not a verified bill. Refresh
+reads saved records and never retries inference, refunds units or resets budgets.
+Run `node tools/qualify_presentation.js /tmp/irgs-presentation.json` for real
+Chromium theme/accounting qualification with temporary synthetic campaigns.
+
+
+## Local reusable App responses
+
+The [App routine library](responses/README.md) supplies 171 authored variants in
+55 families: 139 system messages and 32 editable draft starters, with eight
+composition recipes. It renders locally and uses no provider tokens. Ordinary
+App labels were already local; no production token-savings benchmark is claimed.
+Requesting assisted interpretation remains an explicit separate action.
+
+In **Write your own response → Editable draft starters**, select starting words,
+review/edit them, then explicitly keep the draft. This submits nothing and
+preserves your independent response until you choose Keep. Actual supported
+actions still require confirmation. Missing facts/templates never authorize a
+paid fallback or turn an unsupported declaration into a resolved action.
+
+The result renderer preserves the exact Core summary and uses only an actual
+recorded elapsed span. All inserted names/source text use text nodes or existing
+escaping. Library data is immutable, source/state/slot checked and selected
+with deterministic variants. No raw save, private certificate or entire response
+library is sent to a provider. The App owns this UI pack; Catalog and Engine retain
+their own response content and execution/information duties.
+
+Run `node IRGS_Web/tests/test_responses.js` for the local formatter contract and
+`node tools/qualify_app_responses.js /tmp/irgs-app-routines.json` for the real
+browser/Core flow with inference endpoints blocked and temporary synthetic saves.

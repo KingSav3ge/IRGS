@@ -15,6 +15,8 @@ CORE_OPS.update({'register_actor','record_capacity','commit_activity','record_de
 CORE_OPS.update({'execute_player_equipment_issue','receive_response_prompt'})
 CORE_OPS.add('execute_player_scene_action')
 CORE_OPS.add('execute_settlement_action')
+CORE_OPS.add('continue_player_process')
+CORE_OPS.add('execute_local_communication')
 CORE_OPS.update(ENTITY_OPS)
 SUPPORTED_OPS=CORE_OPS|set(ALIASES)|GENRE_OPS
 
@@ -51,6 +53,10 @@ class CoreWorld:
             assert flow['account'] in s['stocks']
         from settlement_runtime import validate_settlement
         validate_settlement(s)
+        from process_runtime import validate as validate_processes
+        validate_processes(s)
+        from communication_runtime import validate as validate_communication
+        validate_communication(s)
         ids=[e['id'] for e in s['journal']]
         assert len(ids)==len(set(ids)) and set(ids)==set(s['processed'])
         assert all(s['processed'][e['id']]==digest(e) for e in s['journal'])
@@ -95,6 +101,12 @@ class CoreWorld:
         if op=='execute_player_equipment_issue':
             from player_actions import operate_equipment_action
             return operate_equipment_action(self,s,at,p)
+        if op=='execute_local_communication':
+            from communication_runtime import operate
+            return operate(self,s,at,p)
+        if op=='continue_player_process':
+            from process_runtime import operate
+            return operate(self,s,at,p)
         if op=='execute_settlement_action':
             from settlement_runtime import operate_settlement_action
             return operate_settlement_action(self,s,at,p)

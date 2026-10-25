@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "compatibility_id": "irgs-solo-r00-proposals-v1",
+  "classification": "offline-synthetic-consumer-qualification",
+  "source_fixture": {
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "manifest": "evaluation/solo_r00_v1/manifest.json",
+    "sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5"
+  },
+  "proposal_schema": "solo-proposal-1",
+  "operation_id": "execute_settlement_action",
+  "consumers": {
+    "engine_commit": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "app_commits": {
+      "integrated_development": "277554aac21a092b8a55562309da274bbe74a3af",
+      "component_followup": "4f45f5ab8473a2bddb500fe3a49122575b6483e1"
+    }
+  },
+  "narration_dialogue": {
+    "contract_status": "not_available",
+    "evaluation_status": "awaiting_engine_app_contract"
+  }
+}

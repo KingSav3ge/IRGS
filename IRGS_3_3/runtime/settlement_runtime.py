@@ -67,6 +67,8 @@ def _permission(s, household, right):
 
 
 def _worker_free(s, worker, excluding=None):
+    from process_runtime import reserved_actors
+    assert worker not in reserved_actors(s), 'unfinished process reserves this actor'
     assert not any(p['worker'] == worker and p['status'] == 'active' for key, p in s['projects'].items() if key != excluding)
     assert not any(worker in m['members'] and m['status'] == 'transit' for m in s['migrations'].values())
     # Shared capacity bookings use a different coordinate. Do not guess a mapping.
@@ -107,7 +109,8 @@ def inspect_local(s, actor, at, key):
     notice(s, actor, at, key, ' '.join(messages) or 'You inspect the local surroundings; no new physical effects occur.')
 
 
-def _advance(s, seconds):
+def _advance(s, seconds, *, causal_at=None):
+    from process_runtime import advance_travel, travel_boundaries
     model = s['settlement_model']
     assert type(seconds) is int and 0 < seconds <= model['max_advance_seconds']
     now = s['elapsed_time']['seconds']
@@ -115,12 +118,14 @@ def _advance(s, seconds):
     # An elapsed request returns at the earliest material boundary. Movement
     # runs the same scheduler but completes its already selected short route.
     candidates = [target, s['provision']['next_at']]
+    candidates.extend(travel_boundaries(s, now))
     candidates.extend(now + p['duration'] - p['worked'] for p in s['projects'].values() if p['status'] == 'active')
     candidates.extend(m['arrive_at'] for m in s['migrations'].values() if m['status'] == 'transit')
     end = min(candidates)
     assert end > now
     delta = end - now
     s['elapsed_time']['seconds'] = end
+    advance_travel(s, delta, s['clock'] if causal_at is None else causal_at)
     for key, project in s['projects'].items():
         if project['status'] != 'active': continue
         h = project['household']
@@ -199,7 +204,7 @@ def operate_settlement_action(core, s, at, p):
             s['stock_accounts'][household]['site'] = 'route:' + site + '-' + destination
         # A route is already selected. Process intermediate boundaries before arrival.
         remaining = s['settlement_model']['travel_seconds']
-        while remaining: remaining -= _advance(s, remaining)
+        while remaining: remaining -= _advance(s, remaining, causal_at=at)
         s['actors'][actor]['current']['location'] = destination
         if 'camp' not in s['settlements']:
             for member in s['households'][household]['members']:
@@ -252,7 +257,7 @@ def operate_settlement_action(core, s, at, p):
         s['stock_accounts']['oren-home']['site'] = 'route:commons-clearing'
         message = 'Oren departs with private supplies. Membership and local service demand change only on arrival.'
     elif action == 'wait_hour':
-        delta = _advance(s, 3600)
+        delta = _advance(s, 3600, causal_at=at)
         message = f'{delta} elapsed seconds pass. You retain control at this process boundary.'
     else:
         message = 'You inspect the local situation.'
@@ -302,4 +307,6 @@ def execute(world, request_id, actor, action, source_ref):
         world.apply(event['id'], event['at'], event['op'], **event['params'])
     except (InvalidEvent, AssertionError, KeyError, TypeError, ValueError) as err:
         raise InvalidEvent(SAFE_FAILURE) from err
-    return {'event_id': event['id'], 'certificate': certificate}
+    from offline_responses import render_receipt
+    return {'event_id': event['id'], 'certificate': certificate,
+            'presentation': render_receipt(world, actor, event['id'])}

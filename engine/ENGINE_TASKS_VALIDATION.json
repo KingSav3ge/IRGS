@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "target_iteration": "IRGS 3.4.0 — in development",
+  "base_commit": "8234044c089131314019ecaf6799a2f08028a3f8",
+  "status": "PASS_SCOPED_ENGINE_TASKS_AND_OFFLINE_RESPONSES_WITH_LIMITS",
+  "new_core_operations": {
+    "continue_player_process": "CoreWorld work/travel/observation continuation",
+    "execute_local_communication": "CoreWorld evidence/obligation/stock transfer"
+  },
+  "new_named_cases": {
+    "test_process_runtime.py": [
+      "test_parent_stays_nonterminal_then_work_finishes_once_across_phase_reload",
+      "test_pause_resume_does_not_repeat_booking_or_elapsed_work",
+      "test_cancel_retains_physical_project_and_new_explicit_resume_uses_existing_work",
+      "test_partial_travel_moves_actual_people_and_goods_without_teleporting_on_pause",
+      "test_existing_wait_advances_the_same_journey_and_produces_received_arrival",
+      "test_atomic_and_phased_travel_have_the_same_physical_result",
+      "test_reserved_traveller_cannot_start_another_walk",
+      "test_observation_publishes_knowledge_only_after_the_selected_duration",
+      "test_observation_reservation_blocks_another_physical_scene_action",
+      "test_unselected_elapsed_axis_or_rule_source_cannot_start_work",
+      "test_revoked_permission_holds_work_without_partial_consumption_and_resume_rechecks",
+      "test_unsupported_span_or_stale_phase_is_atomic",
+      "test_changed_selected_rule_refuses_continuation",
+      "test_explicit_acceptance_and_actor_control_are_required",
+      "test_lost_ack_and_host_restart_recover_original_phase_receipt",
+      "test_restore_fences_old_phase_but_new_request_continues_saved_progress",
+      "test_concurrent_delivery_commits_one_phase_and_one_elapsed_span",
+      "test_status_is_a_received_record_and_does_not_peek_at_remote_progress",
+      "test_model_context_receives_only_owned_committed_phase_projection",
+      "test_independent_evidence_and_process_advance_share_a_valid_frontier"
+    ],
+    "test_communication_runtime.py": [
+      "test_preparation_changes_nothing_and_speech_remains_attributed_testimony",
+      "test_words_of_acceptance_do_not_purchase_transfer_or_accept_an_offer",
+      "test_explicit_acceptance_transfers_conserved_stock_once_and_grounds_presentation",
+      "test_malformed_or_changed_terms_do_not_change_original_semantic_payload",
+      "test_insufficient_stock_and_protected_seed_reject_atomically_without_partial_information",
+      "test_revoked_authority_and_lost_offerer_control_revalidate_on_acceptance",
+      "test_withdraw_decline_and_counteroffer_preserve_distinct_meanings",
+      "test_missing_selected_channel_or_remote_recipient_cannot_invent_reception",
+      "test_no_explicit_acceptance_or_foreign_view_is_authorized",
+      "test_lost_acknowledgment_and_restore_preserve_receipt_without_repeating_transfer",
+      "test_concurrent_delivery_accepts_once",
+      "test_late_evidence_collision_rolls_back_transfer_and_retains_attempted_dependencies",
+      "test_competing_acceptances_have_no_arrival_order_resource_winner"
+    ],
+    "test_inference_accounting.py": [
+      "test_final_charge_releases_only_reviewed_difference_without_changing_campaign_or_attempt",
+      "test_missing_permission_evidence_rate_or_finality_cannot_refund_uncertainty",
+      "test_inflight_or_legacy_uncertainty_cannot_be_reclassified_free",
+      "test_reported_tokens_or_error_never_automatically_mean_zero_charge",
+      "test_overrun_is_retained_and_blocks_new_admission",
+      "test_concurrent_reconciliation_is_idempotent_and_changed_final_value_conflicts",
+      "test_new_admission_uses_actual_reviewed_charge_plus_remaining_reservations",
+      "test_diagnostics_require_operator_access",
+      "test_large_reviewed_overruns_remain_exact_and_block_admission"
+    ],
+    "test_offline_responses.py": [
+      "test_all_338_variants_and_15_recipes_format_without_dispatch",
+      "test_default_scene_result_needs_no_key_transport_or_network",
+      "test_old_receipt_is_identical_after_more_actions_restart_and_changed_hidden_state",
+      "test_wording_variants_do_not_rewrite_exact_committed_observations",
+      "test_actor_control_foreign_receipts_unknown_events_and_stale_scope_fail_closed",
+      "test_no_cross_actor_or_world_response_cache",
+      "test_missing_or_invalid_library_retains_literal_receipt_without_paid_fallback",
+      "test_rise_52_drafts_remain_editable_without_stock_or_permission_feasibility_filter",
+      "test_scene_drafts_keep_exact_authored_text_and_blocked_options",
+      "test_settlement_receipts_do_not_mislabel_cumulative_time_as_action_time",
+      "test_nonterminal_phase_text_replay_uses_received_boundary_not_live_progress",
+      "test_phase_observation_only_prints_new_knowledge_at_completion",
+      "test_speech_negation_braces_html_and_4096_characters_remain_attributed_testimony",
+      "test_offer_words_do_not_accept_and_only_actual_fulfillment_is_presented",
+      "test_library_schema_rejects_unsafe_templates_duplicate_fields_and_missing_anchor",
+      "test_composition_rejects_mixed_actors_snapshots_intentions_conflicts_and_missing_receipt",
+      "test_host_status_keeps_general_intentions_unresolved_and_hides_private_diagnoses"
+    ]
+  },
+  "additional_dictionary_cases": 3,
+  "new_tests_total": 62,
+  "runtime": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux"
+  },
+  "checks": {
+    "focused": {
+      "tests": 217,
+      "status": "PASS",
+      "command": "python -B -m unittest test_process_runtime test_communication_runtime test_inference_accounting test_r9_collections test_settlement test_solo_lifecycle test_solo_provider test_openai_proposals test_solo_rise test_scene_actions test_player_actions test_work_recovery test_rejected_dependencies test_offline_responses -q (runtime cwd)"
+    },
+    "full_runtime": {
+      "status": "PASS_WITH_ONE_EXISTING_PRIVATE_FIXTURE_SKIP",
+      "tests": 645,
+      "passed": 644,
+      "skipped": 1,
+      "skip_reason": "historical local save not packaged",
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -q"
+    },
+    "catalog_r00": {
+      "cases": 10,
+      "skipped": 0,
+      "status": "PASS",
+      "report": "engine/SOLO_CATALOG_VALIDATION.json"
+    },
+    "engine_integrity": {
+      "status": "PASS"
+    },
+    "kira_canon": {
+      "status": "PASS"
+    },
+    "offline_responses": {
+      "status": "PASS",
+      "tests": 17,
+      "passed": 17,
+      "skipped": 0,
+      "variants": 338,
+      "recipes": 15,
+      "report": "engine/OFFLINE_RESPONSES_VALIDATION.json"
+    },
+    "active_doc_links": {
+      "status": "PASS",
+      "documents": 10,
+      "local_links": 107,
+      "historical_evidence_links": "Retargeted to existing joined-repository records"
+    },
+    "diff_whitespace": {
+      "status": "PASS",
+      "configuration": "core.whitespace=cr-at-eol"
+    }
+  },
+  "implemented_scope": {
+    "DEV-06–DEV-08": "Dictionary copy/comparison/union/clear/popitem observation; actual new Core success/rejection reads; independent frontier and competing offers with no arrival-order winner",
+    "DEV-09–DEV-11": "Nonterminal parents, immutable phase identities, selected spans, pauses/resumes/cancellation, actual reservations/conservation, CAS/restart/lost-ack/restore checks",
+    "DEV-12–DEV-14": "Selected travel with people/goods in transit; selected observation duration with no premature knowledge; received-only status and model context",
+    "DEV-15–DEV-17": "Selected local channels, attributed testimony, offers/withdrawal/decline/counteroffers, explicit conserved fulfillment and grounded structural presentation",
+    "AIP accounting": "Operator-authorized immutable reviewed final charges, rate provenance, exact replay, unknown ceilings, atomic admission and overrun holds",
+    "Engine offline responses": "Bundled 338 variants and 15 recipes, actor/receipt-based default result presentation, editable drafts, exact-source fallback; rendering needs no provider, key, account, inference budget or network"
+  },
+  "actual_effect_evidence": {
+    "process_handler": "Core continue_player_process plus existing settlement scheduler/scene handler",
+    "work": "One existing shelter project, 3600 worked seconds, three founder timber consumed once; pause/cancel/new resume retains actual work",
+    "travel": "Existing 300-second selected route; 100+100+100 matches atomic movement of people and goods",
+    "observation": "Existing three-second authored observation reveals knowledge once, only at completion",
+    "communication": "Actual Core transfer_stock after current mandate/free-stock checks; testimony remains testimony",
+    "late_failure": "Evidence collision after attempted transfer rolls back all stock/offer writes and retains rejected dependencies",
+    "accounting": "Synthetic final-charge evidence only; no provider bill, account fee or live model measured",
+    "pending_request_recovery": "Exact serialized typed commands reload from temporary pending-request files after lost acknowledgments; Core replay returns the original receipt.",
+    "elapsed_axis": "Unbound/unsourced scene elapsed axes reject before process progress; no scene/settlement time mapping is inferred.",
+    "large_charges": "Exact integer aggregation retains reviewed overruns beyond a single SQLite integer and blocks new inference admission without rounding.",
+    "testimony_projection": "Received model records retain the actual local speaker; grounded presentation retains speaker, recipient, source and causal receipt time without promoting testimony to truth.",
+    "offline_responses": "Presentation leaves Core state unchanged, preserves blocked outcomes/negation/testimony and original received phase facts, refuses foreign/stale contexts and never dispatches a provider"
+  },
+  "information_boundary": "Received phase projections omit raw processes/projects/stocks/journal/rule and parameter hashes. Reception is local and attributed. No oracle enters model input.",
+  "source_sha256": {
+    "core_world.py": "11e36bee7f411bbf7c2f54b01d0d401e6c50b11106fd91a4ffb3c4656b0c27d6",
+    "process_runtime.py": "a3e38e58bd603be6f655085cce1a346152a391a8b0617b13381f1edae284adaf",
+    "communication_runtime.py": "8c1f65fcadcbfc1ad8c26833d3d66f7b09ec732f09028bcfd521da5fb57b2567",
+    "inference_accounting.py": "a3331784b88d5d24a73e7b60f63fc307f08d6885e5a635c256d54e5de5b2cf2c",
+    "r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "solo_actions.py": "3d07a615911d0deac3d5b0fc8744015ab8efaa2e5e454877a1ab45ef543e8363",
+    "solo_provider.py": "b9e425be670690b550c0de05b83b8269865ceab3f1151c387d602d1895a7a1f3",
+    "test_process_runtime.py": "b4d193fc35c45abf27c01583850b5ed20f7650bb737232d8797146f2734783cb",
+    "test_communication_runtime.py": "bb546ffe702ef86a47696248cd993599b27a845eb8baf339437e6ae8b6c34d3a",
+    "test_inference_accounting.py": "7aee5d0123b5b3a8bb94b87ecac222279427bb0e4a5905b91b292c388401ff13",
+    "test_r9_collections.py": "7096f0ec3736f9383e43edfc8325d3421a18a11156d83dfdbc9f41e29a426715",
+    "offline_responses.py": "a33d1c4a034d96b95ee93d85720b49aec2a79a74aca7bfd25bf9f5d17aaec277",
+    "routine_format.py": "5d1195e7b4db5aab56ab04daf4cd342b7be82f8d5fd6fd65cb9e8c3928ad64c3",
+    "test_offline_responses.py": "e8e8e2bef0e88511279a55690da2077ccfa64e8cea9ceecdb3bf01eee5e7d200"
+  },
+  "prior_qualified_components": {
+    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
+    "app": "277554aac21a092b8a55562309da274bbe74a3af",
+    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
+  },
+  "tested_fixture_catalog": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
+  "new_app_ui_or_joined_qualification": "NOT_EXECUTED; separate owning workstreams",
+  "operation_register": "Prior joined capture retained under its original identity; new Core operations require coordinator recapture",
+  "user_saves_used": false,
+  "live_calls": 0,
+  "human_model_cases": 0,
+  "remaining": [
+    "New App controls/adapters, exact pins and coordinator joined qualification",
+    "Unselected return-trip/search/obligation rules; general freeform/combat and full C2 acceptance",
+    "General NPC/voice/semantic/model evaluation and sustained institution rules",
+    "Real billing ingestion, corrections and account/unit review",
+    "Separately approved live credential, eligible model, workload/policy and finite budget",
+    "Distributed persistence and platform-specific qualification"
+  ],
+  "response_data_sha256": {
+    "engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e",
+    "PROVENANCE.json": "3868b157d950637af84b20ef1e846ec21b3bf242c4d577dba83ac3b31cc43f76"
+  },
+  "response_text_catalog_source": "0063faea59c3294de15580fe5917cc03c89f0ad8",
+  "render_provider_calls": 0,
+  "render_model_tokens": 0
+}

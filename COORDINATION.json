@@ -36,9 +36,9 @@
     }
   },
   "baseline_components": {
-    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
-    "app": "277554aac21a092b8a55562309da274bbe74a3af",
-    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
+    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
   },
   "cycle_start_components": {
     "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
@@ -100,8 +100,8 @@
       "scope": "Bounded shared offline development increment; no universal mechanics/live inference claim."
     }
   },
-  "integration_status": "approved_pending_source_import",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_shared_offline_development_increment",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
     "engine": "Shared Core lifecycle/capability/receipt contracts and offline responses across actual supported campaign adapters; continue stable DEV gaps.",
@@ -207,10 +207,14 @@
     "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
   },
   "reviewed_at_utc": "2026-10-25T06:01:07.560677+00:00",
-  "completed_components": {},
+  "completed_components": {
+    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+  },
   "source_input_sha256": "52ad60013f81af2af36090540ec978d66729ad11c1b9d376f96c5e21cac0214b",
   "qualified_candidate_commit": "bb19047247af8eda72445c4bef3116494ccde888",
-  "integrated_at_utc": "2026-10-24T13:11:49.647084+00:00",
+  "integrated_at_utc": "2026-10-25T06:01:21.781489+00:00",
   "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
     "Campaign capability/event adapters for the complete shared response depot",

@@ -133,8 +133,12 @@ not a verified bill; actual charges remain unknown. Reservation units are an
 operator-defined worst-case ceiling for the approved input/output limits and
 versioned prices, separate from campaign money/resources.
 
-Reservations remain consumed for this ledger's lifetime, including failures,
-timeouts and cancellations. No automatic refund/reconciliation exists. Concurrent
+Unreconciled reservations remain consumed, including failures, timeouts and
+cancellations. No automatic refund/reconciliation exists. An explicitly authorized
+operator can record a reviewed immutable final charge through
+[inference accounting](CONTINUATION_COMMUNICATION_API.md#reviewed-inference-charges).
+Admission then counts that known charge plus all remaining unknown ceilings;
+missing/uncertain bills are never released as zero. Concurrent
 claims atomically check budget and in-flight limits. A timed-out/cancelled worker
 retains its concurrency slot until it actually finishes; a late completion may
 record accounting but cannot publish a proposal. A crash with an ambiguous attempt

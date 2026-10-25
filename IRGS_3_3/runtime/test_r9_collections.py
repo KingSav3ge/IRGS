@@ -9,6 +9,41 @@ from r9_runtime import observe
 
 
 class CollectionObservationTests(unittest.TestCase):
+    def test_dictionary_copy_and_equality_retain_decision_reads_without_writes(self):
+        trace=Trace();state=TracedDict({'record':{'quantity':2}},trace)
+        record=state['record']
+        copied=record.copy()
+        self.assertEqual(copied,{'quantity':2})
+        self.assertTrue(record=={'quantity':2})
+        self.assertFalse(record!={'quantity':2})
+        self.assertIn(('record',),trace.reads)
+        self.assertEqual(trace.writes,set())
+        from r8_dependencies import conflicts
+        self.assertTrue(conflicts({'reads':list(trace.reads),'writes':[]},
+            {'reads':[],'writes':[('record','quantity')]}))
+
+    def test_dictionary_union_observes_both_sources_and_mutates_only_in_place(self):
+        trace=Trace();state=TracedDict({'left':{'a':1},'right':{'b':2}},trace)
+        left,right=state['left'],state['right']
+        self.assertEqual(left|right,{'a':1,'b':2})
+        self.assertEqual({'z':0}|left,{'z':0,'a':1})
+        self.assertIn(('left',),trace.reads);self.assertIn(('right',),trace.reads)
+        self.assertEqual(trace.writes,set())
+        left|=right
+        self.assertEqual(plain(left),{'a':1,'b':2})
+        self.assertIn(('left','b'),trace.writes)
+
+    def test_dictionary_popitem_retains_order_dependency_and_clear_records_removals(self):
+        trace=Trace();state=TracedDict({'rows':{'first':1,'last':2}},trace)
+        rows=state['rows']
+        self.assertEqual(rows.popitem(),('last',2))
+        self.assertIn(('rows',),trace.reads);self.assertIn(('rows','last'),trace.writes)
+        rows.clear();self.assertEqual(plain(rows),{})
+        self.assertIn(('rows',),trace.writes)
+        trace.writes.clear()
+        with self.assertRaises(KeyError):rows.popitem()
+        self.assertEqual(trace.writes,set())
+
     def wrapped(self, values=None):
         trace = Trace()
         return TracedDict({'rows': [3, 1, 2] if values is None else values}, trace), trace

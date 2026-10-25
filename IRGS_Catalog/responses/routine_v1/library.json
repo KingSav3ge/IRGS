@@ -1,0 +1,1457 @@
+{
+  "schema_version": 1,
+  "library_id": "irgs-routine-responses-v1",
+  "version": "1.0.0",
+  "language": "en",
+  "source_ref": "authored:irgs-catalog:routine-responses:v1",
+  "rights": {
+    "authorship": "original-authored-presentation-text",
+    "permitted_use": [
+      "local-presentation",
+      "synthetic-evaluation"
+    ],
+    "imported_material": "none",
+    "external_processing": "host-policy-required"
+  },
+  "authority": {
+    "presentation_only": true,
+    "campaign_effects": false,
+    "player_drafts_require_explicit_submission": true,
+    "provider_dispatch": false
+  },
+  "families": [
+    {
+      "id": "draft.ready",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "draft",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "Your draft is ready to review.",
+        "You can review your draft.",
+        "Your draft is available for editing.",
+        "Review the draft when you are ready."
+      ]
+    },
+    {
+      "id": "proposal.ready",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "proposal_ready",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "An action proposal is ready for review.",
+        "You can review the proposed action.",
+        "The proposed action is available to inspect.",
+        "Review the action proposal before submitting it."
+      ]
+    },
+    {
+      "id": "proposal.pending",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "proposal_pending",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "Your proposal request is pending.",
+        "The proposal request is still pending.",
+        "A proposal result is not available yet.",
+        "The proposal is awaiting a result."
+      ]
+    },
+    {
+      "id": "request.acceptance",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "acceptance_required",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "Confirm the proposed action before it is submitted.",
+        "The proposed action needs your explicit confirmation.",
+        "Review and confirm the action to submit it.",
+        "Your confirmation is required to submit this action."
+      ]
+    },
+    {
+      "id": "request.unresolved",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "declared_not_resolved",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "Your intention is recorded and remains unresolved.",
+        "The declaration is recorded; its outcome remains unresolved.",
+        "Your declared intention is retained without a resolved outcome.",
+        "The intention is on record, with resolution still pending."
+      ]
+    },
+    {
+      "id": "request.unavailable",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "unavailable",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This request is currently unavailable.",
+        "The request cannot be completed at present.",
+        "A result is unavailable for this request.",
+        "This request cannot currently be processed."
+      ]
+    },
+    {
+      "id": "request.denied",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "denied",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This request was not accepted.",
+        "The requested action could not be accepted.",
+        "This submission was rejected.",
+        "The action request was declined."
+      ]
+    },
+    {
+      "id": "request.unsupported",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "unsupported_action",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This action is not supported for this request.",
+        "The current request does not support this action.",
+        "No supported action choice matches this proposal.",
+        "This action cannot be resolved through this request."
+      ]
+    },
+    {
+      "id": "request.stale",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "stale_state",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This request refers to an earlier campaign state.",
+        "The campaign has changed since this request was prepared.",
+        "This submission uses an older campaign revision.",
+        "The request was prepared against an earlier revision."
+      ]
+    },
+    {
+      "id": "request.cancelled",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "cancelled",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This request is cancelled.",
+        "The request has been cancelled.",
+        "This submission is marked as cancelled.",
+        "The request is now in cancelled status."
+      ]
+    },
+    {
+      "id": "request.timeout",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "deadline_exceeded",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "No usable reply arrived before the request deadline.",
+        "The request deadline passed without a usable reply.",
+        "A usable response was not available before the deadline.",
+        "This request reached its deadline without a usable result."
+      ]
+    },
+    {
+      "id": "request.invalid_output",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "malformed_output",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The returned response could not be validated.",
+        "The response did not pass the required checks.",
+        "The returned content was not a valid response.",
+        "The response could not be used because validation failed."
+      ]
+    },
+    {
+      "id": "request.budget",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "budget_exhausted",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The configured request limit has been reached.",
+        "This request exceeds the available configured allowance.",
+        "The current allowance cannot admit this request.",
+        "The configured allowance is insufficient for this request."
+      ]
+    },
+    {
+      "id": "request.unconfigured",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "unconfigured",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "AI assistance is not connected.",
+        "AI assistance has not been configured.",
+        "No configured AI assistance is available.",
+        "An AI assistance connection is unavailable."
+      ]
+    },
+    {
+      "id": "request.busy",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "inflight_limit",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The configured simultaneous-request limit has been reached.",
+        "The current in-flight limit prevents another request.",
+        "The configured limit cannot admit another simultaneous request.",
+        "Another request cannot be admitted within the current concurrency limit."
+      ]
+    },
+    {
+      "id": "request.expired",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "expired",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This proposal has expired.",
+        "The proposal is no longer current.",
+        "This draft proposal has reached its expiry.",
+        "The validity period for this proposal has ended."
+      ]
+    },
+    {
+      "id": "request.missing_fact",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "missing_fact",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "A required fact has not been established.",
+        "The request needs an established fact that is currently missing.",
+        "A required fact is unavailable for this request.",
+        "This request lacks a required established fact."
+      ]
+    },
+    {
+      "id": "request.missing_rule",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "missing_rule",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "A required resolution rule is unavailable.",
+        "This request needs a rule that has not been supplied.",
+        "No selected rule is available for this resolution.",
+        "The required rule has not been established for this request."
+      ]
+    },
+    {
+      "id": "request.changed_review",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "acceptance_changed",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The acceptance differs from the reviewed proposal.",
+        "The submitted confirmation does not match the proposal.",
+        "The confirmed intention or proposal has changed.",
+        "The acceptance no longer matches the reviewed request."
+      ]
+    },
+    {
+      "id": "request.pending_declaration",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "pending_declaration",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "You have an unresolved declaration.",
+        "An earlier declaration remains unresolved.",
+        "A declaration is still awaiting resolution or withdrawal.",
+        "Your prior declaration is still open."
+      ]
+    },
+    {
+      "id": "request.saving",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "saving",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The host is saving this result.",
+        "This result is being written to the campaign record.",
+        "The result is awaiting completion of its save.",
+        "Saving of this result is in progress."
+      ]
+    },
+    {
+      "id": "request.save_failed",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "save_failed",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The save could not be completed.",
+        "The host could not finish saving this result.",
+        "This result could not be written successfully.",
+        "The save attempt did not complete successfully."
+      ]
+    },
+    {
+      "id": "request.saved",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "saved",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The result is saved.",
+        "This result has been saved.",
+        "The campaign record contains the saved result.",
+        "The result is retained in the campaign record."
+      ]
+    },
+    {
+      "id": "recovery.lookup",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "lookup_pending",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The saved result is being retrieved.",
+        "A saved-result lookup is in progress.",
+        "The host is looking up the existing result.",
+        "Retrieval of the recorded result is pending."
+      ]
+    },
+    {
+      "id": "recovery.cached",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "cached_result",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This is the previously saved result.",
+        "The existing result has been retrieved.",
+        "The result below was already saved.",
+        "You are viewing the original saved result."
+      ]
+    },
+    {
+      "id": "recovery.unknown",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "unknown_request",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "No saved result was found for this request.",
+        "This request has no available saved result.",
+        "A recorded result could not be found for this identity.",
+        "No result is available under this request identity."
+      ]
+    },
+    {
+      "id": "recovery.in_doubt",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "in_progress_or_in_doubt",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The earlier attempt has not been reconciled.",
+        "The prior attempt remains in progress or uncertain.",
+        "The host cannot yet establish the earlier attempt’s final status.",
+        "The previous attempt remains unresolved in recovery."
+      ]
+    },
+    {
+      "id": "recovery.restored",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "restored",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "The selected campaign record has been restored.",
+        "The selected saved record is restored.",
+        "Restoration of the selected campaign record is complete.",
+        "The restored campaign record is available."
+      ]
+    },
+    {
+      "id": "recovery.reload",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "reload_required",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "Reload the current campaign view before submitting another action.",
+        "Refresh the campaign view before your next submission.",
+        "Load the current view before preparing a new action.",
+        "Retrieve the latest campaign view before submitting again."
+      ]
+    },
+    {
+      "id": "recovery.read_only",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "read_only",
+      "role": "lead",
+      "slots": {},
+      "variants": [
+        "This view is read-only.",
+        "You are viewing a read-only record.",
+        "This record is available for inspection only.",
+        "The current view permits inspection without editing."
+      ]
+    },
+    {
+      "id": "recovery.original_identity",
+      "domain": "recovery",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "retry_existing",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "Use the original request identity to retrieve its result.",
+        "Recover this result using the same request identity.",
+        "Keep the original request identity for result recovery.",
+        "Retrieve the existing result under its original identity."
+      ]
+    },
+    {
+      "id": "receipt.exact",
+      "domain": "request",
+      "channel": "system",
+      "source_kind": "committed_receipt",
+      "state": "committed",
+      "role": "body",
+      "slots": {
+        "receipt_text": "source_text"
+      },
+      "variants": [
+        "{receipt_text}"
+      ]
+    },
+    {
+      "id": "record.received",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "received",
+      "role": "body",
+      "slots": {
+        "record_text": "source_text"
+      },
+      "variants": [
+        "Received record: {record_text}",
+        "You received this record: {record_text}",
+        "The received text states: {record_text}",
+        "This received record reads: {record_text}"
+      ]
+    },
+    {
+      "id": "record.testimony",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "testimony",
+      "role": "body",
+      "slots": {
+        "record_text": "source_text"
+      },
+      "variants": [
+        "Received testimony: {record_text}",
+        "You were told: {record_text}",
+        "The testimony you received states: {record_text}",
+        "This account was given to you: {record_text}"
+      ]
+    },
+    {
+      "id": "record.uncertain",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "uncertain",
+      "role": "body",
+      "slots": {
+        "record_text": "source_text"
+      },
+      "variants": [
+        "Uncertain received account: {record_text}",
+        "This received account remains uncertain: {record_text}",
+        "Received information, marked uncertain: {record_text}",
+        "The following received account is uncertain: {record_text}"
+      ]
+    },
+    {
+      "id": "record.superseded",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "superseded",
+      "role": "body",
+      "slots": {
+        "record_text": "source_text"
+      },
+      "variants": [
+        "Superseded record: {record_text}",
+        "This earlier record is marked superseded: {record_text}",
+        "The superseded account reads: {record_text}",
+        "This is the text of a superseded record: {record_text}"
+      ]
+    },
+    {
+      "id": "knowledge.unknown",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "unknown",
+      "role": "body",
+      "slots": {
+        "subject": "label"
+      },
+      "variants": [
+        "Your view does not establish {subject}.",
+        "No established information about {subject} is available in this view.",
+        "This view leaves {subject} unknown.",
+        "The available view provides no established answer about {subject}."
+      ]
+    },
+    {
+      "id": "record.received_time",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "received",
+      "role": "detail",
+      "slots": {
+        "received_at": "integer"
+      },
+      "variants": [
+        "Received at causal sequence {received_at}.",
+        "The receipt sequence is {received_at}.",
+        "Its recorded receipt sequence is {received_at}.",
+        "This record was received at sequence {received_at}."
+      ]
+    },
+    {
+      "id": "record.source",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "received",
+      "role": "detail",
+      "slots": {
+        "source_label": "label"
+      },
+      "variants": [
+        "Source: {source_label}.",
+        "Recorded source: {source_label}.",
+        "This record identifies its source as {source_label}.",
+        "The source label is {source_label}."
+      ]
+    },
+    {
+      "id": "record.status",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "received",
+      "role": "detail",
+      "slots": {
+        "status_label": "label"
+      },
+      "variants": [
+        "Record status: {status_label}.",
+        "The recorded status is {status_label}.",
+        "This record is labelled {status_label}.",
+        "Its source status is {status_label}."
+      ]
+    },
+    {
+      "id": "turn.next",
+      "domain": "navigation",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "waiting_for_player",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "What would you like to do next?",
+        "Choose your next intention when you are ready.",
+        "You can decide what to attempt next.",
+        "Your next decision is yours to make."
+      ]
+    },
+    {
+      "id": "draft.edit",
+      "domain": "navigation",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "editing",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "You can edit this intention before submitting it.",
+        "Adjust the draft to express what you want to attempt.",
+        "Review or edit the wording before submission.",
+        "Make any changes you want before submitting this draft."
+      ]
+    },
+    {
+      "id": "proposal.review",
+      "domain": "navigation",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "proposal_ready",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "Review the action and exact intention before confirming.",
+        "Check the proposed action against your intention before accepting.",
+        "Confirm only after reviewing the proposed action and wording.",
+        "Inspect both the action and the intention before you accept."
+      ]
+    },
+    {
+      "id": "actions.choose",
+      "domain": "navigation",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "listing",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "Choose a listed action or enter your own intention.",
+        "You can select a listed action or write your own intention.",
+        "Select an action to review, or describe your own approach.",
+        "Use a listed action or enter the approach you want to attempt."
+      ]
+    },
+    {
+      "id": "reference.inspect",
+      "domain": "navigation",
+      "channel": "system",
+      "source_kind": "host_status",
+      "state": "reference",
+      "role": "prompt",
+      "slots": {},
+      "variants": [
+        "You can inspect the source record for further detail.",
+        "Open the source record to examine its details.",
+        "The source record is available for closer inspection.",
+        "Inspect the underlying record when you need more detail."
+      ]
+    },
+    {
+      "id": "inventory.item",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "inventory_known",
+      "role": "detail",
+      "slots": {
+        "material": "label",
+        "quantity": "integer",
+        "unit": "label"
+      },
+      "variants": [
+        "{material}: {quantity} {unit}.",
+        "Recorded {material}: {quantity} {unit}.",
+        "The inspected amount of {material} is {quantity} {unit}.",
+        "Your current view lists {quantity} {unit} of {material}."
+      ]
+    },
+    {
+      "id": "inventory.available",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "inventory_known",
+      "role": "detail",
+      "slots": {
+        "material": "label",
+        "available": "integer",
+        "unit": "label"
+      },
+      "variants": [
+        "Available {material}: {available} {unit}.",
+        "The view lists {available} {unit} of {material} as available.",
+        "Available amount of {material}: {available} {unit}.",
+        "{material} available for use: {available} {unit}."
+      ]
+    },
+    {
+      "id": "inventory.reserved",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "inventory_known",
+      "role": "detail",
+      "slots": {
+        "material": "label",
+        "reserved": "integer",
+        "unit": "label"
+      },
+      "variants": [
+        "Reserved {material}: {reserved} {unit}.",
+        "The view records {reserved} {unit} of {material} as reserved.",
+        "Reserved amount of {material}: {reserved} {unit}.",
+        "{material} reserved for work: {reserved} {unit}."
+      ]
+    },
+    {
+      "id": "inventory.seed",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "inventory_known",
+      "role": "detail",
+      "slots": {
+        "seed": "integer"
+      },
+      "variants": [
+        "Protected seed grain: {seed}.",
+        "The recorded protected seed amount is {seed}.",
+        "Your view lists a protected seed amount of {seed}.",
+        "Grain retained as protected seed: {seed}."
+      ]
+    },
+    {
+      "id": "inventory.unknown_unit",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "unit_unknown",
+      "role": "detail",
+      "slots": {
+        "material": "label",
+        "quantity": "integer"
+      },
+      "variants": [
+        "{material}: {quantity}; its unit is not configured.",
+        "The view records {quantity} of {material}, with no configured unit.",
+        "Recorded amount of {material}: {quantity}. The unit is unconfigured.",
+        "{quantity} of {material} is recorded; the unit remains unspecified."
+      ]
+    },
+    {
+      "id": "inventory.not_visible",
+      "domain": "inventory",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "inventory_not_visible",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "This view does not expose an inventory.",
+        "No inventory is available for inspection in this view.",
+        "Inventory quantities are not shown in the current view.",
+        "The current view provides no inventory quantities."
+      ]
+    },
+    {
+      "id": "elapsed.action",
+      "domain": "time",
+      "channel": "system",
+      "source_kind": "committed_receipt",
+      "state": "committed",
+      "role": "detail",
+      "slots": {
+        "elapsed_seconds": "integer"
+      },
+      "variants": [
+        "Elapsed time for this action: {elapsed_seconds} seconds.",
+        "This action recorded {elapsed_seconds} elapsed seconds.",
+        "The committed elapsed span is {elapsed_seconds} seconds.",
+        "{elapsed_seconds} seconds elapsed during this action."
+      ]
+    },
+    {
+      "id": "elapsed.total",
+      "domain": "time",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "elapsed_known",
+      "role": "detail",
+      "slots": {
+        "total_seconds": "integer"
+      },
+      "variants": [
+        "Total elapsed time: {total_seconds} seconds.",
+        "The recorded elapsed total is {total_seconds} seconds.",
+        "This view shows {total_seconds} elapsed seconds in total.",
+        "Elapsed time on the selected axis totals {total_seconds} seconds."
+      ]
+    },
+    {
+      "id": "time.axis",
+      "domain": "time",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "elapsed_known",
+      "role": "detail",
+      "slots": {
+        "axis_label": "label"
+      },
+      "variants": [
+        "Elapsed-time axis: {axis_label}.",
+        "The selected elapsed-time axis is {axis_label}.",
+        "Time is reported on the {axis_label} axis.",
+        "The recorded elapsed axis is {axis_label}."
+      ]
+    },
+    {
+      "id": "time.sequence",
+      "domain": "time",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "sequence_known",
+      "role": "detail",
+      "slots": {
+        "sequence": "integer"
+      },
+      "variants": [
+        "Causal sequence: {sequence}.",
+        "The committed causal sequence is {sequence}.",
+        "This record is at causal sequence {sequence}.",
+        "Recorded sequence position: {sequence}."
+      ]
+    },
+    {
+      "id": "work.active",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "active",
+      "role": "body",
+      "slots": {
+        "worker": "label",
+        "project_label": "label"
+      },
+      "variants": [
+        "{worker} is working on {project_label}.",
+        "Active work: {project_label}, with {worker} assigned.",
+        "{project_label} is active; its recorded worker is {worker}.",
+        "The active project is {project_label}, worked by {worker}."
+      ]
+    },
+    {
+      "id": "work.paused",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "paused",
+      "role": "body",
+      "slots": {
+        "project_label": "label"
+      },
+      "variants": [
+        "{project_label} is paused.",
+        "Work on {project_label} is paused.",
+        "The recorded status of {project_label} is paused.",
+        "The project {project_label} remains paused."
+      ]
+    },
+    {
+      "id": "work.held",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "held",
+      "role": "body",
+      "slots": {
+        "project_label": "label"
+      },
+      "variants": [
+        "{project_label} is held.",
+        "Work on {project_label} is currently held.",
+        "The view marks {project_label} as held.",
+        "The recorded project status for {project_label} is held."
+      ]
+    },
+    {
+      "id": "work.complete",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "complete",
+      "role": "body",
+      "slots": {
+        "project_label": "label"
+      },
+      "variants": [
+        "{project_label} is complete.",
+        "The view records {project_label} as complete.",
+        "Work on {project_label} is marked complete.",
+        "The recorded project {project_label} has completed."
+      ]
+    },
+    {
+      "id": "work.progress",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "progress_known",
+      "role": "detail",
+      "slots": {
+        "worked_seconds": "integer",
+        "required_seconds": "integer"
+      },
+      "variants": [
+        "Recorded work: {worked_seconds} of {required_seconds} seconds.",
+        "Work progress is {worked_seconds}/{required_seconds} seconds.",
+        "The project records {worked_seconds} worked seconds against {required_seconds} required.",
+        "Completed work so far: {worked_seconds} seconds; required work: {required_seconds} seconds."
+      ]
+    },
+    {
+      "id": "work.reservation",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "reservation_known",
+      "role": "detail",
+      "slots": {
+        "quantity": "integer",
+        "unit": "label",
+        "material": "label"
+      },
+      "variants": [
+        "The project reserves {quantity} {unit} of {material}.",
+        "Reserved for this project: {quantity} {unit} of {material}.",
+        "Its recorded reservation is {quantity} {unit} of {material}.",
+        "The project’s reservation lists {quantity} {unit} of {material}."
+      ]
+    },
+    {
+      "id": "work.not_visible",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "project_not_visible",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "No project record is exposed in this view.",
+        "The current view does not show a project record.",
+        "A project record is not available in the current view.",
+        "This view provides no project record to inspect."
+      ]
+    },
+    {
+      "id": "work.worker",
+      "domain": "work",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "worker_known",
+      "role": "detail",
+      "slots": {
+        "worker": "label"
+      },
+      "variants": [
+        "Recorded worker: {worker}.",
+        "The project lists {worker} as its worker.",
+        "Its assigned worker is {worker}.",
+        "The recorded worker assignment is {worker}."
+      ]
+    },
+    {
+      "id": "location.current",
+      "domain": "settlement",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "location_known",
+      "role": "body",
+      "slots": {
+        "location_label": "label"
+      },
+      "variants": [
+        "Your recorded location is {location_label}.",
+        "The current view places you at {location_label}.",
+        "Location: {location_label}.",
+        "You are recorded at {location_label}."
+      ]
+    },
+    {
+      "id": "camp.name",
+      "domain": "settlement",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "camp_visible",
+      "role": "body",
+      "slots": {
+        "camp_name": "label"
+      },
+      "variants": [
+        "The camp shown here is {camp_name}.",
+        "This view identifies the camp as {camp_name}.",
+        "Camp: {camp_name}.",
+        "The visible camp record is named {camp_name}."
+      ]
+    },
+    {
+      "id": "camp.capacity",
+      "domain": "settlement",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "camp_visible",
+      "role": "detail",
+      "slots": {
+        "places": "integer"
+      },
+      "variants": [
+        "Completed shelter places: {places}.",
+        "The camp view lists {places} completed shelter places.",
+        "Recorded shelter capacity is {places} places.",
+        "{places} completed shelter places are shown."
+      ]
+    },
+    {
+      "id": "camp.shortfall",
+      "domain": "settlement",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "camp_visible",
+      "role": "detail",
+      "slots": {
+        "shortfall": "integer"
+      },
+      "variants": [
+        "Recorded shelter shortfall: {shortfall}.",
+        "The current shelter shortfall is {shortfall}.",
+        "The camp view shows a shelter shortfall of {shortfall}.",
+        "Shelter places still needed in this view: {shortfall}."
+      ]
+    },
+    {
+      "id": "camp.residents",
+      "domain": "settlement",
+      "channel": "system",
+      "source_kind": "actor_view",
+      "state": "camp_visible",
+      "role": "detail",
+      "slots": {
+        "residents": "integer"
+      },
+      "variants": [
+        "Recorded camp residents: {residents}.",
+        "The camp view lists {residents} residents.",
+        "The resident count shown for the camp is {residents}.",
+        "{residents} residents are recorded for this camp."
+      ]
+    },
+    {
+      "id": "permission.record",
+      "domain": "knowledge",
+      "channel": "system",
+      "source_kind": "received_record",
+      "state": "received",
+      "role": "body",
+      "slots": {
+        "record_text": "source_text"
+      },
+      "variants": [
+        "Permission record: {record_text}",
+        "The received permission record reads: {record_text}",
+        "Recorded permission text: {record_text}",
+        "Your received permission record states: {record_text}"
+      ]
+    },
+    {
+      "id": "player.request_grant",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "request_grant",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to ask Elin about founding permission.",
+        "I would like to ask Elin about a limited founding grant.",
+        "I would like to discuss founding permission with Elin.",
+        "I would like to request information about a founding grant from Elin."
+      ]
+    },
+    {
+      "id": "player.accept_grant",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "accept_grant",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to accept the offered limited grant.",
+        "I would like to accept the offered camp and temporary-dwelling grant.",
+        "I would like to agree to the offered limited founding grant.",
+        "I would like to accept the limited grant that was offered."
+      ]
+    },
+    {
+      "id": "player.walk_clearing",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "walk_clearing",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to walk to the clearing.",
+        "I would like to head to the clearing on foot.",
+        "I would like to make the walk to the clearing.",
+        "I would like to go on foot to the clearing."
+      ]
+    },
+    {
+      "id": "player.walk_commons",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "walk_commons",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to walk to the commons.",
+        "I would like to head to the commons on foot.",
+        "I would like to make the walk to the commons.",
+        "I would like to go on foot to the commons."
+      ]
+    },
+    {
+      "id": "player.found",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "found",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to establish my named camp.",
+        "I would like to found the camp under my accepted grant.",
+        "I would like to attempt to establish my camp here.",
+        "I would like to set up my named camp under the accepted permission."
+      ]
+    },
+    {
+      "id": "player.build",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "build",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to start building the shelter myself.",
+        "I would like to begin the shelter work myself.",
+        "I would like to attempt the shelter construction with my household inputs.",
+        "I would like to take on the shelter work myself."
+      ]
+    },
+    {
+      "id": "player.delegate",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "delegate",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to ask Rowan to build the shelter.",
+        "I would like to request Rowan’s agreed shelter work.",
+        "I would like to ask Rowan to undertake the bounded shelter task.",
+        "I would like to request that Rowan begin the shelter project."
+      ]
+    },
+    {
+      "id": "player.pause",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "pause",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to pause the shelter project.",
+        "I would like to put the shelter work on pause.",
+        "I would like to request a pause in the shelter work.",
+        "I would like to pause the ongoing shelter work."
+      ]
+    },
+    {
+      "id": "player.resume",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "resume",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to resume the shelter project.",
+        "I would like to continue the paused shelter work.",
+        "I would like to request that the paused shelter work resume.",
+        "I would like to restart work on the paused shelter project."
+      ]
+    },
+    {
+      "id": "player.invite",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "invite",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to discuss moving to the camp with Oren.",
+        "I would like to invite Oren to discuss moving to the camp.",
+        "I would like to talk with Oren about a possible move to my camp.",
+        "I would like to ask Oren about joining the established camp."
+      ]
+    },
+    {
+      "id": "player.arrange_departure",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "arrange_departure",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to arrange Oren’s agreed departure.",
+        "I would like to discuss departure arrangements after Oren’s agreement.",
+        "I would like to arrange the agreed move with Oren.",
+        "I would like to request the agreed departure arrangements for Oren."
+      ]
+    },
+    {
+      "id": "player.wait_hour",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "wait_hour",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to let up to one hour pass, stopping at the next process boundary.",
+        "I would like to wait for up to an hour or the next process boundary.",
+        "I would like to allow time to pass for up to one hour, subject to process boundaries.",
+        "I would like to continue for up to an hour, returning control at the next boundary."
+      ]
+    },
+    {
+      "id": "player.inspect",
+      "domain": "player",
+      "channel": "player_draft",
+      "source_kind": "player_request",
+      "state": "inspect",
+      "role": "body",
+      "slots": {},
+      "variants": [
+        "I would like to inspect my surroundings.",
+        "I would like to look over the local situation.",
+        "I would like to review the local committed situation.",
+        "I would like to inspect the current local records and surroundings."
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "routine.result",
+      "families": [
+        "receipt.exact",
+        "elapsed.action",
+        "turn.next"
+      ],
+      "required": [
+        "receipt.exact"
+      ]
+    },
+    {
+      "id": "routine.recovered",
+      "families": [
+        "recovery.cached",
+        "receipt.exact",
+        "elapsed.action"
+      ],
+      "required": [
+        "recovery.cached",
+        "receipt.exact"
+      ]
+    },
+    {
+      "id": "routine.proposal",
+      "families": [
+        "proposal.ready",
+        "proposal.review"
+      ],
+      "required": [
+        "proposal.ready"
+      ]
+    },
+    {
+      "id": "routine.unresolved",
+      "families": [
+        "request.unresolved",
+        "draft.edit"
+      ],
+      "required": [
+        "request.unresolved"
+      ]
+    },
+    {
+      "id": "routine.inventory",
+      "families": [
+        "inventory.item",
+        "inventory.available",
+        "inventory.reserved",
+        "inventory.seed"
+      ],
+      "required": [
+        "inventory.item"
+      ]
+    },
+    {
+      "id": "routine.work_active",
+      "families": [
+        "work.active",
+        "work.progress",
+        "work.reservation"
+      ],
+      "required": [
+        "work.active"
+      ]
+    },
+    {
+      "id": "routine.work_paused",
+      "families": [
+        "work.paused",
+        "work.progress"
+      ],
+      "required": [
+        "work.paused"
+      ]
+    },
+    {
+      "id": "routine.work_complete",
+      "families": [
+        "work.complete",
+        "work.progress"
+      ],
+      "required": [
+        "work.complete"
+      ]
+    },
+    {
+      "id": "routine.camp",
+      "families": [
+        "camp.name",
+        "camp.capacity",
+        "camp.residents",
+        "camp.shortfall"
+      ],
+      "required": [
+        "camp.name"
+      ]
+    },
+    {
+      "id": "routine.received",
+      "families": [
+        "record.received",
+        "record.received_time",
+        "record.source",
+        "record.status",
+        "reference.inspect"
+      ],
+      "required": [
+        "record.received"
+      ]
+    },
+    {
+      "id": "routine.testimony",
+      "families": [
+        "record.testimony",
+        "reference.inspect"
+      ],
+      "required": [
+        "record.testimony"
+      ]
+    },
+    {
+      "id": "routine.unconfigured",
+      "families": [
+        "request.unconfigured",
+        "actions.choose"
+      ],
+      "required": [
+        "request.unconfigured"
+      ]
+    }
+  ]
+}

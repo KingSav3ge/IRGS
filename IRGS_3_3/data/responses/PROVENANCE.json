@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "catalog_repository": "KingSav3ge/IRGS-Catalog",
+  "catalog_commit": "0063faea59c3294de15580fe5917cc03c89f0ad8",
+  "sources": {
+    "IRGS_Catalog/responses/routine_v1/library.json": "4f0c629a6c2c11ee79a305fc5910b3f0caa7290f52d141aa3f867ed4facb361a",
+    "IRGS_Catalog/scripted_responses.py": "421d79341484cded83f99685bb31660725dbb39a539df1c7eb4717451796a285"
+  },
+  "reuse": "325 Catalog-authored variants retained verbatim, plus 13 Engine-authored variants. Local presentation reuse; no Catalog runtime dependency.",
+  "engine_changes": [
+    "Independent Engine library identity and provenance",
+    "Phase receipt, attributed speech, offer status and exact authored scene draft families",
+    "Engine fact extraction and default result presentation live in runtime/offline_responses.py"
+  ]
+}

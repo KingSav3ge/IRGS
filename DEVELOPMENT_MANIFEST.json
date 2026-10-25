@@ -71,7 +71,7 @@
     {
       "path": "COMPONENTS.json",
       "bytes": 958,
-      "sha256": "24fb424181f4d047fc971c48660fe87fd6ceca6e8ccc30f6fefa74b6803f6695"
+      "sha256": "71cfa950e755a2d217a7b8dfec46b16283842c467224d5b38b03f6a04d4a5657"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -85,13 +85,13 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 22559,
-      "sha256": "1e30cbca645feb7fa4fdaa4db53d65ef8ca0115e32de258b51d9fe5d453faa00"
+      "bytes": 25658,
+      "sha256": "d02276db27c937fc0a9b5c4534329bf3ca08fb5483b3161b4e9be02ff9e60969"
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 9903,
-      "sha256": "0617c7c81c7b2da5d9a72adcbf81eaa7c9c4d6f0a593db2f38964d6e36976295"
+      "bytes": 10093,
+      "sha256": "3ec218522919d2b0dab73f49220fa0f4b24e22a55edae162ddb89765a58d993e"
     },
     {
       "path": "COORDINATION.md",
@@ -125,8 +125,8 @@
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 19956,
-      "sha256": "b66d2ea03bec770d464d4e160b20ec42bf412c17307f4126e70c0e0e0d1f65a7"
+      "bytes": 21658,
+      "sha256": "8490409b693140e7cfa340cb3a0966131523a2c6c7c23093d6cec4e1917b92b4"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
@@ -1429,6 +1429,16 @@
       "sha256": "6f2e9187e1df312fa015eb24bd8dca9223dd13966356cfcb89df95bfd1a7e9f0"
     },
     {
+      "path": "IRGS_3_3/data/responses/PROVENANCE.json",
+      "bytes": 823,
+      "sha256": "3868b157d950637af84b20ef1e846ec21b3bf242c4d577dba83ac3b31cc43f76"
+    },
+    {
+      "path": "IRGS_3_3/data/responses/engine_routine_v1.json",
+      "bytes": 46182,
+      "sha256": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e"
+    },
+    {
       "path": "IRGS_3_3/data/solo_quay_opening.json",
       "bytes": 7447,
       "sha256": "6af64700fc4fd23193a1bd9df2a8b4e8ef8aca6a0a6471939df86cc4bf11a8f5"
@@ -1440,8 +1450,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 47199,
-      "sha256": "fd80198922cc3d100146158ad01b637ec4e0feadc6bd7b432e415073b7797bb5"
+      "bytes": 48392,
+      "sha256": "d33949d0e86cfc3c8a9dd25200d67e466afdc225a0ea71376706253bb5d51c1d"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -1579,14 +1589,19 @@
       "sha256": "f9b79736ad8ca9ccdca2ecd4605dd849384659b1f3af089fc86a087a18199062"
     },
     {
+      "path": "IRGS_3_3/runtime/communication_runtime.py",
+      "bytes": 13247,
+      "sha256": "8c1f65fcadcbfc1ad8c26833d3d66f7b09ec732f09028bcfd521da5fb57b2567"
+    },
+    {
       "path": "IRGS_3_3/runtime/content_library.py",
       "bytes": 3984,
       "sha256": "c6ff6af053ce50e17eeaf86620e6199be41765ab63b202741e6c429503205eae"
     },
     {
       "path": "IRGS_3_3/runtime/core_world.py",
-      "bytes": 18975,
-      "sha256": "ad3b5133b0649454628c5c5befd37cb6598dc21522c5fec468bb7edf91293262"
+      "bytes": 19549,
+      "sha256": "11e36bee7f411bbf7c2f54b01d0d401e6c50b11106fd91a4ffb3c4656b0c27d6"
     },
     {
       "path": "IRGS_3_3/runtime/economic_extension.py",
@@ -1619,6 +1634,11 @@
       "sha256": "1b14cbc2d82a5b124cf142fcbfc7feb6e6f9a85096c5cc89e49196309ee8086d"
     },
     {
+      "path": "IRGS_3_3/runtime/inference_accounting.py",
+      "bytes": 3861,
+      "sha256": "a3331784b88d5d24a73e7b60f63fc307f08d6885e5a635c256d54e5de5b2cf2c"
+    },
+    {
       "path": "IRGS_3_3/runtime/irgs.py",
       "bytes": 3378,
       "sha256": "11e07e12c73e93ce119712e7ef838378c4f608ed25dcc3885d1e5d7902b42a47"
@@ -1634,6 +1654,11 @@
       "sha256": "d362701f1464176c42fb42e559c045de5036025954023e08b8d251e448470a87"
     },
     {
+      "path": "IRGS_3_3/runtime/offline_responses.py",
+      "bytes": 9685,
+      "sha256": "a33d1c4a034d96b95ee93d85720b49aec2a79a74aca7bfd25bf9f5d17aaec277"
+    },
+    {
       "path": "IRGS_3_3/runtime/openai_proposals.py",
       "bytes": 11078,
       "sha256": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c"
@@ -1642,6 +1667,11 @@
       "path": "IRGS_3_3/runtime/player_actions.py",
       "bytes": 10673,
       "sha256": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0"
+    },
+    {
+      "path": "IRGS_3_3/runtime/process_runtime.py",
+      "bytes": 18507,
+      "sha256": "a3e38e58bd603be6f655085cce1a346152a391a8b0617b13381f1edae284adaf"
     },
     {
       "path": "IRGS_3_3/runtime/r5_audit.py",
@@ -1695,8 +1725,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/r9_runtime.py",
-      "bytes": 19778,
-      "sha256": "bf6d74c32f4288ab53aae502827e8107316b1593dc7293426ff95fec95bd7d5b"
+      "bytes": 21044,
+      "sha256": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5"
     },
     {
       "path": "IRGS_3_3/runtime/r9_strategy.py",
@@ -1712,6 +1742,11 @@
       "path": "IRGS_3_3/runtime/response_options.py",
       "bytes": 5996,
       "sha256": "4743c4546be09b5ed91e2cabeb7ddcfbd2d1245a4e9f24ffa2ad468a4916f3a8"
+    },
+    {
+      "path": "IRGS_3_3/runtime/routine_format.py",
+      "bytes": 12019,
+      "sha256": "5d1195e7b4db5aab56ab04daf4cd342b7be82f8d5fd6fd65cb9e8c3928ad64c3"
     },
     {
       "path": "IRGS_3_3/runtime/run_economic_fixture.py",
@@ -1765,8 +1800,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/scene_actions.py",
-      "bytes": 11634,
-      "sha256": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1"
+      "bytes": 12036,
+      "sha256": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083"
     },
     {
       "path": "IRGS_3_3/runtime/scene_setup.py",
@@ -1780,8 +1815,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/settlement_runtime.py",
-      "bytes": 19393,
-      "sha256": "3e0fc6be4c592f008eff91608c5a073c73e296813fe02ad03273fe2ad731343f"
+      "bytes": 19886,
+      "sha256": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b"
     },
     {
       "path": "IRGS_3_3/runtime/settlement_setup.py",
@@ -1790,13 +1825,13 @@
     },
     {
       "path": "IRGS_3_3/runtime/solo_actions.py",
-      "bytes": 9950,
-      "sha256": "d08ec0f47be7713b011954028c3ba49f6cc09a669da0d0fe23393c7e13508d2f"
+      "bytes": 11072,
+      "sha256": "3d07a615911d0deac3d5b0fc8744015ab8efaa2e5e454877a1ab45ef543e8363"
     },
     {
       "path": "IRGS_3_3/runtime/solo_provider.py",
-      "bytes": 27190,
-      "sha256": "68d58acbb732a43e2000f942cf93f6e48aa90e1d14c294f9528676c2c7371d5c"
+      "bytes": 27755,
+      "sha256": "b9e425be670690b550c0de05b83b8269865ceab3f1151c387d602d1895a7a1f3"
     },
     {
       "path": "IRGS_3_3/runtime/starting_selection.py",
@@ -1829,6 +1864,11 @@
       "sha256": "2f678312cd3bb43fc2d3a1e6d08290e6f6314c2be4bf89771c0985e35f2ca61a"
     },
     {
+      "path": "IRGS_3_3/runtime/test_communication_runtime.py",
+      "bytes": 13922,
+      "sha256": "bb546ffe702ef86a47696248cd993599b27a845eb8baf339437e6ae8b6c34d3a"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_core_domains.py",
       "bytes": 1964,
       "sha256": "a5745af305821e5ca625b966dc9fe0236ae71d6475baeb38ad1c62111252e73c"
@@ -1859,9 +1899,19 @@
       "sha256": "a72f94496dfcebd31a545e1f6c0fc69fbef948a662345e9f73828464636f9362"
     },
     {
+      "path": "IRGS_3_3/runtime/test_inference_accounting.py",
+      "bytes": 7101,
+      "sha256": "7aee5d0123b5b3a8bb94b87ecac222279427bb0e4a5905b91b292c388401ff13"
+    },
+    {
       "path": "IRGS_3_3/runtime/test_loss_and_scale.py",
       "bytes": 13319,
       "sha256": "878dd5ee338d20cd905927adfc3b89df6c454f8afec68f6014a00dc4f1005e63"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_offline_responses.py",
+      "bytes": 14791,
+      "sha256": "e8e8e2bef0e88511279a55690da2077ccfa64e8cea9ceecdb3bf01eee5e7d200"
     },
     {
       "path": "IRGS_3_3/runtime/test_openai_proposals.py",
@@ -1872,6 +1922,11 @@
       "path": "IRGS_3_3/runtime/test_player_actions.py",
       "bytes": 17637,
       "sha256": "80da4dad18b138d17d468f1819b2b52b9fe224112f2d1317c3208f1e8e487583"
+    },
+    {
+      "path": "IRGS_3_3/runtime/test_process_runtime.py",
+      "bytes": 17775,
+      "sha256": "b4d193fc35c45abf27c01583850b5ed20f7650bb737232d8797146f2734783cb"
     },
     {
       "path": "IRGS_3_3/runtime/test_r7_integration.py",
@@ -1885,8 +1940,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_r9_collections.py",
-      "bytes": 5557,
-      "sha256": "0bd5622758fd695cd4d4301c999132d440fb0218a210602322ccd45469a92ca7"
+      "bytes": 7326,
+      "sha256": "7096f0ec3736f9383e43edfc8325d3421a18a11156d83dfdbc9f41e29a426715"
     },
     {
       "path": "IRGS_3_3/runtime/test_r9_runtime.py",
@@ -2479,6 +2534,16 @@
       "sha256": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8"
     },
     {
+      "path": "IRGS_Catalog/evaluation/solo_r00_proposals_v1/README.md",
+      "bytes": 5191,
+      "sha256": "e951bc573e12abcb895235422d7c0d6995bb548a8755e37fe7f153e236163a53"
+    },
+    {
+      "path": "IRGS_Catalog/evaluation/solo_r00_proposals_v1/compatibility.json",
+      "bytes": 824,
+      "sha256": "a1d3e638180b1a5f1f968bb0057aecda9cdea604c23306fbbd58e1166405f0f2"
+    },
+    {
       "path": "IRGS_Catalog/evaluation/solo_r00_v1/README.md",
       "bytes": 7396,
       "sha256": "f321e13da32782d84c5ecc29f65e9ff1457b7e1aecd5e553335f728e5bc5b24f"
@@ -2740,8 +2805,33 @@
     },
     {
       "path": "IRGS_Catalog/release.json",
-      "bytes": 19254,
-      "sha256": "bb79f960b5531ff012b1c8ef14ad86d430bb63164779b8815c4c62007da4c93d"
+      "bytes": 20128,
+      "sha256": "f2dbf5df3a551008867d286f584432d9e62c457cab523706887330e207a955a4"
+    },
+    {
+      "path": "IRGS_Catalog/responses/depot_v1/README.md",
+      "bytes": 7902,
+      "sha256": "168889fc96cc306f4c4ff9f18c0364df87d1e3554392eda4d4b7dde76590cebd"
+    },
+    {
+      "path": "IRGS_Catalog/responses/depot_v1/library.json",
+      "bytes": 110925,
+      "sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4"
+    },
+    {
+      "path": "IRGS_Catalog/responses/routine_v1/README.md",
+      "bytes": 9021,
+      "sha256": "3143f15d4aa031440129372070b17745d043d0ce499b7bbfdd162ef2236be81c"
+    },
+    {
+      "path": "IRGS_Catalog/responses/routine_v1/library.json",
+      "bytes": 43290,
+      "sha256": "4f0c629a6c2c11ee79a305fc5910b3f0caa7290f52d141aa3f867ed4facb361a"
+    },
+    {
+      "path": "IRGS_Catalog/scripted_responses.py",
+      "bytes": 12530,
+      "sha256": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313"
     },
     {
       "path": "IRGS_Catalog/solo_evaluation.py",
@@ -2749,9 +2839,14 @@
       "sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97"
     },
     {
+      "path": "IRGS_Catalog/solo_proposal_compatibility.py",
+      "bytes": 3676,
+      "sha256": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce"
+    },
+    {
       "path": "IRGS_Catalog/verify_catalog.py",
-      "bytes": 7549,
-      "sha256": "446add701ad00f4608704023d6f776379c77cf46c38029c7201fdc61648160c5"
+      "bytes": 8399,
+      "sha256": "d87759ffe5906a7f826299f355ba0e22b1d35e2d48a5ce13ef3ff579be086b97"
     },
     {
       "path": "IRGS_SYSTEMS_SCOPE.md",
@@ -2765,8 +2860,8 @@
     },
     {
       "path": "IRGS_Web/README.md",
-      "bytes": 20872,
-      "sha256": "0c32f9b26ba4f14c74adbdc840ad819fa2790ef694d581c37130a95e66b653e6"
+      "bytes": 24207,
+      "sha256": "2b5570c6cae8b219b4fcea90eae912b84bf07b1382da076f00c3094bdd3554c0"
     },
     {
       "path": "IRGS_Web/Start-IRGS.cmd",
@@ -2777,6 +2872,11 @@
       "path": "IRGS_Web/Start-IRGS.ps1",
       "bytes": 826,
       "sha256": "fcd33a4b7fa1807af72504258f28b6123adad806267ff4314d3a3468d54663c9"
+    },
+    {
+      "path": "IRGS_Web/ai_usage.py",
+      "bytes": 5131,
+      "sha256": "0cc333781c5f8e73eea8b62c0b2f948208ff345675ff97bb0b242d104390cf34"
     },
     {
       "path": "IRGS_Web/app_integrity.py",
@@ -2810,8 +2910,8 @@
     },
     {
       "path": "IRGS_Web/features.py",
-      "bytes": 17066,
-      "sha256": "afd8ed40861be709ba2931aebb0b8de983623a91468604517587aa84b800ed27"
+      "bytes": 17263,
+      "sha256": "2b81fff07d7dd92c321835cd25e2bc9db78c500890922f18f73923148d463339"
     },
     {
       "path": "IRGS_Web/gameplay_views.py",
@@ -2840,8 +2940,13 @@
     },
     {
       "path": "IRGS_Web/release.json",
-      "bytes": 4050,
-      "sha256": "b6e02fc2d6bb466d8bf29bfdf809c1797f9d7731e90210aaae1bed58edd18cfd"
+      "bytes": 4902,
+      "sha256": "aed1449fd6ce139863a0310f0c8e0f341991661eb62a5f148f9df2fc1aa18f38"
+    },
+    {
+      "path": "IRGS_Web/responses/README.md",
+      "bytes": 6406,
+      "sha256": "09d5d7918b7bcb7f100cd7f4cbf4cbd51f53f2f39168a8ff1ff106dd215137b5"
     },
     {
       "path": "IRGS_Web/rise_campaigns.py",
@@ -2850,13 +2955,13 @@
     },
     {
       "path": "IRGS_Web/server.py",
-      "bytes": 41062,
-      "sha256": "1527a4206168799c4bd2375b696dde7224c85864623f63cac4f7a7084234c1d8"
+      "bytes": 41794,
+      "sha256": "bdca2798217f21c46d6fe4dfe06e2a6e670e680e9a8465255ec4f94102538bc0"
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 135755,
-      "sha256": "cd08376ec2d45f56b6879713c44472968da9f2d19f5292fa27d014c3880ba366"
+      "bytes": 134996,
+      "sha256": "aecc9bede21d8d640ec700880cfac54c79c41bcd8abd52d3b2d80653855ad38e"
     },
     {
       "path": "IRGS_Web/static/catalogue.js",
@@ -2865,28 +2970,58 @@
     },
     {
       "path": "IRGS_Web/static/index.html",
-      "bytes": 17037,
-      "sha256": "c8133704dbe2b6bd3ddba0c63e90ae0798378c9652104a1b09b50233b4af6c59"
+      "bytes": 17578,
+      "sha256": "14ada63f8642167ecff8a46109d4c2ca42c48669992c854afe79715d53632cc9"
+    },
+    {
+      "path": "IRGS_Web/static/responses.data.js",
+      "bytes": 27223,
+      "sha256": "3e95fe8f0e0be459017f92f787a3ea57b140ffc5240f7e7f18a888fa7a16d4f1"
+    },
+    {
+      "path": "IRGS_Web/static/responses.js",
+      "bytes": 7206,
+      "sha256": "ad046d6f712be7352ea36c91a997eb392c82b07e750f3754a62d26d78ff3e0dd"
     },
     {
       "path": "IRGS_Web/static/rise.js",
-      "bytes": 12309,
-      "sha256": "5f8716abf2bb299f809ef4370a2f839fad5e8db22f4e6719a75e4cbc8f3a38e1"
+      "bytes": 12258,
+      "sha256": "f91bfa5a2d798fd97e936af2338354179215a3c69f22e2fce8eebc35d96472b5"
+    },
+    {
+      "path": "IRGS_Web/static/routine.js",
+      "bytes": 4263,
+      "sha256": "7f4453b185e2b4f6621327eb97502020b9d4196879b8682a5a34e0f0fb46673a"
     },
     {
       "path": "IRGS_Web/static/solo.js",
-      "bytes": 11660,
-      "sha256": "388b69508bac93abc589498377954da23ff544eb49ff981b62828fca38637891"
+      "bytes": 14214,
+      "sha256": "f416633116a250e85fe4e29b166d281c8fa2331e2452b5c9d6f6896e0db7ef5b"
     },
     {
       "path": "IRGS_Web/static/style.css",
-      "bytes": 67311,
-      "sha256": "0f7d31f8e04f2714b0f5bb47886422a13ec7be8a13b376a9f16cd991f61f3dce"
+      "bytes": 66503,
+      "sha256": "38568262ef85ea30f0753b90d181240c491f8fa2e3f85d0acb832fdfc28dea15"
+    },
+    {
+      "path": "IRGS_Web/static/themes.css",
+      "bytes": 6935,
+      "sha256": "ee0f88ee7223b04bf4cdc9245c074c4e288f31986467b400b6ff1ce3a52bf959"
+    },
+    {
+      "path": "IRGS_Web/static/themes.js",
+      "bytes": 868,
+      "sha256": "462d36bbfe2514b13fcf2fcfece96f2bd16748a9d11a01fa395a60ce6e173560"
     },
     {
       "path": "IRGS_Web/static/voyage.svg",
       "bytes": 3266,
       "sha256": "064ebe9c533c55d892d541d13c994e51b33853b7e32374e4f318ded4623bf760"
+    },
+    {
+      "path": "IRGS_Web/tests/test_ai_usage.py",
+      "bytes": 8552,
+      "sha256": "c153f607e920b89cd3a98712ab60a2414bd9d488691151493ea31a249e4fa670"
     },
     {
       "path": "IRGS_Web/tests/test_assistance.py",
@@ -2910,8 +3045,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 104476,
-      "sha256": "c7423d50b96e2de1645a911e0e2b249a5fa99d1eda350d16d0895c61b6374f6a"
+      "bytes": 114516,
+      "sha256": "0bd3797c99df3da1275864269f3c4b202772e465c9282bff0ede5300176e6b30"
     },
     {
       "path": "IRGS_Web/tests/test_historical_multipart.py",
@@ -2937,6 +3072,11 @@
       "path": "IRGS_Web/tests/test_launcher.py",
       "bytes": 5473,
       "sha256": "be1a87f10e2ab77c08126fc6af05a3e39ea05759921dad11e97a455553b541cc"
+    },
+    {
+      "path": "IRGS_Web/tests/test_responses.js",
+      "bytes": 5984,
+      "sha256": "ccfd6b3e702ed43e262e68c0e50dd6ca32d335f6ab606536495524376b87c2da"
     },
     {
       "path": "IRGS_Web/tests/test_rise.py",
@@ -3000,8 +3140,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 12171,
-      "sha256": "436049d58a5e6f7d24ecf9cd0b9e165e688e5eb2184850f6da4c5ee7d11a190d"
+      "bytes": 13104,
+      "sha256": "b89dcc379c891d1786ae55798f7bbd097d0d1af7ebb5ddfb2ce4d6665e8bd81f"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
@@ -3035,13 +3175,13 @@
     },
     {
       "path": "engine/ACCEPTANCE_EXECUTION.md",
-      "bytes": 4198,
-      "sha256": "56ca9c70b9149e2c0bd7f643536c3157ac21da8ceffbf3a5f2baf8eef43dbf75"
+      "bytes": 5069,
+      "sha256": "48c426a9f57c0753671dc3ee23f4d26da469a22d125d5d987b21de033ba0d2ed"
     },
     {
       "path": "engine/AI_PROVIDER_PLAN.md",
-      "bytes": 7682,
-      "sha256": "42f3a319a63adf3d7d612641ea25c77526e501c98402fd452c2e9ce65e9d93c7"
+      "bytes": 8309,
+      "sha256": "80b0791fe63083023b36c0e3ba109b3eda97cbaaaf7aaef537f0d4e4451f913a"
     },
     {
       "path": "engine/APPLICATION_RECORD.json",
@@ -3069,6 +3209,11 @@
       "sha256": "5e4ebef08ce2b1cb3e42ce498b081adfe493ab41897ea2750cba3f093668a1bc"
     },
     {
+      "path": "engine/CONTINUATION_COMMUNICATION_API.md",
+      "bytes": 10635,
+      "sha256": "8ab94b4357e78dfd0bb623d52767c63437dbb688c460e5e3e3d53aa6b5539f8a"
+    },
+    {
       "path": "engine/CORE_CONSOLIDATION.md",
       "bytes": 3305,
       "sha256": "4f9786404dbd5d6b8f2906608b6544849f1b416eb33bd4d10405a8c2bb9e745d"
@@ -3087,6 +3232,11 @@
       "path": "engine/ENGINE_MODEL.md",
       "bytes": 5677,
       "sha256": "37b3c39609a75fe299738e60690bf9c845b213bfb158dba972597be588ba3a81"
+    },
+    {
+      "path": "engine/ENGINE_TASKS_VALIDATION.json",
+      "bytes": 13011,
+      "sha256": "9fb2b129679dc82b43e0802f8e3935b8ac3a03abedbaa8850030d61a9e9fc65d"
     },
     {
       "path": "engine/EQUIPMENT_ACTION_IMPLEMENTATION.md",
@@ -3114,14 +3264,24 @@
       "sha256": "3177507e5babd8472a217ba1ea7d506cf97a77330f21f69979f5c418e437d8c6"
     },
     {
+      "path": "engine/OFFLINE_RESPONSES_API.md",
+      "bytes": 6413,
+      "sha256": "41067c3748e34e93007c0f66296815350957ec0e845391dad863b650ac95a82b"
+    },
+    {
+      "path": "engine/OFFLINE_RESPONSES_VALIDATION.json",
+      "bytes": 4594,
+      "sha256": "8ab33839d7768db75ed8a8a58e96f06cbadbf1cccf9c06f87eef572cae035664"
+    },
+    {
       "path": "engine/OPENAI_ADAPTER_REVIEW.md",
       "bytes": 6172,
       "sha256": "3bbfe5a0282ff36187f4c21601865f75f681ca76611c2009b0041e906e3cd408"
     },
     {
       "path": "engine/OPERATION_COVERAGE.md",
-      "bytes": 12201,
-      "sha256": "addf8558e994eb6ae15482adc1e6784c151b543bcc11db5137941e559cbabb6b"
+      "bytes": 12371,
+      "sha256": "b4fe4b98790cf50eaca4c08d6ee1cbf116e9069f81bec3dd7fe29aefd98a7b49"
     },
     {
       "path": "engine/PACKAGE_MANIFEST.json",
@@ -3140,8 +3300,8 @@
     },
     {
       "path": "engine/SOLO_CATALOG_VALIDATION.json",
-      "bytes": 3279,
-      "sha256": "9d6f99f8c27bd866d396faa7d54aa207b98ff0632675c274c594844edd708fe4"
+      "bytes": 3890,
+      "sha256": "27d2598dd405fc2ee264cffa9ff90e35cf620b0874390d64e11ce3c459813de4"
     },
     {
       "path": "engine/SOLO_LIFECYCLE_VALIDATION.json",
@@ -3150,8 +3310,8 @@
     },
     {
       "path": "engine/SOLO_PROVIDER_API.md",
-      "bytes": 12498,
-      "sha256": "cfae5b1bce8fc314f8444c31fea715654416e14f5f6c2312338caca7375c3e42"
+      "bytes": 12786,
+      "sha256": "bd68a334c94c064fc2cf1c29e88ec3258900f99aa08e8721d2304e0d341e4cc3"
     },
     {
       "path": "engine/SOLO_PROVIDER_VALIDATION.json",
@@ -3300,8 +3460,8 @@
     },
     {
       "path": "engine/qualification/operation_register.json",
-      "bytes": 13075936,
-      "sha256": "ab55b77b193f4468818eb8fbb39f856d1e820af3f9980f2eb74647825c67539a"
+      "bytes": 13404645,
+      "sha256": "bc036047be0cf491a6f3ff2e36341fb043a488362c2e5ceda53e534330454e4c"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",

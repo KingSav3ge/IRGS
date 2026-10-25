@@ -1,5 +1,9 @@
 # Scoped C2 implementation evidence — Action 1
 
+The [Engine offline response record](OFFLINE_RESPONSES_VALIDATION.json) separately qualifies all 338 bundled variants and 15 recipes, actual received/committed result presentation, actor boundaries, exact fallback and editable intentions with zero rendering calls. Authored text and rendering checks establish no new adjudication rule or additional completed C2 acceptance case.
+
+The 2026-10-24 [Engine task record](ENGINE_TASKS_VALIDATION.json) adds actual selected work/travel/observation phases, restore/retry, local speech/offer fulfillment, dictionary observation and reviewed technical accounting cases. It advances named phase, information, authority, conflict and recovery properties; the original 121-case inventory and the prior evidence below retain their recorded identities. New App controls and full C2 completion are not inferred from Core unit evidence.
+
 2026-10-21. This execution ledger is separate from the immutable 121-case design inventory. The inventory remains `REQUIRED_NOT_EXECUTED`; it is not rewritten as a blanket pass. The implementation record gives precise engine test references. The rows below identify covered properties and outstanding parts, not full certification of every referenced C2 case.
 
 | C2 references | Executable evidence | Qualification boundary |

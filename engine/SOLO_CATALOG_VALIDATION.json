@@ -4,13 +4,21 @@
   "target_iteration": "IRGS 3.4.0 — in development",
   "catalog_commit": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
   "engine_sources_sha256": {
-    "core_world.py": "ad3b5133b0649454628c5c5befd37cb6598dc21522c5fec468bb7edf91293262",
-    "settlement_runtime.py": "3e0fc6be4c592f008eff91608c5a073c73e296813fe02ad03273fe2ad731343f",
-    "scene_actions.py": "ed29a33c0d70d99b5584b8a1e51294f5b47196646e636607d08ad20640712cb1",
-    "solo_provider.py": "68d58acbb732a43e2000f942cf93f6e48aa90e1d14c294f9528676c2c7371d5c",
-    "solo_actions.py": "d08ec0f47be7713b011954028c3ba49f6cc09a669da0d0fe23393c7e13508d2f",
-    "r9_runtime.py": "bf6d74c32f4288ab53aae502827e8107316b1593dc7293426ff95fec95bd7d5b",
-    "r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129"
+    "core_world.py": "11e36bee7f411bbf7c2f54b01d0d401e6c50b11106fd91a4ffb3c4656b0c27d6",
+    "settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "solo_provider.py": "b9e425be670690b550c0de05b83b8269865ceab3f1151c387d602d1895a7a1f3",
+    "solo_actions.py": "3d07a615911d0deac3d5b0fc8744015ab8efaa2e5e454877a1ab45ef543e8363",
+    "r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
+    "offline_responses.py": "a33d1c4a034d96b95ee93d85720b49aec2a79a74aca7bfd25bf9f5d17aaec277",
+    "routine_format.py": "5d1195e7b4db5aab56ab04daf4cd342b7be82f8d5fd6fd65cb9e8c3928ad64c3",
+    "process_runtime.py": "a3e38e58bd603be6f655085cce1a346152a391a8b0617b13381f1edae284adaf",
+    "communication_runtime.py": "8c1f65fcadcbfc1ad8c26833d3d66f7b09ec732f09028bcfd521da5fb57b2567"
+  },
+  "engine_response_data_sha256": {
+    "engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e",
+    "PROVENANCE.json": "3868b157d950637af84b20ef1e846ec21b3bf242c4d577dba83ac3b31cc43f76"
   },
   "manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
   "loader_sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",

@@ -1,8 +1,13 @@
 # IRGS Engine development roadmap
 
-## Coordinator integration — IRGS 3.4.0 development
+## Current priority — shared IRGS systems
 
-The bounded offline provider/action foundation and App authored-scene/Rise round trip are integrated with the qualified Catalog fixture. See [release notes](RELEASE_NOTES_3_4_0.md) and [coordination](COORDINATION.md) for exact inputs and current remaining work. Operator configuration, bounded live smoke, general narration/dialogue and broader DEV/C2 completion remain pending. Component publication records below retain their original scope.
+The user's current direction is development across campaigns and themes.
+Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
+[the current work order](COORDINATOR_WORK_ORDER.md) before selecting work.
+Rise R00 remains one regression fixture. Shared-system completion requires
+supported non-Rise evidence; campaign-specific mechanics retain their own scope.
+The records below preserve previously delivered work and historical evidence.
 
 Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
@@ -12,6 +17,10 @@ Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies
 
 ## Completed work
 
+- **Token-free Engine responses:** an independently bundled 338-variant/15-recipe library now supplies local presentation on actual Core result APIs and editable drafts. Actor/receipt checks, exact source anchoring, restart/replay and literal fallback preserve actual outcomes with zero rendering calls or tokens. See [API](engine/OFFLINE_RESPONSES_API.md) and [qualification](engine/OFFLINE_RESPONSES_VALIDATION.json).
+
+- **Selected continuation, communication and accounting contracts:** durable work/travel/observation phases, local testimony and explicitly accepted stock offers, reviewed inference charges and dictionary dependency reads. See [the Engine APIs](engine/CONTINUATION_COMMUNICATION_API.md) and [executed task evidence](engine/ENGINE_TASKS_VALIDATION.json). These are Core implementations; new App controls and general C2 completion retain their separate gates.
+
 - **DEV-01–DEV-04:** the bounded authorized equipment action, conserved transfer and recoverable receipt. See [the implementation record](engine/EQUIPMENT_ACTION_IMPLEMENTATION.md).
 - **DEV-05:** the operation inventory and scoped coverage register, with unqualified paths disclosed. See [the coverage register](engine/OPERATION_COVERAGE.md).
 - **Bounded campaign foundations:** authored local observation, movement and delivery; 37 dated historical starting references; the fictional Rise R00 settlement slice. See [local opening](engine/PLAYABLE_OPENING_IMPLEMENTATION.md), [historical review](provenance/century_of_conflict/HISTORICAL_REVIEW.md) and [Rise status](engine/design/rise/README.md). These increments do not complete their broader DEV milestones.
@@ -20,21 +29,21 @@ Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies
 - **Engine framing:** the [Engine model](engine/ENGINE_MODEL.md), behavior-based design guidance and neutral archive introduction. Source provenance remains available; this increment adds no gameplay resolver.
 - **Kira atlas reference:** [six illustrated regional plates and creator-supplied regional foundations](IRGS_3_3/catalog/campaigns/kira/atlas/README.md) are published beside the Kira worldbook. This is world reference content; it adds no executable capability or starting snapshot.
 
-## Active priority — 23 October 2026
+## Active priority — 24 October 2026
 
-The user prioritizes completion of the runnable Solo systems. `solo-runtime-01` replaces the completed Historical Details cycle. Implement the provider/action/validation/attempt-ledger contract, qualify relevant existing operations and recovery, publish an App API and then one opt-in direct adapter. Offline implementation needs no credentials. See [the work order](COORDINATOR_WORK_ORDER.md) and [Solo completion plan](https://github.com/KingSav3ge/IRGS/blob/main/SOLO_COMPLETION_PLAN.md). The broader stable DEV items below remain open until their evidence exists.
+The coordinator has qualified the bounded Solo foundation at Engine `8234044c089131314019ecaf6799a2f08028a3f8`, App `277554aac21a092b8a55562309da274bbe74a3af` and Catalog `401df26a1f16be864dd15d7c5250da5d75f8ccca`. The user now directs completion of the Engine tasks. This increment implements selected DEV-06–DEV-17 and AIP accounting contracts and qualifies their actual Core effects. See [the work order](COORDINATOR_WORK_ORDER.md), [Solo completion plan](https://github.com/KingSav3ge/IRGS/blob/main/SOLO_COMPLETION_PLAN.md) and [new API/limits](engine/CONTINUATION_COMMUNICATION_API.md). The prior foundation is not repeated; broader milestones remain open where their required rules/evidence are absent.
 
 ## Work in progress
 
-- **Solo runtime:** the [provider/action API](engine/SOLO_PROVIDER_API.md) now implements typed actor scope, disabled dispatch, durable attempts and finite reservations, proposal validation and explicit acceptance through existing local/Rise Core handlers. The [opt-in direct adapter](engine/OPENAI_ADAPTER_REVIEW.md) and [ten pinned Catalog R00 cases](engine/SOLO_CATALOG_VALIDATION.json) pass offline checks. Connected App flow, conditional live smoke and wider DEV-06–DEV-11 qualification remain open.
+- **Solo runtime:** the bounded provider/action API, opt-in direct adapter, App round trip and pinned R00 fixture are coordinator-qualified for the prior exact component set. This increment adds new Engine APIs and needs fresh App/pin/joined review. Conditional live smoke and measured model quality remain pending.
 - **Solo lifecycle:** [registration/admission race fixes](engine/SOLO_LIFECYCLE_VALIDATION.json) preserve early cancellation across restart, keep invalid duplicate routes from terminating valid attempts, and hide expired/cancelled drafts. Legacy uncertain attempts stay held. App host/session integration and wider DEV-11 completion remain open.
-- **DEV-06–DEV-08 — dependency qualification:** collection observation and named rejected-path cases exist. Broader conflict, authorization and cross-engine coverage remain open. See [rejected dependencies](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md).
+- **DEV-06–DEV-08 — dependency qualification:** dictionary copy/equality/union and mutation reads now extend list observation; new phase/offer paths have actual observed success/rejection and independent/conflicting frontier checks. Broader operation-register branches remain open. See [rejected dependencies](engine/REJECTED_DEPENDENCIES_IMPLEMENTATION.md) and [current task evidence](engine/ENGINE_TASKS_VALIDATION.json).
 - **DEV-10, DEV-12–DEV-14 and DEV-18–DEV-20 — processes and campaign continuity:** local actions, bounded settlement work and dated initialization supply partial implementations. General interrupted travel/search, evolving historical authority and full setup regressions remain open.
 - **DEV-24–DEV-26 — evidence and delivery:** the [scoped acceptance ledger](engine/ACCEPTANCE_EXECUTION.md) and component integrity checks exist. Each new Engine capability needs its own behavioral evidence; connected App behavior is qualified in the App workstream.
 
 ## Remaining work
 
-1. **Next: solo-runtime-01 integration with DEV-06–DEV-11.** Qualify App consumption of the delivered provider/action API and direct adapter against the exact reviewed Catalog input. Broaden collection, failed-decision, simultaneous-frontier and recovery coverage while keeping general register gaps explicit. Live smoke requires a separately permitted workload, account model and finite budget.
+1. **Next: new continuation/communication consumer qualification.** Hand off the typed Engine APIs, exact commit and evidence for App controls and coordinator review. Regenerate joined operation evidence for the new Core operations. Continue named collection/conflict/recovery qualification; the earlier bounded Solo integration is already qualified.
 2. **DEV-09–DEV-11.** Complete general durable phases, supported elapsed processes, interruption, restart and restore fencing through the existing Core owners.
 3. **DEV-12–DEV-17.** Extend movement and observation beyond authored local scenes, then add supported speech, testimony, offers, acceptance and result-grounded character responses.
 4. **DEV-18–DEV-20.** Finish broader opening, eligibility and continuing-world authority checks using actual committed state and verified historical evidence.
