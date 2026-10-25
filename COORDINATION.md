@@ -1,17 +1,34 @@
 # IRGS development coordination
 
-## IRGS 3.4.0 primary development update
+The current workstream is **irgs-wide-systems-01**, under **3.4.0 development**.
+The user directs shared IRGS systems across campaigns and themes. Read
+[the scope](IRGS_SYSTEMS_SCOPE.md) and [coordinator order](COORDINATOR_WORK_ORDER.md).
+Rise is one regression fixture; shared claims require non-Rise evidence.
 
-The reviewed offline foundation is integrated under `solo-runtime-01`. Engine supplies actor-scoped proposals, durable attempt accounting and an opt-in direct API adapter. App supplies explicit acceptance, recovery and actual authored-scene/Rise handler integration. Catalog supplies the separately scoped synthetic R00 fixture. Stock local hosting remains unconfigured for AI; this development update activates no live inference or complete narrator.
-
-| Integrated component | Exact reviewed commit |
+| Reviewed component | Exact commit |
 | --- | --- |
-| Engine | `8234044c089131314019ecaf6799a2f08028a3f8` |
-| App | `277554aac21a092b8a55562309da274bbe74a3af` |
-| Catalog | `401df26a1f16be864dd15d7c5250da5d75f8ccca` |
+| Engine | `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443` |
+| App | `e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` |
+| Catalog | `94b8ca6d976da48b3c6ca65e014b28c6d9a120c2` |
 
-Fresh source-bound capture, full joined regression, actual HTTP/Chromium and candidate package/extraction checks passed. See [the primary review](provenance/qa/primary_update_3_4_0_review.json), [release notes](RELEASE_NOTES_3_4_0.md) and [completion plan](SOLO_COMPLETION_PLAN.md). The operation register retains its unqualified paths; 121 C2 design cases do not become passed tests.
+Engine provides its offline response runtime and scoped continuation,
+communication and reviewed accounting APIs. App provides local presentation,
+generic editable drafts, restored campaign themes and protected usage. The
+coordinator corrected its budget projection and aligned both dependencies.
+Catalog supplies the campaign-independent 750-system/250-draft depot and 32
+recipes. The full depot remains content for further event-adapter adoption;
+existing Engine/App layers already render their covered responses locally.
 
-This cycle remains partial. Next are operator configuration, conditional bounded live smoke, semantic/voice review, grounded narration/dialogue and the remaining general simulation systems. Wider hosting, additional providers and optional content expansion follow their documented prerequisites. The prior Historical Details cycle and its original archive remain preserved.
+Fresh source-bound operation capture, joined regressions, independent HTTP and
+real Chromium support this bounded update. Authored non-Rise play and Rise both
+preserve exact outcomes, drafts and recovery. See [review and limits](provenance/qa/shared_systems_3_4_0_review.json).
+Clean-package verification is recorded with the external release artifact.
 
-New source integration continues to require viable exact Engine/App/Catalog updates, compatible App pins and passing coordinator reviews. The baseline now advances to the integrated set above. The monitor tests pushed sets while the environment runs; it does not start development chats or import product source.
+The prior offline foundation and Historical Details evidence are preserved.
+Original archive bytes and campaign documents remain unchanged. General C2,
+broader campaign adapters, generated narration, App controls for new Engine APIs
+and configured live inference remain unfinished. No live call was made.
+
+New imports continue to require all three exact compatible component reviews.
+The QA monitor tests new pushes while this environment runs. Repository work
+orders are the available chat handoff; monitoring does not start chats.

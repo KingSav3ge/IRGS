@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "cycle_id": "solo-runtime-01",
-  "assigned_on": "2026-10-23",
-  "objective": "Complete the Engine, provider, persistence and player interaction systems for a continuing AI-assisted Solo campaign.",
+  "cycle_id": "irgs-wide-systems-01",
+  "assigned_on": "2026-10-25",
+  "objective": "Develop reusable IRGS systems across campaigns and themes, including offline routine presentation.",
   "completion_plan": "SOLO_COMPLETION_PLAN.md",
   "coordinator": {
     "title": "IRGS Enviroment",
@@ -41,72 +41,72 @@
     "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
   },
   "cycle_start_components": {
-    "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
-    "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
-    "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
-  },
-  "selected_components": {
     "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
     "app": "277554aac21a092b8a55562309da274bbe74a3af",
     "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
   },
+  "selected_components": {
+    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+  },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "8234044c089131314019ecaf6799a2f08028a3f8",
+      "commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
       "deliverable": "component_update",
       "checks": [
         {
-          "name": "source review and component integrity",
+          "name": "Exact source/dependency integrity and fresh joined regressions",
           "status": "passed"
         },
         {
-          "name": "fresh synthetic Core capture and regressions",
+          "name": "Non-Rise/Rise real Core presentation and browser qualification",
           "status": "passed"
         }
       ],
-      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
+      "scope": "Bounded shared offline development increment; no universal mechanics/live inference claim."
     },
     "app": {
       "status": "approved",
-      "commit": "277554aac21a092b8a55562309da274bbe74a3af",
+      "commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
       "deliverable": "component_update",
       "checks": [
         {
-          "name": "source review and component integrity",
+          "name": "Exact source/dependency integrity and fresh joined regressions",
           "status": "passed"
         },
         {
-          "name": "full Web/interface and actual Rise HTTP/Chromium qualification",
+          "name": "Non-Rise/Rise real Core presentation and browser qualification",
           "status": "passed"
         }
       ],
-      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
+      "scope": "Bounded shared offline development increment; no universal mechanics/live inference claim."
     },
     "catalog": {
       "status": "approved",
-      "commit": "401df26a1f16be864dd15d7c5250da5d75f8ccca",
+      "commit": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2",
       "deliverable": "component_update",
       "checks": [
         {
-          "name": "source review and component integrity",
+          "name": "Exact source/dependency integrity and fresh joined regressions",
           "status": "passed"
         },
         {
-          "name": "73 declared-contract tests plus ten current Engine/App fixture cases",
+          "name": "Non-Rise/Rise real Core presentation and browser qualification",
           "status": "passed"
         }
       ],
-      "scope": "Qualified bounded offline foundation for the 3.4.0 development update. Live AI/model quality and full C2 remain unqualified."
+      "scope": "Bounded shared offline development increment; no universal mechanics/live inference claim."
     }
   },
-  "integration_status": "integrated_offline_development_foundation",
-  "component_source_integration_performed": true,
+  "integration_status": "approved_pending_source_import",
+  "component_source_integration_performed": false,
   "blockers": [],
   "next_assignments": {
-    "engine": "Finish operator configuration, policy/budget reconciliation and qualified narration/dialogue contracts while continuing relevant DEV gaps.",
-    "app": "Provide a usable protected operator setup flow against the reviewed Engine contract, then conditional live smoke and grounded presentation.",
-    "catalog": "Maintain the qualified R00 fixture and extend rights-labelled evaluation material for newly supported interaction/communication behavior."
+    "engine": "Shared Core lifecycle/capability/receipt contracts and offline responses across actual supported campaign adapters; continue stable DEV gaps.",
+    "app": "Common capability-driven interaction and local presentation across supported campaigns, protected optional AI and compatible dependencies.",
+    "catalog": "Campaign-independent 750-system/250-draft response depot, provenance/schema validation and cross-campaign consumer evidence."
   },
   "previous_completed_cycle": {
     "cycle_id": "historical-details-01",
@@ -172,7 +172,8 @@
     "paid_calls_activated": false
   },
   "coordination_limitations": [
-    "The existing three development chats were read and are idle. No direct chat-start/send tool is available; repository work orders are the handoff."
+    "Repository work orders publish the scope correction; no direct chat-send/start tool is available.",
+    "Fresh chat status reads timed out during this review; exact GitHub deliveries and published owner reports were used."
   ],
   "runtime_implemented_by_this_priority_update": false,
   "work_order_publication": [
@@ -201,25 +202,43 @@
   "target_version": "3.4.0",
   "target_version_status": "in_development",
   "proposed_components": {
-    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
-    "app": "277554aac21a092b8a55562309da274bbe74a3af",
-    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
+    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
   },
-  "reviewed_at_utc": "2026-10-24T13:11:49.647084+00:00",
-  "completed_components": {
-    "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
-    "app": "277554aac21a092b8a55562309da274bbe74a3af",
-    "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
-  },
-  "source_input_sha256": "d03fa5c8034ab97d52af95393180e050e025b8c78c8841614d21eaa8eab42b8b",
-  "qualified_candidate_commit": "a408b1a79a27f732def26b6d4a16cb77cc15f47b",
+  "reviewed_at_utc": "2026-10-25T06:01:07.560677+00:00",
+  "completed_components": {},
+  "source_input_sha256": "52ad60013f81af2af36090540ec978d66729ad11c1b9d376f96c5e21cac0214b",
+  "qualified_candidate_commit": "bb19047247af8eda72445c4bef3116494ccde888",
   "integrated_at_utc": "2026-10-24T13:11:49.647084+00:00",
-  "cycle_completion_status": "partial_live_and_general_systems_pending",
+  "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
-    "Operator configuration and separately bounded live smoke on an eligible exact model",
-    "Semantic/voice evaluation and general narration/dialogue",
-    "General freeform/combat resolution and remaining C2/DEV systems",
-    "Windows launcher checks and multi-host/distributed persistence qualification"
+    "Campaign capability/event adapters for the complete shared response depot",
+    "App controls for new scoped continuation/communication APIs",
+    "Operator configuration and separately bounded live smoke",
+    "General narration/dialogue, freeform/combat and remaining stable DEV/C2 systems",
+    "Windows and distributed hosting qualification"
   ],
-  "completion_scope": "3.4.0 primary development update: offline provider/action foundation and qualified App/Catalog integration. No live AI or complete C2 claim."
+  "completion_scope": "3.4.0 primary development update: offline provider/action foundation and qualified App/Catalog integration. No live AI or complete C2 claim.",
+  "development_scope": {
+    "directive": "Develop shared IRGS systems across campaigns and themes; Rise is one regression fixture.",
+    "scope_document": "IRGS_SYSTEMS_SCOPE.md",
+    "shared_acceptance": "Two independently initialized supported contexts, including non-Rise, for shared behavior claims; formatting and gameplay evidence remain separate.",
+    "response_depot": {
+      "system_variants": 750,
+      "editable_drafts": 250,
+      "recipes_counted_separately": true
+    },
+    "chat_message_dispatched": false
+  },
+  "previous_integration": {
+    "cycle_id": "solo-runtime-01",
+    "scope": "Qualified bounded offline foundation; broader runtime remained partial.",
+    "components": {
+      "engine": "8234044c089131314019ecaf6799a2f08028a3f8",
+      "app": "277554aac21a092b8a55562309da274bbe74a3af",
+      "catalog": "401df26a1f16be864dd15d7c5250da5d75f8ccca"
+    },
+    "record": "provenance/qa/completed_cycles/solo-runtime-01_offline_foundation.json"
+  }
 }

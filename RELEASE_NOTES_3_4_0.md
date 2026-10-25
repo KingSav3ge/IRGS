@@ -1,24 +1,30 @@
-# IRGS 3.4.0 development update
+# IRGS 3.4.0 — shared systems development update
 
-The primary update connects the Engine, App and Catalog offline proposal foundation. A player can review an interpreted supported action, explicitly accept it, receive its actual Core outcome and continue. The coordinator fixed the remaining Rise adapter gap and selected compatible dependencies.
+This update adds local response foundations across supported campaigns. Engine
+has 338 offline variants for selected actual receipts and drafts; App has 171
+local UI/result/draft variants. Catalog provides a campaign-independent depot of
+750 system responses, 250 editable drafts and 32 composition recipes. Routine
+rendering requires no API key or provider call. The complete depot is available
+for further capability/event-adapter adoption.
 
-Implemented behavior includes actor-scoped request construction, strict supported-action proposals, conservative finite attempt accounting, bounded direct API transport, durable explicit acceptance, restart/retry/restore fencing, and the ten-case synthetic R00 evaluation fixture. Authored local actions and settlement work retain their selected rules. Five consecutive Rise acceptances complete actual shelter work at 3,900 elapsed seconds; a deliberately lost acknowledgement recovers without duplicate effects.
+Core outcomes remain authoritative. Drafts require explicit submission. Unknown
+facts, unsupported rules and missing templates cannot trigger paid fallback or
+invent outcomes. Engine also supplies scoped continuation/communication APIs,
+dependency-observation fixes and operator-reviewed charge reconciliation. New
+Engine APIs retain their actual selected rules; their full App controls remain
+future work. App restores genre/campaign themes and protected usage reporting.
+Its available budget now agrees with Engine after reviewed charges and overruns.
 
-Fresh qualification:
+Fresh joined tests, observed operation evidence and actual Chromium cover the
+existing non-Rise authored scene and Rise, including failed physical outcomes,
+lost acknowledgements, restart/reload, exact drafts and actor privacy. Catalog
+renders every variant/recipe and four synthetic themes; portability creates no
+new campaign mechanics. Eight existing platform/private-fixture skips remain.
+See [the exact review](provenance/qa/shared_systems_3_4_0_review.json).
 
-| Check | Result |
-| --- | --- |
-| Engine runtime | 582 passed; 1 skipped |
-| App Web | 176 passed; 7 skipped |
-| Interface | 86 checks passed |
-| Joined tooling | 29 passed; 0 skipped |
-| Catalog | 73 tests on its declared original contracts; current combination separately passed all ten fixture cases. |
-| Independent mechanics/privacy/recovery HTTP | Eight cases passed. |
-| Chromium | Actual Rise round trip and complete Historical Details browsing passed. |
-| Candidate distribution | Verified packaging, safe extraction and HTTP smoke passed. |
-
-The private historical-save case was skipped by policy; seven Windows PowerShell launchers were skipped on Linux. Counts overlap across component/joined runs. No user save was opened, migrated or packaged. The complete 32-part archive and all adopted content remain intact.
-
-This is a development update. Default AI remains unavailable until a trusted operator configures a qualified route, credentials, policy and finite budget. Direct API tests use synthetic HTTP; no live call, model-quality result, general narrator, full freeform/combat resolver or complete C2 simulation is claimed. Core retains compatibility ID 3.3 and independent schema/content versions retain their identities.
-
-Run the local App with `python -B IRGS_Web/server.py --port 8766`. Existing supported actions work without AI. Repeat joined regressions as documented in [DEVELOPMENT.md](DEVELOPMENT.md); proposal bridge tests are `python -B -m unittest discover -s IRGS_Web/tests -p 'test_solo*bridge.py' -v`. Technical credentials and local inference ledgers stay outside product source and distributions.
+Launch with `python -B IRGS_Web/server.py --port 8766` or the Windows launcher.
+Default AI remains unconfigured. Operator setup, live/model-quality evaluation,
+general narration/dialogue and wider DEV/C2 systems remain unfinished. This is
+a development update with Core 3.3 compatibility, not a completed AI release.
+Original source archives and user campaigns are preserved; no private save was
+opened or migrated during qualification.

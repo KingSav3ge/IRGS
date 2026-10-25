@@ -1,5 +1,14 @@
 # IRGS 3.4.0 Solo runtime completion
 
+## Current priority — shared IRGS systems
+
+The user's current direction is development across campaigns and themes.
+Read [the shared scope](IRGS_SYSTEMS_SCOPE.md) and
+[coordination](COORDINATION.md) before selecting work.
+Rise R00 remains one regression fixture. Shared-system completion requires
+supported non-Rise evidence; campaign-specific mechanics retain their own scope.
+The records below preserve previously delivered work and historical evidence.
+
 Target iteration: **3.4.0**, currently in development. This version identifies the next coordinated Engine, App and Catalog delivery. Existing qualified releases, Core compatibility identifiers, content versions and historical evidence retain their recorded versions. Publish the 3.4.0 release identity with the qualified integrated build.
 
 Priority set by the user on 23 October 2026. The next release target is a continuing Solo campaign with an AI-assisted action loop. Work belongs to the existing Engine, App/Website and Catalog chats; this coordinator reviews and integrates their exact commits.
