@@ -1,5 +1,13 @@
 # Coordinator work order — shared IRGS systems
 
+## Current continuation — 25 October 2026
+
+The delivered shared-response set and verified-byte intake patch are integrated
+in IRGS/main. Follow [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and the current
+[development guide](DEVELOPMENT.md) for the next bounded assignment. Earlier
+scope requirements below remain applicable; completed foundation work should
+not be repeated as an unimplemented first delivery.
+
 The user directs development of IRGS across campaigns and themes. Read
 [IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md). The Engine, App and Catalog
 work orders in their own repositories assign the independent implementation.

@@ -1,102 +1,163 @@
-# IRGS 3.4.0 development update
+# Unified IRGS development and coordination guide
 
-Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS/main`.
+Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
-This is the complete assembled development baseline: the selected Core 3.3 runtime and catalogue, C2's applied engine specification, and the preferred Emergent visual design connected to the canonical Solo host. 3.4.0 identifies this coordinated development update. It does not claim that the remaining C2 mechanics are implemented.
+## Qualified baseline and scope
 
-## Source layout
+IRGS **3.4.0 development**, Core compatibility **3.3**. Develop shared systems
+across campaigns and themes. Rise R00 and the existing non-Rise authored opening
+are actual supported regression contexts. Synthetic theme/profile checks prove
+their recorded formatting/declaration behavior, not new campaign mechanics.
 
-| Path | Role |
+The [coordinator integration](https://github.com/KingSav3ge/IRGS/blob/65351ebcfe2538d880f576a3ce4aa2230537e08d/provenance/qa/shared_response_integration_3_4_0_review.json) qualified joined `65351ebcfe2538d880f576a3ce4aa2230537e08d`:
+
+| Component source | Qualified commit |
 | --- | --- |
-| `IRGS_3_3/runtime/` | Executable shared Core and its tests. |
-| `IRGS_3_3/catalog/` and `IRGS_3_3/data/` | Installed genres, libraries, profiles and dated starting references. |
-| `IRGS_3_3/Core/` | Selected runtime binding and inherited Core text. |
-| `IRGS_Catalog/` | Independently maintained campaign listings, preview data and catalogue design documents. |
-| `IRGS_Web/` | Canonical Solo website, transport and interface tests. |
-| `engine/` | Applied C2 engine text, incorporation audit and preserved design sources. |
-| `provenance/` | Historical source records; these are not current test results or instructions to adopt mechanics. |
-| `tools/` | Unified development verification, packaging and smoke helpers. |
+| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
+| App/Web | `aae8a25656c890181e0aa569df2c716968ec3642` |
+| Catalog | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
 
-Superseded assembly bundles and their obsolete verifier have been removed. Edit and package the canonical sources above with the unified tools; Git history retains the original assembly inputs. There is no second editable `app/IRGS_Web` tree and no alternate Mongo simulation in the running application.
+Recorded integration results: 680 Core tests run (679 passed, one private-fixture
+policy skip); 201 Web run (194 passed, seven Windows skips); 105 interface checks;
+104 Catalog checks; eight independent HTTP checks. Two-context Chromium and
+clean-package qualification passed with zero live inference. These are attributed
+prior results, not tests newly executed by this guide update.
 
-## Run the website
+Later guide-only commits do not alter this qualified source set. Preserve
+independent content/schema versions and historical evidence. See
+[shared scope](IRGS_SYSTEMS_SCOPE.md), [continuation](CHAT_CONTINUATION.md) and
+[the work order](COORDINATOR_WORK_ORDER.md).
 
-Double-click the root `Start-IRGS.cmd`. It uses the canonical launcher and defaults to `http://127.0.0.1:8765/`. An existing valid IRGS host on that port may be reused, including a host from the original installation.
+## Repository boundaries and current state
 
-For an isolated development host, run this from the repository root and open `http://127.0.0.1:8766/`:
+| Repository | Owns |
+| --- | --- |
+| IRGS-Engine | `IRGS_3_3/`, Engine contracts/design and Core behavior. |
+| IRGS-APP-WEB | `IRGS_Web/`, local host/interface/viewer, pinned `Engine/` and `Catalog/`. |
+| IRGS-Catalog | `IRGS_Catalog/` content, provenance, response depot and evaluations. |
+| IRGS | Full joined source, coordination, qualification and packaging. |
 
-```powershell
+See [COMPONENTS.json](COMPONENTS.json), [coordination](COORDINATION.md),
+[current machine state](DEVELOPMENT_STATE.json), [integration policy](COMPONENT_REPOSITORIES.md)
+and [shared completion plan](SOLO_COMPLETION_PLAN.md). Original dated evidence
+stays preserved. `DEVELOPMENT_STATE_HISTORY_2026-10-22.json` archives the superseded
+3.3.3 state; it is not the active task list.
+
+The latest merge aligns App pins, consumes shared response contracts and fixes
+the Catalog code/text intake race. Shared Engine intent APIs exist; App currently
+uses its reviewed existing handler/receipt adapters. Process/communication controls,
+further semantic adapters, operator setup and broader DEV/C2 remain open.
+
+## Next coordination increment
+
+Review the next exact pushed component set against its published contracts and
+this shared scope. Track the Engine phase/capability interface, App controls and
+Catalog current-consumer/evaluation follow-up as coordinated dependencies.
+Keep useful owner work moving when another interface is pending. Resolve actual
+compatibility bugs in the owning repo, align App pins, then capture fresh source-
+bound evidence and test an isolated candidate. Gate the import, prove identical
+runtime inputs, check real browser play and a clean package, then push joined main.
+Guide-only metadata commits are not new viable product deliveries. Monitor only
+while this environment runs; do not claim a chat was resumed by a repository push.
+
+## Run and verify
+
+```bash
 python -B IRGS_Web/server.py --port 8766
-```
-
-The development copy starts without campaign saves. Existing campaigns remain in the original installation; this assembly does not copy, migrate, restore or redate them. New campaigns created in the development copy are separate saved playthroughs. Runtime-created saves, host metadata and caches stay out of source packages.
-
-## Verify changes
-
-Use Python 3 and Node.js. The canonical host uses the Python standard library. Run these commands from the repository root; do not use Python's `-O` option.
-
-```powershell
 python -B tools/verify_development.py
-python -B -m unittest discover -s IRGS_3_3/runtime -v
-python -B -m unittest discover -s IRGS_Web/tests -v
-node IRGS_Web/tests/test_gameplay_ui.js
-```
-
-If the interface test cannot locate Python, set `IRGS_TEST_PYTHON` to the Python executable used for the other checks. The interface suite uses synthetic records and transport; it does not open a real save. A historical-save test may explicitly skip when its external historical save is absent. Windows launcher fixtures are platform-specific.
-
-Run checks appropriate to the change. After intentional source edits, run `python -B tools/refresh_component_releases.py --component engine`, `--component app` or `--component catalog` for only the edited component and refresh the unified development manifest:
-
-```powershell
-python -B tools/verify_development.py --refresh
-python -B tools/verify_development.py
-```
-
-Refreshing hashes records the intended files. It does not establish that tests passed, adopt a proposed rule, implement a capability or certify every dependency branch.
-
-## Package and check an extraction
-
-```powershell
-python -B tools/package_development.py
-python -B tools/smoke_development.py
-```
-
-Use the unified helpers for new development distributions. Inherited `IRGS_3_3/build_release_3_3.py` and `IRGS_3_3/package_release.py` describe an earlier release workflow that depends on historical validation records and save backups. They are preserved sources, not the fresh D1 build command.
-
-## Branches and next work
-
-The joined repository keeps `main`. Independent Engine, App and Catalog development use their own repositories and `main` branches. The app pins Engine and Catalog checkouts; joined IRGS contains all three full source directories. See [component ownership and integration](COMPONENT_REPOSITORIES.md).
-
-The equipment action and optional authored 1415 Solo opening are connected to the app. The opening supports repeated observation, local movement and dispatch delivery with atomic local durations and durable successful/unsuccessful outcomes. Wider gameplay, interruptible elapsed phases and operation-level dependency qualification remain work. See [ROADMAP.md](ROADMAP.md) for the bounded sequence and completion evidence.
-
-## Operation coverage and evidence freshness
-
-The bounded equipment action is implemented. The continuation now records supported operations by backend, with actual successful and rejected-path observations, source references and remaining gaps. Inspect [engine/OPERATION_COVERAGE.md](engine/OPERATION_COVERAGE.md) and its linked machine-readable register.
-
-Check whether the stored evidence still matches its code, tests, fixture content and selected release inputs:
-
-```powershell
 python -B tools/build_operation_register.py --check engine/qualification/operation_register.json
-python -B -m unittest discover -s tools/tests -p "test_*.py" -v
 ```
 
-The freshness check does not replay tests or certify new branches. To generate new evidence, run:
+The Windows launcher defaults to 8765 and may reuse another valid host. Keep
+development sessions separate and preserve user saves. Server startup, templates
+and an API key alone do not configure eligible live inference.
 
-```powershell
-python -B tools/build_operation_register.py --output engine/qualification/operation_register.json --markdown engine/OPERATION_COVERAGE.md --test-log development_results/operation_capture.txt
+`tools/qa_irgs.py --source-root <clean-candidate-root> --commit <exact-candidate-SHA>
+--output <outside-source-report.json>` runs joined Core/Web/interface/tooling and
+eight independent HTTP checks. It excludes the external private-save test by
+policy even if present. Use it for changed product inputs; guide-only edits retain
+attributed existing results after proving code/data/release equality.
+
+For changed runtime/test/release inputs, generate actual new operation evidence:
+
+```bash
+python -B tools/build_operation_register.py --output engine/qualification/operation_register.json --markdown engine/OPERATION_COVERAGE.md --test-log development_results/runtime_capture.txt
 ```
 
-This can take several minutes because it observes synthetic runtime test executions. The external historical-save fixture is skipped by policy, even if present. Existing campaigns and inherited certification files are not inputs. Actual apply calls and detached probes are recorded separately. A listed handler, a named test or a successful observation does not establish complete branch coverage or player availability.
+All three destinations belong inside the candidate; test log ends in `.txt`.
+Capture observes synthetic execution and discloses unqualified paths. Rehashing
+old evidence does not qualify changed inputs. Do not use the inherited release
+builder that expects historical backups/certification files.
 
-## Historical reference library
+## Gated integration and packaging
 
-Creator workspace → Historical Details browses the complete Catalog delivery by default. Catalog preserves the original Historical Grand Archive 1.1 ZIP in 32 verified byte parts. On first use, Engine reconstructs a verified ZIP into an ignored installation cache. The browser exposes ten structured collections; books, assets and the central database remain preserved in the archive. Source records, uncertainty, citations and rights retain their meanings, and reads create no campaign facts or player knowledge.
+1. Preserve local work; fetch exact main commits and inspect actual owner code
+   and evidence. Work orders and guide-only commits are metadata, not viable
+   new product increments. Keep current code pins until a reviewed pair is chosen.
+2. Qualify a clean isolated Engine/App/Catalog candidate, including compatible
+   committed App pins, real non-Rise/Rise effects, actor privacy, retries, restart,
+   restore and zero-call routine rendering. Preserve legacy fixture guards.
+3. Record exact approvals in `COORDINATION.json`. Use
+   `tools/check_integration_gate.py` then `tools/sync_components.py --apply`, each
+   with `--engine`, `--app`, `--catalog` repository paths. The gate must hold when
+   no new viable set exists; do not bypass it to import partial work.
+4. Retain fresh candidate operation evidence only after proving identical source
+   inputs in joined source. Refresh `DEVELOPMENT_MANIFEST.json` with
+   `python -B tools/verify_development.py --refresh`, then verify again.
+5. Package the actual committed tree and test extraction before pushing main:
 
-Explicit local ZIP attachment remains available with `python -B IRGS_Web/register_historical_archive.py "path/to/archive.zip"`. Each installation maintains its own cache and optional attachment registration; caches and local paths are excluded from source packages. See [integration and limits](engine/HISTORICAL_REFERENCE_INTEGRATION.md).
+```bash
+python -B tools/package_development.py --output ../IRGS_3_4_0_Development.zip
+python -B tools/smoke_development.py ../IRGS_3_4_0_Development.zip
+```
 
-## Rise settlement foundation
+Use explicit candidate/import paths. For clean-package checks clear only stale
+`IRGS_ENGINE_ROOT` / `IRGS_CATALOG_ROOT` selectors or point them to extraction;
+preserve proxy/TLS settings. Keep artifacts, test saves, credentials and caches
+outside curated source. Run actual extracted browser play for changed UI/contracts.
 
-Content Library → The Rise of... You → Begin a founding story starts a reviewed fictional R00 campaign. Company, permission and actual goods are separate choices. The shared Core executes bounded work, provision and household movement; the eight design families remain held. See [the implementation and status table](engine/design/rise/README.md) and [fresh qualification](RISE_FOUNDATION_VALIDATION.json).
+## QA monitor and guide-only publication
 
-## Century of Conflict starts
+`tools/watch_component_qa.py` polls pushed component mains while the environment
+runs, tests isolated sets and publishes QA metadata. It does not implement work,
+start chats, import product source or deploy. Recheck PID/cmdline, lock and fresh
+state before claiming it is running. Pause only its verified process while
+coordinating publication; restore it afterward.
 
-Content Library → Century of Conflict → entry dropdown reveals the selected starting reference. All 37 entries support reviewed individual Solo initialization and an optional fictional local opening; ten primary starts remain marked. The original 1415 snapshot and scene are preserved. See [implementation and CMRR](engine/CENTURY_STARTS_IMPLEMENTATION.md), [historical review and remaining research](provenance/century_of_conflict/HISTORICAL_REVIEW.md), and [current qualification](CENTURY_STARTS_VALIDATION.json). This adds no general action resolver, historical event schedule or existing-save migration.
+For guide-only commits, prove all selected runtime/data/release bindings and
+operation inputs remain byte-identical. Record documentation equivalence with
+the existing qualification; do not manufacture a fresh test run or advance
+product pins solely for prose. Preserve watcher history and truthfully identify
+any metadata-only seeded qualification. This avoids redundant full regressions.
+
+## Rules for every increment
+
+Keep one authoritative Core and the nine K-owners; provider work retains the six
+existing Director categories. Distinguish intent, authorization, committed effects,
+received information and presentation. Only actual actor-legitimate records may
+support a response. Testimony and uncertain information retain their status.
+Keep storage revision, causal order, elapsed spans, civil dates and information
+times distinct. Select real rules/adapters; themes and text create no capability.
+
+Routine responses require no provider, key or model tokens. Preserve exact
+receipts, negation, actual zero/absent durations, editable intentions and explicit
+submission. Missing text or rules retain a literal/unresolved result and cannot
+authorize paid fallback. Keep pinned code/content intake on the exact verified
+bytes; retain the component-update regression in App.
+
+Use temporary synthetic saves. Never read/migrate user campaigns or run the
+external private-save fixture. Preserve original archives, source records,
+rights, adopted canon and 44 previews. Historical Details is fully delivered;
+archive reacquisition is complete. Preview/content presence grants no release
+or mechanical authority. General freeform/combat, generated dialogue, sustained
+institutions, full C2, live model quality and wider hosting retain their open
+requirements; Co-op remains deferred.
+
+## Handoff and records
+
+The three component continuation briefs are linked in [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
+Repository publication supplies the available handoff; no direct chat-send/start
+tool is present. Status reads can fail, so commit/owner evidence and actual checks
+must support review. Generate paste-ready instructions without claiming delivery.
+Previous operational notes remain in [dated history](DEVELOPMENT_HISTORY_2026-10-25.md).

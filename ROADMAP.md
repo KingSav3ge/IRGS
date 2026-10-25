@@ -1,5 +1,12 @@
 # IRGS Engine development roadmap
 
+## Current continuation pointer
+
+The qualified 3.4.0 shared response update is integrated. Read
+[CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)
+for the current baseline and next bounded process/interaction work. Stable DEV
+completion criteria and dated records below retain their original scope.
+
 ## Current priority — shared IRGS systems
 
 The user's current direction is development across campaigns and themes.

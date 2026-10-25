@@ -1,5 +1,7 @@
 # IRGS 3.4.0 — joined development source
 
+Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
+
 This repository's `main` combines the Engine, App and Catalog. Independent development now lives in:
 
 | Component | Repository | Source |

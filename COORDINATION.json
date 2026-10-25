@@ -104,9 +104,9 @@
   "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
-    "engine": "Shared Core lifecycle/capability/receipt contracts and offline responses across actual supported campaign adapters; continue stable DEV gaps.",
-    "app": "Common capability-driven interaction and local presentation across supported campaigns, protected optional AI and compatible dependencies.",
-    "catalog": "Campaign-independent 750-system/250-draft response depot, provenance/schema validation and cross-campaign consumer evidence."
+    "engine": "Expose a small, host-safe capability/phase contract for the existing typed\ncontinuation API, starting with already selected non-Rise observation and Rise\nwork. Reuse durable parent/phase identities, actual reservations, source rules\nand CAS persistence. The App needs actor-safe availability, status, supported\ncommands and received phase outcomes without private dependency certificates.\nPublish the minimal stable API early, then qualify actual decision reads,\nrejection, competing resources, pause/resume/cancel, restart and restore. Follow\nwith the existing communication/offer participant and received-source contracts.\nThis advances DEV-06\u2013DEV-17 within named scope; their broader completion stays open.\nDo not export Rise travel/stock rules as universal campaign mechanics.",
+    "app": "Add a bounded common player control/HTTP bridge for existing Engine process\ncontinuation, beginning with qualified non-Rise observation and Rise work.\nUse Engine-owned capabilities and its typed prepare/execute/receipt contracts;\nauthenticate actor and actual branch/restore/revision, show explicit commands,\nand persist the candidate save/result atomically before acknowledgment. Preserve\nphase identity and original result through pause/resume, failed save, concurrent\nretry, restart and restored branches. Render only legitimate received progress.\nWhere capability discovery needs an Engine contract, record that exact dependency\nand continue host/status/recovery work against its existing typed API; invent no\noperation or time rule. Communication/source controls follow published contracts.\nProtected operator/launcher configuration remains a separate runnable-system item.",
+    "catalog": "Add a separately versioned compatibility follow-up for the currently integrated\nEngine/App pair, with actual local_responses and saved presentation checks in\nindependently initialized non-Rise and Rise contexts. Preserve existing fixture\nmanifests, payload hashes and declared consumer commits exactly; do not repin old\nevidence. Select clean exact current consumers and verify App's committed pins.\nTest real outcomes, drafts that submit nothing, actor/oracle separation, zero\nprovider calls, stable older receipts, retries and failed/missing-source fallback.\nThe current-pair follow-up can proceed now. Extend phase/communication evaluation\nonly after owner-published contracts supply supported behavior and known facts.\nKeep the depot at 750 system variants, 250 editable drafts and 32 recipes unless\nthe user changes that request. New text alone completes no simulation system."
   },
   "previous_completed_cycle": {
     "cycle_id": "historical-details-01",
@@ -242,5 +242,13 @@
       "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
     },
     "record": "provenance/qa/completed_cycles/irgs-wide-systems-01_coordination.json"
-  }
+  },
+  "continuation_instructions": {
+    "IRGS-Engine": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/CHAT_CONTINUATION.md",
+    "IRGS-APP-WEB": "https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/CHAT_CONTINUATION.md",
+    "IRGS-Catalog": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md",
+    "IRGS": "https://github.com/KingSav3ge/IRGS/blob/main/CHAT_CONTINUATION.md"
+  },
+  "guides_updated_on": "2026-10-25",
+  "continuation_message_dispatched": false
 }
