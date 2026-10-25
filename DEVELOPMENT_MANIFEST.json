@@ -4020,13 +4020,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5737,
-      "sha256": "bb150a7cde2b941567ec93967bca2100b7fffc51fbd015a1dfb72d121f5a8536"
+      "bytes": 5685,
+      "sha256": "a75d8a998ef2f97c1fc5b3bf55e00faee5b023aaa0f4ebf78ce8491aa10c6fb5"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 566,
-      "sha256": "0358320fd88617b578c4b26dcc411bbbfa7fcc977d5c12ad1d78b75018a0f382"
+      "bytes": 2752,
+      "sha256": "87dfa578c32942f889239561d6637488ebdd7b800dacafc1739014ffee0c7a3d"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
