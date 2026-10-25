@@ -1,7 +1,7 @@
 # IRGS independent QA
 
-Candidate: `932d338041eb67702f9035f7053036d94c9e0a8a`
-Result: **needs_fixes** · 2026-10-25T12:00:28.698599+00:00
+Candidate: `8f2463c9d9a4511a060e7d267ddb2c5c40f0ceed`
+Result: **needs_fixes** · 2026-10-25T12:06:30.788171+00:00
 
 Engine Development owns mechanics fixes. QA runs isolated, synthetic campaigns and reports observed behavior.
 
@@ -61,7 +61,7 @@ This report is not full C2/T01–T37 certification. Skips and missing providers 
 
 Engine: `2f9476c6090878257d17cab3ad3a83a7ce18a5dc`
 
-App: `e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f`
+App: `dcf2ffe6723e7bbd4e22b957ea43dee3755c2401`
 
 Catalog: `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e`
 
