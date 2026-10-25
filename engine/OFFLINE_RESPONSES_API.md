@@ -1,5 +1,7 @@
 # Engine responses without an API token
 
+For cross-campaign contracts and the new exact 750-system/250-draft depot, use [Shared Engine API 1](SHARED_SYSTEMS_API.md). This document preserves the earlier 338-variant compatibility API and its original scope.
+
 The Engine bundles its own validated text library and renders actual Core results locally. It needs no API key, provider account, network connection, Catalog installation or inference budget. Supported action APIs return a `presentation` field automatically; presentation changes no world state, elapsed time, stock, accepted intention or outcome.
 
 The Engine library contains **338 variants in 86 families, with 15 mixing recipes**: 285 system responses and 53 player draft templates. It retains Catalog's 325 authored variants and adds 13 Engine variants for phase progress, attributed speech, offer status and exact authored scene drafts. Source attribution, commit and hashes are preserved in [provenance](../IRGS_3_3/data/responses/PROVENANCE.json). The [Engine bank](../IRGS_3_3/data/responses/engine_routine_v1.json) and [formatter](../IRGS_3_3/runtime/routine_format.py) ship independently of Catalog.

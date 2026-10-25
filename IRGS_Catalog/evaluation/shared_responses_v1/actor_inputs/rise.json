@@ -1,0 +1,16 @@
+{
+  "context_id": "rise",
+  "source_ref": "authored-synthetic:irgs-catalog:shared-responses:v1",
+  "cases": [
+    {
+      "case_id": "rise-walk",
+      "action_id": "walk_clearing",
+      "request_id": "shared-rise-walk"
+    },
+    {
+      "case_id": "rise-inspect",
+      "action_id": "inspect",
+      "request_id": "shared-rise-inspect"
+    }
+  ]
+}

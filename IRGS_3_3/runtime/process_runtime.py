@@ -10,7 +10,7 @@ import json
 
 from irgs_reference import InvalidEvent, canon, digest
 from player_actions import _controlled, _failed_dependencies
-from solo_provider import WorldScope
+from runtime_contracts import WorldScope
 
 OPERATION = 'continue_player_process'
 
@@ -291,7 +291,7 @@ class ProcessRequest:
 
 def prepare(world, *, phase_id, process_id, actor, command, details, intention,
             source_ref, branch_id, restore_id):
-    from solo_provider import WorldScope, require
+    from solo_provider import require
     require(_controlled(world.s, actor), 'actor_denied')
     require(all(_text(value, 256) for value in (phase_id, process_id, actor)), 'invalid_request')
     require(_text(intention) and _text(source_ref), 'invalid_request')

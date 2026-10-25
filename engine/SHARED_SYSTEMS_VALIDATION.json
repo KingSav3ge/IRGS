@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SHARED_ENGINE_CONTRACTS_WITH_LIMITS",
+  "date_utc": "2026-10-25",
+  "target_iteration": "IRGS 3.4.0 development",
+  "python": "3.12.14",
+  "library": {
+    "status": "verified",
+    "library_id": "irgs-response-depot-v1",
+    "families": 127,
+    "variants": 1000,
+    "recipes": 32,
+    "provider_dispatch": false,
+    "runtime_integration_verified_by_schema": false
+  },
+  "source_catalog_commit": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2",
+  "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+  "system_variants": 750,
+  "editable_draft_variants": 250,
+  "new_named_tests": 35,
+  "passed": 35,
+  "skipped": 0,
+  "test_ids": [
+    "test_shared_runtime.SharedRuntimeTests.test_capabilities_and_drafts_do_not_filter_hidden_blockers_or_stock",
+    "test_shared_runtime.SharedRuntimeTests.test_changed_replay_payload_cannot_reinterpret_an_accepted_request",
+    "test_shared_runtime.SharedRuntimeTests.test_changed_state_and_revoked_control_reject_fresh_requests",
+    "test_shared_runtime.SharedRuntimeTests.test_concurrent_host_compare_and_swap_saves_one_effect",
+    "test_shared_runtime.SharedRuntimeTests.test_core_declaration_observes_current_control_and_rejects_revoked_eligibility",
+    "test_shared_runtime.SharedRuntimeTests.test_drafts_are_capability_bound_editable_and_selection_and_preparation_commit_nothing",
+    "test_shared_runtime.SharedRuntimeTests.test_equipment_without_new_adapter_keeps_existing_honest_result",
+    "test_shared_runtime.SharedRuntimeTests.test_explicit_acceptance_and_mandatory_persistence_precede_any_effect",
+    "test_shared_runtime.SharedRuntimeTests.test_failed_save_leaves_world_unchanged_and_does_not_acknowledge_result",
+    "test_shared_runtime.SharedRuntimeTests.test_forged_action_or_capability_is_rechecked_before_core",
+    "test_shared_runtime.SharedRuntimeTests.test_fresh_process_executes_non_rise_without_provider_modules_or_other_components",
+    "test_shared_runtime.SharedRuntimeTests.test_generic_semantic_tag_or_unknown_capability_never_routes",
+    "test_shared_runtime.SharedRuntimeTests.test_lost_ack_serialized_pending_request_restarts_with_original_receipt",
+    "test_shared_runtime.SharedRuntimeTests.test_missing_adapter_retains_explicit_intention_as_unresolved_without_creating_mechanics",
+    "test_shared_runtime.SharedRuntimeTests.test_missing_depot_retains_exact_outcome_drafts_and_unresolved_status_without_dispatch",
+    "test_shared_runtime.SharedRuntimeTests.test_non_rise_actual_delivery_conserves_stock_and_duplicate_does_not_repeat_it",
+    "test_shared_runtime.SharedRuntimeTests.test_non_rise_blocked_movement_keeps_actual_failure_and_elapsed",
+    "test_shared_runtime.SharedRuntimeTests.test_private_and_foreign_evidence_is_absent_and_sources_status_and_time_remain",
+    "test_shared_runtime.SharedRuntimeTests.test_receipt_replay_never_appends_current_information_or_cross_actor_data",
+    "test_shared_runtime.SharedRuntimeTests.test_received_record_truncation_is_explicit_and_does_not_imply_absence",
+    "test_shared_runtime.SharedRuntimeTests.test_restore_and_branch_fences_reject_discarded_future_requests",
+    "test_shared_runtime.SharedRuntimeTests.test_same_contract_executes_two_actions_in_independently_initialized_contexts",
+    "test_shared_runtime.SharedRuntimeTests.test_serialization_is_strict_and_world_scope_remains_backwards_compatible",
+    "test_shared_runtime.SharedRuntimeTests.test_shared_receipt_supports_actual_phase_and_received_communication_without_inventing_rules",
+    "test_shared_runtime.SharedRuntimeTests.test_snapshot_changes_with_branch_restore_and_actual_received_text",
+    "test_response_depot.ResponseDepotTests.test_all_1000_variants_with_four_synthetic_theme_labels_and_no_dispatch",
+    "test_response_depot.ResponseDepotTests.test_all_32_recipes_accept_full_and_required_only_contexts",
+    "test_response_depot.ResponseDepotTests.test_corrupted_source_retains_literal_text_without_provider_or_truncation",
+    "test_response_depot.ResponseDepotTests.test_drafts_without_required_known_labels_remain_literal_authored_intentions",
+    "test_response_depot.ResponseDepotTests.test_exact_catalog_bytes_counts_and_compatibility_bank_are_preserved",
+    "test_response_depot.ResponseDepotTests.test_intake_validates_the_exact_hashed_bytes_if_file_changes_during_read",
+    "test_response_depot.ResponseDepotTests.test_invalid_tags_unsafe_placeholders_and_mixed_scopes_are_rejected",
+    "test_response_depot.ResponseDepotTests.test_public_status_never_uses_a_private_diagnostic_to_select_words",
+    "test_response_depot.ResponseDepotTests.test_runtime_preserves_exact_text_negation_braces_newlines_and_original_elapsed",
+    "test_response_depot.ResponseDepotTests.test_semantic_tags_remain_drafts_and_never_become_operation_ids"
+  ],
+  "provider_dispatches": 0,
+  "model_tokens": 0,
+  "live_calls": 0,
+  "user_saves_used": false,
+  "actual_contexts": {
+    "non_rise_authored_scene": {
+      "initialization": "test_scene_actions.fixture",
+      "handler": "Core execute_player_scene_action",
+      "two_actions": "enter-passage → reach-desk",
+      "elapsed_after_two_actions": 35,
+      "delivery_after_two_actions": "one actual sealed_dispatch transfer; 39 seconds total",
+      "blocked_movement": "Actual unsuccessful outcome; five elapsed seconds; location retained"
+    },
+    "rise": {
+      "initialization": "settlement_setup.initialize with explicit synthetic choices",
+      "handler": "Core execute_settlement_action",
+      "two_actions": "walk_clearing → found",
+      "elapsed_after_two_actions": 300,
+      "camp_established": true
+    },
+    "unsupported_context": {
+      "handler": "Core record_player_action",
+      "result": "declared_not_resolved; exact intention retained"
+    },
+    "phase_and_communication": {
+      "scope": "Existing native selected handlers; shared receipt/received projection",
+      "status": "Actual nonterminal work phase and received attributed testimony, no invented speech duration"
+    },
+    "equipment": {
+      "scope": "Existing actual stock handler/result retained; shared receipt adapter unavailable"
+    }
+  },
+  "content_portability": {
+    "themes": [
+      "historical court",
+      "fantasy expedition",
+      "space station",
+      "modern investigation"
+    ],
+    "variants_per_theme": 1000,
+    "recipes_full_and_required": 32,
+    "establishes_theme_mechanics": false
+  },
+  "recovery": [
+    "Exact pending-request JSON",
+    "Mandatory host CAS",
+    "Concurrent acceptance once",
+    "Failed save rollback",
+    "Lost acknowledgment/reload",
+    "Branch/restore fence",
+    "No changed replay or adapter identity reuse"
+  ],
+  "information": [
+    "Actor/control checks",
+    "Actual received evidence only",
+    "Source/status/causal times preserved",
+    "Explicit truncation",
+    "No stock/blocker feasibility oracle",
+    "No current facts appended to old receipts"
+  ],
+  "core_control_fix": "Direct record_player_action rejects revoked current eligibility despite stale player-list entry; actual R9 rejection/conflict evidence",
+  "source_sha256": {
+    "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "IRGS_3_3/runtime/shared_runtime.py": "51cc50be68b257f0fd6aaef398b5eb1d41f06eb4421a9d16bf2c99cd61f03eec",
+    "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+    "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+    "IRGS_3_3/runtime/routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
+    "IRGS_3_3/runtime/offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+    "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+    "IRGS_3_3/runtime/communication_runtime.py": "34bdea9a0333287dfdeb3e0d4e5298f780abc73aadfe4d43070c4e0299f2db43",
+    "IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+    "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "IRGS_3_3/runtime/test_shared_runtime.py": "838c26c30375ea60f9184796f436f5844cbee684a7a29cd3f46bd1e67e8b50e9",
+    "IRGS_3_3/runtime/test_response_depot.py": "c09c4eb0f15089177538ecb1671c8e696cc1f19992833f0a965348871982e35c",
+    "IRGS_3_3/data/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "IRGS_3_3/data/responses/depot_v1/SOURCE.json": "5a2f98e8bd70b9cacd26066d651c3057bf2ae00062a8151235e459ad176f8478"
+  },
+  "remaining": [
+    "App authentication/persistence integration, controls, exact pins and joined qualification",
+    "Shared execute adapters for broader processes/communication remain their existing native typed APIs",
+    "No new equipment response adapter or generic operation dispatcher",
+    "General freeform/combat, NPC decisions, sustained institutions and complete DEV/C2 coverage",
+    "Live model quality/human evaluation and production token-savings measurement"
+  ],
+  "base_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+  "checks": {
+    "dedicated": {
+      "command": "python -B tools/qualify_shared_systems.py --output engine/SHARED_SYSTEMS_VALIDATION.json",
+      "tests": 35,
+      "passed": 35,
+      "skipped": 0,
+      "status": "PASS"
+    },
+    "focused": {
+      "tests": 264,
+      "passed": 264,
+      "skipped": 0,
+      "status": "PASS",
+      "modules": [
+        "test_shared_runtime",
+        "test_response_depot",
+        "test_process_runtime",
+        "test_communication_runtime",
+        "test_inference_accounting",
+        "test_r9_collections",
+        "test_settlement",
+        "test_solo_lifecycle",
+        "test_solo_provider",
+        "test_openai_proposals",
+        "test_solo_rise",
+        "test_scene_actions",
+        "test_player_actions",
+        "test_work_recovery",
+        "test_rejected_dependencies",
+        "test_offline_responses",
+        "test_response_options"
+      ]
+    },
+    "full_runtime": {
+      "command": "python -B -m unittest discover -s IRGS_3_3/runtime -q",
+      "tests": 680,
+      "passed": 679,
+      "skipped": 1,
+      "skip_reason": "historical local save not packaged",
+      "status": "PASS_WITH_EXISTING_PRIVATE_FIXTURE_SKIP"
+    },
+    "engine_integrity": {
+      "command": "python -B tools/verify_components.py --component engine",
+      "status": "PASS",
+      "pinned_files": 360
+    },
+    "kira_canon": {
+      "command": "python -B IRGS_3_3/catalog/campaigns/kira/verify_kira.py",
+      "status": "PASS"
+    },
+    "active_doc_links": {
+      "documents": 7,
+      "local_links": 114,
+      "status": "PASS"
+    },
+    "patch_whitespace": {
+      "command": "git -c core.whitespace=cr-at-eol diff --cached --check",
+      "status": "PASS"
+    },
+    "catalog_r00": {
+      "status": "PASS_OFFLINE_ENGINE_CATALOG_WITH_LIMITS",
+      "catalog_commit": "2e4f389882df0807fc8064c1a0b533aaa3b1bcd3",
+      "manifest_sha256": "2d30e863c4f769f0e2039469807ca0c6eeef3f30edd17d96778cebcba65bdbe5",
+      "loader_sha256": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+      "cases": [
+        {
+          "case_id": "solo-denied-build",
+          "kind": "denied",
+          "result": "rejected_no_effects",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-unsupported-grain",
+          "kind": "unsupported",
+          "result": "unsupported_action",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-walk",
+          "kind": "legitimate",
+          "result": "committed",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-stale-inspect",
+          "kind": "stale",
+          "result": "stale_state",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-found",
+          "kind": "legitimate",
+          "result": "committed",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-replay-walk",
+          "kind": "replay",
+          "result": "original_receipt",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-changed-replay",
+          "kind": "changed_replay",
+          "result": "request_identity_conflict",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-build",
+          "kind": "legitimate",
+          "result": "committed",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-work-boundary",
+          "kind": "legitimate",
+          "result": "committed",
+          "status": "PASS"
+        },
+        {
+          "case_id": "solo-finish-shelter",
+          "kind": "legitimate",
+          "result": "committed",
+          "status": "PASS"
+        }
+      ],
+      "passed": 10,
+      "skipped": 0,
+      "successful_actions": 5,
+      "elapsed_seconds": 3900,
+      "material_consumption": {
+        "axe": 0,
+        "grain": 0,
+        "timber": 4
+      },
+      "shelter_places": 2,
+      "actor_oracle_separation": true,
+      "live_calls": 0,
+      "engine_sources_sha256": {
+        "core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+        "settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+        "scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+        "solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+        "solo_actions.py": "3d07a615911d0deac3d5b0fc8744015ab8efaa2e5e454877a1ab45ef543e8363",
+        "r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+        "r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
+        "offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+        "routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
+        "process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+        "communication_runtime.py": "34bdea9a0333287dfdeb3e0d4e5298f780abc73aadfe4d43070c4e0299f2db43",
+        "runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668"
+      }
+    }
+  }
+}

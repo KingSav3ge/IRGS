@@ -1,0 +1,41 @@
+{
+  "context_id": "quay",
+  "source_ref": "authored-synthetic:irgs-catalog:shared-responses:v1",
+  "cases": [
+    {
+      "case_id": "quay-look",
+      "action_id": "look-quay",
+      "request_id": "shared-quay-look"
+    },
+    {
+      "case_id": "quay-blocked",
+      "action_id": "quay-shortcut",
+      "request_id": "shared-quay-blocked"
+    },
+    {
+      "case_id": "quay-passage",
+      "action_id": "quay-passage",
+      "request_id": "shared-quay-passage"
+    },
+    {
+      "case_id": "quay-desk",
+      "action_id": "passage-desk",
+      "request_id": "shared-quay-desk"
+    },
+    {
+      "case_id": "quay-inspect",
+      "action_id": "look-desk",
+      "request_id": "shared-quay-inspect"
+    },
+    {
+      "case_id": "quay-deliver",
+      "action_id": "deliver-dispatch",
+      "request_id": "shared-quay-deliver"
+    },
+    {
+      "case_id": "quay-empty",
+      "action_id": "deliver-dispatch",
+      "request_id": "shared-quay-empty"
+    }
+  ]
+}

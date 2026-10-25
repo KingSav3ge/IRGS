@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "library_id": "irgs-response-depot-v1",
+  "version": "1.0.0",
+  "repository": "KingSav3ge/IRGS-Catalog",
+  "commit": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2",
+  "path": "IRGS_Catalog/responses/depot_v1/library.json",
+  "sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+  "rights": "Original Catalog-authored presentation text; local presentation and synthetic evaluation permitted. Library bytes and authority remain unchanged.",
+  "reference_formatter_sha256": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
+  "runtime": "Engine-owned runtime selection, scopes and adapters; no Catalog checkout required"
+}

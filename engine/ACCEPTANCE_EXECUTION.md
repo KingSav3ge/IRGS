@@ -1,5 +1,7 @@
 # Scoped C2 implementation evidence — Action 1
 
+The 25 October [shared-system record](SHARED_SYSTEMS_VALIDATION.json) adds independently initialized non-Rise/Rise acceptance and actual outcomes, actor/capability/received/receipt contracts, neutral depot adoption and current-control rejection inside Core declarations. Its 35 new cases advance named dependency, intention, knowledge and recovery properties. Four-theme formatting establishes content portability; the immutable 121-case inventory and broader unresolved C2 requirements remain unchanged.
+
 The [Engine offline response record](OFFLINE_RESPONSES_VALIDATION.json) separately qualifies all 338 bundled variants and 15 recipes, actual received/committed result presentation, actor boundaries, exact fallback and editable intentions with zero rendering calls. Authored text and rendering checks establish no new adjudication rule or additional completed C2 acceptance case.
 
 The 2026-10-24 [Engine task record](ENGINE_TASKS_VALIDATION.json) adds actual selected work/travel/observation phases, restore/retry, local speech/offer fulfillment, dictionary observation and reviewed technical accounting cases. It advances named phase, information, authority, conflict and recovery properties; the original 121-case inventory and the prior evidence below retain their recorded identities. New App controls and full C2 completion are not inferred from Core unit evidence.

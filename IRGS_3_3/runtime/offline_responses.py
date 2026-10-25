@@ -58,7 +58,7 @@ def _render(actor, snapshot, recipe, packets, exact, *, seed=0):
         'variants': selections, 'render_usage': {'provider_calls': 0, 'model_tokens': 0}}
 
 
-def render_receipt(world, actor, event_id, *, scope=None, variant_seed=0):
+def receipt_facts(world, actor, event_id, *, scope=None):
     """Read one immutable committed result from this world, scoped to its actor.
 
     No current stocks/projects are appended to an older receipt. Restored hosts
@@ -123,7 +123,15 @@ def render_receipt(world, actor, event_id, *, scope=None, variant_seed=0):
         packets['receipt.exact'] = {'receipt_text': exact}
         if operation == 'continue_player_process':
             exact = fallback
-    return _render(actor, snapshot, recipe, packets, exact, seed=variant_seed)
+    return {'actor_id': actor, 'snapshot_id': snapshot, 'recipe': recipe,
+            'packets': packets, 'literal_text': exact}
+
+
+def render_receipt(world, actor, event_id, *, scope=None, variant_seed=0):
+    """Render the compatibility Engine library from actual receipt facts."""
+    facts = receipt_facts(world, actor, event_id, scope=scope)
+    return _render(actor, facts['snapshot_id'], facts['recipe'], facts['packets'],
+                   facts['literal_text'], seed=variant_seed)
 
 
 def player_drafts(world, actor, *, scope=None):

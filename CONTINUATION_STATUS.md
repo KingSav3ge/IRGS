@@ -9,6 +9,18 @@ Rise R00 remains one regression fixture. Shared-system completion requires
 supported non-Rise evidence; campaign-specific mechanics retain their own scope.
 The records below preserve previously delivered work and historical evidence.
 
+## Shared contracts and neutral depot — 25 October 2026
+
+**Implemented:** [one shared Engine API](engine/SHARED_SYSTEMS_API.md) for actor/capability views, exact edited intentions, explicit acceptance, mandatory host save/result CAS, actor-received information and committed receipts. Actual authored-scene and Rise handlers remain authoritative. The bundled neutral depot preserves Catalog's exact 750 system/250 draft variants and 32 recipes; the 338-variant compatibility bank remains unchanged. Semantic draft tags cannot select operations. Missing rules retain an explicit unresolved declaration; missing text retains the actual literal receipt without inference.
+
+**Core correction:** reproduced a direct declaration accepting revoked eligibility through a stale player list. The Core handler now checks actual current control within R9-observed execution. Revocation/conflict/rejected-path tests retain dependencies and atomic rollback.
+
+**Evidence:** [shared execution record](engine/SHARED_SYSTEMS_VALIDATION.json) names 35 new tests, real independent non-Rise/Rise actions, actual conserved delivery, blocked movement, zero dispatch, exact pending-request restart/replay, save failure/concurrency and restore fences. A fresh process executes without provider/App/Catalog imports. Four-theme rendering of all 1,000 variants proves text portability only. Only temporary synthetic state is used.
+
+**Verification:** 35 dedicated cases and 264 focused regressions pass with zero skips. The complete Engine runtime suite runs 680 tests: 679 pass and the existing private historical-save fixture is skipped. Ten pinned Catalog R00 cases pass with unchanged 3,900 elapsed seconds and conservation. Engine integrity (360 files), Kira canon, source pins and active documentation links pass. Zero live/provider calls are made by shared presentation; no user save is used.
+
+**Remaining:** App consumption/authentication/persistence controls, exact component pins and coordinator joined review; broader process/communication command adapters retain their existing native APIs. Equipment keeps its existing honest result without an invented shared adapter. General freeform/combat, autonomous decisions, sustained institutions and full DEV/C2 coverage remain open.
+
 ## Active priority — 24 October 2026
 
 The latest user request is Engine-owned responses without API tokens. [The Engine implementation](engine/OFFLINE_RESPONSES_API.md) bundles 338 variants and 15 recipes, automatically presents supported committed Core results, and supplies editable local drafts. [Offline qualification](engine/OFFLINE_RESPONSES_VALIDATION.json) verifies actual sources and zero rendering dispatch; App adoption and joined pins remain separate. The broader Engine tasks below are included in this delivery.

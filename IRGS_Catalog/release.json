@@ -104,6 +104,11 @@
     "design/catalogue_v0_5/records/SS-17.json": "79078463604daa023144f35c2d35dd22b6c4cba58e278531034d2e8c7e5fde62",
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
+    "evaluation/shared_responses_v1/README.md": "40408d0bc1074376578305b437b31b0d0a0b63ffa26db7c095d08117505ca494",
+    "evaluation/shared_responses_v1/actor_inputs/quay.json": "cc88e0d636089134fbe43ed1a3d65d1e547067de3e20b75a7417298d3da3cbec",
+    "evaluation/shared_responses_v1/actor_inputs/rise.json": "3aab6e9fc26da957f76a567bdeeaa514b33fa1e5ba22fd9cf69ab532403cecfd",
+    "evaluation/shared_responses_v1/evaluator_only/oracle.json": "9ff55f0f5a5fe9a49f7d3bb0d471ab30d5ba77340e84e428d5084ae22ebd6299",
+    "evaluation/shared_responses_v1/manifest.json": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1",
     "evaluation/solo_r00_proposals_v1/README.md": "e951bc573e12abcb895235422d7c0d6995bb548a8755e37fe7f153e236163a53",
     "evaluation/solo_r00_proposals_v1/compatibility.json": "a1d3e638180b1a5f1f968bb0057aecda9cdea604c23306fbbd58e1166405f0f2",
     "evaluation/solo_r00_v1/README.md": "f321e13da32782d84c5ecc29f65e9ff1457b7e1aecd5e553335f728e5bc5b24f",
@@ -158,6 +163,7 @@
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0031": "148b990b1641571f756a8f63e086d18531514f45fb279dba1e608bdcd7a284af",
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7",
     "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
+    "response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
     "responses/depot_v1/README.md": "168889fc96cc306f4c4ff9f18c0364df87d1e3554392eda4d4b7dde76590cebd",
     "responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
     "responses/routine_v1/README.md": "3143f15d4aa031440129372070b17745d043d0ce499b7bbfdd162ef2236be81c",
@@ -165,6 +171,6 @@
     "scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
-    "verify_catalog.py": "d87759ffe5906a7f826299f355ba0e22b1d35e2d48a5ce13ef3ff579be086b97"
+    "verify_catalog.py": "aeaac7180eba2d1a9de01791b845d5cc49aa09d19fa30dbc9d9eb47685cd0f02"
   }
 }

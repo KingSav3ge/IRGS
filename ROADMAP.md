@@ -9,9 +9,11 @@ Rise R00 remains one regression fixture. Shared-system completion requires
 supported non-Rise evidence; campaign-specific mechanics retain their own scope.
 The records below preserve previously delivered work and historical evidence.
 
+**Delivered 25 October:** [shared actor/capability/intention/received/receipt contracts](engine/SHARED_SYSTEMS_API.md), actual acceptance through non-Rise authored-scene and Rise Core handlers, and the exact neutral 1,000-variant/32-recipe depot. Current control is now enforced inside Core declarations, including observed revoked-policy rejection. [Executed evidence](engine/SHARED_SYSTEMS_VALIDATION.json) includes both independent contexts and recovery. **Next:** App adoption/compatible pins/joined qualification, further selected process/communication adapters and continuing DEV gaps; no general rules are inferred from text or themes.
+
 Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
-Updated 2026-10-24. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
+Updated 2026-10-25. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies and completion criteria, and [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for delivered increments and verification limits. The statuses below describe implemented scope; historical App/HTTP evidence is not fresh qualification of this standalone Engine checkout.
 

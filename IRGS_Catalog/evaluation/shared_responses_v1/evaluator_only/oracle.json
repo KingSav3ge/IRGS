@@ -1,0 +1,59 @@
+{
+  "classification": "evaluator-only",
+  "hidden_marker": "PRIVATE_SHARED_RESPONSE_ORACLE",
+  "cases": {
+    "rise-walk": {
+      "status": "completed_successfully",
+      "duration_seconds": 300,
+      "total_seconds": 300
+    },
+    "rise-inspect": {
+      "status": "completed_successfully",
+      "duration_seconds": 0,
+      "total_seconds": 300
+    },
+    "quay-look": {
+      "status": "completed_successfully",
+      "duration_seconds": 20,
+      "total_seconds": 20
+    },
+    "quay-blocked": {
+      "status": "completed_unsuccessfully",
+      "duration_seconds": 30,
+      "total_seconds": 50
+    },
+    "quay-passage": {
+      "status": "completed_successfully",
+      "duration_seconds": 45,
+      "total_seconds": 95
+    },
+    "quay-desk": {
+      "status": "completed_successfully",
+      "duration_seconds": 45,
+      "total_seconds": 140
+    },
+    "quay-inspect": {
+      "status": "completed_successfully",
+      "duration_seconds": 20,
+      "total_seconds": 160
+    },
+    "quay-deliver": {
+      "status": "completed_successfully",
+      "duration_seconds": 10,
+      "total_seconds": 170
+    },
+    "quay-empty": {
+      "status": "completed_unsuccessfully",
+      "duration_seconds": 10,
+      "total_seconds": 180
+    }
+  },
+  "quay_final": {
+    "elapsed_seconds": 180,
+    "dispatch_with_actor": 0,
+    "dispatch_in_tray": 1
+  },
+  "rise_final": {
+    "elapsed_seconds": 300
+  }
+}

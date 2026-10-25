@@ -2,6 +2,8 @@
 
 Derived from IRGS-Catalog scripted_responses.py at 0063faea59c3294de15580fe5917cc03c89f0ad8.
 See data/responses/PROVENANCE.json for source hashes and local presentation reuse.
+Schema-2 compatibility follows Catalog at 94b8ca6d976da48b3c6ca65e014b28c6d9a120c2;
+data/responses/depot_v1/SOURCE.json pins its authored content/reference formatter.
 
 This module imports no Engine, App or provider. It cannot authenticate a context
 or establish its truth: the trusted host must supply an actor-filtered projection.
@@ -51,14 +53,18 @@ def load_library(path=DEFAULT_LIBRARY):
 
 def validate_library(library):
     keys(library, 'schema_version library_id version language source_ref rights authority families recipes')
-    require(type(library['schema_version']) is int and library['schema_version'] == 1
-            and library['library_id'] == 'irgs-engine-routine-responses-v1'
+    depot = library['library_id'] == 'irgs-response-depot-v1'
+    require(type(library['schema_version']) is int and library['schema_version'] == (2 if depot else 1)
+            and library['library_id'] in ('irgs-engine-routine-responses-v1', 'irgs-response-depot-v1')
             and library['version'] == '1.0.0' and library['language'] == 'en'
-            and library['source_ref'] == 'authored:irgs-engine:routine-responses:v1',
+            and library['source_ref'] == ('authored:irgs-catalog:response-depot:v1' if depot
+                                        else 'authored:irgs-engine:routine-responses:v1'),
             'Unsupported response library identity')
-    require(library['rights'] == {'authorship': 'catalog-derived-with-engine-authored-extensions',
+    require(library['rights'] == {'authorship': ('original-authored-presentation-text' if depot
+                                              else 'catalog-derived-with-engine-authored-extensions'),
         'permitted_use': ['local-presentation', 'synthetic-evaluation'],
-        'imported_material': 'catalog-authored-presentation-text', 'external_processing': 'host-policy-required'},
+        'imported_material': 'none' if depot else 'catalog-authored-presentation-text',
+        'external_processing': 'host-policy-required'},
         'Explicit response provenance and processing scope required')
     require(library['authority'] == {'presentation_only': True, 'campaign_effects': False,
         'player_drafts_require_explicit_submission': True, 'provider_dispatch': False},
@@ -67,12 +73,12 @@ def validate_library(library):
     families, seen, count = library['families'], {}, 0
     require(isinstance(families, list) and len(families) >= 75, 'Large authored response library required')
     for family in families:
-        keys(family, 'id domain channel source_kind state role slots variants')
+        keys(family, 'id domain channel source_kind state role slots variants' + (' intent_tag' if depot else ''))
         identity = family['id']
         require(isinstance(identity, str) and re.fullmatch(r'[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+', identity)
                 and identity not in seen, 'Invalid or duplicate response family ID')
         require(isinstance(family['domain'], str) and family['domain'] in {'request', 'recovery', 'knowledge', 'inventory', 'work',
-                'settlement', 'time', 'navigation', 'player'}, 'Unknown response domain')
+                'settlement', 'place', 'time', 'navigation', 'player'}, 'Unknown response domain')
         require(isinstance(family['source_kind'], str) and family['source_kind'] in SOURCES
                 and family['channel'] in ('system', 'player_draft')
                 and isinstance(family['role'], str) and family['role'] in ROLES,
@@ -81,6 +87,13 @@ def validate_library(library):
                 'Explicit response state required')
         require((family['channel'] == 'player_draft') == (family['source_kind'] == 'player_request'),
                 'Player drafts must remain separate from system facts')
+        if depot:
+            if family['channel'] == 'player_draft':
+                require(family['state'] == 'draft' and isinstance(family['intent_tag'], str)
+                        and re.fullmatch(r'[a-z][a-z0-9_]*', family['intent_tag']),
+                        'Draft semantic tags do not establish operation bindings')
+            else:
+                require(family['intent_tag'] is None, 'System text cannot choose an intention')
         require(isinstance(family['slots'], dict) and all(isinstance(k, str)
                 and re.fullmatch(r'[a-z][a-z0-9_]*', k) and v in TYPES
                 for k, v in family['slots'].items()), 'Invalid response slots')

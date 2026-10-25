@@ -184,6 +184,8 @@ class CoreWorld:
             assert key not in known,'receipt already recorded'
             known[key]={'received_at':at,'source_ref':p['source_ref']}
         elif op=='record_player_action':
+            from player_actions import _controlled
+            assert _controlled(s,p['actor']),'actual current player control required'
             assert p['actor'] in self.player_ids(s) and p['instruction_ref'] and p['declaration']
             if 'entity_registry' in s:
                 from temporal_registry import available_entities

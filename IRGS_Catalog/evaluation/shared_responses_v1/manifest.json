@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-shared-responses-v1",
+  "classification": "offline-synthetic-consumer-qualification",
+  "rights": {
+    "authorship": "original-authored-evaluation-instructions",
+    "imported_material": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "library": {
+    "id": "irgs-response-depot-v1",
+    "path": "responses/depot_v1/library.json",
+    "sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4"
+  },
+  "consumers": {
+    "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+    "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+    "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+  },
+  "contexts": {
+    "rise": {
+      "operation": "execute_settlement_action",
+      "initializer": "settlement_setup.initialize via rise_campaigns.create",
+      "setup_fixture": "evaluation/solo_r00_v1",
+      "actor_input": "actor_inputs/rise.json"
+    },
+    "quay": {
+      "operation": "execute_player_scene_action",
+      "initializer": "Store.create via starting_options and scene_setup.initialize_opening",
+      "selection": {
+        "profile_id": "military",
+        "scenario_id": "hundred-years-war",
+        "entry_id": "hyw-1415",
+        "opening_id": "quay-delivery-v1"
+      },
+      "actor_input": "actor_inputs/quay.json"
+    }
+  },
+  "evaluator_only": "evaluator_only/oracle.json",
+  "files_sha256": {
+    "actor_inputs/quay.json": "cc88e0d636089134fbe43ed1a3d65d1e547067de3e20b75a7417298d3da3cbec",
+    "actor_inputs/rise.json": "3aab6e9fc26da957f76a567bdeeaa514b33fa1e5ba22fd9cf69ab532403cecfd",
+    "evaluator_only/oracle.json": "9ff55f0f5a5fe9a49f7d3bb0d471ab30d5ba77340e84e428d5084ae22ebd6299"
+  }
+}

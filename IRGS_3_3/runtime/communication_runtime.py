@@ -10,7 +10,7 @@ import json
 
 from irgs_reference import InvalidEvent, canon, digest
 from player_actions import _controlled, _failed_dependencies, _present
-from solo_provider import WorldScope
+from runtime_contracts import WorldScope
 
 OPERATION = 'execute_local_communication'
 

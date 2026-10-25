@@ -19,6 +19,7 @@ import time
 from typing import Callable, Protocol
 
 from irgs_reference import canon, digest
+from runtime_contracts import WorldScope
 
 SCHEMA_VERSION = 'solo-proposal-1'
 PROMPT_VERSION = 'solo-local-1'
@@ -46,14 +47,6 @@ def require(condition, code='invalid_request'):
 
 def nonempty(value, limit=256):
     return isinstance(value, str) and bool(value.strip()) and len(value) <= limit
-
-
-@dataclass(frozen=True)
-class WorldScope:
-    campaign_id: str
-    branch_id: str
-    restore_id: str
-    state_digest: str
 
 
 @dataclass(frozen=True)
