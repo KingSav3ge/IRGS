@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -17,7 +18,13 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = "DEVELOPMENT_MANIFEST.json"
-from versioning import release_metadata
+# The smoke runner uses Python -I, which deliberately excludes the script
+# directory from import search. Load our packaged helper by its owned path.
+_version_spec = importlib.util.spec_from_file_location('irgs_development_versioning',
+    Path(__file__).with_name('versioning.py'))
+_version_module = importlib.util.module_from_spec(_version_spec)
+_version_spec.loader.exec_module(_version_module)
+release_metadata = _version_module.release_metadata
 
 SOURCE_DIRS = {"IRGS_3_3", "IRGS_Web", "IRGS_Catalog", "engine", "provenance", "tools"}
 ROOT_FILES = {

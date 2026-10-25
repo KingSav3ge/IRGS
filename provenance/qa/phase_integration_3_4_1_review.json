@@ -376,7 +376,8 @@
     "Updated Engine interoperability check to compare current actual App/Engine start capabilities",
     "Updated visible App edition to 3.4.1",
     "Manifest/archive edition now follows VERSION.json and verifies previous_version",
-    "Automatic QA retains reports locally for versioned coordinator publication"
+    "Automatic QA retains reports locally for versioned coordinator publication",
+    "Make coordinated edition helper load from its packaged path in isolated Python verification"
   ],
   "content_preservation": {
     "status": "passed",
@@ -403,5 +404,11 @@
   "original_archive_records_preserved": true,
   "all_branches_certified": false,
   "artifacts_directory": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z",
-  "package_qualification": "Required on the final committed tree before publication; external release/qualification.json records its exact commit and archive digest."
+  "package_qualification": "Required on the final committed tree before publication; external release/qualification.json records its exact commit and archive digest.",
+  "packaging_tool_patch": {
+    "problem": "Extracted-package Python -I verification could not resolve the new edition helper via normal imports.",
+    "fix": "Load tools/versioning.py from the verifier sibling path explicitly.",
+    "runtime_inputs_unchanged": true,
+    "validation": "Isolated verifier and final extracted HTTP/browser package checks; prior Core/Web results retain their exact source input identity."
+  }
 }

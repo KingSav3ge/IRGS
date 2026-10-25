@@ -106,8 +106,8 @@
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 17240,
-      "sha256": "4b377eaea4a5535dd610755d3fed64ae7dfeaac423274729f8b6f875db08aea0"
+      "bytes": 17764,
+      "sha256": "07f338c578c9d9c5ecaf861c4c8e4edf8ba0a951e29a95d3b58a0739413e8445"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -4306,8 +4306,8 @@
     },
     {
       "path": "provenance/qa/phase_integration_3_4_1_review.json",
-      "bytes": 17240,
-      "sha256": "4b377eaea4a5535dd610755d3fed64ae7dfeaac423274729f8b6f875db08aea0"
+      "bytes": 17764,
+      "sha256": "07f338c578c9d9c5ecaf861c4c8e4edf8ba0a951e29a95d3b58a0739413e8445"
     },
     {
       "path": "provenance/qa/primary_update_3_4_0_review.json",
@@ -4506,8 +4506,8 @@
     },
     {
       "path": "tools/verify_development.py",
-      "bytes": 12150,
-      "sha256": "2c3c0a3b2aa95f174722933e8fc77dba4a2da5bf452ed63314ff25b443abfe20"
+      "bytes": 12582,
+      "sha256": "1ab0d63a480724c758eca5cd4469f9cc3af2167cb69fcd77f6b7c25bbece8349"
     },
     {
       "path": "tools/versioning.py",
