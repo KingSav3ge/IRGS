@@ -1,64 +1,64 @@
 {
   "schema_version": 1,
-  "status": "approved_offline_development_update",
-  "reviewed_at_utc": "2026-10-25T06:01:07.560677+00:00",
+  "status": "approved_offline_development_merge",
+  "reviewed_at_utc": "2026-10-25T13:48:49.678329+00:00",
   "target_version": "3.4.0",
-  "cycle_id": "irgs-wide-systems-01",
+  "cycle_id": "shared-response-integration-02",
   "selected_components": {
-    "engine": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
-    "app": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
-    "catalog": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+    "engine": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
+    "app": "aae8a25656c890181e0aa569df2c716968ec3642",
+    "catalog": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e"
   },
-  "qualified_candidate_commit": "bb19047247af8eda72445c4bef3116494ccde888",
-  "source_input_sha256": "52ad60013f81af2af36090540ec978d66729ad11c1b9d376f96c5e21cac0214b",
-  "scope": "Shared offline response foundations in actual non-Rise authored scenes and Rise; broader mechanics and live AI remain incomplete.",
+  "qualified_candidate_commit": "5ff5ffa16eee59b651b36bd1b876509f63bd1fff",
+  "source_input_sha256": "03856ade7b2264c57db8845feab0db5c12014ab883913e5cd147906641dd3df0",
+  "scope": "Shared local response integration in actual supported non-Rise and Rise play; no full C2/live inference claim.",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 10.05,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/source-integrity.txt"
+      "duration_seconds": 11.0,
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
       "duration_seconds": 0.82,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/evidence-freshness.txt"
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 63.18,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/runtime.txt",
-      "tests_run": 645,
+      "duration_seconds": 67.11,
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/runtime.txt",
+      "tests_run": 680,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 96.62,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/web.txt",
-      "tests_run": 191,
+      "duration_seconds": 107.19,
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/web.txt",
+      "tests_run": 201,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 3.78,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/interface.txt",
-      "checks_passed": 100
+      "duration_seconds": 3.88,
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/interface.txt",
+      "checks_passed": 105
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 13.0,
-      "log": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/logs/tooling.txt",
+      "duration_seconds": 13.05,
+      "log": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z/logs/tooling.txt",
       "tests_run": 29,
       "skipped": 0
     }
@@ -106,163 +106,211 @@
       }
     ]
   },
-  "depot_cross_campaign": {
+  "browser": {
     "status": "passed",
-    "source": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z/candidate",
     "contexts": [
-      "non-Rise authored military scene",
-      "Rise R00 settlement"
-    ],
-    "actual_Core_actions": 9,
-    "receipt_checks": [
       {
-        "actor": "pc",
-        "event_id": "execute:look-quay",
-        "elapsed_seconds": 3,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
+        "adapter": "authored_scene",
+        "committed_actions": 4,
+        "elapsed_seconds": 43,
+        "zero_action_spans": [],
+        "local_drafts_non_submitting": true,
+        "lost_acknowledgement_recovered": true,
+        "stale_navigation_fenced": true,
+        "reload_preserves_draft": true
       },
       {
-        "actor": "pc",
-        "event_id": "execute:try-gate",
-        "elapsed_seconds": 5,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "pc",
-        "event_id": "execute:enter-passage",
-        "elapsed_seconds": 20,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "pc",
-        "event_id": "execute:reach-desk",
-        "elapsed_seconds": 15,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "founder",
-        "event_id": "settlement:depot-0",
-        "elapsed_seconds": 300,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "founder",
-        "event_id": "settlement:depot-1",
-        "elapsed_seconds": 0,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "founder",
-        "event_id": "settlement:depot-2",
-        "elapsed_seconds": 0,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "founder",
-        "event_id": "settlement:depot-3",
-        "elapsed_seconds": 1500,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
-      },
-      {
-        "actor": "founder",
-        "event_id": "settlement:depot-4",
-        "elapsed_seconds": 2100,
-        "exact_receipt_preserved": true,
-        "engine_and_depot_local": true
+        "adapter": "settlement",
+        "committed_actions": 5,
+        "elapsed_seconds": 3900,
+        "zero_action_spans": [
+          "found",
+          "build"
+        ],
+        "local_drafts_non_submitting": true,
+        "lost_acknowledgement_recovered": true,
+        "stale_navigation_fenced": true,
+        "reload_preserves_draft": true
       }
     ],
-    "non_Rise_elapsed_seconds": 43,
-    "Rise_elapsed_seconds": 3900,
-    "Catalog_library": "irgs-response-depot-v1",
-    "Catalog_variants": 1000,
+    "common_response_schema": 1,
+    "catalog_library": "irgs-response-depot-v1",
+    "engine_library": "irgs-engine-routine-responses-v1",
+    "provider_configured": false,
     "provider_calls": 0,
-    "live_calls": 0,
-    "render_mutations": 0,
-    "serialized_Core_reload": true,
-    "scope": "Actual existing handlers and local presentation; no new campaign mechanics or live/model-quality claim."
+    "browser_errors": 0,
+    "mobile_width": 390
   },
-  "browser_checks": {
-    "authored_scene": {
-      "status": "passed",
-      "app_library": "irgs-app-routine-v1@1.0.0",
-      "variants": 171,
-      "editable_drafts": 32,
-      "recipes": 8,
-      "Core_actions": 4,
-      "unsuccessful_physical_attempt_preserved": true,
-      "exact_receipt_HTML_braces_negation_preserved": true,
-      "lost_acknowledgement_recovered": true,
-      "draft_cancel_edit_keep_reload": true,
-      "elapsed_seconds": 43,
-      "mobile_width": 390,
-      "provider_calls": 0,
-      "missing_template_fallback_provider_calls": 0,
-      "browser_errors": 0
-    },
-    "rise": {
-      "status": "passed",
-      "source": "App candidate and selected real Engine/Catalog",
-      "supported_actions": [
-        "walk_clearing",
-        "found",
-        "build",
-        "wait_hour",
-        "wait_hour"
-      ],
-      "committed_actions": 5,
-      "elapsed_seconds": 3900,
-      "shelter_work_seconds": 3600,
-      "lost_acknowledgement_recovered": true,
-      "reload_preserves_state": true,
-      "editable_exact_intent": true,
-      "proposal_selection_commits_nothing": true,
-      "private_oracle_absent": true,
-      "browser_errors": [],
-      "offline_provider_calls": 5,
-      "live_provider_calls": 0
-    }
-  },
-  "catalog_source_and_depot_tests": {
+  "current_catalog_cases": {
     "status": "passed",
-    "log": "catalog-source-and-depot.log",
-    "scope": "Source/schema/full-archive readers and all variants/recipes; declared old consumer guards retain their original commits."
+    "selected_components": {
+      "joined": "71a2901e02caf50c2966e00e72fe409f3768e61c",
+      "engine": "2f9476c6090878257d17cab3ad3a83a7ce18a5dc",
+      "app": "aae8a25656c890181e0aa569df2c716968ec3642",
+      "catalog": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e"
+    },
+    "fixture_id": "irgs-shared-responses-v1",
+    "original_declared_consumers_preserved": {
+      "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+      "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+      "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+    },
+    "current_candidate_cases": [
+      {
+        "context": "rise",
+        "case_id": "rise-walk",
+        "status": "completed_successfully",
+        "duration_seconds": 300
+      },
+      {
+        "context": "rise",
+        "case_id": "rise-inspect",
+        "status": "completed_successfully",
+        "duration_seconds": 0
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-look",
+        "status": "completed_successfully",
+        "duration_seconds": 20
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-blocked",
+        "status": "completed_unsuccessfully",
+        "duration_seconds": 30
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-passage",
+        "status": "completed_successfully",
+        "duration_seconds": 45
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-desk",
+        "status": "completed_successfully",
+        "duration_seconds": 45
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-inspect",
+        "status": "completed_successfully",
+        "duration_seconds": 20
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-deliver",
+        "status": "completed_successfully",
+        "duration_seconds": 10
+      },
+      {
+        "context": "quay",
+        "case_id": "quay-empty",
+        "status": "completed_unsuccessfully",
+        "duration_seconds": 10
+      }
+    ],
+    "provider_calls": 0,
+    "all_older_receipts_stable_after_every_action_and_Store_restart": true,
+    "user_saves_used": false
   },
-  "coordinator_fix": {
-    "problem": "App available budget ignored new Engine-reviewed charges: 90 shown instead of 97.",
-    "change": "Read-only held-plus-reviewed charge projection matches Engine admission, reports overruns and omits private billing evidence.",
-    "regression": "test_reviewed_charges_match_engine_admission_after_restart_without_mutation"
+  "synthetic_profile_smoke": {
+    "status": "passed",
+    "scope": "Creator-initialized synthetic supported profiles; no new playable start or mechanical resolution claimed.",
+    "profiles": [
+      {
+        "synthetic_profile": "military",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      },
+      {
+        "synthetic_profile": "roman",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      },
+      {
+        "synthetic_profile": "fantasy",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      },
+      {
+        "synthetic_profile": "paf",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      },
+      {
+        "synthetic_profile": "shinobi",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      },
+      {
+        "synthetic_profile": "space",
+        "local_view": true,
+        "exact_intent_preserved": true,
+        "replay_once": true,
+        "no_elapsed_resolution": true
+      }
+    ],
+    "provider_calls": 0,
+    "user_saves_used": false
   },
-  "depot": {
+  "catalog_source_checks": {
+    "status": "passed",
+    "tests": 104,
+    "log": "catalog-source-and-contract.log"
+  },
+  "declared_fixture_consumers": {
+    "status": "passed",
+    "tests": 8,
+    "selection": {
+      "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+      "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+      "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+    },
+    "log": "catalog-declared-consumers.log",
+    "scope": "Original exact manifest consumers; current candidate qualified separately."
+  },
+  "patches": [
+    {
+      "problem": "App still pinned the previous Engine/Catalog set.",
+      "fix": "Commit compatible exact delivered dependency pins."
+    },
+    {
+      "problem": "Catalog code/text could be replaced between hash verification and loading. Both replacements were reproduced.",
+      "fix": "Compile/decode the exact verified bytes; retain bounded input and link rejection.",
+      "regression": "CatalogIntakeTests.test_component_update_cannot_replace_the_bytes_after_their_hash_check"
+    },
+    {
+      "problem": "Joined operation evidence was stale after component updates.",
+      "fix": "Fresh actual synthetic capture; no relabelled historical logs."
+    }
+  ],
+  "local_response_depot": {
+    "id": "irgs-response-depot-v1",
     "system_variants": 750,
     "editable_drafts": 250,
-    "recipes": 32,
-    "content_identity": "irgs-response-depot-v1@1.0.0"
+    "recipes": 32
   },
-  "routine_libraries": {
-    "engine_variants": 338,
-    "app_variants": 171,
-    "catalog_depot_variants": 1000
-  },
-  "preservation": {
-    "original_catalog_sources_changed": [
-      "verify_catalog.py"
-    ],
-    "original_archive_and_previews_unchanged": true,
-    "user_saves_opened": false
-  },
-  "limits": [
-    "No live calls or model-quality evaluation",
-    "App consumes its own local presentation layer; the full Catalog depot is available as content and its reference rendering is independently qualified, not wired into every App event.",
-    "Continuation/communication APIs retain their selected rule/adapter scope; App controls for new operations and broader DEV/C2 completion remain open.",
-    "Content portability does not implement all campaigns; non-Rise gameplay evidence is the existing authored-scene contract."
+  "remaining": [
+    "Additional App adapters for Engine shared intent, continuation and communication APIs",
+    "Further semantic response bindings against actual capabilities",
+    "Operator configuration and conditional live/model-quality checks",
+    "General freeform/combat, dialogue and wider DEV/C2 completion",
+    "Windows and distributed hosting checks"
   ],
-  "artifacts_directory": "/workspace/irgs-cloud/integration/irgs-wide-systems-01/20261025T055211Z"
+  "user_saves_opened": false,
+  "original_archive_and_content_preserved": true,
+  "live_calls": 0,
+  "artifacts_directory": "/workspace/irgs-cloud/integration/shared-response-integration-02/20261025T133902Z"
 }

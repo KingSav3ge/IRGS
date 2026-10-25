@@ -1,34 +1,33 @@
 # IRGS development coordination
 
-The current workstream is **irgs-wide-systems-01**, under **3.4.0 development**.
-The user directs shared IRGS systems across campaigns and themes. Read
-[the scope](IRGS_SYSTEMS_SCOPE.md) and [coordinator order](COORDINATOR_WORK_ORDER.md).
-Rise is one regression fixture; shared claims require non-Rise evidence.
+Current integration: **shared-response-integration-02**, **3.4.0 development**.
+Continue [shared IRGS scope](IRGS_SYSTEMS_SCOPE.md) across campaigns and themes.
 
 | Reviewed component | Exact commit |
 | --- | --- |
-| Engine | `9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443` |
-| App | `e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f` |
-| Catalog | `94b8ca6d976da48b3c6ca65e014b28c6d9a120c2` |
+| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
+| App | `aae8a25656c890181e0aa569df2c716968ec3642` |
+| Catalog | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
 
-Engine provides its offline response runtime and scoped continuation,
-communication and reviewed accounting APIs. App provides local presentation,
-generic editable drafts, restored campaign themes and protected usage. The
-coordinator corrected its budget projection and aligned both dependencies.
-Catalog supplies the campaign-independent 750-system/250-draft depot and 32
-recipes. The full depot remains content for further event-adapter adoption;
-existing Engine/App layers already render their covered responses locally.
+Engine publishes provider-independent actor/capability/intent/receipt contracts
+and the exact neutral response depot. App now consumes Engine receipt/draft
+interfaces and selected Catalog semantic drafts server-side. Ordinary actions,
+optional assisted acceptance and saved results retain exact outcomes and local
+presentation. Draft selection commits nothing. Additional shared intent/process/
+communication App controls and semantic adapters remain separate work.
 
-Fresh source-bound operation capture, joined regressions, independent HTTP and
-real Chromium support this bounded update. Authored non-Rise play and Rise both
-preserve exact outcomes, drafts and recovery. See [review and limits](provenance/qa/shared_systems_3_4_0_review.json).
-Clean-package verification is recorded with the external release artifact.
+The coordinator aligned both pins and fixed a reproduced response-intake race:
+loading now consumes the same bytes whose hashes were verified. Fresh actual
+operation capture replaces stale joined evidence. Full regression, current
+Catalog arcs, two-context Chromium and six synthetic profile checks passed.
+See [exact review](provenance/qa/shared_response_integration_3_4_0_review.json).
+Clean-package/browser qualification is recorded with the external release.
 
-The prior offline foundation and Historical Details evidence are preserved.
-Original archive bytes and campaign documents remain unchanged. General C2,
-broader campaign adapters, generated narration, App controls for new Engine APIs
-and configured live inference remain unfinished. No live call was made.
+Original fixture contracts and archives remain preserved. The Catalog's eight
+declared-consumer tests run against their original exact commits; new current
+consumers have separate qualification. Content portability and unresolved generic
+declarations establish no new campaign mechanics. No live inference was made.
 
-New imports continue to require all three exact compatible component reviews.
-The QA monitor tests new pushes while this environment runs. Repository work
-orders are the available chat handoff; monitoring does not start chats.
+Further imports require exact compatible three-component review and gated sync.
+QA monitoring tests new pushes while this environment runs; repository work
+orders provide handoffs without claiming chat dispatch.

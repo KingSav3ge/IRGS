@@ -90,18 +90,18 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 10093,
-      "sha256": "3ec218522919d2b0dab73f49220fa0f4b24e22a55edae162ddb89765a58d993e"
+      "bytes": 9591,
+      "sha256": "a04d55e1afdd365dfe5b86376eb581e4690e3eeecb6a07e8c8f0c301d0186fe7"
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 1977,
-      "sha256": "2597e18ce61f30dd2aa186f6a2cdd87bc06d2e1d1d834cab05ea527e06ff1d24"
+      "bytes": 1874,
+      "sha256": "1230d495bd9ab15c335b0f3f73772511cb42ccb14688abf68cab1f9b1ccaa5ee"
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 8845,
-      "sha256": "2a387116546fe84eeeb6eef4129a00779cd50dc10b00166e8062641bdfcdb432"
+      "bytes": 10057,
+      "sha256": "d23f02158f360e681a13e0cb6d886e65bc81697930414633a37e9d595fbdf73e"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -3130,8 +3130,8 @@
     },
     {
       "path": "RELEASE_NOTES_3_4_0.md",
-      "bytes": 1954,
-      "sha256": "5f3615bf4ce57c998cd4a3a850cc71929ecd2b9a0cc770863ccf4ae002d82034"
+      "bytes": 2002,
+      "sha256": "5a8aec545ecc5a61f94de6781298a0524d58c8a61ba7b80f7ed8fbf7e353b64c"
     },
     {
       "path": "RISE_FOUNDATION_VALIDATION.json",
@@ -3145,8 +3145,8 @@
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
-      "bytes": 10667,
-      "sha256": "f3451c7efe65fadfc7602f97b9d15576c9fa6f118878d01bccfc52cc98dd9cca"
+      "bytes": 11131,
+      "sha256": "9c16ae5c2253378b1d1c1e298c7455951d0c9e5c4a34aa338cf182f71327f5ac"
     },
     {
       "path": "SOURCE_PUBLICATION_VALIDATION.json",
@@ -3999,6 +3999,21 @@
       "sha256": "277044b3dd83f7a77f0020062c2bb42c58967a17f6cd18eb91124174ef7826cf"
     },
     {
+      "path": "provenance/qa/completed_cycles/irgs-wide-systems-01_coordination.json",
+      "bytes": 10093,
+      "sha256": "3ec218522919d2b0dab73f49220fa0f4b24e22a55edae162ddb89765a58d993e"
+    },
+    {
+      "path": "provenance/qa/completed_cycles/irgs-wide-systems-01_release_notes_3_4_0.md",
+      "bytes": 1954,
+      "sha256": "5f3615bf4ce57c998cd4a3a850cc71929ecd2b9a0cc770863ccf4ae002d82034"
+    },
+    {
+      "path": "provenance/qa/completed_cycles/irgs-wide-systems-01_validation.json",
+      "bytes": 8845,
+      "sha256": "2a387116546fe84eeeb6eef4129a00779cd50dc10b00166e8062641bdfcdb432"
+    },
+    {
       "path": "provenance/qa/completed_cycles/solo-runtime-01_coordinator_validation.json",
       "bytes": 11997,
       "sha256": "14a9010994263b062e17c54db878908b49f83a779143b5235baa25a3ec317026"
@@ -4020,13 +4035,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5687,
-      "sha256": "1b2c42c241456a13b3193a21d877923e42384c7673309001b12c67823a9fd465"
+      "bytes": 5814,
+      "sha256": "2439763ceb0099943af2c96664183291824bfc76e95771513a1b9fa73bbbbe02"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 2752,
-      "sha256": "83a56d5e383e2270b9661d51054d5bb2531614bf17d9d43c0879c0b2166c85db"
+      "bytes": 880,
+      "sha256": "29b7b5242741cc506aabdeb199890422982aeee56cbae6153ab9140b29cc6c15"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
@@ -4087,6 +4102,11 @@
       "path": "provenance/qa/repository_functional_audit_2026_10_23.md",
       "bytes": 2638,
       "sha256": "cc64b5815d06a802ea761e276ea3e9d7ba0121e9965c937533a2bfb99e528669"
+    },
+    {
+      "path": "provenance/qa/shared_response_integration_3_4_0_review.json",
+      "bytes": 10057,
+      "sha256": "d23f02158f360e681a13e0cb6d886e65bc81697930414633a37e9d595fbdf73e"
     },
     {
       "path": "provenance/qa/shared_systems_3_4_0_review.json",

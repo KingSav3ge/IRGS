@@ -1,5 +1,14 @@
 # IRGS 3.4.0 Solo runtime completion
 
+## Latest combined response integration
+
+The exact current Engine/App/Catalog update is reviewed in
+[the integration record](provenance/qa/shared_response_integration_3_4_0_review.json).
+Engine common contracts, actual App local response consumption and selected
+Catalog semantic drafts are now qualified across supported non-Rise and Rise
+contexts. Broader rules and live inference retain their open requirements.
+The previous scope and delivery records follow.
+
 ## Current priority — shared IRGS systems
 
 The user's current direction is development across campaigns and themes.
