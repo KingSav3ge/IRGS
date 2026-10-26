@@ -46,6 +46,16 @@ IRGS is a playable simulation engine with accounts, AI voice and media, and a co
   - Marketplace placeholder page (Stage Three)
   - Branches compared: 3.3.C is identical to the 3.3.2 merge; 3.3.E is this codebase. iteration_5: 91/93, then fixes; pytest 93/93
 
+- 2026-06: Security audit fixes. No credentialed CORS (the app adds CORSMiddleware only for an explicit allowlist); csrf_origin_guard blocks cookie-only cross-site writes; SameSite=lax; STT 25MB cap (422 on bad audio); admin seed fails closed. Verified in iteration_7
+- 2026-06: IRGS 3.4.1 repo integration (github KingSav3ge/IRGS-APP-WEB, IRGS-Catalog, IRGS-Engine, IRGS; cloned to /app/upstream)
+  - Content Library v0.5 (44 records, backend/data/catalogue_v0_5.json; players see playable only: MC-01→hyw-1415; admins see all concepts)
+  - Review your action (POST /review, no commit) with Confirm/Edit/Withdraw, and "Check / retry saved request" (localStorage + idempotent request_id)
+  - Campaign Trash (trash/restore/delete forever)
+  - 3.4.1 genre looks: military, shinobi, settlement themes
+  - The jev "understandable" gibberish gate
+  - Image generation switched to Gemini Nano Banana (gemini-3.1-flash-image-preview), because gpt-image-1 and dall-e-3 were rejected by the proxy
+  - iteration_7: 129/133 (image outage + gibberish, both fixed after it and verified only by direct calls, NOT re-run through the testing agent)
+
 ## Backlog
 - P1: real PayPal, Paystack and Razorpay checkout (keys needed); real ElevenLabs API (key needed)
 - P1 (instructions v1.4): My Campaigns hub + Account/Admin nav (Milestone B); Quick/Guided/Detailed creation (E); World workspace: Atlas, Economy, Politics, Military (I)

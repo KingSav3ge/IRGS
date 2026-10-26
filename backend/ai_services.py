@@ -8,7 +8,6 @@ import os
 import io
 import json
 import base64
-import asyncio
 import logging
 
 from dotenv import load_dotenv
