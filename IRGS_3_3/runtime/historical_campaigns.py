@@ -196,5 +196,10 @@ def apply_opening(state, selection):
             'historical_reference_only': True,
         }
     result['campaign_time'] = {'day': 0, 'time': None, 'precision': 'unresolved',
-                               'phase': opening['label'] + '; no campaign events advanced'}
+        'phase': opening['label'] + '; no campaign events advanced',
+        'civil': {'date': opening['date'], 'calendar': opening['calendar'],
+            'precision': opening['precision'], 'time': None,
+            'ordinal': julian_day(*map(int,opening['date'].split('-'))),
+            'source_ref': 'historical-opening:'+selection['snapshot_sha256']+':opening',
+            'elapsed_calendar_binding': False}}
     return result

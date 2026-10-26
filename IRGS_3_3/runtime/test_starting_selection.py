@@ -76,7 +76,9 @@ class StartingSelectionTests(unittest.TestCase):
         self.assertEqual(world.s['player_actor_ids'], ['HYW-HENRY-V'])
         self.assertEqual(world.s['starting_control']['powers'], ['declare_own_intent'])
         self.assertFalse(world.s['starting_control']['institutional_mandate_granted'])
-        self.assertFalse(world.s['knowledge'])
+        # New dated starts now receive only the sourced calendar checkpoint;
+        # no historical briefing, operational scene or political news is seeded.
+        self.assertEqual(set(world.s['knowledge']['HYW-HENRY-V']), {'setup:civil-date'})
         self.assertFalse(world.s['orders'])
         self.assertFalse(world.s['stocks'])
         self.assertEqual(world.s['historical_start'], raw.s['historical_start'])

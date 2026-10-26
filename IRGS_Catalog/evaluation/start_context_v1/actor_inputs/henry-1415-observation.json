@@ -1,0 +1,19 @@
+{
+  "case_id": "henry-1415-observation",
+  "source_ref": "authored-synthetic:irgs-catalog:start-context:v1",
+  "selection": {
+    "kind": "historical",
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": {
+      "kind": "existing",
+      "actor_id": "HYW-HENRY-V",
+      "opening_id": "henry-1415-embarkation-v1"
+    }
+  },
+  "actions": [
+    "observe-embarkation"
+  ],
+  "intention": "  I choose only this reviewed action.\nKeep my words and the actual outcome separate.  "
+}

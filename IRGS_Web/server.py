@@ -343,7 +343,7 @@ class Store:
                        else 'This opening action could not be accepted. No action was committed. '
                             'Reload the campaign to review your options.')
             raise ValueError(message) from None
-        elapsed = ({'axis': 'authored-opening-seconds',
+        elapsed = ({'axis': world.s['elapsed_time']['axis'],
                     'duration_seconds': resolved['outcome']['elapsed_seconds'],
                     'total_seconds': resolved['outcome']['elapsed_total']}
                    if kind == 'scene_action' else None)
@@ -446,7 +446,24 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                         record = store.read(path.rsplit('/', 1)[1])
                         projection['assistance'] = solo.status(record=record, actor=projection['actor_id'])
                         projection['process_control'] = processes.view(record, projection['actor_id']) if projection['character_available'] else {'schema_version': 1, 'processes': [], 'start_available': False, 'view_token': None}
+                        from start_preview import capability_summary
+                        projection['play_readiness'] = capability_summary(projection,
+                            projection['process_control'].get('start_options', []))
                         return self.reply(200, projection)
+                    if path == '/api/starting-preview':
+                        self.session()
+                        if mode == 'creator':
+                            self.creator(mode)
+                        elif mode == 'player':
+                            validate_player_creation(query.get('profile_id', ['ast'])[0],
+                                query.get('scenario_id', [None])[0], query.get('entry_id', [None])[0],
+                                query.get('snapshot_sha256', [None])[0])
+                        else:
+                            raise ValueError('Unknown presentation mode')
+                        if any(len(values) != 1 for values in query.values()):
+                            raise ValueError('Starting preview fields must be unique')
+                        from start_preview import preview_start
+                        return self.reply(200, preview_start({key: values[0] for key, values in query.items()}))
                     if path=='/api/rise/templates':
                         self.session()
                         from settlement_setup import templates
@@ -558,6 +575,8 @@ def make_server(port=8765, folder=None, *, reference_library=None, reference_err
                 name, mime = files[path]
                 self.reply(200, (ROOT / 'static' / name).read_bytes(), mime)
             except FileNotFoundError:
+                if path in ('/api/starting-options', '/api/starting-preview'):
+                    return self.reply(503, {'error': 'The selected starting source is unavailable. No campaign was created. Retry review when its source is available.'})
                 self.reply(404, {'error': 'No saved action result exists for this request'
                                       if path.startswith('/api/action-result/') else 'Campaign not found'})
             except sqlite3.Error:

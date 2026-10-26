@@ -2455,7 +2455,7 @@
       "slate": "launch",
       "development_status": "in_development",
       "geography": "Medieval Western Europe",
-      "period": "1337–1453 · 37 supported dated starts",
+      "period": "1337–1453 · 37 dated reference checkpoints",
       "setting_kind": "historical",
       "era": "medieval",
       "setting": "Western Europe and associated powers",
@@ -2508,7 +2508,7 @@
       "version": "0.5",
       "readiness": {
         "full_campaign_ready": false,
-        "verification": "Existing 37 dated starts and bounded optional fictional openings remain available; the full Major Campaign is in development."
+        "verification": "Verified historical references and eligible characters do not establish an executable start. In the evaluated 3.4.2 build, the surveyed existing-person and default no-opening paths record unresolved declarations. Bounded local actions require an explicitly reviewed fictional new-character opening; a sourced existing-person context and civil-date presentation remain open. The full Major Campaign is in development."
       },
       "design_review": {
         "acceptance_checks": [

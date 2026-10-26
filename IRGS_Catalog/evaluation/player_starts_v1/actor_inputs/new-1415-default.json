@@ -1,0 +1,18 @@
+{
+  "case_id": "new-1415-default",
+  "source_ref": "authored-synthetic:irgs-catalog:player-starts:v1",
+  "selection": {
+    "kind": "historical",
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": {
+      "kind": "new",
+      "name": "Synthetic unplaced player",
+      "species": "human",
+      "background": ""
+    }
+  },
+  "actions": [],
+  "declaration": "  I look around and ask where I am.\nThese are my words, not an outcome.  "
+}

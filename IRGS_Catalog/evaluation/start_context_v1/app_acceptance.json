@@ -1,0 +1,31 @@
+{
+  "status": "not_executed_pending_adoption",
+  "qualified_app_commit": null,
+  "engine_schema": "irgs-start-readiness-1",
+  "required_cases": [
+    "henry-1415-observation",
+    "henry-1415-default",
+    "john-1415-limited",
+    "new-1415-default",
+    "new-1415-quay",
+    "rise-r00"
+  ],
+  "required_findings": [
+    "START-INT-002",
+    "START-INT-003",
+    "START-INT-004",
+    "START-INT-005",
+    "START-INT-006"
+  ],
+  "requirements": [
+    "Use the actual published App APIs after Engine adoption; this file proposes no endpoints.",
+    "Select Henry’s existing-person opening explicitly; default Henry and John remain limited, with explicit review of the selected mode.",
+    "Present Engine actor-received start context and initial Julian day, retaining unknown hour and current_calendar_binding false.",
+    "Present selected historical elapsed progress separately from civil day; Henry receives no courier guidance or dispatch.",
+    "Accept an explicitly reviewed actual Core operation; preserve exact outcome, resource conservation, authority and source/actor privacy.",
+    "Retain original creation/action result through lost reply, restart, reload, restore and exact retry.",
+    "Reject unsupported opening/actor substitution; continuing-world reads must not initialize or reseed.",
+    "Commit exact compatible Engine/Catalog gitlinks and qualify the unmodified adopted App revision."
+  ],
+  "qualification_rule": "Requirements are unexecuted until an adopted exact App revision and real consumer results are recorded separately."
+}

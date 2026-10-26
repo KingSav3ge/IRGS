@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "status": "ENGINE_HANDOFF_DELIVERED_CONSUMER_ADOPTION_BLOCKED",
+  "component_version": {
+    "schema_version": 1,
+    "version": "3.4.2",
+    "channel": "development",
+    "previous_version": "3.3.3"
+  },
+  "engine_api_schema": "irgs-start-readiness-1",
+  "sources": {
+    "engine": {
+      "root": "/workspace/IRGS-Engine",
+      "commit": "612eb2d7710e28f05b4876e0858eccfbf510cb64",
+      "worktree_clean": false
+    },
+    "app": {
+      "root": "/workspace/IRGS-APP-WEB",
+      "commit": "d8e68848454ac7be68ce87fede6d04cc57bda86a",
+      "worktree_clean": true,
+      "committed_pins": {
+        "Engine": "91b20056e7db651966c9e92925313494917f47b1",
+        "Catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+      }
+    },
+    "catalog": {
+      "root": "/workspace/IRGS-Catalog",
+      "commit": "43b3e34cf6bd2463c6998b86e4e87aa60afa75b3",
+      "worktree_clean": true
+    }
+  },
+  "tested_source_note": "Engine parent HEAD plus the exact uncommitted inspection script hash below. Published Engine runtime/data are unchanged; this increment adds only owner tooling, handoff documentation and evidence.",
+  "engine_runtime_integrity": {
+    "accepted_product_commit": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+    "git_tree": "45865cf46688a4e644a907e0d145fc74491f9e69",
+    "source_worktree_identical_to_product": true,
+    "untracked_runtime_files": 0,
+    "source_files_verified": 367,
+    "release_manifest_sha256": "11516cddb6a5e464fa9fb3204d3c7d49fcbbd415ae3156cc71ff8bfe57e5995d",
+    "core_compatibility": "3.3",
+    "release_hashes_refreshed": false,
+    "version_changed": false,
+    "new_runtime_rule_or_schema": false
+  },
+  "fresh_checks": [
+    {
+      "owner": "Engine",
+      "command": "python -B tools/qualify_start_readiness.py",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "owner": "Engine",
+      "command": "python -B tools/qualify_communication_capabilities.py",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "owner": "Engine",
+      "command": "python -B tools/verify_components.py --component engine",
+      "status": "verified",
+      "behavioral_tests_executed": false,
+      "source_files": 367,
+      "exit_code": 0
+    },
+    {
+      "owner": "Catalog",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "python -B -m unittest tools.tests.test_player_start_contract -q",
+      "run": 9,
+      "passed": 9,
+      "failures": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "scope": "Baseline contract/schema only; new-contract consumers not qualified."
+    },
+    {
+      "owner": "App",
+      "cwd": "/workspace/IRGS-APP-WEB",
+      "environment": {
+        "IRGS_ENGINE_ROOT": "/workspace/IRGS-Engine/IRGS_3_3",
+        "IRGS_CATALOG_ROOT": "/workspace/IRGS-Catalog/IRGS_Catalog",
+        "PYTHONPATH": "IRGS_Web:IRGS_Web/tests"
+      },
+      "command": "python -B -m unittest test_start_preview -q",
+      "run": 5,
+      "passed": 5,
+      "failures": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "scope": "Current legacy preflight regression, without optional Henry adoption."
+    },
+    {
+      "owner": "App",
+      "cwd": "/workspace/IRGS-APP-WEB",
+      "same_candidate_environment_as_previous": true,
+      "command": "python -B -m unittest test_host.HostTests.test_historical_create_requires_exact_ready_scope_and_preview_hash test_stage1.StageOneTests.test_opening_does_not_disclose_historical_reference_or_fabricate_scene test_starting_flow.StartingFlowTests.test_historical_review_has_only_five_configured_existing_characters -v",
+      "run": 3,
+      "passed": 0,
+      "failures": 3,
+      "skipped": 0,
+      "exit_code": 1,
+      "failing_tests": [
+        "test_host.HostTests.test_historical_create_requires_exact_ready_scope_and_preview_hash",
+        "test_stage1.StageOneTests.test_opening_does_not_disclose_historical_reference_or_fabricate_scene",
+        "test_starting_flow.StartingFlowTests.test_historical_review_has_only_five_configured_existing_characters"
+      ],
+      "failure_cause": "Old assertions require empty starting knowledge. Candidate receives only the legitimate sourced initial calendar checkpoint in these cases. App owns START-INT-004; failures are still open."
+    }
+  ],
+  "adoption_inspection": {
+    "command": "python -B tools/inspect_start_adoption.py --app-root ../IRGS-APP-WEB --catalog-root ../IRGS-Catalog --output engine/START_ADOPTION_INSPECTION.json",
+    "script_sha256": "834b0409ffa1a896e72aba89c6f1db311713b1487c522323cddbdae186050ad4",
+    "report": "START_ADOPTION_INSPECTION.json",
+    "report_sha256": "e0a3b5adf19342bed9cf62ae679af0f1090ba6d1900ef7ebdddf615d78f2499f",
+    "exit_code": 2,
+    "status": "BLOCKED_CONSUMER_ADOPTION",
+    "http_requests": 33,
+    "contexts": [
+      {
+        "case": "john-1415-existing",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "new-1415-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "new-1415-quay",
+        "mode": "supported_slice",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "henry-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "henry-selected",
+        "mode": "supported_slice",
+        "preflight_http": 400,
+        "app_reports_engine_contract": null,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 1,
+        "elapsed_seconds": 20,
+        "reload_and_exact_retry": true
+      },
+      {
+        "case": "rise-r00",
+        "mode": "supported_slice",
+        "backend_actions": 5,
+        "elapsed_seconds": 3900
+      }
+    ],
+    "field_comparisons": 23,
+    "mismatched_comparisons": 15,
+    "count_note": "Field comparisons overlap owner findings; these are not unittest cases or independent bug counts.",
+    "engine_receipt_elapsed_seconds": 20,
+    "engine_selected_axis": "selected-historical-observation-seconds",
+    "observed_app_result_axis": "authored-opening-seconds",
+    "preflight_bypass_qualifies_wizard": false
+  },
+  "catalog_baseline": {
+    "fixture_id": "irgs-player-starts-v1",
+    "consumers": {
+      "engine_commit": "91b20056e7db651966c9e92925313494917f47b1",
+      "app_commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+      "app_catalog_pin": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+    },
+    "manifest_sha256": "a230fa6e78c8be97d24ec4d7e6fbf01308e1663898c612b86f6903a24d56dbee",
+    "original_selection_changed": false,
+    "new_contract_consumer_qualified_by_this_probe": false
+  },
+  "source_sha256": {
+    "/workspace/IRGS-APP-WEB/IRGS_Web/server.py": "8e18baac4a946602b1db36b2def1906b391956040029136add138a3ce1a11fdb",
+    "/workspace/IRGS-APP-WEB/IRGS_Web/gameplay_views.py": "386da5fbc29ec4c49efe8ba2421eddf19074dd69de54b35afb8de190807ff783",
+    "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py": "d9f57d60bef37cd68a1610fab80b19ebb1afbb746ed650be60ed118bc77794e6",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py": "119bf255b94667dfd4cbe86e07409351425aede5ccfb93fdd597bbd1f7794de5",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_setup.py": "230aec5b2510ae0fbdd6543690ef07f1b846379db9b568fa501d1d4411fad92d",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py": "d28f9470bf68ea82ce27a7f52ebce98b0b88f1185d55d380dc59d0848406511a",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+    "/workspace/IRGS-Catalog/IRGS_Catalog/player_start_evaluation.py": "42b1740f10d2873150ad93e92aea8d0a1d2c4369f25cdee1ae6186aefb549165",
+    "/workspace/IRGS-APP-WEB/IRGS_Web/start_preview.py": "f07b53a88d0c17bdaf812a5d141d59ff733d1bf932fd3c5d237ea78078282c49"
+  },
+  "attributed_prior_checks": {
+    "source": "../COORDINATOR_START_REVIEW_2026_10_26.json",
+    "engine_full_runtime": {
+      "run": 773,
+      "passed": 772,
+      "failures": 0,
+      "skipped": 1,
+      "skip_reason": "Absent historical-save fixture in coordinator run"
+    },
+    "rerun_by_this_support_increment": false,
+    "private_save_fixture_executed": false
+  },
+  "isolation_and_limits": {
+    "user_saves_used": false,
+    "app_or_catalog_patched": false,
+    "pins_changed": false,
+    "world_templates_reseeded_on_read": false,
+    "provider_calls": 0,
+    "browser_or_package_approval": false
+  },
+  "not_rerun": [
+    "Full Engine runtime discovery",
+    "Full App suite and interface checks",
+    "Catalog historical consumers and new-contract selection",
+    "Browser, native Windows and package checks",
+    "Joined all-three gate"
+  ],
+  "remaining_dependencies": [
+    {
+      "owner": "App",
+      "ids": [
+        "START-INT-002",
+        "START-INT-003",
+        "START-INT-004",
+        "START-INT-005"
+      ],
+      "work": "Explicit actor-bound start selection/preflight; received context/civil/elapsed and scope/prompt projection; actual committed result axis; calendar expectation adoption; reviewed exact gitlinks."
+    },
+    {
+      "owner": "Catalog",
+      "ids": [
+        "START-INT-006"
+      ],
+      "work": "Separate versioned new-contract selection/independent consumer qualification, preserving original baseline identities."
+    },
+    {
+      "owner": "Engine",
+      "work": "Support concrete consumer feedback, rerun this probe after adoption; selected native travel follows adoption."
+    },
+    {
+      "owner": "Coordinator",
+      "work": "Review exact compatible sources/pins, all-three approval and joined/browser/package qualification before unified 3.4.3."
+    }
+  ]
+}

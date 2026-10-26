@@ -1,0 +1,17 @@
+{
+  "case_id": "rise-r00",
+  "source_ref": "authored-synthetic:irgs-catalog:start-context:v1",
+  "selection": {
+    "kind": "rise",
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "template_id": "R00"
+  },
+  "actions": [
+    "walk_clearing",
+    "found",
+    "build",
+    "wait_hour",
+    "wait_hour"
+  ],
+  "intention": "  I choose only this reviewed action.\nKeep my words and the actual outcome separate.  "
+}

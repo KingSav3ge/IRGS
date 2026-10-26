@@ -5,6 +5,7 @@ const label=value=>String(value??'').replaceAll('_',' ').replace(/\b\w/g,char=>c
 const rows=value=>Array.isArray(value)?value.map((item,index)=>item&&typeof item==='object'?item:{id:String(index),name:String(item)}):Object.entries(value||{}).map(([id,item])=>item&&typeof item==='object'?{id,...item}:{id,name:String(item)});
 let token,current=null,currentBinding=null,view='story',workspaceMode='player',busy=false,library={},deleteTarget=null,campaignRequest=0,loadingCampaign=false;
 let historicalCatalogue=null,historicalEntryId=null,historicalPreview=null,historicalRequest=0,historicalLoading=false;
+let startPreviewRequest=0,startCheckLoading=false,openingSelectionKey=null;
 let wizardStep=0,startingOptions=null,startingRequest=0,startingLoading=false,reviewSelection=null,chronicleRequest=0,chronicleCursor=null,transportPending=null,inspectorRequest=0;
 let campaignSummaries=[];
 let features=[],featuresRequest=0,contentLibraryRequest=0,routeFeatureId=null,approvedEntries=new Map(),setupEntryContext=null,createDialogRequest=0;
@@ -40,7 +41,12 @@ function draftKey(){return current?`irgs-draft:${current.id}:${current.actor_id|
 function pendingKey(){return current?`irgs-pending:${current.id}:${current.actor_id||'none'}`:null;}
 function stashDraft(){const key=draftKey();if(key)writeLocal(key,$('#declaration').value||'');}
 function loadDraft(){const key=draftKey();$('#declaration').value=key?readLocal(key,''):'';transportPending=pendingKey()?readLocal(pendingKey()):null;loadSoloAttempt();}
-function displayTime(){if(current?.settlement)return current.settlement.opening_date+' \u00b7 '+riseElapsedLabel(current.settlement.elapsed_seconds)+' since arrival';const time=current?.campaign_time||{};return [time.date||time.calendar_date||(time.day!==undefined?'Day '+time.day:null),time.time||'time unknown',time.precision&&time.precision!=='exact'?time.precision:null].filter(Boolean).join(' · ');}
+function receivedCivilTime(){const civil=current?.start_context?.civil_time||current?.campaign_time?.civil;return civil?.status==='received_initial_checkpoint'&&civil.current_calendar_binding===false?civil:null;}
+function displayTime(){
+ if(current?.settlement)return current.settlement.opening_date+' · '+riseElapsedLabel(current.settlement.elapsed_seconds)+' since arrival';
+ const civil=receivedCivilTime();if(civil)return `${civil.date} · ${label(civil.calendar)} · ${civil.precision} precision · ${civil.time||'hour unknown'}`;
+ const time=current?.campaign_time||{};return [time.date||time.calendar_date||(time.day!==undefined?'Day '+time.day:null),time.time||'time unknown',time.precision&&time.precision!=='exact'?time.precision:null].filter(Boolean).join(' · ');
+}
 async function refreshList(selected){const data=await api('campaigns');token=data.token;campaignSummaries=data.campaigns;$('#campaign').innerHTML='<option value="">Choose a campaign</option>'+data.campaigns.map(campaign=>`<option value="${esc(campaign.id)}">${esc(campaign.name)}</option>`).join('');if(selected)$('#campaign').value=selected;return data.campaigns;}
 function syncControls(){
   const selected=current&&!loadingCampaign&&$('#campaign').value===current.id;
@@ -95,7 +101,8 @@ function entryMarkup(entry){
 function renderStory(){
   if(current?.settlement){renderRiseStory();return;}
   const scene=current.scene||{},entries=storyEntries(),key='irgs-bookmarks:'+current.id,bookmarks=new Set(readLocal(key,[]));
-  $('#content').innerHTML=`<div class="story-reading"><header class="scene-header"><span class="eyebrow">YOUR STORY${current.character?.name?' · '+esc(current.character.name):''}</span><h2>${esc(scene.title||'Your saved checkpoint')}</h2>${openingElapsedMarkup()}${scene.description?`<p class="scene-prose">${esc(valueText(scene.description))}</p>`:''}<span class="chapter-rule" aria-hidden="true">◇</span></header>${latestOutcomeMarkup()}${processControlsMarkup()}${openingMarkup()}${responseChoicesMarkup()}${supportedActionsMarkup()}<details class="story-limits"><summary>How actions work in this opening</summary><p class="capability-note">${esc(actionCapabilityNote())}</p><p class="note">Looking up a saved record takes no new scene time. Listed opening durations are local gameplay rules; they do not establish a historical hour or advance the campaign calendar.</p></details><details class="story-history"><summary>Earlier in your story <span>${entries.length} received or recorded entries</span></summary><div class="story-tools"><label class="sr-only" for="story-search">Search available scene records</label><input id="story-search" type="search" placeholder="Find a moment in your story…"><button id="jump-latest" class="quiet" type="button">Latest ↓</button></div><div id="story-feed"></div><div id="feed-end" tabindex="-1"></div></details></div>`;
+  $('#content').innerHTML=`<div class="story-reading"><header class="scene-header"><span class="eyebrow">YOUR STORY${current.character?.name?' · '+esc(current.character.name):''}</span><h2>${esc(scene.title||'Your saved checkpoint')}</h2>${openingElapsedMarkup()}${scene.description?`<p class="scene-prose">${esc(valueText(scene.description))}</p>`:''}<span class="chapter-rule" aria-hidden="true">◇</span></header>${playReadinessMarkup()}${latestOutcomeMarkup()}${processControlsMarkup()}${openingMarkup()}${responseChoicesMarkup()}${supportedActionsMarkup()}<details class="story-limits"><summary>How actions work in this opening</summary><p class="capability-note">${esc(actionCapabilityNote())}</p><p class="note">Looking up a saved record takes no new scene time. Listed opening durations are local gameplay rules; they do not establish a historical hour or advance the campaign calendar.</p></details><details class="story-history"><summary>Earlier in your story <span>${entries.length} received or recorded entries</span></summary><div class="story-tools"><label class="sr-only" for="story-search">Search available scene records</label><input id="story-search" type="search" placeholder="Find a moment in your story…"><button id="jump-latest" class="quiet" type="button">Latest ↓</button></div><div id="story-feed"></div><div id="feed-end" tabindex="-1"></div></details></div>`;
+  if($('#browse-supported-start'))$('#browse-supported-start').onclick=()=>changeView('content-library');
   $('#declaration').placeholder=responseChoices().length?'Write your own response, or edit a suggested answer here…':current.opening?.status==='awaiting_first_action'?'Your first move: describe what you say or attempt. A freeform declaration remains pending until resolved.':'Describe what your character says or attempts…';
   const draw=()=>{const query=$('#story-search').value.toLowerCase();const filtered=entries.filter(entry=>`${entry.text||''} ${entry.title||''}`.toLowerCase().includes(query));$('#story-feed').innerHTML=filtered.map(entryMarkup).join('')||'<div class="story-empty"><h3>The next choice is yours.</h3><p>No matching narrative or action records are available. Your confirmed checkpoint remains intact.</p></div>';document.querySelectorAll('[data-bookmark]').forEach(button=>{button.setAttribute('aria-pressed',String(bookmarks.has(button.dataset.bookmark)));button.textContent=bookmarks.has(button.dataset.bookmark)?'Bookmarked':'Bookmark';button.onclick=()=>{bookmarks.has(button.dataset.bookmark)?bookmarks.delete(button.dataset.bookmark):bookmarks.add(button.dataset.bookmark);writeLocal(key,[...bookmarks]);button.setAttribute('aria-pressed',String(bookmarks.has(button.dataset.bookmark)));button.textContent=bookmarks.has(button.dataset.bookmark)?'Bookmarked':'Bookmark';};});};
   $('#story-search').oninput=draw;draw();$('#jump-latest').onclick=()=>$('#feed-end').scrollIntoView({behavior:preferences.motion==='reduce'?'instant':'auto',block:'end'});
@@ -410,8 +417,24 @@ function chooseResponse(choiceId,campaign,actor,expectedText){
   $('#declaration').value=choice.text;stashDraft();syncComposer();focusOwnResponse();notice(routineText('draft.suggested'));
 }
 function supportedActions(){return workspaceMode==='player'&&Array.isArray(current?.supported_actions)?current.supported_actions.filter(action=>action&&['issue_equipment','scene_action'].includes(action.kind)&&typeof action[action.kind==='scene_action'?'action_id':'order_id']==='string'&&action[action.kind==='scene_action'?'action_id':'order_id']&&typeof action.text==='string'&&action.text.trim()):[];}
+function currentPlayReadiness(){
+  if(current?.play_readiness)return current.play_readiness;
+  const pending=Boolean(current?.pending_declaration),count=supportedActions().length+(current?.settlement?.actions||[]).length,starts=(current?.process_control?.start_options||[]).length;
+  return {status:!current?.actor_id||current.character_available===false?'unavailable':pending?'pending_declaration':count||starts?'supported_slice':'declaration_only',action_count:pending?0:count,process_start_count:pending?0:starts};
+}
+function assistanceContextCopy(){
+  if(current?.assistance?.available===true)return 'Review a proposal in your response composer before accepting an action.';
+  const status=currentPlayReadiness().status;
+  return status==='supported_slice'?'AI assistance is not connected. Your listed actions use local rules and require no model.':status==='pending_declaration'?'Your intent is saved but unresolved. You can withdraw it to check the currently supported actions. No automatic resolution or provider request is running.':status==='unavailable'?'No available player character is selected. Inspect your received records or choose a saved story.':'No executable actions or process starts are currently available for this character. You can inspect received records and save unresolved intent. AI assistance is not connected.';
+}
+function playReadinessMarkup(){
+  const status=currentPlayReadiness().status;if(status==='supported_slice')return '';
+  const title=status==='pending_declaration'?'Intent awaiting resolution':status==='unavailable'?'Player character unavailable':'Declaration / reference checkpoint';
+  return `<section class="panel play-readiness" aria-label="Current playability"><h3>${esc(title)}</h3><p>${esc(assistanceContextCopy())}</p>${status==='declaration_only'?'<p>A historical snapshot and an opening description do not supply a playable situation. To use the supported local slice, review the explicitly offered actor-bound contexts or a new human’s fictional opening in the Library. Your current story stays saved.</p><button type="button" class="quiet" id="browse-supported-start">Review other starting choices</button>':''}</section>`;
+}
 function actionCapabilityNote(){
-  if(current?.capabilities?.playable_opening)return 'The authored opening supports the listed movement, observation and delivery actions with saved consequences. Their stated durations advance this opening’s elapsed seconds. Freeform declarations remain saved intent; general combat, narration and calendar advancement are unavailable.';
+  if(current?.pending_declaration)return 'Your exact intent is saved and unresolved. Withdraw it to check the currently supported actions; withdrawal executes nothing and advances no time.';
+  if(current?.capabilities?.playable_opening)return 'Supported attempts here: '+supportedActions().map(item=>item.title).join('; ')+'. Each uses its selected local rule. Freeform declarations remain saved intent; general combat, narration and civil-calendar advancement are unavailable.';
   if(current?.capabilities?.supported_action_resolution)return 'Received equipment orders can be attempted using the listed action; authority and stock are checked on submission. Freeform declarations remain saved intent; general action resolution, narration and time advancement are not connected.';
   return !current?.capabilities?.action_resolution?'Freeform declarations cannot be resolved yet. You can save your exact intent, inspect available records or withdraw a pending declaration.':'The host preserves declarations and received records. A general narrator is not connected.';
 }
@@ -426,8 +449,8 @@ function latestOutcomeMarkup(){
   return `<section class="last-outcome ${latest.status==='completed_unsuccessfully'?'attempt-failed':'attempt-completed'}" aria-label="Your last action"><span class="eyebrow">${latest.kind==='process_phase'?'YOUR LAST PROCESS PHASE · '+esc(label(latest.process?.status||'received')):latest.status==='completed_unsuccessfully'?'YOUR ATTEMPT · UNSUCCESSFUL':'YOUR LAST ACTION · COMPLETED'}</span><p>${esc(routineOutcome(latest,{elapsed:true,presentation:true}))}</p></section>`;
 }
 function openingElapsedMarkup(){
-  const elapsed=current?.elapsed_time;if(!current?.capabilities?.playable_opening||elapsed?.axis!=='authored-opening-seconds'||!Number.isSafeInteger(elapsed.seconds)||elapsed.seconds<0)return '';
-  return `<p class="opening-elapsed"><span aria-hidden="true">◷</span> ${esc(elapsed.seconds)} seconds elapsed in this opening</p>`;
+  const elapsed=current?.elapsed_time,selected=elapsed?.axis==='authored-opening-seconds'||(current?.capabilities?.elapsed_scope==='selected_start_context'&&current?.start_context?.schema_version==='irgs-start-readiness-1');if(!current?.capabilities?.playable_opening||!selected||!Number.isSafeInteger(elapsed?.seconds)||elapsed.seconds<0)return '';
+  return `<p class="opening-elapsed"><span aria-hidden="true">◷</span> ${esc(elapsed.seconds)} seconds elapsed in this selected local context</p>`;
 }
 function openingMarkup(){const opening=current?.opening;if(!opening||!Array.isArray(opening.blocks))return '';const fresh=opening.status==='awaiting_first_action';return `<details class="opening-presentation" ${fresh?'open':''}><summary>${fresh?'Before your first move':'Where your story began'}</summary>${opening.blocks.filter(block=>!['character','scene','first_decision'].includes(block.kind)).map(block=>`${block.status?`<span class="badge">${esc(label(block.status))}</span>`:''}<p>${esc(block.text||'')}</p>`).join('')}${fresh?'':'<p class="note">Your original opening. The Chronicle records what has happened since.</p>'}</details>`;}
 function renderHome(){renderPreviewHome();}
@@ -580,7 +603,18 @@ function wizardBase(){
 }
 function setupOriginKey(){try{return JSON.stringify(wizardBase());}catch{return null;}}
 function validStartingOptions(){return !startingLoading&&startingOptions?.available===true&&startingOptions.queryKey===setupOriginKey()&&startingOptions.request===startingRequest&&startingOptions.default_scenario_id===$('#starting-scenario').value&&/^[a-f0-9]{64}$/i.test(startingOptions.selection_digest||'');}
-function invalidateReview(){syncPreviewCharacter();reviewSelection=null;}
+function invalidateReview(){
+  syncPreviewCharacter();reviewSelection=null;startPreviewRequest+=1;startCheckLoading=false;
+  $('#confirm-declaration-start').checked=false;syncStartGuidance();syncCreateControls();
+}
+function syncStartGuidance(){
+  const target=$('#start-readiness-guidance');if(!target)return;
+  if($('#character-kind').value==='existing'){
+    target.textContent=existingPlayableOpenings().length?'This person has an optional sourced context below. Choose it explicitly to review its bounded attempts. Leaving it unselected keeps declaration / reference mode.':'No executable context is offered for this person at this checkpoint. Review will confirm declaration / reference use; no other person’s context or new-character fiction can be borrowed.';return;
+  }
+  const authored=$('#character-kind').value==='new'&&Boolean($('#character-opening')?.value);
+  target.textContent=authored?'You selected an authored fictional opening. Review will check the actions actually available to this new character.':'Reference readiness and character eligibility do not establish executable play. Review will check this exact character and start. A start with no executable actions requires a deliberate declaration / reference choice. New human characters can instead select an available fictional opening below.';
+}
 function syncCreateControls(){
   const historical=$('#create-profile').value==='__hyw',pendingReview=Boolean(reviewSelection?.recovery);
   $('#create-profile').disabled=busy||workspaceMode==='player';$('#cancel-create').disabled=busy;$('#historical-entry-select').disabled=busy;
@@ -588,9 +622,10 @@ function syncCreateControls(){
   document.querySelectorAll('[data-setup-step]').forEach(section=>section.hidden=Number(section.dataset.setupStep)!==wizardStep);
   document.querySelectorAll('#setup-progress li').forEach((item,index)=>{if(index===wizardStep)item.setAttribute('aria-current','step');else item.removeAttribute('aria-current');});
   $('#setup-back').hidden=wizardStep===0||pendingReview;$('#setup-back').disabled=busy;
-  $('#setup-next').hidden=wizardStep===3;$('#setup-next').disabled=busy||(wizardStep===1&&historical&&!validHistoricalPreview())||(wizardStep===2&&!validStartingOptions());
+  $('#setup-next').hidden=wizardStep===3;$('#setup-next').disabled=busy||startCheckLoading||(wizardStep===1&&historical&&!validHistoricalPreview())||(wizardStep===2&&!validStartingOptions());
   $('#setup-next').textContent=wizardStep===0?'Choose starting point →':wizardStep===1?'Choose character →':'Review campaign →';
-  $('#create-submit').hidden=wizardStep!==3;$('#create-submit').disabled=busy||wizardStep!==3||!reviewSelection;$('#create-submit').textContent=pendingReview?'Check / retry campaign creation':'Start campaign';
+  $('#create-submit').hidden=wizardStep!==3;$('#create-submit').disabled=busy||wizardStep!==3||!reviewSelection||(!pendingReview&&reviewSelection.readiness?.status==='declaration_only'&&!$('#confirm-declaration-start').checked);$('#create-submit').textContent=pendingReview?'Check / retry campaign creation':reviewSelection?.readiness?.status==='declaration_only'?'Create declaration / reference campaign':'Start campaign';
+  $('#declaration-start-consent').hidden=wizardStep!==3||pendingReview||reviewSelection?.readiness?.status!=='declaration_only';
   $('#create-dialog').dataset.step=String(wizardStep);syncPreviewCharacter();$('#create-title').textContent=['Name your adventure','Choose your moment','Forge your character','Your story begins here'][wizardStep];$('#create-step-intro').textContent=['A world to enter. A life to make your own.','Choose where history leaves off and your story begins.','Create a character or step into an existing life.','Review your place in the world before taking the first step.'][wizardStep];
 }
 function setupDescriptionMarkup(description){
@@ -608,6 +643,7 @@ function startingFactions(){return startingOptions?.factions||startingOptions?.e
 function factionRepresentatives(faction){return Array.isArray(faction?.control?.actor_ids)?startingCharacters().filter(character=>character.exists===true&&faction.control.actor_ids.includes(character.id)):[];}
 function eligibleFactions(){return startingFactions().filter(faction=>faction.eligible===true&&factionRepresentatives(faction).length);}
 async function loadStartingOptions(scenarioId=null){
+  startPreviewRequest+=1;startCheckLoading=false;
   let base;try{base=wizardBase();}catch(error){$('#create-error').textContent=error.message;return;}
   const key=JSON.stringify(base),request=++startingRequest,priorKind=$('#character-kind').value,priorActor=$('#starting-character').value,priorFaction=$('#starting-faction').value;
   startingLoading=true;startingOptions=null;reviewSelection=null;$('#starting-context').innerHTML='<p>Loading dated character and faction availability…</p>';syncCreateControls();
@@ -632,22 +668,39 @@ async function loadStartingOptions(scenarioId=null){
 }
 function playableOpenings(){return Array.isArray(startingOptions?.playable_openings)?startingOptions.playable_openings.filter(opening=>opening&&typeof opening.id==='string'&&opening.id):[];}
 function ensureOpeningPicker(){
+  if(!$('#existing-character-opening')){
+    $('#existing-character-fields').insertAdjacentHTML('beforeend','<section id="existing-opening-section" class="playable-opening-selection" hidden><h3>Optional sourced starting context</h3><p class="note">Choose a context reviewed for this exact person and checkpoint. It is never added automatically and grants only its listed attempts.</p><label>Starting context<select id="existing-character-opening"><option value="">Declaration / reference only · no operational context</option></select></label><div id="existing-opening-review"></div></section>');
+    $('#existing-character-opening').onchange=()=>{renderExistingOpeningReview();invalidateReview();};
+  }
   if($('#character-opening'))return;
-  $('#new-character-fields').insertAdjacentHTML('beforeend','<section id="character-opening-section" class="playable-opening-selection" hidden><h3>Optional playable opening</h3><p class="note">This adds an authored fictional local situation to the historical starting world. It is separate from historical evidence and your background testimony.</p><label>Opening situation<select id="character-opening"><option value="">No authored opening · location remains unestablished</option></select></label><div id="character-opening-review"></div></section>');
+  $('#new-character-fields').insertAdjacentHTML('beforeend','<section id="character-opening-section" class="playable-opening-selection" hidden><h3>Choose how to begin</h3><p class="note">This adds an authored fictional local situation to the historical starting world. It is separate from historical evidence and your background testimony.</p><label>Opening situation<select id="character-opening"><option value="">Declaration / reference only · no authored opening</option></select></label><div id="character-opening-review"></div></section>');
   $('#character-opening').onchange=()=>{renderOpeningChoiceReview();invalidateReview();};
+}
+function existingPlayableOpenings(actor=$('#starting-character').value){
+  return (startingOptions?.existing_character_openings||[]).filter(item=>item?.actor_id===actor&&typeof item.id==='string'&&item.id);
+}
+function renderExistingOpeningReview(){const opening=existingPlayableOpenings().find(item=>item.id===$('#existing-character-opening').value);$('#existing-opening-review').innerHTML=openingChoiceMarkup(opening);}
+function renderExistingOpeningPicker(){
+ const picker=$('#existing-character-opening'),prior=picker.value,openings=$('#character-kind').value==='existing'?existingPlayableOpenings():[];
+ $('#existing-opening-section').hidden=!openings.length;picker.disabled=$('#character-kind').value!=='existing';
+ picker.innerHTML='<option value="">Declaration / reference only · no operational context</option>'+openings.map(item=>`<option value="${esc(item.id)}">${esc(item.title)} · sourced context</option>`).join('');
+ picker.value=openings.some(item=>item.id===prior)?prior:'';renderExistingOpeningReview();
 }
 function openingChoiceMarkup(opening){
   if(!opening)return '<p class="note">No local situation, location, possessions or elapsed-time rule will be added.</p>';
-  return `<div class="opening-choice-review"><h4>${esc(opening.title||opening.id)}</h4><p>${esc(opening.description||'')}</p>${['requirements','review','scope'].map(key=>textItems(opening[key]).map(text=>`<p class="note">${esc(text)}</p>`).join('')).join('')}</div>`;
+  return `<div class="opening-choice-review"><h4>${esc(opening.title||opening.id)}</h4><p>${esc(opening.description||'')}</p>${['requirements','review','scope'].map(key=>(key==='review'&&opening[key]&&!Array.isArray(opening[key])&&typeof opening[key]==='object'?Object.entries(opening[key]).map(([name,value])=>label(name)+': '+String(value)):textItems(opening[key])).map(text=>`<p class="note">${esc(text)}</p>`).join('')).join('')}</div>`;
 }
 function renderOpeningChoiceReview(){const opening=playableOpenings().find(item=>item.id===$('#character-opening')?.value);if($('#character-opening-review'))$('#character-opening-review').innerHTML=openingChoiceMarkup(opening);}
 function renderPlayableOpeningPicker(){
   ensureOpeningPicker();const prior=$('#character-opening').value,openings=playableOpenings();$('#character-opening-section').hidden=!openings.length;
-  $('#character-opening').innerHTML='<option value="">No authored opening · location remains unestablished</option>'+openings.map(opening=>`<option value="${esc(opening.id)}">${esc(opening.title||opening.id)} · authored fiction</option>`).join('');
+  $('#character-opening').innerHTML='<option value="">Declaration / reference only · no authored opening</option>'+openings.map(opening=>`<option value="${esc(opening.id)}">${esc(opening.title||opening.id)} · authored fiction</option>`).join('');
   $('#character-opening').value=openings.some(opening=>opening.id===prior)?prior:'';renderOpeningChoiceReview();
 }
 function updateCharacterFields(){
   ensureOpeningPicker();const kind=$('#character-kind').value,isNew=kind==='new';$('#new-character-fields').hidden=!isNew;$('#existing-character-fields').hidden=kind!=='existing';$('#faction-character-fields').hidden=kind!=='faction';
+  const selectionKey=JSON.stringify([setupOriginKey(),$('#starting-scenario').value,kind,isNew?null:$('#starting-character').value]);
+  if(selectionKey!==openingSelectionKey){$('#character-opening').value='';$('#existing-character-opening').value='';openingSelectionKey=selectionKey;renderOpeningChoiceReview();}
+  renderExistingOpeningPicker();
   for(const id of ['new-character-name','new-character-species','new-character-background','character-opening',...BACKGROUND_FIELDS])$('#'+id).disabled=!isNew;
   $('#new-character-name').required=isNew;$('#new-character-species').required=isNew;
   const character=(startingOptions?.characters||startingOptions?.entities?.characters||[]).find(item=>item.id===$('#starting-character').value);
@@ -672,7 +725,10 @@ function selectedCharacter(){
   if(!validStartingOptions())throw new Error('Refresh the verified starting options before reviewing this campaign.');
   if($('#character-kind').value==='existing'){
     const character=(startingOptions.characters||startingOptions.entities?.characters||[]).find(item=>item.id===$('#starting-character').value&&item.eligible===true);
-    if(!character)throw new Error('Choose an eligible existing character.');return {kind:'existing',actor_id:character.id};
+    if(!character)throw new Error('Choose an eligible existing character.');
+    const openingId=$('#existing-character-opening').value;
+    if(openingId&&!existingPlayableOpenings(character.id).some(item=>item.id===openingId))throw new Error('Choose a context offered for this exact person, or leave it unselected.');
+    return {kind:'existing',actor_id:character.id,...(openingId?{opening_id:openingId}:{})};
   }
   if($('#character-kind').value==='faction'){
     const faction=eligibleFactions().find(item=>item.id===$('#starting-faction').value),actor=$('#faction-representative').value;
@@ -690,19 +746,25 @@ function reviewedChoice(){
   const scenario=$('#starting-scenario').value;if(!(startingOptions?.scenarios||[]).some(item=>item.id===scenario))throw new Error('Choose an available solo scenario.');
   return {...wizardBase(),name,starting_scenario_id:scenario,selection_digest:startingOptions.selection_digest,character:selectedCharacter()};
 }
+function readinessReviewMarkup(readiness,recovery){
+  if(recovery)return '<p class="reference-note">Recover the original reviewed creation request. This check does not change its selected start or add a new opening.</p>';
+  if(readiness?.status==='supported_slice')return `<section class="capability-note" aria-label="Selected start playability"><h3>Supported local slice</h3><p>${esc(readiness.action_count)} executable action choices and ${esc(readiness.process_start_count)} process starts are currently offered to this character. Each is an attempt checked by Core when confirmed.</p><p>General combat, freeform resolution, automatic narration and calendar advancement remain unavailable.</p></section>`;
+  return '<section class="capability-note" aria-label="Selected start playability"><h3>Declaration / reference only</h3><p>This selected character and start currently offer no executable actions or process starts. You can inspect received records and save exact intent; that intent remains unresolved and advances no elapsed time.</p><p>Use Back to review an offered actor-bound context or a new human character’s fictional opening for a supported local slice. An existing historical person will keep their actual records and will receive no courier setup automatically.</p></section>';
+}
 function renderReview(payload,recovery=false){
   const character=payload.character||{},existing=startingCharacters().find(item=>item.id===character.actor_id),faction=startingFactions().find(item=>item.id===character.entity_id);
   const characterName=character.kind==='new'?character.name:existing?.name||character.actor_id;
-  const chosenOpening=character.kind==='new'&&character.opening_id?playableOpenings().find(opening=>opening.id===character.opening_id):null;
-  const openingReview=character.opening_id?`<section class="playable-opening-review"><span class="eyebrow">AUTHORISED FICTIONAL OPENING</span>${chosenOpening?openingChoiceMarkup(chosenOpening):`<p>Retained opening selection: ${esc(character.opening_id)}. Its exact setup will be validated by the host. The prior request identity and choices remain unchanged.</p>`}</section>`:'';
+  const chosenOpening=character.opening_id?(character.kind==='new'?playableOpenings():existingPlayableOpenings(character.actor_id)).find(opening=>opening.id===character.opening_id):null;
+  const openingReview=character.opening_id?`<section class="playable-opening-review"><span class="eyebrow">${character.kind==='new'?'AUTHORISED FICTIONAL OPENING':'EXPLICIT SOURCED STARTING CONTEXT'}</span>${chosenOpening?openingChoiceMarkup(chosenOpening):`<p>Retained opening selection: ${esc(character.opening_id)}. Its exact setup will be validated by the host. The prior request identity and choices remain unchanged.</p>`}</section>`:'';
   const control=character.kind==='new'?{mode:'individual',powers:['declare_own_intent']}:(character.kind==='faction'?faction:existing)?.control;
   const summary={profile:payload.scenario_id==='hundred-years-war'?'Century of Conflict: The Hundred-Years’ War':label(payload.profile_id),starting_point:startingOptions?.as_of?.label||payload.entry_id||'Profile checkpoint',character:characterName,species:character.species||existing?.species||existing?.identity?.species||'as recorded',scenario:payload.starting_scenario_id||'individual',...(character.kind==='faction'?{faction:faction?.name||character.entity_id}:{}),control_mode:control?.mode?label(control.mode):'Policy terms not loaded',permitted_powers:Array.isArray(control?.powers)?control.powers.join(', ')||'None supplied':'Not loaded; the retained selection will be checked by the host'};
-  $('#setup-review').innerHTML=`<span class="eyebrow">SOLO CAMPAIGN REVIEW</span><h2>${esc(payload.name)}</h2>${character.opening_id?'<p class="capability-note"><strong>Before you start:</strong> Your selected authored opening supports listed movement, observation and delivery actions with lasting consequences and its stated local durations. General combat, freeform resolution, automatic narration and calendar advancement remain unavailable.</p>':startingOptions?.capabilities?.action_resolution===true?'':'<p class="capability-note"><strong>Before you start:</strong> You can create a campaign, inspect available records and save your exact intent. Freeform declarations remain pending until you withdraw them. Received equipment orders can be attempted from Story, with authority and stock checked on submission. Time advancement is unavailable.</p>'}${recovery?'<p class="reference-note">A previous Start request has an unconfirmed receipt. Retry this exact request to recover the same campaign. Its identity and choices are retained.</p>':''}<div class="setup-summary">${facts(summary)}</div>${openingReview}${character.kind==='faction'&&faction?`<p class="note">${esc(faction.eligibility_reason||'As recorded in the selected control policy.')}</p>${facts({control_policy_source:faction.eligibility_source_ref||'Not supplied'})}`:''}${character.kind==='new'&&character.background?`<h3>User-declared background</h3><p class="record">${esc(character.background)}</p><p class="note">This declaration supplies background testimony; capabilities and possessions require their own established records.</p>`:''}${character.kind==='new'?backgroundDetailsMarkup(character):''}${setupDescriptionMarkup(startingOptions?.entry_description)}<p class="reference-note">${character.kind==='faction'?'Faction selection grants only the reviewed policy’s listed powers through the permitted representative. It supplies no automatic national authority, appointments or resources.':'The selected person’s control follows the listed policy. Wealth, inventory quantities, capabilities, appointments and faction-level powers remain unknown unless the selected profile supplies them.'}</p><details><summary>Starting reference provenance</summary>${facts({source:startingOptions?.source||'Retained creation request',selection_digest:payload.selection_digest,snapshot_sha256:payload.snapshot_sha256||'Not a historical snapshot'})}</details>`;
+  $('#setup-review').innerHTML=`<span class="eyebrow">SOLO CAMPAIGN REVIEW</span><h2>${esc(payload.name)}</h2>${readinessReviewMarkup(reviewSelection?.readiness,recovery)}${recovery?'<p class="reference-note">A previous Start request has an unconfirmed receipt. Retry this exact request to recover the same campaign. Its identity and choices are retained.</p>':''}<div class="setup-summary">${facts(summary)}</div>${openingReview}${character.kind==='faction'&&faction?`<p class="note">${esc(faction.eligibility_reason||'As recorded in the selected control policy.')}</p>${facts({control_policy_source:faction.eligibility_source_ref||'Not supplied'})}`:''}${character.kind==='new'&&character.background?`<h3>User-declared background</h3><p class="record">${esc(character.background)}</p><p class="note">This declaration supplies background testimony; capabilities and possessions require their own established records.</p>`:''}${character.kind==='new'?backgroundDetailsMarkup(character):''}${setupDescriptionMarkup(startingOptions?.entry_description)}<p class="reference-note">${character.kind==='faction'?'Faction selection grants only the reviewed policy’s listed powers through the permitted representative. It supplies no automatic national authority, appointments or resources.':'The selected person’s control follows the listed policy. Wealth, inventory quantities, capabilities, appointments and faction-level powers remain unknown unless the selected profile supplies them.'}</p><details><summary>Starting reference provenance</summary>${facts({source:startingOptions?.source||'Retained creation request',selection_digest:payload.selection_digest,snapshot_sha256:payload.snapshot_sha256||'Not a historical snapshot'})}</details>`;
 }
 
 function creationPayload(){
   if(wizardStep!==3||!reviewSelection)throw new Error('Review the campaign and character before starting.');
   if(!reviewSelection.recovery&&JSON.stringify(reviewedChoice())!==reviewSelection.signature)throw new Error('The starting choices changed. Review them again before starting.');
+  if(!reviewSelection.recovery&&reviewSelection.readiness?.status==='declaration_only'&&!$('#confirm-declaration-start').checked)throw new Error('Choose declaration / reference use explicitly, or go Back to review a supported opening.');
   reviewSelection.requestId=reviewSelection.requestId||crypto.randomUUID();return {...reviewSelection.payload,...(reviewSelection.creator?{mode:'creator'}:{}),request_id:reviewSelection.requestId};
 }
 async function wizardNext(){
@@ -710,9 +772,20 @@ async function wizardNext(){
   try{
     if(wizardStep===0){if(!$('#campaign-name').value.trim())throw new Error('Enter a campaign name.');wizardStep=1;invalidateReview();if($('#create-profile').value==='__hyw')await showHistoricalSetup();else{$('#profile-opening').innerHTML='<h3>A new, sourced campaign</h3><p>No historical date is inferred for this generic profile. Create a character next; actual possessions and capabilities remain to be established.</p>';}}
     else if(wizardStep===1){wizardBase();wizardStep=2;await loadStartingOptions();}
-    else if(wizardStep===2){const payload=reviewedChoice();reviewSelection={payload,signature:JSON.stringify(payload),requestId:null,creator:workspaceMode==='creator'};wizardStep=3;renderReview(payload);}
+    else if(wizardStep===2){
+      const payload=reviewedChoice(),signature=JSON.stringify(payload),request=++startPreviewRequest,dialog=createDialogRequest,creator=workspaceMode==='creator';
+      const {character,...base}=payload;delete base.name;
+      const choice={character_kind:character.kind,...(character.kind==='new'?{species:character.species,...(character.opening_id?{opening_id:character.opening_id}:{})}:{actor_id:character.actor_id,...(character.opening_id?{opening_id:character.opening_id}:{}),...(character.entity_id?{entity_id:character.entity_id}:{})})};
+      startCheckLoading=true;syncCreateControls();let readiness;
+      try{readiness=await api('starting-preview?'+new URLSearchParams({...base,...choice}),undefined,{creator});}
+      catch(error){if(request!==startPreviewRequest||dialog!==createDialogRequest||!$('#create-dialog').open)return;throw error;}
+      if(request!==startPreviewRequest||dialog!==createDialogRequest||!$('#create-dialog').open||wizardStep!==2||creator!==(workspaceMode==='creator')||signature!==JSON.stringify(reviewedChoice()))return;
+      startCheckLoading=false;
+      if(!readiness||readiness.engine_start_context_contract!=='irgs-start-readiness-1'||readiness.engine_review?.schema_version!=='irgs-start-readiness-1'||readiness.schema_version!==1||!['supported_slice','declaration_only'].includes(readiness.status)||!Number.isSafeInteger(readiness.action_count)||!Number.isSafeInteger(readiness.process_start_count)||readiness.action_count<0||readiness.process_start_count<0||(readiness.status==='supported_slice')!==(readiness.action_count+readiness.process_start_count>0))throw new Error('The host could not verify this start’s current capabilities. No campaign was created. Retry review when its source is available.');
+      reviewSelection={payload,signature,readiness,requestId:null,creator};$('#confirm-declaration-start').checked=false;wizardStep=3;renderReview(payload);
+    }
     syncCreateControls();$('#create-title').focus?.();
-  }catch(error){$('#create-error').textContent=error.message;syncCreateControls();}
+  }catch(error){startCheckLoading=false;$('#create-error').textContent=error.message;syncCreateControls();}
 }
 async function openCreateDialog(selection=null){
   if(busy||!token)return;const request=++createDialogRequest,mode=workspaceMode;const pending=readLocal('irgs-create-pending'),selected=selection?.id?approvedEntries.get(selection.id):null;
@@ -721,7 +794,7 @@ async function openCreateDialog(selection=null){
   $('#create-error').textContent='';try{
     if(mode==='creator')await ensureCatalog();if(request!==createDialogRequest||mode!==workspaceMode)return;loadProfiles();setupEntryContext=selected?{campaign_id:selected.campaign_id,entry_id:selected.id,snapshot_sha256:selected.snapshot_sha256}:null;
     if(pending){wizardStep=3;reviewSelection={payload:pending,requestId:pending.request_id,recovery:true,creator:pending.mode==='creator'};renderReview(pending,true);}
-    else{wizardStep=0;reviewSelection=null;startingOptions=null;$('#campaign-name').value='';$('#new-character-name').value='';$('#new-character-species').value='human';$('#new-character-background').value='';ensureOpeningPicker();$('#character-opening').value='';for(const id of BACKGROUND_FIELDS)$('#'+id).value=id==='character-arrangement'?'independent':id==='character-relationship-stage'?'undecided':'';if(selected){$('#create-profile').value='__hyw';$('#profile-description').textContent='Selected opening: '+selected.year+' · '+selected.title+'. The exact verified reference will be rechecked before character review.';}}
+    else{wizardStep=0;reviewSelection=null;startingOptions=null;$('#campaign-name').value='';$('#new-character-name').value='';$('#new-character-species').value='human';$('#new-character-background').value='';ensureOpeningPicker();$('#character-opening').value='';$('#existing-character-opening').value='';openingSelectionKey=null;for(const id of BACKGROUND_FIELDS)$('#'+id).value=id==='character-arrangement'?'independent':id==='character-relationship-stage'?'undecided':'';if(selected){$('#create-profile').value='__hyw';$('#profile-description').textContent='Selected opening: '+selected.year+' · '+selected.title+'. The exact verified reference will be rechecked before character review.';}}
     $('#create-dialog').showModal();syncCreateControls();
   }catch(error){notice(error.message,true);}
 }
@@ -753,7 +826,8 @@ $('#workspace-mode').onclick=async()=>{
   try{await Promise.all([loadFeatureNav({applyRoute:false}),...(mode==='creator'?[ensureCatalog()]:[])]);if(request!==campaignRequest||workspaceMode!==mode||$('#campaign').value!==(id||''))return;updateViewRoute(view);if(id)await openCampaign(id,{actorId:actor});}catch(error){if(request===campaignRequest)notice(error.message,true);}
 };
 $('#new-campaign').onclick=openCreateDialog;$('#cancel-create').onclick=()=>{if(!busy)$('#create-dialog').close();};
-$('#create-dialog').addEventListener('close',()=>{createDialogRequest+=1;resetHistoricalSetup();startingRequest+=1;startingOptions=null;reviewSelection=null;});$('#create-dialog').addEventListener('cancel',event=>{if(busy)event.preventDefault();});
+$('#create-dialog').addEventListener('close',()=>{startPreviewRequest+=1;startCheckLoading=false;createDialogRequest+=1;resetHistoricalSetup();startingRequest+=1;startingOptions=null;reviewSelection=null;});$('#create-dialog').addEventListener('cancel',event=>{if(busy)event.preventDefault();});
+$('#confirm-declaration-start').onchange=syncCreateControls;
 $('#setup-next').onclick=wizardNext;$('#setup-back').onclick=()=>{if(busy||wizardStep===0)return;if(readLocal('irgs-create-pending')){$('#create-error').textContent='Check the retained Start request before changing its choices.';return;}wizardStep-=1;invalidateReview();$('#create-error').textContent='';syncCreateControls();};
 $('#character-kind').onchange=updateCharacterFields;$('#starting-character').onchange=updateCharacterFields;$('#starting-scenario').onchange=()=>loadStartingOptions($('#starting-scenario').value);$('#starting-faction').onchange=updateFactionFields;$('#faction-representative').onchange=invalidateReview;
 for(const id of ['new-character-name','new-character-species','new-character-background','campaign-name',...BACKGROUND_FIELDS]){$('#'+id).oninput=invalidateReview;$('#'+id).onchange=invalidateReview;}

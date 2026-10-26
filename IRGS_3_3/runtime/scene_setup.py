@@ -1,7 +1,7 @@
-"""Explicit opt-in authored circumstances for a NEW Solo character only.
+"""Explicit opt-in new-character fiction or reviewed existing-person context.
 
 The historical template is unchanged. This initializer is never a continuing
-world migration or a source of facts about an actual historical person.
+world migration. Existing-person context has its own sourced pack and consent.
 """
 from __future__ import annotations
 
@@ -48,15 +48,25 @@ def opening_options(state):
                            'shortcut_attempt_seconds': 30, 'delivery_seconds': 10}}]
 
 
-def initialize_opening(world, character, actor_id, reference):
+def initialize_opening(world, character, actor_id, reference, *, options=None):
     opening_id = character.get('opening_id')
     if opening_id in (None, ''):
         return world
+    historical_person = character.get('kind') == 'existing'
+    if historical_person:
+        from start_readiness import existing_pack
+        pack = existing_pack(world.s, actor_id, opening_id)
+        reviewed = next((r for r in (options or {}).get('existing_character_openings', [])
+                         if r['id'] == opening_id and r['actor_id'] == actor_id), None)
+        if reviewed is None or digest(pack) != reviewed['content_sha256']:
+            raise ValueError('The existing-person opening changed after review')
+    else:
+        pack = _selected_pack(world.s)
     species = world.s.get('actors', {}).get(actor_id, {}).get('species')
-    if (character.get('kind') != 'new' or not isinstance(species, str)
+    if ((not historical_person and character.get('kind') != 'new') or not isinstance(species, str)
             or species.strip().casefold() != 'human'
             or world.s.get('starting_control', {}).get('scenario_id') != 'individual'
-            or opening_id not in {row['id'] for row in opening_options(world.s)}):
+            or (not historical_person and opening_id not in {row['id'] for row in opening_options(world.s)})):
         raise ValueError('This authored opening requires a new human character in the selected historical individual Solo start')
     if world.s.get('scene_rules') or world.s.get('elapsed_time'):
         raise ValueError('An opening is initialized only once in a new world')
@@ -65,7 +75,6 @@ def initialize_opening(world, character, actor_id, reference):
         raise ValueError('Authored circumstances cannot be inserted into a continuing playthrough')
     from core_world import CoreWorld
     result = CoreWorld(state=world.s)
-    pack = _selected_pack(world.s)
     source = pack['source_ref']
 
     def apply(key, op, **params):
@@ -80,18 +89,20 @@ def initialize_opening(world, character, actor_id, reference):
     evidence('map', pack['map_text'])
     received_at = result.s['knowledge'][actor_id]['setup:scene-map']['received_at']
     place = pack['initial_place']
-    evidence('location', 'Authored opening placement: ' + pack['places'][place]['title'] + '.')
+    evidence('location', ('Sourced broad opening placement: ' if historical_person else 'Authored opening placement: ')
+             + pack['places'][place]['title'] + '.')
     apply('location-confirmed', 'confirm_character_field', subject=actor_id, field='location',
           value=place, evidence_id='setup:scene-location', authority_ref=reference, instruction_ref=reference)
-    evidence('activity', pack['places'][place]['description'])
-    apply('activity-confirmed', 'confirm_character_field', subject=actor_id, field='current_activity',
-          value=pack['places'][place]['description'], evidence_id='setup:scene-activity',
-          authority_ref=reference, instruction_ref=reference)
-    evidence('dispatch', 'You have custody of one sealed dispatch entrusted for the receiving clerk\'s tray. It supplies no ownership, pay or office.')
-    apply('dispatch-stock', 'establish_stock', location=actor_id, material=pack['initial_material'],
-          quantity=1, inventory_evidence_ref='setup:scene-dispatch')
-    apply('receiving-tray', 'establish_stock', location=pack['destination'], material=pack['initial_material'],
-          quantity=0, inventory_evidence_ref='setup:scene-map')
+    if not historical_person:
+        evidence('activity', pack['places'][place]['description'])
+        apply('activity-confirmed', 'confirm_character_field', subject=actor_id, field='current_activity',
+              value=pack['places'][place]['description'], evidence_id='setup:scene-activity',
+              authority_ref=reference, instruction_ref=reference)
+        evidence('dispatch', 'You have custody of one sealed dispatch entrusted for the receiving clerk\'s tray. It supplies no ownership, pay or office.')
+        apply('dispatch-stock', 'establish_stock', location=actor_id, material=pack['initial_material'],
+              quantity=1, inventory_evidence_ref='setup:scene-dispatch')
+        apply('receiving-tray', 'establish_stock', location=pack['destination'], material=pack['initial_material'],
+              quantity=0, inventory_evidence_ref='setup:scene-map')
     # Initial authored physical condition and selected local rules belong to
     # this first world initialization, before its first atomic save. They are
     # never reinstalled when loading, inspecting or advancing an existing game.
@@ -101,13 +112,16 @@ def initialize_opening(world, character, actor_id, reference):
     result.s['scene_rules'].update(actor_id=actor_id, received_at=received_at,
         receipt_evidence_id='setup:scene-map', setup_instruction_ref=reference,
         content_sha256=digest(pack))
+    if historical_person:
+        result.s['scene_rules']['context_kind'] = pack['classification']
     result.s['elapsed_time'] = {'axis': pack['elapsed_axis'], 'seconds': 0, 'source_ref': source}
     # The setup explicitly gives this character ongoing inspection of the
     # object in their custody; a place name alone grants no inventory access.
-    result.s.setdefault('gameplay_visibility', {}).setdefault(actor_id, {}).setdefault('inventory', []).append({
-        'active': True, 'source_ref': source, 'received_at': result.s['clock'],
-        'access': 'inspect_current', 'location': actor_id, 'material': pack['initial_material']})
-    result.s['gameplay_started']['authored_opening'] = {
-        'id': opening_id, 'fictional': True, 'instruction_ref': reference,
+    if not historical_person:
+        result.s.setdefault('gameplay_visibility', {}).setdefault(actor_id, {}).setdefault('inventory', []).append({
+            'active': True, 'source_ref': source, 'received_at': result.s['clock'],
+            'access': 'inspect_current', 'location': actor_id, 'material': pack['initial_material']})
+    result.s['gameplay_started']['existing_character_opening' if historical_person else 'authored_opening'] = {
+        'id': opening_id, 'fictional': not historical_person, 'instruction_ref': reference,
         'content_sha256': digest(pack), 'civil_calendar_advance': False}
     return CoreWorld(state=result.s)

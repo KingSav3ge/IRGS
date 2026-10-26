@@ -88,6 +88,8 @@ def options_for_world(world, starting_scenario_id=SCENARIO_ID):
         'control_note': 'Control covers the selected person’s voluntary declarations. It does not supply possessions, expertise or institutional authority.'}
     from scene_setup import opening_options
     result['playable_openings'] = opening_options(state)
+    from start_readiness import annotate_options
+    annotate_options(state, result)
     result['selection_digest'] = digest(result)
     return result
 
@@ -169,6 +171,9 @@ def initialize_player(world, character=None, starting_scenario_id=SCENARIO_ID,
               scenario_id=starting_scenario_id, effective_at=effective, eligible=True,
               reason='The player explicitly created this Solo character.',
               control={'mode': 'individual', 'actor_ids': [actor_id], 'powers': ['declare_own_intent']})
+        from start_readiness import _receive_civil_date
+        result = _receive_civil_date(result, actor_id, reference)
+        sequence = result.s['clock']
         if background.strip():
             apply('background', 'record_evidence', evidence_id='setup:background', subject=actor_id,
                   assertion=background, status='testimony', originator=actor_id)
@@ -207,5 +212,7 @@ def initialize_player(world, character=None, starting_scenario_id=SCENARIO_ID,
         plans.update(baseline_snapshot=copy.deepcopy(baseline), storage='saved_prospective_reference',
                      installed_schedule=False)
         result.s['historical_planning'] = plans
+    from start_readiness import initialize_context
+    result = initialize_context(CoreWorld(state=result.s), character, options, reference)
     from scene_setup import initialize_opening
-    return initialize_opening(CoreWorld(state=result.s), character, actor_id, reference)
+    return initialize_opening(result, character, actor_id, reference, options=options)

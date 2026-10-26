@@ -110,7 +110,9 @@ class CharacterBackgroundTests(unittest.TestCase):
         self.assertFalse(plans['actual_occurrence_refs'])
         self.assertEqual(len(plans['plans']), 3)
         self.assertFalse(world.s['pending'])
-        self.assertFalse(world.s['knowledge'])
+        actor = world.s['player_actor_ids'][0]
+        self.assertEqual(set(world.s['knowledge'][actor]), {'setup:civil-date'})
+        self.assertNotIn('Harfleur', world.s['evidence']['setup:civil-date']['assertion'])
         self.assertEqual(plans['campaign_id'], world.s['campaign_id'])
         self.assertTrue(all(p['window_relation'] == 'future' for p in plans['plans']))
         self.assertFalse(world.s['historical_start']['automatic_future_history'])

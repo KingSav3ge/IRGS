@@ -1,0 +1,51 @@
+{
+  "classification": "citation-review-not-actor-knowledge",
+  "reviewed_on": "2026-10-26",
+  "reviewer": "Catalog independent check of the two cited research summaries",
+  "engine_pack_path": "IRGS_3_3/data/henry_1415_observation.json",
+  "engine_pack_sha256": "445d4a5bb16cec51fc4ccfa9d857df40bb82fe3fd7b8d5960702ef41a1425662",
+  "sources": [
+    {
+      "id": "HENRY-START-SRC-EMBARKATION-REVIEW",
+      "author": "Dan Spencer",
+      "title": "Dan Spencer, 3–9 August 1415: Violence in Salisbury, the Trial of the Southampton Plotters and the embarkation of the Army",
+      "url": "https://www.agincourt600.com/2015/08/05/3-9-august-1415-violence-in-salisbury-the-trial-of-the-southampton-plotters-and-the-embarkation-of-the-army/",
+      "locator": "Final historical paragraph; references list",
+      "checked_claim": "The summary juxtaposes a 7 August boarding narrative with documentary dating that places the castle departure at least four days later. The conflict remains open."
+    },
+    {
+      "id": "HYW-SRC-AUGUST-CROSSING",
+      "author": "Dan Spencer",
+      "title": "Dan Spencer, 10–16 August 1415: The expedition sets sail to France!",
+      "url": "https://www.agincourt600.com/2015/08/12/10-16-august-1415-the-expedition-sets-sail-to-france/",
+      "locator": "First and third historical paragraphs",
+      "checked_claim": "The account connects 11 August preparations with assembled shipping around the Solent and Portchester. That broad setting does not establish exact personal placement or a received operational report."
+    }
+  ],
+  "accepted_precision": "broad_embarkation_region_only",
+  "boarding_date_resolution": "unresolved",
+  "opening_hour": null,
+  "john_personal_context": "not_established",
+  "articles_reproduced": false,
+  "primary_documents_independently_collated": false,
+  "not_independently_collated": [
+    "Gesta Henrici Quinti edition",
+    "Patent Rolls",
+    "Rymer Foedera cited pages",
+    "Anne Curry cited pages"
+  ],
+  "excluded_inferences": [
+    "exact room, berth, barge or occupied vessel",
+    "hour or running current civil clock",
+    "fleet or troop quantities, loading/readiness, health or personal possessions",
+    "rank-derived commands, introductions, orders or destination disclosure",
+    "scheduled departure, crossing, landing or later historical outcomes"
+  ],
+  "selected_operation": {
+    "operation_id": "execute_player_scene_action",
+    "action_id": "observe-embarkation",
+    "duration_seconds": 20,
+    "duration_basis": "Engine-selected bounded simulation rule; not historically measured or universal"
+  },
+  "access_rule": "The citation review and precreation reference are not actor knowledge. Only explicitly initialized and legitimately received records support the actor view."
+}

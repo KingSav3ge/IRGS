@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "status": "ENGINE_QUALIFIED_APP_ADOPTION_PENDING",
+  "date": "2026-10-26",
+  "target_iteration": "IRGS 3.4.2 development",
+  "early_api_commit": "ea3b9a24f3254b4e230469b31843abad6c25fdf2",
+  "engine_runtime": {
+    "run": 773,
+    "passed": 772,
+    "skipped": 1,
+    "failed": 0,
+    "skip": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite replaced by prescribed explicit skip; private fixture never executed"
+  },
+  "focused": {
+    "start_contract": 33,
+    "shared": 35,
+    "phase": 28,
+    "communication": 32,
+    "pinned_original_r00": 10
+  },
+  "app_full_against_candidate": {
+    "commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "run": 229,
+    "passed": 219,
+    "failed": 3,
+    "skipped": 7,
+    "skip_reason": "Native Windows tests on Linux",
+    "failures": [
+      "test_historical_create_requires_exact_ready_scope_and_preview_hash (test_host.HostTests.test_historical_create_requires_exact_ready_scope_and_preview_hash)",
+      "test_opening_does_not_disclose_historical_reference_or_fabricate_scene (test_stage1.StageOneTests.test_opening_does_not_disclose_historical_reference_or_fabricate_scene)",
+      "test_historical_review_has_only_five_configured_existing_characters (test_starting_flow.StartingFlowTests.test_historical_review_has_only_five_configured_existing_characters)"
+    ],
+    "reason": "Three old assertions require empty knowledge/evidence at historical creation. New required sourced initial calendar receipt intentionally changes that contract. App must adopt new structured context/date and revise those expectations while preserving no unsourced operational news.",
+    "corresponding_baseline_cases": {
+      "run": 3,
+      "passed": 3,
+      "failed": 0,
+      "engine_pin": "91b20056e7db651966c9e92925313494917f47b1"
+    },
+    "fixed_during_qualification": "Calendar receipt is now before later exact player testimony; existing background opening regression passes. Initial random Rise failure came from private number text matching an unrelated receipt hash; final full run passes that case."
+  },
+  "source_selections": {
+    "engine_product_baseline": "91b20056e7db651966c9e92925313494917f47b1",
+    "instruction_base": "e283c57ad5b44ad688bc38586ca16980f4dd0bf1",
+    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+    "app_committed_engine_pin": "91b20056e7db651966c9e92925313494917f47b1"
+  },
+  "preserved_historical_snapshots": {
+    "IRGS_3_3/data/hyw_1337_opening.json": "5d77da58e2f8f1b4e72472773d416c6fb6e5c066f2df3249c68d8efa1400847a",
+    "IRGS_3_3/data/hyw_1340_opening.json": "c5d18c7ea2c21b6f7c850fca584d5597eae7f7ea8e7a117a5eee269b791d2e0d",
+    "IRGS_3_3/data/hyw_1341_opening.json": "a36244b371ae1f73f279fdc0c31c297a7688352600db656148e019cd952481e8",
+    "IRGS_3_3/data/hyw_1343_opening.json": "d47a30e1363b16dab7a9340a8aec0926f85c6946e5b08a8272d4908eaff2bca5",
+    "IRGS_3_3/data/hyw_1345_opening.json": "59f395ceb4f7a82d680bc31131f39333844a3d3295a6dadefc872e2331a48eeb",
+    "IRGS_3_3/data/hyw_1346_opening.json": "0da9c5f1835906d6eb21f1c742d2a03a57bc95e8b291c88f19b476a3abafda67",
+    "IRGS_3_3/data/hyw_1347_opening.json": "dd8543d8fe97e22865dcb0658062ae3c5b320120e4682fbccbff57d41967371e",
+    "IRGS_3_3/data/hyw_1355_opening.json": "318cc9d97d0b37785a5249e48c348849e54b528e519cad21cd566c4bc46bba1b",
+    "IRGS_3_3/data/hyw_1356_opening.json": "94cf541c542f1c68164348a4e0a5f40ffb4eb21500741c5c90ae6e08b49e7d85",
+    "IRGS_3_3/data/hyw_1357_opening.json": "b8f92746b66c806dc0caba31a9a6c84857021c229c080804c3c157e6fa746f7b",
+    "IRGS_3_3/data/hyw_1359_opening.json": "07969179ae627e10202a5b69a1eefd9c736945ff3fb259e683e0f5d0289aa9fd",
+    "IRGS_3_3/data/hyw_1360_opening.json": "afee9da025fd6b68e5c6db941b4cb684d699605c108187b9c996674b387cce77",
+    "IRGS_3_3/data/hyw_1364_opening.json": "38e01d6590bf26a38119b64650727fe127abc6e2890b46692fa24e75cef0b7e7",
+    "IRGS_3_3/data/hyw_1366_opening.json": "d04f2ef2cfe88b94cdc13bd83383468bc32097daad74ffd83981b31044d56d7d",
+    "IRGS_3_3/data/hyw_1369_opening.json": "79e5813d89ea9d6fee52ece0da3ba228d6a2a3bbf4bba4fca165c8c45ef18d12",
+    "IRGS_3_3/data/hyw_1372_opening.json": "843f94b5b2cedc331311d8ff8ba77d5a1253f5e3672378bbd4eff7d6c34df057",
+    "IRGS_3_3/data/hyw_1373_opening.json": "a92bd020822567871385a63c5dac660ff0b171c5dde16bff278109546c2b20f0",
+    "IRGS_3_3/data/hyw_1375_opening.json": "b24aa084206c69af937de37c6c1225d56477ea1709753ef988a6f0aae70ac664",
+    "IRGS_3_3/data/hyw_1377_opening.json": "37acd969d5ca6ffe28eeb0c15d15832aec9e289329ded434ded947484a502f3d",
+    "IRGS_3_3/data/hyw_1385_opening.json": "a290dfbce090c2bf754c3f16208acf32bf00a0897bc8cf0f158d017e9a9af618",
+    "IRGS_3_3/data/hyw_1389_opening.json": "d3bcf54a7f6f8fec35a004b1552804beed54f109e8f97009b70b5f98ccc85076",
+    "IRGS_3_3/data/hyw_1396_opening.json": "fe96546c3f1cd4e6c5386d9e829b7d7359bddec8842a3b16cfe5b8f559a66b84",
+    "IRGS_3_3/data/hyw_1399_opening.json": "8d1d2fd35d61e60f7dc8a4f150f224a6267c68cd781ab99aa1d1fad832cd7d07",
+    "IRGS_3_3/data/hyw_1400_opening.json": "37b3a3501cf1d891466c4e71fd906202df9c309ad0c7295072e6157549ae38c1",
+    "IRGS_3_3/data/hyw_1403_opening.json": "fd34530cfb3b9e7e97bc47a29656beda50828f364862b2b404d2dd7ac1a89ef8",
+    "IRGS_3_3/data/hyw_1411_opening.json": "84c967241d40fadb1143f9337523f211594065451198f34d34c16b3571b6084c",
+    "IRGS_3_3/data/hyw_1415_opening.json": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+    "IRGS_3_3/data/hyw_1417_opening.json": "bb575e21e67506533a5ad1cef72f391ea3a75db7d685fc08f08bbf40d9d1fc03",
+    "IRGS_3_3/data/hyw_1419_opening.json": "e7df1c42e364e1019b210653dba5cdcdb8b365150d7a1624eb19d49c443cdd77",
+    "IRGS_3_3/data/hyw_1420_opening.json": "c79549891796e2aab4da7850d28efabc9f9aa0dbe75531dfe8e00223c42a10e8",
+    "IRGS_3_3/data/hyw_1422_opening.json": "40eb3ab639ee6268d9034295c618cab09a3e0b059127fb3e22b9a58aa476da7c",
+    "IRGS_3_3/data/hyw_1429_opening.json": "e05d27eff270b1f71fa52788ca837a2063a2311815f176163fefcd181b2b14f0",
+    "IRGS_3_3/data/hyw_1435_opening.json": "a4ac1a7f53398ccfc3bb82c08f7f42f3855f07bb9f1549f817841c78f428c2f0",
+    "IRGS_3_3/data/hyw_1444_opening.json": "e22f3067bc735c421c6737f9eb8a7101ad5f14750d3a36989c00b0a48714e86c",
+    "IRGS_3_3/data/hyw_1449_opening.json": "1f5da009adc58c4f2a579ba2f22b5d4f1c4d96f04b5bd5c97ddd977353bfbd1e",
+    "IRGS_3_3/data/hyw_1450_opening.json": "02a8214238f41998c8c73413f47ef405096b34946a917637337b81dfa0ebc568",
+    "IRGS_3_3/data/hyw_1453_opening.json": "944d80572582771ab8e4f29013198c9f0fda06cef68a4e76ad786f8de5e7a129"
+  },
+  "response_banks_unchanged": true,
+  "integrity": "Engine 367 files verified; original Kira canon verifier passes",
+  "execution_commands": {
+    "core": "DEVELOPMENT.md prescribed standalone full-suite runner",
+    "start": "python -B tools/qualify_start_readiness.py --output engine/START_READINESS_VALIDATION.json",
+    "http": "python -B tools/qualify_start_interaction.py --app-root ../IRGS-APP-WEB --catalog-root ../IRGS-Catalog --output engine/START_INTERACTION_VALIDATION.json",
+    "app": "IRGS_ENGINE_ROOT=/workspace/IRGS-Engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog python -B -m unittest discover -s IRGS_Web/tests -v"
+  },
+  "provider_calls": 0,
+  "user_saves_used": false,
+  "app_or_catalog_edited_or_pushed": false,
+  "new_browser_or_package_qualification": false,
+  "coordinated_version_increased": false,
+  "remaining": [
+    "App readiness selection and actor-known/civil presentation adoption and its three old expectation updates",
+    "Catalog independent requirements/consumer cases for new schema",
+    "Compatible App pins and coordinator exact-set review",
+    "Other existing people including John remain declaration/reference only; no all-actor gameplay claim",
+    "IRGS-PLAY-003 supported intent mapping, general resolution/NPCs and full DEV/C2 remain open"
+  ],
+  "existing_component_http_regression": {
+    "status": "PASS_EXPLICIT_COMPONENT_SOURCES_WITH_LIMITS",
+    "tests_run": 5,
+    "passed": 5,
+    "skipped": 0,
+    "sources": {
+      "engine": {
+        "root": "/workspace/IRGS-Engine",
+        "commit": "ea3b9a24f3254b4e230469b31843abad6c25fdf2",
+        "worktree_clean": false
+      },
+      "app": {
+        "root": "/workspace/IRGS-APP-WEB",
+        "commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+        "worktree_clean": true,
+        "committed_pins": {
+          "Engine": "91b20056e7db651966c9e92925313494917f47b1",
+          "Catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+        }
+      },
+      "catalog": {
+        "root": "/workspace/IRGS-Catalog",
+        "commit": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+        "worktree_clean": true
+      }
+    },
+    "source_sha256": {
+      "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+      "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
+      "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
+      "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
+      "IRGS_3_3/runtime/shared_runtime.py": "d28f9470bf68ea82ce27a7f52ebce98b0b88f1185d55d380dc59d0848406511a",
+      "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+      "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
+      "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+      "IRGS_3_3/runtime/starting_selection.py": "d9f57d60bef37cd68a1610fab80b19ebb1afbb746ed650be60ed118bc77794e6",
+      "IRGS_3_3/runtime/historical_campaigns.py": "119bf255b94667dfd4cbe86e07409351425aede5ccfb93fdd597bbd1f7794de5",
+      "IRGS_3_3/runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
+      "IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+      "IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+      "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+      "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+      "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+      "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+      "IRGS_Web/server.py": "d7099a60dbde3ba7279f0e7cfa88b90d066374383ce2040faaca141f7d2a04c9",
+      "IRGS_Web/process_bridge.py": "2a1949156526714a8f24eda9779ef0ddca711050da835057f0e4d415e71ffc30",
+      "IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+      "IRGS_Web/engine_paths.py": "a4186fe5e19d7cb0b3b039e3e92b92f8c7da178ad0916f681e3b4a6955d3ef42",
+      "IRGS_Web/catalog_paths.py": "2952fbf5aeec83e9c662b5f8733153fd91c7a0bbfde453a6caa87d598a72a3a4",
+      "IRGS_Catalog/response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
+      "IRGS_Catalog/solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+      "IRGS_Catalog/scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313"
+    },
+    "command": "python -B tools/qualify_component_interaction.py --app-root ../IRGS-APP-WEB --catalog-root ../IRGS-Catalog",
+    "scope": "Original Catalog cases and selected App phase continuation/start discovery; original fixture identities retained"
+  },
+  "documentation_links_checked": 205
+}

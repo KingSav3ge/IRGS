@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-player-starts-v1",
+  "classification": "offline-synthetic-start-evaluation",
+  "status": "requirements_and_baseline_diagnostics",
+  "rights": {
+    "authorship": "original-authored-evaluation-instructions-and-source-references",
+    "imported_prose": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "consumers": {
+    "engine_commit": "91b20056e7db651966c9e92925313494917f47b1",
+    "app_commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "app_catalog_pin": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+  },
+  "assessment": {
+    "joined_commit": "ba551af285a6e1eb0766a9d06f83cbc0e5335b35",
+    "path": "PLAYABILITY_EVIDENCE_3_4_2.json",
+    "sha256": "0d7381f903550e1f92b19f1dc37e7bbe3c50c83b6a1a434ec7efcbcbbabb899d",
+    "runtime_fix_claimed": false
+  },
+  "contexts": {
+    "john-1415-existing": "actor_inputs/john-1415-existing.json",
+    "new-1415-default": "actor_inputs/new-1415-default.json",
+    "new-1415-quay": "actor_inputs/new-1415-quay.json",
+    "rise-r00": "actor_inputs/rise-r00.json"
+  },
+  "evaluator_only": "evaluator_only/criteria.json",
+  "files_sha256": {
+    "actor_inputs/john-1415-existing.json": "ea66fdcbcedc002726c9c22be0491403b4f7a761125788e5b12c7fc46e618901",
+    "actor_inputs/new-1415-default.json": "dfcd18be172cc5a128bd6511505462a6d02d54b979a3d2280e96e82292624c84",
+    "actor_inputs/new-1415-quay.json": "551764ef1dd38878daf1c896cf44d79b38bb22a14e07c12a6b617cf28f5e03f0",
+    "actor_inputs/rise-r00.json": "63ce9869304a6583fcbce17b7aedfa970574cc41e79565302a0969d27ce698ec",
+    "evaluator_only/criteria.json": "971ac36eaec7a3c8c4b5a217d92a7bb944b9d4b80c9cc2d5f4b2819be450f9a6",
+    "evidence.schema.json": "26978a3e5d0565da5160f8db86fdda28cc01fa092ddc2132ce0176516d24eead",
+    "requirements/john_1415.json": "3a6c10d85f6c06ba174f39f93ed57d78bb8e08d3a47b3f797fae1457cc65d58c"
+  }
+}

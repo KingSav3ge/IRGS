@@ -1,0 +1,68 @@
+{
+  "status": "requirements_pending_owner_contract",
+  "actor_id": "HYW-JOHN-BEDFORD",
+  "entry_id": "hyw-1415",
+  "source": {
+    "repository": "KingSav3ge/IRGS-Engine",
+    "commit": "91b20056e7db651966c9e92925313494917f47b1",
+    "path": "IRGS_3_3/data/hyw_1415_opening.json",
+    "sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+  },
+  "opening": {
+    "date": "1415-08-11",
+    "calendar": "julian",
+    "precision": "day",
+    "time": null,
+    "knowledge_scope": "historical_setup_reference"
+  },
+  "reference_claims": [
+    {
+      "id": "identity",
+      "pointer": "/actors/4",
+      "source_ids": [
+        "HYW-SRC-APRIL-COUNCIL"
+      ],
+      "statement": "The adopted snapshot identifies John of Lancaster as the duke of Bedford.",
+      "access": "historical_setup_reference_not_actor_receipt"
+    },
+    {
+      "id": "role",
+      "pointer": "/domains/political/3",
+      "source_ids": [
+        "HYW-SRC-APRIL-COUNCIL"
+      ],
+      "statement": "The snapshot records designation to keep England during Henry’s intended absence. It does not establish a current executable mandate.",
+      "access": "historical_setup_reference_not_actor_receipt"
+    },
+    {
+      "id": "eligibility",
+      "pointer": "/entity_registry_template/eligibility/individual:HYW-JOHN-BEDFORD",
+      "source_ids": [
+        "authored-solo-individual-policy-v1"
+      ],
+      "statement": "The existing individual-control selection is eligible in this dated setup; eligibility is separate from received context and available handlers.",
+      "access": "historical_setup_reference_not_actor_receipt"
+    }
+  ],
+  "gaps": {
+    "location": "No adopted personal placement or nearby scene is established for this actor; do not infer Southampton from the expedition’s regional preparation.",
+    "received_information": "The reference briefing and source bibliography are not receipts. Establish exactly which records this actor legitimately receives, including uncertainty/testimony status.",
+    "resources": "Personal custody, inventory, balances, retinues and current readiness need individual evidence; unknown is not zero, and rank creates no account.",
+    "authority": "A dated role reference does not prove current command, consent, obligations, access or resource permissions. Any operation must read actual Core authority.",
+    "operations": "Engine must select and implement the bounded supported operation and source-backed context; Catalog prescribes no movement, NPC decision, resource grant or universal duration.",
+    "civil_time": "Preserve the Julian 11 August source date at day precision with unknown hour. Resolve its initial presentation separately from elapsed spans; do not bind every action second to calendar time."
+  },
+  "required_reviews": {
+    "Engine": "Publish versioned actor/mode readiness and reviewed initializer plus actual operation, received result and recovery; initialize new games only.",
+    "App": "Review the selected actor and explicit supported/reference/declaration mode; show received context and separate civil/elapsed time without exposing private truth.",
+    "Catalog": "Verify source references, actor/evaluator separation, independent positive/negative cases and actual owner results at exact commits."
+  },
+  "forbidden_inferences": [
+    "Fictional courier circumstances apply to John.",
+    "An adopted source is already actor knowledge.",
+    "A role automatically grants an army, inventory or institutional control.",
+    "Unknown holdings mean empty holdings.",
+    "The historical future must occur.",
+    "Opening prose may initialize a continuing save."
+  ]
+}

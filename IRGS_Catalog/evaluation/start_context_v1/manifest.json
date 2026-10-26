@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-start-context-v1",
+  "classification": "offline-synthetic-contract-qualification",
+  "rights": {
+    "authorship": "original-evaluation-instructions-and-citation-review",
+    "imported_articles_or_images": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "engine_contract": {
+    "commit": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+    "schema": "irgs-start-readiness-1",
+    "api_path": "engine/START_READINESS_API.md",
+    "files_sha256": {
+      "engine/START_READINESS_API.md": "34751bc624a81911ce42abeafe3caf43d48bcabbe73febac046369d5ac96e8b3",
+      "IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+      "IRGS_3_3/data/henry_1415_observation.json": "445d4a5bb16cec51fc4ccfa9d857df40bb82fe3fd7b8d5960702ef41a1425662",
+      "IRGS_3_3/data/hyw_1415_opening.json": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34"
+    }
+  },
+  "baseline_fixture": {
+    "path": "evaluation/player_starts_v1/manifest.json",
+    "sha256": "a230fa6e78c8be97d24ec4d7e6fbf01308e1663898c612b86f6903a24d56dbee"
+  },
+  "contexts": {
+    "henry-1415-observation": "actor_inputs/henry-1415-observation.json",
+    "henry-1415-default": "actor_inputs/henry-1415-default.json",
+    "john-1415-limited": "actor_inputs/john-1415-limited.json",
+    "new-1415-default": "actor_inputs/new-1415-default.json",
+    "new-1415-quay": "actor_inputs/new-1415-quay.json",
+    "rise-r00": "actor_inputs/rise-r00.json"
+  },
+  "evaluator_only": "evaluator_only/oracle.json",
+  "app_adoption": {
+    "status": "pending_adopted_app_revision",
+    "qualified_app_commit": null,
+    "required_cases": [
+      "henry-1415-observation",
+      "henry-1415-default",
+      "john-1415-limited",
+      "new-1415-default",
+      "new-1415-quay",
+      "rise-r00"
+    ],
+    "unexecuted_acceptance": "app_acceptance.json"
+  },
+  "files_sha256": {
+    "actor_inputs/henry-1415-default.json": "730c4ace36e6af863573671569ec1ddc4d638f793fff0231c6dc1efeb7439055",
+    "actor_inputs/henry-1415-observation.json": "0e51451e6eaa7dfc0d1251895816b3908edaf41897b97d5aa3dd3259c0e26de2",
+    "actor_inputs/john-1415-limited.json": "743f9784856ff17b2d249374c4f70166cdbc0939b74afa45dcaa1754f53ebeb8",
+    "actor_inputs/new-1415-default.json": "4d1a63e16ee87f76725064397413f1df7c8b7370fbed202fcd31a2797e048c20",
+    "actor_inputs/new-1415-quay.json": "4d2d50560d5d519939f0d73441cd531fb5b5fe7a9c70321440776f639f4a9067",
+    "actor_inputs/rise-r00.json": "10c9ed846523838ffb979922f9005f4bfed06d5c3b31ed0339c933f4c9feea51",
+    "app_acceptance.json": "3bab5f5abeab10cc314ac173b12c3b43d3498f9592dfee0f7d2d9a6104d95bbe",
+    "evaluator_only/oracle.json": "2e9063e17b86b9453f39967f8972cc7d0e2cbee68845eeac905d2d616583c39e",
+    "source_review.json": "fa32c52c85a5f9afb22ab064cb473285768f2feff5ec1e3ba14d6a801bcd5ae8"
+  }
+}

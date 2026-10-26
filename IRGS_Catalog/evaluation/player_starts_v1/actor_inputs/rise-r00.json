@@ -1,0 +1,17 @@
+{
+  "case_id": "rise-r00",
+  "source_ref": "authored-synthetic:irgs-catalog:player-starts:v1",
+  "selection": {
+    "kind": "rise",
+    "fixture_id": "irgs-solo-r00-eval-v1",
+    "template_id": "R00"
+  },
+  "actions": [
+    "walk_clearing",
+    "found",
+    "build",
+    "wait_hour",
+    "wait_hour"
+  ],
+  "declaration": "  I look around and ask where I am.\nThese are my words, not an outcome.  "
+}

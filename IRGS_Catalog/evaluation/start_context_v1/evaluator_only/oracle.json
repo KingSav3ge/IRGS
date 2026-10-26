@@ -1,0 +1,52 @@
+{
+  "classification": "evaluator-only",
+  "hidden_marker": "PRIVATE_START_CONTEXT_ORACLE",
+  "cases": {
+    "henry-1415-observation": {
+      "selected_mode": "supported_slice",
+      "historical": true,
+      "first_duration_seconds": 20,
+      "full_elapsed_seconds": 20
+    },
+    "henry-1415-default": {
+      "selected_mode": "declaration_only",
+      "historical": true,
+      "first_duration_seconds": null,
+      "full_elapsed_seconds": null
+    },
+    "john-1415-limited": {
+      "selected_mode": "declaration_only",
+      "historical": true,
+      "first_duration_seconds": null,
+      "full_elapsed_seconds": null
+    },
+    "new-1415-default": {
+      "selected_mode": "declaration_only",
+      "historical": true,
+      "first_duration_seconds": null,
+      "full_elapsed_seconds": null
+    },
+    "new-1415-quay": {
+      "selected_mode": "supported_slice",
+      "historical": true,
+      "first_duration_seconds": 20,
+      "full_elapsed_seconds": 150
+    },
+    "rise-r00": {
+      "selected_mode": "supported_slice",
+      "historical": false,
+      "first_duration_seconds": 300,
+      "full_elapsed_seconds": 3900
+    }
+  },
+  "civil_checkpoint": {
+    "date": "1415-08-11",
+    "calendar": "julian",
+    "precision": "day",
+    "ordinal": 2238109,
+    "time": null,
+    "current_calendar_binding": false,
+    "elapsed_calendar_binding": false
+  },
+  "john_playable_context": "held"
+}

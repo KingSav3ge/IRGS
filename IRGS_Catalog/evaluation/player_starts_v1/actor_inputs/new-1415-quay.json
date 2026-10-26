@@ -1,0 +1,25 @@
+{
+  "case_id": "new-1415-quay",
+  "source_ref": "authored-synthetic:irgs-catalog:player-starts:v1",
+  "selection": {
+    "kind": "historical",
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": {
+      "kind": "new",
+      "name": "Synthetic quay courier",
+      "species": "human",
+      "background": "",
+      "opening_id": "quay-delivery-v1"
+    }
+  },
+  "actions": [
+    "look-quay",
+    "quay-shortcut",
+    "quay-passage",
+    "passage-desk",
+    "deliver-dispatch"
+  ],
+  "declaration": "  I look around and ask where I am.\nThese are my words, not an outcome.  "
+}

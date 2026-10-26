@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "henry-1415-embarkation-v1",
+  "title": "Henry V at the embarkation area",
+  "actor_id": "HYW-HENRY-V",
+  "entry_id": "hyw-1415",
+  "snapshot_sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+  "description": "An optional bounded observation start for Henry V in the broad Portchester/Solent embarkation setting before departure on 11 August 1415. It supplies no exact berth, ship occupancy, hour, possessions or command authority.",
+  "requirements": "Existing Henry V; reviewed 1415 individual start; explicit selection of this opening.",
+  "classification": "sourced_setting_with_selected_simulation_observation_rule",
+  "source_ref": "engine-start:henry-1415-embarkation-v1",
+  "source_refs": ["HYW-SRC-AUGUST-CROSSING", "HENRY-START-SRC-EMBARKATION-REVIEW"],
+  "review": {
+    "reviewed_on": "2026-10-26",
+    "location_precision": "embarkation_region_only",
+    "basis": "Dan Spencer's 3–9 August summary places Henry at Portchester and explicitly records disagreement between the Gesta's 7 August boarding account and Patent Roll evidence suggesting he left the castle at least four days later. His 10–16 August summary records preparation/departure on 11 August and the assembled shipping in the Solent/Portchester harbour. Only the common broad embarkation setting is selected.",
+    "excluded": "No particular room, berth, vessel occupancy, hour, fleet strength, readiness, loading state, health, possessions, introductions, received orders, institutional mandate, destination disclosure or subsequent departure/landing is initialized.",
+    "observation_rule": "One explicitly selected 20-second local observation, using the existing Core scene handler. This is a bounded simulation rule, not a historical measured duration or a universal perception rule.",
+    "rights": "Original summaries and mechanical configuration with citations; no article, image or archive is reproduced."
+  },
+  "sources": [
+    {
+      "id": "HENRY-START-SRC-EMBARKATION-REVIEW",
+      "title": "Dan Spencer, 3–9 August 1415: Violence in Salisbury, the Trial of the Southampton Plotters and the embarkation of the Army",
+      "url": "https://www.agincourt600.com/2015/08/05/3-9-august-1415-violence-in-salisbury-the-trial-of-the-southampton-plotters-and-the-embarkation-of-the-army/",
+      "locator": "Final historical paragraph, comparing Gesta boarding account and Patent Roll dating; cites Anne Curry pp. 53–54 and Rymer, Foedera vol. 9 pp. 298–310.",
+      "accessed": "2026-10-26",
+      "uncertainty": "Boarding date and exact within-day location are unresolved; the start does not choose between castle, barge and ship."
+    },
+    {
+      "id": "HYW-SRC-AUGUST-CROSSING",
+      "title": "Dan Spencer, 10–16 August 1415: The expedition sets sail to France!",
+      "url": "https://www.agincourt600.com/2015/08/12/10-16-august-1415-the-expedition-sets-sail-to-france/",
+      "locator": "Opening paragraphs on 11 August preparation and shipping in the Solent/Portchester harbour. Later crossing/landing and reconstructed numbers are excluded.",
+      "accessed": "2026-10-26"
+    }
+  ],
+  "map_text": "Your selected starting setting is the broad Portchester/Solent embarkation area before departure. Your exact place within the castle, harbour, barge or ship is not established. You may attempt the listed local observation. This supplies no military command or access to private reports.",
+  "initial_place": "portchester-solent-embarkation",
+  "elapsed_axis": "selected-historical-observation-seconds",
+  "conditions": {},
+  "places": {
+    "portchester-solent-embarkation": {
+      "title": "Portchester/Solent embarkation area",
+      "description": "A sourced broad embarkation setting; precise position and current activity remain unknown.",
+      "observe": "Shipping is gathered in this embarkation setting. This observation establishes no vessel count, loading state, troop readiness, private destination or command receipt.",
+      "actions": ["observe-embarkation"]
+    }
+  },
+  "actions": {
+    "observe-embarkation": {
+      "kind": "observe",
+      "from": "portchester-solent-embarkation",
+      "label": "Observe the embarkation setting",
+      "description": "Attempt the selected local observation. The model processes 20 seconds; it does not determine an opening hour or advance the civil calendar.",
+      "text": "I observe the embarkation setting without issuing any order.",
+      "duration_seconds": 20,
+      "success_text": "You have observed the immediate embarkation setting.",
+      "failure_text": "The selected local observation could not be completed."
+    }
+  }
+}

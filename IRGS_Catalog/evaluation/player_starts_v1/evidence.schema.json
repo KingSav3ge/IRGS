@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Offline evaluator evidence; not an Engine or App API",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "explicit_mode",
+    "reference_ready",
+    "actor_eligible",
+    "mode_confirmed",
+    "actor_context_reviewed",
+    "actor_context_received",
+    "supported_operation_listed",
+    "operation_confirmed",
+    "result_received",
+    "save_reload_verified",
+    "exact_retry_verified",
+    "civil_date_matches_source"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "case_id": {
+      "enum": [
+        "john-1415-existing",
+        "new-1415-default",
+        "new-1415-quay",
+        "rise-r00"
+      ]
+    },
+    "explicit_mode": {
+      "enum": [
+        "unclassified",
+        "reference_only",
+        "declaration_only",
+        "executable_slice",
+        "unavailable"
+      ]
+    },
+    "reference_ready": {
+      "type": "boolean"
+    },
+    "actor_eligible": {
+      "type": "boolean"
+    },
+    "mode_confirmed": {
+      "type": "boolean"
+    },
+    "actor_context_reviewed": {
+      "type": "boolean"
+    },
+    "actor_context_received": {
+      "type": "boolean"
+    },
+    "supported_operation_listed": {
+      "type": "boolean"
+    },
+    "operation_confirmed": {
+      "type": "boolean"
+    },
+    "result_received": {
+      "type": "boolean"
+    },
+    "save_reload_verified": {
+      "type": "boolean"
+    },
+    "exact_retry_verified": {
+      "type": "boolean"
+    },
+    "civil_date_matches_source": {
+      "type": "boolean"
+    }
+  }
+}

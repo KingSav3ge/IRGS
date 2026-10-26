@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "PASS_START_CONTRACT_HTTP_WITH_LIMITS",
+  "date": "2026-10-26",
+  "target_iteration": "IRGS 3.4.2 development",
+  "sources": {
+    "engine": {
+      "root": "/workspace/IRGS-Engine",
+      "commit": "ea3b9a24f3254b4e230469b31843abad6c25fdf2",
+      "worktree_clean": false
+    },
+    "app": {
+      "root": "/workspace/IRGS-APP-WEB",
+      "commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+      "worktree_clean": true,
+      "committed_pins": {
+        "Engine": "91b20056e7db651966c9e92925313494917f47b1",
+        "Catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+      }
+    },
+    "catalog": {
+      "root": "/workspace/IRGS-Catalog",
+      "commit": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+      "worktree_clean": true
+    }
+  },
+  "tests_run": 3,
+  "passed": 3,
+  "skipped": 0,
+  "evidence": {
+    "mode_selection": {
+      "existing_john": "declaration_only",
+      "new_default": "declaration_only",
+      "new_authored": "supported_slice",
+      "existing_henry": "supported_slice"
+    },
+    "henry": {
+      "created_from_http_review": true,
+      "committed_observations": 2,
+      "selected_elapsed_seconds": 40,
+      "first_receipt_immutable": true,
+      "save_reload": true,
+      "retry_once": true,
+      "stocks_created": 0,
+      "civil_precision": "day",
+      "civil_hour": null,
+      "calendar_advanced": false
+    }
+  },
+  "source_sha256": {
+    "/workspace/IRGS-APP-WEB/IRGS_Web/server.py": "d7099a60dbde3ba7279f0e7cfa88b90d066374383ce2040faaca141f7d2a04c9",
+    "/workspace/IRGS-APP-WEB/IRGS_Web/gameplay_views.py": "386da5fbc29ec4c49efe8ba2421eddf19074dd69de54b35afb8de190807ff783",
+    "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py": "d9f57d60bef37cd68a1610fab80b19ebb1afbb746ed650be60ed118bc77794e6",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py": "119bf255b94667dfd4cbe86e07409351425aede5ccfb93fdd597bbd1f7794de5",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_setup.py": "230aec5b2510ae0fbdd6543690ef07f1b846379db9b568fa501d1d4411fad92d",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py": "d28f9470bf68ea82ce27a7f52ebce98b0b88f1185d55d380dc59d0848406511a",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+    "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c"
+  },
+  "qualification_script_sha256": "febc74f617ebc9266d3d337c53a05a57d183e80a73f3a93bde585a0dbd3cbec7",
+  "provider_calls": 0,
+  "user_saves_used": false,
+  "app_pins_changed": false,
+  "catalog_fixture_identities_changed": false,
+  "remaining": [
+    "App player mode selector and actor-known/civil-date presentation still need explicit adoption",
+    "Current App HTTP observation uses its existing exact-listed-action route; general custom-intent mapping remains open",
+    "Catalog new-schema consumer cases and coordinator exact-set browser/package qualification remain separate"
+  ]
+}

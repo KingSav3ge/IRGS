@@ -115,14 +115,17 @@ def actor_view(world, actor, *, branch_id, restore_id):
     continuations=phase_view(world,actor,branch_id=branch_id,restore_id=restore_id)
     from communication_contract import actor_view as communication_view
     communications=communication_view(world,actor,branch_id=branch_id,restore_id=restore_id)
+    from start_readiness import actor_view as start_view
+    start_context=start_view(world,actor,branch_id=branch_id,restore_id=restore_id)
     # Snapshot binds host branch/restore plus only actor-visible facts/revision.
     snapshot='view:'+digest([scope.campaign_id,branch_id,restore_id,actor,
                             [asdict(c) for c in caps],received,continuations['snapshot_id'],
-                            communications['snapshot_id']])
+                            communications['snapshot_id'],start_context['snapshot_id']])
     return {'schema_version':SCHEMA_VERSION,'actor_id':actor,'snapshot_id':snapshot,
         'capabilities':[c.public() for c in caps],'received':received,
         'continuations':continuations,
         'communications':communications,
+        'start_context':start_context,
         'drafts':[row for cap in caps for row in draft_variants(actor,snapshot,cap)],
         'custom_response':{'text':'','editable':True,'requires_explicit_submission':True},
         'render_usage':dict(USAGE)}

@@ -1,0 +1,25 @@
+{
+  "case_id": "new-1415-quay",
+  "source_ref": "authored-synthetic:irgs-catalog:start-context:v1",
+  "selection": {
+    "kind": "historical",
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": {
+      "kind": "new",
+      "name": "Synthetic courier",
+      "species": "human",
+      "background": "",
+      "opening_id": "quay-delivery-v1"
+    }
+  },
+  "actions": [
+    "look-quay",
+    "quay-shortcut",
+    "quay-passage",
+    "passage-desk",
+    "deliver-dispatch"
+  ],
+  "intention": "  I choose only this reviewed action.\nKeep my words and the actual outcome separate.  "
+}

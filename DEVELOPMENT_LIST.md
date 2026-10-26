@@ -1,6 +1,74 @@
 # IRGS continuation development list
 
-## Current continuation pointer
+## Current joined 3.4.3 status
+
+Engine start context, App adoption and separate Catalog six-path acceptance are
+qualified in provenance/qa/start_readiness_3_4_3_review.json. Earlier owner delivery
+notes below retain their actual source and date; their App-adoption blockers are
+superseded by this joined result. Follow COORDINATION.md and CHAT_CONTINUATION.md
+for current work: selected Engine travel, durable App communication and matching
+Catalog consumers. General freeform, full C2 and live quality remain open.
+
+## Current coordinator review — 26 October 2026
+
+The first readiness/context deliveries have been reviewed. Engine API 1 is
+published; App and Catalog adoption remain open. The coordinator fixed App
+module/test name collisions. Follow [COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md)
+and [the current review](COORDINATOR_START_REVIEW_2026_10_26.md) before
+selecting work. Earlier records below retain their dated scope. Unified
+3.4.2 remains published; next joined release is 3.4.3 after qualification.
+
+## Bounded owner task status — 26 October 2026
+
+- Completed Engine support: [inspection tooling and call recipe](engine/START_ADOPTION_HANDOFF.md),
+  exact Engine response examples, source/pin evidence and fresh selected checks.
+  Runtime/data and schema are unchanged; this is adoption support, not another
+  mechanic or closure of the stable DEV requirements.
+- In progress with App: START-INT-002/003/004/005, including the reproduced wrong
+  elapsed-axis label in its immutable Henry result. Catalog owns START-INT-006.
+- Pending Engine: respond to concrete API feedback, rerun the inspection after
+  adoption, then resume selected native travel. [Current evidence](engine/START_ADOPTION_VALIDATION.json)
+  records blocked consumer adoption and three still-failing App expectations.
+
+## Delivered start contract — 26 October 2026
+
+[Start readiness API 1](engine/START_READINESS_API.md) now separates dated reference,
+character eligibility, presentation, declaration mode and selected playable slices.
+The explicitly selected sourced Henry V embarkation context resolves a real Core
+observation; John and other unestablished existing starts remain declaration-only
+with held playable context. New historical worlds receive a sourced initial Julian
+calendar checkpoint without an hour or automatic calendar advancement. Views and
+restores do not reseed templates, and exact player testimony remains intact.
+
+[Engine evidence](engine/START_READINESS_VALIDATION.json): 33 dedicated cases pass;
+full runtime 773 run, 772 pass, one prescribed private-save skip. Shared (35), phase
+(28), communication (32), original pinned R00 (10), Engine integrity and Kira canon
+pass. [Three actual HTTP checks](engine/START_INTERACTION_VALIDATION.json) pass
+against App `00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc` and Catalog
+`3f921252e50a0976cb88321b6ff8249a5f12466d`, with their committed pins unchanged.
+
+[Handoff limits](engine/START_DELIVERY_VALIDATION.json): the existing App suite runs
+229 cases, with 219 passes, three old empty-knowledge expectation failures and seven
+Windows skips. App must adopt the new mode/context/calendar contract and update
+those assertions; corresponding cases pass on its original Engine pin. Catalog
+new-schema consumer cases and exact-set coordinator review remain pending. This
+Engine delivery advances bounded DEV-02/06–08/11/13–14/18/20 properties without
+closing general DEV/C2 or claiming a new joined release.
+
+Next Engine work supports concrete App/Catalog adoption feedback and reruns the
+current inspection after consumer updates. Resume the queued host-safe selected
+native travel contract only after adoption, preserving the published start and
+communication APIs. General supported-intent mapping (IRGS-PLAY-003), broader
+historical-person contexts and NPC/general resolution remain open.
+
+Current priority under [the work order](COORDINATOR_WORK_ORDER.md): support
+adoption of the delivered shared start contract. Engine's bounded implementation
+and handoff evidence are delivered; App/Catalog adoption and coordinator review
+remain open. Selected travel follows adoption. Stable DEV/C2 completion criteria
+and historical execution records below retain their original scope.
+
+
+## Dated communication delivery record
 
 **Communication contract delivered — 26 October 2026 (3.4.1 development):**
 [actor-safe participant/source/offer API](engine/COMMUNICATION_CAPABILITY_API.md)
@@ -42,7 +110,7 @@ The records below preserve previously delivered work and historical evidence.
 
 **25 October delivery:** common actor/capability/exact-intent/received/receipt contracts now expose selected real non-Rise and Rise operations through one acceptance/CAS cycle. The neutral 1,000-variant depot supplies capability-bound drafts and exact local results. Core declarations enforce actual current control within observed execution. This advances named DEV-02, DEV-06–DEV-08, DEV-11, DEV-14 and DEV-17 properties; broader open milestones remain open. See [API/adapters](engine/SHARED_SYSTEMS_API.md) and [new evidence](engine/SHARED_SYSTEMS_VALIDATION.json). Next work belongs to compatible App consumption/joined qualification and further explicitly selected rules/adapters.
 
-Target iteration: **IRGS 3.4.1 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+Target iteration: **IRGS 3.4.2 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
 Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-26. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
 

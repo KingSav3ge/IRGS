@@ -27,10 +27,14 @@ def validate_background(character, options):
         raise ValueError('Character selection must be an object')
     kind = character.get('kind')
     allowed = {'new': {'kind', 'name', 'species', 'background', 'opening_id', *FIELDS},
-               'existing': {'kind', 'actor_id'}, 'faction': {'kind', 'entity_id', 'actor_id'}}
+               'existing': {'kind', 'actor_id', 'opening_id'}, 'faction': {'kind', 'entity_id', 'actor_id'}}
     if kind not in allowed or set(character) - allowed[kind]:
         raise ValueError('Character selection contains unsupported fields for this control perspective')
     if kind != 'new':
+        if kind == 'existing' and character.get('opening_id') not in (None, ''):
+            if not any(row['id'] == character['opening_id'] and row['actor_id'] == character.get('actor_id')
+                       for row in options.get('existing_character_openings', [])):
+                raise ValueError('Select a reviewed opening for this existing historical person')
         return {}
     if ('opening_id' in character and (not isinstance(character['opening_id'], str)
             or character['opening_id'] not in ('', *(row['id'] for row in options.get('playable_openings', []))))):

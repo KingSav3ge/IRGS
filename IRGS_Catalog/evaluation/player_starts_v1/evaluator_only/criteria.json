@@ -1,0 +1,79 @@
+{
+  "classification": "evaluator-only",
+  "hidden_marker": "PRIVATE_PLAYER_START_ORACLE",
+  "findings": {
+    "IRGS-PLAY-001": {
+      "cases": [
+        "john-1415-existing"
+      ],
+      "requirement": "A reviewed, source-backed existing-person context with a confirmed supported operation, received result and saved continuation. Eligibility and a verified reference date alone do not pass.",
+      "owners": [
+        "Engine",
+        "App",
+        "Catalog"
+      ]
+    },
+    "IRGS-PLAY-002": {
+      "cases": [
+        "new-1415-default",
+        "new-1415-quay",
+        "rise-r00"
+      ],
+      "requirement": "Review the selected actor and actual mode explicitly before creation. Reference/declaration choices must not be labelled an executable slice. An optional fictional new-person opening grants nothing to an existing person.",
+      "owners": [
+        "Engine",
+        "App",
+        "Catalog"
+      ]
+    },
+    "IRGS-PLAY-004": {
+      "cases": [
+        "john-1415-existing",
+        "new-1415-default",
+        "new-1415-quay"
+      ],
+      "requirement": "Reconcile initial civil date/calendar/day precision to the adopted source, retaining unknown hour. Causal sequence, storage revision and local elapsed seconds remain separate; no future history is scheduled.",
+      "owners": [
+        "Engine",
+        "App",
+        "Catalog"
+      ]
+    }
+  },
+  "cases": {
+    "john-1415-existing": {
+      "goal": "reviewed_existing_person_executable_slice",
+      "baseline_note": "Coordinator observed missing actor scene and supported operations. This is an open gap, not a success expectation.",
+      "acceptance": "all positive loop gates plus explicit mode and sourced civil date"
+    },
+    "new-1415-default": {
+      "goal": "explicit_reference_or_declaration_choice_or_separately_reviewed_slice",
+      "baseline_note": "Default no-opening creation has no reviewed authored circumstances. An honest explicit limited-mode choice is required.",
+      "acceptance": "confirmed accurate mode classification; require every loop gate if advertised executable"
+    },
+    "new-1415-quay": {
+      "goal": "preserve_reviewed_fictional_new_person_slice",
+      "baseline_note": "Working local actions do not settle the civil-date or selected-mode presentation gaps.",
+      "acceptance": "all loop gates; conserve one dispatch; distinguish unsuccessful shortcut and actual local spans"
+    },
+    "rise-r00": {
+      "goal": "preserve_existing_reviewed_r00_slice",
+      "baseline_note": "Fictional R00 is a regression, not evidence of a historical-person initializer.",
+      "acceptance": "all loop gates; finite material and 3600 work seconds; actual elapsed 3900"
+    }
+  },
+  "positive_loop_requires": [
+    "actor_eligible",
+    "actor_context_reviewed",
+    "actor_context_received",
+    "supported_operation_listed",
+    "operation_confirmed",
+    "result_received",
+    "save_reload_verified",
+    "exact_retry_verified"
+  ],
+  "pending_owner_contracts": [
+    "Engine versioned selected-start readiness and sourced existing-person context",
+    "App precreation mode/readiness review and civil-date projection"
+  ]
+}

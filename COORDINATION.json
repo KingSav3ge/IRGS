@@ -100,8 +100,8 @@
       "scope": "Explicit start-mode readiness, actor-received sourced context/civil checkpoint, optional bounded Henry observation, App adoption and separate Catalog six-path qualification; existing authored/R00 recovery preserved."
     }
   },
-  "integration_status": "approved_pending_source_import",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_3_development_update",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
     "engine": "Engine selected travel capabilities over existing native processes",
@@ -206,10 +206,14 @@
     "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
   },
   "reviewed_at_utc": "2026-10-26T20:21:14.864794+00:00",
-  "completed_components": {},
+  "completed_components": {
+    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
+    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+  },
   "source_input_sha256": "de1994fb2dd25f06f37d6643ff70f7fb900b5f74394b2d0753e49df255b87779",
   "qualified_candidate_commit": "1b0551633d509d11d6fdb03283890dfb5b0148bd",
-  "integrated_at_utc": "2026-10-26T16:28:31.708871+00:00",
+  "integrated_at_utc": "2026-10-26T20:21:29.483315+00:00",
   "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
     "Engine selected travel capabilities over existing native processes",

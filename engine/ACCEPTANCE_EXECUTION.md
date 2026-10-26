@@ -1,5 +1,14 @@
 # Scoped C2 implementation evidence — Action 1
 
+The [start-readiness record](START_READINESS_VALIDATION.json) adds 33 cases for
+actual new-world initialization, sourced existing Henry observation, held John
+and declaration modes, actor-received civil precision, content/authority guards,
+competing observations and exact recovery. All 37 dated defaults are classified
+honestly. [HTTP and delivery evidence](START_DELIVERY_VALIDATION.json) separates
+passing Engine effects from App's pending mode/calendar adoption and three old
+empty-knowledge assertions. This advances bounded DEV-02/06–08/11/13–14/18/20
+properties; no stable DEV checkbox or immutable C2 inventory becomes a blanket pass.
+
 The 26 October [communication capability record](COMMUNICATION_CAPABILITY_VALIDATION.json)
 adds 32 cases for legitimate participant/source/offer projections, exact testimony
 and conserved fulfillment, rejected authority and late rollback, competing
