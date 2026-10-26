@@ -1,0 +1,48 @@
+{
+  "summary": "Tested the IRGS 3.4.1 port end to end (backend pytest plus Playwright UI). Passing: Catalogue v0.5, the admin Content Library UI with genre themes, Review-before-commit (button and Enter, Edit, Withdraw, Confirm, too-long rejection), the saved-request banner (triggered for real by aborting the act request with Playwright), the idempotent replay, Trash/Restore/Delete forever, the CSRF origin guard, CORS without credentials, STT 422/400, and the regressions (UI login, portrait upload, store checkout, share link). Two gaps: (1) gibberish declarations are NOT rejected at review; (2) AI scene/portrait painting is broken right now because 'gpt-image-1' is not available through the Emergent proxy. Full suite: 129/133 passed.",
+  "backend_issues": {
+    "critical": [
+      {"endpoint": "Scene painting / AI portrait (ai_services.py generate image, model='gpt-image-1')", "issue": "Every paint attempt fails. Backend log: litellm.BadRequestError \"The model 'gpt-image-1' does not exist. Received Model Group=gpt-image-1\". Events end with image_status='failed'. 3 older regression tests fail because of this (test_irgs_api::test_combat_paints, test_irgs_iter2::test_move_then_act_keeps_image, test_irgs_security_edges::test_paint_then_act_race_keeps_image). It worked in iteration 6, so this looks like an upstream model or proxy change.", "priority": "HIGH"}
+    ],
+    "minor": [
+      {"endpoint": "POST /api/playthroughs/{pid}/review (and /act)", "issue": "Gibberish ('asdkj qwpoe zxmn') returns ok:true with an intent, and confirming it would commit. engine.validate_action only checks empty, length over 2000, pending action and health, so there is no gibberish or meaningfulness gate. The spec expects gameplay-review-rejected for gibberish. Too-long declarations ARE rejected correctly ('Declaration is too long.')."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Play.jsx ActionComposer", "issue": "The composer is disabled only when pt.status === 'archived'. A TRASHED playthrough opened at /play/{pid} has an enabled input and no 'Trashed' label. The backend blocks review/act/pass-time with 400, so the user only finds out after trying.", "selector": "[data-testid='gameplay-action-input']", "priority": "LOW"}
+    ],
+    "integration_issues": [
+      {"flow": "Review action with a gibberish declaration", "issue": "The review card shows an intent and a Confirm button instead of gameplay-review-rejected", "affected_selectors": ["gameplay-review-rejected"]},
+      {"flow": "Paint this moment / big-moment painting / Paint (AI) portrait", "issue": "Fails because the image model is unavailable (see backend critical)", "affected_selectors": ["gameplay paint button", "character-generate-portrait-button"]}
+    ],
+    "design_issues": []
+  },
+  "verified_passing": [
+    "GET /api/catalogue as admin: version 0.5.0, 44 records, only MC-01 is playable (scenario_id hyw-1415), and every record has a theme (military/shinobi/settlement/tablet/grimoire/pda/ledger). A new player gets 1 record. Unauthenticated: 401",
+    "/api/campaigns HYW catalogue.tier == 'Major Campaign'",
+    "Admin Library UI: admin-concept-library heading 'Content Library v0.5.0: 44 concepts'. Show reveals 44 cards and Hide shows 0. Seven concept-tier-* filters (Short story = 18, Major = 6). SS-02 is military (Oswald, uppercase). SS-05 is tablet (light stone background rgb(214,207,193), Cinzel). Player ui_b9f4eb does not see the section",
+    "Review: the review card shows intent MOVE. Chronicle count is unchanged after review (checked via API) and the input is disabled during review. Edit keeps the text. Withdraw clears it. Enter triggers review. Confirm commits and clears the input. Too-long text shows gameplay-review-rejected with no Confirm button",
+    "Saved request: when the act request is aborted (Playwright route.abort), gameplay-saved-request-banner appears, the request is kept in localStorage, and the banner is still there after a reload. Retry with the same request_id commits once. Resending the same request_id via the API returns replayed:true with an unchanged chronicle length",
+    "Trash UI: the trash button shows a confirm dialog and the card moves to the Trash tab. Restore moves it back to active. Delete forever shows a confirm and the Trash tab becomes empty. GET playthrough then returns 404 and the public share returns 404 (shares/saves/notes are removed). API: DELETE on a non-trashed playthrough → 400; act/pass-time/review on a trashed one → 400; another user trashing it → 404",
+    "Security: requests with Origin https://evil.example never get Access-Control-Allow-Credentials (GET and OPTIONS). Cookie-only logout with the evil Origin → 403; with the app's own Origin → 200. Bearer requests (with or without a cookie) are not blocked by an evil Origin. STT junk → 422 'Could not transcribe...'. STT over 25MB → 400. seed_admin fails closed when the env vars are missing (code review)",
+    "Regressions: UI login lands on /library. Portrait upload → 200 and the image is shown. Store checkout (PayPal, test mode) → owned plus entitlement. Share snapshot link opens /story/{id} without login"
+  ],
+  "test_report_links": ["/app/backend/tests/test_irgs_iter8.py", "/app/test_reports/pytest/pytest_results_iter8.xml"],
+  "action_items": [
+    "HIGH: Fix image generation. 'gpt-image-1' is rejected by the Emergent proxy as 'model does not exist'. Check which image model is currently supported for the Emergent LLM key in emergentintegrations OpenAIImageGeneration and update ai_services.py; also make sure portrait 'Paint (AI)' works",
+    "Add a gibberish/meaningfulness check to the review (and act) validation so nonsense declarations return ok:false and show gameplay-review-rejected",
+    "Play.jsx: disable the composer (and show a 'Trashed - restore to continue' label) when pt.status === 'trashed'"
+  ],
+  "critical_code_review_comments": [
+    "csrf_origin_guard compares origin host with x-forwarded-host/host. That works behind the current ingress, but Origin 'null' and missing-Origin requests that carry a cookie are allowed through (no Referer fallback). This is acceptable because SameSite=None comes from the edge, but note it.",
+    "Review and act both call ai.jev_decide, so every committed action costs two LLM classification calls. Consider caching the review decision per declaration and passing it into act.",
+    "Catalogue MC-01 has theme 'military', while the HYW scenario itself uses its own manuscript theme. This is cosmetic but inconsistent between the library card and the gameplay look."
+  ],
+  "updated_files": ["/app/backend/tests/test_irgs_iter8.py"],
+  "success_rate": {"backend": "97% (129/133; 3 failures from the image model outage, 1 from the missing gibberish check)", "frontend": "95%"},
+  "seed_data_creation": "Created throwaway users test_it8_*, test_it8ui_152435@example.com, test_it8reg_* with TEST_ characters. Playthrough play_453fdb654296 was deleted forever during the UI test. Admin playthroughs were not touched.",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run pytest /app/backend/tests/ (test_irgs_iter8.py covers this iteration). The browser tests use page.request for API calls (urllib gets 403 from Cloudflare). Log in by setting localStorage 'irgs_token'. The saved-request banner can be triggered with page.route('**/api/playthroughs/*/act', abort). Image painting failures come from the upstream 'gpt-image-1' model."
+}

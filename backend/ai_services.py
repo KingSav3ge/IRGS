@@ -89,7 +89,8 @@ async def jev_decide(declaration: str) -> dict:
         "You are a fast routing + safety classifier for a roleplaying engine. "
         "Given a player's action declaration, respond with STRICT JSON only, no prose: "
         '{"intent": one of ["move","speak","observe","interact","combat","rest","other"], '
-        '"allowed": true|false, "reason": short string}. '
+        '"allowed": true|false, "understandable": true|false, "reason": short string}. '
+        "Set understandable=false when the text is gibberish, random characters or has no discernible action/meaning. "
         "Set allowed=false only for content that is sexual content involving minors, real-world "
         "hate/harassment targeting protected groups, or instructions for real-world violence/weapons. "
         "In-fiction combat and conflict (any era or setting) is allowed."
@@ -103,7 +104,8 @@ async def jev_decide(declaration: str) -> dict:
         intent = data.get("intent", "other")
         if intent not in ("move", "speak", "observe", "interact", "combat", "rest", "other"):
             intent = "other"
-        return {"intent": intent, "allowed": bool(data.get("allowed", True)), "reason": str(data.get("reason", ""))}
+        return {"intent": intent, "allowed": bool(data.get("allowed", True)), "reason": str(data.get("reason", "")),
+                "understandable": bool(data.get("understandable", True))}
     except Exception as e:
         logger.error(f"jev decide failed: {e}")
         return {"intent": "other", "allowed": True, "reason": "classifier-unavailable"}
@@ -163,17 +165,16 @@ async def npc_turn(scene_context: str, latest: str, npcs: list, locations: list,
 
 
 async def generate_image(prompt: str) -> bytes:
-    """Generate a scene / portrait image (gpt-image-1). Returns PNG bytes."""
-    from emergentintegrations.llm.openai.image_generation import OpenAIImageGeneration
+    """Generate a scene / portrait image (Gemini Nano Banana). Returns image bytes."""
+    from emergentintegrations.llm.chat import LlmChat, UserMessage
 
-    gen = OpenAIImageGeneration(api_key=EMERGENT_LLM_KEY)
-    # generate_images is declared async but calls sync litellm internally; run it off the event loop
-    images = await asyncio.to_thread(
-        lambda: asyncio.run(gen.generate_images(prompt=prompt, model="gpt-image-1", number_of_images=1))
-    )
+    chat = LlmChat(api_key=EMERGENT_LLM_KEY, session_id=f"img-{os.urandom(6).hex()}",
+                   system_message="You are an illustrator. Always return exactly one image.")
+    chat.with_model("gemini", "gemini-3.1-flash-image-preview").with_params(modalities=["image", "text"])
+    _, images = await chat.send_message_multimodal_response(UserMessage(text=prompt))
     if not images:
         raise RuntimeError("No image generated")
-    return images[0]
+    return base64.b64decode(images[0]["data"])
 
 
 async def tts_speak(text: str, voice: str = "fable") -> str:

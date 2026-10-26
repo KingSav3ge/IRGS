@@ -670,6 +670,8 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     decision = await ai.jev_decide(body.declaration)
     if not decision["allowed"]:
         raise HTTPException(status_code=422, detail=f"Declaration rejected by content moderation: {decision['reason']}")
+    if not decision.get("understandable", True):
+        raise HTTPException(status_code=422, detail="That doesn't read as an action yet. Describe what your character does.")
     scenario = SCENARIO_MAP[doc["scenario_id"]]
     provider, model = ai._model_for(body.provider or doc.get("provider"), body.model or doc.get("model"))
     narration = await ai.narrate(_scene_context(state, scenario), body.declaration, decision["intent"], provider, model)
@@ -736,6 +738,8 @@ async def review_action(pid: str, body: ReviewIn, user: dict = Depends(auth.get_
     decision = await ai.jev_decide(body.declaration)
     if not decision["allowed"]:
         return {"ok": False, "reason": f"Content moderation would reject this: {decision['reason']}"}
+    if not decision.get("understandable", True):
+        return {"ok": False, "reason": "That doesn't read as an action yet. Describe what your character does."}
     return {"ok": True, "intent": decision["intent"], "big_moment": decision["intent"] in BIG_MOMENT_INTENTS,
             "time_note": "Time advances by about one part of the day when this commits.",
             "others_may_react": True}

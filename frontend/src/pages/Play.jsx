@@ -121,7 +121,7 @@ export default function Play() {
       <section className="order-1 lg:order-none lg:col-span-6 flex flex-col bg-tome gold-frame lg:h-full min-h-[70vh] lg:overflow-hidden">
         <div className="px-6 sm:px-10 pt-6 pb-3 border-b border-line flex items-center justify-between">
           <h1 className="font-heading text-lg text-parchment truncate" data-testid="gameplay-title">{pt.title}</h1>
-          {pt.status === "archived" && <span className="tactical-label !text-crimson">Archived</span>}
+          {pt.status !== "active" && <span className="tactical-label !text-crimson" data-testid="gameplay-status-label">{pt.status === "trashed" ? "In Trash · restore to continue" : "Archived"}</span>}
           <ReadingSettings reading={reading} setReading={setReading} />
         </div>
         <div ref={feedRef} className="flex-1 overflow-y-auto scroll-thin px-6 sm:px-10 py-8 space-y-8" data-testid="gameplay-narrative-feed-container"
@@ -139,7 +139,7 @@ export default function Play() {
             <button className="text-dust" onClick={() => { localStorage.removeItem(savedKey); setSaved(null); }} data-testid="gameplay-saved-request-discard">Discard</button>
           </div>
         )}
-        <ActionComposer onSubmit={act} onReview={review} onPass={passTime} busy={busy} disabled={pt.status === "archived"} />
+        <ActionComposer onSubmit={act} onReview={review} onPass={passTime} busy={busy} disabled={pt.status !== "active"} />
       </section>
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden order-3 lg:order-none"><ControlPanel pt={pt} onSettings={onSettings} /></div>
     </div>
