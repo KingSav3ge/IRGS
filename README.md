@@ -1,32 +1,39 @@
-# IRGS 3.4.2 — joined development source
+# IRGS 3.4.3 — joined development source
 
-Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
-See [3.4.2 release notes](RELEASE_NOTES_3_4_2.md) and [version policy](VERSION_POLICY.md). Historical evidence below retains
-its original tested development identities.
+Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
+Read [release notes](RELEASE_NOTES_3_4_3.md), [changes](CHANGES_3_4_3.md),
+[development](DEVELOPMENT.md), [continuation](CHAT_CONTINUATION.md) and
+[version policy](VERSION_POLICY.md).
 
-Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
+Main contains the current complete Engine, App and Catalog in one canonical
+installation. Independent development belongs in [Engine](https://github.com/KingSav3ge/IRGS-Engine),
+[App/Web](https://github.com/KingSav3ge/IRGS-APP-WEB) and
+[Catalog](https://github.com/KingSav3ge/IRGS-Catalog). Exact reviewed commits are
+in COMPONENTS.json. `IRGS_3_3` is the current Core compatibility directory.
 
-This repository's `main` combines the Engine, App and Catalog. Independent development now lives in:
+Run `python -B IRGS_Web/server.py --port 8766`, or `Start-IRGS.cmd` on Windows.
+The host binds to loopback. The development package includes no user campaigns,
+credentials or personal configuration, and does not migrate existing saves.
 
-| Component | Repository | Source |
-| --- | --- | --- |
-| Engine, Core routines, campaign foundations | [IRGS-Engine](https://github.com/KingSav3ge/IRGS-Engine) | `IRGS_3_3/`, `engine/` |
-| App, website, discovery and previews | [IRGS-APP-WEB](https://github.com/KingSav3ge/IRGS-APP-WEB) | `IRGS_Web/` |
-| Campaign catalogue, reference payload and evaluation fixtures | [IRGS-Catalog](https://github.com/KingSav3ge/IRGS-Catalog) | `IRGS_Catalog/` |
-| Joined IRGS | [IRGS](https://github.com/KingSav3ge/IRGS) | Full Engine, App and Catalog sources on `main` |
+3.4.3 adds explicit start-mode review, actor-received starting context and a
+sourced initial civil-day checkpoint. An optional Henry V observation start is
+selected explicitly. Default Henry and John remain declaration/reference starts;
+the optional new-character courier opening and fictional R00 founding slice
+retain their actual Core actions. Local elapsed time never invents an opening
+hour or running civil clock. Read [the current qualification](provenance/qa/start_readiness_3_4_3_review.json).
 
-The development edition is 3.4.2; the selected executable Core retains compatibility ID 3.3. See [component integration](COMPONENT_REPOSITORIES.md), [development commands](DEVELOPMENT.md), [roadmap](ROADMAP.md), and [operation coverage](engine/OPERATION_COVERAGE.md).
+The library includes 44 expanded concept previews and 37 verified dated Century
+references. These are not 44 released games or generally playable historical
+campaigns. Kira v0.5 remains a reference world without a playable snapshot. Rise's
+eight design families remain separate from its bounded fictional founding slice.
+Historical Details includes the complete original archive in 32 verified parts.
 
-Run `python -B IRGS_Web/server.py --port 8766`, or use `Start-IRGS.cmd` on Windows. Hosts bind to loopback. Existing user saves are not included or migrated.
+Shared communication capabilities exist in Engine; their App controls remain
+open. Selected travel, supported-intent mapping, operator configuration, general
+freeform/combat, autonomous institutional play, full C2 and live model quality
+remain unfinished. Routine results stay local; default AI is unconfigured.
 
-This 3.4.2 update integrates the refined Emergent interface, Engine communication/source capabilities and Catalog public-process response checks. See [changes from 3.4.1](CHANGES_3_4_2.md) for exact sources and limits. App communication controls remain the next integration task.
-
-Content Library contains 44 expanded v0.5 concept previews: 31 launch targets, 12 future campaigns and one independent simulation system. Filters separate type, genre, setting, period, launch positioning and available slices. The concepts are not 44 released games. See [catalogue scope](IRGS_Catalog/design/campaign_catalogue/README.md).
-
-Century of Conflict has 37 reviewed dated starts with optional bounded fictional openings. The Rise of... You offers a fictional R00 founding slice; its eight design families remain held. Kira v0.5 is the user-adopted working world canon, available as a searchable reference guide with no playable starting snapshot. General freeform resolution, combat, a complete autonomous institutional cycle and full C2 acceptance qualification remain unfinished.
-
-Original uploads and historical qualification evidence remain labelled under `provenance/`. They do not establish fresh verification or automatically apply draft mechanics. Core and App have independent integrity records so either component can develop without rewriting the other's release pins.
-
-Historical Details now includes the complete original archive in Catalog’s 32 verified parts, with a protected Creator browser for ten reference collections. See [the completed integration and next assignments](COORDINATION.md).
-
-The 3.4.0 development update adds an opt-in Solo proposal boundary, direct API transport, durable inference accounting, explicit App review/acceptance and the synthetic R00 evaluation fixture. Authored-scene and Rise actions retain their actual Core rules and receipts. Default assistance is unconfigured; no live model result or general narrator is claimed.
+Keep the current canonical tree and qualified distributable; superseded generated
+installations/build ZIPs need not be retained. Original supplied archives,
+accurately dated qualification records, adopted canon and Git history remain
+source provenance. Preserve user saves, credentials and personal configuration.

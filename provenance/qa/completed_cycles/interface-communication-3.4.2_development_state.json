@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "edition": "3.4.2",
+  "channel": "development",
+  "date": "2026-10-25",
+  "status": "qualified_offline_development_baseline",
+  "primary_branch": "main",
+  "selected_runtime_core": "3.3",
+  "source_commits": {
+    "engine": "91b20056e7db651966c9e92925313494917f47b1",
+    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+  },
+  "qualification_record": "provenance/qa/interface_communication_3_4_2_review.json",
+  "qualification_scope": "Actor-safe selected Engine communication/source/offer API and private forwarded-contract filtering; refined Emergent interface on canonical host; separate Catalog public-phase qualification. Communication HTTP/UI wiring remains open.",
+  "next_milestone": "App authenticated explicit durable communication/source/offer controls and then matching Catalog consumers",
+  "continuation_instructions": "CHAT_CONTINUATION.md",
+  "development_guide": "DEVELOPMENT.md",
+  "source_input_sha256": "2f0b0f35565faee8513ff2eaff0953a60601159a00f9ec243cc6ff97a8a7c7cf",
+  "general_action_resolver_implemented": false,
+  "live_inference_qualified": false,
+  "private_saves_included": false,
+  "existing_save_migration": false,
+  "C2_acceptance_cases": 121,
+  "all_branches_certified": false,
+  "historical_state": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
+  "guide_update_scope": "Current coordinated 3.4.2; original source and validation history retained.",
+  "previous_version": "3.3.3",
+  "source_commit_scope": "Exact selected components; containing joined commit is identified by Git. No self-referential joined SHA is stored."
+}

@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "fixture_id": "irgs-start-context-v1",
+  "catalog_fixture_sha256": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+  "selected_components": {
+    "schema_version": 2,
+    "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
+    "joined_branch": "main",
+    "engine": {
+      "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
+      "branch": "main",
+      "commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+      "source_paths": [
+        "IRGS_3_3",
+        "engine",
+        "provenance"
+      ]
+    },
+    "app": {
+      "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
+      "branch": "main",
+      "commit": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
+      "source_paths": [
+        "IRGS_Web",
+        "Start-IRGS.cmd"
+      ],
+      "engine_dependency": "Engine submodule, pinned to engine.commit",
+      "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+    },
+    "catalog": {
+      "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
+      "branch": "main",
+      "commit": "6f927b00e12a3339861ac353bc38d03c68279662",
+      "source_paths": [
+        "IRGS_Catalog"
+      ]
+    }
+  },
+  "tests_run": 6,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "cases": {
+    "henry-1415-default": {
+      "mode": "declaration_only",
+      "historical": true,
+      "confirmed_operations": 0,
+      "elapsed_seconds": null,
+      "civil_day_precision": true,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    },
+    "henry-1415-observation": {
+      "mode": "supported_slice",
+      "historical": true,
+      "confirmed_operations": 1,
+      "elapsed_seconds": 20,
+      "civil_day_precision": true,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    },
+    "john-1415-limited": {
+      "mode": "declaration_only",
+      "historical": true,
+      "confirmed_operations": 0,
+      "elapsed_seconds": null,
+      "civil_day_precision": true,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    },
+    "new-1415-default": {
+      "mode": "declaration_only",
+      "historical": true,
+      "confirmed_operations": 0,
+      "elapsed_seconds": null,
+      "civil_day_precision": true,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    },
+    "new-1415-quay": {
+      "mode": "supported_slice",
+      "historical": true,
+      "confirmed_operations": 5,
+      "elapsed_seconds": 150,
+      "civil_day_precision": true,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    },
+    "rise-r00": {
+      "mode": "supported_slice",
+      "historical": false,
+      "confirmed_operations": 5,
+      "elapsed_seconds": 3900,
+      "civil_day_precision": false,
+      "restart_and_exact_retry": true,
+      "restore_preserved_save": true,
+      "provider_calls": 0
+    }
+  },
+  "provider_calls": 0,
+  "user_saves_used": false
+}

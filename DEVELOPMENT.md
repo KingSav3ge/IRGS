@@ -1,11 +1,23 @@
 # Unified IRGS development and coordination guide
 
-Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
+Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Historical evidence below retains
 its original tested development identities.
 
 Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS/main`.
 Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
+
+## Current 3.4.3 coordinated update
+
+Read RELEASE_NOTES_3_4_3.md and COMPONENTS.json. This selection combines the
+Engine start-readiness/context contract, explicit App start-mode adoption and
+Catalog's separate six-path requirements/qualification. The optional sourced
+Henry observation, authored new-person opening and R00 are bounded actual
+slices; John and other unsupported starts remain declaration/reference modes.
+Received initial civil day and local elapsed time retain separate meanings.
+Next: selected Engine travel, App communication controls and matching Catalog
+consumers. No general freeform, full C2 or live model-quality completion is
+claimed. Earlier sections retain their original dated scope and qualification.
 
 ## Current 3.4.2 coordinated update
 

@@ -1,77 +1,77 @@
 {
   "schema_version": 1,
-  "status": "approved_3_4_2_development_integration",
-  "version": "3.4.2",
+  "status": "approved_3_4_3_development_integration",
+  "version": "3.4.3",
   "previous_version": "3.3.3",
-  "reviewed_at_utc": "2026-10-26T16:28:16.608858+00:00",
-  "cycle_id": "interface-communication-3.4.2",
-  "baseline_joined_commit": "389b392f8e3e1b80bfcb4fdcaa4c1472ba81ffc2",
+  "cycle_id": "start-readiness-3.4.3",
+  "reviewed_at_utc": "2026-10-26T20:21:14.864794+00:00",
+  "baseline_joined_commit": "ba551af285a6e1eb0766a9d06f83cbc0e5335b35",
   "baseline_components": {
-    "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-    "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
-    "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
-  },
-  "selected_components": {
     "engine": "91b20056e7db651966c9e92925313494917f47b1",
     "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
     "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
   },
   "owner_deliveries": {
-    "joined": "389b392f8e3e1b80bfcb4fdcaa4c1472ba81ffc2",
-    "engine": "733a4358c5eed1f6be9d36033be62bbffd317202",
-    "app": "919427cf16cf72574a581d7e6f712e638740a1df",
-    "catalog": "069c9e9c6781a83b9068bc222ab3e52d0b454429"
+    "joined": "ba551af285a6e1eb0766a9d06f83cbc0e5335b35",
+    "engine": "be9c3a6db60956e6a46e09a5afbd935dd88eaccb",
+    "app": "40a55154d0a7ca1212e609668f09c0d279f56f1e",
+    "catalog": "41d0a3ca1185717ba5bdd888d863cf5d7081ee16"
   },
-  "qualified_candidate_commit": "bfebdfe1e3ff4062680ffe0c54b1cf15c0b31544",
-  "source_input_sha256": "2f0b0f35565faee8513ff2eaff0953a60601159a00f9ec243cc6ff97a8a7c7cf",
-  "scope": "Actor-safe selected Engine communication/source/offer API and private forwarded-contract filtering; refined Emergent interface on canonical host; separate Catalog public-phase qualification. Communication HTTP/UI wiring remains open.",
+  "selected_components": {
+    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
+    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+  },
+  "qualified_candidate_commit": "1b0551633d509d11d6fdb03283890dfb5b0148bd",
+  "source_input_sha256": "de1994fb2dd25f06f37d6643ff70f7fb900b5f74394b2d0753e49df255b87779",
+  "scope": "Explicit start-mode readiness, actor-received sourced context/civil checkpoint, optional bounded Henry observation, App adoption and separate Catalog six-path qualification; existing authored/R00 recovery preserved.",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 14.16,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/source-integrity.txt"
+      "duration_seconds": 10.95,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 1.17,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/evidence-freshness.txt"
+      "duration_seconds": 0.97,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 75.89,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/runtime.txt",
-      "tests_run": 740,
+      "duration_seconds": 83.93,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/runtime.txt",
+      "tests_run": 773,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 145.04,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/web.txt",
-      "tests_run": 229,
+      "duration_seconds": 154.92,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/web.txt",
+      "tests_run": 242,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 5.63,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/interface.txt",
-      "checks_passed": 128
+      "duration_seconds": 7.35,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/interface.txt",
+      "checks_passed": 142
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 13.76,
-      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/tooling.txt",
+      "duration_seconds": 14.42,
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -222,11 +222,11 @@
           "status": 200
         },
         {
-          "url": "/style.css",
+          "url": "/themes.css",
           "status": 200
         },
         {
-          "url": "/themes.css",
+          "url": "/style.css",
           "status": 200
         },
         {
@@ -238,39 +238,11 @@
           "status": 200
         },
         {
-          "url": "/responses.js",
-          "status": 200
-        },
-        {
           "url": "/responses.data.js",
           "status": 200
         },
         {
-          "url": "/rise.js",
-          "status": 200
-        },
-        {
-          "url": "/routine.js",
-          "status": 200
-        },
-        {
-          "url": "/solo.js",
-          "status": 200
-        },
-        {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/processes.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.js",
-          "status": 200
-        },
-        {
-          "url": "/app.js",
+          "url": "/responses.js",
           "status": 200
         },
         {
@@ -278,59 +250,11 @@
           "status": 200
         },
         {
-          "url": "/ibm-plex-mono-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/fraunces-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/newsreader-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/im-fell-english-sc-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/historical-landscape.jpg",
-          "status": 200
-        },
-        {
-          "url": "/style.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.css",
-          "status": 200
-        },
-        {
-          "url": "/preview.css",
-          "status": 200
-        },
-        {
-          "url": "/fonts.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
           "url": "/routine.js",
           "status": 200
         },
         {
-          "url": "/rise.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.js",
+          "url": "/catalogue.js",
           "status": 200
         },
         {
@@ -346,11 +270,7 @@
           "status": 200
         },
         {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/instrument-sans-latin.woff2",
+          "url": "/rise.js",
           "status": 200
         },
         {
@@ -358,11 +278,11 @@
           "status": 200
         },
         {
-          "url": "/fraunces-latin.woff2",
+          "url": "/ibm-plex-mono-latin.woff2",
           "status": 200
         },
         {
-          "url": "/ibm-plex-mono-latin.woff2",
+          "url": "/fraunces-latin.woff2",
           "status": 200
         },
         {
@@ -394,15 +314,15 @@
           "status": 200
         },
         {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
           "url": "/themes.js",
           "status": 200
         },
         {
-          "url": "/routine.js",
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
           "status": 200
         },
         {
@@ -410,7 +330,11 @@
           "status": 200
         },
         {
-          "url": "/responses.js",
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
           "status": 200
         },
         {
@@ -422,15 +346,15 @@
           "status": 200
         },
         {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
           "url": "/preview.js",
           "status": 200
         },
         {
           "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
           "status": 200
         },
         {
@@ -442,7 +366,83 @@
           "status": 200
         },
         {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
           "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
           "status": 200
         },
         {
@@ -603,12 +603,12 @@
         {
           "genre": "roman",
           "surface": "dark",
-          "minimum_contrast": 6.1326460709124975
+          "minimum_contrast": 7.575299342145355
         },
         {
           "genre": "roman",
           "surface": "light",
-          "minimum_contrast": 6.1326460709124975
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "roman",
@@ -618,7 +618,7 @@
         {
           "genre": "fantasy",
           "surface": "dark",
-          "minimum_contrast": 7.5456803486231125
+          "minimum_contrast": 7.633959418387948
         },
         {
           "genre": "fantasy",
@@ -633,7 +633,7 @@
         {
           "genre": "paf",
           "surface": "dark",
-          "minimum_contrast": 7.283250694867167
+          "minimum_contrast": 7.288301806630693
         },
         {
           "genre": "paf",
@@ -700,465 +700,2679 @@
       "local_assets_only": true,
       "provider_calls": 0,
       "browser_errors": 0
+    },
+    "start-browser": {
+      "status": "passed",
+      "initial_campaigns": 0,
+      "final_campaigns": 6,
+      "cancel_and_selection_changes_create_nothing": true,
+      "source_unavailable_stays_unconfirmed": true,
+      "mobile_width": 390,
+      "contexts": [
+        {
+          "name": "existing_john_1415",
+          "status": "declaration_only",
+          "new_engine_initializer_delivered": false,
+          "lost_creation_ack_recovered": true,
+          "unresolved_intent_reload_withdraw": true
+        },
+        {
+          "name": "new_human_reference",
+          "status": "declaration_only",
+          "explicit_choice": true,
+          "background_is_testimony": true
+        },
+        {
+          "name": "new_human_authored",
+          "status": "supported_slice",
+          "received_result_retained": true,
+          "lost_action_ack_recovered": true,
+          "replay_same_receipt": true,
+          "elapsed_seconds": 20
+        },
+        {
+          "name": "R00_regression",
+          "status": "supported_slice",
+          "confirmed_actions": 5,
+          "elapsed_seconds": 3900,
+          "received_result_retained": true
+        },
+        {
+          "name": "existing_henry_default",
+          "status": "declaration_only",
+          "opening_not_added_automatically": true,
+          "received_initial_day": true
+        },
+        {
+          "name": "existing_henry_explicit",
+          "status": "supported_slice",
+          "engine_contract": "irgs-start-readiness-1",
+          "actor_bound_choice": true,
+          "changed_actor_clears_choice": true,
+          "lost_creation_ack_recovered": true,
+          "lost_action_ack_recovered": true,
+          "elapsed_axis": "selected-historical-observation-seconds",
+          "elapsed_seconds": 20,
+          "initial_julian_day": "1415-08-11",
+          "opening_hour": null,
+          "current_calendar_binding": false,
+          "no_dispatch_or_courier_actions": true,
+          "actor_boundaries": true,
+          "changed_replay_rejected": true,
+          "reload_and_restore_preserve_exact_bytes": true,
+          "restored_original_result_replay": true
+        }
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0,
+      "posts": [
+        "/api/create",
+        "/api/create",
+        "/api/declaration",
+        "/api/withdraw-declaration",
+        "/api/create",
+        "/api/create",
+        "/api/action",
+        "/api/rise/preview",
+        "/api/rise/create",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/create",
+        "/api/create",
+        "/api/create",
+        "/api/action",
+        "/api/delete",
+        "/api/restore"
+      ]
     }
   },
-  "engine_communication": {
-    "schema_version": 1,
-    "status": "PASS_SELECTED_COMMUNICATION_CAPABILITY_CONTRACT_WITH_LIMITS",
-    "date_utc": "2026-10-26",
-    "target_iteration": "IRGS 3.4.1 development",
-    "python": "3.12.14",
-    "api_schema": "irgs-communication-capabilities-1",
-    "pulled_base_commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-    "tests_run": 32,
-    "passed": 32,
-    "skipped": 0,
-    "test_ids": [
-      "test_communication_contract.CommunicationContractTests.test_acceptance_and_persistence_are_mandatory",
-      "test_communication_contract.CommunicationContractTests.test_acceptance_is_explicit_conserved_and_persisted_with_same_safe_dto",
-      "test_communication_contract.CommunicationContractTests.test_actual_colocation_rejects_without_publishing_hidden_whereabouts",
-      "test_communication_contract.CommunicationContractTests.test_changed_replay_identity_cannot_change_words_terms_or_recipient",
-      "test_communication_contract.CommunicationContractTests.test_changed_selected_policy_cannot_silently_fulfill_original_offer",
-      "test_communication_contract.CommunicationContractTests.test_competing_offer_acceptances_defer_both_in_either_frontier_order",
-      "test_communication_contract.CommunicationContractTests.test_concurrent_acceptance_persists_one_conserved_result",
-      "test_communication_contract.CommunicationContractTests.test_current_authority_is_checked_by_core_and_rejected_reads_stay_private",
-      "test_communication_contract.CommunicationContractTests.test_current_offerer_control_is_rechecked_without_hiding_received_offer",
-      "test_communication_contract.CommunicationContractTests.test_decline_withdraw_and_counteroffer_retain_distinct_received_meanings",
-      "test_communication_contract.CommunicationContractTests.test_failed_host_save_leaves_stock_evidence_and_offer_unchanged",
-      "test_communication_contract.CommunicationContractTests.test_foreign_or_unreceived_sources_and_requests_are_unavailable",
-      "test_communication_contract.CommunicationContractTests.test_forwarded_testimony_does_not_reveal_structured_offer_terms_or_audience",
-      "test_communication_contract.CommunicationContractTests.test_hidden_stock_permissions_presence_and_unreceived_evidence_do_not_choose_a_menu",
-      "test_communication_contract.CommunicationContractTests.test_late_failure_rolls_back_transfer_with_actual_attempted_dependencies",
-      "test_communication_contract.CommunicationContractTests.test_legacy_receipt_apis_also_keep_forwarded_words_separate_from_private_contract",
-      "test_communication_contract.CommunicationContractTests.test_malformed_terms_unsupported_commands_and_changed_digest_fail_closed",
-      "test_communication_contract.CommunicationContractTests.test_missing_text_preserves_actual_literal_outcome_without_inference",
-      "test_communication_contract.CommunicationContractTests.test_no_selected_or_supported_channel_is_explicitly_empty",
-      "test_communication_contract.CommunicationContractTests.test_non_rise_selected_local_testimony_uses_same_core_without_inventing_stock_or_time",
-      "test_communication_contract.CommunicationContractTests.test_offer_creation_ignores_hidden_feasibility_and_preserves_exact_terms",
-      "test_communication_contract.CommunicationContractTests.test_only_received_terminal_status_is_projected",
-      "test_communication_contract.CommunicationContractTests.test_original_offer_receipt_stays_offered_after_fulfillment",
-      "test_communication_contract.CommunicationContractTests.test_participants_require_received_attribution_and_do_not_parse_words_or_channel_roster",
-      "test_communication_contract.CommunicationContractTests.test_pending_json_restart_lost_ack_and_terminal_replay_transfer_only_once",
-      "test_communication_contract.CommunicationContractTests.test_preparation_and_words_of_acceptance_do_not_transfer_or_accept",
-      "test_communication_contract.CommunicationContractTests.test_private_fields_and_hidden_actor_records_do_not_enter_public_result_or_shared_view",
-      "test_communication_contract.CommunicationContractTests.test_received_status_does_not_probe_live_obligation_or_append_remote_updates",
-      "test_communication_contract.CommunicationContractTests.test_restore_branch_and_stale_state_fences_reject_discarded_future",
-      "test_communication_contract.CommunicationContractTests.test_snapshot_tracks_actor_branch_restore_and_received_status_not_private_state",
-      "test_communication_contract.CommunicationContractTests.test_source_contract_preserves_exact_testimony_attribution_and_both_information_sources",
-      "test_communication_contract.CommunicationContractTests.test_source_window_is_explicitly_bounded_and_detached"
-    ],
-    "actual_handler": "Core execute_local_communication through native typed execution and mandatory host CAS",
-    "contexts": {
-      "non_rise": "Synthetic authored-quay speaker and witness; exact attributed testimony, unchanged selected elapsed axis",
-      "rise": "Synthetic reviewed local channel and custody mandates; actual conserved two-grain fulfillment",
-      "participants": "Received attributions only, no names/whereabouts/existence/stock feasibility oracle",
-      "sources": "Exact received evidence, original status/originator, separate evidence and reception sources/times; explicit truncation",
-      "offers": "Original public terms/digest and received offered/declined/withdrawn/superseded/fulfilled statuses",
-      "unsupported": "Absent/unselected channels expose no operation; stock offers require existing selected Rise stock profile"
+  "catalog_start_adoption": {
+    "status": "passed",
+    "fixture_id": "irgs-start-context-v1",
+    "catalog_fixture_sha256": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+    "selected_components": {
+      "schema_version": 2,
+      "joined_repository": "https://github.com/KingSav3ge/IRGS.git",
+      "joined_branch": "main",
+      "engine": {
+        "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
+        "branch": "main",
+        "commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+        "source_paths": [
+          "IRGS_3_3",
+          "engine",
+          "provenance"
+        ]
+      },
+      "app": {
+        "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
+        "branch": "main",
+        "commit": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
+        "source_paths": [
+          "IRGS_Web",
+          "Start-IRGS.cmd"
+        ],
+        "engine_dependency": "Engine submodule, pinned to engine.commit",
+        "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+      },
+      "catalog": {
+        "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
+        "branch": "main",
+        "commit": "6f927b00e12a3339861ac353bc38d03c68279662",
+        "source_paths": [
+          "IRGS_Catalog"
+        ]
+      }
     },
-    "privacy_regression": "Reproduced native received() leaking private terms/audience to a third party after forwarding testimony; participant guard now shared by native receipts/presentation, compatibility/offline/shared rendering and the new DTO",
-    "dependencies": "Real R9 execution/rejection reads; actual attempted writes retained on late rollback and never included in public DTOs",
-    "scarcity": "Two ten-grain offers may be proposed against the same free stock; competing acceptance frontier defers both in either order",
-    "recovery": [
-      "Exact native CommunicationRequest JSON pending restart",
-      "Same safe persisted and returned DTO",
-      "Explicit boolean acceptance and mandatory CAS",
-      "Failed save leaves original state unchanged",
-      "Lost acknowledgment reload/replay without repeated transfer",
-      "Concurrent delivery commits once",
-      "Changed identity rejected",
-      "Current control/authority/channel rechecked by Core",
-      "Stale state and branch/restore fences"
-    ],
-    "source_sha256": {
-      "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
-      "IRGS_3_3/runtime/test_communication_contract.py": "3791d7cd0cdaf14e092a7c5b37f617bb2b0140801a83ea84ec588753d180a55c",
-      "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
-      "IRGS_3_3/runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
-      "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
-      "IRGS_3_3/runtime/player_actions.py": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0",
-      "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
-      "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
-      "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
-      "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
-      "IRGS_3_3/runtime/r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
-      "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
-      "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
-      "IRGS_3_3/runtime/routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
-      "IRGS_3_3/data/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
-      "IRGS_3_3/data/responses/depot_v1/SOURCE.json": "5a2f98e8bd70b9cacd26066d651c3057bf2ae00062a8151235e459ad176f8478",
-      "IRGS_3_3/data/responses/engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e"
+    "tests_run": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": {
+      "henry-1415-default": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "henry-1415-observation": {
+        "mode": "supported_slice",
+        "historical": true,
+        "confirmed_operations": 1,
+        "elapsed_seconds": 20,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "john-1415-limited": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "new-1415-default": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "new-1415-quay": {
+        "mode": "supported_slice",
+        "historical": true,
+        "confirmed_operations": 5,
+        "elapsed_seconds": 150,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "rise-r00": {
+        "mode": "supported_slice",
+        "historical": false,
+        "confirmed_operations": 5,
+        "elapsed_seconds": 3900,
+        "civil_day_precision": false,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      }
     },
     "provider_calls": 0,
-    "model_tokens": 0,
-    "user_saves_used": false,
-    "remaining": [
-      "App-owned communication UI/host adapter, compatible pins and coordinator exact-set qualification",
-      "Next Engine increment: host-safe selected Rise travel capabilities over the existing native lifecycle",
-      "No new NPC decision, remote channel, universal speech duration, deferred debt or generic dialogue resolver",
-      "Broader DEV-06\u2013DEV-17/C2, institutions and distributed host durability remain open",
-      "No live inference or model/human-quality qualification"
-    ]
+    "user_saves_used": false
   },
-  "current_component_http": {
+  "catalog_checks": [
+    {
+      "name": "catalog-source-contracts",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_campaign_records",
+        "tools.tests.test_historical_details",
+        "tools.tests.test_historical_details_delivery",
+        "tools.tests.test_solo_evaluation",
+        "tools.tests.test_solo_proposal_contract",
+        "tools.tests.test_scripted_responses",
+        "tools.tests.test_scripted_response_expansion",
+        "tools.tests.test_shared_response_contract",
+        "tools.tests.test_integrated_response_contract",
+        "tools.tests.test_development_interop_contract",
+        "tools.tests.test_phase_response_contract",
+        "tools.tests.test_player_start_contract",
+        "tools.tests.test_start_context_contract",
+        "tools.tests.test_standalone_catalog",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-source-contracts.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-declared-development",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_development_interop_consumers",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-declared-development.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-declared-app_pinned",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_development_interop_consumers",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-declared-app_pinned.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-declared-integrated",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_integrated_response_consumers",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-declared-integrated.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-declared-phase",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_phase_response_consumers",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-declared-phase.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-published-engine",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_start_context_engine",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-published-engine.log",
+      "original_fixture_consumer_ids_changed": false
+    },
+    {
+      "name": "catalog-original-start-consumers",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tools.tests.test_player_start_consumers",
+        "-v"
+      ],
+      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z/catalog-original-start-consumers.log",
+      "original_fixture_consumer_ids_changed": false
+    }
+  ],
+  "catalog_check_counts": {
+    "source_and_archive": 143,
+    "published_engine_contract": 10,
+    "original_start_consumers": 7,
+    "other_exact_declared_consumers": 47,
+    "all_skipped": 0,
+    "overlap_note": "Published Engine cases are also covered by runtime requirements; browser and integration results are separate evidence, not additive feature counts."
+  },
+  "content_preservation": {
+    "status": "passed",
+    "baseline_joined": "ba551af285a6e1eb0766a9d06f83cbc0e5335b35",
+    "catalog_original_files": 179,
+    "catalog_unchanged_original_files": 176,
+    "catalog_changed_original_files": [
+      "IRGS_Catalog/data/campaign_portfolio.json",
+      "IRGS_Catalog/release.json",
+      "IRGS_Catalog/verify_catalog.py"
+    ],
+    "catalog_new_files": [
+      "IRGS_Catalog/evaluation/player_starts_v1/README.md",
+      "IRGS_Catalog/evaluation/player_starts_v1/actor_inputs/john-1415-existing.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/actor_inputs/new-1415-default.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/actor_inputs/new-1415-quay.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/actor_inputs/rise-r00.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/evaluator_only/criteria.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/evidence.schema.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/manifest.json",
+      "IRGS_Catalog/evaluation/player_starts_v1/requirements/john_1415.json",
+      "IRGS_Catalog/evaluation/start_context_v1/README.md",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-default.json",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-observation.json",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/john-1415-limited.json",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-default.json",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-quay.json",
+      "IRGS_Catalog/evaluation/start_context_v1/actor_inputs/rise-r00.json",
+      "IRGS_Catalog/evaluation/start_context_v1/app_acceptance.json",
+      "IRGS_Catalog/evaluation/start_context_v1/evaluator_only/oracle.json",
+      "IRGS_Catalog/evaluation/start_context_v1/manifest.json",
+      "IRGS_Catalog/evaluation/start_context_v1/source_review.json",
+      "IRGS_Catalog/player_start_evaluation.py",
+      "IRGS_Catalog/start_context_evaluation.py"
+    ],
+    "historical_details_files_unchanged": 37,
+    "original_engine_data_files_unchanged": 50,
+    "new_engine_data_files": [
+      "IRGS_3_3/data/henry_1415_observation.json"
+    ],
+    "original_provenance_files_unchanged": 103,
+    "original_fixture_identities_changed": false,
+    "response_depot": {
+      "system_variants": 750,
+      "editable_drafts": 250,
+      "mixing_recipes": 32
+    },
+    "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "new_copies_of_prior_installations_in_main": false
+  },
+  "comparison": {
+    "engine": {
+      "baseline": "91b20056e7db651966c9e92925313494917f47b1",
+      "selection": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+      "changes": " AGENTS.md                                     |   7 +-\n CHAT_CONTINUATION.md                          | 206 ++++-----\n CONTINUATION_STATUS.md                        |  63 ++-\n COORDINATED_3_4_3.md                          |  10 +\n COORDINATOR_START_REVIEW_2026_10_26.json      | 195 +++++++++\n COORDINATOR_START_REVIEW_2026_10_26.md        |  86 ++++\n COORDINATOR_WORK_ORDER.md                     |  87 ++--\n DEVELOPMENT.md                                |  66 ++-\n DEVELOPMENT_LIST.md                           |  63 ++-\n IRGS_3_3/data/henry_1415_observation.json     |  62 +++\n IRGS_3_3/release.json                         |  19 +-\n IRGS_3_3/runtime/character_background.py      |   6 +-\n IRGS_3_3/runtime/historical_campaigns.py      |   7 +-\n IRGS_3_3/runtime/scene_setup.py               |  56 ++-\n IRGS_3_3/runtime/shared_runtime.py            |   5 +-\n IRGS_3_3/runtime/start_readiness.py           | 192 ++++++++\n IRGS_3_3/runtime/starting_selection.py        |   9 +-\n IRGS_3_3/runtime/test_character_background.py |   4 +-\n IRGS_3_3/runtime/test_start_readiness.py      | 416 ++++++++++++++++++\n IRGS_3_3/runtime/test_starting_selection.py   |   4 +-\n PLAYABILITY_EVIDENCE_3_4_2.json               | 604 ++++++++++++++++++++++++++\n PLAYABILITY_REVIEW_3_4_2.md                   |  97 +++++\n README.md                                     |  13 +-\n ROADMAP.md                                    |  62 ++-\n VERSION.json                                  |   2 +-\n VERSION_POLICY.md                             |  12 +-\n engine/ACCEPTANCE_EXECUTION.md                |   9 +\n engine/SHARED_SYSTEMS_API.md                  |   1 +\n engine/START_ADOPTION_HANDOFF.md              | 169 +++++++\n engine/START_ADOPTION_INSPECTION.json         | 571 ++++++++++++++++++++++++\n engine/START_ADOPTION_VALIDATION.json         | 274 ++++++++++++\n engine/START_DELIVERY_VALIDATION.json         | 165 +++++++\n engine/START_INTERACTION_VALIDATION.json      |  74 ++++\n engine/START_READINESS_API.md                 | 159 +++++++\n engine/START_READINESS_VALIDATION.json        | 130 ++++++\n tools/inspect_start_adoption.py               | 204 +++++++++\n tools/qualify_start_interaction.py            | 180 ++++++++\n tools/qualify_start_readiness.py              |  69 +++\n 38 files changed, 4141 insertions(+), 217 deletions(-)\n",
+      "changed_paths": [
+        "M\tAGENTS.md",
+        "M\tCHAT_CONTINUATION.md",
+        "M\tCONTINUATION_STATUS.md",
+        "A\tCOORDINATED_3_4_3.md",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.json",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.md",
+        "M\tCOORDINATOR_WORK_ORDER.md",
+        "M\tDEVELOPMENT.md",
+        "M\tDEVELOPMENT_LIST.md",
+        "A\tIRGS_3_3/data/henry_1415_observation.json",
+        "M\tIRGS_3_3/release.json",
+        "M\tIRGS_3_3/runtime/character_background.py",
+        "M\tIRGS_3_3/runtime/historical_campaigns.py",
+        "M\tIRGS_3_3/runtime/scene_setup.py",
+        "M\tIRGS_3_3/runtime/shared_runtime.py",
+        "A\tIRGS_3_3/runtime/start_readiness.py",
+        "M\tIRGS_3_3/runtime/starting_selection.py",
+        "M\tIRGS_3_3/runtime/test_character_background.py",
+        "A\tIRGS_3_3/runtime/test_start_readiness.py",
+        "M\tIRGS_3_3/runtime/test_starting_selection.py",
+        "A\tPLAYABILITY_EVIDENCE_3_4_2.json",
+        "A\tPLAYABILITY_REVIEW_3_4_2.md",
+        "M\tREADME.md",
+        "M\tROADMAP.md",
+        "M\tVERSION.json",
+        "M\tVERSION_POLICY.md",
+        "M\tengine/ACCEPTANCE_EXECUTION.md",
+        "M\tengine/SHARED_SYSTEMS_API.md",
+        "A\tengine/START_ADOPTION_HANDOFF.md",
+        "A\tengine/START_ADOPTION_INSPECTION.json",
+        "A\tengine/START_ADOPTION_VALIDATION.json",
+        "A\tengine/START_DELIVERY_VALIDATION.json",
+        "A\tengine/START_INTERACTION_VALIDATION.json",
+        "A\tengine/START_READINESS_API.md",
+        "A\tengine/START_READINESS_VALIDATION.json",
+        "A\ttools/inspect_start_adoption.py",
+        "A\ttools/qualify_start_interaction.py",
+        "A\ttools/qualify_start_readiness.py"
+      ]
+    },
+    "app": {
+      "baseline": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+      "selection": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
+      "changes": " AGENTS.md                                     |   7 +-\n APP_DEVELOPMENT_HANDOFF.md                    |  17 +\n CHAT_CONTINUATION.md                          | 225 +++++----\n COORDINATED_3_4_3.md                          |  10 +\n COORDINATOR_REPORT.md                         | 136 ++++++\n COORDINATOR_START_REVIEW_2026_10_26.json      | 195 ++++++++\n COORDINATOR_START_REVIEW_2026_10_26.md        |  86 ++++\n COORDINATOR_WORK_ORDER.md                     | 133 +++---\n Catalog                                       |   2 +-\n DEVELOPMENT.md                                |  67 ++-\n Engine                                        |   2 +-\n IRGS_Web/app_start_context.py                 |  10 +\n IRGS_Web/assistance.py                        |   4 +-\n IRGS_Web/gameplay_views.py                    |  23 +-\n IRGS_Web/opening_scene.py                     |  17 +-\n IRGS_Web/release.json                         |  29 +-\n IRGS_Web/server.py                            |  21 +-\n IRGS_Web/start_preview.py                     |  65 +++\n IRGS_Web/static/app.js                        | 112 ++++-\n IRGS_Web/static/index.html                    |   6 +-\n IRGS_Web/static/preview.css                   |   5 +\n IRGS_Web/static/preview.js                    |   4 +-\n IRGS_Web/tests/start_context_assertions.py    |  21 +\n IRGS_Web/tests/test_gameplay_ui.js            |  25 +-\n IRGS_Web/tests/test_host.py                   |   4 +-\n IRGS_Web/tests/test_stage1.py                 |  11 +-\n IRGS_Web/tests/test_start_context_adoption.py | 200 ++++++++\n IRGS_Web/tests/test_start_preview.py          | 148 ++++++\n IRGS_Web/tests/test_starting_flow.py          |   5 +-\n PLAYABILITY_EVIDENCE_3_4_2.json               | 604 +++++++++++++++++++++++++\n PLAYABILITY_REVIEW_3_4_2.md                   |  97 ++++\n README.md                                     |   4 +-\n START_CONTEXT_ADOPTION.md                     | 103 +++++\n START_CONTEXT_ADOPTION_VALIDATION.json        | 627 ++++++++++++++++++++++++++\n START_READINESS.md                            |  88 ++++\n START_READINESS_VALIDATION.json               | 530 ++++++++++++++++++++++\n VERSION.json                                  |   2 +-\n VERSION_POLICY.md                             |  12 +-\n tools/qualify_interface_port.js               |   2 +-\n tools/qualify_interface_refinement.js         |   2 +-\n tools/qualify_start_readiness.js              | 136 ++++++\n 41 files changed, 3541 insertions(+), 256 deletions(-)\n",
+      "changed_paths": [
+        "M\tAGENTS.md",
+        "M\tAPP_DEVELOPMENT_HANDOFF.md",
+        "M\tCHAT_CONTINUATION.md",
+        "A\tCOORDINATED_3_4_3.md",
+        "M\tCOORDINATOR_REPORT.md",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.json",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.md",
+        "M\tCOORDINATOR_WORK_ORDER.md",
+        "M\tCatalog",
+        "M\tDEVELOPMENT.md",
+        "M\tEngine",
+        "A\tIRGS_Web/app_start_context.py",
+        "M\tIRGS_Web/assistance.py",
+        "M\tIRGS_Web/gameplay_views.py",
+        "M\tIRGS_Web/opening_scene.py",
+        "M\tIRGS_Web/release.json",
+        "M\tIRGS_Web/server.py",
+        "A\tIRGS_Web/start_preview.py",
+        "M\tIRGS_Web/static/app.js",
+        "M\tIRGS_Web/static/index.html",
+        "M\tIRGS_Web/static/preview.css",
+        "M\tIRGS_Web/static/preview.js",
+        "A\tIRGS_Web/tests/start_context_assertions.py",
+        "M\tIRGS_Web/tests/test_gameplay_ui.js",
+        "M\tIRGS_Web/tests/test_host.py",
+        "M\tIRGS_Web/tests/test_stage1.py",
+        "A\tIRGS_Web/tests/test_start_context_adoption.py",
+        "A\tIRGS_Web/tests/test_start_preview.py",
+        "M\tIRGS_Web/tests/test_starting_flow.py",
+        "A\tPLAYABILITY_EVIDENCE_3_4_2.json",
+        "A\tPLAYABILITY_REVIEW_3_4_2.md",
+        "M\tREADME.md",
+        "A\tSTART_CONTEXT_ADOPTION.md",
+        "A\tSTART_CONTEXT_ADOPTION_VALIDATION.json",
+        "A\tSTART_READINESS.md",
+        "A\tSTART_READINESS_VALIDATION.json",
+        "M\tVERSION.json",
+        "M\tVERSION_POLICY.md",
+        "M\ttools/qualify_interface_port.js",
+        "M\ttools/qualify_interface_refinement.js",
+        "A\ttools/qualify_start_readiness.js"
+      ]
+    },
+    "catalog": {
+      "baseline": "3f921252e50a0976cb88321b6ff8249a5f12466d",
+      "selection": "6f927b00e12a3339861ac353bc38d03c68279662",
+      "changes": " AGENTS.md                                          |   7 +-\n CHAT_CONTINUATION.md                               | 227 +++---\n COORDINATED_3_4_3.md                               |  10 +\n COORDINATOR_REPORT.md                              | 191 ++---\n COORDINATOR_REPORT_PHASE_STARTS_01.md              | 102 +++\n COORDINATOR_REPORT_PLAYER_STARTS_01.md             | 113 +++\n COORDINATOR_START_REVIEW_2026_10_26.json           | 195 ++++++\n COORDINATOR_START_REVIEW_2026_10_26.md             |  86 +++\n COORDINATOR_WORK_ORDER.md                          | 109 ++-\n DEVELOPMENT.md                                     | 122 +++-\n IRGS_Catalog/data/campaign_portfolio.json          |   4 +-\n IRGS_Catalog/evaluation/player_starts_v1/README.md |  89 +++\n .../actor_inputs/john-1415-existing.json           |  16 +\n .../actor_inputs/new-1415-default.json             |  18 +\n .../actor_inputs/new-1415-quay.json                |  25 +\n .../player_starts_v1/actor_inputs/rise-r00.json    |  17 +\n .../player_starts_v1/evaluator_only/criteria.json  |  79 +++\n .../player_starts_v1/evidence.schema.json          |  78 +++\n .../evaluation/player_starts_v1/manifest.json      |  42 ++\n .../player_starts_v1/requirements/john_1415.json   |  68 ++\n IRGS_Catalog/evaluation/start_context_v1/README.md |  87 +++\n .../actor_inputs/henry-1415-default.json           |  16 +\n .../actor_inputs/henry-1415-observation.json       |  19 +\n .../actor_inputs/john-1415-limited.json            |  16 +\n .../actor_inputs/new-1415-default.json             |  18 +\n .../actor_inputs/new-1415-quay.json                |  25 +\n .../start_context_v1/actor_inputs/rise-r00.json    |  17 +\n .../start_context_v1/app_acceptance.json           |  31 +\n .../start_context_v1/evaluator_only/oracle.json    |  52 ++\n .../evaluation/start_context_v1/manifest.json      |  62 ++\n .../evaluation/start_context_v1/source_review.json |  51 ++\n IRGS_Catalog/player_start_evaluation.py            | 170 +++++\n IRGS_Catalog/release.json                          |  26 +-\n IRGS_Catalog/start_context_evaluation.py           | 138 ++++\n IRGS_Catalog/verify_catalog.py                     |  14 +-\n PLAYABILITY_EVIDENCE_3_4_2.json                    | 604 ++++++++++++++++\n PLAYABILITY_REVIEW_3_4_2.md                        |  97 +++\n PLAYER_START_VALIDATION.json                       | 590 ++++++++++++++++\n README.md                                          |  18 +-\n START_CONTEXT_VALIDATION.json                      | 772 +++++++++++++++++++++\n VERSION.json                                       |   2 +-\n VERSION_POLICY.md                                  |  12 +-\n tools/tests/test_player_start_consumers.py         | 267 +++++++\n tools/tests/test_player_start_contract.py          | 128 ++++\n tools/tests/test_standalone_catalog.py             |   5 +-\n tools/tests/test_start_context_contract.py         | 100 +++\n tools/tests/test_start_context_engine.py           | 314 +++++++++\n tools/tests/test_start_context_pending_app.py      | 105 +++\n 48 files changed, 5056 insertions(+), 298 deletions(-)\n",
+      "changed_paths": [
+        "M\tAGENTS.md",
+        "M\tCHAT_CONTINUATION.md",
+        "A\tCOORDINATED_3_4_3.md",
+        "M\tCOORDINATOR_REPORT.md",
+        "A\tCOORDINATOR_REPORT_PHASE_STARTS_01.md",
+        "A\tCOORDINATOR_REPORT_PLAYER_STARTS_01.md",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.json",
+        "A\tCOORDINATOR_START_REVIEW_2026_10_26.md",
+        "M\tCOORDINATOR_WORK_ORDER.md",
+        "M\tDEVELOPMENT.md",
+        "M\tIRGS_Catalog/data/campaign_portfolio.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/README.md",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/actor_inputs/john-1415-existing.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/actor_inputs/new-1415-default.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/actor_inputs/new-1415-quay.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/actor_inputs/rise-r00.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/evaluator_only/criteria.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/evidence.schema.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/manifest.json",
+        "A\tIRGS_Catalog/evaluation/player_starts_v1/requirements/john_1415.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/README.md",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-default.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/henry-1415-observation.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/john-1415-limited.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-default.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/new-1415-quay.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/actor_inputs/rise-r00.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/app_acceptance.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/evaluator_only/oracle.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/manifest.json",
+        "A\tIRGS_Catalog/evaluation/start_context_v1/source_review.json",
+        "A\tIRGS_Catalog/player_start_evaluation.py",
+        "M\tIRGS_Catalog/release.json",
+        "A\tIRGS_Catalog/start_context_evaluation.py",
+        "M\tIRGS_Catalog/verify_catalog.py",
+        "A\tPLAYABILITY_EVIDENCE_3_4_2.json",
+        "A\tPLAYABILITY_REVIEW_3_4_2.md",
+        "A\tPLAYER_START_VALIDATION.json",
+        "M\tREADME.md",
+        "A\tSTART_CONTEXT_VALIDATION.json",
+        "M\tVERSION.json",
+        "M\tVERSION_POLICY.md",
+        "A\ttools/tests/test_player_start_consumers.py",
+        "A\ttools/tests/test_player_start_contract.py",
+        "M\ttools/tests/test_standalone_catalog.py",
+        "A\ttools/tests/test_start_context_contract.py",
+        "A\ttools/tests/test_start_context_engine.py",
+        "A\ttools/tests/test_start_context_pending_app.py"
+      ]
+    }
+  },
+  "integration_patches": [
+    "Engine diagnostic compares native tuples and HTTP arrays using their public JSON representation; real incomplete-App failures remain detected",
+    "App and Engine preflight/discovery module collision repaired in the App owner",
+    "Coordinated 3.4.3 metadata, App footer and exact compatible Engine/Catalog gitlinks",
+    "Separate coordinator consumer executes Catalog six-path acceptance through actual adopted App routes; old fixture guards remain unchanged"
+  ],
+  "engine_adoption_positive": {
     "schema_version": 1,
-    "status": "PASS_EXPLICIT_COMPONENT_SOURCES_WITH_LIMITS",
-    "target_iteration": "IRGS 3.4.1 development",
+    "status": "PROBED_APP_BOUNDARIES_AGREE_WITH_LIMITS",
+    "date": "2026-10-26",
+    "target_iteration": "IRGS 3.4.2 development",
     "sources": {
       "engine": {
         "root": "/workspace/IRGS-Engine",
-        "commit": "733a4358c5eed1f6be9d36033be62bbffd317202",
+        "commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
         "worktree_clean": true
       },
       "app": {
         "root": "/workspace/IRGS-APP-WEB",
-        "commit": "919427cf16cf72574a581d7e6f712e638740a1df",
+        "commit": "16ce5dde4d708698429e824fdcaf57ba9c6db311",
         "worktree_clean": true,
         "committed_pins": {
-          "Engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-          "Catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+          "Engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+          "Catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
         }
       },
       "catalog": {
         "root": "/workspace/IRGS-Catalog",
-        "commit": "069c9e9c6781a83b9068bc222ab3e52d0b454429",
+        "commit": "6f927b00e12a3339861ac353bc38d03c68279662",
         "worktree_clean": true
       }
     },
-    "selection": "Explicit latest-head overrides; committed App pins and original Catalog consumer identities preserved",
-    "tests_run": 5,
-    "passed": 5,
-    "skipped": 0,
-    "test_ids": [
-      "__main__.ComponentInteractionTests.test_app_start_discovery_matches_actual_engine_capabilities_without_mutation",
-      "__main__.ComponentInteractionTests.test_catalog_and_engine_runtime_intake_the_same_exact_depot_and_drafts_submit_nothing",
-      "__main__.ComponentInteractionTests.test_catalog_nine_cases_execute_real_http_outcomes_and_conserved_final_state",
-      "__main__.ComponentInteractionTests.test_missing_text_keeps_real_http_outcome_without_paid_fallback",
-      "__main__.ComponentInteractionTests.test_new_engine_phase_contract_and_existing_app_commands_interoperate_in_both_contexts"
-    ],
-    "evidence": {
-      "imported_modules": {
-        "core_world": "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py",
-        "phase_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/phase_contract.py",
-        "communication_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_contract.py",
-        "communication_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_runtime.py",
-        "shared_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py",
-        "response_depot": "/workspace/IRGS-Engine/IRGS_3_3/runtime/response_depot.py",
-        "offline_responses": "/workspace/IRGS-Engine/IRGS_3_3/runtime/offline_responses.py",
-        "runtime_contracts": "/workspace/IRGS-Engine/IRGS_3_3/runtime/runtime_contracts.py",
-        "starting_selection": "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py",
-        "historical_campaigns": "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py",
-        "settlement_setup": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_setup.py",
-        "solo_provider": "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py",
-        "openai_proposals": "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py",
-        "process_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/process_runtime.py",
-        "scene_actions": "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py",
-        "settlement_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_runtime.py",
-        "r9_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/r9_runtime.py",
-        "server": "/workspace/IRGS-APP-WEB/IRGS_Web/server.py",
-        "process_bridge": "/workspace/IRGS-APP-WEB/IRGS_Web/process_bridge.py",
-        "local_presentation": "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py",
-        "engine_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/engine_paths.py",
-        "catalog_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/catalog_paths.py",
-        "response_depot_compatibility": "/workspace/IRGS-Catalog/IRGS_Catalog/response_depot_compatibility.py",
-        "solo_evaluation": "/workspace/IRGS-Catalog/IRGS_Catalog/solo_evaluation.py",
-        "scripted_responses": "/workspace/IRGS-Catalog/IRGS_Catalog/scripted_responses.py"
-      },
-      "fixture": {
-        "status": "verified",
-        "fixture_id": "irgs-shared-responses-v1",
-        "contexts": 2,
-        "non_rise_contexts": 1,
-        "cases": 9,
-        "actor_oracle_separation": true,
-        "runtime_execution_verified_by_schema": false
-      },
-      "original_fixture_consumers": {
-        "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
-        "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
-        "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
-      },
-      "fixture_identity_preserved": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1",
-      "qualification_script_sha256": "6892279fde6d6546436a02f3f4e4cf375c53144dff84de018b93115a4b359ede",
-      "app_start_adapter_available": true,
-      "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
-      "actual_catalog_cases": [
-        {
-          "case_id": "rise-walk",
-          "status": "completed_successfully",
-          "elapsed_seconds": 300
-        },
-        {
-          "case_id": "rise-inspect",
-          "status": "completed_successfully",
-          "elapsed_seconds": 0
-        },
-        {
-          "case_id": "quay-look",
-          "status": "completed_successfully",
-          "elapsed_seconds": 20
-        },
-        {
-          "case_id": "quay-blocked",
-          "status": "completed_unsuccessfully",
-          "elapsed_seconds": 30
-        },
-        {
-          "case_id": "quay-passage",
-          "status": "completed_successfully",
-          "elapsed_seconds": 45
-        },
-        {
-          "case_id": "quay-desk",
-          "status": "completed_successfully",
-          "elapsed_seconds": 45
-        },
-        {
-          "case_id": "quay-inspect",
-          "status": "completed_successfully",
-          "elapsed_seconds": 20
-        },
-        {
-          "case_id": "quay-deliver",
-          "status": "completed_successfully",
-          "elapsed_seconds": 10
-        },
-        {
-          "case_id": "quay-empty",
-          "status": "completed_unsuccessfully",
-          "elapsed_seconds": 10
-        }
-      ],
-      "phase_interaction": [
-        {
-          "context": "rise",
-          "kind": "work",
-          "worked_seconds": 3600,
-          "pause_resume": true,
-          "replay_once": true,
-          "new_engine_start_existing_app_continuation": true
-        },
-        {
-          "context": "quay",
-          "kind": "observation",
-          "worked_seconds": 20,
-          "pause_resume": true,
-          "replay_once": true,
-          "new_engine_start_existing_app_continuation": true
-        }
-      ]
-    },
-    "provider_calls": 0,
-    "model_tokens": 0,
-    "user_saves_used": false,
-    "source_sha256": {
-      "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
-      "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
-      "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
-      "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
-      "IRGS_3_3/runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
-      "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
-      "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
-      "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
-      "IRGS_3_3/runtime/starting_selection.py": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce",
-      "IRGS_3_3/runtime/historical_campaigns.py": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f",
-      "IRGS_3_3/runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
-      "IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
-      "IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
-      "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
-      "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
-      "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
-      "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
-      "IRGS_Web/server.py": "d7099a60dbde3ba7279f0e7cfa88b90d066374383ce2040faaca141f7d2a04c9",
-      "IRGS_Web/process_bridge.py": "2a1949156526714a8f24eda9779ef0ddca711050da835057f0e4d415e71ffc30",
-      "IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
-      "IRGS_Web/engine_paths.py": "a4186fe5e19d7cb0b3b039e3e92b92f8c7da178ad0916f681e3b4a6955d3ef42",
-      "IRGS_Web/catalog_paths.py": "2952fbf5aeec83e9c662b5f8733153fd91c7a0bbfde453a6caa87d598a72a3a4",
-      "IRGS_Catalog/response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
-      "IRGS_Catalog/solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
-      "IRGS_Catalog/scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313"
-    },
-    "remaining": [
-      "Coordinator exact-set joined/package qualification",
-      "App-owned communication controls and host adapter for the delivered Engine contract",
-      "Selected Rise travel capability adapter remains the next Engine bounded task"
-    ]
-  },
-  "catalog_checks": {
-    "source_contract_cases": 126,
-    "initial_passed": 122,
-    "initial_skips": 4,
-    "explicit_reader_rerun": {
-      "run": 4,
-      "passed": 4,
-      "skipped": 0
-    },
-    "unexecuted_source_cases": 0,
-    "exact_declared_consumer_cases": 47,
-    "declared_roles": [
+    "engine_api_schema": "irgs-start-readiness-1",
+    "engine_product_reference": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+    "http_requests": 33,
+    "contexts": [
       {
-        "role": "development",
-        "status": "passed",
-        "fixture_consumer_identities_changed": false
+        "case": "john-1415-existing",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": "irgs-start-readiness-1",
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
       },
       {
-        "role": "app_pinned",
-        "status": "passed",
-        "fixture_consumer_identities_changed": false
+        "case": "new-1415-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": "irgs-start-readiness-1",
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
       },
       {
-        "role": "integrated",
-        "status": "passed",
-        "fixture_consumer_identities_changed": false
+        "case": "new-1415-quay",
+        "mode": "supported_slice",
+        "preflight_http": 200,
+        "app_reports_engine_contract": "irgs-start-readiness-1",
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
       },
       {
-        "role": "phase",
-        "status": "passed",
-        "fixture_consumer_identities_changed": false
+        "case": "henry-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": "irgs-start-readiness-1",
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "henry-selected",
+        "mode": "supported_slice",
+        "preflight_http": 200,
+        "app_reports_engine_contract": "irgs-start-readiness-1",
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 1,
+        "elapsed_seconds": 20,
+        "reload_and_exact_retry": true
+      },
+      {
+        "case": "rise-r00",
+        "mode": "supported_slice",
+        "backend_actions": 5,
+        "elapsed_seconds": 3900
       }
     ],
-    "original_consumer_identities_preserved": true
-  },
-  "comparison": {
-    "engine": {
-      "baseline_3_4_1": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-      "incoming": "733a4358c5eed1f6be9d36033be62bbffd317202",
-      "commits": [
-        "733a4358c5eed1f6be9d36033be62bbffd317202 Expose received communication capabilities and protect private offers"
-      ],
-      "changed_paths": [
-        "CHAT_CONTINUATION.md",
-        "CONTINUATION_STATUS.md",
-        "DEVELOPMENT.md",
-        "DEVELOPMENT_LIST.md",
-        "IRGS_3_3/release.json",
-        "IRGS_3_3/runtime/communication_contract.py",
-        "IRGS_3_3/runtime/communication_runtime.py",
-        "IRGS_3_3/runtime/offline_responses.py",
-        "IRGS_3_3/runtime/shared_runtime.py",
-        "IRGS_3_3/runtime/test_communication_contract.py",
-        "README.md",
-        "ROADMAP.md",
-        "engine/ACCEPTANCE_EXECUTION.md",
-        "engine/COMMUNICATION_CAPABILITY_API.md",
-        "engine/COMMUNICATION_CAPABILITY_VALIDATION.json",
-        "engine/COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json",
-        "engine/COMPONENT_INTERACTION.md",
-        "engine/CONTINUATION_COMMUNICATION_API.md",
-        "engine/SHARED_SYSTEMS_API.md",
-        "tools/qualify_communication_capabilities.py",
-        "tools/qualify_component_interaction.py"
-      ]
+    "adoption_checks": [
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": "irgs-start-readiness-1",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_owner",
+        "expected": "HYW-JOHN-BEDFORD",
+        "actual": "HYW-JOHN-BEDFORD",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_selected_start",
+        "expected": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-JOHN-BEDFORD",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "declaration-only",
+            "playable_slice": false,
+            "reason_code": "existing_context_not_established",
+            "requires_explicit_submission": true,
+            "status": "declaration_only"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "actual": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-JOHN-BEDFORD",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "declaration-only",
+            "playable_slice": false,
+            "reason_code": "existing_context_not_established",
+            "requires_explicit_submission": true,
+            "status": "declaration_only"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_current_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_capability_scope",
+        "expected": "shared_runtime_execution_adapters",
+        "actual": "shared_runtime_execution_adapters",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_supported_capabilities",
+        "expected": [
+          {
+            "capability_id": "cap:ec57d77651a107dc583933631bbf5d85e3440c8d842082ce61129d40225140a6",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "actual": [
+          {
+            "capability_id": "cap:ec57d77651a107dc583933631bbf5d85e3440c8d842082ce61129d40225140a6",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_received_context",
+        "expected": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "actual": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_reference_is_actor_knowledge",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_templates_reapplied",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": "irgs-start-readiness-1",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_owner",
+        "expected": "PC-847a8eca395a86043cd39921",
+        "actual": "PC-847a8eca395a86043cd39921",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_selected_start",
+        "expected": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "new",
+          "actor_id": "PC-847a8eca395a86043cd39921",
+          "selected_mode": {
+            "mode_id": "declaration-only",
+            "status": "declaration_only",
+            "playable_slice": false,
+            "reason_code": "no_selected_execution_adapter",
+            "freeform_resolution": false,
+            "requires_explicit_submission": true
+          },
+          "presentation_opening": {
+            "status": "presentation_only",
+            "grants_capabilities": false
+          }
+        },
+        "actual": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "new",
+          "actor_id": "PC-847a8eca395a86043cd39921",
+          "selected_mode": {
+            "mode_id": "declaration-only",
+            "status": "declaration_only",
+            "playable_slice": false,
+            "reason_code": "no_selected_execution_adapter",
+            "freeform_resolution": false,
+            "requires_explicit_submission": true
+          },
+          "presentation_opening": {
+            "status": "presentation_only",
+            "grants_capabilities": false
+          }
+        },
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_current_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_capability_scope",
+        "expected": "shared_runtime_execution_adapters",
+        "actual": "shared_runtime_execution_adapters",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_supported_capabilities",
+        "expected": [
+          {
+            "capability_id": "cap:a96324847123a717162c6962841a8e0078eef5d925b23d4c347075d6f042f15e",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "actual": [
+          {
+            "capability_id": "cap:a96324847123a717162c6962841a8e0078eef5d925b23d4c347075d6f042f15e",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_received_context",
+        "expected": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 3,
+            "received_at": 4,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "actual": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 3,
+            "received_at": 4,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_reference_is_actor_knowledge",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_templates_reapplied",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "supported_slice",
+        "actual": "supported_slice",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": "irgs-start-readiness-1",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_owner",
+        "expected": "PC-8f5ec8d8761fd7167db392b6",
+        "actual": "PC-8f5ec8d8761fd7167db392b6",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_selected_start",
+        "expected": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "new",
+          "actor_id": "PC-8f5ec8d8761fd7167db392b6",
+          "selected_mode": {
+            "mode_id": "quay-delivery-v1",
+            "status": "supported_slice",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "freeform_resolution": false,
+            "requires_explicit_submission": true
+          },
+          "presentation_opening": {
+            "status": "presentation_only",
+            "grants_capabilities": false
+          }
+        },
+        "actual": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "new",
+          "actor_id": "PC-8f5ec8d8761fd7167db392b6",
+          "selected_mode": {
+            "mode_id": "quay-delivery-v1",
+            "status": "supported_slice",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "freeform_resolution": false,
+            "requires_explicit_submission": true
+          },
+          "presentation_opening": {
+            "status": "presentation_only",
+            "grants_capabilities": false
+          }
+        },
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_current_mode",
+        "expected": "supported_slice",
+        "actual": "supported_slice",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_capability_scope",
+        "expected": "shared_runtime_execution_adapters",
+        "actual": "shared_runtime_execution_adapters",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_supported_capabilities",
+        "expected": [
+          {
+            "capability_id": "cap:6e609a883d3c0eab6bd3f1c3c878242433cb5fd5e3160639383df809501c4fe6",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:dddde1125d78a78224dbaa448854760ddae14cc417825d4c8187c9564ba7ff3e",
+            "operation_id": "execute_player_scene_action",
+            "title": "Look around the quay",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "Look around the quay for 20 seconds.",
+            "action": {
+              "action_id": "look-quay",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Embarkation quay"
+            }
+          },
+          {
+            "capability_id": "cap:1d02d5f00f68f554597f43d339db190984aedd3d85667e83fd5afc6c771ae47d",
+            "operation_id": "execute_player_scene_action",
+            "title": "Take the covered passage",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.travel",
+            "authored_intention": "Walk from the quay into the covered passage over 45 seconds.",
+            "action": {
+              "action_id": "quay-passage",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "destination_label": "Covered passage"
+            }
+          },
+          {
+            "capability_id": "cap:1215e4d5f4e90afc1ff01b0c632cd36506360d63730471e369c9e6fa940094ca",
+            "operation_id": "execute_player_scene_action",
+            "title": "Try the gate shortcut",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.travel",
+            "authored_intention": "Try the quay gate shortcut to the receiving desk for 30 seconds.",
+            "action": {
+              "action_id": "quay-shortcut",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "destination_label": "Receiving desk"
+            }
+          }
+        ],
+        "actual": [
+          {
+            "capability_id": "cap:6e609a883d3c0eab6bd3f1c3c878242433cb5fd5e3160639383df809501c4fe6",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:dddde1125d78a78224dbaa448854760ddae14cc417825d4c8187c9564ba7ff3e",
+            "operation_id": "execute_player_scene_action",
+            "title": "Look around the quay",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "Look around the quay for 20 seconds.",
+            "action": {
+              "action_id": "look-quay",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Embarkation quay"
+            }
+          },
+          {
+            "capability_id": "cap:1d02d5f00f68f554597f43d339db190984aedd3d85667e83fd5afc6c771ae47d",
+            "operation_id": "execute_player_scene_action",
+            "title": "Take the covered passage",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.travel",
+            "authored_intention": "Walk from the quay into the covered passage over 45 seconds.",
+            "action": {
+              "action_id": "quay-passage",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "destination_label": "Covered passage"
+            }
+          },
+          {
+            "capability_id": "cap:1215e4d5f4e90afc1ff01b0c632cd36506360d63730471e369c9e6fa940094ca",
+            "operation_id": "execute_player_scene_action",
+            "title": "Try the gate shortcut",
+            "source_refs": [
+              "setup:scene-map",
+              "authored-solo-opening:quay-delivery-v1"
+            ],
+            "draft_family": "player.travel",
+            "authored_intention": "Try the quay gate shortcut to the receiving desk for 30 seconds.",
+            "action": {
+              "action_id": "quay-shortcut",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "destination_label": "Receiving desk"
+            }
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_received_context",
+        "expected": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "You have been entrusted with one sealed dispatch for the receiving clerk's tray. From the quay a covered passage leads to the receiving desk. A quay gate may provide a shortcut, although you have not checked whether it is passable. You may return by the covered passage. These are local fictional places and arrangements, not a historical street plan.",
+            "status": "established",
+            "source_ref": "authored-solo-opening:quay-delivery-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Authored opening placement: Embarkation quay.",
+            "status": "established",
+            "source_ref": "authored-solo-opening:quay-delivery-v1",
+            "recorded_at": 8,
+            "received_at": 9,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 3,
+            "received_at": 4,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "actual": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "You have been entrusted with one sealed dispatch for the receiving clerk's tray. From the quay a covered passage leads to the receiving desk. A quay gate may provide a shortcut, although you have not checked whether it is passable. You may return by the covered passage. These are local fictional places and arrangements, not a historical street plan.",
+            "status": "established",
+            "source_ref": "authored-solo-opening:quay-delivery-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Authored opening placement: Embarkation quay.",
+            "status": "established",
+            "source_ref": "authored-solo-opening:quay-delivery-v1",
+            "recorded_at": 8,
+            "received_at": 9,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 3,
+            "received_at": 4,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_reference_is_actor_knowledge",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_templates_reapplied",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": "irgs-start-readiness-1",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_owner",
+        "expected": "HYW-HENRY-V",
+        "actual": "HYW-HENRY-V",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_selected_start",
+        "expected": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "declaration-only",
+            "playable_slice": false,
+            "reason_code": "existing_context_not_established",
+            "requires_explicit_submission": true,
+            "status": "declaration_only"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "actual": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "declaration-only",
+            "playable_slice": false,
+            "reason_code": "existing_context_not_established",
+            "requires_explicit_submission": true,
+            "status": "declaration_only"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_current_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_capability_scope",
+        "expected": "shared_runtime_execution_adapters",
+        "actual": "shared_runtime_execution_adapters",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_supported_capabilities",
+        "expected": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "actual": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_received_context",
+        "expected": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "actual": [
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_reference_is_actor_knowledge",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_templates_reapplied",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "supported_slice",
+        "actual": "supported_slice",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": "irgs-start-readiness-1",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_owner",
+        "expected": "HYW-HENRY-V",
+        "actual": "HYW-HENRY-V",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_selected_start",
+        "expected": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "henry-1415-embarkation-v1",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "requires_explicit_submission": true,
+            "status": "supported_slice"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "actual": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "henry-1415-embarkation-v1",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "requires_explicit_submission": true,
+            "status": "supported_slice"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_current_mode",
+        "expected": "supported_slice",
+        "actual": "supported_slice",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_capability_scope",
+        "expected": "shared_runtime_execution_adapters",
+        "actual": "shared_runtime_execution_adapters",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_supported_capabilities",
+        "expected": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:9271f963632d96f6bcbb97cfc5a07ded0986dbd3b0ac4803faabe12a00d31e2f",
+            "operation_id": "execute_player_scene_action",
+            "title": "Observe the embarkation setting",
+            "source_refs": [
+              "setup:scene-map",
+              "engine-start:henry-1415-embarkation-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "I observe the embarkation setting without issuing any order.",
+            "action": {
+              "action_id": "observe-embarkation",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Portchester/Solent embarkation area"
+            }
+          }
+        ],
+        "actual": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:9271f963632d96f6bcbb97cfc5a07ded0986dbd3b0ac4803faabe12a00d31e2f",
+            "operation_id": "execute_player_scene_action",
+            "title": "Observe the embarkation setting",
+            "source_refs": [
+              "setup:scene-map",
+              "engine-start:henry-1415-embarkation-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "I observe the embarkation setting without issuing any order.",
+            "action": {
+              "action_id": "observe-embarkation",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Portchester/Solent embarkation area"
+            }
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_received_context",
+        "expected": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "Your selected starting setting is the broad Portchester/Solent embarkation area before departure. Your exact place within the castle, harbour, barge or ship is not established. You may attempt the listed local observation. This supplies no military command or access to private reports.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 4,
+            "received_at": 5,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Sourced broad opening placement: Portchester/Solent embarkation area.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "actual": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "Your selected starting setting is the broad Portchester/Solent embarkation area before departure. Your exact place within the castle, harbour, barge or ship is not established. You may attempt the listed local observation. This supplies no military command or access to private reports.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 4,
+            "received_at": 5,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Sourced broad opening placement: Portchester/Solent embarkation area.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_reference_is_actor_knowledge",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_templates_reapplied",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "scene_scope",
+        "expected": "sourced_setting_with_selected_simulation_observation_rule",
+        "actual": "sourced_setting_with_selected_simulation_observation_rule",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "legacy_courier_prompt",
+        "expected": false,
+        "actual": false,
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "committed_result_elapsed_axis",
+        "expected": "selected-historical-observation-seconds",
+        "actual": "selected-historical-observation-seconds",
+        "passed": true
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "received_selected_elapsed_seconds",
+        "expected": 20,
+        "actual": 20,
+        "passed": true
+      }
+    ],
+    "failed_adoption_checks": 0,
+    "blocking_app_findings": [],
+    "catalog_baseline": {
+      "fixture_id": "irgs-player-starts-v1",
+      "consumers": {
+        "engine_commit": "91b20056e7db651966c9e92925313494917f47b1",
+        "app_commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+        "app_catalog_pin": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+      },
+      "manifest_sha256": "a230fa6e78c8be97d24ec4d7e6fbf01308e1663898c612b86f6903a24d56dbee",
+      "original_selection_changed": false,
+      "new_contract_consumer_qualified_by_this_probe": false
     },
-    "app": {
-      "baseline_3_4_1": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
-      "incoming": "919427cf16cf72574a581d7e6f712e638740a1df",
-      "commits": [
-        "919427cf16cf72574a581d7e6f712e638740a1df Refine Emergent reading controls and drawer keyboard focus",
-        "1a0bc65dd25a18dfd075b2d603d0351c2d035001 Hand off Emergent interface continuation to App development",
-        "7a249dd9e8f0170a9419c97286d8d9fc46a6ae2e Port Emergent interface onto canonical IRGS host"
-      ],
-      "changed_paths": [
-        "APP_DEVELOPMENT_HANDOFF.md",
-        "CHAT_CONTINUATION.md",
-        "COORDINATOR_REPORT.md",
-        "COORDINATOR_WORK_ORDER.md",
-        "DEVELOPMENT.md",
-        "EMERGENT_INTERFACE_PORT.md",
-        "EMERGENT_INTERFACE_VALIDATION.json",
-        "INTERFACE_REFINEMENT.md",
-        "INTERFACE_REFINEMENT_VALIDATION.json",
-        "IRGS_Web/EMERGENT_INTERFACE_SOURCE.json",
-        "IRGS_Web/INTERFACE_ASSETS.json",
-        "IRGS_Web/README.md",
-        "IRGS_Web/licenses/fraunces-OFL.txt",
-        "IRGS_Web/licenses/ibm-plex-mono-OFL.txt",
-        "IRGS_Web/licenses/im-fell-english-OFL.txt",
-        "IRGS_Web/licenses/im-fell-english-sc-OFL.txt",
-        "IRGS_Web/licenses/instrument-sans-OFL.txt",
-        "IRGS_Web/licenses/newsreader-OFL.txt",
-        "IRGS_Web/release.json",
-        "IRGS_Web/server.py",
-        "IRGS_Web/static/app.js",
-        "IRGS_Web/static/catalogue.js",
-        "IRGS_Web/static/fonts.css",
-        "IRGS_Web/static/fraunces-latin.woff2",
-        "IRGS_Web/static/historical-landscape.jpg",
-        "IRGS_Web/static/ibm-plex-mono-latin.woff2",
-        "IRGS_Web/static/im-fell-english-latin.woff2",
-        "IRGS_Web/static/im-fell-english-sc-latin.woff2",
-        "IRGS_Web/static/index.html",
-        "IRGS_Web/static/instrument-sans-latin.woff2",
-        "IRGS_Web/static/newsreader-latin.woff2",
-        "IRGS_Web/static/preview.css",
-        "IRGS_Web/static/preview.js",
-        "IRGS_Web/tests/test_gameplay_ui.js",
-        "tools/qualify_interface_port.js",
-        "tools/qualify_interface_refinement.js"
-      ]
+    "isolation_and_limits": {
+      "user_saves_used": false,
+      "app_or_catalog_patched": false,
+      "pins_changed": false,
+      "world_templates_reseeded_on_read": false,
+      "provider_calls": 0,
+      "browser_or_package_approval": false
     },
-    "catalog": {
-      "baseline_3_4_1": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
-      "incoming": "069c9e9c6781a83b9068bc222ab3e52d0b454429",
-      "commits": [
-        "069c9e9c6781a83b9068bc222ab3e52d0b454429 Qualify Catalog responses through public process starts"
-      ],
-      "changed_paths": [
-        "CHAT_CONTINUATION.md",
-        "COORDINATOR_REPORT.md",
-        "COORDINATOR_REPORT_INTEROP_01.md",
-        "COORDINATOR_WORK_ORDER.md",
-        "DEVELOPMENT.md",
-        "IRGS_Catalog/evaluation/phase_responses_v1/README.md",
-        "IRGS_Catalog/evaluation/phase_responses_v1/compatibility.json",
-        "IRGS_Catalog/phase_response_compatibility.py",
-        "IRGS_Catalog/release.json",
-        "IRGS_Catalog/verify_catalog.py",
-        "PHASE_RESPONSE_VALIDATION.json",
-        "README.md",
-        "tools/tests/test_phase_response_consumers.py",
-        "tools/tests/test_phase_response_contract.py",
-        "tools/tests/test_standalone_catalog.py"
-      ]
-    }
+    "source_sha256": {
+      "/workspace/IRGS-APP-WEB/IRGS_Web/server.py": "e314ea1ada8533dc7dd1f44110f3c3a228e7768c6d3cccc451ae6a7aa9505ef0",
+      "/workspace/IRGS-APP-WEB/IRGS_Web/gameplay_views.py": "26adaed6b9988f1850679648872d728a74d3b84f1941a1920f6fc78fddfde9b3",
+      "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py": "d9f57d60bef37cd68a1610fab80b19ebb1afbb746ed650be60ed118bc77794e6",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py": "119bf255b94667dfd4cbe86e07409351425aede5ccfb93fdd597bbd1f7794de5",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_setup.py": "230aec5b2510ae0fbdd6543690ef07f1b846379db9b568fa501d1d4411fad92d",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py": "d28f9470bf68ea82ce27a7f52ebce98b0b88f1185d55d380dc59d0848406511a",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+      "/workspace/IRGS-Catalog/IRGS_Catalog/player_start_evaluation.py": "42b1740f10d2873150ad93e92aea8d0a1d2c4369f25cdee1ae6186aefb549165",
+      "/workspace/IRGS-APP-WEB/IRGS_Web/start_preview.py": "3597764cc3f07a98a59c40d10ea8288af9b4ae6890a3728705fbf0ea2e50425e"
+    },
+    "script_sha256": "f08ae75f2861384fdeaf9b02751985f02da251446434975504b0e9fab61c419e",
+    "henry_engine_call_example": {
+      "character_selection": {
+        "kind": "existing",
+        "actor_id": "HYW-HENRY-V",
+        "opening_id": "henry-1415-embarkation-v1"
+      },
+      "precreation_review": {
+        "schema_version": "irgs-start-readiness-1",
+        "character_kind": "existing",
+        "actor_id": "HYW-HENRY-V",
+        "reference_status": "verified_dated_reference",
+        "reference_is_actor_knowledge": false,
+        "character_eligible": true,
+        "selected_mode": {
+          "mode_id": "henry-1415-embarkation-v1",
+          "status": "supported_slice",
+          "playable_slice": true,
+          "reason_code": "selected_bounded_handler",
+          "freeform_resolution": false,
+          "requires_explicit_submission": true
+        },
+        "presentation_opening": {
+          "status": "presentation_only",
+          "grants_capabilities": false
+        },
+        "playable_context": {
+          "status": "selected",
+          "reason_code": "selected_bounded_handler"
+        },
+        "known_time_at_creation": {
+          "status": "selected_reference_only",
+          "label": "11 August 1415 \u00b7 before departure",
+          "civil": {
+            "date": "1415-08-11",
+            "calendar": "julian",
+            "precision": "day",
+            "time": null,
+            "ordinal": 2238109,
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "elapsed_calendar_binding": false
+          },
+          "opening_hour": null,
+          "elapsed_calendar_binding": false
+        }
+      },
+      "actor_start_context": {
+        "schema_version": "irgs-start-readiness-1",
+        "actor_id": "HYW-HENRY-V",
+        "selected_start": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "henry-1415-embarkation-v1",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "requires_explicit_submission": true,
+            "status": "supported_slice"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "current_mode": "supported_slice",
+        "capability_scope": "shared_runtime_execution_adapters",
+        "supported_capabilities": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:9271f963632d96f6bcbb97cfc5a07ded0986dbd3b0ac4803faabe12a00d31e2f",
+            "operation_id": "execute_player_scene_action",
+            "title": "Observe the embarkation setting",
+            "source_refs": [
+              "setup:scene-map",
+              "engine-start:henry-1415-embarkation-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "I observe the embarkation setting without issuing any order.",
+            "action": {
+              "action_id": "observe-embarkation",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Portchester/Solent embarkation area"
+            }
+          }
+        ],
+        "received_context": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "Your selected starting setting is the broad Portchester/Solent embarkation area before departure. Your exact place within the castle, harbour, barge or ship is not established. You may attempt the listed local observation. This supplies no military command or access to private reports.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 4,
+            "received_at": 5,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Sourced broad opening placement: Portchester/Solent embarkation area.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "civil_time": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "reference_is_actor_knowledge": false,
+        "templates_reapplied": false,
+        "render_usage": {
+          "provider_calls": 0,
+          "model_tokens": 0
+        },
+        "snapshot_id": "start:9b180d86a404be19a0e2a0fe69d28e6096295e49d34f3d54aeafa98decf5bec6"
+      },
+      "engine_receipt": {
+        "schema_version": "irgs-shared-runtime-1",
+        "actor_id": "HYW-HENRY-V",
+        "event_id": "gameplay:adoption-observe",
+        "operation_id": "execute_player_scene_action",
+        "outcome_status": "completed_successfully",
+        "exact_text": "You have observed the immediate embarkation setting.\nShipping is gathered in this embarkation setting. This observation establishes no vessel count, loading state, troop readiness, private destination or command receipt.",
+        "source_refs": [
+          "explicit-player-request:1108408b84cbd2c79ef18a5b4644492a:adoption-observe"
+        ],
+        "committed_at": 9,
+        "time_axis": "causal_sequence",
+        "elapsed_seconds": 20,
+        "presentation": {
+          "text": "You have observed the immediate embarkation setting.\nShipping is gathered in this embarkation setting. This observation establishes no vessel count, loading state, troop readiness, private destination or command receipt. The action\u2019s elapsed span totals 20 seconds.",
+          "mode": "scripted",
+          "format": "plain_text",
+          "library_id": "irgs-response-depot-v1",
+          "library_version": "1.0.0",
+          "variants": {
+            "receipt.exact": 0,
+            "elapsed.action": 5
+          },
+          "render_usage": {
+            "provider_calls": 0,
+            "model_tokens": 0
+          }
+        }
+      },
+      "selected_core_elapsed_axis": "selected-historical-observation-seconds"
+    },
+    "observed_app_action_result": {
+      "status": "completed_successfully",
+      "elapsed_time": {
+        "axis": "selected-historical-observation-seconds",
+        "duration_seconds": 20,
+        "total_seconds": 20
+      },
+      "summary": "You have observed the immediate embarkation setting."
+    },
+    "remaining": [
+      "App owns START-INT-002/003/004 adoption and its exact pin update START-INT-005",
+      "Catalog owns separately versioned new-contract selection/consumers START-INT-006",
+      "This diagnostic is not the Catalog consumer runner or the coordinator all-three gate",
+      "Travel expansion follows actual adoption; no new scenario or runtime rule is introduced"
+    ]
   },
-  "content_preservation": {
+  "engine_adoption_negative": {
+    "schema_version": 1,
+    "status": "BLOCKED_CONSUMER_ADOPTION",
+    "date": "2026-10-26",
+    "target_iteration": "IRGS 3.4.2 development",
+    "sources": {
+      "engine": {
+        "root": "/workspace/IRGS-Engine",
+        "commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+        "worktree_clean": true
+      },
+      "app": {
+        "root": "/tmp/irgs343-pending-app",
+        "commit": "d8e68848454ac7be68ce87fede6d04cc57bda86a",
+        "worktree_clean": true,
+        "committed_pins": {
+          "Engine": "91b20056e7db651966c9e92925313494917f47b1",
+          "Catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+        }
+      },
+      "catalog": {
+        "root": "/workspace/IRGS-Catalog",
+        "commit": "6f927b00e12a3339861ac353bc38d03c68279662",
+        "worktree_clean": true
+      }
+    },
+    "engine_api_schema": "irgs-start-readiness-1",
+    "engine_product_reference": "cc450a6f00a249d2169cdacdfc9c4b1e03f67cc8",
+    "http_requests": 33,
+    "contexts": [
+      {
+        "case": "john-1415-existing",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "new-1415-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "new-1415-quay",
+        "mode": "supported_slice",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "henry-default",
+        "mode": "declaration_only",
+        "preflight_http": 200,
+        "app_reports_engine_contract": false,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 0,
+        "elapsed_seconds": 0
+      },
+      {
+        "case": "henry-selected",
+        "mode": "supported_slice",
+        "preflight_http": 400,
+        "app_reports_engine_contract": null,
+        "backend_creation": true,
+        "engine_received_civil": "1415-08-11",
+        "backend_observations": 1,
+        "elapsed_seconds": 20,
+        "reload_and_exact_retry": true
+      },
+      {
+        "case": "rise-r00",
+        "mode": "supported_slice",
+        "backend_actions": 5,
+        "elapsed_seconds": 3900
+      }
+    ],
+    "adoption_checks": [
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "john-1415-existing",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "new-1415-default",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "supported_slice",
+        "actual": "supported_slice",
+        "passed": true
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "new-1415-quay",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 200,
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-002",
+        "check": "preflight_mode",
+        "expected": "declaration_only",
+        "actual": "declaration_only",
+        "passed": true
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "henry-default",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-002",
+        "check": "preflight_http",
+        "expected": 200,
+        "actual": 400,
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "actor_start_schema",
+        "expected": "irgs-start-readiness-1",
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "received_initial_civil",
+        "expected": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "actual": null,
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "scene_scope",
+        "expected": "sourced_setting_with_selected_simulation_observation_rule",
+        "actual": "authored_fiction",
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "legacy_courier_prompt",
+        "expected": false,
+        "actual": true,
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "committed_result_elapsed_axis",
+        "expected": "selected-historical-observation-seconds",
+        "actual": "authored-opening-seconds",
+        "passed": false
+      },
+      {
+        "case": "henry-selected",
+        "finding": "START-INT-003",
+        "check": "received_selected_elapsed_seconds",
+        "expected": 20,
+        "actual": null,
+        "passed": false
+      }
+    ],
+    "failed_adoption_checks": 15,
+    "blocking_app_findings": [
+      "START-INT-002",
+      "START-INT-003"
+    ],
+    "catalog_baseline": {
+      "fixture_id": "irgs-player-starts-v1",
+      "consumers": {
+        "engine_commit": "91b20056e7db651966c9e92925313494917f47b1",
+        "app_commit": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+        "app_catalog_pin": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+      },
+      "manifest_sha256": "a230fa6e78c8be97d24ec4d7e6fbf01308e1663898c612b86f6903a24d56dbee",
+      "original_selection_changed": false,
+      "new_contract_consumer_qualified_by_this_probe": false
+    },
+    "isolation_and_limits": {
+      "user_saves_used": false,
+      "app_or_catalog_patched": false,
+      "pins_changed": false,
+      "world_templates_reseeded_on_read": false,
+      "provider_calls": 0,
+      "browser_or_package_approval": false
+    },
+    "source_sha256": {
+      "/tmp/irgs343-pending-app/IRGS_Web/server.py": "8e18baac4a946602b1db36b2def1906b391956040029136add138a3ce1a11fdb",
+      "/tmp/irgs343-pending-app/IRGS_Web/gameplay_views.py": "386da5fbc29ec4c49efe8ba2421eddf19074dd69de54b35afb8de190807ff783",
+      "/tmp/irgs343-pending-app/IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py": "d9f57d60bef37cd68a1610fab80b19ebb1afbb746ed650be60ed118bc77794e6",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/start_readiness.py": "027aa3708d458b11869497cf400273aad66acc8288fd848afd2fd95c863c37f4",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py": "119bf255b94667dfd4cbe86e07409351425aede5ccfb93fdd597bbd1f7794de5",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_setup.py": "230aec5b2510ae0fbdd6543690ef07f1b846379db9b568fa501d1d4411fad92d",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py": "d28f9470bf68ea82ce27a7f52ebce98b0b88f1185d55d380dc59d0848406511a",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+      "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+      "/workspace/IRGS-Catalog/IRGS_Catalog/player_start_evaluation.py": "42b1740f10d2873150ad93e92aea8d0a1d2c4369f25cdee1ae6186aefb549165",
+      "/tmp/irgs343-pending-app/IRGS_Web/start_preview.py": "f07b53a88d0c17bdaf812a5d141d59ff733d1bf932fd3c5d237ea78078282c49"
+    },
+    "script_sha256": "f08ae75f2861384fdeaf9b02751985f02da251446434975504b0e9fab61c419e",
+    "henry_engine_call_example": {
+      "character_selection": {
+        "kind": "existing",
+        "actor_id": "HYW-HENRY-V",
+        "opening_id": "henry-1415-embarkation-v1"
+      },
+      "precreation_review": {
+        "schema_version": "irgs-start-readiness-1",
+        "character_kind": "existing",
+        "actor_id": "HYW-HENRY-V",
+        "reference_status": "verified_dated_reference",
+        "reference_is_actor_knowledge": false,
+        "character_eligible": true,
+        "selected_mode": {
+          "mode_id": "henry-1415-embarkation-v1",
+          "status": "supported_slice",
+          "playable_slice": true,
+          "reason_code": "selected_bounded_handler",
+          "freeform_resolution": false,
+          "requires_explicit_submission": true
+        },
+        "presentation_opening": {
+          "status": "presentation_only",
+          "grants_capabilities": false
+        },
+        "playable_context": {
+          "status": "selected",
+          "reason_code": "selected_bounded_handler"
+        },
+        "known_time_at_creation": {
+          "status": "selected_reference_only",
+          "label": "11 August 1415 \u00b7 before departure",
+          "civil": {
+            "date": "1415-08-11",
+            "calendar": "julian",
+            "precision": "day",
+            "time": null,
+            "ordinal": 2238109,
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "elapsed_calendar_binding": false
+          },
+          "opening_hour": null,
+          "elapsed_calendar_binding": false
+        }
+      },
+      "actor_start_context": {
+        "schema_version": "irgs-start-readiness-1",
+        "actor_id": "HYW-HENRY-V",
+        "selected_start": {
+          "schema_version": "irgs-start-readiness-1",
+          "character_kind": "existing",
+          "actor_id": "HYW-HENRY-V",
+          "selected_mode": {
+            "freeform_resolution": false,
+            "mode_id": "henry-1415-embarkation-v1",
+            "playable_slice": true,
+            "reason_code": "selected_bounded_handler",
+            "requires_explicit_submission": true,
+            "status": "supported_slice"
+          },
+          "presentation_opening": {
+            "grants_capabilities": false,
+            "status": "presentation_only"
+          }
+        },
+        "current_mode": "supported_slice",
+        "capability_scope": "shared_runtime_execution_adapters",
+        "supported_capabilities": [
+          {
+            "capability_id": "cap:98ec015b27fd3733c2bd6d4d83aa0b71719a9dc4cfd64f09eb6158b2a885516b",
+            "operation_id": "record_player_action",
+            "title": "Record an unresolved intention",
+            "source_refs": [
+              "core:explicit-player-declaration"
+            ],
+            "draft_family": "",
+            "authored_intention": "",
+            "action": {},
+            "draft_values": {}
+          },
+          {
+            "capability_id": "cap:9271f963632d96f6bcbb97cfc5a07ded0986dbd3b0ac4803faabe12a00d31e2f",
+            "operation_id": "execute_player_scene_action",
+            "title": "Observe the embarkation setting",
+            "source_refs": [
+              "setup:scene-map",
+              "engine-start:henry-1415-embarkation-v1"
+            ],
+            "draft_family": "player.observe",
+            "authored_intention": "I observe the embarkation setting without issuing any order.",
+            "action": {
+              "action_id": "observe-embarkation",
+              "kind": "scene_action"
+            },
+            "draft_values": {
+              "target_label": "Portchester/Solent embarkation area"
+            }
+          }
+        ],
+        "received_context": [
+          {
+            "record_id": "setup:scene-map",
+            "text": "Your selected starting setting is the broad Portchester/Solent embarkation area before departure. Your exact place within the castle, harbour, barge or ship is not established. You may attempt the listed local observation. This supplies no military command or access to private reports.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 4,
+            "received_at": 5,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:scene-location",
+            "text": "Sourced broad opening placement: Portchester/Solent embarkation area.",
+            "status": "established",
+            "source_ref": "engine-start:henry-1415-embarkation-v1",
+            "recorded_at": 6,
+            "received_at": 7,
+            "time_axis": "causal_sequence"
+          },
+          {
+            "record_id": "setup:civil-date",
+            "text": "{\"calendar\": \"julian\", \"date\": \"1415-08-11\", \"elapsed_calendar_binding\": false, \"kind\": \"initial_civil_date\", \"ordinal\": 2238109, \"precision\": \"day\", \"schema_version\": 1, \"source_ref\": \"historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening\", \"time\": null}",
+            "status": "established",
+            "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+            "recorded_at": 2,
+            "received_at": 3,
+            "time_axis": "causal_sequence"
+          }
+        ],
+        "civil_time": {
+          "date": "1415-08-11",
+          "calendar": "julian",
+          "precision": "day",
+          "time": null,
+          "ordinal": 2238109,
+          "source_ref": "historical-opening:eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34:opening",
+          "elapsed_calendar_binding": false,
+          "record_id": "setup:civil-date",
+          "status": "received_initial_checkpoint",
+          "current_calendar_binding": false,
+          "opening_hour": null
+        },
+        "reference_is_actor_knowledge": false,
+        "templates_reapplied": false,
+        "render_usage": {
+          "provider_calls": 0,
+          "model_tokens": 0
+        },
+        "snapshot_id": "start:9b180d86a404be19a0e2a0fe69d28e6096295e49d34f3d54aeafa98decf5bec6"
+      },
+      "engine_receipt": {
+        "schema_version": "irgs-shared-runtime-1",
+        "actor_id": "HYW-HENRY-V",
+        "event_id": "gameplay:adoption-observe",
+        "operation_id": "execute_player_scene_action",
+        "outcome_status": "completed_successfully",
+        "exact_text": "You have observed the immediate embarkation setting.\nShipping is gathered in this embarkation setting. This observation establishes no vessel count, loading state, troop readiness, private destination or command receipt.",
+        "source_refs": [
+          "explicit-player-request:1108408b84cbd2c79ef18a5b4644492a:adoption-observe"
+        ],
+        "committed_at": 9,
+        "time_axis": "causal_sequence",
+        "elapsed_seconds": 20,
+        "presentation": {
+          "text": "You have observed the immediate embarkation setting.\nShipping is gathered in this embarkation setting. This observation establishes no vessel count, loading state, troop readiness, private destination or command receipt. The action\u2019s elapsed span totals 20 seconds.",
+          "mode": "scripted",
+          "format": "plain_text",
+          "library_id": "irgs-response-depot-v1",
+          "library_version": "1.0.0",
+          "variants": {
+            "receipt.exact": 0,
+            "elapsed.action": 5
+          },
+          "render_usage": {
+            "provider_calls": 0,
+            "model_tokens": 0
+          }
+        }
+      },
+      "selected_core_elapsed_axis": "selected-historical-observation-seconds"
+    },
+    "observed_app_action_result": {
+      "status": "completed_successfully",
+      "elapsed_time": {
+        "axis": "authored-opening-seconds",
+        "duration_seconds": 20,
+        "total_seconds": 20
+      },
+      "summary": "You have observed the immediate embarkation setting."
+    },
+    "remaining": [
+      "App owns START-INT-002/003/004 adoption and its exact pin update START-INT-005",
+      "Catalog owns separately versioned new-contract selection/consumers START-INT-006",
+      "This diagnostic is not the Catalog consumer runner or the coordinator all-three gate",
+      "Travel expansion follows actual adoption; no new scenario or runtime rule is introduced"
+    ]
+  },
+  "checker_fix_equivalence": {
     "status": "passed",
-    "catalog_baseline": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
-    "unchanged_original_catalog_files": 174,
-    "intentional_existing_catalog_code_or_manifest_changes": [
-      "IRGS_Catalog/release.json",
-      "IRGS_Catalog/verify_catalog.py"
+    "prior_candidate": "5b1a5e7ab20d749c46557313879ee052951bf6f6",
+    "final_candidate": "1b0551633d509d11d6fdb03283890dfb5b0148bd",
+    "unchanged_paths": [
+      "IRGS_3_3",
+      "engine",
+      "provenance",
+      "IRGS_Web",
+      "Start-IRGS.cmd"
     ],
-    "new_catalog_files": [
-      "IRGS_Catalog/evaluation/phase_responses_v1/README.md",
-      "IRGS_Catalog/evaluation/phase_responses_v1/compatibility.json",
-      "IRGS_Catalog/phase_response_compatibility.py"
-    ],
-    "unchanged_engine_data_files": 50,
-    "response_depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
-    "original_archive_parts_preserved": 32,
-    "original_archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
-    "comparison_method": "Git blob equality for every baseline file; selected source integrity and archive readers separately executed."
+    "changed_scope": "JSON normalization in the Engine diagnostic tool and exact Engine/App dependency pointers",
+    "five_browser_results_apply_to_identical_engine_and_app_bytes": true,
+    "fresh_final_full_regression": "joined-qa.json",
+    "positive_probe": "current-adoption-probe.json",
+    "negative_probe": "negative-adoption-probe.json"
   },
-  "integration_patches": [
-    "Align committed App Engine/Catalog dependency pins to the exact reviewed selections",
-    "Align coordinated edition metadata and visible App footer to 3.4.2",
-    "Include owner interface and communication qualification tools in the unified inventory"
-  ],
-  "response_depot": {
-    "system_variants": 750,
-    "editable_drafts": 250,
-    "recipes": 32
-  },
-  "remaining": [
-    "App authenticated explicit durable communication/source/offer controls and then matching Catalog consumers",
-    "Protected operator/launcher configuration; conditional live inference and actual model-quality evaluation",
-    "Selected travel capabilities and further native adapters without new unselected rules",
-    "General freeform/combat, NPC dialogue, institutions and wider DEV/C2 completion",
-    "Native Windows and wider hosting/device qualification"
-  ],
-  "all_branches_certified": false,
   "operation_summary": {
     "operation_spellings": 87,
     "backend_operation_pairs": 172,
@@ -1175,8 +3389,18 @@
     "observations_outside_declared_backend_pairs": 0,
     "all_branches_certified": false
   },
-  "live_calls": 0,
+  "all_branches_certified": false,
+  "remaining": [
+    "Engine selected travel capabilities over existing native processes",
+    "App authenticated durable communication/source/offer controls, then Catalog consumers",
+    "Protected operator configuration and non-secret actual build identity",
+    "Selected supported-intent mapping; general freeform/combat, NPC and institutional completion remain open",
+    "Native Windows and conditional live-model quality qualification; wider DEV/C2"
+  ],
   "user_saves_opened": false,
-  "package_qualification": "Required on final committed tree before publishing; external release/qualification.json records the exact source commit and ZIP digest.",
-  "artifacts_directory": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z"
+  "live_calls": 0,
+  "existing_campaigns_migrated": false,
+  "retention": "One canonical current installation and newly qualified distributable; no old extracted versions/build bundles are added. Original source archives, accurately dated evidence and Git history remain preserved.",
+  "package_qualification": "Final committed ZIP/extraction/browser qualification is required before the single joined publication; its external record identifies the exact committed source and ZIP digest.",
+  "artifacts_directory": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T195551Z"
 }

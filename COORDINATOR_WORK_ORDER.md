@@ -1,35 +1,24 @@
 # Coordinator work order — shared IRGS systems
 
-## Current 3.4.2 coordination
+Current edition: **3.4.3**; previous release: **3.3.3**. Follow COORDINATION.md,
+CHAT_CONTINUATION.md and the exact review in
+provenance/qa/start_readiness_3_4_3_review.json. The start-context increment is
+qualified within its bounded scope. Historical source and validation remain dated.
 
-The three updated components are reviewed together. Follow COORDINATION.md and
-CHANGES_3_4_2.md. The Engine communication/source contract is delivered; prioritize
-its durable App bridge and later Catalog evaluation while preserving the refined
-interface, qualified phases, original records and campaign-wide scope.
+- Engine: selected travel capability discovery/continuation using actual native
+  locations, duration, actor/goods commitments, arrival receipts and recovery.
+- App: authenticated durable communication/source/offer prepare/review/accept
+  controls, correct audience filtering and original-result retry/restore.
+- Catalog: separate exact consumers after that App bridge; preserve all current
+  starting contexts, original fixtures, archives and 750/250/32 response depot.
 
-## Current continuation — 25 October 2026
+Protected operator setup, selected supported-intent mapping and actual non-secret
+build identity are independent outstanding work. Keep one Core/nine K-owners and
+existing six Director categories. No universal timing, fabricated stock, rank
+authority, NPC choices or historical future may be introduced to fill a gap.
 
-The delivered shared-response set and verified-byte intake patch are integrated
-in IRGS/main. Follow [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and the current
-[development guide](DEVELOPMENT.md) for the next bounded assignment. Earlier
-scope requirements below remain applicable; completed foundation work should
-not be repeated as an unimplemented first delivery.
-
-The user directs development of IRGS across campaigns and themes. Read
-[IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md). The Engine, App and Catalog
-work orders in their own repositories assign the independent implementation.
-Rise R00 is one regression fixture; supported non-Rise contexts are required
-for shared-system claims.
-
-The coordinator reviews pushed source and real evidence, selects exact compatible
-App dependency pins, refreshes source-bound operation evidence and qualifies
-an isolated combined candidate. Run real browser play in existing supported
-non-Rise and Rise contexts, then clean-package verification before importing
-and pushing the reviewed component set to unified main. Keep content portability,
-implemented mechanics, local rendering and live AI evidence distinct.
-
-Preserve source records, stable DEV/C2 requirements, one authoritative Core,
-actor information boundaries and explicit player acceptance. Work orders and
-metadata publication do not complete runtime work. No original user save or
-private reference fixture participates in verification. Prior release evidence
-retains its original scope.
+Review component pushes and fix compatibility in the owner. Import only a viable
+approved all-three set with compatible pins, fresh joined/browser/package checks
+and the existing gate. Next joined publication is 3.4.4; all four editions align.
+Main contains the current installation; superseded generated builds need not be
+kept. Original source archives, Git history, saves/configuration remain preserved.

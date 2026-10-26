@@ -1,126 +1,33 @@
-# Continuation instructions — IRGS Enviroment
+# Continuation instructions — IRGS coordinator
 
-Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
-See [version policy](VERSION_POLICY.md). Historical evidence below retains
-its original tested development identities.
+Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
+Read AGENTS.md, COORDINATION.md, COMPONENTS.json, VERSION_POLICY.md and
+provenance/qa/start_readiness_3_4_3_review.json. New user directions take precedence.
 
-Prepared 25 October 2026 for `KingSav3ge/IRGS/main`. Preserve local changes
-before pulling. Resume coordination and review. Make necessary compatibility
-fixes in their owning repositories and publish only qualified combined source
-to joined main. Read this file after pull; fresh user directions take precedence.
+The shared start-context increment has passed exact-set review: Engine API 1,
+App explicit mode/context/date/elapsed adoption and separate Catalog requirements.
+Coordinator's six HTTP journeys and five Chromium suites cover Henry explicit
+and default, John limited, new default/authored, and R00. Keep old fixture guards
+and dated validation at their real tested source. This is bounded playability,
+not general historical resolution. John remains held for missing personal context.
 
-## Current 3.4.2 coordinated update
+Direct/review the three existing component workstreams. Engine next: selected
+travel over native processes. App next: durable actor-authenticated communication,
+received source and offer controls. Catalog next: matching communication consumers
+after that actual bridge, preserving current starts and original content. Operator
+setup, selected-intent mapping, build identity, general freeform/combat, broader
+DEV/C2, Windows and live model quality remain open.
 
-See RELEASE_NOTES_3_4_2.md and the exact component selection in COMPONENTS.json.
-The candidate combines Engine communication capabilities/private-offer filtering,
-the refined Emergent App interface and separately versioned Catalog phase checks.
-Current qualification must cover this exact set; dated evidence below retains its
-original identities. App communication HTTP/UI controls and operator configuration
-remain open. The next Engine increment is selected travel capability discovery;
-Catalog communication evaluation follows the published App bridge.
+Use synthetic temporary stores; never inspect/migrate user saves for QA. Preserve
+one Core/nine K-owners, actor/source filtering, actual resources/authority,
+reviewed acceptance, causal/storage/civil/elapsed distinctions and exact original
+result replay. Never infer a fact or power from narration, background or rank.
 
-## Start here
-
-```bash
-git status --short
-git pull --ff-only origin main
-```
-
-Read `AGENTS.md`, [DEVELOPMENT.md](DEVELOPMENT.md),
-[IRGS_SYSTEMS_SCOPE.md](IRGS_SYSTEMS_SCOPE.md) and
-[COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md), then COORDINATION.json, COMPONENTS.json and the latest source/evidence review.
-Inspect the current diff/remote and exact dependencies before editing.
-
-## Prior 3.4.1 integration
-
-The reviewed source set is recorded in COMPONENTS.json and
-[the 3.4.1 review](provenance/qa/phase_integration_3_4_1_review.json).
-This increment integrates selected Engine phase capabilities, App Begin/review/
-continuation/recovery controls and separately versioned Catalog compatibility
-fixtures. Observation in the non-Rise authored opening and Rise work remain
-selected handlers; their rules do not become universal campaign mechanics.
-
-Next, advance Engine communication/offer participant and legitimate received-
-source contracts, then matching App controls and Catalog evaluation. Preserve
-completed phase controls and exact older fixtures. Operator configuration,
-general freeform/combat, wider DEV/C2 and live model quality remain open.
-Every unified main publication increments the version; QA stays local until a
-qualified versioned coordinator push. The previous release is recorded as 3.3.3.
-
-## Prior qualified baseline and scope
-
-IRGS **3.4.0 development**, Core compatibility **3.3**. Develop shared systems
-across campaigns and themes. Rise R00 and the existing non-Rise authored opening
-are actual supported regression contexts. Synthetic theme/profile checks prove
-their recorded formatting/declaration behavior, not new campaign mechanics.
-
-The [coordinator integration](https://github.com/KingSav3ge/IRGS/blob/65351ebcfe2538d880f576a3ce4aa2230537e08d/provenance/qa/shared_response_integration_3_4_0_review.json) qualified joined `65351ebcfe2538d880f576a3ce4aa2230537e08d`:
-
-| Component source | Qualified commit |
-| --- | --- |
-| Engine | `2f9476c6090878257d17cab3ad3a83a7ce18a5dc` |
-| App/Web | `aae8a25656c890181e0aa569df2c716968ec3642` |
-| Catalog | `27fff8385d1c01fdfe9ad7254b7647e6bc12a01e` |
-
-Recorded integration results: 680 Core tests run (679 passed, one private-fixture
-policy skip); 201 Web run (194 passed, seven Windows skips); 105 interface checks;
-104 Catalog checks; eight independent HTTP checks. Two-context Chromium and
-clean-package qualification passed with zero live inference. These are attributed
-prior results, not tests newly executed by this guide update.
-
-Later guide-only commits do not alter this qualified source set. Preserve
-independent content/schema versions and historical evidence. See
-[shared scope](IRGS_SYSTEMS_SCOPE.md), [continuation](CHAT_CONTINUATION.md) and
-[the work order](COORDINATOR_WORK_ORDER.md).
-
-## Next bounded task
-
-Review the next exact pushed component set against its published contracts and
-this shared scope. Preserve the integrated phase/capability interface, App process controls and
-Catalog compatibility fixtures. Track communication/source contracts and their
-App/Catalog consumers as the next coordinated dependencies.
-Keep useful owner work moving when another interface is pending. Resolve actual
-compatibility bugs in the owning repo, align App pins, then capture fresh source-
-bound evidence and test an isolated candidate. Gate the import, prove identical
-runtime inputs, check real browser play and a clean package, then push joined main.
-Guide-only metadata commits are not new viable product deliveries. Monitor only
-while this environment runs; do not claim a chat was resumed by a repository push.
-
-## Preserve and finish
-
-Keep the completed response depot, current source intake patch and shared
-non-Rise/Rise round trip. Do not repeat archive acquisition, rebuild the 1,000
-variants, redo themes or describe integrated response work as awaiting its
-original integration. Preserve old manifest consumer IDs; current consumer
-evidence is separate. Generic drafts create no mechanics or NPC choices.
-
-Execute the relevant commands in the current guide. Keep temporary synthetic
-state, zero routine provider calls, actual Core effects, source/actor filtering,
-explicit acceptance, failed-save atomicity, retry/restart/restore and truthful
-unsupported behavior. Report named scope and actual skips. No user save or
-private external fixture participates. Live inference remains separately gated.
-
-Update completed/active/remaining records and return the full pushed SHA,
-changed behavior, API/dependency selections, commands/results/skips and remaining
-blockers. Never claim a documentation edit or old log as a new implemented
-system. The coordinator reviews the exact all-three set and owns joined import.
-
-## Paste-ready restart message
-
-> Pull your repository and read CHAT_CONTINUATION.md, DEVELOPMENT.md and the
-> current work order. Implement the next bounded task for IRGS Enviroment,
-> preserving shared IRGS scope and existing qualified behavior. Review component
-> commits, patch incompatibilities in their owning repositories, qualify the
-> combined set and publish joined main with exact checks and remaining scope.
-
-## Component briefs
-
-| Existing chat | Published continuation |
-| --- | --- |
-| IRGS Engine | [Engine](https://github.com/KingSav3ge/IRGS-Engine/blob/main/CHAT_CONTINUATION.md) |
-| IRGS App/Website | [App/Web](https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/CHAT_CONTINUATION.md) |
-| IRGS Catalog | [Catalog](https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md) |
-
-No direct chat-send/start capability is available. Publication generates the
-instructions; it does not prove a chat read them. Use available read_thread
-before relying on a chat's state. Read failures leave activity unverified.
+After all three viable increments are approved, choose exact compatible App
+gitlinks, capture current execution, test the joined set/browser/package and use
+the existing integration gate. Next joined publication is **3.4.4**, with editions
+aligned across four repos. Keep previous release field 3.3.3 and Core 3.3. Main
+holds one canonical current installation; replace superseded generated builds
+after a qualified replacement. Preserve original source archives, accurate dated
+evidence, Git history, saves and configuration. Publication does not dispatch or
+resume chats. Automatic QA retains local reports and never publishes on its own.

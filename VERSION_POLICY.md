@@ -1,6 +1,6 @@
 # IRGS publication versions
 
-The coordinated edition is **3.4.2 development**. The previous release version
+The coordinated edition is **3.4.3 development**. The previous release version
 is **3.3.3**, as directed by the user. Earlier 3.4.0 commits and validation
 records are development history and retain their actual tested identities.
 
@@ -17,3 +17,11 @@ Only the coordinator assembles a compatible exact Engine/App/Catalog source set,
 qualifies it and publishes unified main. Automatic QA retains reports outside
 source until included in that versioned coordinator publication. It does not
 push reports independently or advance versions on behalf of a product review.
+
+## Current source and build retention
+
+Keep one canonical current installation and replace superseded generated build
+archives after the replacement passes qualification. Do not retain old extracted
+versions or build bundles in main. Original supplied archives, Git history,
+accurately dated evidence, saves and personal configuration remain preserved.
+The compatibility directory IRGS_3_3 belongs to the current release.

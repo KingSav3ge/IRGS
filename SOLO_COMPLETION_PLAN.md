@@ -1,5 +1,11 @@
 # IRGS Solo runtime completion
 
+Current coordinated increment: **3.4.3**, previous release **3.3.3**. See
+CHANGES_3_4_3.md. Explicit start-mode/context/date adoption is qualified within
+the documented bounded scope. Next: selected Engine travel, App communication
+controls and matching Catalog consumers. Existing dated milestones retain their
+tested sources; a local observation is not general historical campaign play.
+
 Current coordinated increment: **3.4.2**, previous release **3.3.3**. See
 CHANGES_3_4_2.md. Engine communication/source capabilities and the refined
 Emergent App interface are delivered; communication App controls and operator
