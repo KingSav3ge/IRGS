@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
-import { Archive, ArchiveRestore, GitBranch } from "lucide-react";
+import { Archive, ArchiveRestore, GitBranch, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { api, errMsg, fileUrl } from "@/lib/api";
 
@@ -14,6 +14,15 @@ export const PlaythroughList = () => {
     queryKey: ["playthroughs", status],
     queryFn: () => api.get("/playthroughs", { params: { status } }).then((r) => r.data),
   });
+
+  const run = async (fn, msg) => {
+    try { await fn(); qc.invalidateQueries({ queryKey: ["playthroughs"] }); toast.success(msg); } catch (e) { toast.error(errMsg(e)); }
+  };
+  const trash = (p) => window.confirm(`Move “${p.title}” to Trash? You can restore it from the Trash tab.`) &&
+    run(() => api.post(`/playthroughs/${p.playthrough_id}/trash`), "Moved to Trash");
+  const restore = (p) => run(() => api.post(`/playthroughs/${p.playthrough_id}/restore`), "Restored");
+  const destroy = (p) => window.confirm(`Delete “${p.title}” forever? Its saves, notes and share links are removed too. This can't be undone.`) &&
+    run(() => api.delete(`/playthroughs/${p.playthrough_id}`), "Deleted permanently");
 
   const toggle = async (p) => {
     try {
@@ -29,14 +38,14 @@ export const PlaythroughList = () => {
     <section className="space-y-5" data-testid="library-playthroughs">
       <div className="flex items-center gap-4">
         <h2 className="font-heading text-base md:text-lg text-parchment tracking-wide">Your stories</h2>
-        {["active", "archived"].map((s) => (
+        {["active", "archived", "trashed"].map((s) => (
           <button key={s} onClick={() => setStatus(s)} data-testid={`library-playthrough-tab-${s}`}
-            className={`text-xs font-mono uppercase tracking-widest ${status === s ? "text-gold" : "text-dust hover:text-ash"}`}>{s}</button>
+            className={`text-xs font-mono uppercase tracking-widest ${status === s ? "text-gold" : "text-dust hover:text-ash"}`}>{s === "trashed" ? "trash" : s}</button>
         ))}
       </div>
       {data.length === 0 ? (
         <p className="text-sm text-dust" data-testid="library-playthroughs-empty">
-          {status === "active" ? "No stories yet. Begin a campaign below." : "Nothing archived."}
+          {status === "active" ? "No stories yet. Begin a campaign below." : status === "trashed" ? "Trash is empty." : "Nothing archived."}
         </p>
       ) : (
         <div className="flex gap-4 overflow-x-auto pb-2 scroll-thin">
@@ -53,9 +62,14 @@ export const PlaythroughList = () => {
                   {status === "active" && (
                     <Button size="sm" className="h-7 text-xs" onClick={() => navigate(`/play/${p.playthrough_id}`)} data-testid={`library-resume-btn-${p.playthrough_id}`}>Resume</Button>
                   )}
-                  <Button size="sm" variant="ghost" className="h-7 text-xs text-ash" onClick={() => toggle(p)} data-testid={`library-archive-toggle-${p.playthrough_id}`}>
+                  <Button size="sm" variant="ghost" className="h-7 text-xs text-ash" onClick={() => (status === "trashed" ? restore(p) : toggle(p))} data-testid={`library-archive-toggle-${p.playthrough_id}`}>
                     {status === "active" ? <Archive size={12} /> : <><ArchiveRestore size={12} className="mr-1" /> Restore</>}
                   </Button>
+                  {status !== "trashed" ? (
+                    <Button size="sm" variant="ghost" className="h-7 text-xs text-dust" onClick={() => trash(p)} data-testid={`library-trash-btn-${p.playthrough_id}`}><Trash2 size={12} /></Button>
+                  ) : (
+                    <Button size="sm" variant="ghost" className="h-7 text-xs text-crimson" onClick={() => destroy(p)} data-testid={`library-delete-forever-btn-${p.playthrough_id}`}>Delete forever</Button>
+                  )}
                 </div>
               </div>
             </div>

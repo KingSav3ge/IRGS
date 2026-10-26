@@ -317,3 +317,23 @@ def _apply_hyw_332():
 
 
 _apply_hyw_332()
+
+
+# ---- IRGS 3.4.1 import: Content Library v0.5 (44 concept records from IRGS-Catalog) ----
+CATALOGUE_V05 = _json.loads((_Path(__file__).parent / "data" / "catalogue_v0_5.json").read_text())
+CATALOGUE_TO_SCENARIO = {"MC-01": "hyw-1415"}
+
+
+def catalogue_theme(genres: list, setting: str) -> str:
+    g = " ".join(genres + [setting]).lower()
+    for key, theme in (("science fiction", "pda"), ("fantasy", "grimoire"), ("roman", "tablet"), ("sengoku", "shinobi"),
+                       ("japan", "shinobi"), ("settlement", "settlement"), ("military", "military")):
+        if key in g:
+            return theme
+    return "ledger"
+
+
+for _s in SCENARIOS:
+    _rec = next((r for r in CATALOGUE_V05["records"] if CATALOGUE_TO_SCENARIO.get(r["catalogue_id"]) == _s["id"]), None)
+    if _rec:
+        _s["catalogue"] = {"id": _rec["catalogue_id"], "tier": _rec["tier"], "title": _rec["title"], "tagline": _rec.get("tagline")}

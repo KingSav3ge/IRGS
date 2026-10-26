@@ -89,3 +89,5 @@ android-sdk/
 credentials.json
 *.key
 .credentials
+upstream/IRGS-Catalog/.git/objects/pack/pack-68950baec6d1422178d69fa1e0de62d101de6607.pack
+upstream/IRGS/.git/objects/pack/pack-1e366f8f51101ad20f549577ae25f274fd5b901a.pack

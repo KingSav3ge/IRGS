@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
 import { PlaythroughList } from "@/components/PlaythroughList";
 import { EntryCatalogueDialog } from "@/components/EntryCatalogueDialog";
+import { ConceptLibrary } from "@/components/ConceptLibrary";
+import { useAuth } from "@/context/AuthContext";
 
 const GENRES = ["all", "historical", "fantasy", "scifi"];
 
@@ -25,7 +27,7 @@ const CampaignCard = ({ c, i }) => {
         )}
       </div>
       <div className="p-6 flex flex-col gap-3 flex-1">
-        <p className="tactical-label">{c.era} · {c.difficulty}</p>
+        <p className="tactical-label">{c.era} · {c.difficulty}{c.catalogue ? ` · ${c.catalogue.tier}` : ""}</p>
         <h3 className="font-heading text-xl sm:text-2xl text-parchment">{c.title}</h3>
         <p className="text-xs text-dust">{c.campaign_title}</p>
         <p className="font-prose text-lg text-ash leading-relaxed flex-1">{c.summary}</p>
@@ -48,6 +50,7 @@ const CampaignCard = ({ c, i }) => {
 };
 
 export default function Library() {
+  const { user } = useAuth();
   const [genre, setGenre] = useState("all");
   const [q, setQ] = useState("");
   const { data: campaigns = [], isLoading } = useQuery({ queryKey: ["campaigns"], queryFn: () => api.get("/campaigns").then((r) => r.data) });
@@ -90,6 +93,7 @@ export default function Library() {
           </div>
         )}
       </section>
+      <ConceptLibrary isAdmin={user?.role === "admin"} />
     </div>
   );
 }

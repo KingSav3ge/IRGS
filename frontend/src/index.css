@@ -717,3 +717,119 @@ body { background-color: var(--c-void); color: var(--c-parchment); }
 }
 [data-theme='pda'] .font-prose { letter-spacing: 0.01em; }
 [data-theme='pda'] .drop-cap::first-letter { float: none; font-size: 1em; padding: 0; color: var(--c-gold); }
+
+/* ---------- IRGS 3.4.1 genre looks (from IRGS-APP-WEB themes.css palettes) ---------- */
+[data-theme='military'] {
+    --f-heading: 'Oswald', sans-serif;
+    --f-prose: 'Source Serif 4', Georgia, serif;
+    --f-sans: 'Instrument Sans', sans-serif;
+    --f-mono: 'IBM Plex Mono', monospace;
+    --c-void: #141419;
+    --c-tome: #1C1C23;
+    --c-surface: #25252E;
+    --c-line: #484650;
+    --c-parchment: #ECE6DE;
+    --c-ash: #B4AEA6;
+    --c-dust: #7E7A76;
+    --c-gold: #E5B796;
+    --c-crimson: #C9584B;
+    --c-emerald: #7E9C6B;
+    --c-mana: #8FAFC2;
+    --c-arcane: #BD9972;
+    --background: 240 11% 9%;
+    --foreground: 34 27% 90%;
+    --card: 240 11% 16%;
+    --card-foreground: 34 27% 90%;
+    --popover: 240 11% 12%;
+    --popover-foreground: 34 27% 90%;
+    --primary: 7 39% 41%;
+    --primary-foreground: 32 43% 93%;
+    --secondary: 240 11% 16%;
+    --secondary-foreground: 34 27% 90%;
+    --muted: 240 11% 16%;
+    --muted-foreground: 34 9% 68%;
+    --accent: 252 7% 29%;
+    --accent-foreground: 34 27% 90%;
+    --destructive: 6 54% 54%;
+    --border: 252 7% 29%;
+    --input: 252 7% 29%;
+    --ring: 25 60% 74%;
+    --radius: 0.125rem;
+}
+[data-theme='shinobi'] {
+    --f-heading: 'Shippori Mincho', serif;
+    --f-prose: 'Shippori Mincho', Georgia, serif;
+    --f-sans: 'Instrument Sans', sans-serif;
+    --f-mono: 'IBM Plex Mono', monospace;
+    --c-void: #181318;
+    --c-tome: #211B22;
+    --c-surface: #2C232E;
+    --c-line: #59454E;
+    --c-parchment: #F0E4E6;
+    --c-ash: #BBA7AE;
+    --c-dust: #86717A;
+    --c-gold: #E8A8AA;
+    --c-crimson: #D2575F;
+    --c-emerald: #7FA37E;
+    --c-mana: #9BB8C9;
+    --c-arcane: #BC9C83;
+    --background: 300 12% 8%;
+    --foreground: 350 29% 92%;
+    --card: 289 14% 16%;
+    --card-foreground: 350 29% 92%;
+    --popover: 291 11% 12%;
+    --popover-foreground: 350 29% 92%;
+    --primary: 346 36% 42%;
+    --primary-foreground: 350 60% 96%;
+    --secondary: 289 14% 16%;
+    --secondary-foreground: 350 29% 92%;
+    --muted: 289 14% 16%;
+    --muted-foreground: 339 13% 69%;
+    --accent: 333 13% 31%;
+    --accent-foreground: 350 29% 92%;
+    --destructive: 356 58% 58%;
+    --border: 333 13% 31%;
+    --input: 333 13% 31%;
+    --ring: 358 58% 78%;
+    --radius: 0rem;
+}
+[data-theme='settlement'] {
+    --f-heading: 'Bitter', serif;
+    --f-prose: 'Lora', Georgia, serif;
+    --f-sans: 'Instrument Sans', sans-serif;
+    --f-mono: 'IBM Plex Mono', monospace;
+    --c-void: #1A1612;
+    --c-tome: #241F19;
+    --c-surface: #2E2820;
+    --c-line: #5B4B36;
+    --c-parchment: #EFE4D0;
+    --c-ash: #BCAD92;
+    --c-dust: #86785F;
+    --c-gold: #E3C494;
+    --c-crimson: #C65A3F;
+    --c-emerald: #7FA05A;
+    --c-mana: #8DB0A8;
+    --c-arcane: #C1A36D;
+    --background: 30 18% 9%;
+    --foreground: 39 49% 88%;
+    --card: 34 18% 15%;
+    --card-foreground: 39 49% 88%;
+    --popover: 33 18% 12%;
+    --popover-foreground: 39 49% 88%;
+    --primary: 26 44% 36%;
+    --primary-foreground: 38 63% 92%;
+    --secondary: 34 18% 15%;
+    --secondary-foreground: 39 49% 88%;
+    --muted: 34 18% 15%;
+    --muted-foreground: 39 24% 65%;
+    --accent: 34 26% 28%;
+    --accent-foreground: 39 49% 88%;
+    --destructive: 12 54% 51%;
+    --border: 34 26% 28%;
+    --input: 34 26% 28%;
+    --ring: 36 59% 74%;
+    --radius: 0.375rem;
+}
+[data-theme='military'] .font-heading { text-transform: uppercase; letter-spacing: 0.08em; }
+[data-theme='shinobi'] .gold-frame { border-left: 3px solid var(--c-crimson); }
+[data-theme='settlement'] .gold-frame { border-radius: 6px; }

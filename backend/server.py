@@ -18,7 +18,7 @@ import auth
 import engine
 import ai_services as ai
 from storybook import build_storybook
-from seed_data import SCENARIOS, STORE_ITEMS, PAYMENT_PROVIDERS, HYW_CATALOGUE, HYW_BASELINE
+from seed_data import SCENARIOS, STORE_ITEMS, PAYMENT_PROVIDERS, HYW_CATALOGUE, HYW_BASELINE, CATALOGUE_V05, CATALOGUE_TO_SCENARIO, catalogue_theme
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("irgs.server")
@@ -132,6 +132,10 @@ class GoalPatch(BaseModel):
     status: str
 
 
+class ReviewIn(BaseModel):
+    declaration: str
+
+
 class ShareIn(BaseModel):
     mode: str = "snapshot"
 
@@ -181,7 +185,7 @@ async def _has_premium_voice(user: dict) -> bool:
 def _scenario_card(s: dict, locked: bool) -> dict:
     keys = ["id", "campaign_id", "title", "campaign_title", "genre", "era", "difficulty", "premium",
             "price", "tags", "cover_image", "summary", "briefing", "opening", "character_backgrounds",
-            "default_inventory", "actors", "theme", "sources", "unknowns", "entry_catalogue"]
+            "default_inventory", "actors", "theme", "sources", "unknowns", "entry_catalogue", "catalogue"]
     card = {k: s.get(k) for k in keys}
     card["locked"] = locked
     card["store_item_id"] = next((i["id"] for i in STORE_ITEMS if i.get("scenario_id") == s["id"]), None)
@@ -401,6 +405,22 @@ async def get_campaign(scenario_id: str, user: dict = Depends(auth.get_current_u
     if not s:
         raise HTTPException(status_code=404, detail="Campaign not found")
     return _scenario_card(s, not await _owns_scenario(user, s))
+
+
+@api.get("/catalogue")
+async def catalogue(user: dict = Depends(auth.get_current_user)):
+    """Content Library v0.5 (IRGS-Catalog). Players see playable records only; admins also see unreleased concepts."""
+    out = []
+    for r in CATALOGUE_V05["records"]:
+        sid = CATALOGUE_TO_SCENARIO.get(r["catalogue_id"])
+        if not sid and user.get("role") != "admin":
+            continue
+        p = r["public"]
+        out.append({"id": r["catalogue_id"], "tier": r["tier"], "title": r["title"], "tagline": r.get("tagline"),
+                    "genres": p.get("genres", []), "setting": p.get("setting_label"), "period": p.get("period_label"),
+                    "synopsis": p.get("synopsis"), "status": r["catalogue_status"], "launch": r["placement"].get("release_wave"),
+                    "playable": bool(sid), "scenario_id": sid, "theme": catalogue_theme(p.get("genres", []), p.get("setting_label") or "")})
+    return {"version": CATALOGUE_V05["catalogue_version"], "counts": CATALOGUE_V05["counts"], "records": out}
 
 
 @api.get("/campaigns/{scenario_id}/entries")
@@ -641,7 +661,7 @@ async def _act_locked(pid: str, body: ActIn, user: dict):
     replay = _replay(doc, body.request_id)
     if replay:
         return replay
-    if doc.get("status") == "archived":
+    if doc.get("status") in ("archived", "trashed"):
         raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
     state = doc["state"]
     check = engine.validate_action(state, body.declaration)
@@ -704,6 +724,42 @@ async def _npc_turn(pid: str, scenario: dict, state: dict, event: dict, elapsed:
         await _autosave(doc)
 
 
+@api.post("/playthroughs/{pid}/review")
+async def review_action(pid: str, body: ReviewIn, user: dict = Depends(auth.get_current_user)):
+    """Review your action: classify and validate a declaration WITHOUT committing anything."""
+    doc = await _get_playthrough(pid, user)
+    if doc.get("status") != "active":
+        raise HTTPException(status_code=400, detail="Restore this playthrough to continue.")
+    check = engine.validate_action(doc["state"], body.declaration)
+    if not check["ok"]:
+        return {"ok": False, "reason": check["reason"]}
+    decision = await ai.jev_decide(body.declaration)
+    if not decision["allowed"]:
+        return {"ok": False, "reason": f"Content moderation would reject this: {decision['reason']}"}
+    return {"ok": True, "intent": decision["intent"], "big_moment": decision["intent"] in BIG_MOMENT_INTENTS,
+            "time_note": "Time advances by about one part of the day when this commits.",
+            "others_may_react": True}
+
+
+@api.post("/playthroughs/{pid}/trash")
+async def trash_playthrough(pid: str, user: dict = Depends(auth.get_current_user)):
+    await _get_playthrough(pid, user)
+    await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"status": "trashed", "trashed_at": now_iso(), "updated_at": now_iso()}})
+    return {"status": "trashed"}
+
+
+@api.delete("/playthroughs/{pid}")
+async def delete_playthrough(pid: str, user: dict = Depends(auth.get_current_user)):
+    doc = await _get_playthrough(pid, user)
+    if doc.get("status") != "trashed":
+        raise HTTPException(status_code=400, detail="Move the campaign to Trash before deleting it permanently")
+    q = {"playthrough_id": pid, "user_id": user["user_id"]}
+    for coll in (db.saves, db.notes, db.shares):
+        await coll.delete_many(q)
+    await db.playthroughs.delete_one(q)
+    return {"ok": True}
+
+
 @api.post("/playthroughs/{pid}/pass-time")
 async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_current_user)):
     if body.span not in engine.TIME_SPANS:
@@ -720,7 +776,7 @@ async def pass_time(pid: str, body: PassTimeIn, user: dict = Depends(auth.get_cu
             replay = _replay(doc, body.request_id)
             if replay:
                 return replay
-            if doc.get("status") == "archived":
+            if doc.get("status") in ("archived", "trashed"):
                 raise HTTPException(status_code=400, detail="This playthrough is archived. Restore it to continue.")
             try:
                 new_state = engine.pass_time(doc["state"], body.span)
@@ -769,7 +825,8 @@ async def archive(pid: str, user: dict = Depends(auth.get_current_user)):
 @api.post("/playthroughs/{pid}/restore")
 async def restore(pid: str, user: dict = Depends(auth.get_current_user)):
     await _get_playthrough(pid, user)
-    await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"status": "active", "updated_at": now_iso()}})
+    await db.playthroughs.update_one({"playthrough_id": pid}, {"$set": {"status": "active", "updated_at": now_iso()},
+                                                               "$unset": {"trashed_at": ""}})
     return {"status": "active"}
 
 

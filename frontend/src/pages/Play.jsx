@@ -55,6 +55,8 @@ export default function Play() {
   const feedRef = useRef(null);
   const count = pt?.chronicle.length;
   const { data: voices } = useQuery({ queryKey: ["voices"], queryFn: () => api.get("/voice/options").then((r) => r.data) });
+  const savedKey = `irgs_saved_req_${pid}`;
+  const [saved, setSaved] = useState(() => JSON.parse(localStorage.getItem(savedKey) || "null"));
 
   useEffect(() => { localStorage.setItem(LAST_PLAY_KEY, pid); }, [pid]);
   useEffect(() => { feedRef.current?.scrollTo({ top: feedRef.current.scrollHeight, behavior: "smooth" }); }, [count, busy]);
@@ -62,17 +64,29 @@ export default function Play() {
   if (isError) return <p className="p-12 text-crimson" data-testid="gameplay-error">This playthrough could not be found.</p>;
   if (!pt) return <p className="p-12 tactical-label">Unrolling the scene…</p>;
 
-  const act = async (declaration) => {
+  const review = async (declaration) => {
+    try {
+      return (await api.post(`/playthroughs/${pid}/review`, { declaration }, { timeout: 60000 })).data;
+    } catch (e) {
+      return { ok: false, reason: errMsg(e, "The review could not be completed") };
+    }
+  };
+
+  const act = async (declaration, existingId) => {
     setBusy(true);
-    const request_id = crypto.randomUUID();
+    const request_id = existingId || crypto.randomUUID();
+    localStorage.setItem(savedKey, JSON.stringify({ declaration, request_id }));
     const send = () => api.post(`/playthroughs/${pid}/act`, { declaration, request_id }, { timeout: 120000 });
     try {
       // retry once on a dropped connection; the request id makes the retry safe (never double-commits)
       const { data } = await send().catch((e) => (e.response ? Promise.reject(e) : send()));
       if (data.replayed) toast("Your action was already recorded, so it was not repeated.");
+      localStorage.removeItem(savedKey);
+      setSaved(null);
       qc.setQueryData(["playthrough", pid], data.playthrough);
       return true;
     } catch (e) {
+      if (e.response) { localStorage.removeItem(savedKey); setSaved(null); } else { setSaved({ declaration, request_id }); }
       toast.error(errMsg(e, "The action could not be committed"));
       return false;
     } finally { setBusy(false); }
@@ -118,7 +132,14 @@ export default function Play() {
           {busy && <p className="tactical-label !text-mana animate-pulse" data-testid="gameplay-resolving-indicator">The engine resolves · the narrator composes…</p>}
           {!busy && pt.view.npc_pending && <p className="tactical-label !text-ash animate-pulse" data-testid="gameplay-npc-pending-indicator">The world stirs · others weigh their next move…</p>}
         </div>
-        <ActionComposer onSubmit={act} onPass={passTime} busy={busy} disabled={pt.status === "archived"} />
+        {saved && !busy && (
+          <div className="border-t border-crimson/40 bg-crimson/10 px-4 py-2 flex items-center gap-3 text-xs" data-testid="gameplay-saved-request-banner">
+            <span className="text-parchment flex-1 truncate">The connection dropped while sending “{saved.declaration}”.</span>
+            <button className="text-gold" onClick={() => act(saved.declaration, saved.request_id)} data-testid="gameplay-saved-request-retry">Check / retry saved request</button>
+            <button className="text-dust" onClick={() => { localStorage.removeItem(savedKey); setSaved(null); }} data-testid="gameplay-saved-request-discard">Discard</button>
+          </div>
+        )}
+        <ActionComposer onSubmit={act} onReview={review} onPass={passTime} busy={busy} disabled={pt.status === "archived"} />
       </section>
       <div className="lg:col-span-3 lg:h-full lg:overflow-hidden order-3 lg:order-none"><ControlPanel pt={pt} onSettings={onSettings} /></div>
     </div>
