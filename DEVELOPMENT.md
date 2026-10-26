@@ -1,13 +1,23 @@
 # Unified IRGS development and coordination guide
 
-Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Historical evidence below retains
 its original tested development identities.
 
 Current guide: 25 October 2026. Owner: `KingSav3ge/IRGS/main`.
 Start with [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md).
 
-## Current 3.4.1 integration
+## Current 3.4.2 coordinated update
+
+See RELEASE_NOTES_3_4_2.md and the exact component selection in COMPONENTS.json.
+The candidate combines Engine communication capabilities/private-offer filtering,
+the refined Emergent App interface and separately versioned Catalog phase checks.
+Current qualification must cover this exact set; dated evidence below retains its
+original identities. App communication HTTP/UI controls and operator configuration
+remain open. The next Engine increment is selected travel capability discovery;
+Catalog communication evaluation follows the published App bridge.
+
+## Prior 3.4.1 integration
 
 The reviewed source set is recorded in COMPONENTS.json and
 [the 3.4.1 review](provenance/qa/phase_integration_3_4_1_review.json).

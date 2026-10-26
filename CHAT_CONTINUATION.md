@@ -1,6 +1,6 @@
 # Continuation instructions — IRGS Enviroment
 
-Current coordinated edition: **3.4.1**; previous release: **3.3.3**.
+Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Historical evidence below retains
 its original tested development identities.
 
@@ -8,6 +8,16 @@ Prepared 25 October 2026 for `KingSav3ge/IRGS/main`. Preserve local changes
 before pulling. Resume coordination and review. Make necessary compatibility
 fixes in their owning repositories and publish only qualified combined source
 to joined main. Read this file after pull; fresh user directions take precedence.
+
+## Current 3.4.2 coordinated update
+
+See RELEASE_NOTES_3_4_2.md and the exact component selection in COMPONENTS.json.
+The candidate combines Engine communication capabilities/private-offer filtering,
+the refined Emergent App interface and separately versioned Catalog phase checks.
+Current qualification must cover this exact set; dated evidence below retains its
+original identities. App communication HTTP/UI controls and operator configuration
+remain open. The next Engine increment is selected travel capability discovery;
+Catalog communication evaluation follows the published App bridge.
 
 ## Start here
 
@@ -21,7 +31,7 @@ Read `AGENTS.md`, [DEVELOPMENT.md](DEVELOPMENT.md),
 [COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md), then COORDINATION.json, COMPONENTS.json and the latest source/evidence review.
 Inspect the current diff/remote and exact dependencies before editing.
 
-## Current 3.4.1 integration
+## Prior 3.4.1 integration
 
 The reviewed source set is recorded in COMPONENTS.json and
 [the 3.4.1 review](provenance/qa/phase_integration_3_4_1_review.json).

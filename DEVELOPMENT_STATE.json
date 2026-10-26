@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "edition": "3.4.1",
+  "edition": "3.4.2",
   "channel": "development",
   "date": "2026-10-25",
   "status": "qualified_offline_development_baseline",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
-    "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-    "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
-    "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+    "engine": "91b20056e7db651966c9e92925313494917f47b1",
+    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
   },
-  "qualification_record": "provenance/qa/phase_integration_3_4_1_review.json",
-  "qualification_scope": "Selected non-Rise observation and Rise work phase capabilities, explicit App controls and durable result recovery; original Catalog fixtures remain preserved.",
-  "next_milestone": "Communication/offer participant and received-source contracts and matching App controls",
+  "qualification_record": "provenance/qa/interface_communication_3_4_2_review.json",
+  "qualification_scope": "Actor-safe selected Engine communication/source/offer API and private forwarded-contract filtering; refined Emergent interface on canonical host; separate Catalog public-phase qualification. Communication HTTP/UI wiring remains open.",
+  "next_milestone": "App authenticated explicit durable communication/source/offer controls and then matching Catalog consumers",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
-  "source_input_sha256": "6830201a916b9beafba6e2a5255160f71bff31942411e55b3b42e1800c6b3d91",
+  "source_input_sha256": "2f0b0f35565faee8513ff2eaff0953a60601159a00f9ec243cc6ff97a8a7c7cf",
   "general_action_resolver_implemented": false,
   "live_inference_qualified": false,
   "private_saves_included": false,
@@ -24,7 +24,7 @@
   "C2_acceptance_cases": 121,
   "all_branches_certified": false,
   "historical_state": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
-  "guide_update_scope": "Current 3.4.1 product integration; original prior evidence retained.",
+  "guide_update_scope": "Current coordinated 3.4.2; original source and validation history retained.",
   "previous_version": "3.3.3",
   "source_commit_scope": "Exact selected components; containing joined commit is identified by Git. No self-referential joined SHA is stored."
 }

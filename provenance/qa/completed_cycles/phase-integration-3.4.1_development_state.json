@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "edition": "3.4.1",
+  "channel": "development",
+  "date": "2026-10-25",
+  "status": "qualified_offline_development_baseline",
+  "primary_branch": "main",
+  "selected_runtime_core": "3.3",
+  "source_commits": {
+    "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
+    "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+  },
+  "qualification_record": "provenance/qa/phase_integration_3_4_1_review.json",
+  "qualification_scope": "Selected non-Rise observation and Rise work phase capabilities, explicit App controls and durable result recovery; original Catalog fixtures remain preserved.",
+  "next_milestone": "Communication/offer participant and received-source contracts and matching App controls",
+  "continuation_instructions": "CHAT_CONTINUATION.md",
+  "development_guide": "DEVELOPMENT.md",
+  "source_input_sha256": "6830201a916b9beafba6e2a5255160f71bff31942411e55b3b42e1800c6b3d91",
+  "general_action_resolver_implemented": false,
+  "live_inference_qualified": false,
+  "private_saves_included": false,
+  "existing_save_migration": false,
+  "C2_acceptance_cases": 121,
+  "all_branches_certified": false,
+  "historical_state": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
+  "guide_update_scope": "Current 3.4.1 product integration; original prior evidence retained.",
+  "previous_version": "3.3.3",
+  "source_commit_scope": "Exact selected components; containing joined commit is identified by Git. No self-referential joined SHA is stored."
+}

@@ -1,5 +1,12 @@
 # Coordinator work order — shared IRGS systems
 
+## Current 3.4.2 coordination
+
+The three updated components are reviewed together. Follow COORDINATION.md and
+CHANGES_3_4_2.md. The Engine communication/source contract is delivered; prioritize
+its durable App bridge and later Catalog evaluation while preserving the refined
+interface, qualified phases, original records and campaign-wide scope.
+
 ## Current continuation — 25 October 2026
 
 The delivered shared-response set and verified-byte intake patch are integrated

@@ -1,48 +1,60 @@
 {
   "schema_version": 1,
-  "status": "approved_3_4_1_development_integration",
-  "version": "3.4.1",
+  "status": "approved_3_4_2_development_integration",
+  "version": "3.4.2",
   "previous_version": "3.3.3",
-  "reviewed_at_utc": "2026-10-25T22:41:53.150915+00:00",
-  "cycle_id": "phase-integration-3.4.1",
-  "selected_components": {
+  "reviewed_at_utc": "2026-10-26T16:28:16.608858+00:00",
+  "cycle_id": "interface-communication-3.4.2",
+  "baseline_joined_commit": "389b392f8e3e1b80bfcb4fdcaa4c1472ba81ffc2",
+  "baseline_components": {
     "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
     "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
     "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
   },
-  "qualified_candidate_commit": "72763e09f07c576033477ead60d5597041dcac35",
-  "source_input_sha256": "6830201a916b9beafba6e2a5255160f71bff31942411e55b3b42e1800c6b3d91",
-  "scope": "Selected non-Rise observation and Rise work phase capabilities, explicit App controls and durable result recovery; original Catalog fixtures remain preserved.",
+  "selected_components": {
+    "engine": "91b20056e7db651966c9e92925313494917f47b1",
+    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+  },
+  "owner_deliveries": {
+    "joined": "389b392f8e3e1b80bfcb4fdcaa4c1472ba81ffc2",
+    "engine": "733a4358c5eed1f6be9d36033be62bbffd317202",
+    "app": "919427cf16cf72574a581d7e6f712e638740a1df",
+    "catalog": "069c9e9c6781a83b9068bc222ab3e52d0b454429"
+  },
+  "qualified_candidate_commit": "bfebdfe1e3ff4062680ffe0c54b1cf15c0b31544",
+  "source_input_sha256": "2f0b0f35565faee8513ff2eaff0953a60601159a00f9ec243cc6ff97a8a7c7cf",
+  "scope": "Actor-safe selected Engine communication/source/offer API and private forwarded-contract filtering; refined Emergent interface on canonical host; separate Catalog public-phase qualification. Communication HTTP/UI wiring remains open.",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 10.09,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/source-integrity.txt"
+      "duration_seconds": 14.16,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.82,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/evidence-freshness.txt"
+      "duration_seconds": 1.17,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 65.2,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/runtime.txt",
-      "tests_run": 708,
+      "duration_seconds": 75.89,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/runtime.txt",
+      "tests_run": 740,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 142.4,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/web.txt",
+      "duration_seconds": 145.04,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/web.txt",
       "tests_run": 229,
       "skipped": 7
     },
@@ -50,16 +62,16 @@
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.33,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/interface.txt",
-      "checks_passed": 113
+      "duration_seconds": 5.63,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/interface.txt",
+      "checks_passed": 128
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 12.8,
-      "log": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z/logs/tooling.txt",
+      "duration_seconds": 13.76,
+      "log": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -107,83 +119,686 @@
       }
     ]
   },
-  "process_browser": {
-    "status": "passed",
-    "contexts": [
-      {
-        "kind": "observation",
-        "committed_phases": 5,
-        "start_selected_from_engine": true,
-        "elapsed_seconds": 3,
-        "prepare_reload_recovered": true,
-        "cancel_does_not_execute": true,
-        "lost_commit_ack_recovered": true,
-        "phase_identity_preserved": true,
-        "pause_resume": true,
-        "stale_navigation_fenced": true
+  "browser_checks": {
+    "shared-browser": {
+      "status": "passed",
+      "contexts": [
+        {
+          "adapter": "authored_scene",
+          "committed_actions": 4,
+          "elapsed_seconds": 43,
+          "zero_action_spans": [],
+          "local_drafts_non_submitting": true,
+          "lost_acknowledgement_recovered": true,
+          "stale_navigation_fenced": true,
+          "reload_preserves_draft": true
+        },
+        {
+          "adapter": "settlement",
+          "committed_actions": 5,
+          "elapsed_seconds": 3900,
+          "zero_action_spans": [
+            "found",
+            "build"
+          ],
+          "local_drafts_non_submitting": true,
+          "lost_acknowledgement_recovered": true,
+          "stale_navigation_fenced": true,
+          "reload_preserves_draft": true
+        }
+      ],
+      "common_response_schema": 1,
+      "catalog_library": "irgs-response-depot-v1",
+      "engine_library": "irgs-engine-routine-responses-v1",
+      "provider_configured": false,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "mobile_width": 390
+    },
+    "process-browser": {
+      "status": "passed",
+      "contexts": [
+        {
+          "kind": "observation",
+          "committed_phases": 5,
+          "start_selected_from_engine": true,
+          "elapsed_seconds": 3,
+          "prepare_reload_recovered": true,
+          "cancel_does_not_execute": true,
+          "lost_commit_ack_recovered": true,
+          "phase_identity_preserved": true,
+          "pause_resume": true,
+          "stale_navigation_fenced": true
+        },
+        {
+          "kind": "work",
+          "committed_phases": 6,
+          "start_selected_from_engine": true,
+          "elapsed_seconds": 3900,
+          "prepare_reload_recovered": true,
+          "cancel_does_not_execute": true,
+          "lost_commit_ack_recovered": true,
+          "phase_identity_preserved": true,
+          "pause_resume": true,
+          "stale_navigation_fenced": true
+        }
+      ],
+      "provider_configured": false,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "mobile_width": 390
+    },
+    "interface-browser": {
+      "status": "passed",
+      "desktop_width": 1568,
+      "mobile_width": 390,
+      "concepts": 44,
+      "reading_preferences_survive_reload": true,
+      "drawers_escape_and_focus": true,
+      "reviewed_character_creation": true,
+      "posts_before_explicit_creation": 0,
+      "explicit_creations": 1,
+      "original_fixture_saves_unchanged": true,
+      "local_assets_only": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "layout": {
+        "context-panel": {
+          "x": 24,
+          "width": 358.046875
+        },
+        "content": {
+          "x": 407.046875,
+          "width": 753.890625
+        },
+        "play-tools": {
+          "x": 1185.9375,
+          "width": 358.0625
+        }
       },
-      {
-        "kind": "work",
-        "committed_phases": 6,
-        "start_selected_from_engine": true,
-        "elapsed_seconds": 3900,
-        "prepare_reload_recovered": true,
-        "cancel_does_not_execute": true,
-        "lost_commit_ack_recovered": true,
-        "phase_identity_preserved": true,
-        "pause_resume": true,
-        "stale_navigation_fenced": true
-      }
+      "assets": [
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        }
+      ]
+    },
+    "refinement-browser": {
+      "status": "passed",
+      "contexts": [
+        {
+          "context": "authored_scene",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 7.094160119592146
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.31854080670167
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.0963502599978865
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        },
+        {
+          "context": "settlement",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.8099876389274225
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.31854080670167
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.0963502599978865
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        },
+        {
+          "context": "historical_start",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.134389208121182
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.663608659553884
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.395364623798076
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        }
+      ],
+      "desktop_width": 1568,
+      "mobile_width": 390,
+      "palette_checks": [
+        {
+          "genre": "military",
+          "surface": "dark",
+          "minimum_contrast": 5.660473170000904
+        },
+        {
+          "genre": "military",
+          "surface": "light",
+          "minimum_contrast": 5.660473170000904
+        },
+        {
+          "genre": "military",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "roman",
+          "surface": "dark",
+          "minimum_contrast": 6.1326460709124975
+        },
+        {
+          "genre": "roman",
+          "surface": "light",
+          "minimum_contrast": 6.1326460709124975
+        },
+        {
+          "genre": "roman",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "fantasy",
+          "surface": "dark",
+          "minimum_contrast": 7.5456803486231125
+        },
+        {
+          "genre": "fantasy",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "fantasy",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "paf",
+          "surface": "dark",
+          "minimum_contrast": 7.283250694867167
+        },
+        {
+          "genre": "paf",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "paf",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "shinobi",
+          "surface": "dark",
+          "minimum_contrast": 7.566875012465465
+        },
+        {
+          "genre": "shinobi",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "shinobi",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "space",
+          "surface": "dark",
+          "minimum_contrast": 7.430910848986467
+        },
+        {
+          "genre": "space",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "space",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "settlement",
+          "surface": "dark",
+          "minimum_contrast": 7.328352093602904
+        },
+        {
+          "genre": "settlement",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "settlement",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        }
+      ],
+      "historical_setup_cancel_and_review": true,
+      "explicit_creations": 1,
+      "reading_and_navigation_posts": 0,
+      "empty_trash_and_story": true,
+      "creator_round_trip_read_only": true,
+      "original_fixture_saves_unchanged": true,
+      "local_assets_only": true,
+      "provider_calls": 0,
+      "browser_errors": 0
+    }
+  },
+  "engine_communication": {
+    "schema_version": 1,
+    "status": "PASS_SELECTED_COMMUNICATION_CAPABILITY_CONTRACT_WITH_LIMITS",
+    "date_utc": "2026-10-26",
+    "target_iteration": "IRGS 3.4.1 development",
+    "python": "3.12.14",
+    "api_schema": "irgs-communication-capabilities-1",
+    "pulled_base_commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "tests_run": 32,
+    "passed": 32,
+    "skipped": 0,
+    "test_ids": [
+      "test_communication_contract.CommunicationContractTests.test_acceptance_and_persistence_are_mandatory",
+      "test_communication_contract.CommunicationContractTests.test_acceptance_is_explicit_conserved_and_persisted_with_same_safe_dto",
+      "test_communication_contract.CommunicationContractTests.test_actual_colocation_rejects_without_publishing_hidden_whereabouts",
+      "test_communication_contract.CommunicationContractTests.test_changed_replay_identity_cannot_change_words_terms_or_recipient",
+      "test_communication_contract.CommunicationContractTests.test_changed_selected_policy_cannot_silently_fulfill_original_offer",
+      "test_communication_contract.CommunicationContractTests.test_competing_offer_acceptances_defer_both_in_either_frontier_order",
+      "test_communication_contract.CommunicationContractTests.test_concurrent_acceptance_persists_one_conserved_result",
+      "test_communication_contract.CommunicationContractTests.test_current_authority_is_checked_by_core_and_rejected_reads_stay_private",
+      "test_communication_contract.CommunicationContractTests.test_current_offerer_control_is_rechecked_without_hiding_received_offer",
+      "test_communication_contract.CommunicationContractTests.test_decline_withdraw_and_counteroffer_retain_distinct_received_meanings",
+      "test_communication_contract.CommunicationContractTests.test_failed_host_save_leaves_stock_evidence_and_offer_unchanged",
+      "test_communication_contract.CommunicationContractTests.test_foreign_or_unreceived_sources_and_requests_are_unavailable",
+      "test_communication_contract.CommunicationContractTests.test_forwarded_testimony_does_not_reveal_structured_offer_terms_or_audience",
+      "test_communication_contract.CommunicationContractTests.test_hidden_stock_permissions_presence_and_unreceived_evidence_do_not_choose_a_menu",
+      "test_communication_contract.CommunicationContractTests.test_late_failure_rolls_back_transfer_with_actual_attempted_dependencies",
+      "test_communication_contract.CommunicationContractTests.test_legacy_receipt_apis_also_keep_forwarded_words_separate_from_private_contract",
+      "test_communication_contract.CommunicationContractTests.test_malformed_terms_unsupported_commands_and_changed_digest_fail_closed",
+      "test_communication_contract.CommunicationContractTests.test_missing_text_preserves_actual_literal_outcome_without_inference",
+      "test_communication_contract.CommunicationContractTests.test_no_selected_or_supported_channel_is_explicitly_empty",
+      "test_communication_contract.CommunicationContractTests.test_non_rise_selected_local_testimony_uses_same_core_without_inventing_stock_or_time",
+      "test_communication_contract.CommunicationContractTests.test_offer_creation_ignores_hidden_feasibility_and_preserves_exact_terms",
+      "test_communication_contract.CommunicationContractTests.test_only_received_terminal_status_is_projected",
+      "test_communication_contract.CommunicationContractTests.test_original_offer_receipt_stays_offered_after_fulfillment",
+      "test_communication_contract.CommunicationContractTests.test_participants_require_received_attribution_and_do_not_parse_words_or_channel_roster",
+      "test_communication_contract.CommunicationContractTests.test_pending_json_restart_lost_ack_and_terminal_replay_transfer_only_once",
+      "test_communication_contract.CommunicationContractTests.test_preparation_and_words_of_acceptance_do_not_transfer_or_accept",
+      "test_communication_contract.CommunicationContractTests.test_private_fields_and_hidden_actor_records_do_not_enter_public_result_or_shared_view",
+      "test_communication_contract.CommunicationContractTests.test_received_status_does_not_probe_live_obligation_or_append_remote_updates",
+      "test_communication_contract.CommunicationContractTests.test_restore_branch_and_stale_state_fences_reject_discarded_future",
+      "test_communication_contract.CommunicationContractTests.test_snapshot_tracks_actor_branch_restore_and_received_status_not_private_state",
+      "test_communication_contract.CommunicationContractTests.test_source_contract_preserves_exact_testimony_attribution_and_both_information_sources",
+      "test_communication_contract.CommunicationContractTests.test_source_window_is_explicitly_bounded_and_detached"
     ],
-    "provider_configured": false,
-    "provider_calls": 0,
-    "browser_errors": 0,
-    "mobile_width": 390
-  },
-  "shared_browser": {
-    "status": "passed",
-    "contexts": [
-      {
-        "adapter": "authored_scene",
-        "committed_actions": 4,
-        "elapsed_seconds": 43,
-        "zero_action_spans": [],
-        "local_drafts_non_submitting": true,
-        "lost_acknowledgement_recovered": true,
-        "stale_navigation_fenced": true,
-        "reload_preserves_draft": true
-      },
-      {
-        "adapter": "settlement",
-        "committed_actions": 5,
-        "elapsed_seconds": 3900,
-        "zero_action_spans": [
-          "found",
-          "build"
-        ],
-        "local_drafts_non_submitting": true,
-        "lost_acknowledgement_recovered": true,
-        "stale_navigation_fenced": true,
-        "reload_preserves_draft": true
-      }
+    "actual_handler": "Core execute_local_communication through native typed execution and mandatory host CAS",
+    "contexts": {
+      "non_rise": "Synthetic authored-quay speaker and witness; exact attributed testimony, unchanged selected elapsed axis",
+      "rise": "Synthetic reviewed local channel and custody mandates; actual conserved two-grain fulfillment",
+      "participants": "Received attributions only, no names/whereabouts/existence/stock feasibility oracle",
+      "sources": "Exact received evidence, original status/originator, separate evidence and reception sources/times; explicit truncation",
+      "offers": "Original public terms/digest and received offered/declined/withdrawn/superseded/fulfilled statuses",
+      "unsupported": "Absent/unselected channels expose no operation; stock offers require existing selected Rise stock profile"
+    },
+    "privacy_regression": "Reproduced native received() leaking private terms/audience to a third party after forwarding testimony; participant guard now shared by native receipts/presentation, compatibility/offline/shared rendering and the new DTO",
+    "dependencies": "Real R9 execution/rejection reads; actual attempted writes retained on late rollback and never included in public DTOs",
+    "scarcity": "Two ten-grain offers may be proposed against the same free stock; competing acceptance frontier defers both in either order",
+    "recovery": [
+      "Exact native CommunicationRequest JSON pending restart",
+      "Same safe persisted and returned DTO",
+      "Explicit boolean acceptance and mandatory CAS",
+      "Failed save leaves original state unchanged",
+      "Lost acknowledgment reload/replay without repeated transfer",
+      "Concurrent delivery commits once",
+      "Changed identity rejected",
+      "Current control/authority/channel rechecked by Core",
+      "Stale state and branch/restore fences"
     ],
-    "common_response_schema": 1,
-    "catalog_library": "irgs-response-depot-v1",
-    "engine_library": "irgs-engine-routine-responses-v1",
-    "provider_configured": false,
+    "source_sha256": {
+      "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
+      "IRGS_3_3/runtime/test_communication_contract.py": "3791d7cd0cdaf14e092a7c5b37f617bb2b0140801a83ea84ec588753d180a55c",
+      "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
+      "IRGS_3_3/runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
+      "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+      "IRGS_3_3/runtime/player_actions.py": "345facfb03f232a254fb1ecacf4c447eea07077c52305ef9d7d3676b16bc7de0",
+      "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+      "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+      "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+      "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+      "IRGS_3_3/runtime/r8_dependencies.py": "9a26bea8b8657cca4c6e6debc7715aad8e0f8a7c01c68ad650722c6b2dd3b129",
+      "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
+      "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+      "IRGS_3_3/runtime/routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
+      "IRGS_3_3/data/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+      "IRGS_3_3/data/responses/depot_v1/SOURCE.json": "5a2f98e8bd70b9cacd26066d651c3057bf2ae00062a8151235e459ad176f8478",
+      "IRGS_3_3/data/responses/engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e"
+    },
     "provider_calls": 0,
-    "browser_errors": 0,
-    "mobile_width": 390
-  },
-  "catalog_source_checks": {
-    "status": "passed",
-    "tests_run": 119,
-    "skipped": 0
-  },
-  "catalog_declared_consumer_checks": {
-    "status": "passed",
-    "tests_run": 31,
-    "exact_original_sources_preserved": true
+    "model_tokens": 0,
+    "user_saves_used": false,
+    "remaining": [
+      "App-owned communication UI/host adapter, compatible pins and coordinator exact-set qualification",
+      "Next Engine increment: host-safe selected Rise travel capabilities over the existing native lifecycle",
+      "No new NPC decision, remote channel, universal speech duration, deferred debt or generic dialogue resolver",
+      "Broader DEV-06\u2013DEV-17/C2, institutions and distributed host durability remain open",
+      "No live inference or model/human-quality qualification"
+    ]
   },
   "current_component_http": {
     "schema_version": 1,
@@ -192,11 +807,13 @@
     "sources": {
       "engine": {
         "root": "/workspace/IRGS-Engine",
-        "commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86"
+        "commit": "733a4358c5eed1f6be9d36033be62bbffd317202",
+        "worktree_clean": true
       },
       "app": {
         "root": "/workspace/IRGS-APP-WEB",
-        "commit": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
+        "commit": "919427cf16cf72574a581d7e6f712e638740a1df",
+        "worktree_clean": true,
         "committed_pins": {
           "Engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
           "Catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
@@ -204,7 +821,8 @@
       },
       "catalog": {
         "root": "/workspace/IRGS-Catalog",
-        "commit": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+        "commit": "069c9e9c6781a83b9068bc222ab3e52d0b454429",
+        "worktree_clean": true
       }
     },
     "selection": "Explicit latest-head overrides; committed App pins and original Catalog consumer identities preserved",
@@ -222,6 +840,8 @@
       "imported_modules": {
         "core_world": "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py",
         "phase_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/phase_contract.py",
+        "communication_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_contract.py",
+        "communication_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_runtime.py",
         "shared_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py",
         "response_depot": "/workspace/IRGS-Engine/IRGS_3_3/runtime/response_depot.py",
         "offline_responses": "/workspace/IRGS-Engine/IRGS_3_3/runtime/offline_responses.py",
@@ -259,7 +879,7 @@
         "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
       },
       "fixture_identity_preserved": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1",
-      "qualification_script_sha256": "fe08b3c66894f04e6d8262c1484ab3e7d3d9c87aee7ae89dea35af7abed87924",
+      "qualification_script_sha256": "6892279fde6d6546436a02f3f4e4cf375c53144dff84de018b93115a4b359ede",
       "app_start_adapter_available": true,
       "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
       "actual_catalog_cases": [
@@ -334,9 +954,11 @@
     "source_sha256": {
       "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
       "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
-      "IRGS_3_3/runtime/shared_runtime.py": "0e23d78fcaaeded6ead34f964df29e0d7a93279364f0caa8c926f2dd124aa323",
+      "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
+      "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
+      "IRGS_3_3/runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
       "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
-      "IRGS_3_3/runtime/offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+      "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
       "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
       "IRGS_3_3/runtime/starting_selection.py": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce",
       "IRGS_3_3/runtime/historical_campaigns.py": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f",
@@ -347,7 +969,7 @@
       "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
       "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
       "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
-      "IRGS_Web/server.py": "0b702fd13295f6d37f4fb814c972c7c528f7169fb8c979619395488e213f19d2",
+      "IRGS_Web/server.py": "d7099a60dbde3ba7279f0e7cfa88b90d066374383ce2040faaca141f7d2a04c9",
       "IRGS_Web/process_bridge.py": "2a1949156526714a8f24eda9779ef0ddca711050da835057f0e4d415e71ffc30",
       "IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
       "IRGS_Web/engine_paths.py": "a4186fe5e19d7cb0b3b039e3e92b92f8c7da178ad0916f681e3b4a6955d3ef42",
@@ -358,57 +980,203 @@
     },
     "remaining": [
       "Coordinator exact-set joined/package qualification",
-      "Communication/offer participant and received-source contract remains the next Engine bounded task"
+      "App-owned communication controls and host adapter for the delivered Engine contract",
+      "Selected Rise travel capability adapter remains the next Engine bounded task"
     ]
   },
-  "metadata_source_equivalence": {
-    "selection": "Exact current committed sources selected before assembly; no later source or metadata substitution.",
-    "selected_components": {
-      "joined": "3b64e8896c231f43eec964ea85d77a39422b6a07",
-      "engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
-      "app": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
-      "catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+  "catalog_checks": {
+    "source_contract_cases": 126,
+    "initial_passed": 122,
+    "initial_skips": 4,
+    "explicit_reader_rerun": {
+      "run": 4,
+      "passed": 4,
+      "skipped": 0
+    },
+    "unexecuted_source_cases": 0,
+    "exact_declared_consumer_cases": 47,
+    "declared_roles": [
+      {
+        "role": "development",
+        "status": "passed",
+        "fixture_consumer_identities_changed": false
+      },
+      {
+        "role": "app_pinned",
+        "status": "passed",
+        "fixture_consumer_identities_changed": false
+      },
+      {
+        "role": "integrated",
+        "status": "passed",
+        "fixture_consumer_identities_changed": false
+      },
+      {
+        "role": "phase",
+        "status": "passed",
+        "fixture_consumer_identities_changed": false
+      }
+    ],
+    "original_consumer_identities_preserved": true
+  },
+  "comparison": {
+    "engine": {
+      "baseline_3_4_1": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+      "incoming": "733a4358c5eed1f6be9d36033be62bbffd317202",
+      "commits": [
+        "733a4358c5eed1f6be9d36033be62bbffd317202 Expose received communication capabilities and protect private offers"
+      ],
+      "changed_paths": [
+        "CHAT_CONTINUATION.md",
+        "CONTINUATION_STATUS.md",
+        "DEVELOPMENT.md",
+        "DEVELOPMENT_LIST.md",
+        "IRGS_3_3/release.json",
+        "IRGS_3_3/runtime/communication_contract.py",
+        "IRGS_3_3/runtime/communication_runtime.py",
+        "IRGS_3_3/runtime/offline_responses.py",
+        "IRGS_3_3/runtime/shared_runtime.py",
+        "IRGS_3_3/runtime/test_communication_contract.py",
+        "README.md",
+        "ROADMAP.md",
+        "engine/ACCEPTANCE_EXECUTION.md",
+        "engine/COMMUNICATION_CAPABILITY_API.md",
+        "engine/COMMUNICATION_CAPABILITY_VALIDATION.json",
+        "engine/COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json",
+        "engine/COMPONENT_INTERACTION.md",
+        "engine/CONTINUATION_COMMUNICATION_API.md",
+        "engine/SHARED_SYSTEMS_API.md",
+        "tools/qualify_communication_capabilities.py",
+        "tools/qualify_component_interaction.py"
+      ]
+    },
+    "app": {
+      "baseline_3_4_1": "6be1eab168c7ad29fb66839bd85799c3c72a09ff",
+      "incoming": "919427cf16cf72574a581d7e6f712e638740a1df",
+      "commits": [
+        "919427cf16cf72574a581d7e6f712e638740a1df Refine Emergent reading controls and drawer keyboard focus",
+        "1a0bc65dd25a18dfd075b2d603d0351c2d035001 Hand off Emergent interface continuation to App development",
+        "7a249dd9e8f0170a9419c97286d8d9fc46a6ae2e Port Emergent interface onto canonical IRGS host"
+      ],
+      "changed_paths": [
+        "APP_DEVELOPMENT_HANDOFF.md",
+        "CHAT_CONTINUATION.md",
+        "COORDINATOR_REPORT.md",
+        "COORDINATOR_WORK_ORDER.md",
+        "DEVELOPMENT.md",
+        "EMERGENT_INTERFACE_PORT.md",
+        "EMERGENT_INTERFACE_VALIDATION.json",
+        "INTERFACE_REFINEMENT.md",
+        "INTERFACE_REFINEMENT_VALIDATION.json",
+        "IRGS_Web/EMERGENT_INTERFACE_SOURCE.json",
+        "IRGS_Web/INTERFACE_ASSETS.json",
+        "IRGS_Web/README.md",
+        "IRGS_Web/licenses/fraunces-OFL.txt",
+        "IRGS_Web/licenses/ibm-plex-mono-OFL.txt",
+        "IRGS_Web/licenses/im-fell-english-OFL.txt",
+        "IRGS_Web/licenses/im-fell-english-sc-OFL.txt",
+        "IRGS_Web/licenses/instrument-sans-OFL.txt",
+        "IRGS_Web/licenses/newsreader-OFL.txt",
+        "IRGS_Web/release.json",
+        "IRGS_Web/server.py",
+        "IRGS_Web/static/app.js",
+        "IRGS_Web/static/catalogue.js",
+        "IRGS_Web/static/fonts.css",
+        "IRGS_Web/static/fraunces-latin.woff2",
+        "IRGS_Web/static/historical-landscape.jpg",
+        "IRGS_Web/static/ibm-plex-mono-latin.woff2",
+        "IRGS_Web/static/im-fell-english-latin.woff2",
+        "IRGS_Web/static/im-fell-english-sc-latin.woff2",
+        "IRGS_Web/static/index.html",
+        "IRGS_Web/static/instrument-sans-latin.woff2",
+        "IRGS_Web/static/newsreader-latin.woff2",
+        "IRGS_Web/static/preview.css",
+        "IRGS_Web/static/preview.js",
+        "IRGS_Web/tests/test_gameplay_ui.js",
+        "tools/qualify_interface_port.js",
+        "tools/qualify_interface_refinement.js"
+      ]
+    },
+    "catalog": {
+      "baseline_3_4_1": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
+      "incoming": "069c9e9c6781a83b9068bc222ab3e52d0b454429",
+      "commits": [
+        "069c9e9c6781a83b9068bc222ab3e52d0b454429 Qualify Catalog responses through public process starts"
+      ],
+      "changed_paths": [
+        "CHAT_CONTINUATION.md",
+        "COORDINATOR_REPORT.md",
+        "COORDINATOR_REPORT_INTEROP_01.md",
+        "COORDINATOR_WORK_ORDER.md",
+        "DEVELOPMENT.md",
+        "IRGS_Catalog/evaluation/phase_responses_v1/README.md",
+        "IRGS_Catalog/evaluation/phase_responses_v1/compatibility.json",
+        "IRGS_Catalog/phase_response_compatibility.py",
+        "IRGS_Catalog/release.json",
+        "IRGS_Catalog/verify_catalog.py",
+        "PHASE_RESPONSE_VALIDATION.json",
+        "README.md",
+        "tools/tests/test_phase_response_consumers.py",
+        "tools/tests/test_phase_response_contract.py",
+        "tools/tests/test_standalone_catalog.py"
+      ]
     }
   },
-  "patches": [
-    "Fixed isolated Catalog compatibility verification by loading exact owned siblings without sys.path/cache substitution",
-    "Aligned App Engine/Catalog pins to exact reviewed 3.4.1 sources",
-    "Updated Engine interoperability check to compare current actual App/Engine start capabilities",
-    "Updated visible App edition to 3.4.1",
-    "Manifest/archive edition now follows VERSION.json and verifies previous_version",
-    "Automatic QA retains reports locally for versioned coordinator publication",
-    "Make coordinated edition helper load from its packaged path in isolated Python verification"
-  ],
   "content_preservation": {
     "status": "passed",
-    "baseline": "27fff8385d1c01fdfe9ad7254b7647e6bc12a01e",
-    "current_catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
-    "original_records_unchanged": 62,
-    "scope": "Original evaluation records, archive parts and both response libraries retain exact bytes; compatibility code fix and new contracts are separate.",
-    "exact_engine_catalog_depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
-    "archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+    "catalog_baseline": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
+    "unchanged_original_catalog_files": 174,
+    "intentional_existing_catalog_code_or_manifest_changes": [
+      "IRGS_Catalog/release.json",
+      "IRGS_Catalog/verify_catalog.py"
+    ],
+    "new_catalog_files": [
+      "IRGS_Catalog/evaluation/phase_responses_v1/README.md",
+      "IRGS_Catalog/evaluation/phase_responses_v1/compatibility.json",
+      "IRGS_Catalog/phase_response_compatibility.py"
+    ],
+    "unchanged_engine_data_files": 50,
+    "response_depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "original_archive_parts_preserved": 32,
+    "original_archive_sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773",
+    "comparison_method": "Git blob equality for every baseline file; selected source integrity and archive readers separately executed."
   },
-  "local_response_depot": {
+  "integration_patches": [
+    "Align committed App Engine/Catalog dependency pins to the exact reviewed selections",
+    "Align coordinated edition metadata and visible App footer to 3.4.2",
+    "Include owner interface and communication qualification tools in the unified inventory"
+  ],
+  "response_depot": {
     "system_variants": 750,
     "editable_drafts": 250,
     "recipes": 32
   },
   "remaining": [
-    "Communication/offer participant and received-source contracts and matching App controls",
-    "Operator configuration and conditional live/model-quality qualification",
-    "General freeform/combat, dialogue, continuing institutions and wider DEV/C2 completion",
-    "Windows and distributed hosting qualification"
+    "App authenticated explicit durable communication/source/offer controls and then matching Catalog consumers",
+    "Protected operator/launcher configuration; conditional live inference and actual model-quality evaluation",
+    "Selected travel capabilities and further native adapters without new unselected rules",
+    "General freeform/combat, NPC dialogue, institutions and wider DEV/C2 completion",
+    "Native Windows and wider hosting/device qualification"
   ],
+  "all_branches_certified": false,
+  "operation_summary": {
+    "operation_spellings": 87,
+    "backend_operation_pairs": 172,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 89,
+    "pairs_with_failed_path_evidence": 36,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false
+  },
   "live_calls": 0,
   "user_saves_opened": false,
-  "original_archive_records_preserved": true,
-  "all_branches_certified": false,
-  "artifacts_directory": "/workspace/irgs-cloud/integration/phase-integration-3.4.1/20261025T223303Z",
-  "package_qualification": "Required on the final committed tree before publication; external release/qualification.json records its exact commit and archive digest.",
-  "packaging_tool_patch": {
-    "problem": "Extracted-package Python -I verification could not resolve the new edition helper via normal imports.",
-    "fix": "Load tools/versioning.py from the verifier sibling path explicitly.",
-    "runtime_inputs_unchanged": true,
-    "validation": "Isolated verifier and final extracted HTTP/browser package checks; prior Core/Web results retain their exact source input identity."
-  }
+  "package_qualification": "Required on final committed tree before publishing; external release/qualification.json records the exact source commit and ZIP digest.",
+  "artifacts_directory": "/workspace/irgs-cloud/integration/interface-communication-3.4.2/20261026T160917Z"
 }

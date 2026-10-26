@@ -1,11 +1,10 @@
-# IRGS 3.4.1 coordinator qualification
+# IRGS 3.4.2 coordinator qualification
 
-Previous release: 3.3.3. Fresh source-bound operation capture, joined regressions,
-independent HTTP and real Chromium pass for the reviewed component set.
-Non-Rise observation and Rise work use actual selected Core handlers with
-explicit Begin/review/continue controls and durable original-result recovery.
-Catalog source checks and original exact-consumer fixtures pass separately.
-No live inference, user campaign migration or complete C2 claim is made.
+Fresh Core execution, joined regressions, independent HTTP and four Chromium
+suites pass for the exact selected set. The refined Emergent interface retains
+explicit review, actor filtering and original-result recovery. Engine communication
+capabilities are delivered; their App bridge remains open. Original Catalog
+consumers, archive/source records and response variants remain preserved.
 
-See phase_integration_3_4_1_review.json for exact sources, results and limits.
-Final archive qualification is recorded outside source under release/.
+See interface_communication_3_4_2_review.json for sources, results and limits.
+The final committed archive is separately checked before publication.

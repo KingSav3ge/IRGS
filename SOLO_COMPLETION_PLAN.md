@@ -1,5 +1,12 @@
 # IRGS 3.4.0 Solo runtime completion
 
+Current coordinated increment: **3.4.2**, previous release **3.3.3**. See
+CHANGES_3_4_2.md. Engine communication/source capabilities and the refined
+Emergent App interface are delivered; communication App controls and operator
+configuration remain the next shared-system tasks. Dated milestones below retain
+their original scope and evidence.
+
+
 Current coordinated increment: **3.4.1**, previous release **3.3.3**. Selected
 phase capability discovery, App process controls/recovery and Catalog compatibility
 are now qualified together; see provenance/qa/phase_integration_3_4_1_review.json.
