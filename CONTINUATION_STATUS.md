@@ -1,13 +1,22 @@
 # Current Engine continuation
 
-## Current joined 3.4.3 status
+## Latest App communication delivery included in 3.4.3
 
-Engine start context, App adoption and separate Catalog six-path acceptance are
-qualified in provenance/qa/start_readiness_3_4_3_review.json. Earlier owner delivery
-notes below retain their actual source and date; their App-adoption blockers are
-superseded by this joined result. Follow COORDINATION.md and CHAT_CONTINUATION.md
-for current work: selected Engine travel, durable App communication and matching
-Catalog consumers. General freeform, full C2 and live quality remain open.
+The newly pulled App bridge adds actor-received channels/sources and reviewed
+Speak, Offer, Counteroffer, Accept, Decline and Withdraw operations. Exact words
+remain testimony; saying “I accept” under Speak accepts no offer. Core retains
+authority, conserved transfers and distinct closure outcomes. Prepare/accept,
+lost replies, restart/restore and original-result lookup preserve identity and
+effects. Legacy unattributed sources retain their established private-provenance
+boundary, and other R00 characters gain no founder inspection or actions.
+
+This bridge operates only where legitimate channels and participants have been
+selected. Normal initializers do not install the synthetic test fixtures. Next:
+Engine/content channel selection and native travel, separate Catalog communication
+consumers, protected App operator setup, build identity and supported-intent
+mapping. Broader freeform/combat, NPC/institutional completion, live quality and
+full C2 remain open. Current source replaces superseded generated installations;
+original archives, accurate dated evidence, Git history, saves/config remain.
 
 ## Current coordinator review — 26 October 2026
 
