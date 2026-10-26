@@ -1,5 +1,23 @@
 # Continuation instructions — IRGS coordinator
 
+## Latest App communication delivery included in 3.4.3
+
+The newly pulled App bridge adds actor-received channels/sources and reviewed
+Speak, Offer, Counteroffer, Accept, Decline and Withdraw operations. Exact words
+remain testimony; saying “I accept” under Speak accepts no offer. Core retains
+authority, conserved transfers and distinct closure outcomes. Prepare/accept,
+lost replies, restart/restore and original-result lookup preserve identity and
+effects. Legacy unattributed sources retain their established private-provenance
+boundary, and other R00 characters gain no founder inspection or actions.
+
+This bridge operates only where legitimate channels and participants have been
+selected. Normal initializers do not install the synthetic test fixtures. Next:
+Engine/content channel selection and native travel, separate Catalog communication
+consumers, protected App operator setup, build identity and supported-intent
+mapping. Broader freeform/combat, NPC/institutional completion, live quality and
+full C2 remain open. Current source replaces superseded generated installations;
+original archives, accurate dated evidence, Git history, saves/config remain.
+
 Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
 Read AGENTS.md, COORDINATION.md, COMPONENTS.json, VERSION_POLICY.md and
 provenance/qa/start_readiness_3_4_3_review.json. New user directions take precedence.
@@ -12,8 +30,7 @@ and dated validation at their real tested source. This is bounded playability,
 not general historical resolution. John remains held for missing personal context.
 
 Direct/review the three existing component workstreams. Engine next: selected
-travel over native processes. App next: durable actor-authenticated communication,
-received source and offer controls. Catalog next: matching communication consumers
+travel over native processes. App next: protected operator setup, non-secret build identity and supported-intent mapping. Catalog next: matching communication consumers
 after that actual bridge, preserving current starts and original content. Operator
 setup, selected-intent mapping, build identity, general freeform/combat, broader
 DEV/C2, Windows and live model quality remain open.

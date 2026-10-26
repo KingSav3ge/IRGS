@@ -1,5 +1,23 @@
 # Unified IRGS development and coordination guide
 
+## Latest App communication delivery included in 3.4.3
+
+The newly pulled App bridge adds actor-received channels/sources and reviewed
+Speak, Offer, Counteroffer, Accept, Decline and Withdraw operations. Exact words
+remain testimony; saying “I accept” under Speak accepts no offer. Core retains
+authority, conserved transfers and distinct closure outcomes. Prepare/accept,
+lost replies, restart/restore and original-result lookup preserve identity and
+effects. Legacy unattributed sources retain their established private-provenance
+boundary, and other R00 characters gain no founder inspection or actions.
+
+This bridge operates only where legitimate channels and participants have been
+selected. Normal initializers do not install the synthetic test fixtures. Next:
+Engine/content channel selection and native travel, separate Catalog communication
+consumers, protected App operator setup, build identity and supported-intent
+mapping. Broader freeform/combat, NPC/institutional completion, live quality and
+full C2 remain open. Current source replaces superseded generated installations;
+original archives, accurate dated evidence, Git history, saves/config remain.
+
 Current coordinated edition: **3.4.3**; previous release: **3.3.3**.
 See [version policy](VERSION_POLICY.md). Historical evidence below retains
 its original tested development identities.
@@ -15,7 +33,7 @@ Catalog's separate six-path requirements/qualification. The optional sourced
 Henry observation, authored new-person opening and R00 are bounded actual
 slices; John and other unsupported starts remain declaration/reference modes.
 Received initial civil day and local elapsed time retain separate meanings.
-Next: selected Engine travel, App communication controls and matching Catalog
+Next: selected Engine travel, normal-start communication channel selection and matching Catalog
 consumers. No general freeform, full C2 or live model-quality completion is
 claimed. Earlier sections retain their original dated scope and qualification.
 
