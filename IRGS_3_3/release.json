@@ -449,9 +449,9 @@
     "runtime/test_solo_lifecycle.py": "155a7c4b5dcaf922721f75e214f9fc9227db4830858e7e9798ab36e5b80414bd",
     "data/responses/PROVENANCE.json": "3868b157d950637af84b20ef1e846ec21b3bf242c4d577dba83ac3b31cc43f76",
     "data/responses/engine_routine_v1.json": "7091a060fdde8aebd233a0ff68dba4480a04fcd7eea3630eb9bd73fa9490603e",
-    "runtime/communication_runtime.py": "34bdea9a0333287dfdeb3e0d4e5298f780abc73aadfe4d43070c4e0299f2db43",
+    "runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
     "runtime/inference_accounting.py": "a3331784b88d5d24a73e7b60f63fc307f08d6885e5a635c256d54e5de5b2cf2c",
-    "runtime/offline_responses.py": "d41413630eb8591411234973d7f358a86e251ecb151ffaf10083ef22b7852a4f",
+    "runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
     "runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
     "runtime/routine_format.py": "1c9d2c7e87c0eb6c056197c5dc0a7c5b65c47f6f292e96c6b6e067deb686ad00",
     "runtime/test_communication_runtime.py": "bb546ffe702ef86a47696248cd993599b27a845eb8baf339437e6ae8b6c34d3a",
@@ -462,11 +462,13 @@
     "data/responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
     "runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
     "runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
-    "runtime/shared_runtime.py": "0e23d78fcaaeded6ead34f964df29e0d7a93279364f0caa8c926f2dd124aa323",
+    "runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
     "runtime/test_response_depot.py": "c09c4eb0f15089177538ecb1671c8e696cc1f19992833f0a965348871982e35c",
     "runtime/test_shared_runtime.py": "838c26c30375ea60f9184796f436f5844cbee684a7a29cd3f46bd1e67e8b50e9",
     "runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
-    "runtime/test_phase_contract.py": "f015fdaf8d2129a1bb96c68ec2678668ba6e543c9053f35efa657e19ec9e45fd"
+    "runtime/test_phase_contract.py": "f015fdaf8d2129a1bb96c68ec2678668ba6e543c9053f35efa657e19ec9e45fd",
+    "runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
+    "runtime/test_communication_contract.py": "3791d7cd0cdaf14e092a7c5b37f617bb2b0140801a83ea84ec588753d180a55c"
   },
   "existing_save_migration": false,
   "development_designations": {

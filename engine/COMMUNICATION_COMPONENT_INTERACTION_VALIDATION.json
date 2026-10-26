@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "status": "PASS_EXPLICIT_COMPONENT_SOURCES_WITH_LIMITS",
+  "target_iteration": "IRGS 3.4.1 development",
+  "sources": {
+    "engine": {
+      "root": "/workspace/IRGS-Engine",
+      "commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+      "worktree_clean": false
+    },
+    "app": {
+      "root": "/workspace/IRGS-APP-WEB",
+      "commit": "919427cf16cf72574a581d7e6f712e638740a1df",
+      "worktree_clean": true,
+      "committed_pins": {
+        "Engine": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+        "Catalog": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+      }
+    },
+    "catalog": {
+      "root": "/workspace/IRGS-Catalog",
+      "commit": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f",
+      "worktree_clean": true
+    }
+  },
+  "selection": "Explicit latest-head overrides; committed App pins and original Catalog consumer identities preserved",
+  "tests_run": 5,
+  "passed": 5,
+  "skipped": 0,
+  "test_ids": [
+    "__main__.ComponentInteractionTests.test_app_start_discovery_matches_actual_engine_capabilities_without_mutation",
+    "__main__.ComponentInteractionTests.test_catalog_and_engine_runtime_intake_the_same_exact_depot_and_drafts_submit_nothing",
+    "__main__.ComponentInteractionTests.test_catalog_nine_cases_execute_real_http_outcomes_and_conserved_final_state",
+    "__main__.ComponentInteractionTests.test_missing_text_keeps_real_http_outcome_without_paid_fallback",
+    "__main__.ComponentInteractionTests.test_new_engine_phase_contract_and_existing_app_commands_interoperate_in_both_contexts"
+  ],
+  "evidence": {
+    "imported_modules": {
+      "core_world": "/workspace/IRGS-Engine/IRGS_3_3/runtime/core_world.py",
+      "phase_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/phase_contract.py",
+      "communication_contract": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_contract.py",
+      "communication_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/communication_runtime.py",
+      "shared_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/shared_runtime.py",
+      "response_depot": "/workspace/IRGS-Engine/IRGS_3_3/runtime/response_depot.py",
+      "offline_responses": "/workspace/IRGS-Engine/IRGS_3_3/runtime/offline_responses.py",
+      "runtime_contracts": "/workspace/IRGS-Engine/IRGS_3_3/runtime/runtime_contracts.py",
+      "starting_selection": "/workspace/IRGS-Engine/IRGS_3_3/runtime/starting_selection.py",
+      "historical_campaigns": "/workspace/IRGS-Engine/IRGS_3_3/runtime/historical_campaigns.py",
+      "settlement_setup": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_setup.py",
+      "solo_provider": "/workspace/IRGS-Engine/IRGS_3_3/runtime/solo_provider.py",
+      "openai_proposals": "/workspace/IRGS-Engine/IRGS_3_3/runtime/openai_proposals.py",
+      "process_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/process_runtime.py",
+      "scene_actions": "/workspace/IRGS-Engine/IRGS_3_3/runtime/scene_actions.py",
+      "settlement_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/settlement_runtime.py",
+      "r9_runtime": "/workspace/IRGS-Engine/IRGS_3_3/runtime/r9_runtime.py",
+      "server": "/workspace/IRGS-APP-WEB/IRGS_Web/server.py",
+      "process_bridge": "/workspace/IRGS-APP-WEB/IRGS_Web/process_bridge.py",
+      "local_presentation": "/workspace/IRGS-APP-WEB/IRGS_Web/local_presentation.py",
+      "engine_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/engine_paths.py",
+      "catalog_paths": "/workspace/IRGS-APP-WEB/IRGS_Web/catalog_paths.py",
+      "response_depot_compatibility": "/workspace/IRGS-Catalog/IRGS_Catalog/response_depot_compatibility.py",
+      "solo_evaluation": "/workspace/IRGS-Catalog/IRGS_Catalog/solo_evaluation.py",
+      "scripted_responses": "/workspace/IRGS-Catalog/IRGS_Catalog/scripted_responses.py"
+    },
+    "fixture": {
+      "status": "verified",
+      "fixture_id": "irgs-shared-responses-v1",
+      "contexts": 2,
+      "non_rise_contexts": 1,
+      "cases": 9,
+      "actor_oracle_separation": true,
+      "runtime_execution_verified_by_schema": false
+    },
+    "original_fixture_consumers": {
+      "engine_commit": "9ecf3b8864f5f93be6b15c8cf6087e6bd66c8443",
+      "app_commit": "e1efcfe7a7eb47eb80208fce21d0b18a2b231a1f",
+      "app_catalog_pin": "94b8ca6d976da48b3c6ca65e014b28c6d9a120c2"
+    },
+    "fixture_identity_preserved": "fc45e92af7c869924695450f4e995621779e4d4dae6058c72ebe416310ceded1",
+    "qualification_script_sha256": "6892279fde6d6546436a02f3f4e4cf375c53144dff84de018b93115a4b359ede",
+    "app_start_adapter_available": true,
+    "depot_sha256": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
+    "actual_catalog_cases": [
+      {
+        "case_id": "rise-walk",
+        "status": "completed_successfully",
+        "elapsed_seconds": 300
+      },
+      {
+        "case_id": "rise-inspect",
+        "status": "completed_successfully",
+        "elapsed_seconds": 0
+      },
+      {
+        "case_id": "quay-look",
+        "status": "completed_successfully",
+        "elapsed_seconds": 20
+      },
+      {
+        "case_id": "quay-blocked",
+        "status": "completed_unsuccessfully",
+        "elapsed_seconds": 30
+      },
+      {
+        "case_id": "quay-passage",
+        "status": "completed_successfully",
+        "elapsed_seconds": 45
+      },
+      {
+        "case_id": "quay-desk",
+        "status": "completed_successfully",
+        "elapsed_seconds": 45
+      },
+      {
+        "case_id": "quay-inspect",
+        "status": "completed_successfully",
+        "elapsed_seconds": 20
+      },
+      {
+        "case_id": "quay-deliver",
+        "status": "completed_successfully",
+        "elapsed_seconds": 10
+      },
+      {
+        "case_id": "quay-empty",
+        "status": "completed_unsuccessfully",
+        "elapsed_seconds": 10
+      }
+    ],
+    "phase_interaction": [
+      {
+        "context": "rise",
+        "kind": "work",
+        "worked_seconds": 3600,
+        "pause_resume": true,
+        "replay_once": true,
+        "new_engine_start_existing_app_continuation": true
+      },
+      {
+        "context": "quay",
+        "kind": "observation",
+        "worked_seconds": 20,
+        "pause_resume": true,
+        "replay_once": true,
+        "new_engine_start_existing_app_continuation": true
+      }
+    ]
+  },
+  "provider_calls": 0,
+  "model_tokens": 0,
+  "user_saves_used": false,
+  "source_sha256": {
+    "IRGS_3_3/runtime/core_world.py": "9189cb9c6475f418569d1253e593034dc11bdc29d8a2ee6d3e532d442fec9a60",
+    "IRGS_3_3/runtime/phase_contract.py": "69710d90158febbf1c0cb6883e48923a7ecaf859a7748e0d11690a673e4891be",
+    "IRGS_3_3/runtime/communication_contract.py": "733ee353083706d2f7830195a5521f83876c737ac70d5386869c4bffb4ba5fe9",
+    "IRGS_3_3/runtime/communication_runtime.py": "2e36a9f04716128d7997bd3b56db4e160ef5cf5ce59f6d34f16a33158dc494d8",
+    "IRGS_3_3/runtime/shared_runtime.py": "21aabd7795c744cb321a7e27bbce1a2f5a9f64ee90370339fa89039af706b1c1",
+    "IRGS_3_3/runtime/response_depot.py": "5cadc19081c2907408db9b301cd8815b9bded940e50bc8085266e585cd373421",
+    "IRGS_3_3/runtime/offline_responses.py": "340d47a7776d078ed854008641b0ffe336182b5ea2b59013ac2759e3c7c751fa",
+    "IRGS_3_3/runtime/runtime_contracts.py": "118d32e7ba025c4d2009b182433ba8372b739127ae8a374e8d821a526d0c9668",
+    "IRGS_3_3/runtime/starting_selection.py": "5e6688f801510749d7ee58231f6beda9bcd0fcf92de8f2bb051bd0a7426d06ce",
+    "IRGS_3_3/runtime/historical_campaigns.py": "251ee02a4f13a878c5a96c658db39790aa499f0677c40ffe23f427c194572f7f",
+    "IRGS_3_3/runtime/settlement_setup.py": "d942b135ba8eac8f0a6d3b160f36a146219f399da8a7035e095f12c599566f27",
+    "IRGS_3_3/runtime/solo_provider.py": "63d644f36cd7a0ec9631797d1d93618f86107c3fe380fc57deb9c4a6e65ece39",
+    "IRGS_3_3/runtime/openai_proposals.py": "72aa83bb9717307ba15ff4b425522306ac047ec28739371e2841f0712dbe9e5c",
+    "IRGS_3_3/runtime/process_runtime.py": "aea12406cc7da04c57424868e25ef3374ce44e36dd2f07159275083338f7df4c",
+    "IRGS_3_3/runtime/scene_actions.py": "45ed97da6c16f01c9efffb3d5607c25e47d0ddff4082400c78e396a3dc1d6083",
+    "IRGS_3_3/runtime/settlement_runtime.py": "77703de381e8b4e8724d9fdde4b502b50da9bb3f8948f03cf4da3f0e87c9915b",
+    "IRGS_3_3/runtime/r9_runtime.py": "b42dedd00a5620e660f824883bc0853aaa76bb22e1c0945628708e12e82507d5",
+    "IRGS_Web/server.py": "d7099a60dbde3ba7279f0e7cfa88b90d066374383ce2040faaca141f7d2a04c9",
+    "IRGS_Web/process_bridge.py": "2a1949156526714a8f24eda9779ef0ddca711050da835057f0e4d415e71ffc30",
+    "IRGS_Web/local_presentation.py": "b5d8b80401915d3b99c4c3d69b8e158819eda1a3188c11c43f1c85c3f4e11abc",
+    "IRGS_Web/engine_paths.py": "a4186fe5e19d7cb0b3b039e3e92b92f8c7da178ad0916f681e3b4a6955d3ef42",
+    "IRGS_Web/catalog_paths.py": "2952fbf5aeec83e9c662b5f8733153fd91c7a0bbfde453a6caa87d598a72a3a4",
+    "IRGS_Catalog/response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
+    "IRGS_Catalog/solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
+    "IRGS_Catalog/scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313"
+  },
+  "remaining": [
+    "Coordinator exact-set joined/package qualification",
+    "App-owned communication controls and host adapter for the delivered Engine contract",
+    "Selected Rise travel capability adapter remains the next Engine bounded task"
+  ]
+}

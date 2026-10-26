@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "compatibility_id": "irgs-phase-responses-v1",
+  "classification": "offline-synthetic-consumer-qualification",
+  "rights": {
+    "authorship": "original-authored-evaluation-instructions",
+    "imported_material": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "source_compatibility": {
+    "path": "evaluation/development_interop_v1/compatibility.json",
+    "sha256": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85"
+  },
+  "consumers": {
+    "engine_commit": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "app_commit": "919427cf16cf72574a581d7e6f712e638740a1df",
+    "app_engine_pin": "aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86",
+    "app_catalog_pin": "526404128830a99fe8ea5c2bce43b6ea7d45fe6f"
+  },
+  "presentation_contract": {
+    "schema_version": 1,
+    "view_field": "local_responses",
+    "saved_result_field": "presentation",
+    "catalog_library_id": "irgs-response-depot-v1",
+    "engine_library_id": "irgs-engine-routine-responses-v1",
+    "format": "plain_text",
+    "provider_calls": 0,
+    "model_tokens": 0,
+    "phase_engine_library_id": "irgs-response-depot-v1"
+  },
+  "process_contract": {
+    "view_field": "process_control",
+    "schema_version": 1,
+    "engine_schema": "irgs-phase-capabilities-1",
+    "public_start_available": true,
+    "commands": [
+      "start",
+      "advance",
+      "pause",
+      "resume",
+      "inspect",
+      "cancel"
+    ]
+  },
+  "context_ids": [
+    "rise",
+    "quay"
+  ],
+  "qualification_scope": "explicit_candidate_compatibility_not_joined_approval"
+}

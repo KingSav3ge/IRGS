@@ -140,8 +140,8 @@ builder that expects historical backups/certification files.
 5. Package the actual committed tree and test extraction before pushing main:
 
 ```bash
-python -B tools/package_development.py --output ../IRGS_3_4_1_Development.zip
-python -B tools/smoke_development.py ../IRGS_3_4_1_Development.zip
+python -B tools/package_development.py --output ../IRGS_3_4_2_Development.zip
+python -B tools/smoke_development.py ../IRGS_3_4_2_Development.zip
 ```
 
 Use explicit candidate/import paths. For clean-package checks clear only stale

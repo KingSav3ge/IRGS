@@ -2,9 +2,29 @@
 
 ## Current continuation pointer
 
-**Component interaction evidence:** [latest-source checks](engine/COMPONENT_INTERACTION.md) exercise Engine/App/Catalog actual effects, typed phases, source intake, receipt replay and browser recovery. Five Engine-owned checks, 211 passing App Python checks (seven Windows skips), 123 static UI/response checks and both real Chromium suites pass. This advances DEV-25–DEV-27 delivery evidence without changing mechanics or claiming a newly pinned/joined release. Remaining App work is start-discovery adoption and reviewed pins; next Engine work is communication/offer participant/source contracts.
+**Communication contract delivered — 26 October 2026 (3.4.1 development):**
+[actor-safe participant/source/offer API](engine/COMMUNICATION_CAPABILITY_API.md)
+now uses received attributions, exact testimony/terms and received lifecycle
+statuses, with explicit acceptance and sanitized atomic Core/host execution.
+Shared views include `communications`. A reproduced forwarding leak is closed
+across existing receipt/rendering APIs; received words grant no private contract
+access. [32 dedicated cases](engine/COMMUNICATION_CAPABILITY_VALIDATION.json) pass;
+full runtime: 740 run, 739 pass, one prescribed private-save policy skip. Shared
+(35), phase (28), native communication (13) and offline-response (17) checks pass.
+Current source checks also pass five Engine HTTP cases and 38 relevant App
+response/process/start/Catalog cases against App `919427cf16cf72574a581d7e6f712e638740a1df`
+and Catalog `526404128830a99fe8ea5c2bce43b6ea7d45fe6f`; see
+[exact module/pin evidence](engine/COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json).
+App communication controls/host wiring, reviewed pins and current joined/package
+qualification remain separate. **Next Engine task:** host-safe selected Rise
+travel capabilities over the existing native lifecycle. Stable DEV/C2 criteria
+remain open beyond the named evidence.
 
-**Delivered bounded contract:** [phase capabilities v1](engine/PHASE_CAPABILITY_API.md) advances named DEV-06–DEV-17 properties with actor-safe options/status/commands and outcomes over existing non-Rise observation and Rise work. [28 new cases](engine/PHASE_CAPABILITY_VALIDATION.json) qualify actual reads/rejection, stock/actor competition, pause/resume/cancel and recovery; broader stable DEV completion criteria remain open. Shared-response integration is complete for its recorded set; new phase controls/pins need App/coordinator qualification. **Next bounded work:** communication/offer participant and received-source contracts.
+The dated records below retain their original scope and dependencies.
+
+**Component interaction evidence:** [latest-source checks](engine/COMPONENT_INTERACTION.md) exercise Engine/App/Catalog actual effects, typed phases, source intake, receipt replay and browser recovery. Five Engine-owned checks, 211 passing App Python checks (seven Windows skips), 123 static UI/response checks and both real Chromium suites pass. This advances DEV-25–DEV-27 delivery evidence without changing mechanics or claiming a newly pinned/joined release. Remaining App work is start-discovery adoption and reviewed pins; communication participant/source work is now delivered above.
+
+**Delivered bounded contract:** [phase capabilities v1](engine/PHASE_CAPABILITY_API.md) advances named DEV-06–DEV-17 properties with actor-safe options/status/commands and outcomes over existing non-Rise observation and Rise work. [28 new cases](engine/PHASE_CAPABILITY_VALIDATION.json) qualify actual reads/rejection, stock/actor competition, pause/resume/cancel and recovery; broader stable DEV completion criteria remain open. Shared-response integration is complete for its recorded set; new phase controls/pins need App/coordinator qualification. **Next bounded work at that time:** communication/offer contracts, now delivered above.
 
 The qualified 3.4.0 shared response update is integrated. Read
 [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)
@@ -22,9 +42,9 @@ The records below preserve previously delivered work and historical evidence.
 
 **25 October delivery:** common actor/capability/exact-intent/received/receipt contracts now expose selected real non-Rise and Rise operations through one acceptance/CAS cycle. The neutral 1,000-variant depot supplies capability-bound drafts and exact local results. Core declarations enforce actual current control within observed execution. This advances named DEV-02, DEV-06–DEV-08, DEV-11, DEV-14 and DEV-17 properties; broader open milestones remain open. See [API/adapters](engine/SHARED_SYSTEMS_API.md) and [new evidence](engine/SHARED_SYSTEMS_VALIDATION.json). Next work belongs to compatible App consumption/joined qualification and further explicitly selected rules/adapters.
 
-Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+Target iteration: **IRGS 3.4.1 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
-Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-25. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
+Maintained in **KingSav3ge/IRGS-Engine**, updated 2026-10-26. The stable DEV IDs originated in **3.3.3 Unified Development D1**. Selected executable Core: **3.3**. Publish Engine increments to this repository's `main` branch. This list defines completion criteria; it does not adopt new mechanics or certify unfinished capabilities.
 
 The immediate target is a complete Solo action cycle: a player makes a supported decision, the engine commits its legitimate consequences, the player sees the outcome, and play can continue after reload. Complete that cycle before widening the historical catalogue or adding interface sections.
 

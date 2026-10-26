@@ -1,5 +1,21 @@
 # Engine-side App and Catalog compatibility
 
+## Communication delivery check — 26 October 2026
+
+[Current candidate evidence](COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json)
+passes five Engine-owned HTTP checks against App
+`919427cf16cf72574a581d7e6f712e638740a1df` and Catalog
+`526404128830a99fe8ea5c2bce43b6ea7d45fe6f`. Current App start discovery and
+continuation agree with Engine capabilities; 38 relevant App response/process/
+start/Catalog cases also pass using explicit source selectors. App commits Engine
+`aa30bb63a3828cbaeb5ee3d1db57edd388a8dc86` and the Catalog head above. These pins
+were preserved; Engine candidate modules are identified by their actual hashes.
+The [communication API](COMMUNICATION_CAPABILITY_API.md) still needs App-owned
+controls/host wiring and coordinator exact-set review. No new browser/package
+qualification is claimed by this increment.
+
+## Prior three-source execution — 25 October 2026
+
 The three development repositories were pulled on 25 October 2026. This
 qualification selects their current source explicitly without changing App's
 committed Engine/Catalog pointers or Catalog's historical consumer declarations.

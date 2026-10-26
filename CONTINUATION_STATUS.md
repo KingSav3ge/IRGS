@@ -2,9 +2,29 @@
 
 ## Current continuation pointer
 
-**Three development sources synchronized and tested — 25 October 2026:** selected Engine `0fdfc21f45510e3fd99fd6a8087cd3314d077267`, App `67411f8ef5214c8cb51af2b244590751e6ea20df` and Catalog `4bd572843cebc94e7d043c3706d1be85249d6c10`. [Engine-side qualification](engine/COMPONENT_INTERACTION.md) passes five new checks including all nine original Catalog cases through actual HTTP and new Engine phase starts as trusted setup continued through App endpoints. Current App suite: 218 run, 211 pass, seven Windows-only skips; 110 gameplay UI and 13 response checks pass. Both Chromium suites pass across observation/work and authored/Rise contexts with zero browser errors/provider calls. Catalog contracts (39), shared Engine (35), phase Engine (28), component integrity and Kira canon pass. App's committed pins and original fixture consumers are preserved. Runtime code is unchanged; App needs the start-discovery adapter and reviewed pins/joined qualification. Communication/offer participant/source contracts remain the next Engine task.
+**Communication contract delivered — 26 October 2026 (3.4.1 development):**
+[actor-safe participant/source/offer API](engine/COMMUNICATION_CAPABILITY_API.md)
+now uses received attributions, exact testimony/terms and received lifecycle
+statuses, with explicit acceptance and sanitized atomic Core/host execution.
+Shared views include `communications`. A reproduced forwarding leak is closed
+across existing receipt/rendering APIs; received words grant no private contract
+access. [32 dedicated cases](engine/COMMUNICATION_CAPABILITY_VALIDATION.json) pass;
+full runtime: 740 run, 739 pass, one prescribed private-save policy skip. Shared
+(35), phase (28), native communication (13) and offline-response (17) checks pass.
+Current source checks also pass five Engine HTTP cases and 38 relevant App
+response/process/start/Catalog cases against App `919427cf16cf72574a581d7e6f712e638740a1df`
+and Catalog `526404128830a99fe8ea5c2bce43b6ea7d45fe6f`; see
+[exact module/pin evidence](engine/COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json).
+App communication controls/host wiring, reviewed pins and current joined/package
+qualification remain separate. **Next Engine task:** host-safe selected Rise
+travel capabilities over the existing native lifecycle. Stable DEV/C2 criteria
+remain open beyond the named evidence.
 
-**Completed selected phase API — 25 October 2026:** `phase_contract` exposes observation/Rise work capabilities, last received status/commands and sanitized outcomes through native typed execution and mandatory host CAS. Shared actor views include `continuations`. The minimal [API](engine/PHASE_CAPABILITY_API.md) was published at `8ab620099090413ed706aa70894065544347fbf3`; [28 named cases](engine/PHASE_CAPABILITY_VALIDATION.json) now qualify actual reads and rejection, competing stock/actor frontiers, pause/resume/cancel, receipt privacy, failed saves, concurrent delivery, restart and restore. Runtime qualification: 708 run, 707 pass, one private-save case explicitly replaced by policy. All 292 focused, 35 shared, 20 native process and 13 native communication checks pass; Engine integrity and Kira canon pass. No user save or provider call is used. The original shared-response integration stays qualified. Next bounded task: communication/offer participant/source contracts; new phase App controls/pins/joined review remain separate.
+The dated records below retain their original scope and dependencies.
+
+**Three development sources synchronized and tested — 25 October 2026:** selected Engine `0fdfc21f45510e3fd99fd6a8087cd3314d077267`, App `67411f8ef5214c8cb51af2b244590751e6ea20df` and Catalog `4bd572843cebc94e7d043c3706d1be85249d6c10`. [Engine-side qualification](engine/COMPONENT_INTERACTION.md) passes five new checks including all nine original Catalog cases through actual HTTP and new Engine phase starts as trusted setup continued through App endpoints. Current App suite: 218 run, 211 pass, seven Windows-only skips; 110 gameplay UI and 13 response checks pass. Both Chromium suites pass across observation/work and authored/Rise contexts with zero browser errors/provider calls. Catalog contracts (39), shared Engine (35), phase Engine (28), component integrity and Kira canon pass. App's committed pins and original fixture consumers are preserved. Runtime code is unchanged; App needs the start-discovery adapter and reviewed pins/joined qualification. That dated next task is delivered above.
+
+**Completed selected phase API — 25 October 2026:** `phase_contract` exposes observation/Rise work capabilities, last received status/commands and sanitized outcomes through native typed execution and mandatory host CAS. Shared actor views include `continuations`. The minimal [API](engine/PHASE_CAPABILITY_API.md) was published at `8ab620099090413ed706aa70894065544347fbf3`; [28 named cases](engine/PHASE_CAPABILITY_VALIDATION.json) now qualify actual reads and rejection, competing stock/actor frontiers, pause/resume/cancel, receipt privacy, failed saves, concurrent delivery, restart and restore. Runtime qualification: 708 run, 707 pass, one private-save case explicitly replaced by policy. All 292 focused, 35 shared, 20 native process and 13 native communication checks pass; Engine integrity and Kira canon pass. No user save or provider call is used. The original shared-response integration stays qualified. Next at that time: communication/offer contracts, delivered above; new phase App controls/pins/joined review remain separate.
 
 The qualified 3.4.0 shared response update is integrated. Read
 [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)

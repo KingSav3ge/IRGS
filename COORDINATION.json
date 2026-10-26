@@ -100,8 +100,8 @@
       "scope": "Actor-safe selected Engine communication/source/offer API and private forwarded-contract filtering; refined Emergent interface on canonical host; separate Catalog public-phase qualification. Communication HTTP/UI wiring remains open."
     }
   },
-  "integration_status": "approved_pending_source_import",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_2_development_update",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
     "engine": "Selected travel capabilities and further native adapters without new unselected rules",
@@ -206,10 +206,14 @@
     "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
   },
   "reviewed_at_utc": "2026-10-26T16:28:16.608858+00:00",
-  "completed_components": {},
+  "completed_components": {
+    "engine": "91b20056e7db651966c9e92925313494917f47b1",
+    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
+    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+  },
   "source_input_sha256": "2f0b0f35565faee8513ff2eaff0953a60601159a00f9ec243cc6ff97a8a7c7cf",
   "qualified_candidate_commit": "bfebdfe1e3ff4062680ffe0c54b1cf15c0b31544",
-  "integrated_at_utc": "2026-10-25T22:42:06.787632+00:00",
+  "integrated_at_utc": "2026-10-26T16:28:31.708871+00:00",
   "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
     "App authenticated explicit durable communication/source/offer controls and then matching Catalog consumers",

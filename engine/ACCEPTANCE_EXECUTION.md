@@ -1,5 +1,13 @@
 # Scoped C2 implementation evidence — Action 1
 
+The 26 October [communication capability record](COMMUNICATION_CAPABILITY_VALIDATION.json)
+adds 32 cases for legitimate participant/source/offer projections, exact testimony
+and conserved fulfillment, rejected authority and late rollback, competing
+frontiers and restart/restore. A reproduced forwarding leak is closed across
+existing receipt APIs: received words confer no private terms/audience. These
+advance named DEV-06–DEV-17 information, acceptance and recovery properties;
+the original 121-case inventory and broader completion criteria remain open.
+
 The [selected phase capability record](PHASE_CAPABILITY_VALIDATION.json) adds 28 actor-safe API cases over the existing observation/Rise work handlers: actual dependency reads and atomic rejection, competing stock/actor claims, pause/resume/cancel, filtered receipts, mandatory CAS and restart/restore. This qualifies the named DEV-06–DEV-17 properties; it does not close the broader milestones or rewrite the immutable 121-case inventory. Prior shared-response integration remains qualified; new phase UI/pins/joined evidence is separate.
 
 The 25 October [shared-system record](SHARED_SYSTEMS_VALIDATION.json) adds independently initialized non-Rise/Rise acceptance and actual outcomes, actor/capability/received/receipt contracts, neutral depot adoption and current-control rejection inside Core declarations. Its 35 new cases advance named dependency, intention, knowledge and recovery properties. Four-theme formatting establishes content portability; the immutable 121-case inventory and broader unresolved C2 requirements remain unchanged.

@@ -148,6 +148,11 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     development_interop = checker.validate_compatibility(root)
+    spec = importlib.util.spec_from_file_location('catalog_phase_response_check',
+        root / 'phase_response_compatibility.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    phase_responses = checker.validate_compatibility(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
@@ -155,7 +160,8 @@ def verify_catalog(root=ROOT):
         'scripted_responses': responses, 'original_scripted_responses': original_responses,
         'shared_response_compatibility': shared_responses,
         'integrated_response_compatibility': integrated_responses,
-        'development_interoperability': development_interop}
+        'development_interoperability': development_interop,
+        'phase_response_compatibility': phase_responses}
 
 
 if __name__ == '__main__':

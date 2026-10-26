@@ -2,9 +2,29 @@
 
 ## Current continuation pointer
 
-**Latest-source compatibility checked:** all three development repositories are pulled. [Engine-owned interaction qualification](engine/COMPONENT_INTERACTION.md) passes real Catalog cases, App HTTP process continuation and both Chromium suites with current source overrides. App's continuation controls already exist; the remaining UI adapter is Engine start-discovery adoption. App pins and historical fixture consumers remain unchanged. Engine runtime code needs no compatibility fix. Communication/offer contracts remain the next Engine task.
+**Communication contract delivered — 26 October 2026 (3.4.1 development):**
+[actor-safe participant/source/offer API](engine/COMMUNICATION_CAPABILITY_API.md)
+now uses received attributions, exact testimony/terms and received lifecycle
+statuses, with explicit acceptance and sanitized atomic Core/host execution.
+Shared views include `communications`. A reproduced forwarding leak is closed
+across existing receipt/rendering APIs; received words grant no private contract
+access. [32 dedicated cases](engine/COMMUNICATION_CAPABILITY_VALIDATION.json) pass;
+full runtime: 740 run, 739 pass, one prescribed private-save policy skip. Shared
+(35), phase (28), native communication (13) and offline-response (17) checks pass.
+Current source checks also pass five Engine HTTP cases and 38 relevant App
+response/process/start/Catalog cases against App `919427cf16cf72574a581d7e6f712e638740a1df`
+and Catalog `526404128830a99fe8ea5c2bce43b6ea7d45fe6f`; see
+[exact module/pin evidence](engine/COMMUNICATION_COMPONENT_INTERACTION_VALIDATION.json).
+App communication controls/host wiring, reviewed pins and current joined/package
+qualification remain separate. **Next Engine task:** host-safe selected Rise
+travel capabilities over the existing native lifecycle. Stable DEV/C2 criteria
+remain open beyond the named evidence.
 
-**Completed bounded increment:** the version-1 [phase capability API](engine/PHASE_CAPABILITY_API.md) exposes selected observation/Rise work starts, received status/commands and sanitized outcomes, including shared actor views. It reuses native execution, reservations and mandatory save/result CAS. [Qualification](engine/PHASE_CAPABILITY_VALIDATION.json) covers 28 new cases, actual reads/rejection, competing resources and lifecycle/recovery; 708 runtime cases run with one explicit private-fixture policy skip. **Next:** communication/offer participant/source contracts. New phase UI/pins/joined review remain with App/coordinator; the prior shared-response integration stays qualified.
+The dated records below retain their original scope and dependencies.
+
+**Latest-source compatibility checked:** all three development repositories are pulled. [Engine-owned interaction qualification](engine/COMPONENT_INTERACTION.md) passes real Catalog cases, App HTTP process continuation and both Chromium suites with current source overrides. App's continuation controls already exist; the remaining UI adapter is Engine start-discovery adoption. App pins and historical fixture consumers remain unchanged. Engine runtime code needs no compatibility fix. That record predates the delivered communication contract above.
+
+**Completed bounded increment:** the version-1 [phase capability API](engine/PHASE_CAPABILITY_API.md) exposes selected observation/Rise work starts, received status/commands and sanitized outcomes, including shared actor views. It reuses native execution, reservations and mandatory save/result CAS. [Qualification](engine/PHASE_CAPABILITY_VALIDATION.json) covers 28 new cases, actual reads/rejection, competing resources and lifecycle/recovery; 708 runtime cases run with one explicit private-fixture policy skip. **Next at that time:** communication/offer participant/source contracts, delivered above. New phase UI/pins/joined review remain with App/coordinator; the prior shared-response integration stays qualified.
 
 The qualified 3.4.0 shared response update is integrated. Read
 [CHAT_CONTINUATION.md](CHAT_CONTINUATION.md) and [DEVELOPMENT.md](DEVELOPMENT.md)
@@ -22,9 +42,9 @@ The records below preserve previously delivered work and historical evidence.
 
 **Delivered 25 October:** [shared actor/capability/intention/received/receipt contracts](engine/SHARED_SYSTEMS_API.md), actual acceptance through non-Rise authored-scene and Rise Core handlers, and the exact neutral 1,000-variant/32-recipe depot. Current control is now enforced inside Core declarations, including observed revoked-policy rejection. [Executed evidence](engine/SHARED_SYSTEMS_VALIDATION.json) includes both independent contexts and recovery. **Next:** App adoption/compatible pins/joined qualification, further selected process/communication adapters and continuing DEV gaps; no general rules are inferred from text or themes.
 
-Target iteration: **IRGS 3.4.0 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
+Target iteration: **IRGS 3.4.1 — in development**. See the active Solo runtime work order and completion plan. Previously qualified versions and evidence retain their recorded identities.
 
-Updated 2026-10-25. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
+Updated 2026-10-26. This plan belongs to **KingSav3ge/IRGS-Engine**; Engine increments are published to this repository's `main` branch. The selected executable foundation is Core 3.3. C2 is applied engine text with 121 required acceptance cases; its general action resolver and complete autonomous institution cycle remain unfinished. Existing bounded handlers and synthetic institutional execution retain their actual scope.
 
 Use [DEVELOPMENT_LIST.md](DEVELOPMENT_LIST.md) for stable task IDs, dependencies and completion criteria, and [CONTINUATION_STATUS.md](CONTINUATION_STATUS.md) for delivered increments and verification limits. The statuses below describe implemented scope; historical App/HTTP evidence is not fresh qualification of this standalone Engine checkout.
 

@@ -109,6 +109,8 @@
     "evaluation/development_interop_v1/compatibility.json": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85",
     "evaluation/integrated_responses_v1/README.md": "d84903473b486c58a443e80aef0403a9d3f8d6f31e81f99d9bd22258c095b258",
     "evaluation/integrated_responses_v1/compatibility.json": "daf1afc0f3dd9c60aaf3da0f69e7477cf5ae7b78e7233c529a7abb307d8da78c",
+    "evaluation/phase_responses_v1/README.md": "ba8c6b68c74a82acaee9d76ffdb3387360286e3d9bfa1ceb4c4c82eaf6dc5e0f",
+    "evaluation/phase_responses_v1/compatibility.json": "dd5a368f26255972c9f8373ea10246479ff72ed78d8fb7787f33e3ac73f7a4aa",
     "evaluation/shared_responses_v1/README.md": "40408d0bc1074376578305b437b31b0d0a0b63ffa26db7c095d08117505ca494",
     "evaluation/shared_responses_v1/actor_inputs/quay.json": "cc88e0d636089134fbe43ed1a3d65d1e547067de3e20b75a7417298d3da3cbec",
     "evaluation/shared_responses_v1/actor_inputs/rise.json": "3aab6e9fc26da957f76a567bdeeaa514b33fa1e5ba22fd9cf69ab532403cecfd",
@@ -169,6 +171,7 @@
     "historical_details/parts/IRGS_Historical_Grand_Archive_v1_1.zip.part0032": "f94eaedd0792cbc44d5113751fac6187c4bcd22c1f834f095753c7b09289bfd7",
     "historical_details_package.py": "fde004848caab9ea3c8e7c6ea4a1dffefab6758d0e653b49b6479fe81428f665",
     "integrated_response_compatibility.py": "df5e6be048d50115af4e6593a772e3de477325ae7f5c3772ed30b93f4317a92f",
+    "phase_response_compatibility.py": "5be6780f421b29804ccdd067b73e4e75012152d41b0249c49f174eca2b95265c",
     "response_depot_compatibility.py": "b9d1a9019095938fda5abb59903a7c2c245f66c5487e97cf1a070e7f087e0564",
     "responses/depot_v1/README.md": "168889fc96cc306f4c4ff9f18c0364df87d1e3554392eda4d4b7dde76590cebd",
     "responses/depot_v1/library.json": "8b397ae8cd72cf5ed59c330c0572e34922579726740edbeed9fca957044a6ae4",
@@ -177,6 +180,6 @@
     "scripted_responses.py": "7584bf10e29b8077ed84c7c4581d006327de3fd850a5e33b099577437b44f313",
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
-    "verify_catalog.py": "2f9740930faa044a0acfb7368ff59d35f0bba0aec1c12c3cec0b5962a195dfe2"
+    "verify_catalog.py": "63f4de9ff4fa8baf3cb8e9c31aecc5f68c856675eb4cae2bddb77e99d8effd93"
   }
 }

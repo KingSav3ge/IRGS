@@ -73,8 +73,9 @@ def receipt_facts(world, actor, event_id, *, scope=None):
     snapshot = 'receipt:' + _identity(world.s['campaign_id'], event_id, event['at'])
     recipe, packets = 'routine.result', {}
     if operation == 'execute_local_communication':
+        from communication_runtime import has_received_contract
         result = world.s['communication_results'][params['request_id']]
-        if result['evidence_id'] not in world.s['knowledge'].get(actor, {}):
+        if not has_received_contract(world.s, actor, result):
             raise ValueError('Response receipt unavailable')
         # Keep words as testimony, even when they claim acceptance or success.
         words = result['utterance']

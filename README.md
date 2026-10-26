@@ -1,7 +1,7 @@
 # IRGS 3.4.2 — joined development source
 
 Current coordinated edition: **3.4.2**; previous release: **3.3.3**.
-See [3.4.1 release notes](RELEASE_NOTES_3_4_1.md) and [version policy](VERSION_POLICY.md). Historical evidence below retains
+See [3.4.2 release notes](RELEASE_NOTES_3_4_2.md) and [version policy](VERSION_POLICY.md). Historical evidence below retains
 its original tested development identities.
 
 Current development: [guide](DEVELOPMENT.md) · [chat continuation](CHAT_CONTINUATION.md).
@@ -18,6 +18,8 @@ This repository's `main` combines the Engine, App and Catalog. Independent devel
 The development edition is 3.4.2; the selected executable Core retains compatibility ID 3.3. See [component integration](COMPONENT_REPOSITORIES.md), [development commands](DEVELOPMENT.md), [roadmap](ROADMAP.md), and [operation coverage](engine/OPERATION_COVERAGE.md).
 
 Run `python -B IRGS_Web/server.py --port 8766`, or use `Start-IRGS.cmd` on Windows. Hosts bind to loopback. Existing user saves are not included or migrated.
+
+This 3.4.2 update integrates the refined Emergent interface, Engine communication/source capabilities and Catalog public-process response checks. See [changes from 3.4.1](CHANGES_3_4_2.md) for exact sources and limits. App communication controls remain the next integration task.
 
 Content Library contains 44 expanded v0.5 concept previews: 31 launch targets, 12 future campaigns and one independent simulation system. Filters separate type, genre, setting, period, launch positioning and available slices. The concepts are not 44 released games. See [catalogue scope](IRGS_Catalog/design/campaign_catalogue/README.md).
 

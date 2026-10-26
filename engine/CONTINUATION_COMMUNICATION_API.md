@@ -1,5 +1,10 @@
 # Engine continuations, communication and accounting
 
+For host-safe participant, received-source and offer views over the selected
+communication handler, use [communication capabilities v1](COMMUNICATION_CAPABILITY_API.md).
+It keeps forwarded testimony separate from private structured contracts across
+the existing receipt/rendering APIs and adds a sanitized atomic host result.
+
 For the new actor-safe host interface over selected observation/Rise work, use
 [phase capabilities v1](PHASE_CAPABILITY_API.md). It reuses the native request
 and Core rules below while filtering public outcomes and bridging atomic host

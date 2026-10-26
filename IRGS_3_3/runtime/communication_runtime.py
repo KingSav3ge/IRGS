@@ -228,11 +228,20 @@ def execute(world, request, *, current_scope, persist, explicitly_accepted):
     return public
 
 
+def has_received_contract(state, actor, result):
+    """Forwarded words do not deliver the original private structured contract."""
+    receipt = state['knowledge'].get(actor, {}).get(result['evidence_id'])
+    evidence = state['evidence'].get(result['evidence_id'])
+    return (actor in (result['actor'], result['recipient']) and receipt is not None and evidence is not None
+        and evidence['recorded_at'] <= receipt['received_at'] <= state['clock']
+        and evidence.get('originator') == result['actor'] and evidence['assertion'] == result['utterance'])
+
+
 def received(world, actor):
     from solo_provider import require
     require(_controlled(world.s,actor),'actor_denied')
     return [copy.deepcopy(result) for result in world.s.get('communication_results',{}).values()
-            if result['evidence_id'] in world.s['knowledge'].get(actor,{})]
+            if has_received_contract(world.s, actor, result)]
 
 
 def presentation(world, actor, request_id):
@@ -240,7 +249,7 @@ def presentation(world, actor, request_id):
     from solo_provider import require
     result=world.s.get('communication_results',{}).get(request_id)
     require(result is not None and _controlled(world.s,actor) and
-            result['evidence_id'] in world.s['knowledge'].get(actor,{}),'actor_denied')
+            has_received_contract(world.s, actor, result),'actor_denied')
     return {'status':result['status'],'utterance':result['utterance'],'utterance_status':'testimony',
         'speaker':result['actor'],'recipient':result['recipient'],'at':result['at'],'request_id':request_id,
         'source_refs':[result['source_ref'],result['evidence_id']],
