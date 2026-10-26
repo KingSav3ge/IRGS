@@ -93,7 +93,7 @@ export default function Library() {
           </div>
         )}
       </section>
-      <ConceptLibrary isAdmin={user?.role === "admin"} />
+      {user && <ConceptLibrary isAdmin={user.role === "admin"} />}
     </div>
   );
 }

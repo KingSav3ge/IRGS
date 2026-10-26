@@ -69,6 +69,11 @@ class CharacterIn(BaseModel):
     inventory: List[dict] = []
     description: str = ""
     testimony: Dict[str, str] = {}
+    creation_mode: str = "detailed"
+
+
+class ConceptVisibilityIn(BaseModel):
+    show_to_players: bool
 
 
 class PortraitGenIn(BaseModel):
@@ -410,17 +415,63 @@ async def get_campaign(scenario_id: str, user: dict = Depends(auth.get_current_u
 @api.get("/catalogue")
 async def catalogue(user: dict = Depends(auth.get_current_user)):
     """Content Library v0.5 (IRGS-Catalog). Players see playable records only; admins also see unreleased concepts."""
+    is_admin = user.get("role") == "admin"
+    show = await _concepts_visible()
+    wished = {w["concept_id"] async for w in db.wishlists.find({"user_id": user["user_id"]}, {"_id": 0, "concept_id": 1})}
+    counts = {}
+    if is_admin:
+        async for row in db.wishlists.aggregate([{"$group": {"_id": "$concept_id", "n": {"$sum": 1}}}]):
+            counts[row["_id"]] = row["n"]
     out = []
     for r in CATALOGUE_V05["records"]:
         sid = CATALOGUE_TO_SCENARIO.get(r["catalogue_id"])
-        if not sid and user.get("role") != "admin":
+        if not sid and not is_admin and not show:
             continue
         p = r["public"]
         out.append({"id": r["catalogue_id"], "tier": r["tier"], "title": r["title"], "tagline": r.get("tagline"),
                     "genres": p.get("genres", []), "setting": p.get("setting_label"), "period": p.get("period_label"),
                     "synopsis": p.get("synopsis"), "status": r["catalogue_status"], "launch": r["placement"].get("release_wave"),
-                    "playable": bool(sid), "scenario_id": sid, "theme": catalogue_theme(p.get("genres", []), p.get("setting_label") or "")})
-    return {"version": CATALOGUE_V05["catalogue_version"], "counts": CATALOGUE_V05["counts"], "records": out}
+                    "playable": bool(sid), "scenario_id": sid, "theme": catalogue_theme(p.get("genres", []), p.get("setting_label") or ""),
+                    "wishlisted": r["catalogue_id"] in wished, **({"wishlist_count": counts.get(r["catalogue_id"], 0)} if is_admin else {})})
+    return {"version": CATALOGUE_V05["catalogue_version"], "counts": CATALOGUE_V05["counts"], "records": out,
+            "concepts_visible": show}
+
+
+async def _concepts_visible() -> bool:
+    doc = await db.app_settings.find_one({"key": "concepts_visible"}, {"_id": 0})
+    return bool(doc and doc.get("value"))
+
+
+@api.put("/admin/catalogue/visibility")
+async def set_concept_visibility(body: ConceptVisibilityIn, user: dict = Depends(auth.get_current_user)):
+    if user.get("role") != "admin":
+        raise HTTPException(status_code=403, detail="Admins only")
+    await db.app_settings.update_one({"key": "concepts_visible"}, {"$set": {"value": body.show_to_players}}, upsert=True)
+    return {"concepts_visible": body.show_to_players}
+
+
+async def _wishable(concept_id: str, user: dict):
+    rec = next((r for r in CATALOGUE_V05["records"] if r["catalogue_id"] == concept_id), None)
+    if not rec:
+        raise HTTPException(status_code=404, detail="Concept not found")
+    if CATALOGUE_TO_SCENARIO.get(concept_id):
+        raise HTTPException(status_code=400, detail="This campaign is already playable")
+    if user.get("role") != "admin" and not await _concepts_visible():
+        raise HTTPException(status_code=404, detail="Concept not found")
+
+
+@api.post("/catalogue/{concept_id}/wishlist")
+async def add_wishlist(concept_id: str, user: dict = Depends(auth.get_current_user)):
+    await _wishable(concept_id, user)
+    await db.wishlists.update_one({"user_id": user["user_id"], "concept_id": concept_id},
+                                  {"$setOnInsert": {"created_at": now_iso()}}, upsert=True)
+    return {"concept_id": concept_id, "wishlisted": True}
+
+
+@api.delete("/catalogue/{concept_id}/wishlist")
+async def remove_wishlist(concept_id: str, user: dict = Depends(auth.get_current_user)):
+    await db.wishlists.delete_one({"user_id": user["user_id"], "concept_id": concept_id})
+    return {"concept_id": concept_id, "wishlisted": False}
 
 
 @api.get("/campaigns/{scenario_id}/entries")
@@ -477,6 +528,7 @@ async def create_character(body: CharacterIn, user: dict = Depends(auth.get_curr
         "attributes": attrs, "inventory": body.inventory or copy.deepcopy(s["default_inventory"]),
         "description": body.description[:600], "portrait_path": None, "created_at": now_iso(),
         "testimony": {k: str(v).strip()[:800] for k, v in body.testimony.items() if k in ("origin", "family", "career") and str(v).strip()},
+        "creation_mode": body.creation_mode if body.creation_mode in ("quick", "guided", "detailed") else "detailed",
     }
     await db.characters.insert_one(doc)
     doc.pop("_id", None)
@@ -1351,6 +1403,7 @@ async def startup():
     await db.playthroughs.create_index("playthrough_id", unique=True)
     await db.saves.create_index("playthrough_id")
     await db.shares.create_index("share_id", unique=True)
+    await db.wishlists.create_index([("user_id", 1), ("concept_id", 1)], unique=True)
     try:
         await asyncio.to_thread(init_storage)
     except Exception as e:
