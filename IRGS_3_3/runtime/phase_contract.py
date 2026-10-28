@@ -14,7 +14,7 @@ import process_runtime as native
 from runtime_contracts import WorldScope
 
 SCHEMA_VERSION = 'irgs-phase-capabilities-1'
-KINDS = frozenset({'observation', 'work'})
+KINDS = frozenset({'observation', 'work', 'travel'})
 PHASE_FIELDS = ('process_id', 'phase_id', 'phase_index', 'actor', 'kind', 'status',
     'terminal', 'original_intention', 'phase_intention', 'summary', 'at', 'source_ref',
     'elapsed_seconds', 'elapsed_total', 'worked_seconds', 'remaining_seconds')
@@ -57,6 +57,9 @@ def _starts(world, actor):
             if action in ('build', 'delegate', 'resume'):
                 rows.append({'kind': 'work', 'action_id': action, 'title': title,
                              'description': description, 'source_refs': [rules['source_ref']]})
+            elif action in ('walk_clearing', 'walk_commons'):
+                rows.append({'kind': 'travel', 'action_id': action, 'title': title,
+                             'description': description, 'source_refs': [rules['source_ref']]})
     else:
         from scene_actions import scene_options
         try:
@@ -83,7 +86,8 @@ def _commands(receipt):
     return [{'command': command, 'details_schema': ({'seconds': {'type': 'integer', 'minimum': 1}}
             if command == 'advance' else {}), 'availability': 'attemptable',
             'requires_explicit_submission': True}
-            for command in COMMANDS.get(receipt['status'], ())]
+            for command in COMMANDS.get(receipt['status'], ())
+            if not (receipt['kind'] == 'travel' and command == 'cancel')]
 
 
 def _public(world, actor, receipt, branch_id, restore_id):

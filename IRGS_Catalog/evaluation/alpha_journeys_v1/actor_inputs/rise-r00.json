@@ -1,0 +1,15 @@
+{
+  "case_id": "rise-r00",
+  "source_ref": "authored-synthetic:irgs-catalog:alpha-journeys:v1",
+  "selection": {
+    "template_id": "R00",
+    "fixture_id": "irgs-solo-r00-eval-v1"
+  },
+  "actions": [
+    "walk_clearing",
+    "found",
+    "build",
+    "wait_hour",
+    "wait_hour"
+  ]
+}

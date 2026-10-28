@@ -1,0 +1,27 @@
+{
+  "classification": "evaluator-only",
+  "marker": "PRIVATE_JOURNEY_ORACLE",
+  "cases": {
+    "quay-contact": {
+      "elapsed_seconds": 160,
+      "dispatch_actor": 0,
+      "dispatch_tray": 1,
+      "shortcut_status": "completed_unsuccessfully",
+      "speech_status": "testimony_received",
+      "second_delivery": "completed_unsuccessfully"
+    },
+    "rise-r00": {
+      "elapsed_seconds": 3900,
+      "shelter_work_seconds": 3600,
+      "founder_timber": 3
+    }
+  },
+  "unexecuted_requirements": [
+    "npc_decisions",
+    "institution_reactions",
+    "needs_recovery",
+    "risk_conflict",
+    "live_provider",
+    "older_restore_branch"
+  ]
+}

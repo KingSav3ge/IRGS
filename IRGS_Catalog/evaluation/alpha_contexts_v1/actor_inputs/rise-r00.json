@@ -1,0 +1,13 @@
+{
+  "case_id": "rise-r00",
+  "source_ref": "authored-synthetic:irgs-catalog:alpha-contexts:v1",
+  "selection": {
+    "template_id": "R00",
+    "fixture_id": "irgs-solo-r00-eval-v1"
+  },
+  "intentions": [
+    "Review my available situation.",
+    "Attempt an explicitly supported action.",
+    "Continue from the received result."
+  ]
+}

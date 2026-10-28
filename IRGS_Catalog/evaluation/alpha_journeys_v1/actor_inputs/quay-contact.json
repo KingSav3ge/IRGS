@@ -1,0 +1,20 @@
+{
+  "case_id": "quay-contact",
+  "source_ref": "authored-synthetic:irgs-catalog:alpha-journeys:v1",
+  "selection": {
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": "new-human",
+    "opening_id": "quay-contact-v1"
+  },
+  "actions": [
+    "speak",
+    "look-quay",
+    "quay-shortcut",
+    "quay-passage",
+    "passage-desk",
+    "deliver-dispatch",
+    "deliver-dispatch"
+  ]
+}

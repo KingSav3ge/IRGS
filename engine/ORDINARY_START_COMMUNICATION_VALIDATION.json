@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "status": "PARTIAL_A4_ENG_01_ONE_ORDINARY_CONTEXT",
+  "parent_engine_commit": "abe6c479c8ec8b642cd6686e19e54cf0a543f506",
+  "source_selection": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "b3a53cfd11bbd3745253520b4e8ed6718c826ab8",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "fd2e84586431f3b516d48ce7936d80f5496abb85",
+    "app_committed_engine_pin": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app_committed_catalog_pin": "6f927b00e12a3339861ac353bc38d03c68279662",
+    "candidate_roots_explicit": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/scene_setup.py": "1620ff9f63bb6c65c665f21d90563236fc06abb7effcd84291c0d10c289d563c",
+    "IRGS_3_3/runtime/test_ordinary_communication.py": "45765a3cfef78df3563ed8902e5bfff7f2c568b6fd03b881e534a1942727f1b3",
+    "IRGS_3_3/release.json": "13136426edb7a63236df483a87b73211d846f5de22fd3a8b759fe365c993add8",
+    "tools/qualify_ordinary_communication_http.py": "5acb71b817f8e58b402c340cfae45cd1953de44483eb587e81f18e6ce6c079a0"
+  },
+  "scope": {
+    "opening": "quay-contact-v1",
+    "schema": "irgs-communication-capabilities-1",
+    "fictional_contact": "FICTIONAL-QUAY-CONTACT",
+    "supported_commands": [
+      "speak"
+    ],
+    "provider_calls": 0,
+    "npc_decisions": false,
+    "second_ordinary_context_qualified": false,
+    "alpha_gate_qualified": false
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery, private fixture replaced before execution",
+      "run": 777,
+      "passed": 776,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "Shared",
+      "run": 35,
+      "passed": 35,
+      "skipped": 0
+    },
+    {
+      "name": "Start readiness",
+      "run": 33,
+      "passed": 33,
+      "skipped": 0
+    },
+    {
+      "name": "Communication",
+      "run": 32,
+      "passed": 32,
+      "skipped": 0
+    },
+    {
+      "name": "Phase",
+      "run": 28,
+      "passed": 28,
+      "skipped": 0
+    },
+    {
+      "name": "Ordinary contact and native process/communication",
+      "run": 37,
+      "passed": 37,
+      "skipped": 0
+    },
+    {
+      "name": "App start preview/context/communication with explicit candidate roots",
+      "run": 27,
+      "passed": 27,
+      "skipped": 0
+    },
+    {
+      "name": "Ordinary reviewed App HTTP creation/speech/replay and fresh Store reload",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_communication_http.py",
+      "provider_calls": 0
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 368
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "count_note": "Focused Engine counts overlap the full suite; 37 includes four new ordinary-start cases.",
+  "not_run": [
+    "browser",
+    "native Windows",
+    "clean package",
+    "live provider",
+    "independent new Catalog acceptance"
+  ],
+  "remaining": [
+    "Other ordinary context participation and Catalog independent qualification",
+    "A4-ENG-02 selected travel",
+    "A4-ENG-03 supported intent DTO and execution",
+    "NPC decisions and sustained play",
+    "Coordinator compatible-set qualification"
+  ]
+}

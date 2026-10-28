@@ -1,0 +1,165 @@
+{
+  "classification": "evaluator-only",
+  "marker": "PRIVATE_ALPHA_ORACLE",
+  "qualification": "candidates_not_alpha_qualified",
+  "contexts": {
+    "historical-quay": {
+      "family": "hundred-years-war-fictional-personal",
+      "source_scope": "Fictional explicit opening in sourced dated reference; no historical personal circumstances inferred",
+      "ordinary_creation": true,
+      "areas": {
+        "actor_control": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Reviewed new human creation",
+          "gap": "No general character agency beyond listed adapters"
+        },
+        "location": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Fictional quay opening",
+          "gap": "No unsourced historical personal placement"
+        },
+        "received_information": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Actor-received scene records",
+          "gap": "Independent reports and uncertain sources need wider qualification"
+        },
+        "participants": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Ordinary opening has no reviewed communication participants",
+          "gap": "Publish ordinary participant/channel selection"
+        },
+        "resources_capacity": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "One conserved dispatch",
+          "gap": "Broader inventory and carrying capacity remain unsupported"
+        },
+        "movement_perception": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Quay observation and listed paths",
+          "gap": "General travel and perception are not qualified"
+        },
+        "dialogue_obligations": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Bridge supports synthetic selected channels",
+          "gap": "Ordinary start does not supply participants and obligations"
+        },
+        "work": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "No selected ordinary local work rule",
+          "gap": "Publish selected work and consequences"
+        },
+        "needs_recovery": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "No selected needs or recovery rule",
+          "gap": "Publish versioned needs and recovery profile"
+        },
+        "npc_decisions": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "No autonomous NPC decisions",
+          "gap": "Publish bounded decisions based on received facts"
+        },
+        "local_institution": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Clerk tray is a transfer destination",
+          "gap": "No continuing institutional decisions"
+        },
+        "risk_conflict": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Shortcut can fail without injury",
+          "gap": "No adopted consequential conflict and recovery profile"
+        }
+      }
+    },
+    "rise-r00": {
+      "family": "rise-settlement",
+      "source_scope": "Fictional reviewed R00 setup; no historical claim",
+      "ordinary_creation": true,
+      "areas": {
+        "actor_control": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Reviewed R00 founder creation",
+          "gap": "Other roles need independent support"
+        },
+        "location": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Fictional reviewed site and clearing",
+          "gap": "No claim of a historical location"
+        },
+        "received_information": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Founder receives local setup and action results",
+          "gap": "Remote information and continuing reports remain limited"
+        },
+        "participants": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Known fictional neighbors in setup",
+          "gap": "Ordinary start does not publish reviewed communication channel/participant contract"
+        },
+        "resources_capacity": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Finite founder supplies and work consumption",
+          "gap": "Extended needs and capacity require actual rules"
+        },
+        "movement_perception": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Selected local walks and inspection",
+          "gap": "General travel remains a separate contract"
+        },
+        "dialogue_obligations": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Offer bridge qualifies explicit synthetic channels",
+          "gap": "Ordinary start does not enable that channel"
+        },
+        "work": {
+          "state": "adopted_bounded",
+          "owner": "Engine",
+          "evidence": "Finite shelter work and material boundary",
+          "gap": "Continuing varied work requires additional handlers"
+        },
+        "needs_recovery": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Basic supply and work do not establish full needs/recovery",
+          "gap": "Publish selected needs and recovery"
+        },
+        "npc_decisions": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Named neighbors and one scoped repair plan",
+          "gap": "No qualified autonomous consequential NPC decisions"
+        },
+        "local_institution": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Reviewed founding grant",
+          "gap": "No continuing institutional decision cycle"
+        },
+        "risk_conflict": {
+          "state": "missing",
+          "owner": "Engine",
+          "evidence": "Failed prerequisite can preserve state",
+          "gap": "No adopted consequential conflict and recovery profile"
+        }
+      }
+    }
+  }
+}

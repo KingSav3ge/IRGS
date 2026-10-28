@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "classification": "evaluator-observation-not-runtime-authority",
+  "required_fields": [
+    "case_id",
+    "engine_commit",
+    "app_commit",
+    "app_engine_pin",
+    "sessions",
+    "receipt_ids",
+    "retry_verified",
+    "restore_verified",
+    "pending_requirements",
+    "alpha_qualified"
+  ],
+  "case_ids": [
+    "quay-contact",
+    "rise-r00"
+  ],
+  "pending_requirements": [
+    "npc_decisions",
+    "institution_reactions",
+    "needs_recovery",
+    "risk_conflict",
+    "live_provider",
+    "older_restore_branch"
+  ],
+  "alpha_qualified": false
+}

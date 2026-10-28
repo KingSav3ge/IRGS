@@ -1,0 +1,8 @@
+{
+  "fixture_id": "irgs-current-ordinary-communication-v1",
+  "rise": {
+    "choices": {"template_id": "R00", "founder_name": "Synthetic Ari", "household_name": "Synthetic home", "settlement_name": "Synthetic camp", "region_name": "Greywater Reach", "date_label": "Spring, Year 1", "company": "two_households", "permission": "seek", "supplies": "basic"},
+    "recipient": "oren", "channel": "commons-local", "words": "  What do you know about the clearing?\nThis is my question.  ", "departure": "walk_clearing"
+  },
+  "quay": {"opening_id": "quay-contact-v1", "recipient": "FICTIONAL-QUAY-CONTACT", "channel": "quay-local", "words": "Please tell me what you know.", "departure": "quay-passage"}
+}

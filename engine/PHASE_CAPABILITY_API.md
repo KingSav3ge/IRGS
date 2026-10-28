@@ -27,8 +27,9 @@ result = phases.execute(world, request, current_scope=current_host_scope,
 - `actor_view` returns schema `irgs-phase-capabilities-1`, actor/snapshot IDs,
   `start_options`, last received `processes` and zero rendering usage. The same
   DTO appears as `shared_runtime.actor_view(...)["continuations"]`.
-- Start options select only received non-Rise authored **observation** or the
-  reviewed Rise **work** operations `build`, `delegate`, `resume`. They are
+- Start options select received non-Rise authored **observation**, reviewed Rise
+  **work** (`build`, `delegate`, `resume`) and selected Rise **travel**
+  (`walk_clearing`, `walk_commons`). They are
   **attemptable**, never successful/feasible findings. They do not inspect private
   stock, permission or worker feasibility. Rule source references are preserved.
 - `status(world, actor, process_id, branch_id=..., restore_id=...)` returns the
@@ -44,8 +45,9 @@ paused → resume/cancel/inspect; held → pause/cancel/inspect; completed → i
 cancelled → none. They remain attempts subject to current Core validation.
 `status_basis: received_phase` and `live_status_probed: false` distinguish a
 received boundary from hidden later progress. `inspect` commits a fresh phase
-through the selected handler. Travel remains on its native API; this contract
-does not expose it as a universal movement rule.
+through the selected handler. For travel, `cancel` is omitted in transit; pause
+and resume preserve actual route commitments. No return or universal movement
+rule is selected. See [the travel handoff](TRAVEL_CAPABILITY_API.md).
 
 ## Authority, persistence and recovery
 
@@ -74,7 +76,7 @@ literal receipt with no provider fallback. The display must escape plain text.
 No provider/account/key or App/Catalog checkout is required. Branch/restore
 selection and session authentication remain host duties; client-supplied strings
 establish no authority. This contract does not expose communication/offer commands,
-invent a search/travel rule or complete general DEV-06–DEV-17/C2 requirements.
+invent a search or universal travel rule or complete general DEV-06–DEV-17/C2 requirements.
 
 ## Qualification
 

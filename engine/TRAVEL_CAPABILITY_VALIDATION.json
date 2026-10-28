@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "status": "A4_ENG_02_SELECTED_RISE_TRAVEL_DELIVERED_BROADER_TRAVEL_OPEN",
+  "engine_parent": "f029149cb52721c823e9d416bdf96918d53b92ce",
+  "sources": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "42c4cdf62b8bcc571d5524170baced1294aacf55",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "056e9df583937a5d2b77856482f6ffdb8f115889",
+    "app_engine_gitlink": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app_catalog_gitlink": "6f927b00e12a3339861ac353bc38d03c68279662",
+    "engine_catalog_overrides": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/phase_contract.py": "89113988f06650634f023e3cb09d0decaa5ecee027097af306df86b3798fdc81",
+    "IRGS_3_3/runtime/test_phase_contract.py": "2b8e691e28441a68b624f3bd76c192ae35567d765589fe8fd35bc0dfe03f00e5",
+    "IRGS_3_3/runtime/test_travel_capability.py": "1fd76263457a50fbebdd773ee362c01e65b8d89c0e32ad371544eac338848a2e",
+    "IRGS_3_3/release.json": "498270a4c30f4b94d3fe60f73733eab499a944b28632b427e079ff317c7df611",
+    "tools/qualify_travel_http.py": "226767f8e2cc02f076db99ae9aad3ac8361e4b6e54accf41a8c892291c4f83f1"
+  },
+  "scope": {
+    "task": "A4-ENG-02",
+    "gate_advanced": "A4-G04",
+    "gate_qualified": false,
+    "stable_dev_ids": [
+      "DEV-06",
+      "DEV-07",
+      "DEV-08",
+      "DEV-09",
+      "DEV-10",
+      "DEV-11",
+      "DEV-12",
+      "DEV-13",
+      "DEV-14"
+    ],
+    "schema": "irgs-phase-capabilities-1",
+    "kind": "travel",
+    "actions": [
+      "walk_clearing",
+      "walk_commons"
+    ],
+    "cancel_in_transit": false,
+    "new_timing_or_route_rules": false,
+    "provider_calls": 0
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery with private fixture replaced before execution",
+      "run": 785,
+      "passed": 784,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "Travel and native process regressions",
+      "run": 23,
+      "passed": 23,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Shared qualification",
+      "run": 35,
+      "passed": 35,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Start qualification",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Communication qualification",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Phase qualification",
+      "run": 28,
+      "passed": 28,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App process/Rise/communication regression with candidate roots",
+      "run": 42,
+      "passed": 42,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Ordinary App HTTP travel review/create/partial/pause/resume/arrival/retry/reload",
+      "status": "PASS",
+      "script": "tools/qualify_travel_http.py"
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 370
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "regression_note": "The old phase fixture initially expected work to be the only Rise start kind. It was updated to assert both explicitly selected work and travel kinds; focused and full suites then passed.",
+  "count_note": "Focused Engine cases overlap full runtime discovery; App and HTTP evidence are separate.",
+  "not_run": [
+    "independent Catalog new candidate selection",
+    "browser",
+    "native Windows",
+    "clean package",
+    "live provider",
+    "coordinator operation/dependency capture"
+  ],
+  "remaining": [
+    "A4-ENG-01 reviewed offer prerequisites and independent current-context qualification",
+    "A4-ENG-03 supported-intent DTO and execution",
+    "Dynamic route/access changes and non-Rise phased travel",
+    "App compatible pins and coordinator full exact-set capture",
+    "WB-ENG-01 world authoring contracts",
+    "Sustained play, NPC decisions and Alpha gates"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-alpha-journeys-v1",
+  "classification": "offline-synthetic-journey-evaluation",
+  "rights": {
+    "authorship": "original-synthetic-journey-instructions",
+    "imported_prose": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "consumers": {
+    "engine_candidate": "ea0631b8fbf94f425fa003d81b6907445a9a43c5",
+    "app_commit": "b3a53cfd11bbd3745253520b4e8ed6718c826ab8",
+    "app_engine_pin": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app_catalog_pin": "6f927b00e12a3339861ac353bc38d03c68279662"
+  },
+  "baseline": {
+    "path": "evaluation/alpha_contexts_v1/manifest.json",
+    "sha256": "69472b54d1f4d9cf6bdac8698bce4a504fbbb3160302ce01a759f4cee007ff46"
+  },
+  "contexts": {
+    "quay-contact": "actor_inputs/quay-contact.json",
+    "rise-r00": "actor_inputs/rise-r00.json"
+  },
+  "evaluator_only": "evaluator_only/oracle.json",
+  "files_sha256": {
+    "evidence.schema.json": "5e3aa2ae2f5da191aeb446e00aaca9463da3bab509025b5d64e3295080f921e5",
+    "actor_inputs/quay-contact.json": "9d4fa5f6915c8a423164f1ca24c8707e5fd97cb57700cd84bd75a1c80936eaa8",
+    "actor_inputs/rise-r00.json": "9369c85ee854b08f13eeefd6f9690815c0aad497d483f9dd475199aa15858dc8",
+    "evaluator_only/oracle.json": "e75c1d4d56e68163662a78f2cad48eb45249ce2e2bd5dccba72ca51c0cd88504"
+  }
+}

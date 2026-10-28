@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "status": "A4_ENG_01_ORDINARY_SPEECH_TWO_CONTEXTS_OFFERS_AND_INDEPENDENT_QUALIFICATION_OPEN",
+  "parent_engine_commit": "ea0631b8fbf94f425fa003d81b6907445a9a43c5",
+  "sources": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "b3a53cfd11bbd3745253520b4e8ed6718c826ab8",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "6455cd474bf5bde94c7ff6a11970f41f8680fe98",
+    "app_engine_gitlink": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app_catalog_gitlink": "6f927b00e12a3339861ac353bc38d03c68279662",
+    "explicit_engine_catalog_overrides": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/settlement_setup.py": "95e199fc0af0cd97eb57a6c1e435296a017cd4a82f1f209d2e6445e544a0770c",
+    "IRGS_3_3/runtime/test_rise_start_communication.py": "1e69605536dca1ac8a0e731a0749a732e2fc9af1316f4044fee4801ad6bcfb53",
+    "IRGS_3_3/runtime/test_communication_contract.py": "8a4dc68a9cf7198639c1e49b9d752903072f8c2397b6ffd2ef9fefcf2c2ffe6f",
+    "IRGS_3_3/release.json": "0ceaa63cff5cb6cf6bc9ce8ca6939ee6535717619e1495843a8a92591050bdf2",
+    "tools/qualify_rise_communication_http.py": "0e2bdd67e7fb82829049912372a2d646f4af7c405c6ab6519a19a4a7053b5d30"
+  },
+  "scope": {
+    "task": "A4-ENG-01",
+    "gates_advanced": [
+      "A4-G02",
+      "A4-G05"
+    ],
+    "gates_qualified": [],
+    "stable_dev_ids": [
+      "DEV-14",
+      "DEV-15",
+      "DEV-16",
+      "DEV-18",
+      "DEV-20"
+    ],
+    "setup_version": "irgs-rise-local-introductions-1",
+    "communication_schema": "irgs-communication-capabilities-1",
+    "supported_commands": [
+      "speak"
+    ],
+    "fictional_initial_participants": [
+      "elin",
+      "oren"
+    ],
+    "npc_autonomy": false,
+    "offer_or_transfer_selected": false,
+    "provider_calls": 0
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery with private fixture replaced before execution",
+      "run": 782,
+      "passed": 781,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "Rise ordinary communication, legacy synthetic communication and settlement",
+      "run": 51,
+      "passed": 51,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Shared qualification",
+      "run": 35,
+      "passed": 35,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Start readiness qualification",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Communication qualification",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Phase qualification",
+      "run": 28,
+      "passed": 28,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App Rise, communication bridge and start-context regressions with source overrides",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App ordinary Rise HTTP review/create/speech/retry/reload",
+      "status": "PASS",
+      "script": "tools/qualify_rise_communication_http.py"
+    },
+    {
+      "name": "App ordinary non-Rise HTTP review/create/speech/retry/reload",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_communication_http.py"
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 369
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "regression_note": "One synthetic communication fixture initially failed because its hidden participant was now legitimately introduced by normal setup. The fixture explicitly removes those received attributions to preserve the original unreceived-roster privacy assertions; final focused and full suites pass.",
+  "count_note": "Focused Engine tests overlap full runtime discovery; App and HTTP results are separate.",
+  "not_run": [
+    "Catalog independent consumer against the new contract",
+    "browser",
+    "native Windows",
+    "clean package",
+    "live-provider quality"
+  ],
+  "remaining": [
+    "Versioned reviewed offer/authority selection and legitimate received offers",
+    "Catalog separately versioned independent consumers and exact compatible pins",
+    "A4-ENG-02 selected native travel",
+    "A4-ENG-03 supported-intent DTOs",
+    "NPC and institutional decisions and sustained multi-session play",
+    "Coordinator all-three qualification"
+  ]
+}

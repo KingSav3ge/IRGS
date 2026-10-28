@@ -163,6 +163,14 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     start_context = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_alpha_context_check', root / 'alpha_context_evaluation.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    alpha_contexts = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_alpha_journey_check', root / 'alpha_journey_evaluation.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    alpha_journeys = checker.validate_fixture(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
@@ -173,7 +181,8 @@ def verify_catalog(root=ROOT):
         'development_interoperability': development_interop,
         'phase_response_compatibility': phase_responses,
         'player_start_evaluation': player_starts,
-        'start_context_evaluation': start_context}
+        'start_context_evaluation': start_context, 'alpha_context_evaluation': alpha_contexts,
+        'alpha_journey_evaluation': alpha_journeys}
 
 
 if __name__ == '__main__':

@@ -3,6 +3,8 @@
   "component": "IRGS-Catalog",
   "scope": "Campaign discovery and design source; no runtime or release authorization.",
   "files_sha256": {
+    "alpha_context_evaluation.py": "6911b618e4ac122d2865b1d4d3b8dd71ee0368a2897408dc6600ff3d8ab6ae49",
+    "alpha_journey_evaluation.py": "be96eedd5972a001507c4fff0554f1842367b0e32481f4bc0e42ac0bf0071459",
     "data/campaign_listings.json": "cb8c6e6e41de99af971264f39f2772c6b2fdc41f74ca617f52045659968ab092",
     "data/campaign_portfolio.json": "3358d38c5f58ed07db1d0f54343758206ef84e3b0efd8cb5704f24392593a80b",
     "design/CATALOGUE_V0_5_IMPORT.json": "9c8e96f253f0260e2acfa2963ce0022b6efc867228942e2d8d2dd9183ce27086",
@@ -105,6 +107,20 @@
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
     "development_interop_compatibility.py": "1f55b851698677a5c8b3d27fb6b8e3e8947f0a2525d5f14403cd0a95cdc17866",
+    "evaluation/alpha_contexts_v1/README.md": "df33de8eae17732d91ef8675b6d645b548ebf15d23066103db95b0db1880737f",
+    "evaluation/alpha_contexts_v1/actor_inputs/historical-quay.json": "615c48c7c50ea0d3f982fbed14a12f630e0558d064f0559617d39d1d233ab4f4",
+    "evaluation/alpha_contexts_v1/actor_inputs/rise-r00.json": "6befe4b2c01b5145c120849cd4fdf2a69953be311a45d94e4a47952455e28293",
+    "evaluation/alpha_contexts_v1/evaluator_only/matrix.json": "c5a027bac500ad97800ffbdb4747f62672e33112abf678c5b19f0c03c9430ff9",
+    "evaluation/alpha_contexts_v1/manifest.json": "69472b54d1f4d9cf6bdac8698bce4a504fbbb3160302ce01a759f4cee007ff46",
+    "evaluation/alpha_journeys_v1/README.md": "2eea48be4ddaf1cd775cafc0ac4e381d6b348676a83ca0584926f4d3556c16fc",
+    "evaluation/alpha_journeys_v1/actor_inputs/quay-contact.json": "9d4fa5f6915c8a423164f1ca24c8707e5fd97cb57700cd84bd75a1c80936eaa8",
+    "evaluation/alpha_journeys_v1/actor_inputs/rise-r00.json": "9369c85ee854b08f13eeefd6f9690815c0aad497d483f9dd475199aa15858dc8",
+    "evaluation/alpha_journeys_v1/evaluator_only/oracle.json": "e75c1d4d56e68163662a78f2cad48eb45249ce2e2bd5dccba72ca51c0cd88504",
+    "evaluation/alpha_journeys_v1/evidence.schema.json": "5e3aa2ae2f5da191aeb446e00aaca9463da3bab509025b5d64e3295080f921e5",
+    "evaluation/alpha_journeys_v1/manifest.json": "1e2bfd64c26f242ed89846b26c2ad1a1d9cef51a6b94e038b9562a1df5a8b94f",
+    "evaluation/current_ordinary_communication_v1/README.md": "97875014063ff66ae9d14006e50e9a9d9de24d0f6237551b109967a2e05c6db1",
+    "evaluation/current_ordinary_communication_v1/actor_inputs/cases.json": "019ba6feba6fc7cc016c1254da6275ff07fe6b6f9e810611d147a304bf244453",
+    "evaluation/current_ordinary_communication_v1/evaluator_only/expectations.json": "8647dad291e1c77368bafe86b8a2b74be406f773289995dc87af87f47d5bfd22",
     "evaluation/development_interop_v1/README.md": "e77b309523b27334bb0e14cc65b6881497aec601dd989ef79773e1898020f79e",
     "evaluation/development_interop_v1/compatibility.json": "0b6fe6eb24a67e5b3e37d52da5fe38a98f1892ef6a67c495075692ac4e7f3e85",
     "evaluation/integrated_responses_v1/README.md": "d84903473b486c58a443e80aef0403a9d3f8d6f31e81f99d9bd22258c095b258",
@@ -202,6 +218,6 @@
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
     "start_context_evaluation.py": "37b4efb6f86af9695000562f0b45fa55f1b5d3f0d7fdecf58b62844c8c81aa2c",
-    "verify_catalog.py": "f978eed99cd130b161abcf62ff5ba6c45ffab4f34f41bb94e48ce6df810fe371"
+    "verify_catalog.py": "28b98e2699a777ef47e9856836a3d796a319c2f406dc3dfe59f45a9152992bd3"
   }
 }

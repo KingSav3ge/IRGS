@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-alpha-contexts-v1",
+  "classification": "offline-synthetic-assessment",
+  "rights": {
+    "authorship": "original-synthetic-instructions-and-assessment",
+    "imported_prose": "none",
+    "permitted_processing": [
+      "local-validation",
+      "offline-synthetic-consumer-tests"
+    ],
+    "external_processing": "not-authorized-by-fixture"
+  },
+  "consumers": {
+    "engine_commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app_commit": "de4e6926f6236f720365d552c69e02756ce18605",
+    "app_catalog_pin": "6f927b00e12a3339861ac353bc38d03c68279662"
+  },
+  "contexts": {
+    "historical-quay": "actor_inputs/historical-quay.json",
+    "rise-r00": "actor_inputs/rise-r00.json"
+  },
+  "evaluator_only": "evaluator_only/matrix.json",
+  "files_sha256": {
+    "actor_inputs/historical-quay.json": "615c48c7c50ea0d3f982fbed14a12f630e0558d064f0559617d39d1d233ab4f4",
+    "actor_inputs/rise-r00.json": "6befe4b2c01b5145c120849cd4fdf2a69953be311a45d94e4a47952455e28293",
+    "evaluator_only/matrix.json": "c5a027bac500ad97800ffbdb4747f62672e33112abf678c5b19f0c03c9430ff9"
+  }
+}

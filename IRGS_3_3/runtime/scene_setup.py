@@ -19,10 +19,25 @@ def _pack():
     return json.loads(PACK.read_text(encoding='utf-8'))
 
 
-def _selected_pack(state):
+def _selected_pack(state, opening_id=None):
     entry = state.get('historical_start', {}).get('entry_id') or state.get('binding', {}).get('entry_id')
     if entry == 'hyw-1415':
-        return _pack()
+        pack = _pack()
+        if opening_id == 'quay-contact-v1':
+            pack['id'] = opening_id
+            pack['title'] = 'A dispatch and a quay contact'
+            pack['description'] += ' This variant adds one fictional local contact.'
+            pack['review'] += (' A fictional quay worker introduces themself at the quay. '
+                'You can address them through a local channel while both remain present; '
+                'their response, consent, possessions and authority are not established.')
+            pack['scope'] = pack['scope'].replace('dialogue, combat', 'autonomous dialogue, combat')
+            pack['scope'] += (' This variant supports explicitly submitted local testimony; '
+                'it does not supply an NPC response or negotiation outcome.')
+            pack['source_ref'] = 'authored-solo-opening:quay-contact-v1'
+            pack['contact'] = {'actor_id': 'FICTIONAL-QUAY-CONTACT',
+                'name': 'Quay contact', 'species': 'human', 'channel_id': 'quay-local',
+                'introduction': 'I am a worker here on the quay.'}
+        return pack
     from historical_campaigns import SNAPSHOTS
     if (entry not in SNAPSHOTS or state.get('binding', {}).get('scenario_id') != 'hundred-years-war'
             or state.get('historical_start', {}).get('snapshot', {}).get('id') != entry):
@@ -40,12 +55,15 @@ def opening_options(state):
     pack = _selected_pack(state)
     if pack is None:
         return []
+    packs = [pack]
+    if (state.get('historical_start', {}).get('entry_id') or state.get('binding', {}).get('entry_id')) == 'hyw-1415':
+        packs.append(_selected_pack(state, 'quay-contact-v1'))
     return [{**{key: copy.deepcopy(pack[key]) for key in
                 ('id', 'title', 'description', 'requirements', 'review', 'scope')},
              'content_sha256': digest(pack), 'fictional': True,
              'elapsed_origin_seconds': 0,
              'durations': {'observation_seconds': 20, 'walking_seconds': 45,
-                           'shortcut_attempt_seconds': 30, 'delivery_seconds': 10}}]
+                           'shortcut_attempt_seconds': 30, 'delivery_seconds': 10}} for pack in packs]
 
 
 def initialize_opening(world, character, actor_id, reference, *, options=None):
@@ -61,7 +79,7 @@ def initialize_opening(world, character, actor_id, reference, *, options=None):
         if reviewed is None or digest(pack) != reviewed['content_sha256']:
             raise ValueError('The existing-person opening changed after review')
     else:
-        pack = _selected_pack(world.s)
+        pack = _selected_pack(world.s, opening_id)
     species = world.s.get('actors', {}).get(actor_id, {}).get('species')
     if ((not historical_person and character.get('kind') != 'new') or not isinstance(species, str)
             or species.strip().casefold() != 'human'
@@ -103,6 +121,21 @@ def initialize_opening(world, character, actor_id, reference, *, options=None):
               quantity=1, inventory_evidence_ref='setup:scene-dispatch')
         apply('receiving-tray', 'establish_stock', location=pack['destination'], material=pack['initial_material'],
               quantity=0, inventory_evidence_ref='setup:scene-map')
+    contact = pack.get('contact')
+    if contact:
+        other = contact['actor_id']
+        apply('contact-actor', 'register_actor', actor_id=other, name=contact['name'],
+              species=contact['species'], player_controlled=False)
+        apply('contact-location', 'record_evidence', evidence_id='setup:contact-location',
+              subject=other, assertion='The fictional contact begins at the quay.', status='established')
+        apply('contact-position', 'confirm_character_field', subject=other, field='location',
+              value=place, evidence_id='setup:contact-location', authority_ref=source)
+        apply('contact-introduction', 'record_evidence', evidence_id='setup:contact-introduction',
+              subject=actor_id, originator=other, assertion=contact['introduction'], status='testimony')
+        apply('contact-received', 'receive_evidence', evidence_id='setup:contact-introduction', recipient=actor_id)
+        result.s['communication_rules'] = {'schema_version': 1, 'source_ref': source,
+            'time_model': 'causal_only_no_elapsed_rule', 'channels': {
+                contact['channel_id']: {'mode': 'co_located', 'actors': [actor_id, other]}}}
     # Initial authored physical condition and selected local rules belong to
     # this first world initialization, before its first atomic save. They are
     # never reinstalled when loading, inspecting or advancing an existing game.

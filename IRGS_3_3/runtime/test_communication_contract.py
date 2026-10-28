@@ -24,6 +24,10 @@ class CommunicationContractTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
         c = choices(); c['permission'] = 'held'
         self.world = initialize(c, preview(c)['review_digest'], 'communication-contract-fixture')
+        # This synthetic fixture tests an unreceived channel roster; ordinary
+        # starts separately receive both reviewed introductions.
+        for speaker in ('elin', 'oren'):
+            self.world.s['knowledge']['founder'].pop('setup:local-introduction:' + speaker)
         self.world.s['player_actor_ids'].append('oren')  # Explicit dual control for the test only.
         for actor in ('founder', 'oren'):
             grant(self.world, actor+'-custody', actor, ['transfer_stock'], self.world.s['clock']+1,

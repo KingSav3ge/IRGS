@@ -1,0 +1,8 @@
+{
+  "classification": "evaluator-only",
+  "marker": "PRIVATE_CURRENT_COMMUNICATION_ORACLE",
+  "rise": {"participants": ["elin", "oren"], "excluded_participants": ["mira"], "source_ref": "authored-fictional:greywater-reach:local-introductions:v1"},
+  "quay": {"participants": ["FICTIONAL-QUAY-CONTACT"]},
+  "speech_status": "testimony_received",
+  "unqualified": ["autonomous_npc_decisions", "institution_reactions", "ordinary_offer_authority", "needs_recovery", "risk_conflict", "older_branch_restore", "live_provider", "sustained_alpha_play"]
+}

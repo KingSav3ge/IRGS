@@ -1,0 +1,16 @@
+{
+  "case_id": "historical-quay",
+  "source_ref": "authored-synthetic:irgs-catalog:alpha-contexts:v1",
+  "selection": {
+    "profile_id": "military",
+    "scenario_id": "hundred-years-war",
+    "entry_id": "hyw-1415",
+    "character": "new-human",
+    "opening_id": "quay-delivery-v1"
+  },
+  "intentions": [
+    "Review my available situation.",
+    "Attempt an explicitly supported action.",
+    "Continue from the received result."
+  ]
+}

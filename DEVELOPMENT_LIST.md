@@ -1,22 +1,65 @@
 # IRGS continuation development list
 
-## Latest App communication delivery included in 3.4.3
+## Coordinated 3.4.4 Pre-Alpha continuation
 
-The newly pulled App bridge adds actor-received channels/sources and reviewed
-Speak, Offer, Counteroffer, Accept, Decline and Withdraw operations. Exact words
-remain testimony; saying “I accept” under Speak accepts no offer. Core retains
-authority, conserved transfers and distinct closure outcomes. Prepare/accept,
-lost replies, restart/restore and original-result lookup preserve identity and
-effects. Legacy unattributed sources retain their established private-provenance
-boundary, and other R00 characters gain no founder inspection or actions.
+Current coordinated edition: **3.4.4 Pre-Alpha**; previous release field: **3.3.3**.
+The selected travel and ordinary communication increment preserves one Core,
+explicit acceptance, actor filtering, conserved stock/time and original-result
+recovery. No Alpha gate is closed and live/provider/Windows qualification remains open.
 
-This bridge operates only where legitimate channels and participants have been
-selected. Normal initializers do not install the synthetic test fixtures. Next:
-Engine/content channel selection and native travel, separate Catalog communication
-consumers, protected App operator setup, build identity and supported-intent
-mapping. Broader freeform/combat, NPC/institutional completion, live quality and
-full C2 remain open. Current source replaces superseded generated installations;
-original archives, accurate dated evidence, Git history, saves/config remain.
+Selected travel and ordinary speech are delivered within their stated rules. Next: A4-ENG-03 supported-intent contracts, remaining ordinary offer prerequisites and WB-ENG-01 world-draft/initialization contracts. Keep non-Rise evidence and wider DEV/C2 gaps explicit.
+
+This current ordering supersedes earlier review and pending-3.4.3/3.4.4 notes below.
+Original tested source identities and older evidence remain unchanged.
+The coordinator owns the exact all-three integration and final package review.
+Every later unified main push increments the edition; next is 3.4.5 Pre-Alpha.
+Continue toward the shared Alpha 4.0 functional gates and World Builder plan.
+
+## Active Alpha direction — 27 October 2026
+
+Current product is **3.4.3 Pre-Alpha**. Follow
+[ALPHA_4_0_PLAN.md](ALPHA_4_0_PLAN.md) and
+[COORDINATOR_WORK_ORDER.md](COORDINATOR_WORK_ORDER.md) toward functional
+**4.0.0 Alpha**. No Alpha gate is qualified by these instructions.
+
+The A4-ENG task table maps the Alpha queue to stable DEV IDs. Keep DEV-01–05's
+bounded evidence and all wider open DEV/C2 criteria intact. Before final Alpha
+review, map the relevant C2 cases per exposed operation; do not declare all 121
+implemented or passed. Alpha release acceptance and complete C2 coverage are
+different claims.
+
+**A4-ENG-02 selected travel — 28 October 2026:** the existing phase contract
+now exposes reviewed Rise travel starts and actor-received phases, with native
+partial progress, pause/resume, commitments, arrival and durable retry. See
+[the contract and current limits](engine/TRAVEL_CAPABILITY_API.md). Dynamic access,
+other travel contexts and independent/coordinator qualification remain open.
+Continue A4-ENG-01 offers/independent evaluation and A4-ENG-03 supported-intent
+DTOs; WB-ENG-01 authoring remains separate. No Alpha gate is closed.
+
+
+**A4-ENG-01 update — 27 October 2026:** reviewed ordinary R00 now initializes
+fictional received introductions and a local `speak` channel. [Rise contract and
+results](engine/RISE_ORDINARY_COMMUNICATION.md) cover real App creation/speech,
+privacy, stale review, movement rejection and recovery; the prior non-Rise
+quay context remains supported. Offers/authority and independent Catalog
+qualification remain open. Continue A4-ENG-01; selected travel and early
+A4-ENG-03 intent DTOs remain next. No Alpha gate is closed.
+
+
+**Prior A4-ENG-01 quay increment — 27 October 2026:** the explicitly reviewed fictional
+`quay-contact-v1` start now initializes a received contact and local speech
+channel through existing Core communication. [Engine/API and App HTTP evidence](engine/ORDINARY_START_COMMUNICATION.md)
+covers actual accepted testimony, retry/reload and co-location rejection. This is
+one non-Rise context, not Alpha qualification. At that time, a second context
+remained open; the R00 increment above now covers its initial speech. Offers,
+independent qualification and broader continuing play remain open.
+
+
+## Earlier development records and criteria
+
+Dated delivery/next-task records below preserve their original source selections
+and execution scope. Their old pending-3.4.3 ordering is superseded above.
+Stable DEV/C2 completion criteria remain applicable to their stated scope.
 
 ## Current coordinator review — 26 October 2026
 

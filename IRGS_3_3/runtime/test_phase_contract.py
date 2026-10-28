@@ -73,7 +73,8 @@ class PhaseContractTests(unittest.TestCase):
         for context in ('observation', 'work'):
             if context == 'work': self.rise()
             before = self.world.save(); view = self.view()
-            self.assertEqual({r['kind'] for r in view['start_options']}, {context})
+            self.assertEqual({r['kind'] for r in view['start_options']},
+                             {'work', 'travel'} if context == 'work' else {context})
             for row in view['start_options']:
                 self.assertTrue(row['source_refs'])
                 self.assertTrue(row['requires_explicit_submission'])

@@ -10,6 +10,8 @@ from core_world import CoreWorld
 
 VERSION = 'rise-foundation-1'
 SOURCE = 'authored-fictional:greywater-reach:v1'
+COMMUNICATION_SOURCE = 'authored-fictional:greywater-reach:local-introductions:v1'
+INTRODUCTIONS = {'elin': 'I am Steward Elin.', 'oren': 'I am Oren.'}
 FAMILIES = [
     ('H01', 'Eastern Sicily'), ('H02', 'Augusta Emerita district'),
     ('H03', 'Silesian village foundation'), ('H04', 'Musashino reclamation'),
@@ -68,7 +70,13 @@ def preview(choices):
                        if choices['permission'] == 'seek' else
                        'A received, accepted fictional grant permits a camp and temporary dwelling at the clearing.'),
         'terms': 'Camp and temporary dwelling, including one consenting incoming household. Preserve the existing seasonal footpath. No forest, taxation or government rights. No grant supplies goods.',
-        'neighbors': 'Steward Elin and Oren are known at the commons. Oren has private supplies and an independent repair plan.',
+        'neighbors': ('Steward Elin and Oren are known at the commons. Oren has private supplies and an independent repair plan. '
+            'You receive their fictional introductions: "I am Steward Elin." and "I am Oren." '
+            'You may attempt local speech while co-located; no response, consent or transfer is automatic.'),
+        'communication_setup': {'version': 'irgs-rise-local-introductions-1',
+            'source_ref': COMMUNICATION_SOURCE, 'channel': 'commons-local',
+            'initial_testimony': copy.deepcopy(INTRODUCTIONS), 'supported_commands': ['speak'],
+            'elapsed_status': 'not_resolved'},
         'control': 'Only the founder is player controlled. No spouse, debt, political action or additional relationship is generated.',
         'continuation': 'No automatic successor or respawn. This demonstration has no death model.',
         'provenance': SOURCE}
@@ -116,6 +124,17 @@ def initialize(choices, review_digest, campaign_id):
     if c['company'] == 'sibling': person('rowan', 'Rowan', 'founder-home')
     person('elin', 'Steward Elin')
     person('oren', 'Oren', 'oren-home')
+    # Reviewed fictional initial receipts, analogous to the initial settlement
+    # notice. They identify speakers, not present authority, consent or stock.
+    for speaker, text in INTRODUCTIONS.items():
+        key = 'setup:local-introduction:' + speaker
+        s['evidence'][key] = {'subject': 'founder', 'assertion': text, 'status': 'testimony',
+            'source_ref': COMMUNICATION_SOURCE, 'recorded_at': 0, 'originator': speaker,
+            'occurrence_time': None, 'visibility': 'only explicitly received knowledge'}
+        s['knowledge']['founder'][key] = {'received_at': 0, 'source_ref': COMMUNICATION_SOURCE}
+    s['communication_rules'] = {'schema_version': 1, 'source_ref': COMMUNICATION_SOURCE,
+        'time_model': 'causal_only_no_elapsed_rule', 'channels': {
+            'commons-local': {'mode': 'co_located', 'actors': ['founder', 'elin', 'oren']}}}
     account('founder-home', review['founder_household_stocks'])
     account('oren-home', {'grain': 4, 'timber': 3, 'axe': 1})
     if c['company'] == 'two_households':
