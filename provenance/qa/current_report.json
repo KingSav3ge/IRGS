@@ -1,58 +1,58 @@
 {
   "schema_version": 1,
-  "candidate_commit": "3aa7f7f08e9ac040baab527e765de76a829a3a36",
-  "finished_at_utc": "2026-10-26T23:31:27.914156+00:00",
+  "candidate_commit": "c893450978a7d51bdb887bd531be49794a6afde8",
+  "finished_at_utc": "2026-10-28T17:41:36.057264+00:00",
   "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/candidate",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/worktrees/joined",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 16.04,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/source-integrity.txt"
+      "duration_seconds": 10.04,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 1.82,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/evidence-freshness.txt"
+      "duration_seconds": 0.82,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 72.25,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/runtime.txt",
-      "tests_run": 773,
+      "duration_seconds": 66.96,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/runtime.txt",
+      "tests_run": 785,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 161.52,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/web.txt",
-      "tests_run": 256,
+      "duration_seconds": 159.22,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/web.txt",
+      "tests_run": 258,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 6.39,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/interface.txt",
-      "checks_passed": 150
+      "duration_seconds": 5.53,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/interface.txt",
+      "checks_passed": 151
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 13.75,
-      "log": "/workspace/irgs-cloud/integration/start-readiness-3.4.3/20261026T232033Z-communication/logs/tooling.txt",
+      "duration_seconds": 12.1,
+      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -132,15 +132,15 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "version": "3.4.3",
+  "version": "3.4.4",
   "previous_version": "3.3.3",
   "candidate_components": {
-    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
-    "app": "de4e6926f6236f720365d552c69e02756ce18605",
-    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
   },
   "pin_matches_candidate": true,
-  "source_input_sha256": "49cb9704edafb7ad9d36ef5a6bbf27e30bcf460b157207fa125f5b6e94f50b35",
-  "integration_review": "provenance/qa/start_readiness_3_4_3_review.json",
+  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
+  "integration_review": "provenance/qa/ordinary_travel_3_4_4_review.json",
   "integrated_or_deployed_by_qa": false
 }

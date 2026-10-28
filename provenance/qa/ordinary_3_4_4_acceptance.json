@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "fixture_id": "coordinator-adopted-ordinary-3.4.4-1",
+  "components": {
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+  },
+  "selection_mode": "joined_or_clean_extracted_source",
+  "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
+  "original_consumer_preserved_sha256": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",
+  "tests_run": 2,
+  "passed": 2,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "passed",
+  "provider_calls": 0,
+  "user_saves_opened": false,
+  "alpha_qualified": false
+}

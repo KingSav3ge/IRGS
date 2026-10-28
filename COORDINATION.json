@@ -65,6 +65,10 @@
         {
           "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
         }
       ]
     },
@@ -80,6 +84,10 @@
         },
         {
           "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
           "status": "passed"
         }
       ]
@@ -97,17 +105,21 @@
         {
           "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "approved_components_for_isolated_candidate",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_4_pre_alpha",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
-    "engine": "Engine/content reviewed legitimate communication-channel/participant initialization for ordinary supported starts; selected native travel remains queued",
-    "app": "App protected operator/launcher configuration, non-secret actual build identity and selected supported-intent mapping",
-    "catalog": "Catalog separately versioned exact consumers of the now-published App communication bridge"
+    "engine": "A4-ENG-03 supported-intent contracts; ordinary offer prerequisites; WB-ENG-01 original authoring contracts",
+    "app": "A4-APP-01 protected operator/provider setup, then supported-intent review; shared World Builder UI contract",
+    "catalog": "A4-CAT-04 grounding/quality rubric; WB-CAT-01/02 original source dossiers and world-pack examples"
   },
   "previous_completed_cycle": {
     "cycle_id": "historical-details-01",
@@ -199,30 +211,30 @@
       "viable_component_update": false
     }
   ],
-  "target_version": "3.4.3",
-  "target_version_status": "development",
+  "target_version": "3.4.4",
+  "target_version_status": "pre_alpha",
   "proposed_components": {
-    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
-    "app": "de4e6926f6236f720365d552c69e02756ce18605",
-    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
   },
-  "reviewed_at_utc": "2026-10-26T23:32:23.604221+00:00",
+  "reviewed_at_utc": "2026-10-28T17:42:25.775283+00:00",
   "completed_components": {
-    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
-    "app": "de4e6926f6236f720365d552c69e02756ce18605",
-    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
   },
-  "source_input_sha256": "49cb9704edafb7ad9d36ef5a6bbf27e30bcf460b157207fa125f5b6e94f50b35",
-  "qualified_candidate_commit": "3aa7f7f08e9ac040baab527e765de76a829a3a36",
-  "integrated_at_utc": "2026-10-26T23:32:40.105379+00:00",
-  "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
+  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
+  "qualified_candidate_commit": "c893450978a7d51bdb887bd531be49794a6afde8",
+  "integrated_at_utc": "2026-10-28T17:42:25.775283+00:00",
+  "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
   "remaining_work": [
     "Protected App operator/provider setup and supported-intent review",
     "Broader NPC/institution decisions, offer prerequisites, needs/recovery and selected conflict",
     "Shared World Builder authoring contracts/editor/packs",
     "Native Windows and explicitly budgeted live-provider quality qualification"
   ],
-  "completion_scope": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
+  "completion_scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
   "development_scope": {
     "directive": "Develop shared IRGS systems across campaigns and themes; Rise is one regression fixture.",
     "scope_document": "IRGS_SYSTEMS_SCOPE.md",
@@ -235,13 +247,13 @@
     "chat_message_dispatched": false
   },
   "previous_integration": {
-    "cycle_id": "interface-communication-3.4.2",
+    "cycle_id": "start-readiness-3.4.3",
     "components": {
-      "engine": "91b20056e7db651966c9e92925313494917f47b1",
-      "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
-      "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
+      "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+      "app": "de4e6926f6236f720365d552c69e02756ce18605",
+      "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
     },
-    "record": "provenance/qa/completed_cycles/interface-communication-3.4.2_coordination.json"
+    "record": "provenance/qa/completed_cycles/start-readiness-3.4.3_coordination.json"
   },
   "continuation_instructions": {
     "IRGS-Engine": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/CHAT_CONTINUATION.md",
@@ -249,7 +261,7 @@
     "IRGS-Catalog": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md",
     "IRGS": "https://github.com/KingSav3ge/IRGS/blob/main/CHAT_CONTINUATION.md"
   },
-  "guides_updated_on": "2026-10-25",
+  "guides_updated_on": "2026-10-28",
   "continuation_message_dispatched": false,
   "previous_version": "3.3.3"
 }

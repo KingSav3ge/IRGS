@@ -3,7 +3,7 @@
   "edition": "3.4.4",
   "channel": "development",
   "date": "2026-10-28",
-  "status": "candidate_awaiting_full_joined_qualification",
+  "status": "qualified_pre_alpha_increment_package_gate_required",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
@@ -16,7 +16,7 @@
   "next_milestone": "Protected App operator/provider setup and supported-intent review",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
-  "source_input_sha256": "49cb9704edafb7ad9d36ef5a6bbf27e30bcf460b157207fa125f5b6e94f50b35",
+  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
   "general_action_resolver_implemented": false,
   "live_inference_qualified": false,
   "private_saves_included": false,

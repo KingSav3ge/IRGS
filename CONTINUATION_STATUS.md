@@ -1,5 +1,10 @@
 # Current Engine continuation
 
+## Current coordinated 3.4.4 Pre-Alpha
+
+Ordinary-start communication, selected Rise phased travel and build identity are integrated and qualified within the recorded limits. The current edition is 3.4.4; previous release field remains 3.3.3. Continue the shared Alpha 4.0 and World Builder work in CHAT_CONTINUATION.md and COORDINATION.json. Full C2, live-model, Windows and Alpha qualification remain open. Older tested records below retain their original scopes.
+
+
 ## Coordinated 3.4.4 Pre-Alpha continuation
 
 Current coordinated edition: **3.4.4 Pre-Alpha**; previous release field: **3.3.3**.

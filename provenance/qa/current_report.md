@@ -1,9 +1,3 @@
-# IRGS 3.4.3 coordinator qualification
+# IRGS 3.4.4 Pre-Alpha qualification
 
-Fresh execution evidence, full Core/Web/interface/tooling regressions, independent
-HTTP, Catalog six-start acceptance and six real browser suites pass for the
-selected source set. This includes reviewed communication and structured offers
-with actual conserved fulfillment, private source filtering and exact recovery.
-Normal starts still require legitimate channel/participant initialization.
-See start_readiness_3_4_3_review.json for actual sources, evidence and limits.
-The final committed clean package is separately checked before publication.
+Fresh operation capture, full Core/Web/interface/tooling regression, eight independent HTTP cases, seven Chromium suites, six Catalog start contexts and two separately selected ordinary communication cases pass at the recorded candidate. The final clean package must pass its separate publication gate. See ordinary_travel_3_4_4_review.json for exact sources and limits. One private-save fixture and Linux-inapplicable Windows cases remain skipped. No live provider or full Alpha qualification is claimed.
