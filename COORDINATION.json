@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "cycle_id": "start-readiness-3.4.3",
-  "assigned_on": "2026-10-26",
-  "objective": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
+  "cycle_id": "ordinary-travel-3.4.4",
+  "assigned_on": "2026-10-28",
+  "objective": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
   "completion_plan": "SOLO_COMPLETION_PLAN.md",
   "coordinator": {
     "title": "IRGS Enviroment",
@@ -36,72 +36,73 @@
     }
   },
   "baseline_components": {
-    "engine": "91b20056e7db651966c9e92925313494917f47b1",
-    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
-    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
-  },
-  "cycle_start_components": {
-    "engine": "91b20056e7db651966c9e92925313494917f47b1",
-    "app": "00634b15f2d8d4a8626d3eb3cb0a139559ac1fcc",
-    "catalog": "3f921252e50a0976cb88321b6ff8249a5f12466d"
-  },
-  "selected_components": {
     "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
     "app": "de4e6926f6236f720365d552c69e02756ce18605",
     "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
   },
+  "cycle_start_components": {
+    "joined": "9dc27f82f7f49e6f8b1de66573b991b22e68cb2a",
+    "engine": "89cd2d7bb7ce7a9c147ca79dd5a981d95c78d333",
+    "app": "55ac2d0d998156984c0922cb08a974cd6850d7a7",
+    "catalog": "338303301aa41071a93bcacf0da56b02a41b628a"
+  },
+  "selected_components": {
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+  },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+      "commit": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
       "deliverable": "component_update",
-      "scope": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
       "checks": [
         {
-          "name": "Fresh full regression, execution capture and independent HTTP",
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
           "status": "passed"
         },
         {
-          "name": "Catalog six starts, six real Chromium suites, original content preservation",
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
           "status": "passed"
         }
       ]
     },
     "app": {
       "status": "approved",
-      "commit": "de4e6926f6236f720365d552c69e02756ce18605",
+      "commit": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
       "deliverable": "component_update",
-      "scope": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
       "checks": [
         {
-          "name": "Fresh full regression, execution capture and independent HTTP",
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
           "status": "passed"
         },
         {
-          "name": "Catalog six starts, six real Chromium suites, original content preservation",
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
           "status": "passed"
         }
       ]
     },
     "catalog": {
       "status": "approved",
-      "commit": "6f927b00e12a3339861ac353bc38d03c68279662",
+      "commit": "ecd7dccc747099162ab035238550eb55e31ca054",
       "deliverable": "component_update",
-      "scope": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
       "checks": [
         {
-          "name": "Fresh full regression, execution capture and independent HTTP",
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
           "status": "passed"
         },
         {
-          "name": "Catalog six starts, six real Chromium suites, original content preservation",
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
           "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "integrated_3_4_3_development_update",
-  "component_source_integration_performed": true,
+  "integration_status": "approved_components_for_isolated_candidate",
+  "component_source_integration_performed": false,
   "blockers": [],
   "next_assignments": {
     "engine": "Engine/content reviewed legitimate communication-channel/participant initialization for ordinary supported starts; selected native travel remains queued",
@@ -216,11 +217,10 @@
   "integrated_at_utc": "2026-10-26T23:32:40.105379+00:00",
   "cycle_completion_status": "qualified_offline_increment_broader_systems_pending",
   "remaining_work": [
-    "Engine/content reviewed legitimate communication-channel/participant initialization for ordinary supported starts; selected native travel remains queued",
-    "Catalog separately versioned exact consumers of the now-published App communication bridge",
-    "App protected operator/launcher configuration, non-secret actual build identity and selected supported-intent mapping",
-    "General freeform/combat, NPC decisions, autonomous institutional systems and wider DEV/C2",
-    "Native Windows and conditional live-model quality qualification"
+    "Protected App operator/provider setup and supported-intent review",
+    "Broader NPC/institution decisions, offer prerequisites, needs/recovery and selected conflict",
+    "Shared World Builder authoring contracts/editor/packs",
+    "Native Windows and explicitly budgeted live-provider quality qualification"
   ],
   "completion_scope": "Explicit start readiness and received civil/local context plus the reviewed App communication/source/offer bridge, actor privacy, conservation and durable original-result recovery in selected non-Rise/R00 contexts.",
   "development_scope": {
