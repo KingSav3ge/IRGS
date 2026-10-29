@@ -1,5 +1,9 @@
 # IRGS continuation development list
 
+## Current coordinated 3.4.6 Pre-Alpha
+
+The reviewed Engine, App and Catalog foundations are adopted at the exact commits in COMPONENTS.json. Read DEVELOPMENT_HANDOFFS.md and the current CHAT_CONTINUATION.md for remaining owner implementation. New public repository identities and branding retain internal IRGS technical compatibility. No functional Alpha gate is closed. Earlier records retain their original scope.
+
 **29 October follow-up:** the selected grant-attempt contract and its separate
 stock-offer behavior have [executed evidence](engine/GRANT_PREREQUISITES_VALIDATION.json).
 General NPC decisions, needs, conflict and editor integration remain open.

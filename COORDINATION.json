@@ -70,6 +70,10 @@
         {
           "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
+          "status": "passed"
         }
       ]
     },
@@ -90,6 +94,10 @@
         },
         {
           "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
           "status": "passed"
         }
       ]
@@ -116,17 +124,21 @@
         {
           "name": "Presentation harness checks seven genre bases, the current shared historical palette and distinct Rise override; contrast and read-only checks retained",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
+          "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "approved_components_for_isolated_candidate",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_6_pre_alpha",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
-    "engine": "A4-ENG-03 supported-intent contracts; ordinary offer prerequisites; WB-ENG-01 original authoring contracts",
-    "app": "A4-APP-01 protected operator/provider setup, then supported-intent review; shared World Builder UI contract",
-    "catalog": "A4-CAT-04 grounding/quality rubric; WB-CAT-01/02 original source dossiers and world-pack examples"
+    "engine": "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
+    "app": "A4-APP-03 and WB-APP-01: adopt supported-intent/draft contracts and explicit offer selection",
+    "catalog": "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage"
   },
   "previous_completed_cycle": {
     "cycle_id": "historical-details-01",
@@ -194,7 +206,7 @@
   "coordination_limitations": [
     "Repository work orders are the available chat handoff; QA monitoring does not start chats."
   ],
-  "runtime_implemented_by_this_priority_update": false,
+  "runtime_implemented_by_this_priority_update": true,
   "work_order_publication": [
     {
       "component": "engine",
@@ -225,16 +237,23 @@
     "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
     "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
   },
-  "reviewed_at_utc": "2026-10-29T14:28:15.861322+00:00",
-  "completed_components": {},
-  "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
-  "qualified_candidate_commit": "ad2e379e419103bb7b610fb473087b9b0cf3025c",
-  "integrated_at_utc": "2026-10-29T14:28:15.861322+00:00",
+  "reviewed_at_utc": "2026-10-29T19:06:13.653356+00:00",
+  "completed_components": {
+    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+  },
+  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
+  "qualified_candidate_commit": "4d7991c8d3bac1a8f649371ce596c210c982114c",
+  "integrated_at_utc": "2026-10-29T19:06:13.653356+00:00",
   "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
   "remaining_work": [
     "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
     "A4-APP-03 and WB-APP-01: adopt supported-intent/draft contracts and explicit offer selection",
-    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage"
+    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage",
+    "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
+    "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
+    "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
   ],
   "completion_scope": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
   "development_scope": {

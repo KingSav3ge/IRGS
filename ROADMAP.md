@@ -1,5 +1,9 @@
 # IRGS Engine development roadmap
 
+## Current coordinated 3.4.6 Pre-Alpha
+
+The reviewed Engine, App and Catalog foundations are adopted at the exact commits in COMPONENTS.json. Read DEVELOPMENT_HANDOFFS.md and the current CHAT_CONTINUATION.md for remaining owner implementation. New public repository identities and branding retain internal IRGS technical compatibility. No functional Alpha gate is closed. Earlier records retain their original scope.
+
 **29 October follow-up:** [actor-safe grant attempts](engine/GRANT_PREREQUISITES_VALIDATION.json)
 and their independent interaction with the selected stock-offer profile are
 tested across R00 and the fictional quay. Broader systems and adoption remain open.

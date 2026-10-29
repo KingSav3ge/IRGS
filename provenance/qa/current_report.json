@@ -1,58 +1,58 @@
 {
   "schema_version": 1,
-  "candidate_commit": "ad2e379e419103bb7b610fb473087b9b0cf3025c",
-  "finished_at_utc": "2026-10-29T14:27:08.960108+00:00",
+  "candidate_commit": "0c85c18810f21964e57b38f1019add70c67a5e43",
+  "finished_at_utc": "2026-10-29T18:58:37.876983+00:00",
   "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/worktrees/joined",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/worktrees/joined",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 7.78,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/source-integrity.txt"
+      "duration_seconds": 7.84,
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.62,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/evidence-freshness.txt"
+      "duration_seconds": 0.67,
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 45.96,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/runtime.txt",
-      "tests_run": 785,
+      "duration_seconds": 47.21,
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/runtime.txt",
+      "tests_run": 804,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 154.7,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/web.txt",
-      "tests_run": 258,
+      "duration_seconds": 163.72,
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/web.txt",
+      "tests_run": 272,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.43,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/interface.txt",
-      "checks_passed": 153
+      "duration_seconds": 4.38,
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/interface.txt",
+      "checks_passed": 156
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
       "duration_seconds": 9.33,
-      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/tooling.txt",
+      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -132,15 +132,15 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "version": "3.4.5",
+  "version": "3.4.6",
   "previous_version": "3.3.3",
   "candidate_components": {
-    "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
-    "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
-    "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
+    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
   },
   "pin_matches_candidate": true,
-  "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
-  "integration_review": "provenance/qa/story_flow_3_4_5_review.json",
+  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
+  "integration_review": "provenance/qa/intent_world_3_4_6_review.json",
   "integrated_or_deployed_by_qa": false
 }

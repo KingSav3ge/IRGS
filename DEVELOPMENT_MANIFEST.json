@@ -151,13 +151,13 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 41681,
-      "sha256": "17fc3db262928fd709de97cdae20b7aa1d77dc32e2330d3f548ee6dbfa7cf1b7"
+      "bytes": 42099,
+      "sha256": "551e536ab4896241bf0ee9e57d6d6e40d2066b8b0365facacb1b7a5dff0f9053"
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 12853,
-      "sha256": "933b6498b92bcf757ee288e966ed6f5a96e274a94be85caee27a0fa5ad7156da"
+      "bytes": 13752,
+      "sha256": "3537805aa135384f8de652060aa15fa74ff9c417ad3ac8d0102a5d3388a3513b"
     },
     {
       "path": "COORDINATION.md",
@@ -176,8 +176,8 @@
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 124101,
-      "sha256": "2273ea42b15e02303af03fa9c158d2b4798271981272d68822d16d76e03d31be"
+      "bytes": 131832,
+      "sha256": "c47538d4b97301227f69850c9d1c14810adc73f01abe766c5e646fe5eea76b7a"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -211,13 +211,13 @@
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 35031,
-      "sha256": "bc487226a4b975582139a8faa650ce3783d028065111a0c0d347ac4218bb2f08"
+      "bytes": 35449,
+      "sha256": "93159781e54850358cf07c6cb814acbc7d70d8656aea2e7edfc1d3860c7b2fc0"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 1602,
-      "sha256": "b18b63720f2d21928dbce361c65426011580840f58927e89fbad2fc296584b9e"
+      "bytes": 1609,
+      "sha256": "001d9c22b88c4d4ba5589ad4e5b7444bd5092b646058576dae8ea48fd06535a8"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -3941,8 +3941,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 26482,
-      "sha256": "9a44b66be8499be80c7bd73eece6b8edda1d9111ed37586b19e41ec8b9f6f468"
+      "bytes": 26900,
+      "sha256": "1f41fbfa9916d13adc9384d197a064417be2f04a4eb96151897e639ea4c5e6e8"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
@@ -5096,13 +5096,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5580,
-      "sha256": "5741a91e5da7b2a5b58c58f5d009311da4fba5f9beae984b4b78fdbf116a0ed3"
+      "bytes": 5597,
+      "sha256": "d1654ec778d5f6c42e96e13285cd9852d3b2632abe527fdef9781faeb5a49728"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 538,
-      "sha256": "e38331a8c887482808af87ba818cdc8d8081174354e51d21f09d86d995881afe"
+      "bytes": 571,
+      "sha256": "539048c5134917a60fc83c2790ca97a176289b42e7932173ed7d695eabaf59a5"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
@@ -5150,6 +5150,16 @@
       "sha256": "2bdff20ce3274256ffa9dd738e4f2eca7f80de53ff12265c2c76e5b303dafa64"
     },
     {
+      "path": "provenance/qa/intent_world_3_4_6_acceptance.json",
+      "bytes": 681,
+      "sha256": "aabc13a732426e45acad7a9cab78862c492b10aa09975a515a99efc5b6c50e0d"
+    },
+    {
+      "path": "provenance/qa/intent_world_3_4_6_review.json",
+      "bytes": 131832,
+      "sha256": "c47538d4b97301227f69850c9d1c14810adc73f01abe766c5e646fe5eea76b7a"
+    },
+    {
       "path": "provenance/qa/interface_communication_3_4_2_review.json",
       "bytes": 45475,
       "sha256": "5b6ec2601d853b79b9a9a6c3f1e8f26fc8a96e75425831c3fb7c2b6376b0d6f3"
@@ -5163,6 +5173,11 @@
       "path": "provenance/qa/ordinary_3_4_5_acceptance.json",
       "bytes": 694,
       "sha256": "6a02555cd22f9572a6fadb46a07469127a8974d0c5526415d42011fa975e68ed"
+    },
+    {
+      "path": "provenance/qa/ordinary_3_4_6_acceptance.json",
+      "bytes": 694,
+      "sha256": "b101c6304bfe4ba92160702e0a3cb9d5c3ee44e95dda0e3d5f070df3e96bcfe7"
     },
     {
       "path": "provenance/qa/ordinary_travel_3_4_4_review.json",
