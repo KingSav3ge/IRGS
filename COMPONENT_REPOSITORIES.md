@@ -1,18 +1,18 @@
 # Independent components and joined IRGS
 
-The user selected this layout on 22 October 2026. `KingSav3ge/IRGS/main` remains the joined application. Its former Engine/App branches are retired after integration. Each new repository owns its component and develops on `main`.
+The user selected this layout on 22 October 2026. `KingSav3ge/WorldWard/main` remains the joined application. Its former Engine/App branches are retired after integration. Each new repository owns its component and develops on `main`.
 
 | Repository | Owned source | Dependency |
 | --- | --- | --- |
-| `KingSav3ge/IRGS-Engine` | `IRGS_3_3/`, `engine/`, Engine milestones and source provenance | No App checkout is needed for Core verification or runtime tests. |
-| `KingSav3ge/IRGS-APP-WEB` | `IRGS_Web/`, root `Start-IRGS.cmd` | `Engine/` and `Catalog/` are Git submodules pinned to qualified Engine and Catalog commits. |
-| `KingSav3ge/IRGS-Catalog` | `IRGS_Catalog/`: campaign listings, preview records and catalogue design documents | No Engine or App needed for source verification. |
-| `KingSav3ge/IRGS` | Full sources of all three components plus integration tooling | `COMPONENTS.json` records the integrated component commits. No submodule is needed to run the joined checkout. |
+| `KingSav3ge/Fulcrum-Engine` | `IRGS_3_3/`, `engine/`, Engine milestones and source provenance | No App checkout is needed for Core verification or runtime tests. |
+| `KingSav3ge/WORLDWARD-APP-WEB` | `IRGS_Web/`, root `Start-IRGS.cmd` | `Engine/` and `Catalog/` are Git submodules pinned to qualified Engine and Catalog commits. |
+| `KingSav3ge/WorldWard-Catalog` | `IRGS_Catalog/`: campaign listings, preview records and catalogue design documents | No Engine or App needed for source verification. |
+| `KingSav3ge/WorldWard` | Full sources of all three components plus integration tooling | `COMPONENTS.json` records the integrated component commits. No submodule is needed to run the joined checkout. |
 
 ## Work on the app
 
 ```bash
-git clone --recurse-submodules https://github.com/KingSav3ge/IRGS-APP-WEB.git
+git clone --recurse-submodules https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git
 cd IRGS-APP-WEB
 python -B tools/verify_components.py --component app
 python -B IRGS_Web/server.py --port 8766
@@ -31,7 +31,7 @@ python -B tools/refresh_component_releases.py --component app
 ## Work on the Engine
 
 ```bash
-git clone https://github.com/KingSav3ge/IRGS-Engine.git
+git clone https://github.com/KingSav3ge/Fulcrum-Engine.git
 cd IRGS-Engine
 python -B tools/verify_components.py --component engine
 python -B -m unittest discover -s IRGS_3_3/runtime -v
@@ -42,7 +42,7 @@ The Engine's `IRGS_3_3/release.json` pins its own executable/content sources. Ap
 
 ## Work on the Catalog
 
-Clone `https://github.com/KingSav3ge/IRGS-Catalog.git`, edit `IRGS_Catalog/data/` and its design documents, then run `python -B tools/refresh_component_releases.py --component catalog` and `python -B IRGS_Catalog/verify_catalog.py`. Commit the reviewed source before updating the App dependency. The original v0.4 specification remains byte-for-byte preserved; new designs should be separate documents.
+Clone `https://github.com/KingSav3ge/WorldWard-Catalog.git`, edit `IRGS_Catalog/data/` and its design documents, then run `python -B tools/refresh_component_releases.py --component catalog` and `python -B IRGS_Catalog/verify_catalog.py`. Commit the reviewed source before updating the App dependency. The original v0.4 specification remains byte-for-byte preserved; new designs should be separate documents.
 
 The Catalog owns campaign discovery and preview data. It does not own `IRGS_Web/static/catalogue.js`, filtering or projection code, Engine technical libraries/profiles, Kira world canon, historical snapshots or campaign initializers. Those remain with their existing components. Catalogue metadata grants no launch capability, entitlement or completed-campaign release.
 

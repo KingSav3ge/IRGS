@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "edition": "3.4.5",
+  "edition": "3.4.6",
   "channel": "development",
   "date": "2026-10-29",
-  "status": "qualified_pre_alpha_with_required_package_gate",
+  "status": "candidate_awaiting_joined_qualification",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
-    "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
-    "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
-    "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
+    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "app": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71"
   },
-  "qualification_record": "provenance/qa/story_flow_3_4_5_review.json",
-  "qualification_scope": "User-authorized adoption of the chronological story UI and refreshed development instructions; Engine/Catalog runtime unchanged.",
-  "next_milestone": "Protected operator setup and shared supported-intent contracts",
+  "qualification_record": "provenance/qa/intent_world_3_4_6_review.json",
+  "qualification_scope": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
+  "next_milestone": "Supported-intent/draft UI adoption and wider ordinary consequences",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
   "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
