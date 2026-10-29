@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "cycle_id": "ordinary-travel-3.4.4",
+  "assigned_on": "2026-10-28",
+  "objective": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+  "completion_plan": "SOLO_COMPLETION_PLAN.md",
+  "coordinator": {
+    "title": "IRGS Enviroment",
+    "thread_id": "01a160b2-07ac-74f6-a1e2-90975ba000c8",
+    "host_id": "durable"
+  },
+  "threads": {
+    "engine": {
+      "title": "IRGS Engine",
+      "thread_id": "01a164cf-5c1b-74ae-a63e-ff93cc9d10da",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "published_delivery_reviewed"
+    },
+    "app": {
+      "title": "IRGS App/Website",
+      "thread_id": "01a164a6-687b-723a-ac81-acb55e3d50d2",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "published_delivery_reviewed"
+    },
+    "catalog": {
+      "title": "IRGS Catalog",
+      "thread_id": "01a164ac-89ba-72ff-b5b3-32cca95ec0c7",
+      "host_id": "durable",
+      "message_dispatched": false,
+      "work_order": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "published_delivery_reviewed"
+    }
+  },
+  "baseline_components": {
+    "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+    "app": "de4e6926f6236f720365d552c69e02756ce18605",
+    "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+  },
+  "cycle_start_components": {
+    "joined": "9dc27f82f7f49e6f8b1de66573b991b22e68cb2a",
+    "engine": "89cd2d7bb7ce7a9c147ca79dd5a981d95c78d333",
+    "app": "55ac2d0d998156984c0922cb08a974cd6850d7a7",
+    "catalog": "338303301aa41071a93bcacf0da56b02a41b628a"
+  },
+  "selected_components": {
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+  },
+  "reviews": {
+    "engine": {
+      "status": "approved",
+      "commit": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+      "deliverable": "component_update",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+      "checks": [
+        {
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
+          "status": "passed"
+        },
+        {
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
+        }
+      ]
+    },
+    "app": {
+      "status": "approved",
+      "commit": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+      "deliverable": "component_update",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+      "checks": [
+        {
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
+          "status": "passed"
+        },
+        {
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
+        }
+      ]
+    },
+    "catalog": {
+      "status": "approved",
+      "commit": "ecd7dccc747099162ab035238550eb55e31ca054",
+      "deliverable": "component_update",
+      "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+      "checks": [
+        {
+          "name": "Actual product trees match latest executed automatic regressions; current App pin/integrity, communication, identity and travel browser prechecks pass",
+          "status": "passed"
+        },
+        {
+          "name": "Separately selected independent Catalog ordinary consumers at exact pinned candidates",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, seven real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  "integration_status": "integrated_3_4_4_pre_alpha",
+  "component_source_integration_performed": true,
+  "blockers": [],
+  "next_assignments": {
+    "engine": "A4-ENG-03 supported-intent contracts; ordinary offer prerequisites; WB-ENG-01 original authoring contracts",
+    "app": "A4-APP-01 protected operator/provider setup, then supported-intent review; shared World Builder UI contract",
+    "catalog": "A4-CAT-04 grounding/quality rubric; WB-CAT-01/02 original source dossiers and world-pack examples"
+  },
+  "previous_completed_cycle": {
+    "cycle_id": "historical-details-01",
+    "record": "provenance/qa/completed_cycles/historical-details-01.json",
+    "status": "integrated",
+    "components": {
+      "engine": "723627e629231b5e90f38b9d52b65c9a3967b92a",
+      "app": "d8dc35ed653e516ccd0cacf91ee9693258491032",
+      "catalog": "3e898acb2179f18a41d7967817bedf429df29d3f"
+    }
+  },
+  "ai_provider_program": {
+    "requirements_status": "bounded_offline_foundation_integrated_remaining_requirements_open",
+    "specification": "AI_PROVIDER_STRATEGY.md",
+    "research_review": "AI_PROVIDER_REVIEW.md",
+    "evaluation_cases": "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json",
+    "required_evaluation_cases": 16,
+    "executed_model_evaluation_cases": 0,
+    "stage": "Qualified proposal/access/ledger foundation, direct synthetic HTTP adapter and App authored-scene/Rise bridge; live smoke pending",
+    "runtime_implemented_by_this_change": true,
+    "paid_inference_activated": false,
+    "provider_quality_winner": null,
+    "message_dispatched": false,
+    "work_order_publication": [
+      {
+        "component": "engine",
+        "repository": "IRGS-Engine",
+        "work_order_commit": "5ef18f7d75d8a477af06921288569220f3475f85",
+        "product_code_changed_by_this_commit": false,
+        "viable_component_update": false
+      },
+      {
+        "component": "app",
+        "repository": "IRGS-APP-WEB",
+        "work_order_commit": "754ad7318dc482b396367e852ade67ed923e82ac",
+        "product_code_changed_by_this_commit": false,
+        "viable_component_update": false
+      },
+      {
+        "component": "catalog",
+        "repository": "IRGS-Catalog",
+        "work_order_commit": "f22049396795425838add515960a3e95a5e98189",
+        "product_code_changed_by_this_commit": false,
+        "viable_component_update": false
+      }
+    ],
+    "previous_historical_details_cycle_status": "integrated",
+    "observed_component_chat_status_on_2026_10_23": {
+      "engine": "idle",
+      "app": "idle",
+      "catalog": "idle"
+    }
+  },
+  "live_prerequisites": {
+    "status": "not_configured_or_tested",
+    "requirements": [
+      "server-side credential",
+      "account-available exact model",
+      "eligible workload/data handling",
+      "finite explicit budget"
+    ],
+    "blocks_offline_implementation": false,
+    "paid_calls_activated": false
+  },
+  "coordination_limitations": [
+    "Repository work orders are the available chat handoff; QA monitoring does not start chats."
+  ],
+  "runtime_implemented_by_this_priority_update": false,
+  "work_order_publication": [
+    {
+      "component": "engine",
+      "repository": "IRGS-Engine",
+      "work_order_commit": "5ef18f7d75d8a477af06921288569220f3475f85",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    },
+    {
+      "component": "app",
+      "repository": "IRGS-APP-WEB",
+      "work_order_commit": "754ad7318dc482b396367e852ade67ed923e82ac",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    },
+    {
+      "component": "catalog",
+      "repository": "IRGS-Catalog",
+      "work_order_commit": "f22049396795425838add515960a3e95a5e98189",
+      "product_code_changed_by_this_commit": false,
+      "viable_component_update": false
+    }
+  ],
+  "target_version": "3.4.4",
+  "target_version_status": "pre_alpha",
+  "proposed_components": {
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+  },
+  "reviewed_at_utc": "2026-10-28T17:42:25.775283+00:00",
+  "completed_components": {
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+  },
+  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
+  "qualified_candidate_commit": "c893450978a7d51bdb887bd531be49794a6afde8",
+  "integrated_at_utc": "2026-10-28T17:42:25.775283+00:00",
+  "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
+  "remaining_work": [
+    "Protected App operator/provider setup and supported-intent review",
+    "Broader NPC/institution decisions, offer prerequisites, needs/recovery and selected conflict",
+    "Shared World Builder authoring contracts/editor/packs",
+    "Native Windows and explicitly budgeted live-provider quality qualification"
+  ],
+  "completion_scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+  "development_scope": {
+    "directive": "Develop shared IRGS systems across campaigns and themes; Rise is one regression fixture.",
+    "scope_document": "IRGS_SYSTEMS_SCOPE.md",
+    "shared_acceptance": "Two independently initialized supported contexts, including non-Rise, for shared behavior claims; formatting and gameplay evidence remain separate.",
+    "response_depot": {
+      "system_variants": 750,
+      "editable_drafts": 250,
+      "recipes_counted_separately": true
+    },
+    "chat_message_dispatched": false
+  },
+  "previous_integration": {
+    "cycle_id": "start-readiness-3.4.3",
+    "components": {
+      "engine": "efc84364b86e640f5028bfac2dfd5ae3021695a9",
+      "app": "de4e6926f6236f720365d552c69e02756ce18605",
+      "catalog": "6f927b00e12a3339861ac353bc38d03c68279662"
+    },
+    "record": "provenance/qa/completed_cycles/start-readiness-3.4.3_coordination.json"
+  },
+  "continuation_instructions": {
+    "IRGS-Engine": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/CHAT_CONTINUATION.md",
+    "IRGS-APP-WEB": "https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/CHAT_CONTINUATION.md",
+    "IRGS-Catalog": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md",
+    "IRGS": "https://github.com/KingSav3ge/IRGS/blob/main/CHAT_CONTINUATION.md"
+  },
+  "guides_updated_on": "2026-10-28",
+  "continuation_message_dispatched": false,
+  "previous_version": "3.3.3"
+}
