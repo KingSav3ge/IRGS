@@ -126,13 +126,13 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 39853,
-      "sha256": "ce911731127d80702fc31dc0f7cf463ef9ca1e146b905851d6688392e61d970f"
+      "bytes": 40407,
+      "sha256": "53b532c72848fdcfaf92e1f598e6ea0115cf1db972aff40d6f73703756aafceb"
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 10574,
-      "sha256": "1c2b9b881585b6570923ea366afd87adbe9920fffe1de060f080ca366da580ff"
+      "bytes": 11259,
+      "sha256": "1375736e497482f97929b5922a61488e69f9fdff2ac8c24a4bed8273baca8cb0"
     },
     {
       "path": "COORDINATION.md",
@@ -151,8 +151,8 @@
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 122646,
-      "sha256": "54a3df14f9311464ab7c9854f02bf2ead4009f18869c15e87176f35eb756f905"
+      "bytes": 124101,
+      "sha256": "2273ea42b15e02303af03fa9c158d2b4798271981272d68822d16d76e03d31be"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -175,19 +175,24 @@
       "sha256": "8469ea4279a9eab66f7908f30a3f01b05edfbc4584f14fa9dea8eeb72d94cb6c"
     },
     {
+      "path": "DEVELOPMENT_HANDOFFS.md",
+      "bytes": 3232,
+      "sha256": "923e9af6ba3085f069c83026a37a6481b0744fff599edc24daf885e232d25842"
+    },
+    {
       "path": "DEVELOPMENT_HISTORY_2026-10-25.md",
       "bytes": 8165,
       "sha256": "3f7a3830699c2cc0945ef95efb3c6b39998cebd28a2d0733a8a449c4a15e845c"
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 33221,
-      "sha256": "7dac1f26af0f083d52cdcee170227570387d023da8cd3bc2b049ef01fddec93d"
+      "bytes": 33775,
+      "sha256": "f33ff8cdd56dbf1d115771655a8a9cf604c403d14d96150ad078cbdc8cac2643"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 1474,
-      "sha256": "772a461e1c0de7a8552451581d4ab0a835b10576901fbe7d94ffbb72bf133a95"
+      "bytes": 1476,
+      "sha256": "1f23971f5cab9b4cf96b93e96ab44eb6cccbe404607f8b83dd05aef6040406dc"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -3761,8 +3766,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 24659,
-      "sha256": "a5ac4d0585b6038873f9835cee483623031b251ff26b5d3feb24be13991248ef"
+      "bytes": 25213,
+      "sha256": "b47f3f082b65200e82a3a6775ffe676dcf036b53d2b1d075f6bd185b37e609f4"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
@@ -4861,13 +4866,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5622,
-      "sha256": "c243e521e3be3769c9016953aaa303b6baf5bfec20f48d699f515e61dfb290cd"
+      "bytes": 5580,
+      "sha256": "5741a91e5da7b2a5b58c58f5d009311da4fba5f9beae984b4b78fdbf116a0ed3"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 544,
-      "sha256": "fc3197cc75587b55e83c0b952ce7b5368a010967f84987bf1e5f28e840c34df5"
+      "bytes": 538,
+      "sha256": "e38331a8c887482808af87ba818cdc8d8081174354e51d21f09d86d995881afe"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
@@ -4925,6 +4930,11 @@
       "sha256": "64f207677cc6af95c86a0267f3f56592555f8f6302119dad03d09432b97f4a5a"
     },
     {
+      "path": "provenance/qa/ordinary_3_4_5_acceptance.json",
+      "bytes": 694,
+      "sha256": "6a02555cd22f9572a6fadb46a07469127a8974d0c5526415d42011fa975e68ed"
+    },
+    {
       "path": "provenance/qa/ordinary_travel_3_4_4_review.json",
       "bytes": 122646,
       "sha256": "54a3df14f9311464ab7c9854f02bf2ead4009f18869c15e87176f35eb756f905"
@@ -4973,6 +4983,11 @@
       "path": "provenance/qa/start_readiness_3_4_3_review.json",
       "bytes": 139579,
       "sha256": "d0fce32f49c5990ff2fac07bc6643274b637ac4b7cd5c3790e7b9bdc716b9ff6"
+    },
+    {
+      "path": "provenance/qa/story_flow_3_4_5_review.json",
+      "bytes": 124101,
+      "sha256": "2273ea42b15e02303af03fa9c158d2b4798271981272d68822d16d76e03d31be"
     },
     {
       "path": "provenance/qa_handoff/CURRENT_REFS.json",

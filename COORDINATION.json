@@ -66,6 +66,10 @@
         {
           "name": "Current standalone integrity and separate exact-set independent ordinary consumers",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, nine real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
         }
       ]
     },
@@ -82,6 +86,10 @@
         },
         {
           "name": "Current standalone integrity and separate exact-set independent ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, nine real browser suites and separately selected independent Catalog acceptance",
           "status": "passed"
         }
       ]
@@ -100,12 +108,16 @@
         {
           "name": "Current standalone integrity and separate exact-set independent ordinary consumers",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, nine real browser suites and separately selected independent Catalog acceptance",
+          "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "approved_components_for_isolated_candidate",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_5_pre_alpha",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
     "engine": "A4-ENG-03 supported-intent contracts; ordinary offer prerequisites; WB-ENG-01 original authoring contracts",
@@ -209,11 +221,15 @@
     "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
     "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
   },
-  "reviewed_at_utc": "2026-10-28T17:42:25.775283+00:00",
-  "completed_components": {},
-  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
-  "qualified_candidate_commit": "c893450978a7d51bdb887bd531be49794a6afde8",
-  "integrated_at_utc": "2026-10-28T17:42:25.775283+00:00",
+  "reviewed_at_utc": "2026-10-29T14:28:15.861322+00:00",
+  "completed_components": {
+    "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
+  },
+  "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
+  "qualified_candidate_commit": "ad2e379e419103bb7b610fb473087b9b0cf3025c",
+  "integrated_at_utc": "2026-10-29T14:28:15.861322+00:00",
   "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
   "remaining_work": [
     "Engine supported-intent contracts and ordinary offer prerequisites",
@@ -237,8 +253,8 @@
     "cycle_id": "ordinary-travel-3.4.4",
     "components": {
       "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
-      "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
-      "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+      "catalog": "ecd7dccc747099162ab035238550eb55e31ca054",
+      "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69"
     },
     "record": "provenance/qa/completed_cycles/ordinary-travel-3.4.4_coordination.json"
   },
@@ -248,7 +264,7 @@
     "IRGS-Catalog": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md",
     "IRGS": "https://github.com/KingSav3ge/IRGS/blob/main/CHAT_CONTINUATION.md"
   },
-  "guides_updated_on": "2026-10-28",
+  "guides_updated_on": "2026-10-29",
   "continuation_message_dispatched": false,
   "previous_version": "3.3.3"
 }

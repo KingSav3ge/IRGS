@@ -3,7 +3,7 @@
   "edition": "3.4.5",
   "channel": "development",
   "date": "2026-10-29",
-  "status": "candidate_awaiting_full_joined_qualification",
+  "status": "qualified_pre_alpha_with_required_package_gate",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
@@ -16,7 +16,7 @@
   "next_milestone": "Protected operator setup and shared supported-intent contracts",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
-  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
+  "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
   "general_action_resolver_implemented": false,
   "live_inference_qualified": false,
   "private_saves_included": false,

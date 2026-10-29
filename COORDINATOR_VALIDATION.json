@@ -1,45 +1,50 @@
 {
   "schema_version": 1,
-  "version": "3.4.4",
+  "version": "3.4.5",
   "classification": "Pre-Alpha",
   "previous_version": "3.3.3",
-  "reviewed_at_utc": "2026-10-28T17:42:25.775283+00:00",
-  "baseline_joined_commit": "9dc27f82f7f49e6f8b1de66573b991b22e68cb2a",
+  "reviewed_at_utc": "2026-10-29T14:28:15.861322+00:00",
+  "baseline_joined_commit": "84531afc8afcf1328bf7fe61802320f005049042",
   "owner_deliveries": {
-    "joined": "9dc27f82f7f49e6f8b1de66573b991b22e68cb2a",
-    "engine": "89cd2d7bb7ce7a9c147ca79dd5a981d95c78d333",
-    "app": "55ac2d0d998156984c0922cb08a974cd6850d7a7",
-    "catalog": "338303301aa41071a93bcacf0da56b02a41b628a"
+    "joined": "84531afc8afcf1328bf7fe61802320f005049042",
+    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054",
+    "app": "7d687616b588b2fda3c4f58d445f82d5a13111e9"
   },
   "selected_components": {
-    "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
-    "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
-    "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+    "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
   },
-  "qualified_candidate_commit": "c893450978a7d51bdb887bd531be49794a6afde8",
-  "source_input_sha256": "8525af85beb2435696da4eb2bbf426790695af5b15f7861a8769ad0c3316c4cb",
-  "scope": "Reviewed ordinary-start speech in fictional quay/R00 contexts, selected phased Rise travel, running build fingerprints, corrected integration harnesses and independent current ordinary communication acceptance.",
+  "qualified_candidate_commit": "ad2e379e419103bb7b610fb473087b9b0cf3025c",
+  "source_input_sha256": "228d72b0345e62e113edf77197a8eef764d3d48fe5b62a122de8408b25408b00",
+  "scope": "User-authorized adoption of the chronological story UI and refreshed development instructions; Engine/Catalog runtime unchanged.",
+  "change_classification": {
+    "engine": "guides_version_only_product_unchanged",
+    "catalog": "guides_version_only_product_unchanged",
+    "app": "chronological_story_UI_with_guides_version_and_compatible_pins"
+  },
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 10.04,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/source-integrity.txt"
+      "duration_seconds": 7.78,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.82,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/evidence-freshness.txt"
+      "duration_seconds": 0.62,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 66.96,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/runtime.txt",
+      "duration_seconds": 45.96,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/runtime.txt",
       "tests_run": 785,
       "skipped": 1
     },
@@ -47,8 +52,8 @@
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 159.22,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/web.txt",
+      "duration_seconds": 154.7,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/web.txt",
       "tests_run": 258,
       "skipped": 7
     },
@@ -56,16 +61,16 @@
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 5.53,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/interface.txt",
-      "checks_passed": 151
+      "duration_seconds": 4.43,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/interface.txt",
+      "checks_passed": 153
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 12.1,
-      "log": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/joined/logs/tooling.txt",
+      "duration_seconds": 9.33,
+      "log": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -228,7 +233,91 @@
           "status": 200
         },
         {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
           "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
           "status": 200
         },
         {
@@ -248,11 +337,11 @@
           "status": 200
         },
         {
-          "url": "/solo.js",
+          "url": "/preview.js",
           "status": 200
         },
         {
-          "url": "/catalogue.js",
+          "url": "/communications.js",
           "status": 200
         },
         {
@@ -260,11 +349,11 @@
           "status": 200
         },
         {
-          "url": "/preview.js",
+          "url": "/catalogue.js",
           "status": 200
         },
         {
-          "url": "/communications.js",
+          "url": "/solo.js",
           "status": 200
         },
         {
@@ -296,7 +385,7 @@
           "status": 200
         },
         {
-          "url": "/themes.css",
+          "url": "/fonts.css",
           "status": 200
         },
         {
@@ -308,11 +397,11 @@
           "status": 200
         },
         {
-          "url": "/themes.js",
+          "url": "/themes.css",
           "status": 200
         },
         {
-          "url": "/fonts.css",
+          "url": "/themes.js",
           "status": 200
         },
         {
@@ -340,11 +429,11 @@
           "status": 200
         },
         {
-          "url": "/communications.js",
+          "url": "/processes.js",
           "status": 200
         },
         {
-          "url": "/processes.js",
+          "url": "/communications.js",
           "status": 200
         },
         {
@@ -365,14 +454,6 @@
         },
         {
           "url": "/ibm-plex-mono-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/newsreader-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/historical-landscape.jpg",
           "status": 200
         },
         {
@@ -380,75 +461,7 @@
           "status": 200
         },
         {
-          "url": "/fonts.css",
-          "status": 200
-        },
-        {
-          "url": "/style.css",
-          "status": 200
-        },
-        {
-          "url": "/preview.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.js",
-          "status": 200
-        },
-        {
-          "url": "/routine.js",
-          "status": 200
-        },
-        {
-          "url": "/rise.js",
-          "status": 200
-        },
-        {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/communications.js",
-          "status": 200
-        },
-        {
-          "url": "/processes.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.js",
-          "status": 200
-        },
-        {
-          "url": "/solo.js",
-          "status": 200
-        },
-        {
-          "url": "/instrument-sans-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/app.js",
-          "status": 200
-        },
-        {
-          "url": "/fraunces-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/ibm-plex-mono-latin.woff2",
+          "url": "/newsreader-latin.woff2",
           "status": 200
         }
       ]
@@ -466,7 +479,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 7.094160119592146
+              "minimum_contrast": 7.596121854662484
             },
             {
               "surface": "light",
@@ -475,7 +488,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 6.31854080670167
+              "minimum_contrast": 6.663608659553884
             },
             {
               "surface": "parchment",
@@ -484,7 +497,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 5.0963502599978865
+              "minimum_contrast": 5.395364623798076
             }
           ],
           "toolbar_synchronized": true,
@@ -507,7 +520,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 6.8099876389274225
+              "minimum_contrast": 7.328352093602904
             },
             {
               "surface": "light",
@@ -516,7 +529,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 6.31854080670167
+              "minimum_contrast": 6.663608659553884
             },
             {
               "surface": "parchment",
@@ -525,7 +538,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 5.0963502599978865
+              "minimum_contrast": 5.395364623798076
             }
           ],
           "toolbar_synchronized": true,
@@ -548,7 +561,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 5.796904947591751
+              "minimum_contrast": 6.134389208121182
             },
             {
               "surface": "light",
@@ -557,7 +570,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 6.31854080670167
+              "minimum_contrast": 6.663608659553884
             },
             {
               "surface": "parchment",
@@ -566,7 +579,7 @@
                 1568,
                 390
               ],
-              "minimum_contrast": 5.0963502599978865
+              "minimum_contrast": 5.395364623798076
             }
           ],
           "toolbar_synchronized": true,
@@ -596,97 +609,97 @@
         {
           "genre": "military",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "roman",
           "surface": "dark",
-          "minimum_contrast": 5.644956663592719
+          "minimum_contrast": 6.1326460709124975
         },
         {
           "genre": "roman",
           "surface": "light",
-          "minimum_contrast": 5.644956663592719
+          "minimum_contrast": 6.525244768639993
         },
         {
           "genre": "roman",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "fantasy",
           "surface": "dark",
-          "minimum_contrast": 6.148290826051578
+          "minimum_contrast": 7.633959418387948
         },
         {
           "genre": "fantasy",
           "surface": "light",
-          "minimum_contrast": 6.148290826051578
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "fantasy",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "paf",
           "surface": "dark",
-          "minimum_contrast": 6.768611324235073
+          "minimum_contrast": 7.288301806630693
         },
         {
           "genre": "paf",
           "surface": "light",
-          "minimum_contrast": 6.31854080670167
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "paf",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "shinobi",
           "surface": "dark",
-          "minimum_contrast": 7.064153230445573
+          "minimum_contrast": 7.566875012465465
         },
         {
           "genre": "shinobi",
           "surface": "light",
-          "minimum_contrast": 6.31854080670167
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "shinobi",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "space",
           "surface": "dark",
-          "minimum_contrast": 6.926756045098114
+          "minimum_contrast": 7.430910848986467
         },
         {
           "genre": "space",
           "surface": "light",
-          "minimum_contrast": 6.31854080670167
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "space",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         },
         {
           "genre": "settlement",
           "surface": "dark",
-          "minimum_contrast": 6.8099876389274225
+          "minimum_contrast": 7.328352093602904
         },
         {
           "genre": "settlement",
           "surface": "light",
-          "minimum_contrast": 6.31854080670167
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "settlement",
           "surface": "parchment",
-          "minimum_contrast": 5.0963502599978865
+          "minimum_contrast": 5.395364623798076
         }
       ],
       "historical_setup_cancel_and_review": true,
@@ -830,6 +843,61 @@
       "provider_calls": 0,
       "browser_errors": 0,
       "external_requests": 0
+    },
+    "story": {
+      "status": "passed",
+      "contexts": [
+        {
+          "context": "authored_scene",
+          "entries": 4,
+          "chronological": true,
+          "choices_and_composer_below_tale": true,
+          "one_reading_viewport": true,
+          "review_cancel_no_effect": true,
+          "one_confirmed_commit": true,
+          "draft_and_reload_preserved": true,
+          "widths": [
+            1568,
+            390
+          ]
+        },
+        {
+          "context": "settlement",
+          "entries": 5,
+          "chronological": true,
+          "choices_and_composer_below_tale": true,
+          "one_reading_viewport": true,
+          "review_cancel_no_effect": true,
+          "one_confirmed_commit": true,
+          "draft_and_reload_preserved": true,
+          "widths": [
+            1568,
+            390
+          ]
+        }
+      ],
+      "known_view_replay": null,
+      "browser_errors": 0,
+      "provider_calls": 0,
+      "external_requests": 0,
+      "user_saves_opened": false
+    },
+    "app_responses": {
+      "status": "passed",
+      "app_library": "irgs-app-routine-v1@1.0.0",
+      "variants": 171,
+      "editable_drafts": 32,
+      "recipes": 8,
+      "Core_actions": 4,
+      "unsuccessful_physical_attempt_preserved": true,
+      "exact_receipt_HTML_braces_negation_preserved": true,
+      "lost_acknowledgement_recovered": true,
+      "draft_cancel_edit_keep_reload": true,
+      "elapsed_seconds": 43,
+      "mobile_width": 390,
+      "provider_calls": 0,
+      "missing_template_fallback_provider_calls": 0,
+      "browser_errors": 0
     }
   },
   "catalog_start_adoption": {
@@ -843,7 +911,7 @@
       "engine": {
         "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
         "branch": "main",
-        "commit": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+        "commit": "296e46a1beed10d0ebf2841f133bb52fade83697",
         "source_paths": [
           "IRGS_3_3",
           "engine",
@@ -853,7 +921,7 @@
       "app": {
         "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
         "branch": "main",
-        "commit": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+        "commit": "7e1a5929b2f30479aa315789f75bfa6c46761438",
         "source_paths": [
           "IRGS_Web",
           "Start-IRGS.cmd"
@@ -864,7 +932,7 @@
       "catalog": {
         "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
         "branch": "main",
-        "commit": "ecd7dccc747099162ab035238550eb55e31ca054",
+        "commit": "e97d87f0d17a16dbe0ce186badafe663188321a1",
         "source_paths": [
           "IRGS_Catalog"
         ]
@@ -941,11 +1009,11 @@
   },
   "catalog_current_ordinary_adoption": {
     "schema_version": 1,
-    "fixture_id": "coordinator-adopted-ordinary-3.4.4-1",
+    "fixture_id": "coordinator-adopted-ordinary-3.4.5-1",
     "components": {
-      "engine": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
-      "app": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
-      "catalog": "ecd7dccc747099162ab035238550eb55e31ca054"
+      "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
+      "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+      "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
     },
     "selection_mode": "joined_or_clean_extracted_source",
     "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
@@ -1789,36 +1857,24 @@
       "Rejected probes mirror the current R9 backend selection policy."
     ]
   },
-  "closed_review_findings": [
-    {
-      "id": "IRGS-REVIEW-2026-10-28-01",
-      "scope": "Explicit communication recipient selected in browser qualifier",
-      "status": "fixed_and_executed"
-    },
-    {
-      "id": "IRGS-REVIEW-2026-10-28-02",
-      "scope": "Build identity tests and browser checks derive 3.4.4 edition",
-      "status": "fixed_and_executed"
-    }
-  ],
+  "closed_review_findings": [],
   "integration_patches": [
-    "Align all four editions at 3.4.4 with previous_version 3.3.3",
-    "Pin App to exact selected Engine and Catalog commits",
-    "Refresh actual operation execution evidence after source changes",
-    "Adopt original independent Catalog cases under a separate exact source selection",
-    "Qualify selected travel through actual browser controls including lost commit response"
+    "Adopt the user-requested chronological story and inline response UI",
+    "Refresh all owner continuation instructions and align 3.4.5 metadata",
+    "Pin App to exact reviewed unchanged Engine/Catalog product sources",
+    "Capture fresh execution evidence and independently qualify the new set"
   ],
   "remaining": [
-    "Protected App operator/provider setup and supported-intent review",
-    "Broader NPC/institution decisions, offer prerequisites, needs/recovery and selected conflict",
-    "Shared World Builder authoring contracts/editor/packs",
-    "Native Windows and explicitly budgeted live-provider quality qualification"
+    "Engine supported-intent contracts and ordinary offer prerequisites",
+    "App protected operator/provider setup and supported-intent review",
+    "Catalog grounding/quality rubric and independent sustained ordinary journeys",
+    "World Builder contracts/editor/original packs; broader Alpha qualification"
   ],
-  "artifacts_directory": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z",
+  "artifacts_directory": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z",
   "package_qualification": {
     "required_before_publication": true,
-    "record": "/workspace/irgs-cloud/integration/ordinary-travel-3.4.4/20261028T171836Z/release/qualification.json",
-    "scope": "Final committed source, clean extraction, HTTP smoke, seven Chromium suites, six start contexts and two independently authored ordinary cases"
+    "record": "/workspace/irgs-cloud/integration/story-flow-3.4.5/20261029T141804Z/release/qualification.json",
+    "scope": "Final committed source, clean extraction, HTTP smoke, nine Chromium suites, six start contexts and two independently authored ordinary cases"
   },
   "no_live_provider_calls": true,
   "native_windows_qualified": false,

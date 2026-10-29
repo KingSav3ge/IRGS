@@ -1,5 +1,10 @@
 # IRGS Engine development roadmap
 
+## Current coordinated 3.4.5 Pre-Alpha
+
+The continuous chronological story UI is adopted alongside the previously qualified ordinary-start communication, selected travel and build identity. Read DEVELOPMENT_HANDOFFS.md for the three chat continuation messages. The current edition is 3.4.5; previous release field remains 3.3.3. Continue the shared Alpha 4.0 and World Builder work in CHAT_CONTINUATION.md and COORDINATION.json. Full C2, live-model, Windows and Alpha qualification remain open. Older tested records below retain their original scopes.
+
+
 ## Coordinated 3.4.5 continuation
 
 A4-ENG-03: supported-intent contracts and ordinary offer prerequisites. Publish explicit, versioned intent/review/result DTOs for selected executable operations. Preserve the player’s exact wording, supported/unsupported distinction, explicit confirmation, authority checks and immutable request recovery. Address remaining ordinary offer prerequisites without inferring NPC consent. Demonstrate the contract in two independently initialized ordinary contexts including non-Rise; R00 alone does not establish shared support.
