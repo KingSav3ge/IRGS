@@ -105,6 +105,14 @@ invented universal speech duration. Missing text preserves the exact literal
 receipt without a provider fallback. Both existing response libraries retain
 their original bytes and identities.
 
+## Optional reviewed founder-offer selection — 29 October 2026
+
+A new explicit fictional R00 option selects a scoped household-offer mandate;
+its authority covers the communication handler and `founder-home`, not raw
+stock-transfer decisions. The existing `transfer_stock` mandates remain
+compatible. Proposal, acceptance, actual custody and resource checks retain their
+separate native semantics. See [selection, limits and evidence](OFFER_AND_DRAFT_EXTENSION.md).
+
 ## Qualification and dependencies
 
 Run `python -B tools/qualify_communication_capabilities.py`; use `--output` to

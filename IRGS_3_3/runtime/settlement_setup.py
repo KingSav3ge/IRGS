@@ -12,6 +12,8 @@ VERSION = 'rise-foundation-1'
 SOURCE = 'authored-fictional:greywater-reach:v1'
 COMMUNICATION_SOURCE = 'authored-fictional:greywater-reach:local-introductions:v1'
 INTRODUCTIONS = {'elin': 'I am Steward Elin.', 'oren': 'I am Oren.'}
+OFFER_PROFILE = 'founder-household-offer-v1'
+OFFER_SOURCE = 'authored-fictional:greywater-reach:founder-household-offer:v1'
 FAMILIES = [
     ('H01', 'Eastern Sicily'), ('H02', 'Augusta Emerita district'),
     ('H03', 'Silesian village foundation'), ('H04', 'Musashino reclamation'),
@@ -44,9 +46,11 @@ def templates():
 
 
 def preview(choices):
-    if not isinstance(choices, dict) or set(choices) != FIELDS:
+    if not isinstance(choices, dict) or set(choices) not in (FIELDS, FIELDS | {'offer_profile'}):
         raise ValueError('Review every setup field; unsupported choices cannot be inferred')
     choices = copy.deepcopy(choices)
+    if 'offer_profile' in choices and choices['offer_profile'] != OFFER_PROFILE:
+        raise ValueError('Select a supported optional offer profile')
     if choices['template_id'] != 'R00':
         raise ValueError('This start family has no qualified executable opening yet')
     for field in ('founder_name', 'household_name', 'settlement_name', 'region_name', 'date_label'):
@@ -80,6 +84,11 @@ def preview(choices):
         'control': 'Only the founder is player controlled. No spouse, debt, political action or additional relationship is generated.',
         'continuation': 'No automatic successor or respawn. This demonstration has no death model.',
         'provenance': SOURCE}
+    if choices.get('offer_profile') == OFFER_PROFILE:
+        review['offer_setup'] = {'version': OFFER_PROFILE, 'source_ref': OFFER_SOURCE,
+            'mandate_id': 'founder-household-offer', 'account': 'founder-home',
+            'scope': 'Attempt offers from the founder household only; Core checks custody on proposal and free stock on fulfillment.',
+            'notice': 'An offer grants no recipient consent, acceptance, transfer, reserved stock or NPC decision.'}
     review['review_digest'] = digest(review)
     return review
 
@@ -155,4 +164,13 @@ def initialize(choices, review_digest, campaign_id):
     notice(s, 'founder', 0, 'setup', 'You arrive at the commons. The clearing is a five-minute walk away. '
            'Steward Elin can discuss a limited founding grant. Oren is repairing a shelter with private goods.')
     inspect_local(s, 'founder', 0, 'setup-inspection')
-    return CoreWorld(state=s)
+    world = CoreWorld(state=s)
+    if c.get('offer_profile') == OFFER_PROFILE:
+        world.s['communication_rules']['stock_profile'] = 'settlement_free_stock'
+        world.s['communication_rules']['stock_authorities'] = {'founder-household-offer': ['founder-home']}
+        from r9_runtime import grant
+        grant(world, 'founder-household-offer', 'founder', ['execute_local_communication'], 0,
+              OFFER_SOURCE + ':reviewed:' + review_digest)
+        world.s['r9']['mandates']['founder-household-offer']['offer_scope'] = {
+            'purpose': 'household-offer', 'account': 'founder-home'}
+    return world

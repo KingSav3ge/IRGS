@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "fixture_id": "irgs-intent-world-draft-v1",
+  "classification": "offline-synthetic-independent-consumer",
+  "selection": {
+    "engine": "44ea8b0f66801c12a039c0046128177d2ea6d7d8",
+    "app": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
+    "app_engine_pin": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "app_catalog_pin": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "catalog": "containing-commit",
+    "engine_override": true,
+    "catalog_override": true
+  },
+  "original_example": {
+    "path": "evaluation/authoring_examples_v1/actor_inputs/examples.json",
+    "sha256": "bc414257874bc7f811744c2ef98da5baeb28c58d312f8db0d03637faf94d2b37"
+  },
+  "files_sha256": {
+    "actor_inputs/cases.json": "872b3242fd98e1bb63a612b4477c5750c938d46ba61b66a868db36b663e8fa27",
+    "evaluator_only/expectations.json": "22b3645afe7bc711fefa35f63828d5cfc017cbec0c06e1cf77727f45cbe88157"
+  }
+}

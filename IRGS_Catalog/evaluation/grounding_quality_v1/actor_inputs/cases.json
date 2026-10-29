@@ -1,0 +1,8 @@
+{
+  "fixture_id": "irgs-grounding-quality-v1",
+  "classification": "original-fictional-offline",
+  "cases": {
+    "quay-contact": {"context": "fictional quay", "intention": "Please tell me what you know.", "recipient": "FICTIONAL-QUAY-CONTACT", "channel": "quay-local", "starting_opening": "quay-contact-v1"},
+    "rise-r00": {"context": "fictional R00 settlement", "intention": "What do you know about the clearing?", "recipient": "oren", "channel": "commons-local", "template_id": "R00"}
+  }
+}

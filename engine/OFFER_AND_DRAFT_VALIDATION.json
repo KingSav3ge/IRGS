@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "status": "BOUNDED_ORDINARY_OFFER_AND_TWO_CONTEXT_DRAFT_DELIVERED",
+  "engine_parent": "44ea8b0f66801c12a039c0046128177d2ea6d7d8",
+  "sources": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "b77377ff49300312fba2e64d0ba75f7d480048de",
+    "app_engine_gitlink": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "app_catalog_gitlink": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "candidate_engine_catalog_overrides": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/settlement_setup.py": "fd0fc6c0ee61896ecf4dd54731f4c9e2b4a7f4b16cd98e1919b513f52c02e8dc",
+    "IRGS_3_3/runtime/communication_runtime.py": "c25286c3112e97b5dc392dbfd0549e9b10212196576ca5f11da3587bf606e9c3",
+    "IRGS_3_3/runtime/test_ordinary_offer_profile.py": "d120259a1f3934906d44fe3f936aa32ceed43e44df1583deee14536f52f19055",
+    "IRGS_3_3/runtime/world_draft.py": "cdef2cc8b4982365cd50d617acdc46c7bbee72f8ca1d5fac5a02fec33a7387fa",
+    "IRGS_3_3/runtime/test_world_draft.py": "d990fe191952f55af7d6b4dc51d23b00b186bd31e0b671df08f90f90da3e4133",
+    "IRGS_3_3/release.json": "8add6f483b41cf8ac50e2d555e724b9c4e7422c80588b33851e895746bb668e1",
+    "tools/qualify_ordinary_offer_http.py": "3fa114ee6301195d752411f6e9bec0f1ada1fb7a8aecf9d393e25bda6626406f"
+  },
+  "scope": {
+    "tasks": [
+      "A4-ENG-01",
+      "A4-ENG-03",
+      "WB-ENG-01"
+    ],
+    "offer_profile": "founder-household-offer-v1",
+    "offer_explicitly_reviewed": true,
+    "npc_consent_inferred": false,
+    "offer_automatically_transfers": false,
+    "world_draft_schema": "irgs-world-draft-1",
+    "draft_profiles": [
+      "rise-r00",
+      "historical-quay"
+    ],
+    "gates_qualified": [],
+    "offer_mandate_operations": [
+      "execute_local_communication"
+    ],
+    "offer_account_scope": "founder-home",
+    "raw_transfer_mandate_granted": false
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery with private fixture replaced before execution",
+      "run": 796,
+      "passed": 795,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "World draft/ordinary offer/supported intent/settlement",
+      "run": 25,
+      "passed": 25,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Shared qualification",
+      "run": 35,
+      "passed": 35,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Start readiness qualification",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Communication qualification",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Phase qualification",
+      "run": 28,
+      "passed": 28,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App intent/process/communication/Rise regressions with candidate overrides",
+      "run": 48,
+      "passed": 48,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Catalog grounding-quality contract",
+      "run": 7,
+      "passed": 7,
+      "failures": 0,
+      "skipped": 0,
+      "scope": "Existing contract only; no new consumer selection."
+    },
+    {
+      "name": "Ordinary reviewed App HTTP offer/create/retry/reload",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_offer_http.py",
+      "provider_calls": 0
+    },
+    {
+      "name": "Existing ordinary quay HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_communication_http.py"
+    },
+    {
+      "name": "Existing ordinary Rise HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_rise_communication_http.py"
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 375
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "count_note": "Focused Engine tests overlap full runtime discovery. App and Catalog counts are separate. The offer profile HTTP path is not a completed App UI setup journey.",
+  "not_run": [
+    "App UI optional offer selection (not implemented)",
+    "independent Catalog new-contract consumer",
+    "browser",
+    "native Windows",
+    "clean package",
+    "live provider",
+    "world-pack import/export"
+  ],
+  "remaining": [
+    "App optional offer review/selection and exact compatible pins",
+    "Catalog independently versioned consumers and reviewed world packs",
+    "NPC decisions and richer social negotiation",
+    "World draft custom geography/entities, asset validation, portable packs and atomic host creation",
+    "Coordinator exact-set qualification"
+  ],
+  "regression_note": "An initial authority review identified that a generic transfer_stock mandate could also authorize an unrelated raw transfer decision. The delivered mandate is scoped to the communication operation and founder account; a competing raw-transfer resolution is explicitly rejected. Final checks were rerun after this correction."
+}

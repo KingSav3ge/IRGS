@@ -1,0 +1,15 @@
+{
+  "fixture_id": "irgs-intent-world-draft-v1",
+  "classification": "original-fictional-offline",
+  "draft": {
+    "schema_version": "irgs-world-draft-1",
+    "draft_id": "catalog-reed-r00-example-v1",
+    "classification": "fictional",
+    "profile_id": "rise-r00",
+    "choices": {"template_id": "R00", "founder_name": "Synthetic Reed Founder", "household_name": "Synthetic Reed Household", "settlement_name": "Reed Camp", "region_name": "Greywater Reach", "date_label": "Spring, Year 1", "company": "solo", "permission": "held", "supplies": "basic"}
+  },
+  "journeys": {
+    "quay": [{"action": "quay-shortcut", "intention": "I try the shortcut."}, {"action": "quay-passage", "intention": "I take the covered passage instead."}, {"action": "passage-desk", "intention": "I go to the receiving desk."}, {"action": "deliver-dispatch", "intention": "I deliver the sealed dispatch."}],
+    "rise": [{"action": "walk_clearing", "intention": "I walk to the clearing."}, {"action": "found", "intention": "I establish the settlement."}, {"action": "build", "intention": "I start the shelter."}, {"action": "wait_hour", "intention": "I continue the shelter work."}, {"action": "wait_hour", "intention": "I finish the remaining work."}]
+  }
+}

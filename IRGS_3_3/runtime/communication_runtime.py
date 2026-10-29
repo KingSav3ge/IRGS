@@ -44,7 +44,9 @@ def _authority(s, at, actor, terms):
     assert terms['from'] == household_of(s, actor) and terms['from'] != terms['to']
     mandate = s['r9']['mandates'][terms['authority_id']]
     assert mandate['active'] and mandate['actor'] == actor and _text(mandate['source_ref'])
-    assert 'transfer_stock' in mandate['operations'] and mandate['effective_at'] <= at
+    scoped_offer = ('execute_local_communication' in mandate['operations']
+                    and mandate.get('offer_scope') == {'purpose': 'household-offer', 'account': terms['from']})
+    assert ('transfer_stock' in mandate['operations'] or scoped_offer) and mandate['effective_at'] <= at
     assert mandate.get('valid_until') is None or at <= mandate['valid_until']
     assert terms['from'] in rules['stock_authorities'][terms['authority_id']]
     assert s['stock_accounts'][terms['from']]['site'] == location(s, actor)

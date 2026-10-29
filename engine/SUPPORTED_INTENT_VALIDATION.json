@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "status": "BOUNDED_A4_ENG_03_AND_WB_ENG_01_DELIVERED_FURTHER_ADOPTION_OPEN",
+  "engine_parent": "296e46a1beed10d0ebf2841f133bb52fade83697",
+  "sources": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "7e1a5929b2f30479aa315789f75bfa6c46761438",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "app_engine_gitlink": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "app_catalog_gitlink": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "candidate_engine_catalog_overrides": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/supported_intent.py": "e529483a0fe793e7461f1dccad3cee81b1ad9bc274a7f10f758992be326d63b3",
+    "IRGS_3_3/runtime/test_supported_intent.py": "c8e99156d0ec8131bc35903f17b45169607c2fcf6d3fef35f490f673cbb1b6ce",
+    "IRGS_3_3/runtime/world_draft.py": "36b915165e1cb41fd31ed19e1bc7235bcfd6cc12542083c85dac2b4e4f30373a",
+    "IRGS_3_3/runtime/test_world_draft.py": "39db3435b7cd132f7e3f3a3c088f7f4101a0cf35c735e33351181efd2ef3be3e",
+    "IRGS_3_3/release.json": "f57fbc7604b416ff0b637a3b0f74f8794defbb027d44c48ae172965575c1ae22"
+  },
+  "scope": {
+    "tasks": [
+      "A4-ENG-03",
+      "WB-ENG-01"
+    ],
+    "intent_schema": "irgs-supported-intent-1",
+    "draft_schema": "irgs-world-draft-1",
+    "world_validation_schema": "irgs-world-validation-1",
+    "draft_profile": "rise-r00",
+    "contexts": [
+      "rise-r00",
+      "fictional-quay"
+    ],
+    "gates_qualified": [],
+    "ordinary_offer_authority_added": false,
+    "npc_consent_inferred": false,
+    "provider_calls": 0
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery with private fixture replaced before execution",
+      "run": 791,
+      "passed": 790,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "Supported intent/world draft/travel/native process",
+      "run": 29,
+      "passed": 29,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Shared qualification",
+      "run": 35,
+      "passed": 35,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Start readiness qualification",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Communication qualification",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Phase qualification",
+      "run": 28,
+      "passed": 28,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App process/Rise/communication regressions with candidate overrides",
+      "run": 42,
+      "passed": 42,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Existing App ordinary quay HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_communication_http.py"
+    },
+    {
+      "name": "Existing App ordinary Rise HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_rise_communication_http.py"
+    },
+    {
+      "name": "Existing App ordinary travel HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_travel_http.py"
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 374
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "count_note": "Focused Engine cases overlap full runtime discovery. HTTP journeys exercise existing App APIs; the new intent DTO is not wired into App.",
+  "not_run": [
+    "App new supported-intent routes or UI (not implemented)",
+    "independent Catalog new-contract consumer",
+    "browser",
+    "native Windows",
+    "clean package",
+    "live provider",
+    "world-pack import/export"
+  ],
+  "remaining": [
+    "Review and adopt ordinary offer authority without inferred NPC consent or stock",
+    "App supported-intent endpoint, review UI and exact compatible pins",
+    "Catalog independently versioned consumers",
+    "World draft non-Rise profiles, references, assets, export and atomic host playtest creation",
+    "A4-ENG-04 and later NPC/social/world mechanics",
+    "Coordinator exact-set qualification"
+  ]
+}

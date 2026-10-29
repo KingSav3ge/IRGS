@@ -1,0 +1,14 @@
+{
+  "classification": "evaluator-only",
+  "marker": "PRIVATE_GROUNDING_EVALUATOR",
+  "required_dimensions": ["input_scope", "source_and_uncertainty", "intent_mapping", "proposal_vs_effect", "receipt_fidelity", "hidden_information", "npc_response", "narration_quality"],
+  "pending_journey_requirements": {
+    "consequences_constrain_later_choices": "Catalog/Engine/App: extend actual ordinary multi-session choices",
+    "npc_decisions": "Engine/App: publish and expose autonomous scoped decisions",
+    "institution_decisions": "Engine/App: publish decisions from actual authority and resources",
+    "needs_recovery": "Engine/App: publish selected needs, recovery and continuity",
+    "risk_conflict": "Engine/App: publish selected consequential risk/conflict profile",
+    "older_branch_restore": "Engine/App: qualify restored-branch receipt fencing",
+    "live_provider_quality": "Engine/App/operator: protected eligible route and authorized finite budget"
+  }
+}

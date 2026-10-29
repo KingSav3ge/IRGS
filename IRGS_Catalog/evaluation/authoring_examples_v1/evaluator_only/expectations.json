@@ -1,0 +1,8 @@
+{
+  "classification": "evaluator-only", "marker": "PRIVATE_AUTHORING_EVALUATOR",
+  "expectations": {
+    "lantern-quay": ["two linked places", "distinct player and contact", "one proposed conserved packet", "no assumed travel or delivery authority"],
+    "reed-settlement": ["two linked places", "distinct player and contact", "one proposed conserved bundle", "no assumed work rule or stock"]
+  },
+  "unresolved": ["Engine world-draft and package DTO", "Engine validation and initialization preview", "App editor and import/export", "ordinary reviewed playtests", "privacy and recovery qualification"]
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "status": "COMMUNICATION_INTENT_AND_DISPOSABLE_WORLD_PREVIEW_DELIVERED_WITH_LIMITS",
+  "engine_parent": "188cacd2bb06ebbce1dac58e41673ef211a80a77",
+  "sources": {
+    "engine_root": "/workspace/IRGS-Engine/IRGS_3_3",
+    "app_root": "/workspace/IRGS-APP-WEB",
+    "app_commit": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
+    "catalog_root": "/workspace/IRGS-Catalog",
+    "catalog_commit": "abb7ab86f2aa12b1c6585aa7da10f5809209112e",
+    "app_engine_gitlink": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "app_catalog_gitlink": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "candidate_engine_catalog_overrides": true
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/supported_intent.py": "8d6c380038e37a810030782d593b970de2454e0e6e5cbe5d4ab6ef96b29fd3af",
+    "IRGS_3_3/runtime/test_intent_communication.py": "51697202838181daabc794dd97ec0cb09c47688f5e204c5bca3e9429916c3585",
+    "IRGS_3_3/runtime/world_draft.py": "2f3bc49b4945dcfdfbb13c411cdd4c1bb0b36c2705f66a72159d8017b11af752",
+    "IRGS_3_3/runtime/test_world_draft.py": "395e728c172108e7668c0ed59fe64a51fa25e2a2b6b5bd0d92a02295834f8ff6",
+    "IRGS_3_3/release.json": "ac1c1b5912533f3b100de7222c86f22bceb9df0ff0958fd6e43fc87cfa24e956"
+  },
+  "scope": {
+    "tasks": [
+      "A4-ENG-03",
+      "WB-ENG-01"
+    ],
+    "intent_schema": "irgs-supported-intent-1",
+    "world_preview_schema": "irgs-world-initialization-preview-1",
+    "draft_profiles": [
+      "rise-r00",
+      "historical-quay"
+    ],
+    "new_provider_calls": 0,
+    "npc_consent_inferred": false,
+    "gates_qualified": []
+  },
+  "checks": [
+    {
+      "name": "Full Engine runtime discovery with private fixture replaced before execution",
+      "run": 801,
+      "passed": 800,
+      "failures": 0,
+      "skipped": 1,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    },
+    {
+      "name": "Communication intent/world draft/ordinary offer/supported intent",
+      "run": 16,
+      "passed": 16,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Shared qualification",
+      "run": 35,
+      "passed": 35,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Start readiness qualification",
+      "run": 33,
+      "passed": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Communication qualification",
+      "run": 32,
+      "passed": 32,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Phase qualification",
+      "run": 28,
+      "passed": 28,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "App intent/process/communication/Rise regression with candidate overrides",
+      "run": 48,
+      "passed": 48,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "name": "Catalog intent/world-draft contract",
+      "run": 3,
+      "passed": 3,
+      "failures": 0,
+      "skipped": 0,
+      "scope": "Existing contract/schema only; new candidate consumer not qualified."
+    },
+    {
+      "name": "Existing App ordinary reviewed offer HTTP journey",
+      "status": "PASS",
+      "script": "tools/qualify_ordinary_offer_http.py",
+      "provider_calls": 0
+    },
+    {
+      "name": "Engine component integrity",
+      "status": "verified",
+      "files": 376
+    },
+    {
+      "name": "Kira canon",
+      "status": "PASS"
+    }
+  ],
+  "count_note": "Focused Engine tests overlap the full suite. App and Catalog counts are separate. Existing App HTTP checks do not exercise the new Engine DTO methods.",
+  "not_run": [
+    "App adoption of new Engine DTO (not implemented)",
+    "independent Catalog new-source consumer",
+    "browser",
+    "native Windows",
+    "clean package",
+    "live provider",
+    "world-pack import/export"
+  ],
+  "remaining": [
+    "App adoption of new intent and preview DTOs with exact compatible pins",
+    "Catalog separately versioned independent consumer for current source",
+    "Explicit offer profile selection in App setup",
+    "Atomic host playtest persistence, duplicate creation and restore fencing",
+    "Custom geography/entities, assets and portable world packs",
+    "NPC decisions, sustained play and coordinator Alpha qualification"
+  ]
+}

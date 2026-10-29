@@ -1,0 +1,25 @@
+{
+  "fixture_id": "irgs-authoring-examples-v1",
+  "classification": "original-fictional-draft-requirements",
+  "sources": [{"id": "catalog-fiction-v1", "status": "fictional", "author": "IRGS Catalog", "asset_imports": []}],
+  "examples": [
+    {
+      "id": "lantern-quay", "family": "personal-adventure", "source": "catalog-fiction-v1", "units": "unselected",
+      "places": [{"id": "landing", "label": "Lantern Landing"}, {"id": "storehouse", "label": "Harbor Storehouse"}],
+      "links": [{"from": "landing", "to": "storehouse", "rules": "unselected"}],
+      "actors": [{"id": "courier", "role": "player"}, {"id": "clerk", "role": "contact"}],
+      "proposed_items": [{"id": "packet", "quantity": 1, "custody_actor": "courier", "initialization": "unselected"}],
+      "initial_knowledge": [{"actor": "courier", "source": "catalog-fiction-v1", "assertion": "A clerk is introduced at Lantern Landing.", "status": "fictional-introduction"}],
+      "actor_instructions": ["Review the fictional introduction.", "Ask the contact about the storehouse.", "If supported, seek the storehouse and attempt a reviewed delivery."]
+    },
+    {
+      "id": "reed-settlement", "family": "settlement", "source": "catalog-fiction-v1", "units": "unselected",
+      "places": [{"id": "commons", "label": "Reed Commons"}, {"id": "clearing", "label": "Reed Clearing"}],
+      "links": [{"from": "commons", "to": "clearing", "rules": "unselected"}],
+      "actors": [{"id": "founder", "role": "player"}, {"id": "neighbor", "role": "contact"}],
+      "proposed_items": [{"id": "bundle", "quantity": 1, "custody_actor": "founder", "initialization": "unselected"}],
+      "initial_knowledge": [{"actor": "founder", "source": "catalog-fiction-v1", "assertion": "A neighbor is introduced at Reed Commons.", "status": "fictional-introduction"}],
+      "actor_instructions": ["Review the fictional introduction.", "Ask the neighbor about the clearing.", "If supported, visit the clearing and review a shelter work attempt."]
+    }
+  ]
+}

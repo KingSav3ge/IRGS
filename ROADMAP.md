@@ -1,8 +1,33 @@
 # IRGS Engine development roadmap
 
-## Current coordinated 3.4.5 Pre-Alpha
+**29 October follow-up:** [actor-safe grant attempts](engine/GRANT_PREREQUISITES_VALIDATION.json)
+and their independent interaction with the selected stock-offer profile are
+tested across R00 and the fictional quay. Broader systems and adoption remain open.
 
-The continuous chronological story UI is adopted alongside the previously qualified ordinary-start communication, selected travel and build identity. Read DEVELOPMENT_HANDOFFS.md for the three chat continuation messages. The current edition is 3.4.5; previous release field remains 3.3.3. Continue the shared Alpha 4.0 and World Builder work in CHAT_CONTINUATION.md and COORDINATION.json. Full C2, live-model, Windows and Alpha qualification remain open. Older tested records below retain their original scopes.
+**29 October continuation — A4-ENG-03/WB-ENG-01:** the versioned intent
+contract now supports explicit communication review and actual native speech/
+offer execution, with exact immutable results and no inferred consent. The
+world-draft contract can preview either selected initializer in a disposable
+candidate with actor-filtered output. [Contract and evidence](engine/COMMUNICATION_INTENT_PREVIEW.md)
+keep App/Catalog adoption, host playtest persistence, wider authoring and Alpha
+qualification open.
+
+
+**29 October follow-up — A4-ENG-03/WB-ENG-01:** an optional explicitly reviewed
+fictional Rise profile now supplies founder-only offer prerequisites, with no NPC
+consent or automatic transfer. The world-draft API also reviews and initializes
+the selected mixed historical/fictional quay start. [Contract and evidence](engine/OFFER_AND_DRAFT_EXTENSION.md)
+separate real Engine/App HTTP behavior from pending App UI and Catalog adoption.
+Broader NPC, custom world authoring and Alpha qualification remain open.
+
+
+**29 October — A4-ENG-03/WB-ENG-01 bounded increment:** Engine now exposes
+[versioned supported-intent review/result](engine/SUPPORTED_INTENT_API.md) and
+a [limited reviewed fictional Rise draft](engine/WORLD_DRAFT_API.md). Two ordinary
+contexts exercise real selected effects/refusals and immutable retry. Offer
+authority, App adoption, general parsing, non-Rise world drafts and full Alpha
+qualification remain open. Current product naming direction is
+[recorded separately](BRAND_DIRECTION.md), with IRGS technical identities retained.
 
 
 ## Coordinated 3.4.5 continuation

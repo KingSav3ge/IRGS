@@ -1,0 +1,6 @@
+{
+  "classification": "evaluator-only", "marker": "PRIVATE_INTENT_WORLD_EVALUATOR",
+  "draft": {"status": "valid", "profile_id": "rise-r00", "player_actor": "founder", "source_status": "fictional", "no_custom_geography_or_entities": true},
+  "journeys": {"quay": {"statuses": ["completed_unsuccessfully", "completed_successfully", "completed_successfully", "completed_successfully"], "elapsed_seconds": 130, "dispatch_actor": 0, "dispatch_tray": 1}, "rise": {"statuses": ["completed_successfully", "completed_successfully", "completed_successfully", "completed_successfully", "completed_successfully"], "elapsed_seconds": 3900, "shelter_work_seconds": 3600, "founder_timber": 3}},
+  "pending": ["npc_decisions", "institution_reactions", "needs_recovery", "risk_conflict", "ordinary_offer_authority", "live_provider_quality", "two_context_world_draft", "world_pack_import_export", "creator_editor"]
+}

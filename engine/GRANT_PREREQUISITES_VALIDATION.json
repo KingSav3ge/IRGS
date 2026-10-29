@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "status": "partial_actor_safe_grant_attempts",
+  "component_edition": "3.4.5 Pre-Alpha",
+  "alpha_qualified": false,
+  "engine_parent": "837660372e0fdc17f51b80af791e9da7e3dcc9bf",
+  "candidate_commit": "Resolve the containing Git commit; full pushed SHA is reported in the component chat.",
+  "unified_checkout": {
+    "commit": "28856be59731094a068c32e9687fce6d088dc45f",
+    "path": "/workspace/WorldWard"
+  },
+  "selection": {
+    "engine_candidate": "containing-commit",
+    "app": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
+    "catalog": "abb7ab86f2aa12b1c6585aa7da10f5809209112e",
+    "app_engine_pin": "296e46a1beed10d0ebf2841f133bb52fade83697",
+    "app_catalog_pin": "e97d87f0d17a16dbe0ce186badafe663188321a1",
+    "engine_override": true,
+    "catalog_override": true,
+    "app_dependency_adoption_claimed": false
+  },
+  "source_sha256": {
+    "IRGS_3_3/runtime/supported_intent.py": "35067840a5f6ba254bfbafc405295bf803028ad5a426d622516030f34efbbe07",
+    "IRGS_3_3/runtime/test_draft_intent_offers.py": "7432973b245c2e8e5d544e58d5d71ea0d4a14904e7354ff2c38be713b82ff814",
+    "IRGS_3_3/runtime/world_draft.py": "2f3bc49b4945dcfdfbb13c411cdd4c1bb0b36c2705f66a72159d8017b11af752",
+    "IRGS_3_3/release.json": "d4b48c5a211419d02f0880734083959cf985331c81ff63dec4524c150f3dd11d",
+    "engine/SUPPORTED_INTENT_API.md": "cadbd7b5dc3bef77fd489e9efb404a46dbc72a022923b11cb1634482fffe2bdb"
+  },
+  "checks": [
+    {
+      "name": "runtime_full",
+      "cwd": "/workspace/WorldWard-Engine-Next",
+      "command": "python -B /tmp/ww_engine_next_full_suite.py",
+      "tests": 804,
+      "passed": 803,
+      "skipped": 1,
+      "elapsed_seconds": 93.342,
+      "skipped_identity": "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite",
+      "skip_reason": "Private historical save excluded before execution.",
+      "result": "passed"
+    },
+    {
+      "name": "focused",
+      "cwd": "/workspace/WorldWard-Engine-Next",
+      "command": "PYTHONPATH=IRGS_3_3/runtime python -B -m unittest test_world_draft test_supported_intent test_draft_intent_offers test_intent_communication test_ordinary_offer_profile test_communication_contract test_communication_runtime -v",
+      "tests": 64,
+      "passed": 64,
+      "skipped": 0,
+      "elapsed_seconds": 7.89,
+      "result": "passed"
+    },
+    {
+      "name": "app_tests",
+      "cwd": "/tmp/ww-engine-app",
+      "command": "IRGS_ENGINE_ROOT=/workspace/WorldWard-Engine-Next/IRGS_3_3 IRGS_CATALOG_ROOT=/tmp/ww-engine-catalog/IRGS_Catalog PYTHONPATH=/tmp/ww-engine-app/IRGS_Web/tests:/tmp/ww-engine-app/IRGS_Web python -B -m unittest test_intent_bridge test_operator_setup -v",
+      "tests": 14,
+      "passed": 14,
+      "skipped": 0,
+      "elapsed_seconds": 11.803,
+      "result": "passed"
+    },
+    {
+      "name": "frontend",
+      "cwd": "/tmp/ww-engine-app",
+      "command": "IRGS_ENGINE_ROOT=/workspace/WorldWard-Engine-Next/IRGS_3_3 IRGS_CATALOG_ROOT=/tmp/ww-engine-catalog/IRGS_Catalog node IRGS_Web/tests/test_gameplay_ui.js",
+      "frontend_checks": 156,
+      "skipped": 0,
+      "result": "passed"
+    }
+  ],
+  "focused_overlap_note": "Focused Engine tests are a subset of the full Engine run; do not sum them.",
+  "engine_integrity": {
+    "command": "python -B tools/verify_components.py --component engine",
+    "result": {
+      "status": "verified",
+      "component": "engine",
+      "checks": {
+        "engine": {
+          "release": "IRGS-CORE-3.3-SUITE",
+          "status": "verified",
+          "core": "3.3"
+        }
+      },
+      "behavioral_tests_executed": false
+    }
+  },
+  "browser": {
+    "command": "IRGS_ENGINE_ROOT=/workspace/WorldWard-Engine-Next/IRGS_3_3 IRGS_CATALOG_ROOT=/tmp/ww-engine-catalog/IRGS_Catalog node tools/qualify_intent_ordinary.js /tmp/ww-engine-next-browser.json",
+    "cwd": "/tmp/ww-engine-app",
+    "result": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    }
+  },
+  "offer_http": {
+    "command": "IRGS_ENGINE_ROOT=/workspace/WorldWard-Engine-Next/IRGS_3_3 IRGS_CATALOG_ROOT=/tmp/ww-engine-catalog/IRGS_Catalog PYTHONPATH=/tmp/ww-engine-app/IRGS_Web:/workspace/WorldWard-Engine-Next/IRGS_3_3/runtime python -B tools/qualify_ordinary_offer_http.py",
+    "result": {
+      "status": "PASS",
+      "ordinary_review_create_offer_retry_reload": true,
+      "transfer": false,
+      "npc_consent": false,
+      "provider_calls": 0
+    }
+  },
+  "observed_scope": [
+    "The grant-attempt view exposes only selected capabilities and does not inspect hidden offer, presence or authority.",
+    "R00 draft creates actual world; acceptance before offer rejects, then existing grant request and separate acceptance persist without stock transfer or invented elapsed time.",
+    "Optional R00 stock offer and grant remain independent, both remain offered, and original offer retry survives later action without repeated effects.",
+    "Quay draft uses the published mixed historical-quay profile; accepting words are testimony, grant/stock offers remain unselected, and failed shortcut plus alternate passage use selected 75 seconds.",
+    "Browser uses the App shared-intent path for reviewed creation and actual local actions in both contexts; it is not adoption of new Engine DTOs."
+  ],
+  "preservation": {
+    "previous_engine_source_files": 376,
+    "current_engine_source_files": 377,
+    "previous_validation_records_unchanged": [
+      "engine/SUPPORTED_INTENT_VALIDATION.json",
+      "engine/OFFER_AND_DRAFT_VALIDATION.json",
+      "engine/COMMUNICATION_INTENT_PREVIEW_VALIDATION.json"
+    ],
+    "historical_save_test_excluded_before_execution": true
+  },
+  "remaining": [
+    "App and Catalog have not adopted the new Engine; coordinate exact compatible pins and independent qualification.",
+    "General NPC/institution decisions, negotiation, needs/recovery and conflict remain open.",
+    "World drafts do not implement arbitrary geography, characters, items, editor persistence, package import/export or host playtest atomicity.",
+    "Semantic parsing, live-model quality, native Windows and joined clean-package qualification are unrun. Alpha gates remain open."
+  ]
+}
