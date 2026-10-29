@@ -2006,7 +2006,8 @@
     "Align all four editions and migrate active repository URLs after the owner renames",
     "Adopt and test exact Engine/Catalog App pins",
     "Preserve original Catalog fixtures, consumers and exact-selection guards; qualify the adopted set separately",
-    "Refresh current owner instructions around actual delivered scope and remaining Alpha work"
+    "Refresh current owner instructions around actual delivered scope and remaining Alpha work",
+    "Accept WorldWard branding in the extracted-package HTTP smoke check while retaining original IRGS package compatibility, asset/route/Core and empty-store checks."
   ],
   "remaining": [
     "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",

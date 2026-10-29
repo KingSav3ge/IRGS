@@ -116,7 +116,7 @@ def get(path, token=None):
 
 try:
     html = get("/")
-    if b"IRGS" not in html or b"/app.js" not in html:
+    if not any(name in html for name in (b"IRGS", b"WorldWard")) or b"/app.js" not in html:
         raise RuntimeError("The packaged page did not reference its application")
     get("/app.js")
     get("/rise.js")
