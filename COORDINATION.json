@@ -49,7 +49,7 @@
   "selected_components": {
     "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
     "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71"
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
   },
   "reviews": {
     "engine": {
@@ -96,7 +96,7 @@
     },
     "app": {
       "status": "approved",
-      "commit": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71",
+      "commit": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
       "deliverable": "component_update",
       "owner_delivery": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
       "scope": "Protected POSIX operator setup, explicit shared-capability review and WorldWard branding are delivered. The current UI uses the shared runtime contract; newer supported-intent communication DTOs, optional start offer-profile choice and world-draft preview/editor are not yet adopted. Add explicit source-bound controls incrementally, preserving exact words, independent drafts, review/cancel/confirmation, original-result recovery and the chronological tale. Keep Windows setup unavailable until ACL handling is implemented and tested; live-provider quality requires a separately authorized eligible route and finite budget.",
@@ -111,6 +111,10 @@
         },
         {
           "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Presentation harness checks seven genre bases, the current shared historical palette and distinct Rise override; contrast and read-only checks retained",
           "status": "passed"
         }
       ]
@@ -219,7 +223,7 @@
   "proposed_components": {
     "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
     "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71"
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
   },
   "reviewed_at_utc": "2026-10-29T14:28:15.861322+00:00",
   "completed_components": {},

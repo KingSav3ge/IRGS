@@ -137,7 +137,7 @@
     {
       "path": "COMPONENTS.json",
       "bytes": 976,
-      "sha256": "f9f7f472c4862f2e0f332ee9d639a68fb3b995391eda46e1a56ea35483142fba"
+      "sha256": "f7e733b8fdcfc0b9d446d4f7350445983311fb89a7f1d3b5474c4a729ead60ef"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -156,8 +156,8 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 12630,
-      "sha256": "1339960d0252908cc1121ee5db650547c47f642f62a7ab074ca0eac0d694d258"
+      "bytes": 12853,
+      "sha256": "933b6498b92bcf757ee288e966ed6f5a96e274a94be85caee27a0fa5ad7156da"
     },
     {
       "path": "COORDINATION.md",
@@ -217,7 +217,7 @@
     {
       "path": "DEVELOPMENT_STATE.json",
       "bytes": 1602,
-      "sha256": "650a2c7ce7ed270d01de8278808d0ecc90b45af0116e396feb4636380fa3b67e"
+      "sha256": "b18b63720f2d21928dbce361c65426011580840f58927e89fbad2fc296584b9e"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -4952,7 +4952,7 @@
     {
       "path": "provenance/qa/adopted_intent_world_3_4_6_selection.json",
       "bytes": 1299,
-      "sha256": "9eee0a8968b79bbb24c9bc3a099a535c7543ac42e22aa963ea88bbf9e5f23f5c"
+      "sha256": "1307c5f957f6b350b40163477dee8cab6346495645081e2f9f257cd622891aa5"
     },
     {
       "path": "provenance/qa/adopted_ordinary_3_4_4_selection.json",
@@ -4967,7 +4967,7 @@
     {
       "path": "provenance/qa/adopted_ordinary_3_4_6_selection.json",
       "bytes": 927,
-      "sha256": "3e65a867a62eaf19a84a55010d98dce2ea92256096f3b4454cef7c43c2195101"
+      "sha256": "f033b19acd3ccd23a85a67ab2705a3f0fb61ad5beda3d3dec1aa751a986299f5"
     },
     {
       "path": "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json",
@@ -5386,8 +5386,8 @@
     },
     {
       "path": "tools/qualify_presentation.js",
-      "bytes": 7171,
-      "sha256": "f2e65f36625590cd9805fb4afab24fd854a7f3486727ee63d14dee19a4e643cd"
+      "bytes": 7449,
+      "sha256": "0a5e027618acc5d907d54587bc9856853a8f54e268ec5f78b401d5157f9df77e"
     },
     {
       "path": "tools/qualify_process_bridge.js",

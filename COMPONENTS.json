@@ -15,7 +15,7 @@
   "app": {
     "repository": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git",
     "branch": "main",
-    "commit": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71",
+    "commit": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
     "source_paths": [
       "IRGS_Web",
       "Start-IRGS.cmd"
