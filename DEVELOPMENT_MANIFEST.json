@@ -112,7 +112,7 @@
     {
       "path": "COMPONENTS.json",
       "bytes": 958,
-      "sha256": "8ef7213a18b70c9b597a6b56619bf1d97263f84c38c73182c5e2fa6e069c4824"
+      "sha256": "afdeaa7ce14b3623e1e87263c2e6a942570be33757a9dfef43f7912a31fd46c7"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -126,8 +126,8 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 39624,
-      "sha256": "e703f836ec229694df407306e8b05df2dcb7b29057060f89729c64933261b38e"
+      "bytes": 39853,
+      "sha256": "ce911731127d80702fc31dc0f7cf463ef9ca1e146b905851d6688392e61d970f"
     },
     {
       "path": "COORDINATION.json",
@@ -181,8 +181,8 @@
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 32992,
-      "sha256": "b46b0702af6a0aa90b27e6261a258387c43ed8ea63e1e8e1f9c7c6852ec71238"
+      "bytes": 33221,
+      "sha256": "7dac1f26af0f083d52cdcee170227570387d023da8cd3bc2b049ef01fddec93d"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
@@ -3422,7 +3422,7 @@
     {
       "path": "IRGS_Web/release.json",
       "bytes": 8710,
-      "sha256": "920ce62739ddfd9b332dec330514bbbae9780c840f13066abb7a82b610fc34eb"
+      "sha256": "8488a0640ae2db2ec7dbbda52011db53fce643ae87ebb0b3c79bb16a03e63d63"
     },
     {
       "path": "IRGS_Web/responses/README.md",
@@ -3446,8 +3446,8 @@
     },
     {
       "path": "IRGS_Web/static/app.js",
-      "bytes": 144201,
-      "sha256": "6542131d787d5aaa2ba49ef2e7f94a8ae60c7b917ab497d9e228213e311dc381"
+      "bytes": 145851,
+      "sha256": "f451b55b95c151a900024113d1913894cd2e0df17382f4307b1a577c6a10ceed"
     },
     {
       "path": "IRGS_Web/static/catalogue.js",
@@ -3491,8 +3491,8 @@
     },
     {
       "path": "IRGS_Web/static/index.html",
-      "bytes": 20312,
-      "sha256": "ea2c316242f99302d1882d84bdd728c64ebdd9009386b413b8d72ec304552955"
+      "bytes": 20347,
+      "sha256": "8a143b999a864218dde70d02e12897399dfbc4841d35316a25a1589a4adb794c"
     },
     {
       "path": "IRGS_Web/static/instrument-sans-latin.woff2",
@@ -3506,8 +3506,8 @@
     },
     {
       "path": "IRGS_Web/static/preview.css",
-      "bytes": 44689,
-      "sha256": "3193b907e268c77d51012357a375fcba2ddf41151d2c2636ebc69949c7e739c5"
+      "bytes": 47697,
+      "sha256": "1ee4b8f286ed63a49121bc6e002e94947e02afb3633f7de6d48056fe1f8c2edd"
     },
     {
       "path": "IRGS_Web/static/preview.js",
@@ -3516,8 +3516,8 @@
     },
     {
       "path": "IRGS_Web/static/processes.js",
-      "bytes": 6696,
-      "sha256": "b3ed8c4280928606ea05e9f49badb68acacd0c0cc12daafa484fe8113cac8c59"
+      "bytes": 7145,
+      "sha256": "cff91a60d3e126db764d5934a29bbfe0ca06b80e56985574401bfcaa07c529c4"
     },
     {
       "path": "IRGS_Web/static/responses.data.js",
@@ -3531,8 +3531,8 @@
     },
     {
       "path": "IRGS_Web/static/rise.js",
-      "bytes": 12390,
-      "sha256": "3399376d8efa3da8673e3685ade28ea67e608495a1df3a507fb746139592e114"
+      "bytes": 12388,
+      "sha256": "cbad48d45957270c354924aad17b7f6e562cce321dd1c8e82e162465049397cc"
     },
     {
       "path": "IRGS_Web/static/routine.js",
@@ -3616,8 +3616,8 @@
     },
     {
       "path": "IRGS_Web/tests/test_gameplay_ui.js",
-      "bytes": 159175,
-      "sha256": "e35319226ec4def3bdb22b67ff8cfcd1dc47a60a2b7335825d0659f58b84cf57"
+      "bytes": 161737,
+      "sha256": "670c26c2b837a7c23da0566c1f8d6c35cf5c19ef17ccfa2387f09c223c511524"
     },
     {
       "path": "IRGS_Web/tests/test_historical_multipart.py",
@@ -3761,8 +3761,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 24430,
-      "sha256": "b5c2f5e3e733afb57b02ae35a6e1d47f710f80b50e9270d2924b4afcdd6dfecf"
+      "bytes": 24659,
+      "sha256": "a5ac4d0585b6038873f9835cee483623031b251ff26b5d3feb24be13991248ef"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
@@ -4222,7 +4222,7 @@
     {
       "path": "engine/qualification/operation_register.json",
       "bytes": 14685735,
-      "sha256": "cc6254eeeedaec1c5cd2c5d8e12a04f65b1fca830ad95d23c6c7df7987a188b9"
+      "sha256": "9251032ae4bcfb52279b197be30836df759edff0b79a42f3f4afb52147898bb8"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",

@@ -5,7 +5,7 @@
   "engine": {
     "repository": "https://github.com/KingSav3ge/IRGS-Engine.git",
     "branch": "main",
-    "commit": "fbf364f491779cdcd75e255e4c5219ddfbad853a",
+    "commit": "296e46a1beed10d0ebf2841f133bb52fade83697",
     "source_paths": [
       "IRGS_3_3",
       "engine",
@@ -15,7 +15,7 @@
   "app": {
     "repository": "https://github.com/KingSav3ge/IRGS-APP-WEB.git",
     "branch": "main",
-    "commit": "fe6aeebcb932556949e16a222bfbc16c519bdc69",
+    "commit": "7e1a5929b2f30479aa315789f75bfa6c46761438",
     "source_paths": [
       "IRGS_Web",
       "Start-IRGS.cmd"
@@ -26,7 +26,7 @@
   "catalog": {
     "repository": "https://github.com/KingSav3ge/IRGS-Catalog.git",
     "branch": "main",
-    "commit": "ecd7dccc747099162ab035238550eb55e31ca054",
+    "commit": "e97d87f0d17a16dbe0ce186badafe663188321a1",
     "source_paths": [
       "IRGS_Catalog"
     ]
