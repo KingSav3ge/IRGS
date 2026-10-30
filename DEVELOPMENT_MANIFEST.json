@@ -141,8 +141,8 @@
     },
     {
       "path": "CHANGES_3_4_7.md",
-      "bytes": 5323,
-      "sha256": "890bb833230d91f642b68794b9ee54695193eacb69155231565f9723b98d850a"
+      "bytes": 5620,
+      "sha256": "e76fe6ac1fbfdbf7e7a1fab3016fdaa06668d9090b442db11f83f22f7001361e"
     },
     {
       "path": "CHAT_CONTINUATION.md",
@@ -167,7 +167,7 @@
     {
       "path": "COMPONENTS.json",
       "bytes": 976,
-      "sha256": "1c8b5d2034d5856bf01c9081c05f2f19f7055e95d5bc41c2579c12e454c26306"
+      "sha256": "db633ff9b9158de6868bbd07ca5f3b819ed5363efc778a33373e81ebdcafde1d"
     },
     {
       "path": "COMPONENT_PUBLISH_VALIDATION.json",
@@ -186,8 +186,8 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 11402,
-      "sha256": "79ce1b513c313a82e253089c88687bd3f76fe09865cab6241646cb93977942f6"
+      "bytes": 11788,
+      "sha256": "b28b364168fda9882556c963572d570a65e2f9e53261cf6ae1e423b294e6b3b0"
     },
     {
       "path": "COORDINATION.md",
@@ -247,7 +247,7 @@
     {
       "path": "DEVELOPMENT_STATE.json",
       "bytes": 1634,
-      "sha256": "e35b995ff506e1ed72833eaeb4608253fbea72d31a94ccfb64eff2ddf994887d"
+      "sha256": "657101d639b651d7d083263e3b414fe463cc14dd0a91e3b69509b194d71d7280"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -4036,8 +4036,8 @@
     },
     {
       "path": "RELEASE_NOTES_3_4_7.md",
-      "bytes": 5323,
-      "sha256": "890bb833230d91f642b68794b9ee54695193eacb69155231565f9723b98d850a"
+      "bytes": 5620,
+      "sha256": "e76fe6ac1fbfdbf7e7a1fab3016fdaa06668d9090b442db11f83f22f7001361e"
     },
     {
       "path": "RISE_FOUNDATION_VALIDATION.json",
@@ -5082,7 +5082,7 @@
     {
       "path": "provenance/qa/adopted_decisions_3_4_7_selection.json",
       "bytes": 2357,
-      "sha256": "e1cf028e01e2e95366c71cba3a39bc8865de6e9352a6f62f96d6f529dc627df1"
+      "sha256": "a1c8dc8c3e895bf89624323668fde52a96d565390fd0656e7ad1b98a0bd02271"
     },
     {
       "path": "provenance/qa/adopted_intent_world_3_4_6_selection.json",
@@ -5092,7 +5092,7 @@
     {
       "path": "provenance/qa/adopted_intent_world_3_4_7_selection.json",
       "bytes": 1299,
-      "sha256": "46b706d840295a6eb86410e441712b7fd83dcc84aa79bfa7a168b24ebe14e672"
+      "sha256": "d4ce43fa1151a11a1b4d4fc3156b5e332718d87a71b7a1f55bc66b2fb321f1f4"
     },
     {
       "path": "provenance/qa/adopted_ordinary_3_4_4_selection.json",
@@ -5112,7 +5112,7 @@
     {
       "path": "provenance/qa/adopted_ordinary_3_4_7_selection.json",
       "bytes": 927,
-      "sha256": "caec2e25f86665ef30905f8f892023b3d90cff7b32828778124c498d6381cc73"
+      "sha256": "4678c5270c5691f2828252ba7f2dd465bd3a37c44e7a21f7825555fb5ede1776"
     },
     {
       "path": "provenance/qa/ai_provider_strategy/EVALUATION_CASES.json",

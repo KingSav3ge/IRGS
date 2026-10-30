@@ -7,9 +7,9 @@
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
-    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
   "qualification_record": "provenance/qa/decisions_3_4_7_review.json",
   "qualification_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified.",

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "fixture_id": "coordinator-adopted-decisions-3.4.7-1",
   "components": {
-    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
   "original_consumers_sha256": {
     "test_current_ordinary_cases.py": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",

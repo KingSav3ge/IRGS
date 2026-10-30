@@ -47,14 +47,14 @@
     "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
   },
   "selected_components": {
-    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "4e704cc91af398413352c73ca0c77743875987d4",
+      "commit": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
       "deliverable": "component_update",
       "owner_delivery": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
       "scope": "Selected invitation and non-Rise contact decision contracts",
@@ -69,6 +69,10 @@
         },
         {
           "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
           "status": "passed"
         }
       ]
@@ -96,7 +100,7 @@
     },
     "app": {
       "status": "approved",
-      "commit": "2bc51c3471ab17aafcac24800219d91c33351063",
+      "commit": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
       "deliverable": "component_update",
       "owner_delivery": "52de997814d4f51b12490fb1a683b98abebb0572",
       "scope": "Communication DTO and offer UI adoption plus separately reviewed grant controls",
@@ -111,6 +115,10 @@
         },
         {
           "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
           "status": "passed"
         }
       ]
@@ -217,9 +225,9 @@
   "target_version": "3.4.7",
   "target_version_status": "pre_alpha",
   "proposed_components": {
-    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
   "reviewed_at_utc": "2026-10-29T19:06:13.653356+00:00",
   "completed_components": {},
