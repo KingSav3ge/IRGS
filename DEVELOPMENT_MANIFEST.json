@@ -1606,8 +1606,8 @@
     },
     {
       "path": "IRGS_3_3/release.json",
-      "bytes": 51227,
-      "sha256": "7107b7f3fce2ec962232787190bb6fdadb9f23a9c4fb0a70f5e42dff904d77e2"
+      "bytes": 50685,
+      "sha256": "2448657511af32ece9fbe9276ac4e107eb0124634766610b716596727f1513db"
     },
     {
       "path": "IRGS_3_3/results/completion_audit.json",
@@ -2236,8 +2236,8 @@
     },
     {
       "path": "IRGS_3_3/runtime/test_solo_provider.py",
-      "bytes": 24893,
-      "sha256": "26f2a8aa8eddbab2f5bebc15e7cc5be0a9aea024bb0291fe7f3eb4203b7e822b"
+      "bytes": 25612,
+      "sha256": "bce55ca99cd8fef2b0747b35efafbeba91c2f894beab0dab7bcbf9fcf98264af"
     },
     {
       "path": "IRGS_3_3/runtime/test_solo_rise.py",
@@ -4572,7 +4572,7 @@
     {
       "path": "engine/qualification/operation_register.json",
       "bytes": 15305820,
-      "sha256": "97a5b342bc49b22ebee16fba24f02b6f5fe2d317243424c55c43a5c6361fc377"
+      "sha256": "4480aafce010e215d905eb3db555c4bc7df5a3184844a235c59d88db18fff598"
     },
     {
       "path": "engine/reference/CMRR_Round_7_Executed_Validation.md",

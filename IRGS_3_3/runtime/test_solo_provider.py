@@ -257,24 +257,37 @@ class SoloProviderTests(unittest.TestCase):
             with self.subTest(cancel=cancel):
                 entered, release = threading.Event(), threading.Event()
                 self.addCleanup(release.set)
-                request = self.request('cancel' if cancel else 'timeout', deadline=time.time() + 0.08)
-                fake = FakeTransport(entered=entered, block=release)
+                # Enter transport before expiring/cancelling it. An 80 ms real
+                # admission window can expire during SQLite/thread setup on a
+                # busy host and test the separate pre-dispatch path instead.
+                now = [time.time()]
+                broker = CapabilityBroker(self.registry, self.ledger, enabled=True,
+                    scope_reader=self.scope, clock=lambda: now[0])
+                request = self.request('cancel' if cancel else 'timeout', deadline=now[0] + 30)
+                fake = FakeTransport()
+                def in_flight(*args, **kwargs):
+                    entered.set()
+                    if not release.wait(10):
+                        raise TimeoutError('Synthetic transport was not released')
+                    return fake(*args, **kwargs)
                 with ThreadPoolExecutor(max_workers=1) as workers:
-                    future = workers.submit(self.broker.dispatch, request, 'offline', fake)
-                    self.assertTrue(entered.wait(1))
+                    future = workers.submit(broker.dispatch, request, 'offline', in_flight)
+                    self.assertTrue(entered.wait(5))
                     if cancel:
                         self.ledger.cancel(request.request_id)
-                    result = future.result(1)
+                    else:
+                        now[0] = request.deadline
+                    result = future.result(5)
                     self.assertEqual(result.code, 'cancelled' if cancel else 'deadline_exceeded')
                     release.set()
-                limit = time.monotonic() + 1
+                limit = time.monotonic() + 5
                 while not self.ledger.lookup(request.request_id)['finished'] and time.monotonic() < limit:
                     time.sleep(0.005)
                 row = self.ledger.lookup(request.request_id)
                 self.assertEqual(row['reserved'], 10)
                 self.assertEqual(json.loads(row['usage'])['output_tokens'], 18)
                 self.assertEqual(self.ledger.result(request.request_id), result)
-                self.assertEqual(self.broker.dispatch(request, 'offline', fake), result)
+                self.assertEqual(broker.dispatch(request, 'offline', in_flight), result)
                 self.assertEqual(fake.calls, 1)
 
     def test_pre_dispatch_cancel_deadline_or_fallback_has_no_call(self):
