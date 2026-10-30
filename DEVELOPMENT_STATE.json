@@ -3,7 +3,7 @@
   "edition": "3.4.7",
   "channel": "development",
   "date": "2026-10-30",
-  "status": "candidate_awaiting_joined_qualification",
+  "status": "qualified_pre_alpha_with_required_package_gate",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
@@ -16,7 +16,7 @@
   "next_milestone": "Bounded Creator-host creation/recovery and selected needs/consequences",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
-  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
+  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
   "general_action_resolver_implemented": false,
   "live_inference_qualified": false,
   "private_saves_included": false,

@@ -74,6 +74,10 @@
         {
           "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
+          "status": "passed"
         }
       ]
     },
@@ -94,6 +98,10 @@
         },
         {
           "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
+          "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
           "status": "passed"
         }
       ]
@@ -120,17 +128,21 @@
         {
           "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
           "status": "passed"
+        },
+        {
+          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
+          "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "approved_components_for_isolated_candidate",
-  "component_source_integration_performed": false,
+  "integration_status": "integrated_3_4_7_pre_alpha",
+  "component_source_integration_performed": true,
   "blockers": [],
   "next_assignments": {
-    "engine": "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
-    "app": "A4-APP-03 and WB-APP-01: adopt supported-intent/draft contracts and explicit offer selection",
-    "catalog": "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage"
+    "engine": "A4-ENG-01/03: broader consequences and selected needs/recovery",
+    "app": "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
+    "catalog": "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery"
   },
   "previous_completed_cycle": {
     "cycle_id": "historical-details-01",
@@ -229,16 +241,23 @@
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
     "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
-  "reviewed_at_utc": "2026-10-29T19:06:13.653356+00:00",
-  "completed_components": {},
-  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
-  "qualified_candidate_commit": "4d7991c8d3bac1a8f649371ce596c210c982114c",
-  "integrated_at_utc": "2026-10-29T19:06:13.653356+00:00",
+  "reviewed_at_utc": "2026-10-30T17:30:44.160209+00:00",
+  "completed_components": {
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+  },
+  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
+  "qualified_candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
+  "integrated_at_utc": "2026-10-30T17:30:44.160209+00:00",
   "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
   "remaining_work": [
     "A4-ENG-01/03: broader consequences and selected needs/recovery",
     "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
-    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery"
+    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery",
+    "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
+    "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
+    "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
   ],
   "completion_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
   "development_scope": {
@@ -267,7 +286,7 @@
     "IRGS-Catalog": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/CHAT_CONTINUATION.md",
     "IRGS": "https://github.com/KingSav3ge/IRGS/blob/main/CHAT_CONTINUATION.md"
   },
-  "guides_updated_on": "2026-10-29",
+  "guides_updated_on": "2026-10-30",
   "continuation_message_dispatched": false,
   "previous_version": "3.3.3"
 }

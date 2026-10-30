@@ -1,58 +1,58 @@
 {
   "schema_version": 1,
-  "candidate_commit": "0c85c18810f21964e57b38f1019add70c67a5e43",
-  "finished_at_utc": "2026-10-29T18:58:37.876983+00:00",
+  "candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
+  "finished_at_utc": "2026-10-30T17:23:56.309069+00:00",
   "status": "passed",
   "scope": "Current Core/App regression suites plus independent HTTP checks. Contracts: R00 founding, shared Core interoperability, material continuity, replay, restart, privacy and retained intent.",
-  "candidate_source_root": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/worktrees/joined",
+  "candidate_source_root": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/worktrees/joined",
   "qa_script_sha256": "315c4af3adc2d2383e9240a49a2903c11d63860ae655c9e0c9a5fa737b742705",
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 7.84,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/source-integrity.txt"
+      "duration_seconds": 16.2,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.67,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/evidence-freshness.txt"
+      "duration_seconds": 1.52,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 47.21,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/runtime.txt",
-      "tests_run": 804,
+      "duration_seconds": 108.87,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/runtime.txt",
+      "tests_run": 812,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 163.72,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/web.txt",
-      "tests_run": 272,
+      "duration_seconds": 201.24,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/web.txt",
+      "tests_run": 279,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.38,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/interface.txt",
-      "checks_passed": 156
+      "duration_seconds": 11.1,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/interface.txt",
+      "checks_passed": 158
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 9.33,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/tooling.txt",
+      "duration_seconds": 23.6,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -132,15 +132,15 @@
   ],
   "user_saves_opened": false,
   "mechanics_modified_by_qa": false,
-  "version": "3.4.6",
+  "version": "3.4.7",
   "previous_version": "3.3.3",
   "candidate_components": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
   "pin_matches_candidate": true,
-  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
-  "integration_review": "provenance/qa/intent_world_3_4_6_review.json",
+  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
+  "integration_review": "provenance/qa/decisions_3_4_7_review.json",
   "integrated_or_deployed_by_qa": false
 }

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "fixture_id": "coordinator-adopted-decisions-3.4.7-1",
+  "components": {
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+  },
+  "selection_mode": "joined_or_clean_extracted_source",
+  "status": "passed",
+  "tests_run": 4,
+  "passed": 4,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "original_catalog_consumers_preserved": true,
+  "coordinator_extension": "ordinary quay refusal/conserved delivery/restart/restore",
+  "provider_calls": 0,
+  "user_saves_opened": false,
+  "alpha_qualified": false
+}

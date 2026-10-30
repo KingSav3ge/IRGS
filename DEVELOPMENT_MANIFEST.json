@@ -181,13 +181,13 @@
     },
     {
       "path": "CONTINUATION_STATUS.md",
-      "bytes": 42774,
-      "sha256": "d39c54acd7f5821f5035d1796b09757d623081a070fd71814a07943a78d0c19a"
+      "bytes": 43192,
+      "sha256": "0e8244de332a805942e82e5066beb016b06c49ac03d0361590c5de32f56066fb"
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 11788,
-      "sha256": "b28b364168fda9882556c963572d570a65e2f9e53261cf6ae1e423b294e6b3b0"
+      "bytes": 12686,
+      "sha256": "df2476be64a3bcae6a0f9aca16551cd5739d1f755766ce988d6ee2dbdd112bd1"
     },
     {
       "path": "COORDINATION.md",
@@ -206,8 +206,8 @@
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 132001,
-      "sha256": "3e1314c71f56fb31b0015885a6fe49ba51cc6dabbc7e2f6d4ed927d82e664393"
+      "bytes": 137180,
+      "sha256": "913b8e30f7bb571605cbedbfbaf7480caf19c517f8db00ea204b573829c52cf3"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -241,13 +241,13 @@
     },
     {
       "path": "DEVELOPMENT_LIST.md",
-      "bytes": 36124,
-      "sha256": "f7170c8e9388508427e757b4e51db9680bc3fb5c2349c0466a9e711047cf0930"
+      "bytes": 36542,
+      "sha256": "da50e64eb6222e0040ea69fd0258572c888b0d1f7cb33564013c0eae94825c6c"
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 1634,
-      "sha256": "657101d639b651d7d083263e3b414fe463cc14dd0a91e3b69509b194d71d7280"
+      "bytes": 1641,
+      "sha256": "9c9a3053549c95c04aabda21b5e5d7b33e8c6abe2b4bdb76de06048f1b39fec7"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -4046,8 +4046,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 27575,
-      "sha256": "79c267043808c3af231a94fac76692de5bda6782ad79c3bdfb7717ef4749879e"
+      "bytes": 27993,
+      "sha256": "4c8ce27f92247b8ce5a3422977b5d0c4ef04a51d5078afbee0aa2cb66c0dc127"
     },
     {
       "path": "SOLO_COMPLETION_PLAN.md",
@@ -5246,13 +5246,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5597,
-      "sha256": "d1654ec778d5f6c42e96e13285cd9852d3b2632abe527fdef9781faeb5a49728"
+      "bytes": 5574,
+      "sha256": "0f050b91629abac57ac288a5e0dd89b8bd4d7171190bfefd74a3c4842685557d"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 571,
-      "sha256": "539048c5134917a60fc83c2790ca97a176289b42e7932173ed7d695eabaf59a5"
+      "bytes": 570,
+      "sha256": "b7782eeb14cd8de4c25f5a5c845836401c768ad12c1e26cd94bd04ff2d196330"
     },
     {
       "path": "provenance/qa/decisions_3_4_7/actor_inputs.json",
@@ -5263,6 +5263,16 @@
       "path": "provenance/qa/decisions_3_4_7/evaluator_only.json",
       "bytes": 282,
       "sha256": "a86d2e90a64a6acb041f71957bd1e6b15f497e37841b25502aa67e50b9e7e495"
+    },
+    {
+      "path": "provenance/qa/decisions_3_4_7_acceptance.json",
+      "bytes": 650,
+      "sha256": "f9a7b7abf1f3ab067df6a9bb419b7907cb69398c5905cc88c44a3f54568ed201"
+    },
+    {
+      "path": "provenance/qa/decisions_3_4_7_review.json",
+      "bytes": 137180,
+      "sha256": "913b8e30f7bb571605cbedbfbaf7480caf19c517f8db00ea204b573829c52cf3"
     },
     {
       "path": "provenance/qa/historical_details_integration_review.json",
@@ -5320,6 +5330,11 @@
       "sha256": "3e1314c71f56fb31b0015885a6fe49ba51cc6dabbc7e2f6d4ed927d82e664393"
     },
     {
+      "path": "provenance/qa/intent_world_3_4_7_acceptance.json",
+      "bytes": 681,
+      "sha256": "7a6a99306cd42045de69455d6c8eff0d242d33b5027d9243f84678a8f4901f88"
+    },
+    {
       "path": "provenance/qa/interface_communication_3_4_2_review.json",
       "bytes": 45475,
       "sha256": "5b6ec2601d853b79b9a9a6c3f1e8f26fc8a96e75425831c3fb7c2b6376b0d6f3"
@@ -5338,6 +5353,11 @@
       "path": "provenance/qa/ordinary_3_4_6_acceptance.json",
       "bytes": 694,
       "sha256": "b101c6304bfe4ba92160702e0a3cb9d5c3ee44e95dda0e3d5f070df3e96bcfe7"
+    },
+    {
+      "path": "provenance/qa/ordinary_3_4_7_acceptance.json",
+      "bytes": 694,
+      "sha256": "8f9fabe2c38ab64128ae081eccfee92c1c3901c1b8156097aacf642834ec5a22"
     },
     {
       "path": "provenance/qa/ordinary_travel_3_4_4_review.json",

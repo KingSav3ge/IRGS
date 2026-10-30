@@ -1,5 +1,9 @@
 # IRGS continuation development list
 
+## Current coordinated 3.4.7 Pre-Alpha
+
+The reviewed Engine, App and Catalog foundations are adopted at the exact commits in COMPONENTS.json. Read DEVELOPMENT_HANDOFFS.md and the current CHAT_CONTINUATION.md for remaining owner implementation. New public repository identities and branding retain internal IRGS technical compatibility. No functional Alpha gate is closed. Earlier records retain their original scope.
+
 **29 October — non-Rise selected decision:** the separately reviewed mixed quay
 opening `quay-contact-decision-v1` lets the fictional worker explicitly decline
 a carry request while preserving custody, actor-scoped testimony and the existing

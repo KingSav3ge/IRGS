@@ -1,0 +1,2178 @@
+{
+  "schema_version": 1,
+  "version": "3.4.7",
+  "classification": "Pre-Alpha",
+  "previous_version": "3.3.3",
+  "reviewed_at_utc": "2026-10-30T17:30:44.160209+00:00",
+  "baseline_joined_commit": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
+  "owner_deliveries": {
+    "joined": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
+    "engine": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
+    "app": "52de997814d4f51b12490fb1a683b98abebb0572",
+    "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
+  },
+  "selected_components": {
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+  },
+  "qualified_candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
+  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
+  "scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
+  "change_classification": {
+    "engine": "selected_invitation_and_quay_contact_decisions_with_existing_Core_authority",
+    "app": "versioned_communication_DTOs_optional_offer_setup_and_separate_grant_review_controls",
+    "catalog": "independent_consequence_invitation_and_both_profile_draft_consumers"
+  },
+  "regression_checks": [
+    {
+      "name": "source-integrity",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 16.2,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/source-integrity.txt"
+    },
+    {
+      "name": "evidence-freshness",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 1.52,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/evidence-freshness.txt"
+    },
+    {
+      "name": "runtime",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 108.87,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/runtime.txt",
+      "tests_run": 812,
+      "skipped": 1
+    },
+    {
+      "name": "web",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 201.24,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/web.txt",
+      "tests_run": 279,
+      "skipped": 7
+    },
+    {
+      "name": "interface",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 11.1,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/interface.txt",
+      "checks_passed": 158
+    },
+    {
+      "name": "tooling",
+      "status": "passed",
+      "exit_code": 0,
+      "duration_seconds": 23.6,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/tooling.txt",
+      "tests_run": 32,
+      "skipped": 0
+    }
+  ],
+  "independent": {
+    "tests_run": 8,
+    "passed": 8,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "test": "test_concurrent_retry_has_one_commit_and_one_elapsed_span",
+        "status": "passed"
+      },
+      {
+        "test": "test_core_location_confirmation_remains_usable",
+        "status": "passed",
+        "finding_id": "IRGS-QA-002"
+      },
+      {
+        "test": "test_founding_delegation_migration_and_material_continuity",
+        "status": "passed"
+      },
+      {
+        "test": "test_freeform_is_retained_intent_with_no_automatic_elapsed_effect",
+        "status": "passed"
+      },
+      {
+        "test": "test_new_material_does_not_break_committed_campaign",
+        "status": "passed",
+        "finding_id": "IRGS-QA-001"
+      },
+      {
+        "test": "test_pause_resume_preserves_work_and_finishes_once",
+        "status": "passed"
+      },
+      {
+        "test": "test_private_state_and_hidden_permission_do_not_select_player_options",
+        "status": "passed"
+      },
+      {
+        "test": "test_results_survive_host_restart_and_trash_restore",
+        "status": "passed"
+      }
+    ]
+  },
+  "browser_checks": {
+    "shared": {
+      "status": "passed",
+      "contexts": [
+        {
+          "adapter": "authored_scene",
+          "committed_actions": 4,
+          "elapsed_seconds": 43,
+          "zero_action_spans": [],
+          "local_drafts_non_submitting": true,
+          "lost_acknowledgement_recovered": true,
+          "stale_navigation_fenced": true,
+          "reload_preserves_draft": true
+        },
+        {
+          "adapter": "settlement",
+          "committed_actions": 5,
+          "elapsed_seconds": 3900,
+          "zero_action_spans": [
+            "found",
+            "build"
+          ],
+          "local_drafts_non_submitting": true,
+          "lost_acknowledgement_recovered": true,
+          "stale_navigation_fenced": true,
+          "reload_preserves_draft": true
+        }
+      ],
+      "common_response_schema": 1,
+      "catalog_library": "irgs-response-depot-v1",
+      "engine_library": "irgs-engine-routine-responses-v1",
+      "provider_configured": false,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "mobile_width": 390
+    },
+    "process": {
+      "status": "passed",
+      "contexts": [
+        {
+          "kind": "observation",
+          "committed_phases": 5,
+          "start_selected_from_engine": true,
+          "elapsed_seconds": 3,
+          "prepare_reload_recovered": true,
+          "cancel_does_not_execute": true,
+          "lost_commit_ack_recovered": true,
+          "phase_identity_preserved": true,
+          "pause_resume": true,
+          "stale_navigation_fenced": true
+        },
+        {
+          "kind": "work",
+          "committed_phases": 6,
+          "start_selected_from_engine": true,
+          "elapsed_seconds": 3900,
+          "prepare_reload_recovered": true,
+          "cancel_does_not_execute": true,
+          "lost_commit_ack_recovered": true,
+          "phase_identity_preserved": true,
+          "pause_resume": true,
+          "stale_navigation_fenced": true
+        }
+      ],
+      "provider_configured": false,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "mobile_width": 390
+    },
+    "interface": {
+      "status": "passed",
+      "desktop_width": 1568,
+      "mobile_width": 390,
+      "concepts": 44,
+      "reading_preferences_survive_reload": true,
+      "drawers_escape_and_focus": true,
+      "reviewed_character_creation": true,
+      "posts_before_explicit_creation": 0,
+      "explicit_creations": 1,
+      "original_fixture_saves_unchanged": true,
+      "local_assets_only": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "layout": {
+        "context-panel": {
+          "x": 24,
+          "width": 358.046875
+        },
+        "content": {
+          "x": 407.046875,
+          "width": 753.890625
+        },
+        "play-tools": {
+          "x": 1185.9375,
+          "width": 358.0625
+        }
+      },
+      "assets": [
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        }
+      ]
+    },
+    "refinement": {
+      "status": "passed",
+      "contexts": [
+        {
+          "context": "authored_scene",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 7.596121854662484
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.663608659553884
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.395364623798076
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        },
+        {
+          "context": "settlement",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 7.328352093602904
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.663608659553884
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.395364623798076
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        },
+        {
+          "context": "historical_start",
+          "reading_surfaces": [
+            {
+              "surface": "dark",
+              "size": 18,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.134389208121182
+            },
+            {
+              "surface": "light",
+              "size": 20,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 6.663608659553884
+            },
+            {
+              "surface": "parchment",
+              "size": 22,
+              "widths_checked": [
+                1568,
+                390
+              ],
+              "minimum_contrast": 5.395364623798076
+            }
+          ],
+          "toolbar_synchronized": true,
+          "quick_button_focus_preserved": true,
+          "maximum_size_mobile": 26,
+          "exclusive_drawers": true,
+          "nested_escape_returns_focus": true,
+          "destination_focus": true,
+          "primary_tab_keyboard": true,
+          "draft_and_reload_preserved": true,
+          "save_unchanged": true
+        }
+      ],
+      "desktop_width": 1568,
+      "mobile_width": 390,
+      "palette_checks": [
+        {
+          "genre": "military",
+          "surface": "dark",
+          "minimum_contrast": 5.660473170000904
+        },
+        {
+          "genre": "military",
+          "surface": "light",
+          "minimum_contrast": 5.660473170000904
+        },
+        {
+          "genre": "military",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "roman",
+          "surface": "dark",
+          "minimum_contrast": 7.141049775607952
+        },
+        {
+          "genre": "roman",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "roman",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "fantasy",
+          "surface": "dark",
+          "minimum_contrast": 7.633959418387948
+        },
+        {
+          "genre": "fantasy",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "fantasy",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "paf",
+          "surface": "dark",
+          "minimum_contrast": 7.288301806630693
+        },
+        {
+          "genre": "paf",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "paf",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "shinobi",
+          "surface": "dark",
+          "minimum_contrast": 7.566875012465465
+        },
+        {
+          "genre": "shinobi",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "shinobi",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "space",
+          "surface": "dark",
+          "minimum_contrast": 7.430910848986467
+        },
+        {
+          "genre": "space",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "space",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        },
+        {
+          "genre": "settlement",
+          "surface": "dark",
+          "minimum_contrast": 7.328352093602904
+        },
+        {
+          "genre": "settlement",
+          "surface": "light",
+          "minimum_contrast": 6.663608659553884
+        },
+        {
+          "genre": "settlement",
+          "surface": "parchment",
+          "minimum_contrast": 5.395364623798076
+        }
+      ],
+      "historical_setup_cancel_and_review": true,
+      "explicit_creations": 1,
+      "reading_and_navigation_posts": 0,
+      "empty_trash_and_story": true,
+      "creator_round_trip_read_only": true,
+      "original_fixture_saves_unchanged": true,
+      "local_assets_only": true,
+      "provider_calls": 0,
+      "browser_errors": 0
+    },
+    "start": {
+      "status": "passed",
+      "initial_campaigns": 0,
+      "final_campaigns": 6,
+      "cancel_and_selection_changes_create_nothing": true,
+      "source_unavailable_stays_unconfirmed": true,
+      "mobile_width": 390,
+      "contexts": [
+        {
+          "name": "existing_john_1415",
+          "status": "declaration_only",
+          "new_engine_initializer_delivered": false,
+          "lost_creation_ack_recovered": true,
+          "unresolved_intent_reload_withdraw": true
+        },
+        {
+          "name": "new_human_reference",
+          "status": "declaration_only",
+          "explicit_choice": true,
+          "background_is_testimony": true
+        },
+        {
+          "name": "new_human_authored",
+          "status": "supported_slice",
+          "received_result_retained": true,
+          "lost_action_ack_recovered": true,
+          "replay_same_receipt": true,
+          "elapsed_seconds": 20
+        },
+        {
+          "name": "R00_regression",
+          "status": "supported_slice",
+          "confirmed_actions": 5,
+          "elapsed_seconds": 3900,
+          "received_result_retained": true
+        },
+        {
+          "name": "existing_henry_default",
+          "status": "declaration_only",
+          "opening_not_added_automatically": true,
+          "received_initial_day": true
+        },
+        {
+          "name": "existing_henry_explicit",
+          "status": "supported_slice",
+          "engine_contract": "irgs-start-readiness-1",
+          "actor_bound_choice": true,
+          "changed_actor_clears_choice": true,
+          "lost_creation_ack_recovered": true,
+          "lost_action_ack_recovered": true,
+          "elapsed_axis": "selected-historical-observation-seconds",
+          "elapsed_seconds": 20,
+          "initial_julian_day": "1415-08-11",
+          "opening_hour": null,
+          "current_calendar_binding": false,
+          "no_dispatch_or_courier_actions": true,
+          "actor_boundaries": true,
+          "changed_replay_rejected": true,
+          "reload_and_restore_preserve_exact_bytes": true,
+          "restored_original_result_replay": true
+        }
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0,
+      "posts": [
+        "/api/create",
+        "/api/create",
+        "/api/declaration",
+        "/api/withdraw-declaration",
+        "/api/create",
+        "/api/create",
+        "/api/action",
+        "/api/rise/preview",
+        "/api/rise/create",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/rise/action",
+        "/api/create",
+        "/api/create",
+        "/api/create",
+        "/api/action",
+        "/api/delete",
+        "/api/restore"
+      ]
+    },
+    "communication": {
+      "status": "passed",
+      "supported_intent_dtos": true,
+      "contexts": [
+        "selected_non_rise_quay",
+        "selected_R00_transfer"
+      ],
+      "mobile_width": 390,
+      "exact_words_and_testimony": true,
+      "speech_does_not_accept_offer": true,
+      "elapsed_time_unchanged": true,
+      "all_six_structured_commands": true,
+      "conserved_transfers": true,
+      "terminal_statuses_distinct": true,
+      "original_proposal_result_retained": true,
+      "private_actor_record_denied": true,
+      "lost_prepare_ack_reload_recovered": true,
+      "lost_execute_ack_original_result_recovered": true,
+      "independent_own_response_preserved": true,
+      "HTML_is_literal_text": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0,
+      "prepared": 10,
+      "executed": 10
+    },
+    "travel": {
+      "status": "passed",
+      "context": "ordinary_R00_phased_travel",
+      "review_does_not_commit": true,
+      "cancelled_review_has_no_effect": true,
+      "partial_pause_resume_arrival": true,
+      "household_and_stock_location_conserved": true,
+      "stock_quantities_conserved": true,
+      "travel_cancel_not_advertised": true,
+      "elapsed_seconds": 300,
+      "lost_commit_ack_recovered": true,
+      "immutable_original_start_receipt": true,
+      "duplicate_final_result_once": true,
+      "reload_continuation": true,
+      "mobile_width": 390,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "story": {
+      "status": "passed",
+      "contexts": [
+        {
+          "context": "authored_scene",
+          "entries": 4,
+          "chronological": true,
+          "choices_and_composer_below_tale": true,
+          "one_reading_viewport": true,
+          "review_cancel_no_effect": true,
+          "one_confirmed_commit": true,
+          "draft_and_reload_preserved": true,
+          "widths": [
+            1568,
+            390
+          ]
+        },
+        {
+          "context": "settlement",
+          "entries": 5,
+          "chronological": true,
+          "choices_and_composer_below_tale": true,
+          "one_reading_viewport": true,
+          "review_cancel_no_effect": true,
+          "one_confirmed_commit": true,
+          "draft_and_reload_preserved": true,
+          "widths": [
+            1568,
+            390
+          ]
+        }
+      ],
+      "known_view_replay": null,
+      "browser_errors": 0,
+      "provider_calls": 0,
+      "external_requests": 0,
+      "user_saves_opened": false
+    },
+    "app_responses": {
+      "status": "passed",
+      "app_library": "irgs-app-routine-v1@1.0.0",
+      "variants": 171,
+      "editable_drafts": 32,
+      "recipes": 8,
+      "Core_actions": 4,
+      "unsuccessful_physical_attempt_preserved": true,
+      "exact_receipt_HTML_braces_negation_preserved": true,
+      "lost_acknowledgement_recovered": true,
+      "draft_cancel_edit_keep_reload": true,
+      "elapsed_seconds": 43,
+      "mobile_width": 390,
+      "provider_calls": 0,
+      "missing_template_fallback_provider_calls": 0,
+      "browser_errors": 0
+    },
+    "intent": {
+      "status": "passed",
+      "contexts": [
+        {
+          "context": "authored_scene",
+          "explicit_action": "enter-passage",
+          "cancel_no_effect": true,
+          "exact_words": true,
+          "commit_and_reload": true,
+          "retained_draft": true,
+          "mobile_width": 390
+        },
+        {
+          "context": "settlement",
+          "explicit_action": "inspect",
+          "cancel_no_effect": true,
+          "exact_words": true,
+          "commit_and_reload": true,
+          "retained_draft": true,
+          "mobile_width": 390
+        }
+      ],
+      "lost_prepare_reload_recovered": true,
+      "lost_execute_original_result_recovered": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "ordinary_intent": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "solo": {
+      "status": "passed",
+      "fixture": "Engine authored-scene synthetic fixture; Catalog R00 proposal path unsupported",
+      "two_consecutive_core_actions": 2,
+      "offline_provider_calls": 6,
+      "live_provider_calls": 0,
+      "editable_exact_intent": true,
+      "cancel_and_edit_no_effect": true,
+      "provider_denied_no_effect": true,
+      "lost_acknowledgement_recovered": true,
+      "late_navigation_fenced": true,
+      "elapsed_seconds": 35,
+      "browser_errors": 0
+    },
+    "presentation": {
+      "status": "passed",
+      "base": "#15110e",
+      "genres": 7,
+      "campaign_overrides": 3,
+      "reading_preference_survives_reload": true,
+      "body_and_story_text_contrast_at_least": 4.5,
+      "reading_modes_checked": 3,
+      "protected_usage_read_only": true,
+      "saves_unchanged": true,
+      "browser_posts": 0,
+      "browser_errors": 0,
+      "mobile_width": 390,
+      "live_provider_calls": 0
+    },
+    "communication_intents": {
+      "status": "passed",
+      "supported_intent_dtos": true,
+      "ordinary_quay_testimony": true,
+      "ordinary_Rise_offer": true,
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "optional_profile_default_omitted": true,
+      "reviewed_source_and_scope": true,
+      "back_and_cancel_preserved": true,
+      "lost_creation_acknowledgement_recovered": true,
+      "explicit_offer_review_cancel_confirm": true,
+      "offer_status": "offered",
+      "stock_transfer": false,
+      "npc_control_or_consent": false,
+      "independent_drafts_reload": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "offer_setup": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "optional_profile_default_omitted": true,
+      "reviewed_source_and_scope": true,
+      "back_and_cancel_preserved": true,
+      "lost_creation_acknowledgement_recovered": true,
+      "explicit_offer_review_cancel_confirm": true,
+      "offer_status": "offered",
+      "stock_transfer": false,
+      "npc_control_or_consent": false,
+      "independent_drafts_reload": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "decision_grants": {
+      "status": "passed",
+      "ordinary_quay_creation": true,
+      "selected_worker_refusal": true,
+      "no_custody_or_consent_inferred": true,
+      "actual_conserved_delivery": true,
+      "original_refusal_replay": true,
+      "ordinary_rise_creation": true,
+      "grant_request_and_acceptance_separate": true,
+      "review_cancel_no_effect": true,
+      "empty_words_no_submission": true,
+      "exact_words_and_reload_draft": true,
+      "widths": [
+        1568,
+        390
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    }
+  },
+  "catalog_start_adoption": {
+    "status": "passed",
+    "fixture_id": "irgs-start-context-v1",
+    "catalog_fixture_sha256": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+    "selected_components": {
+      "schema_version": 2,
+      "joined_repository": "https://github.com/KingSav3ge/WorldWard.git",
+      "joined_branch": "main",
+      "engine": {
+        "repository": "https://github.com/KingSav3ge/Fulcrum-Engine.git",
+        "branch": "main",
+        "commit": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+        "source_paths": [
+          "IRGS_3_3",
+          "engine",
+          "provenance"
+        ]
+      },
+      "app": {
+        "repository": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git",
+        "branch": "main",
+        "commit": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
+        "source_paths": [
+          "IRGS_Web",
+          "Start-IRGS.cmd"
+        ],
+        "engine_dependency": "Engine submodule, pinned to engine.commit",
+        "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+      },
+      "catalog": {
+        "repository": "https://github.com/KingSav3ge/WorldWard-Catalog.git",
+        "branch": "main",
+        "commit": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+        "source_paths": [
+          "IRGS_Catalog"
+        ]
+      }
+    },
+    "tests_run": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": {
+      "henry-1415-default": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "henry-1415-observation": {
+        "mode": "supported_slice",
+        "historical": true,
+        "confirmed_operations": 1,
+        "elapsed_seconds": 20,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "john-1415-limited": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "new-1415-default": {
+        "mode": "declaration_only",
+        "historical": true,
+        "confirmed_operations": 0,
+        "elapsed_seconds": null,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "new-1415-quay": {
+        "mode": "supported_slice",
+        "historical": true,
+        "confirmed_operations": 5,
+        "elapsed_seconds": 150,
+        "civil_day_precision": true,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      },
+      "rise-r00": {
+        "mode": "supported_slice",
+        "historical": false,
+        "confirmed_operations": 5,
+        "elapsed_seconds": 3900,
+        "civil_day_precision": false,
+        "restart_and_exact_retry": true,
+        "restore_preserved_save": true,
+        "provider_calls": 0
+      }
+    },
+    "provider_calls": 0,
+    "user_saves_used": false
+  },
+  "catalog_current_ordinary_adoption": {
+    "schema_version": 1,
+    "fixture_id": "coordinator-adopted-ordinary-3.4.7-1",
+    "components": {
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    },
+    "selection_mode": "joined_or_clean_extracted_source",
+    "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
+    "original_consumer_preserved_sha256": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",
+    "tests_run": 2,
+    "passed": 2,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "status": "passed",
+    "provider_calls": 0,
+    "user_saves_opened": false,
+    "alpha_qualified": false
+  },
+  "catalog_intent_world_adoption": {
+    "schema_version": 1,
+    "fixture_id": "coordinator-adopted-intent-world-3.4.7-1",
+    "components": {
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    },
+    "selection_mode": "joined_or_clean_extracted_source",
+    "original_fixture_id": "irgs-intent-world-draft-v1",
+    "original_consumer_preserved_sha256": "ffe9054fc77a5c13cfd6d266b6439b7e7d80f11e2a6ab746f4d605553ab97975",
+    "tests_run": 3,
+    "passed": 3,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "status": "passed",
+    "provider_calls": 0,
+    "user_saves_opened": false,
+    "alpha_qualified": false
+  },
+  "catalog_decision_adoption": {
+    "schema_version": 1,
+    "fixture_id": "coordinator-adopted-decisions-3.4.7-1",
+    "components": {
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    },
+    "selection_mode": "joined_or_clean_extracted_source",
+    "status": "passed",
+    "tests_run": 4,
+    "passed": 4,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "original_catalog_consumers_preserved": true,
+    "coordinator_extension": "ordinary quay refusal/conserved delivery/restart/restore",
+    "provider_calls": 0,
+    "user_saves_opened": false,
+    "alpha_qualified": false
+  },
+  "coordinator_implementation": "Actor-safe grant prerequisite projection and separate request/acceptance composer controls, with real HTTP/browser coverage.",
+  "ordinary_offer_http": "passed",
+  "operation_summary": {
+    "operation_spellings": 87,
+    "backend_operation_pairs": 172,
+    "backends": [
+      "CoreWorld",
+      "R7World",
+      "ReceiverWorld",
+      "World"
+    ],
+    "pairs_with_success": 89,
+    "pairs_with_failed_path_evidence": 36,
+    "pairs_without_success": 83,
+    "unqualified_pairs": 81,
+    "observations_outside_declared_backend_pairs": 0,
+    "all_branches_certified": false
+  },
+  "operation_tests": {
+    "tests_run": 812,
+    "passed": 811,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "tests_successful": true,
+    "test_outcomes": {
+      "test_ast33.ASTTests.test_ast_save_load": "passed",
+      "test_ast33.ASTTests.test_cross_campaign_rejected_before_replay": "passed",
+      "test_ast33.ASTTests.test_established_evidence_can_confirm_npc_field": "passed",
+      "test_ast33.ASTTests.test_evidence_not_omniscient_knowledge": "passed",
+      "test_ast33.ASTTests.test_guard_names_and_title": "passed",
+      "test_ast33.ASTTests.test_no_invented_current_quantities_or_day3_actions": "passed",
+      "test_ast33.ASTTests.test_no_player_choice_without_instruction": "passed",
+      "test_ast33.ASTTests.test_offer_not_agreement": "passed",
+      "test_ast33.ASTTests.test_player_declaration_has_no_automatic_cost_or_outcome": "passed",
+      "test_ast33.ASTTests.test_received_order_not_executed": "passed",
+      "test_ast33.ASTTests.test_registry_exact_identities": "passed",
+      "test_ast33.ASTTests.test_replay_no_duplicate_effect": "passed",
+      "test_ast33.ASTTests.test_scene_does_not_invent_wakeup": "passed",
+      "test_ast33.ASTTests.test_shared_stock_contention": "passed",
+      "test_ast33.ASTTests.test_source_numerical_ratings_not_adopted": "passed",
+      "test_ast33.ASTTests.test_stock_transfer_conserves": "passed",
+      "test_ast33.ASTTests.test_testimony_cannot_change_character_state": "passed",
+      "test_ast33.ASTTests.test_unknown_stock_is_not_zero_or_created": "passed",
+      "test_century_starts.CenturyStartsTests.test_all_conditional_references_are_read_only_and_pinned": "passed",
+      "test_century_starts.CenturyStartsTests.test_dated_rosters_do_not_restore_dead_people_or_give_an_infant_adult_control": "passed",
+      "test_century_starts.CenturyStartsTests.test_every_entry_creates_an_independent_character_without_free_resources_or_news": "passed",
+      "test_century_starts.CenturyStartsTests.test_every_entry_has_its_own_exact_valid_snapshot_and_sources": "passed",
+      "test_century_starts.CenturyStartsTests.test_every_entry_supports_opt_in_local_play_conservation_retry_and_reload": "passed",
+      "test_character_background.CharacterBackgroundTests.test_background_schema_and_returned_details_are_detached": "passed",
+      "test_character_background.CharacterBackgroundTests.test_bad_fields_types_enums_and_nonexistent_organization_reject_atomically": "passed",
+      "test_character_background.CharacterBackgroundTests.test_claimed_offer_or_employment_does_not_create_an_accepted_contract": "passed",
+      "test_character_background.CharacterBackgroundTests.test_existing_historical_people_cannot_be_rewritten_by_new_character_background": "passed",
+      "test_character_background.CharacterBackgroundTests.test_future_reference_is_pinned_without_becoming_an_event_or_actor_knowledge": "passed",
+      "test_character_background.CharacterBackgroundTests.test_new_player_may_have_no_affiliation_or_career_information": "passed",
+      "test_character_background.CharacterBackgroundTests.test_scottish_origin_and_seeking_english_service_remain_independent_testimony": "passed",
+      "test_communication_contract.CommunicationContractTests.test_acceptance_and_persistence_are_mandatory": "passed",
+      "test_communication_contract.CommunicationContractTests.test_acceptance_is_explicit_conserved_and_persisted_with_same_safe_dto": "passed",
+      "test_communication_contract.CommunicationContractTests.test_actual_colocation_rejects_without_publishing_hidden_whereabouts": "passed",
+      "test_communication_contract.CommunicationContractTests.test_changed_replay_identity_cannot_change_words_terms_or_recipient": "passed",
+      "test_communication_contract.CommunicationContractTests.test_changed_selected_policy_cannot_silently_fulfill_original_offer": "passed",
+      "test_communication_contract.CommunicationContractTests.test_competing_offer_acceptances_defer_both_in_either_frontier_order": "passed",
+      "test_communication_contract.CommunicationContractTests.test_concurrent_acceptance_persists_one_conserved_result": "passed",
+      "test_communication_contract.CommunicationContractTests.test_current_authority_is_checked_by_core_and_rejected_reads_stay_private": "passed",
+      "test_communication_contract.CommunicationContractTests.test_current_offerer_control_is_rechecked_without_hiding_received_offer": "passed",
+      "test_communication_contract.CommunicationContractTests.test_decline_withdraw_and_counteroffer_retain_distinct_received_meanings": "passed",
+      "test_communication_contract.CommunicationContractTests.test_failed_host_save_leaves_stock_evidence_and_offer_unchanged": "passed",
+      "test_communication_contract.CommunicationContractTests.test_foreign_or_unreceived_sources_and_requests_are_unavailable": "passed",
+      "test_communication_contract.CommunicationContractTests.test_forwarded_testimony_does_not_reveal_structured_offer_terms_or_audience": "passed",
+      "test_communication_contract.CommunicationContractTests.test_hidden_stock_permissions_presence_and_unreceived_evidence_do_not_choose_a_menu": "passed",
+      "test_communication_contract.CommunicationContractTests.test_late_failure_rolls_back_transfer_with_actual_attempted_dependencies": "passed",
+      "test_communication_contract.CommunicationContractTests.test_legacy_receipt_apis_also_keep_forwarded_words_separate_from_private_contract": "passed",
+      "test_communication_contract.CommunicationContractTests.test_malformed_terms_unsupported_commands_and_changed_digest_fail_closed": "passed",
+      "test_communication_contract.CommunicationContractTests.test_missing_text_preserves_actual_literal_outcome_without_inference": "passed",
+      "test_communication_contract.CommunicationContractTests.test_no_selected_or_supported_channel_is_explicitly_empty": "passed",
+      "test_communication_contract.CommunicationContractTests.test_non_rise_selected_local_testimony_uses_same_core_without_inventing_stock_or_time": "passed",
+      "test_communication_contract.CommunicationContractTests.test_offer_creation_ignores_hidden_feasibility_and_preserves_exact_terms": "passed",
+      "test_communication_contract.CommunicationContractTests.test_only_received_terminal_status_is_projected": "passed",
+      "test_communication_contract.CommunicationContractTests.test_original_offer_receipt_stays_offered_after_fulfillment": "passed",
+      "test_communication_contract.CommunicationContractTests.test_participants_require_received_attribution_and_do_not_parse_words_or_channel_roster": "passed",
+      "test_communication_contract.CommunicationContractTests.test_pending_json_restart_lost_ack_and_terminal_replay_transfer_only_once": "passed",
+      "test_communication_contract.CommunicationContractTests.test_preparation_and_words_of_acceptance_do_not_transfer_or_accept": "passed",
+      "test_communication_contract.CommunicationContractTests.test_private_fields_and_hidden_actor_records_do_not_enter_public_result_or_shared_view": "passed",
+      "test_communication_contract.CommunicationContractTests.test_received_status_does_not_probe_live_obligation_or_append_remote_updates": "passed",
+      "test_communication_contract.CommunicationContractTests.test_restore_branch_and_stale_state_fences_reject_discarded_future": "passed",
+      "test_communication_contract.CommunicationContractTests.test_snapshot_tracks_actor_branch_restore_and_received_status_not_private_state": "passed",
+      "test_communication_contract.CommunicationContractTests.test_source_contract_preserves_exact_testimony_attribution_and_both_information_sources": "passed",
+      "test_communication_contract.CommunicationContractTests.test_source_window_is_explicitly_bounded_and_detached": "passed",
+      "test_communication_runtime.CommunicationTests.test_competing_acceptances_have_no_arrival_order_resource_winner": "passed",
+      "test_communication_runtime.CommunicationTests.test_concurrent_delivery_accepts_once": "passed",
+      "test_communication_runtime.CommunicationTests.test_explicit_acceptance_transfers_conserved_stock_once_and_grounds_presentation": "passed",
+      "test_communication_runtime.CommunicationTests.test_insufficient_stock_and_protected_seed_reject_atomically_without_partial_information": "passed",
+      "test_communication_runtime.CommunicationTests.test_late_evidence_collision_rolls_back_transfer_and_retains_attempted_dependencies": "passed",
+      "test_communication_runtime.CommunicationTests.test_lost_acknowledgment_and_restore_preserve_receipt_without_repeating_transfer": "passed",
+      "test_communication_runtime.CommunicationTests.test_malformed_or_changed_terms_do_not_change_original_semantic_payload": "passed",
+      "test_communication_runtime.CommunicationTests.test_missing_selected_channel_or_remote_recipient_cannot_invent_reception": "passed",
+      "test_communication_runtime.CommunicationTests.test_no_explicit_acceptance_or_foreign_view_is_authorized": "passed",
+      "test_communication_runtime.CommunicationTests.test_preparation_changes_nothing_and_speech_remains_attributed_testimony": "passed",
+      "test_communication_runtime.CommunicationTests.test_revoked_authority_and_lost_offerer_control_revalidate_on_acceptance": "passed",
+      "test_communication_runtime.CommunicationTests.test_withdraw_decline_and_counteroffer_preserve_distinct_meanings": "passed",
+      "test_communication_runtime.CommunicationTests.test_words_of_acceptance_do_not_purchase_transfer_or_accept_an_offer": "passed",
+      "test_core_domains.CoreDomainTests.test_core_bootstrap_and_equipment_execution_need_no_genre_receiver_module": "passed",
+      "test_core_domains.CoreDomainTests.test_creator_compatibility_import_forwards_to_the_same_core_routine": "passed",
+      "test_draft_intent_offers.DraftIntentOffersTests.test_distinct_stock_offer_and_grant_do_not_imply_each_other": "passed",
+      "test_draft_intent_offers.DraftIntentOffersTests.test_quay_draft_preserves_no_offer_authority_and_real_failed_then_alternative_action": "passed",
+      "test_draft_intent_offers.DraftIntentOffersTests.test_real_rise_offer_requires_separate_acceptance_and_preserves_stock": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_67_three_simultaneous_jobs_cannot_overbook_two_person_site": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_68_commit_shift_cannot_claim_past_work_time": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_69_mandate_and_enrollment_same_frontier_not_sorted_into_authority": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_70_simultaneous_release_and_same_shift_assignment_need_staging": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_71_independent_same_time_tax_assessment_and_different_claim_payment": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_72_unrelated_work_settlement_and_wage_accrual_commute": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_73_same_job_completion_and_wage_credit_require_two_frontiers": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_74_same_time_independent_ship_receive_and_dispatch": "passed",
+      "test_economic_integration.EconomicConcurrencyRegressionTests.test_75_same_epoch_job_uses_only_prior_stock_not_new_receipt": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_37_baseline_actual_work_changes_stocks": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_38_mobilization_releases_civilian_work_not_population": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_39_conscription_alone_does_not_erase_civilian_shift": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_40_release_requires_authorization_before_commencement": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_41_caregiver_mobilization_substitute_diminishes_cooking": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_42_no_substitute_produces_care_gap_without_catastrophe": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_43_dual_mobilization_combines_distinct_shortfalls_once": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_44_shift_no_success_without_inputs_reserved_at_start": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_45_nonqualified_person_cannot_work_by_rolling": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_46_site_maximum_and_worker_time_matter": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_47_reservation_neither_consumes_nor_adds_stock": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_48_transfer_cannot_use_reserved_seed": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_49_transport_is_physical_in_transit": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_50_ongoing_work_interrupt_settles_only_elapsed_hours": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_51_no_labor_credit_before_completion_or_interruption": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_52_payroll_requires_completed_work_and_one_accrual": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_53_tax_assessment_not_revenue": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_54_tax_insufficient_cash_keeps_claim_unpaid": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_55_simultaneous_claims_neither_allocate_by_id_nor_partial_commit": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_56_simultaneous_independent_jobs_can_both_begin": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_57_future_output_not_usable_at_same_frontier": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_58_missing_household_meals_are_not_phantom_consumption": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_59_household_care_not_full_just_from_a_commitment": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_60_serialization_and_replay_identical_under_same_implementation": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_61_tax_plus_wages_never_double_counts_cash": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_62_demand_is_not_output_and_supply_is_not_delivery": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_63_same_time_tax_and_regular_transfer_compete_for_payer_cash": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_64_same_time_tax_and_wage_compete_for_treasury": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_65_two_same_time_wage_claims_cannot_spend_one_obligation_twice": "passed",
+      "test_economic_integration.EconomicIntegrationTests.test_66_two_simultaneous_tax_payments_cannot_double_collect_one_claim": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_changed_attachment_refuses_cached_and_new_reads": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_dates_and_source_ids_are_preserved_and_pages_do_not_merge_duplicates": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_explicit_registration_preserves_pinned_identity": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_member_hash_and_invalid_parameters_are_rejected": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_no_files_are_created_or_changed_by_reads": "passed",
+      "test_historical_archive.HistoricalArchiveTests.test_research_keeps_qualification_units_and_unresolved_sources": "passed",
+      "test_historical_campaigns.HistoricalCatalogueTests.test_all_supplied_dates_and_featured_starts_are_retained": "passed",
+      "test_historical_campaigns.HistoricalCatalogueTests.test_developed_entry_requires_detailed_traceable_player_briefing": "passed",
+      "test_historical_campaigns.HistoricalCatalogueTests.test_invalid_scope_identity_date_and_sources_cannot_be_developed_openings": "passed",
+      "test_historical_campaigns.HistoricalCatalogueTests.test_preview_hash_identifies_exact_source_bytes": "passed",
+      "test_historical_campaigns.HistoricalCatalogueTests.test_unready_unknown_partial_and_stale_selections_fail": "passed",
+      "test_historical_campaigns.HistoricalInitializationTests.test_default_ast_creation_is_unchanged": "passed",
+      "test_historical_campaigns.HistoricalInitializationTests.test_initialization_rejects_existing_unresolved_intent_at_sequence_zero": "passed",
+      "test_historical_campaigns.HistoricalInitializationTests.test_opening_is_a_sourced_setup_with_no_player_or_scheduled_history": "passed",
+      "test_historical_campaigns.HistoricalInitializationTests.test_opening_survives_save_load_and_scene_changes": "passed",
+      "test_historical_campaigns.HistoricalInitializationTests.test_snapshot_copies_and_campaign_scopes_are_independent": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_changed_or_missing_parts_cannot_be_hidden_by_cached_archive": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_concurrent_instances_publish_only_complete_identical_bytes": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_corrupt_cache_fails_instead_of_exposing_changed_records": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_corrupt_part_publishes_no_partial_archive": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_deep_verification_checks_actual_row_counts_and_original_member_bindings": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_deep_verification_refuses_duplicate_or_missing_collection_metadata": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_exact_reconstruction_retains_records_dates_citations_and_rights": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_explicit_registration_resolves_relative_paths_without_discovery": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_failed_publication_cleans_temporary_file_and_retry_succeeds": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_incomplete_collection_set_and_invalid_zip_do_not_publish": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_incomplete_placeholder_is_not_a_ready_archive": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_internal_links_and_linked_part_directory_are_rejected": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_linked_manifest_is_refused": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_manifest_pin_is_checked_after_cache_is_ready": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_manifest_types_sizes_and_duplicate_fields_are_rejected": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_missing_manifest_is_unavailable": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_missing_part_fails_before_publishing_then_recovers": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_nonportable_and_escaping_paths_are_rejected": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_original_archive_hash_is_checked_even_when_all_parts_match": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_original_size_and_part_count_must_agree": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_oversized_manifest_is_bounded": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_reference_validation_failure_publishes_no_cache": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_reordered_and_duplicate_parts_are_not_sorted_or_deduplicated": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_reordered_bytes_fail_individual_hashes": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_retry_and_new_reader_reuse_complete_verified_cache": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_source_changed_during_reference_validation_does_not_publish": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_source_directory_cannot_be_used_as_installation_cache": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_symlink_to_source_outside_manifest_directory_is_rejected": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_truncated_part_is_rejected": "passed",
+      "test_historical_parts.HistoricalPartsTests.test_unrecorded_parts_are_refused_even_after_cache_is_ready": "passed",
+      "test_historical_plans.AssessmentTests.test_all_predicates_true_still_cannot_execute_or_certify_a_victory": "passed",
+      "test_historical_plans.AssessmentTests.test_cross_campaign_and_changed_baseline_are_rejected": "passed",
+      "test_historical_plans.AssessmentTests.test_dead_required_participant_blocks_exact_path_and_only_descendants_recheck": "passed",
+      "test_historical_plans.AssessmentTests.test_fork_rebinds_only_reference_scope_and_preserves_terminal_and_explicit_links": "passed",
+      "test_historical_plans.AssessmentTests.test_graph_locality_and_no_unknown_nodes": "passed",
+      "test_historical_plans.AssessmentTests.test_identity_predicate_uses_dated_current_identity": "passed",
+      "test_historical_plans.AssessmentTests.test_missing_binding_is_unknown_never_intact": "passed",
+      "test_historical_plans.AssessmentTests.test_missing_identity_differs_from_dissolved_identity": "passed",
+      "test_historical_plans.AssessmentTests.test_no_automatic_historical_matching_or_outcome_certification": "passed",
+      "test_historical_plans.AssessmentTests.test_null_does_not_satisfy_an_unknown_equals_unknown_comparison": "passed",
+      "test_historical_plans.AssessmentTests.test_proposed_research_and_empty_requirements_never_establish_intact_path": "passed",
+      "test_historical_plans.AssessmentTests.test_saved_edition_is_pinned_and_old_world_is_preview_only": "passed",
+      "test_historical_plans.AssessmentTests.test_supporting_change_marks_risk_without_automatic_cancellation": "passed",
+      "test_historical_plans.AssessmentTests.test_terminal_status_does_not_resurrect_after_conditions_become_true": "passed",
+      "test_historical_plans.AssessmentTests.test_unsupported_predicates_and_reference_paths_are_not_evaluated": "passed",
+      "test_historical_plans.AssessmentTests.test_views_are_detached_and_byte_identical_inputs_survive_repeated_inspection": "passed",
+      "test_historical_plans.BaselineValidationTests.test_date_precision_and_identity_intervals_are_validated": "passed",
+      "test_historical_plans.BaselineValidationTests.test_duplicate_ids_missing_sources_dangling_dependencies_and_cycles_rejected": "passed",
+      "test_historical_plans.BaselineValidationTests.test_real_partial_baseline_has_three_sourced_1415_anchors": "passed",
+      "test_historical_plans.InitializationTests.test_current_committed_date_overrides_old_opening_and_never_replays_past": "passed",
+      "test_historical_plans.InitializationTests.test_no_registry_or_custom_axis_cannot_use_opening_or_causal_clock": "passed",
+      "test_historical_plans.InitializationTests.test_only_after_cutoff_becomes_prospective_same_day_and_overlap_held": "passed",
+      "test_historical_plans.InitializationTests.test_other_campaign_scenario_is_not_applicable": "passed",
+      "test_historical_plans.InitializationTests.test_range_and_year_precision_do_not_invent_an_occurrence_day": "passed",
+      "test_inference_accounting.AccountingTests.test_concurrent_reconciliation_is_idempotent_and_changed_final_value_conflicts": "passed",
+      "test_inference_accounting.AccountingTests.test_diagnostics_require_operator_access": "passed",
+      "test_inference_accounting.AccountingTests.test_final_charge_releases_only_reviewed_difference_without_changing_campaign_or_attempt": "passed",
+      "test_inference_accounting.AccountingTests.test_inflight_or_legacy_uncertainty_cannot_be_reclassified_free": "passed",
+      "test_inference_accounting.AccountingTests.test_large_reviewed_overruns_remain_exact_and_block_admission": "passed",
+      "test_inference_accounting.AccountingTests.test_missing_permission_evidence_rate_or_finality_cannot_refund_uncertainty": "passed",
+      "test_inference_accounting.AccountingTests.test_new_admission_uses_actual_reviewed_charge_plus_remaining_reservations": "passed",
+      "test_inference_accounting.AccountingTests.test_overrun_is_retained_and_blocks_new_admission": "passed",
+      "test_inference_accounting.AccountingTests.test_reported_tokens_or_error_never_automatically_mean_zero_charge": "passed",
+      "test_intent_communication.IntentCommunicationTests.test_failed_persistence_keeps_world_and_explicit_request": "passed",
+      "test_intent_communication.IntentCommunicationTests.test_normal_starts_review_actual_speech_retry_and_restore_fence": "passed",
+      "test_intent_communication.IntentCommunicationTests.test_ordinary_offer_review_commit_withdraw_and_invalid_account": "passed",
+      "test_intent_communication.IntentCommunicationTests.test_unsupported_missing_and_invalid_command_are_never_committed": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_109_involuntary_loss_over_reservation_commits": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_110_shortfall_retains_original_claim": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_111_no_production_from_suspended_job": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_112_unrelated_tax_still_runs": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_113_independent_cooking_continues": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_114_loss_identity_with_quantity_and_no_double_consumption": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_115_loss_already_applied_cannot_reapply": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_116_disputed_same_frontier_shipment_not_backdated": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_117_independent_same_frontier_cash_commits": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_118_overobserved_loss_rejects_atomically": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_119_two_losses_more_than_supported_total_rejected": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_120_two_supported_losses_sum_without_extra": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_121_transport_specialist_needed": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_122_same_implementation_save_load": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_123_hazard_without_backing_shortfall_keeps_job_live": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_124_claims_for_two_jobs_no_id_priority": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_125_original_population_cash_equipment_conserved": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_126_hazard_on_unreserved_other_material_keeps_job": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_127_engagement_view_no_double_casualties": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_128_local_and_regional_views_read_same_effect": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_129_reporting_not_physical_casualty": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_130_no_residual_named_person_overlap": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_131_missing_actor_disallowed": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_132_missing_historical_checkpoint_disallowed": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_133_same_provenance_in_day_and_month": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_134_multiple_report_ids_still_one_effect": "passed",
+      "test_loss_and_scale.LossAndScaleTests.test_135_save_replay_views_identical": "passed",
+      "test_loss_and_scale.Round5IndependentAuditTests.test_136_audit_loss_journal_and_material_identity": "passed",
+      "test_loss_and_scale.Round5IndependentAuditTests.test_137_audit_detects_tampered_loss_ledger": "passed",
+      "test_loss_and_scale.Round5IndependentAuditTests.test_138_audit_ammunition": "passed",
+      "test_offline_responses.OfflineResponseTests.test_actor_control_foreign_receipts_unknown_events_and_stale_scope_fail_closed": "passed",
+      "test_offline_responses.OfflineResponseTests.test_all_338_variants_and_15_recipes_format_without_dispatch": "passed",
+      "test_offline_responses.OfflineResponseTests.test_composition_rejects_mixed_actors_snapshots_intentions_conflicts_and_missing_receipt": "passed",
+      "test_offline_responses.OfflineResponseTests.test_default_scene_result_needs_no_key_transport_or_network": "passed",
+      "test_offline_responses.OfflineResponseTests.test_host_status_keeps_general_intentions_unresolved_and_hides_private_diagnoses": "passed",
+      "test_offline_responses.OfflineResponseTests.test_library_schema_rejects_unsafe_templates_duplicate_fields_and_missing_anchor": "passed",
+      "test_offline_responses.OfflineResponseTests.test_missing_or_invalid_library_retains_literal_receipt_without_paid_fallback": "passed",
+      "test_offline_responses.OfflineResponseTests.test_no_cross_actor_or_world_response_cache": "passed",
+      "test_offline_responses.OfflineResponseTests.test_nonterminal_phase_text_replay_uses_received_boundary_not_live_progress": "passed",
+      "test_offline_responses.OfflineResponseTests.test_offer_words_do_not_accept_and_only_actual_fulfillment_is_presented": "passed",
+      "test_offline_responses.OfflineResponseTests.test_old_receipt_is_identical_after_more_actions_restart_and_changed_hidden_state": "passed",
+      "test_offline_responses.OfflineResponseTests.test_phase_observation_only_prints_new_knowledge_at_completion": "passed",
+      "test_offline_responses.OfflineResponseTests.test_rise_52_drafts_remain_editable_without_stock_or_permission_feasibility_filter": "passed",
+      "test_offline_responses.OfflineResponseTests.test_scene_drafts_keep_exact_authored_text_and_blocked_options": "passed",
+      "test_offline_responses.OfflineResponseTests.test_settlement_receipts_do_not_mislabel_cumulative_time_as_action_time": "passed",
+      "test_offline_responses.OfflineResponseTests.test_speech_negation_braces_html_and_4096_characters_remain_attributed_testimony": "passed",
+      "test_offline_responses.OfflineResponseTests.test_wording_variants_do_not_rewrite_exact_committed_observations": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_absent_usage_stays_unknown": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_adapter_default_disabled_reads_no_key_and_sends_nothing": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_changed_actual_model_is_recorded_and_rejected": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_http_denial_rate_limit_error_timeout_and_redirect_never_retry": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_incomplete_refusal_or_failed_response_never_becomes_a_proposal": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_invalid_or_excessive_usage_does_not_qualify": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_key_cannot_inject_headers": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_malformed_oversize_duplicate_and_arbitrary_tool_output_are_rejected": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_missing_credential_is_unavailable_without_http": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_network_timeout_and_exception_remain_unknown_and_do_not_redispatch": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_offline_ledger_schema_upgrades_without_resetting_budget_or_attempt": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_real_http_function_reads_bounded_success_and_no_error_body": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_success_is_strict_stateless_and_only_core_acceptance_changes_world": "passed",
+      "test_openai_proposals.OpenAIProposalTests.test_unreviewed_model_host_gateway_version_or_adapter_never_reads_key": "passed",
+      "test_ordinary_communication.OrdinaryCommunicationTests.test_changed_review_digest_rejected": "passed",
+      "test_ordinary_communication.OrdinaryCommunicationTests.test_departure_rejects_actual_speech_without_inventing_remote_contact": "passed",
+      "test_ordinary_communication.OrdinaryCommunicationTests.test_normal_creation_speech_replay_and_reload": "passed",
+      "test_ordinary_communication.OrdinaryCommunicationTests.test_review_is_explicit_and_original_start_remains_without_contact": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_failed_persistence_does_not_record_refusal": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_refusal_then_new_decision_and_exact_retry": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_refusal_with_completed_repair_and_no_unreserved_provision": "passed",
+      "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_invalid_recipient_and_unauthorized_account_reject_atomically": "passed",
+      "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_legacy_default_and_stale_review_keep_offer_unselected": "passed",
+      "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_optional_review_and_offer_proposal_withdrawal_and_replay": "passed",
+      "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_selected_offer_mandate_cannot_authorize_raw_stock_transfer": "passed",
+      "test_phase_contract.PhaseContractTests.test_actor_control_foreign_phases_and_parent_identity_never_leak": "passed",
+      "test_phase_contract.PhaseContractTests.test_actual_success_observes_control_location_rules_and_reservations": "passed",
+      "test_phase_contract.PhaseContractTests.test_both_selected_contexts_expose_attemptable_starts_without_effects": "passed",
+      "test_phase_contract.PhaseContractTests.test_changed_permission_holds_actual_work_and_resume_revalidates_authority": "passed",
+      "test_phase_contract.PhaseContractTests.test_changed_replay_intention_details_or_parent_cannot_rewrite_identity": "passed",
+      "test_phase_contract.PhaseContractTests.test_changed_selected_rule_rejects_atomically_with_private_actual_reads": "passed",
+      "test_phase_contract.PhaseContractTests.test_concurrent_host_delivery_commits_one_phase_and_one_elapsed_span": "passed",
+      "test_phase_contract.PhaseContractTests.test_explicit_acceptance_and_persistence_are_required_before_effects": "passed",
+      "test_phase_contract.PhaseContractTests.test_failed_save_leaves_world_unchanged_and_exact_retry_can_commit": "passed",
+      "test_phase_contract.PhaseContractTests.test_hidden_stock_permission_and_worker_changes_do_not_select_a_winning_menu": "passed",
+      "test_phase_contract.PhaseContractTests.test_invalid_commands_spans_and_travel_adapter_do_not_commit": "passed",
+      "test_phase_contract.PhaseContractTests.test_last_received_status_and_commands_do_not_probe_live_work_and_inspect_refreshes": "passed",
+      "test_phase_contract.PhaseContractTests.test_lost_ack_restart_and_terminal_replay_return_original_public_receipt": "passed",
+      "test_phase_contract.PhaseContractTests.test_no_selected_time_axis_and_no_received_map_mean_no_observation_adapter": "passed",
+      "test_phase_contract.PhaseContractTests.test_observation_completes_once_with_actual_elapsed_and_received_knowledge": "passed",
+      "test_phase_contract.PhaseContractTests.test_observation_pause_resume_cancel_retains_elapsed_and_reservation": "passed",
+      "test_phase_contract.PhaseContractTests.test_original_received_phase_and_snapshot_are_bound_to_actor_branch_and_restore": "passed",
+      "test_phase_contract.PhaseContractTests.test_persistence_receives_the_same_filtered_public_result_as_acknowledgment": "passed",
+      "test_phase_contract.PhaseContractTests.test_public_dto_mutation_and_literal_fallback_do_not_change_core": "passed",
+      "test_phase_contract.PhaseContractTests.test_rejected_stock_attempt_keeps_actual_dependencies_private_and_no_effects": "passed",
+      "test_phase_contract.PhaseContractTests.test_restore_fences_discarded_future_and_new_request_resumes_saved_progress": "passed",
+      "test_phase_contract.PhaseContractTests.test_safe_phase_and_shared_actor_views_omit_private_records_and_certificates": "passed",
+      "test_phase_contract.PhaseContractTests.test_scarce_stock_and_parent_claims_have_no_arrival_order_frontier_winner": "passed",
+      "test_phase_contract.PhaseContractTests.test_stale_request_and_scope_refuse_before_any_new_phase_effect": "passed",
+      "test_phase_contract.PhaseContractTests.test_two_observations_cannot_book_the_same_actor_by_event_id_order": "passed",
+      "test_phase_contract.PhaseContractTests.test_unsupported_contexts_and_generic_tags_do_not_create_phase_capabilities": "passed",
+      "test_phase_contract.PhaseContractTests.test_work_pause_cancel_and_new_explicit_resume_keep_one_physical_project": "passed",
+      "test_phase_contract.PhaseContractTests.test_work_uses_existing_project_reservations_and_conserved_inputs": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_available_choices_do_not_reveal_stock_or_hidden_authority_validity": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_caller_cannot_change_quantities_or_recipients": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_changed_client_action_after_execution_does_not_alter_committed_event": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_competing_received_orders_have_no_simultaneous_arrival_winner": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_completed_order_disappears_and_second_received_action_works": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_dissolved_control_actor_cannot_execute": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_dissolved_controlling_faction_blocks_its_stale_representative": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_faction_representative_uses_actual_faction_policy": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_first_recipient_write_rolls_back_when_second_exhausts_stock": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_instrumentation_construction_and_transaction_clone_invent_no_reads": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_missing_authority_has_negative_lookup_evidence": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_native_core_replay_keeps_frozen_event_without_repeating_effects": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_noncontrolled_actor_cannot_impersonate_commander": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_observation_is_identical_inside_unrelated_constructor": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_other_characters_orders_and_unrelated_directives_are_not_options": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_recipient_dissolution_conflicts_and_then_blocks_execution": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_revoked_current_individual_eligibility_blocks_stale_player_list": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_revoked_expired_or_unreceived_order_is_rejected": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_revoked_mandate_is_observed_and_rejected": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_separate_stock_effects_agree_and_observed_reads_allow_independence": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_simultaneous_eligibility_revocation_conflicts_with_issue": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_success_certificate_contains_actual_authorization_and_stock_reads": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_success_is_one_committed_conserved_effect_without_elapsed_time": "passed",
+      "test_player_actions.PlayerEquipmentActionTests.test_wrong_actor_scope_future_or_expired_mandate_is_rejected": "passed",
+      "test_process_runtime.ProcessTests.test_atomic_and_phased_travel_have_the_same_physical_result": "passed",
+      "test_process_runtime.ProcessTests.test_cancel_retains_physical_project_and_new_explicit_resume_uses_existing_work": "passed",
+      "test_process_runtime.ProcessTests.test_changed_selected_rule_refuses_continuation": "passed",
+      "test_process_runtime.ProcessTests.test_concurrent_delivery_commits_one_phase_and_one_elapsed_span": "passed",
+      "test_process_runtime.ProcessTests.test_existing_wait_advances_the_same_journey_and_produces_received_arrival": "passed",
+      "test_process_runtime.ProcessTests.test_explicit_acceptance_and_actor_control_are_required": "passed",
+      "test_process_runtime.ProcessTests.test_independent_evidence_and_process_advance_share_a_valid_frontier": "passed",
+      "test_process_runtime.ProcessTests.test_lost_ack_and_host_restart_recover_original_phase_receipt": "passed",
+      "test_process_runtime.ProcessTests.test_model_context_receives_only_owned_committed_phase_projection": "passed",
+      "test_process_runtime.ProcessTests.test_observation_publishes_knowledge_only_after_the_selected_duration": "passed",
+      "test_process_runtime.ProcessTests.test_observation_reservation_blocks_another_physical_scene_action": "passed",
+      "test_process_runtime.ProcessTests.test_parent_stays_nonterminal_then_work_finishes_once_across_phase_reload": "passed",
+      "test_process_runtime.ProcessTests.test_partial_travel_moves_actual_people_and_goods_without_teleporting_on_pause": "passed",
+      "test_process_runtime.ProcessTests.test_pause_resume_does_not_repeat_booking_or_elapsed_work": "passed",
+      "test_process_runtime.ProcessTests.test_reserved_traveller_cannot_start_another_walk": "passed",
+      "test_process_runtime.ProcessTests.test_restore_fences_old_phase_but_new_request_continues_saved_progress": "passed",
+      "test_process_runtime.ProcessTests.test_revoked_permission_holds_work_without_partial_consumption_and_resume_rechecks": "passed",
+      "test_process_runtime.ProcessTests.test_status_is_a_received_record_and_does_not_peek_at_remote_progress": "passed",
+      "test_process_runtime.ProcessTests.test_unselected_elapsed_axis_or_rule_source_cannot_start_work": "passed",
+      "test_process_runtime.ProcessTests.test_unsupported_span_or_stale_phase_is_atomic": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_missing_contact_rejects_without_state_or_hidden_menu_filter": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_original_contact_profile_remains_without_selected_decision": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_persistence_failure_does_not_record_the_conversation": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_selected_refusal_then_actual_delivery_retry_and_restore": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_worker_under_player_control_does_not_receive_scripted_decision": "passed",
+      "test_r7_integration.R7IntegrationTests.test_166_scheduled_tracked_start": "passed",
+      "test_r7_integration.R7IntegrationTests.test_167_scheduled_tracked_milestone": "passed",
+      "test_r7_integration.R7IntegrationTests.test_168_unrelated_tax_proceeds_with_work": "passed",
+      "test_r7_integration.R7IntegrationTests.test_169_same_time_same_job_does_not_pick_winner": "passed",
+      "test_r7_integration.R7IntegrationTests.test_170_independent_kitchen_progress_not_blocked": "passed",
+      "test_r7_integration.R7IntegrationTests.test_171_loss_precedes_ambiguous_milestone_no_new_output": "passed",
+      "test_r7_integration.R7IntegrationTests.test_172_milestone_at_prior_time_survives_fire": "passed",
+      "test_r7_integration.R7IntegrationTests.test_173_same_time_start_then_milestone_undetermined": "passed",
+      "test_r7_integration.R7IntegrationTests.test_174_missing_prerequisite_categorized_not_committed": "passed",
+      "test_r7_integration.R7IntegrationTests.test_175_schedule_idempotence_is_not_duplicate_allocation": "passed",
+      "test_r7_integration.R7IntegrationTests.test_176_replay_same_state_after_scheduler": "passed",
+      "test_r7_integration.R7IntegrationTests.test_177_fabrication_consumes_raw_material": "passed",
+      "test_r7_integration.R7IntegrationTests.test_178_work_in_progress_is_not_accepted": "passed",
+      "test_r7_integration.R7IntegrationTests.test_179_inspection_not_physical_transformation": "passed",
+      "test_r7_integration.R7IntegrationTests.test_180_acceptance_consumes_wip_and_produces_one_item": "passed",
+      "test_r7_integration.R7IntegrationTests.test_181_acceptance_twice_not_double_counted": "passed",
+      "test_r7_integration.R7IntegrationTests.test_182_rejection_can_salvage_actual_remaining_stock": "passed",
+      "test_r7_integration.R7IntegrationTests.test_183_salvage_requires_inspection": "passed",
+      "test_r7_integration.R7IntegrationTests.test_184_physical_wip_loss_reconciles_records": "passed",
+      "test_r7_integration.R7IntegrationTests.test_185_damaged_intermediate_cannot_be_accepted": "passed",
+      "test_r7_integration.R7IntegrationTests.test_186_damaged_reject_and_recover_one_actual_unit": "passed",
+      "test_r7_integration.R7IntegrationTests.test_187_selected_profile_required": "passed",
+      "test_r7_integration.R7IntegrationTests.test_188_no_raw_stock_conjured_on_shortage": "passed",
+      "test_r7_integration.R7IntegrationTests.test_189_contested_raw_stock_fabrication_unexecuted": "passed",
+      "test_r7_integration.R7IntegrationTests.test_190_independent_tax_not_blocked_by_fabrication_conflict": "passed",
+      "test_r7_integration.R7IntegrationTests.test_191_scheduled_full_fabrication_disposition": "passed",
+      "test_r7_integration.R7IntegrationTests.test_192_same_frontier_inspection_and_acceptance_need_order": "passed",
+      "test_r7_integration.R7IntegrationTests.test_193_same_frontier_raw_loss_committed_before_claimed_production": "passed",
+      "test_r7_integration.R7IntegrationTests.test_194_material_conservation_and_save_load": "passed",
+      "test_r7_integration.R7IntegrationTests.test_195_wip_and_accepted_goods_are_separate_stock": "passed",
+      "test_r7_integration.R7IntegrationTests.test_196_unsubstantiated_combined_losses_roll_back_full_frontier": "passed",
+      "test_r7_integration.R7IntegrationTests.test_197_damage_after_inspection_invalidates_prior_acceptance": "passed",
+      "test_r7_integration.R7IntegrationTests.test_198_salvage_not_a_renewed_material_source_without_transfer": "passed",
+      "test_r7_integration.R7IntegrationTests.test_199_unknown_schedule_operation_does_not_mutate_world": "passed",
+      "test_r7_integration.R7IntegrationTests.test_200_deferred_claims_roundtrip_save_reload": "passed",
+      "test_r7_integration.R7IntegrationTests.test_201_corrupt_wip_quantity_fails_validation": "passed",
+      "test_r7_integration.R7IntegrationTests.test_202_source_profile_snapshot_controls_later_completion": "passed",
+      "test_r7_integration.R7IntegrationTests.test_203_corrupt_saved_profile_snapshot_is_detected": "passed",
+      "test_r8_dependencies.DependencyTests.test_all_pairwise_cash_predictions_against_actual_interleavings": "passed",
+      "test_r8_dependencies.DependencyTests.test_altered_certificate": "passed",
+      "test_r8_dependencies.DependencyTests.test_contention_has_no_identifier_winner": "passed",
+      "test_r8_dependencies.DependencyTests.test_deleted_and_same_value_writes": "passed",
+      "test_r8_dependencies.DependencyTests.test_disjoint_cash_orders_equivalent": "passed",
+      "test_r8_dependencies.DependencyTests.test_duplicate_ids_rejected": "passed",
+      "test_r8_dependencies.DependencyTests.test_failed_precondition_no_live_write": "passed",
+      "test_r8_dependencies.DependencyTests.test_hidden_formation_dependency_missing_in_r7": "passed",
+      "test_r8_dependencies.DependencyTests.test_independent_component_survives_conflict": "passed",
+      "test_r8_dependencies.DependencyTests.test_indirect_tax_payer_read": "passed",
+      "test_r8_dependencies.DependencyTests.test_missing_key_dependency": "passed",
+      "test_r8_dependencies.DependencyTests.test_mixed_times_rejected": "passed",
+      "test_r8_dependencies.DependencyTests.test_observation_does_not_mutate_source": "passed",
+      "test_r8_dependencies.DependencyTests.test_parent_replacement_conflict": "passed",
+      "test_r8_dependencies.DependencyTests.test_r7_extension_not_silently_certified": "passed",
+      "test_r8_dependencies.DependencyTests.test_read_read_does_not_conflict": "passed",
+      "test_r8_dependencies.DependencyTests.test_scan_detects_phantom": "passed",
+      "test_r8_dependencies.DependencyTests.test_setdefault_list_mutation": "passed",
+      "test_r8_dependencies.DependencyTests.test_stale_certificate": "passed",
+      "test_r8_dependencies.DependencyTests.test_unknown_operation_blocks_batch": "passed",
+      "test_r8_dependencies.StrategyTests.test_autonomous_four_institutions": "passed",
+      "test_r8_dependencies.StrategyTests.test_disabled_worker_changes_decisions": "passed",
+      "test_r8_dependencies.StrategyTests.test_exhaustion_stops_real_production": "passed",
+      "test_r8_dependencies.StrategyTests.test_planner_records_condition_reads": "passed",
+      "test_r8_dependencies.StrategyTests.test_policy_edit_rejected": "passed",
+      "test_r8_dependencies.StrategyTests.test_save_resume_same_state": "passed",
+      "test_r9_collections.CollectionObservationTests.test_clone_and_flatten_are_bookkeeping_but_explicit_nested_copy_is_read": "passed",
+      "test_r9_collections.CollectionObservationTests.test_dictionary_copy_and_equality_retain_decision_reads_without_writes": "passed",
+      "test_r9_collections.CollectionObservationTests.test_dictionary_popitem_retains_order_dependency_and_clear_records_removals": "passed",
+      "test_r9_collections.CollectionObservationTests.test_dictionary_union_observes_both_sources_and_mutates_only_in_place": "passed",
+      "test_r9_collections.CollectionObservationTests.test_native_player_registration_appends_actual_control_list": "passed",
+      "test_r9_collections.CollectionObservationTests.test_nested_held_reference_keeps_its_new_index_after_insertion": "passed",
+      "test_r9_collections.CollectionObservationTests.test_nested_list_mutation_records_its_container_without_outer_false_write": "passed",
+      "test_r9_collections.CollectionObservationTests.test_read_index_slice_length_order_membership_and_absence_are_not_writes": "passed",
+      "test_r9_collections.CollectionObservationTests.test_self_extend_matches_python_list_semantics": "passed",
+      "test_r9_collections.CollectionObservationTests.test_standard_mutators_record_whole_list_writes_and_match_python": "passed",
+      "test_r9_collections.CollectionObservationTests.test_successful_equipment_list_reads_do_not_reserve_authority_as_write": "passed",
+      "test_r9_collections.CollectionObservationTests.test_validation_list_reads_are_separate_and_mutation_is_refused": "passed",
+      "test_r9_runtime.DecisionTests.test_altered_decision_identity": "passed",
+      "test_r9_runtime.DecisionTests.test_approval_executes_once_at_later_time": "passed",
+      "test_r9_runtime.DecisionTests.test_conflicts_survive_reload": "passed",
+      "test_r9_runtime.DecisionTests.test_deny_has_no_cash_effect": "passed",
+      "test_r9_runtime.DecisionTests.test_disjoint_cash_still_commits": "passed",
+      "test_r9_runtime.DecisionTests.test_json_certificate_is_inspectable_after_save": "passed",
+      "test_r9_runtime.DecisionTests.test_no_backdating": "passed",
+      "test_r9_runtime.DecisionTests.test_original_identity_cannot_be_resubmitted": "passed",
+      "test_r9_runtime.DecisionTests.test_other_request_revalidated_against_remaining_cash": "passed",
+      "test_r9_runtime.DecisionTests.test_revoked_mandate": "passed",
+      "test_r9_runtime.DecisionTests.test_unknown_persisted_without_execution": "passed",
+      "test_r9_runtime.DecisionTests.test_wrong_authority": "passed",
+      "test_r9_runtime.FullPathTests.test_clone_retains_observer": "passed",
+      "test_r9_runtime.FullPathTests.test_fabrication_observed": "passed",
+      "test_r9_runtime.FullPathTests.test_loss_and_milestone_conflict": "passed",
+      "test_r9_runtime.FullPathTests.test_milestone_traces_model_and_progress": "passed",
+      "test_r9_runtime.FullPathTests.test_negative_and_scan": "passed",
+      "test_r9_runtime.FullPathTests.test_observation_preserves_source": "passed",
+      "test_r9_runtime.FullPathTests.test_unknown_rejected": "passed",
+      "test_r9_runtime.FullPathTests.test_validation_separate": "passed",
+      "test_r9_runtime.FullPathTests.test_wip_loss_post_dispatch_reconciliation": "passed",
+      "test_r9_runtime.ReceiverTests.test_authorized_revocation_is_recorded": "passed",
+      "test_r9_runtime.ReceiverTests.test_cross_engine_actor_interference": "passed",
+      "test_r9_runtime.ReceiverTests.test_expired_delegation": "passed",
+      "test_r9_runtime.ReceiverTests.test_military_executes_shared_issue_and_order": "passed",
+      "test_r9_runtime.ReceiverTests.test_native_failed_final_validation_atomic": "passed",
+      "test_r9_runtime.ReceiverTests.test_native_replay_idempotent": "passed",
+      "test_r9_runtime.ReceiverTests.test_order_execution_interferes_with_native_issue": "passed",
+      "test_r9_runtime.ReceiverTests.test_revocation_conflicts_with_roman_start": "passed",
+      "test_r9_runtime.ReceiverTests.test_roman_actual_reservation": "passed",
+      "test_r9_runtime.ReceiverTests.test_unauthorized_military_directive": "passed",
+      "test_r9_runtime.ReceiverTests.test_unreceived_military_order_has_no_effects": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_economic_rejection_uses_the_selected_backend": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_error_mismatch_and_nonatomic_probes_are_refused": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_freshness_guard_refuses_an_already_processed_event": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_frontier_retains_rejection_and_its_conflict_for_both_input_orders": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_instrumentation_refusal_does_not_manufacture_a_failed_action_certificate": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_missing_order_retains_the_negative_lookup": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_receiver_rejection_retains_actual_revoked_delegation_read": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_reference_late_rejection_retains_reads_and_rolled_back_attempts": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_selected_core_rejection_retains_scarce_stock_read": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_settlement_rejection_retains_actual_permission_and_worker_reads": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_shared_worker_rejection_keeps_actual_capacity_reads": "passed",
+      "test_rejected_dependencies.RejectedDependencyTests.test_unknown_or_successful_operations_cannot_be_labelled_qualified_rejections": "passed",
+      "test_release_integrity.LayeredReplayTests.test_altered_wip_loss_replay_is_rejected_atomically": "passed",
+      "test_release_integrity.LayeredReplayTests.test_confirmed_loss_commits_while_same_time_work_stays_unexecuted": "passed",
+      "test_release_integrity.LayeredReplayTests.test_inconsistent_combined_losses_roll_back_frontier": "passed",
+      "test_release_integrity.LayeredReplayTests.test_wip_loss_replay_does_not_repeat_reconciliation": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_altered_direct_replay_is_rejected_atomically": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_direct_submission_detaches_caller_list": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_frontier_submission_detaches_caller_list": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_native_submission_detaches_outer_payload": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_saved_journal_payload_tampering_is_rejected": "passed",
+      "test_release_integrity.PayloadOwnershipTests.test_scheduled_request_detaches_caller_list": "passed",
+      "test_response_depot.ResponseDepotTests.test_all_1000_variants_with_four_synthetic_theme_labels_and_no_dispatch": "passed",
+      "test_response_depot.ResponseDepotTests.test_all_32_recipes_accept_full_and_required_only_contexts": "passed",
+      "test_response_depot.ResponseDepotTests.test_corrupted_source_retains_literal_text_without_provider_or_truncation": "passed",
+      "test_response_depot.ResponseDepotTests.test_drafts_without_required_known_labels_remain_literal_authored_intentions": "passed",
+      "test_response_depot.ResponseDepotTests.test_exact_catalog_bytes_counts_and_compatibility_bank_are_preserved": "passed",
+      "test_response_depot.ResponseDepotTests.test_intake_validates_the_exact_hashed_bytes_if_file_changes_during_read": "passed",
+      "test_response_depot.ResponseDepotTests.test_invalid_tags_unsafe_placeholders_and_mixed_scopes_are_rejected": "passed",
+      "test_response_depot.ResponseDepotTests.test_public_status_never_uses_a_private_diagnostic_to_select_words": "passed",
+      "test_response_depot.ResponseDepotTests.test_runtime_preserves_exact_text_negation_braces_newlines_and_original_elapsed": "passed",
+      "test_response_depot.ResponseDepotTests.test_semantic_tags_remain_drafts_and_never_become_operation_ids": "passed",
+      "test_response_options.ResponsePromptTests.test_duplicate_prompt_and_replayed_event_do_not_repeat_receipt": "passed",
+      "test_response_options.ResponsePromptTests.test_invalid_prompts_are_atomic_and_do_not_establish_world_facts": "passed",
+      "test_response_options.ResponsePromptTests.test_latest_active_received_prompt_is_selected_without_mutation": "passed",
+      "test_response_options.ResponsePromptTests.test_noncombat_empty_choices_still_allow_own_response": "passed",
+      "test_response_options.ResponsePromptTests.test_only_explicit_received_context_creates_response_drafts": "passed",
+      "test_response_options.ResponsePromptTests.test_other_recipients_and_uncontrolled_characters_do_not_share_prompts": "passed",
+      "test_response_options.ResponsePromptTests.test_projection_and_input_are_detached_from_authoritative_records": "passed",
+      "test_response_options.ResponsePromptTests.test_prompt_receipt_has_observed_information_dependencies": "passed",
+      "test_response_options.ResponsePromptTests.test_receipt_changes_information_only_and_cannot_resolve_a_choice": "passed",
+      "test_response_options.ResponsePromptTests.test_risky_received_choice_is_not_filtered_into_a_guaranteed_winning_list": "passed",
+      "test_response_options.ResponsePromptTests.test_supplied_combat_choices_override_generic_drafts": "passed",
+      "test_response_options.ResponsePromptTests.test_tied_latest_prompts_do_not_create_priority_from_ids": "passed",
+      "test_rise_start_communication.RiseOrdinaryCommunicationTests.test_actual_colocation_rechecked_after_founder_leaves": "passed",
+      "test_rise_start_communication.RiseOrdinaryCommunicationTests.test_actual_speech_requires_acceptance_and_replays_after_reload_once": "passed",
+      "test_rise_start_communication.RiseOrdinaryCommunicationTests.test_changed_introduction_invalidates_prior_review": "passed",
+      "test_rise_start_communication.RiseOrdinaryCommunicationTests.test_legacy_saved_state_is_not_reseeded_by_read": "passed",
+      "test_rise_start_communication.RiseOrdinaryCommunicationTests.test_reviewed_start_receives_only_disclosed_introductions_and_no_private_offer": "passed",
+      "test_scene_actions.SceneActionTests.test_absent_future_or_wrong_map_receipt_is_refused": "passed",
+      "test_scene_actions.SceneActionTests.test_action_payload_cannot_override_effects": "passed",
+      "test_scene_actions.SceneActionTests.test_actual_reads_include_control_map_location_elapsed_and_condition": "passed",
+      "test_scene_actions.SceneActionTests.test_complete_arc_commits_conserved_delivery_and_repeatable_next_action": "passed",
+      "test_scene_actions.SceneActionTests.test_delivery_reads_actual_stock_and_changes_conserved_custody": "passed",
+      "test_scene_actions.SceneActionTests.test_late_failure_rolls_back_transfer_and_elapsed_work": "passed",
+      "test_scene_actions.SceneActionTests.test_location_wrong_action_invalid_duration_or_axis_is_refused": "passed",
+      "test_scene_actions.SceneActionTests.test_movement_is_evidence_backed_and_actually_received": "passed",
+      "test_scene_actions.SceneActionTests.test_native_frozen_replay_and_public_duplicate_do_not_repeat_work": "passed",
+      "test_scene_actions.SceneActionTests.test_options_do_not_filter_hidden_conditions_or_depleted_stock": "passed",
+      "test_scene_actions.SceneActionTests.test_other_activity_cannot_be_bypassed_without_elapsed_binding": "passed",
+      "test_scene_actions.SceneActionTests.test_other_actor_no_control_and_revoked_eligibility_are_refused": "passed",
+      "test_scene_actions.SceneActionTests.test_real_route_condition_changes_outcome": "passed",
+      "test_scene_setup.SceneSetupTests.test_actual_pack_arc_commits_movement_observation_failure_and_delivery": "passed",
+      "test_scene_setup.SceneSetupTests.test_default_does_not_invent_a_scene_or_possessions": "passed",
+      "test_scene_setup.SceneSetupTests.test_human_capitalization_is_accepted_without_rewriting_identity": "passed",
+      "test_scene_setup.SceneSetupTests.test_initializer_cannot_insert_scene_after_continuing_play": "passed",
+      "test_scene_setup.SceneSetupTests.test_loaded_campaign_uses_saved_rules_not_changed_pack": "passed",
+      "test_scene_setup.SceneSetupTests.test_pack_is_reviewed_fiction_and_no_option_for_other_profile": "passed",
+      "test_scene_setup.SceneSetupTests.test_scene_content_change_invalidates_old_review": "passed",
+      "test_selective_and_scale.Round4Tests.test_100_serialization_replay_same_code": "passed",
+      "test_selective_and_scale.Round4Tests.test_101_permutation_independent_components_equivalent_resources": "passed",
+      "test_selective_and_scale.Round4Tests.test_102_unknown_operation_cannot_commit_independent_known_side_effects": "passed",
+      "test_selective_and_scale.Round4Tests.test_103_submission_id_not_reused_after_deferral": "passed",
+      "test_selective_and_scale.Round4Tests.test_104_three_party_contention_blocks_only_shared_cash_component": "passed",
+      "test_selective_and_scale.Round4Tests.test_105_no_partial_application_of_invalid_decision": "passed",
+      "test_selective_and_scale.Round4Tests.test_106_independent_law_and_cash_no_cross_inference": "passed",
+      "test_selective_and_scale.Round4Tests.test_107_coverage_save_restore_and_monthly_projection": "passed",
+      "test_selective_and_scale.Round4Tests.test_108_overlap_in_different_streams_is_not_automatically_same_stock": "passed",
+      "test_selective_and_scale.Round4Tests.test_76_competing_treasury_and_independent_work": "passed",
+      "test_selective_and_scale.Round4Tests.test_77_deferred_requests_do_not_preempt_future_unrelated_job": "passed",
+      "test_selective_and_scale.Round4Tests.test_78_explicit_cash_allocation_at_later_frontier": "passed",
+      "test_selective_and_scale.Round4Tests.test_79_no_default_priority_or_request_id_winner": "passed",
+      "test_selective_and_scale.Round4Tests.test_80_invalid_local_group_does_not_block_independent_tax": "passed",
+      "test_selective_and_scale.Round4Tests.test_81_independent_cash_from_distinct_source": "passed",
+      "test_selective_and_scale.Round4Tests.test_82_start_job_same_frontier_competing_stock_defers_all_competitors": "passed",
+      "test_selective_and_scale.Round4Tests.test_83_simultaneous_new_mandate_and_enrollment_remain_contested": "passed",
+      "test_selective_and_scale.Round4Tests.test_84_simultaneous_job_finish_and_claim_need_two_frontiers": "passed",
+      "test_selective_and_scale.Round4Tests.test_85_different_sites_independent_and_conserve": "passed",
+      "test_selective_and_scale.Round4Tests.test_86_kit_overcommit_does_not_block_other_source": "passed",
+      "test_selective_and_scale.Round4Tests.test_87_allocation_cannot_be_replayed": "passed",
+      "test_selective_and_scale.Round4Tests.test_88_allocation_cannot_fake_time_or_authority": "passed",
+      "test_selective_and_scale.Round4Tests.test_89_unauthorized_selection_invalid_atomic": "passed",
+      "test_selective_and_scale.Round4Tests.test_90_overspend_at_decision_time_invalid_atomic": "passed",
+      "test_selective_and_scale.Round4Tests.test_91_unknown_operation_uses_global_footprint": "passed",
+      "test_selective_and_scale.Round4Tests.test_92_source_idempotent_replay": "passed",
+      "test_selective_and_scale.Round4Tests.test_93_source_replay_change_rejected": "passed",
+      "test_selective_and_scale.Round4Tests.test_94_aggregate_same_actor_overlap_rejected": "passed",
+      "test_selective_and_scale.Round4Tests.test_95_aggregate_residual_excludes_already_detailed_actor": "passed",
+      "test_selective_and_scale.Round4Tests.test_96_daily_monthly_views_do_not_write_more_grain": "passed",
+      "test_selective_and_scale.Round4Tests.test_97_partial_span_does_not_claim_prorated_quantity": "passed",
+      "test_selective_and_scale.Round4Tests.test_98_nonoverlapping_same_worker_can_continue": "passed",
+      "test_selective_and_scale.Round4Tests.test_99_conservative_empty_cohort_rejected": "passed",
+      "test_settlement.SettlementTests.test_actual_dependency_observation_and_conflicts_never_choose_by_identity": "passed",
+      "test_settlement.SettlementTests.test_coarse_and_fine_advances_produce_equal_consequential_state": "passed",
+      "test_settlement.SettlementTests.test_configuration_axes_are_independent_and_population_stock_are_physical": "passed",
+      "test_settlement.SettlementTests.test_control_scope_and_exact_core_replay": "passed",
+      "test_settlement.SettlementTests.test_delegated_and_autonomous_work_share_inputs_while_founder_is_elsewhere": "passed",
+      "test_settlement.SettlementTests.test_eight_families_remain_unqualified_and_setup_digest_fences_backtracking": "passed",
+      "test_settlement.SettlementTests.test_established_core_location_record_remains_usable_by_settlement_actions": "passed",
+      "test_settlement.SettlementTests.test_migration_preserves_existing_people_goods_and_delays_membership_until_arrival": "passed",
+      "test_settlement.SettlementTests.test_missing_construction_model_holds_only_its_dependent_action": "passed",
+      "test_settlement.SettlementTests.test_no_permission_means_atomic_rejection_and_no_free_goods_from_grant": "passed",
+      "test_settlement.SettlementTests.test_pause_retains_progress_and_prevents_double_booking": "passed",
+      "test_settlement.SettlementTests.test_provision_consumes_once_retains_seed_and_never_erases_people": "passed",
+      "test_settlement.SettlementTests.test_reserved_inputs_partial_work_completion_and_new_identity_do_not_duplicate": "passed",
+      "test_settlement.SettlementTests.test_revoked_permission_holds_work_without_rewriting_history": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_capabilities_and_drafts_do_not_filter_hidden_blockers_or_stock": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_changed_replay_payload_cannot_reinterpret_an_accepted_request": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_changed_state_and_revoked_control_reject_fresh_requests": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_concurrent_host_compare_and_swap_saves_one_effect": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_core_declaration_observes_current_control_and_rejects_revoked_eligibility": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_drafts_are_capability_bound_editable_and_selection_and_preparation_commit_nothing": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_equipment_without_new_adapter_keeps_existing_honest_result": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_explicit_acceptance_and_mandatory_persistence_precede_any_effect": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_failed_save_leaves_world_unchanged_and_does_not_acknowledge_result": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_forged_action_or_capability_is_rechecked_before_core": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_fresh_process_executes_non_rise_without_provider_modules_or_other_components": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_generic_semantic_tag_or_unknown_capability_never_routes": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_lost_ack_serialized_pending_request_restarts_with_original_receipt": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_missing_adapter_retains_explicit_intention_as_unresolved_without_creating_mechanics": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_missing_depot_retains_exact_outcome_drafts_and_unresolved_status_without_dispatch": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_non_rise_actual_delivery_conserves_stock_and_duplicate_does_not_repeat_it": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_non_rise_blocked_movement_keeps_actual_failure_and_elapsed": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_private_and_foreign_evidence_is_absent_and_sources_status_and_time_remain": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_receipt_replay_never_appends_current_information_or_cross_actor_data": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_received_record_truncation_is_explicit_and_does_not_imply_absence": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_restore_and_branch_fences_reject_discarded_future_requests": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_same_contract_executes_two_actions_in_independently_initialized_contexts": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_serialization_is_strict_and_world_scope_remains_backwards_compatible": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_shared_receipt_supports_actual_phase_and_received_communication_without_inventing_rules": "passed",
+      "test_shared_runtime.SharedRuntimeTests.test_snapshot_changes_with_branch_restore_and_actual_received_text": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_admitted_attempt_cannot_be_admitted_twice_or_reclassified_unsent": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_cached_proposal_cancellation_hides_draft_and_preserves_private_recovery": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_callback_cancellation_before_registration_also_prevents_later_retry": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_cancellation_after_reservation_and_before_admission_never_enters_transport": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_cancellation_before_registration_survives_restart_without_reservation": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_cancellation_wins_between_preflight_and_registration": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_cancelling_accepted_action_preserves_durable_core_receipt": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_deadline_after_reservation_prevents_transport_admission": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_expired_cached_draft_is_unavailable_without_losing_its_recovery_record": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_legacy_unknown_attempt_stays_unknown_across_schema_upgrade": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_route_revocation_or_replacement_after_reservation_prevents_transport": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_session_closure_after_reservation_prevents_transport_admission": "passed",
+      "test_solo_lifecycle.SoloLifecycleTests.test_wrong_route_duplicate_cannot_terminate_an_authorized_inflight_attempt": "passed",
+      "test_solo_provider.SoloProviderTests.test_cancelled_or_expired_uncommitted_proposal_cannot_act": "passed",
+      "test_solo_provider.SoloProviderTests.test_changed_state_revoked_control_and_restore_fence_old_proposals": "passed",
+      "test_solo_provider.SoloProviderTests.test_concurrent_acceptance_never_repeats_effects": "passed",
+      "test_solo_provider.SoloProviderTests.test_concurrent_duplicate_reserves_and_dispatches_once": "passed",
+      "test_solo_provider.SoloProviderTests.test_concurrent_reservations_and_budget_are_finite": "passed",
+      "test_solo_provider.SoloProviderTests.test_current_conflicting_commitment_rejects_with_observed_reads": "passed",
+      "test_solo_provider.SoloProviderTests.test_deadline_and_cancellation_ignore_late_proposal_but_record_usage": "passed",
+      "test_solo_provider.SoloProviderTests.test_default_broker_and_candidate_route_are_disabled": "passed",
+      "test_solo_provider.SoloProviderTests.test_depleted_stock_uses_existing_rule_without_partial_transfer": "passed",
+      "test_solo_provider.SoloProviderTests.test_duplicate_and_altered_payload_or_fallback_do_not_redispatch": "passed",
+      "test_solo_provider.SoloProviderTests.test_explicit_acceptance_keeps_original_semantics_and_sources": "passed",
+      "test_solo_provider.SoloProviderTests.test_foreign_actor_cannot_prepare_or_accept": "passed",
+      "test_solo_provider.SoloProviderTests.test_hidden_blocker_retains_risky_option_and_actual_failed_outcome": "passed",
+      "test_solo_provider.SoloProviderTests.test_invalid_outputs_cannot_commit_or_disclose_exception_text": "passed",
+      "test_solo_provider.SoloProviderTests.test_late_output_is_unavailable_before_presentation_after_state_restore_or_close": "passed",
+      "test_solo_provider.SoloProviderTests.test_lost_save_ack_recovers_from_durable_core_receipt": "passed",
+      "test_solo_provider.SoloProviderTests.test_missing_policy_identity_price_or_capability_denies_dispatch": "passed",
+      "test_solo_provider.SoloProviderTests.test_persist_failure_and_competing_host_revision_leave_world_unchanged": "passed",
+      "test_solo_provider.SoloProviderTests.test_pre_dispatch_cancel_deadline_or_fallback_has_no_call": "passed",
+      "test_solo_provider.SoloProviderTests.test_received_context_does_not_expose_world_or_hidden_facts": "passed",
+      "test_solo_provider.SoloProviderTests.test_restart_after_dispatch_and_before_result_never_redispatches": "passed",
+      "test_solo_provider.SoloProviderTests.test_route_mutation_without_version_change_cannot_reuse_a_proposal": "passed",
+      "test_solo_provider.SoloProviderTests.test_two_actions_then_conserved_delivery_survive_reload_and_replay": "passed",
+      "test_solo_rise.SoloRiseTests.test_continuing_work_uses_actual_reservations_consumption_receipts_and_reload": "passed",
+      "test_solo_rise.SoloRiseTests.test_denied_build_is_atomic_and_retains_rejection_dependencies": "passed",
+      "test_solo_rise.SoloRiseTests.test_existing_worker_commitment_cannot_be_bypassed_by_new_walk": "passed",
+      "test_solo_rise.SoloRiseTests.test_hidden_own_or_foreign_feasibility_does_not_change_received_input": "passed",
+      "test_solo_rise.SoloRiseTests.test_local_only_route_cannot_dispatch_rise": "passed",
+      "test_solo_rise.SoloRiseTests.test_long_received_history_keeps_a_bounded_legitimate_request_window": "passed",
+      "test_start_readiness.StartReadinessTests.test_acceptance_and_host_cas_are_mandatory_for_sourced_observation": "passed",
+      "test_start_readiness.StartReadinessTests.test_actual_control_revocation_rejects_even_with_the_old_player_list": "passed",
+      "test_start_readiness.StartReadinessTests.test_all_37_dated_reference_entries_distinguish_default_existing_mode_from_playability": "passed",
+      "test_start_readiness.StartReadinessTests.test_changed_opening_content_invalidates_review_without_mutating_source_world": "passed",
+      "test_start_readiness.StartReadinessTests.test_changed_replay_and_stale_new_request_cannot_rewrite_outcome": "passed",
+      "test_start_readiness.StartReadinessTests.test_civil_date_is_sourced_received_day_precision_separate_from_other_axes": "passed",
+      "test_start_readiness.StartReadinessTests.test_competing_observations_have_no_arrival_order_winner": "passed",
+      "test_start_readiness.StartReadinessTests.test_concurrent_acceptance_commits_one_observation_and_elapsed_span": "passed",
+      "test_start_readiness.StartReadinessTests.test_content_change_between_review_check_and_installation_is_refused": "passed",
+      "test_start_readiness.StartReadinessTests.test_diverged_template_and_elapsed_do_not_reset_received_initial_date_or_location": "passed",
+      "test_start_readiness.StartReadinessTests.test_evidence_identity_collision_rejects_with_actual_observed_dependencies": "passed",
+      "test_start_readiness.StartReadinessTests.test_exact_json_pending_request_restart_and_lost_ack_replay_once": "passed",
+      "test_start_readiness.StartReadinessTests.test_existing_henry_requires_a_separate_explicit_sourced_opening": "passed",
+      "test_start_readiness.StartReadinessTests.test_failed_persistence_cannot_publish_observation_or_elapsed": "passed",
+      "test_start_readiness.StartReadinessTests.test_first_explicit_core_attempt_delivers_observation_and_actual_elapsed_without_free_stock": "passed",
+      "test_start_readiness.StartReadinessTests.test_foreign_actor_cannot_receive_henrys_start_or_capabilities": "passed",
+      "test_start_readiness.StartReadinessTests.test_incompatible_existing_person_and_fictional_openings_fail_atomically": "passed",
+      "test_start_readiness.StartReadinessTests.test_john_is_eligible_but_his_playable_mode_stays_held_without_personal_context": "passed",
+      "test_start_readiness.StartReadinessTests.test_literal_fallback_preserves_the_actual_observation_without_paid_narration": "passed",
+      "test_start_readiness.StartReadinessTests.test_new_authored_and_declaration_modes_are_distinct_from_existing_person": "passed",
+      "test_start_readiness.StartReadinessTests.test_other_snapshot_cannot_select_henrys_1415_context": "passed",
+      "test_start_readiness.StartReadinessTests.test_plain_existing_selection_never_silently_receives_the_optional_scene": "passed",
+      "test_start_readiness.StartReadinessTests.test_precreation_contract_does_not_probe_hidden_resources_or_choose_a_winning_menu": "passed",
+      "test_start_readiness.StartReadinessTests.test_private_results_and_hidden_world_fields_are_absent_from_actor_contract": "passed",
+      "test_start_readiness.StartReadinessTests.test_real_actor_reservation_rejects_with_observed_reads_and_no_knowledge_or_time_leak": "passed",
+      "test_start_readiness.StartReadinessTests.test_reinitialization_and_precreation_review_of_a_continuing_world_are_refused": "passed",
+      "test_start_readiness.StartReadinessTests.test_restore_and_branch_fences_reject_discarded_future_without_reinitialization": "passed",
+      "test_start_readiness.StartReadinessTests.test_save_load_and_read_do_not_reload_templates_or_reapply_context": "passed",
+      "test_start_readiness.StartReadinessTests.test_sourced_calendar_does_not_replace_later_exact_own_background_testimony": "passed",
+      "test_start_readiness.StartReadinessTests.test_sourced_start_initializes_only_reviewed_personal_context_and_calendar": "passed",
+      "test_start_readiness.StartReadinessTests.test_three_distinct_supported_contexts_use_existing_handlers_without_template_seeding": "passed",
+      "test_start_readiness.StartReadinessTests.test_unknown_civil_date_in_generic_profile_remains_unknown": "passed",
+      "test_start_readiness.StartReadinessTests.test_unreceived_calendar_and_context_are_not_recovered_from_template_or_review": "passed",
+      "test_starting_selection.StartingSelectionTests.test_all_generic_profiles_can_create_one_actual_player_without_free_resources": "passed",
+      "test_starting_selection.StartingSelectionTests.test_ast_preserves_canonical_character_and_requires_no_invented_stats": "passed",
+      "test_starting_selection.StartingSelectionTests.test_existing_historical_choice_controls_one_person_and_not_an_automatic_kingdom": "passed",
+      "test_starting_selection.StartingSelectionTests.test_faction_choice_requires_a_permitted_representative_and_creates_no_mandate": "passed",
+      "test_starting_selection.StartingSelectionTests.test_historical_options_are_dated_and_separate_participation_from_playability": "passed",
+      "test_starting_selection.StartingSelectionTests.test_live_availability_never_reloads_a_historical_opening": "passed",
+      "test_starting_selection.StartingSelectionTests.test_missing_invalid_stale_and_ineligible_choices_are_rejected_without_mutation": "passed",
+      "test_starting_selection.StartingSelectionTests.test_review_digest_is_stable_across_new_campaign_scopes_and_invalidates_changed_policy": "passed",
+      "test_starting_selection.StartingSelectionTests.test_shared_faction_lifecycle_runs_through_all_seven_profile_backends": "passed",
+      "test_strategy_rights.KnowledgeTests.test_hidden_change_does_not_change_business_projection_or_proposal": "passed",
+      "test_strategy_rights.KnowledgeTests.test_projection_contains_selected_records_and_has_no_world_reference": "passed",
+      "test_strategy_rights.KnowledgeTests.test_receipt_is_prospective_and_old_selection_survives": "passed",
+      "test_strategy_rights.KnowledgeTests.test_unknown_disability_is_not_assumed_false": "passed",
+      "test_strategy_rights.KnowledgeTests.test_unreceived_stock_cannot_be_assumed_available": "passed",
+      "test_strategy_rights.RightsTests.test_denied_operation_does_not_reach_frontier": "passed",
+      "test_strategy_rights.RightsTests.test_government_cannot_pay_with_assessment_right_only": "passed",
+      "test_strategy_rights.RightsTests.test_revoked_binding_cannot_be_silently_restored": "passed",
+      "test_strategy_rights.RightsTests.test_right_can_be_revoked_between_commitment_and_work": "passed",
+      "test_strategy_rights.RightsTests.test_selection_cannot_be_silently_edited": "passed",
+      "test_strategy_rights.RightsTests.test_selection_cannot_expose_entire_world": "passed",
+      "test_strategy_rights.RightsTests.test_site_scope_can_be_revoked_before_starting_work": "passed",
+      "test_strategy_rights.RightsTests.test_subject_scope_prevents_plan_for_uncontrolled_worker": "passed",
+      "test_strategy_rights.RightsTests.test_truth_revalidation_refuses_now_unbacked_work": "passed",
+      "test_strategy_rights.SustainedExecutionTests.test_default_fourteen_day_resources_and_decisions": "passed",
+      "test_strategy_rights.SustainedExecutionTests.test_save_resume_preserves_boundaries_and_exact_decisions": "passed",
+      "test_suite.SuiteTests.test_able_not_created_as_second_horse": "passed",
+      "test_suite.SuiteTests.test_actor_registration_caller_ownership": "passed",
+      "test_suite.SuiteTests.test_all_profiles_share_the_same_kernel": "passed",
+      "test_suite.SuiteTests.test_common_conflict_decisions_durable_and_revalidate": "passed",
+      "test_suite.SuiteTests.test_common_site_capacity_detects_competing_institutions": "passed",
+      "test_suite.SuiteTests.test_completed_bookings_share_one_capacity_and_actor_ledger": "passed",
+      "test_suite.SuiteTests.test_content_lookup_preserves_source_status_and_state": "passed",
+      "test_suite.SuiteTests.test_deprecated_horse_lookup_returns_canonical_identity": "passed",
+      "test_suite.SuiteTests.test_each_genre_can_establish_an_actor_and_evidence": "passed",
+      "test_suite.SuiteTests.test_genres_are_six_and_ast_is_campaign_library": "passed",
+      "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite": "skipped",
+      "test_suite.SuiteTests.test_legacy_names_and_canonical_operations_have_same_domain_effects": "passed",
+      "test_suite.SuiteTests.test_military_equipment_reads_received_directive_and_preserves_stock": "passed",
+      "test_suite.SuiteTests.test_roman_delegation_revoke_conflict_and_expiry": "passed",
+      "test_suite.SuiteTests.test_unknown_native_numeric_effect_is_refused": "passed",
+      "test_suite.SuiteTests.test_unknown_request_can_be_denied_but_not_executed": "passed",
+      "test_supported_intent.SupportedIntentTests.test_changed_review_and_actual_wrong_origin_reject_without_effect": "passed",
+      "test_supported_intent.SupportedIntentTests.test_ordinary_offer_prerequisites_do_not_invent_authority_or_consent": "passed",
+      "test_supported_intent.SupportedIntentTests.test_two_ordinary_contexts_review_actual_action_and_immutable_retry": "passed",
+      "test_supported_intent.SupportedIntentTests.test_unsupported_and_ambiguous_preserve_exact_text_and_do_not_prepare": "passed",
+      "test_temporal_registry.CoreEntityDispatchTests.test_core_dispatches_all_five_in_one_state_and_retains_replay_idempotence": "passed",
+      "test_temporal_registry.EntityOperationTests.test_all_five_operations_use_one_committed_registry_point": "passed",
+      "test_temporal_registry.EntityOperationTests.test_dated_territory_and_resource_references_are_copied_and_not_quantities": "passed",
+      "test_temporal_registry.EntityOperationTests.test_ended_or_missing_entities_cannot_receive_new_relations_or_playability": "passed",
+      "test_temporal_registry.EntityOperationTests.test_future_backdated_unsourced_and_reused_identity_mutations_leave_state_intact": "passed",
+      "test_temporal_registry.EntityOperationTests.test_lifecycle_does_not_select_successor_recreate_entity_or_rehydrate_source": "passed",
+      "test_temporal_registry.EntityOperationTests.test_mutation_does_not_treat_causal_sequence_as_elapsed_calendar": "passed",
+      "test_temporal_registry.EntityOperationTests.test_new_character_must_reference_the_existing_actual_actor": "passed",
+      "test_temporal_registry.EntityOperationTests.test_same_point_death_closes_prior_causal_policy_and_relations": "passed",
+      "test_temporal_registry.EntityOperationTests.test_selection_requires_explicit_user_choice_and_allowed_actor_without_nation_powers": "passed",
+      "test_temporal_registry.JulianCalendarTests.test_invalid_or_unprovided_calendar_values_are_not_invented": "passed",
+      "test_temporal_registry.JulianCalendarTests.test_known_julian_day_and_consecutive_month_boundaries": "passed",
+      "test_temporal_registry.RegistryValidationTests.test_future_playthrough_data_overlaps_and_unsourced_versions_are_rejected": "passed",
+      "test_temporal_registry.RegistryValidationTests.test_invalid_or_implicit_control_rights_are_rejected": "passed",
+      "test_temporal_registry.SnapshotTests.test_historical_template_can_be_browsed_but_cannot_be_mutated_as_live": "passed",
+      "test_temporal_registry.SnapshotTests.test_snapshot_excludes_future_entities_scenarios_relations_and_policies": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_collapsed_entity_is_not_resurrected_at_a_later_opening": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_custom_axis_is_explicit_metadata_not_an_implicit_converter": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_existence_participation_and_scenario_eligibility_are_distinct": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_inspection_uses_only_registry_as_of_and_never_rehydrates_a_template": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_relation_end_and_disputed_status_are_not_active_participation": "passed",
+      "test_temporal_registry.TemporalQueryTests.test_temporal_names_government_and_leaders_use_the_requested_point": "passed",
+      "test_travel_capability.TravelCapabilityTests.test_actual_location_competing_claim_and_changed_rules_reject_atomically": "passed",
+      "test_travel_capability.TravelCapabilityTests.test_selected_travel_uses_real_progress_pause_reload_arrival_and_original_retry": "passed",
+      "test_travel_capability.TravelCapabilityTests.test_views_do_not_probe_private_location_and_reveal_no_internal_state": "passed",
+      "test_unification.ConcurrencyRegression.test_31_simultaneous_underfunded_transfers_neither_silently_wins": "passed",
+      "test_unification.ConcurrencyRegression.test_32_same_time_incompatible_shifts_are_atomic_rejection": "passed",
+      "test_unification.ConcurrencyRegression.test_33_same_time_independent_funded_transfers_both_commit": "passed",
+      "test_unification.ConcurrencyRegression.test_34_same_time_capture_and_escape_requires_causal_order": "passed",
+      "test_unification.ConcurrencyRegression.test_35_undisclosed_invalid_event_does_not_partially_commit_epoch": "passed",
+      "test_unification.ConcurrencyRegression.test_36_order_issue_and_same_time_receipt_not_sorted_by_id": "passed",
+      "test_unification.UnificationTests.test_01_order_target_does_not_create_people": "passed",
+      "test_unification.UnificationTests.test_02_cohort_extract_and_named_enlist_do_not_double_population": "passed",
+      "test_unification.UnificationTests.test_03_duplicate_enrollment_invalid_atomic": "passed",
+      "test_unification.UnificationTests.test_04_over_recruit_invalid_atomic": "passed",
+      "test_unification.UnificationTests.test_05_equipment_issued_by_real_conserved_transfer": "passed",
+      "test_unification.UnificationTests.test_06_readiness_subset_blocks_incompatible_care_shift": "passed",
+      "test_unification.UnificationTests.test_07_person_can_hold_household_and_army_membership": "passed",
+      "test_unification.UnificationTests.test_08_double_booking_rejected_without_changing_membership": "passed",
+      "test_unification.UnificationTests.test_09_budget_authorization_neither_cash_nor_pay": "passed",
+      "test_unification.UnificationTests.test_10_competing_actual_cash_transfers_prevent_overspend": "passed",
+      "test_unification.UnificationTests.test_11_accrual_payment_and_unpaid_claim_separate": "passed",
+      "test_unification.UnificationTests.test_12_scarce_store_competition_is_explicit": "passed",
+      "test_unification.UnificationTests.test_13_order_received_after_deadline_cannot_execute": "passed",
+      "test_unification.UnificationTests.test_14_pending_queue_survives_save_reload": "passed",
+      "test_unification.UnificationTests.test_15_custody_and_delayed_report_not_the_same_event": "passed",
+      "test_unification.UnificationTests.test_16_release_promise_neither_custody_nor_legal_status": "passed",
+      "test_unification.UnificationTests.test_17_legal_effect_recognition_and_custody_independent": "passed",
+      "test_unification.UnificationTests.test_18_legal_claim_about_person_not_person_equipment": "passed",
+      "test_unification.UnificationTests.test_19_simultaneous_exchange_both_effects_resolve_from_prestate": "passed",
+      "test_unification.UnificationTests.test_20_strategic_engagement_summary_never_reapplies_loss": "passed",
+      "test_unification.UnificationTests.test_21_missing_effect_adapter_does_not_roll_impossible_effect": "passed",
+      "test_unification.UnificationTests.test_22_demobilization_does_not_heal_or_pay_automatically": "passed",
+      "test_unification.UnificationTests.test_23_resume_and_replay_same_source_event_sequence": "passed",
+      "test_unification.UnificationTests.test_24_same_event_id_different_payload_rejected": "passed",
+      "test_unification.UnificationTests.test_25_peace_does_not_invent_conflict_or_population": "passed",
+      "test_unification.UnificationTests.test_26_separate_campaign_events_are_isolated": "passed",
+      "test_unification.UnificationTests.test_27_failed_transfer_is_atomic": "passed",
+      "test_unification.UnificationTests.test_28_same_time_multiple_attacks_ammo_capacity_constrained": "passed",
+      "test_unification.UnificationTests.test_29_legal_status_requires_authorization_reference": "passed",
+      "test_unification.UnificationTests.test_30_different_event_payload_same_clock_is_allowed": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_139_milestone_uses_actual_inputs_and_output": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_140_milestone_cannot_recur_under_new_id": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_141_original_event_retry_is_idempotent": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_142_future_milestone_not_conjured": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_143_unsupported_model_is_rejected": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_144_loss_does_not_erase_accepted_output": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_145_original_work_is_not_completed_from_clock": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_146_legacy_completion_for_tracked_job_forbidden": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_147_unsupported_scheduler_work_events_blocked": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_148_disruption_settlement_only_certified_hours": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_149_unassessed_work_is_not_auto_cancelled": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_150_settlement_does_not_consume_more_seed": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_151_no_duplicate_settlement": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_152_cannot_resume_before_supply_arrives": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_153_replacement_is_real_transit_stock": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_154_supply_arrival_not_work_approval": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_155_recovery_total_outputs_and_inputs": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_156_wage_liability_accrued_once_across_jobs": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_157_continuation_cannot_duplicate_remaining_work": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_158_save_load_after_partial_loss": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_159_save_load_after_recovery": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_160_unauthorized_resume_rejected": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_161_untouched_kitchen_continues": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_162_tax_does_not_create_money": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_163_wealth_population_kits_unchanged_by_loss": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_164_full_output_cannot_be_settled_early": "passed",
+      "test_work_recovery.WorkRecoveryTests.test_165_fulfilled_claim_keeps_loss_history": "passed",
+      "test_world_draft.WorldDraftTests.test_disposable_preview_is_scoped_and_does_not_publish_or_mutate_draft": "passed",
+      "test_world_draft.WorldDraftTests.test_invalid_fields_and_stale_review_are_rejected": "passed",
+      "test_world_draft.WorldDraftTests.test_preview_and_explicit_initialization_match_existing_review": "passed",
+      "test_world_draft.WorldDraftTests.test_reviewed_mixed_quay_uses_actual_selected_snapshot_and_opening": "passed"
+    },
+    "capture_records": 2556,
+    "captured_executions": 6658,
+    "capture_origin_counts": {
+      "actual_apply": 5557,
+      "direct_observe": 1101
+    },
+    "actual_committed_apply_count": 5490,
+    "excluded_unknown_operations": 7,
+    "external_fixture_policy_skips": [
+      "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
+    ],
+    "scope": "Current synthetic test executions and detached probes; no all-branch certification",
+    "limits": [
+      "Repeated probes are observations, not unique committed world events.",
+      "Failed-attempt writes are scratch attempts, never committed effects.",
+      "Paths are unioned per operation/backend/profile/test/status, not branch-complete.",
+      "Rejected probes mirror the current R9 backend selection policy."
+    ]
+  },
+  "closed_review_findings": [
+    {
+      "id": "WW-QA-347-001",
+      "scope": "qualification_test_only",
+      "status": "focused_and_joined_rerun_passed_clean_package_gate_required",
+      "trigger": "An 80 ms real deadline could expire before transport admission on a busy host.",
+      "fix": "Gate explicit transport entry, advance an injected clock for in-flight expiry, and separately cancel the admitted request. Keep late usage/reservations/original result/no-redispatch assertions.",
+      "production_deadline_behavior_changed": false,
+      "focused_provider_tests_passed": 23,
+      "original_components": {
+        "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+        "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+      },
+      "corrected_components": {
+        "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+        "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+      }
+    }
+  ],
+  "integration_patches": [
+    "Adopt reviewed invitation and opt-in non-Rise contact decisions without inventing general NPC behavior",
+    "Consume supported communication DTOs and explicit optional household offers in ordinary UI",
+    "Project actor-safe grant prerequisites and separately review request/acceptance through the existing Core",
+    "Preserve original independent source guards and qualify four adopted decision/draft journeys separately",
+    "Align exact tested pins, edition metadata and current owner continuation"
+  ],
+  "remaining": [
+    "A4-ENG-01/03: broader consequences and selected needs/recovery",
+    "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
+    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery",
+    "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
+    "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
+    "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
+  ],
+  "artifacts_directory": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z",
+  "package_qualification": {
+    "required_before_publication": true,
+    "record": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/release/qualification.json",
+    "scope": "Final committed source; clean extracted HTTP smoke, full regression/independent HTTP, sixteen Chromium suites, six starts, ordinary and intent/draft Catalog consumers, optional offer HTTP journey"
+  },
+  "no_live_provider_calls": true,
+  "synthetic_transport_calls_are_offline_only": true,
+  "native_windows_qualified": false,
+  "user_saves_opened": false,
+  "private_saves_included": false,
+  "alpha_gates_closed": [],
+  "fresh_execution_capture": true,
+  "original_archive_records_preserved": true,
+  "original_fixture_selectors_unchanged": true,
+  "prior_failed_qualification_preserved": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined-before-provider-test-fix/qa.json"
+}

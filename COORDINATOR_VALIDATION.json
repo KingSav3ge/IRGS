@@ -1,76 +1,76 @@
 {
   "schema_version": 1,
-  "version": "3.4.6",
+  "version": "3.4.7",
   "classification": "Pre-Alpha",
   "previous_version": "3.3.3",
-  "reviewed_at_utc": "2026-10-29T19:06:13.653356+00:00",
-  "baseline_joined_commit": "28856be59731094a068c32e9687fce6d088dc45f",
+  "reviewed_at_utc": "2026-10-30T17:30:44.160209+00:00",
+  "baseline_joined_commit": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
   "owner_deliveries": {
-    "joined": "28856be59731094a068c32e9687fce6d088dc45f",
-    "engine": "5fe7b2b3539b3a76f12aab0d375ecfcb84acabe9",
-    "app": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
-    "catalog": "abb7ab86f2aa12b1c6585aa7da10f5809209112e"
+    "joined": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
+    "engine": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
+    "app": "52de997814d4f51b12490fb1a683b98abebb0572",
+    "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
   },
   "selected_components": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
-  "qualified_candidate_commit": "4d7991c8d3bac1a8f649371ce596c210c982114c",
-  "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
-  "scope": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
+  "qualified_candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
+  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
+  "scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
   "change_classification": {
-    "engine": "supported_intent_communication_offer_prerequisites_and_bounded_world_drafts",
-    "app": "protected_operator_setup_explicit_shared_intent_review_and_public_branding",
-    "catalog": "grounding_rubric_original_authoring_examples_independent_intent_draft_recovery_consumers"
+    "engine": "selected_invitation_and_quay_contact_decisions_with_existing_Core_authority",
+    "app": "versioned_communication_DTOs_optional_offer_setup_and_separate_grant_review_controls",
+    "catalog": "independent_consequence_invitation_and_both_profile_draft_consumers"
   },
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 7.84,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/source-integrity.txt"
+      "duration_seconds": 16.2,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 0.67,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/evidence-freshness.txt"
+      "duration_seconds": 1.52,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 47.21,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/runtime.txt",
-      "tests_run": 804,
+      "duration_seconds": 108.87,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/runtime.txt",
+      "tests_run": 812,
       "skipped": 1
     },
     {
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 163.72,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/web.txt",
-      "tests_run": 272,
+      "duration_seconds": 201.24,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/web.txt",
+      "tests_run": 279,
       "skipped": 7
     },
     {
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 4.38,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/interface.txt",
-      "checks_passed": 156
+      "duration_seconds": 11.1,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/interface.txt",
+      "checks_passed": 158
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 9.33,
-      "log": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/joined/logs/tooling.txt",
+      "duration_seconds": 23.6,
+      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -225,103 +225,11 @@
           "status": 200
         },
         {
-          "url": "/preview.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
-          "status": 200
-        },
-        {
           "url": "/themes.css",
           "status": 200
         },
         {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
-          "url": "/routine.js",
-          "status": 200
-        },
-        {
-          "url": "/rise.js",
-          "status": 200
-        },
-        {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.js",
-          "status": 200
-        },
-        {
-          "url": "/solo.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.js",
-          "status": 200
-        },
-        {
-          "url": "/communications.js",
-          "status": 200
-        },
-        {
-          "url": "/intents.js",
-          "status": 200
-        },
-        {
-          "url": "/processes.js",
-          "status": 200
-        },
-        {
-          "url": "/app.js",
-          "status": 200
-        },
-        {
-          "url": "/instrument-sans-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/fraunces-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/ibm-plex-mono-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/newsreader-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/im-fell-english-sc-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/historical-landscape.jpg",
-          "status": 200
-        },
-        {
-          "url": "/fonts.css",
-          "status": 200
-        },
-        {
-          "url": "/style.css",
-          "status": 200
-        },
-        {
           "url": "/preview.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
           "status": 200
         },
         {
@@ -337,11 +245,15 @@
           "status": 200
         },
         {
-          "url": "/catalogue.js",
+          "url": "/rise.js",
           "status": 200
         },
         {
-          "url": "/rise.js",
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
           "status": 200
         },
         {
@@ -349,7 +261,15 @@
           "status": 200
         },
         {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
           "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
           "status": 200
         },
         {
@@ -357,15 +277,7 @@
           "status": 200
         },
         {
-          "url": "/intents.js",
-          "status": 200
-        },
-        {
           "url": "/app.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.js",
           "status": 200
         },
         {
@@ -397,11 +309,11 @@
           "status": 200
         },
         {
-          "url": "/themes.css",
+          "url": "/style.css",
           "status": 200
         },
         {
-          "url": "/style.css",
+          "url": "/themes.css",
           "status": 200
         },
         {
@@ -417,15 +329,15 @@
           "status": 200
         },
         {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
           "url": "/routine.js",
           "status": 200
         },
         {
           "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
           "status": 200
         },
         {
@@ -441,7 +353,95 @@
           "status": 200
         },
         {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
           "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
           "status": 200
         },
         {
@@ -461,11 +461,11 @@
           "status": 200
         },
         {
-          "url": "/fraunces-latin.woff2",
+          "url": "/ibm-plex-mono-latin.woff2",
           "status": 200
         },
         {
-          "url": "/ibm-plex-mono-latin.woff2",
+          "url": "/fraunces-latin.woff2",
           "status": 200
         },
         {
@@ -626,12 +626,12 @@
         {
           "genre": "roman",
           "surface": "dark",
-          "minimum_contrast": 5.644956663592719
+          "minimum_contrast": 7.141049775607952
         },
         {
           "genre": "roman",
           "surface": "light",
-          "minimum_contrast": 5.644956663592719
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "roman",
@@ -641,12 +641,12 @@
         {
           "genre": "fantasy",
           "surface": "dark",
-          "minimum_contrast": 6.148290826051578
+          "minimum_contrast": 7.633959418387948
         },
         {
           "genre": "fantasy",
           "surface": "light",
-          "minimum_contrast": 6.148290826051578
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "fantasy",
@@ -656,12 +656,12 @@
         {
           "genre": "paf",
           "surface": "dark",
-          "minimum_contrast": 5.869902717489847
+          "minimum_contrast": 7.288301806630693
         },
         {
           "genre": "paf",
           "surface": "light",
-          "minimum_contrast": 5.869902717489847
+          "minimum_contrast": 6.663608659553884
         },
         {
           "genre": "paf",
@@ -671,7 +671,7 @@
         {
           "genre": "shinobi",
           "surface": "dark",
-          "minimum_contrast": 7.534420940964044
+          "minimum_contrast": 7.566875012465465
         },
         {
           "genre": "shinobi",
@@ -814,6 +814,7 @@
     },
     "communication": {
       "status": "passed",
+      "supported_intent_dtos": true,
       "contexts": [
         "selected_non_rise_quay",
         "selected_R00_transfer"
@@ -995,6 +996,103 @@
       "browser_errors": 0,
       "mobile_width": 390,
       "live_provider_calls": 0
+    },
+    "communication_intents": {
+      "status": "passed",
+      "supported_intent_dtos": true,
+      "ordinary_quay_testimony": true,
+      "ordinary_Rise_offer": true,
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "optional_profile_default_omitted": true,
+      "reviewed_source_and_scope": true,
+      "back_and_cancel_preserved": true,
+      "lost_creation_acknowledgement_recovered": true,
+      "explicit_offer_review_cancel_confirm": true,
+      "offer_status": "offered",
+      "stock_transfer": false,
+      "npc_control_or_consent": false,
+      "independent_drafts_reload": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "offer_setup": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "optional_profile_default_omitted": true,
+      "reviewed_source_and_scope": true,
+      "back_and_cancel_preserved": true,
+      "lost_creation_acknowledgement_recovered": true,
+      "explicit_offer_review_cancel_confirm": true,
+      "offer_status": "offered",
+      "stock_transfer": false,
+      "npc_control_or_consent": false,
+      "independent_drafts_reload": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "decision_grants": {
+      "status": "passed",
+      "ordinary_quay_creation": true,
+      "selected_worker_refusal": true,
+      "no_custody_or_consent_inferred": true,
+      "actual_conserved_delivery": true,
+      "original_refusal_replay": true,
+      "ordinary_rise_creation": true,
+      "grant_request_and_acceptance_separate": true,
+      "review_cancel_no_effect": true,
+      "empty_words_no_submission": true,
+      "exact_words_and_reload_draft": true,
+      "widths": [
+        1568,
+        390
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
     }
   },
   "catalog_start_adoption": {
@@ -1008,7 +1106,7 @@
       "engine": {
         "repository": "https://github.com/KingSav3ge/Fulcrum-Engine.git",
         "branch": "main",
-        "commit": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+        "commit": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
         "source_paths": [
           "IRGS_3_3",
           "engine",
@@ -1018,7 +1116,7 @@
       "app": {
         "repository": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git",
         "branch": "main",
-        "commit": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71",
+        "commit": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
         "source_paths": [
           "IRGS_Web",
           "Start-IRGS.cmd"
@@ -1029,7 +1127,7 @@
       "catalog": {
         "repository": "https://github.com/KingSav3ge/WorldWard-Catalog.git",
         "branch": "main",
-        "commit": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+        "commit": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
         "source_paths": [
           "IRGS_Catalog"
         ]
@@ -1106,11 +1204,11 @@
   },
   "catalog_current_ordinary_adoption": {
     "schema_version": 1,
-    "fixture_id": "coordinator-adopted-ordinary-3.4.6-1",
+    "fixture_id": "coordinator-adopted-ordinary-3.4.7-1",
     "components": {
-      "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-      "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-      "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
     },
     "selection_mode": "joined_or_clean_extracted_source",
     "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
@@ -1127,11 +1225,11 @@
   },
   "catalog_intent_world_adoption": {
     "schema_version": 1,
-    "fixture_id": "coordinator-adopted-intent-world-3.4.6-1",
+    "fixture_id": "coordinator-adopted-intent-world-3.4.7-1",
     "components": {
-      "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-      "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-      "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
     },
     "selection_mode": "joined_or_clean_extracted_source",
     "original_fixture_id": "irgs-intent-world-draft-v1",
@@ -1146,6 +1244,28 @@
     "user_saves_opened": false,
     "alpha_qualified": false
   },
+  "catalog_decision_adoption": {
+    "schema_version": 1,
+    "fixture_id": "coordinator-adopted-decisions-3.4.7-1",
+    "components": {
+      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    },
+    "selection_mode": "joined_or_clean_extracted_source",
+    "status": "passed",
+    "tests_run": 4,
+    "passed": 4,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "original_catalog_consumers_preserved": true,
+    "coordinator_extension": "ordinary quay refusal/conserved delivery/restart/restore",
+    "provider_calls": 0,
+    "user_saves_opened": false,
+    "alpha_qualified": false
+  },
+  "coordinator_implementation": "Actor-safe grant prerequisite projection and separate request/acceptance composer controls, with real HTTP/browser coverage.",
   "ordinary_offer_http": "passed",
   "operation_summary": {
     "operation_spellings": 87,
@@ -1164,8 +1284,8 @@
     "all_branches_certified": false
   },
   "operation_tests": {
-    "tests_run": 804,
-    "passed": 803,
+    "tests_run": 812,
+    "passed": 811,
     "skipped": 1,
     "failures": 0,
     "errors": 0,
@@ -1438,6 +1558,9 @@
       "test_ordinary_communication.OrdinaryCommunicationTests.test_departure_rejects_actual_speech_without_inventing_remote_contact": "passed",
       "test_ordinary_communication.OrdinaryCommunicationTests.test_normal_creation_speech_replay_and_reload": "passed",
       "test_ordinary_communication.OrdinaryCommunicationTests.test_review_is_explicit_and_original_start_remains_without_contact": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_failed_persistence_does_not_record_refusal": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_refusal_then_new_decision_and_exact_retry": "passed",
+      "test_ordinary_invitation_decision.OrdinaryInvitationDecisionTests.test_refusal_with_completed_repair_and_no_unreserved_provision": "passed",
       "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_invalid_recipient_and_unauthorized_account_reject_atomically": "passed",
       "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_legacy_default_and_stale_review_keep_offer_unselected": "passed",
       "test_ordinary_offer_profile.OrdinaryOfferProfileTests.test_optional_review_and_offer_proposal_withdrawal_and_replay": "passed",
@@ -1514,6 +1637,11 @@
       "test_process_runtime.ProcessTests.test_status_is_a_received_record_and_does_not_peek_at_remote_progress": "passed",
       "test_process_runtime.ProcessTests.test_unselected_elapsed_axis_or_rule_source_cannot_start_work": "passed",
       "test_process_runtime.ProcessTests.test_unsupported_span_or_stale_phase_is_atomic": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_missing_contact_rejects_without_state_or_hidden_menu_filter": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_original_contact_profile_remains_without_selected_decision": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_persistence_failure_does_not_record_the_conversation": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_selected_refusal_then_actual_delivery_retry_and_restore": "passed",
+      "test_quay_contact_decision.QuayContactDecisionTests.test_worker_under_player_control_does_not_receive_scripted_decision": "passed",
       "test_r7_integration.R7IntegrationTests.test_166_scheduled_tracked_start": "passed",
       "test_r7_integration.R7IntegrationTests.test_167_scheduled_tracked_milestone": "passed",
       "test_r7_integration.R7IntegrationTests.test_168_unrelated_tax_proceeds_with_work": "passed",
@@ -1976,13 +2104,13 @@
       "test_world_draft.WorldDraftTests.test_preview_and_explicit_initialization_match_existing_review": "passed",
       "test_world_draft.WorldDraftTests.test_reviewed_mixed_quay_uses_actual_selected_snapshot_and_opening": "passed"
     },
-    "capture_records": 2509,
-    "captured_executions": 6482,
+    "capture_records": 2556,
+    "captured_executions": 6658,
     "capture_origin_counts": {
-      "actual_apply": 5415,
-      "direct_observe": 1067
+      "actual_apply": 5557,
+      "direct_observe": 1101
     },
-    "actual_committed_apply_count": 5348,
+    "actual_committed_apply_count": 5490,
     "excluded_unknown_operations": 7,
     "external_fixture_policy_skips": [
       "test_suite.SuiteTests.test_legacy_ast_save_load_does_not_rewrite"
@@ -1997,50 +2125,45 @@
   },
   "closed_review_findings": [
     {
-      "severity": "P3",
-      "file": "IRGS_Catalog/evaluation/grounding_quality_v1/README.md",
-      "fix": "Document the actual assess_proposal, assess_receipt and assess_review APIs."
+      "id": "WW-QA-347-001",
+      "scope": "qualification_test_only",
+      "status": "focused_and_joined_rerun_passed_clean_package_gate_required",
+      "trigger": "An 80 ms real deadline could expire before transport admission on a busy host.",
+      "fix": "Gate explicit transport entry, advance an injected clock for in-flight expiry, and separately cancel the admitted request. Keep late usage/reservations/original result/no-redispatch assertions.",
+      "production_deadline_behavior_changed": false,
+      "focused_provider_tests_passed": 23,
+      "original_components": {
+        "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+        "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+      },
+      "corrected_components": {
+        "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+        "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+      }
     }
   ],
   "integration_patches": [
-    "Align all four editions and migrate active repository URLs after the owner renames",
-    "Adopt and test exact Engine/Catalog App pins",
-    "Preserve original Catalog fixtures, consumers and exact-selection guards; qualify the adopted set separately",
-    "Refresh current owner instructions around actual delivered scope and remaining Alpha work",
-    "Accept WorldWard branding in the extracted-package HTTP smoke check while retaining original IRGS package compatibility, asset/route/Core and empty-store checks."
+    "Adopt reviewed invitation and opt-in non-Rise contact decisions without inventing general NPC behavior",
+    "Consume supported communication DTOs and explicit optional household offers in ordinary UI",
+    "Project actor-safe grant prerequisites and separately review request/acceptance through the existing Core",
+    "Preserve original independent source guards and qualify four adopted decision/draft journeys separately",
+    "Align exact tested pins, edition metadata and current owner continuation"
   ],
   "remaining": [
-    "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
-    "A4-APP-03 and WB-APP-01: adopt supported-intent/draft contracts and explicit offer selection",
-    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage",
+    "A4-ENG-01/03: broader consequences and selected needs/recovery",
+    "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
+    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery",
     "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
     "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
     "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
   ],
-  "artifacts_directory": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z",
+  "artifacts_directory": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z",
   "package_qualification": {
     "required_before_publication": true,
-    "record": "/workspace/irgs-cloud/integration/intent-world-3.4.6/20261029T184542Z/release/qualification.json",
-    "scope": "Final committed source; clean extracted HTTP smoke, full regression/independent HTTP, thirteen Chromium suites, six starts, ordinary and intent/draft Catalog consumers, optional offer HTTP journey"
-  },
-  "presentation_harness_correction_and_product_equivalence": {
-    "description": "Count seven genre bases independently from overrides and verify the current shared historical palette plus distinct Rise override. Preserve contrast, reading and read-only checks.",
-    "prior_full_qa_candidate": "0c85c18810f21964e57b38f1019add70c67a5e43",
-    "product_tree_equality": {
-      "IRGS_3_3": true,
-      "IRGS_Web": true,
-      "IRGS_Catalog": true
-    },
-    "prior_app_commit": "e8cf1991e7a9ea2ba87b37b6e60ca5c2c6570d71",
-    "new_app_commit": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
-    "targeted_checks_rerun": [
-      "presentation_standalone",
-      "presentation_joined",
-      "adopted_ordinary",
-      "adopted_intents"
-    ],
-    "unchanged_product_regression_reused": true,
-    "final_extracted_full_qa_required": true
+    "record": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/release/qualification.json",
+    "scope": "Final committed source; clean extracted HTTP smoke, full regression/independent HTTP, sixteen Chromium suites, six starts, ordinary and intent/draft Catalog consumers, optional offer HTTP journey"
   },
   "no_live_provider_calls": true,
   "synthetic_transport_calls_are_offline_only": true,
@@ -2050,5 +2173,6 @@
   "alpha_gates_closed": [],
   "fresh_execution_capture": true,
   "original_archive_records_preserved": true,
-  "original_fixture_selectors_unchanged": true
+  "original_fixture_selectors_unchanged": true,
+  "prior_failed_qualification_preserved": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined-before-provider-test-fix/qa.json"
 }
