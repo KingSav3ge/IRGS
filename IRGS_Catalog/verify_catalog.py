@@ -183,6 +183,10 @@ def verify_catalog(root=ROOT):
     checker = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(checker)
     intent_world_draft = checker.validate_fixture(root)
+    spec = importlib.util.spec_from_file_location('catalog_adopted_consequences_check', root / 'adopted_consequences_evaluation.py')
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    adopted_consequences = checker.validate_fixture(root)
     return {'status': 'verified', 'component': 'IRGS-Catalog', 'files': len(hashes),
         'concepts': len(portfolio['entries']), 'campaign_release_approved_by_check': False,
         'campaign_records': campaign_records, 'historical_details': historical,
@@ -196,7 +200,8 @@ def verify_catalog(root=ROOT):
         'start_context_evaluation': start_context, 'alpha_context_evaluation': alpha_contexts,
         'alpha_journey_evaluation': alpha_journeys,
         'grounding_quality': grounding_quality, 'world_authoring_examples': world_examples,
-        'intent_world_draft_evaluation': intent_world_draft}
+        'intent_world_draft_evaluation': intent_world_draft,
+        'adopted_consequences_evaluation': adopted_consequences}
 
 
 if __name__ == '__main__':

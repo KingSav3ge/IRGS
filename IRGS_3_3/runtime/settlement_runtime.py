@@ -238,12 +238,18 @@ def operate_settlement_action(core, s, at, p):
         notice(s, 'oren', at, key + ':invitation', 'The founder describes an established camp at the clearing and invites your household to move there, retaining your goods and control of your labor.')
         # An authored local choice: Oren requires a completed repair and means
         # to move, and retains control of household labor and property.
-        assert s['projects']['oren-repair']['status'] == 'complete'
-        assert s['stocks']['oren-home']['grain'] > s['households']['oren-home']['seed_reserve']
-        s['migrations']['oren-move'] = {'household': 'oren-home', 'members': ['oren'], 'from': site,
-            'to': 'clearing', 'status': 'agreed', 'source_ref': p['source_ref'],
-            'consent': 'authored-local-choice:finished-repair-and-provisioned'}
-        message = 'You describe the camp. Oren agrees to move after finishing the repair, bringing private goods. Oren has not departed and offers no labor delegation.'
+        ready = (s['projects']['oren-repair']['status'] == 'complete'
+                 and s['stocks']['oren-home']['grain'] > s['households']['oren-home']['seed_reserve'])
+        if ready:
+            s['migrations']['oren-move'] = {'household': 'oren-home', 'members': ['oren'], 'from': site,
+                'to': 'clearing', 'status': 'agreed', 'source_ref': p['source_ref'],
+                'consent': 'authored-local-choice:finished-repair-and-provisioned'}
+            message = 'You describe the camp. Oren agrees to move after finishing the repair, bringing private goods. Oren has not departed and offers no labor delegation.'
+        else:
+            # The received refusal does not disclose private stock or project state.
+            # No migration or continuing obligation is created; a later invitation
+            # is a new explicit request and is evaluated against the then-current state.
+            message = 'You describe the camp. Oren declines to move at this time. No departure or labor agreement is made.'
     elif action == 'arrange_departure':
         assert site == 'commons'
         _permission(s, household, 'camp')

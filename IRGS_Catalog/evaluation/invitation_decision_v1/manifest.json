@@ -1,0 +1,20 @@
+{
+  "fixture_id": "worldward-invitation-decision-v1",
+  "selection": {
+    "engine": "74a185104d0d856e951e2e547a0a1d2d06d1499e",
+    "app": "4ffd53a351a4d21c2005505076641c1827425147",
+    "app_engine_pin": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app_catalog_pin": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "catalog": "containing-commit",
+    "engine_override": true,
+    "catalog_override": true
+  },
+  "baseline": {
+    "path": "evaluation/adopted_consequences_v1/manifest.json",
+    "sha256": "72b3216c1cbcd8eaf0d59e44a681653f6b8273acbd8daa688357e4592aa38be3"
+  },
+  "files_sha256": {
+    "actor_inputs/cases.json": "e914f1dc77d7f9c9b3c1959cffc3137b9e95e5a7799d968be1789b3c3bf9d9ba",
+    "evaluator_only/expectations.json": "87ce2f12bb8192ba40a40ff575177b27b35735547f42dd18591e35a642899990"
+  }
+}

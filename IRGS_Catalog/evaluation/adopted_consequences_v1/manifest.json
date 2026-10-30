@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "fixture_id": "worldward-adopted-consequences-v1",
+  "classification": "offline-independent-consumer",
+  "selection": {
+    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
+    "app_engine_pin": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app_catalog_pin": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "catalog": "containing-commit",
+    "engine_override": false,
+    "catalog_override": true
+  },
+  "baseline": {
+    "path": "evaluation/intent_world_draft_v1/manifest.json",
+    "sha256": "48c64ac631e5d74007649ac67d70261dfba89c653edcba5365f270ba50834e98"
+  },
+  "files_sha256": {
+    "actor_inputs/cases.json": "b12d32d7d82fde7c0c29c62ae4baaebd36acfc57a1ba649856cef1186767ad66",
+    "evaluator_only/expectations.json": "2f7529199bd533321cebe13efacf1a6906383de53befe1657698407975319f6e"
+  }
+}

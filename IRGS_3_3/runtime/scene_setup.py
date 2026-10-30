@@ -23,7 +23,7 @@ def _selected_pack(state, opening_id=None):
     entry = state.get('historical_start', {}).get('entry_id') or state.get('binding', {}).get('entry_id')
     if entry == 'hyw-1415':
         pack = _pack()
-        if opening_id == 'quay-contact-v1':
+        if opening_id in ('quay-contact-v1', 'quay-contact-decision-v1'):
             pack['id'] = opening_id
             pack['title'] = 'A dispatch and a quay contact'
             pack['description'] += ' This variant adds one fictional local contact.'
@@ -33,10 +33,35 @@ def _selected_pack(state, opening_id=None):
             pack['scope'] = pack['scope'].replace('dialogue, combat', 'autonomous dialogue, combat')
             pack['scope'] += (' This variant supports explicitly submitted local testimony; '
                 'it does not supply an NPC response or negotiation outcome.')
-            pack['source_ref'] = 'authored-solo-opening:quay-contact-v1'
+            pack['source_ref'] = 'authored-solo-opening:' + opening_id
             pack['contact'] = {'actor_id': 'FICTIONAL-QUAY-CONTACT',
                 'name': 'Quay contact', 'species': 'human', 'channel_id': 'quay-local',
                 'introduction': 'I am a worker here on the quay.'}
+            if opening_id == 'quay-contact-decision-v1':
+                pack['title'] = 'A dispatch and a worker’s decision'
+                pack['review'] = pack['review'].replace(
+                    'their response, consent, possessions and authority are not established.',
+                    'their possessions and authority are not established.')
+                pack['scope'] = pack['scope'].replace('it does not supply an NPC response or negotiation outcome.',
+                    'ordinary speech alone supplies no NPC response or negotiation outcome.')
+                pack['review'] += (' In this fictional variant you can ask the worker to carry the dispatch. '
+                    'The worker is independently unwilling to take custody; the request takes 15 authored seconds. '
+                    'You retain your own delivery instructions and custody. No response is inferred from ordinary speech.')
+                pack['scope'] += (' A selected explicit carry request has an authored refusal; '
+                    'it does not establish a general NPC policy, transfer or payment.')
+                pack['map_text'] += (' You may ask the worker to carry your dispatch; '
+                    'the worker makes their own decision and is not under your control.')
+                pack['places']['quay']['actions'].append('request-dispatch-help')
+                pack['actions']['request-dispatch-help'] = {
+                    'kind': 'contact_decision', 'from': 'quay',
+                    'label': 'Ask the worker to carry the dispatch',
+                    'text': 'Ask the worker to carry the dispatch for you.',
+                    'description': 'Ask the nearby worker; a request does not grant consent or transfer custody.',
+                    'duration_seconds': 15,
+                    'success_text': 'The worker declines to take custody of the dispatch.',
+                    'failure_text': 'The worker declines to take custody of the dispatch.',
+                    'decision_policy': 'quay-contact-declines-carry-v1',
+                    'contact_id': 'FICTIONAL-QUAY-CONTACT'}
         return pack
     from historical_campaigns import SNAPSHOTS
     if (entry not in SNAPSHOTS or state.get('binding', {}).get('scenario_id') != 'hundred-years-war'
@@ -58,12 +83,14 @@ def opening_options(state):
     packs = [pack]
     if (state.get('historical_start', {}).get('entry_id') or state.get('binding', {}).get('entry_id')) == 'hyw-1415':
         packs.append(_selected_pack(state, 'quay-contact-v1'))
+        packs.append(_selected_pack(state, 'quay-contact-decision-v1'))
     return [{**{key: copy.deepcopy(pack[key]) for key in
                 ('id', 'title', 'description', 'requirements', 'review', 'scope')},
              'content_sha256': digest(pack), 'fictional': True,
              'elapsed_origin_seconds': 0,
              'durations': {'observation_seconds': 20, 'walking_seconds': 45,
-                           'shortcut_attempt_seconds': 30, 'delivery_seconds': 10}} for pack in packs]
+                           'shortcut_attempt_seconds': 30, 'delivery_seconds': 10,
+                           **({'contact_request_seconds': 15} if pack['id'] == 'quay-contact-decision-v1' else {})}} for pack in packs]
 
 
 def initialize_opening(world, character, actor_id, reference, *, options=None):

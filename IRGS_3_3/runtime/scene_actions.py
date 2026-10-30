@@ -10,7 +10,7 @@ from __future__ import annotations
 import copy
 
 from irgs_reference import InvalidEvent, digest
-from player_actions import _controlled, _failed_dependencies
+from player_actions import _controlled, _failed_dependencies, _present
 
 
 OPERATION = 'execute_player_scene_action'
@@ -76,7 +76,7 @@ def scene_options(state, actor_id):
         options = []
         for action_id in place['actions']:
             action = rules['actions'][action_id]
-            if (action['kind'] not in {'move', 'observe', 'deliver'} or action['from'] != location
+            if (action['kind'] not in {'move', 'observe', 'deliver', 'contact_decision'} or action['from'] != location
                     or not all(_text(action[field]) for field in ('label', 'description', 'text'))):
                 continue
             options.append({'kind': 'scene_action', 'action_id': action_id,
@@ -107,7 +107,7 @@ def operate_scene_action(core, state, at, params, *, committed_duration=None):
     assert action_id in place['actions'], 'action is not in the received local map'
     action = rules['actions'][action_id]
     kind = action['kind']
-    assert kind in {'move', 'observe', 'deliver'} and action['from'] == location, 'local action required'
+    assert kind in {'move', 'observe', 'deliver', 'contact_decision'} and action['from'] == location, 'local action required'
     assert all(_text(action[field]) for field in ('label', 'text', 'description', 'success_text', 'failure_text'))
     duration = action['duration_seconds']
     assert type(duration) is int and duration > 0, 'explicit positive authored duration required'
@@ -160,6 +160,29 @@ def operate_scene_action(core, state, at, params, *, committed_duration=None):
         assert _text(observation), 'authored local observation required'
         observations.append(observation)
         receive(observation)
+    elif kind == 'contact_decision':
+        # This reviewed fictional profile selects one independent refusal. Do
+        # not infer other preferences, consent, possession or authority.
+        contact = action['contact_id']
+        assert rules['id'] == 'quay-contact-decision-v1'
+        assert action['decision_policy'] == 'quay-contact-declines-carry-v1'
+        assert contact == 'FICTIONAL-QUAY-CONTACT' and _present(state, contact)
+        assert contact not in core.player_ids(state), 'the contact must make their own decision'
+        from settlement_runtime import location as current_location
+        assert current_location(state, contact) == location, 'actual local contact required'
+        request_id = evidence_id + ':request'
+        core._operate(state, at, 'record_evidence', {
+            'evidence_id': request_id, 'subject': contact,
+            'assertion': 'The courier asks the worker to carry the dispatch.',
+            'status': 'testimony', 'originator': actor, 'source_ref': reference})
+        core._operate(state, at, 'receive_evidence', {
+            'evidence_id': request_id, 'recipient': contact, 'source_ref': reference})
+        summary = 'The worker declines to take custody of the dispatch.'
+        core._operate(state, at, 'record_evidence', {
+            'evidence_id': evidence_id, 'subject': actor, 'assertion': 'I will not carry the dispatch.',
+            'status': 'testimony', 'originator': contact, 'source_ref': rules['source_ref']})
+        core._operate(state, at, 'receive_evidence', {
+            'evidence_id': evidence_id, 'recipient': actor, 'source_ref': rules['source_ref']})
     else:
         material, destination = action['material'], action['destination']
         assert _text(material) and _text(destination) and destination != actor

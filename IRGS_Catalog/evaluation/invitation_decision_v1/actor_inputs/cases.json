@@ -1,0 +1,133 @@
+{
+  "fixture_id": "worldward-invitation-decision-v1",
+  "classification": "original-synthetic-offline",
+  "drafts": {
+    "rise": {
+      "schema_version": "irgs-world-draft-1",
+      "draft_id": "catalog-reed-offers-v1",
+      "classification": "fictional",
+      "profile_id": "rise-r00",
+      "choices": {
+        "template_id": "R00",
+        "founder_name": "Synthetic Reed Founder",
+        "household_name": "Synthetic Reed Household",
+        "settlement_name": "Reed Camp",
+        "region_name": "Greywater Reach",
+        "date_label": "Spring, Year 1",
+        "company": "solo",
+        "permission": "held",
+        "supplies": "basic",
+        "offer_profile": "founder-household-offer-v1"
+      }
+    },
+    "quay": {
+      "schema_version": "irgs-world-draft-1",
+      "draft_id": "catalog-quay-contact-v1",
+      "classification": "mixed",
+      "profile_id": "historical-quay",
+      "choices": {
+        "snapshot_sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+        "character": {
+          "kind": "new",
+          "name": "Synthetic courier",
+          "species": "human",
+          "opening_id": "quay-contact-v1"
+        }
+      }
+    }
+  },
+  "journeys": {
+    "quay": [
+      {
+        "action": "quay-shortcut",
+        "intention": "I try the shortcut."
+      },
+      {
+        "action": "quay-passage",
+        "intention": "I take the covered passage instead."
+      },
+      {
+        "action": "passage-desk",
+        "intention": "I reach the desk."
+      },
+      {
+        "action": "deliver-dispatch",
+        "intention": "I deliver the dispatch."
+      },
+      {
+        "action": "deliver-dispatch",
+        "intention": "I attempt another delivery."
+      }
+    ],
+    "rise": [
+      {
+        "action": "walk_clearing",
+        "intention": "I walk to the clearing."
+      },
+      {
+        "action": "found",
+        "intention": "I try to establish the camp."
+      },
+      {
+        "action": "walk_commons",
+        "intention": "I return to the commons."
+      },
+      {
+        "action": "request_grant",
+        "intention": "I request the limited grant."
+      },
+      {
+        "action": "accept_grant",
+        "intention": "I accept the limited grant."
+      },
+      {
+        "action": "walk_clearing",
+        "intention": "I return to the clearing."
+      },
+      {
+        "action": "found",
+        "intention": "I establish the camp."
+      }
+    ]
+  },
+  "stock_offer": {
+    "recipient": "oren",
+    "channel": "commons-local",
+    "words": "I propose one portion.",
+    "terms": {
+      "from": "founder-home",
+      "to": "oren-home",
+      "material": "grain",
+      "quantity": 1,
+      "authority_id": "founder-household-offer"
+    }
+  },
+  "invitation": {
+    "actions": [
+      {
+        "action": "walk_clearing",
+        "intention": "I walk to the clearing."
+      },
+      {
+        "action": "found",
+        "intention": "I establish the camp."
+      },
+      {
+        "action": "walk_commons",
+        "intention": "I return to the commons."
+      },
+      {
+        "action": "invite",
+        "intention": "Would you move to our camp?"
+      },
+      {
+        "action": "wait_hour",
+        "intention": "I wait for an hour."
+      },
+      {
+        "action": "invite",
+        "intention": "Would you move now?"
+      }
+    ]
+  }
+}

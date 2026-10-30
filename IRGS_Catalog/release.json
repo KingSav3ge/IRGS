@@ -3,6 +3,7 @@
   "component": "IRGS-Catalog",
   "scope": "Campaign discovery and design source; no runtime or release authorization.",
   "files_sha256": {
+    "adopted_consequences_evaluation.py": "e81885defef1596fed66d04a0a0679ec4965c9acdd0c4e88ecef22de6c04de16",
     "alpha_context_evaluation.py": "6911b618e4ac122d2865b1d4d3b8dd71ee0368a2897408dc6600ff3d8ab6ae49",
     "alpha_journey_evaluation.py": "be96eedd5972a001507c4fff0554f1842367b0e32481f4bc0e42ac0bf0071459",
     "data/campaign_listings.json": "cb8c6e6e41de99af971264f39f2772c6b2fdc41f74ca617f52045659968ab092",
@@ -107,6 +108,10 @@
     "design/catalogue_v0_5/records/SS-18.json": "10570e369c0213319c179529187bf84a3952a5f3f6ea12ac933434f3b2e7c802",
     "design/source_packages/IRGS_Campaign_Catalogue_44_Records_v0_5.zip": "90e90bb87085f1fbaaa3569401ebbd824b0fdf2060482a59571991c76cfd44c8",
     "development_interop_compatibility.py": "1f55b851698677a5c8b3d27fb6b8e3e8947f0a2525d5f14403cd0a95cdc17866",
+    "evaluation/adopted_consequences_v1/README.md": "0e8dbc7b7693af2bc8ae0f55db49483f37b321a68a276d78af6b679309c4b355",
+    "evaluation/adopted_consequences_v1/actor_inputs/cases.json": "b12d32d7d82fde7c0c29c62ae4baaebd36acfc57a1ba649856cef1186767ad66",
+    "evaluation/adopted_consequences_v1/evaluator_only/expectations.json": "2f7529199bd533321cebe13efacf1a6906383de53befe1657698407975319f6e",
+    "evaluation/adopted_consequences_v1/manifest.json": "72b3216c1cbcd8eaf0d59e44a681653f6b8273acbd8daa688357e4592aa38be3",
     "evaluation/alpha_contexts_v1/README.md": "df33de8eae17732d91ef8675b6d645b548ebf15d23066103db95b0db1880737f",
     "evaluation/alpha_contexts_v1/actor_inputs/historical-quay.json": "615c48c7c50ea0d3f982fbed14a12f630e0558d064f0559617d39d1d233ab4f4",
     "evaluation/alpha_contexts_v1/actor_inputs/rise-r00.json": "6befe4b2c01b5145c120849cd4fdf2a69953be311a45d94e4a47952455e28293",
@@ -136,6 +141,10 @@
     "evaluation/intent_world_draft_v1/actor_inputs/cases.json": "872b3242fd98e1bb63a612b4477c5750c938d46ba61b66a868db36b663e8fa27",
     "evaluation/intent_world_draft_v1/evaluator_only/expectations.json": "22b3645afe7bc711fefa35f63828d5cfc017cbec0c06e1cf77727f45cbe88157",
     "evaluation/intent_world_draft_v1/manifest.json": "48c64ac631e5d74007649ac67d70261dfba89c653edcba5365f270ba50834e98",
+    "evaluation/invitation_decision_v1/README.md": "a35b5c2874d9f0714ed86f93fc552e457847bc9f63c1ddafaa0c9b4f96dd7932",
+    "evaluation/invitation_decision_v1/actor_inputs/cases.json": "e914f1dc77d7f9c9b3c1959cffc3137b9e95e5a7799d968be1789b3c3bf9d9ba",
+    "evaluation/invitation_decision_v1/evaluator_only/expectations.json": "87ce2f12bb8192ba40a40ff575177b27b35735547f42dd18591e35a642899990",
+    "evaluation/invitation_decision_v1/manifest.json": "efd44f87e1b0a2736406bc6a611294047001bbed2377bcbd3fe5ecd47cf76f2d",
     "evaluation/phase_responses_v1/README.md": "ba8c6b68c74a82acaee9d76ffdb3387360286e3d9bfa1ceb4c4c82eaf6dc5e0f",
     "evaluation/phase_responses_v1/compatibility.json": "dd5a368f26255972c9f8373ea10246479ff72ed78d8fb7787f33e3ac73f7a4aa",
     "evaluation/player_starts_v1/README.md": "a7be42cf9e0a7602ec7b492f663cb5401ee22b74ef4c6dbc76c638f74140acf5",
@@ -231,7 +240,7 @@
     "solo_evaluation.py": "444fb338b7ade0e78fbd2f014c15bd90546cee4e203966ed6284ba73cfdecc97",
     "solo_proposal_compatibility.py": "d83a591a5e070bd3f602898fa1f16e477ac580b62e2d9f39ce48ed8c3d158dce",
     "start_context_evaluation.py": "37b4efb6f86af9695000562f0b45fa55f1b5d3f0d7fdecf58b62844c8c81aa2c",
-    "verify_catalog.py": "1e40836cd041e077b8f33580a7a2872c4bc7dfba4e9c327c2c3dace72ae7eb60",
+    "verify_catalog.py": "89520d25107d22fd58bfbb3c1dde238b755045c770def0824ad2685c710e023a",
     "world_authoring_examples.py": "2b75300c59d78374f032e834fd866b16410c8eb5d52d88b309245a793921a5eb"
   }
 }

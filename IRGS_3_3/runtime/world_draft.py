@@ -26,7 +26,7 @@ def _quay_review(choices, campaign_id):
     character = choices['character']
     if (not isinstance(character, dict) or set(character) != {'kind', 'name', 'species', 'opening_id'}
             or character.get('kind') != 'new' or character.get('species') != 'human'
-            or character.get('opening_id') != 'quay-contact-v1'
+            or character.get('opening_id') not in ('quay-contact-v1', 'quay-contact-decision-v1')
             or not isinstance(character.get('name'), str) or not character['name'].strip()
             or len(character['name']) > 100):
         raise ValueError('Select a named new human and the fictional quay contact opening')

@@ -1,0 +1,6 @@
+{
+  "classification": "evaluator-only", "marker": "PRIVATE_ADOPTED_CONSEQUENCES",
+  "quay": {"statuses": ["completed_unsuccessfully", "completed_successfully", "completed_successfully", "completed_successfully", "completed_unsuccessfully"], "elapsed_seconds": 140, "dispatch_actor": 0, "dispatch_tray": 1},
+  "rise": {"refused_without_grant": true, "grant_states": ["offered", "accepted"], "stock_offer_states": ["offered", "withdrawn"], "elapsed_seconds": 900},
+  "unmet_requirements": {"sustained_consequences": "Engine/App/Catalog: extend persistent consequences and independently evaluate subsequent choices", "npc_decisions": "Engine/App: actual independent NPC decisions", "institution_decisions": "Engine/App: continuing institution decisions from scoped authority and resources", "needs_recovery": "Engine/App: selected need and recovery procedures", "risk_conflict": "Engine/App: selected consequential risk/conflict profile", "general_world_authoring": "Engine/App: custom geography, entities, persistence and reviewed playtests", "pack_import_export": "Engine/App: versioned package import/export", "live_provider_quality": "Engine/App/operator: approved route, rights and finite budget; Catalog independently evaluates"}
+}

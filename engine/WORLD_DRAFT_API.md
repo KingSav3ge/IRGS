@@ -63,3 +63,15 @@ record remains dated at its actual source.
 disposable in-memory candidate for either selected profile. It does not save a
 campaign, and preview identities cannot authorize the later world. See
 [details and evidence](COMMUNICATION_INTENT_PREVIEW.md).
+
+## Host boundary for bounded drafts
+
+The [atomic host creation and recovery contract](DRAFT_HOST_ATOMIC_CONTRACT.md)
+defines the required transaction, actor-scoped original receipt, retry and
+restore behavior for the two selected profiles. This is a design handoff; durable
+host creation and a Creator playtest workflow remain unimplemented and unqualified.
+
+The bounded mixed quay profile also accepts the separately reviewed fictional
+`quay-contact-decision-v1` opening. Its [selected NPC refusal](QUAY_CONTACT_DECISION.md)
+is disclosed in review and executes through the existing Core and intent path.
+It neither changes the older contact opening nor implements durable draft hosting.

@@ -1,8 +1,20 @@
 # IRGS continuation development list
 
-## Current coordinated 3.4.6 Pre-Alpha
+**29 October — non-Rise selected decision:** the separately reviewed mixed quay
+opening `quay-contact-decision-v1` lets the fictional worker explicitly decline
+a carry request while preserving custody, actor-scoped testimony and the existing
+intent/retry API. [Scope and prerequisites](engine/QUAY_CONTACT_DECISION.md).
+This is one fixed authored decision, not general NPC or institution support.
+The [draft host contract](engine/DRAFT_HOST_ATOMIC_CONTRACT.md) remains design-only.
 
-The reviewed Engine, App and Catalog foundations are adopted at the exact commits in COMPONENTS.json. Read DEVELOPMENT_HANDOFFS.md and the current CHAT_CONTINUATION.md for remaining owner implementation. New public repository identities and branding retain internal IRGS technical compatibility. No functional Alpha gate is closed. Earlier records retain their original scope.
+**29 October — selected invitation decision and draft-host boundary:** the existing
+fictional R00 Core procedure now records an actor-scoped refusal when Oren's
+selected repair/provision conditions are unmet; later agreement requires a new
+explicit invitation. [Decision and prerequisites](engine/INVITATION_DECISION.md).
+[Draft host creation/retry/restore contract](engine/DRAFT_HOST_ATOMIC_CONTRACT.md)
+is a design handoff only, not an implemented Creator playtest. Broader independent
+NPC and institution decisions, cross-context qualification, App adoption and
+atomic host implementation remain open.
 
 **29 October follow-up:** the selected grant-attempt contract and its separate
 stock-offer behavior have [executed evidence](engine/GRANT_PREREQUISITES_VALIDATION.json).

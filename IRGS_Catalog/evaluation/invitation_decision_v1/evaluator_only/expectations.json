@@ -1,0 +1,18 @@
+{
+  "classification": "evaluator-only",
+  "marker": "PRIVATE_INVITATION_DECISION",
+  "rise": {
+    "refusal": "declines to move",
+    "agreement": "agrees to move",
+    "migration_id": "oren-move"
+  },
+  "unmet_requirements": {
+    "npc_decisions": "Engine/App: general and non-Rise NPC decisions beyond this authored R00 selection",
+    "institution_decisions": "Engine/App: continuing institution decisions and authority",
+    "needs_recovery": "Engine/App: selected needs and recovery",
+    "risk_conflict": "Engine/App: consequential risk and conflict",
+    "consequences": "Engine/App/Catalog: broader persistent outcomes and independent journeys",
+    "authoring": "Engine/App: reviewed general world creation, persistence and playtesting",
+    "live_provider": "Engine/App/operator: separately authorized live provider route and budget; Catalog evaluates quality"
+  }
+}
