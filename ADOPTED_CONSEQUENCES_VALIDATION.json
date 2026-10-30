@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "status": "partial_adopted_consequences_and_two_drafts",
+  "component_edition": "3.4.6 Pre-Alpha",
+  "alpha_qualified": false,
+  "catalog_base_commit": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+  "candidate_commit": "Resolve the containing Git commit; full pushed SHA is reported in the component chat.",
+  "selection": {
+    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
+    "app_engine_pin": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app_catalog_pin": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "engine_override": false,
+    "catalog_override": true,
+    "new_catalog_adoption_claimed": false
+  },
+  "fixture_id": "worldward-adopted-consequences-v1",
+  "source_sha256": {
+    "IRGS_Catalog/adopted_consequences_evaluation.py": "e81885defef1596fed66d04a0a0679ec4965c9acdd0c4e88ecef22de6c04de16",
+    "IRGS_Catalog/evaluation/adopted_consequences_v1/README.md": "0e8dbc7b7693af2bc8ae0f55db49483f37b321a68a276d78af6b679309c4b355",
+    "IRGS_Catalog/evaluation/adopted_consequences_v1/actor_inputs/cases.json": "b12d32d7d82fde7c0c29c62ae4baaebd36acfc57a1ba649856cef1186767ad66",
+    "IRGS_Catalog/evaluation/adopted_consequences_v1/evaluator_only/expectations.json": "2f7529199bd533321cebe13efacf1a6906383de53befe1657698407975319f6e",
+    "IRGS_Catalog/evaluation/adopted_consequences_v1/manifest.json": "72b3216c1cbcd8eaf0d59e44a681653f6b8273acbd8daa688357e4592aa38be3",
+    "IRGS_Catalog/release.json": "6a0e9cada4bf335afd1b994018c30fd2d9f8183685e5c32fd3ee8198774f391b",
+    "IRGS_Catalog/verify_catalog.py": "89520d25107d22fd58bfbb3c1dde238b755045c770def0824ad2685c710e023a",
+    "tools/tests/test_adopted_consequences_consumers.py": "ff43801ed731402b4865b36a474c4adb19cc8bb5dc9200211a29fe6f46331dc8",
+    "tools/tests/test_adopted_consequences_contract.py": "0f2ecc5f06d8d890711ec4909690170a1ea23189b8c8a3f2231029a341d0901b",
+    "tools/tests/test_standalone_catalog.py": "cc74eed68b19068e5ea50ac3079867b1e0d34db13a9949e1a4ee9c8a8305a85c"
+  },
+  "checks": [
+    {
+      "name": "catalog",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-346-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog IRGS_HISTORICAL_ENGINE_RUNTIME=/tmp/catalog-346-engine/IRGS_3_3/runtime IRGS_HISTORICAL_APP_SOURCE=/tmp/catalog-346-app/IRGS_Web python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_standalone_catalog tools.tests.test_player_start_contract tools.tests.test_start_context_contract tools.tests.test_phase_response_contract tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_alpha_context_contract tools.tests.test_alpha_journey_contract tools.tests.test_grounding_quality tools.tests.test_intent_world_draft_contract tools.tests.test_adopted_consequences_contract -v",
+      "tests": 121,
+      "passed": 121,
+      "elapsed_seconds": 46.182,
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "consumers",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "IRGS_ADOPTED_ENGINE_SOURCE=/tmp/catalog-346-engine IRGS_ADOPTED_APP_SOURCE=/tmp/catalog-346-app python -B -m unittest tools.tests.test_adopted_consequences_consumers -v",
+      "tests": 3,
+      "passed": 3,
+      "elapsed_seconds": 3.761,
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "engine",
+      "cwd": "/tmp/catalog-346-engine",
+      "command": "PYTHONPATH=/tmp/catalog-346-engine/IRGS_3_3/runtime python -B -m unittest test_world_draft test_supported_intent test_draft_intent_offers test_intent_communication test_ordinary_offer_profile -v",
+      "tests": 19,
+      "passed": 19,
+      "elapsed_seconds": 5.445,
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "app",
+      "cwd": "/tmp/catalog-346-app",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-346-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog PYTHONPATH=/tmp/catalog-346-app/IRGS_Web/tests:/tmp/catalog-346-app/IRGS_Web python -B -m unittest test_intent_bridge test_communication_bridge -v",
+      "tests": 20,
+      "passed": 20,
+      "elapsed_seconds": 17.268,
+      "result": "passed",
+      "skipped": 0
+    },
+    {
+      "name": "frontend",
+      "cwd": "/tmp/catalog-346-app",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-346-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog node IRGS_Web/tests/test_gameplay_ui.js",
+      "frontend_checks": 156,
+      "result": "passed",
+      "skipped": 0
+    }
+  ],
+  "total": {
+    "python_tests": 163,
+    "python_passed": 163,
+    "python_skipped": 0,
+    "frontend_checks": 156
+  },
+  "browser": {
+    "command": "IRGS_ENGINE_ROOT=/tmp/catalog-346-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog node tools/qualify_intent_ordinary.js /tmp/catalog-adopted-browser.json",
+    "cwd": "/tmp/catalog-346-app",
+    "result": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    }
+  },
+  "integrity_commands": {
+    "catalog": "python -B IRGS_Catalog/verify_catalog.py",
+    "engine": "python -B tools/verify_components.py --component engine",
+    "app": "python -B IRGS_Web/app_integrity.py",
+    "app_pins": "env -u IRGS_ENGINE_ROOT -u IRGS_CATALOG_ROOT python -B tools/verify_components.py --component app"
+  },
+  "integrity_results": {
+    "catalog": {
+      "status": "verified",
+      "component": "IRGS-Catalog",
+      "files": 235,
+      "concepts": 44,
+      "campaign_release_approved_by_check": false,
+      "campaign_records": {
+        "status": "verified",
+        "unique_concepts": 44,
+        "development_status_counts": {
+          "concept_draft": 0,
+          "planned": 41,
+          "in_development": 3
+        },
+        "runtime_availability_inferred": false
+      },
+      "historical_details": {
+        "status": "verified",
+        "parts": 32,
+        "archive": {
+          "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+          "bytes": 533064680,
+          "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+        },
+        "archive_coverage": "complete",
+        "members_verified": 5146,
+        "delivery_bindings_verified": 5145,
+        "collection_bindings_verified": 10,
+        "unbound_members": [
+          "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+        ],
+        "historical_truth_verified": false,
+        "campaign_adoption_performed": false
+      },
+      "solo_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-solo-r00-eval-v1",
+        "cases": 10,
+        "legitimate_actions": 5,
+        "actor_oracle_separation": true,
+        "runtime_execution_verified_by_schema": false,
+        "public_discovery": false
+      },
+      "solo_proposal_compatibility": {
+        "status": "verified",
+        "compatibility_id": "irgs-solo-r00-proposals-v1",
+        "app_source_selections": 2,
+        "runtime_execution_verified_by_schema": false,
+        "narration_dialogue": "awaiting_engine_app_contract"
+      },
+      "scripted_responses": {
+        "status": "verified",
+        "library_id": "irgs-response-depot-v1",
+        "version": "1.0.0",
+        "families": 127,
+        "variants": 1000,
+        "recipes": 32,
+        "provider_dispatch": false,
+        "runtime_integration_verified_by_schema": false
+      },
+      "original_scripted_responses": {
+        "status": "verified",
+        "library_id": "irgs-routine-responses-v1",
+        "version": "1.0.0",
+        "families": 82,
+        "variants": 325,
+        "recipes": 12,
+        "provider_dispatch": false,
+        "runtime_integration_verified_by_schema": false
+      },
+      "shared_response_compatibility": {
+        "status": "verified",
+        "fixture_id": "irgs-shared-responses-v1",
+        "contexts": 2,
+        "non_rise_contexts": 1,
+        "cases": 9,
+        "actor_oracle_separation": true,
+        "runtime_execution_verified_by_schema": false
+      },
+      "integrated_response_compatibility": {
+        "status": "verified",
+        "compatibility_id": "irgs-integrated-responses-v1",
+        "contexts": 2,
+        "source_cases": 9,
+        "original_manifest_preserved": true,
+        "runtime_execution_verified_by_schema": false
+      },
+      "development_interoperability": {
+        "status": "verified",
+        "compatibility_id": "irgs-development-interop-v1",
+        "engine_roles": 2,
+        "contexts": 2,
+        "public_process_starts": false,
+        "runtime_execution_verified_by_schema": false
+      },
+      "phase_response_compatibility": {
+        "status": "verified",
+        "compatibility_id": "irgs-phase-responses-v1",
+        "contexts": 2,
+        "public_process_starts": true,
+        "runtime_execution_verified_by_schema": false
+      },
+      "player_start_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-player-starts-v1",
+        "cases": 4,
+        "delivery_scope": "requirements_and_baseline_diagnostics",
+        "actor_oracle_separation": true,
+        "runtime_start_contract_implemented": false,
+        "runtime_execution_verified_by_schema": false
+      },
+      "start_context_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-start-context-v1",
+        "cases": 6,
+        "engine_schema": "irgs-start-readiness-1",
+        "app_adoption": "pending_adopted_app_revision",
+        "actor_oracle_separation": true,
+        "engine_execution_verified_by_schema": false,
+        "app_execution_qualified": false
+      },
+      "alpha_context_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-alpha-contexts-v1",
+        "contexts": 2,
+        "alpha_qualified": false,
+        "runtime_execution_verified_by_schema": false
+      },
+      "alpha_journey_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-alpha-journeys-v1",
+        "contexts": 2,
+        "alpha_qualified": false,
+        "runtime_execution_verified_by_schema": false
+      },
+      "grounding_quality": {
+        "status": "verified",
+        "cases": 2,
+        "semantic_inference_performed": false,
+        "alpha_qualified": false
+      },
+      "world_authoring_examples": {
+        "status": "verified",
+        "examples": 2,
+        "engine_validation_performed": false,
+        "world_creation_performed": false,
+        "alpha_qualified": false
+      },
+      "intent_world_draft_evaluation": {
+        "status": "verified",
+        "fixture_id": "irgs-intent-world-draft-v1",
+        "contexts": 2,
+        "engine_validation_performed_by_schema": false,
+        "runtime_execution_verified_by_schema": false,
+        "alpha_qualified": false
+      },
+      "adopted_consequences_evaluation": {
+        "status": "verified",
+        "fixture_id": "worldward-adopted-consequences-v1",
+        "contexts": 2,
+        "runtime_execution_verified_by_schema": false,
+        "semantic_judgments_verified": false,
+        "alpha_qualified": false
+      }
+    },
+    "engine": {
+      "status": "verified",
+      "component": "engine",
+      "checks": {
+        "engine": {
+          "release": "IRGS-CORE-3.3-SUITE",
+          "status": "verified",
+          "core": "3.3"
+        }
+      },
+      "behavioral_tests_executed": false
+    },
+    "app": {
+      "status": "verified",
+      "component": "IRGS-APP-WEB",
+      "files": 92
+    },
+    "pins": {
+      "status": "verified",
+      "component": "app",
+      "checks": {
+        "engine": {
+          "release": "IRGS-CORE-3.3-SUITE",
+          "status": "verified",
+          "core": "3.3"
+        },
+        "app": {
+          "status": "verified",
+          "component": "IRGS-APP-WEB",
+          "files": 92
+        },
+        "catalog": {
+          "status": "verified",
+          "component": "IRGS-Catalog",
+          "files": 230,
+          "concepts": 44,
+          "campaign_release_approved_by_check": false,
+          "campaign_records": {
+            "status": "verified",
+            "unique_concepts": 44,
+            "development_status_counts": {
+              "concept_draft": 0,
+              "planned": 41,
+              "in_development": 3
+            },
+            "runtime_availability_inferred": false
+          },
+          "historical_details": {
+            "status": "verified",
+            "parts": 32,
+            "archive": {
+              "name": "IRGS_Historical_Grand_Archive_v1_1.zip",
+              "bytes": 533064680,
+              "sha256": "51246eb6898a228f42f0794ed19ce69af275a2a4661c0fb6a1d3baebe3efc773"
+            },
+            "archive_coverage": "complete",
+            "members_verified": 5146,
+            "delivery_bindings_verified": 5145,
+            "collection_bindings_verified": 10,
+            "unbound_members": [
+              "IRGS_Historical_Grand_Archive_v1_1/07_Verification/delivery_manifest.json"
+            ],
+            "historical_truth_verified": false,
+            "campaign_adoption_performed": false
+          },
+          "solo_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-solo-r00-eval-v1",
+            "cases": 10,
+            "legitimate_actions": 5,
+            "actor_oracle_separation": true,
+            "runtime_execution_verified_by_schema": false,
+            "public_discovery": false
+          },
+          "solo_proposal_compatibility": {
+            "status": "verified",
+            "compatibility_id": "irgs-solo-r00-proposals-v1",
+            "app_source_selections": 2,
+            "runtime_execution_verified_by_schema": false,
+            "narration_dialogue": "awaiting_engine_app_contract"
+          },
+          "scripted_responses": {
+            "status": "verified",
+            "library_id": "irgs-response-depot-v1",
+            "version": "1.0.0",
+            "families": 127,
+            "variants": 1000,
+            "recipes": 32,
+            "provider_dispatch": false,
+            "runtime_integration_verified_by_schema": false
+          },
+          "original_scripted_responses": {
+            "status": "verified",
+            "library_id": "irgs-routine-responses-v1",
+            "version": "1.0.0",
+            "families": 82,
+            "variants": 325,
+            "recipes": 12,
+            "provider_dispatch": false,
+            "runtime_integration_verified_by_schema": false
+          },
+          "shared_response_compatibility": {
+            "status": "verified",
+            "fixture_id": "irgs-shared-responses-v1",
+            "contexts": 2,
+            "non_rise_contexts": 1,
+            "cases": 9,
+            "actor_oracle_separation": true,
+            "runtime_execution_verified_by_schema": false
+          },
+          "integrated_response_compatibility": {
+            "status": "verified",
+            "compatibility_id": "irgs-integrated-responses-v1",
+            "contexts": 2,
+            "source_cases": 9,
+            "original_manifest_preserved": true,
+            "runtime_execution_verified_by_schema": false
+          },
+          "development_interoperability": {
+            "status": "verified",
+            "compatibility_id": "irgs-development-interop-v1",
+            "engine_roles": 2,
+            "contexts": 2,
+            "public_process_starts": false,
+            "runtime_execution_verified_by_schema": false
+          },
+          "phase_response_compatibility": {
+            "status": "verified",
+            "compatibility_id": "irgs-phase-responses-v1",
+            "contexts": 2,
+            "public_process_starts": true,
+            "runtime_execution_verified_by_schema": false
+          },
+          "player_start_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-player-starts-v1",
+            "cases": 4,
+            "delivery_scope": "requirements_and_baseline_diagnostics",
+            "actor_oracle_separation": true,
+            "runtime_start_contract_implemented": false,
+            "runtime_execution_verified_by_schema": false
+          },
+          "start_context_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-start-context-v1",
+            "cases": 6,
+            "engine_schema": "irgs-start-readiness-1",
+            "app_adoption": "pending_adopted_app_revision",
+            "actor_oracle_separation": true,
+            "engine_execution_verified_by_schema": false,
+            "app_execution_qualified": false
+          },
+          "alpha_context_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-alpha-contexts-v1",
+            "contexts": 2,
+            "alpha_qualified": false,
+            "runtime_execution_verified_by_schema": false
+          },
+          "alpha_journey_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-alpha-journeys-v1",
+            "contexts": 2,
+            "alpha_qualified": false,
+            "runtime_execution_verified_by_schema": false
+          },
+          "grounding_quality": {
+            "status": "verified",
+            "cases": 2,
+            "semantic_inference_performed": false,
+            "alpha_qualified": false
+          },
+          "world_authoring_examples": {
+            "status": "verified",
+            "examples": 2,
+            "engine_validation_performed": false,
+            "world_creation_performed": false,
+            "alpha_qualified": false
+          },
+          "intent_world_draft_evaluation": {
+            "status": "verified",
+            "fixture_id": "irgs-intent-world-draft-v1",
+            "contexts": 2,
+            "engine_validation_performed_by_schema": false,
+            "runtime_execution_verified_by_schema": false,
+            "alpha_qualified": false
+          }
+        },
+        "catalog_commit": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+        "engine_commit": "fe9c2c10ec3a66f1be590e1b34860119670b22cb"
+      },
+      "behavioral_tests_executed": false
+    }
+  },
+  "observed_scope": [
+    "Both selected Engine draft profiles validate and produce disposable actor-scoped previews; explicit initialization requires unchanged review and no host save is claimed.",
+    "R00 offer and withdrawal do not transfer stock or imply consent; founding without permission rejects without changing save; separately requested and accepted grant precedes successful founding.",
+    "Quay shortcut fails, alternative passage succeeds, actual dispatch delivery conserves one item and second delivery is unsuccessful.",
+    "Actual actor-scoped receipt and local presentation agree; restart and original-result retry preserve saved effects.",
+    "No routine provider dispatch or direct transport; browser checks normal default starts and does not qualify optional offer-profile UI."
+  ],
+  "preservation": {
+    "previous_source_files": 230,
+    "current_source_files": 235,
+    "previous_sources_changed": [
+      "verify_catalog.py"
+    ],
+    "previous_validation_records_unchanged": [
+      "ALPHA_CONTEXT_VALIDATION.json",
+      "ALPHA_JOURNEY_VALIDATION.json",
+      "CAMPAIGN_RECORD_VALIDATION.json",
+      "CURRENT_ORDINARY_VALIDATION.json",
+      "DEVELOPMENT_INTEROP_VALIDATION.json",
+      "GROUNDING_QUALITY_VALIDATION.json",
+      "HISTORICAL_DETAILS_VALIDATION.json",
+      "INTEGRATED_RESPONSE_VALIDATION.json",
+      "INTENT_WORLD_DRAFT_VALIDATION.json",
+      "PHASE_RESPONSE_VALIDATION.json",
+      "PLAYER_START_VALIDATION.json",
+      "RESPONSE_DEPOT_VALIDATION.json",
+      "SCRIPTED_RESPONSES_VALIDATION.json",
+      "SHARED_RESPONSE_VALIDATION.json",
+      "SOLO_FIXTURE_VALIDATION.json",
+      "SOLO_PROPOSAL_VALIDATION.json",
+      "START_CONTEXT_VALIDATION.json"
+    ],
+    "previous_report": "COORDINATOR_REPORT_INTENT_DRAFT_01.md"
+  },
+  "limitations": [
+    "App pins the baseline Catalog; the new Catalog candidate is an explicit override.",
+    "Human semantic judgments are reviewer-supplied claims, not inferred or independently verified by the structural checker.",
+    "NPC/institution decisions, further sustained consequences, needs/recovery, risk/conflict and live model quality remain unmet.",
+    "Optional offer profile was selected by HTTP, not App setup UI; no NPC consent or stock transfer is implied.",
+    "Draft previews are disposable; no general editor, package import/export, creator playtest persistence or custom world authoring is qualified.",
+    "No native Windows, clean-package, live-provider or Alpha qualification is claimed."
+  ]
+}

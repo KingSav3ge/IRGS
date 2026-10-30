@@ -1,0 +1,25 @@
+{
+  "classification": "actor-inputs",
+  "fixture_id": "coordinator-quay-decision-3.4.7-1",
+  "snapshot_sha256": "eb182aef5f15ad199e8a54a8d9a7c6890b78ae26631c0125d04f6bb58dc43f34",
+  "opening_id": "quay-contact-decision-v1",
+  "character_name": "Synthetic independent courier",
+  "request": {
+    "action": "request-dispatch-help",
+    "intention": "I ask the worker to carry the sealed dispatch."
+  },
+  "continuation": [
+    {
+      "action": "quay-passage",
+      "intention": "I take the covered passage."
+    },
+    {
+      "action": "passage-desk",
+      "intention": "I walk to the desk."
+    },
+    {
+      "action": "deliver-dispatch",
+      "intention": "I deliver the dispatch."
+    }
+  ]
+}

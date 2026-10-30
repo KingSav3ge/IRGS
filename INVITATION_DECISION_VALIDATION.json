@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "partial_selected_invitation",
+  "date": "2026-10-29",
+  "edition": "3.4.6 Pre-Alpha",
+  "catalog_base_commit": "d8e2840ce0244c18da2512cabf9ef9785abcce3d",
+  "catalog_selection": "containing commit; candidate source hashes below",
+  "selection": {
+    "engine": "74a185104d0d856e951e2e547a0a1d2d06d1499e",
+    "app": "4ffd53a351a4d21c2005505076641c1827425147",
+    "app_engine_pin": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+    "app_catalog_pin": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+    "catalog": "containing-commit",
+    "engine_override": true,
+    "catalog_override": true
+  },
+  "source_sha256": {
+    "IRGS_Catalog/evaluation/invitation_decision_v1/README.md": "a35b5c2874d9f0714ed86f93fc552e457847bc9f63c1ddafaa0c9b4f96dd7932",
+    "IRGS_Catalog/evaluation/invitation_decision_v1/manifest.json": "efd44f87e1b0a2736406bc6a611294047001bbed2377bcbd3fe5ecd47cf76f2d",
+    "IRGS_Catalog/evaluation/invitation_decision_v1/actor_inputs/cases.json": "e914f1dc77d7f9c9b3c1959cffc3137b9e95e5a7799d968be1789b3c3bf9d9ba",
+    "IRGS_Catalog/evaluation/invitation_decision_v1/evaluator_only/expectations.json": "87ce2f12bb8192ba40a40ff575177b27b35735547f42dd18591e35a642899990",
+    "IRGS_Catalog/release.json": "e24cfd285dd634c0d09c753133b7a34a71e293d236cf3f6a7f6ae337803cb77a",
+    "tools/tests/test_invitation_decision_consumers.py": "fd66508a8dd78ab520286246a539d84c884e9413b8ec365d416ba9115f2fb6d0"
+  },
+  "checks": [
+    {
+      "name": "independent HTTP, both drafts and selected invitation",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "IRGS_INVITATION_ENGINE_SOURCE=/tmp/catalog-new-engine IRGS_INVITATION_APP_SOURCE=/tmp/catalog-new-app python -B -m unittest tools.tests.test_invitation_decision_consumers -v",
+      "passed": 3,
+      "skipped": 0
+    },
+    {
+      "name": "Catalog contract and archive suite",
+      "cwd": "/workspace/IRGS-Catalog",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-new-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog IRGS_HISTORICAL_ENGINE_RUNTIME=/tmp/catalog-new-engine/IRGS_3_3/runtime IRGS_HISTORICAL_APP_SOURCE=/tmp/catalog-new-app/IRGS_Web python -B -m unittest tools.tests.test_campaign_records tools.tests.test_historical_details tools.tests.test_historical_details_delivery tools.tests.test_standalone_catalog tools.tests.test_player_start_contract tools.tests.test_start_context_contract tools.tests.test_phase_response_contract tools.tests.test_scripted_responses tools.tests.test_scripted_response_expansion tools.tests.test_alpha_context_contract tools.tests.test_alpha_journey_contract tools.tests.test_grounding_quality tools.tests.test_intent_world_draft_contract tools.tests.test_adopted_consequences_contract -v",
+      "passed": 121,
+      "skipped": 0
+    },
+    {
+      "name": "selected Engine invitation, draft and intent tests",
+      "cwd": "/tmp/catalog-new-engine",
+      "command": "PYTHONPATH=/tmp/catalog-new-engine/IRGS_3_3/runtime python -B -m unittest test_ordinary_invitation_decision test_world_draft test_supported_intent -v",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
+      "name": "selected App intent and communication",
+      "cwd": "/tmp/catalog-new-app",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-new-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog PYTHONPATH=/tmp/catalog-new-app/IRGS_Web/tests:/tmp/catalog-new-app/IRGS_Web python -B -m unittest test_intent_bridge test_communication_bridge -v",
+      "passed": 20,
+      "skipped": 0
+    },
+    {
+      "name": "frontend",
+      "cwd": "/tmp/catalog-new-app",
+      "command": "IRGS_ENGINE_ROOT=/tmp/catalog-new-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog node IRGS_Web/tests/test_gameplay_ui.js",
+      "passed": 156,
+      "skipped": 0
+    }
+  ],
+  "browser": {
+    "cwd": "/tmp/catalog-new-app",
+    "command": "IRGS_ENGINE_ROOT=/tmp/catalog-new-engine/IRGS_3_3 IRGS_CATALOG_ROOT=/workspace/IRGS-Catalog/IRGS_Catalog node tools/qualify_rise_offer_ui.js /tmp/catalog-inv-browser.json",
+    "result": {
+      "status": "passed",
+      "contexts": [
+        {
+          "action": "look-quay",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        },
+        {
+          "action": "inspect",
+          "normal_reviewed_creation": true,
+          "review_cancel_no_effect": true,
+          "actual_commit": true,
+          "exact_words": true,
+          "retained_draft": true,
+          "reload": true,
+          "mobile_width": 390
+        }
+      ],
+      "optional_profile_default_omitted": true,
+      "reviewed_source_and_scope": true,
+      "back_and_cancel_preserved": true,
+      "lost_creation_acknowledgement_recovered": true,
+      "explicit_offer_review_cancel_confirm": true,
+      "offer_status": "offered",
+      "stock_transfer": false,
+      "npc_control_or_consent": false,
+      "independent_drafts_reload": true,
+      "provider_calls": 0,
+      "browser_errors": 0,
+      "external_requests": 0
+    },
+    "scope": "Normal optional-offer UI and ordinary actions; not an invitation-specific browser journey."
+  },
+  "integrity": [
+    {
+      "component": "Catalog",
+      "command": "python -B IRGS_Catalog/verify_catalog.py",
+      "result": "passed"
+    },
+    {
+      "component": "Engine",
+      "command": "python -B tools/verify_components.py --component engine",
+      "result": "passed"
+    },
+    {
+      "component": "App",
+      "command": "python -B IRGS_Web/app_integrity.py",
+      "result": "passed"
+    },
+    {
+      "component": "App committed pins",
+      "command": "env -u IRGS_ENGINE_ROOT -u IRGS_CATALOG_ROOT python -B tools/verify_components.py --component app",
+      "result": "passed"
+    }
+  ],
+  "requirements": {
+    "npc_decisions": "Engine/App: general and non-Rise NPC decisions beyond this authored R00 selection",
+    "institution_decisions": "Engine/App: continuing institution decisions and authority",
+    "needs_recovery": "Engine/App: selected needs and recovery",
+    "risk_conflict": "Engine/App: consequential risk and conflict",
+    "consequences": "Engine/App/Catalog: broader persistent outcomes and independent journeys",
+    "authoring": "Engine/App: reviewed general world creation, persistence and playtesting",
+    "live_provider": "Engine/App/operator: separately authorized live provider route and budget; Catalog evaluates quality"
+  },
+  "limitations": [
+    "No live provider was called or evaluated; provider paths were blocked.",
+    "No human semantic judgment is inferred from a structured match.",
+    "App has not committed the selected Engine or containing Catalog.",
+    "No native Windows or clean distributable qualification.",
+    "The selected authored NPC decision is fictional R00 only; no general NPC or non-Rise NPC decision claim.",
+    "The browser did not exercise invitation; invitation was exercised through real local HTTP.",
+    "No Alpha acceptance gate is closed."
+  ],
+  "total_python_passed": 155,
+  "total_python_skipped": 0
+}

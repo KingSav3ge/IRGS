@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "fixture_id": "coordinator-adopted-ordinary-3.4.7-1",
+  "components": {
+    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+  },
+  "consumer_source_sha256": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",
+  "original_selected_sources": {
+    "engine": "f029149cb52721c823e9d416bdf96918d53b92ce",
+    "app": "42c4cdf62b8bcc571d5524170baced1294aacf55"
+  },
+  "fixture_files_sha256": {
+    "actor_inputs/cases.json": "019ba6feba6fc7cc016c1254da6275ff07fe6b6f9e810611d147a304bf244453",
+    "evaluator_only/expectations.json": "8647dad291e1c77368bafe86b8a2b74be406f773289995dc87af87f47d5bfd22"
+  },
+  "source_selection_is_separate_from_original": true,
+  "unprivileged_normal_creation": true,
+  "prior_selection_fixture_id": "coordinator-adopted-ordinary-3.4.6-1"
+}

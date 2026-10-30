@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "cycle_id": "intent-world-3.4.6",
-  "assigned_on": "2026-10-29",
-  "objective": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
+  "cycle_id": "decisions-3.4.7",
+  "assigned_on": "2026-10-30",
+  "objective": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
   "completion_plan": "SOLO_COMPLETION_PLAN.md",
   "coordinator": {
     "title": "IRGS Enviroment",
@@ -36,28 +36,28 @@
     }
   },
   "baseline_components": {
-    "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
-    "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
-    "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
-  },
-  "cycle_start_components": {
-    "joined": "28856be59731094a068c32e9687fce6d088dc45f",
-    "engine": "5fe7b2b3539b3a76f12aab0d375ecfcb84acabe9",
-    "app": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
-    "catalog": "abb7ab86f2aa12b1c6585aa7da10f5809209112e"
-  },
-  "selected_components": {
     "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
     "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
     "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
   },
+  "cycle_start_components": {
+    "joined": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
+    "engine": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
+    "app": "52de997814d4f51b12490fb1a683b98abebb0572",
+    "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
+  },
+  "selected_components": {
+    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
+  },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+      "commit": "4e704cc91af398413352c73ca0c77743875987d4",
       "deliverable": "component_update",
-      "owner_delivery": "5fe7b2b3539b3a76f12aab0d375ecfcb84acabe9",
-      "scope": "Supported-intent review, communication review, grant-attempt prerequisites, optional reviewed household offers and two bounded draft profiles are delivered. Preserve the existing shared-intent and communication APIs while App adopts newer DTOs. Continue meaningful ordinary consequences and selected NPC/institution decisions through the existing Core/K owners; publish exact prerequisites without inferring consent or hidden eligibility. Define atomic host creation/retry/restore for bounded drafts before claiming a Creator playtest workflow.",
+      "owner_delivery": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
+      "scope": "Selected invitation and non-Rise contact decision contracts",
       "checks": [
         {
           "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
@@ -68,21 +68,17 @@
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
+          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
           "status": "passed"
         }
       ]
     },
     "catalog": {
       "status": "approved",
-      "commit": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+      "commit": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
       "deliverable": "component_update",
-      "owner_delivery": "abb7ab86f2aa12b1c6585aa7da10f5809209112e",
-      "scope": "Grounding rubric, original world-authoring examples and ordinary intent/recovery consumers are delivered. Original fixtures retain their exact source guards. Extend independent journeys to newly selected meaningful consequences and both bounded draft profiles, recording each unsupported requirement and its owner. Separate actor inputs from evaluator truth, actual Core effects from narration, human-supplied semantic judgments from verified claims, and fake transport from live-provider quality.",
+      "owner_delivery": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8",
+      "scope": "Independent consequence/invitation/two-profile draft consumers",
       "checks": [
         {
           "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
@@ -93,21 +89,17 @@
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
+          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
           "status": "passed"
         }
       ]
     },
     "app": {
       "status": "approved",
-      "commit": "746c9a381e64b7f985d37edd39a91b5b79b2e027",
+      "commit": "2bc51c3471ab17aafcac24800219d91c33351063",
       "deliverable": "component_update",
-      "owner_delivery": "4f7cbd703d1207ae32db2bbc90d429415ae1e13f",
-      "scope": "Protected POSIX operator setup, explicit shared-capability review and WorldWard branding are delivered. The current UI uses the shared runtime contract; newer supported-intent communication DTOs, optional start offer-profile choice and world-draft preview/editor are not yet adopted. Add explicit source-bound controls incrementally, preserving exact words, independent drafts, review/cancel/confirmation, original-result recovery and the chronological tale. Keep Windows setup unavailable until ACL handling is implemented and tested; live-provider quality requires a separately authorized eligible route and finite budget.",
+      "owner_delivery": "52de997814d4f51b12490fb1a683b98abebb0572",
+      "scope": "Communication DTO and offer UI adoption plus separately reviewed grant controls",
       "checks": [
         {
           "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
@@ -118,22 +110,14 @@
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog intent/draft and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Presentation harness checks seven genre bases, the current shared historical palette and distinct Rise override; contrast and read-only checks retained",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, thirteen Chromium suites and separately selected independent consumers",
+          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
           "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "integrated_3_4_6_pre_alpha",
-  "component_source_integration_performed": true,
+  "integration_status": "approved_components_for_isolated_candidate",
+  "component_source_integration_performed": false,
   "blockers": [],
   "next_assignments": {
     "engine": "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
@@ -230,32 +214,25 @@
       "viable_component_update": false
     }
   ],
-  "target_version": "3.4.6",
+  "target_version": "3.4.7",
   "target_version_status": "pre_alpha",
   "proposed_components": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
   },
   "reviewed_at_utc": "2026-10-29T19:06:13.653356+00:00",
-  "completed_components": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
-  },
+  "completed_components": {},
   "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
   "qualified_candidate_commit": "4d7991c8d3bac1a8f649371ce596c210c982114c",
   "integrated_at_utc": "2026-10-29T19:06:13.653356+00:00",
   "cycle_completion_status": "qualified_offline_increment_alpha_gates_open",
   "remaining_work": [
-    "A4-ENG-01/03 and WB-ENG-01: consequences, contract adoption and draft-host boundaries",
-    "A4-APP-03 and WB-APP-01: adopt supported-intent/draft contracts and explicit offer selection",
-    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and draft coverage",
-    "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
-    "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
-    "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
+    "A4-ENG-01/03: broader consequences and selected needs/recovery",
+    "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
+    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery"
   ],
-  "completion_scope": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
+  "completion_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
   "development_scope": {
     "directive": "Develop shared IRGS systems across campaigns and themes; Rise is one regression fixture.",
     "scope_document": "IRGS_SYSTEMS_SCOPE.md",
@@ -268,13 +245,13 @@
     "chat_message_dispatched": false
   },
   "previous_integration": {
-    "cycle_id": "story-flow-3.4.5",
+    "cycle_id": "intent-world-3.4.6",
     "components": {
-      "engine": "296e46a1beed10d0ebf2841f133bb52fade83697",
-      "catalog": "e97d87f0d17a16dbe0ce186badafe663188321a1",
-      "app": "7e1a5929b2f30479aa315789f75bfa6c46761438"
+      "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
+      "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
+      "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
     },
-    "record": "provenance/qa/completed_cycles/story-flow-3.4.5_coordination.json"
+    "record": "provenance/qa/completed_cycles/intent-world-3.4.6_coordination.json"
   },
   "continuation_instructions": {
     "IRGS-Engine": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/CHAT_CONTINUATION.md",

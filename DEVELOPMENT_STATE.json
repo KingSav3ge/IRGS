@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "edition": "3.4.6",
+  "edition": "3.4.7",
   "channel": "development",
-  "date": "2026-10-29",
-  "status": "qualified_pre_alpha_with_required_package_gate",
+  "date": "2026-10-30",
+  "status": "candidate_awaiting_joined_qualification",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
+    "engine": "4e704cc91af398413352c73ca0c77743875987d4",
+    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+    "app": "2bc51c3471ab17aafcac24800219d91c33351063"
   },
-  "qualification_record": "provenance/qa/intent_world_3_4_6_review.json",
-  "qualification_scope": "Adopt reviewed shared intentions, protected operator setup, bounded communication/offer/world-draft contracts, independent Catalog grounding/recovery consumers, and WorldWard/Fulcrum/T!DEMARCH branding. Preserve Core authority and technical compatibility.",
-  "next_milestone": "Supported-intent/draft UI adoption and wider ordinary consequences",
+  "qualification_record": "provenance/qa/decisions_3_4_7_review.json",
+  "qualification_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified.",
+  "next_milestone": "Bounded Creator-host creation/recovery and selected needs/consequences",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
   "source_input_sha256": "54b557a3c0bb2a6637b95f7dd5e084d78a9ec61c746074f863e189e3806b776d",
