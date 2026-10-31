@@ -1,5 +1,24 @@
 # IRGS Solo runtime completion
 
+## Current 3.4.8 direction — 31 October 2026
+
+WorldWard **3.4.8 Pre-Alpha**. Previous release field: **3.3.3**.
+The next joined main publication must increment to **3.4.9**. Functional Alpha
+4.0 is not qualified.
+
+T!DEMARCH Studios is the parent studio; WorldWard is the product and Fulcrum
+Engine the underlying technology. IRGS technical paths and saved identities
+remain compatible. The four repository IDs and exact adopted source pins are
+in COMPONENTS.json and UNIFICATION_3_4_8.md.
+
+This consolidation includes the Rise expansion requirement, all owner work
+orders and the completed proposed Creator handoff. Gameplay source is unchanged
+from 3.4.7. Rise numerical allowances/expansion decisions and Creator
+preview/durable creation remain unimplemented. Proposed terms and accepted
+design documents are not runtime success, NPC consent or release evidence.
+
+Read DEVELOPMENT.md and UNIFICATION_3_4_8.md for current scope and evidence. Earlier records retain their actual source identities.
+
 ## Current 3.4.7 direction — 30 October 2026
 
 Current edition: **3.4.7 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.8**. Functional 4.0.0 Alpha remains unqualified.

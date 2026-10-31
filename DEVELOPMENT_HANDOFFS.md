@@ -1,23 +1,25 @@
-# Existing development chat continuations — WorldWard 3.4.7 Pre-Alpha
+# Existing owner continuation after 3.4.8 unification
 
-Current edition: **3.4.7 Pre-Alpha**; previous_version: **3.3.3**. Next unified main publication: **3.4.8**. Functional 4.0.0 Alpha remains unqualified.
+After the verified unification checkpoint, resume the existing owners with
+nonoverlapping writes. Engine owns rights/work/permission contracts and the
+Creator durability/restore clarifications. App first reproduces the stale Saves
+revision summary, then may adopt bounded Creator preview; no durable create
+until its contract gaps close. Catalog authors the first fictional Rise cap and
+expansion procedure plus independent cases. Read provenance/coordination/owners/engine/,
+provenance/coordination/owners/app/ and provenance/coordination/owners/catalog/ work orders.
 
-WorldWard is developed by T!DEMARCH Studios and powered by Fulcrum Engine. IRGS remains the internal initiative. Public repositories are KingSav3ge/WorldWard, KingSav3ge/Fulcrum-Engine, KingSav3ge/WORLDWARD-APP-WEB and KingSav3ge/WorldWard-Catalog. Preserve existing technical paths, schema/fixture IDs, original archives, saves and personal settings; Catalog/Atlas product naming remains open.
+The coordinator bridge currently cannot read/resume those chats. Do not create
+replacement owners or claim dispatch. Hold overlapping runtime changes until
+the existing owners can coordinate them.
 
-This edition adopts selected R00 invitation refusal/later agreement and an opt-in fictional quay worker refusal, versioned communication reviews with legacy recovery, explicit optional household-offer setup, and independent consequence/two-profile draft consumers. The composer now reviews grant requests and acceptance separately using Engine-supplied capabilities and exact player words. A completed conversation can be a refusal; an offered proposal is not consent or a transfer. These are bounded authored decisions, not a general NPC model or an implemented Creator world editor.
+## engine
 
-Preserve one authoritative Core, nine K owners and the existing six Directors, actor-scoped information, conserved resources/capacity, atomic rejection and original-result recovery. Revision, causal sequence, elapsed work and civil time remain distinct. Broader NPC/institution behavior, needs/recovery, consequential conflict, arbitrary world authoring, live-provider quality, native Windows and functional Alpha qualification remain open.
+Thread: 01a164cf-5c1b-74ae-a63e-ff93cc9d10da. Read provenance/coordination/owners/engine/COORDINATOR_WORK_ORDER.md. Pull the matching owner repository safely and report exact commit/pins and executed evidence. Do not write another owner\'s source.
 
-Paste the appropriate message into each existing owner chat. This file does not dispatch or resume chats automatically.
+## app
 
-## Fulcrum-Engine
+Thread: 01a164a6-687b-723a-ac81-acb55e3d50d2. Read provenance/coordination/owners/app/COORDINATOR_WORK_ORDER.md. Pull the matching owner repository safely and report exact commit/pins and executed evidence. Do not write another owner\'s source.
 
-Pull KingSav3ge/Fulcrum-Engine/main safely, preserving local work. Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. Bounded R00 invitation refusal/later agreement and an opt-in non-Rise quay refusal are delivered through the existing Core and immutable request contracts. Continue the next explicitly selected shared needs/recovery or institution/consequence slice in two ordinary contexts, documenting rules and authority before implementation. Preserve the nine K owners, six Directors, private information and conservation. The bounded draft-host atomic creation/restore contract is available for App adoption; it remains design-only until implemented and qualified. Publish only your repository, with exact source SHA, actual pins, executed checks/skips and remaining scope. Keep one Core, existing K owners/Directors and actor-scoped receipts. The coordinator owns the next qualified joined edition, 3.4.8.
+## catalog
 
-## WORLDWARD-APP-WEB
-
-Pull KingSav3ge/WORLDWARD-APP-WEB/main safely, preserving local work. Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. Optional offer setup and versioned communication DTOs are adopted. This coordinated increment also consumes the actor-safe grant prerequisite DTO through separate request/acceptance review controls. Implement disposable draft preview and explicit durable playtest creation under engine/DRAFT_HOST_ATOMIC_CONTRACT.md, with ordinary reviewed creation, actor-filtered output, atomic persistence and immutable same-request recovery. Keep the chronological tale, exact words, existing/legacy communication recovery and independent drafts. Native Windows operator ACLs and live-provider quality remain separate unfinished work. Publish only your repository, with exact source SHA, actual pins, executed checks/skips and remaining scope. Keep one Core, existing K owners/Directors and actor-scoped receipts. The coordinator owns the next qualified joined edition, 3.4.8.
-
-## WorldWard-Catalog
-
-Pull KingSav3ge/WorldWard-Catalog/main safely, preserving local work. Read AGENTS.md, CHAT_CONTINUATION.md and COORDINATOR_WORK_ORDER.md. Independent invitation/consequence and two-profile draft evaluations are delivered at their original exact selections; preserve their guards and evidence. Extend actor/evaluator-separated journeys to each newly selected consequence, needs/recovery and Creator-host contract. Qualify exact adopted pins separately, including non-Rise decisions, conserved effects, original receipt replay and restore fences. Structural rubric judgments do not establish human semantic accuracy or live-model quality; wider Alpha requirements remain open. Publish only your repository, with exact source SHA, actual pins, executed checks/skips and remaining scope. Keep one Core, existing K owners/Directors and actor-scoped receipts. The coordinator owns the next qualified joined edition, 3.4.8.
+Thread: 01a164ac-89ba-72ff-b5b3-32cca95ec0c7. Read provenance/coordination/owners/catalog/COORDINATOR_WORK_ORDER.md. Pull the matching owner repository safely and report exact commit/pins and executed evidence. Do not write another owner\'s source.
