@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "cycle_id": "decisions-3.4.7",
-  "assigned_on": "2026-10-30",
-  "objective": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
+  "cycle_id": "unification-3.4.8",
+  "assigned_on": "2026-10-31",
+  "objective": "Consolidate completed verified design/instructions and compatible pins into canonical main/workspaces; preserve unchanged 3.4.7 gameplay behavior and qualify fresh evidence.",
   "completion_plan": "SOLO_COMPLETION_PLAN.md",
   "coordinator": {
     "title": "IRGS Enviroment",
@@ -15,129 +15,106 @@
       "thread_id": "01a164cf-5c1b-74ae-a63e-ff93cc9d10da",
       "host_id": "durable",
       "message_dispatched": false,
-      "work_order": "https://github.com/KingSav3ge/IRGS-Engine/blob/main/COORDINATOR_WORK_ORDER.md",
-      "observed_status": "published_delivery_reviewed"
+      "work_order": "https://github.com/KingSav3ge/Fulcrum-Engine/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "repository_delivery_reviewed_chat_bridge_unavailable"
     },
     "app": {
       "title": "IRGS App/Website",
       "thread_id": "01a164a6-687b-723a-ac81-acb55e3d50d2",
       "host_id": "durable",
       "message_dispatched": false,
-      "work_order": "https://github.com/KingSav3ge/IRGS-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md",
-      "observed_status": "published_delivery_reviewed"
+      "work_order": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "repository_delivery_reviewed_chat_bridge_unavailable"
     },
     "catalog": {
       "title": "IRGS Catalog",
       "thread_id": "01a164ac-89ba-72ff-b5b3-32cca95ec0c7",
       "host_id": "durable",
       "message_dispatched": false,
-      "work_order": "https://github.com/KingSav3ge/IRGS-Catalog/blob/main/COORDINATOR_WORK_ORDER.md",
-      "observed_status": "published_delivery_reviewed"
+      "work_order": "https://github.com/KingSav3ge/WorldWard-Catalog/blob/main/COORDINATOR_WORK_ORDER.md",
+      "observed_status": "repository_delivery_reviewed_chat_bridge_unavailable"
     }
   },
   "baseline_components": {
-    "engine": "fe9c2c10ec3a66f1be590e1b34860119670b22cb",
-    "catalog": "cf69a6cf628a6d9249124cc6b0700dfc59287677",
-    "app": "746c9a381e64b7f985d37edd39a91b5b79b2e027"
-  },
-  "cycle_start_components": {
-    "joined": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
-    "engine": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
-    "app": "52de997814d4f51b12490fb1a683b98abebb0572",
-    "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
-  },
-  "selected_components": {
     "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
     "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
     "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
   },
+  "cycle_start_components": {
+    "joined": "aa4be19518aacbd3b2727d981ce41b6570411c10",
+    "engine": "5a25c4d3d5f532e3624b395fbcc369a895e97b9e",
+    "app": "5ef8af739faf9d37d24cf7422abe3ca5e0205663",
+    "catalog": "9d221f5512d460984ae96722ae4eb1e0eac00ac5"
+  },
+  "selected_components": {
+    "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+    "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+    "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
+  },
   "reviews": {
     "engine": {
       "status": "approved",
-      "commit": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "commit": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
       "deliverable": "component_update",
-      "owner_delivery": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
-      "scope": "Selected invitation and non-Rise contact decision contracts",
+      "scope": "Completed design/instruction delivery and edition/pin alignment only; not new runtime capability.",
       "checks": [
         {
-          "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
+          "name": "Actual main identity, exact diff, archives and immutable prior delivery reviewed",
           "status": "passed"
         },
         {
-          "name": "Current selected component integrity and focused Engine/App/Catalog contracts",
+          "name": "Current component integrity and compatible source/pins verified",
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
+          "name": "Gameplay runtime equals the published 3.4.7 source",
           "status": "passed"
         }
       ]
     },
     "catalog": {
       "status": "approved",
-      "commit": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
+      "commit": "a18cb48928da25d40d057a182c69f71ef149ce80",
       "deliverable": "component_update",
-      "owner_delivery": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8",
-      "scope": "Independent consequence/invitation/two-profile draft consumers",
+      "scope": "Completed design/instruction delivery and edition/pin alignment only; not new runtime capability.",
       "checks": [
         {
-          "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
+          "name": "Actual main identity, exact diff, archives and immutable prior delivery reviewed",
           "status": "passed"
         },
         {
-          "name": "Current selected component integrity and focused Engine/App/Catalog contracts",
+          "name": "Current component integrity and compatible source/pins verified",
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
+          "name": "Gameplay runtime equals the published 3.4.7 source",
           "status": "passed"
         }
       ]
     },
     "app": {
       "status": "approved",
-      "commit": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
+      "commit": "c04ba5524ae95316c7e826fc63085a4916d7dd67",
       "deliverable": "component_update",
-      "owner_delivery": "52de997814d4f51b12490fb1a683b98abebb0572",
-      "scope": "Communication DTO and offer UI adoption plus separately reviewed grant controls",
+      "scope": "Completed design/instruction delivery and edition/pin alignment only; not new runtime capability.",
       "checks": [
         {
-          "name": "Exact delivery code/contracts, actor privacy, authority and historical evidence reviewed",
+          "name": "Actual main identity, exact diff, archives and immutable prior delivery reviewed",
           "status": "passed"
         },
         {
-          "name": "Current selected component integrity and focused Engine/App/Catalog contracts",
+          "name": "Current component integrity and compatible source/pins verified",
           "status": "passed"
         },
         {
-          "name": "Separately selected unchanged independent Catalog decisions, both-profile drafts and ordinary consumers",
-          "status": "passed"
-        },
-        {
-          "name": "Provider-boundary fixture synchronizes actual in-flight entry; 23 focused tests pass without changing production behavior",
-          "status": "passed"
-        },
-        {
-          "name": "Fresh joined regression, sixteen Chromium suites and separately selected independent consumers",
+          "name": "Gameplay runtime equals the published 3.4.7 source",
           "status": "passed"
         }
       ]
     }
   },
-  "integration_status": "integrated_3_4_7_pre_alpha",
-  "component_source_integration_performed": true,
+  "integration_status": "exact_design_and_pin_set_reviewed_candidate_pending",
+  "component_source_integration_performed": false,
   "blockers": [],
   "next_assignments": {
     "engine": "A4-ENG-01/03: broader consequences and selected needs/recovery",
@@ -210,7 +187,7 @@
   "coordination_limitations": [
     "Repository work orders are the available chat handoff; QA monitoring does not start chats."
   ],
-  "runtime_implemented_by_this_priority_update": true,
+  "runtime_implemented_by_this_priority_update": false,
   "work_order_publication": [
     {
       "component": "engine",
@@ -234,19 +211,15 @@
       "viable_component_update": false
     }
   ],
-  "target_version": "3.4.7",
+  "target_version": "3.4.8",
   "target_version_status": "pre_alpha",
   "proposed_components": {
-    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+    "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+    "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
   },
   "reviewed_at_utc": "2026-10-30T17:30:44.160209+00:00",
-  "completed_components": {
-    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
-  },
+  "completed_components": {},
   "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
   "qualified_candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
   "integrated_at_utc": "2026-10-30T17:30:44.160209+00:00",
@@ -259,7 +232,7 @@
     "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
     "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
   ],
-  "completion_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
+  "completion_scope": "Documentation, proposed Creator handoff, Rise requirement, exact component pins and full offline runtime regression. No new gameplay mechanic.",
   "development_scope": {
     "directive": "Develop shared IRGS systems across campaigns and themes; Rise is one regression fixture.",
     "scope_document": "IRGS_SYSTEMS_SCOPE.md",
@@ -288,5 +261,10 @@
   },
   "guides_updated_on": "2026-10-30",
   "continuation_message_dispatched": false,
-  "previous_version": "3.3.3"
+  "previous_version": "3.3.3",
+  "owner_bridge_status": "connection closed before server request was answered",
+  "rise_expansion_status": "adopted_requirement_not_implemented_numeric_profiles_pending",
+  "creator_handoff_status": "proposed_design_only_two_host_contract_questions_open",
+  "blocked_transfer": "Earlier App Vercel source-copy denial remains in force; no retry or alternate transfer attempted.",
+  "external_deployment_performed": false
 }
