@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "edition": "3.4.7",
+  "edition": "3.4.8",
   "channel": "development",
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "status": "qualified_pre_alpha_with_required_package_gate",
   "primary_branch": "main",
   "selected_runtime_core": "3.3",
   "source_commits": {
-    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+    "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+    "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
   },
   "qualification_record": "provenance/qa/decisions_3_4_7_review.json",
   "qualification_scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified.",
   "next_milestone": "Bounded Creator-host creation/recovery and selected needs/consequences",
   "continuation_instructions": "CHAT_CONTINUATION.md",
   "development_guide": "DEVELOPMENT.md",
-  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
+  "source_input_sha256": "d2337bdceb22a8f3125770a332f7f49e26d689576485f8b3ca4712de29ab4cb5",
   "general_action_resolver_implemented": false,
   "live_inference_qualified": false,
   "private_saves_included": false,
@@ -26,5 +26,6 @@
   "historical_state": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
   "guide_update_scope": "3.4.4 Pre-Alpha shared gameplay and World Builder direction",
   "previous_version": "3.3.3",
-  "source_commit_scope": "Exact selected components; containing joined commit is identified by Git. No self-referential joined SHA is stored."
+  "source_commit_scope": "Exact selected components; containing joined commit is identified by Git. No self-referential joined SHA is stored.",
+  "runtime_feature_added": false
 }

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "fixture_id": "coordinator-adopted-intent-world-3.4.8-1",
+  "components": {
+    "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+    "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+    "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
+  },
+  "selection_mode": "joined_or_clean_extracted_source",
+  "original_fixture_id": "irgs-intent-world-draft-v1",
+  "original_consumer_preserved_sha256": "ffe9054fc77a5c13cfd6d266b6439b7e7d80f11e2a6ab746f4d605553ab97975",
+  "tests_run": 3,
+  "passed": 3,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "passed",
+  "provider_calls": 0,
+  "user_saves_opened": false,
+  "alpha_qualified": false
+}

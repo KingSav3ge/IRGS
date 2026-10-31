@@ -48,7 +48,10 @@ GitHub identity is KingSav3ge/Fulcrum-Engine, ID 1429942737. Recorded rename
 evidence shows the earlier Fulcrim-Engine spelling and its correction. That
 stale slug is a plausible cause, but the failing owner's current locked
 configuration could not be read because the owner-chat bridge is unavailable.
-The exact offending entry is therefore not confirmed. No locked configuration
+The exact offending entry is therefore not confirmed. Entry 4 is an ordinal, not
+a reliable identification of the Engine repository; the failing configuration's
+entry order is unknown. Compare its full_name and immutable ID against all four
+verified repository identities before choosing a correction. No locked configuration
 or repository selection was changed. The environment owner must compare the
 entry's configured slug and immutable ID with the values above.
 

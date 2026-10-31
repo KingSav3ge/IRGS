@@ -1,50 +1,48 @@
 {
   "schema_version": 1,
-  "version": "3.4.7",
+  "version": "3.4.8",
   "classification": "Pre-Alpha",
   "previous_version": "3.3.3",
-  "reviewed_at_utc": "2026-10-30T17:30:44.160209+00:00",
-  "baseline_joined_commit": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
+  "reviewed_at_utc": "2026-10-31T12:57:33.671702+00:00",
+  "baseline_joined_commit": "aa4be19518aacbd3b2727d981ce41b6570411c10",
   "owner_deliveries": {
-    "joined": "06ba6cd9d9be8838152ddf18bc250fd9e49ef16e",
-    "engine": "de4b2cecd4e2a5df880e99ad49a8ffa206c05482",
-    "app": "52de997814d4f51b12490fb1a683b98abebb0572",
-    "catalog": "db8b4055f3b8cdd459afdfbcf042ad242f53b7f8"
+    "joined": "aa4be19518aacbd3b2727d981ce41b6570411c10",
+    "engine": "5a25c4d3d5f532e3624b395fbcc369a895e97b9e",
+    "app": "5ef8af739faf9d37d24cf7422abe3ca5e0205663",
+    "catalog": "9d221f5512d460984ae96722ae4eb1e0eac00ac5"
   },
   "selected_components": {
-    "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-    "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-    "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
+    "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+    "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+    "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
   },
-  "qualified_candidate_commit": "b94d59e82a3173a8bae721e28e34d6f86a176e39",
-  "source_input_sha256": "8f444f5ee97df23abc4d268e8cd741fda133e458eda160fa8034364ecf40d4e1",
-  "scope": "Adopt reviewed invitation and separately selected quay-contact decisions, supported communication DTOs and optional offer UI, independent consequence and two-profile draft consumers; preserve one Core, actor-scoped receipts and chronological Story. Functional Alpha remains unqualified. The composer separately reviews Engine-selected grant requests and acceptance without inferring permission.",
-  "change_classification": {
-    "engine": "selected_invitation_and_quay_contact_decisions_with_existing_Core_authority",
-    "app": "versioned_communication_DTOs_optional_offer_setup_and_separate_grant_review_controls",
-    "catalog": "independent_consequence_invitation_and_both_profile_draft_consumers"
-  },
+  "qualified_candidate_commit": "2a7c999cbafda20af70636ecf2d01644c10eb436",
+  "source_input_sha256": "d2337bdceb22a8f3125770a332f7f49e26d689576485f8b3ca4712de29ab4cb5",
+  "scope": "Verified consolidation of requirements, proposed designs, existing owner history and compatible pins; gameplay code unchanged from 3.4.7.",
+  "runtime_feature_added": false,
+  "rise_expansion_runtime_implemented": false,
+  "creator_runtime_implemented": false,
   "regression_checks": [
     {
       "name": "source-integrity",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 16.2,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/source-integrity.txt"
+      "duration_seconds": 18.49,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/source-integrity.txt"
     },
     {
       "name": "evidence-freshness",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 1.52,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/evidence-freshness.txt"
+      "duration_seconds": 1.87,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/evidence-freshness.txt"
     },
     {
       "name": "runtime",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 108.87,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/runtime.txt",
+      "duration_seconds": 107.74,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/runtime.txt",
       "tests_run": 812,
       "skipped": 1
     },
@@ -52,8 +50,8 @@
       "name": "web",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 201.24,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/web.txt",
+      "duration_seconds": 268.7,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/web.txt",
       "tests_run": 279,
       "skipped": 7
     },
@@ -61,16 +59,16 @@
       "name": "interface",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 11.1,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/interface.txt",
+      "duration_seconds": 13.58,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/interface.txt",
       "checks_passed": 158
     },
     {
       "name": "tooling",
       "status": "passed",
       "exit_code": 0,
-      "duration_seconds": 23.6,
-      "log": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined/logs/tooling.txt",
+      "duration_seconds": 27.18,
+      "log": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/joined/logs/tooling.txt",
       "tests_run": 32,
       "skipped": 0
     }
@@ -217,11 +215,11 @@
       },
       "assets": [
         {
-          "url": "/style.css",
+          "url": "/fonts.css",
           "status": 200
         },
         {
-          "url": "/fonts.css",
+          "url": "/style.css",
           "status": 200
         },
         {
@@ -233,11 +231,11 @@
           "status": 200
         },
         {
-          "url": "/responses.data.js",
+          "url": "/themes.js",
           "status": 200
         },
         {
-          "url": "/routine.js",
+          "url": "/responses.data.js",
           "status": 200
         },
         {
@@ -245,15 +243,11 @@
           "status": 200
         },
         {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
           "url": "/rise.js",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
-          "status": 200
-        },
-        {
-          "url": "/catalogue.js",
           "status": 200
         },
         {
@@ -261,7 +255,103 @@
           "status": 200
         },
         {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/instrument-sans-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/preview.js",
+          "status": 200
+        },
+        {
+          "url": "/ibm-plex-mono-latin.woff2",
+          "status": 200
+        },
+        {
           "url": "/intents.js",
+          "status": 200
+        },
+        {
+          "url": "/app.js",
+          "status": 200
+        },
+        {
+          "url": "/newsreader-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/historical-landscape.jpg",
+          "status": 200
+        },
+        {
+          "url": "/im-fell-english-sc-latin.woff2",
+          "status": 200
+        },
+        {
+          "url": "/fonts.css",
+          "status": 200
+        },
+        {
+          "url": "/style.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.css",
+          "status": 200
+        },
+        {
+          "url": "/preview.css",
+          "status": 200
+        },
+        {
+          "url": "/themes.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.data.js",
+          "status": 200
+        },
+        {
+          "url": "/responses.js",
+          "status": 200
+        },
+        {
+          "url": "/routine.js",
+          "status": 200
+        },
+        {
+          "url": "/rise.js",
+          "status": 200
+        },
+        {
+          "url": "/communications.js",
+          "status": 200
+        },
+        {
+          "url": "/catalogue.js",
+          "status": 200
+        },
+        {
+          "url": "/intents.js",
+          "status": 200
+        },
+        {
+          "url": "/solo.js",
           "status": 200
         },
         {
@@ -273,19 +363,15 @@
           "status": 200
         },
         {
-          "url": "/communications.js",
-          "status": 200
-        },
-        {
           "url": "/app.js",
           "status": 200
         },
         {
-          "url": "/instrument-sans-latin.woff2",
+          "url": "/fraunces-latin.woff2",
           "status": 200
         },
         {
-          "url": "/fraunces-latin.woff2",
+          "url": "/instrument-sans-latin.woff2",
           "status": 200
         },
         {
@@ -329,7 +415,7 @@
           "status": 200
         },
         {
-          "url": "/routine.js",
+          "url": "/responses.data.js",
           "status": 200
         },
         {
@@ -337,103 +423,11 @@
           "status": 200
         },
         {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
-          "url": "/solo.js",
-          "status": 200
-        },
-        {
-          "url": "/processes.js",
-          "status": 200
-        },
-        {
-          "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.js",
-          "status": 200
-        },
-        {
-          "url": "/intents.js",
-          "status": 200
-        },
-        {
-          "url": "/communications.js",
-          "status": 200
-        },
-        {
-          "url": "/app.js",
-          "status": 200
-        },
-        {
-          "url": "/instrument-sans-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/fraunces-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/ibm-plex-mono-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/newsreader-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/historical-landscape.jpg",
-          "status": 200
-        },
-        {
-          "url": "/im-fell-english-sc-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/fonts.css",
-          "status": 200
-        },
-        {
-          "url": "/style.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.js",
-          "status": 200
-        },
-        {
-          "url": "/preview.css",
-          "status": 200
-        },
-        {
-          "url": "/themes.css",
-          "status": 200
-        },
-        {
-          "url": "/responses.data.js",
-          "status": 200
-        },
-        {
-          "url": "/responses.js",
-          "status": 200
-        },
-        {
           "url": "/routine.js",
           "status": 200
         },
         {
-          "url": "/rise.js",
-          "status": 200
-        },
-        {
           "url": "/catalogue.js",
-          "status": 200
-        },
-        {
-          "url": "/processes.js",
           "status": 200
         },
         {
@@ -442,6 +436,10 @@
         },
         {
           "url": "/solo.js",
+          "status": 200
+        },
+        {
+          "url": "/processes.js",
           "status": 200
         },
         {
@@ -457,15 +455,15 @@
           "status": 200
         },
         {
+          "url": "/fraunces-latin.woff2",
+          "status": 200
+        },
+        {
           "url": "/instrument-sans-latin.woff2",
           "status": 200
         },
         {
           "url": "/ibm-plex-mono-latin.woff2",
-          "status": 200
-        },
-        {
-          "url": "/fraunces-latin.woff2",
           "status": 200
         },
         {
@@ -626,7 +624,7 @@
         {
           "genre": "roman",
           "surface": "dark",
-          "minimum_contrast": 7.141049775607952
+          "minimum_contrast": 7.575299342145355
         },
         {
           "genre": "roman",
@@ -1095,177 +1093,178 @@
       "external_requests": 0
     }
   },
-  "catalog_start_adoption": {
-    "status": "passed",
-    "fixture_id": "irgs-start-context-v1",
-    "catalog_fixture_sha256": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
-    "selected_components": {
-      "schema_version": 2,
-      "joined_repository": "https://github.com/KingSav3ge/WorldWard.git",
-      "joined_branch": "main",
-      "engine": {
-        "repository": "https://github.com/KingSav3ge/Fulcrum-Engine.git",
-        "branch": "main",
-        "commit": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-        "source_paths": [
-          "IRGS_3_3",
-          "engine",
-          "provenance"
-        ]
+  "catalog_consumers": {
+    "starts": {
+      "status": "passed",
+      "fixture_id": "irgs-start-context-v1",
+      "catalog_fixture_sha256": "dc215f735f728dbed4ef1281b4428efc4cbb47a6c4f1628c40906fb5978e4670",
+      "selected_components": {
+        "schema_version": 2,
+        "joined_repository": "https://github.com/KingSav3ge/WorldWard.git",
+        "joined_branch": "main",
+        "engine": {
+          "repository": "https://github.com/KingSav3ge/Fulcrum-Engine.git",
+          "branch": "main",
+          "commit": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+          "source_paths": [
+            "IRGS_3_3",
+            "engine",
+            "provenance"
+          ]
+        },
+        "app": {
+          "repository": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git",
+          "branch": "main",
+          "commit": "c04ba5524ae95316c7e826fc63085a4916d7dd67",
+          "source_paths": [
+            "IRGS_Web",
+            "Start-IRGS.cmd"
+          ],
+          "engine_dependency": "Engine submodule, pinned to engine.commit",
+          "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+        },
+        "catalog": {
+          "repository": "https://github.com/KingSav3ge/WorldWard-Catalog.git",
+          "branch": "main",
+          "commit": "a18cb48928da25d40d057a182c69f71ef149ce80",
+          "source_paths": [
+            "IRGS_Catalog"
+          ]
+        }
       },
-      "app": {
-        "repository": "https://github.com/KingSav3ge/WORLDWARD-APP-WEB.git",
-        "branch": "main",
-        "commit": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
-        "source_paths": [
-          "IRGS_Web",
-          "Start-IRGS.cmd"
-        ],
-        "engine_dependency": "Engine submodule, pinned to engine.commit",
-        "catalog_dependency": "Catalog submodule, pinned to catalog.commit"
+      "tests_run": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": {
+        "henry-1415-default": {
+          "mode": "declaration_only",
+          "historical": true,
+          "confirmed_operations": 0,
+          "elapsed_seconds": null,
+          "civil_day_precision": true,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        },
+        "henry-1415-observation": {
+          "mode": "supported_slice",
+          "historical": true,
+          "confirmed_operations": 1,
+          "elapsed_seconds": 20,
+          "civil_day_precision": true,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        },
+        "john-1415-limited": {
+          "mode": "declaration_only",
+          "historical": true,
+          "confirmed_operations": 0,
+          "elapsed_seconds": null,
+          "civil_day_precision": true,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        },
+        "new-1415-default": {
+          "mode": "declaration_only",
+          "historical": true,
+          "confirmed_operations": 0,
+          "elapsed_seconds": null,
+          "civil_day_precision": true,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        },
+        "new-1415-quay": {
+          "mode": "supported_slice",
+          "historical": true,
+          "confirmed_operations": 5,
+          "elapsed_seconds": 150,
+          "civil_day_precision": true,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        },
+        "rise-r00": {
+          "mode": "supported_slice",
+          "historical": false,
+          "confirmed_operations": 5,
+          "elapsed_seconds": 3900,
+          "civil_day_precision": false,
+          "restart_and_exact_retry": true,
+          "restore_preserved_save": true,
+          "provider_calls": 0
+        }
       },
-      "catalog": {
-        "repository": "https://github.com/KingSav3ge/WorldWard-Catalog.git",
-        "branch": "main",
-        "commit": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-        "source_paths": [
-          "IRGS_Catalog"
-        ]
-      }
+      "provider_calls": 0,
+      "user_saves_used": false
     },
-    "tests_run": 6,
-    "failed": 0,
-    "errors": 0,
-    "skipped": 0,
-    "cases": {
-      "henry-1415-default": {
-        "mode": "declaration_only",
-        "historical": true,
-        "confirmed_operations": 0,
-        "elapsed_seconds": null,
-        "civil_day_precision": true,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
+    "ordinary": {
+      "schema_version": 1,
+      "fixture_id": "coordinator-adopted-ordinary-3.4.8-1",
+      "components": {
+        "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+        "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+        "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
       },
-      "henry-1415-observation": {
-        "mode": "supported_slice",
-        "historical": true,
-        "confirmed_operations": 1,
-        "elapsed_seconds": 20,
-        "civil_day_precision": true,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
-      },
-      "john-1415-limited": {
-        "mode": "declaration_only",
-        "historical": true,
-        "confirmed_operations": 0,
-        "elapsed_seconds": null,
-        "civil_day_precision": true,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
-      },
-      "new-1415-default": {
-        "mode": "declaration_only",
-        "historical": true,
-        "confirmed_operations": 0,
-        "elapsed_seconds": null,
-        "civil_day_precision": true,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
-      },
-      "new-1415-quay": {
-        "mode": "supported_slice",
-        "historical": true,
-        "confirmed_operations": 5,
-        "elapsed_seconds": 150,
-        "civil_day_precision": true,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
-      },
-      "rise-r00": {
-        "mode": "supported_slice",
-        "historical": false,
-        "confirmed_operations": 5,
-        "elapsed_seconds": 3900,
-        "civil_day_precision": false,
-        "restart_and_exact_retry": true,
-        "restore_preserved_save": true,
-        "provider_calls": 0
-      }
+      "selection_mode": "joined_or_clean_extracted_source",
+      "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
+      "original_consumer_preserved_sha256": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",
+      "tests_run": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "status": "passed",
+      "provider_calls": 0,
+      "user_saves_opened": false,
+      "alpha_qualified": false
     },
-    "provider_calls": 0,
-    "user_saves_used": false
+    "intents": {
+      "schema_version": 1,
+      "fixture_id": "coordinator-adopted-intent-world-3.4.8-1",
+      "components": {
+        "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+        "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+        "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
+      },
+      "selection_mode": "joined_or_clean_extracted_source",
+      "original_fixture_id": "irgs-intent-world-draft-v1",
+      "original_consumer_preserved_sha256": "ffe9054fc77a5c13cfd6d266b6439b7e7d80f11e2a6ab746f4d605553ab97975",
+      "tests_run": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "status": "passed",
+      "provider_calls": 0,
+      "user_saves_opened": false,
+      "alpha_qualified": false
+    },
+    "decisions": {
+      "schema_version": 1,
+      "fixture_id": "coordinator-adopted-decisions-3.4.8-1",
+      "components": {
+        "engine": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+        "catalog": "a18cb48928da25d40d057a182c69f71ef149ce80",
+        "app": "c04ba5524ae95316c7e826fc63085a4916d7dd67"
+      },
+      "selection_mode": "joined_or_clean_extracted_source",
+      "status": "passed",
+      "tests_run": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "original_catalog_consumers_preserved": true,
+      "coordinator_extension": "ordinary quay refusal/conserved delivery/restart/restore",
+      "provider_calls": 0,
+      "user_saves_opened": false,
+      "alpha_qualified": false
+    }
   },
-  "catalog_current_ordinary_adoption": {
-    "schema_version": 1,
-    "fixture_id": "coordinator-adopted-ordinary-3.4.7-1",
-    "components": {
-      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
-    },
-    "selection_mode": "joined_or_clean_extracted_source",
-    "original_catalog_fixture": "irgs-current-ordinary-communication-v1",
-    "original_consumer_preserved_sha256": "200d8a7caa0f1141d93d0791b394b5a3b04b8e165825237c90d84eed5a11940a",
-    "tests_run": 2,
-    "passed": 2,
-    "failed": 0,
-    "errors": 0,
-    "skipped": 0,
-    "status": "passed",
-    "provider_calls": 0,
-    "user_saves_opened": false,
-    "alpha_qualified": false
-  },
-  "catalog_intent_world_adoption": {
-    "schema_version": 1,
-    "fixture_id": "coordinator-adopted-intent-world-3.4.7-1",
-    "components": {
-      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
-    },
-    "selection_mode": "joined_or_clean_extracted_source",
-    "original_fixture_id": "irgs-intent-world-draft-v1",
-    "original_consumer_preserved_sha256": "ffe9054fc77a5c13cfd6d266b6439b7e7d80f11e2a6ab746f4d605553ab97975",
-    "tests_run": 3,
-    "passed": 3,
-    "failed": 0,
-    "errors": 0,
-    "skipped": 0,
-    "status": "passed",
-    "provider_calls": 0,
-    "user_saves_opened": false,
-    "alpha_qualified": false
-  },
-  "catalog_decision_adoption": {
-    "schema_version": 1,
-    "fixture_id": "coordinator-adopted-decisions-3.4.7-1",
-    "components": {
-      "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-      "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-      "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
-    },
-    "selection_mode": "joined_or_clean_extracted_source",
-    "status": "passed",
-    "tests_run": 4,
-    "passed": 4,
-    "failed": 0,
-    "errors": 0,
-    "skipped": 0,
-    "original_catalog_consumers_preserved": true,
-    "coordinator_extension": "ordinary quay refusal/conserved delivery/restart/restore",
-    "provider_calls": 0,
-    "user_saves_opened": false,
-    "alpha_qualified": false
-  },
-  "coordinator_implementation": "Actor-safe grant prerequisite projection and separate request/acceptance composer controls, with real HTTP/browser coverage.",
   "ordinary_offer_http": "passed",
   "operation_summary": {
     "operation_spellings": 87,
@@ -2123,56 +2122,123 @@
       "Rejected probes mirror the current R9 backend selection policy."
     ]
   },
-  "closed_review_findings": [
-    {
-      "id": "WW-QA-347-001",
-      "scope": "qualification_test_only",
-      "status": "focused_and_joined_rerun_passed_clean_package_gate_required",
-      "trigger": "An 80 ms real deadline could expire before transport admission on a busy host.",
-      "fix": "Gate explicit transport entry, advance an injected clock for in-flight expiry, and separately cancel the admitted request. Keep late usage/reservations/original result/no-redispatch assertions.",
-      "production_deadline_behavior_changed": false,
-      "focused_provider_tests_passed": 23,
-      "original_components": {
-        "engine": "4e704cc91af398413352c73ca0c77743875987d4",
-        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-        "app": "2bc51c3471ab17aafcac24800219d91c33351063"
-      },
-      "corrected_components": {
-        "engine": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
-        "catalog": "fae1ab8709049d3f76a0121bfd15731a29c203b5",
-        "app": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5"
-      }
+  "source_runtime_parity": {
+    "engine": {
+      "baseline": "7f4ef150e2049c7718ac600680cb9c3633353a6a",
+      "selected": "ecca8094a2d2cdb8a11e018a085487288b26e88d",
+      "runtime_source_equal": true
+    },
+    "app": {
+      "baseline": "75ccc9aa7b746f23e1d2c86dc0464c48858469e5",
+      "selected": "c04ba5524ae95316c7e826fc63085a4916d7dd67",
+      "runtime_source_equal": true
     }
-  ],
-  "integration_patches": [
-    "Adopt reviewed invitation and opt-in non-Rise contact decisions without inventing general NPC behavior",
-    "Consume supported communication DTOs and explicit optional household offers in ordinary UI",
-    "Project actor-safe grant prerequisites and separately review request/acceptance through the existing Core",
-    "Preserve original independent source guards and qualify four adopted decision/draft journeys separately",
-    "Align exact tested pins, edition metadata and current owner continuation"
-  ],
-  "remaining": [
-    "A4-ENG-01/03: broader consequences and selected needs/recovery",
-    "WB-APP-01 and A4-APP-03: bounded Creator drafts and creation recovery",
-    "A4-CAT-03/04 and WB-CAT-01/02: independently selected consequences and host recovery",
-    "Wider autonomous NPC/institution decisions, needs/recovery and selected consequential conflict",
-    "Arbitrary world authoring, Creator editor and host atomic draft creation/retry/restore",
-    "Authorized live-provider evaluation, native Windows and functional Alpha qualification"
-  ],
-  "artifacts_directory": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z",
-  "package_qualification": {
-    "required_before_publication": true,
-    "record": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/release/qualification.json",
-    "scope": "Final committed source; clean extracted HTTP smoke, full regression/independent HTTP, sixteen Chromium suites, six starts, ordinary and intent/draft Catalog consumers, optional offer HTTP journey"
   },
-  "no_live_provider_calls": true,
-  "synthetic_transport_calls_are_offline_only": true,
-  "native_windows_qualified": false,
-  "user_saves_opened": false,
-  "private_saves_included": false,
-  "alpha_gates_closed": [],
-  "fresh_execution_capture": true,
+  "inclusion_and_exclusion": {
+    "repository_ids": {
+      "WorldWard": 1427668540,
+      "Fulcrum-Engine": 1429942737,
+      "WORLDWARD-APP-WEB": 1429943101,
+      "WorldWard-Catalog": 1430002977
+    },
+    "included_completed_work": [
+      "3.4.7 runtime baseline with matching exact component pins",
+      "Published Rise adopted requirement and owner work orders, design only",
+      "App PR 1 Creator handoff, proposed/source inspected only",
+      "Current edition and source-workspace alignment"
+    ],
+    "excluded_or_open": [
+      {
+        "work": "Rise runtime allowance/expansion",
+        "reason": "Not implemented; profile numbers and rule contract remain open."
+      },
+      {
+        "work": "Creator preview/durable creation",
+        "reason": "No runtime delivery; two durability/restore contract questions remain open."
+      },
+      {
+        "work": "Emergent branch",
+        "reason": "Unrelated Git ancestry; alternative simulation is not an owner-compatible Core delivery. Existing adopted UI remains."
+      },
+      {
+        "work": "Private Design Studio source/plugin",
+        "reason": "Separate repair artifact; no private hosting/plugin config is copied into public game repositories."
+      },
+      {
+        "work": "Denied Vercel transfer and external deployment",
+        "reason": "Specifically prohibited; neither attempted."
+      },
+      {
+        "work": "Live models and native Windows",
+        "reason": "No current eligible live qualification or Windows execution environment."
+      }
+    ],
+    "user_saves_inspected": false,
+    "dlva_files_copied": false,
+    "pr_approval_submitted": false,
+    "owner_chat_dispatch_performed": false
+  },
+  "engine_environment_diagnostic": {
+    "reported_error": "github_repository_name_mismatch",
+    "reported_entry": "4/4",
+    "failing_owner_thread": "01a164cf-5c1b-74ae-a63e-ff93cc9d10da",
+    "confirmed_current_repository": "KingSav3ge/Fulcrum-Engine",
+    "confirmed_repository_id": 1429942737,
+    "rename_evidence": "/workspace/irgs-cloud/coordination/repository-renames-2026-10-29/owner-rename-application.json",
+    "historical_wrong_slug": "KingSav3ge/Fulcrim-Engine",
+    "probable_class": "Stale configured full_name compared with actual GitHub name after rename/spelling correction",
+    "exact_current_offending_entry_confirmed": false,
+    "reason_current_owner_config_unavailable": "Owner read_thread failed both automatic and explicit durable-host attempts: connection closed before server request was answered",
+    "locked_configuration_changed": false,
+    "required_owner_action": "Read the failing configuration entry 4 full_name and immutable ID, then compare it with all four verified identities. Do not infer its repository from the ordinal, edit a locked configuration, or change repository selection. Use the supported owner workflow for any correction.",
+    "entry_4_repository_identity": "Unknown: entry order in the failing locked owner configuration is unavailable; do not assume it is the Engine entry.",
+    "current_repository_identities": [
+      {
+        "full_name": "KingSav3ge/WorldWard",
+        "id": 1427668540,
+        "historical_aliases": [
+          "KingSav3ge/IRGS"
+        ]
+      },
+      {
+        "full_name": "KingSav3ge/Fulcrum-Engine",
+        "id": 1429942737,
+        "historical_aliases": [
+          "KingSav3ge/IRGS-Engine",
+          "KingSav3ge/Fulcrim-Engine"
+        ]
+      },
+      {
+        "full_name": "KingSav3ge/WORLDWARD-APP-WEB",
+        "id": 1429943101,
+        "historical_aliases": [
+          "KingSav3ge/IRGS-APP-WEB"
+        ]
+      },
+      {
+        "full_name": "KingSav3ge/WorldWard-Catalog",
+        "id": 1430002977,
+        "historical_aliases": [
+          "KingSav3ge/IRGS-Catalog"
+        ]
+      }
+    ]
+  },
+  "owner_chat_bridge": "connection closed before server request was answered",
+  "owner_dispatch_performed": false,
+  "app_pr_approval_submitted": false,
+  "source_copy_denial_retried_or_circumvented": false,
+  "external_deployment_performed": false,
+  "dlva_files_copied": false,
   "original_archive_records_preserved": true,
   "original_fixture_selectors_unchanged": true,
-  "prior_failed_qualification_preserved": "/workspace/irgs-cloud/integration/decisions-3.4.7/20261030T163134Z/joined-before-provider-test-fix/qa.json"
+  "user_saves_opened": false,
+  "no_live_provider_calls": true,
+  "native_windows_qualified": false,
+  "alpha_gates_closed": [],
+  "package_qualification": {
+    "required_before_publication": true,
+    "record": "/workspace/irgs-cloud/integration/unification-3.4.8/20261031T123151Z/release/qualification.json",
+    "scope": "Final committed source: clean extracted HTTP smoke, full regression, independent HTTP, 16 Chromium suites and exact selected independent consumers."
+  }
 }

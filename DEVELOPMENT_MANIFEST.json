@@ -191,8 +191,8 @@
     },
     {
       "path": "COORDINATION.json",
-      "bytes": 11356,
-      "sha256": "27eb22147df1d7465f4412a6a3984dced99e311c3c49b1cf0b85d33e2edf0196"
+      "bytes": 11727,
+      "sha256": "4b31970082d1da2852053942f8df3068da8c20f3db3df876f12abed7f1e48d97"
     },
     {
       "path": "COORDINATION.md",
@@ -211,8 +211,8 @@
     },
     {
       "path": "COORDINATOR_VALIDATION.json",
-      "bytes": 137180,
-      "sha256": "913b8e30f7bb571605cbedbfbaf7480caf19c517f8db00ea204b573829c52cf3"
+      "bytes": 138798,
+      "sha256": "6e45d5956f7d00dee0f6e60a0ade413e8d3884a94447999b04ad520c6ba680a9"
     },
     {
       "path": "COORDINATOR_WORK_ORDER.md",
@@ -251,8 +251,8 @@
     },
     {
       "path": "DEVELOPMENT_STATE.json",
-      "bytes": 1641,
-      "sha256": "9c9a3053549c95c04aabda21b5e5d7b33e8c6abe2b4bdb76de06048f1b39fec7"
+      "bytes": 1675,
+      "sha256": "01f07789c428036da8d58c2d648d4ed19495b3c4d435b920899489709badf6dc"
     },
     {
       "path": "DEVELOPMENT_STATE_HISTORY_2026-10-22.json",
@@ -4096,8 +4096,8 @@
     },
     {
       "path": "UNIFICATION_3_4_8.md",
-      "bytes": 3205,
-      "sha256": "d9faf4d9d116b54d7b068f5e3c283167f5a02eb0808131e003ab124fbc7c718f"
+      "bytes": 3453,
+      "sha256": "050f2dfc7b85b9c416e5c0484a9d0d599b80fbb8d3979b60190669fd0599b41d"
     },
     {
       "path": "VALIDATION.json",
@@ -5321,13 +5321,13 @@
     },
     {
       "path": "provenance/qa/current_report.json",
-      "bytes": 5574,
-      "sha256": "0f050b91629abac57ac288a5e0dd89b8bd4d7171190bfefd74a3c4842685557d"
+      "bytes": 5739,
+      "sha256": "b2d57c3dfc135c702222ee0f23bccd5730c307b826ffbb3f15756d279b8cfa56"
     },
     {
       "path": "provenance/qa/current_report.md",
-      "bytes": 570,
-      "sha256": "b7782eeb14cd8de4c25f5a5c845836401c768ad12c1e26cd94bd04ff2d196330"
+      "bytes": 442,
+      "sha256": "a4752a07bba4e6978ddab4960c53fddeff799610b942e20b1ce218dbebf1b952"
     },
     {
       "path": "provenance/qa/decisions_3_4_7/actor_inputs.json",
@@ -5488,6 +5488,31 @@
       "path": "provenance/qa/story_flow_3_4_5_review.json",
       "bytes": 124101,
       "sha256": "2273ea42b15e02303af03fa9c158d2b4798271981272d68822d16d76e03d31be"
+    },
+    {
+      "path": "provenance/qa/unification_3_4_8_decisions_acceptance.json",
+      "bytes": 650,
+      "sha256": "cb91e85d02ce22fa61d0a1c5514a0752e8943f1c4e6d758c0b8d3c4d781703a6"
+    },
+    {
+      "path": "provenance/qa/unification_3_4_8_intents_acceptance.json",
+      "bytes": 681,
+      "sha256": "ee2479633e2fcc3d2b43fe0b91272a2b97ec0560583936c6b102ca0f7741b11f"
+    },
+    {
+      "path": "provenance/qa/unification_3_4_8_ordinary_acceptance.json",
+      "bytes": 694,
+      "sha256": "4f2e82cd5b36203ecfbba930929c79ac2b6724cd6bd4d646914ced27837c1482"
+    },
+    {
+      "path": "provenance/qa/unification_3_4_8_review.json",
+      "bytes": 138798,
+      "sha256": "6e45d5956f7d00dee0f6e60a0ade413e8d3884a94447999b04ad520c6ba680a9"
+    },
+    {
+      "path": "provenance/qa/unification_3_4_8_starts_acceptance.json",
+      "bytes": 3126,
+      "sha256": "e1f3314b82a432ffa02458e40eb2f2bf225fda3fc7c3bb48ae7afa4335a0d763"
     },
     {
       "path": "provenance/qa_handoff/CURRENT_REFS.json",

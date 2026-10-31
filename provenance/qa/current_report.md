@@ -1,3 +1,3 @@
-# WorldWard 3.4.7 Pre-Alpha qualification
+# WorldWard 3.4.8 Pre-Alpha qualification
 
-Fresh operation capture, joined Core/Web/interface/tooling regression, independent HTTP, sixteen Chromium suites and separately selected Catalog starts, ordinary communication and intent/draft consumers pass at the recorded candidate. Optional household-offer HTTP passes without transfer or NPC consent. The final clean package must pass its separate full publication gate. Original fixtures and historical records retain their tested identities. No live-provider, native Windows or functional Alpha qualification is claimed.
+Fresh capture, source regression, independent HTTP, 16 Chromium suites and separately selected independent consumers passed at the recorded candidate. Runtime mechanics remain the 3.4.7 baseline. Rise expansion and Creator runtime remain unimplemented. Final committed-source clean-package qualification is mandatory before publication. Live models, Windows and functional Alpha remain unqualified.
